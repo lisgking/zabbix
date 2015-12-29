@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="gentab">
+<NumRowsAffected><![CDATA[Počet ovlivněných řádků:]]></NumRowsAffected>
+<CompletedSuccess><![CDATA[Úspěšně dokončeno.]]></CompletedSuccess>
+<FunctionReturnValue><![CDATA[Návratová hodnota funkce:]]></FunctionReturnValue>
+<Return><![CDATA[Návrat:]]></Return>
+<SyntaxError><![CDATA[Došlo k chybě syntaxe.]]></SyntaxError>
+</lang>

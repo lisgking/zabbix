@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[動態日誌配置]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[邏輯日誌檔儲存體]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU 最少錯誤]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[實體日誌儲存體]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[ATS 檔]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER 節點關閉]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[RIS 檔]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[OS 可用記憶體]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[OS 線上處理器]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[OS 虛擬處理器]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[OS 開啟檔案限制]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[OS 號誌 ID]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[OS 號誌]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[OS 共用記憶體 ID]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[CKPT 已由 LLOG 觸發]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[CKPT 已由 PLOG 觸發]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[主要區段]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[磁碟清除]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[最長等待]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[每個表格的緩衝區讀取數]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[每個表格的緩衝區寫入數]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[每個表格的循序掃描數]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[已快取的緩衝區讀取數]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[已快取的緩衝區寫入數]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[磁碟排序]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[回復數]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[前景寫入數]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[每個 I/O 的 LLOG 頁面數]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[鎖定等待數]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[每個 I/O 的 PLOG 頁面數]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[循序掃描]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[離線片段]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[片段 I/O 作業數]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[片段 I/O 讀取數]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[片段 I/O 寫入數]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[資料庫空間可用空間]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[列大小]]></dsc_Rowsize>
+
+</lang>

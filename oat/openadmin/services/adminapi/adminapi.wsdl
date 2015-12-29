@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="adminAPI" targetNamespace="urn:adminAPI"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:adminAPI"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+
+    <!-- Types are what will be sent / received via the services -->
+    <types>    
+    
+        <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:adminAPI">
+    
+            <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+
+              <!-- IDSAdmin Connection Object -->
+              <xsd:complexType name="idsAdminConnection">
+                <xsd:all>
+                    <xsd:element name="host"         type="xsd:string">
+                    </xsd:element>
+                    <xsd:element name="servername"   type="xsd:string" />
+                    <xsd:element name="protocol"     type="xsd:string" />
+                    <xsd:element name="port"         type="xsd:string" />
+                    <xsd:element name="user"         type="xsd:string" />
+                    <xsd:element name="password"     type="xsd:string" />
+                 </xsd:all>
+              </xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+    <message name="addChunk">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+    </message>
+
+    <message name="addChunkResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="addChunkWithCheck">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+    </message>
+
+    <message name="addChunkWithCheckResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+
+    <message name="dropChunk">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+    </message>
+
+    <message name="dropChunkResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="addLog">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+    </message>
+
+    <message name="addLogResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="archiveFake">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+    </message>
+
+    <message name="archiveFakeResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="dropLog">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="lognum" type="xsd:string"/>
+    </message>
+
+    <message name="dropLogResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="addBufferPool">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="pagesize" type="xsd:string"/>
+        <part name="numbuffers" type="xsd:string"/>
+        <part name="numlrus" type="xsd:string"/>
+        <part name="maxdirty" type="xsd:string"/>
+        <part name="mindirty" type="xsd:string"/>
+    </message>
+
+    <message name="addBufferPoolResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="addMemory">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part  name="size" type="xsd:string" />
+    </message>
+
+    <message name="addMemoryResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="addMirror">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string" />
+        <part name="path" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+        <part name="mpath" type="xsd:string"/>
+        <part name="moffset" type="xsd:string"/>
+    </message>
+
+    <message name="addMirrorResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="alterChunkOnline">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string" />
+        <part name="path" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+    </message>
+
+    <message name="alterChunkOnlineResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="alterChunkOffline">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string" />
+        <part name="path" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+    </message>
+
+    <message name="alterChunkOfflineResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+    
+
+    <message name="alterLogMode">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbname" type="xsd:string"/>
+        <part name="mode" type="xsd:string"/>
+    </message>
+
+    <message name="alterLogModeResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="alterPlog">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbspace" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+    </message>
+
+    <message name="alterPlogResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="checkData">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="partnum" type="xsd:string" />
+    </message>
+    
+    <message name="checkDataResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="checkExtents">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsnum" type="xsd:string" />
+    </message>
+
+    <message name="checkExtentsResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="checkPartition">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="partnum" type="xsd:string" />
+    </message>
+    
+    <message name="checkPartitionResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="cleanSBSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="sbspace" type="xsd:string" />
+    </message>
+    
+    <message name="cleanSBSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="doCheckpoint">
+        <part  name="connectionObj" type="typens:idsAdminConnection" />
+    </message>
+
+    <message name="doCheckpointResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="createDBSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+        <part name="pgsize" type="xsd:string"/>
+        <part name="fext" type="xsd:string"/>
+        <part name="next" type="xsd:string"/>
+        <part name="mpath" type="xsd:string"/>
+        <part name="moffset" type="xsd:string"/>
+    </message>
+
+    <message name="createDBSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+
+    <message name="createBlobSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+        <part name="pgsize" type="xsd:string"/>
+        <part name="mpath" type="xsd:string"/>
+        <part name="moffset" type="xsd:string"/>
+    </message>
+
+    <message name="createBlobSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="createSBSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+        <part name="mpath" type="xsd:string"/>
+        <part name="moffset" type="xsd:string"/>
+    </message>
+
+    <message name="createSBSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="createTempDBS">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+        <part name="path" type="xsd:string"/>
+        <part name="size" type="xsd:string"/>
+        <part name="offset" type="xsd:string"/>
+        <part name="pgsize" type="xsd:string"/>
+        <part name="mpath" type="xsd:string"/>
+        <part name="moffset" type="xsd:string"/>
+    </message>
+
+    <message name="createTempDBSResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="dropBlobSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+    </message>
+
+    <message name="dropBlobSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="dropTempDBS">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+    </message>
+
+    <message name="dropTempDBSResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="dropSBSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+    </message>
+
+    <message name="dropSBSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+
+    <message name="dropDBSpace">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="dbsname" type="xsd:string"/>
+    </message>
+
+    <message name="dropDBSpaceResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+    
+    <message name="killSession">
+        <part name="connectionObj" type="typens:idsAdminConnection" />
+        <part name="sessionId" type="xsd:int"/>
+    </message>
+
+    <message name="killSessionResponse">
+        <part  name="return" type="xsd:string" />
+    </message>
+    
+<!-- portType expose the services 
+         and defines their input / output routines -->
+
+    <portType name="idsAdminPort">
+
+        <operation name="dropBlobSpace">
+            <documentation>Drop a BlobSpace.</documentation>
+            <input message="typens:dropBlobSpace" />
+            <output message="typens:dropBlobSpaceResponse" />
+        </operation>
+
+        <operation name="dropTempDBS">
+            <documentation>Drop a TempDBS.</documentation>
+            <input message="typens:dropTempDBS" />
+            <output message="typens:dropTempDBSResponse" />
+        </operation>
+
+        <operation name="dropSBSpace">
+            <documentation>Drop a SBSpace.</documentation>
+            <input message="typens:dropSBSpace" />
+            <output message="typens:dropSBSpaceResponse" />
+        </operation>
+
+        <operation name="dropDBSpace">
+            <documentation>Drop a DBSpace.</documentation>
+            <input message="typens:dropDBSpace" />
+            <output message="typens:dropDBSpaceResponse" />
+        </operation>
+
+        <operation name="createBlobSpace">
+            <documentation>Create a BlobSpace.</documentation>
+            <input message="typens:createBlobSpace" />
+            <output message="typens:createBlobSpaceResponse" />
+        </operation>
+
+        <operation name="createDBSpace">
+            <documentation>Create a DBSpace.</documentation>
+            <input message="typens:createDBSpace" />
+            <output message="typens:createDBSpaceResponse" />
+        </operation>
+
+        <operation name="createSBSpace">
+            <documentation>Create a SBSpace.</documentation>
+            <input message="typens:createSBSpace" />
+            <output message="typens:createSBSpaceResponse" />
+        </operation>
+
+        <operation name="createTempDBS">
+            <documentation>Create a TempDBS.</documentation>
+            <input message="typens:createTempDBS" />
+            <output message="typens:createTempDBSResponse" />
+        </operation>
+
+        <operation name="addChunk">
+            <documentation>Add a chunk to a dbspace</documentation>
+            <input message="typens:addChunk" />
+            <output message="typens:addChunkResponse" />
+        </operation>
+
+        <operation name="addChunkWithCheck">
+            <documentation>Add a chunk to a dbspace with check</documentation>
+            <input message="typens:addChunkWithCheck" />
+            <output message="typens:addChunkWithCheckResponse" />
+        </operation>
+
+        <operation name="archiveFake">
+            <documentation>Perform a fake archive</documentation>
+            <input message="typens:archiveFake" />
+            <output message="typens:archiveFakeResponse" />
+        </operation>
+
+        <operation name="dropChunk">
+            <documentation>Drop a chunk</documentation>
+            <input message="typens:dropChunk" />
+            <output message="typens:dropChunkResponse" />
+        </operation>
+
+        <operation name="addLog">
+            <documentation>Add a logical log</documentation>
+            <input message="typens:addLog" />
+            <output message="typens:addLogResponse" />
+        </operation>
+
+        <operation name="dropLog">
+            <documentation>Drop a logical log</documentation>
+            <input message="typens:dropLog" />
+            <output message="typens:dropLogResponse" />
+        </operation>
+
+        <operation name="addBufferPool">
+            <documentation>Add a buffer pool</documentation>
+            <input message="typens:addBufferPool" />
+            <output message="typens:addBufferPoolResponse" />
+        </operation>
+
+        <operation name="addMemory">
+            <documentation>Add some virtual memory</documentation>
+            <input message="typens:addMemory" />
+            <output message="typens:addMemoryResponse" />
+        </operation>
+
+        <operation name="addMirror">
+            <documentation>Add a mirror chunk to a dbspace</documentation>
+            <input message="typens:addMirror" />
+            <output message="typens:addMirrorResponse" />
+        </operation>
+
+        <operation name="alterChunkOnline">
+            <documentation>Bring a chunk to Online state</documentation>
+            <input message="typens:alterChunkOnline" />
+            <output message="typens:alterChunkOnlineResponse" />
+        </operation>
+
+        <operation name="alterChunkOffline">
+            <documentation>Bring a chunk to Offline state</documentation>
+            <input message="typens:alterChunkOffline" />
+            <output message="typens:alterChunkOfflineResponse" />
+        </operation>
+
+        <operation name="alterLogMode">
+            <documentation>Alter the log mode of the database</documentation>
+            <input message="typens:alterLogMode" />
+            <output message="typens:alterLogModeResponse" />
+        </operation>
+
+        <operation name="alterPlog">
+            <documentation>Alter the physical log location/size</documentation>
+            <input message="typens:alterPlog" />
+            <output message="typens:alterPlogResponse" />
+        </operation>
+
+        <operation name="checkData">
+            <documentation>Check the data portion of a table</documentation>
+            <input message="typens:checkData" />
+            <output message="typens:checkDataResponse" />
+        </operation>
+
+        <operation name="checkExtents">
+            <documentation>Check the extents of a dbspace</documentation>
+            <input message="typens:checkExtents" />
+            <output message="typens:checkExtentsResponse" />
+        </operation>
+
+        <operation name="checkPartition">
+            <documentation>Prints info about a partition</documentation>
+            <input message="typens:checkPartition" />
+            <output message="typens:checkPartitionResponse" />
+        </operation>
+
+        <operation name="cleanSBSpace">
+            <documentation>Clean stray LO's from an SBSpace</documentation>
+            <input message="typens:cleanSBSpace" />
+            <output message="typens:cleanSBSpaceResponse" />
+        </operation>
+
+        <operation name="doCheckpoint">
+            <documentation>Perform a checkpoint.</documentation>
+            <input message="typens:doCheckpoint" />
+            <output message="typens:doCheckpointResponse" />
+        </operation>
+
+        <operation name="killSession">
+            <documentation>Kill a user session.</documentation>
+            <input message="typens:killSession" />
+            <output message="typens:killSessionResponse" />
+        </operation>
+    </portType>
+
+    <!-- define protocol details for each Ports -->
+    <binding name="idsAdminBinding" type="typens:idsAdminPort">
+        <soap:binding style="rpc"
+            transport="http://schemas.xmlsoap.org/soap/http" />
+
+        <operation name="dropBlobSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="dropTempDBS">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="dropSBSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="dropDBSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="createBlobSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="createDBSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="createSBSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="createTempDBS">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addChunk">
+            <documentation>op2 Add a chunk to a dbspace</documentation>
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addChunkWithCheck">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="archiveFake">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="dropChunk">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addLog">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="dropLog">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addBufferPool">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addMemory">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="addMirror">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="alterChunkOffline">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="alterChunkOnline">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="alterLogMode">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="alterPlog">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="checkData">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="checkExtents">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="checkPartition">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="cleanSBSpace">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="doCheckpoint">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+
+        <operation name="killSession">
+            <soap:operation soapAction="urn:idsAdminAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:adminAPI"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+    </binding>
+
+    <!-- define service -->
+    <service name="idsAdminService">
+        <documentation>IDSAdmin Admin SQL API Commands</documentation>
+        <port name="idsAdminPort" binding="typens:idsAdminBinding">
+            <soap:address location="services/adminAPI/adminapiService.php" />
+        </port>
+    </service>
+</definitions>

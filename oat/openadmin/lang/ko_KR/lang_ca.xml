@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[고가용성 클러스터]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[기본 서버에 도달 가능]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[클러스터에 도달 불가]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[클러스터 인지 불가]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[캐시된 기본 서버가 클러스터되지 않음]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[기본 서버가 클러스터에 없음]]></NoPrimaryInCluster>
+</lang>

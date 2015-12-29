@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[存储]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[空间优化]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[压缩功能部件只可用于以下服务器版本（或更高版本）：]]></CompressOnlyAvail>
+<ErrorF><![CDATA[错误：]]></ErrorF>
+<NoOwner><![CDATA[没有指定所有者]]></NoOwner>
+<NoTable><![CDATA[没有指定表]]></NoTable>
+<InvalidDB><![CDATA[无效数据库]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[表中没有足够的行]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[分段中没有足够的行]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[分区号]]></PartNum>
+<required><![CDATA[必需]]></required>
+<actual><![CDATA[实际]]></actual>
+<Failed><![CDATA[失败]]></Failed>
+<ErrorMultipleLocales><![CDATA[在此页面上，OpenAdmin Tool 无法显示具有多个非英语数据库语言环境的数据库服务器的信息。该数据库服务器包含多个非英语数据库语言环境。]]></ErrorMultipleLocales>
+</lang>

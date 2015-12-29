@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Spazi DB]]></mainTitle>
+<dbspace><![CDATA[Spazio DB]]></dbspace>
+<dbspaceName><![CDATA[Nome spazio DB]]></dbspaceName>
+<owner><![CDATA[Proprietario]]></owner>
+<pagesize><![CDATA[Dimensione pagina]]></pagesize>
+<createTime><![CDATA[Ora creazione]]></createTime>
+<dbspaceInfo><![CDATA[Informazioni spazio DB]]></dbspaceInfo>
+<utilization><![CDATA[Utilizzo {0}]]></utilization>
+<indexPages><![CDATA[Pagine indice]]></indexPages>
+<dataPages><![CDATA[Pagine dati]]></dataPages>
+<otherPages><![CDATA[Altre pagine]]></otherPages>
+<freePages><![CDATA[Pagine libere]]></freePages>
+<TableName><![CDATA[Nome tabella]]></TableName>
+<StartAddr><![CDATA[Indirizzo iniziale]]></StartAddr>
+<EndAddr><![CDATA[Indirizzo finale]]></EndAddr>
+<size><![CDATA[Dimensione]]></size>
+<Status><![CDATA[Stato]]></Status>
+<ExtentList><![CDATA[Elencazione estensioni]]></ExtentList>
+<TableList><![CDATA[Elencazione tabelle]]></TableList>
+<Database><![CDATA[Database]]></Database>
+<Table><![CDATA[Tabella]]></Table>
+<Collate><![CDATA[Ordina]]></Collate>
+<Rows><![CDATA[Righe]]></Rows>
+<SystemIntegrity><![CDATA[Integrità di]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Controlla formato tabella spazio DB]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Controlla estensioni spazio DB]]></butCheckDbsExt>
+<RowSize><![CDATA[Dimensione righe]]></RowSize>
+<Created><![CDATA[Creato]]></Created>
+<AllocPages><![CDATA[Pagine allocate]]></AllocPages>
+<UsedPages><![CDATA[Pagine utilizzate]]></UsedPages>
+<NumExtents><![CDATA[Numero estensioni]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Numero]]></Number>
+<Name><![CDATA[Nome]]></Name>
+<Type><![CDATA[Tipo]]></Type>
+<default><![CDATA[Valore predefinito]]></default>
+<CreateSpace><![CDATA[Crea uno spazio]]></CreateSpace>
+<Create><![CDATA[Crea]]></Create>
+<numChunks><![CDATA[Numero di porzioni]]></numChunks>
+<UsedPer><![CDATA[Utilizzato %]]></UsedPer>
+<Data><![CDATA[Dati]]></Data>
+<Index><![CDATA[Indice]]></Index>
+<Other><![CDATA[Altro]]></Other>
+<Free><![CDATA[Libero]]></Free>
+<noDropDBSpace><![CDATA[Impossibile eliminare rootdbs.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Aggiungi spazio a]]></AddSpaceto>
+<Path><![CDATA[Percorso]]></Path>
+<Offset><![CDATA[Offset]]></Offset>
+<FileCreation><![CDATA[Creazione file]]></FileCreation>
+<MayCreateFile><![CDATA[Crea file se inesistente]]></MayCreateFile>
+<FileMustExist><![CDATA[Il file deve esistere]]></FileMustExist>
+<DropSpace><![CDATA[Elimina spazio {0}]]></DropSpace>
+<AddChunk><![CDATA[Aggiungi porzione]]></AddChunk>
+<Used><![CDATA[Utilizzato]]></Used>
+<AddMirror><![CDATA[Aggiungi mirroring]]></AddMirror>
+<AddChunkMirror><![CDATA[Aggiungi porzione con mirroring]]></AddChunkMirror>
+<StartMirror><![CDATA[Avvia mirroring]]></StartMirror>
+<StopMirror><![CDATA[Arresta mirroring]]></StopMirror>
+<AddMirrorto><![CDATA[Aggiungi mirroring a]]></AddMirrorto>
+<MirrorPath><![CDATA[Percorso mirroring]]></MirrorPath>
+<MirrorOffset><![CDATA[Offset mirroring]]></MirrorOffset>
+<MirroringStarted><![CDATA[Mirroring avviato]]></MirroringStarted>
+<MirroringStopped><![CDATA[Mirroring interrotto]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[convalida del sistema oncheck]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[convalida oncheck completata.]]></oncheckComplete>
+<NoPermission><![CDATA[Gli utenti in sola lettura non dispongono dell'autorizzazione per eseguire questa operazione. È stato effettuato l'accesso come utente in sola lettura.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Questa azione non è valida su server secondari.]]></NotValidOnSecondary>
+<Error><![CDATA[Errore:]]></Error>
+<DropDBSpaceFailed><![CDATA[Eliminazione spazio DB non riuscita.  Il seguente valore spazio DB non è stato impostato correttamente:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Creazione spazio DB non riuscita.  Azione spazio DB]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[non valida.]]></IsNotValid>
+<DATASpace><![CDATA[Spazio DATA]]></DATASpace>
+<DataSpaceL><![CDATA[Spazio dati]]></DataSpaceL>
+<TEMPSpace><![CDATA[Spazio TEMP]]></TEMPSpace>
+<TempSpaceL><![CDATA[Spazio temporaneo]]></TempSpaceL>
+<BLOBSpace><![CDATA[Spazio BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Spazio DB creato correttamente]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Creazione spazio DB non riuscita.  Il seguente valore spazio DB non è impostato correttamente:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Creazione spazio DB non riuscita.  Azione spazio DB non valida]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Eliminazione di spazio DB non confermata]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Risultati convalida in...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Risultati convalida...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Aggiunta di porzione a spazio DB non riuscita:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Porzione aggiunta correttamente]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Aggiunta di porzione a spazio DB:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Porzione di mirroring aggiunta correttamente]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Aggiunta di mirroring a spazio DB non riuscita:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[Il seguente valore di mirroring non è impostato correttamente:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Mirroring aggiunto correttamente]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Avvio di mirroring in spazio DB non riuscito:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[L'avvio di mirroring non è stato confermato nello spazio DB:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Arresto di mirroring per spazio DB non riuscito:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Arresto di mirroring non confermato nello spazio DB:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Spazio DB]]></Dbspace>
+<TempDbspace><![CDATA[Spazio DB temporaneo]]></TempDbspace>
+<MirroredDbspace><![CDATA[Spazio DB di mirroring]]></MirroredDbspace>
+<Blobspace><![CDATA[Spazio BLOB]]></Blobspace>
+<MirroredBlobspace><![CDATA[Spazio Blob di mirroring]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Spazio Smart Blob]]></SmartBlobspace>
+<TempSbspace><![CDATA[Spazio Smart Blob temporaneo]]></TempSbspace>
+<MirroredSbspace><![CDATA[Spazio Smart Blob di mirroring]]></MirroredSbspace>
+<DataPages><![CDATA[Pagine dati]]></DataPages>
+<IndexPages><![CDATA[Pagine indice]]></IndexPages>
+<OtherPages><![CDATA[Altre pagine]]></OtherPages>
+<FreePages><![CDATA[Pagine libere]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Valore spazio DB non impostato correttamente:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Riepilogo]]></summary>
+<admin><![CDATA[Amministrazione]]></admin>
+<tables><![CDATA[Tabelle]]></tables>
+<extents><![CDATA[Estensioni]]></extents>
+<validation><![CDATA[Convalida]]></validation>
+<Disabled><![CDATA[Disabilitato]]></Disabled>
+<Recovering><![CDATA[Ripristino]]></Recovering>
+<Operational><![CDATA[Operativo]]></Operational>
+</lang>

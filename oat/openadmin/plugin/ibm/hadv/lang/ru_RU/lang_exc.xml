@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Чтобы исключить узлы из проверки, введите имена узлов через запятую.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Чтобы исключить таблицы из проверки, введите номера разделов через запятую.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Чтобы исключить таблицы из проверки, введите номера разделов через запятую.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Чтобы исключить таблицы из проверки, введите номера разделов через запятую.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Чтобы исключить чанки из проверки, введите номера чанков через запятую.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Чтобы исключить чанки из проверки, введите номера чанков через запятую.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Чтобы исключить чанки из проверки, введите номера чанков через запятую.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Чтобы исключить пространства баз данных из проверки, введите имена пространств баз данных через запятую.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Чтобы исключить таблицы из проверки, введите номера разделов через запятую.]]></exc_Rowsize>
+</lang>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[Start]]></home>
+<expand><![CDATA[Rozszerz]]></expand>
+<collapse><![CDATA[Zwiń]]></collapse>
+<logs><![CDATA[Dzienniki]]></logs>
+<alertsummary><![CDATA[Podsumowanie alertów]]></alertsummary>
+<alerts><![CDATA[Alerty]]></alerts>
+<admincommands><![CDATA[Komenda administracyjna]]></admincommands>
+<onlinelog><![CDATA[Komunikaty online]]></onlinelog>
+<baractlog><![CDATA[Aktywność ON-Bar]]></baractlog>
+<healthcenter><![CDATA[Centrum kontroli poprawn.]]></healthcenter>
+<details><![CDATA[Szczegóły]]></details>
+<taskdetails><![CDATA[Szczegóły zadania]]></taskdetails>
+<runtimes><![CDATA[Czasy wykonania zadań]]></runtimes>
+<scheduler><![CDATA[Program planujący]]></scheduler>
+<space><![CDATA[Administrowanie miejscem]]></space>
+<VP><![CDATA[Procesory wirtualne]]></VP>
+<dbspaces><![CDATA[Obszary DBSpace]]></dbspaces>
+<RecoveryLogs><![CDATA[Dzienniki odtwarzania]]></RecoveryLogs>
+<storage><![CDATA[Pamięć masowa]]></storage>
+<chunks><![CDATA[Porcje]]></chunks>
+<reservedspace><![CDATA[Obszar zarezerwowany]]></reservedspace>
+<performance><![CDATA[Analiza wydajności]]></performance>
+<sql><![CDATA[Edytor SQL]]></sql>
+<sqlexplorer><![CDATA[Eksplorator SQL]]></sqlexplorer>
+<io><![CDATA[We/wy]]></io>
+<Reports><![CDATA[Raporty systemowe]]></Reports>
+<sessionexplorer><![CDATA[Eksplorator sesji]]></sessionexplorer>
+<uReports><![CDATA[Raporty użytkownika]]></uReports>
+<sqltoolbox><![CDATA[Narzędzia SQL]]></sqltoolbox>
+<databases><![CDATA[Bazy danych]]></databases>
+<schemabrowser><![CDATA[Przeglądarka schematów]]></schemabrowser>
+<tables><![CDATA[Tabele]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[Przydatne odsyłacze]]></UsefulLinks>
+<about><![CDATA[OAT - informacje]]></about>
+<train><![CDATA[Szkolenia]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[Administrator]]></admin>
+<mach11><![CDATA[Klastry]]></mach11>
+<dashboard><![CDATA[Panel kontrolny]]></dashboard>
+<help><![CDATA[Pomoc]]></help>
+<logout><![CDATA[Wyloguj się]]></logout>
+<taskscheduler><![CDATA[Program planujący zadania]]></taskscheduler>
+<serveradmin><![CDATA[Administrowanie serwerem]]></serveradmin>
+<configuration><![CDATA[Konfiguracja]]></configuration>
+<HowDoI><![CDATA[Pomoc dla zadania OAT]]></HowDoI>
+<readme><![CDATA[Readme]]></readme>
+<releasenotes><![CDATA[Uwagi do wydania]]></releasenotes>
+<onconfigparam><![CDATA[Konfiguracja]]></onconfigparam>
+<privileges><![CDATA[Uprawnienia użytkowników]]></privileges>
+<highavail><![CDATA[Wysoka dostępność]]></highavail>
+<PerformanceHist><![CDATA[Historia wydajności]]></PerformanceHist>
+<SystemValidation><![CDATA[Systemowe sprawdzenie poprawności]]></SystemValidation>
+<OATconfig><![CDATA[Konfiguracja OAT]]></OATconfig>
+<connadmin><![CDATA[Administrator połączeń]]></connadmin>
+<connmgt><![CDATA[Zarządzanie połączeniami]]></connmgt>
+<addgroup><![CDATA[Dodaj grupę]]></addgroup>
+<addconn><![CDATA[Dodaj połączenie]]></addconn>
+<helpadmin><![CDATA[Administrator pomocy]]></helpadmin>
+<helpmgt><![CDATA[Zarządzanie pomocą]]></helpmgt>
+<helpdb><![CDATA[Baza danych pomocy]]></helpdb>
+<addhelp><![CDATA[Dodaj pomoc]]></addhelp>
+<OATlogin><![CDATA[Logowanie do OAT]]></OATlogin>
+<aus><![CDATA[Automatyczna aktualizacja statystyk]]></aus>
+<qbe><![CDATA[Zapytanie wg przykładu]]></qbe>
+<onstat><![CDATA[Program narzędziowy onstat]]></onstat>
+<replication><![CDATA[Replikacja]]></replication>
+<trustedcontext><![CDATA[Kontekst zaufany]]></trustedcontext>
+<security><![CDATA[Bezpieczeństwo]]></security>
+<backup><![CDATA[Kopia zapasowa]]></backup>
+<MemoryMgr><![CDATA[Menedżer pamięci]]></MemoryMgr>
+<iwa><![CDATA[Akcelerator hurtowni]]></iwa>
+</lang>

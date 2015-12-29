@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<schemamgr><![CDATA[스키마 관리자]]></schemamgr>
+<howto_schemamgr><![CDATA[스키마 관리자 도움말]]></howto_schemamgr>
+</lang>

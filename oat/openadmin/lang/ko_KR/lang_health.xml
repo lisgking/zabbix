@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Health Monitor]]></health>
+<alerts><![CDATA[경고]]></alerts>
+<aus><![CDATA[통계 자동 갱신]]></aus>
+<scheduler><![CDATA[작업 스케줄러]]></scheduler>
+<taskdetails><![CDATA[작업 세부사항]]></taskdetails>
+<taskruntimes><![CDATA[작업 런타임]]></taskruntimes>
+<task_run_list><![CDATA[작업 실행 목록]]></task_run_list>
+<num_executions><![CDATA[실행 수]]></num_executions>
+<avg_time><![CDATA[평균 시간(초)]]></avg_time>
+<total_time><![CDATA[총 시간(초)]]></total_time>
+<last_run_time><![CDATA[마지막 런타임]]></last_run_time>
+<last_execution_status><![CDATA[마지막 실행 상태]]></last_execution_status>
+<edittaskparam><![CDATA[작업 매개변수 편집]]></edittaskparam>
+<AddNewTask><![CDATA[새 작업 추가]]></AddNewTask>
+<Save><![CDATA[저장]]></Save>
+<Cancel><![CDATA[취소]]></Cancel>
+<CronTaskList><![CDATA[Cron 작업 목록]]></CronTaskList>
+<EditParam><![CDATA[매개변수 편집]]></EditParam>
+<addtask><![CDATA[작업 추가]]></addtask>
+<deletetask><![CDATA[작업 삭제]]></deletetask>
+<name_field_empty><![CDATA[이름 필드가 비어 있습니다. 이름을 지정하십시오.]]></name_field_empty>
+<name_field_duplicate><![CDATA[데이터베이스의 다른 작업이 동일한 이름을 사용하고 있습니다. 다른 이름을 지정하십시오.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[이름은 문자 또는 "_"로 시작되어야 하고 문자, 숫자 또는 "_"를 포함해야 합니다.]]></invalid_table_name>
+<table_name_duplicate><![CDATA[테이블 이름이 이미 사용 중입니다. 다른 테이블 이름을 지정하십시오.]]></table_name_duplicate>
+<save_failed><![CDATA[저장에 실패함: ]]></save_failed>
+<what_task_type><![CDATA[추가할 작업 유형]]></what_task_type>
+<task><![CDATA[작업]]></task>
+<sensor><![CDATA[센서]]></sensor>
+<next><![CDATA[다음]]></next>
+<back><![CDATA[뒤로]]></back>
+<cancel><![CDATA[취소]]></cancel>
+<finish><![CDATA[완료]]></finish>
+<new_sensor_setup><![CDATA[새 센서 설정]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[작업 매개변수 저장에 실패했습니다.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[새 작업 설정]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[센서 이름 및 그룹 지정]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[작업 이름 및 그룹 지정]]></what_task_name_and_group>
+<sensor_name><![CDATA[센서 이름]]></sensor_name>
+<task_name><![CDATA[작업 이름]]></task_name>
+<sensor_group><![CDATA[센서 그룹]]></sensor_group>
+<task_group><![CDATA[작업 그룹]]></task_group>
+<type_error><![CDATA[새 작업 설정 프로세스에 문제가 있습니다. 취소한 후 새 작업 설정 프로세스를 재시작하십시오.]]></type_error>
+<ph_group_error><![CDATA[PH_GROUP 테이블의 그룹 선택을 검색하는 데 실패했습니다. PH_GROUP 및 SYSADMIN 데이터베이스가 올바로 작동 중인지 확인하십시오.]]></ph_group_error>
+<task_desc><![CDATA[새 작업의 설명을 제공하십시오.]]></task_desc>
+<sensor_desc><![CDATA[새 센서의 설명을 제공하십시오.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[새 센서의 스케줄을 지정하십시오.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[새 작업의 스케줄을 지정하십시오.]]></what_task_schedule>
+<start_time><![CDATA[시작 시간(24시간제)]]></start_time>
+<stop_time><![CDATA[중지 시간(24시간제)]]></stop_time>
+<frequency><![CDATA[빈도]]></frequency>
+<delete_time><![CDATA[데이터 삭제]]></delete_time>
+<what_result_table><![CDATA[센서 데이터 결과를 저장할 새 결과 테이블의 이름을 지정하십시오.]]></what_result_table>
+<result_table_name><![CDATA[결과 테이블 이름]]></result_table_name>
+<what_tk_create><![CDATA[결과 테이블의 컬럼 이름을 입력하여 결과 테이블을 작성하려면 SQL문을 완료하십시오.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[새 센서가 실행할 명령을 지정하십시오.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[새 작업이 실행할 명령을 지정하십시오.]]></what_task_tk_execute>
+<custom_sql><![CDATA[단일 명령문의 SQL문 또는 사용자 정의 함수(UDF)를 입력하십시오.]]></custom_sql>
+<stored_routine><![CDATA[내장 루틴 선택]]></stored_routine>
+<stored_routine_error><![CDATA[내장 루틴 검색에 실패했습니다. 내장 루틴을 사용하려는 경우 SYSPROCEDURES 테이블을 수정하십시오.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[작성하려는 센서의 다음 통계를 확인하십시오. 확인 후 센서를 작성하려면 완료를 클릭하십시오.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[작성하려는 작업의 다음 통계를 확인하십시오. 확인 후 작업을 작성하려면 완료를 클릭하십시오.]]></verify_specs_task>
+<name><![CDATA[이름]]></name>
+<group><![CDATA[그룹]]></group>
+<type><![CDATA[유형]]></type>
+<desc><![CDATA[설명]]></desc>
+<deltask><![CDATA[작업 삭제]]></deltask>
+<result_table_create><![CDATA[결과 테이블 작성 명령문]]></result_table_create>
+<execute_command><![CDATA[실행 명령]]></execute_command>
+<task_name_check_error><![CDATA[작업 이름이 현재 사용 중인지 여부를 검증하는 데 실패했습니다. sysadmin 데이터베이스의 ph_task 테이블을 검사하십시오.]]></task_name_check_error>
+<table_name_check_error><![CDATA[테이블 이름이 현재 사용 중인지 여부를 검증하는 데 실패했습니다. sysadmin 데이터베이스의 systables 테이블을 검사하십시오.]]></table_name_check_error>
+<sensor_check_ok><![CDATA[새 센서가 스케줄되었습니다.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[새 센서가 설정되지 않았습니다. 설정을 다시 실행하십시오.]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[센서는 스케줄에 따라 실행되지만 명령에 약간의 문제가 있습니다.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[다음 오류 코드를 검사하십시오. 명령을 디버그하려면 링크를 클릭하십시오.]]></debug_exec_stmt>
+<debug_command><![CDATA[디버그 명령]]></debug_command>
+<task_check_ok><![CDATA[새 작업이 스케줄되었습니다.]]></task_check_ok>
+<task_check_failed><![CDATA[새 작업이 설정되지 않았습니다. 설정을 다시 실행하십시오.]]></task_check_failed>
+<task_check_bad_exec><![CDATA[작업은 스케줄에 따라 실행되지만 명령에 약간의 문제가 있습니다.]]></task_check_bad_exec>
+<setup_fail><![CDATA[설정에 실패했습니다.]]></setup_fail>
+<setup_success><![CDATA[설정에 성공했습니다.]]></setup_success>
+<setup_success_with_problems><![CDATA[설정이 완료되었지만 문제가 있습니다.]]></setup_success_with_problems>
+<return_code><![CDATA[리턴 코드:]]></return_code>
+<time_error><![CDATA[중지 시간이 시작 시간 이전일 수 없습니다.]]></time_error>
+<freq_error><![CDATA[빈도는 0일, 0시간, 0분, 0초가 될 수 없습니다.]]></freq_error>
+<execute_stmt_empty><![CDATA[실행 명령문이 비어 있으면 안 됩니다.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[작성 명령문이 비어 있으면 안 됩니다.]]></create_stmt_empty>
+<startup_only><![CDATA[서버 시작 시에만 실행]]></startup_only>
+<NoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></NoPermission>
+<NoExecutionStmt><![CDATA[작업 실행 명령문이 비어 있으면 안 됩니다.]]></NoExecutionStmt>
+<NEVER><![CDATA[중지 안함]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[작업 삭제에 실패함]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[결과 테이블 삭제에 실패함]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[작업이 삭제되었습니다.]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[시스템 작업은 삭제할 수 없습니다.]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[연관된 결과 테이블 삭제]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[현재 서버 버전에서는 이 기능을 사용할 수 없습니다.]]></FeatureUnavailable>
+<AlertList><![CDATA[경고 목록]]></AlertList>
+<severity><![CDATA[심각도]]></severity>
+<alerttype><![CDATA[경고 유형]]></alerttype>
+<state><![CDATA[상태]]></state>
+<alertstate><![CDATA[경고 상태]]></alertstate>
+<message><![CDATA[메시지]]></message>
+<grouptoview><![CDATA[보려는 그룹]]></grouptoview>
+<taskdetails><![CDATA[작업 세부사항]]></taskdetails>
+<taskname><![CDATA[작업 이름]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[실행 명령문]]></executionstmt>
+<resulttable><![CDATA[결과 테이블]]></resulttable>
+<starttime><![CDATA[시작 시간]]></starttime>
+<stopttime><![CDATA[중지 시간]]></stopttime>
+<time><![CDATA[시간]]></time>
+<frequency><![CDATA[빈도]]></frequency>
+<datadelete><![CDATA[데이터 삭제]]></datadelete>
+<WeekDay1><![CDATA[월요일]]></WeekDay1>
+<WeekDay2><![CDATA[화요일]]></WeekDay2>
+<WeekDay3><![CDATA[수요일]]></WeekDay3>
+<WeekDay4><![CDATA[목요일]]></WeekDay4>
+<WeekDay5><![CDATA[금요일]]></WeekDay5>
+<WeekDay6><![CDATA[토요일]]></WeekDay6>
+<WeekDay7><![CDATA[일요일]]></WeekDay7>
+<enabletask><![CDATA[작업 사용]]></enabletask>
+<taskparams><![CDATA[작업 매개변수]]></taskparams>
+<paramname><![CDATA[매개변수 이름]]></paramname>
+<description><![CDATA[설명]]></description>
+<value><![CDATA[값]]></value>
+<valuetype><![CDATA[값 유형]]></valuetype>
+<edittaskparam><![CDATA[작업 매개변수 편집]]></edittaskparam>
+<view><![CDATA[보기]]></view>
+<NEW><![CDATA[새로 만들기]]></NEW>
+<ADDRESSED><![CDATA[해결됨]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[알림]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[무시됨]]></IGNORED>
+<INFO><![CDATA[정보]]></INFO>
+<WARNING><![CDATA[경고]]></WARNING>
+<ERROR><![CDATA[오류]]></ERROR>
+<COLORGREEN><![CDATA[녹색]]></COLORGREEN>
+<COLORRED><![CDATA[빨간색]]></COLORRED>
+<COLORYELLOW><![CDATA[노란색]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[작업 스케줄]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[월]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[화]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[수]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[목]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[금]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[토]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[일]]></WeekDay7Letter>
+<Enabled><![CDATA[사용]]></Enabled>
+<Disabled><![CDATA[사용 안함]]></Disabled>
+<runfrequency><![CDATA[실행 빈도]]></runfrequency>
+<execution><![CDATA[실행]]></execution>
+<taskdetailssaved><![CDATA[작업 세부사항이 저장되었습니다.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[작업 매개변수가 저장되었습니다.]]></TaskParamSaved>
+<recheck><![CDATA[재확인]]></recheck>
+<ignore><![CDATA[무시]]></ignore>
+<correct><![CDATA[정정]]></correct>
+<Days><![CDATA[일]]></Days>
+<Hours><![CDATA[시간]]></Hours>
+<Minutes><![CDATA[분]]></Minutes>
+<Seconds><![CDATA[초]]></Seconds>
+<ALARM><![CDATA[경보 #{0}]]></ALARM>
+<Warning><![CDATA[경고]]></Warning>
+<Error><![CDATA[오류]]></Error>
+<Info><![CDATA[정보]]></Info>
+<green><![CDATA[녹색]]></green>
+<yellow><![CDATA[노란색]]></yellow>
+<red><![CDATA[빨간색]]></red>
+<TaskNotFound><![CDATA[작업을 찾을 수 없습니다.]]></TaskNotFound>
+</lang>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[Установка OpenAdmin Tool]]></install_page_title>
+<next><![CDATA[Далее]]></next>
+<save><![CDATA[Сохранить]]></save>
+<finish><![CDATA[Готово]]></finish>
+<warning><![CDATA[Предупреждение]]></warning>
+<language><![CDATA[Язык:]]></language>
+<error_occurred><![CDATA[Произошла ошибка]]></error_occurred>
+<error_message><![CDATA[Сообщение об ошибке:]]></error_message>
+
+<welcome><![CDATA[Добро пожаловать]]></welcome>
+<welcome_message><![CDATA[Эта программа установки устанавливает OpenAdmin Tool Community Edition {0}.]]></welcome_message>
+<prerequisite_message><![CDATA[Информацию о предварительных условиях установки OpenAdmin Tool смотрите в файле {0}.]]></prerequisite_message>
+<readme><![CDATA[readme]]></readme>
+<license_message><![CDATA[Для установки и использования OpenAdmin Tool Community Edition надо принять условия следующего лицензионного соглашения.]]></license_message>
+<license_agreement><![CDATA[Лицензионное соглашение]]></license_agreement>
+<i_accept><![CDATA[Я принимаю условия этого лицензионного соглашения.]]></i_accept>
+<error_accept_license_first><![CDATA[Для продолжения установки надо принять условия лицензионного соглашения.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[Установка остановлена из-за наличия файла install.lock в каталоге установки. Удалите этот файл, чтобы продолжить установку.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Требуемые модули PHP]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[Для запуска OpenAdmin Tool (OAT) требуются следующие модули PHP.]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[Значок X означает, что данный модуль не найден. Проверьте свою установку PHP и установите недостающие модули.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Рекомендованные модули PHP]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[Для OAT рекомендуются следующие модули PHP.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Важно: Без этих модулей некоторый функции OAT будут ограничены, хотя сами модули не обязательны для установки и использования OAT.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[Не установлены некоторые требуемые модули PHP.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Отсутствующие модули:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Не установлены некоторые рекомендуемые модули PHP. Без этих модулей некоторый функции OAT будут ограничены, хотя сами модули не обязательны для установки и использования OAT.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Отсутствующие рекомендованные модули:]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[Конфигурация OAT]]></oat_config>
+<parameter><![CDATA[Параметр]]></parameter>
+<description><![CDATA[Описание]]></description>
+<value><![CDATA[Значение]]></value>
+<LANG><![CDATA[Язык по умолчанию]]></LANG>
+<LANG_desc><![CDATA[Язык по умолчанию для страниц OAT.]]></LANG_desc>
+<BASEURL><![CDATA[Базовый URL-адрес]]></BASEURL>
+<BASEURL_desc><![CDATA[URL, где установлен OAT, в формате: http://имя_сервера:порт/положение.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[Каталог установки]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[Каталог для установки OAT.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Каталог базы данных соединений]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[Каталог для базы данных соединений OAT. Задайте защищенный каталог вне каталога документов для Web-сервера.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[Положение базы данных соединений ({0}) находится в каталоге документов для Web-сервера. Такое положение может подвергнуть риску безопасность OAT. По причинам безопасности измените положение базы данных соединений. Чтобы игнорировать это предупреждение, снова нажмите кнопку Сохранить.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[Домашняя страница]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Домашняя страница для OAT]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Добро пожаловать]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Центр работоспособности > Сводная панель > Сводка группы]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Центр работоспособности > Сводная панель > Производительность сервера]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Пользовательский]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Интервал обновления]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[Промежуток времени (в секундах) между изменениями состояния сервера. Состояние сервера показано на странице Центр работоспособности > Сводная панель > Сводка группы.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Строк на странице]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[Число строк на странице по умолчанию для вывода данных в табличном формате.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[Защита набора инструментов SQL]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Требовать ввод учетных данных регистрации для работы с набором инструментов SQL.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Время соединения с Informix]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[Срок (в секундах), в течение которого OAT пытается соединиться с сервером баз данных, прежде чем возвратить сообщение об ошибке (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Число повторных попыток соединения с Informix]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Сколько раз OAT пытается соединиться с сервером баз данных за время соединения с Informix (INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[Это обязательное поле: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[Заданный для установки каталог ({0}) не существует. Задайте допустимый каталог установки.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[Задан недопустимый каталог для базы данных соединений ({0}). Проверьте, существует ли этот каталог и можно ли выполнять запись в него.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[Недоступен каталог {0}. Проверьте, существует ли этот каталог и можно ли выполнять запись в него.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[Файл {0} недоступен. Проверьте, существует ли этот файл и можно ли выполнять запись в него.]]></file_not_accessible>
+
+<conndb><![CDATA[База данных соединений]]></conndb>
+<conndb_desc><![CDATA[База данных соединений содержит информацию о соединениях, предоставляемую вами для серверов, с которыми может соединиться OAT.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[Для создания базы данных соединений нажмите кнопку Далее.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[Для обновления базы данных соединений нажмите кнопку Далее.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[Обработка базы данных соединений завершилась успешно.]]></conndb_complete>
+<conndb_not_set><![CDATA[В файле конфигурации conf/config.php не задан параметр для каталога базы данных соединений (CONNDBDIR).  Проверьте этот файл и снова запустите установку.]]></conndb_not_set>
+<conndb_processing><![CDATA[Обрабатывается файл {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[Конфигурирование базы данных соединений завершилось неудачно.  Не удалось создать таблицу {0}. Удалите базу данных соединений и запустите установку заново.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[Обновление базы данных соединений завершилось неудачно.  В файле {0}, раздел {1} произошла ошибка. Удалите базу данных соединений и запустите установку заново. Вся сохраненная информация о соединениях будет потеряна.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[Обновление информации о версии в базе данных соединений завершилось неудачно. Удалите базу данных соединений и запустите установку заново.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[Обновление информации о версии примера подключаемого модуля IBM в базе данных соединений завершилось неудачно. Удалите базу данных соединений и запустите установку заново.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Подключаемые модули для установки]]></choose_plugins>
+<zip_extension_required><![CDATA[Для установки подключаемых модулей требуется модуль zip PHP.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[Подключаемые модули не были установлены. Программа установки не может выполнить запись во временный каталог OAT (tmp). Проверьте разрешения для этого каталога. Затем используйте Менеджер подключаемых модулей в OAT, чтобы установить подключаемые модули.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[Нет подключаемых модулей для установки.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Подключаемый модуль]]></plugin_name>
+<plugin_author><![CDATA[Автор]]></plugin_author>
+<plugin_version><![CDATA[Версия]]></plugin_version>
+<plugin_server_version><![CDATA[Версия Informix]]></plugin_server_version>
+<plugin_license><![CDATA[Лицензия]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Установить?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Вы принимаете условия лицензионного соглашения для подключаемых модулей?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Результаты установки подключаемых модулей]]></plugin_install>
+<no_plugins_selected><![CDATA[Не выбраны подключаемые модули для установки.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[Подключаемый модуль {0} успешно установлен.]]></plugin_install_complete>
+
+<install_complete><![CDATA[Установка OpenAdmin Tool завершена]]></install_complete>
+<install_complete_details><![CDATA[OpenAdmin Tool успешно установлен.  Чтобы закрыть эту страницу и перейти на страницу регистрации OAT, нажмите кнопку Готово.]]></install_complete_details>
+
+</lang>

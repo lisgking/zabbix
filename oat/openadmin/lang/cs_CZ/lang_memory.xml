@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_memory">
+<MemoryMgr><![CDATA[Správce paměti]]></MemoryMgr>
+<MemoryFeatureUnavailable><![CDATA[Správce paměti vyžaduje produkt Informix 11.50.xC1 nebo novější.]]></MemoryFeatureUnavailable>
+</lang>

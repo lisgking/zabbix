@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Csonkok]]></Chunks>
+<Chunk><![CDATA[Csonk]]></Chunk>
+<MirrorChunk><![CDATA[Tükörcsonk]]></MirrorChunk>
+<ChunkIO><![CDATA[Csonk I/O]]></ChunkIO>
+<ChunkTable><![CDATA[Csonktábla listázása]]></ChunkTable>
+<MirrorTable><![CDATA[Tükörcsonk-tábla listázása]]></MirrorTable>
+<ChunkNum><![CDATA[Csonkszám]]></ChunkNum>
+<SpaceName><![CDATA[Területnév]]></SpaceName>
+<PageSize><![CDATA[Lapméret]]></PageSize>
+<Offset><![CDATA[Eltolás]]></Offset>
+<Size><![CDATA[Méret]]></Size>
+<Free><![CDATA[Szabad]]></Free>
+<Used><![CDATA[Felhasznált %]]></Used>
+<Status><![CDATA[Állapot]]></Status>
+<Path><![CDATA[Útvonal]]></Path>
+<ChunkPath><![CDATA[Csonkútvonal]]></ChunkPath>
+<Reads><![CDATA[Olvasások]]></Reads>
+<Writes><![CDATA[Írások]]></Writes>
+<TotalIO><![CDATA[Összes olvasás és írás]]></TotalIO>
+<IOTableTitle><![CDATA[I/O csonkonként]]></IOTableTitle>
+<IOGraphTitle><![CDATA[Első 20 csonk I/O műveletei]]></IOGraphTitle>
+<ONLINE><![CDATA[ONLINE]]></ONLINE>
+<OFFLINE><![CDATA[OFFLINE]]></OFFLINE>
+<RECOVERING><![CDATA[HELYREÁLLÍTÁS]]></RECOVERING>
+</lang>

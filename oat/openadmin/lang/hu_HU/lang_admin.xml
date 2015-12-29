@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[Adminisztrátor]]></admin>
+<login><![CDATA[Bejelentkezés]]></login>
+<AdminHome><![CDATA[Adminisztrátor saját könyvtára]]></AdminHome>
+<AdminWelcome><![CDATA[Adminisztrátor Üdvözlet]]></AdminWelcome>
+<ConnAdmin><![CDATA[Kapcsolat adminisztrátor]]></ConnAdmin>
+<ConnList><![CDATA[Kapcsolatlista]]></ConnList>
+<OATconfig><![CDATA[OAT konfiguráció]]></OATconfig>
+<defaultlang><![CDATA[Alapértelmezett nyelv]]></defaultlang>
+<baseurl><![CDATA[Alap URL]]></baseurl>
+<installdir><![CDATA[Telepítési könyvtár]]></installdir>
+<conndb_loc><![CDATA[Kapcsolatok adatbázis könyvtára]]></conndb_loc>
+<rowsperpage><![CDATA[Sorok száma oldalanként]]></rowsperpage>
+<pingerinterval><![CDATA[Frissítési időköz]]></pingerinterval>
+<IDSProtocol><![CDATA[Informix protokoll]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[Használandó protokoll]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[Kijelzőpult-kezelő]]></DashboardMgr>
+<ShowConnections><![CDATA[Kapcsolatok megjelenítése]]></ShowConnections>
+<AddConn><![CDATA[Kapcsolat hozzáadása]]></AddConn>
+<DeleteConn><![CDATA[Kapcsolat törlése]]></DeleteConn>
+<EditConn><![CDATA[Kapcsolat szerkesztése]]></EditConn>
+<EditConn_><![CDATA[Kapcsolat szerkesztése: {0}]]></EditConn_>
+<AddGroup><![CDATA[Csoport hozzáadása]]></AddGroup>
+<EditGroup><![CDATA[Csoport szerkesztése]]></EditGroup>
+<EditGroup_><![CDATA[{0} csoport szerkesztése]]></EditGroup_>
+<DeleteGroup><![CDATA[Csoport törlése]]></DeleteGroup>
+<HelpAdmin><![CDATA[Súgó adminisztrátor]]></HelpAdmin>
+<AddHelp><![CDATA[Súgóelem hozzáadása]]></AddHelp>
+<DeleteHelp><![CDATA[Súgóelem törlése]]></DeleteHelp>
+<EditHelp><![CDATA[Súgóelem szerkesztése]]></EditHelp>
+<group><![CDATA[OAT csoport]]></group>
+<groupname><![CDATA[Csoportnév]]></groupname>
+<groupname_sc><![CDATA[Csoportnév]]></groupname_sc>
+<username><![CDATA[Felhasználónév]]></username>
+<password><![CDATA[Jelszó]]></password>
+<hostname><![CDATA[Hosztnév]]></hostname>
+<informixserver><![CDATA[Informix kiszolgáló]]></informixserver>
+<port><![CDATA[Port]]></port>
+<longitude><![CDATA[Földrajzi hosszúság]]></longitude>
+<latitude><![CDATA[Földrajzi szélesség]]></latitude>
+<idsdport><![CDATA[idsd port]]></idsdport>
+<envvars><![CDATA[Környezeti változók]]></envvars>
+<varname><![CDATA[Változó neve]]></varname>
+<param><![CDATA[Paraméter]]></param>
+<value><![CDATA[Érték]]></value>
+<readonly><![CDATA[Csak olvasás]]></readonly>
+<readonly_sc><![CDATA[Csak olvasható]]></readonly_sc>
+<collapse><![CDATA[Összehúzás]]></collapse>
+<viewmodify><![CDATA[Megjelenítés&#47Módosítás]]></viewmodify>
+<currgroups><![CDATA[Jelenlegi csoportok]]></currgroups>
+<numconn><![CDATA[Kapcsolatok]]></numconn>
+<deleteselected><![CDATA[Kijelölt törlése]]></deleteselected>
+<act><![CDATA[Teendő]]></act>
+<do><![CDATA[Do]]></do>
+<title><![CDATA[Cím]]></title>
+<description><![CDATA[Leírás]]></description>
+<add><![CDATA[Hozzáadás]]></add>
+<delete><![CDATA[Törlés]]></delete>
+<save><![CDATA[Mentés]]></save>
+<cancel><![CDATA[Mégse]]></cancel>
+<testconnection><![CDATA[Kapcsolat tesztelése]]></testconnection>
+<insecureCONNDBDIR><![CDATA[A kapcsolat adatbázis megadott helye a webkiszolgáló dokumentumgyökere alatt helyezkedik el. Ez az OAT alkalmazást biztonsági kockázatnak teheti ki. Kattintson az OK gombra, ha továbbra is folytatni kívánja.]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[Bedolgozókezelő]]></pluginmgr>
+<installplugin><![CDATA[Bedolgozó telepítése]]></installplugin>
+<menumgr><![CDATA[Menükezelő]]></menumgr>
+<secureSQL><![CDATA[SQL eszközkészlet biztonsága]]></secureSQL>
+<informixcontime><![CDATA[Informix csatlakozási idő]]></informixcontime>
+<informixconretry><![CDATA[Informix csatlakozási újrapróbálkozás]]></informixconretry>
+<helpDB><![CDATA[Súgó adatbázis]]></helpDB>
+<selectHelpDB><![CDATA[Súgó adatbázis kiválasztása]]></selectHelpDB>
+<import><![CDATA[Csatlakozási információk importálása XML fájlból]]></import>
+<export><![CDATA[Csatlakozási információk exportálása XML fájlba]]></export>
+<importbutton><![CDATA[Importálás XML fájlból]]></importbutton>
+<exportbutton><![CDATA[Exportálás XML fájlba]]></exportbutton>
+<importcheckbox><![CDATA[Összes meglévő kapcsolat információ eltávolítása az XML fájl importálása előtt.]]></importcheckbox>
+<exportcheckbox><![CDATA[Érzékeny jelszó információk hozzáadása az exportált XML fájlhoz.]]></exportcheckbox>
+<nofile><![CDATA[Nincs kijelölt fájl.]]></nofile>
+<overwriteConfirm><![CDATA[Minden párhuzamosan létező csatlakozási információ törlésre kerül. Biztos benne?]]></overwriteConfirm>
+<securityWarning><![CDATA[Az exportált XML fájl érzékeny jelszó információkat (például az informix jelszót) tartalmaz. Gondoskodjék a fájl biztonságos helyre mentéséről.]]></securityWarning>
+<LANG><![CDATA[Az OAT oldalak alapértelmezett nyelve.]]></LANG>
+<CONNDBDIR><![CDATA[Az OAT kapcsolatok címtár könyvtára. Adjon meg olyan biztonságos könyvtárat, amely nem a webkiszolgáló dokumentum könyvtára alatt található.]]></CONNDBDIR>
+<BASEURL><![CDATA[Az OAT telepítés URL címe a következő formátumban: http://kiszolgálónév:port/hely.]]></BASEURL>
+<HOMEDIR><![CDATA[Az OAT telepítés könyvtára.]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[Az oldalanként megjelenítendő sorok száma, amikor az adatok táblázatos formátumban jelennek meg.]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[A kiszolgáló állapotfrissítései között eltelő idő hossza (másodpercben). A kiszolgáló állapot az Egészségközpont > Kijelzőpult > Csoport összegzése oldalon jelenik meg.]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[Az OAT kezdőlapként használandó oldal.]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[Melyik a használandó protokoll (pl. onsoctcp)]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[Bejelentkezési azonosító megkövetelése az SQL eszközkészlet használatakor.]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[A Sémaböngésző, SQL-szerkesztő és Lekérdezés példa alapján oldalak jelszavas védelme. A felhasználók tábla adatokat tekinthetnek meg és módosíthatnak ezeken az oldalakon.]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[Az az idő (másodpercben), ameddig az megkísérel csatlakozni az adatbázis-kiszolgálóhoz, mielőtt hibát adna vissza (INFORMIXCONTIME).]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[Azon alkalmak száma, ahányszor az OAT megkísérel csatlakozni az adatbázis-kiszolgálóhoz az Informix csatlakozási idő alatt (INFORMIXCONRETRY).]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[Kezdőlap]]></HomePage>
+<home_page_option_welcome><![CDATA[Üdvözlet]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Egészségközpont > Kijelzőpult > Csoport összegzése]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Egészségközpont > Kijelzőpult > Kiszolgáló teljesítménye]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Egyéni]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[A konfiguráció mentése meghiúsult, mert a fájl nem írható]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[Konfiguráció lementve]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[Online: AKTUÁLIS]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Informix kiszolgáló megadása kötelező]]></RequiresInformixServer>
+<RequiresHost><![CDATA[Hoszt megadása kötelező]]></RequiresHost>
+<RequiresPort><![CDATA[Port megadása kötelező]]></RequiresPort>
+<RequiresUser><![CDATA[Felhasználónév megadása szükséges]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[Új kapcsolat hozzáadása a következő hibakóddal meghiúsult:]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[Új kapcsolat hozzáadása az idsd-hez a következő hibakóddal meghiúsult:]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[A beszúrás a conn_envvars változóba a következő hibakóddal meghiúsult:]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[A kapcsolat frissítése a következő hibakóddal meghiúsult:]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[Az idsd cseréje a következő hibakóddal meghiúsult:]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[A törlés a conn_envvars változóból a következő hibakóddal meghiúsult:]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[Frissítés: a beszúrás a conn_envvars változóba a következő hibakóddal meghiúsult:]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[Kapcsolat szerkesztése]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[Hiba történt - csoportszám megadása kötelező]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[Csoportnév megadása kötelező]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[A csoport szerkesztése a következő hibakóddal meghiúsult:]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[Csoport szerkesztése]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[Új csoport hozzáadása a következő hibakóddal meghiúsult:]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[Csoport hozzáadása]]></AddingGroup>
+<AddingConn><![CDATA[Kapcsolat hozzáadása]]></AddingConn>
+<ErrorDeletingConn><![CDATA[Hiba: a dodelconn függvény helytelen argumentumokkal került meghívásra]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[A kapcsolat(ok) törlése a következő hibakóddal meghiúsult:]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[A kapcsolat(ok) törlése befejeződött]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[A csoport(ok) törlése a következő hibakóddal meghiúsult:]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[A csoport(ok) törlése befejeződött]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA['teendő' megadása kötelező]]></RequiresAct>
+<RequiresDescription><![CDATA[Leírás megadása kötelező]]></RequiresDescription>
+<AddingHelpFor><![CDATA[Súgó hozzáadása a következőhöz:]]></AddingHelpFor>
+<DeletingHelp><![CDATA[Súgó törlése]]></DeletingHelp>
+<EditingHelpFor><![CDATA[A következő súgójának szerkesztése:]]></EditingHelpFor>
+<NoHelpDB><![CDATA[Ilyen azonosítójú súgó adatbázis nincs: helpdb_id =]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[Probléma merült fel a következő paranccsal: idsadminHelp db -]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[Hiba történt a súgó adatbázis megnyitásakor]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[A csoport importálása nem sikerült]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[A csoport importálása nem sikerült]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[Bedolgozó telepítésének indítása...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[A csatlakozás meghiúsult...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[Hiba a connections.db betöltésekor]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[Valóban törölni kívánja ezeket a kapcsolatokat?]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[Biztosan törölni kívánja? A csoport törlése az adott csoporthoz meghatározott összes kapcsolatot is törli!]]></SureToDeleteGroup>
+<AskDelete><![CDATA[Biztosan törölni kívánja?]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[Tesztelés ... kérem várjon]]></TestingConnection>
+<InvalidEnvVar><![CDATA[Hiba: A környezeti változó nevét és értékét egyaránt meg kell adnia.]]></InvalidEnvVar>
+<x_Plugin><![CDATA[{0} bedolgozó]]></x_Plugin>
+</lang>

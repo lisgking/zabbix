@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[Accesso SQL ToolBox]]></switchuser>
+<loginprompt><![CDATA[Immetti nome utente e password per utilizzare SQL ToolBox]]></loginprompt>
+<empty><![CDATA[Nome utente e password non possono essere lasciati vuoti]]></empty>
+<error><![CDATA[Si è verificato un errore]]></error>
+<username><![CDATA[Nome utente]]></username>
+<password><![CDATA[Password]]></password>
+<login><![CDATA[Accesso]]></login>
+<SwitchingUser><![CDATA[Cambio di utente]]></SwitchingUser>
+</lang>

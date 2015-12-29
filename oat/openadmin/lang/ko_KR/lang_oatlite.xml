@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[데이터베이스 서버에 연결할 수 없음]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[서버가 오프라인임]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[OAT에는 Informix 버전 11.10 이상이 필요합니다. ]]></ServerVersionLessThan11>
+<Standard><![CDATA[표준]]></Standard>
+<Primary><![CDATA[기본]]></Primary>
+<Secondary><![CDATA[보조]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[예]]></yes>
+<no><![CDATA[아니오]]></no>
+<partial><![CDATA[부분]]></partial>
+</lang>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[綱目管理程式]]></schemamgr>
+<FragmentedTable><![CDATA[片段式表格]]></FragmentedTable>
+<PseudoTable><![CDATA[虛擬表格]]></PseudoTable>
+<NotApplicable><![CDATA[不適用]]></NotApplicable>
+<check_admin_log><![CDATA[如需進一步資訊，請檢查指令歷程或線上日誌。]]></check_admin_log>
+<running><![CDATA[{0} 執行中]]></running>
+<interval_frag_strategy><![CDATA[片段索引鍵直欄：{0}。間隔：{1}。儲存於：{2}。]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[捲動視窗選項：]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[將表格限制為 {0} 個片段]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[將表格大小限制為 {0}]]></rolling_window_limit_by_size>
+<detach><![CDATA[分離]]></detach>
+<discard><![CDATA[捨棄]]></discard>
+<x_years><![CDATA[{0} 年]]></x_years>
+<x_months><![CDATA[{0} 月]]></x_months>
+<x_days><![CDATA[{0} 天]]></x_days>
+</lang>

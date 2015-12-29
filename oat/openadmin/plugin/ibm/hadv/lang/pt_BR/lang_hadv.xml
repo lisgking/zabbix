@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Incluir]]></add>
+<alarms><![CDATA[Alarmes]]></alarms>
+<alarm_check><![CDATA[Verificação do Alarme]]></alarm_check>
+<alarm_setup><![CDATA[Configuração do Alarme]]></alarm_setup>
+<alarm_mod><![CDATA[Modificar Alarmes]]></alarm_mod>
+<alarm_msg><![CDATA[Especificar as condições de configuração de um alarme.]]></alarm_msg>
+<alarm_name><![CDATA[Nome do alarme:]]></alarm_name>
+<Always><![CDATA[Sempre]]></Always>
+<AnyAlarm><![CDATA[Qualquer Alarme]]></AnyAlarm>
+<Anyalarm><![CDATA[Qualquer alarme]]></Anyalarm>
+<all><![CDATA[Todos]]></all>
+<cancel><![CDATA[Cancelar]]></cancel>
+<Config><![CDATA[Configuração]]></Config>
+<Configuration><![CDATA[Configuração]]></Configuration>
+<Currentprofile><![CDATA[Perfil atual]]></Currentprofile>
+<CurrentProfile><![CDATA[Perfil Atual]]></CurrentProfile>
+<del_def_na><![CDATA[Não é possível excluir o perfil padrão.]]></del_def_na>
+<deleted_prof><![CDATA[O perfil foi excluído.]]></deleted_prof>
+<delete><![CDATA[Excluir]]></delete>
+<desc><![CDATA[Nome do Alarme]]></desc>
+<emailprog><![CDATA[Configuração do Programa de E-mail]]></emailprog>
+<empty_prof_add><![CDATA[O nome do perfil não pode ficar vazio.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Escolha um perfil na lista.]]></empty_prof_load>
+<enable><![CDATA[Ativar]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Exceções]]></exceptions>
+<exc_intro><![CDATA[Este alarme permite exceções.]]></exc_intro>
+<exc_example><![CDATA[Exemplo: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[De]]></from>
+<Category><![CDATA[Categoria]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Executar o Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Informações]]></info>
+<ldesc><![CDATA[Descrição]]></ldesc>
+<description><![CDATA[Descrição:]]></description>
+<load><![CDATA[Carregar]]></load>
+<modify><![CDATA[Modificar]]></modify>
+<modifysched><![CDATA[Modificar Planejamento]]></modifysched>
+<modify_threshold><![CDATA[Modificar Limites]]></modify_threshold>
+<name><![CDATA[Nome]]></name>
+<noauth><![CDATA[Você não está autorizado a acessar esta página.]]></noauth>
+<noalarms><![CDATA[Não ocorreu nenhum alarme.]]></noalarms>
+<notification><![CDATA[Notificação]]></notification>
+<OS><![CDATA[S.O.]]></OS>
+<Perf><![CDATA[Desempenho]]></Perf>
+<profile><![CDATA[Perfil]]></profile>
+<profmanagement><![CDATA[Gerenciamento de Perfil]]></profmanagement>
+<profmsg><![CDATA[Incluir, carregar ou excluir perfis.]]></profmsg>
+<RedAlarm><![CDATA[Alarme Vermelho]]></RedAlarm>
+<Redalarm_><![CDATA[Alarme vermelho:]]></Redalarm_>
+<Redalarm><![CDATA[Alarme vermelho]]></Redalarm>
+<Redalarmthreshold><![CDATA[Limite do alarme vermelho]]></Redalarmthreshold>
+<send><![CDATA[Enviar notificação por e-mail]]></send>
+<save><![CDATA[Salvar]]></save>
+<save_failed><![CDATA[Falha ao salvar: ]]></save_failed>
+<saved_alarms><![CDATA[As mudanças nas opções de alarme foram salvas.]]></saved_alarms>
+<saved_schedule><![CDATA[As mudanças nas opções de notificação foram salvas.]]></saved_schedule>
+<saved_email><![CDATA[As mudanças no programa de e-mail foram salvas.]]></saved_email>
+<schedandnot><![CDATA[Planejamento e Notificação]]></schedandnot>
+<schedmsg><![CDATA[Os perfis podem ser planejados para execução em intervalos especificados. Os resultados são enviados por e-mail.]]></schedmsg>
+<schedule><![CDATA[Planejamento]]></schedule>
+<show><![CDATA[Mostrar]]></show>
+<Storage><![CDATA[Armazenamento]]></Storage>
+<to><![CDATA[Para]]></to>
+<thresholds><![CDATA[Limites]]></thresholds>
+<threshold_msg><![CDATA[Consulte a descrição do alarme para obter uma explicação sobre o uso dos valores de limite usados.]]></threshold_msg>
+<when><![CDATA[Quando]]></when>
+<Yellowalarmthreshold><![CDATA[Limite do alarme amarelo]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Alarme amarelo:]]></Yelalarm_>
+<YelAlarm><![CDATA[Alarme Amarelo]]></YelAlarm>
+</lang>

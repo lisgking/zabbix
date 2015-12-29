@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[홈]]></home>
+<expand><![CDATA[확장
+]]></expand>
+<collapse><![CDATA[접기]]></collapse>
+<logs><![CDATA[로그]]></logs>
+<alertsummary><![CDATA[경고 요약]]></alertsummary>
+<alerts><![CDATA[경고]]></alerts>
+<admincommands><![CDATA[관리 명령]]></admincommands>
+<onlinelog><![CDATA[온라인 메시지]]></onlinelog>
+<baractlog><![CDATA[ON-Bar 활동]]></baractlog>
+<healthcenter><![CDATA[Health Center]]></healthcenter>
+<details><![CDATA[세부사항]]></details>
+<taskdetails><![CDATA[작업 세부사항]]></taskdetails>
+<runtimes><![CDATA[작업 런타임]]></runtimes>
+<scheduler><![CDATA[스케줄러]]></scheduler>
+<space><![CDATA[영역 관리]]></space>
+<VP><![CDATA[가상 프로세서]]></VP>
+<dbspaces><![CDATA[DBSPACE]]></dbspaces>
+<RecoveryLogs><![CDATA[복구 로그]]></RecoveryLogs>
+<storage><![CDATA[스토리지]]></storage>
+<chunks><![CDATA[청크]]></chunks>
+<reservedspace><![CDATA[예약된 영역]]></reservedspace>
+<performance><![CDATA[성능 분석]]></performance>
+<sql><![CDATA[SQL 편집기]]></sql>
+<sqlexplorer><![CDATA[SQL 탐색기]]></sqlexplorer>
+<io><![CDATA[입출력]]></io>
+<Reports><![CDATA[시스템 보고서]]></Reports>
+<sessionexplorer><![CDATA[세션 탐색기]]></sessionexplorer>
+<uReports><![CDATA[사용자 보고서]]></uReports>
+<sqltoolbox><![CDATA[SQL 도구 상자]]></sqltoolbox>
+<databases><![CDATA[데이터베이스]]></databases>
+<schemabrowser><![CDATA[스키마 브라우저]]></schemabrowser>
+<tables><![CDATA[테이블]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[유용한 링크]]></UsefulLinks>
+<about><![CDATA[OAT 정보]]></about>
+<train><![CDATA[교육]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[관리]]></admin>
+<mach11><![CDATA[클러스터]]></mach11>
+<dashboard><![CDATA[대시보드]]></dashboard>
+<help><![CDATA[도움말]]></help>
+<logout><![CDATA[로그아웃]]></logout>
+<taskscheduler><![CDATA[작업 스케줄러]]></taskscheduler>
+<serveradmin><![CDATA[서버 관리]]></serveradmin>
+<configuration><![CDATA[구성]]></configuration>
+<HowDoI><![CDATA[OAT 작업 도움말]]></HowDoI>
+<readme><![CDATA[Readme]]></readme>
+<releasenotes><![CDATA[릴리스 정보]]></releasenotes>
+<onconfigparam><![CDATA[구성]]></onconfigparam>
+<privileges><![CDATA[사용자 권한]]></privileges>
+<highavail><![CDATA[고가용성]]></highavail>
+<PerformanceHist><![CDATA[성능 히스토리]]></PerformanceHist>
+<SystemValidation><![CDATA[시스템 유효성 검증]]></SystemValidation>
+<OATconfig><![CDATA[OAT 구성]]></OATconfig>
+<connadmin><![CDATA[연결 관리]]></connadmin>
+<connmgt><![CDATA[연결 관리]]></connmgt>
+<addgroup><![CDATA[그룹 추가]]></addgroup>
+<addconn><![CDATA[연결 추가]]></addconn>
+<helpadmin><![CDATA[도움말 관리]]></helpadmin>
+<helpmgt><![CDATA[도움말 관리]]></helpmgt>
+<helpdb><![CDATA[도움말 데이터베이스]]></helpdb>
+<addhelp><![CDATA[도움말 추가]]></addhelp>
+<OATlogin><![CDATA[OAT 로그인]]></OATlogin>
+<aus><![CDATA[통계 자동 갱신]]></aus>
+<qbe><![CDATA[예제별 쿼리]]></qbe>
+<onstat><![CDATA[onstat 유틸리티]]></onstat>
+<replication><![CDATA[복제]]></replication>
+<trustedcontext><![CDATA[신뢰 컨텍스트]]></trustedcontext>
+<security><![CDATA[보안]]></security>
+<backup><![CDATA[백업]]></backup>
+<MemoryMgr><![CDATA[메모리 관리자]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

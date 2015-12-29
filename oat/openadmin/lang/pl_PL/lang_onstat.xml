@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[Informacje onstat]]></mainTitle>
+<SystemReports><![CDATA[Raporty systemowe]]></SystemReports>
+<Daterange><![CDATA[Wybierz zakres dat:]]></Daterange>
+<from><![CDATA[Data początkowa:]]></from>
+<to><![CDATA[Data końcowa:]]></to>
+<Month1><![CDATA[Sty]]></Month1>
+<Month2><![CDATA[Lut]]></Month2>
+<Month3><![CDATA[Mar]]></Month3>
+<Month4><![CDATA[Kwi]]></Month4>
+<Month5><![CDATA[Maj]]></Month5>
+<Month6><![CDATA[Cze]]></Month6>
+<Month7><![CDATA[Lip]]></Month7>
+<Month8><![CDATA[Sie]]></Month8>
+<Month9><![CDATA[Wrz]]></Month9>
+<Month10><![CDATA[Paź]]></Month10>
+<Month11><![CDATA[Lis]]></Month11>
+<Month12><![CDATA[Gru]]></Month12>
+<mCurrent><![CDATA[Raporty bieżące]]></mCurrent>
+<mHistorical><![CDATA[Raporty historyczne]]></mHistorical>
+<HeatMaps><![CDATA[Wykresy]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[Do wyświetlenia wykresów program OAT wymaga produktu Informix 11.70.xC4.]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[Użytkownicy z uprawnieniami tylko do odczytu nie mają uprawnień do wykonania tej czynności. Użytkownik jest zalogowany jako użytkownik z uprawnieniami tylko do odczytu.]]></nopermission>
+<NetworkUsage><![CDATA[Raport o wykorzystaniu sieci]]></NetworkUsage>
+<MemoryPools><![CDATA[Raport o pulach pamięci]]></MemoryPools>
+<MemoryUsage><![CDATA[Raport o wykorzystaniu pamięci serwera]]></MemoryUsage>
+<SQLCache><![CDATA[Raport o pamięci podręcznej SQL]]></SQLCache>
+<Sessions><![CDATA[Raport o sesji]]></Sessions>
+<VPReport><![CDATA[Raport o procesorach wirtualnych]]></VPReport>
+<SysBackups><![CDATA[Raport o kopii zapasowej systemu]]></SysBackups>
+<TableProf><![CDATA[Raport o profilu tabel]]></TableProf>
+<ResourceUsage><![CDATA[Informacje o zasobach komputera]]></ResourceUsage>
+<CompInfo><![CDATA[Informacje o systemie operacyjnym]]></CompInfo>
+<PPID><![CDATA[PID]]></PPID>
+<Class><![CDATA[Klasa]]></Class>
+<ReadyQ><![CDATA[Długość gotowej kolejki]]></ReadyQ>
+<VP><![CDATA[Procesory wirtualne - całkowite wykorzystanie CPU]]></VP>
+<NetUserRep><![CDATA[Raport o wykorzystaniu sieci]]></NetUserRep>
+<NetID><![CDATA[ID sieci]]></NetID>
+<SID><![CDATA[ID sesji użytkownika]]></SID>
+<ClientName><![CDATA[Nazwa klientów]]></ClientName>
+<ReadCount><![CDATA[Liczba odebranych]]></ReadCount>
+<WriteCount><![CDATA[Liczba wysłanych]]></WriteCount>
+<ReadBytes><![CDATA[Łącznie odebranych]]></ReadBytes>
+<WriteBytes><![CDATA[Łącznie wysłanych]]></WriteBytes>
+<ConTime><![CDATA[Godzina rozpoczęcia sesji]]></ConTime>
+<Protocol><![CDATA[Protokół]]></Protocol>
+<SysNetIO><![CDATA[Wg operacji we/wy]]></SysNetIO>
+<SysNetTXF><![CDATA[Wg transferu danych]]></SysNetTXF>
+<MemSegUsage><![CDATA[Wykorzystanie segmentów pamięci]]></MemSegUsage>
+<MemOSUsage><![CDATA[Wykorzystanie pamięci komputera]]></MemOSUsage>
+<Usage><![CDATA[Wykorzystanie]]></Usage>
+<Resident><![CDATA[Rezydentne]]></Resident>
+<Virutal><![CDATA[Wirtualne]]></Virutal>
+<Message><![CDATA[Komunikat]]></Message>
+<Other><![CDATA[Inne]]></Other>
+<Allocated><![CDATA[Przydzielone]]></Allocated>
+<Free><![CDATA[Wolne]]></Free>
+<SelectReportType><![CDATA[Wybierz raporty według typu]]></SelectReportType>
+<ClearAll><![CDATA[Wyczyść wszystko]]></ClearAll>
+<AllRept><![CDATA[Wybierz wszystko]]></AllRept>
+<Disk><![CDATA[Dysk]]></Disk>
+<Performance><![CDATA[Wydajność]]></Performance>
+<InvalidDateRangeError><![CDATA[Data końcowa jest wcześniejsza niż data początkowa. Wybierz datę końcową, która jest późniejsza niż data początkowa.]]></InvalidDateRangeError>
+<Net><![CDATA[Sieć]]></Net>
+<Network><![CDATA[Sieć]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[Tabele]]></Tables>
+<Users><![CDATA[Użytkownicy]]></Users>
+<CreateReport><![CDATA[Utwórz raport]]></CreateReport>
+<ReportRun><![CDATA[Uruchomienie raportu]]></ReportRun>
+<StartDate><![CDATA[Data początkowa]]></StartDate>
+<EndDate><![CDATA[Data końcowa]]></EndDate>
+<ServerUptime><![CDATA[Czas dostępności serwera]]></ServerUptime>
+<Top><![CDATA[Na górę]]></Top>
+<Basic><![CDATA[Podstawowe]]></Basic>
+<ServerConfig><![CDATA[Konfiguracja serwera]]></ServerConfig>
+<ParamName><![CDATA[Nazwa parametru]]></ParamName>
+<ParamID><![CDATA[ID parametru]]></ParamID>
+<OnconfigParamDetails><![CDATA[Szczegóły parametru onconfig]]></OnconfigParamDetails>
+<Value><![CDATA[Wartość]]></Value>
+<ParamType><![CDATA[Typ parametru]]></ParamType>
+<Description><![CDATA[Opis]]></Description>
+<MinValue><![CDATA[Wartość minimalna]]></MinValue>
+<MaxValue><![CDATA[Wartość maksymalna]]></MaxValue>
+<PossibleValues><![CDATA[Możliwe wartości]]></PossibleValues>
+<Recommendation><![CDATA[Rekomendacja]]></Recommendation>
+<RecommendationMessage><![CDATA[Kliknij nazwę parametru, aby wyświetlić więcej informacji lub zmienić parametr dynamiczny. Parametry z zaleceniami są podświetlone na żółto.]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[Wartość tego parametru onconfig jest zgodna z rekomendacją programu OpenAdmin Tool.]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[Wartość tego parametru onconfig nie jest zgodna z rekomendacją programu OpenAdmin Tool.]]></Recommendation_NO>
+<Warning><![CDATA[OSTRZEŻENIE]]></Warning>
+<Save><![CDATA[Zapisz]]></Save>
+<Cancel><![CDATA[Anuluj]]></Cancel>
+<Back><![CDATA[Wstecz]]></Back>
+<Dynamic><![CDATA[Dynamiczny]]></Dynamic>
+<NotDynamic><![CDATA[Niedynamiczny]]></NotDynamic>
+<ParamNotDynamic><![CDATA[Parametru nie można konfigurować dynamicznie.]]></ParamNotDynamic>
+<Configurable><![CDATA[Konfigurowalny]]></Configurable>
+<OnconfigOption><![CDATA[Pokaż]]></OnconfigOption>
+<ShowAll><![CDATA[Wszystkie]]></ShowAll>
+<ShowBasic><![CDATA[Podstawowe]]></ShowBasic>
+<ShowDynamic><![CDATA[Dynamiczny]]></ShowDynamic>
+<ShowRecommend><![CDATA[Zalecenia]]></ShowRecommend>
+<SaveOption><![CDATA[Opcja zapisu]]></SaveOption>
+<SaveMem><![CDATA[Zapisz w pamięci]]></SaveMem>
+<SaveMemFile><![CDATA[Zapisz w pamięci i pliku]]></SaveMemFile>
+<Server><![CDATA[Serwer]]></Server>
+<WaitSesRpt><![CDATA[Raport o sesjach oczekujących]]></WaitSesRpt>
+<WaitSes><![CDATA[Sesja oczekująca]]></WaitSes>
+<ResourceOwner><![CDATA[Właściciel zasobu]]></ResourceOwner>
+<ResourceType><![CDATA[Typ zasobu]]></ResourceType>
+<WaitObject><![CDATA[Obiekt oczekiwania]]></WaitObject>
+<WaitItem><![CDATA[Element oczekiwania]]></WaitItem>
+<WaitInfo><![CDATA[Informacje o oczekiwaniu]]></WaitInfo>
+<ResourceUsageReport><![CDATA[Raport o wykorzystaniu sieci]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[Raport podsumowujący o zasobach]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[Dla tygodnia kończącego się]]></ForWeekEnding>
+<MaxConns><![CDATA[Maks. połączeń]]></MaxConns>
+<MaxCPUVPS><![CDATA[Maks. procesorów wirtualnych]]></MaxCPUVPS>
+<MAXVPS><![CDATA[MAKS. PW]]></MAXVPS>
+<DiskSize><![CDATA[Wielkość dysku]]></DiskSize>
+<DiskUsed><![CDATA[Wykorzystanie dysku]]></DiskUsed>
+<Memory><![CDATA[Pamięć]]></Memory>
+<MemoryUsed><![CDATA[Wykorzystana pamięć]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[Informacje o semaforach]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[Informacje o pamięci współużytkowanej]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[Maksymalna liczba otwartych plików na proces]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[Wielkość strony systemu operacyjnego]]></OSPageSize>
+<TotalCPUs><![CDATA[Razem procesorów]]></TotalCPUs>
+<OnlineCPUs><![CDATA[Procesory aktywne]]></OnlineCPUs>
+<CPUs><![CDATA[Procesory]]></CPUs>
+<HostName><![CDATA[Nazwa hosta]]></HostName>
+<OSName><![CDATA[Nazwa systemu operacyjnego]]></OSName>
+<OSRel><![CDATA[Wydanie systemu operacyjnego]]></OSRel>
+<OSVer><![CDATA[Wersja systemu operacyjnego]]></OSVer>
+<CPUType><![CDATA[Typ komputera]]></CPUType>
+<TotalMem><![CDATA[Łączna pojemność pamięci komputera]]></TotalMem>
+<TotalFreeMem><![CDATA[Wolna pamięć komputera]]></TotalFreeMem>
+<BackupReport><![CDATA[Raport dot. tworzenia kopii zapasowej]]></BackupReport>
+<Number><![CDATA[Numer]]></Number>
+<Name><![CDATA[Nazwa]]></Name>
+<Position><![CDATA[Pozycja]]></Position>
+<Level0><![CDATA[Poziom 0]]></Level0>
+<Level1><![CDATA[Poziom 1]]></Level1>
+<Level2><![CDATA[Poziom 2]]></Level2>
+<BackupReport><![CDATA[Raport dot. tworzenia kopii zapasowej]]></BackupReport>
+<TableProfileInfo><![CDATA[Informacje o profilu tabel]]></TableProfileInfo>
+<TableName><![CDATA[Nazwa tabeli]]></TableName>
+<Locks><![CDATA[Blokady]]></Locks>
+<LockRequests><![CDATA[Żądania blokad]]></LockRequests>
+<DeadLocks><![CDATA[Zakleszczenia]]></DeadLocks>
+<LockWaits><![CDATA[Oczekiwania na blokady]]></LockWaits>
+<LockTimeouts><![CDATA[Przekroczenia limitów czasu blokad]]></LockTimeouts>
+<LogRecords><![CDATA[Zapisy w dzienniku]]></LogRecords>
+<LogSpace><![CDATA[Obszar dziennika]]></LogSpace>
+<MaxLogSpace><![CDATA[Maks. obszar dziennika]]></MaxLogSpace>
+<ReadCache><![CDATA[Pamięć podręczna odczytu]]></ReadCache>
+<WriteCache><![CDATA[Pamięć podręczna zapisu]]></WriteCache>
+<DiskReads><![CDATA[Odczyty z dysku]]></DiskReads>
+<DiskWrites><![CDATA[Zapisy na dysku]]></DiskWrites>
+<RowsProcessed><![CDATA[Przetworzone wiersze]]></RowsProcessed>
+<RowsInserted><![CDATA[Wstawione wiersze]]></RowsInserted>
+<RowsUpdated><![CDATA[Zaktualizowane wiersze]]></RowsUpdated>
+<RowsDeleted><![CDATA[Usunięte wiersze]]></RowsDeleted>
+<SequentialScans><![CDATA[Przeglądania sekwencyjne]]></SequentialScans>
+<UserID><![CDATA[ID użytkownika]]></UserID>
+<GroupID><![CDATA[ID grupy]]></GroupID>
+<SessionID><![CDATA[ID sesji]]></SessionID>
+<PID><![CDATA[PID]]></PID>
+<Connected><![CDATA[Połączono]]></Connected>
+<OpenTables><![CDATA[Otwarte tabele]]></OpenTables>
+<TotalMemory><![CDATA[Łącznie pamięci]]></TotalMemory>
+<UsedMemory><![CDATA[Wykorzystana pamięć]]></UsedMemory>
+<FreeMemory><![CDATA[Wolna pamięć]]></FreeMemory>
+<Sorts><![CDATA[Sortowania]]></Sorts>
+<LargestSorts><![CDATA[Największe sortowania]]></LargestSorts>
+<DiskSorts><![CDATA[Sortowania na dysku]]></DiskSorts>
+<MemorySorts><![CDATA[Sortowania w pamięci]]></MemorySorts>
+<BufferWrites><![CDATA[Zapisy w buforze]]></BufferWrites>
+<BufferReads><![CDATA[Odczyty z buforu]]></BufferReads>
+<FGWrites><![CDATA[Zapisy na pierwszym planie]]></FGWrites>
+<FGReads><![CDATA[Odczyty na pierwszym planie]]></FGReads>
+<Commits><![CDATA[Zatwierdzenia]]></Commits>
+<Rollbacks><![CDATA[Wycofania]]></Rollbacks>
+<LongTXs><![CDATA[Długie transakcje]]></LongTXs>
+<ConnectTime><![CDATA[Czas połączenia]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[Użytkownik]]></User>
+<SessionList><![CDATA[Lista sesji]]></SessionList>
+<NoData><![CDATA[Brak danych]]></NoData>
+<SQLCachesList><![CDATA[Lista pamięci podręcznych SQL]]></SQLCachesList>
+<CacheName><![CDATA[Nazwa pamięci podręcznej]]></CacheName>
+<Ratio><![CDATA[Stosunek]]></Ratio>
+<Hits><![CDATA[Trafienia]]></Hits>
+<Misses><![CDATA[Chybienia]]></Misses>
+<Removed><![CDATA[Usunięte]]></Removed>
+<InUse><![CDATA[Wykorzystane]]></InUse>
+<CacheEntries><![CDATA[Wpisy w pamięci podręcznej]]></CacheEntries>
+<SharedMemorySegList><![CDATA[Lista segmentów pamięci współużytkowanej]]></SharedMemorySegList>
+<SegmentType><![CDATA[Typ segmentu]]></SegmentType>
+<Size><![CDATA[Wielkość]]></Size>
+<Used><![CDATA[Wykorzystane]]></Used>
+<Total><![CDATA[Łącznie]]></Total>
+<Address><![CDATA[Adres]]></Address>
+<Key><![CDATA[Klucz]]></Key>
+<FLAGS><![CDATA[Flagi]]></FLAGS>
+<Class><![CDATA[Klasa]]></Class>
+<ID><![CDATA[ID]]></ID>
+<MemPoolList><![CDATA[Lista pul pamięci]]></MemPoolList>
+<ON><![CDATA[WŁ.]]></ON>
+<OFF><![CDATA[WYŁ.]]></OFF>
+<OnconfigParamError><![CDATA[Nie znaleziono parametru onconfig o identyfikatorze]]></OnconfigParamError>
+<OnconfigFile><![CDATA[Plik onconfig]]></OnconfigFile>
+<SystemReports><![CDATA[Raporty systemowe]]></SystemReports>
+<ComputerInfo><![CDATA[Informacje o komputerze]]></ComputerInfo>
+<diskspace><![CDATA[Wykorzystanie miejsca na dysku]]></diskspace>
+<diskspace_tooltip><![CDATA[Raport z informacjami o ilości wolnego i wykorzystanego miejsca na dysku]]></diskspace_tooltip>
+<diskio><![CDATA[Poziomy dyskowego we/wy]]></diskio>
+<diskio_tooltip><![CDATA[Raport z informacjami o intensywności dyskowych operacji we/wy]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[Dziennik online]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[Wyświetl koniec pliku onlne.log]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[Komendy administracyjne serwera]]></showCommands>
+<showCommands_tooltip><![CDATA[Wyświetl wykonane komendy administracyjne serwera]]></showCommands_tooltip>
+<showllogs><![CDATA[Dzienniki logiczne]]></showllogs>
+<showllogs_tooltip><![CDATA[Wyświetl status dzienników logicznych (tj. dzienników odtwarzania)]]></showllogs_tooltip>
+<showplogs><![CDATA[Dziennik fizyczny]]></showplogs>
+<showplogs_tooltip><![CDATA[Wyświetl status dziennika fizycznego]]></showplogs_tooltip>
+<checkpoints><![CDATA[Wyświetl punkty kontrolne]]></checkpoints>
+<checkpoints_tooltip><![CDATA[Wyświetl informacje o ostatnich punktach kontrolnych]]></checkpoints_tooltip>
+<backup><![CDATA[Systemowe kopie zapasowe]]></backup>
+<backup_tooltip><![CDATA[Pokaż statusy systemowych kopii zapasowych z podziałem na obszary dbspace]]></backup_tooltip>
+<mem><![CDATA[Pule pamięci]]></mem>
+<mem_tooltip><![CDATA[Pokaż wszystkie pule pamięci użytkowników i systemu]]></mem_tooltip>
+<seg><![CDATA[Wykorzystanie pamięci serwera]]></seg>
+<seg_tooltip><![CDATA[Przegląd segmentów pamięci serwera]]></seg_tooltip>
+<net><![CDATA[Przegląd sieci]]></net>
+<net_tooltip><![CDATA[Pokaż przegląd ruchu sieciowego]]></net_tooltip>
+<ppf><![CDATA[Działania na tabelach]]></ppf>
+<ppf_tooltip><![CDATA[Informacje o wydajności z podziałem na tabele]]></ppf_tooltip>
+<config><![CDATA[Konfiguracja serwera]]></config>
+<config_tooltip><![CDATA[Pokaż plik konfiguracyjny serwera]]></config_tooltip>
+<ses><![CDATA[Lista sesji]]></ses>
+<ses_tooltip><![CDATA[Lista wszystkich sesji użytkowników]]></ses_tooltip>
+<sqlcache><![CDATA[Wyświetl pamięci podręczne SQL]]></sqlcache>
+<sqlcache_tooltip><![CDATA[Wyświetl różne statystyki pamięci podręcznych SQL]]></sqlcache_tooltip>
+<showByType><![CDATA[Podsumowanie instrukcji SQL]]></showByType>
+<showByType_tooltip><![CDATA[Podsumowanie wykonanych instrukcji SQL]]></showByType_tooltip>
+<showslowSQL><![CDATA[Najwolniejsze instrukcje SQL]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[Pokaż najwolniej działające instrukcje SQL]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[SQL zużywające najwięcej czasu we/wy]]></showmostIO>
+<showmostIO_tooltip><![CDATA[Pokaż instrukcje SQL zużywające najwięcej czasu we/wy]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[SQL z największą aktywnością buforów]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[Pokaż instrukcje SQL z największą aktywnością pul buforów]]></showmostBuff_tooltip>
+<glo><![CDATA[Procesory wirtualne]]></glo>
+<glo_tooltip><![CDATA[Wyświetl wykorzystanie różnych procesorów wirtualnych]]></glo_tooltip>
+<showdbtab><![CDATA[Pokaż bazy danych]]></showdbtab>
+<showdbtab_tooltip><![CDATA[Pokaż różne bazy danych i ich podstawowe atrybuty]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[Informacje o systemie operacyjnym]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[Pokaż informacje o systemie operacyjnym komputera]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[Informacje o zasobach komputera]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[Pokaż informacje o zasobach komputera]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[Raport o sesjach oczekujących]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[Pokaż sesje oczekujące na zasoby]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[bajty]]></bytes>
+<Bytes><![CDATA[Bajty]]></Bytes>
+<blocks><![CDATA[bloki]]></blocks>
+<Blocks><![CDATA[Bloki]]></Blocks>
+<Type><![CDATA[Typ]]></Type>
+<Count><![CDATA[Liczba]]></Count>
+<locklist><![CDATA[Lista blokad]]></locklist>
+<locklistfortab><![CDATA[Lista blokad tabeli {0}]]></locklistfortab>
+<locklistforses><![CDATA[Lista blokad sesji {0}]]></locklistforses>
+<locklist_tooltip><![CDATA[Pokazuje aktywne blokady na serwerze bazy danych.]]></locklist_tooltip>
+<locksWaiters><![CDATA[Blokady z procesami oczekującymi]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[Pokazuje blokady z procesami oczekującymi.]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[Blokady tabel]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[Pokazuje informacje o blokadach dla poszczególnych tabel.]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[Blokady sesji]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[Pokazuje informacje o blokadach dla poszczególnych sesji.]]></locksPerSes_tooltip>
+<Owner><![CDATA[Właściciel]]></Owner>
+<OwnerSID><![CDATA[ID sesji właściciela]]></OwnerSID>
+<Waiter><![CDATA[Proces oczekujący]]></Waiter>
+<WaitSID><![CDATA[ID sesji procesu oczekującego]]></WaitSID>
+<LkType><![CDATA[Typ blokady]]></LkType>
+<LkObject><![CDATA[Zablokowany obiekt]]></LkObject>
+<RowID><![CDATA[ID wiersza]]></RowID>
+<Partnum><![CDATA[Numer partycji]]></Partnum>
+<LockEstablished><![CDATA[Czas rozpoczęcia blokady]]></LockEstablished>
+<SID><![CDATA[ID sesji]]></SID>
+<Database><![CDATA[Baza danych]]></Database>
+<IsolationLevel><![CDATA[Poziom odseparowania]]></IsolationLevel>
+<ActiveLocks><![CDATA[Aktywne blokady]]></ActiveLocks>
+<lockid><![CDATA[Identyfikator blokady]]></lockid>
+<LockDuration><![CDATA[Czas trwania blokady]]></LockDuration>
+<WaitTime><![CDATA[Czas oczekiwania]]></WaitTime>
+<ReportMaxRows><![CDATA[Wyświetlanie maksymalnie {0} wierszy.]]></ReportMaxRows>
+</lang>

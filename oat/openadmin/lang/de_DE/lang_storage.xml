@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[Speicher]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[Speicherplatzoptimierung]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[Komprimierungsfunktion ist nur in der folgenden Serverversion (oder höher) verfügbar:]]></CompressOnlyAvail>
+<ErrorF><![CDATA[Fehler:]]></ErrorF>
+<NoOwner><![CDATA[Kein Eigner angegeben]]></NoOwner>
+<NoTable><![CDATA[Keine Tabelle angegeben]]></NoTable>
+<InvalidDB><![CDATA[Ungültige Datenbank]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[Zu wenig Zeilen in Tabelle]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[Zu wenig Zeilen in Fragment]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[Partitionsnummer]]></PartNum>
+<required><![CDATA[Erforderlich]]></required>
+<actual><![CDATA[Tatsächlich]]></actual>
+<Failed><![CDATA[FEHLGESCHLAGEN]]></Failed>
+<ErrorMultipleLocales><![CDATA[Auf dieser Seite kann OpenAdmin Tool keine Informationen für einen Datenbankserver mit mehreren nicht englischen Datenbankländereinstellungen anzeigen. Der Datenbankserver enthält mehrere nicht englische Datenbankländereinstellungen.]]></ErrorMultipleLocales>
+</lang>

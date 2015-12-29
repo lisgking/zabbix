@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<er><![CDATA[Enterprise Replication]]></er>
+<gridRepl><![CDATA[그리드]]></gridRepl>
+<domain><![CDATA[ER 도메인]]></domain>
+<node><![CDATA[노드 세부사항]]></node>
+<replicates><![CDATA[복제]]></replicates>
+<howto_er><![CDATA[Replication Help]]></howto_er>
+<ucm><![CDATA[연결 관리자]]></ucm>
+</lang>

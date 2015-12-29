@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Pridať]]></add>
+<alarms><![CDATA[Poplachy]]></alarms>
+<alarm_check><![CDATA[Kontrola poplachov]]></alarm_check>
+<alarm_setup><![CDATA[Nastavenie poplachov]]></alarm_setup>
+<alarm_mod><![CDATA[Upraviť poplachy]]></alarm_mod>
+<alarm_msg><![CDATA[Zadajte podmienky pre nastavenie poplachu.]]></alarm_msg>
+<alarm_name><![CDATA[Názov poplachu:]]></alarm_name>
+<Always><![CDATA[Vždy]]></Always>
+<AnyAlarm><![CDATA[Ľubovoľný poplach]]></AnyAlarm>
+<Anyalarm><![CDATA[Ľubovoľný poplach]]></Anyalarm>
+<all><![CDATA[Všetky]]></all>
+<cancel><![CDATA[Zrušiť]]></cancel>
+<Config><![CDATA[Konfigurácia]]></Config>
+<Configuration><![CDATA[Konfigurácia]]></Configuration>
+<Currentprofile><![CDATA[Aktuálny profil]]></Currentprofile>
+<CurrentProfile><![CDATA[Aktuálny profil]]></CurrentProfile>
+<del_def_na><![CDATA[Predvolený profil nie je možné odstrániť.]]></del_def_na>
+<deleted_prof><![CDATA[Profil bol odstránený.]]></deleted_prof>
+<delete><![CDATA[Vymazať]]></delete>
+<desc><![CDATA[Názov poplachu]]></desc>
+<emailprog><![CDATA[Odoslať konfiguráciu programu e-mailom]]></emailprog>
+<empty_prof_add><![CDATA[Názov profilu nemôže byť prázdny.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Profil vyberte zo zoznamu.]]></empty_prof_load>
+<enable><![CDATA[Povoliť]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Výnimky]]></exceptions>
+<exc_intro><![CDATA[Tento poplach umožňuje výnimky.]]></exc_intro>
+<exc_example><![CDATA[Napríklad: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Od]]></from>
+<Category><![CDATA[Kategória]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Spustiť nástroj Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Informácie]]></info>
+<ldesc><![CDATA[Popis]]></ldesc>
+<description><![CDATA[Popis:]]></description>
+<load><![CDATA[Zaviesť]]></load>
+<modify><![CDATA[Upraviť]]></modify>
+<modifysched><![CDATA[Upraviť plán]]></modifysched>
+<modify_threshold><![CDATA[Upraviť prahy]]></modify_threshold>
+<name><![CDATA[Názov]]></name>
+<noauth><![CDATA[Nemáte oprávnenie na prístup na túto stránku.]]></noauth>
+<noalarms><![CDATA[Nevyskytli sa žiadne poplachy.]]></noalarms>
+<notification><![CDATA[Oznámenie]]></notification>
+<OS><![CDATA[Operačný systém]]></OS>
+<Perf><![CDATA[Výkon]]></Perf>
+<profile><![CDATA[Profil]]></profile>
+<profmanagement><![CDATA[Správa profilov]]></profmanagement>
+<profmsg><![CDATA[Pridať, zaviesť alebo odstrániť profily.]]></profmsg>
+<RedAlarm><![CDATA[Červený poplach]]></RedAlarm>
+<Redalarm_><![CDATA[Červený poplach:]]></Redalarm_>
+<Redalarm><![CDATA[Červený poplach]]></Redalarm>
+<Redalarmthreshold><![CDATA[Prah červeného poplachu]]></Redalarmthreshold>
+<send><![CDATA[Odoslať e-mailové oznámenie]]></send>
+<save><![CDATA[Uložiť]]></save>
+<save_failed><![CDATA[Uloženie zlyhalo: ]]></save_failed>
+<saved_alarms><![CDATA[Zmeny vo voľbách poplachu boli uložené.]]></saved_alarms>
+<saved_schedule><![CDATA[Zmeny vo voľbách oznámenia boli uložené.]]></saved_schedule>
+<saved_email><![CDATA[Zmeny v e-mailovom programe boli uložené.]]></saved_email>
+<schedandnot><![CDATA[Plán a oznámenie]]></schedandnot>
+<schedmsg><![CDATA[Môžete naplánovať, aby sa profily spustili v zadaných intervaloch. Výsledky budú odoslané e-mailom.]]></schedmsg>
+<schedule><![CDATA[Plán]]></schedule>
+<show><![CDATA[Zobraziť]]></show>
+<Storage><![CDATA[Úložný priestor]]></Storage>
+<to><![CDATA[Komu]]></to>
+<thresholds><![CDATA[Prahy]]></thresholds>
+<threshold_msg><![CDATA[V popise poplachu nájdete vysvetlenie používania prahových hodnôt.]]></threshold_msg>
+<when><![CDATA[Kedy]]></when>
+<Yellowalarmthreshold><![CDATA[Prah žltého poplachu]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Žltý poplach:]]></Yelalarm_>
+<YelAlarm><![CDATA[Žltý poplach]]></YelAlarm>
+</lang>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Доверенный контекст]]></mainTitle>
+<FeatureUnavailable><![CDATA[Данная возможность недоступна для текущей версии сервера.]]></FeatureUnavailable>
+</lang>

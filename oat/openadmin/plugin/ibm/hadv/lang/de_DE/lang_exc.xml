@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Wenn Sie Knoten von der Prüfung ausschließen wollen, geben Sie Knotennamen getrennt durch Kommas ein.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Wenn Sie Tabellen von der Prüfung ausschließen wollen, geben Sie Partitionsnummern getrennt durch Kommas ein.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Wenn Sie Tabellen von der Prüfung ausschließen wollen, geben Sie Partitionsnummern getrennt durch Kommas ein.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Wenn Sie Tabellen von der Prüfung ausschließen wollen, geben Sie Partitionsnummern getrennt durch Kommas ein.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Wenn Sie Chunks von der Prüfung ausschließen wollen, geben Sie Chunknummern getrennt durch Kommas ein.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Wenn Sie Chunks von der Prüfung ausschließen wollen, geben Sie Chunknummern getrennt durch Kommas ein.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Wenn Sie Chunks von der Prüfung ausschließen wollen, geben Sie Chunknummern getrennt durch Kommas ein.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Wenn Sie Datenbankbereiche von der Prüfung ausschließen wollen, geben Sie Datenbankbereichsnamen getrennt durch Kommas ein.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Wenn Sie Tabellen von der Prüfung ausschließen wollen, geben Sie Partitionsnummern getrennt durch Kommas ein.]]></exc_Rowsize>
+</lang>

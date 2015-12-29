@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Validação do Sistema]]></mainTitle>
+<checkDataFormat><![CDATA[Verificar Formato de Dados]]></checkDataFormat>
+<databaseName><![CDATA[Nome do Banco de Dados]]></databaseName>
+<tableName><![CDATA[Nome da Tabela]]></tableName>
+<chkTable><![CDATA[Verificar Tabela]]></chkTable>
+<chkExtFormat><![CDATA[Verificar Formato de Extensão]]></chkExtFormat>
+<extName><![CDATA[Nome do Dbspace]]></extName>
+<chkExtent><![CDATA[Verificar Extensão]]></chkExtent>
+<valResTo><![CDATA[Resultados da Validação para ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - Validação do Sistema]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Validação de oncheck concluída.]]></oncheckComplete>
+<ValidationResults><![CDATA[Resultados da Validação ...]]></ValidationResults>
+<SysValNotValid><![CDATA[O Sistema de Validação não é válido em secundários.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Usuários de somente leitura não têm permissão para fazer isso. Você efetuou login como um usuário de somente leitura.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Atenção: Executar uma verificação pode consumir uma grande quantidade de recursos de processamento, dependendo do número de páginas envolvidas. A ação lê todas as páginas para as tabelas especificadas, excluindo blobpages e sbpages, e verifica em cada página a consistência. Deseja continuar?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Nessa página, a OpenAdmin Tool não pode exibir informações para um servidor de banco de dados com mais de um código do idioma do banco de dados que não está em inglês. O servidor de banco de dados contém mais de um código do idioma do banco de dados que não está em inglês.]]></NotYetImpl>
+</lang>

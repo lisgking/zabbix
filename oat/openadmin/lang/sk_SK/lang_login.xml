@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Administrátor]]></admin>
+<connect><![CDATA[Pripojiť]]></connect>
+<connection><![CDATA[Pripojenie]]></connection>
+<connections><![CDATA[Pripojenia]]></connections>
+<getservers><![CDATA[Získať servery]]></getservers>
+<server><![CDATA[Server]]></server>
+<hostname><![CDATA[Názov hostiteľa]]></hostname>
+<informixserver><![CDATA[Server Informix]]></informixserver>
+<idsprotocol><![CDATA[Protokol Informix]]></idsprotocol>
+<login><![CDATA[Prihlásenie]]></login>
+<log_in><![CDATA[Prihlásiť sa]]></log_in>
+<logging_in><![CDATA[Prihlasuje sa...]]></logging_in>
+<loggingout><![CDATA[Odhlasuje sa]]></loggingout>
+<no_user><![CDATA[Vyžaduje sa meno užívateľa.]]></no_user>
+<missingpassword><![CDATA[Vyžaduje sa heslo.]]></missingpassword>
+<missinginformixserver><![CDATA[Vyžaduje sa server Informix.]]></missinginformixserver>
+<missinghost><![CDATA[Vyžaduje sa meno užívateľa.]]></missinghost>
+<missingport><![CDATA[Vyžaduje sa číslo portu.]]></missingport>
+<group><![CDATA[Skupina OAT]]></group>
+<groups><![CDATA[Skupiny]]></groups>
+<password><![CDATA[Heslo]]></password>
+<port><![CDATA[Port]]></port>
+<help><![CDATA[Pomoc]]></help>
+<quicklogin><![CDATA[Prihláste sa do skupiny OAT]]></quicklogin>
+<selectaconnection><![CDATA[Vyberte server]]></selectaconnection>
+<serverdetails><![CDATA[Pripojte sa k serveru]]></serverdetails>
+<username><![CDATA[Meno užívateľa]]></username>
+<aboutOAT><![CDATA[Informácie o OAT]]></aboutOAT>
+<readme><![CDATA[Readme]]></readme>
+<HowDoI><![CDATA[Pomoc úloh OAT]]></HowDoI>
+<cookies_required><![CDATA[Na prihlásenie do nástroja OpenAdmin Tool sa vyžadujú objekty cookie.  Zdá sa, že váš webový prehliadač nepodporuje objekty cookie, takže vás nástroj OAT nebude môcť prihlásiť.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Prebieha protokolovanie.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Chyba: Nebolo zadané žiadne číslo pripojenia.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Chyba: žiadna skupina.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Neplatné podrobnosti prihlásenia.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[Neplatné heslo skupiny - skúste znova]]></InvalidGroupPwd>
+<Default><![CDATA[Predvolené]]></Default>
+<login_instructions><![CDATA[Prihláste sa do skupiny OAT, aby ste sa mohli pripojiť k serveru v skupine, alebo sa k serveru pripojte priamo. Skupina OAT obsahuje informácie o pripojení pre jeden alebo pre viaceré databázové servery. Skupiny OAT sú definované  na stránkach Administrátor OAT.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Vyberte skupinu OAT, zadajte heslo pre skupinu a kliknite na Získať servery.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Zadajte alebo potvrďte informácie o pripojení pre server.]]></serverdetails_instructions>
+<test_connection><![CDATA[Testovať pripojenie]]></test_connection>
+<testing_connection><![CDATA[Testuje sa pripojenie...]]></testing_connection>
+<ConnectionFailed><![CDATA[Pripojenie zlyhalo:]]></ConnectionFailed>
+</lang>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu-HU" xml:lang="hu-hu">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="hu-hu" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task" />
+<title>Informix Health Advisor Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Health Advisor Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Tartalom</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oha.dita" class="toclink">Informix Health Advisor Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oha_002" class="toclink">Egészségtanácsadó futtatása</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oha_001" class="toclink">Profil hozzáadása</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oha_003" class="toclink">Profil riasztásainak beállítása</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oha_004" class="toclink">Profil feladatának ütemezése</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_oha_005" class="toclink">E-mail értesítések beállítása</a></div>
+<div class="head1"><a id="ToC_7" href="#dqx1ids_cm_not" class="toclink">Nyilatkozatok</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1trademarks" class="toclink">Védjegyek</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_osm_000" class="toclink">Szerzői jog</a></div>
+</div>
+<h1 id="dqx1ids_oha.dita"><a href="#ToC_1">Informix Health
+Advisor Plug-in for OAT</a></h1>
+<div>
+<p>Az IBM&reg; Informix&reg; Health Advisor Plug-in
+for OpenAdmin Tool (OAT) az Informix adatbázis-kiszolgáló állapotát elemzi. Az Egészségtanácsadó bedolgozó összegyűjti az
+adatbázis-kiszolgálóval, az adatbázisokkal és az operációs rendszerrel kapcsolatos információkat, majd az eredményeket és
+ajánlásokat tartalmazó jelentést hoz létre.</p></div>
+<div>
+<div class="notetitle" id="wq2">Előfeltétel:</div>
+<div class="notebody">Az Egészségtanácsadó bedolgozó az IBM Informix 11.50.xC7
+vagy újabb változatát igényli.</div></div>
+<p>Az Egészségtanácsadó bedolgozó számos riasztást tartalmaz, amelyek az adatbázis-kiszolgáló vizsgálnak különféle
+feltételeket: a konfigurációt, az Enterprise Replication (ER) szolgáltatást, az operációs rendszer (OS), a teljesítményt és
+a tárterületet. Az engedélyezett riasztásokat és azok
+küszöbértékeit profilok létrehozásával adhatja meg.
+Ütemezhet az Egészségtanácsadót adott profillal,
+rendszeres időközönként futtató feladatot. 
+Meghatározhatja, hogy ki kapjon e-mailben értesítést az
+eredményekről.
+
+ Az
+Egészségtanácsadót igény esetén az aktuális profilon futtathatja, majd
+megtekintheti a jelentést.</p>
+<h2 id="dqx1ids_oha_002"><a href="#ToC_2">Egészségtanácsadó futtatása</a></h2>
+<div>
+<p>Az Egészségtanácsadót igény esetén az aktuális profilon futtathatja,
+majd megtekintheti a jelentést.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq4">Előfeltétel:</div>
+<div class="notebody">Az IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) az IBM Informix 11.50.xC7 vagy újabb változatát igényli.</div></div>
+<p>
+<p>Az Egészségtanácsadó bedolgozó az Informix adatbázis-kiszolgáló állapotát elemzi. Az Egészségtanácsadó profil az
+engedélyezett riasztásokat és azok küszöbértékeit adja meg.</p></p>
+<p>
+<p>Az Egészségtanácsadó futtatásához tegye a következőket:</p></p>
+<ol type="1">
+<li>Az OAT menüben kattintson az
+<strong>Egészségközpont</strong> &gt; <strong>Egészségtanácsadó</strong>
+menüpontra.</li>
+<li>Nem kötelező: Az aktuális profil módosításához kattintson rá a profilra a
+<strong>Profil</strong> oldalon található listában, majd kattintson a
+<strong>Betöltés</strong> lehetőségre.</li>
+<li>Kattintson az <strong>Egészségtanácsadó futtatása</strong>
+lehetőségre. A jelentés új böngésző ablakban jelenik meg.</li></ol>
+<h2 id="dqx1ids_oha_001"><a href="#ToC_3">Profil hozzáadása</a></h2>
+<div>
+<p>Adjon hozzá egy profilt az IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) bedolgozóhoz.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">Előfeltétel:</div>
+<div class="notebody">Az Egészségtanácsadó bedolgozó az IBM Informix 11.50.xC7
+vagy újabb változatát igényli.</div></div>
+<p>
+<p>Az Egészségtanácsadó bedolgozó az Informix adatbázis-kiszolgáló állapotát elemzi. Az engedélyezett riasztásokat és azok
+küszöbértékeit profilok létrehozásával adhatja meg.
+Ütemezhet az Egészségtanácsadót adott profillal,
+rendszeres időközönként futtató feladatot.</p></p>
+<p>
+<p>Profil hozzáadásához tegye a következőket:</p></p>
+<ol type="1">
+<li>Az OAT menüben kattintson az
+<strong>Egészségközpont</strong> &gt; <strong>Egészségtanácsadó</strong>
+menüpontra.</li>
+<li>A <strong>Profil</strong> oldalon adja meg a profil egyedi nevét,
+majd kattintson a <strong>Hozzáadás</strong> lehetőségre.</li></ol>
+<h2 id="dqx1ids_oha_003"><a href="#ToC_4">Profil riasztásainak beállítása</a></h2>
+<div>
+<p>A profil engedélyezett riasztásainak és a riasztások küszöbértékeinek meghatározása az IBM Informix Health Advisor
+Plug-in for OpenAdmin Tool (OAT) alkalmazásban.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq14">Előfeltétel:</div>
+<div class="notebody">Az Egészségtanácsadó bedolgozó az IBM Informix 11.50.xC7
+vagy újabb változatát igényli.</div></div>
+<p>
+<p>Az Egészségtanácsadó bedolgozó az Informix adatbázis-kiszolgáló állapotát elemzi. Az Egészségtanácsadó profil az
+engedélyezett riasztásokat és azok küszöbértékeit adja meg.</p></p>
+<p>
+<p>Profil riasztásainak beállításához tegye a következőket:</p></p>
+<ol type="1">
+<li>Az OAT menüben kattintson az
+<strong>Egészségközpont</strong> &gt; <strong>Egészségtanácsadó</strong>
+menüpontra.</li>
+<li>Nem kötelező: Az aktuális profil módosításához kattintson rá a profilra a
+<strong>Profil</strong> oldalon található listában, majd kattintson a
+<strong>Betöltés</strong> lehetőségre.</li>
+<li>Kattintson a <strong>Riasztások</strong> lapra.</li>
+<li>Válassza ki a profilba felvenni kívánt riasztások
+<strong>Engedélyezés</strong> jelölőnégyzetét.</li>
+<li>A riasztás küszöbértékeinek áttekintéséhez vagy módosításához kattintson a
+<strong>Küszöbérték módosítása</strong> lehetőségre.</li></ol>
+<h2 id="dqx1ids_oha_004"><a href="#ToC_5">Profil feladatának ütemezése</a></h2>
+<div>
+<p>Az Egészségtanácsadót adott profillal, rendszeres időközönként
+futtató feladat ütemezése.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq19">Előfeltétel:</div>
+<div class="notebody">Az IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) az IBM Informix 11.50.xC7 vagy újabb változatát igényli.</div></div>
+<p>
+<p>Az Egészségtanácsadó bedolgozó az Informix adatbázis-kiszolgáló állapotát elemzi. Az Egészségtanácsadó profil az
+engedélyezett riasztásokat és azok küszöbértékeit adja meg.
+ Az
+Egészségtanácsadót az aktuális profilon futtató feladatot ütemezheti is.</p></p>
+<p>
+<p>Az aktuális profil feladatának ütemezéséhez tegye a következőket:</p></p>
+<ol type="1">
+<li>Az OAT menüben kattintson az
+<strong>Egészségközpont</strong> &gt; <strong>Egészségtanácsadó</strong>
+menüpontra.</li>
+<li>Nem kötelező: Az aktuális profil módosításához kattintson rá a profilra a
+<strong>Profil</strong> oldalon található listában, majd kattintson a
+<strong>Betöltés</strong> lehetőségre.</li>
+<li>Kattintson az <strong>Ütemezés</strong> lapra.</li>
+<li>A konfigurációs mezők segítségével határozza meg a feladat ütemezését.</li></ol>
+<h2 id="dqx1ids_oha_005"><a href="#ToC_6">E-mail értesítések beállítása</a></h2>
+<div>
+<p>Az e-mail program konfigurálása és vizsgálati eredmények
+címzettjeinek meghatározása.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq24">Előfeltétel:</div>
+<div class="notebody">Az IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) az IBM Informix 11.50.xC7 vagy újabb változatát igényli.</div></div>
+<p>
+<p> Az Egészségtanácsadó bedolgozó vizsgálati eredményeket és ajánlásokat tartalmazó jelentést hoz létre. Az
+e-mail beállítása az e-mailt küldő operációs rendszer alapján történik. Az
+e-mail az adatbázist tartalmazó számítógépről kerül elküldésre. Az e-mail
+programot az aktuális profilhoz állíthatja be.</p></p>
+<p>
+<p>Az aktuális profil e-mail értesítéseinek beállításához tegye a
+következőket:</p></p>
+<ol type="1">
+<li>Az OAT menüben kattintson az
+<strong>Egészségközpont</strong> &gt; <strong>Egészségtanácsadó</strong>
+menüpontra.</li>
+<li>Nem kötelező: Az aktuális profil módosításához kattintson rá a profilra a
+<strong>Profil</strong> oldalon található listában, majd kattintson a
+<strong>Betöltés</strong> lehetőségre.</li>
+<li>Kattintson az <strong>Értesítések</strong> lapra. A konfigurációs példákat a Súgó gombra kattintva tekintheti meg.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_7">Nyilatkozatok</a></h1>
+<p>Ezek az információk az Egyesült Államokban forgalmazott termékekre
+és szolgáltatásokra vonatkoznak.</p>
+<p>Elképzelhető, hogy a dokumentumban tárgyalt termékeket, szolgáltatásokat
+vagy lehetőségeket az IBM más országokban
+nem forgalmazza. Az adott országokban rendelkezésre álló termékekről és
+szolgáltatásokról a helyi IBM
+képviseletek szolgálnak felvilágosítással. Az
+IBM termékekre, programokra vagy
+szolgáltatásokra vonatkozó utalások sem állítani, sem sugallni nem kívánják,
+hogy az adott helyzetben csak az IBM
+termékeit, programjait vagy szolgáltatásait lehet alkalmazni. Minden olyan
+működésében azonos termék, program vagy szolgáltatás alkalmazható, amely nem
+sérti az IBM szellemi tulajdonjogát. A nem IBM termékek, programok és szolgáltatások működésének
+megítélése és ellenőrzése azonban a felhasználó felelőssége.</p>
+<p>A dokumentum tartalmával kapcsolatban az
+IBM-nek lehetnek bejegyzett, vagy
+bejegyzés alatt álló szabadalmai. Jelen dokumentum nem ad semmiféle jogos licencet e szabadalmakhoz. A
+licenckérelmeket írásban a következő címre küldheti:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>Ha duplabyte-os (DBCS) információkkal kapcsolatban van szüksége licencre,
+akkor lépjen kapcsolatban az országában az
+IBM szellemi tulajdon osztályával, vagy
+írjon a következő címre: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>A következő bekezdés nem vonatkozik az Egyesült Királyságra, valamint
+azokra az országokra, amelyeknek jogi szabályozása ellentétes a bekezdés
+tartalmával: AZ INTEAL BUSINESS MACHINES CORPORATION A KIADVÁNYT
+"JELENLEGI FORMÁJÁBAN", BÁRMIFÉLE KIFEJEZETT VAGY VÉLELMEZETT GARANCIA NÉLKÜL
+ADJA KÖZRE, IDEÉRTVE, DE NEM KIZÁRÓLAG A JOGSÉRTÉS KIZÁRÁSÁRA, A KERESKEDELMI
+ÉRTÉKESÍTHETŐSÉGRE ÉS BIZONYOS CÉLRA VALÓ ALKALMASSÁGRA VONATKOZÓ VÉLELMEZETT
+GARANCIÁT. Bizonyos államok nem engedélyezik egyes tranzakciók kifejezett vagy vélelmezett
+garanciáinak kizárását, így elképzelhető, hogy az előző bekezdés Önre nem
+vonatkozik.</p>
+<p>Jelen dokumentum tartalmazhat technikai pontatlanságokat és
+sajtóhibákat. A kiadványban leírt információk bizonyos időnként
+módosításra kerülnek; a módosításokat a kiadvány új kiadásai tartalmazzák. Az
+IBM mindennemű értesítés nélkül
+fejlesztheti és/vagy módosíthatja a kiadványban tárgyalt termékeket és/vagy
+programokat. </p>
+<p>A kiadványban a nem IBM által üzemeltetett webhelyek megjelenése csak
+kényelmi célokat szolgál, és semmilyen módon nem jelenti ezen webhelyek
+előnyben részesítését másokhoz képest. Az ilyen webhelyeken található anyagok
+nem képezik az adott IBM termék
+dokumentációjának részét, így ezek használata csak saját felelősségre
+történhet. </p>
+<p>Az IBM belátása szerint bármilyen
+formában felhasználhatja és továbbadhatja a felhasználóktól származó adatokat
+anélkül, hogy a felhasználó felé ebből bármilyen kötelezettsége származna.</p>
+<p>A programlicenc azon birtokosai, akik (i) a függetlenül
+létrehozott programok vagy más programok (beleértve ezt a programot is)
+közti információcsere, illetve (ii) a kicserélt információk kölcsönös
+használata céljából szeretnének információkhoz jutni, a következő címre
+írjanak: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Az ilyen információk bizonyos feltételek és kikötések mellett állnak
+rendelkezésre, ideértve azokat az eseteket is, amikor ez díjfizetéssel
+jár.</p>
+<p>Az IBM a dokumentumban tárgyalt
+licencprogramokat és a hozzájuk tartozó licenc anyagokat
+IBM Vásárlói megállapodás,
+IBM Nemzetközi programlicenc szerződés
+vagy a felek azonos tartalmú megállapodása alapján biztosítja.</p>
+<p>A dokumentumban található teljesítményadatok ellenőrzött környezetben
+kerültek meghatározásra. Ennek következtében a más működési körülmények között
+kapott adatok jelentősen különbözhetnek a dokumentumban megadottaktól. Egyes
+mérések fejlesztői szintű rendszereken kerültek végrehajtásra, így nincs
+garancia arra, hogy ezek a mérések azonosak az általánosan hozzáférhető
+rendszerek esetében is. Elképzelhető továbbá,
+hogy egyes mérések extrapoláció útján lettek megbecsülve. A tényleges értékek eltérhetnek. Az adott környezetben alkalmazandó adatokat a
+dokumentum felhasználóinak kell ellenőrizni.</p>
+<p>A nem IBM termékekre vonatkozó információk a termékek szállítóitól, illetve
+azok publikált dokumentációiból, valamint egyéb nyilvánosan hozzáférhető
+forrásokból származnak. Az IBM nem
+tesztelte ezeket a termékeket, így az IBM a nem IBM termékek esetében nem tudja
+megerősíteni a teljesítményre és kompatibilitásra vonatkozó, valamint az egyéb
+állítások pontosságát. A nem IBM termékekkel kapcsolatos kérdéseivel
+forduljon az adott termék szállítóihoz.</p>
+<p>Az IBM jövőbeli tevékenységére vagy szándékaira vonatkozó állításokat
+az IBM mindennemű értesítés nélkül módosíthatja, azok csak célokat
+jelentenek.</p>
+<p>Minden megjelenített IBM ár az IBM
+által javasolt aktuális kiskereskedelmi ár, amely értesítés nélkül
+változhat. Az egyes viszonteladók árai eltérhetnek ettől.</p>
+<p>A leírtak csak tervezési célokat szolgálnak. Az információk a tárgyalt
+termékek elérhetővé válása előtt megváltozhatnak.</p>
+<p>Az információk között példaként napi üzleti tevékenységekhez kapcsolódó
+jelentések és adatok lehetnek. A valóságot a lehető legjobban megközelítő illusztráláshoz a
+példákban egyének, vállalatok, márkák és termékek nevei szerepelnek. Minden ilyen név a képzelet szüleménye, és valódi üzleti
+vállalkozások neveivel és címeivel való bármilyen hasonlóságuk teljes
+egészében a véletlen műve.</p>
+<p>Szerzői jogi licenc:</p>
+<p>A kiadvány forrásnyelvi alkalmazásokat tartalmaz, amelyek a
+programozási technikák bemutatására szolgálnak a különböző működési
+környezetekben. A példaprogramokat tetszőleges formában, az
+IBM-nek való díjfizetés nélkül
+másolhatja, módosíthatja és terjesztheti fejlesztési, használati, eladási vagy
+a példaprogram operációs rendszer alkalmazásprogramozási felületének megfelelő
+alkalmazásprogram terjesztési céllal. Ezek a példák nem kerültek minden
+körülmények között tesztelésre. Az IBM így nem tudja garantálni a
+megbízhatóságukat, javíthatóságukat vagy a program funkcióit. A példaprogramok "JELENLEGI FORMÁJUKBAN", bármilyen garancia vállalása nélkül
+kerülnek közreadásra. A példaprogramok felhasználásából adódó káreseményekért
+az IBM semmiféle felelősséget nem vállal.</p>
+<p>A példaprogramok minden másolatának, bármely részletének, illetve az
+ezek felhasználásával készült minden származtatott munkának tartalmaznia
+kell az alábbi szerzői jogi feljegyzést:</p>
+<p>&copy; (cégnév) (évszám). A kód bizonyos részei az
+IBM Corp. példaprogramokból származnak. </p>
+<p>&copy; Copyright IBM Corp. _évszám vagy
+évszámok_. Minden jog fenntartva.</p>
+<p>Ha a kiadványt elektronikus változatban tekinti meg, akkor elképzelhető, hogy a
+fényképek és színes ábrák nem jelennek meg.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_8">Védjegyek</a></h2>
+<p>Az IBM, az
+IBM logó és az
+ibm.com az International Business
+Machines Corporationnek a világ számos országában regisztrált védjegye vagy
+bejegyzett védjegye. Más termékek és szolgáltatások neve szintén lehet az
+IBM vagy más vállalatok védjegye. Az
+IBM védjegyek aktuális listáját a
+"Copyright and trademark information" témakörben találja a következő webhelyen:
+<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Az Adobe, az
+Adobe logó és a
+PostScript az
+Adobe Systems Incorporated védjegyei
+vagy bejegyzett védjegyei az Egyesült Államokban és/vagy más országokban.</p>
+<p>Az Intel, az
+Itanium és a
+Pentium az
+Intel Corporation vagy
+leányvállalatainak védjegyei vagy bejegyzett védjegyei az Egyesült Államokban
+és/vagy más országokban.</p>
+<p>A Java&trade; és minden Java-alapú védjegy és
+logó az Oracle és/vagy társvállalatainak védjegye vagy bejegyzett védjegye.</p>
+<p>A Linux Linus Torvalds bejegyzett
+védjegye az Egyesült Államokban és/vagy más országokban.</p>
+<p>A Microsoft, a
+Windows és a
+Windows NT
+Microsoft Corporation védjegye az
+Egyesült Államokban és/vagy más országokban.</p>
+<p>A UNIX a The Open Group bejegyzett
+védjegye az Egyesült Államokban és/vagy más országokban.</p>
+<p>Más cégek, termékek és szolgáltatások neve mások védjegye vagy szolgáltatás
+védjegye lehet.</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_9">Szerzői jog</a></h2>
+<p>Ez a dokumentum az IBM
+szabadalomvédett információit tartalmazza. Biztosítása licencszerződés hatálya
+alatt történik és szerzői jogi törvények védelme alatt áll. A kiadványban
+szereplő információk semmiféle termékgaranciát nem foglalnak magukban, és a
+kézikönyvben szereplő egyetlen utasítás sem értelmezhető ily módon.</p>
+<p>Ha információkat küld az IBM-nek,
+akkor az IBM belátása szerint bármilyen
+formában felhasználhatja és továbbadhatja azokat anélkül, hogy a felhasználó
+felé ebből bármilyen kötelezettsége származna.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>Az USA kormányzati felhasználóinak jogkorlátozása -- A használatot, a
+másolást és a nyilvánosságra hozatalt az
+IBM Corporationnel kötött GSA ADP
+Schedule Contract korlátozza.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. További információkat a
+<samp class="xph">license/notices.txt</samp> fájlban talál.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

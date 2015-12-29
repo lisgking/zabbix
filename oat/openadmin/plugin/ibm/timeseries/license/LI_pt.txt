@@ -1,0 +1,10 @@
+INFORMAÇÕES DA LICENÇA
+
+Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições a seguir, além daqueles do IBM Contrato de Licença Internacional para Programas Não Garantidos (form number da IBM n.° Z125-5589-05).
+
+Nome do Programa: IBM OpenAdmin Tool - TimeSeries Plugin V3.11
+Número do Programa: Tool
+
+L/N:  L-DDAY-94MTK8
+D/N:  L-DDAY-94MTK8
+P/N:  L-DDAY-94MTK8 

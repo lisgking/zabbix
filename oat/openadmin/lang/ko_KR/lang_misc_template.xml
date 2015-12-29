@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[오류:]]></ErrorF>
+<QueryF><![CDATA[쿼리:]]></QueryF>
+<PageSize><![CDATA[페이지 크기]]></PageSize>
+<Descending><![CDATA[내림차순]]></Descending>
+<Ascending><![CDATA[오름차순]]></Ascending>
+<ErrorOccurred><![CDATA[오류 발생]]></ErrorOccurred>
+<Reload><![CDATA[다시 로드]]></Reload>
+<ClickToReload><![CDATA[서버를 다시 로드하려면 클릭]]></ClickToReload>
+<LoadingMsg><![CDATA[..로딩..]]></LoadingMsg>
+<PrevPage><![CDATA[이전 페이지]]></PrevPage>
+<NextPage><![CDATA[다음 페이지]]></NextPage>
+<Page><![CDATA[페이지]]></Page>
+<Row><![CDATA[행]]></Row>
+<Login><![CDATA[로그인]]></Login>
+<OrderAsc><![CDATA[{0} 기준으로 오름차순 정렬]]></OrderAsc>
+<OrderDesc><![CDATA[{0} 기준으로 내림차순 정렬]]></OrderDesc>
+<Help><![CDATA[도움말]]></Help>
+<Admin><![CDATA[관리]]></Admin>
+<Back><![CDATA[뒤로]]></Back>
+<Welcome><![CDATA[시작]]></Welcome>
+<CollapseMenu><![CDATA[메뉴 접기]]></CollapseMenu>
+<Info><![CDATA[정보]]></Info>
+<Yes><![CDATA[예]]></Yes>
+<No><![CDATA[아니오]]></No>
+<Cancel><![CDATA[취소]]></Cancel>
+<Delete><![CDATA[삭제]]></Delete>
+<Success><![CDATA[성공
+]]></Success>
+<ErrorL><![CDATA[오류]]></ErrorL>
+<ERROR><![CDATA[오류]]></ERROR>
+<Ignore><![CDATA[무시]]></Ignore>
+<Under><![CDATA[아래]]></Under>
+<Save><![CDATA[저장]]></Save>
+<Cancel><![CDATA[취소]]></Cancel>
+<TemplateLoadError><![CDATA[기본 템플리트를 로드할 수 없음]]></TemplateLoadError>
+<help><![CDATA[도움말]]></help>
+<ServerType><![CDATA[서버 유형]]></ServerType>
+<Version><![CDATA[버전]]></Version>
+<ServerTime><![CDATA[서버 시간]]></ServerTime>
+<BootTime><![CDATA[부트 시간]]></BootTime>
+<UpTime><![CDATA[가동 시간]]></UpTime>
+<Sessions><![CDATA[세션]]></Sessions>
+<MaxUsers><![CDATA[최대 세션 수]]></MaxUsers>
+<TotalMem><![CDATA[총 메모리]]></TotalMem>
+<FreeMem><![CDATA[여유 메모리]]></FreeMem>
+<NumCPU><![CDATA[CPU 수]]></NumCPU>
+<OperatingSys><![CDATA[운영 체제]]></OperatingSys>
+<Standard><![CDATA[표준]]></Standard>
+<Primary><![CDATA[기본]]></Primary>
+<Secondary><![CDATA[보조]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[서버]]></Server>
+<Database><![CDATA[데이터베이스]]></Database>
+<ConnectionFailed><![CDATA[연결에 실패함: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[오류:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[실행할 SQL 없음]]></NoSQLToExecute>
+<GroupServers><![CDATA[그룹 서버]]></GroupServers>
+<MapNotAvail><![CDATA[키가 올바르지 않기 때문에 맵을 사용할 수 없습니다.]]></MapNotAvail>
+<ServerInfo><![CDATA[서버 정보]]></ServerInfo>
+<Info><![CDATA[정보]]></Info>
+<ALL><![CDATA[모두]]></ALL>
+<Enabled><![CDATA[사용]]></Enabled>
+<Disabled><![CDATA[사용 안함]]></Disabled>
+<MB_Locale><![CDATA[데이터베이스 언어]]></MB_Locale>
+<MB_Encoding><![CDATA[로케일]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[데이터베이스 언어를 선택하여 해당 언어의 데이터베이스 로케일을 표시하십시오. 그런 다음 데이터베이스 로케일을 선택하십시오.]]></MB_Locale_Encoding_tooltip>
+</lang>

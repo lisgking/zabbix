@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Bedolgozókezelő]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[A bedolgozókezelő nem tud írni a következő OAT ideiglenes könyvtárba: tmp. Bedolgozó telepítéséhez írási engedéllyel kell rendelkeznie az OAT ideiglenes könyvtárhoz. Szerezze be a könyvtár írásához szükséges engedélyt, majd telepítse újra a bedolgozót.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[A bedolgozókezelő nem nyitható meg, mert a bedolgozókezelő telepített zip modullal rendelkező PHP beállítását követeli meg. Az OAT által használt PHP nem tartalmazza a telepített zip modult. Telepítse a zip modult a webkiszolgálón futó PHP változatra. Alternatív megoldásként az OAT újratelepítése is szóba jöhet, ami beállítja a PHP-t.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[A bedolgozó nem került telepítésre.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Telepített bedolgozók]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Még nem telepített bedolgozók]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Nincs telepítésre kijelölt bedolgozó.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Nincs elérhető frissítés.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[A bedolgozókezelő nem tud írni a bedolgozó könyvtárba. Szerezze be a könyvtár írásához szükséges engedélyt, majd telepítse újra a bedolgozót.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Aktuális változat telepítve]]></CurrVerInstalled>
+<Unknown><![CDATA[Ismeretlen]]></Unknown>
+<ClickToEnable><![CDATA[Kattintson ide az engedélyezéshez]]></ClickToEnable>
+<ClickToDisable><![CDATA[Kattintson ide a letiltáshoz]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Ez a fájl nem törölhető: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[A bedolgozó sikeresen frissítésre került.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[A bedolgozó sikeresen telepítésre került.]]></PluginInstalled>
+<Name><![CDATA[Név]]></Name>
+<Author><![CDATA[Szerző]]></Author>
+<Description><![CDATA[Leírás]]></Description>
+<Version><![CDATA[Változat]]></Version>
+<ServerVersion><![CDATA[Kiszolgáló verziószáma]]></ServerVersion>
+<MinOATVersion><![CDATA[Minimális OAT változat]]></MinOATVersion>
+<Install><![CDATA[Telepítés]]></Install>
+<Uninstall><![CDATA[Eltávolítás]]></Uninstall>
+<Upgrade><![CDATA[Frissítés]]></Upgrade>
+<Enabled><![CDATA[Engedélyezett]]></Enabled>
+<updating><![CDATA[Frissítés]]></updating>
+<LatestInstalled><![CDATA[Legújabb telepített]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Ez a művelet eltávolítja a(z) {0} bedolgozót. A bedolgozó tömörített fájlja a bedolgozó telepítésekor törlésre kerül. A bedolgozó eltávolítása után addig nem telepíthető újra, amíg a bedolgozó tömörített fájlját vissza nem állítják a bedolgozó könyvtárba.  \n\nKívánja folytatni?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[A bedolgozó sikeresen eltávolításra került.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[A bedolgozó nem került eltávolításra.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[Az OAT megkísérelte eltávolítani a bedolgozót, de a bedolgozóazonosító nem található. Kattintson az Admin menü Bedolgozókezelő menüpontjára és tekintse át a telepített bedolgozók listáját. Szükség esetén távolítsa el újra a bedolgozót.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[A bedolgozó eltávolításra került, de a következő fájlokat nem sikerült eltávolítani:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[A fájlokat saját kezűleg törölheti a számítógépről.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[A bedolgozó menüpontja nem került törlésre. A menüpont a Menükezelő oldalon törölhető.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[A kijelölt bedolgozó nem telepíthető. A bedolgozóhoz szükséges minimális OAT verziószám a következő: {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Egyetértek]]></Agree>
+<Disagree><![CDATA[Nem értek egyet]]></Disagree>
+</lang>

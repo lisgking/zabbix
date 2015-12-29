@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[管理]]></admin>
+<connect><![CDATA[接続]]></connect>
+<connection><![CDATA[接続]]></connection>
+<connections><![CDATA[接続]]></connections>
+<getservers><![CDATA[サーバの取得]]></getservers>
+<server><![CDATA[サーバ]]></server>
+<hostname><![CDATA[ホスト名
+]]></hostname>
+<informixserver><![CDATA[Informix サーバ]]></informixserver>
+<idsprotocol><![CDATA[Informix プロトコル]]></idsprotocol>
+<login><![CDATA[ログイン]]></login>
+<log_in><![CDATA[ログイン]]></log_in>
+<logging_in><![CDATA[ログイン中...]]></logging_in>
+<loggingout><![CDATA[ログアウト]]></loggingout>
+<no_user><![CDATA[ユーザ名は必須です。]]></no_user>
+<missingpassword><![CDATA[パスワードは必須です。]]></missingpassword>
+<missinginformixserver><![CDATA[Informix サーバが必要です。]]></missinginformixserver>
+<missinghost><![CDATA[ホスト名は必須です。]]></missinghost>
+<missingport><![CDATA[ポート番号は必須です。]]></missingport>
+<group><![CDATA[OAT グループ
+]]></group>
+<groups><![CDATA[グループ]]></groups>
+<password><![CDATA[パスワード]]></password>
+<port><![CDATA[ポート]]></port>
+<help><![CDATA[ヘルプ]]></help>
+<quicklogin><![CDATA[OAT グループにログイン]]></quicklogin>
+<selectaconnection><![CDATA[サーバの選択]]></selectaconnection>
+<serverdetails><![CDATA[サーバへ接続]]></serverdetails>
+<username><![CDATA[ユーザ名
+]]></username>
+<aboutOAT><![CDATA[OAT について]]></aboutOAT>
+<readme><![CDATA[ReadMe]]></readme>
+<HowDoI><![CDATA[OAT タスク ヘルプ]]></HowDoI>
+<cookies_required><![CDATA[OpenAdmin Tool にログインするには cookie が必要です。ご使用の Web ブラウザは cookie に対応していないようであるため OAT ではログインを許可できません。]]></cookies_required>
+<LoginRedirectDesc><![CDATA[ログイン中です。]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[エラー: 接続番号が指定されていません。]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[エラー: グループが指定されていません。]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[ログイン詳細が無効です。]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[グループ パスワードが無効です。再試行してください。]]></InvalidGroupPwd>
+<Default><![CDATA[デフォルト]]></Default>
+<login_instructions><![CDATA[OAT グループにログインしてグループ内のサーバに接続するか、サーバに直接接続します。OAT グループには 1 つ以上のデータベース サーバに関する接続情報があります。OAT グループは OAT 管理ページで定義されています。]]></login_instructions>
+<quicklogin_instructions><![CDATA[OAT グループを選択し、グループのパスワードを入力して「サーバの取得」をクリックします。]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[サーバの接続情報を入力するか確認します。]]></serverdetails_instructions>
+<test_connection><![CDATA[接続のテスト]]></test_connection>
+<testing_connection><![CDATA[接続のテスト中...]]></testing_connection>
+<ConnectionFailed><![CDATA[接続失敗:]]></ConnectionFailed>
+</lang>

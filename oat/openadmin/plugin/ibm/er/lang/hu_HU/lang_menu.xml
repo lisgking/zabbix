@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<er><![CDATA[Enterprise replication]]></er>
+<gridRepl><![CDATA[Rács]]></gridRepl>
+<domain><![CDATA[ER tartomány]]></domain>
+<node><![CDATA[Csomópont részletei]]></node>
+<replicates><![CDATA[Replikátumok]]></replicates>
+<howto_er><![CDATA[Replikációs súgó]]></howto_er>
+<ucm><![CDATA[Kapcsolatkezelő]]></ucm>
+</lang>

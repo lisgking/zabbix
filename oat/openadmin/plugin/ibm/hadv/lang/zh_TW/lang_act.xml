@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_act">
+
+<act_r_DBSPACETEMP><![CDATA[ 未設定 DBSPACETEMP 配置參數。如需暫時表格及排序檔案的最佳效能，請使用 DBSPACETEMP 配置參數，在個別磁碟上指定兩個以上的資料庫空間。]]></act_r_DBSPACETEMP>
+<act_r_DUMPDIR><![CDATA[不適用]]></act_r_DUMPDIR>
+<act_r_DYNAMIC_LOGS><![CDATA[不適用]]></act_r_DYNAMIC_LOGS>
+<act_r_Logdbs><![CDATA[邏輯日誌檔儲存在根資料庫空間 (rootdbs) 中。請將根資料庫空間中的邏輯日誌檔移至磁碟上未被作用中表格或實體日誌共用的資料庫空間。]]></act_r_Logdbs>
+<act_r_LTXHWM><![CDATA[動態日誌配置 (DYNAMIC_LOGS) 已關閉，而且長時間交易高臨界值 (LTXHWM) 大於 %lparam1%。請將 LTXHWM 配置參數設為更低的值，以防止長時間交易回復中止系統。]]></act_r_LTXHWM>
+<act_r_LRU_MIN><![CDATA[不適用]]></act_r_LRU_MIN>
+<act_r_LTAPEDEV><![CDATA[不適用]]></act_r_LTAPEDEV>
+<act_r_NOAGE><![CDATA[不適用]]></act_r_NOAGE>
+<act_r_ONDBSPACEDOWN><![CDATA[不適用]]></act_r_ONDBSPACEDOWN>
+<act_r_Physdbs><![CDATA[實體日誌儲存在根資料庫空間 (rootdbs) 中。請將根資料庫空間中的實體日誌移至磁碟上未被作用中表格或邏輯日誌檔共用的資料庫空間。]]></act_r_Physdbs>
+<act_r_SINGLE_CPU_VP><![CDATA[不適用]]></act_r_SINGLE_CPU_VP>
+<act_r_TAPEDEV><![CDATA[不適用]]></act_r_TAPEDEV>
+<act_r_ATS_Files><![CDATA[Enterprise Replication 產生的 ATS 檔案數大於 %param3%。請檢閱這些檔案，並採取適當的動作。]]></act_r_ATS_Files>
+<act_r_ER_DDRBlock><![CDATA[在交易區塊傳輸 (DDRBLOCK) 開始之前剩餘的日誌頁數百分比小於 %param3%%。請採取適當的動作以防止日誌覆蓋，其中可能包括使用動態日誌配置。]]></act_r_ER_DDRBlock>
+<act_r_ER_Down_Node><![CDATA[Enterprise Replication 偵測到節點已關閉。請調查節點為何關閉，並採取適當的動作。]]></act_r_ER_Down_Node>
+<act_r_RIS_Files><![CDATA[Enterprise Replication 產生的 RIS 檔案數大於 %param3%。請檢閱這些檔案，並採取適當的動作。]]></act_r_RIS_Files>
+<act_r_OS_Free_Memory><![CDATA[作業系統的可用記憶體小於可用總記憶體的 %param3%%。若缺少作業系統記憶體，可能導致效能退化。請採取適當的動作，來增加作業系統記憶體。]]></act_r_OS_Free_Memory>
+<act_r_OS_Online_Procs><![CDATA[不適用]]></act_r_OS_Online_Procs>
+<act_r_OS_Procs><![CDATA[不適用]]></act_r_OS_Procs>
+<act_r_OS_Open_File_Limit><![CDATA[每個處理程序的開啟檔案描述子數目小於 %param3%。現行值為 %param1%。每個處理程序的開啟檔案數目若不足，可能導致資料庫伺服器發生非預期的行為。請採取適當的動作來增加此值。]]></act_r_OS_Open_File_Limit>
+<act_r_OS_semid><![CDATA[作業系統中的號誌集數目小於 %param3%。現行值為 %param1%。號誌集數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_r_OS_semid>
+<act_r_OS_semnum><![CDATA[作業系統中的號誌總數小於 %param3%。現行值為 %param1%。號誌數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_r_OS_semnum>
+<act_r_OS_shmids><![CDATA[作業系統的共用記憶體 ID 數目小於 %param3%。現行值為 %param1%。共用記憶體 ID 數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_r_OS_shmids>
+<act_r_OS_shmmax><![CDATA[作業系統的共用記憶體區段大小上限小於 %param3%。現行值為 %param1%。如果共用記憶體區段的大小上限設定太低，則可能產生非預期的行為。請採取適當的動作。]]></act_r_OS_shmmax>
+<act_r_OS_shmnumsegs><![CDATA[作業系統中的共用記憶體總數小於 %param3%。現行值為 %param1%。共用記憶體區段數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_r_OS_shmnumsegs>
+<act_r_CKPT_Caused_By_LLOG><![CDATA[由於缺少邏輯日誌資源，處理檢查點期間發生區塊傳輸。若要避免此狀況，請新增邏輯日誌。]]></act_r_CKPT_Caused_By_LLOG>
+<act_r_CKPT_Caused_By_PLOG><![CDATA[由於缺少實體日誌資源，處理檢查點期間發生區塊傳輸。若要避免此狀況，請增加實體日誌的大小。]]></act_r_CKPT_Caused_By_PLOG>
+<act_r_Critical_Section><![CDATA[部分檢查點的主要區段時間大於 %lparam1% 秒。請調查處理檢查點期間已在主要區段中所花費的時間，因為它可能導致區塊傳輸。]]></act_r_Critical_Section>
+<act_r_Diskflush><![CDATA[處理檢查點期間每秒磁碟清除數目小於 %lparam1%。請調查 I/O 問題是否導致磁碟活動的速度變慢。]]></act_r_Diskflush>
+<act_r_Longest_Waiter><![CDATA[部分檢查點具有超過 %lparam1% 秒的等待時間。請調查原因以改善檢查點效能。]]></act_r_Longest_Waiter>
+<act_r_Buffreads_Per_Table><![CDATA[部分表格的緩衝區讀取數大於所有緩衝區讀取數的 %lparam1%%。請調查原因以改善效能。]]></act_r_Buffreads_Per_Table>
+<act_r_Buffwrites_Per_Table><![CDATA[部分表格的緩衝區寫入數大於所有緩衝區寫入數的 %lparam1%%。請調查原因以改善效能。]]></act_r_Buffwrites_Per_Table>
+<act_r_Seq_Scans_Per_Table><![CDATA[部分表格的循序掃描數大於所有循序掃描數的 %lparam1%%。請調查原因以改善效能。]]></act_r_Seq_Scans_Per_Table>
+<act_r_Buffreads_Cache><![CDATA[快取至緩衝區的讀取數百分比 (%cached) 小於 %param3%%。現行快取百分比為 %param1%%。增加緩衝區數目可以改善快取百分比。]]></act_r_Buffreads_Cache>
+<act_r_Buffwrites_Cache><![CDATA[快取至緩衝區的寫入數百分比 (%cached) 小於 %param3%%。現行快取百分比為 %param1%%。增加緩衝區數目可以改善快取百分比。]]></act_r_Buffwrites_Cache>
+<act_r_Disksorts><![CDATA[磁碟排序數大於排序總數的 %param3%%。現行磁碟排序數為 %param1%%。請調查可新增其他共用記憶體的選項以進行排序。]]></act_r_Disksorts>
+<act_r_isrollbacks><![CDATA[回復交易數大於交易總數的 %param3%%。請調查是否由於應用程式設計或邏輯日誌資源不足，而導致過多的回復。]]></act_r_isrollbacks>
+<act_r_Foreground_Writes><![CDATA[前景寫入數大於寫入總數的 %param3%%。增加緩衝區數目可以減少作為前景寫入的寫入數百分比。]]></act_r_Foreground_Writes>
+<act_r_LLOG_Pages_Per_IO><![CDATA[邏輯日誌頁數與 I/O 的比例（頁數/IO）大於 %param3%%。邏輯日誌頁數與 I/O 的現行比例為 %param1%%。請調查邏輯日誌緩衝區的大小 (LOGBUFF)。]]></act_r_LLOG_Pages_Per_IO>
+<act_r_Lock_Waits><![CDATA[鎖定等待數大於鎖定要求總數的 %param3%%。現行鎖定等待數是鎖定要求總數的 %param1%%。請調查具有頁面層次鎖定且在應用程式中並行的表格。]]></act_r_Lock_Waits>
+<act_r_PLOG_Pages_Per_IO><![CDATA[實體日誌頁數與 I/O 的比例（頁數/IO）大於 %param3%%。實體日誌頁數與 I/O 的現行比例為 %param1%%。請調查實體日誌緩衝區的大小。]]></act_r_PLOG_Pages_Per_IO>
+<act_r_Seq_Scans><![CDATA[循序掃描數大於 SQL 陳述式總數的 %param3%%。請調查可以改善循序掃描效能的方法。]]></act_r_Seq_Scans>
+<act_r_Offline_Chunks><![CDATA[檢查發現 %param1% 個片段離線。請調查片段為何離線，並採取適當的動作。]]></act_r_Offline_Chunks>
+<act_r_Chunk_IO_OPS><![CDATA[部分片段的 I/O 作業數大於所有 I/O 作業數的 %lparam1%%。請調查如何將 I/O 作業更平均地散佈在片段之中以改善效能。]]></act_r_Chunk_IO_OPS>
+<act_r_Chunk_IO_Reads><![CDATA[部分片段的讀取作業數大於所有讀取作業數的 %lparam1%%。請調查如何將讀取作業更平均地散佈在片段之中以改善效能。]]></act_r_Chunk_IO_Reads>
+<act_r_Chunk_IO_Writes><![CDATA[部分片段的寫入作業數大於所有寫入作業數的 %lparam1%%。請調查如何將寫入作業更平均地散佈在片段之中以改善效能。]]></act_r_Chunk_IO_Writes>
+<act_r_Dbspace_Free_Space><![CDATA[部分資料庫空間的可用空間小於資料庫空間中總空間的 %lparam1%%。請考量新增片段至這些資料庫空間。]]></act_r_Dbspace_Free_Space>
+<act_r_Rowsize><![CDATA[在部分表格中，由於資料庫空間的頁面大小及表格的列大小限制，無法使用頁面的 %lparam1%%。請調查可以增加每個頁面之可用空間的動作；例如，將表格移至具有不同頁面大小的資料庫空間，或重新設計表格。]]></act_r_Rowsize>
+
+
+
+
+
+<act_y_DBSPACETEMP><![CDATA[ DBSPACETEMP 配置參數包含空格字元。請移除資料庫空間之間的空格。]]></act_y_DBSPACETEMP>
+<act_y_DUMPDIR><![CDATA[DUMPDIR 配置參數已設為 %lparam1% 目錄。此配置參數指定建立診斷資訊的目錄。請將 DUMPDIR 配置參數變更為不同的目錄。]]></act_y_DUMPDIR>
+<act_y_DYNAMIC_LOGS><![CDATA[動態日誌配置 (DYNAMIC_LOGS) 已關閉。請開啟動態日誌配置，以防止長時間交易回復中止系統。]]></act_y_DYNAMIC_LOGS>
+<act_y_Logdbs><![CDATA[邏輯日誌檔儲存在包含作用中表格的資料庫空間中。請將邏輯日誌檔移至磁碟上未被作用中表格或實體日誌共用的資料庫空間。]]></act_y_Logdbs>
+<act_y_LTXHWM><![CDATA[動態日誌配置 (DYNAMIC_LOGS) 已關閉，而且長時間交易高臨界值 (LTXHWM) 大於 %lparam1%。請將 LTXHWM 配置參數設為更低的值，以防止長時間交易回復中止系統。]]></act_y_LTXHWM>
+<act_y_LRU_MIN><![CDATA[近期最少使用的最少錯誤欄位 (lru_min_dirty) 的值 %param1%% 小於或等於 %param3%%。引進間隔檢查點時，增加此欄位的值可以改善緩衝池的使用率以及效能。]]></act_y_LRU_MIN>
+<act_y_LTAPEDEV><![CDATA[LTAPEDEV 配置參數已設為 %lparam1% 目錄。此配置參數指定邏輯日誌檔的保存位置。請將 LTAPEDEV 配置參數設為不同的目錄。]]></act_y_LTAPEDEV>
+<act_y_NOAGE><![CDATA[未設定 VPCLASS 配置參數的 noage 選項。當作業系統降低長時間執行程序的優先順序時，可能發生優先順序老化。請設定 noage 選項以停用優先順序老化。]]></act_y_NOAGE>
+<act_y_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN 配置參數已設為繼續 (0)。當資料庫伺服器發現非重要資料庫空間關閉時，資料庫伺服器會將該資料庫空間標示為離線，然後繼續。資料庫空間必須還原。請將 ONDBSPACEDOWN 配置參數設為中斷 (1) 或等待 (2)，以便當空間標示為關閉，且資料庫空間可能不需要還原時，可以採取適當的動作。]]></act_y_ONDBSPACEDOWN> 
+<act_y_Physdbs><![CDATA[實體日誌儲存在包含作用中表格的資料庫空間中。請將實體日誌移至磁碟上未被作用中表格或邏輯日誌檔共用的資料庫空間。]]></act_y_Physdbs>
+<act_y_SINGLE_CPU_VP><![CDATA[已設定 SINGLE_CPU_VP 配置參數，而且 MULTIPROCESSOR 配置參數已設為 1。若要避免不必要的鎖定，請將 MULTIPROCESSOR 配置參數設為 0。]]></act_y_SINGLE_CPU_VP>
+<act_y_TAPEDEV><![CDATA[TAPEDEV 配置參數已設為 %lparam1% 目錄。此配置參數指定保存檔的儲存位置。請將 TAPEDEV 配置參數設為不同目錄。]]></act_y_TAPEDEV>
+<act_y_ATS_Files><![CDATA[Enterprise Replication 產生的 ATS 檔案數大於 %param3%。請檢閱這些檔案，並採取適當的動作。]]></act_y_ATS_Files>
+<act_y_ER_DDRBlock><![CDATA[在交易區塊傳輸 (DDRBLOCK) 開始之前剩餘的日誌頁數百分比小於 %param3%%。請採取適當的動作以防止日誌覆蓋，其中可能包括使用動態日誌配置。]]></act_y_ER_DDRBlock>
+<act_y_ER_Down_Node><![CDATA[不適用]]></act_y_ER_Down_Node>
+<act_y_RIS_Files><![CDATA[Enterprise Replication 產生的 RIS 檔案數大於 %param3%。請檢閱這些檔案，並採取適當的動作。]]></act_y_RIS_Files>
+<act_y_OS_Free_Memory><![CDATA[作業系統的可用記憶體小於可用總記憶體的 %param3%%。若缺少作業系統記憶體，可能導致效能退化。請採取適當的動作，來增加作業系統記憶體。]]></act_y_OS_Free_Memory>
+<act_y_OS_Online_Procs><![CDATA[作業系統的線上處理器數目 (%param3%) 小於作業系統的處理器總數 (%param1%)。判斷為何部分處理器不在線上，並採取適當的動作。]]></act_y_OS_Online_Procs> 
+<act_y_OS_Procs><![CDATA[CPU 虛擬處理器數目小於作業系統中 CPU 數目的 %param3%%。增加 CPU 虛擬處理器數目可以改善效能。請採取適當的動作，來增加 CPU 虛擬處理器的數目。]]></act_y_OS_Procs>
+<act_y_OS_Open_File_Limit><![CDATA[每個處理程序的開啟檔案描述子數目小於 %param3%。現行值為 %param1%。每個處理程序的開啟檔案描述子數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_y_OS_Open_File_Limit>
+<act_y_OS_semid><![CDATA[作業系統中的號誌集數目小於 %param3%。現行值為 %param1%。號誌集數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_y_OS_semid>
+<act_y_OS_semnum><![CDATA[作業系統中的號誌總數小於 %param3%。現行值為 %param1%。號誌數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_y_OS_semnum>
+<act_y_OS_shmids><![CDATA[作業系統的共用記憶體 ID 數目小於 %param3%。現行值為 %param1%。共用記憶體 ID 數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_y_OS_shmids>
+<act_y_OS_shmmax><![CDATA[作業系統的共用記憶體區段大小上限小於 %param3%。現行值為 %param1%。如果共用記憶體區段的大小上限設定太低，則可能產生非預期的行為。請採取適當的動作。]]></act_y_OS_shmmax>
+<act_y_OS_shmnumsegs><![CDATA[作業系統中的共用記憶體總數小於 %param3%。現行值為 %param1%。共用記憶體區段數目若不足，可能導致非預期的行為。請採取適當的動作來增加此值。]]></act_y_OS_shmnumsegs>
+<act_y_CKPT_Caused_By_LLOG><![CDATA[由於缺少邏輯日誌資源，已觸發檢查點。若缺少邏輯日誌資源，有可能導致處理檢查點期間發生區塊傳輸。若要避免此狀況，請新增邏輯日誌。]]></act_y_CKPT_Caused_By_LLOG>
+<act_y_CKPT_Caused_By_PLOG><![CDATA[由於缺少實體日誌資源，已觸發檢查點。若缺少實體日誌資源，有可能導致處理檢查點期間發生區塊傳輸。若要避免此狀況，請增加實體日誌的大小。]]></act_y_CKPT_Caused_By_PLOG>
+<act_y_Critical_Section><![CDATA[部分檢查點的主要區段時間大於 %lparam1% 秒。請調查處理檢查點期間已在主要區段中所花費的時間，因為它可能導致區塊傳輸。]]></act_y_Critical_Section>
+<act_y_Diskflush><![CDATA[處理檢查點期間每秒磁碟清除數目小於 %lparam1%。請調查 I/O 問題是否導致磁碟活動的速度變慢。]]></act_y_Diskflush>
+<act_y_Longest_Waiter><![CDATA[部分檢查點具有超過 %lparam1% 秒的等待時間。請調查原因以改善檢查點效能。]]></act_y_Longest_Waiter>
+<act_y_Buffreads_Per_Table><![CDATA[部分表格的緩衝區讀取數大於所有緩衝區讀取數的 %lparam1%%。請調查原因以改善效能。]]></act_y_Buffreads_Per_Table>
+<act_y_Buffwrites_Per_Table><![CDATA[部分表格的緩衝區寫入數大於所有緩衝區寫入數的 %lparam1%%。請調查原因以改善效能。]]></act_y_Buffwrites_Per_Table>
+<act_y_Seq_Scans_Per_Table><![CDATA[部分表格的循序掃描數大於所有循序掃描數的 %lparam1%%。請調查原因以改善效能。]]></act_y_Seq_Scans_Per_Table>
+<act_y_Buffreads_Cache><![CDATA[已快取至緩衝區的讀取數百分比 (%cached) 小於 %param3% %。現行快取百分比為 %param1% %。增加緩衝區數目可以改善快取百分比。]]></act_y_Buffreads_Cache>
+<act_y_Buffwrites_Cache><![CDATA[已快取至緩衝區的寫入數百分比 (%cached) 小於 %param3% %。現行快取百分比為 %param1% %。增加緩衝區數目可以改善快取百分比。]]></act_y_Buffwrites_Cache>
+<act_y_Disksorts><![CDATA[磁碟排序數大於排序總數的 %param3%%。現行磁碟排序數為 %param1%%。請調查可新增其他共用記憶體的選項以進行排序。]]></act_y_Disksorts>
+<act_y_isrollbacks><![CDATA[回復交易數大於交易總數的 %param3%%。請調查是否由於應用程式設計或邏輯日誌資源不足，而導致過多的回復。]]></act_y_isrollbacks>
+<act_y_Foreground_Writes><![CDATA[前景寫入數大於寫入總數的 %param3%%。增加緩衝區數目可以減少作為前景寫入的寫入數百分比。]]></act_y_Foreground_Writes>
+<act_y_LLOG_Pages_Per_IO><![CDATA[邏輯日誌頁面與 I/O 的比例（頁面/IO）小於 %param3% %。邏輯日誌頁面與 I/O 的現行比例為 %param1% %。請調查邏輯日誌緩衝區的大小 (LOGBUFF)，並檢閱無緩衝區之資料庫的交易產量。]]></act_y_LLOG_Pages_Per_IO>
+<act_y_Lock_Waits><![CDATA[鎖定等待數大於鎖定要求總數的 %param3%%。現行鎖定等待數是鎖定要求總數的 %param1%%。請調查具有頁面層次鎖定且在應用程式中並行的表格。]]></act_y_Lock_Waits>
+<act_y_PLOG_Pages_Per_IO><![CDATA[實體日誌頁面與 I/O 的比例小於 %param3% %。實體日誌頁面與 I/O 的現行比例為 %param1% %。請調查實體日誌緩衝區的大小。]]></act_y_PLOG_Pages_Per_IO>
+<act_y_Seq_Scans><![CDATA[循序掃描數大於 SQL 陳述式總數的 %param3%%。請調查可以改善循序掃描效能的方法。]]></act_y_Seq_Scans>
+<act_y_Offline_Chunks><![CDATA[不適用]]></act_y_Offline_Chunks>
+<act_y_Chunk_IO_OPS><![CDATA[部分片段的 I/O 作業數大於所有 I/O 作業數的 %lparam1%%。請調查如何將 I/O 作業更平均地散佈在片段之中以改善效能。]]></act_y_Chunk_IO_OPS>
+<act_y_Chunk_IO_Reads><![CDATA[部分片段的讀取作業數大於所有讀取作業數的 %lparam1%%。請調查如何將讀取作業更平均地散佈在片段之中以改善效能。]]></act_y_Chunk_IO_Reads>
+<act_y_Chunk_IO_Writes><![CDATA[部分片段的寫入作業數大於所有寫入作業數的 %lparam1%%。請調查如何將寫入作業更平均地散佈在片段之中以改善效能。]]></act_y_Chunk_IO_Writes>
+<act_y_Dbspace_Free_Space><![CDATA[部分資料庫空間的可用空間小於資料庫空間中總空間的 %lparam1%%。請考量新增片段至這些資料庫空間。]]></act_y_Dbspace_Free_Space>
+<act_y_Rowsize><![CDATA[在部分表格中，由於資料庫空間的頁面大小及表格的列大小限制，無法使用頁面的 %lparam1%%。請調查可以增加每個頁面之可用空間的動作；例如，將表格移至具有不同頁面大小的資料庫空間，或重新設計表格。]]></act_y_Rowsize>
+
+</lang>

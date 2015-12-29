@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Backup]]></Backup>
+<noBackupSupport><![CDATA[Backups werden nur auf Informix-Servern des Typs Standardserver, primärer Server oder ferner eigenständiger sekundärer Server (RSS-Server) unterstützt.]]></noBackupSupport>
+<sdsServer>![CDATA[Sie sind mit einem sekundären Server mit gemeinsam genutzter Platte (SDS-Server) verbunden.]]</sdsServer>
+<hdrSecondary>![CDATA[Sie sind mit einem sekundären HDR-Server verbunden.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[Für Backups in OpenAdmin Tool ist Informix Version 11.70.xC2 erforderlich.]]></noBackupSupportServerVersion>
+<notAvail>Nicht verfügbar </notAvail>
+<onbarBackProcMissing>Die für ON-Bar-Backups erforderliche gespeicherte Prozedur fehlt auf dem Server. Prüfen Sie, ob das Script sch_oat.sql während des Serverstarts ausgeführt wurde.</onbarBackProcMissing>
+<Unknown>Unbekannt</Unknown>
+</lang>

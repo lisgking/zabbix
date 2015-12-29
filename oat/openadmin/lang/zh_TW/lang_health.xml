@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[性能監視器]]></health>
+<alerts><![CDATA[警示]]></alerts>
+<aus><![CDATA[自動更新統計資料]]></aus>
+<scheduler><![CDATA[作業排程器]]></scheduler>
+<taskdetails><![CDATA[作業詳細資料]]></taskdetails>
+<taskruntimes><![CDATA[作業執行時間]]></taskruntimes>
+<task_run_list><![CDATA[作業執行清單]]></task_run_list>
+<num_executions><![CDATA[執行數]]></num_executions>
+<avg_time><![CDATA[平均時間]]></avg_time>
+<total_time><![CDATA[時間總計]]></total_time>
+<last_run_time><![CDATA[前次執行時期]]></last_run_time>
+<last_execution_status><![CDATA[前次執行狀態]]></last_execution_status>
+<edittaskparam><![CDATA[編輯作業參數]]></edittaskparam>
+<AddNewTask><![CDATA[新增作業]]></AddNewTask>
+<Save><![CDATA[儲存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<CronTaskList><![CDATA[Cron 作業清單]]></CronTaskList>
+<EditParam><![CDATA[編輯參數]]></EditParam>
+<addtask><![CDATA[新增作業]]></addtask>
+<deletetask><![CDATA[刪除作業]]></deletetask>
+<name_field_empty><![CDATA[名稱欄位空白。 請指定名稱。]]></name_field_empty>
+<name_field_duplicate><![CDATA[資料庫中的另一項作業正在使用相同的名稱。 請指定其他名稱。]]></name_field_duplicate>
+<invalid_table_name><![CDATA[名稱必須以字母或 "_" 開頭，且包含字母、數字或 "_"。]]></invalid_table_name>
+<table_name_duplicate><![CDATA[表格名稱已在使用中。 請指定其他表格名稱。]]></table_name_duplicate>
+<save_failed><![CDATA[儲存失敗： ]]></save_failed>
+<what_task_type><![CDATA[要新增哪一種作業類型？]]></what_task_type>
+<task><![CDATA[作業]]></task>
+<sensor><![CDATA[感應器]]></sensor>
+<next><![CDATA[下一步]]></next>
+<back><![CDATA[上一步]]></back>
+<cancel><![CDATA[取消]]></cancel>
+<finish><![CDATA[完成]]></finish>
+<new_sensor_setup><![CDATA[新建感應器設定]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[儲存作業參數失敗。]]></savetaskparamfailed>
+<new_task_setup><![CDATA[新建作業設定]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[指定感應器名稱及群組]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[指定作業名稱及群組]]></what_task_name_and_group>
+<sensor_name><![CDATA[感應器名稱]]></sensor_name>
+<task_name><![CDATA[作業名稱]]></task_name>
+<sensor_group><![CDATA[感應器群組]]></sensor_group>
+<task_group><![CDATA[作業群組]]></task_group>
+<type_error><![CDATA[新建作業設定程序發生一些問題。 請取消並重新啟動新建作業設定程序]]></type_error>
+<ph_group_error><![CDATA[無法從 PH_GROUP 表格擷取群組選項。 請確定 PH_GROUP 及 SYSADMIN 資料庫正常運作中。]]></ph_group_error>
+<task_desc><![CDATA[提供新作業的說明。]]></task_desc>
+<sensor_desc><![CDATA[提供新感應器的說明。]]></sensor_desc>
+<what_sensor_schedule><![CDATA[指定新感應器的排程。]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[指定新作業的排程。]]></what_task_schedule>
+<start_time><![CDATA[開始時間 (24 小時表示法)]]></start_time>
+<stop_time><![CDATA[停止時間 (24 小時表示法)]]></stop_time>
+<frequency><![CDATA[頻率]]></frequency>
+<delete_time><![CDATA[資料刪除]]></delete_time>
+<what_result_table><![CDATA[指定儲存感應器資料結果的新結果表格名稱。]]></what_result_table>
+<result_table_name><![CDATA[結果表格名稱]]></result_table_name>
+<what_tk_create><![CDATA[輸入結果表格的直欄名稱，完成 SQL 陳述式以建立結果表格。]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[指定應執行新感應器的指令。]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[指定應執行新作業的指令。]]></what_task_tk_execute>
+<custom_sql><![CDATA[輸入單一陳述式 SQL 指令或使用者定義的函數。]]></custom_sql>
+<stored_routine><![CDATA[選取已儲存的常式]]></stored_routine>
+<stored_routine_error><![CDATA[無法擷取已儲存的常式。 如果要使用已儲存的常式，請修正 SYSPROCEDURES 表格。]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[驗證您要建立的下列感應器特性。  按一下「完成」，以確認及建立感應器。]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[驗證您要建立的下列作業特性。  按一下「完成」，以確認及建立作業。]]></verify_specs_task>
+<name><![CDATA[名稱]]></name>
+<group><![CDATA[群組]]></group>
+<type><![CDATA[類型]]></type>
+<desc><![CDATA[說明]]></desc>
+<deltask><![CDATA[刪除作業]]></deltask>
+<result_table_create><![CDATA[結果表格建立陳述式]]></result_table_create>
+<execute_command><![CDATA[執行指令]]></execute_command>
+<task_name_check_error><![CDATA[無法驗證目前是否已使用該作業名稱。 請檢查 sysadmin 資料庫中的 ph_task 表格。]]></task_name_check_error>
+<table_name_check_error><![CDATA[無法驗證目前是否已使用該表格名稱。 請檢查 sysadmin 資料庫中的 systables 表格]]></table_name_check_error>
+<sensor_check_ok><![CDATA[已順利排程新感應器。]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[新感應器設定未順利完成。 請重新執行設定]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[感應器將依據排程執行，但指令發生一些問題。]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[請檢查下列錯誤碼。 按一下鏈結，以進行指令除錯。]]></debug_exec_stmt>
+<debug_command><![CDATA[指令除錯]]></debug_command>
+<task_check_ok><![CDATA[已順利排程新作業。]]></task_check_ok>
+<task_check_failed><![CDATA[新作業設定未順利完成。 請重新執行設定]]></task_check_failed>
+<task_check_bad_exec><![CDATA[作業將依據排程執行，但指令發生一些問題。]]></task_check_bad_exec>
+<setup_fail><![CDATA[設定失敗！]]></setup_fail>
+<setup_success><![CDATA[設定順利完成！]]></setup_success>
+<setup_success_with_problems><![CDATA[設定完成，但問題仍然存在]]></setup_success_with_problems>
+<return_code><![CDATA[回覆碼：]]></return_code>
+<time_error><![CDATA[停止時間不能早於開始時間。]]></time_error>
+<freq_error><![CDATA[頻率不能是 0 天、0 小時、0 分鐘、0 秒]]></freq_error>
+<execute_stmt_empty><![CDATA[執行陳述式不得為空白。]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[建立陳述式不得為空白。]]></create_stmt_empty>
+<startup_only><![CDATA[只在伺服器啟動時執行]]></startup_only>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<NoExecutionStmt><![CDATA[作業的執行陳述式不得為空白。]]></NoExecutionStmt>
+<NEVER><![CDATA[從未]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[作業刪除失敗]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[無法刪除結果表格]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[已順利刪除作業]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[不容許刪除系統作業]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[刪除關聯的結果表格]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[此功能不適用於您的現行伺服器版本。]]></FeatureUnavailable>
+<AlertList><![CDATA[警示清單]]></AlertList>
+<severity><![CDATA[嚴重性]]></severity>
+<alerttype><![CDATA[警示類型]]></alerttype>
+<state><![CDATA[狀態]]></state>
+<alertstate><![CDATA[警示狀態]]></alertstate>
+<message><![CDATA[訊息]]></message>
+<grouptoview><![CDATA[要檢視的群組]]></grouptoview>
+<taskdetails><![CDATA[作業詳細資料]]></taskdetails>
+<taskname><![CDATA[作業名稱]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[執行陳述式]]></executionstmt>
+<resulttable><![CDATA[結果表格]]></resulttable>
+<starttime><![CDATA[開始時間]]></starttime>
+<stopttime><![CDATA[停止時間]]></stopttime>
+<time><![CDATA[時間]]></time>
+<frequency><![CDATA[頻率]]></frequency>
+<datadelete><![CDATA[資料刪除]]></datadelete>
+<WeekDay1><![CDATA[星期一]]></WeekDay1>
+<WeekDay2><![CDATA[星期二]]></WeekDay2>
+<WeekDay3><![CDATA[星期三]]></WeekDay3>
+<WeekDay4><![CDATA[星期四]]></WeekDay4>
+<WeekDay5><![CDATA[星期五]]></WeekDay5>
+<WeekDay6><![CDATA[星期六]]></WeekDay6>
+<WeekDay7><![CDATA[星期日]]></WeekDay7>
+<enabletask><![CDATA[啟用作業]]></enabletask>
+<taskparams><![CDATA[作業參數]]></taskparams>
+<paramname><![CDATA[參數名稱]]></paramname>
+<description><![CDATA[說明]]></description>
+<value><![CDATA[值]]></value>
+<valuetype><![CDATA[值類型]]></valuetype>
+<edittaskparam><![CDATA[編輯作業參數]]></edittaskparam>
+<view><![CDATA[檢視]]></view>
+<NEW><![CDATA[新建]]></NEW>
+<ADDRESSED><![CDATA[已定址]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[已確認]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[忽略]]></IGNORED>
+<INFO><![CDATA[資訊]]></INFO>
+<WARNING><![CDATA[警告]]></WARNING>
+<ERROR><![CDATA[錯誤]]></ERROR>
+<COLORGREEN><![CDATA[綠色]]></COLORGREEN>
+<COLORRED><![CDATA[紅色]]></COLORRED>
+<COLORYELLOW><![CDATA[黃色]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[作業排程]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<Enabled><![CDATA[已啟用]]></Enabled>
+<Disabled><![CDATA[已停用]]></Disabled>
+<runfrequency><![CDATA[執行頻率]]></runfrequency>
+<execution><![CDATA[執行]]></execution>
+<taskdetailssaved><![CDATA[已順利儲存作業詳細資料。]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[已順利儲存作業參數。]]></TaskParamSaved>
+<recheck><![CDATA[重新檢查]]></recheck>
+<ignore><![CDATA[忽略]]></ignore>
+<correct><![CDATA[更正]]></correct>
+<Days><![CDATA[日]]></Days>
+<Hours><![CDATA[小時]]></Hours>
+<Minutes><![CDATA[分鐘]]></Minutes>
+<Seconds><![CDATA[秒]]></Seconds>
+<ALARM><![CDATA[警示 #{0}]]></ALARM>
+<Warning><![CDATA[警告]]></Warning>
+<Error><![CDATA[錯誤]]></Error>
+<Info><![CDATA[資訊]]></Info>
+<green><![CDATA[綠色]]></green>
+<yellow><![CDATA[黃色]]></yellow>
+<red><![CDATA[紅色]]></red>
+<TaskNotFound><![CDATA[找不到作業。]]></TaskNotFound>
+</lang>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Adatbázis-területek]]></mainTitle>
+<dbspace><![CDATA[Adatbázis-terület]]></dbspace>
+<dbspaceName><![CDATA[Adatbázis-terület neve]]></dbspaceName>
+<owner><![CDATA[Tulajdonos]]></owner>
+<pagesize><![CDATA[Lapméret]]></pagesize>
+<createTime><![CDATA[Létrehozási idő]]></createTime>
+<dbspaceInfo><![CDATA[Adatbázis-terület információk]]></dbspaceInfo>
+<utilization><![CDATA[{0} kihasználtság]]></utilization>
+<indexPages><![CDATA[Indexlapok]]></indexPages>
+<dataPages><![CDATA[Adatlapok]]></dataPages>
+<otherPages><![CDATA[Egyéb lapok]]></otherPages>
+<freePages><![CDATA[Szabad lapok]]></freePages>
+<TableName><![CDATA[Táblanév]]></TableName>
+<StartAddr><![CDATA[Kezdő cím]]></StartAddr>
+<EndAddr><![CDATA[Befejező cím]]></EndAddr>
+<size><![CDATA[Méret]]></size>
+<Status><![CDATA[Állapot]]></Status>
+<ExtentList><![CDATA[Kiterjedés listázása]]></ExtentList>
+<TableList><![CDATA[Tábla listázása]]></TableList>
+<Database><![CDATA[Adatbázis]]></Database>
+<Table><![CDATA[Tábla]]></Table>
+<Collate><![CDATA[Leválogatás]]></Collate>
+<Rows><![CDATA[Sorok]]></Rows>
+<SystemIntegrity><![CDATA[A következő integritása:]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Adatbázis-terület táblaformátum ellenőrzése]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Adatbázis-terület kiterjedések ellenőrzése]]></butCheckDbsExt>
+<RowSize><![CDATA[Sorméret]]></RowSize>
+<Created><![CDATA[Létrehozva]]></Created>
+<AllocPages><![CDATA[Lefoglalt lapok]]></AllocPages>
+<UsedPages><![CDATA[Használt lapok]]></UsedPages>
+<NumExtents><![CDATA[Kiterjedések száma]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Száma]]></Number>
+<Name><![CDATA[Név]]></Name>
+<Type><![CDATA[Típus]]></Type>
+<default><![CDATA[Alapértelmezett]]></default>
+<CreateSpace><![CDATA[Terület létrehozása]]></CreateSpace>
+<Create><![CDATA[Létrehozás]]></Create>
+<numChunks><![CDATA[Csonkok száma]]></numChunks>
+<UsedPer><![CDATA[Felhasznált %]]></UsedPer>
+<Data><![CDATA[Adatok]]></Data>
+<Index><![CDATA[Index]]></Index>
+<Other><![CDATA[Egyéb]]></Other>
+<Free><![CDATA[Szabad]]></Free>
+<noDropDBSpace><![CDATA[Rootdbs nem szüntethető meg.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Terület hozzáadása a következőhöz:]]></AddSpaceto>
+<Path><![CDATA[Útvonal]]></Path>
+<Offset><![CDATA[Eltolás]]></Offset>
+<FileCreation><![CDATA[Fájl létrehozás]]></FileCreation>
+<MayCreateFile><![CDATA[Fájl létrehozása, ha egy sem létezik]]></MayCreateFile>
+<FileMustExist><![CDATA[Fájlnak léteznie kell]]></FileMustExist>
+<DropSpace><![CDATA[{0} terület megszüntetése]]></DropSpace>
+<AddChunk><![CDATA[Csonk hozzáadása]]></AddChunk>
+<Used><![CDATA[Használt]]></Used>
+<AddMirror><![CDATA[Tükör hozzáadása]]></AddMirror>
+<AddChunkMirror><![CDATA[Csonk hozzáadása tükörrel]]></AddChunkMirror>
+<StartMirror><![CDATA[Tükrözés indítása]]></StartMirror>
+<StopMirror><![CDATA[Tükrözés leállítása]]></StopMirror>
+<AddMirrorto><![CDATA[Tükör hozzáadása a következőhöz:]]></AddMirrorto>
+<MirrorPath><![CDATA[Tükrözési útvonal]]></MirrorPath>
+<MirrorOffset><![CDATA[Tükrözési eltolás]]></MirrorOffset>
+<MirroringStarted><![CDATA[Tükrözés elindítva]]></MirroringStarted>
+<MirroringStopped><![CDATA[Tükrözés leállítva]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - Rendszer érvényesítése]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck érvényesítés befejezve.]]></oncheckComplete>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Ez a művelet másodlagos kiszolgálókon érvénytelen.]]></NotValidOnSecondary>
+<Error><![CDATA[Hiba:]]></Error>
+<DropDBSpaceFailed><![CDATA[Az adatbázis-terület megszüntetése nem sikerült.  A következő adatbázis-terület érték nincs megfelelően beállítva:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Az adatbázis-terület létrehozása nem sikerült.  Az adatbázis-terület művelet]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[érvénytelen.]]></IsNotValid>
+<DATASpace><![CDATA[ADAT terület]]></DATASpace>
+<DataSpaceL><![CDATA[Adat terület]]></DataSpaceL>
+<TEMPSpace><![CDATA[TEMP-terület]]></TEMPSpace>
+<TempSpaceL><![CDATA[Temp-terület]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB-terület]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Az adatbázis-terület létrehozása sikerült]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Az adatbázis-terület létrehozása nem sikerült.  A következő adatbázis-terület érték nincs megfelelően beállítva:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Az adatbázis-terület létrehozása nem sikerült.  Az adatbázis-terület művelet érvénytelen]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Az adatbázis-terület megszüntetése nem került megerősítésre]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Érvényesítési eredmények a következő számára: ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Érvényesítési eredmények ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[A csonk hozzáadása a következő adatbázis-területhez meghiúsult:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Csonk sikeresen hozzáadva]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Csonk hozzáadása adatbázis-területhez:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Tükrözött csonk sikeresen hozzáadva]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[A tükör hozzáadása a következő adatbázis-területhez meghiúsult:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[A következő tükrözési érték nincs megfelelően beállítva:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Tükör sikeresen hozzáadva]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[A tükrözés indítása nem sikerült a következő adatbázis-területen:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[A tükrözés indítása nem került jóváhagyásra a következő adatbázis-területen:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[A tükrözés leállítása nem sikerült a következő adatbázis-területen:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[A tükrözés leállítása nem került jóváhagyásra a következő adatbázis-területen:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Adatbázis-terület]]></Dbspace>
+<TempDbspace><![CDATA[Ideiglenes adatbázis-terület]]></TempDbspace>
+<MirroredDbspace><![CDATA[Tükrözött adatbázis-terület]]></MirroredDbspace>
+<Blobspace><![CDATA[Blob-terület]]></Blobspace>
+<MirroredBlobspace><![CDATA[Tükrözött blob-terület]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Intelligens blob-terület]]></SmartBlobspace>
+<TempSbspace><![CDATA[Ideiglenes intelligens blob-terület]]></TempSbspace>
+<MirroredSbspace><![CDATA[Tükrözött intelligens blob-terület]]></MirroredSbspace>
+<DataPages><![CDATA[Adatlapok]]></DataPages>
+<IndexPages><![CDATA[Indexlapok]]></IndexPages>
+<OtherPages><![CDATA[Egyéb lapok]]></OtherPages>
+<FreePages><![CDATA[Szabad lapok]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Az adatbázis-terület érték nincs megfelelően beállítva:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Összefoglalás]]></summary>
+<admin><![CDATA[Adminisztrátor]]></admin>
+<tables><![CDATA[Táblázatok]]></tables>
+<extents><![CDATA[Kiterjedések]]></extents>
+<validation><![CDATA[Ellenőrzés]]></validation>
+<Disabled><![CDATA[Letiltva]]></Disabled>
+<Recovering><![CDATA[Helyreállítás]]></Recovering>
+<Operational><![CDATA[Működik]]></Operational>
+</lang>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[세션이 더 이상 존재하지 않습니다.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[잘못된 세션 ID입니다.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[사용자 {0}에 세션에 대한 현재 명령문을 확인할 수 있는 권한이 없습니다. ]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[사용자 {0}에 세션에 대한 SQL을 확인할 수 있는 권한이 없습니다.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[오류:]]></ErrorF>
+</lang>

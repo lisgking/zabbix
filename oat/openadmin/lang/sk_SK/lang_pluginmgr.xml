@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Správca doplnkov]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Správca modulov plug-in nemôže zapisovať do dočasného adresára nástroja OAT: tmp. Ak chcete nainštalovať modul plug-in, musíte mať oprávnenie na zápis do dočasného adresára nástroja OAT. Získajte oprávnenie na zápis do tohto adresára a znova nainštalujte modul plug-in.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Nie je možné otvoriť správcu modulov plug-in, pretože tento správca vyžaduje, aby bolo nakonfigurované PHP s nainštalovaným modulom zip. PHP, ktoré využíva nástroj OAT, nemá nainštalovaný modul zip. Nakonfigurujte na vašom webovom serveri PHP s nainštalovaným modulom zip. Voliteľne môžete preinštalovať nástroj OAT s použiť pri tom inštalátor nástroja OAT, ktorý konfiguruje PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Modul plug-in nebol nainštalovaný.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Nainštalované doplnky]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Doplnky ešte nie sú nainštalované]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Nebol vybratý žiaden modul plug-in na inštaláciu.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Nie sú k dispozícii žiadne aktualizácie verzie.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Správca modulov plug-in nemôže zapisovať do adresára modulov plug-in. Získajte oprávnenie na zápis do tohto adresára a znova nainštalujte modul plug-in.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Aktuálna verzia nainštalovaná]]></CurrVerInstalled>
+<Unknown><![CDATA[Neznáme]]></Unknown>
+<ClickToEnable><![CDATA[Kliknutím povoliť]]></ClickToEnable>
+<ClickToDisable><![CDATA[Kliknutím zakázať]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Tento súbor nebolo možné vymazať: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Verzia modulu plug-in bola úspešne aktualizovaná.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Modul plug-in bol úspešne nainštalovaný.]]></PluginInstalled>
+<Name><![CDATA[Názov]]></Name>
+<Author><![CDATA[Autor]]></Author>
+<Description><![CDATA[Popis]]></Description>
+<Version><![CDATA[Verzia]]></Version>
+<ServerVersion><![CDATA[Verzia servera]]></ServerVersion>
+<MinOATVersion><![CDATA[Minimálna verzia nástroja OAT]]></MinOATVersion>
+<Install><![CDATA[Inštalovať]]></Install>
+<Uninstall><![CDATA[Odinštalovať]]></Uninstall>
+<Upgrade><![CDATA[Aktualizovať]]></Upgrade>
+<Enabled><![CDATA[Povolené]]></Enabled>
+<updating><![CDATA[Aktualizuje sa]]></updating>
+<LatestInstalled><![CDATA[Naposledy nainštalované]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Táto akcia odinštaluje modul plug-in {0}. Keď je modul plug-in nainštalovaný, vymaže sa komprimovaný súbor modulu plug-in. Po inštalácii modulu plug-in, nemôže byť tento modul preinštalovaný, kým nebude komprimovaný súbor modulu plug-in obnovený v adresári modulov plug-in.  \n\nDChcete pokračovať?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Modul plug-in bol úspešne odinštalovaný.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Modul plug-in nebol nainštalovaný.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[Nástroj OAT sa pokúsil odinštalovať modul plug-in, ale nebolo nájdené ID modulu plug-in. Kliknite v ponuke Admin na možnosť Správca modulov plug-in a pozrite si zoznam nainštalovaných modulov plug-in. Ak je to potrebné, znova modul plug-in odinštalujte.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Modul plug-in bol odinštalovaný, ale nebolo možné odstrániť nasledujúce súbory:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Môžete vymazať tieto súbory zo svojho počítača.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[Položka ponuky pre modul plug-in nebola vymazaná. Môžete vymazať položku ponuky na stránke správca ponuky.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Vybratý modul plug-in nie je možné odinštalovať. Minimálna verzia nástroja OAT vyžadovaná pre modul plug-in je {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Súhlasím]]></Agree>
+<Disagree><![CDATA[Nesúhlasím]]></Disagree>
+</lang>

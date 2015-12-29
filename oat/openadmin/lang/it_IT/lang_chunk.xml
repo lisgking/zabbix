@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Porzioni]]></Chunks>
+<Chunk><![CDATA[Porzione]]></Chunk>
+<MirrorChunk><![CDATA[Porzione di mirroring]]></MirrorChunk>
+<ChunkIO><![CDATA[I/O porzione]]></ChunkIO>
+<ChunkTable><![CDATA[Elenco tabelle porzioni]]></ChunkTable>
+<MirrorTable><![CDATA[Elenco tabelle porzioni di mirroring]]></MirrorTable>
+<ChunkNum><![CDATA[Numero porzione]]></ChunkNum>
+<SpaceName><![CDATA[Nome spazio]]></SpaceName>
+<PageSize><![CDATA[Dimensione pagina]]></PageSize>
+<Offset><![CDATA[Offset]]></Offset>
+<Size><![CDATA[Dimensione]]></Size>
+<Free><![CDATA[Libero]]></Free>
+<Used><![CDATA[Utilizzato %]]></Used>
+<Status><![CDATA[Stato]]></Status>
+<Path><![CDATA[Percorso]]></Path>
+<ChunkPath><![CDATA[Percorso porzione]]></ChunkPath>
+<Reads><![CDATA[Letture]]></Reads>
+<Writes><![CDATA[Scritture]]></Writes>
+<TotalIO><![CDATA[Letture e scritture totali]]></TotalIO>
+<IOTableTitle><![CDATA[I/O per porzione]]></IOTableTitle>
+<IOGraphTitle><![CDATA[I/O delle prime 20 porzioni]]></IOGraphTitle>
+<ONLINE><![CDATA[ONLINE]]></ONLINE>
+<OFFLINE><![CDATA[OFFLINE]]></OFFLINE>
+<RECOVERING><![CDATA[RIPRISTINO]]></RECOVERING>
+</lang>

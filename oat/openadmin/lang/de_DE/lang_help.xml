@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="help">
+<OATHelp><![CDATA[OAT - Hilfe]]></OATHelp>
+<Help><![CDATA[Hilfe]]></Help>
+<CloseWindow><![CDATA[Fenster schließen]]></CloseWindow>
+<ErrorOpeningDB><![CDATA[Beim Öffnen der Hilfedatenbank trat ein Fehler auf.]]></ErrorOpeningDB>
+<SorryNoHelpFound><![CDATA[Für diese Seite wurde kein Hilfethema gefunden. <br/><br/>Im IBM&reg; Informix&reg; Information Center können Sie zu vielen OAT-Tasks weitere Hilfe finden.]]></SorryNoHelpFound>
+</lang>

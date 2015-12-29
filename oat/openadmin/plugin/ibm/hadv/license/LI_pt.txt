@@ -1,0 +1,10 @@
+INFORMAÇÕES DA LICENÇA
+
+Os Programas listados abaixo são licenciados sob os/ao abrigo dos termos e condições a seguir, além daqueles do IBM Contrato de Licença Internacional para Programas Não Garantidos (form number da IBM n.° Z125-5589-05).
+
+Nome do Programa: IBM Informix Health Advisor Plug-in for OpenAdmin Tool V3.11
+Número do Programa: Tool
+
+L/N:  L-DDAY-94MTMX
+D/N:  L-DDAY-94MTMX
+P/N:  L-DDAY-94MTMX 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[首頁]]></home>
+
+<dashboard><![CDATA[儀表板]]></dashboard>
+<dashboard_name_perf><![CDATA[伺服器效能]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[此儀表板顯示表格、查詢及 CPU 的相關資訊。]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[資源使用]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[此儀表板顯示記憶體、空間及鎖定的相關資訊。]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[資料庫伺服器記憶體]]></panel_title_memory>
+<panel_desc_memory><![CDATA[此畫面顯示資料庫伺服器的共用記憶體用量。]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[階段作業數]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[此畫面顯示資料庫伺服器的連接階段作業數。]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[網路讀取及寫入數]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[此畫面顯示網路讀取及寫入的 I/O 呼叫數。]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[磁碟 I/O]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[此畫面顯示磁碟 I/O 等待時間。此畫面需要 Informix 12.10。]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[OS 記憶體]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[此畫面顯示作業系統 (OS) 的記憶體用量。此畫面需要 Informix 11.50。]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[交易]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[此畫面顯示資料庫伺服器的交易數。]]></panel_desc_transactions>
+<panel_title_space><![CDATA[空間使用情形]]></panel_title_space>
+<panel_desc_space><![CDATA[此畫面顯示每個資料庫空間的可用空間及已使用空間。]]></panel_desc_space>
+<panel_title_locks><![CDATA[鎖定數]]></panel_title_locks>
+<panel_desc_locks><![CDATA[此畫面顯示資料庫伺服器的鎖定數。]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[頂端表格 - 讀取數]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[此畫面顯示讀取數最多的表格。]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU 時間]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[此畫面顯示使用者及系統 CPU 時間。]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[頂端表格 - 已修改]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[此畫面顯示插入、更新及刪除數最多的表格。]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[SQL 作業總數]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[此畫面顯示已處理、插入、更新及刪除的總列數。]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[每秒 SQL 作業數]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[此畫面顯示每秒處理、插入、更新及刪除的列數。]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[歡迎使用]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[OpenAdmin Tool 無法在此頁面上顯示含有多個非英文資料庫語言環境的資料庫伺服器相關資訊。資料庫伺服器包含多個非英文資料庫語言環境。]]></NotYetImpl>
+<sessionexplorer><![CDATA[階段作業瀏覽器]]></sessionexplorer>
+<ChartTest><![CDATA[圖表 - 測試]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[資料空間]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[無法擷取資料庫伺服器的連線資訊。]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[連線失敗：{0}]]></ConnectionFailed>
+<SQLError><![CDATA[錯誤：{0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[資料庫伺服器已遭封鎖。OAT 無法擷取任何其他狀態資訊。]]></ServerBlocked>
+</lang>

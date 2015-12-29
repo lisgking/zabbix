@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_info">
+<linksTitle><![CDATA[役立ちリンク]]></linksTitle>
+<aboutTitle><![CDATA[OAT について]]></aboutTitle>
+<productInfo><![CDATA[製品情報]]></productInfo>
+<productName><![CDATA[製品名]]></productName>
+<version><![CDATA[バージョン]]></version>
+<buildtimestamp><![CDATA[ビルド タイム スタンプ]]></buildtimestamp>
+<copyright><![CDATA[&copy; Copyright IBM Corporation. 2007, 2013.<br/>&copy; Copyright The PHP Group 1999-2010.<br/>補足説明については、notices.txt ファイルを参照してください。]]></copyright>
+<IBMInfo><![CDATA[IBM]]></IBMInfo>
+<IIUGInfo><![CDATA[IIUG]]></IIUGInfo>
+<IBMInformixHomepage><![CDATA[IBM Informix 製品ファミリ]]></IBMInformixHomepage>
+<IBMInformixProducts><![CDATA[IBM Informix 製品に関する情報]]></IBMInformixProducts>
+<OATHomePage><![CDATA[OpenAdmin Tool]]></OATHomePage>
+<OATHomePageDesc><![CDATA[OpenAdmin Tool (OAT) に関する情報]]></OATHomePageDesc>
+<OATForum><![CDATA[OpenAdmin Tool フォーラム]]></OATForum>
+<OATForumDesc><![CDATA[International Informix Users Group (IIUG) によって主催される OAT のサポート フォーラム]]></OATForumDesc>
+<InfoCenter_v11.50><![CDATA[IBM Informix v11.50 インフォメーション センター]]></InfoCenter_v11.50>
+<InfoCenter_v11.50_Desc><![CDATA[IBM Informix v11.50 のマニュアル]]></InfoCenter_v11.50_Desc>
+<InfoCenter_v11.70><![CDATA[IBM Informix v11.70 インフォメーション センター]]></InfoCenter_v11.70>
+<InfoCenter_v11.70_Desc><![CDATA[IBM Informix v11.70 のマニュアル]]></InfoCenter_v11.70_Desc>
+<InfoCenter_v12.10><![CDATA[IBM Informix v12.10 インフォメーション センタ]]></InfoCenter_v12.10>
+<InfoCenter_v12.10_Desc><![CDATA[IBM Informix v12.10 のマニュアル]]></InfoCenter_v12.10_Desc>
+<IDSProdSupport><![CDATA[IBM サポート ポータル: Informix サーバ]]></IDSProdSupport>
+<IDSProdSupportPage><![CDATA[IBM Informix サーバのサポート]]></IDSProdSupportPage>
+<InformixProdSupp><![CDATA[IBM サポート ポータル: Informix 製品ファミリ]]></InformixProdSupp>
+<InformixProdSuppPage><![CDATA[IBM Informix 製品のサポート]]></InformixProdSuppPage>
+<InformixDevZone><![CDATA[IBM developerWorks: IBM Informix]]></InformixDevZone>
+<InformixDevZoneDesc><![CDATA[開発者および IT 専門職向けの IBM リソースの Informix に関する技術情報]]></InformixDevZoneDesc>
+<IIUGHome><![CDATA[International Informix Users Group]]></IIUGHome>
+<IIUGHomePage><![CDATA[International Informix Users Group (IIUG) ホーム ページ]]></IIUGHomePage>
+<IIUGSuppForumOAT><![CDATA[IIUG によって主催される OpenAdmin Tool (OAT) のサポート フォーラム]]></IIUGSuppForumOAT>
+<IIUGForums><![CDATA[Informix フォーラム]]></IIUGForums>
+<IIUGForumsDesc><![CDATA[IIUG によって主催される IBM Informix 製品のサポート フォーラム]]></IIUGForumsDesc>
+<InformixEvents><![CDATA[IIUG イベント カレンダ]]></InformixEvents>
+<InformixUserEventSchedule><![CDATA[Informix ユーザのイベント スケジュール]]></InformixUserEventSchedule>
+<IIUGSponsorProgram><![CDATA[IIUG スポンサ プログラム]]></IIUGSponsorProgram>
+<IIUGSponsorProgramDesc><![CDATA[IIUG コミュニティを支援し、会社の宣伝に生かすためのプログラム]]></IIUGSponsorProgramDesc>
+<OATForIDSText><![CDATA[OpenAdmin Tool Community Edition]]></OATForIDSText>
+<PHPConfiguration><![CDATA[PHP 構成]]></PHPConfiguration>
+<ExternalLinksNotice><![CDATA[他社の Web サイトへのリンクについて]]></ExternalLinksNotice>
+</lang>

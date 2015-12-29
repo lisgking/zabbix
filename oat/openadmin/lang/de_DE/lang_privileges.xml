@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Zugriffsrechte verwalten]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Benutzerzugriffsrechte]]></UserPrivileges>
+<Database><![CDATA[Datenbank]]></Database>
+<DBPrivileges><![CDATA[Zugriffsrechte auf Datenbankebene]]></DBPrivileges>
+<TablePrivileges><![CDATA[Zugriffsrechte auf Tabellenebene]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Zugriffsrechte für SQL-Verwaltungs-API]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Interne Benutzer]]></NonOsUsers>
+<Name><![CDATA[Name]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<DefRole><![CDATA[Standardrolle]]></DefRole>
+<Tabname><![CDATA[Tabellenname]]></Tabname>
+<User><![CDATA[Benutzer]]></User>
+<Grantor><![CDATA[Berechtigungsgeber]]></Grantor>
+<Privilege><![CDATA[Zugriffsrecht]]></Privilege>
+<Privileges><![CDATA[Zugriffsrechte]]></Privileges>
+<Username><![CDATA[Benutzername]]></Username>
+<Grant><![CDATA[Erteilen]]></Grant>
+<GrantNewPriv><![CDATA[Neues Zugriffsrecht erteilen]]></GrantNewPriv>
+<Roles><![CDATA[Rollen]]></Roles>
+<CreateNewRole><![CDATA[Neue Rolle erstellen]]></CreateNewRole>
+<Create><![CDATA[Erstellen]]></Create>
+<RoleName><![CDATA[Rollenname]]></RoleName>
+<NoUserError><![CDATA[Erteilung fehlgeschlagen: kein Benutzername angegeben.]]></NoUserError>
+<NoPrivError><![CDATA[Erteilung fehlgeschlagen: keine Berechtigungsstufe angegeben.]]></NoPrivError>
+<NoTabError><![CDATA[Erteilung fehlgeschlagen: kein Tabellenname angegeben.]]></NoTabError>
+<NoRoleError><![CDATA[Erstellen fehlgeschlagen: kein Rollenname angegeben.]]></NoRoleError>
+<NoPermission><![CDATA[Benutzer mit Lesezugriff haben hierfür keine Berechtigung. Sie sind als Benutzer mit Lesezugriff angemeldet.]]></NoPermission>
+<NoDatabasesError><![CDATA[Auf diesem Datenbankserver ist keine Nicht-Systemdatenbank verfügbar.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Erteilung erfolgreich für Benutzer]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Zugriffsrecht widerrufen für Benutzer]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Zugriffsrecht gespeichert für Benutzer]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Erteilung erfolgreich in Tabelle]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[für Benutzer]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Zugriffsrecht widerrufen für Benutzer]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[in Tabelle]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Zugriffsrecht gespeichert für Benutzer]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Erstellung erfolgreich für Rolle]]></CreateSuccessForRole>
+<Connect><![CDATA[Verbinden]]></Connect>
+<Resource><![CDATA[Ressource]]></Resource>
+<DBA><![CDATA[Datenbankadministrator]]></DBA>
+<CONNECT><![CDATA[VERBINDEN]]></CONNECT>
+<RESOURCE><![CDATA[RESSOURCE]]></RESOURCE>
+<Select><![CDATA[Auswählen]]></Select>
+<Update><![CDATA[Aktualisieren]]></Update>
+<Insert><![CDATA[Einfügen]]></Insert>
+<Delete><![CDATA[Löschen]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Ändern]]></Alter>
+<References><![CDATA[Referenzen]]></References>
+<Under><![CDATA[Unter]]></Under>
+<Modify><![CDATA[Modifizieren]]></Modify>
+<Revoke><![CDATA[Widerrufen]]></Revoke>
+<ErrorF><![CDATA[Fehler:]]></ErrorF>
+<GrantFailed><![CDATA[Erteilung fehlgeschlagen]]></GrantFailed>
+<CreateFailed><![CDATA[Erstellung fehlgeschlagen]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[OAT erfordert für interne Benutzer Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[OAT erfordert für Zugriffsrechte für SQL-Verwaltungs-API-Befehle Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

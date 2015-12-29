@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[DBSpaces]]></mainTitle>
+<dbspace><![CDATA[DBSpace]]></dbspace>
+<dbspaceName><![CDATA[DBSpace Name]]></dbspaceName>
+<owner><![CDATA[Owner]]></owner>
+<pagesize><![CDATA[Page Size]]></pagesize>
+<createTime><![CDATA[Create Time]]></createTime>
+<dbspaceInfo><![CDATA[DBSpace Info]]></dbspaceInfo>
+<utilization><![CDATA[{0} Utilization]]></utilization>
+<indexPages><![CDATA[Index Pages]]></indexPages>
+<dataPages><![CDATA[Data Pages]]></dataPages>
+<otherPages><![CDATA[Other Pages]]></otherPages>
+<freePages><![CDATA[Free Pages]]></freePages>
+<TableName><![CDATA[Table Name]]></TableName>
+<StartAddr><![CDATA[Start Address]]></StartAddr>
+<EndAddr><![CDATA[End Address]]></EndAddr>
+<size><![CDATA[Size]]></size>
+<Status><![CDATA[Status]]></Status>
+<ExtentList><![CDATA[Extent Listing]]></ExtentList>
+<TableList><![CDATA[Table Listing]]></TableList>
+<Database><![CDATA[Database]]></Database>
+<Table><![CDATA[Table]]></Table>
+<Collate><![CDATA[Collate]]></Collate>
+<Rows><![CDATA[Rows]]></Rows>
+<SystemIntegrity><![CDATA[Integrity of]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Check Dbspace Table Format]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Check Dbspace Extents]]></butCheckDbsExt>
+<RowSize><![CDATA[Rows Size]]></RowSize>
+<Created><![CDATA[Created]]></Created>
+<AllocPages><![CDATA[Allocated Pages]]></AllocPages>
+<UsedPages><![CDATA[Used Pages]]></UsedPages>
+<NumExtents><![CDATA[# of Extents]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Number]]></Number>
+<Name><![CDATA[Name]]></Name>
+<Type><![CDATA[Type]]></Type>
+<default><![CDATA[Default]]></default>
+<CreateSpace><![CDATA[Create a Space]]></CreateSpace>
+<Create><![CDATA[Create]]></Create>
+<numChunks><![CDATA[# of Chunks]]></numChunks>
+<UsedPer><![CDATA[Used %]]></UsedPer>
+<Data><![CDATA[Data]]></Data>
+<Index><![CDATA[Index]]></Index>
+<Other><![CDATA[Other]]></Other>
+<Free><![CDATA[Free]]></Free>
+<noDropDBSpace><![CDATA[Cannot drop rootdbs.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Add Space to]]></AddSpaceto>
+<Path><![CDATA[Path]]></Path>
+<Offset><![CDATA[Offset]]></Offset>
+<FileCreation><![CDATA[File Creation]]></FileCreation>
+<MayCreateFile><![CDATA[Create File if None Exists]]></MayCreateFile>
+<FileMustExist><![CDATA[File Must Exist]]></FileMustExist>
+<DropSpace><![CDATA[Drop Space {0}]]></DropSpace>
+<AddChunk><![CDATA[Add Chunk]]></AddChunk>
+<Used><![CDATA[Used]]></Used>
+<AddMirror><![CDATA[Add Mirror]]></AddMirror>
+<AddChunkMirror><![CDATA[Add Chunk with Mirror]]></AddChunkMirror>
+<StartMirror><![CDATA[Start Mirror]]></StartMirror>
+<StopMirror><![CDATA[Stop Mirror]]></StopMirror>
+<AddMirrorto><![CDATA[Add Mirror to]]></AddMirrorto>
+<MirrorPath><![CDATA[Mirror Path]]></MirrorPath>
+<MirrorOffset><![CDATA[Mirror Offset]]></MirrorOffset>
+<MirroringStarted><![CDATA[Mirroring is Started]]></MirroringStarted>
+<MirroringStopped><![CDATA[Mirroring is Stopped]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - System Validation]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck validation complete.]]></oncheckComplete>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[This action is not valid on secondary servers.]]></NotValidOnSecondary>
+<Error><![CDATA[Error:]]></Error>
+<DropDBSpaceFailed><![CDATA[Dropping DBSpace failed.  The following DBSpace value was not set correctly:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[DBSpace creation failed.  DBSpace action]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[is not valid.]]></IsNotValid>
+<DATASpace><![CDATA[DATA Space]]></DATASpace>
+<DataSpaceL><![CDATA[Data Space]]></DataSpaceL>
+<TEMPSpace><![CDATA[TEMP Space]]></TEMPSpace>
+<TempSpaceL><![CDATA[Temp Space]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB Space]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[DBSpace creation success]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[DBSpace creation failed.  The following DBSpace value is not set correctly:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[DBSpace creation failed.  DBSpace action is not valid]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Drop of DBSpace was not confirmed]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Validation Results to ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Validation Results ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Failed adding chunk to dbspace:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Chunk added successfully]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Adding chunk to dbspace:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Mirrored chunk added successfully]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Failed adding mirror on dbspace:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[The following mirror value is not set correctly:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Mirror added successfully]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Failed to start mirroring on dbspace:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[Start mirroring was not confirmed on dbspace:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Failed to stop mirroring for dbsapce:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Stop mirroring was not confirmed on dbspace:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Dbspace]]></Dbspace>
+<TempDbspace><![CDATA[Temp Dbspace]]></TempDbspace>
+<MirroredDbspace><![CDATA[Mirrored Dbspace]]></MirroredDbspace>
+<Blobspace><![CDATA[Blobspace]]></Blobspace>
+<MirroredBlobspace><![CDATA[Mirrored Blobspace]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Smart Blobspace]]></SmartBlobspace>
+<TempSbspace><![CDATA[Temp Smart Blobspace]]></TempSbspace>
+<MirroredSbspace><![CDATA[Mirrored Smart Blobspace]]></MirroredSbspace>
+<DataPages><![CDATA[Data Pages]]></DataPages>
+<IndexPages><![CDATA[Index Pages]]></IndexPages>
+<OtherPages><![CDATA[Other Pages]]></OtherPages>
+<FreePages><![CDATA[Free Pages]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[DBSpace value is not set correctly:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Summary]]></summary>
+<admin><![CDATA[Admin]]></admin>
+<tables><![CDATA[Tables]]></tables>
+<extents><![CDATA[Extents]]></extents>
+<validation><![CDATA[Validation]]></validation>
+<Disabled><![CDATA[Disabled]]></Disabled>
+<Recovering><![CDATA[Recovering]]></Recovering>
+<Operational><![CDATA[Operational]]></Operational>
+</lang>

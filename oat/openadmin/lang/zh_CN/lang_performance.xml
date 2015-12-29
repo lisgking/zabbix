@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[性能历史记录]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[没有足够的数据进行概要分析。]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[无法连接到数据库服务器 {0}。]]></DatabaseConnectionFailed>
+</lang>

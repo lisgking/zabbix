@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" xml:lang="ko-kr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="dc.language" scheme="rfc1766" content="ko-kr" />
+<meta name="dc.date" scheme="iso8601" content="2011-08-09" />
+<meta name="copyright" content="&copy; Copyright IBM Corp. 2009, 2011" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="type" content="concept, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="스키마 관리자, 데이터베이스 오브젝트, 테이블 오브젝트, 검토, 통계, 테이블, 분할, 작성, 데이터베이스, 삭제, 테이블 삭제" />
+<meta name="keywords" content="테이블 절단, 절단, 인덱스, 사용, 사용 안함, 외부 테이블, 데이터 언로딩, 데이터 로딩" />
+<title>OAT용 Informix 스키마 관리자 플러그인</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body>
+<a id="Top_Of_Page" name="Top_Of_Page"></a>
+<h1>OAT용 Informix 스키마 관리자 플러그인</h1>
+<br />
+<a name="wq1"></a>
+<div id="wq1">
+<h1>목차</h1>
+<div class="head1"><a id="ToC_1" name="ToC_1" href="#dqx1ids_osm" class="toclink">OAT용 Informix 스키마 관리자 플러그인</a></div>
+<div class="head2"><a id="ToC_2" name="ToC_2" href="#dqx1ids_osm_005" class="toclink">데이터베이스 오브젝트 보기</a></div>
+<div class="head2"><a id="ToC_3" name="ToC_3" href="#dqx1ids_osm_006" class="toclink">테이블 오브젝트 보기</a></div>
+<div class="head2"><a id="ToC_4" name="ToC_4" href="#dqx1ids_osm_019" class="toclink">테이블 통계 검토</a></div>
+<div class="head2"><a id="ToC_5" name="ToC_5" href="#dqx1ids_osm_021" class="toclink">데이터베이스 작성</a></div>
+<div class="head2"><a id="ToC_6" name="ToC_6" href="#dqx1ids_osm_022" class="toclink">데이터베이스 삭제</a></div>
+<div class="head2"><a id="ToC_7" name="ToC_7" href="#dqx1ids_osm_020" class="toclink">테이블 및 인덱스 관리</a></div>
+<div class="head3"><a id="ToC_8" name="ToC_8" href="#dqx1ids_osm_003" class="toclink">테이블 작성</a></div>
+<div class="head3"><a id="ToC_9" name="ToC_9" href="#dqx1ids_osm_001" class="toclink">테이블 삭제</a></div>
+<div class="head3"><a id="ToC_10" name="ToC_10" href="#dqx1ids_osm_002" class="toclink">테이블 절단</a></div>
+<div class="head3"><a id="ToC_11" name="ToC_11" href="#dqx1ids_osm_016" class="toclink">인덱스 작성</a></div>
+<div class="head3"><a id="ToC_12" name="ToC_12" href="#dqx1ids_osm_018" class="toclink">인덱스 사용 또는 사용 안함</a></div>
+<div class="head3"><a id="ToC_13" name="ToC_13" href="#dqx1ids_osm_017" class="toclink">인덱스 삭제</a></div>
+<div class="head2"><a id="ToC_14" name="ToC_14" href="#dqx1ids_osm_011" class="toclink">외부 테이블을 사용하여 데이터 로드/언로드</a></div>
+<div class="head3"><a id="ToC_15" name="ToC_15" href="#dqx1ids_osm_008" class="toclink">외부 테이블을 사용하여 데이터 로드</a></div>
+<div class="head3"><a id="ToC_16" name="ToC_16" href="#dqx1ids_osm_009" class="toclink">외부 테이블에 데이터 언로드</a></div>
+<div class="head3"><a id="ToC_17" name="ToC_17" href="#dqx1ids_osm_007" class="toclink">외부 테이블 작성</a></div>
+<div class="head3"><a id="ToC_18" name="ToC_18" href="#dqx1ids_osm_010" class="toclink">외부 테이블 정보 보기</a></div>
+<div class="head3"><a id="ToC_19" name="ToC_19" href="#dqx1ids_osm_013" class="toclink">로드 및 언로드 작업의 상태 보기</a></div>
+<div class="head3"><a id="ToC_20" name="ToC_20" href="#dqx1ids_osm_012" class="toclink">저장된 로드 및 언로드 작업 실행</a></div>
+<div class="head3"><a id="ToC_21" name="ToC_21" href="#dqx1ids_osm_014" class="toclink">로드 및 언로드 작업 삭제</a></div>
+<div class="head3"><a id="ToC_22" name="ToC_22" href="#dqx1ids_osm_015" class="toclink">저장된 로드 또는 언로드 작업 그룹 작성</a></div>
+<div class="head1"><a id="ToC_23" name="ToC_23" href="#dqx1ids_cm_not" class="toclink">주의사항</a></div>
+<div class="head2"><a id="ToC_24" name="ToC_24" href="#dqx1trademarks" class="toclink">상표</a></div>
+<div class="head2"><a id="ToC_25" name="ToC_25" href="#dqx1ids_osm_000" class="toclink">저작권</a></div>
+</div>
+<a name="dqx1ids_osm"></a>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">OAT용 Informix 스키마 관리자 플러그인</a></h1>
+<div>
+<p>OpenAdmin Tool(OAT)용 IBM&reg; Informix&reg; 스키마 관리자 플러그인은
+데이터베이스 및 테이블을 보고 관리할 수 있는 그래픽 인터페이스를 제공합니다.</p></div>
+<p>스키마 관리자 플러그인을 사용하여 다음 작업을 수행할 수 있습니다. 
+</p>
+<ul>
+<li>데이터베이스, 테이블 및 인덱스를 작성, 및 삭제할 수 있습니다.</li>
+<li>외부 테이블을 사용하여 데이터베이스 서버 외부에서 관리 및 저장되는 데이터를 로드/언로드합니다.</li>
+<li>테이블 및 분할 통계 대한 정보를 모니터할 수 있습니다.</li>
+<li>데이터 분산 통계가 분할된 테이블에서 변경되는 분할에서만 계산되는지 또는 전체 테이블에서 계산되는지 여부를 지정할 수 있습니다.</li>
+<li>스토어드 프로시저 및 함수, 순서, UDT(사용자 정의 자료형), 권한, DataBlade&reg; 모듈,
+집계, 캐스트 및 연산자 클래스를 포함한 데이터베이스 오브젝트에 대한 정보를 표시합니다.</li>
+<li>컬럼, 인덱스, 참조, 권한, UDT, 제한 조건, 분할 및 트리거를 포함한 테이블 오브젝트에 대한 정보를 표시합니다.</li></ul>
+<a name="dqx1ids_osm_005"></a>
+<h2 id="dqx1ids_osm_005"><a href="#ToC_2">데이터베이스 오브젝트 보기</a></h2>
+<div>
+<p>스토어드 프로시저 및 함수, 순서, UDT(사용자 정의 자료형), 권한, DataBlade 모듈,
+집계, 캐스트 및 연산자 클래스에 대한 정보를 표시합니다.</p></div><a id="idx1" name="idx1"></a><a id="idx2" name="idx2"></a>
+<p>
+<p>데이터베이스 오브젝트를 보려면 다음을 수행하십시오.</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 데이터베이스를 선택하십시오.  
+
+<p>각 데이터베이스 오브젝트에 대한 정보 패널이 페이지에 표시됩니다.</p></li>
+<li>데이터베이스 오브젝트에 대한 더 자세한 정보를 표시하려면 오브젝트 패널의 펼치기 버튼을 클릭하십시오. </li></ol>
+<a name="dqx1ids_osm_006"></a>
+<h2 id="dqx1ids_osm_006"><a href="#ToC_3">테이블 오브젝트 보기</a></h2>
+<div>
+<p>컬럼, 인덱스, 참조, 권한, UDT, 제한 조건, 분할 및 트리거에 대한 정보를 표시합니다.</p></div><a id="idx3" name="idx3"></a><a id="idx4" name="idx4"></a>
+<p>
+<p>테이블 오브젝트를 표시하려면 다음을 수행하십시오.</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>테이블을 찾으려면, <strong>찾기</strong> 필드에 테이블 이름의 일부를 입력하고
+<strong>검색</strong>을 클릭하십시오.
+또한 데이터베이스를 펼쳐 테이블을 표시할 수 있습니다.</li>
+<li>옵션: 목록에 더 많은 테이블을 포함하는 필터를 선택하십시오. 
+
+<ul>
+<li>시스템 카탈로그를 포함하려면 <strong>카탈로그 포함</strong>을 선택하십시오.</li>
+<li>뷰를 포함하려면 <strong>뷰 포함</strong>을 선택하십시오. 뷰는 지정된 SELECT문을 기반으로 한 가상 테이블입니다.</li>
+<li>동의어를 포함하려면 <strong>동의어 포함</strong>을 선택하십시오. 동의어는 테이블, 뷰 또는 순서 오브젝트의 대체 이름입니다. 일반적으로 동의어는 현재 데이터베이스에 없는 테이블을 참조합니다.</li></ul></li>
+<li>목록에서 테이블을 선택하십시오.  
+
+<p>각 테이블 오브젝트에 대한 정보 패널이 페이지에 표시됩니다.</p></li>
+<li>테이블 오브젝트에 대한 더 자세한 정보를 표시하려면 오브젝트 패널의 펼치기 버튼을 클릭하십시오. </li></ol>
+<a name="dqx1ids_osm_019"></a>
+<h2 id="dqx1ids_osm_019"><a href="#ToC_4">테이블 통계 검토</a></h2>
+<div>
+<p>통계가
+마지막으로 기록된 시기, 데이터 분산 및 변경된 행 퍼센트를 포함하여 테이블 및 분할 통계에 대한
+정보를 검토하십시오.
+테이블 통계 자동 갱신 옵션을 지정하십시오.</p></div><a id="idx5" name="idx5"></a><a id="idx6" name="idx6"></a><a id="idx7" name="idx7"></a>
+<p></p>
+<a name="wq9"></a>
+<div class="notetitle" id="wq9">전제조건:</div>
+<div class="notebody">테이블 통계 자동 갱신 옵션을 지정하고 일부 정보(예: 변경된 행의 비율)를 표시하려면
+IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.70이
+필요합니다.</div>
+<p>
+<p>테이블 통계를 검토하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 데이터베이스를 펼치십시오. </li>
+<li>목록에서 테이블을 선택하십시오. </li>
+<li><a name="dqx1ids_osm_019__d1160e95"></a><span id="dqx1ids_osm_019__d1160e95"><strong>통계</strong> 패널을 펼치십시오.</span></li>
+<li>조각 수준의 통계를 표시하려면 <strong>분할 통계</strong>를 클릭하십시오. 이 정보는 IBM Informix 버전 11.70의 경우에 표시됩니다. </li></ol>
+<a name="dqx1ids_osm_021"></a>
+<h2 id="dqx1ids_osm_021"><a href="#ToC_5">데이터베이스 작성</a></h2>
+<div>
+<p>데이터베이스를 작성하고 데이터베이스 로케일을 지정할 수 있습니다.</p></div><a id="idx8" name="idx8"></a><a id="idx9" name="idx9"></a>
+<p></p>
+<a name="dqx1ids_osm_021__preq-create-db"></a>
+<div class="notetitle" id="dqx1ids_osm_021__preq-create-db">전제조건:</div>
+<div class="notebody">데이터베이스를 작성하려면
+OpenAdmin Tool(OAT) for Informix에
+IBM Informix 11.70.xC2가 필요합니다.</div>
+<p>
+<p>
+<br />데이터베이스를 작성하려면 다음을 수행하십시오. 
+<br /></p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li><strong>동작</strong> 메뉴에서 <strong>데이터베이스 작성</strong>을 클릭하십시오.</li>
+<li>데이터베이스 작성 마법사의 지시사항을 따르십시오.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 개념</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.ddi.doc/ids_ddi_082.htm#ids_ddi_082" target="_blank">Use CREATE DATABASE (Database Design and Implementation Guide)</a></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.glsug.doc/ids_gug_037.htm#ids_gug_037" target="_blank">The database locale (GLS User's Guide)</a></li></ul>
+<ul class="simple">
+<li><strong>관련 참조</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0368.htm#ids_sqs_0368" target="_blank">CREATE DATABASE statement (SQL Syntax)</a></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.adref.doc/ids_sapi_127.htm#ids_sapi_127" target="_blank">create database argument: Create a database (SQL administration API) (Administrator's Reference)</a></li></ul>
+<a name="dqx1ids_osm_022"></a>
+<h2 id="dqx1ids_osm_022"><a href="#ToC_6">데이터베이스 삭제</a></h2>
+<div>
+<p>데이터베이스를 제거하고 데이터베이스에 저장된 테이블 및 데이터를 삭제할 수 있습니다.</p></div><a id="idx10" name="idx10"></a><a id="idx11" name="idx11"></a>
+<p></p>
+<a name="wq16"></a>
+<div class="notetitle" id="wq16">전제조건:</div>
+<div class="notebody">데이터베이스를 삭제하려면
+OpenAdmin Tool(OAT) for Informix에
+IBM Informix 11.70.xC2가 필요합니다.</div>
+<p>
+<p>
+<br />데이터베이스를 삭제하려면 다음을 수행하십시오. 
+<br /></p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>데이터베이스를 선택하십시오. </li>
+<li><strong>동작</strong> 메뉴에서 <strong>데이터베이스 삭제</strong>를 클릭하십시오.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 참조</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0713.htm#ids_sqs_0713" target="_blank">DROP DATABASE statement (SQL Syntax)</a></li></ul>
+<a name="dqx1ids_osm_020"></a>
+<h2 id="dqx1ids_osm_020"><a href="#ToC_7">테이블 및 인덱스 관리</a></h2>
+<div>
+<p>테이블을 작성, 삭제 및 절단합니다. 인덱스를 작성, 비활성 및 삭제합니다.</p></div>
+<a name="dqx1ids_osm_003"></a>
+<h3 id="dqx1ids_osm_003"><a href="#ToC_8">테이블 작성</a></h3>
+<div>
+<p>테이블을 작성하고 테이블이 작동하는 데 필요한 속성을 정의합니다.</p></div><a id="idx12" name="idx12"></a><a id="idx13" name="idx13"></a>
+<p>
+<p>테이블을 작성하려면 다음을 수행하십시오.</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>테이블을 작성할 데이터베이스를 선택하십시오. </li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 작성</strong>을 클릭하십시오.</li>
+<li>테이블 작성 마법사의 지침을 수행하십시오. </li></ol>
+<a name="dqx1ids_osm_001"></a>
+<h3 id="dqx1ids_osm_001"><a href="#ToC_9">테이블 삭제</a></h3>
+<div>
+<p>테이블과 연관된 인덱스 및 데이터와 함께 테이블을 제거합니다.</p></div><a id="idx14" name="idx14"></a><a id="idx15" name="idx15"></a><a id="idx16" name="idx16"></a><a id="idx17" name="idx17"></a>
+<p>
+<p>테이블을 제거할 경우 테이블에 저장된 데이터와 인덱스, 제한 조건, 트리거, 액세스 권한 및 로컬 동의어도
+삭제하십시오. 테이블을 기반으로 한 모든 뷰와 테이블과 연관된 모든 위반 및 진단 테이블도 제거하십시오.</p>
+<p>테이블을 삭제하려면
+다음을 수행하십시오.</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 테이블이 포함된 데이터베이스를 펼치십시오. </li>
+<li>테이블을 선택하십시오. </li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 삭제</strong>를 클릭하십시오.</li></ol>
+<a name="dqx1ids_osm_002"></a>
+<h3 id="dqx1ids_osm_002"><a href="#ToC_10">테이블 절단</a></h3>
+<div>
+<p>테이블에서 모든 행을 삭제하고 연관된 스토리지 영역을 확보하거나, 테이블 및 해당 인덱스에서
+다시 사용하기 위한 스토리지 공간을 예약합니다.</p></div><a id="idx18" name="idx18"></a><a id="idx19" name="idx19"></a>
+<p>
+<p>기존의 스토리지 공간을 다시 사용하면 테이블을 주기적으로 비우고 새로운 행으로 다시 로드되기 때문에
+응용프로그램에서 스토리지를 더 효율적으로 관리할 수 있습니다.</p>
+<p>테이블을 절단하려면 다음을 수행하십시오.</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 테이블이 포함된 데이터베이스를 펼치십시오. </li>
+<li>테이블을 선택하십시오. </li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 절단</strong>을 클릭하십시오.</li>
+<li>옵션: 테이블에 할당된 스토리지 공간을 유지하려면 <strong>스토리지 공간 예약</strong>을 선택하십시오. </li></ol>
+<a name="dqx1ids_osm_016"></a>
+<h3 id="dqx1ids_osm_016"><a href="#ToC_11">인덱스 작성</a></h3>
+<div>
+<p>테이블에서 하나 이상의 컬럼에 대한 인덱스를 작성합니다.</p></div><a id="idx20" name="idx20"></a><a id="idx21" name="idx21"></a>
+<p>
+<p></p></p>
+<p>
+<p>인덱스를 작성하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li id="dqx1ids_osm_016__step-select-db-table">
+<a name="dqx1ids_osm_016__step-select-db-table"></a>목록에서 데이터베이스를 펼치고 테이블을 선택하십시오. </li>
+<li id="dqx1ids_osm_016__step-create-index">
+<a name="dqx1ids_osm_016__step-create-index"></a><strong>작업</strong> 메뉴에서 <strong>인덱스 작성</strong>을 클릭하십시오.</li>
+<li><a name="dqx1ids_osm_016__step-follow-create-index"></a><span id="dqx1ids_osm_016__step-follow-create-index">인덱스 작성 마법사의 지침을 수행하십시오. </span></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 개념</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.perf.doc/ids_prf_359.htm#ids_prf_359" target="_blank">Indexes and index performance considerations (Performance Guide)</a></li></ul>
+<ul class="simple">
+<li><strong>관련 참조</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0401.htm#ids_sqs_0401" target="_blank">CREATE INDEX statement (SQL Syntax)</a></li></ul>
+<a name="dqx1ids_osm_018"></a>
+<h3 id="dqx1ids_osm_018"><a href="#ToC_12">인덱스 사용 또는 사용 안함</a></h3>
+<div>
+<p>인덱스를 사용하지 않도록 설정하거나, 사용 안함으로 설정된 인덱스를 활성화합니다.</p></div><a id="idx22" name="idx22"></a><a id="idx23" name="idx23"></a><a id="idx24" name="idx24"></a><a id="idx25" name="idx25"></a>
+<p>
+<p>인덱스는 기본적으로 사용하는 것으로 설정되어 있습니다. 데이터베이스 서버에서는 인덱스를 인식하고, 삽입, 삭제 및 갱신 작업 중에 인덱스를
+갱신합니다.
+인덱스가 사용 안함으로 설정된 경우 이 작업 동안 인덱스가 더 이상 갱신되지 않습니다.</p></p>
+<p>
+<p>인덱스의 사용 여부를 지정하려면 다음 작업을 수행하십시오.</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 인덱스가 적용되는 테이블이 포함된 데이터베이스를 펼치고 테이블을 선택하십시오. </li>
+<li><strong>인덱스</strong> 패널을 펼치십시오.</li>
+<li>인덱스를 선택하십시오. </li>
+<li>패널의 <strong>작업</strong> 메뉴에서 <strong>인덱스 사용</strong> 또는 <strong>인덱스 사용 안함</strong>을 클릭하십시오. </li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 개념</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0435.htm#ids_sqs_0435" target="_blank">How the Database Server Treats Disabled Indexes (SQL Syntax)</a></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0166.htm#ids_sqs_0166" target="_blank">Definitions of Database Object Modes (SQL Syntax)</a></li></ul>
+<a name="dqx1ids_osm_017"></a>
+<h3 id="dqx1ids_osm_017"><a href="#ToC_13">인덱스 삭제</a></h3>
+<div>
+<p>인덱스(예: 더 이상 유효하지 않은 인덱스)를 삭제합니다.</p></div><a id="idx26" name="idx26"></a><a id="idx27" name="idx27"></a>
+<p>
+<p></p></p>
+<p>
+<p>인덱스를 삭제하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>목록에서 인덱스가 적용되는 테이블이 포함된 데이터베이스를 펼치고 테이블을 선택하십시오. </li>
+<li><strong>인덱스</strong> 패널을 펼치십시오.</li>
+<li>인덱스를 선택하십시오. </li>
+<li>패널의 <strong>작업</strong> 메뉴에서 <strong>인덱스 삭제</strong>를 클릭하십시오.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 태스크</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.perf.doc/ids_prf_332.htm#ids_prf_332" target="_blank">Dropping indexes for table-update efficiency (Performance Guide)</a></li></ul>
+<ul class="simple">
+<li><strong>관련 참조</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0718.htm#ids_sqs_0718" target="_blank">DROP INDEX statement (SQL Syntax)</a></li></ul>
+<a name="dqx1ids_osm_011"></a>
+<h2 id="dqx1ids_osm_011"><a href="#ToC_14">외부 테이블을 사용하여 데이터 로드/언로드</a></h2>
+<div>
+<p>외부 테이블을 사용하여 데이터베이스 서버 외부에서 관리 및 저장되는 데이터를 로드/언로드합니다.</p></div><a id="idx28" name="idx28"></a><a id="idx29" name="idx29"></a><a id="idx30" name="idx30"></a>
+<a name="wq37"></a>
+<div class="notetitle" id="wq37">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<a name="dqx1ids_osm_008"></a>
+<h3 id="dqx1ids_osm_008"><a href="#ToC_15">외부 테이블을 사용하여 데이터 로드</a></h3>
+<div>
+<p>외부 테이블을 사용하여 데이터베이스 서버 외부에 있는 소스로부터 데이터베이스 테이블로 데이터를
+로드합니다.</p></div><a id="idx31" name="idx31"></a><a id="idx32" name="idx32"></a>
+<p></p>
+<a name="wq39"></a>
+<div class="notetitle" id="wq39">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>외부 테이블을 사용하여
+데이터를 로드하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>데이터를 로드할 데이터베이스 테이블을 선택하십시오.  
+
+<p>테이블을 찾으려면, <strong>찾기</strong> 필드에 테이블 이름의 일부를 입력하고
+<strong>검색</strong>을 클릭하십시오.
+또한 데이터베이스를 펼쳐 테이블을 표시할 수 있습니다.</p></li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 로드</strong>를 클릭하십시오.</li>
+<li>테이블 로드 마법사의 지침을 수행하십시오. </li></ol>
+<a name="dqx1ids_osm_009"></a>
+<h3 id="dqx1ids_osm_009"><a href="#ToC_16">외부 테이블에 데이터 언로드</a></h3>
+<div>
+<p>데이터베이스 테이블의 데이터를 외부 테이블로 언로드합니다.</p></div><a id="idx33" name="idx33"></a><a id="idx34" name="idx34"></a>
+<p></p>
+<a name="wq43"></a>
+<div class="notetitle" id="wq43">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>외부 테이블에 데이터를 언로드하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>데이터를 언로드할 데이터베이스 테이블을 선택하십시오.  
+
+<p>테이블을 찾으려면, <strong>찾기</strong> 필드에 테이블 이름의 일부를 입력하고
+<strong>검색</strong>을 클릭하십시오.
+또한 데이터베이스를 펼쳐 테이블을 표시할 수 있습니다.</p></li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 언로드</strong>를 클릭하십시오.</li>
+<li>테이블 언로드 마법사의 지침을 수행하십시오. </li></ol>
+<a name="dqx1ids_osm_007"></a>
+<h3 id="dqx1ids_osm_007"><a href="#ToC_17">외부 테이블 작성</a></h3>
+<div>
+<p>데이터베이스 서버 외부에서 관리 및 저장되는 테이블을 작성하여 데이터를 로드 및 언로드할 수 있습니다.</p></div><a id="idx35" name="idx35"></a><a id="idx36" name="idx36"></a>
+<p></p>
+<a name="wq47"></a>
+<div class="notetitle" id="wq47">전제조건:</div>
+<div class="notebody">외부 테이블을
+작성하려면 IBM OpenAdmin
+Tool(OAT) for Informix에는
+IBM Informix 버전 11.50.xC6이 필요합니다.</div>
+<p>
+<p>외부 테이블을 작성하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>테이블을 작성할 데이터베이스를 선택하십시오. </li>
+<li><strong>작업</strong> 메뉴에서 <strong>테이블 작성</strong>을 클릭하십시오.</li>
+<li>테이블 작성 마법사의 지침을 수행하십시오.  
+
+<p><strong>테이블 유형</strong>에 대해 다음 외부 테이블 유형을 선택하십시오. 
+</p>
+<ul>
+<li><strong>외부 고정</strong>: 데이터가 Informix 데이터베이스 서버
+외부에서 관리 및 저장되는 고정된 너비의 텍스트 형식의 테이블입니다.</li>
+<li><strong>외부 구분</strong>: 데이터가 Informix 데이터베이스 서버
+외부에서 관리 및 저장되는 구분된 텍스트 형식의 테이블입니다.</li>
+<li><strong>외부 Informix</strong>: 데이터가 Informix 데이터베이스 서버
+외부에서 관리 및 저장되는 내부 Informix 형식의 테이블입니다. 
+
+<p>외부 테이블을
+사용하여 데이터베이스의 테이블을 로드 및 언로드합니다.</p></li></ul></li></ol>
+<a name="dqx1ids_osm_010"></a>
+<h3 id="dqx1ids_osm_010"><a href="#ToC_18">외부 테이블 정보 보기</a></h3>
+<div>
+<p>외부 테이블에 대한 정보를 표시합니다.</p></div><a id="idx37" name="idx37"></a>
+<p>
+<p>이 정보는
+Informix 11.50.xC6 이상의 경우에
+표시됩니다.</p></p>
+<p>
+<p>외부 테이블에 대한 정보를 표시하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool(OAT) for Informix 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>테이블을 찾으려면, <strong>찾기</strong> 필드에 테이블 이름의 일부를 입력하고
+<strong>검색</strong>을 클릭하십시오.
+또한 데이터베이스를 펼쳐 테이블을 표시할 수 있습니다.</li>
+<li>목록에서 테이블을 선택하십시오.  
+
+<p>각 테이블 오브젝트에 대한 정보 패널이 페이지에 표시됩니다.</p></li>
+<li>테이블 오브젝트에 대한 더 자세한 정보를 표시하려면 오브젝트 패널의 펼치기 버튼을 클릭하십시오.  
+
+<p><strong>테이블 정보</strong> 패널과 <strong>컬럼</strong> 패널에 외부 테이블에 관한 정보가
+표시됩니다.</p></li></ol>
+<a name="dqx1ids_osm_013"></a>
+<h3 id="dqx1ids_osm_013"><a href="#ToC_19">로드 및 언로드 작업의 상태 보기</a></h3>
+<div>
+<p>외부 테이블을 사용하여 데이터를 로드 및 언로드하기 위해
+IBM OpenAdmin
+Tool(OAT) for Informix를 통해 실행 요청된 작업의 상태를 볼 수 있습니다.</p></div><a id="idx38" name="idx38"></a><a id="idx39" name="idx39"></a>
+<p></p>
+<a name="wq54"></a>
+<div class="notetitle" id="wq54">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>로드 및 언로드 작업의 상태를 보려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>작업을 실행할 데이터베이스 또는 테이블을 클릭하십시오. </li>
+<li><strong>정보</strong> 패널을 펼치십시오.</li>
+<li><strong>작업 상태</strong> 탭을 클릭하십시오. 
+
+<p>오류 코드 및 리턴 메시지를 포함하여 작업에 대한 자세한 정보를 표시하려면 작업의 세부사항 아이콘을 클릭하십시오.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>관련 정보</strong></li>
+<li><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.em.doc/errors.html" target="_blank">오류 메시지</a></li></ul>
+<a name="dqx1ids_osm_012"></a>
+<h3 id="dqx1ids_osm_012"><a href="#ToC_20">저장된 로드 및 언로드 작업 실행</a></h3>
+<div>
+<p>외부 테이블을 사용하여 데이터를 로드 및 언로드하는 작업을 실행합니다.</p></div><a id="idx40" name="idx40"></a><a id="idx41" name="idx41"></a><a id="idx42" name="idx42"></a>
+<p></p>
+<a name="wq58"></a>
+<div class="notetitle" id="wq58">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>외부 테이블을 사용하여
+데이터를 로드 또는 언로드할 경우 작업이 저장됩니다. 작업을 다시 실행하거나 삭제할 수 있습니다.</p></p>
+<p>
+<p>저장된 로드 또는 언로드 작업을 실행하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>작업을 실행할 데이터베이스 또는 테이블을 클릭하십시오. </li>
+<li><strong>정보</strong> 패널을 펼치십시오.</li>
+<li><strong>작업</strong> 탭을 클릭하십시오. </li>
+<li>실행할 작업을 선택하십시오. </li>
+<li>패널의 <strong>작업</strong> 메뉴에서 <strong>실행 요청</strong>을 클릭하십시오.</li></ol>
+<a name="dqx1ids_osm_014"></a>
+<h3 id="dqx1ids_osm_014"><a href="#ToC_21">로드 및 언로드 작업 삭제</a></h3>
+<div>
+<p>로드/언로드 작업 또는 로드/언로드 작업의 상태를 삭제합니다.</p></div><a id="idx43" name="idx43"></a><a id="idx44" name="idx44"></a>
+<p></p>
+<a name="wq63"></a>
+<div class="notetitle" id="wq63">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>OAT를 사용하여
+데이터를 로드 또는 언로드할 경우 작업이 저장됩니다. 이 때 작업을 다시 실행 요청하거나 삭제할 수 있습니다. 실행 요청된 작업의 상태도 삭제할 수 있습니다.</p></p>
+<a name="wq65"></a>
+<div class="notetitle" id="wq65">중요사항:</div>
+<div class="notebody"><strong>작업</strong> 페이지에서 작업을 삭제하는 경우,
+작업 결과도 <strong>작업 상태</strong> 페이지에서 삭제됩니다.
+작업 상태를 삭제하는 경우, 작업 상태만 삭제됩니다.</div>
+<p>
+<p>로드 및 언로드 작업을 삭제하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>작업을 실행할 데이터베이스 또는 테이블을 클릭하십시오. </li>
+<li><strong>정보</strong> 패널을 펼치십시오.</li>
+<li>다음과 같이 해당 탭을 선택하십시오. 
+
+<ul>
+<li>작업 및 작업 상태를 삭제하려면 <strong>작업</strong> 탭을 클릭하십시오.</li>
+<li>작업 상태만 삭제하려면 <strong>작업 상태</strong> 탭을 클릭하십시오.</li></ul></li>
+<li>작업을 선택하십시오.</li>
+<li><strong>동작</strong> &gt; <strong>삭제</strong>를 클릭하십시오. </li></ol>
+<a name="dqx1ids_osm_015"></a>
+<h3 id="dqx1ids_osm_015"><a href="#ToC_22">저장된 로드 또는 언로드 작업 그룹 작성</a></h3>
+<div>
+<p>저장된 작업을 함께 실행 요청할 수 있도록 그룹화합니다.</p></div><a id="idx45" name="idx45"></a><a id="idx46" name="idx46"></a>
+<p></p>
+<a name="wq69"></a>
+<div class="notetitle" id="wq69">전제조건:</div>
+<div class="notebody">외부 테이블을
+사용하여 데이터를 로드 및 언로드하려면 IBM OpenAdmin
+Tool(OAT) for Informix에
+IBM Informix 버전 11.50.xC6 이상이 필요합니다.</div>
+<p>
+<p>OAT를 사용하여
+데이터를 로드 또는 언로드할 경우 작업이 저장됩니다. 작업을 다시 실행하거나, 삭제하거나, 다른 저장된 작업과 함께 그룹화할 수 있습니다.</p></p>
+<p>
+<p>저장된 로드 또는 언로드 작업의 그룹을 작성하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>SQL 도구 상자</strong> &gt; <strong>스키마 관리자</strong>를 클릭하십시오. </li>
+<li>작업을 실행할 데이터베이스 또는 테이블을 클릭하십시오. </li>
+<li><strong>정보</strong> 패널을 펼치십시오.</li>
+<li><strong>작업</strong> 탭을 클릭하십시오. </li>
+<li>그룹에 포함할 작업을 선택하십시오. 로드 및 언로드 작업을 동일한 그룹에 포함할 수 있습니다. </li>
+<li>패널의 <strong>작업</strong> 메뉴에서 <strong>그룹 작성</strong>을 클릭하고 그룹 이름을 입력하십시오.</li></ol>
+<a name="dqx1ids_cm_not"></a>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_23">주의사항</a></h1>
+<p>이 정보는 미국에서 제공되는 제품 및 서비스용으로 작성된 것입니다.</p>
+<p>IBM은 다른 국가에서 이 책에 기술된 제품, 서비스 또는 기능을 제공하지 않을 수도
+있습니다. 현재 사용할 수 있는 제품 및 서비스에 대한 정보는 한국 IBM 담당자에게 문의하십시오.
+이 책에서 IBM 제품, 프로그램 또는 서비스를 언급했다고 해서 해당 IBM 제품, 프로그램 또는 서비스만을
+사용할 수 있다는 것을 의미하지는 않습니다.
+IBM의 지적 재산권을
+침해하지 않는 한, 기능상으로 동등한 제품, 프로그램 또는 서비스를 대신 사용할 수도 있습니다. 그러나 비IBM 제품, 프로그램 또는 서비스의 운영에 대한 평가 및
+검증은 사용자의 책임입니다.</p>
+<p>IBM은 이 책에서 다루고 있는 특정 내용에 대해 특허를 보유하고 있거나 현재 특허 출원
+중일 수 있습니다. 이 책을 제공한다고 해서 특허에 대한 라이센스까지 부여하는 것은
+아닙니다. 라이센스에 대한 의문사항은 다음으로 문의하십시오.
+</p>
+<div class="lines">135-700<br />
+서울특별시 강남구 도곡동 467-12,<br />
+군인공제회관빌딩<br />
+한국 아이.비.엠 주식회사<br />
+고객만족센터<br />
+전화번호: 080-023-8080<br />
+</div>
+<p>2바이트(DBCS) 정보에 관한 라이센스 문의는 한국 IBM 고객만족센터에 문의하거나 다음 주소로 서면 문의하시기 바랍니다. </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan Ltd.<br />
+1623-14, Shimotsuruma, Yamato-shi<br />
+Kanagawa 242-8502 Japan<br />
+</div>
+<p>다음 단락은 현지법과 상충하는 영국이나 기타 국가에서는 적용되지 않습니다. IBM은 타인의 권리 비침해,
+상품성 및 특정 목적에의 적합성에 대한 묵시적 보증을 포함하여(단, 이에 한하지 않음) 묵시적이든 명시적이든 어떠한 종류의 보증 없이 이 책을 "현상태대로" 제공합니다. 일부 국가에서는 특정 거래에서 명시적 또는 묵시적
+보증의 면책사항을 허용하지 않으므로, 이 사항이 적용되지 않을 수도 있습니다.</p>
+<p>이 정보에는 기술적으로 부정확한 내용이나 인쇄상의 오류가 있을 수 있습니다. 이 정보는 주기적으로
+변경되며, 변경된 사항은 최신판에 통합됩니다. IBM은 이 책에서 설명한 제품 및/또는 프로그램을 사전
+통지 없이 언제든지 개선 및/또는 변경할 수 있습니다.</p>
+<p>이 정보에서 언급되는 비IBM의 웹 사이트는 단지 편의상 제공된
+것으로, 어떤 방식으로든 이들 웹 사이트를 옹호하고자 하는 것은 아닙니다.
+해당 웹 사이트의 자료는 본 IBM 제품 자료의 일부가 아니므로
+해당 웹 사이트 사용으로 인한 위험은 사용자 본인이 감수해야 합니다.</p>
+<p>IBM은 귀하의 권리를 침해하지 않는 범위 내에서 적절하다고 생각하는 방식으로 귀하가 제공한 정보를
+사용하거나 배포할 수 있습니다.</p>
+<p>(i) 독립적으로 작성된 프로그램과 기타 프로그램(본 프로그램 포함)간의 정보
+교환 및 (ii) 교환된 정보의 상호 이용을 목적으로 본 프로그램에 관한 정보를 얻고자 하는 라이센스
+사용자는 다음 주소로 문의하십시오. </p>
+<div class="lines">135-700<br />
+서울특별시 강남구 도곡동 467-12,<br />
+군인공제회관빌딩<br />
+한국 아이.비.엠 주식회사<br />
+고객만족센터 <br />
+</div>
+<p>이러한 정보는 해당 조건(예를 들면, 사용료 지불 등)하에서 사용될 수 있습니다.</p>
+<p>이 정보에 기술된 라이센스가 부여된 프로그램 및 프로그램에 대해 사용 가능한 모든 라이센스가 부여된 자료는 IBM이
+IBM 기본 계약, IBM 프로그램 라이센스 계약(IPLA) 또는 이와 동등한 계약에 따라
+제공한 것입니다.</p>
+<p>본 문서에 포함된 모든 성능 데이터는 제한된 환경에서 산출된 것입니다. 따라서
+다른 운영 환경에서 얻어진 결과는 상당히 다를 수 있습니다. 일부 성능은 개발 단계의 시스템에서 측정되었을 수 있으므로 이러한 측정치가
+일반적으로 사용되고 있는 시스템에서도 동일하게 나타날 것이라고는 보증할 수 없습니다. 또한
+일부 성능은 추정을 통해 추측되었을 수도 있으므로 실제 결과는 다를 수 있습니다. 이 책의 사용자는 해당 데이터를 본인의 특정 환경에서 검증해야 합니다.</p>
+<p>비IBM 제품에 관한 정보는 해당 제품의 공급업체, 공개 자료 또는 기타 범용 소스로부터
+얻은 것입니다. IBM에서는 이러한 비IBM 제품을 반드시 테스트하지 않았으므로, 이들 제품과 관련된 성능의 정확성, 호환성 또는 기타 주장에 대해서는 확인할 수 없습니다. 비IBM 제품의 성능에 대한 의문사항은 해당 제품의 공급업체에 문의하십시오.</p>
+<p>IBM이 제시하는 방향 또는 의도에 관한 모든 언급은 특별한 통지 없이 변경될 수 있습니다.</p>
+<p>여기에 나오는 모든 IBM의 가격은 IBM이 제시하는 현 소매가이며 통지 없이 변경될 수 있습니다. 실제 판매가는 다를 수 있습니다.</p>
+<p>이 정보는 계획 수립 목적으로만 사용됩니다. 이 정보는 기술된 제품이 GA(General Availability)되기 전에 변경될 수 있습니다.</p>
+<p>이 정보에는 일상의 비즈니스 운영에서 사용되는 자료 및 보고서에 대한 예제가 들어
+있습니다. 이들 예제에는 개념을 가능한 완벽하게 설명하기 위하여 개인, 회사, 상표 및
+제품의 이름이 사용될 수 있습니다. 이들 이름은 모두 가공의 것이며 실제 기업의 이름 및
+주소와 유사하더라도 이는 전적으로 우연입니다.</p>
+<p>저작권 라이센스:</p>
+<p>이 정보에는 여러 운영 플랫폼에서의 프로그래밍 기법을 보여주는 원어로 된 샘플 응용프로그램이 들어 있습니다. 귀하는
+이러한 샘플 프로그램의 작성 기준이 된 운영 플랫폼의 응용프로그램 프로그래밍 인터페이스(API)에
+부합하는 응용프로그램을 개발, 사용, 판매 또는 배포할 목적으로 추가 비용 없이 이들 샘플 프로그램을 어떠한 형태로든
+복사, 수정 및 배포할 수 있습니다. 이러한 샘플 프로그램은 모든 조건하에서 완전히 테스트된 것은
+아닙니다. 따라서 IBM은 이러한 프로그램의 신뢰성, 서비스 가능성 또는 기능을
+보증하거나 진술하지 않습니다. 샘플 프로그램은 어떠한 종류의 보증 없이 "현상태대로" 제공합니다. IBM은
+샘플 프로그램의 사용에서 발생하는 어떠한 종류의 손상에도 책임을 지지 않습니다.</p>
+<p>이러한 샘플 프로그램 또는 파생 제품의 각 사본이나 그 일부에는 반드시 다음과 같은 저작권 표시가 포함되어야 합니다.</p>
+<p>&copy; (귀하의 회사명) (연도). 이 코드의 일부는 IBM Corp.의 샘플 프로그램에서 파생됩니다.</p>
+<p>&copy; Copyright IBM Corp. _연도_. All rights reserved.</p>
+<p>이 정보를 소프트카피로 확인하는 경우에는 사진과 컬러 삽화가 제대로 나타나지 않을 수도 있습니다.</p>
+<a name="dqx1trademarks"></a>
+<h2 id="dqx1trademarks"><a href="#ToC_24">상표</a></h2>
+<p>IBM, IBM 로고 및
+ibm.com&reg;은
+미국 또는 기타 국가에서 사용되는 International Business Machines Corp.의 상표 또는 등록상표입니다. 기타 제품 및 서비스 이름은
+IBM 또는 기타 회사의 상표입니다. 현재 IBM의 상표 목록은
+웹의 "저작권 및 상표 정보"(<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>)에 있습니다.</p>
+<p>Adobe, Adobe 로고 및PostScript는 미국 또는
+기타 국가에서 사용되는 Adobe Systems
+Incorporated의 상표 또는 등록상표입니다.</p>
+<p>Intel, Itanium 및 Pentium은 미국 또는 기타 국가에서 사용되는
+Intel Corporation 또는 계열사의 상표 또는 등록상표입니다.</p>
+<p>Java 및 모든 Java 기반 상표와 로고는
+Oracle 및/또는 계열사의 상표이거나 등록상표입니다.</p>
+<p>Linux는 미국 또는 기타 국가에서 사용되는 Linus Torvalds의 등록상표입니다.</p>
+<p>Microsoft, Windows 및
+Windows NT는 미국 또는 기타 국가에서 하용되는 Microsoft Corporation의
+상표입니다.</p>
+<p>UNIX는 미국 또는 기타 국가에서 사용되는 The Open Group의 등록상표입니다.</p>
+<p>기타 회사, 제품 또는 서비스 이름은 타사의 상표 또는 서비스표입니다.</p>
+<a name="dqx1ids_osm_000"></a>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_25">저작권</a></h2>
+<p>이 문서에는 IBM의 사유적 정보가 포함되어 있습니다. 이러한 정보는 라이센스 계약 하에 제공되며
+저작권 법률의 보호를 받습니다. 본 문서에 포함된 정보의 완전성 및 정확성을 확인하도록 노력했으나,
+모든 정보는 명시적이든 묵시적이든 일체의 보증 없이 현상태대로 제공됩니다.</p>
+<p>IBM은 귀하의 권리를 침해하지 않는 범위 내에서
+적절하다고 생각하는 방식으로 귀하가 제공한 정보를 사용하거나 배포할 수 있습니다.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2009,
+2011.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2007. 추가적인 정보는 <samp class="xph">license/notices.txt</samp> 파일을 참조하십시오.</p>
+<a id="Bot_Of_Page" name="Bot_Of_Page"></a>
+</body>
+</html>

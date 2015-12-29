@@ -1,0 +1,10 @@
+LICENCIJOS INFORMACIJA
+
+Toliau nurodytos Programos licencijuojamos pagal ðias ir IBM Programø kurioms neteikiama garantija tarptautinë licencinë sutartis sàlygas (IBM formos numeris Z125-5589-05).
+
+Programos pavadinimas: IBM OpenAdmin Tool - TimeSeries Plugin V3.11
+Programos numeris: Tool
+
+L/N:  L-DDAY-94MTK8
+D/N:  L-DDAY-94MTK8
+P/N:  L-DDAY-94MTK8 

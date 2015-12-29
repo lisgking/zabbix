@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[虛擬處理器]]></virtualprocessors>
+<vps><![CDATA[VP]]></vps>
+<vpclasses><![CDATA[VP 類別]]></vpclasses>
+<vpid><![CDATA[VP ID]]></vpid>
+<class><![CDATA[類別]]></class>
+<cnt><![CDATA[VP]]></cnt>
+<total><![CDATA[總計]]></total>
+<usercpu><![CDATA[使用者 CPU 時間]]></usercpu>
+<syscpu><![CDATA[系統 CPU 時間]]></syscpu>
+<totalcpu><![CDATA[CPU 總時間]]></totalcpu>
+<classdetails><![CDATA[類別詳細資料]]></classdetails>
+<nodrop><![CDATA[無法捨棄類別的最後一個 VP]]></nodrop>
+<tomuchdrop><![CDATA[捨棄失敗。不能捨棄超過現有數目的 VP。]]></tomuchdrop>
+<success><![CDATA[動作已順利完成。]]></success>
+<VPValNotSet><![CDATA[無法執行動作。下列 VP 值未正確設定：]]></VPValNotSet>
+<VPType><![CDATA[VP 類型]]></VPType>
+<Count><![CDATA[計數]]></Count>
+<AddDropVP><![CDATA[新增或捨棄 VP]]></AddDropVP>
+<add><![CDATA[新增]]></add>
+<drop><![CDATA[捨棄]]></drop>
+<addVP><![CDATA[新增 VP]]></addVP>
+<dropVP><![CDATA[捨棄 VP]]></dropVP>
+<modifyingClass><![CDATA[修改類別]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[虛擬處理器 - 廣域資訊]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[類別 VP：{0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[抱歉，選項無法使用]]></OptionNotAvail>
+<seconds><![CDATA[秒]]></seconds>
+</lang>

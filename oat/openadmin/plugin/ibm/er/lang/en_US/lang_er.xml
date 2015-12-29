@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Grid]]></GridRepl>
+<noGridSupport><![CDATA[For the grid, the Informix Replication Plug-in for OAT requires Informix 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[The Replication plug-in is not installed correctly. To install the Replication plug-in, on the Admin menu, click Plug-in Manager.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[The Informix Replication Plug-in for OAT requires that you log in to OAT as the user informix or as a DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Current state of the ER capture proccess]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Number of logical log pages until DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Number of spooled transactions]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Percentage of disk space used for the Row Data]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Current state of the ER network]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Number of disconnected nodes]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Number of pending transactions]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Current state of the ER apply process]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Average latency to receive a transaction (in seconds)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Rate of failure applying transactions]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[In the SQLHOSTS file for node {0}, the following server group IDs are duplicates: {1}.  In the SQLHOSTS file, give each server group a unique ID by specifying a unique value for the identifier option (i=number).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[The SQLHOSTS file for node {0} does not include these server groups: {1}.  If the node is a root or nonroot node, it must have the complete SQLHOSTS information for all of the server groups in the domain.  If the node is a leaf node, it must have at least the SQLHOSTS information of its parent server group.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[The SQLHOSTS file for node {0} does not have the correct values for the connection-type field. One member of each group in the SQLHOSTS file must have the supported network protocols and database server types.  Enterprise Replication (ER) supports network protocols soctcp, tlitcp, socssl, tlispx, socimc, tliimc and sqlmux. ER supports database server types on and ol. ER cannot use a connection configured with the communications support module (CSM) option in the SQLHOSTS file.  ER can be encrypted only by setting encryption configuration parameters.  To combine client/server network encryption with ER encryption, configure two network connections for each database server. For more information about network encryption and SQLHOSTS, see the Informix information center.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[In the SQLHOSTS file for node {0}, group {1} contains more than a stand-alone server or its aliases.  Group {1} contains server {2}.  OAT cannot define this server for Enterprise Replication (ER) because the server is part of a high availability cluster.  To define this server for ER, use the command cdr define server from the command line.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Server {0} is a secondary server in a high availability cluster.  OAT cannot define this server for Enterprise Replication (ER).  Run the define server action on the primary server in the high availability cluster.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Could not connect to server {0}: {1}.  A trusted connection cannot be established between the new node and server {0}, the server that you selected to synchronize the ER configuration. Check your network connections.  For more information on preparing your network environment for Enterprise Replication, see the Informix information center.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[The group ID for server {0} is not the same in the SQLHOSTS files for node {1} and node {2}.  In the SQLHOSTS files for node {1} and node {2}, check the value for the identifier option (i=number) for server {0}.  The values must be the same.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Server {0} is not an Enterprise Replication (ER) server because it does not have a syscdr database, which contains the global catalog.  Select a server that participates in ER to synchronize the ER domain configuration.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Server {0} is a leaf node.  A leaf node cannot be the server that synchronizes the ER domain configuration. Select a root or nonroot node.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[This server already participates in Enteprise Replication (ER) activity.  Choose another server.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT cannot define this server for Enterprise Replication (ER) because it is part of a high availability cluster.  To define this server for ER, use the command 'cdr define server' from the command line.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[The group name {0} for server {1} is not valid.  Update the group name in the server's SQLHOSTS file before continuing.]]></Invalid_Group_Name>
+<Error><![CDATA[Error]]></Error>
+<ConnectionFailed><![CDATA[Connection Failed]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[No connection details for this server.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[The length of the command exceeds the limits of the Admin API.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Admin async task submitted successfully.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Free (MB)]]></Free_MB>
+<Used_MB><![CDATA[Used (MB)]]></Used_MB>
+</lang>

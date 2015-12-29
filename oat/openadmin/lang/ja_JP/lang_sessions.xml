@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[このセッションは現在は存在しません。]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[無効なセッション ID です。]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[ユーザ {0} には、セッションの現行文を参照するアクセス権がありません。]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[ユーザ {0} には、セッションの SQL を参照するアクセス権がありません。]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[エラー:]]></ErrorF>
+</lang>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[Leistungsdatenprotokoll]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[Zu wenig Daten für Profilerstellung.]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[Verbindung zum Datenbankserver {0} kann nicht hergestellt werden.]]></DatabaseConnectionFailed>
+</lang>

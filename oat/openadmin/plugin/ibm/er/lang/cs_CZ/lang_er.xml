@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Grid]]></GridRepl>
+<noGridSupport><![CDATA[Pro grid vyžaduje modul plug-in Informix Replication pro OAT Informix verze 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Modul plug-in Replication není správně nainstalován. Chcete-li modul plug-in Replication nainstalovat, v nabídce Administrátor klepněte na volbu Správce modulů plug-in.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Modul plug-in Informix Replication pro OAT vyžaduje vaše přihlášení do OAT jako uživatele informix nebo jako DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Aktuální stav procesu zachycení ER]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Počet stránek logického transakčního protokolu do blokování DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Počet transakcí zařazených do fronty]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Procentní část prostoru na disku použitého pro řádková data]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Aktuální stav sítě ER]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Počet odpojených uzlů]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Počet neodeslaných transakcí]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Aktuální stav procesu použití replikace ER]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Průměrná latence k příjmu transakce (v sekundách)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Míra selhání při používání transakcí]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[V souboru SQLHOSTS pro uzel {0}, následující ID skupiny serverů jsou duplicitní: {1}. V souboru SQLHOSTS specifikujte pro každou skupinu serverů jedinečné ID, a to zadáním jedinečné hodnoty pro volbu identifikátoru (i=číslo).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[Soubor SQLHOSTS pro uzel {0} neobsahuje skupiny serverů: {1}. Pokud je uzel kořenový (root) nebo nekořenový (nonroot), musí mít úplnou informaci SQLHOSTS pro všechny skupiny serverů v doméně. Je-li uzel koncový (leaf), musí mít alespoň informaci SQLHOSTS u své nadřízené skupiny serverů.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[Soubor SQLHOSTS pro uzel {0} nemá správné hodnoty pro pole typu připojení. Jeden člen v každé skupině v souboru SQLHOSTS musí mít podporované síťové protokoly a typy databázových serverů. Replikace Enterprise Replication (ER) podporuje síťové protokoly soctcp, tlitcp, socssl, tlispx, socimc, tliimc a sqlmux. Replikace ER podporuje typy databázových serverů on a ol. Replikace ER nemůže použít připojení konfigurované s volbou CSM (Communications Support Module) v souboru SQLHOSTS. Replikace ER může být šifrována pouze nastavení konfiguračních parametrů šifrování. Chcete-li kombinovat síťové šifrování klient/server s šifrováním replikace ER, zkonfigurujte dvě síťová připojení pro každý databázový server. Další informace o síťovém šifrování a souboru SQLHOSTS naleznete v Informačním centru Informix.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[V souboru SQLHOSTS pro uzel {0} obsahuje skupina {1} více samostatných serverů nebo její aliasy. Skupina {1} obsahuje server {2}. OAT nemůže definovat tento server pro replikaci Enterprise Replication (ER), protože server je součástí klastru s vysokou dostupností. Chcete-li pro ER definovat tento server, použijte příkaz cdr define server z příkazového řádku.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Server {0} je sekundární server v klastru s vysokou dostupností. OAT nemůže tento server definovat pro Enterprise Replication (ER). Spusťte akci definování serveru na primárním serveru v klastru s vysokou dostupností.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Nelze se připojit k serveru {0}: {1}. Nelze navázat důvěryhodné připojení mezi novým uzlem a serverem {0}, serverem, jenž jste vybrali k synchronizaci konfigurace ER. Zkontrolujte síťové připojení. Další informace o přípravě síťového prostředí pro replikaci ER viz Informační centrum Informix.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[ID skupiny pro server {0} se v souborech SQLHOSTS pro uzel {1} a uzel {2} neshoduje. Zkontrolujte v souborech SQLHOSTS pro uzel {1} a uzel {2} hodnotu volby identifikátoru (i=číslo) pro server {0}. Hodnoty musejí být shodné.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Server {0} není serverem Enterprise Replication (ER), protože nemá databázi syscdr s globálním katalogem. K synchronizaci konfigurace domény ER vyberte server, který je zapojen do replikace ER.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Server {0} je koncovým uzlem. Koncový uzel nemůže být v postavení serveru, který synchronizuje konfiguraci domény ER. Vyberte kořenový (root) nebo nekořenový (nonroot) uzel.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Tento server je již zapojen do aktivity Enteprise Replication (ER). Vyberte jiný server.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT nemůže tento server definovat pro replikaci Enterprise Replication (ER), protože je součástí klastru s vysokou dostupností. Chcete-li pro ER definovat tento server, použijte příkaz 'cdr define server' z příkazového řádku.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[Název skupiny {0} pro server {1} je neplatný. Než budete pokračovat, aktualizujte název skupiny v souboru SQLHOSTS serveru.]]></Invalid_Group_Name>
+<Error><![CDATA[Chyba]]></Error>
+<ConnectionFailed><![CDATA[Připojení se nezdařilo]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[Nejsou podrobnosti o připojení pro tento server.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[Délka příkazu překročila limity pro rozhraní Admin API.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Úloha Admin async byla odeslána úspěšně.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Volný prostor (MB)]]></Free_MB>
+<Used_MB><![CDATA[Použito (MB)]]></Used_MB>
+</lang>

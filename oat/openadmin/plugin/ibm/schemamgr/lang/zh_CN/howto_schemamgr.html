@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-cn" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2009, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="模式管理器, 数据库对象, 表对象, 查看, 统计信息, 表, 分段, 创建, 数据库, 数据库" />
+<meta name="keywords" content="删除, 表, 删除表, 删除表, 删除, 截断表, 截断, 索引, 启用, 禁用, 外部表, 卸载数据" />
+<meta name="keywords" content="装入数据" />
+<title>Informix Schema Manager Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Schema Manager Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>目录</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Informix Schema Manager Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_osm_005" class="toclink">查看数据库对象</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_osm_006" class="toclink">查看表对象</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_osm_019" class="toclink">查看表统计信息</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_osm_021" class="toclink">创建数据库</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_osm_022" class="toclink">删除数据库</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_osm_020" class="toclink">管理表和索引</a></div>
+<div class="head3"><a id="ToC_8" href="#dqx1ids_osm_003" class="toclink">创建表</a></div>
+<div class="head3"><a id="ToC_9" href="#dqx1ids_osm_001" class="toclink">删除表</a></div>
+<div class="head3"><a id="ToC_10" href="#dqx1ids_osm_002" class="toclink">截断表</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_osm_016" class="toclink">创建索引</a></div>
+<div class="head3"><a id="ToC_12" href="#dqx1ids_osm_018" class="toclink">启用或禁用索引</a></div>
+<div class="head3"><a id="ToC_13" href="#dqx1ids_osm_017" class="toclink">删除索引</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_osm_011" class="toclink">使用外部表装入和卸载数据</a></div>
+<div class="head3"><a id="ToC_15" href="#dqx1ids_osm_008" class="toclink">装入外部表的数据</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_osm_009" class="toclink">将数据卸载到外部表</a></div>
+<div class="head3"><a id="ToC_17" href="#dqx1ids_osm_007" class="toclink">创建外部表</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_osm_010" class="toclink">查看外部表信息</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_osm_013" class="toclink">查看装入和卸载任务的状态</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_osm_012" class="toclink">运行已保存的装入和卸载任务</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_osm_014" class="toclink">删除装入和卸载任务</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_osm_015" class="toclink">创建已保存的装入或卸载任务组</a></div>
+<div class="head1"><a id="ToC_23" href="#dqx1ids_cm_not" class="toclink">声明</a></div>
+<div class="head2"><a id="ToC_24" href="#dqx1trademarks" class="toclink">商标</a></div>
+<div class="head2"><a id="ToC_25" href="#dqx1ids_osm_000" class="toclink">版权</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Informix Schema Manager Plug-in for OAT</a></h1>
+<div>
+<p>IBM&reg; Informix&reg; Schema Manager Plug-in for OpenAdmin Tool (OAT) 提供图形界面，用于查看和管理数据库和表。</p></div>
+<p>通过该模式管理器插件，您可以执行以下任务：</p>
+<ul>
+<li>创建并删除数据库、表和索引。</li>
+<li>使用外部表装入和卸载在数据库服务器外部管理和存储的数据。</li>
+<li>监视有关表和分段统计信息的信息。</li>
+<li>指定仅对已在分段表中更改的分段还是对整张表计算数据分发统计信息。</li>
+<li>查看有关数据库对象的信息，包括存储过程和函数、序列、用户定义的数据类型 (UDT)、特权、DataBlade&reg; 模块、聚集、强制转型和运算符类。</li>
+<li>查看关于表对象的信息，包括列、索引、引用、特权、UDT、约束、分段和触发器。</li></ul>
+<h2 id="dqx1ids_osm_005"><a href="#ToC_2">查看数据库对象</a></h2>
+<div>
+<p>查看有关存储过程和函数、序列、用户定义的数据类型 (UDT)、特权、DataBlade 模块、聚集、强制转型和运算符类的信息。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>要查看数据库对象：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中选择数据库。
+
+<p>页面显示一个面板，以提供有关每个数据库对象的信息。</p></li>
+<li>要显示有关数据库对象的更多详细信息，请单击对象面板上的展开按钮。</li></ol>
+<h2 id="dqx1ids_osm_006"><a href="#ToC_3">查看表对象</a></h2>
+<div>
+<p>查看有关列、索引、引用、特权、用户定义的数据类型 (UDT)、约束、分段和触发器的信息。</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>要查看表对象：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。</li>
+<li>可选：选择过滤器，以在列表中包含更多表：<ul>
+<li>要包含系统目录，请选择<strong>包含目录</strong>。</li>
+<li>要包含视图，请选择<strong>包含视图</strong>。视图是基于特定 SELECT 语句的一个虚拟表。</li>
+<li>要包含同义词，请选择<strong>包含同义词</strong>。同义词是表、视图或序列对象的替代名称。通常，同义词是指不在当前数据库中的表。</li></ul></li>
+<li>在列表中选择表。
+
+<p>页面显示一个面板，以提供有关每个表对象的信息。</p></li>
+<li>要显示有关表对象的更多详细信息，请单击对象面板上的展开按钮。</li></ol>
+<h2 id="dqx1ids_osm_019"><a href="#ToC_4">查看表统计信息</a></h2>
+<div>
+<p>查看有关表和分段统计信息的信息，包括上次记录统计信息的时间、数据分发和已更改行的百分比。指定自动更新表统计信息的选项。</p></div><a id="idx5"></a><a id="idx6"></a><a id="idx7"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">先决条件：</div>
+<div class="notebody">IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70 来指定自动更新表统计信息的选项，以及显示一些信息，例如已更改行的百分比。</div></div>
+<p>
+<p>要查看表统计信息：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中展开数据库。</li>
+<li>在列表中选择表。</li>
+<li><span id="dqx1ids_osm_019__d1219e94">展开<strong>统计信息</strong>面板。</span></li>
+<li>要显示分段级别的统计信息，单击<strong>分段统计信息</strong>。将对 IBM Informix V11.70 显示此信息。</li></ol>
+<h2 id="dqx1ids_osm_021"><a href="#ToC_5">创建数据库</a></h2>
+<div>
+<p>创建数据库并指定数据库语言环境。</p></div><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_osm_021__preq-create-db">先决条件：</div>
+<div class="notebody">要创建数据库，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</div></div>
+<p>
+<p>
+<br />要创建数据库：<br /></p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建数据库</strong>。</li>
+<li>遵循“创建数据库”向导中的指导信息。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_082.htm#ids_ddi_082" target="_blank">使用 CREATE DATABASE（数据库设计指南）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.glsug.doc/ids_gug_037.htm#ids_gug_037" target="_blank">数据库语言环境（GLS 用户指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0368.htm#ids_sqs_0368" target="_blank">CREATE DATABASE 语句（SQL 语法）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_127.htm#ids_sapi_127" target="_blank">创建数据库参数：创建数据库（SQL 管理 API）（管理员参考）</a></li></ul>
+<h2 id="dqx1ids_osm_022"><a href="#ToC_6">删除数据库</a></h2>
+<div>
+<p>除去数据库并删除其中存储的表和数据。</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq16">先决条件：</div>
+<div class="notebody">要删除数据库，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</div></div>
+<p>
+<p>
+<br />要删除数据库：<br /></p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>选择该数据库。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除数据库</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0713.htm#ids_sqs_0713" target="_blank">DROP DATABASE 语句（SQL 语法）</a></li></ul>
+<h2 id="dqx1ids_osm_020"><a href="#ToC_7">管理表和索引</a></h2>
+<div>
+<p>创建、删除和截断表。创建、禁用和删除索引。</p></div>
+<h3 id="dqx1ids_osm_003"><a href="#ToC_8">创建表</a></h3>
+<div>
+<p>创建表并定义使该表能够执行全部功能所必需的属性。</p></div><a id="idx12"></a><a id="idx13"></a>
+<p>
+<p>要创建表：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>选择要在其中创建表的数据库。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建表</strong>。</li>
+<li>遵循“创建表”向导中的指导信息。</li></ol>
+<h3 id="dqx1ids_osm_001"><a href="#ToC_9">删除表</a></h3>
+<div>
+<p>除去表及与之关联的索引和数据。</p></div><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a><a id="idx17"></a>
+<p>
+<p>除去表时，同时会删除表中存储的数据以及所有索引、约束、触发器、访问特权和本地同义词。另外，还会除去基于表的所有视图以及与表关联的所有违例和诊断表。</p>
+<p>要删除表：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中，展开包含表的数据库。</li>
+<li>选择表。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除表</strong>。</li></ol>
+<h3 id="dqx1ids_osm_002"><a href="#ToC_10">截断表</a></h3>
+<div>
+<p>删除表中的所有行并释放关联的存储空间，或者保留存储空间以供表及其索引复用。</p></div><a id="idx18"></a><a id="idx19"></a>
+<p>
+<p>在定期清空表并重新装入新行的应用程序中，复用存储空间可使其存储管理更加有效。</p>
+<p>要截断表：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中，展开包含表的数据库。</li>
+<li>选择表。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>截断表</strong>。</li>
+<li>可选：选择<strong>保留存储空间</strong>以保留分配给表的存储空间。</li></ol>
+<h3 id="dqx1ids_osm_016"><a href="#ToC_11">创建索引</a></h3>
+<div>
+<p>为表中一个或多个列创建索引。</p></div><a id="idx20"></a><a id="idx21"></a>
+<p>
+<p></p></p>
+<p>
+<p>要创建索引：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li id="dqx1ids_osm_016__step-select-db-table">在列表中，展开数据库并选择表。</li>
+<li id="dqx1ids_osm_016__step-create-index">在<strong>操作</strong>菜单上，单击<strong>创建索引</strong>。</li>
+<li><span id="dqx1ids_osm_016__step-follow-create-index">遵循“创建索引”向导中的指导信息。</span></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_359.htm#ids_prf_359" target="_blank">索引和索引性能注意事项（性能指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0401.htm#ids_sqs_0401" target="_blank">CREATE INDEX 语句（SQL 语法）</a></li></ul>
+<h3 id="dqx1ids_osm_018"><a href="#ToC_12">启用或禁用索引</a></h3>
+<div>
+<p>禁用索引，或启用已禁用的索引。</p></div><a id="idx22"></a><a id="idx23"></a><a id="idx24"></a><a id="idx25"></a>
+<p>
+<p>缺省情况下，索引是启用的。在进行插入、删除和更新操作期间，数据库服务器将识别该索引并进行更新。如果禁用索引，那么在进行这些操作期间将不再对其进行更新。</p></p>
+<p>
+<p>要启用或禁用索引：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中，展开包含应用索引的表的数据库，并选择表。</li>
+<li>展开<strong>索引</strong>面板。</li>
+<li>选择索引。</li>
+<li>在面板的<strong>操作</strong>菜单上，单击<strong>启用索引</strong>或<strong>禁用索引</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0435.htm#ids_sqs_0435" target="_blank">数据库服务器如何处理已禁用的索引（SQL 语法）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0166.htm#ids_sqs_0166" target="_blank">数据库对象方式的定义（SQL 语法）</a></li></ul>
+<h3 id="dqx1ids_osm_017"><a href="#ToC_13">删除索引</a></h3>
+<div>
+<p>删除索引；例如，除去不再有效的索引。</p></div><a id="idx26"></a><a id="idx27"></a>
+<p>
+<p></p></p>
+<p>
+<p>要删除索引：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>在列表中，展开包含应用索引的表的数据库，并选择表。</li>
+<li>展开<strong>索引</strong>面板。</li>
+<li>选择索引。</li>
+<li>在面板的<strong>操作</strong>菜单上，单击<strong>删除索引</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_332.htm#ids_prf_332" target="_blank">删除索引以提高表更新效率（性能指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0718.htm#ids_sqs_0718" target="_blank">DROP INDEX 语句（SQL 语法）</a></li></ul>
+<h2 id="dqx1ids_osm_011"><a href="#ToC_14">使用外部表装入和卸载数据</a></h2>
+<div>
+<p>使用外部表装入和卸载在数据库服务器外部管理和存储的数据。</p></div><a id="idx28"></a><a id="idx29"></a><a id="idx30"></a>
+<div>
+<div class="notetitle" id="wq37">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<h3 id="dqx1ids_osm_008"><a href="#ToC_15">装入外部表的数据</a></h3>
+<div>
+<p>通过使用外部表，将数据从数据库服务器的外部源装入数据库表中。</p></div><a id="idx31"></a><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq39">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>要装入外部表的数据：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>选择要装入数据的数据库表。
+
+<p>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。</p></li>
+<li>在<strong>操作</strong>菜单上，单击<strong>装入表</strong>。</li>
+<li>遵循“装入表”向导中的指导信息。</li></ol>
+<h3 id="dqx1ids_osm_009"><a href="#ToC_16">将数据卸载到外部表</a></h3>
+<div>
+<p>将数据从数据库表卸载到外部表。</p></div><a id="idx33"></a><a id="idx34"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq43">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>要将数据卸载到外部表：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>选择要从中卸载数据的数据库表。
+
+<p>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。</p></li>
+<li>在<strong>操作</strong>菜单上，单击<strong>卸载表</strong>。</li>
+<li>遵循“卸载表”向导中的指导信息。</li></ol>
+<h3 id="dqx1ids_osm_007"><a href="#ToC_17">创建外部表</a></h3>
+<div>
+<p>创建在数据库服务器外部管理和存储的表，以装入和卸载数据。</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq47">先决条件：</div>
+<div class="notebody">要创建外部表，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6。</div></div>
+<p>
+<p>要创建外部表：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>选择要为其创建表的数据库。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建表</strong>。</li>
+<li>遵循“创建表”向导中的指导信息。
+
+<p>对于<strong>表类型</strong>，请选择外部表类型：</p>
+<ul>
+<li><strong>外部固定</strong>：固定宽度文本格式的表，其中的数据在 Informix 数据库服务器以外管理和存储。</li>
+<li><strong>外部定界</strong>：定界文本格式的表，其中的数据在 Informix 数据库服务器以外管理和存储。</li>
+<li><strong>外部 Informix</strong>：内部 Informix 格式的表，其中的数据在 Informix 数据库服务器以外管理和存储。
+
+<p>外部表用于为您的数据库装入和卸载数据。</p></li></ul></li></ol>
+<h3 id="dqx1ids_osm_010"><a href="#ToC_18">查看外部表信息</a></h3>
+<div>
+<p>查看关于外部表的信息。</p></div><a id="idx37"></a>
+<p>
+<p>将对 Informix 11.50.xC6 或更高版本显示此信息。</p></p>
+<p>
+<p>要查看外部表的信息：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。</li>
+<li>在列表中选择表。
+
+<p>页面显示一个面板，以提供有关每个表对象的信息。</p></li>
+<li>要显示有关表对象的更多详细信息，请单击对象面板上的展开按钮。
+
+<p><strong>表信息</strong>面板和<strong>列</strong>面板显示特定于外部表的信息。</p></li></ol>
+<h3 id="dqx1ids_osm_013"><a href="#ToC_19">查看装入和卸载任务的状态</a></h3>
+<div>
+<p>查看通过 IBM OpenAdmin Tool (OAT) for Informix 提交的任务的状态，以使用外部表装入和卸载数据。</p></div><a id="idx38"></a><a id="idx39"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>要查看装入和卸载任务的状态：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>单击数据库或在其上运行该任务的表。</li>
+<li>展开<strong>信息</strong>面板。</li>
+<li>单击<strong>任务状态</strong>选项卡。
+
+<p>要显示有关任务的更多信息（包括错误代码和返回消息），请单击任务的详细信息图标。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">Error Messages (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_osm_012"><a href="#ToC_20">运行已保存的装入和卸载任务</a></h3>
+<div>
+<p>使用外部表运行装入和卸载数据的任务。</p></div><a id="idx40"></a><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq58">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>使用外部表装入或卸载数据时，将保存该任务。您可以再次运行该任务或将其删除。</p></p>
+<p>
+<p>要运行已保存的装入或卸载任务：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>单击数据库或在其上运行该任务的表。</li>
+<li>展开<strong>信息</strong>面板。</li>
+<li>单击<strong>任务</strong>选项卡。</li>
+<li>选择要运行的任务。</li>
+<li>在面板的<strong>操作</strong>菜单上，单击<strong>提交</strong>。</li></ol>
+<h3 id="dqx1ids_osm_014"><a href="#ToC_21">删除装入和卸载任务</a></h3>
+<div>
+<p>删除装入或卸载任务，或删除装入或卸载任务的状态。</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq63">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>使用 OAT 装入或卸载数据时，将保存该任务。您可以再次提交该任务或将其删除。您也可以删除已提交任务的状态。</p></p>
+<div>
+<div class="notetitle" id="wq65">重要信息：</div>
+<div class="notebody">当删除<strong>任务</strong>页面上的任务时，同时会将任务的结果从<strong>任务状态</strong>页面删除。当删除任务状态时，仅会删除该任务状态。</div></div>
+<p>
+<p>要删除装入和卸载任务：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>单击数据库或在其上运行该任务的表。</li>
+<li>展开<strong>信息</strong>面板。</li>
+<li>选择适当的选项卡：<ul>
+<li>要删除任务和任务状态，请单击<strong>任务</strong>选项卡。</li>
+<li>要仅删除任务状态，请单击<strong>任务状态</strong>选项卡。</li></ul></li>
+<li>选择该任务。</li>
+<li>单击<strong>操作</strong> &gt; <strong>删除</strong>。</li></ol>
+<h3 id="dqx1ids_osm_015"><a href="#ToC_22">创建已保存的装入或卸载任务组</a></h3>
+<div>
+<p>将已保存的任务集结成组以便一起提交。</p></div><a id="idx45"></a><a id="idx46"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq69">先决条件：</div>
+<div class="notebody">要使用外部表装入和卸载数据，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。</div></div>
+<p>
+<p>使用 OAT 装入或卸载数据时，将保存该任务。您可以再次运行该任务、将其删除或将其与其他已保存的任务分为一组。</p></p>
+<p>
+<p>要创建已保存的装入或卸载任务组：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>模式管理器</strong>。</li>
+<li>单击数据库或在其上运行该任务的表。</li>
+<li>展开<strong>信息</strong>面板。</li>
+<li>单击<strong>任务</strong>选项卡。</li>
+<li>选择要包含在组中的任务。装入和卸载任务可以包含在同一组中。</li>
+<li>在面板的<strong>操作</strong>菜单上，单击<strong>创建组</strong>，然后输入组的名称。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_23">声明</a></h1>
+<p>本信息是为在美国国内供应的产品和服务而编写的。</p>
+<p>IBM 可能在其他国家或地区不提供本文档中讨论的产品、服务或功能特性。有关您所在区域当前可获得的产品和服务的信息，请向您当地的 IBM 代表咨询。任何对 IBM 产品、程序或服务的引用并非意在明示或暗示只能使用 IBM 的产品、程序或服务。只要不侵犯 IBM 的知识产权，任何同等功能的产品、程序或服务，都可以代替 IBM 产品、程序或服务。但是，评估和验证任何非 IBM 产品、程序或服务的操作，由用户自行负责。</p>
+<p>IBM 公司可能已拥有或正在申请与本文档内容有关的各项专利。提供本文档并未授予用户使用这些专利的任何许可。您可以用书面方式将许可查询寄往：</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation
+<br />
+North Castle Drive
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A. <br />
+</div>
+<p>有关双字节 (DBCS) 信息的许可查询，请与您所在国家或地区的 IBM 知识产权部门联系，或用书面方式将查询寄往：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>以下段落对于英国和与当地法律有不同规定的其他国家或地区均不适用：INTERNATIONAL BUSINESS MACHINES CORPORATION“按现状”提供本出版物，不附有任何种类的（无论是明示的还是暗含的）保证，包括但不限于暗含的有关非侵权、适销和适用于某特定用途的保证。某些国家或地区在某些交易中不允许免除明示或暗含的保证。因此本条款可能不适用于您。</p>
+<p>本信息中可能包含技术方面不够准确的地方或印刷错误。此处的信息将定期更改；这些更改将编入本出版物的新版本中。IBM 可以随时对本出版物中描述的产品和/或程序进行改进和/或更改，而不另行通知。</p>
+<p>本资料中对非 IBM Web 站点的任何引用都是为了方便起见才提供的,不以任何方式充当对那些 Web 站点的保证。那些 Web 站点中的资料不是 IBM 产品资料的一部分，使用那些 Web 站点带来的风险将由您自行承担。</p>
+<p>IBM 可以按它认为适当的任何方式使用或分发您所提供的任何信息而无须对您承担任何责任。</p>
+<p>本程序的被许可方如果要了解有关程序的信息以达到如下目的：(i) 允许在独立创建的程序和其他程序（包括本程序）之间进行信息交换，以及 (ii) 允许对已经交换的信息进行相互使用，请与下列地址联系：</p>
+<div class="lines">IBM Corporation
+<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San Jose, CA 95141-1003
+<br />
+U.S.A.<br />
+</div>
+<p>只要遵守适当的条件和条款，包括某些情形下的一定数量的付费，都可获得这方面的信息。</p>
+<p>本文档中描述的许可程序及其所有可用的许可资料均由 IBM 依据 IBM 客户协议、IBM 国际程序许可协议或任何同等协议中的条款提供。</p>
+<p>此处包含的任何性能数据都是在受控环境中测得的。因此，在其他操作环境中获得的数据可能会有明显的不同。有些测量可能是在开发级的系统上进行的，因此不保证与一般可用系统上进行的测量结果相同。此外，有些测量是通过推算而估计的，实际结果可能会有差异。本文档的用户应当验证其特定环境的适用数据。</p>
+<p>涉及非 IBM 产品的信息可从这些产品的供应商、其出版说明或其他可公开获得的资料中获取。IBM 没有对这些产品进行测试，也无法确认其性能的精确性、兼容性或任何其他关于非 IBM 产品的声明。有关非 IBM 产品性能的问题应当向这些产品的供应商提出。</p>
+<p>所有关于 IBM 未来方向或意向的声明都可随时更改或收回，而不另行通知，它们仅仅表示了目标和意愿而已。</p>
+<p>所有 IBM 的价格均是 IBM 当前的建议零售价，可随时更改而不另行通知。经销商的价格可与此不同。</p>
+<p>本信息仅用于规划的目的。
+在所描述的产品上市之前，此处的信息会有更改。</p>
+<p>本信息包含在日常业务操作中使用的数据和报告的示例。为尽可能表述完整，这些示例将包括个人、公司、品牌和产品的名称。所有这些名字都是虚构的，若现实生活中实际业务企业使用的名字和地址与此相似，纯属巧合。</p>
+<p>版权许可：</p>
+<p>本资料包括源语言形式的样本应用程序，这些样本说明不同操作平台上的编程方法。如果是为按照在编写样本程序的操作平台上的应用程序编程接口 (API) 进行应用程序的开发、使用、经销或分发为目的，您可以任何形式对这些样本程序进行复制、修改、分发，而无须向 IBM 付费。这些示例并未在所有条件下作全面测试。因此，IBM 不能担保或暗示这些程序的可靠性、可维护性或功能。样本程序“按现状”提供，不附有任何种类的保证。对于因使用样本程序所引起的任何损害，IBM 概不负责。</p>
+<p>
+凡这些样本程序的每份拷贝或其任何部分或任何衍生产品，都必须包含如下版权声明：</p>
+<p>&copy; （贵公司的名称）（年）。此部分代码是根据 IBM 公司的样本程序衍生出来的。</p>
+<p>&copy; Copyright IBM Corp. （输入年份）. All rights reserved.</p>
+<p>如果您正在查看本信息的软拷贝，图片和彩色图例可能无法显示。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_24">商标</a></h2>
+<p>IBM、IBM 徽标和 ibm.com 是 International Business Machines Corp. 在全球许多管辖区域注册的商标或注册商标。其他产品和服务名称可能是 IBM 或其他公司的商标。当前的 IBM 商标列表，可从 Web 站点 <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> 上“版权和商标信息”部分获取。</p>
+<p>Adobe、Adobe 徽标和 PostScript 是 Adobe Systems Incorporated 在美国和/或其他国家或地区的注册商标或商标。</p>
+<p>Intel、Itanium 和 Pentium 是 Intel Corporation 或其子公司在美国和其他国家或地区的商标或注册商标。</p>
+<p>Java&trade; 和所有基于 Java 的商标和徽标是 Oracle 和/或其子公司的商标或注册商标。</p>
+<p>Linux 是 Linus Torvalds 在美国和/或其他国家或地区的注册商标。</p>
+<p>Microsoft、Windows 和 Windows NT 是 Microsoft Corporation 在美国和/或其他国家或地区的商标。</p>
+<p>UNIX 是 The Open Group 在美国和其他国家或地区的注册商标。</p>
+<p>其他公司、产品或服务名称可能是其他公司的商标或服务标记。</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_25">版权</a></h2>
+<p>本文档包含 IBM 的专利信息。它是根据许可协议提供的，并受版权法保护。本出版物包含的信息不包括任何产品保证，且本手册提供的任何声明不应作如此解释。</p>
+<p>当您发送信息给 IBM 后，即授予 IBM 非专有权，IBM 对于您所提供的任何信息，有权利以任何它认为适当的方式使用或分发，而不必对您负任何责任。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2009, 2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. 请参阅 <samp class="xph">license/notices.txt</samp> 文件，获取其他信息。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

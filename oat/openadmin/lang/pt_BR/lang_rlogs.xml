@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Logs de Recuperação]]></mainTitle>
+<lognum><![CDATA[Número]]></lognum>
+<uniqid><![CDATA[ID Exclusivo]]></uniqid>
+<size><![CDATA[Tamanho]]></size>
+<SwitchComment><![CDATA[Alternar para o próximo log lógico]]></SwitchComment>
+<attributes><![CDATA[Atributos]]></attributes>
+<used><![CDATA[Usado]]></used>
+<location><![CDATA[Local]]></location>
+<notes><![CDATA[Notas]]></notes>
+<lastfilled><![CDATA[Preenchido pela Última Vez]]></lastfilled>
+<ltitle><![CDATA[Status de Log Lógico]]></ltitle>
+<notFull><![CDATA[Não Integral]]></notFull>
+<UsedBackedUp><![CDATA[Usado e Backup Feito]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Usado e Atual]]></UsedCurrent>
+<Used><![CDATA[Usado]]></Used>
+<Free><![CDATA[Livre]]></Free>
+<BackedUp><![CDATA[Backup Feito]]></BackedUp>
+<Pages><![CDATA[Páginas]]></Pages>
+<pages><![CDATA[páginas]]></pages>
+<Usage><![CDATA[Uso]]></Usage>
+<PagesPerSec><![CDATA[Taxa de Preenchimento]]></PagesPerSec>
+<PLogUsage><![CDATA[Uso de Log Físico]]></PLogUsage>
+<PLogInfo><![CDATA[Informação de Log Físico]]></PLogInfo>
+<PLogSize><![CDATA[Tamanho de Log Físico]]></PLogSize>
+<PLogUsed><![CDATA[Quantidade Usada]]></PLogUsed>
+<PlogLocation><![CDATA[Local]]></PlogLocation>
+<PlogStartPos><![CDATA[Iniciar Deslocamento]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Tamanho do Buffer]]></PlogBuffSize>
+<LLogUsage><![CDATA[Uso de Log Lógico]]></LLogUsage>
+<mLogicalLogs><![CDATA[Logs Lógicos ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Log Físico]]></mPhysicalLog>
+<mAdmin><![CDATA[Admin.]]></mAdmin>
+<mCheckpoints><![CDATA[Pontos de Verificação]]></mCheckpoints>
+<NewAdd><![CDATA[Incluído Recentemente]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Descarte do Log Lógico não confirmado.  Confirme e tente a operação novamente.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Movimento do Log Físico não confirmado.  Confirme e tente a operação novamente.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Mover Log Físico]]></MPhysicalLog>
+<Confirm><![CDATA[Confirmar]]></Confirm>
+<Move><![CDATA[Mover]]></Move>
+<mRPolicy><![CDATA[Políticas de Recuperação]]></mRPolicy>
+<syncckpt><![CDATA[Ponto de Verificação de Sincronização]]></syncckpt>
+<normckpt><![CDATA[Ponto de Verificação Normal]]></normckpt>
+<dockpt><![CDATA[Executar Ponto de Verificação]]></dockpt>
+<Checkpoint><![CDATA[Ponto de Verificação]]></Checkpoint>
+<NoMove><![CDATA[Não Mover o Log Físico]]></NoMove>
+<DropLLog><![CDATA[Descartar Log Lógico]]></DropLLog>
+<NoDropLLog><![CDATA[Não Descartar Log Lógico]]></NoDropLLog>
+<ON><![CDATA[ATIVADO]]></ON>
+<OFF><![CDATA[DESATIVADO]]></OFF>
+<InvalidValue><![CDATA[Valor inválido inserido]]></InvalidValue>
+<save><![CDATA[Salvar]]></save>
+<cancel><![CDATA[Cancelar]]></cancel>
+<rto_title><![CDATA[RTO - Objetivo do Tempo de Recuperação]]></rto_title>
+<rto><![CDATA[Recovery Time Objective]]></rto>
+<rto_error><![CDATA[Erro ao modificar Reinício do Servidor RTO.]]></rto_error>
+<minute><![CDATA[minuto]]></minute>
+<minutes><![CDATA[minutos]]></minutes>
+<autoChkpts><![CDATA[Pontos de Verificação Automáticos]]></autoChkpts>
+<autoChkpts_error><![CDATA[Erro ao modificar Pontos de Verificação Automáticos.]]></autoChkpts_error>
+<autoLRU><![CDATA[Ajuste de LRU Automático]]></autoLRU>
+<autoLRU_error><![CDATA[Erro ao modificar Ajuste Automático de LRU.]]></autoLRU_error>
+<NoPermission><![CDATA[Usuários de somente leitura não têm permissão para fazer isso. Você efetuou login como um usuário de somente leitura.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Logs lógicos incluídos]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[Após log atual]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[No final dos logs]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Nome de DBSpace]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Erro ao modificar o log físico.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Ocorreu um erro ao alternar para o próximo log lógico.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[segundos]]></seconds>
+<AddLogicalLog><![CDATA[Incluir Log Lógico]]></AddLogicalLog>
+<Add><![CDATA[Incluir]]></Add>
+<Drop><![CDATA[Descartar]]></Drop>
+<LogicalLogNum><![CDATA[Número do Log Lógico]]></LogicalLogNum>
+<Confirm><![CDATA[Confirmar]]></Confirm>
+<SwitchLog><![CDATA[Alternar Log Lógico]]></SwitchLog>
+<Switch><![CDATA[Alternar]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[自動統計更新]]></mainTitle>
+<generalTab><![CDATA[一般]]></generalTab>
+<infoTab><![CDATA[情報]]></infoTab>
+<configTab><![CDATA[構成]]></configTab>
+<listTab><![CDATA[コマンド]]></listTab>
+<ListConfig><![CDATA[自動統計更新の構成]]></ListConfig>
+<ConfParam><![CDATA[パラメータ]]></ConfParam>
+<ConfValue><![CDATA[値]]></ConfValue>
+<ConfDesc><![CDATA[説明]]></ConfDesc>
+<ListDBSsummary><![CDATA[データベースごとの自動統計更新]]></ListDBSsummary>
+<ListDBSTime><![CDATA[最終検査時間]]></ListDBSTime>
+<ListDBSName><![CDATA[データベース]]></ListDBSName>
+<ListDBSMissed><![CDATA[統計のない表]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[統計のリフレッシュが必要な小規模表]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[統計のリフレッシュが必要な大規模表]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[統計のリフレッシュ済みの表]]></ListDBSDone>
+<CleanupOK><![CDATA[クリーンアップは正常に終了しました。]]></CleanupOK>
+<CleanupBAD><![CDATA[クリーンアップは失敗しました。]]></CleanupBAD>
+<fix><![CDATA[問題を修正するには、「クリーンアップ」をクリックしてください。]]></fix>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[キャンセル]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[自動統計更新の構成]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[統計リフレッシュの間隔:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[表の変更時に統計をリフレッシュ:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[統計のリフレッシュにガイドラインを使用:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[次の行数未満のすべての表で統計をリフレッシュ:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[次の PDQ 優先順位で UPDATE STATISTICS 文を実行:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[次のスレッド数で自動統計更新タスクを実行:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[スレッド]]></AUS_THREADS>
+<Threads><![CDATA[スレッド]]></Threads>
+<days><![CDATA[日]]></days>
+<on><![CDATA[オン]]></on>
+<off><![CDATA[オフ]]></off>
+<Evaluating><![CDATA[評価中...]]></Evaluating>
+<saveTaskOK><![CDATA[タスクの詳細は正常に保存されました。]]></saveTaskOK>
+<saveTaskBAD><![CDATA[タスクの詳細は保存されませんでした。]]></saveTaskBAD>
+<Missed><![CDATA[統計のない表]]></Missed>
+<Needed_Large><![CDATA[統計のリフレッシュが必要な大規模表]]></Needed_Large>
+<Needed_Small><![CDATA[統計のリフレッシュが必要な小規模表]]></Needed_Small>
+<Done><![CDATA[統計のリフレッシュ済みの表]]></Done>
+<ChartSummary><![CDATA[自動統計更新の評価]]></ChartSummary>
+<ListCommands><![CDATA[統計更新コマンド]]></ListCommands>
+<ListPriority><![CDATA[優先順位]]></ListPriority>
+<ListExec><![CDATA[コマンド
+]]></ListExec>
+<RefreshEvaluation><![CDATA[直ちに評価]]></RefreshEvaluation>
+<Cleanup><![CDATA[クリーンアップ]]></Cleanup>
+<Cleanup_tooltip><![CDATA[AUS タスクによりエラーが生成される場合は、クリーンアップ タスクを実行してください。クリーンアップ タスクは、内部 AUS 作業表を削除してから自動統計更新の評価タスクを再実行します。]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[コマンドのエクスポート]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS アラート]]></AUSAlerts>
+<alerts><![CDATA[アラート]]></alerts>
+<ListTime><![CDATA[完了時刻]]></ListTime>
+<lastEval><![CDATA[最新の評価完了時刻]]></lastEval>
+<runIn><![CDATA[自動統計更新のリフレッシュは {0} で実行されます。]]></runIn>
+<ausDisabled><![CDATA[自動統計更新は無効です]]></ausDisabled>
+<configSaveErr><![CDATA[AUS 構成パラメータ保存時のエラー]]></configSaveErr>
+<noValue><![CDATA[値が指定されていません]]></noValue>
+<notPositiveInt><![CDATA[正整数である必要があります]]></notPositiveInt>
+<notInt_1_10><![CDATA[値は、1 から 10 までの範囲の整数である必要があります。]]></notInt_1_10>
+<notInt_0_100><![CDATA[値は、0 から 100 までの範囲の整数である必要があります]]></notInt_0_100>
+<notInt_-1_100><![CDATA[値は、-1 から 100 までの範囲の整数である必要があります]]></notInt_-1_100>
+<notInt_0_1><![CDATA[値は、0 または 1 のいずれかである必要があります]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[この機能は、ご使用の現在のサーバ バージョンでは使用不可です。]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[評価の実行時の問題:]]></ProblemWithEval>
+<ReturnCode><![CDATA[戻りコードは {0} です]]></ReturnCode>
+<ReEvalComplete><![CDATA[評価が完了しました。]]></ReEvalComplete>
+<RequestEval><![CDATA[自動統計更新の評価タスクをすぐに実行して、AUS 構成に基づいてリフレッシュする必要のある統計を判別してください。]]></RequestEval>
+<PendingCmds><![CDATA[保留状態のコマンド]]></PendingCmds>
+<CompletedCmds><![CDATA[完了済みコマンド]]></CompletedCmds>
+<save><![CDATA[[保存]]></save>
+<cancel><![CDATA[キャンセル]]></cancel>
+<add><![CDATA[追加]]></add>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<Time><![CDATA[時間]]></Time>
+<Type><![CDATA[タイプ]]></Type>
+<Color><![CDATA[色]]></Color>
+<Message><![CDATA[メッセージ]]></Message>
+<runfrequency><![CDATA[実行頻度]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[自動統計更新のスケジュール]]></AutoUpdStatsSched>
+<Name><![CDATA[名前]]></Name>
+<WeekDay1Letter><![CDATA[月]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[火]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[水]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[木]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[金]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[土]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[日]]></WeekDay7Letter>
+<starttime><![CDATA[開始時刻]]></starttime>
+<stopttime><![CDATA[停止時刻]]></stopttime>
+<Priority><![CDATA[優先順位]]></Priority>
+<Rows><![CDATA[行]]></Rows>
+<Parameter><![CDATA[パラメータ]]></Parameter>
+<Value><![CDATA[値]]></Value>
+<Actions><![CDATA[操作]]></Actions>
+<Tables><![CDATA[表]]></Tables>
+<hours><![CDATA[時間]]></hours>
+<minutes><![CDATA[分]]></minutes>
+<saveConfigSuccessful><![CDATA[自動統計更新の構成は正常に保存されました。]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[このスレッド数で更新統計タスクが実行されます。このオプションは OAT でのみ使用できます。]]></specifiedNumbOfThread>
+</lang>

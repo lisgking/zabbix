@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Zálohovanie]]></Backup>
+<noBackupSupport><![CDATA[Zálohovanie je podporované len na serveroch Informix typu štandardný, primárny alebo vzdialený samostatný sekundárny (RSS) server.]]></noBackupSupport>
+<sdsServer>![CDATA[Ste pripojený k serveru SDS (Shared Disk Secondary).]]</sdsServer>
+<hdrSecondary>![CDATA[Ste pripojený k sekundárnemu HDR serveru.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[Zálohovanie v OAT vyžaduje Informix, verzia 11.70.xC2.]]></noBackupSupportServerVersion>
+<notAvail>Nie je k dispozícii</notAvail>
+<onbarBackProcMissing>Uložená procedúra, ktorá sa vyžaduje pre zálohovanie pomocou programu ON-Bar, chýba na serveri. Skontrolujte, či sa počas spúšťania servera spustil skript sch_oat.sql.</onbarBackProcMissing>
+<Unknown>Neznáme</Unknown>
+</lang>

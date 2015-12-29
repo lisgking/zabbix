@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Hozzáadás]]></add>
+<alarms><![CDATA[Riasztások]]></alarms>
+<alarm_check><![CDATA[Riasztás-ellenőrzés]]></alarm_check>
+<alarm_setup><![CDATA[Riasztás beállítása]]></alarm_setup>
+<alarm_mod><![CDATA[Riasztások módosítása]]></alarm_mod>
+<alarm_msg><![CDATA[Adja meg a feltételeket, amelyek teljesülése esetén riasztás kerül beállításra.]]></alarm_msg>
+<alarm_name><![CDATA[Riasztás neve:]]></alarm_name>
+<Always><![CDATA[Mindig]]></Always>
+<AnyAlarm><![CDATA[Bármely riasztás]]></AnyAlarm>
+<Anyalarm><![CDATA[Bármely riasztás]]></Anyalarm>
+<all><![CDATA[Mind]]></all>
+<cancel><![CDATA[Mégse]]></cancel>
+<Config><![CDATA[Konfiguráció]]></Config>
+<Configuration><![CDATA[Konfiguráció]]></Configuration>
+<Currentprofile><![CDATA[Aktuális profil]]></Currentprofile>
+<CurrentProfile><![CDATA[Aktuális profil]]></CurrentProfile>
+<del_def_na><![CDATA[Az alapértelmezett profil nem törölhető.]]></del_def_na>
+<deleted_prof><![CDATA[A profil törlésre került.]]></deleted_prof>
+<delete><![CDATA[Törlés]]></delete>
+<desc><![CDATA[Riasztás neve]]></desc>
+<emailprog><![CDATA[E-mail program beállítása]]></emailprog>
+<empty_prof_add><![CDATA[A profilnév nem lehet üres.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Válasszon egy profilt a listából.]]></empty_prof_load>
+<enable><![CDATA[Engedélyezés]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Kivételek]]></exceptions>
+<exc_intro><![CDATA[Ez a riasztás megengedi a kivételeket.]]></exc_intro>
+<exc_example><![CDATA[Példa: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Feladó]]></from>
+<Category><![CDATA[Kategória]]></Category>
+<prod_name><![CDATA[Egészség-tanácsadó]]></prod_name>
+<prod_name_run><![CDATA[Egészség-tanácsadó futtatása]]></prod_name_run>
+<id><![CDATA[Azonosító]]></id>
+<info><![CDATA[Információk]]></info>
+<ldesc><![CDATA[Leírás]]></ldesc>
+<description><![CDATA[Leírás:]]></description>
+<load><![CDATA[Betöltés]]></load>
+<modify><![CDATA[Módosítás]]></modify>
+<modifysched><![CDATA[Ütemezés módosítása]]></modifysched>
+<modify_threshold><![CDATA[Küszöbértékek módosítása]]></modify_threshold>
+<name><![CDATA[Név]]></name>
+<noauth><![CDATA[Nem jogosult az oldal elérésére.]]></noauth>
+<noalarms><![CDATA[Nem történt riasztás.]]></noalarms>
+<notification><![CDATA[Értesítés]]></notification>
+<OS><![CDATA[Operációs rendszer]]></OS>
+<Perf><![CDATA[Teljesítmény]]></Perf>
+<profile><![CDATA[Profil]]></profile>
+<profmanagement><![CDATA[Profilkezelés]]></profmanagement>
+<profmsg><![CDATA[Profilok hozzáadása, betöltése és törlése.]]></profmsg>
+<RedAlarm><![CDATA[Vörös riasztás]]></RedAlarm>
+<Redalarm_><![CDATA[Vörös riasztás:]]></Redalarm_>
+<Redalarm><![CDATA[Vörös riasztás]]></Redalarm>
+<Redalarmthreshold><![CDATA[Vörös riasztási küszöbérték]]></Redalarmthreshold>
+<send><![CDATA[E-mail értesítés küldése]]></send>
+<save><![CDATA[Mentés]]></save>
+<save_failed><![CDATA[A mentés meghiúsult: ]]></save_failed>
+<saved_alarms><![CDATA[A riasztási beállítások módosításai mentésre kerültek.]]></saved_alarms>
+<saved_schedule><![CDATA[Az értesítési beállítások módosításai mentésre kerültek.]]></saved_schedule>
+<saved_email><![CDATA[Az e-mail program módosításai mentésre kerültek.]]></saved_email>
+<schedandnot><![CDATA[Ütemezés és értesítés]]></schedandnot>
+<schedmsg><![CDATA[A profilok megadott időközönkénti futtatása ütemezhető. Az eredmények e-mailben kerülnek elküldésre.]]></schedmsg>
+<schedule><![CDATA[Ütemezés]]></schedule>
+<show><![CDATA[Megjelenítés]]></show>
+<Storage><![CDATA[Tároló]]></Storage>
+<to><![CDATA[Címzett]]></to>
+<thresholds><![CDATA[Küszöbértékek]]></thresholds>
+<threshold_msg><![CDATA[A küszöbértékek használatának magyarázatát a riasztás leírásában találja.]]></threshold_msg>
+<when><![CDATA[Ekkor]]></when>
+<Yellowalarmthreshold><![CDATA[Sárga riasztási küszöbérték]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Sárga riasztás:]]></Yelalarm_>
+<YelAlarm><![CDATA[Sárga riasztás]]></YelAlarm>
+</lang>

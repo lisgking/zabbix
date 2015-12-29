@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[Error:]]></ErrorF>
+<QueryF><![CDATA[Query:]]></QueryF>
+<PageSize><![CDATA[Page Size]]></PageSize>
+<Descending><![CDATA[Descending]]></Descending>
+<Ascending><![CDATA[Ascending]]></Ascending>
+<ErrorOccurred><![CDATA[An error occurred]]></ErrorOccurred>
+<Reload><![CDATA[Reload]]></Reload>
+<ClickToReload><![CDATA[Click to Reload Servers]]></ClickToReload>
+<LoadingMsg><![CDATA[..LOADING..]]></LoadingMsg>
+<PrevPage><![CDATA[Previous Page]]></PrevPage>
+<NextPage><![CDATA[Next Page]]></NextPage>
+<Page><![CDATA[Page]]></Page>
+<Row><![CDATA[Row]]></Row>
+<Login><![CDATA[Login]]></Login>
+<OrderAsc><![CDATA[Order ascending by {0}]]></OrderAsc>
+<OrderDesc><![CDATA[Order descending by {0}]]></OrderDesc>
+<Help><![CDATA[Help]]></Help>
+<Admin><![CDATA[Admin]]></Admin>
+<Back><![CDATA[Back]]></Back>
+<Welcome><![CDATA[Welcome]]></Welcome>
+<CollapseMenu><![CDATA[Collapse Menu]]></CollapseMenu>
+<Info><![CDATA[Info]]></Info>
+<Yes><![CDATA[Yes]]></Yes>
+<No><![CDATA[No]]></No>
+<Cancel><![CDATA[Cancel]]></Cancel>
+<Delete><![CDATA[Delete]]></Delete>
+<Success><![CDATA[Success]]></Success>
+<ErrorL><![CDATA[Error]]></ErrorL>
+<ERROR><![CDATA[ERROR]]></ERROR>
+<Ignore><![CDATA[Ignore]]></Ignore>
+<Under><![CDATA[Under]]></Under>
+<Save><![CDATA[Save]]></Save>
+<Cancel><![CDATA[Cancel]]></Cancel>
+<TemplateLoadError><![CDATA[Could not load main template]]></TemplateLoadError>
+<help><![CDATA[Help]]></help>
+<ServerType><![CDATA[Server Type]]></ServerType>
+<Version><![CDATA[Version]]></Version>
+<ServerTime><![CDATA[Server Time]]></ServerTime>
+<BootTime><![CDATA[Boot Time]]></BootTime>
+<UpTime><![CDATA[Up Time]]></UpTime>
+<Sessions><![CDATA[Sessions]]></Sessions>
+<MaxUsers><![CDATA[Max Sessions]]></MaxUsers>
+<TotalMem><![CDATA[Total Mem]]></TotalMem>
+<FreeMem><![CDATA[Free Mem]]></FreeMem>
+<NumCPU><![CDATA[# of CPUs]]></NumCPU>
+<OperatingSys><![CDATA[Operating System]]></OperatingSys>
+<Standard><![CDATA[Standard]]></Standard>
+<Primary><![CDATA[Primary]]></Primary>
+<Secondary><![CDATA[Secondary]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[Server]]></Server>
+<Database><![CDATA[Database]]></Database>
+<ConnectionFailed><![CDATA[Connection Failed: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[ERROR:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[No SQL to execute]]></NoSQLToExecute>
+<GroupServers><![CDATA[Group Servers]]></GroupServers>
+<MapNotAvail><![CDATA[Map not available due to invalid key.]]></MapNotAvail>
+<ServerInfo><![CDATA[Server Info]]></ServerInfo>
+<Info><![CDATA[Info]]></Info>
+<ALL><![CDATA[ALL]]></ALL>
+<Enabled><![CDATA[Enabled]]></Enabled>
+<Disabled><![CDATA[Disabled]]></Disabled>
+<MB_Locale><![CDATA[Database Language]]></MB_Locale>
+<MB_Encoding><![CDATA[Locale]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[Select a database language to display the database locales for that language. Then select the database locale.]]></MB_Locale_Encoding_tooltip>
+</lang>

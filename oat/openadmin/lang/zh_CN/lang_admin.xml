@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[管理]]></admin>
+<login><![CDATA[登录]]></login>
+<AdminHome><![CDATA[管理主页]]></AdminHome>
+<AdminWelcome><![CDATA[管理欢迎使用]]></AdminWelcome>
+<ConnAdmin><![CDATA[连接管理]]></ConnAdmin>
+<ConnList><![CDATA[连接列表]]></ConnList>
+<OATconfig><![CDATA[OAT 配置]]></OATconfig>
+<defaultlang><![CDATA[缺省语言]]></defaultlang>
+<baseurl><![CDATA[基本 URL]]></baseurl>
+<installdir><![CDATA[安装目录]]></installdir>
+<conndb_loc><![CDATA[连接数据库目录]]></conndb_loc>
+<rowsperpage><![CDATA[每页行数]]></rowsperpage>
+<pingerinterval><![CDATA[刷新时间间隔]]></pingerinterval>
+<IDSProtocol><![CDATA[Informix 协议]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[要使用的协议]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[仪表板管理器]]></DashboardMgr>
+<ShowConnections><![CDATA[显示连接]]></ShowConnections>
+<AddConn><![CDATA[添加连接]]></AddConn>
+<DeleteConn><![CDATA[删除连接]]></DeleteConn>
+<EditConn><![CDATA[编辑连接]]></EditConn>
+<EditConn_><![CDATA[编辑连接：{0}]]></EditConn_>
+<AddGroup><![CDATA[添加组]]></AddGroup>
+<EditGroup><![CDATA[编辑组]]></EditGroup>
+<EditGroup_><![CDATA[编辑组 {0}]]></EditGroup_>
+<DeleteGroup><![CDATA[删除组]]></DeleteGroup>
+<HelpAdmin><![CDATA[帮助管理]]></HelpAdmin>
+<AddHelp><![CDATA[添加帮助项]]></AddHelp>
+<DeleteHelp><![CDATA[删除帮助项]]></DeleteHelp>
+<EditHelp><![CDATA[编辑帮助项]]></EditHelp>
+<group><![CDATA[OAT 组]]></group>
+<groupname><![CDATA[组名]]></groupname>
+<groupname_sc><![CDATA[组名]]></groupname_sc>
+<username><![CDATA[用户名]]></username>
+<password><![CDATA[密码]]></password>
+<hostname><![CDATA[主机名]]></hostname>
+<informixserver><![CDATA[Informix 服务器]]></informixserver>
+<port><![CDATA[端口]]></port>
+<longitude><![CDATA[经度]]></longitude>
+<latitude><![CDATA[纬度]]></latitude>
+<idsdport><![CDATA[idsd 端口]]></idsdport>
+<envvars><![CDATA[环境变量]]></envvars>
+<varname><![CDATA[变量名称]]></varname>
+<param><![CDATA[参数]]></param>
+<value><![CDATA[值]]></value>
+<readonly><![CDATA[只读]]></readonly>
+<readonly_sc><![CDATA[只读]]></readonly_sc>
+<collapse><![CDATA[折叠]]></collapse>
+<viewmodify><![CDATA[视图&#47修改]]></viewmodify>
+<currgroups><![CDATA[当前组]]></currgroups>
+<numconn><![CDATA[连接]]></numconn>
+<deleteselected><![CDATA[删除所选项]]></deleteselected>
+<act><![CDATA[Act]]></act>
+<do><![CDATA[Do]]></do>
+<title><![CDATA[标题]]></title>
+<description><![CDATA[描述]]></description>
+<add><![CDATA[添加]]></add>
+<delete><![CDATA[删除]]></delete>
+<save><![CDATA[保存]]></save>
+<cancel><![CDATA[取消]]></cancel>
+<testconnection><![CDATA[测试连接]]></testconnection>
+<insecureCONNDBDIR><![CDATA[指定的连接数据库位置在 Web 服务器的文档根之下。这会让 OAT 处于安全性风险中。如果仍希望继续，请单击“确定”。]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[插件管理器]]></pluginmgr>
+<installplugin><![CDATA[安装插件]]></installplugin>
+<menumgr><![CDATA[菜单管理器]]></menumgr>
+<secureSQL><![CDATA[SQL 工具箱安全性]]></secureSQL>
+<informixcontime><![CDATA[Informix 连接时间]]></informixcontime>
+<informixconretry><![CDATA[Informix 连接重试]]></informixconretry>
+<helpDB><![CDATA[帮助数据库]]></helpDB>
+<selectHelpDB><![CDATA[选择帮助数据库]]></selectHelpDB>
+<import><![CDATA[从 XML 文件导入连接信息]]></import>
+<export><![CDATA[将连接信息导出到 XML 文件]]></export>
+<importbutton><![CDATA[从 XML 导入]]></importbutton>
+<exportbutton><![CDATA[导出至 XML]]></exportbutton>
+<importcheckbox><![CDATA[导入 XML 文件之前，除去所有现有连接信息。]]></importcheckbox>
+<exportcheckbox><![CDATA[将敏感密码信息包含在导出的 XML 文件中。]]></exportcheckbox>
+<nofile><![CDATA[未选择任何文件。]]></nofile>
+<overwriteConfirm><![CDATA[将删除所有现有连接信息。确定吗？]]></overwriteConfirm>
+<securityWarning><![CDATA[导出的 XML 文件包含敏感密码信息，如 Informix 密码。确保此文件保存在安全位置。]]></securityWarning>
+<LANG><![CDATA[OAT 页面的缺省语言。]]></LANG>
+<CONNDBDIR><![CDATA[OAT 连接数据库的目录。指定不在 Web 服务器的文档目录下的安全目录。]]></CONNDBDIR>
+<BASEURL><![CDATA[OAT 安装所在的 URL，格式如下：http://servername:port/location。]]></BASEURL>
+<HOMEDIR><![CDATA[OAT 安装的目录。]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[以表格式显示数据时，每页要显示的缺省行数。]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[服务器状态更新之间的时间长度（以秒为单位）。服务器状态在“运行状况中心”>“仪表板”>“组摘要”页面上显示。]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[要用作 OAT 主页的页面。]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[要使用的协议（如 onsoctcp）]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[需要 SQL 工具箱的登录凭证。]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[使用密码保护“模式浏览器”、“SQL 编辑器”以及“按示例查询”页面。用户可以查看或更改这些页面上的表数据。]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[返回错误之前，OAT 尝试连接到数据库服务器的时间长度（以秒为单位）(INFORMIXCONTIME)。]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[Informix 连接时间期间，OAT 尝试连接到数据库服务器的次数 (INFORMIXCONRETRY)。]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[主页]]></HomePage>
+<home_page_option_welcome><![CDATA[欢迎]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[运行状况中心 > 仪表板 > 组摘要]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[运行状况中心 > 仪表板 > 服务器性能]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[定制]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[因为不可写入文件，所以保存配置失败：]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[已保存配置]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[联机：CURRENT]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Informix 服务器是必需的]]></RequiresInformixServer>
+<RequiresHost><![CDATA[主机是必需的]]></RequiresHost>
+<RequiresPort><![CDATA[端口是必需的]]></RequiresPort>
+<RequiresUser><![CDATA[用户名是必需的]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[添加新连接失败，错误代码为：]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[添加新 idsd 连接失败，错误代码为：]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[插入到 conn_envvars 失败，错误代码为：]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[更新连接失败，错误代码为：]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[替换 idsd 失败，错误代码为：]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[从 conn_envvars 删除失败，错误代码为：]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[更新：插入到 conn_envvars 失败，错误代码为：]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[编辑连接]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[出错 - 组号是必需的]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[组名是必需的]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[编辑组失败，错误代码为：]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[编辑组]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[添加新组失败，错误代码为：]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[添加组]]></AddingGroup>
+<AddingConn><![CDATA[添加连接]]></AddingConn>
+<ErrorDeletingConn><![CDATA[错误：调用函数 dodelconn 时使用的自变量错误]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[删除连接失败，错误代码为：]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[删除连接完成]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[删除组失败，错误代码为：]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[删除组完成]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA[“act”是必需的]]></RequiresAct>
+<RequiresDescription><![CDATA[描述是必需的]]></RequiresDescription>
+<AddingHelpFor><![CDATA[添加以下项的帮助]]></AddingHelpFor>
+<DeletingHelp><![CDATA[删除帮助]]></DeletingHelp>
+<EditingHelpFor><![CDATA[编辑以下项的帮助]]></EditingHelpFor>
+<NoHelpDB><![CDATA[没有带以下 helpdb_id 的帮助数据库]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[idsadminHelp db 存在问题 -]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[打开帮助数据库时出错]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[无法导入组]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[无法导入组]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[开始安装插件...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[连接失败...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[装入 connections.db 时出错]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[是否确定要删除这些连接？]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[是否确定要删除？删除组的同时还会删除为该组定义的所有连接！]]></SureToDeleteGroup>
+<AskDelete><![CDATA[是否确定要删除？]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[正在测试... 请稍候]]></TestingConnection>
+<InvalidEnvVar><![CDATA[错误：必须同时指定环境变量的名称和值。]]></InvalidEnvVar>
+<x_Plugin><![CDATA[{0} 插件]]></x_Plugin>
+</lang>

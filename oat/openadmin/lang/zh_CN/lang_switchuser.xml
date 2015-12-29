@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[SQL 工具箱登录]]></switchuser>
+<loginprompt><![CDATA[输入用户名和密码以使用 SQL 工具箱]]></loginprompt>
+<empty><![CDATA[用户名和密码不能为空]]></empty>
+<error><![CDATA[出错]]></error>
+<username><![CDATA[用户名]]></username>
+<password><![CDATA[密码]]></password>
+<login><![CDATA[登录]]></login>
+<SwitchingUser><![CDATA[切换用户]]></SwitchingUser>
+</lang>

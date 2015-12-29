@@ -1,0 +1,1 @@
+insert into ph_task values(0, 'HADV Purge Data', 'To purge data from the health monitor on scheduled intervals', 'TASK', 1,'','', 'sysadmin','execute procedure hadv_purge_data()','0 01:00:00','23:55:00','', '1 00:00:00','2011-04-12 23:55:00',0,0.0,'t','t','t','t','t','t','t',400,'USER','t',0);

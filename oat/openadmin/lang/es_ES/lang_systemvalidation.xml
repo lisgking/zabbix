@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Validación del sistema]]></mainTitle>
+<checkDataFormat><![CDATA[Comprobar el formato de datos]]></checkDataFormat>
+<databaseName><![CDATA[Nombre de base de datos]]></databaseName>
+<tableName><![CDATA[Nombre de tabla]]></tableName>
+<chkTable><![CDATA[Comprobar tabla]]></chkTable>
+<chkExtFormat><![CDATA[Comprobar el formato de la extensión]]></chkExtFormat>
+<extName><![CDATA[Nombre del espacio de BD]]></extName>
+<chkExtent><![CDATA[Comprobar la extensión]]></chkExtent>
+<valResTo><![CDATA[Resultados de la validación a ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - Validación del sistema]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Validación de oncheck completa.]]></oncheckComplete>
+<ValidationResults><![CDATA[Resultados de la validación ...]]></ValidationResults>
+<SysValNotValid><![CDATA[La validación del sistema no es válida en secundarios.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Los usuarios de sólo lectura no tienen permiso para hacer esto. Ha iniciado sesión como un usuario de sólo lectura.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Atención: Ejecutar una comprobación puede consumir una gran cantidad de recursos de proceso en función del número de páginas implicadas. La acción lee todas las páginas de para las tablas especificadas, excepto páginas de Blob y SB, y comprueba la coherencia de cada página. ¿Desea continuar?]]></confirmCheckData>
+<NotYetImpl><![CDATA[En esta página, la herramienta OpenAdmin no puede mostrar información para un servidor de base de datos con más de un entorno local de base de datos que no sea inglés. El servidor de bases de datos contiene más de un entorno local de base de datos que no es inglés.]]></NotYetImpl>
+</lang>

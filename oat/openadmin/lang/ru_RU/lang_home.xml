@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Главная страница]]></home>
+
+<dashboard><![CDATA[Панель управления]]></dashboard>
+<dashboard_name_perf><![CDATA[Производительность сервера]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[На этой сводной панели показана информация о таблицах, запросах и процессоре.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Использование ресурсов]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[На этой сводной панели показана информация о памяти, пространстве и блокировках.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Память сервера баз данных]]></panel_title_memory>
+<panel_desc_memory><![CDATA[На этой панели показана информация об использовании общей памяти для сервера баз данных.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Сеансы]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[На этой панели показано количество сеансов соединения для сервера баз данных.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Сетевые операции чтения и записи]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[На этой панели показано количество вызовов ввода-вывода для сетевых операций чтения и записи.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[дисковый ввод/вывод]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[На этой панели показано время ожидания дискового ввода-вывода. Для этой панели требуется Informix 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Память операционной системы]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[На этой панели показана информация об использовании памяти для операционной системы. Для этой панели требуется Informix 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Транзакции]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[На этой панели показано количество транзакций для сервера баз данных.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Использование пространства]]></panel_title_space>
+<panel_desc_space><![CDATA[На этой панели показана информация о свободном и используемом пространстве для каждого пространства баз данных.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Блокировки]]></panel_title_locks>
+<panel_desc_locks><![CDATA[На этой панели показано количество блокировок для сервера баз данных.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Активные таблицы - операции чтения]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[На этой панели показаны таблицы с большим количеством операций чтения.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[Время CPU]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[На этой панели показано пользовательское и системное время процессора.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Активные таблицы - модификации]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[На этой панели показаны таблицы с большим количеством вставок, изменений и удалений.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Всего операций SQL]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[На этой панели показано общее количество обработанных, вставленных, измененных и удаленных строк.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[Операций SQL за секунду]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[На этой панели показано количество обработанных, вставленных, измененных и удаленных за секунду строк.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Добро пожаловать]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[На этой странице OpenAdmin Tool не может вывести информацию для сервера баз данных с несколькими неанглийскими локалями базы данных. Сервер баз данных содержит несколько неанглийских локалей базы данных.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Обозреватель сеансов]]></sessionexplorer>
+<ChartTest><![CDATA[Диаграмма - тест]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[Пространство данных]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Не удалось получить информацию о соединениях для сервера баз данных.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Не удалось установить соединение: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Ошибка: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[Сервер баз данных блокирован.  OAT не может получить никакую другую информацию о состоянии.]]></ServerBlocked>
+</lang>

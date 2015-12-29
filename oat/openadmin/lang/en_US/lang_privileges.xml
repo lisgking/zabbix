@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Manage Privileges]]></ManagePrivileges>
+<UserPrivileges><![CDATA[User Privileges]]></UserPrivileges>
+<Database><![CDATA[Database]]></Database>
+<DBPrivileges><![CDATA[Database-Level Privileges]]></DBPrivileges>
+<TablePrivileges><![CDATA[Table-Level Privileges]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL Admin API Privileges]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Internal Users]]></NonOsUsers>
+<Name><![CDATA[Name]]></Name>
+<Type><![CDATA[Type]]></Type>
+<DefRole><![CDATA[Default Role]]></DefRole>
+<Tabname><![CDATA[Table Name]]></Tabname>
+<User><![CDATA[User]]></User>
+<Grantor><![CDATA[Grantor]]></Grantor>
+<Privilege><![CDATA[Privilege]]></Privilege>
+<Privileges><![CDATA[Privileges]]></Privileges>
+<Username><![CDATA[User Name]]></Username>
+<Grant><![CDATA[Grant]]></Grant>
+<GrantNewPriv><![CDATA[Grant new privilege]]></GrantNewPriv>
+<Roles><![CDATA[Roles]]></Roles>
+<CreateNewRole><![CDATA[Create new role]]></CreateNewRole>
+<Create><![CDATA[Create]]></Create>
+<RoleName><![CDATA[Role Name]]></RoleName>
+<NoUserError><![CDATA[Grant failed: no user name provided.]]></NoUserError>
+<NoPrivError><![CDATA[Grant failed: no privilege level provided.]]></NoPrivError>
+<NoTabError><![CDATA[Grant failed: no table name provided.]]></NoTabError>
+<NoRoleError><![CDATA[Create failed: no role name provided.]]></NoRoleError>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<NoDatabasesError><![CDATA[No non-system databases available on this database server.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Grant successful for user]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Privilege revoked for user]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Privilege saved for user]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Grant successful on table]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[for user]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Privilege revoked for user]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[on table]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Privilege saved for user]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Create successful for role]]></CreateSuccessForRole>
+<Connect><![CDATA[Connect]]></Connect>
+<Resource><![CDATA[Resource]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[Select]]></Select>
+<Update><![CDATA[Update]]></Update>
+<Insert><![CDATA[Insert]]></Insert>
+<Delete><![CDATA[Delete]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Alter]]></Alter>
+<References><![CDATA[References]]></References>
+<Under><![CDATA[Under]]></Under>
+<Modify><![CDATA[Modify]]></Modify>
+<Revoke><![CDATA[Revoke]]></Revoke>
+<ErrorF><![CDATA[Error:]]></ErrorF>
+<GrantFailed><![CDATA[Grant Failed]]></GrantFailed>
+<CreateFailed><![CDATA[Create Failed]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[For internal users, OAT requires Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[For SQL administration API command privileges, OAT requires Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

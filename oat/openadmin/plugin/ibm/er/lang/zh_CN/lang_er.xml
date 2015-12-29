@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[网格]]></GridRepl>
+<noGridSupport><![CDATA[对于网格，OAT 的 Informix Replication 插件需要 Informix 11.70。]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Replication 插件未正确安装。要安装 Replication 插件，请在“管理”菜单上单击“插件管理器”。]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[OAT 的 Informix Replication 插件需要您以用户 informix 身份或以 DBSA 身份登录到 OAT。]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[ER 捕获进程的当前状态]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[DDRBLOCK 之前的逻辑日志页面数]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[假脱机的事务数]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[用于行数据的磁盘空间所占百分比]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[ER 网络的当前状态]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[断开连接的节点数]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[暂挂事务数]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[ER 应用进程的当前状态]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[接收事务的平均等待时间（以秒计）]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[应用事务失败率]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[在节点 {0} 的 SQLHOSTS 文件中，以下服务器组标识重复：{1}。在 SQLHOSTS 文件中，通过为标识选项（i=编号）指定唯一值来为服务器组提供唯一标识。]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[节点 {0} 的 SQLHOSTS 文件不包含以下服务器组：{1}。如果该节点是根节点或非根节点，那么它必须具有域中所有服务器组的完整 SQLHOSTS 信息。如果该节点是叶节点，那么它必须至少具有其父服务器组的 SQLHOSTS 信息。]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[节点 {0} 的 SQLHOSTS 文件中没有用于连接类型字段的正确值。SQLHOSTS 文件中每个组有一个成员必须具有支持的网络协议和数据库服务器类型。Enterprise Replication (ER) 支持网络协议 soctcp、tlitcp、socssl、tlispx、socimc、tliimc 和 sqlmux。ER 支持数据库服务器类型 on 和 ol。ER 无法使用通过 SQLHOSTS 文件中通信支持模块 (CSM) 选项配置的连接。ER 只能通过设置加密配置参数进行加密。要将客户机/服务器网络加密与 ER 加密组合使用，请为每个数据库服务器配置两个网络连接。要了解有关网络加密和 SQLHOSTS 的更多信息，请参阅 Informix 信息中心。]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[在节点 {0} 的 SQLHOSTS 文件中，组 {1} 包含多个独立服务器或其别名。组 {1} 包含服务器 {2}。OAT 无法为 Enterprise Replication (ER) 定义此服务器，因为该服务器是高可用性集群的一部分。要为 ER 定义此服务器，从命令行使用命令 cdr define server。]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[服务器 {0} 是高可用性集群中的辅助服务器。OAT 不能为 Enterprise Replication (ER) 定义此服务器。对高可用性集群中的主服务器运行“定义服务器”操作。]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[无法连接到服务器 {0}：{1}。无法在新节点和已选择用于同步 ER 配置的服务器 {0} 之间建立可信连接。请检查网络连接。要了解有关准备 Enterprise Replication 的网络环境的更多信息，请参阅 Informix 信息中心。]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[服务器 {0} 的组标识与节点 {1} 和节点 {2} 的 SQLHOSTS 文件中的组标识不同。在节点 {1} 和节点 {2} 的 SQLHOSTS 文件中，检查服务器 {0} 的标识选项（i=编号）的值。值必须相同。]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[服务器 {0} 不是 Enterprise Replication (ER) 服务器，因为它没有包含全局目录的 syscdr 数据库。选择参与 ER 的服务器来同步 ER 域配置。]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[服务器 {0} 是叶节点。叶节点不能是同步 ER 域配置的服务器。选择根节点或非根节点。]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[此服务器已经参与 Enteprise Replication (ER) 活动。选择其他服务器。]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT 无法为 Enterprise Replication (ER) 定义此服务器，因为该服务器是高可用性集群的一部分。要为 ER 定义此服务器，从命令行使用命令“cdr define server”。]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[服务器 {1} 的组名 {0} 无效。先更新该服务器的 SQLHOSTS 文件中的组名再继续。]]></Invalid_Group_Name>
+<Error><![CDATA[错误]]></Error>
+<ConnectionFailed><![CDATA[连接失败]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[没有此服务器的连接详细信息。]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[命令长度超出管理 API 的限制。]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[管理异步任务已成功提交。]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[可用 (MB)]]></Free_MB>
+<Used_MB><![CDATA[已使用 (MB)]]></Used_MB>
+</lang>

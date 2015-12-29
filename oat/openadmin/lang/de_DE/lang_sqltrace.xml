@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL-Explorer]]></SQLExplorer>
+<ShowSQL><![CDATA[Anzeigen - SQL]]></ShowSQL>
+<StmtType><![CDATA[Anweisungstyp]]></StmtType>
+<TXTime><![CDATA[Transaktionszeit]]></TXTime>
+<Freq><![CDATA[Frequenz]]></Freq>
+<SQLAdmin><![CDATA[SQL-Traceverarbeitungsverwaltung]]></SQLAdmin>
+<SQLType><![CDATA[SQL-Typ]]></SQLType>
+<SQLProfile><![CDATA[SQL-Profil]]></SQLProfile>
+<SQLList><![CDATA[SQL-Liste]]></SQLList>
+<TXGroup><![CDATA[Transaktionen]]></TXGroup>
+<Count><![CDATA[Anzahl]]></Count>
+<AvgRT><![CDATA[Durchschnittliche Antwortzeit]]></AvgRT>
+<MaxRT><![CDATA[Max. Antwortzeit]]></MaxRT>
+<AvgMem><![CDATA[Durchschnittlicher Speicher]]></AvgMem>
+<RowProc><![CDATA[Verarbeitete Zeilen]]></RowProc>
+<NoData><![CDATA[Keine Daten verfügbar]]></NoData>
+<SQLStmtSum><![CDATA[Zusammenfassung der SQL-Anweisungen]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL-Anweisung]]></SQLStmt>
+<SID><![CDATA[Sitzungs-ID]]></SID>
+<NRecentTX><![CDATA[100 zuletzt ausgeführte Transaktionen]]></NRecentTX>
+<SQLFreq><![CDATA[Zusammenfassung der SQL-Häufigkeit]]></SQLFreq>
+<LockWait><![CDATA[Zeit für Warten auf Sperren]]></LockWait>
+<SQLDrill><![CDATA[SQL-Drilldown]]></SQLDrill>
+<DrillDown><![CDATA[Drilldown]]></DrillDown>
+<WaitIOTime><![CDATA[E/A-Wartezeit]]></WaitIOTime>
+<UID><![CDATA[Benutzer-ID]]></UID>
+<CompTime><![CDATA[Anweisungsabschlusszeit]]></CompTime>
+<RespTime><![CDATA[Antwortzeit]]></RespTime>
+<Database><![CDATA[Datenbank]]></Database>
+<Statement><![CDATA[Anweisung]]></Statement>
+<StmtStats><![CDATA[Anweisungsstatistik]]></StmtStats>
+<pgReads><![CDATA[Seitenlesevorgänge]]></pgReads>
+<BufReads><![CDATA[Pufferlesevorgänge]]></BufReads>
+<ReadCache><![CDATA[Cache-Lesevorgänge]]></ReadCache>
+<DataBufReads><![CDATA[Datenpuffer-Lesevorgänge]]></DataBufReads>
+<IndexBuffReads><![CDATA[Indexpuffer-Lesevorgänge]]></IndexBuffReads>
+<PgWrites><![CDATA[Schreibvorgänge für Seiten]]></PgWrites>
+<BufWrites><![CDATA[Pufferschreibvorgänge]]></BufWrites>
+<WriteCache><![CDATA[Cache-Schreibvorgänge]]></WriteCache>
+<NumLockWait><![CDATA[Anzahl Wartestatus für Sperre]]></NumLockWait>
+<LockRequests><![CDATA[Sperrenanforderungen]]></LockRequests>
+<LockWaitTime><![CDATA[Zeit für Warten auf Sperren (s)]]></LockWaitTime>
+<LogSpace><![CDATA[Protokollspeicherbereich]]></LogSpace>
+<DiskSorts><![CDATA[Datenträgersortiervorgänge]]></DiskSorts>
+<MemSorts><![CDATA[Speichersortiervorgänge]]></MemSorts>
+<NumTables><![CDATA[Anzahl Tabellen]]></NumTables>
+<NumIter><![CDATA[Anzahl Iteratoren]]></NumIter>
+<TExecs><![CDATA[Ausführungen insgesamt]]></TExecs>
+<TExecTime><![CDATA[Gesamtausführungszeit (s)]]></TExecTime>
+<AvgExecTime><![CDATA[Durchschnittliche Ausführungszeit (s)]]></AvgExecTime>
+<MaxExecTime><![CDATA[Maximale Ausführungszeit (s)]]></MaxExecTime>
+<TNumIOWait><![CDATA[Anzahl E/A-Wartestatus]]></TNumIOWait>
+<IOWaitTime><![CDATA[E/A-Wartezeit (s)]]></IOWaitTime>
+<AvgIOWait><![CDATA[Durchschnittliche E/A-Wartezeit (s)]]></AvgIOWait>
+<RowsPerSec><![CDATA[Durchschnittliche Zeilen/Sekunde]]></RowsPerSec>
+<EstCost><![CDATA[Geschätzter Aufwand]]></EstCost>
+<EstRows><![CDATA[Geschätzte Zeilen]]></EstRows>
+<ActRows><![CDATA[Tatsächliche Zeilen]]></ActRows>
+<SQLErr><![CDATA[SQL-Fehler]]></SQLErr>
+<ISAMErr><![CDATA[ISAM-Fehler]]></ISAMErr>
+<IsoLevel><![CDATA[Isolationsstufe]]></IsoLevel>
+<SQLMem><![CDATA[SQL-Speicher]]></SQLMem>
+<SQLTbadParam><![CDATA[Falscher Parameter beim Versuch, die SQL-Traceverarbeitung zu ändern.]]></SQLTbadParam>
+<Modify><![CDATA[Modifizieren]]></Modify>
+<High><![CDATA[Hoch]]></High>
+<Medium><![CDATA[Mittel]]></Medium>
+<Low><![CDATA[Niedrig]]></Low>
+<MaxSQLTrace><![CDATA[Maximale Größe zu verfolgenden SQL-Texts.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[Tracestufe]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[Anzahl zu verfolgender SQL-Anweisungen.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[Aktiviert und inaktiviert die SQL-Traceverarbeitung.]]></TraceOnOff>
+<On><![CDATA[Ein]]></On>
+<Off><![CDATA[Aus]]></Off>
+<SQLTraceOpt><![CDATA[Optionen für SQL-Traceverarbeitung festlegen]]></SQLTraceOpt>
+<Mode><![CDATA[Modus]]></Mode>
+<NumTrace><![CDATA[Anzahl Traces]]></NumTrace>
+<TraceSize><![CDATA[Tracegröße]]></TraceSize>
+<SQLTraceInfo><![CDATA[Informationen zum SQL-Trace]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[Anzahl verfolgter SQL-Anweisungen]]></NumSQLTraced>
+<TraceBufSize><![CDATA[Tracepuffergröße]]></TraceBufSize>
+<OldTracedStmt><![CDATA[Älteste verfolgte Anweisung]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[Tracepufferdauer]]></TraceBufDuration>
+<SQLSeen><![CDATA[Angezeigte SQL-Anweisungen]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL-Traceverarbeitung gestartet]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[SQL-Anweisungen pro Sekunde]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[Speicherbelegung bei SQL-Traceverarbeitung]]></TraceMemUsed>
+<RowPerSec><![CDATA[Zeilen/Sekunde]]></RowPerSec>
+<ListSQL><![CDATA[SQL auflisten]]></ListSQL>
+<TxStatsSummary><![CDATA[Zusammenfassung der Transaktionsstatistik]]></TxStatsSummary>
+<NumSQL><![CDATA[Anweisungsanzahl]]></NumSQL>
+<PDQ><![CDATA[Parallele Datenbankabfrage]]></PDQ>
+<StmtHVars><![CDATA[Anweisungshostvariablen]]></StmtHVars>
+<Pos><![CDATA[Position]]></Pos>
+<Type><![CDATA[Typ]]></Type>
+<Value><![CDATA[Wert]]></Value>
+<Error_GD_NotEnabled><![CDATA[GD ist nicht aktiviert in PHP. Abfragebaumstruktur kann nicht angezeigt werden.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix-Version:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[SQL-Trace speichern]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[Speichert die aktuellen syssqltrace-Informationen in eine Tabelle]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[Zusammenfassung der SQL-Anweisungen]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[Zusammenfassung der SQL-Häufigkeit]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL-Drilldown]]></SQLDrillDown>
+<Count><![CDATA[Anzahl]]></Count>
+<AvgRunTime><![CDATA[Durchschnittliche Ausführungszeit]]></AvgRunTime>
+<LockWaitTime><![CDATA[Zeit für Warten auf Sperren]]></LockWaitTime>
+<WaitIOTime><![CDATA[E/A-Wartezeit]]></WaitIOTime>
+<CompleteTime><![CDATA[Fertigstellungszeit]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[EXT_DIRECTIVES muss auf 1 oder 2 gesetzt werden, damit die Unterstützung für Steueranweisungen aktiviert wird.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[Gespeicherte Steueranweisungen sind für diese Abfrage vorhanden]]></SavedDir>
+<DirectivesSaved><![CDATA[Gespeicherte Steueranweisungen]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[Noch keine gespeicherten Steueranweisungen für diese Abfrage]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[Steueranweisungen gelöscht. Keine neuen für die Aktualisierung vorhanden.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[Traceinformationen für Tabellen sind nicht vorhanden.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[Keine Indizes gefunden]]></NoIndexesFound>
+<NoRowsFound><![CDATA[Keine Zeilen gefunden.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL-TRACEVERARBEITUNG INAKTIVIERT]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[SQL-Traceverarbeitung ist inaktiviert]]></SQLTracingOff>
+<NoSQLID><![CDATA[Ungültiges Argument für services/sqltrace.php]]></NoSQLID>
+<InvalidArgument><![CDATA[Ungültiges Argument für services/sqltrace.php]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[Hier klicken, um ausführlichere Informationen zu dieser SQL-Anweisung zu erhalten]]></ClickForSQLDetails>
+<DrillDown><![CDATA[Drilldown]]></DrillDown>
+<ORDERED_Description><![CDATA[Optimierungsprogramm zwingen, Tabellen in der in der Anweisung SELECT aufgelisteten Reihenfolge zu verknüpfen.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[So schnell wie möglich zur ersten Zeile zurückkehren.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[Gesamte Abfrage so schnell wie möglich abschließen.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[Nicht über die Suche mit mehreren Indizes auf die angegebene Tabelle zugreifen.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[Keinen Sternjoin-Ausführungsplan verwenden.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[Sternjoin-Ausführungsplan verwenden, sofern möglich.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[Die im Sternjoin-Ausführungsplan als Fakttabelle zu verwendende Tabelle auswählen.]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[Die im Sternjoin-Ausführungsplan NICHT als Fakttabellen zu verwendenden Tabellen auswählen.]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[Indizes angeben, die beim Zugriff auf eine Tabelle in einem Index-Self-Join-Pfad NICHT verwendet werden sollen.]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[Index angeben, der beim Zugriff auf eine Tabelle in einem Index-Self-Join-Pfad verwendet werden soll.]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[Mehrere Indizes angeben, die beim Zugriff auf eine Tabelle verwendet werden sollen.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[Indizes angeben, die beim Zugriff auf eine Tabelle NICHT verwendet werden sollen.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[Indizes angeben, die beim Zugriff auf eine Tabelle verwendet werden sollen.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[Komplette Tabellensuche für den Tabellenzugriff vermeiden.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[Komplette Tabellensuche für den Tabellenzugriff verwenden.]]></FULL_Description>
+<USE_NL_Description><![CDATA[Angegebene Tabellen als innere Tabelle in einem Join mit Verschachtelungsschleife verwenden.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[Angegebene Tabelle als innere Tabelle in einem Join mit Verschachtelungsschleife vermeiden.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[Dynamischen Hash-Join für Zugriff auf die angegebene Tabelle verwenden.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[Dynamischen Hash-Join nicht für Zugriff auf die angegebene Tabelle verwenden.]]></AVOID_HASH_Description>
+<Index><![CDATA[Index]]></Index>
+<Table><![CDATA[Tabelle]]></Table>
+<Cost><![CDATA[Aufwand]]></Cost>
+<RowsEstimated><![CDATA[Geschätzte Zeilen]]></RowsEstimated>
+<RowsProcessed><![CDATA[Verarbeitete Zeilen]]></RowsProcessed>
+<ElapsedTime><![CDATA[Abgelaufene Zeit]]></ElapsedTime>
+<NotYetImpl><![CDATA[Auf dieser Seite kann OpenAdmin Tool keine Informationen für einen Datenbankserver mit mehreren nicht englischen Datenbankländereinstellungen anzeigen. Der Datenbankserver enthält mehrere nicht englische Datenbankländereinstellungen.]]></NotYetImpl>
+<QueryTree><![CDATA[Abfragebaumstruktur]]></QueryTree>
+<QueryTreeNA><![CDATA[Die Abfragestruktur ist für diese Anweisung nicht verfügbar.]]></QueryTreeNA>
+</lang>
+
+

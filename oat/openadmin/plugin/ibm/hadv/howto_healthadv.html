@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task" />
+<title>Informix Health Advisor Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Health Advisor Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Contents</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oha.dita" class="toclink">Informix Health Advisor Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oha_002" class="toclink">Running the Health Advisor</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oha_001" class="toclink">Adding a profile</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oha_003" class="toclink">Setting up alarms for a profile</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oha_004" class="toclink">Scheduling a task for a profile</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_oha_005" class="toclink">Configuring email notification</a></div>
+<div class="head1"><a id="ToC_7" href="#dqx1ids_cm_not" class="toclink">Notices</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1trademarks" class="toclink">Trademarks</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_osm_000" class="toclink">Copyright</a></div>
+</div>
+<h1 id="dqx1ids_oha.dita"><a href="#ToC_1">Informix Health
+Advisor Plug-in for OAT</a></h1>
+<div>
+<p>The IBM&reg; Informix&reg; Health Advisor Plug-in
+for OpenAdmin Tool (OAT) analyzes
+the state of the Informix database
+server. The Health Advisor plug-in gathers
+information about the database server, the databases, and the operating
+system, and creates a report that contains the results and recommendations.</p></div>
+<div>
+<div class="notetitle" id="wq2">Prerequisite:</div>
+<div class="notebody">The Health Advisor plug-in requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>The Health Advisor plug-in includes
+a series of alarms that check conditions on the database server: configuration,
+Enterprise Replication (ER), operating system (OS), performance, and
+storage. You can create profiles
+that specify the alarms that are enabled and the thresholds for the
+alarms. You can schedule a task
+to run the Health Advisor with a specific profile at regular intervals. You can specify who receives an email notification
+of the results. You
+can also run the Health Advisor on demand on the current profile and
+view the report.</p>
+<h2 id="dqx1ids_oha_002"><a href="#ToC_2">Running the Health Advisor</a></h2>
+<div>
+<p>Run the Health Advisor on demand on the current profile
+and view the report.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq4">Prerequisite:</div>
+<div class="notebody">The IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>
+<p>The Health Advisor plug-in analyzes
+the state of the Informix database
+server. A Health Advisor profile specifies the alarms
+that are enabled and the thresholds for the alarms.</p></p>
+<p>
+<p>To run the Health Advisor:</p></p>
+<ol type="1">
+<li>On the OAT menu, click <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Optional: To change the current profile, on
+the <strong>Profile</strong> page, click the profile in the
+list, and then click <strong>Load</strong>.</li>
+<li>Click <strong>Run Health Advisor</strong>. The
+report is displayed in a new browser window.</li></ol>
+<h2 id="dqx1ids_oha_001"><a href="#ToC_3">Adding a profile</a></h2>
+<div>
+<p>Add a profile to the IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT).</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">Prerequisite:</div>
+<div class="notebody">The Health Advisor plug-in requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>
+<p>The Health Advisor plug-in analyzes
+the state of the Informix database
+server. You can create profiles
+that specify the alarms that are enabled and the thresholds for the
+alarms. You can schedule a task
+to run the Health Advisor with a specific profile at regular intervals.</p></p>
+<p>
+<p>To add a profile:</p></p>
+<ol type="1">
+<li>On the OAT menu, click <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>On the <strong>Profile</strong> page, enter a unique
+name for the profile and click <strong>Add</strong>.</li></ol>
+<h2 id="dqx1ids_oha_003"><a href="#ToC_4">Setting up alarms for a profile</a></h2>
+<div>
+<p>Specify the alarms that are enabled for a profile and the
+thresholds for the alarms in the IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT).</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq14">Prerequisite:</div>
+<div class="notebody">The Health Advisor plug-in requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>
+<p>The Health Advisor plug-in analyzes
+the state of the Informix database
+server. A Health Advisor profile specifies the alarms
+that are enabled and the thresholds for the alarms.</p></p>
+<p>
+<p>To set up the alarms for a profile:</p></p>
+<ol type="1">
+<li>On the OAT menu, click <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Optional: To change the current profile, on
+the <strong>Profile</strong> page, click the profile in the
+list, and then click <strong>Load</strong>.</li>
+<li>Click the <strong>Alarms</strong> tab.</li>
+<li>Select the <strong>Enable</strong> check box for
+the alarms to include in the profile.</li>
+<li>Click <strong>Modify Threshold</strong> to review
+or change the thresholds for an alarm.</li></ol>
+<h2 id="dqx1ids_oha_004"><a href="#ToC_5">Scheduling a task for a profile</a></h2>
+<div>
+<p>Schedule a task to run the Health Advisor with a specific
+profile at regular intervals.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq19">Prerequisite:</div>
+<div class="notebody">The IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>
+<p>The Health Advisor plug-in analyzes
+the state of the Informix database
+server. A Health Advisor profile specifies the alarms
+that are enabled and the thresholds for the alarms. You
+can schedule a task to run the Health Advisor for the current profile.</p></p>
+<p>
+<p>To schedule a task for the current profile:</p></p>
+<ol type="1">
+<li>On the OAT menu, click <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Optional: To change the current profile, on
+the <strong>Profile</strong> page, click the profile in the
+list, and then click <strong>Load</strong>.</li>
+<li>Click the <strong>Schedule</strong> tab.</li>
+<li>Specify the schedule for the task by using the configuration
+fields.</li></ol>
+<h2 id="dqx1ids_oha_005"><a href="#ToC_6">Configuring email notification</a></h2>
+<div>
+<p>Configure the email program and specify the recipients
+of the results of a check.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq24">Prerequisite:</div>
+<div class="notebody">The IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) requires IBM Informix 11.50.xC7
+or later.</div></div>
+<p>
+<p> The Health Advisor plug-in creates
+a report that contains the results of a check and the recommendations.
+The email configuration is based on the operating system that sends
+the email. The email is sent from the computer where the database
+server is located. You can configure the email program for the current
+profile.</p></p>
+<p>
+<p>To configure email notification for the current profile:</p></p>
+<ol type="1">
+<li>On the OAT menu, click <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Optional: To change the current profile, on
+the <strong>Profile</strong> page, click the profile in the
+list, and then click <strong>Load</strong>.</li>
+<li>Click the <strong>Notification</strong> tab. For examples of the configuration, click the help button for
+the page.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_7">Notices</a></h1>
+<p>This information was developed for products and services offered
+in the U.S.A.</p>
+<p>IBM may
+not offer the products, services, or features discussed in this document
+in other countries. Consult your local IBM representative for information on the products
+and services currently available in your area. Any reference to an IBM product, program,
+or service is not intended to state or imply that only that IBM product, program,
+or service may be used. Any functionally equivalent product, program,
+or service that does not infringe any IBM intellectual property right may be used instead.
+However, it is the user's responsibility to evaluate and verify the
+operation of any non-IBM product, program, or service.</p>
+<p>IBM may
+have patents or pending patent applications covering subject matter
+described in this document. The furnishing of this document does not
+grant you any license to these patents. You can send license inquiries,
+in writing, to:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>For license inquiries regarding double-byte (DBCS) information,
+contact the IBM Intellectual
+Property Department in your country or send inquiries, in writing,
+to: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>The following paragraph does not apply to the United Kingdom
+or any other country where such provisions are inconsistent with local
+law: INTERNATIONAL BUSINESS MACHINES CORPORATION PROVIDES THIS
+PUBLICATION "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+Some states do not allow disclaimer of express or implied warranties
+in certain transactions, therefore, this statement may not apply to
+you.</p>
+<p>This information could include technical inaccuracies or typographical
+errors. Changes are periodically made to the information herein; these
+changes will be incorporated in new editions of the publication. IBM may make improvements
+and/or changes in the product(s) and/or the program(s) described in
+this publication at any time without notice.</p>
+<p>Any references in this information to non-IBM websites are provided
+for convenience only and do not in any manner serve as an endorsement
+of those websites. The materials at those websites are not part of
+the materials for this IBM product
+and use of those websites is at your own risk.</p>
+<p>IBM may
+use or distribute any of the information you supply in any way it
+believes appropriate without incurring any obligation to you.</p>
+<p>Licensees of this program who wish to have information about it
+for the purpose of enabling: (i) the exchange of information between
+independently created programs and other programs (including this
+one) and (ii) the mutual use of the information which has been exchanged,
+should contact: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Such information may be available, subject to appropriate terms
+and conditions, including in some cases, payment of a fee.</p>
+<p>The licensed program described in this document and all licensed
+material available for it are provided by IBM under terms of the IBM Customer Agreement, IBM International
+Program License Agreement or any equivalent agreement between us.</p>
+<p>Any performance data contained herein was determined in a controlled
+environment. Therefore, the results obtained in other operating environments
+may vary significantly. Some measurements may have been made on development-level
+systems and there is no guarantee that these measurements will be
+the same on generally available systems. Furthermore, some measurements
+may have been estimated through extrapolation. Actual results may
+vary. Users of this document should verify the applicable data for
+their specific environment.</p>
+<p>Information concerning non-IBM products was obtained from the suppliers
+of those products, their published announcements or other publicly
+available sources. IBM has
+not tested those products and cannot confirm the accuracy of performance,
+compatibility or any other claims related to non-IBM products. Questions
+on the capabilities of non-IBM products should be addressed to the
+suppliers of those products.</p>
+<p>All statements regarding IBM's future direction or intent are subject
+to change or withdrawal without notice, and represent goals and objectives
+only.</p>
+<p>All IBM prices
+shown are IBM's suggested retail prices, are current and are subject
+to change without notice. Dealer prices may vary.</p>
+<p>This information is for planning purposes only. The information
+herein is subject to change before the products described become available.</p>
+<p>This information contains examples of data and reports used in
+daily business operations. To illustrate them as completely as possible,
+the examples include the names of individuals, companies, brands,
+and products. All of these names are fictitious and any similarity
+to the names and addresses used by an actual business enterprise is
+entirely coincidental.</p>
+<p>COPYRIGHT LICENSE:</p>
+<p>This information contains sample application programs in source
+language, which illustrate programming techniques on various operating
+platforms. You may copy, modify, and distribute these sample programs
+in any form without payment to IBM, for the purposes of developing, using, marketing
+or distributing application programs conforming to the application
+programming interface for the operating platform for which the sample
+programs are written. These examples have not been thoroughly tested
+under all conditions. IBM,
+therefore, cannot guarantee or imply reliability, serviceability,
+or function of these programs. The sample programs are provided "AS
+IS", without warranty of any kind. IBM shall not be liable for any damages arising
+out of your use of the sample programs.</p>
+<p>Each copy or any portion of these sample programs or any derivative
+work, must include a copyright notice as follows:</p>
+<p>&copy; (your company name) (year). Portions of this code are derived
+from IBM Corp.
+Sample Programs.</p>
+<p>&copy; Copyright IBM Corp.
+_enter the year or years_. All rights reserved.</p>
+<p>If you are viewing this information softcopy, the photographs and
+color illustrations may not appear.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_8">Trademarks</a></h2>
+<p>IBM, the IBM logo, and ibm.com are
+trademarks or registered trademarks of International Business Machines
+Corp., registered in many jurisdictions worldwide. Other product and
+service names might be trademarks of IBM or other companies. A current list of IBM trademarks
+is available on the web at "Copyright and trademark information" at <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Adobe, the Adobe logo, and PostScript are either registered trademarks
+or trademarks of Adobe Systems
+Incorporated in the United States, and/or other countries.</p>
+<p>Intel, Itanium, and Pentium are
+trademarks or registered trademarks of Intel Corporation
+or its subsidiaries in the United States and other countries.</p>
+<p>Java&trade; and all Java-based trademarks
+and logos are trademarks or registered trademarks of Oracle and/or
+its affiliates.</p>
+<p>Linux is a registered trademark
+of Linus Torvalds in the United States, other countries, or both.</p>
+<p>Microsoft, Windows, and Windows NT are trademarks of Microsoft Corporation in the United States,
+other countries, or both.</p>
+<p>UNIX is a registered trademark
+of The Open Group in the United States and other countries.</p>
+<p>Other company, product, or service names may be trademarks or service
+marks of others.</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_9">Copyright</a></h2>
+<p>This document contains proprietary information of IBM. It is provided under a license agreement
+and is protected by copyright law. The information contained in this
+publication does not include any product warranties, and any statements
+provided in this manual should not be interpreted as such.</p>
+<p>When you send information to IBM,
+you grant IBM a nonexclusive
+right to use or distribute the information in any way it believes
+appropriate without incurring any obligation to you.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. See the <samp class="xph">license/notices.txt</samp> file
+for additional information.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onconfig">
+<ADMIN_MODE_USERS_DESC><![CDATA[指定哪些使用者 (除了使用者 informix 及 DBSA 群組使用者) 可以存取處於管理模式中的資料庫伺服器。]]></ADMIN_MODE_USERS_DESC>
+<ADMIN_USER_MODE_WITH_DBSA_DESC><![CDATA[指定使用者 <i>informix</i> 及 DBSA 群組使用者是否可以連接處於管理模式中的資料庫伺服器。]]></ADMIN_USER_MODE_WITH_DBSA_DESC>
+<ADTERR_DESC><![CDATA[(UNIX) ADTERR 指定當資料庫伺服器撰寫審核記錄發生錯誤時的行為方式。]]></ADTERR_DESC>
+<ADTMODE_DESC><![CDATA[(UNIX) 控制審核層次。]]></ADTMODE_DESC>
+<ADTPATH_DESC><![CDATA[(UNIX) 指定資料庫伺服器用來儲存審核檔的目錄。]]></ADTPATH_DESC>
+<ADTSIZE_DESC><![CDATA[(UNIX) 指定審核檔的大小上限。]]></ADTSIZE_DESC>
+<AFCRASH_DESC><![CDATA[AFCRASH 的 0x10 位元開啟時，「Java 虛擬機器」產生的所有訊息都會記載到 JVM_vpid 檔案，其中 vpid 是 Java 虛擬處理器的程序 ID。此檔案儲存在 JVPLOG 檔案的儲存目錄。]]></AFCRASH_DESC>
+<AFFAIL_DESC><![CDATA[]]></AFFAIL_DESC>
+<AFF_NPROCS_DESC><![CDATA[在支援處理器相似的多重處理器電腦上，AFF_NPROCS 會指定資料庫伺服器可以連結 CPU 虛擬處理器的 CPU 數目。]]></AFF_NPROCS_DESC>
+<AFF_SPROC_DESC><![CDATA[在支援處理器相似的多重處理器電腦上，AFF_SPROC 會指定資料庫伺服器開始將 CPU 虛擬處理器連結到 CPU 時使用的 CPU，從 0 開始。]]></AFF_SPROC_DESC>
+<ALARMPROGRAM_DESC><![CDATA[顯示事件警示]]></ALARMPROGRAM_DESC>
+<ALLOW_NEWLINE_DESC><![CDATA[指定資料庫伺服器在所有階段作業或特定階段作業的引號內字串中，容許使用換行字元 ( )。]]></ALLOW_NEWLINE_DESC>
+<ALRM_ALL_EVENTS_DESC><![CDATA[指定是否針對記載於 MSGPATH 的所有事件或只針對值得注意的事件，執行 ALARMPROGRAM。]]></ALRM_ALL_EVENTS_DESC>
+<ASF_SOCTCP_BACKLOG_DESC><![CDATA[指定使用 Socket (SOCTCP) 時佇列中的連線數。]]></ASF_SOCTCP_BACKLOG_DESC>
+<AUTO_AIOVPS_DESC><![CDATA[當資料庫伺服器偵測到 I/O 工作量已超出現有 AIO VP 的效能時，讓資料庫伺服器自動增加 AIO VP 及頁面清除器執行緒的數目。]]></AUTO_AIOVPS_DESC>
+<AUTO_CKPTS_DESC><![CDATA[讓伺服器可以更常觸發檢查點，以避免交易封鎖。]]></AUTO_CKPTS_DESC>
+<AUTO_LRU_TUNING_DESC><![CDATA[啟用自動 LRU 調整]]></AUTO_LRU_TUNING_DESC>
+<AUTO_READAHEAD_DESC><![CDATA[變更自動先讀模式或停用自動先讀。自動先讀作業會在資料庫伺服器偵測到查詢發現 I/O 時，發出非同步頁面要求，以協助改善查詢的效能。0 = 停用自動先讀要求。1 = 在標準模式中啟用自動先讀要求。2 = 在激進模式中啟用自動先讀要求。]]></AUTO_READAHEAD_DESC>
+<AUTO_REPREPARE_DESC><![CDATA[控制 Dynamic Server 功能是否生效，是否可以在 SPL 常式或已準備的物件所參照的表格綱目變更後，自動重新最佳化 SPL 常式及重新準備已準備的物件。]]></AUTO_REPREPARE_DESC>
+<AUTO_STAT_MODE_DESC><![CDATA[啟用或停用資料庫伺服器的自動更新統計資料。]]></AUTO_STAT_MODE_DESC>
+<BACKUP_FILTER_DESC><![CDATA[指定過濾程式的路徑名稱，以及任何選項。]]></BACKUP_FILTER_DESC>
+<BAR_ACT_LOG_DESC><![CDATA[指定 ON-Bar 活動日誌檔案的位置。]]></BAR_ACT_LOG_DESC>
+<BAR_BSALIB_PATH_DESC><![CDATA[指定儲存體管理程式的 XBSA 共用程式庫路徑名稱及檔名。]]></BAR_BSALIB_PATH_DESC>
+<BAR_CKPTSEC_TIMEOUT_DESC><![CDATA[指定執行外部備份時，RS 次要伺服器應等待檢查點從主要伺服器抵達的時間量（以秒為單位）。如果因為來自主要伺服器的檢查點逾時而導致備份失敗，您可以使用 BAR_CKPTSEC_TIMEOUT 配置參數，來增加 RS 次要伺服器應等待檢查點從主要伺服器抵達的時間量。]]></BAR_CKPTSEC_TIMEOUT_DESC> 
+<BAR_DEBUG_DESC><![CDATA[指定 ON-Bar 活動日誌中的除錯訊息層次。]]></BAR_DEBUG_DESC>
+<BAR_DEBUG_LOG_DESC><![CDATA[指定 ON-Bar 除錯日誌的位置。]]></BAR_DEBUG_LOG_DESC>
+<BAR_HISTORY_DESC><![CDATA[指定 sysutils 資料庫是否保留備份歷程。]]></BAR_HISTORY_DESC>
+<BAR_IXBAR_PATH_DESC><![CDATA[置換 ON-Bar 開機檔的名稱及路徑。依預設，ON-Bar 開機檔的建立位置為 $INFORMIXDIR/etc，且名稱為 'ixbar.<SERVER_NUM>'。]]></BAR_IXBAR_PATH_DESC>
+<BAR_MAX_BACKUP_DESC><![CDATA[指定每一個 ON-Bar 指令容許的平行備份程序數目上限。]]></BAR_MAX_BACKUP_DESC>
+<BAR_NB_XPORT_COUNT_DESC><![CDATA[指定每一個備份或還原程序的共用記憶體資料緩衝區數目。]]></BAR_NB_XPORT_COUNT_DESC>
+<BAR_PERFORMANCE_DESC><![CDATA[指定效能統計資料層次，以列印到 ON-Bar 活動日誌。]]></BAR_PERFORMANCE_DESC>
+<BAR_PROGRESS_FREQ_DESC><![CDATA[指定備份或還原進度訊息顯示在活動日誌中的頻率 (以分鐘為單位)。]]></BAR_PROGRESS_FREQ_DESC>
+<BAR_RETRY_DESC><![CDATA[指定 ON-Bar 在第一次嘗試資料備份、邏輯日誌備份或還原作業失敗後的重試次數。]]></BAR_RETRY_DESC>
+<BAR_SIZE_FACTOR_DESC><![CDATA[在備份之前，擴增預估的備份物件大小。將 BAR_SIZE_FACTOR 參數值計算為原始備份物件大小的百分比，然後在預估與儲存體管理程式通訊之前，先新增至預估中。]]></BAR_SIZE_FACTOR_DESC>
+<BAR_XFER_BUF_SIZE_DESC><![CDATA[指定資料庫伺服器傳遞至 ON-Bar 及儲存體管理程式的每一個傳送緩衝區大小。緩衝區大小上限是 64 KB，所以 BAR_XFER_BUF_SIZE * pagesize <= 64 KB。]]></BAR_XFER_BUF_SIZE_DESC>
+<BATCHEDREAD_INDEX_DESC><![CDATA[啟用最佳化程式，自動從索引緩衝區中提取一組索引鍵。這會減少讀取緩衝區的次數，因而增進效能。]]></BATCHEDREAD_INDEX_DESC>
+<BATCHEDREAD_TABLE_DESC><![CDATA[啟用或停用下列表格上的光掃描：已壓縮的表格、列數大於一頁的表格，以及含 VARCHAR、LVARCHAR 和 NVARCHAR 資料的表格。]]></BATCHEDREAD_TABLE_DESC>
+<BLOCKTIMEOUT_DESC><![CDATA[指定執行緒或資料庫伺服器停止的秒數。]]></BLOCKTIMEOUT_DESC>
+<BTSCANNER_DESC><![CDATA[設定 B-tree 掃描器，以自動判定要刪除的索引項目。]]></BTSCANNER_DESC>
+<BUFFERPOOL_DESC><![CDATA[由 onconfig.std 檔案中的兩行組成：第一行指定預設值，用來建立具有某頁面大小且尚未在啟動時建立對應緩衝池的資料庫空間；第二行指定緩衝池的資料庫伺服器預設值。]]></BUFFERPOOL_DESC>
+<BUFFERS_DESC><![CDATA[指定代表用戶端應用程式的資料庫伺服器使用者執行緒可供磁碟 I/O 使用的共用記憶體緩衝區數目上限。]]></BUFFERS_DESC>
+<CDR_APPLY_DESC><![CDATA[指定資料同步執行緒數目的下限及上限。]]></CDR_APPLY_DESC>
+<CDR_DELAY_PURGE_DTC_DESC><![CDATA[指定保留刪除表格以支援刪除 wins 衝突解決規則的時間長度。]]></CDR_DELAY_PURGE_DTC_DESC>
+<CDR_DBSPACE_DESC><![CDATA[指定建立 syscdr 資料庫的資料庫空間。]]></CDR_DBSPACE_DESC>
+<CDR_DSLOCKWAIT_DESC><![CDATA[指定 Datasync 元件等待資料庫鎖定被釋放的秒數。]]></CDR_DSLOCKWAIT_DESC>
+<CDR_ENV_DESC><![CDATA[設定 Enterprise Replication 環境變數 CDR_LOGDELTA、CDR_PERFLOG、CDR_ROUTER 或 CDR_RMSCALEFACT。]]></CDR_ENV_DESC>
+<CDR_EVALTHREADS_DESC><![CDATA[指定要在 Enterprise Replication 啟動時建立的群組評估器執行緒數目，以及啟用平行化。]]></CDR_EVALTHREADS_DESC>
+<CDR_LOG_LAG_ACTION_DESC><![CDATA[指定 Enterprise Replication 回應潛在日誌折返狀況的方式。使用 + 結合多個值。logstage = 啟用壓縮的邏輯日誌暫置；dlog = 啟用動態新增邏輯日誌；ignore = 忽略潛在的日誌折返；ddrblock = 封鎖用戶端應用程式更新活動；shutdown = 在受影響的伺服器上關閉 Enterprise Replication。]]></CDR_LOG_LAG_ACTION_DESC>
+<CDR_LOG_STAGING_MAXSIZE_DESC><![CDATA[指定 Enterprise Replication 用來暫置已壓縮日誌檔的空間量上限。]]></CDR_LOG_STAGING_MAXSIZE_DESC>
+<CDR_MAX_DYNAMIC_LOGS_DESC><![CDATA[指定 Enterprise Replication 在單一伺服器階段作業中可以發出的動態日誌檔要求數。]]></CDR_MAX_DYNAMIC_LOGS_DESC>
+<CDR_NIFCOMPRESS_DESC><![CDATA[指定資料庫伺服器將資料從來源資料庫伺服器傳送至目標資料庫伺服器之前使用的壓縮層次。]]></CDR_NIFCOMPRESS_DESC>
+<CDR_QDATA_SBSPACE_DESC><![CDATA[指定 Enterprise Replication 用來儲存排存交易列資料的 sbspace 名稱清單，最多可以含有 32 個名稱。]]></CDR_QDATA_SBSPACE_DESC>
+<CDR_QHDR_DBSPACE_DESC><![CDATA[指定資料庫空間位置，Enterprise Replication 用來儲存從傳送及接收佇列排存的交易記錄標頭。]]></CDR_QHDR_DBSPACE_DESC>
+<CDR_QUEUEMEM_DESC><![CDATA[指定用於傳送及接收佇列的記憶體數量上限。]]></CDR_QUEUEMEM_DESC>
+<CDR_SERIAL_DESC><![CDATA[啟用控制產生抄寫中定義表格的序列及 SERIAL8 直欄值。]]></CDR_SERIAL_DESC>
+<CDR_SUPPRESS_ATSRISWARN_DESC><![CDATA[指定要在 ATS 及 RIS 檔案中暫停的資料同步錯誤及警告代號數。]]></CDR_SUPPRESS_ATSRISWARN_DESC>
+<CHECKALLDOMAINSFORUSER_DESC><![CDATA[針對網路式 Windows 環境中的所有使用者名稱，啟用或停用檢查所有網域。]]></CHECKALLDOMAINSFORUSER_DESC>
+<CKPTINTVL_DESC><![CDATA[指定資料庫伺服器檢查以判定是否需要檢查點的頻率 (以秒為單位)。]]></CKPTINTVL_DESC>
+<CLEANERS_DESC><![CDATA[指定資料庫伺服器作業期間可用的頁面清除器執行緒數目。]]></CLEANERS_DESC>
+<CONSOLE_DESC><![CDATA[指定主控台訊息的路徑名稱及檔名。]]></CONSOLE_DESC>
+<CONVERSION_GUARD_DESC><![CDATA[指定如果在升級程序期間發生錯誤，Informix 伺服器是要停止或是繼續升級至新版本的伺服器。0 = 停用。伺服器不會停止。1 = 如果發生與擷取還原點資料相關的錯誤時，則啟用還原點並停止升級。2 = 即使發生錯誤，仍啟用還原點並繼續進行升級。]]></CONVERSION_GUARD_DESC>
+<DATASKIP_DESC><![CDATA[用來避免媒體故障點。]]></DATASKIP_DESC>
+<DB_LIBRARY_PATH_DESC><![CDATA[指定以逗點區隔的有效目錄字首位置清單，資料庫伺服器可以從中載入外部模組，如「DataBlade&reg; 模組」。]]></DB_LIBRARY_PATH_DESC>
+<DBCREATE_PERMISSION_DESC><![CDATA[將建立資料庫的權限限制於指定使用者。]]></DBCREATE_PERMISSION_DESC>
+<DBSERVERALIASES_DESC><![CDATA[指定替代的資料庫伺服器名稱清單，且可讓您指派多個別名給資料庫伺服器，以確保 sqlhosts 檔案或登錄中的每一個項目都有唯一名稱。]]></DBSERVERALIASES_DESC>
+<DBSERVERNAME_DESC><![CDATA[指定與這個特定出現的資料庫伺服器相關聯的唯一名稱。]]></DBSERVERNAME_DESC>
+<DBSPACETEMP_DESC><![CDATA[指定資料庫伺服器用來廣域管理暫時表格儲存體的資料庫空間清單。]]></DBSPACETEMP_DESC>
+<DD_HASHMAX_DESC><![CDATA[指定資料字典快取中每一個雜湊儲存區的表格數目上限。]]></DD_HASHMAX_DESC>
+<DD_HASHSIZE_DESC><![CDATA[指定資料字典快取中每一個雜湊儲存區的表格數目上限。]]></DD_HASHSIZE_DESC>
+<DEADLOCK_TIMEOUT_DESC><![CDATA[指定資料庫伺服器執行緒可以等待獲得鎖定的秒數上限。只有在包含遠端資料庫伺服器的分散式查詢中，才可以使用此參數。]]></DEADLOCK_TIMEOUT_DESC>
+<DEF_TABLE_LOCKMODE_DESC><![CDATA[指定資料庫的預設鎖定模式；可以設定為 PAGE 或 ROW。]]></DEF_TABLE_LOCKMODE_DESC>
+<DEFAULTESCCHAR_DESC><![CDATA[指定預設的跳出字元。]]></DEFAULTESCCHAR_DESC>
+<DELAY_APPLY_DESC><![CDATA[指定 RS 次要伺服器在套用日誌之前應該等待的時間長度。]]></DELAY_APPLY_DESC>
+<DIRECT_IO_DESC><![CDATA[針對用於資料庫空間片段的使用過的檔案，控制直接 I/O 的使用。]]></DIRECT_IO_DESC>
+<DIRECTIVES_DESC><![CDATA[啟用或停用 SQL 指引使用。]]></DIRECTIVES_DESC>
+<DISABLE_B162428_XA_FIX_DESC><![CDATA[設定為 1 時，請確定為 Dynamic Server 9.40 版及更早版本所撰寫的應用程式可以適當運作。]]></DISABLE_B162428_XA_FIX_DESC>
+<DISTR_QUERY_FLAGS_DESC><![CDATA[]]></DISTR_QUERY_FLAGS_DESC>
+<DRAUTO_DESC><![CDATA[判定次要資料庫伺服器如何反應 HDR 故障。在兩部 HDR 伺服器上，此參數的值應該相同。]]></DRAUTO_DESC>
+<DRDA_COMMBUFFSIZE_DESC><![CDATA[指定 DRDA 通訊緩衝區的大小。]]></DRDA_COMMBUFFSIZE_DESC>
+<DRIDXAUTO_DESC><![CDATA[指定次要 HDR 伺服器偵測到毀損索引時，主要的「高可用性資料抄寫 (HDR)」伺服器是否自動啟動索引抄寫。]]></DRIDXAUTO_DESC>
+<DRINTERVAL_DESC><![CDATA[指定清除高可用性資料抄寫緩衝區的間隔秒數上限。若要同步更新，請將參數設定為 -1。]]></DRINTERVAL_DESC>
+<DRLOSTFOUND_DESC><![CDATA[指定檔案 dr.lostfound.timestamp 的路徑名稱。]]></DRLOSTFOUND_DESC>
+<DRTIMEOUT_DESC><![CDATA[對於高可用性資料抄寫配對，指定高可用性資料抄寫配對中的資料庫伺服器等待配對中另一資料庫伺服器傳送確認的時間長度 (以秒為單位)。]]></DRTIMEOUT_DESC>
+<DS_HASHSIZE_DESC><![CDATA[指定資料配送快取中的雜湊儲存區數目，資料庫伺服器會使用該資料配送快取來儲存及存取 UPDATE STATISTICS 陳述式在 MEDIUM 或 HIGH 模式中產生的直欄統計資料。]]></DS_HASHSIZE_DESC>
+<DS_MAX_QUERIES_DESC><![CDATA[指定可以並行執行的平行資料庫查詢 (PDQ) 查詢數目上限。]]></DS_MAX_QUERIES_DESC>
+<DS_MAX_SCANS_DESC><![CDATA[限制資料庫伺服器可以並行執行的「平行資料庫查詢 (PDQ)」掃描執行緒數目。]]></DS_MAX_SCANS_DESC>
+<DS_NONPDQ_QUERY_MEM_DESC><![CDATA[增加不是「平行資料庫查詢 (PDQ)」的查詢可用的記憶體數量。]]></DS_NONPDQ_QUERY_MEM_DESC>
+<DS_POOLSIZE_DESC><![CDATA[指定資料配送快取中每一個雜湊儲存區的項目數目上限，資料庫伺服器會使用該資料配送快取來儲存及存取 UPDATE STATISTICS 陳述式在 MEDIUM 或 HIGH 模式中產生的直欄統計資料。]]></DS_POOLSIZE_DESC>
+<DS_TOTAL_MEMORY_DESC><![CDATA[指定 PDQ 查詢可用的記憶體數量。此值應小於電腦實體記憶體減去固定額外需要 (如作業系統大小及緩衝池大小)。]]></DS_TOTAL_MEMORY_DESC>
+<DUMPCNT_DESC><![CDATA[(UNIX) 指定某一資料庫伺服器執行緒傾出共用記憶體或呼叫 gcore 後產生核心檔案的主張失效數目。主張是測試某種條件或表示式，並預期輸出為真。]]></DUMPCNT_DESC>
+<DUMPCORE_DESC><![CDATA[(UNIX) 控制主張失效是否會造成虛擬處理器傾出核心映像檔。核心檔案會留在前次呼叫資料庫伺服器的目錄中。0 = 不傾出核心映像檔；1 = 傾出核心映像檔。]]></DUMPCORE_DESC>
+<DUMPDIR_DESC><![CDATA[指定資料庫伺服器用來傾出共用記憶體、gcore 檔案或主張失效訊息的目錄。因為共用記憶體可能非常大，所以請將 DUMPDIR 設定為具有大量空間的檔案系統。DUMPDIR 的設定目錄必須已存在，伺服器才能啟動。]]></DUMPDIR_DESC>
+<DUMPGCORE_DESC><![CDATA[(UNIX) 與支援 gcore 的作業系統搭配使用。設定時，只要虛擬處理器發生主張失效，資料庫伺服器就會呼叫 gcore。gcore 公用程式會引導虛擬處理器將核心映像檔傾出至 DUMPDIR 所指定目錄中的 core.pid.cnt 檔案，然後繼續處理。0 = 不傾除 gcore；1 = 傾出 gcore。]]></DUMPGCORE_DESC>
+<DUMPSHMEM_DESC><![CDATA[(UNIX) 指出應在主張失效時傾出共用記憶體。會傾出資料庫伺服器使用的所有共用記憶體；可能會相當大。共用記憶體傾出會放置在 DUMPDIR 所指定目錄中的 shmem.pid.cnt 檔案。0 = 不傾出共用記憶體；1 = 傾出共用記憶體。]]></DUMPSHMEM_DESC>
+<DYNAMIC_LOGS_DESC><![CDATA[指定資料庫伺服器的動態日誌配置層次。0 = 無動態日誌配置；1 = 需要日誌時警示，並暫停容許手動配置邏輯日誌；2 = 動態日誌配置已開啟，會在動態新增每一個日誌時警示。]]></DYNAMIC_LOGS_DESC>
+<EILSEQ_COMPAT_MODE_DESC><![CDATA[啟用或停用檢查用戶端應用程式所插入的字元資料，是否包含現行語言環境無法辨識的字碼點順序。0 = 以現行語言環境驗證送入的字元順序。1 = 不驗證送入的字元順序。]]></EILSEQ_COMPAT_MODE_DESC>
+<ENABLE_SNAPSHOT_COPY_DESC><![CDATA[啟用或停用利用 ifxclone 公用程式來複製伺服器的功能。]]></ENABLE_SNAPSHOT_COPY_DESC>
+<ENCRYPT_CDR_DESC><![CDATA[設定 Enterprise Replication 的加密層次。0 = 不加密；1 = 可能時加密；2 = 一律加密。]]></ENCRYPT_CDR_DESC>
+<ENCRYPT_CIPHERS_DESC><![CDATA[定義現行資料庫階段作業可以使用的所有密碼及模式。ENCRYPT_CIPHERS 只適用於 Enterprise Replication 及「高可用性資料抄寫」。]]></ENCRYPT_CIPHERS_DESC>
+<ENCRYPT_HDR_DESC><![CDATA[啟用或停用 HDR 加密；0 = 停用 HDR 加密，1 = 啟用 HDR 加密。]]></ENCRYPT_HDR_DESC>
+<ENCRYPT_MAC_DESC><![CDATA[控制訊息鑑別碼 (MAC) 產生層次，只適用於 Enterprise Replication 及「高可用性資料抄寫」。'Off' = 不使用 MAC 產生；'low' = 在所有訊息上使用 XOR 摺疊；'medium' = 在所有長度超過 20 個位元組的訊息上使用 SHA1 MAC 產生，並在較小的訊息上使用 XOR 摺疊；'high' = 在所有訊息上使用 SHA1 MAC 產生。例如：ENCRYPT_MAC medium,high]]></ENCRYPT_MAC_DESC>
+<ENCRYPT_MACFILE_DESC><![CDATA[指定訊息鑑別碼 (MAC) 金鑰檔的完整路徑名稱清單，只適用於 Enterprise Replication 及「高可用性資料抄寫」。]]></ENCRYPT_MACFILE_DESC>
+<ENCRYPT_SMX_DESC><![CDATA[設定高可用性次要伺服器配置的加密層次。0 =  不加密；1 = 可能時加密 - 只有在目標資料庫伺服器也支援加密時，才在 SMX 交易中使用加密；2 = 一律加密 - 只容許與加密資料庫伺服器的連線。]]></ENCRYPT_SMX_DESC>
+<ENCRYPT_SWITCH_DESC><![CDATA[定義重新協議密碼或秘密金鑰的頻率。此重新協議的預設發生時間是每小時一次。ENCRYPT_SWITCH 只適用於 Enterprise Replication 及「高可用性資料抄寫」。]]></ENCRYPT_SWITCH_DESC>
+<EXPLAIN_STAT_DESC><![CDATA[啟用或停用在解譯輸出檔中併入「查詢統計資料」區段。]]></EXPLAIN_STAT_DESC>
+<EXT_DIRECTIVES_DESC><![CDATA[啟用或停用外部 SQL 指引的使用。將 EXT_DIRECTIVES 配置參數與用戶端 IFX_EXTDIRECTIVES 環境變數一起使用，即可啟用外部指引。<br><br>0 = 關閉。即使 IFX_EXTDIRECTIVES 已開啟，也不能啟用指引。<br>1 = 開啟。如果 IFX_EXTDIRECTIVES 已開啟，則可以在階段作業中啟用指引。<br>2 = 開啟。即使 IFX_EXTDIRECTIVES 未設定，仍可使用指引。]]></EXT_DIRECTIVES_DESC>
+<EXTSHMADD_DESC><![CDATA[指定您新增的延伸虛擬區段大小。值的範圍是 1024 到 524,288 KB。]]></EXTSHMADD_DESC>
+<FAILOVER_CALLBACK_DESC><![CDATA[資料庫伺服器從次要伺服器轉移到主要或標準伺服器時，資料庫伺服器會執行 FAILOVER_CALLBACK 指定的 Script。請將 FAILOVER_CALLBACK 設定為該 Script 的完整路徑名稱。]]></FAILOVER_CALLBACK_DESC>
+<FAILOVER_TX_TIMEOUT_DESC><![CDATA[在高可用性叢集環境中，指出於失效接手之後，伺服器在回復交易之前等待的秒數上限。如此即可讓交易完成。]]></FAILOVER_TX_TIMEOUT_DESC>
+<FASTPOLL_DESC><![CDATA[啟用或停用網路的快速輪詢。FASTPOLL 是特定平台專用。0 = 停用快速輪詢；1 = 啟用快速輪詢。]]></FASTPOLL_DESC>
+<FILLFACTOR_DESC><![CDATA[指定索引頁面的飽和程度，範圍從 1-100。低值表示索引還有成長空間。高值則會壓縮索引。如果索引已滿 (百分之百)，則任何新插入項目都會造成分割節點。]]></FILLFACTOR_DESC>
+<FULL_DISK_INIT_DESC><![CDATA[啟用可防止現有資料庫伺服器實例不小心發生磁碟起始設定的保護。指定當第一個片段的首頁（頁面零）存在於根路徑位置時，磁碟起始設定指令是否可以執行。0 = 只有在根路徑位置上沒有頁面零時，才會執行 oninit -i 指令。1 = 在所有情況下都會執行 oninit -i 指令，而且在磁碟起始設定之後，還會將 FULL_DISK_INIT 配置參數重設為 0。]]></FULL_DISK_INIT_DESC>
+<GSKIT_VERSION_DESC><![CDATA[指定資料庫伺服器用於加密和 SSL 通訊的 IBM&reg; Global Security Kit (GSKit) 主要版本。]]></GSKIT_VERSION_DESC>
+<HA_ALIAS_DESC><![CDATA[當次要伺服器連接主要伺服器時，指定發生失效接手時使用的網路別名。]]></HA_ALIAS_DESC>
+<HETERO_COMMIT_DESC><![CDATA[指定資料庫伺服器是否準備要與 IBM Informix Gateway 產品一起參與異質確定交易。1 = 啟用異質確定；0 = 停用異質確定。]]></HETERO_COMMIT_DESC>
+<IFX_EXTEND_ROLE_DESC><![CDATA[讓資料庫伺服器管理者 (DBSA) (預設為使用者 informix) 可以實作安全措施，建立哪些使用者可以登錄 DataBlade&reg; 模組或使用者定義常式 (UDR)；1 或「開啟」(預設值) = 啟用 EXTEND 角色，讓管理者可以將專用權授與使用者以建立或捨棄含有 EXTERNAL 子句的 UDR；0 或「關閉」= 停用 EXTEND 角色，讓任何使用者都可以登錄外部常式。]]></IFX_EXTEND_ROLE_DESC>
+<IFX_FOLDVIEW_DESC><![CDATA[啟用或停用視圖摺疊；0 或「關閉」(預設值) = 停用視圖摺疊，1 或「開啟」= 啟用視圖摺疊。]]></IFX_FOLDVIEW_DESC>
+<INDEX_SELFJOIN_DESC><![CDATA[]]></INDEX_SELFJOIN_DESC>
+<ISM_DATA_POOL_DESC><![CDATA[指定用於備份儲存體空間的磁碟儲存區。]]></ISM_DATA_POOL_DESC>
+<ISM_LOG_POOL_DESC><![CDATA[指定用於備份邏輯日誌的磁碟儲存區。]]></ISM_LOG_POOL_DESC>
+<JDKVERSION_DESC><![CDATA[指定 Java Development Kit (JDK) 的版本號碼或 Java Runtime Environment (JRE) 版次]]></JDKVERSION_DESC>
+<JVPARGS_DESC><![CDATA[指定 Java VM 選項。]]></JVPARGS_DESC>
+<JVPDEBUG_DESC><![CDATA[設定為 1 時，將追蹤訊息寫入 JVPLOG 檔案中。]]></JVPDEBUG_DESC>
+<JVPHOME_DESC><![CDATA[指定 IBM Informix JDBC Driver 類別的安裝目錄。]]></JVPHOME_DESC>
+<JVPLOGFILE_DESC><![CDATA[指定 Java VP 日誌檔的絕對路徑名稱。]]></JVPLOGFILE_DESC>
+<JVPPROPFILE_DESC><![CDATA[指定 Java VP 內容檔的絕對路徑名稱。]]></JVPPROPFILE_DESC>
+<JVPJAVAVM_DESC><![CDATA[指定要用於「Java 虛擬機器 (JVM)」的程式庫。]]></JVPJAVAVM_DESC>
+<JVPJAVAHOME_DESC><![CDATA[指定資料庫伺服器的 Java Runtime Environment (JRE) 安裝目錄。]]></JVPJAVAHOME_DESC>
+<JVMTHREAD_DESC><![CDATA[指定要用於 JVM 的執行緒套件 (全新或原生)。]]></JVMTHREAD_DESC>
+<JVPJAVALIB_DESC><![CDATA[指定從 JVPJAVAHOME 到 Java VM 程式庫位置的路徑。]]></JVPJAVALIB_DESC>
+<JVPCLASSPATH_DESC><![CDATA[指定起始 Java 類別路徑設定。]]></JVPCLASSPATH_DESC>
+<LIMITNUMSESSIONS_DESC><![CDATA[定義要連接至 Informix 資料庫伺服器的階段作業數目上限，以及當階段作業數目達到上限時，資料庫伺服器是否應將警告訊息列印至 online.log 檔案。]]></LIMITNUMSESSIONS_DESC>
+<LISTEN_TIMEOUT_DESC><![CDATA[指定伺服器等待連線的秒數。]]></LISTEN_TIMEOUT_DESC>
+<LOCKS_DESC><![CDATA[指定鎖定表格的起始大小。針對階段作業使用的每一個鎖定，鎖定表格中都會保留一個項目。]]></LOCKS_DESC>
+<LOG_INDEX_BUILDS_DESC><![CDATA[啟用或停用索引頁記載。]]></LOG_INDEX_BUILDS_DESC>
+<LOG_STAGING_DIR_DESC><![CDATA[指定在 RS 次要伺服器上啟用日誌檔的延遲應用程式時，儲存來自主要伺服器的日誌檔的目錄。]]></LOG_STAGING_DIR_DESC>
+<LOGBUFF_DESC><![CDATA[指定共用記憶體中三個邏輯日誌緩衝區的大小 (以 KB 為單位)。三重緩衝可以在將其中一個緩衝區清除到磁碟時，允許使用者執行緒寫入作用中緩衝區。如果您是使用 RTO_SERVER_RESTART，請將 LOGBUFF 設定為 256 KB。]]></LOGBUFF_DESC>
+<LOGFILES_DESC><![CDATA[指定資料庫伺服器在磁碟起始設定期間建立的邏輯日誌檔數目。若要變更邏輯日誌檔數目，請新增或捨棄邏輯日誌檔。]]></LOGFILES_DESC>
+<LOGSIZE_DESC><![CDATA[指定建立邏輯日誌檔時使用的大小 (以 KB 為單位)。這並不會變更現有邏輯日誌檔大小。邏輯日誌大小總計為 LOGSIZE * LOGFILES。]]></LOGSIZE_DESC>
+<LOW_MEMORY_MGR_DESC><![CDATA[啟用自動低記憶體管理，您可以用來變更伺服器在到達其記憶體限制時的預設行為。1 = 啟動資料庫伺服器時，啟用自動低記憶體管理。0 = 停用自動低記憶體管理。]]></LOW_MEMORY_MGR_DESC>
+<LOW_MEMORY_RESERVE_DESC><![CDATA[保留特定數量的記憶體（以 KB 為單位），以在需要進行重要活動（例如，回復活動）以及伺服器具有限的可用記憶體時可以使用。]]></LOW_MEMORY_RESERVE_DESC>
+<LRUS_DESC><![CDATA[指定共用記憶體緩衝池中的 LRU (近期最少使用) 佇列數目。]]></LRUS_DESC>
+<LRU_MAX_DIRTY_DESC><![CDATA[指定 LRU 佇列中已清除佇列的修改頁面百分比。]]></LRU_MAX_DIRTY_DESC>
+<LRU_MIN_DIRTY_DESC><![CDATA[指定 LRU 佇列中不再需要頁面清除的修改頁面百分比。]]></LRU_MIN_DIRTY_DESC>
+<LTAPEBLK_DESC><![CDATA[使用 ontape 時，指定用來備份邏輯日誌的裝置區塊大小。在 onload 或 onunload 中使用 -l 選項時，LTAPEBLK 也可以指定用來載入或卸載資料的裝置區塊大小。若為 onload 或 onunload，請在指令行指定不同的區塊大小。]]></LTAPEBLK_DESC>
+<LTAPEDEV_DESC><![CDATA[使用 ontape 時，指定用來備份邏輯日誌的裝置或目錄檔系統。在 onload 或 onunload 中使用 -l 選項時，也可以指定用來載入或卸載資料的裝置。]]></LTAPEDEV_DESC>
+<LTAPESIZE_DESC><![CDATA[使用 ontape 時，指定用來備份邏輯日誌的裝置磁帶大小上限。在 onload 或 onunload 中使用 -l 選項時，LTAPESIZE 也可以指定用來載入或卸載資料的裝置磁帶大小上限。使用 onload 或 onunload 時，請在指令行指定不同的磁帶大小。若要使用磁帶的完整容量，請將 LTAPESIZE 設為 0。]]></LTAPESIZE_DESC>
+<LTXEHWM_DESC><![CDATA[指定長交易、互斥存取、高臨界值。如果交易未確定或在達到長交易高臨界值時回復，則為長交易。當邏輯日誌空間達到 LTXEHWM 臨界值時，就會將邏輯日誌的互斥存取指定給目前正在回復的長交易。]]></LTXEHWM_DESC>
+<LTXHWM_DESC><![CDATA[指定長交易高臨界值。長交易高臨界值是可用的日誌空間百分比，當空間已滿時，即會觸發資料庫伺服器檢查是否為長交易。]]></LTXHWM_DESC>
+<MAX_FILL_DATA_PAGES_DESC><![CDATA[啟用或停用在具有可變長度列的表格中每頁插入更多列的功能；0 = 停用，1 = 啟用。]]></MAX_FILL_DATA_PAGES_DESC>
+<MAX_INCOMPLETE_CONNECTIONS_DESC><![CDATA[指定階段作業中不完整的連線數目上限。達到此數目之後，即會在線上訊息日誌中寫入一則錯誤訊息，說明伺服器可能遭到「阻斷服務」攻擊。預設值是 1024]]></MAX_INCOMPLETE_CONNECTIONS_DESC>
+<MAX_PDQPRIORITY_DESC><![CDATA[限制資料庫伺服器可以配置給任何一個 DSS 查詢的 PDQ 資源。]]></MAX_PDQPRIORITY_DESC>
+<MIRROR_DESC><![CDATA[啟用或停用資料庫伺服器鏡映。建議您在起始設定中，鏡映根資料庫空間與重要資料；0 = 停用鏡映，1 = 啟用鏡映。]]></MIRROR_DESC>
+<MIRROROFFSET_DESC><![CDATA[指定磁碟分割區或必要裝置的偏移，以成為根資料庫空間起始片段的鏡映片段。]]></MIRROROFFSET_DESC>
+<MIRRORPATH_DESC><![CDATA[指定根資料庫空間起始片段的鏡映片段完整路徑名稱。MIRRORPATH 應鏈結至實際鏡映片段的片段路徑名稱。選取鏡映片段的短路徑名稱。]]></MIRRORPATH_DESC>
+<MSG_DATE_DESC><![CDATA[啟用時，會在線上日誌的每一則訊息開頭加入日期。]]></MSG_DATE_DESC>
+<MSGPATH_DESC><![CDATA[指定訊息日誌檔案的完整路徑名稱。作業期間，資料庫伺服器會將狀態訊息及診斷訊息寫入此檔案。]]></MSGPATH_DESC>
+<MULTIPROCESSOR_DESC><![CDATA[指定資料庫伺服器是否以適用於單一處理器電腦或多重處理器電腦的方式執行鎖定；0 = 無多重處理器，1 = 可以使用多重處理器]]></MULTIPROCESSOR_DESC>
+<MQCHLLIB_DESC><![CDATA[指定包含 IBM&reg; WebSphere&reg; MQ 用戶端通道定義表的目錄路徑。]]></MQCHLLIB_DESC>
+<MQCHLTAB_DESC><![CDATA[指定 IBM&reg; WebSphere&reg; MQ 用戶端通道定義表的名稱。]]></MQCHLTAB_DESC>
+<MQSERVER_DESC><![CDATA[定義通道、指定 IBM&reg; WebSphere&reg; MQ 伺服器的位置，以及指定要使用的通訊方法。]]></MQSERVER_DESC>
+<NET_IO_TIMEOUT_ALARM_DESC><![CDATA[控制當網路寫入作業封鎖 30 分鐘以上時，是否要通知。]]></NET_IO_TIMEOUT_ALARM_DESC>
+<NETTYPE_DESC><![CDATA[說明網路連線。]]></NETTYPE_DESC>
+<NOAGE_DESC><![CDATA[部分作業系統會在程序執行超過一段長時間後，降低程序的優先順序。NOAGE 設定為 1 時，會停用作業系統將 CPU 虛擬處理器優先順序弱化的功能。NOAGE 設定為預設值 0 時，作業系統可以在處理時間累加時，降低 CPU 虛擬處理器及其他程序的優先順序。如果作業系統支援優先順序弱化，則建議將 NOAGE 設定為 1。]]></NOAGE_DESC>
+<NO_DESC_FOUND_DESC><![CDATA[不指定哪些使用者 (除了使用者 informix 及 DBSA 群組使用者) 可以存取管理模式中的資料庫伺服器。]]></NO_DESC_FOUND_DESC>
+<NS_CACHE_DESC><![CDATA[指定從內部資料庫伺服器快取來取得主機、服務、使用者及群組連線之名稱服務資訊的有效期限。]]></NS_CACHE_DESC>
+<NUMAIOVPS_DESC><![CDATA[指定要執行之 AIO 類別的虛擬處理器數目。除非已實作核心非同步 I/O，否則 AIO 虛擬處理器會執行所有資料庫伺服器磁碟 I/O，而非執行日誌檔的 I/O。<BR>「虛擬處理器」管理可以在<A href='index.php?act=vps&do=global'>「虛擬處理器」頁面</A>的 OpenAdmin 中執行]]></NUMAIOVPS_DESC>
+<NUMCPUVPS_DESC><![CDATA[指定要執行之 CPU 類別的虛擬處理器數目。CPU 虛擬處理器會執行因用戶端應用程式連線而啟動的所有執行緒，以及內部執行緒。<BR>「虛擬處理器」管理可以在<A href='index.php?act=vps&do=global'>「虛擬處理器」頁面</A>的 OpenAdmin 中執行]]></NUMCPUVPS_DESC>
+<NUMFDSERVERS_DESC><![CDATA[在 UNIX 上，指定用來處理在 Informix 虛擬處理器 (VP) 之間移轉網路連線的輪詢執行緒數目上限。]]></NUMFDSERVERS_DESC>
+<OFF_RECVRY_THREADS_DESC><![CDATA[指定資料庫伺服器離線 (在冷還原期間) 時用於邏輯回復的回復執行緒數目。此執行緒數目也可在快速回復中用來漸進式轉遞邏輯日誌記錄。]]></OFF_RECVRY_THREADS_DESC>
+<ON_RECVRY_THREADS_DESC><![CDATA[指定資料庫伺服器連線 (在暖還原期間) 時，資料庫伺服器用於邏輯回復的回復執行緒數目上限。]]></ON_RECVRY_THREADS_DESC>
+<ONDBSPACEDOWN_DESC><![CDATA[定義在不重要資料庫空間中的主要片段發生任何停用事件時，資料庫伺服器所採取的動作。<br><br>0 = 資料庫伺服器會將該資料庫空間標示為離線，然後繼續。<br>1 = 資料庫伺服器中斷。<br>2 = 資料庫伺服器會將片段狀態寫入日誌，然後等待使用者輸入。]]></ONDBSPACEDOWN_DESC>
+<ONLIDX_MAXMEM_DESC><![CDATA[限制配置給單一 preimage 儲存區及單一 updator 日誌儲存區的記憶體數量。preimage 及 updator 日誌儲存區 (pimage_partnum 及 ulog_partnum) 是在 CREATE INDEX ONLINE 陳述式執行時所建立的共用記憶體儲存區。陳述式執行完成時，即會釋放儲存區。]]></ONLIDX_MAXMEM_DESC>
+<OPCACHEMAX_DESC><![CDATA[(UNIX) 指定「光學子系統」的記憶體快取大小。只有在使用「光學子系統」時，才能使用此參數。]]></OPCACHEMAX_DESC>
+<OPT_GOAL_DESC><![CDATA[啟用查詢的兩個最佳化目標之一：最佳化 FIRST ROWS，最佳化 ALL ROWS；0 = FIRST_ROWS。-1 = ALL_ROWS (預設值)。]]></OPT_GOAL_DESC>
+<OPTCOMPIND_DESC><![CDATA[協助最佳化程式選擇適用於應用程式的查詢計劃。<br><br>0 = 當每一個排序的表格配對都有適當的索引時，最佳化程式會選擇索引掃描超越表格掃描。此值可確保與舊版資料庫伺服器的相容性。<br>1 = 如果隔離層次不是「可重複讀取」，則最佳化程式需要耗費一些成本來判定執行路徑。建議使用此設定，以取得最佳效能。<br>2 = 最佳化程式需要耗費一些成本來判定任何隔離層次的執行路徑。索引掃描並不是超越表格掃描的給定喜好設定。如果沒有設定變數，則此值是預設值。]]></OPTCOMPIND_DESC>
+<OPTICAL_LIB_PATH_DESC><![CDATA[如果使用光學儲存體管理程式，請將 OPTICAL_LIB_PATH 設定至光學儲存體管理程式庫的位置。]]></OPTICAL_LIB_PATH_DESC>
+<PAM_STACKSIZE_DESC><![CDATA[自訂 PAM 模組的堆疊大小。]]></PAM_STACKSIZE_DESC>
+<PC_HASHSIZE_DESC><![CDATA[指定 UDR 快取中資料庫伺服器使用的雜湊儲存區數目。]]></PC_HASHSIZE_DESC>
+<PC_POOLSIZE_DESC><![CDATA[指定儲存在 UDR 快取中的 UDR 數目上限。]]></PC_POOLSIZE_DESC>
+<PHYSBUFF_DESC><![CDATA[指定共用記憶體中兩個實體日誌緩衝區的大小 (以 KB 為單位)。PHYSBUFF 參數值可判定資料庫伺服器必須將實體日誌緩衝區清除到實體日誌檔的頻率。]]></PHYSBUFF_DESC>
+<PHYSDBS_DESC><![CDATA[指定包含實體日誌的資料庫空間名稱。若要降低磁碟競用，請將實體日誌移至資料庫空間而非根資料庫空間。<BR>您可以使用<A href='index.php?act=rlogs&do=admin'>回復日誌 -> 管理</A>，在 OpenAdmin 中執行實體日誌管理]]></PHYSDBS_DESC>
+<PHYSFILE_DESC><![CDATA[指定實體日誌大小。可以使用 onparams 公用程式動態變更 PHYSFILE。<BR>您可以使用<A href='index.php?act=rlogs&do=admin'>回復日誌 -> 管理</A>，在 OpenAdmin 中執行實體日誌管理]]></PHYSFILE_DESC>
+<PLCY_HASHSIZE_DESC><![CDATA[指定安全原則資訊快取中的雜湊儲存區數目。]]></PLCY_HASHSIZE_DESC>
+<PLCY_POOLSIZE_DESC><![CDATA[指定使用者 LBAC 認證資訊快取中每一個雜湊儲存區的項目數目上限。]]></PLCY_POOLSIZE_DESC>
+<PLOG_OVERFLOW_PATH_DESC><![CDATA[指定實體日誌檔溢位時，在快速回復期間使用的檔案位置。檔名是 plog_extend.servernum，且預設位置是在 /tmp。請使用完整路徑名稱來指定其他位置。]]></PLOG_OVERFLOW_PATH_DESC>
+<PN_STAGEBLOB_THRESHOLD_DESC><![CDATA[以循環式片段保留 BYTE 及 TEXT 資料的空間。]]></PN_STAGEBLOB_THRESHOLD_DESC>
+<PRELOAD_DLL_FILE_DESC><![CDATA[指定在資料庫伺服器起始設定時所載入的共用程式庫檔或動態鏈結程式庫檔 (DLL) 的路徑名稱。如果載入多個檔案，則使用區隔項目來指定每一個路徑名稱。]]></PRELOAD_DLL_FILE_DESC>
+<QSTATS_DESC><![CDATA[啟用或停用 onstat -g qst 以列印佇列統計資料；0 = 停用佇列統計資料，1 = 啟用佇列統計資料]]></QSTATS_DESC>
+<RA_PAGES_DESC><![CDATA[如果停用 AUTO_READAHEAD 配置參數，請使用 RA_PAGES 配置參數來定義要嘗試先讀的磁碟頁面數。啟用 AUTO_READAHEAD 配置參數，且自動發生先讀時，伺服器便會忽略 RA_PAGES 配置參數中所指定的資訊。]]></RA_PAGES_DESC>
+<RA_THRESHOLD_DESC><![CDATA[在循序掃描資料記錄期間，當資料庫伺服器讀取時要與 RA_PAGES 一起使用。RA_THRESHOLD 會指定先讀臨界值；亦即，記憶體中指示資料庫伺服器執行下一個先讀的未處理資料頁數。如果 RA_THRESHOLD 的值大於 RA_PAGES 的值，則 RA_THRESHOLD 的值會是 RA_PAGES/2。]]></RA_THRESHOLD_DESC>
+<RAS_LLOG_SPEED_DESC><![CDATA[]]></RAS_LLOG_SPEED_DESC>
+<RAS_PLOG_SPEED_DESC><![CDATA[]]></RAS_PLOG_SPEED_DESC>
+<REDIRECTED_WRITES_DESC><![CDATA[指定主要及次要伺服器之間的 SMX 管道數。]]></REDIRECTED_WRITES_DESC>
+<RESIDENT_DESC><![CDATA[指定共用記憶體的常駐及虛擬區段是否持續常駐於作業系統實體記憶體。<BR><BR>0 = 關閉<BR>1 = 只鎖定常駐區段<BR>n = 鎖定常駐區段及下一個 n-1 虛擬區段<BR>-1 = 鎖定所有常駐及虛擬區段]]></RESIDENT_DESC>
+<REMOTE_SERVER_CFG_DESC><![CDATA[指定檔案的名稱，該檔案列出由資料庫伺服器所在電腦授信的遠端主機。]]></REMOTE_SERVER_CFG_DESC>
+<REMOTE_USERS_CFG_DESC><![CDATA[指定檔案的名稱，該檔案列出遠端主機上所存在的授信使用者名稱。]]></REMOTE_USERS_CFG_DESC>
+<RESTARTABLE_RESTORE_DESC><![CDATA[啟用或停用資料庫伺服器在發生失敗時重新啟動失敗的實體或冷邏輯還原。若要使用 ON-Bar 執行可重新啟動的還原，請使用 onbar -RESTART 指令。如果計劃使用可重新啟動的還原，請增加實體日誌大小。值：開啟或關閉]]></RESTARTABLE_RESTORE_DESC>
+<RESTORE_FILTER_DESC><![CDATA[指定過濾程式的路徑名稱，以及任何選項，如加密。]]></RESTORE_FILTER_DESC>
+<RESTORE_POINT_DIR_DESC><![CDATA[指定在升級至新版本資料庫伺服器失敗期間，還原點檔案儲存所在目錄的路徑名稱。]]></RESTORE_POINT_DIR_DESC>
+<ROOTNAME_DESC><![CDATA[指定此資料庫伺服器配置的根資料庫空間名稱。此名稱必須是資料庫伺服器管理的所有資料庫空間中的唯一名稱。]]></ROOTNAME_DESC>
+<ROOTOFFSET_DESC><![CDATA[指定根資料庫空間起始片段開始的磁碟空間配置 (檔案、磁碟分割區或裝置) 偏移 (以 KB 為單位)。]]></ROOTOFFSET_DESC>
+<ROOTPATH_DESC><![CDATA[指定根資料庫空間起始片段的完整路徑名稱，包括裝置或檔名。ROOTPATH 會以片段名稱儲存在保留頁面中。在 UNIX 上，您必須將 ROOTPATH 指定的檔案許可權設定為 660，且擁有者及群組都必須是 informix。在 Windows 上，Informix-Admin 群組的成員必須擁有 ROOTPATH 指定的檔案。]]></ROOTPATH_DESC>
+<ROOTSIZE_DESC><![CDATA[指定根資料庫空間起始片段的大小 (以 KB 為單位)。若要在起始設定資料庫伺服器之後變更 ROOTSIZE，請完整卸載並重新載入資料。]]></ROOTSIZE_DESC>
+<RSS_FLOW_CONTROL_DESC><![CDATA[指定在至少包含一個 RS 次要伺服器的高可用性叢集中啟用流程控制的界限。流程控制提供一個方法，可用來限制主要伺服器上的日誌活動，因此在處理交易時，叢集中的 RS 次要伺服器不會太後面。]]></RSS_FLOW_CONTROL_DESC>
+<RTO_SERVER_RESTART_DESC><![CDATA[可讓您使用回復時間目標 (RTO) 標準，設定在重新啟動 Dynamic Server 並讓伺服器進入線上或靜止模式後，Dynamic Server 必須從問題中回復的時間量 (以秒為單位)。]]></RTO_SERVER_RESTART_DESC>
+<S6_USE_REMOTE_SERVER_CFG_DESC><![CDATA[與 REMOTE_SERVER_CFG 配置參數搭配使用，此參數可指定在未授信網路環境中用來鑑別安全伺服器連線的檔案。1 = REMOTE_SERVER_CFG 配置參數指定的檔案所列出的伺服器為信任連線。2 = $INFORMIXDIR/etc/host.equiv 檔案是用來鑑別透過安全埠的伺服器連線，如 sqlhost 資訊中 s=6 設定所定義。]]></S6_USE_REMOTE_SERVER_CFG_DESC>
+<SB_CHECK_FOR_TEMP_DESC><![CDATA[防止將暫時智慧型大型物件複製到永久表格中。0 = 允許，1 = 防止。]]></SB_CHECK_FOR_TEMP_DESC>
+<SBSPACENAME_DESC><![CDATA[指定預設 sbspace 的名稱。如果資料庫表格包括無法明確指定儲存體空間的智慧型大型物件直欄，則該資料會儲存在 SBSPACENAME 指定的 sbspace。]]></SBSPACENAME_DESC>
+<SBSPACETEMP_DESC><![CDATA[指定預設的暫時 sbspace 名稱，用來儲存暫時智慧型大型物件，但不含 meta 資料或使用者資料記載。]]></SBSPACETEMP_DESC>
+<SDS_ENABLE_DESC><![CDATA[啟用 SD 次要伺服器功能。您必須在主要伺服器及 SD 次要伺服器上將 SDS_ENABLE 設定為 1 (啟用)，以啟用 SD 次要伺服器功能。<br><br>0 = 停用 SD 次要伺服器功能。<br>1 = 啟用 SD 次要伺服器功能。]]></SDS_ENABLE_DESC>
+<SDS_PAGING_DESC><![CDATA[指定當作緩衝區分頁檔使用的兩個檔案位置。如果沒有設定 SDS_PAGING，則 SD 次要伺服器可能無法啟動。]]></SDS_PAGING_DESC>
+<SDS_LOGCHECK_DESC><![CDATA[指定 SD 次要伺服器等待偵測主要伺服器是否產生日誌活動的時間量（以秒為單位）。如果主要伺服器在指定的時間量內未產生任何日誌活動，則容許啟動失效接手處理。請使用 SDS_LOGCHECK 配置參數來判定主要伺服器是否正在產生日誌活動，以及容許或防止對主要伺服器進行失效接手。]]></SDS_LOGCHECK_DESC>
+<SDS_TEMPDBS_DESC><![CDATA[指定 SD 次要伺服器用來動態建立暫時資料庫空間的資訊。]]></SDS_TEMPDBS_DESC>
+<SDS_TIMEOUT_DESC><![CDATA[指定主要伺服器等待從 SD 次要伺服器傳送日誌位置確認的時間量 (以秒為單位)。]]></SDS_TIMEOUT_DESC>
+<SECURITY_LOCALCONNECTION_DESC><![CDATA[確定正在執行程式的本端使用者 ID 與正在嘗試存取資料庫的使用者 ID 相同，以驗證本端連線的安全性。<br><br>0 = 不執行安全檢查。<br>1 = Dynamic Server 會驗證正在執行程式的使用者 ID 是否符合正在嘗試連接資料庫的使用者 ID。<br>2 = 與 1 相同，再加上 Dynamic Server 會從網路 API 擷取對等埠號，並驗證連線是否來自於用戶端程式。如果系統具備 SOCTCP 或 IPCSTR 網路通訊協定，請指定 2。]]></SECURITY_LOCALCONNECTION_DESC>
+<SERVERNUM_DESC><![CDATA[指定共用記憶體中的相對位置，從 0 到 255。此值必須是本端電腦 (而不是網路) 上每一個資料庫伺服器中的唯一值。因為值 0 是 onconfig.std 檔案中的預設值，請選擇 0 以外的值，以免不小心與 SERVERNUM 重複。]]></SERVERNUM_DESC>
+<SEQ_CACHE_SIZE_DESC><![CDATA[指定順序快取中可以有預先配置值的順序物件數目上限。如果沒有設定此配置參數，則依預設，使用 CACHE 選項可以定義 10 個以下不同順序物件。]]></SEQ_CACHE_SIZE_DESC>
+<SHMADD_DESC><![CDATA[指定動態新增至共用記憶體虛擬部分的區段大小。]]></SHMADD_DESC>
+<SHMBASE_DESC><![CDATA[不變更 SHMBASE 的值。此值指定共用記憶體要連接到虛擬處理器記憶體空間的基本位址。共用記憶體區段的位址是從 SHMBASE 值開始，可以一直成長到上限為止，上限值為特定平台專用。]]></SHMBASE_DESC>
+<SHMNOACCESS_DESC><![CDATA[指定虛擬記憶體位址範圍，以避免用來連接共用記憶體。]]></SHMNOACCESS_DESC>
+<SHMTOTAL_DESC><![CDATA[指定資料庫伺服器可以要求系統的記憶體需求限制。]]></SHMTOTAL_DESC>
+<SHMVIRT_ALLOCSEG_DESC><![CDATA[指定 Dynamic Server 應配置新記憶體區段的臨界值，以及如果伺服器無法配置新記憶體區段時啟動的警告層次，藉此確保伺服器永遠不會發生記憶體不足。啟動警告層次後，如果無法配置新記憶體區段，就會每隔 30 分鐘重複發生。<br><br>警告層次值從 1 到 5，其中：<br>1 = 不值得注意<br>2 = 參考<br>3 = 注意<br>4 = 緊急<br>5 = 嚴重]]></SHMVIRT_ALLOCSEG_DESC>
+<SHMVIRTSIZE_DESC><![CDATA[指定虛擬共用記憶體區段的起始大小。]]></SHMVIRTSIZE_DESC>
+<SINGLE_CPU_VP_DESC><![CDATA[指定是否只以一個 CPU 虛擬處理器執行資料庫伺服器。0 = 以多個 CPU VP 執行；任何非零的數字 = 以只有 1 個 CPU VP 執行。]]></SINGLE_CPU_VP_DESC>
+<SMX_COMPRESS_DESC><![CDATA[指定將資料從來源資料庫伺服器傳送至目標資料庫伺服器之前，資料庫伺服器所使用的壓縮層次。]]></SMX_COMPRESS_DESC>
+<SORT_MERGE_SIZE_DESC><![CDATA[]]></SORT_MERGE_SIZE_DESC>
+<SP_AUTOEXPAND_DESC><![CDATA[啟用或停用在儲存體空間中自動建立或延伸片段。]]></SP_AUTOEXPAND_DESC>
+<SP_THRESHOLD_DESC><![CDATA[定義在儲存區中資料庫伺服器用來自動擴充空間所需的空間數量下限。此值為 50（含）以下時，以百分比表示。此值為 1000（含）以上時，表示 KB 數。]]></SP_THRESHOLD_DESC>
+<SP_WAITTIME_DESC><![CDATA[指定資料庫空間、暫存資料庫空間、sbspace、暫存 sbspace 或 blobspace 的執行緒等待時間上限（以秒為單位），以在傳回空間不足錯誤之前先擴充。]]></SP_WAITTIME_DESC>
+<SQL_LOGICAL_CHAR_DESC><![CDATA[啟用或停用擴充內建字元資料類型宣告的大小規格。]]></SQL_LOGICAL_CHAR_DESC>
+<SQLTRACE_DESC><![CDATA[控制「SQL 追蹤」機能的啟動環境。]]></SQLTRACE_DESC>
+<SSL_KEYSTORE_LABEL_DESC><![CDATA[指定儲存 Secure Sockets Layer (SSL) 金鑰及數位憑證的金鑰儲存資料庫中使用的伺服器數位憑證標籤。]]></SSL_KEYSTORE_LABEL_DESC>
+<STACKSIZE_DESC><![CDATA[指定資料庫伺服器使用者執行緒的堆疊大小。]]></STACKSIZE_DESC>
+<STAGEBLOB_DESC><![CDATA[指定「光學子系統」用來暫置預定要儲存在光碟上的 TEXT 及 BYTE 資料的區域 blobspace 名稱。]]></STAGEBLOB_DESC>
+<STATCHANGE_DESC><![CDATA[指定在啟用 UPDATE STATISTICS 作業的自動模式時，在表格或片段中用來限定更新的配送統計資料所需的變更百分比下限。]]></STATCHANGE_DESC>
+<STMT_CACHE_DESC><![CDATA[判定資料庫伺服器是否使用 SQL 陳述式快取。<br>0 = 不使用 SQL 陳述式快取。<br>1 = 已啟用 SQL 陳述式快取，但使用者階段作業不使用快取，除非將環境變數 STMT_CACHE 設定為 1 或在其階段作業中執行 SQL 陳述式 SET STATEMENT CACHE ON。<br>2 = 開啟 SQL 陳述式快取。快取所有陳述式。]]></STMT_CACHE_DESC>
+<STMT_CACHE_HITS_DESC><![CDATA[指定在陳述式完全插入 SQL 陳述式快取之前該陳述式的相符 (參照) 數。下列表格說明可能的值。<br><br>0 = 在 SQL 陳述式快取中完全插入所有完整的陳述式<br>n>0 = 陳述式是給定的僅索引鍵項目，直到達到陳述式相符數且所有完整的陳述式插入快取為止。<br>n>1 = 防止將代用查詢輸入快取。]]></STMT_CACHE_HITS_DESC>
+<STMT_CACHE_NOLIMIT_DESC><![CDATA[控制是否將完整的陳述式插入 SQL 陳述式快取。下列表格說明可能的值。0 = 防止將陳述式插入快取，以避免為快取配置大量記憶體；1 = 不論快取大小，一律在 SQL 陳述式快取中插入陳述式。]]></STMT_CACHE_NOLIMIT_DESC>
+<STMT_CACHE_NUMPOOL_DESC><![CDATA[指定 SQL 陳述式快取的記憶體儲存區數目。若要取得這些記憶體儲存區的相關資訊，請使用 onstat -g ssc pool。]]></STMT_CACHE_NUMPOOL_DESC>
+<STMT_CACHE_SIZE_DESC><![CDATA[指定 SQL 陳述式快取大小 (以 KB 為單位)。新的快取大小會在下一次新增陳述式至快取時生效。]]></STMT_CACHE_SIZE_DESC>
+<STOP_APPLY_DESC><![CDATA[阻止 RS 次要伺服器套用從主要伺服器接收到的日誌檔。]]></STOP_APPLY_DESC>
+<STORAGE_FULL_ALARM_DESC><![CDATA[配置儲存體空間已滿時訊息及警示的頻率和嚴重性。]]></STORAGE_FULL_ALARM_DESC>
+<SYSALARMPROGRAM_DESC><![CDATA[指定 evidence.sh Script 的完整路徑名稱。發生資料庫伺服器失敗時，資料庫伺服器會執行 evidence.sh。「技術支援中心」會使用 evidence.sh Script 的輸出，以診斷資料庫伺服器失敗的原因。在 Windows&reg; 上，您必須啟用指令擴充，才能讓 evidence.bat 順利完成。]]></SYSALARMPROGRAM_DESC>
+<SYSSBSPACENAME_DESC><![CDATA[指定資料庫伺服器用來儲存 UPDATE STATISTICS 陳述式所收集特定使用者定義資料類型統計資料的 sbspace 名稱。]]></SYSSBSPACENAME_DESC>
+<TAPEBLK_DESC><![CDATA[指定在儲存體空間備份期間 ontape 寫入裝置的區塊大小。使用 onload 或 onunload 公用程式時，TAPEBLK 也可以指定用來載入或卸載資料的裝置預設區塊大小。]]></TAPEBLK_DESC>
+<TAPEDEV_DESC><![CDATA[指定 ontape 用來備份儲存體空間的裝置或目錄檔案系統。使用 onload 或 onunload 公用程式時，TAPEDEV 也可以指定用來載入或卸載資料的預設裝置。]]></TAPEDEV_DESC>
+<TAPESIZE_DESC><![CDATA[指定 ontape 用來備份儲存體空間的裝置大小。使用 onload 或 onunload 時，也可以指定用來載入或卸載資料的預設裝置大小。如果您要使用磁帶的完整實體容量，請將 TAPESIZE 設為 0。]]></TAPESIZE_DESC>
+<TBLSPACE_STATS_DESC><![CDATA[開啟及關閉 tblspace 統計資料收集。0 = 關閉，1 = 開啟。]]></TBLSPACE_STATS_DESC>
+<TBLTBLFIRST_DESC><![CDATA[指定根資料庫空間中 tblspace tblspace 的第一個延伸範圍大小。]]></TBLTBLFIRST_DESC>
+<TBLTBLNEXT_DESC><![CDATA[指定根資料庫空間中 tblspace tblspace 的下一個延伸範圍大小。]]></TBLTBLNEXT_DESC>
+<TEMPTAB_NOLOG_DESC><![CDATA[在暫存表格上停用記載。<BR><BR>0 = 在暫存表格作業中啟用邏輯記載<BR>1 = 在暫存表格作業中停用邏輯記載]]></TEMPTAB_NOLOG_DESC>
+<TXTIMEOUT_DESC><![CDATA[指定在起始參與者回復之前，參與者在兩階段確定中等待的時間量。此參數只適用於包含遠端資料庫伺服器的分散式查詢。]]></TXTIMEOUT_DESC>
+<UNSECURE_ONSTAT_DESC><![CDATA[設定為 '1' 時，讓所有使用者都可以檢視執行中的 SQL 陳述式。]]></UNSECURE_ONSTAT_DESC>
+<UPDATABLE_SECONDARY_DESC><![CDATA[設定要在主要與次要伺服器之間建立的連線數。設定此配置參數時，可讓用戶端應用程式在高可用性次要伺服器上執行更新、插入及刪除作業。]]></UPDATABLE_SECONDARY_DESC>
+<USERMAPPING_DESC><![CDATA[指出資料庫伺服器是否接受來自被對映使用者的連線，以及如果接受被對映使用者的話，是否授與他們管理者專用權。BASIC = 被對映使用者可以擁有基本專用權。ADMIN = 被對映使用者可以擁有管理者專用權。OFF = 關閉使用者對映。]]></USERMAPPING_DESC>
+<USE_BATCHEDREAD_DESC><![CDATA[]]></USE_BATCHEDREAD_DESC>
+<USE_KOBATCHEDREAD_DESC><![CDATA[]]></USE_KOBATCHEDREAD_DESC>
+<USELASTCOMMITTED_DESC><![CDATA[指定 COMMITTED READ 隔離層次的 LAST COMMITTED 功能隱含生效的隔離層次。]]></USELASTCOMMITTED_DESC>
+<USEOSTIME_DESC><![CDATA[指定資料庫伺服器從作業系統取得 SQL 陳述式的現行時間時是否要使用次秒精準度。0 = 關閉，1 = 開啟。]]></USEOSTIME_DESC>
+<USRC_HASHSIZE_DESC><![CDATA[指定使用者 LBAC 認證資訊快取中的雜湊儲存區數目。]]></USRC_HASHSIZE_DESC>
+<USRC_POOLSIZE_DESC><![CDATA[指定使用者 LBAC 認證資訊快取中每一個雜湊儲存區的項目數目上限。]]></USRC_POOLSIZE_DESC>
+<USTLOW_SAMPLE_DESC><![CDATA[在收集用於 UPDATE STATISTICS LOW 作業的統計資料期間，啟用取樣。若索引的葉節點頁數超過 100K，則從取樣來收集統計資料會提高 UPDATE STATISTICS LOW 作業的速度。]]></USTLOW_SAMPLE_DESC> 
+<VP_MEMORY_CACHE_KB_DESC><![CDATA[讓資料庫伺服器可以存取 CPU VP 的專用記憶體區塊。]]></VP_MEMORY_CACHE_KB_DESC>
+<VPCLASS_DESC><![CDATA[可讓您設計虛擬處理器 (VP) 的類別、建立使用者定義的 VP，以及指定必要的參數。]]></VPCLASS_DESC>
+<WSTATS_DESC><![CDATA[可讓 onstat -g wst 指令列印系統中執行緒的等待統計資料。]]></WSTATS_DESC>
+<NO_DESC_FOUND><![CDATA[找不到說明]]></NO_DESC_FOUND>
+<ON_RECOMMEND><![CDATA[建議開啟這個 onconfig 參數 (設定為 1)。]]></ON_RECOMMEND>
+<OFF_RECOMMEND><![CDATA[建議關閉這個 onconfig 參數 (設定為 0)。]]></OFF_RECOMMEND>
+<ZERO_RECOMMEND><![CDATA[建議將這個 onconfig 參數設定為 0。]]></ZERO_RECOMMEND>
+<NONTEMP_RECOMMEND><![CDATA[建議這個 onconfig 參數不能是空值，且不應指向伺服器機器的暫存目錄。]]></NONTEMP_RECOMMEND>
+<AFF_NPROCS_SPROC_RECOMMEND><![CDATA[建議 AFF_SPROC 與 AFF_NPROC 之間的差異要大於實體處理器數目。機器上的實體處理器數目為 {0}。]]></AFF_NPROCS_SPROC_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND><![CDATA[建議將 ALARAMPROGRAM 設定為 "$INFORMIXDIR/etc/alarmprogram.sh" (UNIX/Linux) 或 "$INFORMIXDIR/etc/alarmprogram.bat" (Windows)。]]></ALARMPROGRAM_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND_NO><![CDATA[顯然 ALARMPROGRAM 目前未設定至有效位置。]]></ALARMPROGRAM_RECOMMEND_NO>
+<BAR_DEBUG_RECOMMEND><![CDATA[除非「技術支援中心」另有指示，否則為了對特定問題進行除錯，建議將 BAR_DEBUG 保留為 0。]]></BAR_DEBUG_RECOMMEND>
+<BAR_NB_XPORT_COUNT_RECOMMEND><![CDATA[建議將 BAR_NB_XPORT_COUNT 設定為 5 到 99 之間的值]]></BAR_NB_XPORT_COUNT_RECOMMEND>
+<BAR_XFER_BUF_SIZE_RECOMMEND_15><![CDATA[此伺服器的頁面大小是 4K。因此，建議將 BAR_XFER_BUF_SIZE 設定為 15。]]></BAR_XFER_BUF_SIZE_RECOMMEND_15>
+<BAR_XFER_BUF_SIZE_RECOMMEND_31><![CDATA[此伺服器的頁面大小是 2K。因此，建議將 BAR_XFER_BUF_SIZE 設定為 31。]]></BAR_XFER_BUF_SIZE_RECOMMEND_31>
+<BTSCANNER_RECOMMEND><![CDATA[BTSCANNER 不得為空值。它應包括非零的 ALICE 掃描設定]]></BTSCANNER_RECOMMEND>
+<CCFLAGS_RECOMMEND><![CDATA[除非「技術支援中心」另有指示，否則為了對特定問題進行除錯，建議將 CCFLAGS 保留為 0。]]></CCFLAGS_RECOMMEND>
+<CKPTINTVL_RECOMMEND><![CDATA[建議將 CKPTINTVL 設定為 30 秒或以上的秒數。]]></CKPTINTVL_RECOMMEND>
+<CLEANERS_RECOMMEND><![CDATA[建議將 CLEANERS 設定為 VP 數及片段數下限。在現行伺服器上，建議的清除程式數目為：]]></CLEANERS_RECOMMEND>
+<DATASKIP_RECOMMEND><![CDATA[建議將 DATASKIP 設定為 'OFF'。]]></DATASKIP_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND><![CDATA[建議 DB_LIBRARY_PATH 中的所有元件都位於 $INFOMRIXDIR。]]></DB_LIBRARY_PATH_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND_NO><![CDATA[此伺服器含有不在 $INFORMIXDIR 中的 DB_LIBRARY_PATH 元件。如果這是預期的，則基於安全理由，請驗證這些外部目錄是否為使用者 informix 擁有，且只有使用者 informix 具有寫入權。]]></DB_LIBRARY_PATH_RECOMMEND_NO>
+<DBSPACETEMP_RECOMMEND><![CDATA[DBSPACETEMP 不應是空值，且每一個列出的空間都應該是現有的暫存資料庫空間。]]></DBSPACETEMP_RECOMMEND>
+<DEF_TABLE_LOCKMODE_RECOMMEND_ROW><![CDATA[鎖定等待存在於伺服器上。建議將 DEF_TABLE_LOCKMODE 設定為 'row'。]]></DEF_TABLE_LOCKMODE_RECOMMEND_ROW>
+<DEF_TABLE_LOCKMODE_RECOMMEND><![CDATA[一般建議是將 DEF_TABLE_LOCKMODE 設定為 'row'。如果目前是設定為 'page' 且鎖定等待存在於伺服器上，則建議將 DEF_TABLE_LOCKMODE 變更為 'row'。然而，DEF_TABLE_LOCKMODE 已設定為 'row'，或伺服器上目前沒有任何鎖定等待。]]></DEF_TABLE_LOCKMODE_RECOMMEND>
+<DS_NONPDQ_QUERY_MEM_RECOMMEND><![CDATA[建議 DS_NONPDQ_QUERY_MEM 要大於或等於 512 KB。另請參閱 DS_TOTAL_MEMORY，因為 DS_NONPDQ_QUERY_MEMORY 不能超過 DS_TOTAL_MEMORY 值的 25%。]]></DS_NONPDQ_QUERY_MEM_RECOMMEND>
+<DS_TOTAL_MEMORY_RECOMMEND><![CDATA[DS_TOTAL_MEMORY 至少應該為 2048 KB，且必須大於或等於 DS_NONPDQ_QUERY_MEM 大小的 4 倍。]]></DS_TOTAL_MEMORY_RECOMMEND>
+<EXTSHMADD_RECOMMEND_OK><![CDATA[根據此伺服器的延伸虛擬區段大小，EXTSHMADD 的現行值應遵循 OpenAdmin Tool 的建議。]]></EXTSHMADD_RECOMMEND_OK>
+<EXTSHMADD_RECOMMEND_NO><![CDATA[根據此伺服器的延伸虛擬區段大小，建議將 EXTSHMADD 增加至大於或等於 ]]></EXTSHMADD_RECOMMEND_NO>
+<FILLFACTOR_RECOMMEND><![CDATA[建議 FILLFACTOR 應介於 40% 到 98% 之間。]]></FILLFACTOR_RECOMMEND>
+<LISTEN_TIMEOUT_RECOMMEND><![CDATA[建議 LISTEN_TIMEOUT 應大於 2 秒，但小於 180 秒。]]></LISTEN_TIMEOUT_RECOMMEND>
+<LOCKS_RECOMMEND_OK><![CDATA[資料庫伺服器的鎖定總數從未超出 LOCKS 的指定大小，因此，LOCKS 的現行值符合 OpenAdmin Tool 的建議。]]></LOCKS_RECOMMEND_OK>
+<LOCKS_RECOMMEND_NO><![CDATA[資料庫伺服器的鎖定表格已超出 LOCKS 的指定大小。請嘗試將 LOCKS 增加 10%。]]></LOCKS_RECOMMEND_NO>
+<LOGBUFF_RECOMMEND_OK><![CDATA[根據資料庫伺服器的邏輯日誌寫入數，LOGBUFF 的現行值符合 OpenAdmin Tool 的建議。]]></LOGBUFF_RECOMMEND_OK>
+<LOGBUFF_RECOMMEND_NO><![CDATA[根據資料庫伺服器的邏輯日誌寫入數，LOGBUFF 的現行值偏低。請嘗試將 LOGBUFF 增加 10%。]]></LOGBUFF_RECOMMEND_NO>
+<LTAPEBLK_RECOMMEND_LOW><![CDATA[LTAPEBLK 的現行設定偏低。請查看磁帶機規格，因為大部分磁帶機都支援大於現行配置的區塊大小。增加 LTAPEBLK 可提升備份及還原的效能。]]></LTAPEBLK_RECOMMEND_LOW>
+<LTAPEBLK_RECOMMEND_HIGH><![CDATA[LTAPEBLK 的現行設定相當高。請查看磁帶機規格，以確定它可以支援這麼大的值。]]></LTAPEBLK_RECOMMEND_HIGH>
+<LTXHWM_RECOMMEND><![CDATA[LTXHWM 必須小於 LTXEHWM。建議 LTXHWM 應介於 25% 到 80% 之間。]]></LTXHWM_RECOMMEND>
+<LTXEHWM_RECOMMEND><![CDATA[LTXHWM 必須小於 LTXEHWM。建議 LTXEHWM 應介於 25% 到 90% 之間。]]></LTXEHWM_RECOMMEND>
+<MULTIPROCESSOR_RECOMMEND_ON><![CDATA[根據系統配置，建議應將 MULTIPROCESSOR 設定為 ON (開啟)。]]></MULTIPROCESSOR_RECOMMEND_ON>
+<MULTIPROCESSOR_RECOMMEND_OFF><![CDATA[依據系統配置，建議應將 MULTIPROCESSOR 設定為 OFF (關閉)。]]></MULTIPROCESSOR_RECOMMEND_OFF>
+<NUMCPUVPS_RECOMMEND_OK><![CDATA[根據資料庫伺服器的效能，NUMCPUVPS 的現行值遵循 OpenAdmin Tool 的建議。]]></NUMCPUVPS_RECOMMEND_OK>
+<NUMCPUVPS_RECOMMEND_NO><![CDATA[根據資料庫伺服器效能，建議增加 NUMCPUVPS。]]></NUMCPUVPS_RECOMMEND_NO>
+<NUMCPUVPS_RECOMMEND_ATMAX><![CDATA[根據資料庫伺服器效能，建議增加 NUMCPUVPS。然而，NUMCPUVPS 已經設定為系統上限。因此，若要提升效能，建議購買更多硬體。]]></NUMCPUVPS_RECOMMEND_ATMAX>
+<PHYSBUFF_RECOMMEND_OK><![CDATA[根據資料庫伺服器的實體日誌寫入數，PHYSBUFF 的現行值符合 OpenAdmin Tool 的建議。]]></PHYSBUFF_RECOMMEND_OK>
+<PHYSBUFF_RECOMMEND_NO><![CDATA[根據資料庫伺服器的實體日誌寫入數，PHYSBUFF 的現行值偏低。請嘗試將 PHYSBUFF 增加 10%。]]></PHYSBUFF_RECOMMEND_NO>
+<RESIDENT_RECOMMEND><![CDATA[建議不要關閉 RESIDENT。如果伺服器的 RESIDENT 設定為 0，請考慮將它變更為 2 或 -1。]]></RESIDENT_RECOMMEND>
+<RTO_SERVER_RESTART_RECOMMEND><![CDATA[建議不要停用 RTO_SERVER_RESTART (例如，不設為 0)。]]></RTO_SERVER_RESTART_RECOMMEND>
+<QSTATS_RECOMMEND><![CDATA[QSTATS 開啟時會造成大量效能影響，因此建議在正式作業系統上關閉 QSTATS，除非「技術支援中心」指示您開啟以進行特定問題的除錯。]]></QSTATS_RECOMMEND>
+<SHMADD_RECOMMEND_OK><![CDATA[根據資料庫伺服器中的虛擬記憶體區段數，SHMADD 的現行值符合 OpenAdmin Tool 的建議。]]></SHMADD_RECOMMEND_OK>
+<SHMADD_RECOMMEND_NO><![CDATA[根據資料庫伺服器中的虛擬記憶體區段數，建議增加 SHMADD 的值。]]></SHMADD_RECOMMEND_NO>
+<SHMTOTAL_RECOMMEND_OK><![CDATA[根據此伺服器的共用記憶體用量，SHMTOTAL 的現行值遵循 OpenAdmin Tool 的建議。]]></SHMTOTAL_RECOMMEND_OK>
+<SHMTOTAL_RECOMMEND_NO><![CDATA[如果資料庫伺服器達到 SHMTOTAL 限制，則可能會發生應用程式失敗。根據此伺服器的共用記憶體用量，建議將 SHMTOTAL 增加至大於或等於 ]]></SHMTOTAL_RECOMMEND_NO>
+<SHMVIRTSIZE_RECOMMEND_OK><![CDATA[根據資料庫伺服器中的虛擬記憶體區段數，SHMVIRTSIZE 的現行值符合 OpenAdmin Tool 的建議。]]></SHMVIRTSIZE_RECOMMEND_OK>
+<SHMVIRTSIZE_RECOMMEND_NO><![CDATA[根據資料庫伺服器中的虛擬記憶體區段數，建議將 SHMVIRTSIZE 值增加至大於現行設定但小於 ]]></SHMVIRTSIZE_RECOMMEND_NO>
+<SBSPACETEMP_RECOMMEND><![CDATA[Sbspace 存在於此伺服器上。因此，SBSPACETEMP 不應是空值，且每一個列出的空間都應該是現有的暫存 sbspace。]]></SBSPACETEMP_RECOMMEND>
+<SINGLE_CPU_VP_RECOMMEND_ON><![CDATA[資料庫伺服器機器上只有一個實體處理器。因此，建議開啟 SINGLE_CPU_VPS。]]></SINGLE_CPU_VP_RECOMMEND_ON>
+<SINGLE_CPU_VP_RECOMMEND_ON_CHECK><![CDATA[建議您閱讀手冊，以瞭解 SINGLE_CPU_VP 強加的限制並考慮開啟它。]]></SINGLE_CPU_VP_RECOMMEND_ON_CHECK>
+<SYSALARMPROGRAM_RECOMMEND><![CDATA[建議將 SYSALARAMPROGRAM 設定為 "$INFORMIXDIR/etc/evidence.sh" (UNIX/Linux) 或 "$INFORMIXDIR/etc/evidence.bat" (Windows)。]]></SYSALARMPROGRAM_RECOMMEND>
+<SYSALARMPROGRAM_RECOMMEND_NO><![CDATA[然而，顯然 SYSALARMPROGRAM 目前未設定至有效位置。]]></SYSALARMPROGRAM_RECOMMEND_NO>
+<TAPEBLK_RECOMMEND_LOW><![CDATA[TAPEBLK 的現行設定偏低。請查看磁帶機規格，因為大部分磁帶機都支援大於現行配置的區塊大小。增加 TAPEBLK 可提升備份及還原的效能。]]></TAPEBLK_RECOMMEND_LOW>
+<TAPEBLK_RECOMMEND_HIGH><![CDATA[TAPEBLK 的現行設定相當高。請查看磁帶機規格，以確定它可以支援這麼大的值。]]></TAPEBLK_RECOMMEND_HIGH>
+<TBLTBLFIRST_RECOMMEND><![CDATA[建議將 TBLTBLFIRST 設定為或高於此伺服器 tblspace tblspace 分割區的平均大小。系統 tblspace tblspace 分割區的現行大小如下所示：<BR>]]></TBLTBLFIRST_RECOMMEND>
+<TBLTBLNEXT_RECOMMEND><![CDATA[建議將 TBLTBLFIRST 設定為或高於此伺服器 tblspace tblspace 分割區平均大小的 25%。系統 tblspace tblspace 分割區的現行大小如下所示：<BR>]]></TBLTBLNEXT_RECOMMEND>
+<TEMPTAB_NOLOG_RECOMMEND><![CDATA[在 HDR 或 Mach11 環境中執行時，如果應用程式支援，則建議將 TEMPTAB_NOLOG 設定為 ON (開啟)，以停用暫存表格作業的邏輯記載。將此參數設定為 ON (開啟)，可提升抄寫環境中的效能。]]></TEMPTAB_NOLOG_RECOMMEND>
+<TRACEFLAGS_RECOMMEND><![CDATA[TRACEFLAGS 開啟時會造成效能影響，因此建議在正式作業系統上關閉 TRACEFLAGS (設定為 0)，除非「技術支援中心」指示您開啟以進行特定問題的除錯。]]></TRACEFLAGS_RECOMMEND>
+<TRACES_RECOMMEND><![CDATA[TRACES 開啟時會造成效能影響，因此建議在正式作業系統上關閉 TRACES (設定為 0)，除非「技術支援中心」指示您開啟以進行特定問題的除錯。]]></TRACES_RECOMMEND>
+<WSTATS_RECOMMEND><![CDATA[WSTATS 開啟時會造成大量效能影響，因此建議在正式作業系統上關閉 WSTATS，除非「技術支援中心」指示您開啟以進行特定問題的除錯。]]></WSTATS_RECOMMEND>
+</lang>

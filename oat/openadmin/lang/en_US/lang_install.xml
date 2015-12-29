@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[Install the OpenAdmin Tool]]></install_page_title>
+<next><![CDATA[Next]]></next>
+<save><![CDATA[Save]]></save>
+<finish><![CDATA[Finish]]></finish>
+<warning><![CDATA[Warning]]></warning>
+<language><![CDATA[Language:]]></language>
+<error_occurred><![CDATA[An error occurred]]></error_occurred>
+<error_message><![CDATA[Error message:]]></error_message>
+
+<welcome><![CDATA[Welcome]]></welcome>
+<welcome_message><![CDATA[This installation program installs OpenAdmin Tool Community Edition {0}.]]></welcome_message>
+<prerequisite_message><![CDATA[For information about the prerequisites for installing OpenAdmin Tool, see the {0} file.]]></prerequisite_message>
+<readme><![CDATA[readme]]></readme>
+<license_message><![CDATA[To install and use OpenAdmin Tool Community Edition, you must accept the following license agreement.]]></license_message>
+<license_agreement><![CDATA[License Agreement]]></license_agreement>
+<i_accept><![CDATA[I accept the terms in the license agreement.]]></i_accept>
+<error_accept_license_first><![CDATA[You must accept the license agreement to continue the installation.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[An install.lock file in the installation directory stopped the installation. Remove the file to continue the installation.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Required PHP Modules]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[The following PHP modules are required to run the OpenAdmin Tool (OAT).]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[An X icon indicates that the module was not found. Check your PHP installation and install the missing modules.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Recommended PHP Modules]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[The following PHP modules are recommended for OAT.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Important: Some functions in OAT are limited without these modules, although the modules are not required to install and use OAT.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[Some of the required PHP modules are not installed.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Missing modules:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Some of the recommended PHP modules are not installed. Some functions in OAT are limited without these modules, although the modules are not required to install and use OAT.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Missing recommended module(s):]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[OAT Configuration]]></oat_config>
+<parameter><![CDATA[Parameter]]></parameter>
+<description><![CDATA[Description]]></description>
+<value><![CDATA[Value]]></value>
+<LANG><![CDATA[Default language]]></LANG>
+<LANG_desc><![CDATA[The default language for the OAT pages.]]></LANG_desc>
+<BASEURL><![CDATA[Base URL]]></BASEURL>
+<BASEURL_desc><![CDATA[The URL where OAT is installed in this format: http://servername:port/location.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[Installation directory]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[The directory for the OAT installation.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Connections database directory]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[The directory for the OAT connections database. Specify a secure directory that is not under the document directory for the web server.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[The connections database location ({0}) is under the document directory for the web server. This location might expose OAT to security risks. For security reasons, change the location of the connections database. To ignore this warning, click Save again.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[Home page]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Home page for OAT]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Welcome]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Health Center > Dashboard > Group Summary]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Health Center > Dashboard > Server Performance]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Custom]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Refresh interval]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[The length of time (in seconds) between updates of the server status. The server status is shown on the Health Center > Dashboard > Group Summary page.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Rows per page]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[The default number of rows per page to display when data is shown in a table format.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL ToolBox security]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Require login credentials for the SQL ToolBox.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix connection time]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[The length of time (in seconds) that OAT attempts to connect to the database server before returning an error (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix connection retry]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[The number of times that OAT attempts to connect to the database server during the Informix connect time (INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[This field is required: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[The directory specified for the installation directory ({0}) does not exist. Specify a valid installation directory.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[The directory specified for the connections database ({0}) is not valid. Check that the directory exists and that it is writable.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[The directory {0} is not accessible. Check that the directory exists and that it is writable.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[The file {0} is not accessible. Check that the file exists and that it is writable.]]></file_not_accessible>
+
+<conndb><![CDATA[Connections Database]]></conndb>
+<conndb_desc><![CDATA[The connections database contains connection information that you provide for the servers that OAT can connect to.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[To create the connections database, click Next.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[To upgrade the connections database, click Next.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[The connections database processing was completed successfully.]]></conndb_complete>
+<conndb_not_set><![CDATA[The parameter for the connection database directory (CONNDBDIR) is not set in conf/config.php file.  Check that file and then start the installation again.]]></conndb_not_set>
+<conndb_processing><![CDATA[Processing file {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[The connections database was not set up successfully.  The {0} table could not be created. Remove the connections database and start the installation again.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[The connections database was not upgraded successfully.  An error occurred in file {0}, section {1}. Remove the connections database and start the installation again. Any preserved connections information will be lost.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[The version information in the connections database was not upgraded successfully. Remove the connections database and start the installation again.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[The version information for the IBM Example plug-in in the connections database was not upgraded successfully. Remove the connections database and start the installation again.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Plug-ins to Install]]></choose_plugins>
+<zip_extension_required><![CDATA[The PHP zip module is required to install plug-ins.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[The plug-ins were not installed. The installation program cannot write to the OAT temporary directory (tmp). Check the permissions for the directory. Then use the Plug-in Manager in OAT to install the plug-ins.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[There are no plug-ins to install.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Plug-in]]></plugin_name>
+<plugin_author><![CDATA[Author]]></plugin_author>
+<plugin_version><![CDATA[Version]]></plugin_version>
+<plugin_server_version><![CDATA[Informix Version]]></plugin_server_version>
+<plugin_license><![CDATA[License]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Install?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Do you accept the terms in the license agreement for the plug-in?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Plug-in Installation Results]]></plugin_install>
+<no_plugins_selected><![CDATA[No plug-ins were selected to install.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[{0} was installed successfully.]]></plugin_install_complete>
+
+<install_complete><![CDATA[OpenAdmin Tool Installation Complete]]></install_complete>
+<install_complete_details><![CDATA[The OpenAdmin Tool was installed successfully.  To close this page and go to the OAT login page, click Finish.]]></install_complete_details>
+
+</lang>

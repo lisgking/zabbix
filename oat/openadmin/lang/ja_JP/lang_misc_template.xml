@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[エラー:]]></ErrorF>
+<QueryF><![CDATA[問合せ:]]></QueryF>
+<PageSize><![CDATA[ページ サイズ]]></PageSize>
+<Descending><![CDATA[降順]]></Descending>
+<Ascending><![CDATA[昇順]]></Ascending>
+<ErrorOccurred><![CDATA[エラーが発生しました]]></ErrorOccurred>
+<Reload><![CDATA[再ロード]]></Reload>
+<ClickToReload><![CDATA[クリックしてサーバを再ロード]]></ClickToReload>
+<LoadingMsg><![CDATA[..ロード中..]]></LoadingMsg>
+<PrevPage><![CDATA[前ページ]]></PrevPage>
+<NextPage><![CDATA[次ページ]]></NextPage>
+<Page><![CDATA[ページ]]></Page>
+<Row><![CDATA[行]]></Row>
+<Login><![CDATA[ログイン]]></Login>
+<OrderAsc><![CDATA[{0} による昇順順序付け]]></OrderAsc>
+<OrderDesc><![CDATA[{0} による降順順序付け]]></OrderDesc>
+<Help><![CDATA[ヘルプ]]></Help>
+<Admin><![CDATA[管理]]></Admin>
+<Back><![CDATA[戻る]]></Back>
+<Welcome><![CDATA[ようこそ]]></Welcome>
+<CollapseMenu><![CDATA[メニューの縮小]]></CollapseMenu>
+<Info><![CDATA[情報]]></Info>
+<Yes><![CDATA[はい]]></Yes>
+<No><![CDATA[いいえ]]></No>
+<Cancel><![CDATA[キャンセル]]></Cancel>
+<Delete><![CDATA[削除]]></Delete>
+<Success><![CDATA[正常終了
+]]></Success>
+<ErrorL><![CDATA[エラー]]></ErrorL>
+<ERROR><![CDATA[エラー]]></ERROR>
+<Ignore><![CDATA[無視]]></Ignore>
+<Under><![CDATA[アンダー]]></Under>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[キャンセル]]></Cancel>
+<TemplateLoadError><![CDATA[メイン テンプレートをロードできませんでした]]></TemplateLoadError>
+<help><![CDATA[ヘルプ]]></help>
+<ServerType><![CDATA[サーバ タイプ]]></ServerType>
+<Version><![CDATA[バージョン]]></Version>
+<ServerTime><![CDATA[サーバ時刻]]></ServerTime>
+<BootTime><![CDATA[ブート時刻]]></BootTime>
+<UpTime><![CDATA[稼働時間]]></UpTime>
+<Sessions><![CDATA[セッション]]></Sessions>
+<MaxUsers><![CDATA[最大セッション数]]></MaxUsers>
+<TotalMem><![CDATA[合計メモリ]]></TotalMem>
+<FreeMem><![CDATA[空きメモリ]]></FreeMem>
+<NumCPU><![CDATA[CPU の数]]></NumCPU>
+<OperatingSys><![CDATA[オペレーティング システム]]></OperatingSys>
+<Standard><![CDATA[標準]]></Standard>
+<Primary><![CDATA[主]]></Primary>
+<Secondary><![CDATA[副]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[サーバ]]></Server>
+<Database><![CDATA[データベース]]></Database>
+<ConnectionFailed><![CDATA[接続失敗: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[エラー:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[実行する SQL がありません]]></NoSQLToExecute>
+<GroupServers><![CDATA[グループ サーバ]]></GroupServers>
+<MapNotAvail><![CDATA[キーが無効であるためマップを使用できません。]]></MapNotAvail>
+<ServerInfo><![CDATA[サーバ情報]]></ServerInfo>
+<Info><![CDATA[情報]]></Info>
+<ALL><![CDATA[すべて]]></ALL>
+<Enabled><![CDATA[有効]]></Enabled>
+<Disabled><![CDATA[無効]]></Disabled>
+<MB_Locale><![CDATA[データベース言語]]></MB_Locale>
+<MB_Encoding><![CDATA[ロケール]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[データベース言語を選択して、その言語のデータベース ロケールを表示します。次に、データベース ロケールを選択します。]]></MB_Locale_Encoding_tooltip>
+</lang>

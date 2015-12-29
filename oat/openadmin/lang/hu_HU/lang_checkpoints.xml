@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[Ellenőrzési pont információk]]></checkpointInfo>
+<Checkpoints><![CDATA[Ellenőrzési pontok]]></Checkpoints>
+<Interval><![CDATA[Intervallum]]></Interval>
+<Type><![CDATA[Típus]]></Type>
+<Caller><![CDATA[Aktiválás]]></Caller>
+<Time><![CDATA[Idő]]></Time>
+<CritTime><![CDATA[Krit. idő]]></CritTime>
+<FlushTime><![CDATA[Kiürítési idő]]></FlushTime>
+<CPTime><![CDATA[Ell.pont időtartam]]></CPTime>
+<NDirtyBuffers><![CDATA[Piszkos pufferek száma]]></NDirtyBuffers>
+<LSN><![CDATA[LSN]]></LSN>
+<NCritWaits><![CDATA[Várakozások száma]]></NCritWaits>
+<BlockTime><![CDATA[Blokkolási idő]]></BlockTime>
+</lang>

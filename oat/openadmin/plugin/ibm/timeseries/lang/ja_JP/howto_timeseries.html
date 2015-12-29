@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP" xml:lang="ja-jp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="ja-jp" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task" />
+<title>Informix TimeSeries プラグイン (OAT 用)</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix TimeSeries プラグイン (OAT 用)</h1>
+<br />
+<div id="wq1">
+<h1>目次</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Informix TimeSeries プラグイン (OAT 用)</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_ots_001" class="toclink">時系列の検討</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_ots_002" class="toclink">コンテナの作成</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_ots_003" class="toclink">カレンダーの作成</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_ots_004" class="toclink">仮想表の作成</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_cm_not" class="toclink">特記事項</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1trademarks" class="toclink">商標
+</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_ots_000" class="toclink">著作権</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Informix TimeSeries プラグイン (OAT 用)</a></h1>
+<div>
+<p>OpenAdmin Tool (OAT) 用の IBM&reg; Informix&reg; TimeSeries プラグインには、<strong>TimeSeries</strong> のサブタイプ、コンテナ、およびカレンダを含む、時系列関連のデータベース オブジェクトを管理するためのグラフィカル インターフェイスが用意されています。</p></div>
+<div>
+<div class="notetitle" id="wq2">前提条件:</div>
+<div class="notebody">Informix 11.50 以前では、
+IBM Informix TimeSeries DataBlade&reg; モジュールがインストールされ、
+データベースに登録されている必要があります。</div></div>
+<p>時系列は、時間の経過に伴う変化が記録された一連のデータです。各エントリは、タイム スタンプが付けられて、データベースに格納されます。Informix TimeSeries 拡張機能は、時系列データを管理するための、<strong>TimeSeries</strong> のデータ型、コンテナ、およびカレンダを提供します。</p>
+<p>TimeSeries プラグインを使用すると、以下のように、時系列関連のデータベース オブジェクトを監視することができます。</p>
+<ul>
+<li>データベース内の時系列データ用に使用される、<strong>TimeSeries</strong> のサブタイプ、コンテナ、およびカレンダの表示。</li>
+<li><strong>TimeSeries</strong> サブタイプを含む、表およびインデックスの表示。</li>
+<li><strong>TimeSeries</strong> サブタイプを含む表に基づく、仮想表の表示。</li>
+<li>コンテナおよびコンテナ用の DB 領域において使用される領域の割合の監視。</li></ul>
+<p>さらに、コンテナ、カレンダ、および仮想表の作成および削除もできます。</p>
+<h2 id="dqx1ids_ots_001"><a href="#ToC_2">時系列の検討</a></h2>
+<div>
+<p>表、インデックス、および仮想表と、<strong>TimeSeries</strong> のサブタイプ、コンテナ、およびカレンダを含む、時系列関連のデータベース オブジェクトを検討します。</p></div>
+<p>
+<p>時系列を検討するには、以下を行います。</p>
+<p>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、
+<strong>「SQL ToolBox」</strong> &gt; <strong>「TimeSeries」</strong>をクリックします。時系列データを含むデータベース サーバ内のデータベースおよび表のリストが表示されます。</p>
+<ul>
+<li>データベースまたは表の情報を表示するには、データベースまたは表をリスト内でクリックします。</li>
+<li>特定のデータベース オブジェクトまたは表オブジェクトの詳細情報を表示するには、オブジェクト パネルで拡張アイコンをクリックします。</li></ul></p>
+<h2 id="dqx1ids_ots_002"><a href="#ToC_3">コンテナの作成</a></h2>
+<div>
+<p>時系列のためのコンテナを作成します。複数のコンテナを作成するには、DB 領域ごとに 2 つ以上のコンテナを指定するか、または複数のコンテナに対して 2 つ以上の DB 領域を選択します。</p></div>
+<p>
+<p>コンテナを作成するには、以下を行います。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、
+<strong>「SQL ToolBox」</strong> &gt; <strong>「TimeSeries」</strong>をクリックします。</li>
+<li>時系列を含むデータベースをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>コンテナの作成</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<h2 id="dqx1ids_ots_003"><a href="#ToC_4">カレンダーの作成</a></h2>
+<div>
+<p>時系列と関連付けるカレンダを作成します。</p></div>
+<p>
+<p>すべての時系列に、カレンダが 1 つが関連付けられます。カレンダは、時系列にデータを記録できる、一連の有効な時刻を定義します。カレンダにより、エントリが受け入れられる時間と頻度が決定されます。カレンダは、開始日、パターン、および間隔で構成されます。次の例を検討します。パターンの開始日は日曜日で、パターンはオフ 1 回、オン 5 回、オフ 1 回で、間隔を 1 日とします。このパターンの場合、最初の日である日曜日には、情報が収集されません。続く月曜日から金曜日までの 5 日間には、情報が毎日収集されます。最終日の土曜日には、情報が収集されません。</p></p>
+<p>
+<p>カレンダーを作成するには、以下を行います。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、
+<strong>「SQL ToolBox」</strong> &gt; <strong>「TimeSeries」</strong>をクリックします。</li>
+<li>時系列を含むデータベースをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>カレンダの作成</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<h2 id="dqx1ids_ots_004"><a href="#ToC_5">仮想表の作成</a></h2>
+<div>
+<p><strong>TimeSeries</strong> サブタイプを含む表に基づく、仮想表を作成します。</p></div>
+<p>
+<p>仮想表は、<strong>TimeSeries</strong> の列を除き、基本表と同じスキーマを持つ関係表です。<strong>TimeSeries</strong> の列は、<strong>TimeSeries</strong> サブタイプの列で置換されます。<strong>TimeSeries</strong> の列の要素は、仮想表の個々の列です。仮想表には、<strong>TimeSeries</strong> サブタイプにカプセル化されたデータを含め、基本表にあるデータのすべてが収められます。</p></p>
+<p>
+<p>仮想表を作成するには、以下を行います。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、
+<strong>「SQL ToolBox」</strong> &gt; <strong>「TimeSeries」</strong>をクリックします。</li>
+<li>リストで、基本表が含まれるデータベースを展開し、表をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>仮想表の作成</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_6">特記事項</a></h1>
+<p>本書は米国 IBM が提供する製品およびサービスについて作成したものです。</p>
+<p>本書に記載の製品、サービス、または機能が日本においては提供されていない場合があります。
+日本で利用可能な製品、サービス、および機能については、日本 IBM の営業担当員にお尋ねください。
+本書で IBM 製品、プログラム、またはサービスに言及していても、その IBM 製品、プログラム、または
+サービスのみが使用可能であることを意味するものではありません。
+これらに代えて、IBM の知的所有権を侵害することのない、機能的に同等の
+製品、プログラム、またはサービスを使用することができます。
+ただし、IBM 以外の製品とプログラムの操作またはサービスの
+評価および検証は、お客様の責任で行っていただきます。</p>
+<p>IBM は、本書に記載されている内容に関して特許権 (特許出願中のものを含む) を保有している場合があります。
+本書の提供は、お客様にこれらの特許権について
+実施権を許諾することを意味するものではありません。
+実施権についてのお問い合わせは、書面にて下記宛先にお送りください。
+</p>
+<div class="lines">〒103-8510<br />
+東京都中央区日本橋箱崎町19番21号
+<br />
+日本アイ・ビー・エム株式会社
+<br />
+法務・知的財産<br />
+知的財産権ライセンス渉外<br />
+</div>
+<p>NONE:
+</p>
+<div class="lines"><!--Intellectual Property Licensing--><br />
+<!--Legal and Intellectual Property Law--><br />
+<!--IBM Japan, Ltd.--><br />
+<!--19-21, Nihonbashi-Hakozakicho, Chuo-ku--><br />
+<!--Tokyo 103-8510, Japan--><br />
+</div>
+<p>以下の保証は、国または地域の法律に沿わない場合は、適用されません。
+IBM およびその直接または間接の子会社は、本書を特定物として現存するままの状態で提供し、
+商品性の保証、特定目的適合性の保証および法律上の瑕疵担保責任を含む
+すべての明示もしくは黙示の保証責任を負わないものとします。
+国または地域によっては、法律の強行規定により、保証責任の制限が
+禁じられる場合、強行規定の制限を受けるものとします。</p>
+<p>この情報には、技術的に不適切な記述や誤植を含む場合があります。
+本書は定期的に見直され、必要な変更は本書の次版に組み込まれます。
+IBM は予告なしに、随時、この文書に記載されている製品またはプログラムに対して、
+改良または変更を行うことがあります。</p>
+<p>本書において IBM 以外の Web サイトに言及している場合がありますが、便宜のため記載しただけであり、決してそれらの Web サイトを推奨するものではありません。それらの Web サイトにある資料は、この IBM 製品の資料の一部ではありません。それらの Web サイトは、お客様の責任でご使用ください。</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p>本プログラムのライセンス保持者で、(i) 独自に作成したプログラムと
+その他のプログラム (本プログラムを含む) との間での情報交換、
+および (ii) 交換された情報の相互利用を可能にすることを目的として、
+本プログラムに関する情報を必要とする方は、下記に連絡してください。
+</p>
+<div class="lines">IBM Corporation
+<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San Jose, CA 95141-1003
+<br />
+U.S.A.<br />
+</div>
+<p>本プログラムに関する上記の情報は、適切な使用条件の下で使用すること
+ができますが、有償の場合もあります。</p>
+<p>本書で説明されているライセンス・プログラムまたはその他のライセンス資
+料は、IBM 所定のプログラム契約の契約条項、IBM プログラムのご使用条件、
+またはそれと同等の条項に基づいて、IBM より提供されます。</p>
+<p>この文書に含まれるいかなるパフォーマンス・データも、管理環境下で
+決定されたものです。
+そのため、他の操作環境で得られた結果は、異なる可能性があります。
+一部の測定が、開発レベルのシステムで行われた可能性がありますが、
+その測定値が、一般に利用可能なシステムのものと同じである保証はありません。
+さらに、一部の測定値が、推定値である可能性があります。
+実際の結果は、異なる可能性があります。お客様は、お客様の特定の環境に適したデータを確かめる必要があります。</p>
+<p>IBM 以外の製品に関する情報は、その製品の供給者、出版物、
+もしくはその他の公に利用可能なソースから入手したものです。IBM は、それらの製品のテストは行っておりません。したがって、
+他社製品に関する実行性、互換性、またはその他の要求については確証できません。
+IBM 以外の製品の性能に関する質問は、それらの製品の供給者にお願いします。</p>
+<p>IBM の将来の方向または意向に関する記述については、
+予告なしに変更または撤回される場合があり、単に目標を示しているものです。</p>
+<p>表示されている IBM の価格は IBM が小売り価格として提示しているもので、
+現行価格であり、通知なしに変更されるものです。
+卸価格は、異なる場合があります。</p>
+<p>本書はプランニング目的としてのみ記述されています。記述内容は
+製品が使用可能になる前に変更になる場合があります。</p>
+<p>本書には、日常の業務処理で用いられるデータや報告書の例が含まれています。
+より具体性を与えるために、それらの例には、個人、企業、ブランド、
+あるいは製品などの名前が含まれている場合があります。
+これらの名称はすべて架空のものであり、
+名称や住所が類似する企業が実在しているとしても、それは偶然にすぎません。</p>
+<p>著作権使用許諾:</p>
+<p>本書には、様々なオペレーティング・プラットフォームでのプログラミング手法を例示するサンプル・アプリケーション・プログラムがソース言語で掲載されています。お客様は、サンプル・プログラムが書かれているオペレーティング・
+プラットフォームのアプリケーション・プログラミング・インターフェースに
+準拠したアプリケーション・プログラムの開発、使用、販売、配布を目的として、
+いかなる形式においても、IBM に対価を支払うことなくこれを複製し、改変し、
+配布することができます。
+このサンプル・プログラムは、あらゆる条件下における完全なテストを経ていません。
+従って IBM は、これらのサンプル・プログラムについて信頼性、利便性もしくは機能性が
+あることをほのめかしたり、保証することはできません。
+これらのサンプル・プログラムは特定物として現存するままの状態で提供されるものであり、いかなる保証も提供されません。
+IBM は、お客様の当該サンプル・プログラムの使用から生ずるいかなる損害に対しても一切の責任を負いません。</p>
+<p>それぞれの複製物、サンプル・プログラムのいかなる部分、またはすべての派生的創作物にも、次の
+ように、著作権表示を入れていただく必要があります。</p>
+<p>&copy; (お客様の会社名) (西暦年).このコードの一部は、IBM Corp. のサンプル・プログラムから取られています。</p>
+<p>&copy; Copyright IBM
+Corp. _年を入れる_.All rights reserved.</p>
+<p>この情報をソフトコピーでご覧になっている場合は、写真やカラーの図表は
+表示されない場合があります。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_7">商標
+</a></h2>
+<p>IBM、IBM ロゴおよび ibm.com は、世界の多くの国で登録された International Business Machines Corporation の商標です。他の製品名およびサービス名等は、それぞれ IBM または各社の商標である場合があります。
+現時点での IBM の商標リストについては、<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> をご覧ください。
+</p>
+<p>Adobe、Adobe ロゴ、 PostScript は、Adobe Systems Incorporated の米国およびその他の国における登録商標または商標です。</p>
+<p>Intel、 Itanium、および Pentium は、
+Intel Corporation または子会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Java&trade; およびすべての Java 関連の商標およびロゴは Oracle やその関連会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Linux は、Linus Torvalds の米国およびその他の国における登録商標です。</p>
+<p>Microsoft、Windows、および Windows NT は、Microsoft Corporation の米国およびその他の国における商標です。</p>
+<p>UNIX は The Open Group の米国およびその他の国における登録商標です。</p>
+<p>他の会社名、製品名およびサービス名等はそれぞれ各社の商標です。</p>
+<h2 id="dqx1ids_ots_000"><a href="#ToC_8">著作権</a></h2>
+<p>本書には、IBM の専有情報が含まれています。
+その情報は、使用許諾条件に基づき提供され、著作権により保護されています。
+本書に記載される情報には、いかなる製品の保証も含まれていません。また、本書で提供されるいかなる記述も、製品保証として解釈すべきではありません。
+</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p><!--US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.--></p>
+<p><!--&copy; Copyright The PHP Group 1997-2010.-->追加の情報については、<samp class="xph">license/notices.txt</samp> ファイルを参照してください。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

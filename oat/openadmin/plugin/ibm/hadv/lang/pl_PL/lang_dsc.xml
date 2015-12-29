@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[Dynamiczne przydzielanie dzienników]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[Miejsce przechowywania pliku dziennika logicznego]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[Minimalna liczba zmodyfikowanych stron w kolejce LRU]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[Miejsce przechowywania dziennika fizycznego]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[Pliki ATS]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER: DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER: węzeł wyłączony]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[Pliki RIS]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[Wolna pamięć systemu operacyjnego]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[Włączone procesory systemu operacyjnego]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[Procesory wirtualne systemu operacyjnego]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[Limit otwartych plików w systemie operacyjnym]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[Identyfikatory semaforów w systemie operacyjnym]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[Semafory w systemie operacyjnym]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[Identyfikatory pamięci współużytkowanej w systemie operacyjnym]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[System operacyjny: SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[System operacyjny: shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[Punkt kontrolny wyzwolony przez LLOG]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[Punkt kontrolny wyzwolony przez PLOG]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[Sekcja krytyczna]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[Opróżnienie buforu na dysk]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[Najdłuższe oczekiwanie]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[Odczyty z buforu na tabelę]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[Zapisy w buforze na tabelę]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[Przeglądania sekwencyjne na tabelę]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[Odczyty z buforu w pamięci podręcznej]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[Zapisy w buforze w pamięci podręcznej]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[Sortowania na dysku]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[Wycofania]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[Zapisy na pierwszym planie]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[Strony dziennika logicznego na operację we/wy]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[Oczekiwania na blokady]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[Strony dziennika fizycznego na operację we/wy]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[Przeglądania sekwencyjne]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[Porcje offline]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[Operacje we/wy porcji]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[Odczyty we/wy porcji]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[Zapisy we/wy porcji]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[Wolne miejsce w obszarze dbspace]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[Wielkość wiersza]]></dsc_Rowsize>
+
+</lang>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[追加]]></add>
+<alarms><![CDATA[アラーム]]></alarms>
+<alarm_check><![CDATA[アラーム チェック]]></alarm_check>
+<alarm_setup><![CDATA[アラームのセットアップ]]></alarm_setup>
+<alarm_mod><![CDATA[アラームの変更]]></alarm_mod>
+<alarm_msg><![CDATA[アラームが設定される条件を指定します。]]></alarm_msg>
+<alarm_name><![CDATA[アラーム名:]]></alarm_name>
+<Always><![CDATA[常時]]></Always>
+<AnyAlarm><![CDATA[任意のアラーム]]></AnyAlarm>
+<Anyalarm><![CDATA[任意のアラーム]]></Anyalarm>
+<all><![CDATA[すべて]]></all>
+<cancel><![CDATA[キャンセル]]></cancel>
+<Config><![CDATA[構成]]></Config>
+<Configuration><![CDATA[構成]]></Configuration>
+<Currentprofile><![CDATA[現行プロファイル]]></Currentprofile>
+<CurrentProfile><![CDATA[現行プロファイル]]></CurrentProfile>
+<del_def_na><![CDATA[デフォルト プロファイルは削除できません。]]></del_def_na>
+<deleted_prof><![CDATA[プロファイルは削除されました。]]></deleted_prof>
+<delete><![CDATA[削除]]></delete>
+<desc><![CDATA[アラーム名]]></desc>
+<emailprog><![CDATA[E メール プログラム構成]]></emailprog>
+<empty_prof_add><![CDATA[プロファイル名を空にすることはできません。]]></empty_prof_add>
+<empty_prof_load><![CDATA[リストからプロファイルを選択してください。]]></empty_prof_load>
+<enable><![CDATA[有効化]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[例外]]></exceptions>
+<exc_intro><![CDATA[アラームでは例外が許容されます。]]></exc_intro>
+<exc_example><![CDATA[例: rootdbs、physdbs、logdbs]]></exc_example>
+<from><![CDATA[送信元]]></from>
+<Category><![CDATA[カテゴリ]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Health Advisor の実行]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[情報]]></info>
+<ldesc><![CDATA[説明]]></ldesc>
+<description><![CDATA[説明:]]></description>
+<load><![CDATA[ロード]]></load>
+<modify><![CDATA[変更]]></modify>
+<modifysched><![CDATA[スケジュールの変更]]></modifysched>
+<modify_threshold><![CDATA[しきい値の変更]]></modify_threshold>
+<name><![CDATA[名前]]></name>
+<noauth><![CDATA[このページにアクセスするための権限がありません。]]></noauth>
+<noalarms><![CDATA[発生したアラームはありません。]]></noalarms>
+<notification><![CDATA[通知]]></notification>
+<OS><![CDATA[OS]]></OS>
+<Perf><![CDATA[パフォーマンス]]></Perf>
+<profile><![CDATA[プロファイル]]></profile>
+<profmanagement><![CDATA[プロファイル管理]]></profmanagement>
+<profmsg><![CDATA[プロファイルを追加、ロード、または削除します。]]></profmsg>
+<RedAlarm><![CDATA[赤色のアラーム]]></RedAlarm>
+<Redalarm_><![CDATA[赤色のアラーム:]]></Redalarm_>
+<Redalarm><![CDATA[赤色のアラーム]]></Redalarm>
+<Redalarmthreshold><![CDATA[赤色のアラームのしきい値]]></Redalarmthreshold>
+<send><![CDATA[E メール通知の送信]]></send>
+<save><![CDATA[保存]]></save>
+<save_failed><![CDATA[保存失敗: ]]></save_failed>
+<saved_alarms><![CDATA[アラーム オプションへの変更は保存されました。]]></saved_alarms>
+<saved_schedule><![CDATA[通知オプションへの変更は保存されました。]]></saved_schedule>
+<saved_email><![CDATA[E メール プログラムへの変更は保存されました。]]></saved_email>
+<schedandnot><![CDATA[スケジュールおよび通知]]></schedandnot>
+<schedmsg><![CDATA[プロファイルを指定の間隔で実行するようにスケジュールできます。結果は E メールで送信されます。]]></schedmsg>
+<schedule><![CDATA[スケジュール]]></schedule>
+<show><![CDATA[表示]]></show>
+<Storage><![CDATA[格納領域]]></Storage>
+<to><![CDATA[送信先]]></to>
+<thresholds><![CDATA[しきい値]]></thresholds>
+<threshold_msg><![CDATA[しきい値の使用に関する説明については、アラームの説明を参照してください。]]></threshold_msg>
+<when><![CDATA[送信頻度]]></when>
+<Yellowalarmthreshold><![CDATA[黄色のアラームのしきい値]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[黄色のアラーム:]]></Yelalarm_>
+<YelAlarm><![CDATA[黄色のアラーム]]></YelAlarm>
+</lang>

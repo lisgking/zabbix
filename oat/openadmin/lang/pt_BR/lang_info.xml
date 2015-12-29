@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_info">
+<linksTitle><![CDATA[Links Úteis]]></linksTitle>
+<aboutTitle><![CDATA[Sobre o OAT]]></aboutTitle>
+<productInfo><![CDATA[Informações sobre o Produto]]></productInfo>
+<productName><![CDATA[Nome do Produto]]></productName>
+<version><![CDATA[Versão]]></version>
+<buildtimestamp><![CDATA[Construir Registro de Data e Hora]]></buildtimestamp>
+<copyright><![CDATA[&copy; Copyright IBM Corporation. 2007, 2013.<br/>&copy; Copyright The PHP Group 1999-2010.<br/>Consulte o arquivo notices.txt para obter informações adicionais.]]></copyright>
+<IBMInfo><![CDATA[IBM]]></IBMInfo>
+<IIUGInfo><![CDATA[IIUG]]></IIUGInfo>
+<IBMInformixHomepage><![CDATA[Família de Produtos IBM Informix]]></IBMInformixHomepage>
+<IBMInformixProducts><![CDATA[Informações sobre os produtos do IBM Informix]]></IBMInformixProducts>
+<OATHomePage><![CDATA[OpenAdmin Tool]]></OATHomePage>
+<OATHomePageDesc><![CDATA[Informações sobre o OpenAdmin Tool (OAT)]]></OATHomePageDesc>
+<OATForum><![CDATA[Fórum do OpenAdmin Tool]]></OATForum>
+<OATForumDesc><![CDATA[Fórum de suporte do OAT hospedado pelo International Informix Users Group (IIUG)]]></OATForumDesc>
+<InfoCenter_v11.50><![CDATA[Centro de Informações do IBM Informix v11.50]]></InfoCenter_v11.50>
+<InfoCenter_v11.50_Desc><![CDATA[Documentação do IBM Informix v11.50]]></InfoCenter_v11.50_Desc>
+<InfoCenter_v11.70><![CDATA[Centro de Informações do IBM Informix v11.70]]></InfoCenter_v11.70>
+<InfoCenter_v11.70_Desc><![CDATA[Documentação do IBM Informix v11.70]]></InfoCenter_v11.70_Desc>
+<InfoCenter_v12.10><![CDATA[Centro de Informações do IBM Informix v12.10]]></InfoCenter_v12.10>
+<InfoCenter_v12.10_Desc><![CDATA[Documentação do IBM Informix v12.10]]></InfoCenter_v12.10_Desc>
+<IDSProdSupport><![CDATA[Portal de Suporte IBM: Servidores Informix]]></IDSProdSupport>
+<IDSProdSupportPage><![CDATA[Suporte para servidores IBM Informix]]></IDSProdSupportPage>
+<InformixProdSupp><![CDATA[Portal de Suporte IBM: Família de Produtos Informix]]></InformixProdSupp>
+<InformixProdSuppPage><![CDATA[Suporte para produtos IBM Informix]]></InformixProdSuppPage>
+<InformixDevZone><![CDATA[IBM developerWorks: IBM Informix]]></InformixDevZone>
+<InformixDevZoneDesc><![CDATA[Informações técnicas sobre o Informix sobre o recurso da IBM para desenvolvedores e profissionais de TI]]></InformixDevZoneDesc>
+<IIUGHome><![CDATA[International Informix Users Group]]></IIUGHome>
+<IIUGHomePage><![CDATA[Página inicial do International Informix Users Group (IIUG)]]></IIUGHomePage>
+<IIUGSuppForumOAT><![CDATA[Fórum de suporte do OpenAdmin Tool (OAT) hospedado pelo IIUG]]></IIUGSuppForumOAT>
+<IIUGForums><![CDATA[Fóruns do Informix]]></IIUGForums>
+<IIUGForumsDesc><![CDATA[Fórum de suporte dos produtos Informix hospedado pelo IIUG]]></IIUGForumsDesc>
+<InformixEvents><![CDATA[Calendário de Eventos do IIUG]]></InformixEvents>
+<InformixUserEventSchedule><![CDATA[Planejamento de eventos para usuários do Informix]]></InformixUserEventSchedule>
+<IIUGSponsorProgram><![CDATA[Programa Patrocinador do IIUG]]></IIUGSponsorProgram>
+<IIUGSponsorProgramDesc><![CDATA[Programas para suportar a comunidade do IIUG e obter propagandas para sua empresa]]></IIUGSponsorProgramDesc>
+<OATForIDSText><![CDATA[OpenAdmin Tool Community Edition]]></OATForIDSText>
+<PHPConfiguration><![CDATA[Configuração do PHP]]></PHPConfiguration>
+<ExternalLinksNotice><![CDATA[Referente a links para sites da web não IBM]]></ExternalLinksNotice>
+</lang>

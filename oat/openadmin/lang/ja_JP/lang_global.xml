@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_global">
+<help><![CDATA[ヘルプ]]></help>
+<language><![CDATA[言語]]></language>
+<switchServer><![CDATA[次のサーバに切り替え:]]></switchServer>
+<switchDatabase><![CDATA[次のデータベースに切り替え:]]></switchDatabase>
+<confirmContinue><![CDATA[続行しますか?]]></confirmContinue>
+<confirmSqltoolboxLogout><![CDATA[SQL Toolbox からログアウトします。続行しますか?]]></confirmSqltoolboxLogout>
+<ok><![CDATA[OK]]></ok>
+<featureNotSupported><![CDATA[この機能には Informix バージョン {0} が必要です。]]></featureNotSupported>
+<couldNotLoadSwitchLocale><![CDATA[OAT はデータベース サーバ上のデータベース ロケール情報にアクセスできません。]]></couldNotLoadSwitchLocale>
+</lang>

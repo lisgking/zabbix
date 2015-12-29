@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[추가]]></add>
+<alarms><![CDATA[경보]]></alarms>
+<alarm_check><![CDATA[경보 검사]]></alarm_check>
+<alarm_setup><![CDATA[경보 설정]]></alarm_setup>
+<alarm_mod><![CDATA[경보 수정]]></alarm_mod>
+<alarm_msg><![CDATA[경보를 설정할 때의 조건을 지정하십시오.]]></alarm_msg>
+<alarm_name><![CDATA[경보 이름:]]></alarm_name>
+<Always><![CDATA[항상]]></Always>
+<AnyAlarm><![CDATA[임의의 경보]]></AnyAlarm>
+<Anyalarm><![CDATA[임의의 경보]]></Anyalarm>
+<all><![CDATA[모두]]></all>
+<cancel><![CDATA[취소]]></cancel>
+<Config><![CDATA[구성]]></Config>
+<Configuration><![CDATA[구성]]></Configuration>
+<Currentprofile><![CDATA[현재 프로파일]]></Currentprofile>
+<CurrentProfile><![CDATA[현재 프로파일]]></CurrentProfile>
+<del_def_na><![CDATA[기본 프로파일은 삭제할 수 없습니다.]]></del_def_na>
+<deleted_prof><![CDATA[해당 프로파일이 삭제되었습니다.]]></deleted_prof>
+<delete><![CDATA[삭제]]></delete>
+<desc><![CDATA[경보 이름]]></desc>
+<emailprog><![CDATA[전자 우편 프로그램 구성]]></emailprog>
+<empty_prof_add><![CDATA[프로파일 이름은 비어 있으면 안 됩니다.]]></empty_prof_add>
+<empty_prof_load><![CDATA[목록에서 프로파일을 선택하십시오.]]></empty_prof_load>
+<enable><![CDATA[사용]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[예외]]></exceptions>
+<exc_intro><![CDATA[이 경보는 예외를 허용합니다.]]></exc_intro>
+<exc_example><![CDATA[예: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[발신인]]></from>
+<Category><![CDATA[범주]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Health Advisor 실행]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[정보]]></info>
+<ldesc><![CDATA[설명]]></ldesc>
+<description><![CDATA[설명:]]></description>
+<load><![CDATA[로드]]></load>
+<modify><![CDATA[수정]]></modify>
+<modifysched><![CDATA[스케줄 수정]]></modifysched>
+<modify_threshold><![CDATA[스레시홀드 수정]]></modify_threshold>
+<name><![CDATA[이름]]></name>
+<noauth><![CDATA[이 페이지에 액세스할 권한이 없습니다.]]></noauth>
+<noalarms><![CDATA[발생한 경보가 없습니다.]]></noalarms>
+<notification><![CDATA[통지]]></notification>
+<OS><![CDATA[OS]]></OS>
+<Perf><![CDATA[성능]]></Perf>
+<profile><![CDATA[프로파일]]></profile>
+<profmanagement><![CDATA[프로파일 관리]]></profmanagement>
+<profmsg><![CDATA[프로파일을 추가, 로드 및 삭제하십시오.]]></profmsg>
+<RedAlarm><![CDATA[빨간색 경보]]></RedAlarm>
+<Redalarm_><![CDATA[빨간색 경보:]]></Redalarm_>
+<Redalarm><![CDATA[빨간색 경보]]></Redalarm>
+<Redalarmthreshold><![CDATA[빨간색 경보 스레시홀드]]></Redalarmthreshold>
+<send><![CDATA[전자 우편 통지 발송]]></send>
+<save><![CDATA[저장]]></save>
+<save_failed><![CDATA[저장에 실패함: ]]></save_failed>
+<saved_alarms><![CDATA[경보 옵션 변경사항이 저장되었습니다.]]></saved_alarms>
+<saved_schedule><![CDATA[통지 옵션 변경사항이 저장되었습니다.]]></saved_schedule>
+<saved_email><![CDATA[전자 우편 프로그램 변경사항이 저장되었습니다.]]></saved_email>
+<schedandnot><![CDATA[스케줄 및 통지]]></schedandnot>
+<schedmsg><![CDATA[프로파일을 지정한 간격으로 실행되도록 스케줄할 수 있습니다. 결과는 전자 우편으로 발송됩니다.]]></schedmsg>
+<schedule><![CDATA[스케줄]]></schedule>
+<show><![CDATA[표시]]></show>
+<Storage><![CDATA[스토리지]]></Storage>
+<to><![CDATA[수신인]]></to>
+<thresholds><![CDATA[스레시홀드]]></thresholds>
+<threshold_msg><![CDATA[스레시홀드 값의 사용 용도에 대한 설명은 경보 설명을 참조하십시오.]]></threshold_msg>
+<when><![CDATA[시기]]></when>
+<Yellowalarmthreshold><![CDATA[노란색 경보 스레시홀드]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[노란색 경보:]]></Yelalarm_>
+<YelAlarm><![CDATA[노란색 경보]]></YelAlarm>
+</lang>

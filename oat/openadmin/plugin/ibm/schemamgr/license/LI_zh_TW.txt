@@ -1,0 +1,10 @@
+授權手冊
+
+除IBM 國際授權合約 - 無保證程式（IBM 書號 Z125-5589-05）外，以下條款亦適用於下列程式。
+
+程式名稱：IBM Informix Schema Manager Plug-in for OpenAdmin Tool V3.11
+程式編號：Tool
+
+L/N:  L-DDAY-94MSL3
+D/N:  L-DDAY-94MSL3
+P/N:  L-DDAY-94MSL3 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Virtuálne procesory]]></virtualprocessors>
+<vps><![CDATA[VP]]></vps>
+<vpclasses><![CDATA[Triedy VP]]></vpclasses>
+<vpid><![CDATA[VP ID]]></vpid>
+<class><![CDATA[Trieda]]></class>
+<cnt><![CDATA[VP]]></cnt>
+<total><![CDATA[Celkom]]></total>
+<usercpu><![CDATA[Čas CPU užívateľa]]></usercpu>
+<syscpu><![CDATA[Čas CPU systému]]></syscpu>
+<totalcpu><![CDATA[Celkový čas CPU]]></totalcpu>
+<classdetails><![CDATA[Podrobné informácie o triede]]></classdetails>
+<nodrop><![CDATA[Nie je možné zrušiť posledný vp danej triedy]]></nodrop>
+<tomuchdrop><![CDATA[Zrušenie zlyhalo. Nie je možné zrušiť viac vp, než je ich existujúci počet.]]></tomuchdrop>
+<success><![CDATA[Akcia bola úspešná.]]></success>
+<VPValNotSet><![CDATA[Akciu nie je možné vykonať. Nasledujúca hodnota VP nie je nastavená správne:]]></VPValNotSet>
+<VPType><![CDATA[Typ VP]]></VPType>
+<Count><![CDATA[Počet]]></Count>
+<AddDropVP><![CDATA[Pridať alebo zrušiť VP]]></AddDropVP>
+<add><![CDATA[Pridať]]></add>
+<drop><![CDATA[Zrušiť]]></drop>
+<addVP><![CDATA[Pridať VP]]></addVP>
+<dropVP><![CDATA[Zrušiť VP]]></dropVP>
+<modifyingClass><![CDATA[Modifikuje sa trieda]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Virtuálne procesory - globálne informácie]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[Virtuálne procesory triedy: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Ľutujeme, voľba nie je k dispozícii]]></OptionNotAvail>
+<seconds><![CDATA[s]]></seconds>
+</lang>

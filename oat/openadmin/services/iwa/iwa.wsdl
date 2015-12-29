@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="iwa" targetNamespace="urn:iwa"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:iwa"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        	xmlns:tns="urn:iwa" targetNamespace="urn:iwa">
+        	<xsd:complexType name="anyType"></xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+    <wsdl:message name="getAccelsRequest">
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAccelsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getIWAStatsRequest">
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="cluster" type="xsd:boolean"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getIWAStatsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addDropAccelRequest">
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="name" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="ipAdd" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="port" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="pairCode" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addDropAccelResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getDataMartsRequest">
+    	<wsdl:part name="accel_name" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="rows_per_page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getDataMartsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>       
+
+    <portType name="iwaPort">
+        <wsdl:operation name="getAccels">
+        	<wsdl:input message="typens:getAccelsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getAccelsResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getIWAStats">
+        	<wsdl:input message="typens:getIWAStatsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getIWAStatsResponse"></wsdl:output>
+        </wsdl:operation>  
+        <wsdl:operation name="addDropAccel">
+        	<wsdl:input message="typens:addDropAccelRequest"></wsdl:input>
+        	<wsdl:output message="typens:addDropAccelResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getDataMarts">
+        	<wsdl:input message="typens:getDataMartsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getDataMartsResponse"></wsdl:output>
+        </wsdl:operation>                      
+    </portType>
+
+
+    <!-- define protocol details for each Ports -->
+    <binding name="iwaBinding" type="typens:iwaPort">
+
+    	<soap:binding style="rpc"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+
+    	<wsdl:operation name="getAccels">
+    		<soap:operation soapAction="urn:iwa/getAccels" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getIWAStats">
+    		<soap:operation soapAction="urn:iwa/getIWAStats" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>    	
+    	<wsdl:operation name="addDropAccel">
+    		<soap:operation soapAction="urn:iwa/addDropAccel" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>    
+    	<wsdl:operation name="getDataMarts">
+    		<soap:operation soapAction="urn:iwa/getDataMarts" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:iwa"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>    		
+    </binding>
+
+    <wsdl:service name="iwaService">
+    	<wsdl:port name="iwaPort" binding="typens:iwaBinding">
+    		<soap:address location="iwaService.php" />
+    	</wsdl:port>
+    </wsdl:service>
+</definitions>

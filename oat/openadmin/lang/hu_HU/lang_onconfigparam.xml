@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[A mentés meghiúsult:]]></SaveFailed>
+<ValueReqd><![CDATA[érték megadása kötelező a következőhöz]]></ValueReqd>
+<MustBe><![CDATA[0-nak (tiltott) vagy 60 és 1800 közötti értéknek kell lenni.]]></MustBe>
+<MustBeRange><![CDATA[a következő tartományba kell esnie:]]></MustBeRange>
+<MustBeInSet><![CDATA[benne kell lennie a következő halmazban]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[egyenlőnek, vagy kisebbnek kell lennie, mint]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[egyenlőnek, vagy nagyobbnak kell lennie, mint]]></MustBeGreaterOrEqual>
+</lang>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Databázové priestory]]></mainTitle>
+<dbspace><![CDATA[Databázový priestor]]></dbspace>
+<dbspaceName><![CDATA[Názov databázového priestoru]]></dbspaceName>
+<owner><![CDATA[Vlastník]]></owner>
+<pagesize><![CDATA[Veľkosť stránky]]></pagesize>
+<createTime><![CDATA[Čas vytvorenia]]></createTime>
+<dbspaceInfo><![CDATA[Informácie o databázovom priestore]]></dbspaceInfo>
+<utilization><![CDATA[Využitie: {0}]]></utilization>
+<indexPages><![CDATA[Stránky indexu]]></indexPages>
+<dataPages><![CDATA[Dátové stránky]]></dataPages>
+<otherPages><![CDATA[Iné stránky]]></otherPages>
+<freePages><![CDATA[Voľné stránky]]></freePages>
+<TableName><![CDATA[Názov tabuľky]]></TableName>
+<StartAddr><![CDATA[Počiatočná adresa]]></StartAddr>
+<EndAddr><![CDATA[Koncová adresa]]></EndAddr>
+<size><![CDATA[Veľkosť]]></size>
+<Status><![CDATA[Stav]]></Status>
+<ExtentList><![CDATA[Výpis rozsahov]]></ExtentList>
+<TableList><![CDATA[Výpis tabuliek]]></TableList>
+<Database><![CDATA[Databáza]]></Database>
+<Table><![CDATA[Tabuľka]]></Table>
+<Collate><![CDATA[Zoradiť]]></Collate>
+<Rows><![CDATA[Riadky]]></Rows>
+<SystemIntegrity><![CDATA[Integrita pre]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Skontrolovať formát tabuľky databázového priestoru]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Skontrolovať rozsahy databázového priestoru]]></butCheckDbsExt>
+<RowSize><![CDATA[Veľkosť riadkov]]></RowSize>
+<Created><![CDATA[Vytvorené]]></Created>
+<AllocPages><![CDATA[Alokované stránky]]></AllocPages>
+<UsedPages><![CDATA[Použité stránky]]></UsedPages>
+<NumExtents><![CDATA[Počet rozsahov]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Číslo]]></Number>
+<Name><![CDATA[Názov]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<default><![CDATA[Predvolené]]></default>
+<CreateSpace><![CDATA[Vytvoriť priestor]]></CreateSpace>
+<Create><![CDATA[Vytvoriť]]></Create>
+<numChunks><![CDATA[Počet chunkov]]></numChunks>
+<UsedPer><![CDATA[Použité %]]></UsedPer>
+<Data><![CDATA[Údaje]]></Data>
+<Index><![CDATA[Index]]></Index>
+<Other><![CDATA[Iné]]></Other>
+<Free><![CDATA[Voľné]]></Free>
+<noDropDBSpace><![CDATA[Nie je možné zrušiť objekty rootdbs.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Pridať priestor do]]></AddSpaceto>
+<Path><![CDATA[Cesta]]></Path>
+<Offset><![CDATA[Odsadenie]]></Offset>
+<FileCreation><![CDATA[Vytvorenie súboru]]></FileCreation>
+<MayCreateFile><![CDATA[Vytvoriť súbor, ak žiadny neexistuje]]></MayCreateFile>
+<FileMustExist><![CDATA[Súbor musí existovať]]></FileMustExist>
+<DropSpace><![CDATA[Zrušiť priestor {0}]]></DropSpace>
+<AddChunk><![CDATA[Pridať chunk]]></AddChunk>
+<Used><![CDATA[Použité]]></Used>
+<AddMirror><![CDATA[Pridať zrkadlový objekt]]></AddMirror>
+<AddChunkMirror><![CDATA[Pridať chunk so zrkadlovým objektom]]></AddChunkMirror>
+<StartMirror><![CDATA[Spustiť zrkadlenie]]></StartMirror>
+<StopMirror><![CDATA[Zastaviť zrkadlenie]]></StopMirror>
+<AddMirrorto><![CDATA[Pridať zrkadlový objekt do]]></AddMirrorto>
+<MirrorPath><![CDATA[Cesta k zrkadlovému objektu]]></MirrorPath>
+<MirrorOffset><![CDATA[Odsadenie zrkadlenia]]></MirrorOffset>
+<MirroringStarted><![CDATA[Zrkadlenie je spustené]]></MirroringStarted>
+<MirroringStopped><![CDATA[Zrkadlenie je zastavené]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - Overenie systému]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Overenie oncheck dokončené.]]></oncheckComplete>
+<NoPermission><![CDATA[Užívatelia s oprávnením len na čítanie nemôžu vykonať túto operáciu. Ste prihlásený ako užívateľ s oprávnením len na čítanie.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Táto akcia nie je platná na sekundárnych serveroch.]]></NotValidOnSecondary>
+<Error><![CDATA[Chyba:]]></Error>
+<DropDBSpaceFailed><![CDATA[Zrušenie databázového priestoru zlyhalo.  Nasledujúca hodnota databázového priestoru nebola nastavená správne:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Vytvorenie databázového priestoru zlyhalo.  Akcia databázového priestoru]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[nie je platná.]]></IsNotValid>
+<DATASpace><![CDATA[Priestor typu DATA]]></DATASpace>
+<DataSpaceL><![CDATA[Priestor pre údaje]]></DataSpaceL>
+<TEMPSpace><![CDATA[Priestor typu TEMP]]></TEMPSpace>
+<TempSpaceL><![CDATA[Priestor typu Temp]]></TempSpaceL>
+<BLOBSpace><![CDATA[Priestor typu BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Vytvorenie databázového priestoru bolo úspešné]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Vytvorenie databázového priestoru zlyhalo.  Nasledujúca hodnota databázového priestoru nie je nastavená správne:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Vytvorenie databázového priestoru zlyhalo.  Akcia databázového priestoru nie je platná]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Zrušenie databázového priestoru nebolo potvrdené]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Výsledky overenia do ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Výsledky overenia ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Pridávanie chunku do databázového priestoru zlyhalo:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Chunk bol úspešne pridaný]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Pridávanie chunku do databázového priestoru:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Zrkadlený chunk bol úspešne pridaný]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Pridanie zrkadlenia na databázovom priestore zlyhalo:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[Nasledujúca zrkadlená hodnota nie je nastavená správne:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Zrkadlený objekt bol úspešne pridaný]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Spustenie zrkadlenia na databázovom priestore zlyhalo:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[Spustenie zrkadlenia nebolo potvrdené na databázovom priestore:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Zastavenie zrkadlenia pre databázový priestor zlyhalo:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Zastavenie zrkadlenia nebolo potvrdené na databázovom priestore:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Databázový priestor]]></Dbspace>
+<TempDbspace><![CDATA[Dočasný databázový priestor]]></TempDbspace>
+<MirroredDbspace><![CDATA[Zrkadlený databázový priestor]]></MirroredDbspace>
+<Blobspace><![CDATA[Priestor BLOB]]></Blobspace>
+<MirroredBlobspace><![CDATA[Zrkadlený priestor BLOB]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Priestor Smart BLOB]]></SmartBlobspace>
+<TempSbspace><![CDATA[Dočasný priestor Smart BLOB]]></TempSbspace>
+<MirroredSbspace><![CDATA[Zrkadlený priestor Smart BLOB]]></MirroredSbspace>
+<DataPages><![CDATA[Dátové stránky]]></DataPages>
+<IndexPages><![CDATA[Stránky indexu]]></IndexPages>
+<OtherPages><![CDATA[Iné stránky]]></OtherPages>
+<FreePages><![CDATA[Voľné stránky]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Hodnota databázového priestoru nie je nastavená správne:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Zhrnutie]]></summary>
+<admin><![CDATA[Administrácia]]></admin>
+<tables><![CDATA[Tabuľky]]></tables>
+<extents><![CDATA[Rozsahy]]></extents>
+<validation><![CDATA[Overenie platnosti]]></validation>
+<Disabled><![CDATA[Zakázané]]></Disabled>
+<Recovering><![CDATA[Zotavuje sa]]></Recovering>
+<Operational><![CDATA[V prevádzke]]></Operational>
+</lang>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Para excluir nós da verificação, insira os nomes dos nós separados por vírgulas.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Para excluir tabelas da verificação, insira os números de partição separados por vírgulas.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Para excluir tabelas da verificação, insira os números de partição separados por vírgulas.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Para excluir tabelas da verificação, insira os números de partição separados por vírgulas.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Para excluir chunks da verificação, insira os números dos chunks separados por vírgulas.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Para excluir chunks da verificação, insira os números dos chunks separados por vírgulas.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Para excluir chunks da verificação, insira os números dos chunks separados por vírgulas.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Para excluir dbspaces da verificação, insira os nomes dos dbspaces separados por vírgulas.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Para excluir tabelas da verificação, insira os números de partição separados por vírgulas.]]></exc_Rowsize>
+</lang>

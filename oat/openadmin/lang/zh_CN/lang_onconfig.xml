@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onconfig">
+<ADMIN_MODE_USERS_DESC><![CDATA[指定除了用户 informix 和 DBSA 组用户之外，还有哪些用户可以通过管理方式访问数据库服务器。]]></ADMIN_MODE_USERS_DESC>
+<ADMIN_USER_MODE_WITH_DBSA_DESC><![CDATA[指定用户 <i>informix</i> 和 DBSA 组用户是否可以连接处于管理方式的数据库服务器。]]></ADMIN_USER_MODE_WITH_DBSA_DESC>
+<ADTERR_DESC><![CDATA[(UNIX) ADTERR 指定数据库服务器在写入审计记录时出错后应该进行的操作。]]></ADTERR_DESC>
+<ADTMODE_DESC><![CDATA[(UNIX) 控制审计级别。]]></ADTMODE_DESC>
+<ADTPATH_DESC><![CDATA[(UNIX) 指定数据库服务器保存审计文件的目录。]]></ADTPATH_DESC>
+<ADTSIZE_DESC><![CDATA[(UNIX) 指定审计文件的最大大小。]]></ADTSIZE_DESC>
+<AFCRASH_DESC><![CDATA[当 AFCRASH 的 0x10 位处于启用状态时，Java 虚拟机生成的所有消息都会记录在 JVM_vpid 文件中，其中的 vpid 是 Java 虚拟处理器的进程标识。此文件存储在 JVPLOG 文件所存储于的目录中。]]></AFCRASH_DESC>
+<AFFAIL_DESC><![CDATA[]]></AFFAIL_DESC>
+<AFF_NPROCS_DESC><![CDATA[在支持处理器亲缘关系的多处理器计算机上，AFF_NPROCS 指定数据库服务器可以将 CPU 虚拟处理器绑定到的 CPU 数量。]]></AFF_NPROCS_DESC>
+<AFF_SPROC_DESC><![CDATA[在支持处理器亲缘关系的多处理器计算机上，AFF_SPROC 指定数据库服务器开始将 CPU 虚拟处理器绑定到 CPU 时所在的 CPU（从 0 开始）。]]></AFF_SPROC_DESC>
+<ALARMPROGRAM_DESC><![CDATA[显示事件警报]]></ALARMPROGRAM_DESC>
+<ALLOW_NEWLINE_DESC><![CDATA[指定数据库服务器允许加引号的字符串中的换行符 () 用于所有会话还是特定会话。]]></ALLOW_NEWLINE_DESC>
+<ALRM_ALL_EVENTS_DESC><![CDATA[指定是针对 MSGPATH 中记录的所有事件，还是仅针对值得注意的事件运行 ALARMPROGRAM。]]></ALRM_ALL_EVENTS_DESC>
+<ASF_SOCTCP_BACKLOG_DESC><![CDATA[指定在使用套接字 (SOCTCP) 时队列中的连接数。]]></ASF_SOCTCP_BACKLOG_DESC>
+<AUTO_AIOVPS_DESC><![CDATA[让数据库服务器在其检测到 I/O 工作负载超出现有 AIO VP 的性能时，自动增加 AIO VP 数和页面清除程序线程数。]]></AUTO_AIOVPS_DESC>
+<AUTO_CKPTS_DESC><![CDATA[允许服务器更频繁地触发检查点，以避免事务阻塞。]]></AUTO_CKPTS_DESC>
+<AUTO_LRU_TUNING_DESC><![CDATA[启用自动 LRU 调整]]></AUTO_LRU_TUNING_DESC>
+<AUTO_READAHEAD_DESC><![CDATA[更改自动预读取方式或禁用自动预读取。自动预读取操作可在数据库服务器检测到查询遇到 I/O 时发出异步页面请求，以帮助提高查询性能。0 = 禁用自动预读取请求。1 = 以标准方式启用自动预读取请求。2 = 以积极方式启用自动预读取请求。]]></AUTO_READAHEAD_DESC>
+<AUTO_REPREPARE_DESC><![CDATA[控制动态服务器功能部件是否生效，在 SPL 例程或预编译对象所引用的表的模式更改之后，自动重新优化 SPL 例程并对预编译对象进行重新预编译。]]></AUTO_REPREPARE_DESC>
+<AUTO_STAT_MODE_DESC><![CDATA[启用或禁用数据库服务器自动更新统计信息。]]></AUTO_STAT_MODE_DESC>
+<BACKUP_FILTER_DESC><![CDATA[指定过滤器程序的路径名和任何选项。]]></BACKUP_FILTER_DESC>
+<BAR_ACT_LOG_DESC><![CDATA[指定 ON-Bar 活动日志文件的位置。]]></BAR_ACT_LOG_DESC>
+<BAR_BSALIB_PATH_DESC><![CDATA[为存储管理器指定 XBSA 共享库的路径名和文件名。]]></BAR_BSALIB_PATH_DESC>
+<BAR_CKPTSEC_TIMEOUT_DESC><![CDATA[指定在执行外部备份时 RS 辅助服务器应等待检查点从主服务器到达的时间量（以秒为单位）。如果由于主服务器中的检查点超时而导致备份失败，那么您可以使用 BAR_CKPTSEC_TIMEOUT 配置参数增加 RS 辅助服务器应等待检查点从主服务器到达的时间量。]]></BAR_CKPTSEC_TIMEOUT_DESC> 
+<BAR_DEBUG_DESC><![CDATA[指定 ON-Bar 活动日志中调试消息的级别。]]></BAR_DEBUG_DESC>
+<BAR_DEBUG_LOG_DESC><![CDATA[指定 ON-Bar 调试日志的位置。]]></BAR_DEBUG_LOG_DESC>
+<BAR_HISTORY_DESC><![CDATA[指定 sysutils 数据库是否保留备份历史记录。]]></BAR_HISTORY_DESC>
+<BAR_IXBAR_PATH_DESC><![CDATA[覆盖 ON-Bar 引导文件的名称和路径。缺省情况下，ON-Bar 引导文件在 $INFORMIXDIR/etc 中创建，名称为“ixbar.<SERVER_NUM>”。]]></BAR_IXBAR_PATH_DESC>
+<BAR_MAX_BACKUP_DESC><![CDATA[指定每个 ON-Bar 命令允许的最大并行备份进程数。]]></BAR_MAX_BACKUP_DESC>
+<BAR_NB_XPORT_COUNT_DESC><![CDATA[指定每个备份或复原进程的共享内存数据缓冲区数。]]></BAR_NB_XPORT_COUNT_DESC>
+<BAR_PERFORMANCE_DESC><![CDATA[指定要写入到 ON-Bar 活动日志的性能统计信息的级别。]]></BAR_PERFORMANCE_DESC>
+<BAR_PROGRESS_FREQ_DESC><![CDATA[指定备份或复原进度消息显示在活动日志中的频率（以分钟计）。]]></BAR_PROGRESS_FREQ_DESC>
+<BAR_RETRY_DESC><![CDATA[指定 ON-Bar 在第一次尝试失败后，应该重试数据备份、逻辑日志备份或复原操作的次数。]]></BAR_RETRY_DESC>
+<BAR_SIZE_FACTOR_DESC><![CDATA[备份之前，增大备份对象大小的估计值。通过计算原始备份对象大小的百分比得出 BAR_SIZE_FACTOR 参数的值，然后在将估计值传递到存储管理器之前将该值添加到估计值中。]]></BAR_SIZE_FACTOR_DESC>
+<BAR_XFER_BUF_SIZE_DESC><![CDATA[指定数据库服务器传递到 ON-Bar 和存储管理器的每个传输缓冲区的大小。因为最大缓冲区大小是 64 千字节，所以 BAR_XFER_BUF_SIZE * 页面大小 <= 64 千字节。]]></BAR_XFER_BUF_SIZE_DESC>
+<BATCHEDREAD_INDEX_DESC><![CDATA[使优化器自动从索引缓冲区访存一组键。这将减少读取缓冲区的次数，从而提高性能。]]></BATCHEDREAD_INDEX_DESC>
+<BATCHEDREAD_TABLE_DESC><![CDATA[在压缩表、行数超过一页的表以及具有 VARCHAR、LVARCHAR 和 NVARCHAR 数据的表中启用或禁用轻度扫描。]]></BATCHEDREAD_TABLE_DESC>
+<BLOCKTIMEOUT_DESC><![CDATA[指定线程或数据库服务器将挂起的秒数。]]></BLOCKTIMEOUT_DESC>
+<BTSCANNER_DESC><![CDATA[设置 B 型树扫描程序，它会自动判断要删除的索引项。]]></BTSCANNER_DESC>
+<BUFFERPOOL_DESC><![CDATA[由 onconfig.std 文件中的两行组成：第一行指定用于创建数据库空间的缺省值，该数据库空间的页面大小不具有启动时创建的相应缓冲池；第二行指定数据库服务器针对缓冲池的缺省值。]]></BUFFERPOOL_DESC>
+<BUFFERS_DESC><![CDATA[指定数据库服务器用户线程代表客户机应用程序可用于磁盘 I/O 的最大共享内存缓冲区数。]]></BUFFERS_DESC>
+<CDR_APPLY_DESC><![CDATA[指定最小和最大数据同步线程数。]]></CDR_APPLY_DESC>
+<CDR_DELAY_PURGE_DTC_DESC><![CDATA[指定删除表的保留时间，以支持“删除优先”冲突解决规则。]]></CDR_DELAY_PURGE_DTC_DESC>
+<CDR_DBSPACE_DESC><![CDATA[指定创建 syscdr 数据库的数据库空间。]]></CDR_DBSPACE_DESC>
+<CDR_DSLOCKWAIT_DESC><![CDATA[指定 Datasync 组件等待数据库锁定释放的秒数。]]></CDR_DSLOCKWAIT_DESC>
+<CDR_ENV_DESC><![CDATA[设置 Enterprise Replication 环境变量 CDR_LOGDELTA、CDR_PERFLOG、CDR_ROUTER 或 CDR_RMSCALEFACT。]]></CDR_ENV_DESC>
+<CDR_EVALTHREADS_DESC><![CDATA[指定当 Enterprise Replication 启动时要创建的组评估程序线程数，并启用并行性。]]></CDR_EVALTHREADS_DESC>
+<CDR_LOG_LAG_ACTION_DESC><![CDATA[指定 Enterprise Replication 如何响应可能的日志回绕情况。使用 + 组合多个值。logstage = 启用压缩的逻辑日志登台；dlog = 启用动态添加逻辑日志；ignore = 忽略可能的日志回绕；ddrblock = 阻止客户机应用程序更新活动；shutdown = 关闭受影响服务器上的 Enterprise Replication。]]></CDR_LOG_LAG_ACTION_DESC>
+<CDR_LOG_STAGING_MAXSIZE_DESC><![CDATA[指定 Enterprise Replication 用于登台压缩日志文件的最大空间量。]]></CDR_LOG_STAGING_MAXSIZE_DESC>
+<CDR_MAX_DYNAMIC_LOGS_DESC><![CDATA[指定 Enterprise Replication 在一个服务器会话中可以进行的动态日志文件请求数。]]></CDR_MAX_DYNAMIC_LOGS_DESC>
+<CDR_NIFCOMPRESS_DESC><![CDATA[指定在将数据从源数据库服务器发送到目标数据库服务器之前，数据库服务器使用的压缩级别。]]></CDR_NIFCOMPRESS_DESC>
+<CDR_QDATA_SBSPACE_DESC><![CDATA[指定 Enterprise Replication 存储假脱机事务行数据时所使用的智能大对象空间名称列表，最多 32 个名称。]]></CDR_QDATA_SBSPACE_DESC>
+<CDR_QHDR_DBSPACE_DESC><![CDATA[指定 Enterprise Replication 存储发送和接收队列中假脱机的事务记录标题时所使用的数据库空间位置。]]></CDR_QHDR_DBSPACE_DESC>
+<CDR_QUEUEMEM_DESC><![CDATA[指定用于发送和接收队列的最大内存量。]]></CDR_QUEUEMEM_DESC>
+<CDR_SERIAL_DESC><![CDATA[启用对为复制定义的表中的串行和 SERIAL8 列生成值的控制。]]></CDR_SERIAL_DESC>
+<CDR_SUPPRESS_ATSRISWARN_DESC><![CDATA[指定 ATS 和 RIS 文件中要禁止的 Datasync 错误和警告代码编号。]]></CDR_SUPPRESS_ATSRISWARN_DESC>
+<CHECKALLDOMAINSFORUSER_DESC><![CDATA[为联网的 Windows 环境中的所有用户名启用或禁用检查所有域。]]></CHECKALLDOMAINSFORUSER_DESC>
+<CKPTINTVL_DESC><![CDATA[指定数据库服务器检查以判断是否需要检查点的频率（以秒计）。]]></CKPTINTVL_DESC>
+<CLEANERS_DESC><![CDATA[指定数据库服务器操作期间可用的页面清除程序线程数。]]></CLEANERS_DESC>
+<CONSOLE_DESC><![CDATA[指定控制台消息的路径名和文件名。]]></CONSOLE_DESC>
+<CONVERSION_GUARD_DESC><![CDATA[指定如果 Informix 服务器升级过程中发生错误，是停止还是继续升级到新服务器版本。0 = 已禁用。服务器不会停止。1 = 启用复原点，如果发生有关捕获复原点数据的错误时停止升级。2 = 启用复原点，并且发生错误时也继续升级。]]></CONVERSION_GUARD_DESC>
+<DATASKIP_DESC><![CDATA[用于避免介质失败点。]]></DATASKIP_DESC>
+<DB_LIBRARY_PATH_DESC><![CDATA[指定数据库服务器可从中装入外部模块（如 DataBlade® 模块）的有效目录前缀位置的逗号分隔的列表。]]></DB_LIBRARY_PATH_DESC>
+<DBCREATE_PERMISSION_DESC><![CDATA[将创建数据库的许可权限制为指定用户。]]></DBCREATE_PERMISSION_DESC>
+<DBSERVERALIASES_DESC><![CDATA[指定备用数据库服务器名称列表，允许您将多个别名指定给一个数据库服务器，确保 sqlhost 文件或注册表中每个条目都是唯一名称。]]></DBSERVERALIASES_DESC>
+<DBSERVERNAME_DESC><![CDATA[指定与出现的此特定数据库服务器关联的唯一名称。]]></DBSERVERNAME_DESC>
+<DBSPACETEMP_DESC><![CDATA[指定数据库服务器全局管理临时表存储所使用的数据库空间列表。]]></DBSPACETEMP_DESC>
+<DD_HASHMAX_DESC><![CDATA[指定数据字典高速缓存中每个散列存储区中的最大表数。]]></DD_HASHMAX_DESC>
+<DD_HASHSIZE_DESC><![CDATA[指定数据字典高速缓存中每个散列存储区中的最大表数。]]></DD_HASHSIZE_DESC>
+<DEADLOCK_TIMEOUT_DESC><![CDATA[指定数据库服务器线程可等待获取锁定的最大秒数。此参数仅用于涉及远程数据库服务器的分布式查询。]]></DEADLOCK_TIMEOUT_DESC>
+<DEF_TABLE_LOCKMODE_DESC><![CDATA[指定数据库的缺省锁定方式；该方式可以设置为 PAGE 或 ROW。]]></DEF_TABLE_LOCKMODE_DESC>
+<DEFAULTESCCHAR_DESC><![CDATA[指定缺省转义字符。]]></DEFAULTESCCHAR_DESC>
+<DELAY_APPLY_DESC><![CDATA[指定 RS 辅助服务器应用日志之前应该等待的时间。]]></DELAY_APPLY_DESC>
+<DIRECT_IO_DESC><![CDATA[控制数据库空间块所利用的熟文件（即已缓冲的文件）的直接 I/O 的使用。]]></DIRECT_IO_DESC>
+<DIRECTIVES_DESC><![CDATA[启用或禁用 SQL 伪指令的使用。]]></DIRECTIVES_DESC>
+<DISABLE_B162428_XA_FIX_DESC><![CDATA[设置为 1 时，确保为 Dynamic Server V9.40 和更低版本而写入的应用程序正常运行。]]></DISABLE_B162428_XA_FIX_DESC>
+<DISTR_QUERY_FLAGS_DESC><![CDATA[]]></DISTR_QUERY_FLAGS_DESC>
+<DRAUTO_DESC><![CDATA[判断辅助数据库服务器如何对 HDR 故障作出反应。在两个 HDR 服务器上，此参数应该具有相同的值。]]></DRAUTO_DESC>
+<DRDA_COMMBUFFSIZE_DESC><![CDATA[指定 DRDA 通信缓冲区的大小。]]></DRDA_COMMBUFFSIZE_DESC>
+<DRIDXAUTO_DESC><![CDATA[指定如果辅助高可用性数据复制 (HDR) 服务器检测到损坏的索引，主 HDR 服务器是否会自动启动索引复制。]]></DRIDXAUTO_DESC>
+<DRINTERVAL_DESC><![CDATA[指定高可用性数据复制缓冲区的清仓之间的最大时间间隔（以秒计）。要同步更新，请将参数设置为 -1。]]></DRINTERVAL_DESC>
+<DRLOSTFOUND_DESC><![CDATA[指定文件 dr.lostfound.timestamp 的路径名。]]></DRLOSTFOUND_DESC>
+<DRTIMEOUT_DESC><![CDATA[对高可用性数据复制对，指定高可用性数据复制对中的数据库服务器等待该对中其他数据库服务器的传输确认的时间长度（以秒计）。]]></DRTIMEOUT_DESC>
+<DS_HASHSIZE_DESC><![CDATA[指定数据分发高速缓存中，数据库服务器存储和访问 UPDATE STATISTICS 语句在 MEDIUM 或 HIGH 方式中生成的列统计信息时所使用的散列存储区数。]]></DS_HASHSIZE_DESC>
+<DS_MAX_QUERIES_DESC><![CDATA[指定可以同时运行的最大并行数据库查询 (PDQ) 查询数。]]></DS_MAX_QUERIES_DESC>
+<DS_MAX_SCANS_DESC><![CDATA[限制数据库服务器可以同时执行的并行数据库查询 (PDQ) 扫描线程数。]]></DS_MAX_SCANS_DESC>
+<DS_NONPDQ_QUERY_MEM_DESC><![CDATA[增加非并行数据库查询 (PDQ) 的查询可用的内存量。]]></DS_NONPDQ_QUERY_MEM_DESC>
+<DS_POOLSIZE_DESC><![CDATA[指定数据分发高速缓存中，数据库服务器存储和访问 UPDATE STATISTICS 语句在 MEDIUM 或 HIGH 方式中生成的列统计信息时所使用的每个散列存储区中的最大条目数。]]></DS_POOLSIZE_DESC>
+<DS_TOTAL_MEMORY_DESC><![CDATA[指定 PDQ 查询可用的内存量。它应该小于计算机物理内存减去固定开销，如操作系统大小和缓冲池大小。]]></DS_TOTAL_MEMORY_DESC>
+<DUMPCNT_DESC><![CDATA[(UNIX) 指定一个数据库服务器线程转储共享内存或通过调用 gcore 生成核心文件的断言故障数。断言是预期结果为 true 的一些条件或表达式的测试。]]></DUMPCNT_DESC>
+<DUMPCORE_DESC><![CDATA[(UNIX) 控制断言故障是否导致虚拟处理器转储核心映像。核心文件保留在前次调用数据库服务器的目录中。0 = 不转储核心映像；1 = 转储核心映像。]]></DUMPCORE_DESC>
+<DUMPDIR_DESC><![CDATA[指定数据库服务器将失败的断言中的共享内存、gcore 文件或消息转储到的目录。因为共享内存可以很大，所以将 DUMPDIR 设置为具有很大空间的文件系统。DUMPDIR 设置为的目录必须存在，服务器才能启动。]]></DUMPDIR_DESC>
+<DUMPGCORE_DESC><![CDATA[(UNIX) 与支持 gcore 的操作系统搭配使用。设置时，每当虚拟处理器遇到断言故障时，数据库服务器都会调用 gcore。gcore 实用程序指示虚拟处理器将核心映像转储到 DUMPDIR 所指定目录中的 core.pid.cnt 文件，并继续处理。0 = 不转储 gcore；1 = 转储 gcore。]]></DUMPGCORE_DESC>
+<DUMPSHMEM_DESC><![CDATA[(UNIX) 指出断言故障时应该转储共享内存。数据库服务器使用的所有共享内存都将转储；该内存可能非常大。共享内存转储位于 DUMPDIR 所指定目录的 shmem.pid.cnt 文件中。0 = 不转储共享内存；1 = 转储共享内存。]]></DUMPSHMEM_DESC>
+<DYNAMIC_LOGS_DESC><![CDATA[指定数据库服务器的动态日志分配级别。0 = 无动态日志分配；1 = 当需要日志时发出警报，并暂停以允许手动分配逻辑日志；2 = 动态日志分配已启用，并在动态添加每个日志时发出警报。]]></DYNAMIC_LOGS_DESC>
+<EILSEQ_COMPAT_MODE_DESC><![CDATA[启用或禁用检查客户机应用程序插入的字符数据是否包含当前语言环境不识别的代码点序列。0 = 在当前语言环境中验证入站字符序列。1 = 不验证入站字符序列。]]></EILSEQ_COMPAT_MODE_DESC>
+<ENABLE_SNAPSHOT_COPY_DESC><![CDATA[启用或禁用使用 ifxclone 实用程序克隆服务器的功能。]]></ENABLE_SNAPSHOT_COPY_DESC>
+<ENCRYPT_CDR_DESC><![CDATA[设置 Enterprise Replication 的加密级别。0 = 不加密；1 = 可能时加密；2 = 总是加密。]]></ENCRYPT_CDR_DESC>
+<ENCRYPT_CIPHERS_DESC><![CDATA[定义当前数据库会话可以使用的所有密码和方式。ENCRYPT_CIPHERS 仅用于 Enterprise Replication 和高可用性数据复制。]]></ENCRYPT_CIPHERS_DESC>
+<ENCRYPT_HDR_DESC><![CDATA[启用或禁用 HDR 加密；0 = 禁用 HDR 加密，1 = 启用 HDR 加密。]]></ENCRYPT_HDR_DESC>
+<ENCRYPT_MAC_DESC><![CDATA[控制消息认证代码 (MAC) 的生成级别，且仅用于 Enterprise Replication 和高可用性数据复制。“off”= 不使用 MAC 生成，“low”= 在所有消息上使用 XOR 合并，“medium”= 对长度大于 20 字节的所有消息使用 SHA1 MAC 生成，对较小消息使用 XOR 合并，“high”= 对所有消息使用 SHA1 MAC 生成。例如：ENCRYPT_MAC medium,high]]></ENCRYPT_MAC_DESC>
+<ENCRYPT_MACFILE_DESC><![CDATA[指定消息认证代码 (MAC) 密钥文件的完整路径名列表，且仅用于 Enterprise Replication 和高可用性数据复制。]]></ENCRYPT_MACFILE_DESC>
+<ENCRYPT_SMX_DESC><![CDATA[设置高可用性辅助服务器配置的加密级别。0 = 无加密；1 = 可能时加密 - 仅当目标数据库服务器也支持加密时，加密才用于 SMX 事务；2 = 总是加密 - 只允许连接加密的数据库服务器。]]></ENCRYPT_SMX_DESC>
+<ENCRYPT_SWITCH_DESC><![CDATA[定义密码或密钥重新协商的频率。此重新协商发生的缺省时间为每小时一次。ENCRYPT_SWITCH 仅用于 Enterprise Replication 和高可用性数据复制。]]></ENCRYPT_SWITCH_DESC>
+<EXPLAIN_STAT_DESC><![CDATA[启用或禁用在说明输出文件中包含查询统计信息部分。]]></EXPLAIN_STAT_DESC>
+<EXT_DIRECTIVES_DESC><![CDATA[启用或禁用外部 SQL 伪指令的使用。通过组合使用 EXT_DIRECTIVES 配置参数和客户机端 IFX_EXTDIRECTIVES 环境变量，启用外部伪指令。<br><br>0 = 禁用。即使 IFX_EXTDIRECTIVES 已启用，也无法启用伪指令。<br>1 = 启用。如果 IFX_EXTDIRECTIVES 已启用，可以对会话启用伪指令。<br>2 = 启用。即使未设置 IFX_EXTDIRECTIVES，也可以使用伪指令。]]></EXT_DIRECTIVES_DESC>
+<EXTSHMADD_DESC><![CDATA[指定您添加的扩展虚拟段的大小。值的范围是 1024 到 524,288 千字节。]]></EXTSHMADD_DESC>
+<FAILOVER_CALLBACK_DESC><![CDATA[数据库服务器会在某个数据库服务器从辅助服务器转换到主或标准服务器时执行 FAILOVER_CALLBACK指定的脚本。将 FAILOVER_CALLBACK 设置为脚本的完整路径名。]]></FAILOVER_CALLBACK_DESC>
+<FAILOVER_TX_TIMEOUT_DESC><![CDATA[在高可用性集群环境中，指示故障转移之后，服务器在回滚事务之前应等待的最大秒数。此操作可促使事务完成。]]></FAILOVER_TX_TIMEOUT_DESC>
+<FASTPOLL_DESC><![CDATA[启用或禁用网络的快速轮询。FASTPOLL 特定于平台。0 = 禁用快速轮询；1 = 启用快速轮询。]]></FASTPOLL_DESC>
+<FILLFACTOR_DESC><![CDATA[指定索引页面充满度的等级，从 1 到 100。低值为索引提供了增长空间。高值会压缩索引。如果索引已满 (100%)，新插入会导致分割节点。]]></FILLFACTOR_DESC>
+<FULL_DISK_INIT_DESC><![CDATA[启用防止对现有数据库服务器实例意外进行磁盘初始化的安全措施。指定当第一个块的第一个页面（页面 0）位于根路径位置时，是否可运行磁盘初始化命令。0 = 仅当根路径位置处没有页面 0 时才运行 oninit -i 命令。1 = 所有情况下均运行 oninit -i 命令，但磁盘初始化后还会将 FULL_DISK_INIT 配置参数复位为 0。]]></FULL_DISK_INIT_DESC>
+<GSKIT_VERSION_DESC><![CDATA[指定数据库服务器用于进行加密和 SSL 通信的 IBM&reg; Global Security Kit (GSKit) 的主要版本。]]></GSKIT_VERSION_DESC>
+<HA_ALIAS_DESC><![CDATA[当辅助服务器连接到主服务器时，指定发生故障转移时要使用的网络别名。]]></HA_ALIAS_DESC>
+<HETERO_COMMIT_DESC><![CDATA[指定数据库服务器是否准备参与异类落实事务中的 IBM Informix Gateway 产品。1 = 启用异类落实；0 = 禁用异类落实。]]></HETERO_COMMIT_DESC>
+<IFX_EXTEND_ROLE_DESC><![CDATA[以缺省用户 informix 的身份启用数据库服务器管理员 (DBSA)，以实施安全度量来确定哪些用户可以注册 DataBlade® 模块或用户定义的例程 (UDR)；1 或“启用”（缺省值）= 启用 EXTEND 角色，以便管理员可以授予特权给用户来创建或删除具有 EXTERNAL 子句的 UDR；0 或“禁用”= 禁用 EXTEND 角色，以便任何用户都可以注册外部例程。]]></IFX_EXTEND_ROLE_DESC>
+<IFX_FOLDVIEW_DESC><![CDATA[启用或禁用视图合并；0 或“禁用”（缺省值）= 禁用视图合并，1 或“启用”= 启用视图合并。]]></IFX_FOLDVIEW_DESC>
+<INDEX_SELFJOIN_DESC><![CDATA[]]></INDEX_SELFJOIN_DESC>
+<ISM_DATA_POOL_DESC><![CDATA[指定用于备份存储空间的卷池。]]></ISM_DATA_POOL_DESC>
+<ISM_LOG_POOL_DESC><![CDATA[指定用于备份逻辑日志的卷池。]]></ISM_LOG_POOL_DESC>
+<JDKVERSION_DESC><![CDATA[指定 Java Development Kit (JDK) 或 Java 运行时环境 (JRE) 发行版的版本号]]></JDKVERSION_DESC>
+<JVPARGS_DESC><![CDATA[指定 Java VM 选项。]]></JVPARGS_DESC>
+<JVPDEBUG_DESC><![CDATA[当设置为 1 时，将跟踪消息写入 JVPLOG 文件中。]]></JVPDEBUG_DESC>
+<JVPHOME_DESC><![CDATA[指定安装 IBM Informix JDBC Driver 类的目录。]]></JVPHOME_DESC>
+<JVPLOGFILE_DESC><![CDATA[指定 Java VP 日志文件的绝对路径名。]]></JVPLOGFILE_DESC>
+<JVPPROPFILE_DESC><![CDATA[指定 Java VP 属性文件的绝对路径名。]]></JVPPROPFILE_DESC>
+<JVPJAVAVM_DESC><![CDATA[指定用于 Java 虚拟机 (JVM) 的库。]]></JVPJAVAVM_DESC>
+<JVPJAVAHOME_DESC><![CDATA[指定安装数据库服务器的 Java 运行时环境 (JRE) 的目录。]]></JVPJAVAHOME_DESC>
+<JVMTHREAD_DESC><![CDATA[指定用于 JVM 的线程包（绿色或本机）。]]></JVMTHREAD_DESC>
+<JVPJAVALIB_DESC><![CDATA[指定从 JVPJAVAHOME 到 Java VM 库位置的路径。]]></JVPJAVALIB_DESC>
+<JVPCLASSPATH_DESC><![CDATA[指定初始 Java 类路径设置。]]></JVPCLASSPATH_DESC>
+<LIMITNUMSESSIONS_DESC><![CDATA[定义要连接到 Informix 数据库服务器的最大会话数，以及在会话数接近最大数时数据库服务器是否应该将警告消息写入到 online.log 文件。]]></LIMITNUMSESSIONS_DESC>
+<LISTEN_TIMEOUT_DESC><![CDATA[指定服务器等待连接的秒数。]]></LISTEN_TIMEOUT_DESC>
+<LOCKS_DESC><![CDATA[指定锁定表的初始大小。锁定表为会话使用的每个锁定保留一个条目。]]></LOCKS_DESC>
+<LOG_INDEX_BUILDS_DESC><![CDATA[启用或禁用索引页面记录。]]></LOG_INDEX_BUILDS_DESC>
+<LOG_STAGING_DIR_DESC><![CDATA[指定 RS 辅助服务器上启用日志文件延迟应用程序时，用于存储主服务器日志文件的目录。]]></LOG_STAGING_DIR_DESC>
+<LOGBUFF_DESC><![CDATA[指定共享内存中三个逻辑日志缓冲区的大小（以千字节计）。通过三重缓冲，在其中某个非活动缓冲区被清空到磁盘时，用户线程可以写入活动缓冲区。如果您正使用 RTO_SERVER_RESTART，请将 LOGBUFF 设置为 256 千字节。]]></LOGBUFF_DESC>
+<LOGFILES_DESC><![CDATA[指定数据库服务器在磁盘初始化期间创建的逻辑日志文件数。要更改逻辑日志文件数，请添加或删除逻辑日志文件。]]></LOGFILES_DESC>
+<LOGSIZE_DESC><![CDATA[指定逻辑日志文件创建时使用的大小（以千字节计）。它不会更改现有逻辑日志文件的大小。逻辑日志总大小为 LOGSIZE * LOGFILES。]]></LOGSIZE_DESC>
+<LOW_MEMORY_MGR_DESC><![CDATA[启用自动内存不足管理，您可以使用该功能在服务器达到其内存限制时更改服务器的缺省行为。1 = 在数据库服务器启动时启用自动内存不足管理。0 = 禁用自动内存不足管理。]]></LOW_MEMORY_MGR_DESC>
+<LOW_MEMORY_RESERVE_DESC><![CDATA[保留特定的内存量（以千字节计），以在需要进行关键活动（如回滚活动）而服务器可用内存有限时使用。]]></LOW_MEMORY_RESERVE_DESC>
+<LRUS_DESC><![CDATA[指定共享内存缓冲池中 LRU（最近最少使用）队列数。]]></LRUS_DESC>
+<LRU_MAX_DIRTY_DESC><![CDATA[指定已修改页占 LRU 队列的百分比，达到该百分比时将清除队列。]]></LRU_MAX_DIRTY_DESC>
+<LRU_MIN_DIRTY_DESC><![CDATA[指定已修改页占 LRU 队列的百分比，达到该百分比时不再强制执行页面清除。]]></LRU_MIN_DIRTY_DESC>
+<LTAPEBLK_DESC><![CDATA[使用 ontape 时，指定逻辑日志要备份到的设备的块大小。LTAPEBLK 还指定使用 onload 或 onunload 的 -l 选项时装入或卸载数据的设备的块大小。对 onload 或 onunload，在命令行上指定不同的块大小。]]></LTAPEBLK_DESC>
+<LTAPEDEV_DESC><![CDATA[使用 ontape 时，指定逻辑日志备份到的设备或目录文件系统。它还指定使用 onload 或 onunload 的 -l 选项时装入或卸载数据的设备。]]></LTAPEDEV_DESC>
+<LTAPESIZE_DESC><![CDATA[对 ontape，指定逻辑日志备份到的设备的最大磁带大小。LTAPESIZE 还指定使用 onload 或 onunload 的 -l 选项时装入或卸载数据的设备的最大磁带大小。使用 onload 或 onunload 时，在命令行上指定不同的磁带大小。要使用磁带的完全容量，请将 LTAPESIZE 设置为 0。]]></LTAPESIZE_DESC>
+<LTXEHWM_DESC><![CDATA[指定长事务、互斥存取、高水位标记。当事务达到长事务高水位标记时，如果没有落实或回滚，那么事务为长事务。当逻辑日志空间达到 LTXEHWM 阈值时，会为当前回滚的长事务提供逻辑日志的互斥存取权。]]></LTXEHWM_DESC>
+<LTXHWM_DESC><![CDATA[指定长事务高水位标记。长事务高水位标记是填满时触发数据库服务器检查长事务的可用日志空间百分比。]]></LTXHWM_DESC>
+<MAX_FILL_DATA_PAGES_DESC><![CDATA[启用或禁用在具有可变长度行的表中添加要在每页中插入的更多行的能力；0 = 已禁用，1 = 已启用。]]></MAX_FILL_DATA_PAGES_DESC>
+<MAX_INCOMPLETE_CONNECTIONS_DESC><![CDATA[指定会话中未完成连接的最大数。达到此数目之后，会有一条错误消息写入联机消息日志，表明服务器可能有受到“拒绝服务”攻击的风险。缺省值是 1024]]></MAX_INCOMPLETE_CONNECTIONS_DESC>
+<MAX_PDQPRIORITY_DESC><![CDATA[限制数据库服务器可以分配给任何一个 DSS 查询的 PDQ 资源。]]></MAX_PDQPRIORITY_DESC>
+<MIRROR_DESC><![CDATA[启用或禁用数据库服务器的镜像。建议您在初始化时镜像根数据库空间和关键数据；0 = 禁用镜像，1 = 启用镜像。]]></MIRROR_DESC>
+<MIRROROFFSET_DESC><![CDATA[指定达到作为根数据库空间初始块的镜像的块所需的磁盘分区或设备中的偏移量。]]></MIRROROFFSET_DESC>
+<MIRRORPATH_DESC><![CDATA[指定根数据库空间初始块的镜像块的完整路径名。MIRRORPATH 应该是实际镜像块的块路径名的链接。选择镜像块的简短路径名。]]></MIRRORPATH_DESC>
+<MSG_DATE_DESC><![CDATA[启用时，将日期添加到联机日志中每条消息的开头。]]></MSG_DATE_DESC>
+<MSGPATH_DESC><![CDATA[指定消息日志文件的完整路径名。数据库服务器会在操作期间将状态消息和诊断消息写入此文件。]]></MSGPATH_DESC>
+<MULTIPROCESSOR_DESC><![CDATA[指定数据库服务器是以适用于单处理器还是多处理器计算机的方式执行锁定；0 = 无多处理器，1 = 多处理器可用]]></MULTIPROCESSOR_DESC>
+<MQCHLLIB_DESC><![CDATA[指定包含 IBM&reg; WebSphere&reg; MQ 客户机通道定义表的目录的路径。]]></MQCHLLIB_DESC>
+<MQCHLTAB_DESC><![CDATA[指定 IBM&reg; WebSphere&reg; MQ 客户机通道定义表的名称。]]></MQCHLTAB_DESC>
+<MQSERVER_DESC><![CDATA[定义通道，指定 IBM&reg; WebSphere&reg; MQ 服务器的位置，并指定要使用的通信方法。]]></MQSERVER_DESC>
+<NET_IO_TIMEOUT_ALARM_DESC><![CDATA[控制当网络写操作已阻塞 30 分钟或更长时间时是否发送通知。]]></NET_IO_TIMEOUT_ALARM_DESC>
+<NETTYPE_DESC><![CDATA[描述网络连接。]]></NETTYPE_DESC>
+<NOAGE_DESC><![CDATA[在进程运行较长一段时间之后，一些操作系统会降低进程的优先级。NOAGE 设置为 1 时，禁用操作系统对 CPU 虚拟处理器的优先级老化。NOAGE 设置为缺省值 0 时，随着处理时间的累积，操作系统可能会降低 CPU 虚拟处理器和其他进程的优先级。如果操作系统支持优先级老化，建议您将 NOAGE 设置为 1。]]></NOAGE_DESC>
+<NO_DESC_FOUND_DESC><![CDATA[未指定除了用户 informix 和 DBSA 组用户之外，还有哪些用户可以通过管理方式访问数据库服务器。]]></NO_DESC_FOUND_DESC>
+<NS_CACHE_DESC><![CDATA[指定从内部数据库服务器高速缓存中获取主机、服务、用户和组连接的名称服务信息的到期时间。]]></NS_CACHE_DESC>
+<NUMAIOVPS_DESC><![CDATA[指定要运行的 AIO 类的虚拟处理器数。除非实施内核异步 I/O，AIO 虚拟处理器会执行所有数据库服务器磁盘 I/O，而不是日志文件的 I/O。<BR>可以在<A href='index.php?act=vps&do=global'>虚拟处理器页面</A>上的 OpenAdmin 内执行虚拟处理器管理]]></NUMAIOVPS_DESC>
+<NUMCPUVPS_DESC><![CDATA[指定要运行的 CPU 类的虚拟处理器数。CPU 虚拟处理器运行因客户机应用程序的连接而启动的所有线程，同时也运行内部线程。<BR>可以在<A href='index.php?act=vps&do=global'>虚拟处理器页面</A>上的 OpenAdmin 内执行虚拟处理器管理]]></NUMCPUVPS_DESC>
+<NUMFDSERVERS_DESC><![CDATA[在 UNIX 上，指定用于处理 Informix 虚拟处理器 (VP) 之间的网络连接迁移的最大轮询线程数。]]></NUMFDSERVERS_DESC>
+<OFF_RECVRY_THREADS_DESC><![CDATA[指定数据库服务器脱机（冷复原期间）时逻辑恢复中使用的恢复线程数。此线程数还用于前滚快速恢复中的逻辑日志记录。]]></OFF_RECVRY_THREADS_DESC>
+<ON_RECVRY_THREADS_DESC><![CDATA[指定数据库服务器联机（热复原期间）时数据库服务器用于逻辑恢复的最大恢复线程数。]]></ON_RECVRY_THREADS_DESC>
+<ONDBSPACEDOWN_DESC><![CDATA[定义当非关键数据库空间内主块上发生任何禁用事件时数据库服务器采取的操作。<br><br>0 = 数据库服务器将数据库空间标记为脱机并继续。<br>1 = 数据库服务器异常终止。<br>2 = 数据库服务器将块状态写入日志，并等待用户输入。]]></ONDBSPACEDOWN_DESC>
+<ONLIDX_MAXMEM_DESC><![CDATA[限制分配给单一前像池和单一更新器日志池的内存量。前像池和更新器日志池 pimage_partnum 和 ulog_partnum 是执行 CREATE INDEX ONLINE 语句时创建的共享内存池。当语句的执行完成时释放池。]]></ONLIDX_MAXMEM_DESC>
+<OPCACHEMAX_DESC><![CDATA[(UNIX) 指定 Optical Subsystem 的内存高速缓存大小。只有在您使用 Optical Subsystem 时才能使用此参数。]]></OPCACHEMAX_DESC>
+<OPT_GOAL_DESC><![CDATA[启用查询的两个优化目标之一：优化前面几行，优化所有行；0 = FIRST_ROWS（前面几行）。-1 = ALL_ROWS（所有行，缺省值）。]]></OPT_GOAL_DESC>
+<OPTCOMPIND_DESC><![CDATA[帮助优化器选择应用程序的适当查询计划。<br><br>0 = 当每个顺序表对都有适当的索引时，优化器会选择索引扫描而不是表扫描。此值确保与较早版本的数据库服务器的兼容性。<br>1 = 当隔离级别不是“可重复读”时，优化器使用成本判断执行路径。建议使用此设置获取最优性能。<br>2 = 优化器使用成本判断任何隔离级别的执行路径。索引扫描并不优先于表扫描。如果未设置变量，此值是缺省值。]]></OPTCOMPIND_DESC>
+<OPTICAL_LIB_PATH_DESC><![CDATA[如果您使用光学存储管理器，请将 OPTICAL_LIB_PATH 设置为光学存储管理器库的位置。]]></OPTICAL_LIB_PATH_DESC>
+<PAM_STACKSIZE_DESC><![CDATA[定制 PAM 模块的堆栈大小。]]></PAM_STACKSIZE_DESC>
+<PC_HASHSIZE_DESC><![CDATA[指定 UDR 高速缓存中数据库服务器使用的散列存储区数。]]></PC_HASHSIZE_DESC>
+<PC_POOLSIZE_DESC><![CDATA[指定 UDR 高速缓存中存储的最大 UDR 数。]]></PC_POOLSIZE_DESC>
+<PHYSBUFF_DESC><![CDATA[指定共享内存中两个物理日志缓冲区的大小（以千字节计）。PHYSBUFF 参数值决定数据库服务器需要将物理日志缓冲区清空到物理日志文件的频率。]]></PHYSBUFF_DESC>
+<PHYSDBS_DESC><![CDATA[指定包含物理日志的数据库空间的名称。要减少磁盘争用，您可以将物理日志移动到根数据库空间之外的数据库空间。<BR>可以在<A href='index.php?act=rlogs&do=admin'>恢复日志 -> 管理</A>上执行 OpenAdmin 内的物理日志管理。]]></PHYSDBS_DESC>
+<PHYSFILE_DESC><![CDATA[指定物理日志的大小。使用 onparams 实用程序可以动态更改 PHYSFILE。<BR>可以在<A href='index.php?act=rlogs&do=admin'>恢复日志 -> 管理</A>上执行 OpenAdmin 内的物理日志管理。]]></PHYSFILE_DESC>
+<PLCY_HASHSIZE_DESC><![CDATA[指定安全策略信息高速缓存中的散列存储区数。]]></PLCY_HASHSIZE_DESC>
+<PLCY_POOLSIZE_DESC><![CDATA[指定用户 LBAC 凭证信息高速缓存的每个散列存储区中的最大条目数。]]></PLCY_POOLSIZE_DESC>
+<PLOG_OVERFLOW_PATH_DESC><![CDATA[指定如果物理日志文件溢出，在快速恢复期间使用的文件位置。文件名是 plog_extend.servernum，且在缺省情况下位于 /tmp 中。使用完整路径名以指定不同的位置。]]></PLOG_OVERFLOW_PATH_DESC>
+<PN_STAGEBLOB_THRESHOLD_DESC><![CDATA[在循环法分段中预留 BYTE 和 TEXT 数据的空间。]]></PN_STAGEBLOB_THRESHOLD_DESC>
+<PRELOAD_DLL_FILE_DESC><![CDATA[指定在数据库服务器初始化时装入的共享库文件或动态链接库文件 (DLL) 的路径名。如果装入多个文件，那么要使用单独的条目指定每个路径名。]]></PRELOAD_DLL_FILE_DESC>
+<QSTATS_DESC><![CDATA[启用或禁用 onstat -g qst 打印队列统计信息；0 = 禁用队列统计信息，1 = 启用队列统计信息]]></QSTATS_DESC>
+<RA_PAGES_DESC><![CDATA[如果禁用 AUTO_READAHEAD 配置参数，请使用 RA_PAGES 配置参数来定义尝试预读取的磁盘页面数。当 AUTO_READAHEAD 配置参数已启用，且预读取自动出现时，服务器会忽略 RA_PAGES 配置参数中指定的信息。]]></RA_PAGES_DESC>
+<RA_THRESHOLD_DESC><![CDATA[当数据库服务器在连续扫描数据记录期间读取时，与 RA_PAGES 一起使用。RA_THRESHOLD 指定预读取阈值；也就是说，内存中未处理的数据页面数达到该阈值时，数据库服务器就会执行下一个预读取。如果 RA_THRESHOLD 值大于 RA_PAGES 值，那么 RA_THRESHOLD 的值为 RA_PAGES/2。]]></RA_THRESHOLD_DESC>
+<RAS_LLOG_SPEED_DESC><![CDATA[]]></RAS_LLOG_SPEED_DESC>
+<RAS_PLOG_SPEED_DESC><![CDATA[]]></RAS_PLOG_SPEED_DESC>
+<REDIRECTED_WRITES_DESC><![CDATA[指定主服务器与辅助服务器之间的 SMX 管道数。]]></REDIRECTED_WRITES_DESC>
+<RESIDENT_DESC><![CDATA[指定共享内存的常驻和虚拟段是否在操作系统物理内存中保持常驻。<BR><BR>0 = 禁用<BR>1 = 只锁定常驻段<BR>n = 锁定常驻段和之后 n-1 个虚拟段<BR>-1 = 锁定所有常驻和虚拟段]]></RESIDENT_DESC>
+<REMOTE_SERVER_CFG_DESC><![CDATA[指定列出了数据库服务器所在计算机可信远程主机的文件名。]]></REMOTE_SERVER_CFG_DESC>
+<REMOTE_USERS_CFG_DESC><![CDATA[指定列出了远程主机上可信用户名的文件名。]]></REMOTE_USERS_CFG_DESC>
+<RESTARTABLE_RESTORE_DESC><![CDATA[启用或禁用数据库服务器在失败发生点重新启动失败的物理或冷逻辑复原。要执行 ON-Bar 的可重新启动复原，请使用 onbar -RESTART 命令。如果您计划使用可重新启动的复原，请增加物理日志的大小。值：启用或禁用]]></RESTARTABLE_RESTORE_DESC>
+<RESTORE_FILTER_DESC><![CDATA[指定过滤器程序和任何选项（如加密）的路径名。]]></RESTORE_FILTER_DESC>
+<RESTORE_POINT_DIR_DESC><![CDATA[指定升级到新版本数据库服务器失败期间，存储复原点文件的目录的路径名。]]></RESTORE_POINT_DIR_DESC>
+<ROOTNAME_DESC><![CDATA[指定此数据库服务器配置的根数据库空间的名称。在数据库服务器管理的所有数据库空间中，名称必须唯一。]]></ROOTNAME_DESC>
+<ROOTOFFSET_DESC><![CDATA[指定磁盘空间（文件、磁盘分区或设备）分配的偏移量（以千字节计），根数据库空间的初始块从此开始。]]></ROOTOFFSET_DESC>
+<ROOTPATH_DESC><![CDATA[指定根数据库空间初始块的完整路径名，包括设备或文件名。ROOTPATH 作为块名称存储在保留的页面中。在 UNIX 上，您必须将 ROOTPATH 指定的文件许可权设置为 660，所有者和组都必须是 informix。在 Windows 上，Informix-Admin 组的成员必须具有 ROOTPATH 指定的文件。]]></ROOTPATH_DESC>
+<ROOTSIZE_DESC><![CDATA[指定根数据库空间的初始块大小（以千字节计）。要在初始化数据库服务器之后更改 ROOTSIZE，请完全卸载并重新装入数据。]]></ROOTSIZE_DESC>
+<RSS_FLOW_CONTROL_DESC><![CDATA[指定在包含至少一个 RS 辅助服务器的高可用性集群中启用流量控制的界限。流量控制可限制主服务器上的日志活动，以便集群中的 RS 辅助服务器处理事务时不会太慢。]]></RSS_FLOW_CONTROL_DESC>
+<RTO_SERVER_RESTART_DESC><![CDATA[允许您使用恢复时间目标 (RTO) 标准，以设置在您重新启动动态服务器并使其进入联机或静默方式之后，动态服务器从问题中恢复的时间量（以秒计）。]]></RTO_SERVER_RESTART_DESC>
+<S6_USE_REMOTE_SERVER_CFG_DESC><![CDATA[此参数与 REMOTE_SERVER_CFG 配置参数一起使用，以指定用于在不可信网络环境中认证安全服务器连接的文件。1 = REMOTE_SERVER_CFG 配置参数指定的文件中列出的服务器是可信连接。2 = $INFORMIXDIR/etc/host.equiv 文件用于认证通过安全端口（通过在 sqlhost 信息中设置 s=6 进行定义）进行连接的服务器。]]></S6_USE_REMOTE_SERVER_CFG_DESC>
+<SB_CHECK_FOR_TEMP_DESC><![CDATA[指定是否阻止将临时智能大对象复制到永久表中。0 = 允许，1 = 阻止。]]></SB_CHECK_FOR_TEMP_DESC>
+<SBSPACENAME_DESC><![CDATA[指定缺省智能大对象空间的名称。如果数据库表包括未显式指定存储空间的智能大对象列，该数据会存储在 SBSPACENAME 指定的智能大对象空间中。]]></SBSPACENAME_DESC>
+<SBSPACETEMP_DESC><![CDATA[指定存储临时智能大对象但不记录元数据或用户数据的缺省临时智能大对象空间名称。]]></SBSPACETEMP_DESC>
+<SDS_ENABLE_DESC><![CDATA[启用 SD 辅助服务器功能。您必须将主服务器和 SD 辅助服务器上的 SDS_ENABLE 都设置为 1（启用），才能启用 SD 辅助服务器功能。<br><br>0 = 禁用 SD 辅助服务器功能。<br>1 = 启用 SD 辅助服务器功能。]]></SDS_ENABLE_DESC>
+<SDS_PAGING_DESC><![CDATA[指定作为缓冲区页面调度文件的两个文件的位置。如果未设置 SDS_PAGING，SD 辅助服务器可能无法启动。]]></SDS_PAGING_DESC>
+<SDS_LOGCHECK_DESC><![CDATA[指定 SD 辅助服务器等待检测主服务器是否生成日志活动所花费的时间量（以秒为单位）。如果主服务器在指定的时间量内没有生成日志活动，那么允许启动故障转移处理。使用 SDS_LOGCHECK 配置参数来确定主服务器是否要生成日志活动，并且允许或禁止主服务器的故障转移。]]></SDS_LOGCHECK_DESC>
+<SDS_TEMPDBS_DESC><![CDATA[指定 SD 辅助服务器动态创建临时数据库空间使用的信息。]]></SDS_TEMPDBS_DESC>
+<SDS_TIMEOUT_DESC><![CDATA[指定主服务器等待从 SD 辅助服务器发送的日志位置确认的时间量（以秒计）。]]></SDS_TIMEOUT_DESC>
+<SECURITY_LOCALCONNECTION_DESC><![CDATA[通过确保运行程序的本地用户标识与尝试访问数据库的用户标识相同，验证本地连接的安全性。<br><br>0 = 未发生安全性检查。<br>1 = 动态服务器验证运行程序的用户标识是否匹配尝试连接数据库的用户标识。<br>2 = 与 1 相同，此外，动态服务器还检索网络 API 的同级端口号，并验证连接是否来自客户机程序。如果系统具有 SOCTCP 或 IPCSTR 网络协议，请指定 2。]]></SECURITY_LOCALCONNECTION_DESC>
+<SERVERNUM_DESC><![CDATA[指定共享内存中的相对位置，从 0 到 255。对于本地计算机上（而非网络中）的每个数据库服务器，值必须唯一。因为在 onconfig.std 文件中，0 值是缺省值，请选择 0 之外的值，以避免不小心复制 SERVERNUM。]]></SERVERNUM_DESC>
+<SEQ_CACHE_SIZE_DESC><![CDATA[指定可在序列高速缓存中预先分配值的最大序列对象数。如果没有设置此配置参数，那么在缺省情况下可用 CACHE 选项来定义不超过 10 个不同的序列对象。]]></SEQ_CACHE_SIZE_DESC>
+<SHMADD_DESC><![CDATA[指定动态添加到共享内存虚拟部分的段大小。]]></SHMADD_DESC>
+<SHMBASE_DESC><![CDATA[不更改 SHMBASE 的值。它指定共享内存连接到虚拟处理器的内存空间的基地址。共享内存段地址开始于 SHMBASE 值，且会增长到特定于平台的上限。]]></SHMBASE_DESC>
+<SHMNOACCESS_DESC><![CDATA[指定在连接共享内存时不能使用的虚拟内存地址范围。]]></SHMNOACCESS_DESC>
+<SHMTOTAL_DESC><![CDATA[指定数据库服务器可以放置在系统上的内存的需求限制。]]></SHMTOTAL_DESC>
+<SHMVIRT_ALLOCSEG_DESC><![CDATA[指定动态服务器应该分配新内存段的阈值，以及服务器无法分配新内存段时激活的警报级别，从而确保服务器永远不会耗尽内存。激活警报级别之后，如果无法分配新内存段，会每 30 分钟重复一次。<br><br>警报级别可为从 1 到 5 的值，其中：<br>1 = 不需注意<br>2 = 信息<br>3 = 注意<br>4 = 紧急<br>5 = 致命]]></SHMVIRT_ALLOCSEG_DESC>
+<SHMVIRTSIZE_DESC><![CDATA[指定虚拟共享内存段的初始大小。]]></SHMVIRTSIZE_DESC>
+<SINGLE_CPU_VP_DESC><![CDATA[指定数据库服务器是否只使用一个 CPU 虚拟处理器运行。0 = 使用多于 1 个 CPU VP 运行；任何非零数 = 仅使用 1 个 CPU VP 运行。]]></SINGLE_CPU_VP_DESC>
+<SMX_COMPRESS_DESC><![CDATA[指定从源数据库服务器向目标数据库服务器发送数据之前，数据库服务器所使用的压缩级别。]]></SMX_COMPRESS_DESC>
+<SORT_MERGE_SIZE_DESC><![CDATA[]]></SORT_MERGE_SIZE_DESC>
+<SP_AUTOEXPAND_DESC><![CDATA[启用或禁用在存储空间中自动创建或扩展块。]]></SP_AUTOEXPAND_DESC>
+<SP_THRESHOLD_DESC><![CDATA[定义存储池中数据库服务器要自动扩展空间所需的最小空间量。小于等于 50 的值表示百分比。大于等于 1000 的值表示千字节数。]]></SP_THRESHOLD_DESC>
+<SP_WAITTIME_DESC><![CDATA[指定线程在返回空间不足错误之前等待数据库空间、临时数据库空间、智能大对象空间、临时智能大对象空间或 BLOB 空间扩展的最大秒数。]]></SP_WAITTIME_DESC>
+<SQL_LOGICAL_CHAR_DESC><![CDATA[启用或禁用在内置字符数据类型声明中扩展大小规范。]]></SQL_LOGICAL_CHAR_DESC>
+<SQLTRACE_DESC><![CDATA[控制 SQL 跟踪设施的启动环境。]]></SQLTRACE_DESC>
+<SSL_KEYSTORE_LABEL_DESC><![CDATA[指定在密钥库数据库中使用的服务器数字证书的标签，该数据库用于存储安全套接字层 (SSL) 密钥和数字证书。]]></SSL_KEYSTORE_LABEL_DESC>
+<STACKSIZE_DESC><![CDATA[指定数据库服务器用户线程的堆栈大小。]]></STACKSIZE_DESC>
+<STAGEBLOB_DESC><![CDATA[指定 Optical Subsystem 将准备存储在光盘上的 TEXT 和 BYTE 数据登台在的区域的 Blob 空间名称。]]></STAGEBLOB_DESC>
+<STATCHANGE_DESC><![CDATA[指定当启用 UPDATE STATISTICS 操作的自动方式时，要使分发统计信息认定为满足更新条件，需要在表或分段中执行更改的最小百分比。]]></STATCHANGE_DESC>
+<STMT_CACHE_DESC><![CDATA[判断数据库服务器是否使用 SQL 语句高速缓存。<br>0 = 未使用 SQL 语句高速缓存。<br>1 = 已启用 SQL 语句高速缓存，但用户会话未使用高速缓存，除非它们将环境变量 STMT_CACHE 设置为 1 或为会话执行 SQL 语句 SET STATEMENT CACHE ON。<br>2 = 已启用 SQL 语句高速缓存。高速缓存所有语句。]]></STMT_CACHE_DESC>
+<STMT_CACHE_HITS_DESC><![CDATA[指定将语句完全插入 SQL 语句高速缓存之前，命中（引用）该语句的次数。下表描述可能的值。<br><br>0 = 在 SQL 语句高速缓存中完全插入所有合格语句。<br>n>0 = 在达到语句命中数且所有标准语句都插入到高速缓存之前，会向语句提供仅具有键的条目。<br>n>1 = 阻止专门查询进入高速缓存。]]></STMT_CACHE_HITS_DESC>
+<STMT_CACHE_NOLIMIT_DESC><![CDATA[控制是否将合格的语句插入到 SQL 语句高速缓存中。下表描述可能的值。0 = 阻止将语句插入到高速缓存中，以避免将大量内存分配给高速缓存；1 = 总是将语句插入到 SQL 语句高速缓存中，而不管高速缓存大小如何。]]></STMT_CACHE_NOLIMIT_DESC>
+<STMT_CACHE_NUMPOOL_DESC><![CDATA[指定 SQL 语句高速缓存的内存池数。要获取有关这些内存池的信息，请使用 onstat -g ssc pool。]]></STMT_CACHE_NUMPOOL_DESC>
+<STMT_CACHE_SIZE_DESC><![CDATA[指定 SQL 语句高速缓存的大小（以千字节计）。新高速缓存大小会在下一次语句添加到高速缓存时生效。]]></STMT_CACHE_SIZE_DESC>
+<STOP_APPLY_DESC><![CDATA[使 RS 辅助服务器停止应用从主服务器接收的日志文件。]]></STOP_APPLY_DESC>
+<STORAGE_FULL_ALARM_DESC><![CDATA[配置存储空间已满时消息和警报的频率和严重性。]]></STORAGE_FULL_ALARM_DESC>
+<SYSALARMPROGRAM_DESC><![CDATA[指定 evidence.sh 脚本的完整路径名。当数据库服务器出现故障时，数据库服务器执行 evidence.sh。技术支持使用 evidence.sh 脚本的输出来诊断数据库服务器故障的原因。在 Windows® 上，您必须启用命令扩展，evidence.bat 才能成功完成。]]></SYSALARMPROGRAM_DESC>
+<SYSSBSPACENAME_DESC><![CDATA[指定数据库服务器存储 UPDATE STATISTICS 语句对某些用户定义的数据类型收集的统计信息时所在的智能大对象空间名称。]]></SYSSBSPACENAME_DESC>
+<TAPEBLK_DESC><![CDATA[指定存储空间备份期间 ontape 写入的设备的块大小。TAPEBLK 还指定使用 onload 或 onunload 实用程序时装入或卸载数据的设备的缺省块大小。]]></TAPEBLK_DESC>
+<TAPEDEV_DESC><![CDATA[指定 ontape 将存储空间备份到的设备或目录文件系统。TAPEDEV 还指定使用 onload 或 onunload 实用程序时装入或卸载数据的缺省设备。]]></TAPEDEV_DESC>
+<TAPESIZE_DESC><![CDATA[指定 ontape 将存储空间备份到的设备大小。还指定当使用 onload 或 onunload 时装入或卸载数据的缺省设备的大小。如果要使用磁带的完全物理容量，请将 TAPESIZE 设置为 0。]]></TAPESIZE_DESC>
+<TBLSPACE_STATS_DESC><![CDATA[启用或禁用表空间统计信息的收集。0 = 禁用，1 = 启用。]]></TBLSPACE_STATS_DESC>
+<TBLTBLFIRST_DESC><![CDATA[指定根数据库空间中表空间 tblspace 的第一个扩展数据块大小。]]></TBLTBLFIRST_DESC>
+<TBLTBLNEXT_DESC><![CDATA[指定根数据库空间中表空间 tblspace 的下一个扩展数据块大小。]]></TBLTBLNEXT_DESC>
+<TEMPTAB_NOLOG_DESC><![CDATA[禁用对临时表的记录。<BR><BR>0 = 启用对临时表操作的逻辑记录<BR>1 = 禁用对临时表操作的逻辑记录]]></TEMPTAB_NOLOG_DESC>
+<TXTIMEOUT_DESC><![CDATA[指定在启动参与者恢复之前，两阶段落实中的参与者等待的时间量。此参数仅用于涉及远程数据库服务器的分布式查询。]]></TXTIMEOUT_DESC>
+<UNSECURE_ONSTAT_DESC><![CDATA[允许所有用户在设置为“1”时查看运行的 SQL 语句。]]></UNSECURE_ONSTAT_DESC>
+<UPDATABLE_SECONDARY_DESC><![CDATA[设置要在主服务器和辅助服务器之间建立的连接数。设置此配置参数可使客户机应用程序在高可用性辅助服务器上执行更新、插入和删除操作。]]></UPDATABLE_SECONDARY_DESC>
+<USERMAPPING_DESC><![CDATA[表明数据库服务器是否接受来自映射的用户的连接，以及如果接受映射的用户，是否可以向这些用户授予管理员特权。BASIC = 映射的用户可以具有基本特权。ADMIN = 映射的用户可以具有管理员特权。OFF = 用户映射已关闭。]]></USERMAPPING_DESC>
+<USE_BATCHEDREAD_DESC><![CDATA[]]></USE_BATCHEDREAD_DESC>
+<USE_KOBATCHEDREAD_DESC><![CDATA[]]></USE_KOBATCHEDREAD_DESC>
+<USELASTCOMMITTED_DESC><![CDATA[指定 COMMITTED READ 隔离级别的 LAST COMMITTED 功能隐式生效的隔离级别。]]></USELASTCOMMITTED_DESC>
+<USEOSTIME_DESC><![CDATA[指定当数据库服务器从操作系统为 SQL 语句获取当前时间时，是否使用亚秒级精度。0 = 禁用，1 = 启用。]]></USEOSTIME_DESC>
+<USRC_HASHSIZE_DESC><![CDATA[指定用户 LBAC 凭证信息高速缓存中的散列存储区数。]]></USRC_HASHSIZE_DESC>
+<USRC_POOLSIZE_DESC><![CDATA[指定用户 LBAC 凭证信息高速缓存的每个散列存储区中的最大条目数。]]></USRC_POOLSIZE_DESC>
+<USTLOW_SAMPLE_DESC><![CDATA[在收集 UPDATE STATISTICS LOW 操作的统计信息期间启用采样。对于超过 100K 叶子页的索引，从采样收集统计信息可提高 UPDATE STATISTICS LOW 操作的速度。]]></USTLOW_SAMPLE_DESC> 
+<VP_MEMORY_CACHE_KB_DESC><![CDATA[启用数据库服务器以访问 CPU VP 的专用内存块。]]></VP_MEMORY_CACHE_KB_DESC>
+<VPCLASS_DESC><![CDATA[允许您指定虚拟处理器 (VP) 类、创建用户定义的 VP，以及指定必需参数。]]></VPCLASS_DESC>
+<WSTATS_DESC><![CDATA[启用 onstat -g wst 命令以打印系统内线程的等待统计信息。]]></WSTATS_DESC>
+<NO_DESC_FOUND><![CDATA[找不到描述]]></NO_DESC_FOUND>
+<ON_RECOMMEND><![CDATA[建议启用此 onconfig 参数（设置为 1）。]]></ON_RECOMMEND>
+<OFF_RECOMMEND><![CDATA[建议禁用此 onconfig 参数（设置为 0）。]]></OFF_RECOMMEND>
+<ZERO_RECOMMEND><![CDATA[建议将此 onconfig 参数设置为零。]]></ZERO_RECOMMEND>
+<NONTEMP_RECOMMEND><![CDATA[建议此 onconfig 参数不取空值，且不应该指向服务器的临时目录。]]></NONTEMP_RECOMMEND>
+<AFF_NPROCS_SPROC_RECOMMEND><![CDATA[建议 AFF_SPROC 与 AFF_NPROC 之间的差大于物理处理器数。机器上的物理处理器数为 {0}。]]></AFF_NPROCS_SPROC_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND><![CDATA[建议将 ALARAMPROGRAM 设置为“$INFORMIXDIR/etc/alarmprogram.sh”(UNIX/Linux) 或“$INFORMIXDIR/etc/alarmprogram.bat”(Windows)。]]></ALARMPROGRAM_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND_NO><![CDATA[ALARMPROGRAM 当前似乎未设置为有效的位置。]]></ALARMPROGRAM_RECOMMEND_NO>
+<BAR_DEBUG_RECOMMEND><![CDATA[建议将 BAR_DEBUG 保留为 0，除非技术支持另有建议，以调试特定问题。]]></BAR_DEBUG_RECOMMEND>
+<BAR_NB_XPORT_COUNT_RECOMMEND><![CDATA[建议将 BAR_NB_XPORT_COUNT 设置为 5 到 99 的值]]></BAR_NB_XPORT_COUNT_RECOMMEND>
+<BAR_XFER_BUF_SIZE_RECOMMEND_15><![CDATA[此服务器的页面大小是 4K。因此，建议将 BAR_XFER_BUF_SIZE 设置为 15。]]></BAR_XFER_BUF_SIZE_RECOMMEND_15>
+<BAR_XFER_BUF_SIZE_RECOMMEND_31><![CDATA[此服务器的页面大小是 2K。因此，建议将 BAR_XFER_BUF_SIZE 设置为 31。]]></BAR_XFER_BUF_SIZE_RECOMMEND_31>
+<BTSCANNER_RECOMMEND><![CDATA[BTSCANNER 不应该为空值。应该包含非零 alice 扫描的设置]]></BTSCANNER_RECOMMEND>
+<CCFLAGS_RECOMMEND><![CDATA[建议将 CCFLAGS 保留为 0，除非技术支持另有建议，以调试特定问题。]]></CCFLAGS_RECOMMEND>
+<CKPTINTVL_RECOMMEND><![CDATA[建议将 CKPTINTVL 设置为 30 秒或更高的值。]]></CKPTINTVL_RECOMMEND>
+<CLEANERS_RECOMMEND><![CDATA[建议将 CLEANERS 设置为 VP 数和块数这两者中的较小值。在当前服务器上，建议的清除程序数是：]]></CLEANERS_RECOMMEND>
+<DATASKIP_RECOMMEND><![CDATA[建议将启用的 DATASKIP 设置为“禁用”。]]></DATASKIP_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND><![CDATA[建议将 DB_LIBRARY_PATH 中的所有组件放在 $INFOMRIXDIR 中。]]></DB_LIBRARY_PATH_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND_NO><![CDATA[此服务器具有不位于 $INFORMIXDIR 中的 DB_LIBRARY_PATH 组件。如果要这样做，出于安全原因，请验证用户 informix 是否拥有这些外部目录，以及是否只有用户 informix 具有写许可权。]]></DB_LIBRARY_PATH_RECOMMEND_NO>
+<DBSPACETEMP_RECOMMEND><![CDATA[DBSPACETEMP 不应该为空值，且所列的每个空间应该为现有临时数据库空间。]]></DBSPACETEMP_RECOMMEND>
+<DEF_TABLE_LOCKMODE_RECOMMEND_ROW><![CDATA[服务器上存在锁定等待。建议将 DEF_TABLE_LOCKMODE 设置为“行”。]]></DEF_TABLE_LOCKMODE_RECOMMEND_ROW>
+<DEF_TABLE_LOCKMODE_RECOMMEND><![CDATA[通常建议将 DEF_TABLE_LOCKMODE 设置为“行”。如果当前设置为“页面”且服务器上存在锁定等待，建议您将 DEF_TABLE_LOCKMODE 更改为“行”。然而，DEF_TABLE_LOCKMODE 已设置为“行”，或者当前服务器上没有锁定等待。]]></DEF_TABLE_LOCKMODE_RECOMMEND>
+<DS_NONPDQ_QUERY_MEM_RECOMMEND><![CDATA[建议 DS_NONPDQ_QUERY_MEM 大于或等于 512 千字节。另请参阅 DS_TOTAL_MEMORY，因为 DS_NONPDQ_QUERY_MEMORY 不能超出 DS_TOTAL_MEMORY 值的 25%。]]></DS_NONPDQ_QUERY_MEM_RECOMMEND>
+<DS_TOTAL_MEMORY_RECOMMEND><![CDATA[DS_TOTAL_MEMORY 应该至少为 2048 KB，且必须大于或等于 DS_NONPDQ_QUERY_MEM 大小的 4 倍。]]></DS_TOTAL_MEMORY_RECOMMEND>
+<EXTSHMADD_RECOMMEND_OK><![CDATA[基于此服务器的扩展虚拟段的大小，EXTSHMADD 的当前值遵循 OpenAdmin Tool 的建议。]]></EXTSHMADD_RECOMMEND_OK>
+<EXTSHMADD_RECOMMEND_NO><![CDATA[基于此服务器扩展虚拟段的大小，建议将 EXTSHMADD 增加到大于或等于]]></EXTSHMADD_RECOMMEND_NO>
+<FILLFACTOR_RECOMMEND><![CDATA[建议 FILLFACTOR 在 40% 到 98% 之间。]]></FILLFACTOR_RECOMMEND>
+<LISTEN_TIMEOUT_RECOMMEND><![CDATA[建议 LISTEN_TIMEOUT 大于 2 秒，但小于 180 秒。]]></LISTEN_TIMEOUT_RECOMMEND>
+<LOCKS_RECOMMEND_OK><![CDATA[由于数据库服务器的锁定总数从未超出 LOCKS 中指定的大小，因此 LOCKS 的当前值符合 OpenAdmin Tool 的建议。]]></LOCKS_RECOMMEND_OK>
+<LOCKS_RECOMMEND_NO><![CDATA[数据库服务器的锁定表超出 LOCKS 中指定的大小。尝试将 LOCKS 增加 10%。]]></LOCKS_RECOMMEND_NO>
+<LOGBUFF_RECOMMEND_OK><![CDATA[基于数据库服务器的逻辑日志写入数，LOGBUFF 的当前值符合 OpenAdmin Tool 的建议。]]></LOGBUFF_RECOMMEND_OK>
+<LOGBUFF_RECOMMEND_NO><![CDATA[基于数据库服务器的逻辑日志写入数，LOGBUFF 的当前值很低。尝试将 LOGBUFF 增加 10%。]]></LOGBUFF_RECOMMEND_NO>
+<LTAPEBLK_RECOMMEND_LOW><![CDATA[LTAPEBLK 的当前设置很低。因为大部分磁带机支持的块大小比当前配置的大，请查看您的磁带机规范。增加 LTAPEBLK 可能会改进备份和复原的性能。]]></LTAPEBLK_RECOMMEND_LOW>
+<LTAPEBLK_RECOMMEND_HIGH><![CDATA[LTAPEBLK 的当前设置相当高。请查看您的磁带机规范，以确保它支持此类大值。]]></LTAPEBLK_RECOMMEND_HIGH>
+<LTXHWM_RECOMMEND><![CDATA[LTXHWM 必须小于 LTXEHWM。建议 LTXHWM 在 25% 到 80% 之间。]]></LTXHWM_RECOMMEND>
+<LTXEHWM_RECOMMEND><![CDATA[LTXHWM 必须小于 LTXEHWM。建议 LTXEHWM 在 25% 到 90% 之间。]]></LTXEHWM_RECOMMEND>
+<MULTIPROCESSOR_RECOMMEND_ON><![CDATA[基于系统配置，建议启用 MULTIPROCESSOR。]]></MULTIPROCESSOR_RECOMMEND_ON>
+<MULTIPROCESSOR_RECOMMEND_OFF><![CDATA[基于系统配置，建议禁用 MULTIPROCESSOR。]]></MULTIPROCESSOR_RECOMMEND_OFF>
+<NUMCPUVPS_RECOMMEND_OK><![CDATA[基于数据库服务器的性能，NUMCPUVPS 的当前值遵循 OpenAdmin Tool 的建议。]]></NUMCPUVPS_RECOMMEND_OK>
+<NUMCPUVPS_RECOMMEND_NO><![CDATA[基于数据库服务器的性能，建议增加 NUMCPUVPS。]]></NUMCPUVPS_RECOMMEND_NO>
+<NUMCPUVPS_RECOMMEND_ATMAX><![CDATA[基于数据库服务器的性能，建议增加 NUMCPUVPS。然而，NUMCPUVPS 已设置为系统的最大值。因此，要改进性能，建议购买更多硬件。]]></NUMCPUVPS_RECOMMEND_ATMAX>
+<PHYSBUFF_RECOMMEND_OK><![CDATA[基于数据库服务器的物理日志写入数，PHYSBUFF 的当前值符合 OpenAdmin Tool 的建议。]]></PHYSBUFF_RECOMMEND_OK>
+<PHYSBUFF_RECOMMEND_NO><![CDATA[基于数据库服务器的物理日志写入数，PHYSBUFF 的当前值很低。尝试将 PHYSBUFF 增加 10%。]]></PHYSBUFF_RECOMMEND_NO>
+<RESIDENT_RECOMMEND><![CDATA[建议不禁用 RESIDENT。如果您的服务器将 RESIDENT 设置为 0，请考虑将其更改为 2 或 -1。]]></RESIDENT_RECOMMEND>
+<RTO_SERVER_RESTART_RECOMMEND><![CDATA[建议不禁用 RTO_SERVER_RESTART（即，不设置为 0）。]]></RTO_SERVER_RESTART_RECOMMEND>
+<QSTATS_RECOMMEND><![CDATA[QSTATS 在启用时具有很大性能影响，因此建议禁用生产系统上的 QSTATS，除非技术支持建议您启用以调试特定问题。]]></QSTATS_RECOMMEND>
+<SHMADD_RECOMMEND_OK><![CDATA[基于数据库服务器中的虚拟内存段数，SHMADD 的当前值符合 OpenAdmin Tool 的建议。]]></SHMADD_RECOMMEND_OK>
+<SHMADD_RECOMMEND_NO><![CDATA[基于数据库服务器中的虚拟内存段数，建议增加 SHMADD 的值。]]></SHMADD_RECOMMEND_NO>
+<SHMTOTAL_RECOMMEND_OK><![CDATA[基于此服务器的共享内存使用率，SHMTOTAL 的当前值遵循 OpenAdmin Tool 的建议。]]></SHMTOTAL_RECOMMEND_OK>
+<SHMTOTAL_RECOMMEND_NO><![CDATA[如果数据库服务器达到 SHMTOTAL 限制，可能发生应用程序故障。基于此服务器的共享内存使用率，建议您将 SHMTOTAL 增加到大于或等于]]></SHMTOTAL_RECOMMEND_NO>
+<SHMVIRTSIZE_RECOMMEND_OK><![CDATA[基于数据库服务器中的虚拟内存段数，SHMVIRTSIZE 的当前值符合 OpenAdmin Tool 的建议。]]></SHMVIRTSIZE_RECOMMEND_OK>
+<SHMVIRTSIZE_RECOMMEND_NO><![CDATA[基于数据库服务器中的虚拟内存段数，建议您将 SHMVIRTSIZE 增加到大于当前设置的值，但小于]]></SHMVIRTSIZE_RECOMMEND_NO>
+<SBSPACETEMP_RECOMMEND><![CDATA[服务器上存在智能大对象空间。因此，SBSPACETEMP 不应该为空，且所列的每个空间应该为现有临时智能大对象空间。]]></SBSPACETEMP_RECOMMEND>
+<SINGLE_CPU_VP_RECOMMEND_ON><![CDATA[数据库服务器上只有一个物理处理器。因此，建议启用 SINGLE_CPU_VPS。]]></SINGLE_CPU_VP_RECOMMEND_ON>
+<SINGLE_CPU_VP_RECOMMEND_ON_CHECK><![CDATA[建议您阅读手册，了解 SINGLE_CPU_VP 施加的限制，并考虑将其启用。]]></SINGLE_CPU_VP_RECOMMEND_ON_CHECK>
+<SYSALARMPROGRAM_RECOMMEND><![CDATA[建议将 SYSALARAMPROGRAM 设置为“$INFORMIXDIR/etc/evidence.sh”(UNIX/Linux) 或“$INFORMIXDIR/etc/evidence.bat”(Windows)。]]></SYSALARMPROGRAM_RECOMMEND>
+<SYSALARMPROGRAM_RECOMMEND_NO><![CDATA[然而，SYSALARMPROGRAM 当前似乎未设置为有效位置。]]></SYSALARMPROGRAM_RECOMMEND_NO>
+<TAPEBLK_RECOMMEND_LOW><![CDATA[TAPEBLK 的当前设置很低。因为大部分磁带机支持的块大小比当前配置的大，请查看您的磁带机规范。增加 TAPEBLK 可能会改进备份和复原的性能。]]></TAPEBLK_RECOMMEND_LOW>
+<TAPEBLK_RECOMMEND_HIGH><![CDATA[TAPEBLK 的当前设置相当高。请查看您的磁带机规范，以确保它支持此类大值。]]></TAPEBLK_RECOMMEND_HIGH>
+<TBLTBLFIRST_RECOMMEND><![CDATA[建议将 TBLTBLFIRST 设置为此服务器的表空间 tblspace 分区的平均大小或更高的值。系统表空间 tblspace 分区的当前大小如下：<BR>]]></TBLTBLFIRST_RECOMMEND>
+<TBLTBLNEXT_RECOMMEND><![CDATA[建议将 TBLTBLFIRST 设置为此服务器的表空间 tblspace 分区的平均大小的 25% 或更高的值。系统表空间 tblspace 分区的当前大小如下：<BR>]]></TBLTBLNEXT_RECOMMEND>
+<TEMPTAB_NOLOG_RECOMMEND><![CDATA[在 HDR 或 Mach11 环境中运行时，如果应用程序支持它，建议启用 TEMPTAB_NOLOG，以便禁用对临时表操作的逻辑记录。启用此项可以改进复制环境中的性能。]]></TEMPTAB_NOLOG_RECOMMEND>
+<TRACEFLAGS_RECOMMEND><![CDATA[TRACEFLAGS 在启用时具有很大性能影响，因此建议禁用生产系统上的 TRACEFLAGS（设置为零），除非技术支持建议您启用以调试特定问题。]]></TRACEFLAGS_RECOMMEND>
+<TRACES_RECOMMEND><![CDATA[TRACES 在启用时具有很大性能影响，因此建议禁用生产系统上的 TRACES（设置为零），除非技术支持建议您启用以调试特定问题。]]></TRACES_RECOMMEND>
+<WSTATS_RECOMMEND><![CDATA[WSTATS 在启用时具有很大性能影响，因此建议禁用生产系统上的 WSTATS，除非技术支持建议您启用以调试特定问题。]]></WSTATS_RECOMMEND>
+</lang>

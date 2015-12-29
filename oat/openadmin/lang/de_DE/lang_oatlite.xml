@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Verbindung zum Datenbankserver kann nicht hergestellt werden]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[Der Server ist offline]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[OpenAdmin Tool erfordert Informix Version 11.10 oder höher. ]]></ServerVersionLessThan11>
+<Standard><![CDATA[Standard]]></Standard>
+<Primary><![CDATA[Primär]]></Primary>
+<Secondary><![CDATA[Sekundär]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[ja]]></yes>
+<no><![CDATA[nein]]></no>
+<partial><![CDATA[partiell]]></partial>
+</lang>

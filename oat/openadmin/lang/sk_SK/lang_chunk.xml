@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Chunky]]></Chunks>
+<Chunk><![CDATA[Chunk]]></Chunk>
+<MirrorChunk><![CDATA[Zrkadlový chunk]]></MirrorChunk>
+<ChunkIO><![CDATA[I/O chunku]]></ChunkIO>
+<ChunkTable><![CDATA[Výpis tabuľky chunkov]]></ChunkTable>
+<MirrorTable><![CDATA[Výpis tabuľky zrkadlových chunkov]]></MirrorTable>
+<ChunkNum><![CDATA[Číslo chunku]]></ChunkNum>
+<SpaceName><![CDATA[Názov chunku]]></SpaceName>
+<PageSize><![CDATA[Veľkosť stránky]]></PageSize>
+<Offset><![CDATA[Odsadenie]]></Offset>
+<Size><![CDATA[Veľkosť]]></Size>
+<Free><![CDATA[Voľné]]></Free>
+<Used><![CDATA[Použité %]]></Used>
+<Status><![CDATA[Stav]]></Status>
+<Path><![CDATA[Cesta]]></Path>
+<ChunkPath><![CDATA[Cesta k chunku]]></ChunkPath>
+<Reads><![CDATA[Čítania]]></Reads>
+<Writes><![CDATA[Zápisy]]></Writes>
+<TotalIO><![CDATA[Čítania a zápisy celkovo]]></TotalIO>
+<IOTableTitle><![CDATA[I/O podľa chunkov]]></IOTableTitle>
+<IOGraphTitle><![CDATA[I/O operácie najvyšších 20 chunkov]]></IOGraphTitle>
+<ONLINE><![CDATA[ONLINE]]></ONLINE>
+<OFFLINE><![CDATA[OFFLINE]]></OFFLINE>
+<RECOVERING><![CDATA[ZOTAVUJE SA]]></RECOVERING>
+</lang>

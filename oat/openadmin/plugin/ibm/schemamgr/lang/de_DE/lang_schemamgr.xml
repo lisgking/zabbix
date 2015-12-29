@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[Schemamanager]]></schemamgr>
+<FragmentedTable><![CDATA[Fragmentierte Tabelle]]></FragmentedTable>
+<PseudoTable><![CDATA[Pseudotabelle]]></PseudoTable>
+<NotApplicable><![CDATA[Nicht zutreffend]]></NotApplicable>
+<check_admin_log><![CDATA[Im Befehlsprotokoll oder im Onlineprotokoll finden Sie weitere Informationen.]]></check_admin_log>
+<running><![CDATA[{0} aktiv]]></running>
+<interval_frag_strategy><![CDATA[Fragmentschlüsselspalte: {0}. Intervall: {1}. Speichern in: {2}.]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[Optionen für gleitendes Fenster:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[Tabelle auf {0} Fragmente begrenzen]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[Tabellengröße auf {0} begrenzen]]></rolling_window_limit_by_size>
+<detach><![CDATA[Freigeben]]></detach>
+<discard><![CDATA[Löschen]]></discard>
+<x_years><![CDATA[{0} Jahre]]></x_years>
+<x_months><![CDATA[{0} Monate]]></x_months>
+<x_days><![CDATA[{0} Tage]]></x_days>
+</lang>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="Sessions" targetNamespace="urn:Sessions"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:Sessions"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:Sessions">
+
+			<xsd:import
+				namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+
+
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getSessionList">
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionListResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionInfo">
+		<part name="sessionId" type="xsd:integer" />
+	</message>
+
+	<message name="getSessionInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionSQL">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionSQLResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionSQLInfo">
+		<part name="sessionId" type="xsd:integer" />
+	</message>
+
+	<message name="getSessionSQLInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionThreads">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionThreadsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionEnv">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionEnvResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionMem">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionMemResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionNetwork">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionNetworkResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionProfile">
+		<part name="sessionId" type="xsd:integer" />
+	</message>
+
+	<message name="getSessionProfileResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionThreadInfo">
+		<part name="sessionId" type="xsd:integer" />
+	</message>
+
+	<message name="getSessionThreadInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSessionLocks">
+		<part name="sessionId" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer"/>
+		<part name="page" type="xsd:integer"/>
+		<part name="sort_col" type="xsd:string"/>
+	</message>
+
+	<message name="getSessionLocksResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+    <message name="killSession">
+        <part name="sessionId" type="xsd:integer"/>
+    </message>
+
+    <message name="killSessionResponse">
+        <part  name="return" type="xsd:anyType" />
+    </message>
+
+	<!-- portType expose the services and defines their input / output routines -->
+	<portType name="SessionsPort">
+
+		<operation name="getSessionList">
+			<input message="typens:getSessionList" />
+			<output message="typens:getSessionListResponse" />
+		</operation>
+
+		<operation name="getSessionInfo">
+			<input message="typens:getSessionInfo" />
+			<output message="typens:getSessionInfoResponse" />
+		</operation>
+
+		<operation name="getSessionSQL">
+			<input message="typens:getSessionSQL" />
+			<output message="typens:getSessionSQLResponse" />
+		</operation>
+
+		<operation name="getSessionSQLInfo">
+			<input message="typens:getSessionSQLInfo" />
+			<output message="typens:getSessionSQLInfoResponse" />
+		</operation>
+
+		<operation name="getSessionThreads">
+			<input message="typens:getSessionThreads" />
+			<output message="typens:getSessionThreadsResponse" />
+		</operation>
+
+		<operation name="getSessionEnv">
+			<input message="typens:getSessionEnv" />
+			<output message="typens:getSessionEnvResponse" />
+		</operation>
+
+		<operation name="getSessionMem">
+			<input message="typens:getSessionMem" />
+			<output message="typens:getSessionMemResponse" />
+		</operation>
+
+		<operation name="getSessionNetwork">
+			<input message="typens:getSessionNetwork" />
+			<output message="typens:getSessionNetworkResponse" />
+		</operation>
+
+		<operation name="getSessionProfile">
+			<input message="typens:getSessionProfile" />
+			<output message="typens:getSessionProfileResponse" />
+		</operation>
+
+		<operation name="getSessionThreadInfo">
+			<input message="typens:getSessionThreadInfo" />
+			<output message="typens:getSessionThreadInfoResponse" />
+		</operation>
+
+		<operation name="getSessionLocks">
+			<input message="typens:getSessionLocks" />
+			<output message="typens:getSessionLocksResponse" />
+		</operation>
+
+		<operation name="killSession">
+			<input message="typens:killSession" />
+			<output message="typens:killSessionResponse" />
+		</operation>
+
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="SessionsBinding" type="typens:SessionsPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="getSessionList">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionInfo">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionSQL">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionSQLInfo">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionEnv">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionMem">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+
+		<operation name="getSessionThreads">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionNetwork">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionProfile">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionThreadInfo">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getSessionLocks">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="killSession">
+			<soap:operation soapAction="urn:SessionsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Sessions"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+	</binding>
+
+	<service name="SessionsService">
+		<port name="SessionsPort" binding="typens:SessionsBinding">
+			<soap:address
+				location="services/sessions/sessionsService.php" />
+		</port>
+	</service>
+</definitions>

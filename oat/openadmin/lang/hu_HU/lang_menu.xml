@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[Kezdőlap]]></home>
+<expand><![CDATA[Kiterjesztés]]></expand>
+<collapse><![CDATA[Összehúzás]]></collapse>
+<logs><![CDATA[Naplók]]></logs>
+<alertsummary><![CDATA[Riasztás összegzés]]></alertsummary>
+<alerts><![CDATA[Riasztások]]></alerts>
+<admincommands><![CDATA[Admin parancs]]></admincommands>
+<onlinelog><![CDATA[Online üzenetek]]></onlinelog>
+<baractlog><![CDATA[ON-Bar tevékenység]]></baractlog>
+<healthcenter><![CDATA[Egészségközpont]]></healthcenter>
+<details><![CDATA[Részletek]]></details>
+<taskdetails><![CDATA[Feladat részletei]]></taskdetails>
+<runtimes><![CDATA[Feladat futási környezetek]]></runtimes>
+<scheduler><![CDATA[Ütemező]]></scheduler>
+<space><![CDATA[Terület adminisztráció]]></space>
+<VP><![CDATA[Virtuális processzorok]]></VP>
+<dbspaces><![CDATA[Adatbázis-területek]]></dbspaces>
+<RecoveryLogs><![CDATA[Helyreállítási naplók]]></RecoveryLogs>
+<storage><![CDATA[Tároló]]></storage>
+<chunks><![CDATA[Csonkok]]></chunks>
+<reservedspace><![CDATA[Fenntartott terület]]></reservedspace>
+<performance><![CDATA[Teljesítményelemzés]]></performance>
+<sql><![CDATA[SQL szerkesztő]]></sql>
+<sqlexplorer><![CDATA[SQL-böngésző]]></sqlexplorer>
+<io><![CDATA[I/O]]></io>
+<Reports><![CDATA[Rendszer jelentések]]></Reports>
+<sessionexplorer><![CDATA[Munkamenet-böngésző]]></sessionexplorer>
+<uReports><![CDATA[Felhasználói jelentések]]></uReports>
+<sqltoolbox><![CDATA[SQL eszközkészlet]]></sqltoolbox>
+<databases><![CDATA[Adatbázisok]]></databases>
+<schemabrowser><![CDATA[Sémaböngésző]]></schemabrowser>
+<tables><![CDATA[Táblázatok]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[Hasznos hivatkozások]]></UsefulLinks>
+<about><![CDATA[Az OAT névjegye]]></about>
+<train><![CDATA[Képzés]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[Adminisztrátor]]></admin>
+<mach11><![CDATA[Fürtök]]></mach11>
+<dashboard><![CDATA[Vezérlőpult]]></dashboard>
+<help><![CDATA[Súgó]]></help>
+<logout><![CDATA[Kijelentkezés]]></logout>
+<taskscheduler><![CDATA[Feladatütemező]]></taskscheduler>
+<serveradmin><![CDATA[Kiszolgáló adminisztráció]]></serveradmin>
+<configuration><![CDATA[Konfiguráció]]></configuration>
+<HowDoI><![CDATA[OAT feladat súgó]]></HowDoI>
+<readme><![CDATA[Olvassel]]></readme>
+<releasenotes><![CDATA[Kiadási megjegyzések]]></releasenotes>
+<onconfigparam><![CDATA[Konfiguráció]]></onconfigparam>
+<privileges><![CDATA[Felhasználó jogosultságok]]></privileges>
+<highavail><![CDATA[Magas szintű rendelkezésre állás]]></highavail>
+<PerformanceHist><![CDATA[Teljesítmény előzmények]]></PerformanceHist>
+<SystemValidation><![CDATA[Rendszerellenőrzés]]></SystemValidation>
+<OATconfig><![CDATA[OAT konfiguráció]]></OATconfig>
+<connadmin><![CDATA[Kapcsolat adminisztrátor]]></connadmin>
+<connmgt><![CDATA[Kapcsolatok kezelése]]></connmgt>
+<addgroup><![CDATA[Csoport hozzáadása]]></addgroup>
+<addconn><![CDATA[Kapcsolat hozzáadása]]></addconn>
+<helpadmin><![CDATA[Súgó adminisztrátor]]></helpadmin>
+<helpmgt><![CDATA[Súgókezelés]]></helpmgt>
+<helpdb><![CDATA[Súgó adatbázis]]></helpdb>
+<addhelp><![CDATA[Súgó hozzáadása]]></addhelp>
+<OATlogin><![CDATA[OAT bejelentkezés]]></OATlogin>
+<aus><![CDATA[Automatikus frissítésű statisztikák]]></aus>
+<qbe><![CDATA[Lekérdezés példa szerint]]></qbe>
+<onstat><![CDATA[onstat segédprogram]]></onstat>
+<replication><![CDATA[Replikáció]]></replication>
+<trustedcontext><![CDATA[Megbízható kontextus]]></trustedcontext>
+<security><![CDATA[Biztonság]]></security>
+<backup><![CDATA[Mentés]]></backup>
+<MemoryMgr><![CDATA[Memóriakezelő]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

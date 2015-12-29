@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[Пример подключаемого модуля IBM]]></ibm_example_plugin>
+<example><![CDATA[Пример:]]></example>
+<table><![CDATA[Таблица]]></table>
+<piechart><![CDATA[Секторная диаграмма]]></piechart>
+<linechart><![CDATA[Линейная диаграмма]]></linechart>
+<barchart><![CDATA[Столбчатая диаграмма]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[Пользователи и последовательные просмотры]]></users_and_seqscans>
+<username><![CDATA[Имя пользователя]]></username>
+<numseqscans><![CDATA[Число последовательных сканирований]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[Ввод-вывод по 20 наиболее активным чанкам]]></Pie_Chart_Title>
+<Chunk><![CDATA[Чанк]]></Chunk>
+<TotalIO><![CDATA[Всего вводов-выводов]]></TotalIO>
+<Chunk_num><![CDATA[Чанк {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[График контрольных точек]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[Число грязных буферов]]></dirty_buffers>
+<waits><![CDATA[Число ожиданий]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[Пространственный график]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[Число грязных буферов]]></dirty_buffers>
+<waits><![CDATA[Число ожиданий]]></waits>
+
+</lang>

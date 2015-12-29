@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[无法连接到数据库服务器]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[服务器脱机]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[OAT 需要 Informix V11.10 或更高版本。]]></ServerVersionLessThan11>
+<Standard><![CDATA[标准]]></Standard>
+<Primary><![CDATA[主]]></Primary>
+<Secondary><![CDATA[辅助]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[是]]></yes>
+<no><![CDATA[否]]></no>
+<partial><![CDATA[部分]]></partial>
+</lang>

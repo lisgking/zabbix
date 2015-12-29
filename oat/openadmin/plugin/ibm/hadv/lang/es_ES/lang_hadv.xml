@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Añadir]]></add>
+<alarms><![CDATA[Alarmas]]></alarms>
+<alarm_check><![CDATA[Comprobación de alarmas]]></alarm_check>
+<alarm_setup><![CDATA[Configuración de alarma]]></alarm_setup>
+<alarm_mod><![CDATA[Modificar alarmas]]></alarm_mod>
+<alarm_msg><![CDATA[Especifique las condiciones cuando se define una alarma.]]></alarm_msg>
+<alarm_name><![CDATA[Nombre de alarma:]]></alarm_name>
+<Always><![CDATA[Siempre]]></Always>
+<AnyAlarm><![CDATA[Cualquier alarma]]></AnyAlarm>
+<Anyalarm><![CDATA[Cualquier alarma]]></Anyalarm>
+<all><![CDATA[Todo]]></all>
+<cancel><![CDATA[Cancelar]]></cancel>
+<Config><![CDATA[Config]]></Config>
+<Configuration><![CDATA[Configuración]]></Configuration>
+<Currentprofile><![CDATA[Perfil actual]]></Currentprofile>
+<CurrentProfile><![CDATA[Perfil actual]]></CurrentProfile>
+<del_def_na><![CDATA[El perfil predeterminado no puede suprimirse.]]></del_def_na>
+<deleted_prof><![CDATA[El perfil se ha suprimido.]]></deleted_prof>
+<delete><![CDATA[Suprimir]]></delete>
+<desc><![CDATA[Nombre de la alarma]]></desc>
+<emailprog><![CDATA[Configuración de programa de correo electrónico]]></emailprog>
+<empty_prof_add><![CDATA[El nombre del perfil no puede estar vacío.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Elija un perfil en la lista.]]></empty_prof_load>
+<enable><![CDATA[Habilitar]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Excepciones]]></exceptions>
+<exc_intro><![CDATA[Esta alarma permite excepciones.]]></exc_intro>
+<exc_example><![CDATA[Ejemplo: bases de datos raíz, bases de datos físicas, bases de datos de registro]]></exc_example>
+<from><![CDATA[Desde]]></from>
+<Category><![CDATA[Categoría]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Ejecutar Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Información]]></info>
+<ldesc><![CDATA[Descripción]]></ldesc>
+<description><![CDATA[Descripción:]]></description>
+<load><![CDATA[Cargar]]></load>
+<modify><![CDATA[Modificar]]></modify>
+<modifysched><![CDATA[Modificar planificación]]></modifysched>
+<modify_threshold><![CDATA[Modificar umbrales]]></modify_threshold>
+<name><![CDATA[Nombre]]></name>
+<noauth><![CDATA[No está autorizado para acceder a esta página.]]></noauth>
+<noalarms><![CDATA[No se ha producido ninguna alarma.]]></noalarms>
+<notification><![CDATA[Notificación]]></notification>
+<OS><![CDATA[Sistema operativo]]></OS>
+<Perf><![CDATA[Rendimiento]]></Perf>
+<profile><![CDATA[Perfil]]></profile>
+<profmanagement><![CDATA[Gestión de perfiles]]></profmanagement>
+<profmsg><![CDATA[Añadir, cargar o suprimir perfiles.]]></profmsg>
+<RedAlarm><![CDATA[Alarma roja]]></RedAlarm>
+<Redalarm_><![CDATA[Alarma roja:]]></Redalarm_>
+<Redalarm><![CDATA[Alarma roja]]></Redalarm>
+<Redalarmthreshold><![CDATA[Umbral de alarma roja]]></Redalarmthreshold>
+<send><![CDATA[Enviar notificación de correo electrónico]]></send>
+<save><![CDATA[Guardar]]></save>
+<save_failed><![CDATA[Se ha producido un fallo al guardar: ]]></save_failed>
+<saved_alarms><![CDATA[Se han guardado los cambios en las opciones de alarma.]]></saved_alarms>
+<saved_schedule><![CDATA[Se han guardado los cambios en las opciones de notificación.]]></saved_schedule>
+<saved_email><![CDATA[Se han guardado los cambios en el programa de correo electrónico.]]></saved_email>
+<schedandnot><![CDATA[Planificación y notificación]]></schedandnot>
+<schedmsg><![CDATA[Los perfiles se pueden planificar para ejecutarse a intervalos especificados. Los resultados son enviados por correo electrónico.]]></schedmsg>
+<schedule><![CDATA[Planificar]]></schedule>
+<show><![CDATA[Mostrar]]></show>
+<Storage><![CDATA[Almacenamiento]]></Storage>
+<to><![CDATA[A]]></to>
+<thresholds><![CDATA[Umbrales]]></thresholds>
+<threshold_msg><![CDATA[Consulte la descripción de la alarma para ver una explicación sobre cómo se utilizan los valores de umbral.]]></threshold_msg>
+<when><![CDATA[Cuando]]></when>
+<Yellowalarmthreshold><![CDATA[Umbral de alarma amarilla]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Alarma amarilla:]]></Yelalarm_>
+<YelAlarm><![CDATA[Alarma amarilla]]></YelAlarm>
+</lang>

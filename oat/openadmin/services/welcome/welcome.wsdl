@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="Welcome" targetNamespace="urn:Welcome"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:Welcome"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="saveHomePage">
+		<part name="new_home_page" type="xsd:string" />
+	</message>
+	<message name="saveHomePageResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	<message name="getCustomHomePageOptions">
+	</message>
+	<message name="getCustomHomePageOptionsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="WelcomePort">
+		
+		<operation name="saveHomePage">
+			<input  message="typens:saveHomePage" />
+			<output message="typens:saveHomePageResponse" />
+		</operation>
+		
+		<operation name="getCustomHomePageOptions">
+			<input  message="typens:getCustomHomePageOptions" />
+			<output message="typens:getCustomHomePageOptionsResponse" />
+		</operation>
+				
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="WelcomeBinding" type="typens:WelcomePort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		
+		<operation name="saveHomePage">
+			<soap:operation soapAction="urn:WelcomeAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Welcome"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Welcome"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getCustomHomePageOptions">
+			<soap:operation soapAction="urn:WelcomeAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:Welcome"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:Welcome"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+	</binding>
+
+	<service name="WelcomeService">
+		<port name="WelcomePort" binding="typens:WelcomeBinding">
+			<soap:address location="services/welcome/welcomeService.php" />
+		</port>
+	</service>
+</definitions>

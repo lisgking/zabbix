@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Porzioni]]></Chunks>
+<NoSQLToExecute><![CDATA[Nessun SQL da eseguire]]></NoSQLToExecute>
+<QueryF><![CDATA[Query:]]></QueryF>
+<ErrorF><![CDATA[Errore:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Query di database non riuscita:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Connessione non riuscita.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[L'utente {0} non dispone dell'autorizzazione di connessione sul database {1}.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[troppi errori rilevati]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - nessun ID dashboard trovato]]></ErrorGetPanels>
+</lang>

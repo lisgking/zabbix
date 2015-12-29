@@ -1,0 +1,10 @@
+ライセンス情報
+
+以下に表示されている「プログラム」には、IBM プログラムのご使用条件 (保証適用外プログラム用) (IBM 資料番号 Z125-5589-05)および次の追加条件に基づいて使用権が許諾されます。
+
+プログラム名: IBM OpenAdmin Tool - Enterprise Replication Plugin V3.11
+プログラム番号: Tool
+
+L/N:  L-DDAY-94MTA8
+D/N:  L-DDAY-94MTA8
+P/N:  L-DDAY-94MTA8 

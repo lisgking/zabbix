@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Cuadrícula]]></GridRepl>
+<noGridSupport><![CDATA[Para la cuadrícula, el plug-in de Informix Replication para OAT requiere Informix 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[El plug-in de Replication no se ha instalado correctamente. Para instalar el plug-in de Replication, en el menú de administrador, pulse Gestor de plug-ins.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[El plug-in de Informix Replication para OAT requiere que inicie sesión en OAT como el usuario informix o como un DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Estado actual del proceso de captura de ER]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Número de páginas de registro lógico hasta DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Número de transacciones en spool]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Porcentaje de espacio de disco utilizado para los datos de filas]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Estado actual de la red ER]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Número de nodos desconectados]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Número de transacciones pendientes]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Estado actual del proceso de aplicación de ER]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Latencia media para recibir una transacción (en segundos)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Tasa de fallo al aplicar transacciones]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[En el archivo SQLHOSTS para el nodo {0}, los siguientes ID de grupo de servidores son duplicados: {1}.  En el archivo SQLHOSTS, debe dar a cada grupo de servidores un ID exclusivo especificando un valor exclusivo para la opción de identificador (i=número).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[El archivo SQLHOSTS para el nodo {0} no incluye estos grupos de servidores: {1}.  Si el nodo es un nodo raíz o no raíz, debe tener la información SQLHOSTS completa para todos los grupos de servidores del dominio.  Si el nodo es un nodo hoja, debe tener al menos la información SQLHOSTS de su grupo de servidores padre.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[El archivo SQLHOSTS para el nodo {0} no tiene los valores correctos para el campo Tipo de conexión. Un miembro de cada grupo del archivo SQLHOSTS debe tener los protocolos de red soportados y los tipos de servidor de base de datos.  Enterprise Replication (ER) soporta los protocolos de red soctcp, tlitcp, socssl, tlispx, socimc, tliimc y sqlmux. ER soporta los tipos de servidor de base de datos on y ol. ER no puede utilizar una conexión configurada con la opción del módulo de soporte de comunicaciones (CSM) en el archivo SQLHOSTS.  ER sólo puede cifrarse estableciendo parámetros de configuración de cifrado.  Para combinar el cifrado de red de cliente/servidor con cifrado ER, configure dos conexiones de red para cada servidor de base de datos. Para obtener más información sobre el cifrado de red y SQLHOSTS, consulte el Information Center de Informix.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[En el archivo SQLHOSTS para el nodo {0}, el grupo {1} contiene más de un servidor autónomo o sus alias.  El grupo {1} contiene el servidor {2}.  OAT no puede definir un servidor para Enterprise Replication (ER) porque el servidor es parte de un clúster de alta disponibilidad.  Para definir este servidor para ER, utilice el mandato 'cdr define server' desde la línea de mandatos.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[El servidor {0} es un servidor secundario en un clúster de alta disponibilidad.  OAT no puede definir este servidor para Enterprise Replication (ER).  Ejecute la acción de definición de servidor en el servidor primario en el clúster de alta disponibilidad.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[No se ha podido conectar al servidor {0}: {1}.  No puede establecerse una conexión de confianza entre el nodo nuevo y el servidor {0}, el servidor seleccionado para sincronizar la configuración de ER. Compruebe sus conexiones de red.  Para obtener más información sobre la preparación de su entorno de red para Enterprise Replication, consulte el Information Center de Informix.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[El ID de grupo para el servidor {0} no es el mismo en los archivos SQLHOSTS para el nodo {1} y el nodo {2}.  En los archivos SQLHOSTS para el nodo {1} y el nodo {2}, compruebe el valor de la opción del identificador (i=número) para el servidor {0}.  Los valores deben ser los mismos.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[El servidor {0} no es un servidor de Enterprise Replication (ER) porque no tiene una base de datos syscdr, la cual contiene el catálogo global.  Seleccione un servidor que participe en ER para sincronizar la configuración de dominio de ER.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[El servidor {0} es un nodo final.  Un nodo hoja no puede ser el servidor que sincroniza la configuración de dominio de ER. Seleccione un nodo raíz o no raíz.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Este servidor ya participa en la actividad de Enteprise Replication (ER).  Elija otro servidor.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT no puede definir un servidor para Enterprise Replication (ER) porque es parte de un clúster de alta disponibilidad.  Para definir este servidor para ER, utilice el mandato 'cdr define server' desde la línea de mandatos.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[El nombre de grupo {0} para el servidor {1} no es válido.  Actualice el nombre de grupo en el archivo SQLHOSTS antes de continuar.]]></Invalid_Group_Name>
+<Error><![CDATA[Error]]></Error>
+<ConnectionFailed><![CDATA[La conexión ha fallado]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[No hay detalles de conexión para este servidor.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[La longitud del mandato supera los límites de la API de administración.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Tarea async de administración enviada correctamente.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Libre (MB)]]></Free_MB>
+<Used_MB><![CDATA[Utilizado (MB)]]></Used_MB>
+</lang>

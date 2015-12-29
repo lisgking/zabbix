@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_language">
+
+<!-- Languages for the OAT user interface -->
+<en_US><![CDATA[영어]]></en_US>
+<cs_CZ><![CDATA[체코어]]></cs_CZ>
+<fr_FR><![CDATA[프랑스어]]></fr_FR>
+<de_DE><![CDATA[독일어]]></de_DE>
+<hu_HU><![CDATA[헝가리어]]></hu_HU>
+<it_IT><![CDATA[이탈리아어]]></it_IT>
+<ja_JP><![CDATA[일본어]]></ja_JP>
+<ko_KR><![CDATA[한국어]]></ko_KR>
+<pl_PL><![CDATA[폴란드어]]></pl_PL>
+<pt_BR><![CDATA[포르투갈어]]></pt_BR>
+<ru_RU><![CDATA[러시아어]]></ru_RU>
+<zh_CN><![CDATA[중국어]]></zh_CN>
+<sk_SK><![CDATA[슬로바키아어]]></sk_SK>
+<es_ES><![CDATA[스페인어]]></es_ES>
+<zh_TW><![CDATA[대만어]]></zh_TW>
+
+<!-- Languages for the server DB_LOCALE -->
+<Arabic><![CDATA[아랍어]]></Arabic>
+<Azerbaijani><![CDATA[아제르바이잔어]]></Azerbaijani>
+<Bulgarian><![CDATA[불가리이어]]></Bulgarian>
+<Chinese><![CDATA[중국어]]></Chinese>
+<Croatian><![CDATA[크로아티아어]]></Croatian>
+<Czech><![CDATA[체코어]]></Czech>
+<Danish><![CDATA[덴마크어]]></Danish>
+<Dutch><![CDATA[네덜란드어]]></Dutch>
+<English><![CDATA[영어]]></English>
+<Estonian><![CDATA[에스토니아어 ]]></Estonian>
+<Finnish><![CDATA[핀란드어]]></Finnish>
+<French><![CDATA[프랑스어]]></French>
+<German><![CDATA[독일어]]></German>
+<Greek><![CDATA[그리스어]]></Greek>
+<Hebrew><![CDATA[히브리어]]></Hebrew>
+<Hindi><![CDATA[힌디어]]></Hindi>
+<Hungarian><![CDATA[헝가리어]]></Hungarian>
+<Icelandic><![CDATA[아이슬란드어]]></Icelandic>
+<Italian><![CDATA[이탈리아어]]></Italian>
+<Japanese><![CDATA[일본어]]></Japanese>
+<Korean><![CDATA[한국어]]></Korean>
+<Latvian><![CDATA[라트비아어]]></Latvian>
+<Lithuanian><![CDATA[리투아니아어]]></Lithuanian>
+<Macedonian><![CDATA[마케도니아어]]></Macedonian>
+<Norwegian><![CDATA[노르웨이어]]></Norwegian>
+<Polish><![CDATA[폴란드어]]></Polish>
+<Portuguese><![CDATA[포르투갈어]]></Portuguese>
+<Romanian><![CDATA[루마니아어]]></Romanian>
+<Russian><![CDATA[러시아어]]></Russian>
+<Simplified_Chinese><![CDATA[중국어]]></Simplified_Chinese>
+<Slovak><![CDATA[슬로바키아어]]></Slovak>
+<Spanish><![CDATA[스페인어]]></Spanish>
+<Swedish><![CDATA[스웨덴어]]></Swedish>
+<Thai><![CDATA[태국어]]></Thai>
+<Turkish><![CDATA[터키어]]></Turkish>
+<Ukrainian><![CDATA[우크라이나어]]></Ukrainian>
+<Vietnamese><![CDATA[베트남어]]></Vietnamese>
+</lang>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Alarma roja: Comprueba si el parámetro de configuración DBSPACETEMP está definido.  Alarma amarilla: Comprueba que no haya espacios en el valor del parámetro de configuración DBSPACETEMP.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el parámetro de configuración DUMPDIR no está definido en el directorio listado en el umbral de alarma amarilla.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba que la asignación de registro dinámica (DYNAMIC_LOGS) está habilitada.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Alarma roja: Comprueba si los archivos de registros lógicos no están almacenados en el espacio de base de datos raíz(ROOTDBS). Alarma amarilla: Comprueba que no haya tablas almacenadas en el espacio de base de datos donde están almacenados los archivos de registro lógico.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Alarma roja: Comprueba que la marca de límite superior de transacción larga (LTXHWM) esté por debajo del umbral de alarma roja, si la asignación de registro dinámica (DYNAMIC_LOGS) está desactivada.  Alarma amarilla: Comprueba que la marca de límite superior de transacción larga (LTXHWM) esté por debajo del umbral de alarma amarilla, si la asignación de registro dinámica está desactivada.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el valor para el campo no confirmado mínimo utilizado recientemente (lru_min_dirty) está por encima del umbral de la alarma amarilla.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el parámetro de configuración LTAPEDEV no está definido en el directorio listado en el umbral de alarma amarilla.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si la opción noage del parámetro de configuración VPCLASS está definido.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el servidor de bases de datos no está definido para continuar cuando un espacio de base de datos está inactivo (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Alarma roja: Comprueba si el registro físico no está almacenado en el espacio de base de datos raíz(ROOTDBS). Alarma amarilla: Comprueba si no hay tablas almacenadas en el espacio de base de datos donde está almacenado el registro físico.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el parámetro de configuración SINGLE_CPU_VP está definido, el parámetro de configuración MULTIPROCESSOR está desactivado.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el parámetro de configuración TAPEDEV no está definido en el directorio listado en el umbral de alarma amarilla.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Alarma roja: Comprueba que el número de archivos ATS creados hoy está por debajo del umbral de alarma roja. Alarma amarilla: Comprueba que el número de archivos ATS creados hoy está por debajo del umbral de alarma amarilla.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Alarma roja: Comprueba que el porcentaje de páginas de registro restantes antes de que se inicie el bloqueo de la transacción (DDRBLOCK) está por encima del porcentaje listado en el umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje de páginas de registro restantes antes de que se inicie el bloqueo de la transacción está por encima del porcentaje listado en el umbral de alarma amarilla.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Alarma roja: Comprueba que los nodos del clúster ER están activos y duplicando datos. Alarma amarilla: Ninguna.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Alarma roja: Comprueba que el número de archivos RIS creados hoy está por debajo del umbral de alarma roja. Alarma amarilla: Comprueba que el número de archivos RIS creados hoy está por debajo del umbral de alarma amarilla.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Alarma roja: Comprueba que el porcentaje de memoria libre disponible para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje de memoria libre disponible para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba si el número de procesadores en línea del sistema operativo es equivalente al número de procesadores del sistema operativo.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Alarma roja: Ninguna. Alarma amarilla: Comprueba que el número de procesadores virtuales está por encima del porcentaje de CPU del sistema operativo listado como el umbral de alarma amarilla.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Alarma roja: Comprueba si el número de descriptores de archivo abiertos por proceso para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el número de descriptores de archivo abiertos por proceso para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Alarma roja: Comprueba si el número de conjuntos de semáforos para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el número de conjuntos de semáforos para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Alarma roja: Comprueba si el número total de semáforos para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el número total de semáforos para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Alarma roja: Comprueba si el número ID de memoria compartida (shmid) para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el número ID de memoria compartida (shmid) para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Alarma roja: Comprueba si el tamaño máximo de un segmento de memoria compartida (SHMMAX) para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el tamaño máximo de un segmento de memoria compartida (SHMMAX) para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Alarma roja: Comprueba si el número total de segmentos de memoria compartida (shmNumSegs) para el sistema operativo está por encima del umbral de alarma roja. Alarma amarilla: Comprueba si el número total de segmentos de memoria compartida (shmNumSegs) para el sistema operativo está por encima del umbral de alarma amarilla.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Alarma roja: Comprueba si una falta de recursos del registro lógico (LLOG) no está causando bloqueos durante el proceso de puntos de comprobación.  Alarma amarilla: Comprueba si una falta de recursos del registro lógico (LLOG) no está activando los puntos de comprobación.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Alarma roja: Comprueba si una falta de recursos del registro físico (PLOG) no está causando bloqueos durante el proceso de punto de comprobación.  Alarma amarilla: Comprueba si una falta de recursos del registro físico (PLOG) no está activando los puntos de comprobación.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Alarma roja: Comprueba si el tiempo empleado en las secciones críticas durante el proceso de puntos de comprobación está por debajo del umbral de alarma roja.  Alarma amarilla: Comprueba si el tiempo empleado en las secciones críticas durante el proceso de puntos de comprobación está por debajo del umbral de alarma amarilla.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Alarma roja: Comprueba si el número de vaciados de disco por segundo durante el proceso de puntos de comprobación está por encima del umbral de alarma roja.  Alarma amarilla: Comprueba si el número de vaciados de disco por segundo durante el proceso de puntos de comprobación está por encima del umbral de alarma amarilla.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Alarma roja: Comprueba que el período de tiempo más largo que espera una transacción durante el proceso de puntos de comprobación esté por debajo del umbral de alarma roja.  Alarma amarilla: Comprueba que el período de tiempo más largo que espera una transacción durante el proceso de puntos de comprobación esté por debajo del umbral de alarma amarilla.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Alarma roja: Comprueba que el número de lecturas de almacenamiento intermedio para una tabla sea inferior al porcentaje de todas las lecturas de almacenamiento intermedio listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de lecturas de almacenamiento intermedio para una tabla sea inferior al porcentaje de todas las lecturas de almacenamiento intermedio listado como el umbral de alarma amarilla.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Alarma roja: Comprueba que el número de grabaciones de almacenamiento intermedio para una tabla sea inferior al porcentaje de todas las grabaciones de almacenamiento intermedio listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de grabaciones de almacenamiento intermedio para una tabla sea inferior al porcentaje de todas las grabaciones de almacenamiento intermedio listado como el umbral de alarma amarilla.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Alarma roja: Comprueba que el número de exploraciones secuenciales para una tabla sea inferior al porcentaje de todas las exploraciones secuenciales listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de exploraciones secuenciales para una tabla sea inferior al porcentaje de todas las exploraciones secuenciales listado como el umbral de alarma amarilla.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Alarma roja: Comprueba que el porcentaje de lecturas almacenadas en la memoria caché para los almacenamientos intermedios (%cached) esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje de lecturas almacenadas en la memoria caché para los almacenamientos intermedios (%cached) esté por encima del umbral de alarma amarilla.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Alarma roja: Comprueba que el porcentaje de grabaciones en la memoria caché para los almacenamientos intermedios (%cached) esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje de grabaciones en la memoria caché para los almacenamientos intermedios (%cached) esté por encima del umbral de alarma amarilla.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Alarma roja: Comprueba que el porcentaje del total de ordenaciones que sean ordenaciones de disco esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje del total de ordenaciones que sean ordenaciones de disco esté por encima del umbral de alarma amarilla.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Alarma roja: Comprueba que el porcentaje del total de transacciones que sean transacciones retrotraídas esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje del total de transacciones que sean transacciones retrotraídas esté por encima del umbral de alarma amarilla.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Alarma roja: Comprueba que el porcentaje del total de grabaciones en primer plano esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje del total de grabaciones en primer plano esté por encima del umbral de alarma amarilla.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Alarma roja: Comprueba que la proporción de páginas del registro lógico a E/S esté por debajo del porcentaje del almacenamiento intermedio de registros lógicos (LOGBUFF) listado como el umbral de alarma roja. Alarma amarilla: Comprueba que la proporción de páginas del registro lógico a E/S esté por debajo del porcentaje del almacenamiento intermedio de registros lógicos (LOGBUFF) listado como el umbral de alarma amarilla.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Alarma roja: Comprueba que el porcentaje del total de solicitudes de bloqueo que sean esperas de bloqueo esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje del total de solicitudes de bloqueo que sean esperas de bloqueo esté por encima del umbral de alarma amarilla.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Alarma roja: Comprueba que la proporción de páginas del registro físico a E/S esté por debajo del porcentaje del almacenamiento intermedio de registros físicos (PHYSBUFF) listado como el umbral de alarma roja.  Alarma amarilla: Comprueba que la proporción de páginas del registro físico E/S esté por debajo del porcentaje del almacenamiento intermedio de registros físicos (PHYSBUFF) listado como el umbral de alarma amarilla.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Alarma roja: Comprueba que el porcentaje del total de sentencias SQL que sean exploraciones secuenciales esté por encima del umbral de alarma roja. Alarma amarilla: Comprueba que el porcentaje del total de sentencias SQL que sean exploraciones secuenciales esté por encima del umbral de alarma amarilla.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Alarma roja: Comprueba que todos los bloques estén en línea. Alarma amarilla: Ninguna.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Alarma roja: Comprueba que el número de operaciones de E/S de cada bloque esté por debajo del total de operaciones de E/S listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de operaciones de E/S de cada bloque esté por debajo del total de operaciones de E/S listado como el umbral de alarma amarilla.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Alarma roja: Comprueba que el número de operaciones de lectura de cada bloque esté por debajo del total de operaciones de lectura listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de operaciones de lectura de cada bloque esté por debajo del total de operaciones de lectura listado como el umbral de alarma amarilla.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Alarma roja: Comprueba que el número de operaciones de grabación de cada bloque esté por debajo del total de operaciones de grabación listado como el umbral de alarma roja. Alarma amarilla: Comprueba que el número de operaciones de grabación de cada bloque esté por debajo del total de operaciones de grabación listado como el umbral de alarma amarilla.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Alarma roja: Comprueba que el espacio libre de cada espacio de BD esté por encima del espacio de BD listado como el umbral de alarma roja.  Alarma amarilla: Comprueba que el espacio libre de cada espacio de BD esté por encima del espacio de BD listado como el umbral de alarma roja.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Alarma roja: Comprueba las tablas cuyo porcentaje de máximo espacio libre por página está por debajo del umbral de alarma roja. Alarma amarilla: Comprueba las tablas cuyo porcentaje de máximo espacio libre por página está por debajo del umbral de alarma amarilla.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[若要從檢查中排除節點，請輸入以逗點區隔的節點名稱。]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[若要從檢查中排除表格，請輸入以逗點區隔的分割區號碼。]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[若要從檢查中排除表格，請輸入以逗點區隔的分割區號碼。]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[若要從檢查中排除表格，請輸入以逗點區隔的分割區號碼。]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[若要從檢查中排除片段，請輸入以逗點區隔的片段號碼。]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[若要從檢查中排除片段，請輸入以逗點區隔的片段號碼。]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[若要從檢查中排除片段，請輸入以逗點區隔的片段號碼。]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[若要從檢查中排除資料庫空間，請輸入以逗點區隔的資料庫空間名稱。]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[若要從檢查中排除表格，請輸入以逗點區隔的分割區號碼。]]></exc_Rowsize>
+</lang>

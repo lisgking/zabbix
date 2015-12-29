@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="PRIVILEGES" targetNamespace="urn:PRIVILEGES"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:PRIVILEGES"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:PRIVILEGES">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+
+	<message name="getMappedUsers">
+		<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+		<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+	</message>
+
+	<message name="getMappedUsersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="setUserMapping">
+		<part name="mapping" type="xsd:string" />
+	</message>
+
+	<message name="setUserMappingResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getUserMapping">
+	</message>
+
+	<message name="getUserMappingResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="runUserActions">
+		<part name="sql" type="xsd:string" />
+		<part name="actionType" type="xsd:string" />
+	</message>
+
+	<message name="runUserActionsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getAdminUsers">
+		<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+		<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+	</message>
+
+	<message name="getAdminUsersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="executePrivilegesAction">
+		<wsdl:part name="sql" type="xsd:string"></wsdl:part>
+		<wsdl:part name="action_type" type="xsd:string"></wsdl:part>
+		<wsdl:part name="user_name" type="xsd:string"></wsdl:part>
+	</message>
+
+	<message name="executePrivilegesActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+		
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="PRIVILEGESPort">
+		
+		<operation name="getMappedUsers">
+			<input  message="typens:getMappedUsers" />
+			<output message="typens:getMappedUsersResponse" />
+		</operation>
+		
+		<operation name="setUserMapping">
+			<input  message="typens:setUserMapping" />
+			<output message="typens:setUserMappingResponse" />
+		</operation>
+		
+		<operation name="getUserMapping">
+			<input  message="typens:getUserMapping" />
+			<output message="typens:getUserMappingResponse" />
+		</operation>
+		
+		<operation name="runUserActions">
+			<input  message="typens:runUserActions" />
+			<output message="typens:runUserActionsResponse" />
+		</operation>
+		
+		<operation name="getAdminUsers">
+			<input  message="typens:getAdminUsers" />
+			<output message="typens:getAdminUsersResponse" />
+		</operation>
+		
+		<operation name="executePrivilegesAction">
+			<input  message="typens:executePrivilegesAction" />
+			<output message="typens:executePrivilegesActionResponse" />
+		</operation>
+
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="PRIVILEGESBinding" type="typens:PRIVILEGESPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		
+		<operation name="getMappedUsers">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="setUserMapping">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getUserMapping">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="runUserActions">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getAdminUsers">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="executePrivilegesAction">
+			<soap:operation soapAction="urn:PRIVILEGESAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:PRIVILEGES"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+	</binding>
+
+	<service name="PRIVILEGESService">
+		<port name="PRIVILEGESPort" binding="typens:PRIVILEGESBinding">
+			<soap:address location="services/privileges/privilegesService.php" />
+		</port>
+	</service>
+</definitions>

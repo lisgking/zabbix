@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[OpenAdmin Tool installieren]]></install_page_title>
+<next><![CDATA[Weiter]]></next>
+<save><![CDATA[Speichern]]></save>
+<finish><![CDATA[Fertigstellen]]></finish>
+<warning><![CDATA[Warnung]]></warning>
+<language><![CDATA[Sprache:]]></language>
+<error_occurred><![CDATA[Ein Fehler ist aufgetreten]]></error_occurred>
+<error_message><![CDATA[Fehlernachricht:]]></error_message>
+
+<welcome><![CDATA[Willkommen]]></welcome>
+<welcome_message><![CDATA[Dieses Installationsprogramm installiert OpenAdmin Tool Community Edition {0}.]]></welcome_message>
+<prerequisite_message><![CDATA[Informationen zu den Voraussetzungen für die Installation von OpenAdmin Tool enthält die Datei {0}.]]></prerequisite_message>
+<readme><![CDATA[Readme-Datei]]></readme>
+<license_message><![CDATA[Vor der Installation und Verwendung von OpenAdmin Tool Community Edition müssen Sie die folgende Lizenzvereinbarung akzeptieren.]]></license_message>
+<license_agreement><![CDATA[Lizenzvereinbarung]]></license_agreement>
+<i_accept><![CDATA[Ich akzeptiere die Bedingungen der Lizenzvereinbarung.]]></i_accept>
+<error_accept_license_first><![CDATA[Sie müssen die Lizenzvereinbarung akzeptieren, um mit der Installation fortfahren zu können.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[Eine install.lock-Datei im Installationsverzeichnis hat die Installation gestoppt. Entfernen Sie die Datei, um mit der Installation fortfahren zu können.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Erforderliche PHP-Module]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[Die folgenden PHP-Module sind für die Ausführung von OpenAdmin Tool (OAT) erforderlich.]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[Ein X-Symbol zeigt an, dass das Modul nicht gefunden wurde. Prüfen Sie Ihre PHP-Installation und installieren Sie die fehlenden Module.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Empfohlene PHP-Module]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[Die folgenden PHP-Module werden für OAT empfohlen.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Wichtig: Einige Funktionen in OAT sind ohne diese Module nur beschränkt nutzbar, auch wenn die Module für die Installation und Verwendung von OAT nicht erforderlich sind.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[Einige erforderliche PHP-Module sind nicht installiert.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Fehlende Module:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Einige empfohlene PHP-Module sind nicht installiert. Einige Funktionen in OAT sind ohne diese Module nur beschränkt nutzbar, auch wenn die Module für die Installation und Verwendung von OAT nicht erforderlich sind.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Fehlende empfohlene Module:]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[OAT-Konfiguration]]></oat_config>
+<parameter><![CDATA[Parameter]]></parameter>
+<description><![CDATA[Beschreibung]]></description>
+<value><![CDATA[Wert]]></value>
+<LANG><![CDATA[Standardsprache]]></LANG>
+<LANG_desc><![CDATA[Die Standardsprache für die OAT-Seiten.]]></LANG_desc>
+<BASEURL><![CDATA[Basis-URL]]></BASEURL>
+<BASEURL_desc><![CDATA[Die URL der Installationsposition von OAT im Format http://servername:port/adresse.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[Installationsverzeichnis]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[Das Verzeichnis für die OAT-Installation.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Verbindungsdatenbankverzeichnis]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[Das Verzeichnis für die OAT-Verbindungsdatenbank. Geben Sie ein sicheres Verzeichnis an, das sich nicht im Dokumentverzeichnis des Web-Servers befindet.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[Die Speicherposition der Verbindungsdatenbank ({0}) befindet sich unter dem Dokumentverzeichnis für den Web-Server. Diese Speicherposition birgt für OAT möglicherweise Sicherheitsrisiken. Ändern Sie aus Sicherheitsgründen die Speicherposition der Verbindungsdatenbank. Wenn Sie diese Warnung ignorieren wollen, klicken Sie erneut auf 'Speichern'.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[Homepage]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Homepage für OAT]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Willkommen]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Diagnosezentrale > Dashboard > Gruppenzusammenfassung]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Diagnosezentrale > Dashboard > Serverleistung]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Angepasst]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Aktualisierungsintervall]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[Die Zeit (in Sekunden) zwischen Aktualisierungen des Serverstatus. Der Serverstatus wird auf der Seite 'Diagnosezentrale > Dashboard > Gruppenzusammenfassung' angezeigt.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Zeilen pro Seite]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[Die Standardanzahl der Zeilen pro Seite, die angezeigt werden sollen, wenn Daten in einem Tabellenformat angezeigt werden.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL ToolBox-Sicherheit]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Berechtigungsnachweise für Anmeldung für SQL ToolBox erfordern]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix-Verbindungszeit]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[Die Zeitspanne (in Sekunden), während der OAT versucht, eine Verbindung zum Datenbankserver herzustellen, bevor ein Fehler zurückgegeben wird (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix-Verbindungsneuversuche]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Häufigkeit, mit der OAT versucht, während der definierten Informix-Verbindungszeit eine Verbindung zum Datenbankserver herzustellen (INFORMIXCONRETRY.]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[Dieses Feld ist erforderlich: ]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[Das für das Installationsverzeichnis ({0}) angegebene Verzeichnis ist nicht vorhanden. Geben Sie ein gültiges Installationsverzeichnis an.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[Das für die Verbindungsdatenbank ({0}) angegebene Verzeichnis ist nicht gültig. Prüfen Sie, ob das Verzeichnis vorhanden ist und ob Schreibzugriff besteht.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[Auf das Verzeichnis {0} kann nicht zugegriffen werden. Prüfen Sie, ob das Verzeichnis vorhanden ist und ob Schreibzugriff besteht.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[Auf die Datei {0} kann nicht zugegriffen werden. Prüfen Sie, ob die Datei vorhanden ist und ob Schreibzugriff besteht.]]></file_not_accessible>
+
+<conndb><![CDATA[Verbindungsdatenbank]]></conndb>
+<conndb_desc><![CDATA[Die Verbindungsdatenbank enthält Verbindungsinformationen, die Sie für die Server angeben, zu denen OAT eine Verbindung herstellen kann.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[Klicken Sie zum Erstellen der Verbindungsdatenbank auf 'Weiter'.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[Klicken Sie zum Aktualisieren der Verbindungsdatenbank auf 'Weiter'.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[Die Verarbeitung der Verbindungsdatenbank wurde erfolgreich abgeschlossen.]]></conndb_complete>
+<conndb_not_set><![CDATA[Der Parameter für das Verbindungsdatenbankverzeichnis (CONNDBDIR) ist in der Datei conf/config.php nicht gesetzt. Prüfen Sie diese Datei und starten Sie anschließend die Installation erneut.]]></conndb_not_set>
+<conndb_processing><![CDATA[Datei {0} - {1} wird verarbeitet]]></conndb_processing>
+<conndb_error><![CDATA[Die Verbindungsdatenbank wurde nicht erfolgreich eingerichtet. Die Tabelle {0} konnte nicht erstellt werden. Entfernen Sie die Verbindungsdatenbank und starten Sie die Installation erneut.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[Die Verbindungsdatenbank wurde nicht erfolgreich aktualisiert. In Datei {0}, Abschnitt {1} ist ein Fehler aufgetreten. Entfernen Sie die Verbindungsdatenbank und starten Sie die Installation erneut. Alle gespeicherten Verbindungsinformationen gehen verloren.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[Die Versionsinformationen in der Verbindungsdatenbank wurden nicht erfolgreich aktualisiert. Entfernen Sie die Verbindungsdatenbank und starten Sie die Installation erneut.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[Die Versionsinformationen für das IBM Beispiel-Plug-in in der Verbindungsdatenbank wurden nicht erfolgreich aktualisiert. Entfernen Sie die Verbindungsdatenbank und starten Sie die Installation erneut.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Zu installierende Plug-ins]]></choose_plugins>
+<zip_extension_required><![CDATA[Das PHP-ZIP-Modul ist für die Installation von Plug-ins erforderlich.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[Die Plug-ins wurden nicht installiert. Das Installationsprogramm kann nicht in das temporäre OAT-Verzeichnis (tmp) schreiben. Prüfen Sie die Berechtigungen für das Verzeichnis. Verwenden Sie anschließend den Plug-in-Manager in OAT, um die Plug-ins zu installieren.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[Es sind keine Plug-ins zum Installieren vorhanden.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Plug-in]]></plugin_name>
+<plugin_author><![CDATA[Autor]]></plugin_author>
+<plugin_version><![CDATA[Version]]></plugin_version>
+<plugin_server_version><![CDATA[Informix-Version]]></plugin_server_version>
+<plugin_license><![CDATA[Lizenz]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Installieren?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Akzeptieren Sie die Bedingungen der Lizenzvereinbarung für das Plug-in?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Plug-in-Installation - Ergebnisse]]></plugin_install>
+<no_plugins_selected><![CDATA[Es wurden keine zu installierenden Plug-ins ausgewählt.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[{0} wurde erfolgreich installiert.]]></plugin_install_complete>
+
+<install_complete><![CDATA[Installation von OpenAdmin Tool beendet]]></install_complete>
+<install_complete_details><![CDATA[OpenAdmin Tool wurde erfolgreich installiert. Klicken Sie auf 'Fertigstellen', um diese Seite zu schließen und die Seite 'OAT-Anmeldung' aufzurufen.]]></install_complete_details>
+
+</lang>

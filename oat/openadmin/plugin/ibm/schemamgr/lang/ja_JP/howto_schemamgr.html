@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP" xml:lang="ja-jp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="ja-jp" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2009, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="スキーマ マネージャ, データベース オブジェクト, 表オブジェクト , 確認, 統計, 表, フラグメント, 作成, データベース, データベース" />
+<meta name="keywords" content="削除, 表, 表の削除, 表の削除, 削除, 表の切捨て, 切捨て, インデックス, 有効化, 無効化, 外部表, データのアンロード" />
+<meta name="keywords" content="データのロード" />
+<title>OAT 用の Informix スキーマ マネージャ プラグイン</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>OAT 用の Informix スキーマ マネージャ プラグイン</h1>
+<br />
+<div id="wq1">
+<h1>内容</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">OAT 用の Informix スキーマ マネージャ プラグイン</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_osm_005" class="toclink">データベース オブジェクトの表示</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_osm_006" class="toclink">表オブジェクトの表示</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_osm_019" class="toclink">表の統計情報の確認</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_osm_021" class="toclink">データベースの作成</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_osm_022" class="toclink">データベースの削除</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_osm_020" class="toclink">表およびインデックスの管理</a></div>
+<div class="head3"><a id="ToC_8" href="#dqx1ids_osm_003" class="toclink">表の作成</a></div>
+<div class="head3"><a id="ToC_9" href="#dqx1ids_osm_001" class="toclink">表の削除</a></div>
+<div class="head3"><a id="ToC_10" href="#dqx1ids_osm_002" class="toclink">表の切捨て</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_osm_016" class="toclink">インデックスの作成</a></div>
+<div class="head3"><a id="ToC_12" href="#dqx1ids_osm_018" class="toclink">インデックスの無効化または有効化</a></div>
+<div class="head3"><a id="ToC_13" href="#dqx1ids_osm_017" class="toclink">インデックスの削除</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_osm_011" class="toclink">外部表を使用したデータのロードおよびアンロード</a></div>
+<div class="head3"><a id="ToC_15" href="#dqx1ids_osm_008" class="toclink">外部表でのデータのロード</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_osm_009" class="toclink">外部表でのデータのアンロード</a></div>
+<div class="head3"><a id="ToC_17" href="#dqx1ids_osm_007" class="toclink">外部表の作成</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_osm_010" class="toclink">外部表情報の表示</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_osm_013" class="toclink">ロード タスクおよびアンロード タスクの状態の表示</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_osm_012" class="toclink">保存されているロード タスクおよびアンロード タスクの実行</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_osm_014" class="toclink">ロード タスクおよびアンロード タスクの削除</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_osm_015" class="toclink">保存済みロード タスクまたはアンロード タスクのグループの作成</a></div>
+<div class="head1"><a id="ToC_23" href="#dqx1ids_cm_not" class="toclink">特記事項</a></div>
+<div class="head2"><a id="ToC_24" href="#dqx1trademarks" class="toclink">商標
+</a></div>
+<div class="head2"><a id="ToC_25" href="#dqx1ids_osm_000" class="toclink">著作権</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">OAT 用の Informix スキーマ マネージャ プラグイン
+</a>
+</h1>
+<div>
+<p>OpenAdmin Tool (OAT) 用の IBM&reg; Informix&reg; スキーマ マネージャ プラグインは、データベースと表を表示および管理するためのグラフィカル インターフェイスを提供します。
+</p></div>
+<p>スキーマ マネージャ プラグインを使用すると、次のタスクを実行できます。</p>
+<ul>
+<li>データベース、表、およびインデックスの作成と削除。</li>
+<li>データベース サーバの外部で管理および保管されているデータを、外部表を使用してロードおよびアンロードします。</li>
+<li>表とフラグメントに関する統計情報の監視。</li>
+<li>データ分散統計の計算対象を、フラグメント表内の変更されたフラグメントのみにするか、あるいは表全体にするかの指定。</li>
+<li>ストアド プロシジャおよび関数、シーケンス、ユーザ定義データ型 (UDT)、アクセス権、DataBlade&reg; モジュール、集計関数、キャスト、および演算子クラスなどのデータベース オブジェクトに関する情報の表示。</li>
+<li>列、インデックス、リファレンス、アクセス権、UDT、制約、フラグメント、トリガなどの表オブジェクトに関する情報の表示。</li></ul>
+<h2 id="dqx1ids_osm_005"><a href="#ToC_2">データベース オブジェクトの表示</a></h2>
+<div>
+<p>ストアド プロシジャおよび関数、シーケンス、ユーザ定義データ型 (UDT)、アクセス権、DataBlade モジュール、集計関数、キャスト、および演算子クラスに関する情報を表示します。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>データベース オブジェクトを表示するには</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リスト内のデータベースを選択します。
+
+<p>ページには、各データベース オブジェクトの情報のパネルが表示されます。</p></li>
+<li>データベース オブジェクトの詳細を表示するには、オブジェクト パネルにある展開ボタンをクリックします。</li></ol>
+<h2 id="dqx1ids_osm_006"><a href="#ToC_3">表オブジェクトの表示</a></h2>
+<div>
+<p>列、インデックス、リファレンス、アクセス権、ユーザ定義データ型 (UDT)、制約、フラグメント、トリガに関する情報を表示します。</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>表オブジェクトを表示するには</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>表を検索するには、<strong>「検索」</strong> フィールドに表名の一部を入力してから、<strong>「検索」</strong>をクリックします。
+データベースを展開して表を表示させることもできます。</li>
+<li>オプション: 次のようにフィルタを選択して、リストに表を追加します。
+<ul>
+<li>システム カタログを含めるには、「<strong>カタログを含める</strong>」を選択します。
+ </li>
+<li>ビューを含めるには、「<strong>ビューを含める</strong>」を選択します。
+ビューは、指定した SELECT 文に基づく仮想表です。</li>
+<li>シノニムを含めるには、「<strong>シノニムを含める</strong>」を選択します。
+シノニムは、表、ビュー、またはシーケンス オブジェクトの代替名です。一般的に、シノニムは現行のデータベースにはない表を参照します。</li></ul></li>
+<li>リスト内の表を選択します。
+
+<p>ページには、各表オブジェクトの情報のパネルが表示されます。</p></li>
+<li>表オブジェクトの詳細を表示するには、オブジェクト パネルにある展開ボタンをクリックします。</li></ol>
+<h2 id="dqx1ids_osm_019"><a href="#ToC_4">表の統計情報の確認</a></h2>
+<div>
+<p>統計情報が最後に記録された日時、データ分散、および変更された行のパーセンテージなどを含め、表とフラグメントの統計情報を確認します。
+表の統計情報の自動更新オプションを指定します。</p></div><a id="idx5"></a><a id="idx6"></a><a id="idx7"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">前提条件:</div>
+<div class="notebody">表の統計情報の自動更新オプションの指定、および変更された行のパーセンテージなどの一部の情報の表示を行う場合、IBM OpenAdmin Tool (OAT) for Informix には、IBM Informix バージョン 11.70 が必要です。</div></div>
+<p>
+<p>表の統計情報を確認するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リスト内のデータベースを展開します。</li>
+<li>リスト内の表を選択します。</li>
+<li><span id="dqx1ids_osm_019__d1219e94"><strong>「統計」</strong> パネルを展開します。</span></li>
+<li>フラグメント レベルの統計情報を表示するには、「<strong>フラグメント統計</strong>」をクリックします。この情報は、IBM Informix バージョン 11.70 に対して表示されます。</li></ol>
+<h2 id="dqx1ids_osm_021"><a href="#ToC_5">データベースの作成</a></h2>
+<div>
+<p>データベースを作成し、データベース ロケールを指定します。</p></div><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_osm_021__preq-create-db">前提条件:</div>
+<div class="notebody">データベースを作成する場合、
+OpenAdmin Tool (OAT) for Informix には IBM Informix 11.70.xC2 が必要です。</div></div>
+<p>
+<p>
+<br />データベースを作成するには、次の手順で行います。<br /></p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>データベースの作成</strong>」をクリックします。</li>
+<li>「データベースの作成」ウィザードの指示に従います。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_082.htm#ids_ddi_082" target="_blank">CREATE DATABASE の使用 (データベース設計ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.glsug.doc/ids_gug_037.htm#ids_gug_037" target="_blank">データベース ロケール (GLS ユーザーズ ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連資料</strong></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0368.htm#ids_sqs_0368" target="_blank">CREATE DATABASE 文 (SQL 構文)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_127.htm#ids_sapi_127" target="_blank">create database 引数: データベースの作成  (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_osm_022"><a href="#ToC_6">データベースの削除</a></h2>
+<div>
+<p>データベースを削除し、表とそこに格納されたデータを削除します。</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq16">前提条件:</div>
+<div class="notebody">データベースを削除する場合、
+OpenAdmin Tool (OAT) for Informix には IBM Informix 11.70.xC2 が必要です。</div></div>
+<p>
+<p>
+<br />データベースを削除するには、次の手順を実行します。<br /></p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>データベースを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>データベースの削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連資料</strong></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0713.htm#ids_sqs_0713" target="_blank">DROP DATABASE 文 (SQL 構文)</a></li></ul>
+<h2 id="dqx1ids_osm_020"><a href="#ToC_7">表およびインデックスの管理</a></h2>
+<div>
+<p>表を作成、削除、および切り捨てます。インデックスを作成、無効化、および削除します。</p></div>
+<h3 id="dqx1ids_osm_003"><a href="#ToC_8">表の作成</a></h3>
+<div>
+<p>表を作成して、表を完全に機能させるために必要な属性を定義します。</p></div><a id="idx12"></a><a id="idx13"></a>
+<p>
+<p>表を作成するには</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>表を作成するデータベースを選択します。</li>
+<li>「<strong>アクション</strong>」メニューで、「<strong>表の作成</strong>」をクリックします。</li>
+<li>「表の作成」ウィザードの手順に従ってください。</li></ol>
+<h3 id="dqx1ids_osm_001"><a href="#ToC_9">表の削除</a></h3>
+<div>
+<p>表を、その関連するインデックスおよびデータとともに削除します。</p></div><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a><a id="idx17"></a>
+<p>
+<p>表を削除すると、表に格納されているデータ、インデックス、制約、トリガ、アクセス権、およびローカル シノニムも削除されます。
+また、表に基づいているすべてのビュー、表に関連付けられている違反表および診断表も削除されます。
+</p>
+<p>表を削除するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リストで、表が含まれるデータベースを展開します。</li>
+<li>表を選択します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「表の削除」</strong>をクリックします。</li></ol>
+<h3 id="dqx1ids_osm_002"><a href="#ToC_10">表の切捨て</a></h3>
+<div>
+<p>表からすべての行を削除して、関連する格納域を解放するか、表およびそのインデックスで再利用できるように格納域を予約します。
+</p></div><a id="idx18"></a><a id="idx19"></a>
+<p>
+<p>表が定期的に空にされ、新規行とともに再ロードされるアプリケーションでは、格納域を再利用することで、格納域管理を効率的に行うことができます。
+</p>
+<p>表を切り捨てるには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リストで、表が含まれるデータベースを展開します。</li>
+<li>表を選択します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「表の切捨て」</strong>をクリックします。</li>
+<li>オプション：<strong>「格納領域を予約する」</strong>を選択して、表に割り当てられる格納域を確保します。</li></ol>
+<h3 id="dqx1ids_osm_016"><a href="#ToC_11">インデックスの作成</a></h3>
+<div>
+<p>表の 1 つ以上の列に対してインデックスを作成します。</p></div><a id="idx20"></a><a id="idx21"></a>
+<p>
+<p></p></p>
+<p>
+<p>インデックスを作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li id="dqx1ids_osm_016__step-select-db-table">リストでデータベースを展開し、表を選択します。</li>
+<li id="dqx1ids_osm_016__step-create-index">「<strong>操作</strong>」メニューで、「<strong>インデックスの作成</strong>」をクリックします。</li>
+<li><span id="dqx1ids_osm_016__step-follow-create-index">「インデックスの作成」ウィザードの指示に従います。</span></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_359.htm#ids_prf_359" target="_blank">インデックスおよびインデックスのパフォーマンスに関する考慮事項 (パフォーマンス ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連資料</strong></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0401.htm#ids_sqs_0401" target="_blank">CREATE INDEX 文 (SQL 構文)</a></li></ul>
+<h3 id="dqx1ids_osm_018"><a href="#ToC_12">インデックスの無効化または有効化</a></h3>
+<div>
+<p>インデックスを無効にします。または無効化されているインデックスを有効にします。</p></div><a id="idx22"></a><a id="idx23"></a><a id="idx24"></a><a id="idx25"></a>
+<p>
+<p>インデックスは、デフォルトでは有効になっています。データベース サーバは、インデックスを認識し、挿入、削除、および更新の各操作時にインデックスを更新します。インデックスを無効にすると、これらの操作時に更新は実行されなくなります。</p></p>
+<p>
+<p>インデックスを有効または無効にするには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リストで、インデックスの適用先の表が含まれるデータベースを展開し、表を選択します。</li>
+<li>「<strong>インデックス</strong>」パネルを展開します。</li>
+<li>インデックスを選択します。</li>
+<li>パネルの「<strong>操作</strong>」メニューで、「<strong>インデックスの有効化</strong>」または「<strong>インデックスの無効化</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0435.htm#ids_sqs_0435" target="_blank">データベース サーバによる停止モードのインデックスの処理 (SQL 構文)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0166.htm#ids_sqs_0166" target="_blank">データベース オブジェクト モードの定義 (SQL 構文)</a></li></ul>
+<h3 id="dqx1ids_osm_017"><a href="#ToC_13">インデックスの削除</a></h3>
+<div>
+<p>インデックスを削除します (例えば、効率が悪くなったインデックスを除去するため)。</p></div><a id="idx26"></a><a id="idx27"></a>
+<p>
+<p></p></p>
+<p>
+<p>インデックスを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>リストで、インデックスの適用先の表が含まれるデータベースを展開し、表を選択します。</li>
+<li>「<strong>インデックス</strong>」パネルを展開します。</li>
+<li>インデックスを選択します。</li>
+<li>パネルの「<strong>操作</strong>」メニューで、「<strong>インデックスの削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_332.htm#ids_prf_332" target="_blank">表更新効率化を目的としたインデックスの削除 (パフォーマンス ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連資料</strong></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0718.htm#ids_sqs_0718" target="_blank">DROP INDEX 文 (SQL 構文)</a></li></ul>
+<h2 id="dqx1ids_osm_011"><a href="#ToC_14">外部表を使用したデータのロードおよびアンロード</a></h2>
+<div>
+<p>データベース サーバの外部で管理および保管されているデータを、外部表を使用してロードおよびアンロードします。</p></div><a id="idx28"></a><a id="idx29"></a><a id="idx30"></a>
+<div>
+<div class="notetitle" id="wq37">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以降が必要です。</div></div>
+<h3 id="dqx1ids_osm_008"><a href="#ToC_15">外部表でのデータのロード</a></h3>
+<div>
+<p>外部表を使用して、データベース サーバに対して外部であるソースからデータベース表にデータをロードします。
+</p></div><a id="idx31"></a><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq39">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>外部表でデータをロードするには、次の手順を実行します。
+</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>データをロードするデータベース表を選択します。
+
+<p>表を検索するには、<strong>「検索」</strong> フィールドに表名の一部を入力してから、<strong>「検索」</strong>をクリックします。
+データベースを展開して表を表示させることもできます。</p></li>
+<li><strong>「操作」</strong>メニューで、<strong>「表のロード」</strong>をクリックします。</li>
+<li>「表のロード」ウィザードの指示に従います。</li></ol>
+<h3 id="dqx1ids_osm_009"><a href="#ToC_16">外部表でのデータのアンロード</a></h3>
+<div>
+<p>データベース表から外部表にデータをアンロードします。</p></div><a id="idx33"></a><a id="idx34"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq43">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>外部表にデータをアンロードするには、次の手順を実行します。
+</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>データをアンロードするデータベース表を選択します。
+
+<p>表を検索するには、<strong>「検索」</strong> フィールドに表名の一部を入力してから、<strong>「検索」</strong>をクリックします。
+データベースを展開して表を表示させることもできます。</p></li>
+<li><strong>「操作」</strong>メニューで、<strong>「表のアンロード」</strong>をクリックします。</li>
+<li>「表のアンロード」ウィザードの指示に従います。</li></ol>
+<h3 id="dqx1ids_osm_007"><a href="#ToC_17">外部表の作成</a></h3>
+<div>
+<p>データのロードおよびアンロードを行うため、データベース サーバの外部で管理および保管される表を作成します。</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq47">前提条件:</div>
+<div class="notebody">外部表を作成する場合、IBM OpenAdmin Tool (OAT) for Informixには IBM Informix バージョン 11.50.xC6 が必要です。</div></div>
+<p>
+<p>外部表を作成するには、次の手順を実行します。
+</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>表を作成する対象のデータベースを選択します。</li>
+<li>「<strong>アクション</strong>」メニューで、「<strong>表の作成</strong>」をクリックします。</li>
+<li>「表の作成」ウィザードの手順に従ってください。
+
+<p>「<strong>表タイプ</strong>」で、外部表のタイプを選択します。</p>
+<ul>
+<li><strong>外部 (固定)</strong>: Informix データベース サーバ外部でデータが管理および保管される固定長テキスト形式の表。</li>
+<li><strong>外部 (区切り記号付き)</strong>: Informix データベース サーバ外部でデータが管理および保管される区切りテキスト形式の表。</li>
+<li><strong>外部 Informix</strong>: Informix データベース サーバ外部でデータが管理および保管される内部 Informix 形式の表。
+
+<p>外部表は、データベースのデータのロードとアンロードに使用されます。</p></li></ul></li></ol>
+<h3 id="dqx1ids_osm_010"><a href="#ToC_18">外部表情報の表示</a></h3>
+<div>
+<p>外部表に関する情報を表示します。</p></div><a id="idx37"></a>
+<p>
+<p>この情報は、Informix 11.50.xC6 以降に対して表示されます。</p></p>
+<p>
+<p>外部表に関する情報を表示するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>表を検索するには、<strong>「検索」</strong> フィールドに表名の一部を入力してから、<strong>「検索」</strong>をクリックします。
+データベースを展開して表を表示させることもできます。</li>
+<li>リスト内の表を選択します。
+
+<p>ページには、各表オブジェクトの情報のパネルが表示されます。</p></li>
+<li>表オブジェクトの詳細を表示するには、オブジェクト パネルにある展開ボタンをクリックします。
+
+<p>「<strong>表情報</strong>」パネルおよび「<strong>列</strong>」パネルに、外部表固有の情報が表示されます。</p></li></ol>
+<h3 id="dqx1ids_osm_013"><a href="#ToC_19">ロード タスクおよびアンロード タスクの状態の表示</a></h3>
+<div>
+<p>外部表を使用してデータをロードおよびアンロードするために IBM OpenAdmin Tool (OAT) for Informix を介して実行要求されるタスクの状態を表示します。</p></div><a id="idx38"></a><a id="idx39"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>ロード タスクおよびアンロード タスクの状態を表示するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>タスクの実行対象のデータベースまたは表をクリックします。</li>
+<li>「<strong>情報</strong>」パネルを展開します。</li>
+<li>「<strong>タスクの状態</strong>」タブをクリックします。
+
+<p>エラー コードや戻りメッセージなど、タスクに関する詳細情報を表示するには、タスクの詳細アイコンをクリックします。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">エラー メッセージ (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_osm_012"><a href="#ToC_20">保存されているロード タスクおよびアンロード タスクの実行</a></h3>
+<div>
+<p>外部表を使用して、データをロードするタスクおよびアンロードするタスクを実行します。</p></div><a id="idx40"></a><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq58">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>外部表を使用してデータをロードまたはアンロードすると、タスクが保存されます。そのタスクを再び実行すること、または削除することができます。</p></p>
+<p>
+<p>保存されているロード タスクまたはアンロード タスクを実行するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>タスクの実行対象のデータベースまたは表をクリックします。</li>
+<li>「<strong>情報</strong>」パネルを展開します。</li>
+<li>「<strong>タスク</strong>」タブをクリックします。</li>
+<li>実行するタスクを選択します。</li>
+<li>パネルの「<strong>操作</strong>」メニューで、「<strong>実行要求</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_osm_014"><a href="#ToC_21">ロード タスクおよびアンロード タスクの削除</a></h3>
+<div>
+<p>ロード タスクまたはアンロード タスク、あるいはロード タスクの状態またはアンロード タスクの状態を削除します。</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq63">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>OAT を使用してデータをロードまたはアンロードすると、タスクが保存されます。
+そのタスクを再び実行要求すること、または削除することができます。また、実行要求したタスクの状態を削除することもできます。</p></p>
+<div>
+<div class="notetitle" id="wq65">重要:</div>
+<div class="notebody">「<strong>タスク</strong>」ページでタスクを削除すると、タスクの結果は「<strong>タスク状況</strong>」ページからも削除されます。
+タスク状況を削除すると、タスク状況のみが削除されます。</div></div>
+<p>
+<p>ロード タスクおよびアンロード タスクを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>タスクの実行対象のデータベースまたは表をクリックします。</li>
+<li>「<strong>情報</strong>」パネルを展開します。</li>
+<li>次のいずれか該当するタブを選択します。<ul>
+<li>タスクとタスク状況を削除するには、「<strong>タスク</strong>」タブをクリックします。</li>
+<li>タスク状況のみを削除するには、「<strong>タスク状況</strong>」タブをクリックします。</li></ul></li>
+<li>タスクを選択します。</li>
+<li><strong>「操作」</strong> &gt; <strong>「削除」</strong>をクリックします。</li></ol>
+<h3 id="dqx1ids_osm_015"><a href="#ToC_22">保存済みロード タスクまたはアンロード タスクのグループの作成</a></h3>
+<div>
+<p>保存されているタスクを同時に実行できるようにするために、それらのタスクをグループ化します。</p></div><a id="idx45"></a><a id="idx46"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq69">前提条件:</div>
+<div class="notebody">外部表を使用してデータをロードおよびアンロードするため、IBM OpenAdmin Tool (OAT) for Informix には IBM Informix バージョン 11.50.xC6 以上が必要です。</div></div>
+<p>
+<p>OAT を使用してデータをロードまたはアンロードすると、タスクが保存されます。
+そのタスクを再び実行すること、削除すること、または他の保存済みタスクとともにグループ化することができます。</p></p>
+<p>
+<p>保存済みロード タスクまたはアンロード タスクのグループを作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「SQL Toolbox」</strong> &gt; <strong>「スキーマ マネージャ」</strong>をクリックします。</li>
+<li>タスクの実行対象のデータベースまたは表をクリックします。</li>
+<li>「<strong>情報</strong>」パネルを展開します。</li>
+<li>「<strong>タスク</strong>」タブをクリックします。</li>
+<li>グループに含めるタスクを選択します。ロード タスクとアンロード タスクを同じグループに含めることができます。</li>
+<li>パネルの「<strong>操作</strong>」メニューで、「<strong>グループの作成</strong>」をクリックし、グループの名前を入力します。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_23">特記事項</a></h1>
+<p>本書は米国 IBM が提供する製品およびサービスについて作成したものです。</p>
+<p>本書に記載の製品、サービス、または機能が日本においては提供されていない場合があります。
+日本で利用可能な製品、サービス、および機能については、日本 IBM の営業担当員にお尋ねください。
+本書で IBM 製品、プログラム、またはサービスに言及していても、その IBM 製品、プログラム、または
+サービスのみが使用可能であることを意味するものではありません。
+これらに代えて、IBM の知的所有権を侵害することのない、機能的に同等の
+製品、プログラム、またはサービスを使用することができます。
+ただし、IBM 以外の製品とプログラムの操作またはサービスの
+評価および検証は、お客様の責任で行っていただきます。</p>
+<p>IBM は、本書に記載されている内容に関して特許権 (特許出願中のものを含む) を保有している場合があります。
+本書の提供は、お客様にこれらの特許権について
+実施権を許諾することを意味するものではありません。
+実施権についてのお問い合わせは、書面にて下記宛先にお送りください。
+</p>
+<div class="lines">〒103-8510
+<br />
+東京都中央区日本橋箱崎町19番21号<br />
+日本アイ・ビー・エム株式会社
+<br />
+法務・知的財産
+<br />
+知的財産権ライセンス渉外<br />
+</div>
+<p>NONE:
+</p>
+<div class="lines"><!--Intellectual Property Licensing--><br />
+<!--Legal and Intellectual Property Law--><br />
+<!--IBM Japan, Ltd.--><br />
+<!--19-21, Nihonbashi-Hakozakicho, Chuo-ku--><br />
+<!--Tokyo 103-8510, Japan--><br />
+</div>
+<p>以下の保証は、国または地域の法律に沿わない場合は、適用されません。
+IBM およびその直接または間接の子会社は、本書を特定物として現存するままの状態で提供し、
+商品性の保証、特定目的適合性の保証および法律上の瑕疵担保責任を含む
+すべての明示もしくは黙示の保証責任を負わないものとします。
+国または地域によっては、法律の強行規定により、保証責任の制限が
+禁じられる場合、強行規定の制限を受けるものとします。</p>
+<p>この情報には、技術的に不適切な記述や誤植を含む場合があります。
+本書は定期的に見直され、必要な変更は本書の次版に組み込まれます。
+IBM は予告なしに、随時、この文書に記載されている製品またはプログラムに対して、
+改良または変更を行うことがあります。</p>
+<p>本書において IBM 以外の Web サイトに言及している場合がありますが、便宜のため記載しただけであり、決してそれらの Web サイトを推奨するものではありません。それらの Web サイトにある資料は、この IBM 製品の資料の一部では
+ありません。それらの Web サイトは、お客様の責任でご使用ください。
+</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p>本プログラムのライセンス保持者で、(i) 独自に作成したプログラムと
+その他のプログラム (本プログラムを含む) との間での情報交換、
+および (ii) 交換された情報の相互利用を可能にすることを目的として、
+本プログラムに関する情報を必要とする方は、下記に連絡してください。
+</p>
+<div class="lines">IBM Corporation<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San Jose, CA 95141-1003
+<br />
+U.S.A.<br />
+</div>
+<p>本プログラムに関する上記の情報は、適切な使用条件の下で使用すること
+ができますが、有償の場合もあります。</p>
+<p>本書で説明されているライセンス・プログラムまたはその他のライセンス資
+料は、IBM 所定のプログラム契約の契約条項、IBM プログラムのご使用条件、
+またはそれと同等の条項に基づいて、IBM より提供されます。</p>
+<p>この文書に含まれるいかなるパフォーマンス・データも、管理環境下で
+決定されたものです。
+そのため、他の操作環境で得られた結果は、異なる可能性があります。
+一部の測定が、開発レベルのシステムで行われた可能性がありますが、
+その測定値が、一般に利用可能なシステムのものと同じである保証はありません。
+さらに、一部の測定値が、推定値である可能性があります。
+実際の結果は、異なる可能性があります。お客様は、お客様の特定の環境に適したデータを確かめる必要があります。</p>
+<p>IBM 以外の製品に関する情報は、その製品の供給者、出版物、
+もしくはその他の公に利用可能なソースから入手したものです。IBM は、それらの製品のテストは行っておりません。したがって、
+他社製品に関する実行性、互換性、またはその他の要求については確証できません。
+IBM 以外の製品の性能に関する質問は、それらの製品の供給者にお願いします。</p>
+<p>IBM の将来の方向または意向に関する記述については、
+予告なしに変更または撤回される場合があり、単に目標を示しているものです。</p>
+<p>表示されている IBM の価格は IBM が小売り価格として提示しているもので、
+現行価格であり、通知なしに変更されるものです。
+卸価格は、異なる場合があります。</p>
+<p>本書はプランニング目的としてのみ記述されています。記述内容は
+製品が使用可能になる前に変更になる場合があります。</p>
+<p>本書には、日常の業務処理で用いられるデータや報告書の例が含まれています。
+より具体性を与えるために、それらの例には、個人、企業、ブランド、
+あるいは製品などの名前が含まれている場合があります。
+これらの名称はすべて架空のものであり、
+名称や住所が類似する企業が実在しているとしても、それは偶然にすぎません。</p>
+<p>著作権使用許諾:</p>
+<p>本書には、様々なオペレーティング・プラットフォームでのプログラミング手法を例示するサンプル・アプリケーション・プログラムがソース言語で掲載されています。お客様は、サンプル・プログラムが書かれているオペレーティング・
+プラットフォームのアプリケーション・プログラミング・インターフェースに
+準拠したアプリケーション・プログラムの開発、使用、販売、配布を目的として、
+いかなる形式においても、IBM に対価を支払うことなくこれを複製し、改変し、
+配布することができます。
+このサンプル・プログラムは、あらゆる条件下における完全なテストを経ていません。
+従って IBM は、これらのサンプル・プログラムについて信頼性、利便性もしくは機能性が
+あることをほのめかしたり、保証することはできません。
+これらのサンプル・プログラムは特定物として現存するままの状態で提供されるものであり、いかなる保証も提供されません。
+IBM は、お客様の当該サンプル・プログラムの使用から生ずるいかなる損害に対しても一切の責任を負いません。</p>
+<p>それぞれの複製物、サンプル・プログラムのいかなる部分、またはすべての派生的創作物にも、次の
+ように、著作権表示を入れていただく必要があります。</p>
+<p>&copy; (お客様の会社名) (西暦年).このコードの一部は、IBM Corp. のサンプル・プログラムから取られています。</p>
+<p>&copy; Copyright IBM
+Corp. _年を入れる_.All rights reserved.</p>
+<p>この情報をソフトコピーでご覧になっている場合は、写真やカラーの図表は
+表示されない場合があります。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_24">商標
+</a></h2>
+<p>IBM、IBM ロゴ、および ibm.com は、世界の多くの国で登録された International Business Machines Corporation の商標です。他の製品名およびサービス名等は、それぞれ IBM または各社の商標である場合があります。
+現時点での IBM の商標リストについては、<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> をご覧ください。</p>
+<p>Adobe、Adobe ロゴ、PostScript は、Adobe Systems Incorporated の米国およびその他の国における登録商標または商標です。</p>
+<p>Intel、Itanium、Pentium は、Intel Corporation または子会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Java&trade; およびすべての Java 関連の商標およびロゴは Oracle やその関連会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Linux は、Linus Torvalds の米国およびその他の国における商標です。</p>
+<p>Microsoft、Windows、Windows NT および Windows ロゴは、Microsoft Corporation の
+米国およびその他の国における商標です。
+
+</p>
+<p>UNIX は The Open Group の米国およびその他の国における登録商標です。</p>
+<p>他の会社名、製品名およびサービス名等はそれぞれ各社の商標です。</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_25">著作権</a></h2>
+<p>本書には、IBM の専有情報が含まれています。
+その情報は、使用許諾条件に基づき提供され、著作権により保護されています。
+本書に記載される情報には、いかなる製品の保証も含まれていません。また、本書で提供されるいかなる記述も、製品保証として解釈すべきではありません。
+</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2009,
+2013</strong> </p>
+<p><!-- US Government Users Restricted Rights Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. --></p>
+<p><!--&copy; Copyright The PHP Group 1997-2010.-->追加の情報については、<samp class="xph">license/notices.txt</samp> ファイルを参照してください。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

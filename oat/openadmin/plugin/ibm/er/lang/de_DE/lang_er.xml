@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Raster]]></GridRepl>
+<noGridSupport><![CDATA[Für das Raster erfordert das Informix-Plug-in 'Replication' für OAT Informix 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Das Plug-in 'Replication' ist nicht ordnungsgemäß installiert. Klicken Sie im Menü 'Verwaltung' auf 'Plug-in-Manager', um das Plug-in 'Replication' zu installieren.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Für das Informix-Plug-in 'Replication' für OAT müssen Sie sich an OAT als Benutzer 'informix' oder als ein Datenbankserveradministrator anmelden.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Aktueller Status des ER-Erfassungsprozesses]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Anzahl Seiten des logischen Protokolls bis DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Anzahl gespoolter Transaktionen]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Prozentsatz des für Zeilendaten belegten Plattenspeichers]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Aktueller Status des ER-Netzes]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Anzahl getrennter Knoten]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Anzahl anstehender Transaktionen]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Aktueller Status des ER-Anwendungsprozesses]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Durchschnittliche Latenz für den Empfang einer Transaktion (in Sekunden)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Fehlerrate bei der Anwendung von Transaktionen]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[In der Datei SQLHOSTS für Knoten {0} weisen die folgenden Servergruppen-IDs gleiche Werte auf: {1}. Vergeben Sie in der Datei SQLHOSTS für jede Servergruppe eine eindeutige ID, indem Sie einen eindeutigen Wert für die Bezeichneroption (i=nummer) angeben.]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[In der Datei SQLHOSTS für den Knoten {0} sind folgende Servergruppen nicht enthalten: {1}. Handelt es sich um einen  Root- oder einen Nicht-Root-Knoten, muss der Knoten die vollständigen SQLHOSTS-Informationen für alle Servergruppen in der Domäne enthalten. Handelt es sich um einen Endknoten, muss der Knoten zumindest die SQLHOSTS-Informationen der zugehörigen übergeordneten Servergruppe enthalten.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[Die Datei SQLHOSTS für den Knoten {0} enthält nicht die richtigen Werte für das Verbindungstypfeld. Ein Element jeder Gruppe in der Datei SQLHOSTS muss die unterstützten Netzprotokolle und Datenbankservertypen aufweisen. Enterprise Replication (ER) unterstützt die Netzprotokolle soctcp, tlitcp, socssl, tlispx, socimc, tliimc und sqlmux. ER unterstützt die Datenbankservertypen on und ol. ER unterstützt keine Verbindungen, die mit der CSM-Option (Communications Support Module - Kommunikationsunterstützungsmodul) in der Datei SQLHOSTS konfiguriert wurde. ER kann nur durch Festlegen der Konfigurationsparameter für die Verschlüsselung verschlüsselt werden. Soll die Client/Server-Netzverschlüsselung mit ER kombiniert werden, konfigurieren Sie zwei Netzverbindungen für jeden Datenbankserver. Weitere Informationen zur Netzverschlüsselung und zu SQLHOSTS finden Sie im Informix-Information Center.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[In der Datei SQLHOSTS für den Knoten {0} enthält Gruppe {1} mehr als einen Standalone-Server oder dessen Aliasnamen. Gruppe {1} enthält Server {2}. OAT Tool kann diesen Server nicht für Enterprise Replication (ER) definieren, da der Server Teil eines Hochverfügbarkeitsclusters ist. Verwenden Sie zum Definieren dieses Servers für ER den Befehl 'cdr define server' über die Befehlszeile.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Server {0} ist ein sekundärer Server in einem Hochverfügbarkeitscluster. OAT kann diesen Server für Enterprise Replication (ER) nicht definieren. Führen Sie die Aktion zum Definieren des Servers auf dem primären Server im Hochverfügbarkeitscluster aus.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Verbindung zu Server {0} konnte nicht hergestellt werden: {1}. Zwischen dem neuen Knoten und Server {0}, dem von Ihnen ausgewählten Server zum Synchronisieren der ER-Konfiguration, kann keine gesicherte Verbindung hergestellt werden. Überprüfen Sie Ihre Netzverbindungen. Weitere Informationen zur Vorbereitung Ihrer Netzumgebung für Enterprise Replication finden Sie im Informix-Information Center.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[Die Gruppen-ID für Server {0} stimmt in den Dateien SQLHOSTS für Knoten {1} und Knoten {2} nicht überein. Prüfen Sie in den Dateien SQLHOSTS für Knoten {1} und Knoten {2} den Wert für die Bezeichneroption (i=nummer) für Server {0}. Die Werte müssen übereinstimmen.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Server {0} ist kein Enterprise Replication (ER)-Server, da er keine Datenbank syscdr aufweist, die den globalen Katalog enthält. Wählen Sie zum Synchronisieren der ER-Domänenkonfiguration einen Server aus, der an ER teilnimmt.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Server {0} ist ein Endknoten. Ein Endknoten kann nicht der Server sein, der die ER-Domänenkonfiguration synchronisiert. Wählen Sie einen Root- oder Nicht-Root-Knoten aus.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Dieser Server nimmt bereits an Enterprise Replication (ER)-Aktivitäten teil. Wählen Sie eine anderen Server.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT kann diesen Server nicht für Enterprise Replication (ER) definieren, da er Teil eines Hochverfügbarkeitsclusters ist. Verwenden Sie zum Definieren dieses Servers für ER den Befehl 'cdr define server' über die Befehlszeile.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[Der Gruppenname {0} für Server {1} ist ungültig. Aktualisieren Sie den Gruppennamen in der Datei SQLHOSTS des Servers, bevor Sie fortfahren.]]></Invalid_Group_Name>
+<Error><![CDATA[Fehler]]></Error>
+<ConnectionFailed><![CDATA[Verbindung fehlgeschlagen]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[Keine Verbindungsdetails für diesen Server.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[Die Länge des Befehls überschreitet die Größenbegrenzungen der Verwaltungs-API.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Asynchrone Verwaltungstask erfolgreich übergeben.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Frei (MB)]]></Free_MB>
+<Used_MB><![CDATA[Belegt (MB)]]></Used_MB>
+</lang>

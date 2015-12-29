@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[模式管理器]]></schemamgr>
+<FragmentedTable><![CDATA[分段表]]></FragmentedTable>
+<PseudoTable><![CDATA[伪表]]></PseudoTable>
+<NotApplicable><![CDATA[不适用]]></NotApplicable>
+<check_admin_log><![CDATA[请检查命令历史记录或联机日志以获取更多信息。]]></check_admin_log>
+<running><![CDATA[{0} 正在运行]]></running>
+<interval_frag_strategy><![CDATA[分段键列：{0}。时间间隔：{1}。存储位置：{2}。]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[滚动窗口选项：]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[将表限制为 {0} 个分段]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[将表大小限制为 {0}]]></rolling_window_limit_by_size>
+<detach><![CDATA[拆离]]></detach>
+<discard><![CDATA[丢弃]]></discard>
+<x_years><![CDATA[{0} 年]]></x_years>
+<x_months><![CDATA[{0} 个月]]></x_months>
+<x_days><![CDATA[{0} 天]]></x_days>
+</lang>

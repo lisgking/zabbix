@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[块]]></Chunks>
+<NoSQLToExecute><![CDATA[没有要执行的 SQL]]></NoSQLToExecute>
+<QueryF><![CDATA[查询：]]></QueryF>
+<ErrorF><![CDATA[错误：]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[数据库查询失败：]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[连接失败。]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[用户 {0} 没有数据库 {1} 上的连接许可权。]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[遇到过多错误]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - 找不到仪表板标识]]></ErrorGetPanels>
+</lang>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Per escludere i nodi dal controllo, immettere i nomi dei nodi separati da virgole.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Per escludere le tabelle dal controllo, immettere i numeri di partizioni separati da virgole.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Per escludere le tabelle dal controllo, immettere i numeri di partizioni separati da virgole.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Per escludere le tabelle dal controllo, immettere i numeri di partizioni separati da virgole.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Per escludere le porzioni dal controllo, immettere i numeri di porzioni separati da virgole.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Per escludere le porzioni dal controllo, immettere i numeri di porzioni separati da virgole.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Per escludere le porzioni dal controllo, immettere i numeri di porzioni separati da virgole.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Per escludere gli spazi DB dal controllo, immettere i nomi degli spazi DB separati da virgole.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Per escludere le tabelle dal controllo, immettere i numeri di partizioni separati da virgole.]]></exc_Rowsize>
+</lang>

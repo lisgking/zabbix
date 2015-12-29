@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="gentab">
+<NumRowsAffected><![CDATA[Number of rows affected:]]></NumRowsAffected>
+<CompletedSuccess><![CDATA[Completed successfully.]]></CompletedSuccess>
+<FunctionReturnValue><![CDATA[Function return value:]]></FunctionReturnValue>
+<Return><![CDATA[Return:]]></Return>
+<SyntaxError><![CDATA[A syntax error has occurred.]]></SyntaxError>
+</lang>

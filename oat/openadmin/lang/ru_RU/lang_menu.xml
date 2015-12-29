@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[Главная страница]]></home>
+<expand><![CDATA[Расширить]]></expand>
+<collapse><![CDATA[Свернуть]]></collapse>
+<logs><![CDATA[Журналы]]></logs>
+<alertsummary><![CDATA[Сводка оповещений]]></alertsummary>
+<alerts><![CDATA[Оповещения]]></alerts>
+<admincommands><![CDATA[Команда администрирования]]></admincommands>
+<onlinelog><![CDATA[Оперативные сообщения]]></onlinelog>
+<baractlog><![CDATA[Действия ON-Bar]]></baractlog>
+<healthcenter><![CDATA[Центр работоспособности]]></healthcenter>
+<details><![CDATA[Подробности]]></details>
+<taskdetails><![CDATA[Подробности задач]]></taskdetails>
+<runtimes><![CDATA[Время выполнения задач]]></runtimes>
+<scheduler><![CDATA[Планировщик]]></scheduler>
+<space><![CDATA[Администрирование пространств]]></space>
+<VP><![CDATA[Виртуальные процессоры]]></VP>
+<dbspaces><![CDATA[Пространства баз данных]]></dbspaces>
+<RecoveryLogs><![CDATA[Журналы восстановления]]></RecoveryLogs>
+<storage><![CDATA[Хранение]]></storage>
+<chunks><![CDATA[Чанки]]></chunks>
+<reservedspace><![CDATA[Зарезервированное пространство]]></reservedspace>
+<performance><![CDATA[Анализ производительности]]></performance>
+<sql><![CDATA[Редактор SQL]]></sql>
+<sqlexplorer><![CDATA[Проводник SQL]]></sqlexplorer>
+<io><![CDATA[Ввод/вывод]]></io>
+<Reports><![CDATA[Системные отчеты]]></Reports>
+<sessionexplorer><![CDATA[Обозреватель сеансов]]></sessionexplorer>
+<uReports><![CDATA[Отчеты пользователей]]></uReports>
+<sqltoolbox><![CDATA[Набор инструментов SQL]]></sqltoolbox>
+<databases><![CDATA[Базы данных]]></databases>
+<schemabrowser><![CDATA[Обозреватель схем]]></schemabrowser>
+<tables><![CDATA[Таблицы]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[Полезные ссылки]]></UsefulLinks>
+<about><![CDATA[Информация об OAT]]></about>
+<train><![CDATA[Обучение]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[Администрирование]]></admin>
+<mach11><![CDATA[Кластеры]]></mach11>
+<dashboard><![CDATA[Панель управления]]></dashboard>
+<help><![CDATA[Справка]]></help>
+<logout><![CDATA[Выход из системы]]></logout>
+<taskscheduler><![CDATA[Планировщик задач]]></taskscheduler>
+<serveradmin><![CDATA[Администрирование сервера]]></serveradmin>
+<configuration><![CDATA[Конфигурирование]]></configuration>
+<HowDoI><![CDATA[Справка по задачам OAT]]></HowDoI>
+<readme><![CDATA[Файл Readme]]></readme>
+<releasenotes><![CDATA[Замечания по выпуску]]></releasenotes>
+<onconfigparam><![CDATA[Конфигурирование]]></onconfigparam>
+<privileges><![CDATA[Привилегии пользователя]]></privileges>
+<highavail><![CDATA[Высокая доступность]]></highavail>
+<PerformanceHist><![CDATA[Хронология производительности]]></PerformanceHist>
+<SystemValidation><![CDATA[Проверка системы]]></SystemValidation>
+<OATconfig><![CDATA[Конфигурация OAT]]></OATconfig>
+<connadmin><![CDATA[Администратор соединения]]></connadmin>
+<connmgt><![CDATA[Управление соединениями]]></connmgt>
+<addgroup><![CDATA[Добавить группу]]></addgroup>
+<addconn><![CDATA[Добавить подключение]]></addconn>
+<helpadmin><![CDATA[Администрирование справки]]></helpadmin>
+<helpmgt><![CDATA[Управление справкой]]></helpmgt>
+<helpdb><![CDATA[База данных справки]]></helpdb>
+<addhelp><![CDATA[Добавить справку]]></addhelp>
+<OATlogin><![CDATA[Вход в систему OAT]]></OATlogin>
+<aus><![CDATA[Автоматическое обновление статистики]]></aus>
+<qbe><![CDATA[Запрос по образцу]]></qbe>
+<onstat><![CDATA[Средство onstat]]></onstat>
+<replication><![CDATA[Репликация]]></replication>
+<trustedcontext><![CDATA[Доверенный контекст]]></trustedcontext>
+<security><![CDATA[Защита]]></security>
+<backup><![CDATA[Резервное копирование]]></backup>
+<MemoryMgr><![CDATA[Менеджер памяти]]></MemoryMgr>
+<iwa><![CDATA[Ускоритель хранилища]]></iwa>
+</lang>

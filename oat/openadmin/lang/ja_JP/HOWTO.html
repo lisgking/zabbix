@@ -1,0 +1,3370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP" xml:lang="ja-jp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="ja-jp" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2007, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, reference, reference, task, reference, reference, task, task, task, task, task, task, task, reference, reference, reference, reference, reference, reference, reference, reference, reference, reference, task, reference" />
+<meta name="keywords" content="監視, システム ヘルス, データベース サーバ, カスタマイズ, ダッシュボード, アラート, イベント アラーム, 管理コマンド" />
+<meta name="keywords" content="オンライン メッセージ ログ, 削除, 切捨て, 回転, ON-Bar 動作ログ, 格納領域, モニタ, 作成, 領域, 変更, 変更, 削除, 削除" />
+<meta name="keywords" content="追加, チャンク, 拡張可能にする, 自動, ストレージ プール エントリ, 追加, 拡張, 拡張, 拡張, 拡張, 表, 圧縮, 表フラグメント" />
+<meta name="keywords" content="圧縮, 圧縮解除, 最適化, 見積り, 圧縮の見積り, フラグメント, 圧縮の見積り, 縮小, インデックス, フラグメント解消" />
+<meta name="keywords" content="エクステント, 論理ログ, 物理ログ, チェックポイント, 表示, パフォーマンス履歴, Global Security Kit, GSKCmd, gsk7cmd, gsk8cmd, キー データベース" />
+<meta name="keywords" content="証明書管理, 自己署名証明書, idsd デーモン, xinetd デーモン, inetd デーモン, 高可用性クラスタ, ユーザ特権" />
+<meta name="keywords" content="自動統計更新 (AUS), (AUS) 自動統計更新, データ, バックアップ, ontape, 例示問合せ, 挿入, 更新, 削除, 問合せ, 検索, OAT グループ" />
+<meta name="keywords" content="読取り専用グループ, HTTPS, インストール, インストール, 有効化, 有効化, アップグレード, アップグレード, 無効化, 無効化, アンインストール, アンインストール, isreadonly" />
+<meta name="keywords" content="読取り専用関数, idsadmin 関数, get_database 関数, データベース取得関数, get_database, load_lang 関数, 言語ロード関数" />
+<meta name="keywords" content="load_lang, lang 関数, 言語関数, lang, 誤差関数, エラー, 状態関数, 状態, format_units 関数, format_units" />
+<meta name="keywords" content="setCurrMenuItem 関数, setCurrMenuItem, set_pagetitle 関数, set_pagetitle, 出力関数, add_to_output 関数, add_to_output, メニュー" />
+<meta name="keywords" content="メニュー順序, 復元" />
+<title>IBM OpenAdmin Tool (OAT) for Informix</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>IBM OpenAdmin Tool (OAT) for Informix</h1>
+<br />
+<div id="wq1">
+<h1>内容</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oat.dita" class="toclink">IBM OpenAdmin Tool (OAT) for Informix</a></div>
+<div class="head1"><a id="ToC_2" href="#dqx1ids_oat_019" class="toclink">データベース サーバへの接続方法</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oat_007" class="toclink">データベース サーバへのログイン</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oat_009" class="toclink">OAT グループ内のデータベース サーバへのログイン</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oat_010" class="toclink">OAT グループ内の別のサーバへの切替え</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_oat_061" class="toclink">データベース サーバの動作の監視方法</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_oat_166" class="toclink">データベース サーバの状態の監視</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_oat_175" class="toclink">ダッシュボードのカスタマイズ</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_oat_176" class="toclink">ダッシュボードの状態しきい値の変更</a></div>
+<div class="head2"><a id="ToC_10" href="#dqx1ids_oat_167" class="toclink">アラートとイベント アラームの監視</a></div>
+<div class="head2"><a id="ToC_11" href="#dqx1ids_oat_057" class="toclink">管理コマンド履歴の確認</a></div>
+<div class="head2"><a id="ToC_12" href="#dqx1ids_oat_160" class="toclink">オンライン メッセージ ログの監視</a></div>
+<div class="head2"><a id="ToC_13" href="#dqx1ids_oat_161" class="toclink">オンライン メッセージ ログの削除</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_oat_162" class="toclink">オンライン メッセージ ログのローテーション</a></div>
+<div class="head2"><a id="ToC_15" href="#dqx1ids_oat_163" class="toclink">ON-Bar 動作ログの監視</a></div>
+<div class="head2"><a id="ToC_16" href="#dqx1ids_oat_164" class="toclink">ON-Bar 動作ログの削除</a></div>
+<div class="head2"><a id="ToC_17" href="#dqx1ids_oat_165" class="toclink">ON-Bar 動作ログのローテーション</a></div>
+<div class="head1"><a id="ToC_18" href="#dqx1ids_oat_079" class="toclink">システム スペースの管理方法</a></div>
+<div class="head2"><a id="ToC_19" href="#dqx1ids_oat_143" class="toclink">領域使用量の監視</a></div>
+<div class="head2"><a id="ToC_20" href="#dqx1ids_oat_127" class="toclink">領域使用状況の管理</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oat_017" class="toclink">領域の作成</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_oat_134" class="toclink">領域の変更</a></div>
+<div class="head3"><a id="ToC_23" href="#dqx1ids_oat_126" class="toclink">領域の削除</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oat_135" class="toclink">チャンクの追加</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oat_136" class="toclink">チャンクの変更</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oat_138" class="toclink">チャンクの削除</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oat_142" class="toclink">格納領域の自動追加</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oat_144" class="toclink">データベース サーバにより格納領域が自動的に追加されるように構成</a></div>
+<div class="head3"><a id="ToC_29" href="#dqx1ids_oat_139" class="toclink">ストレージ プール エントリの追加</a></div>
+<div class="head3"><a id="ToC_30" href="#dqx1ids_oat_140" class="toclink">ストレージ プール エントリの変更</a></div>
+<div class="head3"><a id="ToC_31" href="#dqx1ids_oat_141" class="toclink">ストレージ プール エントリの削除</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oat_055" class="toclink">領域の拡張</a></div>
+<div class="head3"><a id="ToC_33" href="#dqx1ids_oat_137" class="toclink">チャンクの拡張</a></div>
+<div class="head2"><a id="ToC_34" href="#dqx1ids_oat_128.dita" class="toclink">格納領域の最適化</a></div>
+<div class="head3"><a id="ToC_35" href="#dqx1ids_oat_146" class="toclink">格納領域の自動最適化</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oat_129" class="toclink">圧縮の見積り</a></div>
+<div class="head3"><a id="ToC_37" href="#dqx1ids_oat_130" class="toclink">データの圧縮</a></div>
+<div class="head3"><a id="ToC_38" href="#dqx1ids_oat_131" class="toclink">表および表フラグメントの圧縮解除</a></div>
+<div class="head3"><a id="ToC_39" href="#dqx1ids_oat_132" class="toclink">フリー スペースの統合</a></div>
+<div class="head3"><a id="ToC_40" href="#dqx1ids_oat_133" class="toclink">フリー スペースの DB 領域への返却 (縮小)</a></div>
+<div class="head3"><a id="ToC_41" href="#dqx1ids_oat_119" class="toclink">エクステントのフラグメント解消</a></div>
+<div class="head2"><a id="ToC_42" href="#dqx1ids_oat_084" class="toclink">リカバリ ログの管理</a></div>
+<div class="head3"><a id="ToC_43" href="#dqx1ids_oat_088" class="toclink">チェックポイント履歴の表示</a></div>
+<div class="head3"><a id="ToC_44" href="#dqx1ids_oat_087" class="toclink">チェックポイントの強制</a></div>
+<div class="head3"><a id="ToC_45" href="#dqx1ids_oat_089" class="toclink">論理ログの統計の表示</a></div>
+<div class="head3"><a id="ToC_46" href="#dqx1ids_oat_080" class="toclink">論理ログの追加</a></div>
+<div class="head3"><a id="ToC_47" href="#dqx1ids_oat_148" class="toclink">次の論理ログへの切替え</a></div>
+<div class="head3"><a id="ToC_48" href="#dqx1ids_oat_083" class="toclink">論理ログの削除</a></div>
+<div class="head3"><a id="ToC_49" href="#dqx1ids_oat_090" class="toclink">物理ログの統計の表示</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oat_086" class="toclink">物理ログの移動</a></div>
+<div class="head1"><a id="ToC_51" href="#dqx1ids_oat_001" class="toclink">データベース サーバの管理方法</a></div>
+<div class="head2"><a id="ToC_52" href="#dqx1ids_oat_170" class="toclink">サーバ メモリの管理</a></div>
+<div class="head2"><a id="ToC_53" href="#dqx1ids_oat_004" class="toclink">高可用性クラスタの管理</a></div>
+<div class="head3"><a id="ToC_54" href="#dqx1ids_oat_059" class="toclink">高可用性クラスタのための接続の構成</a></div>
+<div class="head3"><a id="ToC_55" href="#dqx1ids_oat_058" class="toclink">高可用性クラスタの検索</a></div>
+<div class="head3"><a id="ToC_56" href="#dqx1ids_oat_020" class="toclink">クラスタのトポロジの表示</a></div>
+<div class="head3"><a id="ToC_57" href="#dqx1ids_oat_021" class="toclink">クラスタに含まれるサーバの状態の表示</a></div>
+<div class="head3"><a id="ToC_58" href="#dqx1ids_oat_022" class="toclink">SDS サーバの追加</a></div>
+<div class="head3"><a id="ToC_59" href="#dqx1ids_oat_023" class="toclink">クラスタ内のサーバの開始または停止</a></div>
+<div class="head2"><a id="ToC_60" href="#dqx1ids_oat_168" class="toclink">時系列の管理</a></div>
+<div class="head2"><a id="ToC_61" href="#dqx1ids_oat_027" class="toclink">データベース サーバの構成パラメータの管理</a></div>
+<div class="head2"><a id="ToC_62" href="#dqx1ids_oat_077" class="toclink">システムの検証検査の実行</a></div>
+<div class="head3"><a id="ToC_63" href="#dqx1ids_oat_030" class="toclink">現行サーバの 1 つ以上のデータベースまたは表の検証</a></div>
+<div class="head3"><a id="ToC_64" href="#dqx1ids_oat_031" class="toclink">現行サーバにおける 1 つ以上の DB 領域のエクステントの検証</a></div>
+<div class="head2"><a id="ToC_65" href="#dqx1ids_oat_078" class="toclink">仮想プロセッサの管理</a></div>
+<div class="head2"><a id="ToC_66" href="#dqx1ids_oat_096" class="toclink">ユーザ特権の付与および制限</a></div>
+<div class="head3"><a id="ToC_67" href="#dqx1ids_oat_032" class="toclink">データベース レベル アクセス権のユーザへの付与</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oat_033" class="toclink">ユーザのデータベース レベル アクセス権の変更</a></div>
+<div class="head3"><a id="ToC_69" href="#dqx1ids_oat_034" class="toclink">ユーザのデータベース レベル アクセス権の取消し</a></div>
+<div class="head3"><a id="ToC_70" href="#dqx1ids_oat_093" class="toclink">表レベル アクセス権のユーザへの付与</a></div>
+<div class="head3"><a id="ToC_71" href="#dqx1ids_oat_035" class="toclink">ユーザの表レベル アクセス権の変更</a></div>
+<div class="head3"><a id="ToC_72" href="#dqx1ids_oat_036" class="toclink">ユーザの表レベル アクセス権の取消し</a></div>
+<div class="head2"><a id="ToC_73" href="#dqx1ids_oat_120" class="toclink">内部ユーザの管理 (UNIX、Linux)</a></div>
+<div class="head3"><a id="ToC_74" href="#dqx1ids_oat_124" class="toclink">サーバでの内部ユーザのアクセス権の設定 (UNIX、Linux)</a></div>
+<div class="head3"><a id="ToC_75" href="#dqx1ids_oat_121" class="toclink">内部ユーザの追加 (UNIX、Linux)</a></div>
+<div class="head3"><a id="ToC_76" href="#dqx1ids_oat_122" class="toclink">内部ユーザの編集 (UNIX、Linux)</a></div>
+<div class="head3"><a id="ToC_77" href="#dqx1ids_oat_123" class="toclink">内部ユーザの削除 (UNIX、Linux)</a></div>
+<div class="head2"><a id="ToC_78" href="#dqx1ids_oat_145" class="toclink">トラステッド コンテキストの作成</a></div>
+<div class="head3"><a id="ToC_79" href="#dqx1ids_oat_147" class="toclink">トラステッド コンテキストの管理</a></div>
+<div class="head2"><a id="ToC_80" href="#dqx1ids_oat_037" class="toclink">自動統計更新の管理</a></div>
+<div class="head3"><a id="ToC_81" href="#dqx1ids_oat_038" class="toclink">自動統計更新の構成および有効化</a></div>
+<div class="head3"><a id="ToC_82" href="#dqx1ids_oat_039" class="toclink">サーバにおけるリフレッシュおよび評価の表示</a></div>
+<div class="head3"><a id="ToC_83" href="#dqx1ids_oat_040" class="toclink">統計の即時評価の要求</a></div>
+<div class="head3"><a id="ToC_84" href="#dqx1ids_oat_041" class="toclink">統計の次回更新時期の決定</a></div>
+<div class="head3"><a id="ToC_85" href="#dqx1ids_oat_042" class="toclink">現行の自動更新統計設定の表示</a></div>
+<div class="head3"><a id="ToC_86" href="#dqx1ids_oat_043" class="toclink">自動更新統計設定の監視</a></div>
+<div class="head3"><a id="ToC_87" href="#dqx1ids_oat_044" class="toclink">自動更新統計によって生成されたアラートの表示</a></div>
+<div class="head3"><a id="ToC_88" href="#dqx1ids_oat_045" class="toclink">自動更新統計の異常実行のクリーンアップ</a></div>
+<div class="head2"><a id="ToC_89" href="#dqx1ids_oat_156" class="toclink">データベース サーバ データのバックアップ</a></div>
+<div class="head3"><a id="ToC_90" href="#dqx1ids_oat_157" class="toclink">ontape を使用したデータのバックアップ</a></div>
+<div class="head3"><a id="ToC_91" href="#dqx1ids_oat_158" class="toclink">バックアップの構成とスケジュールの変更</a></div>
+<div class="head3"><a id="ToC_92" href="#dqx1ids_oat_159" class="toclink">バックアップの要求時実行</a></div>
+<div class="head1"><a id="ToC_93" href="#dqx1ids_oat_073" class="toclink">スケジューラ タスクの管理方法</a></div>
+<div class="head2"><a id="ToC_94" href="#dqx1ids_oat_074" class="toclink">スケジューラ タスクの追加</a></div>
+<div class="head3"><a id="ToC_95" href="#dqx1ids_oat_046" class="toclink">新規タスクの追加</a></div>
+<div class="head3"><a id="ToC_96" href="#dqx1ids_oat_047" class="toclink">新規センサーの追加</a></div>
+<div class="head2"><a id="ToC_97" href="#dqx1ids_oat_075" class="toclink">スケジューラ タスクの有効化</a></div>
+<div class="head2"><a id="ToC_98" href="#dqx1ids_oat_076" class="toclink">スケジューラ タスクの許容される時間間隔の変更</a></div>
+<div class="head2"><a id="ToC_99" href="#dqx1ids_oat_015" class="toclink">スケジューラ タスクの削除</a></div>
+<div class="head1"><a id="ToC_100" href="#dqx1ids_oat_062" class="toclink">パフォーマンス情報の探索方法</a></div>
+<div class="head2"><a id="ToC_101" href="#dqx1ids_oat_064" class="toclink">SQL Explorer を使用した問合せパフォーマンスの分析</a></div>
+<div class="head3"><a id="ToC_102" href="#dqx1ids_oat_091" class="toclink">SQL トレースの有効化</a></div>
+<div class="head3"><a id="ToC_103" href="#dqx1ids_oat_092" class="toclink">SQL トレースの無効化</a></div>
+<div class="head3"><a id="ToC_104" href="#dqx1ids_oat_048" class="toclink">SQL トレースのオプションの指定</a></div>
+<div class="head3"><a id="ToC_106" href="#dqx1ids_oat_049" class="toclink">SQL トレースの一時停止</a></div>
+<div class="head3"><a id="ToC_107" href="#dqx1ids_oat_050" class="toclink">中断状態からの SQL トレースの再開</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oat_105.dita" class="toclink">最新データと保存データの切替え</a></div>
+<div class="head3"><a id="ToC_109" href="#dqx1ids_oat_065" class="toclink">動作サマリからのドリル ダウン</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oat_067" class="toclink">トランザクションによるドリル ダウン</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oat_066" class="toclink">SQL 文のタイプによるドリル ダウン</a></div>
+<div class="head2"><a id="ToC_112" href="#dqx1ida_oat_104" class="toclink">SQL 文の最適化</a></div>
+<div class="head2"><a id="ToC_113" href="#dqx1ids_oat_068" class="toclink">ユーザ セッションの探索</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oat_056" class="toclink">ユーザ セッションの停止</a></div>
+<div class="head2"><a id="ToC_115" href="#dqx1ids_oat_169" class="toclink">パフォーマンス履歴の表示</a></div>
+<div class="head2"><a id="ToC_116" href="#dqx1ids_oat_063" class="toclink">システム性能レポートの実行</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1ids_oat_173" class="toclink">監視範囲</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oat_174" class="toclink">バッファ プールの監視</a></div>
+<div class="head2"><a id="ToC_119" href="#dqx1ida_oat_117" class="toclink"><strong><samp>onstat</samp></strong> ユーティリティを使用したサーバの監視</a></div>
+<div class="head1"><a id="ToC_120" href="#dqx1ids_oat_012" class="toclink">データベースおよび表の管理方法</a></div>
+<div class="head2"><a id="ToC_121" href="#dqx1ids_oat_013" class="toclink">サーバ上のデータベースの検討</a></div>
+<div class="head2"><a id="ToC_122" href="#dqx1ids_oat_014" class="toclink">データベースへの接続</a></div>
+<div class="head2"><a id="ToC_123" href="#dqx1ids_oat_094" class="toclink">スキーマの表示</a></div>
+<div class="head2"><a id="ToC_124" href="#dqx1ids_oat_069" class="toclink">データベースのプロシジャおよびルーチンの検討</a></div>
+<div class="head2"><a id="ToC_125" href="#dqx1ids_oat_106" class="toclink">標準 SQL 操作の実行: 問合せ、挿入、更新、削除</a></div>
+<div class="head3"><a id="ToC_126" href="#dqx1ids_oat_109" class="toclink">問合せの実行</a></div>
+<div class="head3"><a id="ToC_127" href="#dqx1ids_oat_110" class="toclink">表の行の更新</a></div>
+<div class="head3"><a id="ToC_128" href="#dqx1ids_oat_111" class="toclink">表の行の削除</a></div>
+<div class="head3"><a id="ToC_129" href="#dqx1ids_oat_112" class="toclink">表の行の挿入</a></div>
+<div class="head1"><a id="ToC_130" href="#dqx1ids_oat_005" class="toclink">サーバへのアクセスのセット アップ方法</a></div>
+<div class="head2"><a id="ToC_131" href="#dqx1ids_oat_003" class="toclink">OAT グループの追加</a></div>
+<div class="head2"><a id="ToC_132" href="#dqx1ids_oat_002" class="toclink">サーバ接続の作成</a></div>
+<div class="head2"><a id="ToC_133" href="#dqx1ids_oat_114" class="toclink">接続情報のエクスポート</a></div>
+<div class="head2"><a id="ToC_134" href="#dqx1ids_oat_113" class="toclink">接続情報のインポート</a></div>
+<div class="head2"><a id="ToC_135" href="#dqx1ids_oat_171" class="toclink">非デフォルト ロケールでデータベースへアクセスする</a></div>
+<div class="head1"><a id="ToC_136" href="#dqx1ids_oat_098" class="toclink">OAT のセキュリティの構成方法</a></div>
+<div class="head2"><a id="ToC_137" href="#dqx1ids_oat_072" class="toclink">読取り専用アクセス権を持つ OAT グループの作成</a></div>
+<div class="head3"><a id="ToC_138" href="#dqx1ids_oat_051" class="toclink">読取り専用グループの制約事項</a></div>
+<div class="head2"><a id="ToC_139" href="#dqx1ids_oat_070" class="toclink">「管理」構成のページへのアクセスの制限</a></div>
+<div class="head2"><a id="ToC_140" href="#dqx1ids_oat_071" class="toclink">「管理」構成のページに対するパスワード保護の提供: Apache の例</a></div>
+<div class="head2"><a id="ToC_141" href="#dqx1ids_oat_052" class="toclink">OAT 用 HTTPS の構成 (Linux)</a></div>
+<div class="head2"><a id="ToC_146" href="#dqx1dt2mg202" class="toclink">OAT 用 HTTPS の構成 (Windows)</a></div>
+<div class="head2"><a id="ToC_152" href="#dqx1ids_oat_053" class="toclink">SQL Toolbox のパスワード保護の無効化または有効化</a></div>
+<div class="head1"><a id="ToC_153" href="#dqx1ids_oat_054" class="toclink">OAT 用プラグインの管理方法</a></div>
+<div class="head2"><a id="ToC_154" href="#dqx1ids_oat_000" class="toclink">OAT 用プラグインのインストール</a></div>
+<div class="head2"><a id="ToC_155" href="#dqx1ids_oat_150" class="toclink">OAT 用プラグインの有効化</a></div>
+<div class="head2"><a id="ToC_156" href="#dqx1ids_oat_115" class="toclink">OAT 用プラグインのアップグレード</a></div>
+<div class="head2"><a id="ToC_157" href="#dqx1ids_oat_116" class="toclink">OAT 用プラグインの無効化</a></div>
+<div class="head2"><a id="ToC_158" href="#dqx1ids_oat_149" class="toclink">OAT 用プラグインのアンインストール</a></div>
+<div class="head2"><a id="ToC_159" href="#dqx1ids_oat_151" class="toclink">idsadmin クラス関数</a></div>
+<div class="head3"><a id="ToC_160" href="#dqx1ids_oat_152" class="toclink">isreadonly 関数</a></div>
+<div class="head3"><a id="ToC_165" href="#dqx1ids_oat_153" class="toclink">get_database 関数</a></div>
+<div class="head3"><a id="ToC_169" href="#dqx1ids_oat_154" class="toclink">load_lang 関数</a></div>
+<div class="head3"><a id="ToC_173" href="#dqx1ids_oat_155" class="toclink">lang 関数</a></div>
+<div class="head3"><a id="ToC_177" href="#dqx1ids_oat_177" class="toclink">error 関数</a></div>
+<div class="head3"><a id="ToC_181" href="#dqx1ids_oat_178" class="toclink">status 関数</a></div>
+<div class="head3"><a id="ToC_184" href="#dqx1ids_oat_179" class="toclink">format_units 関数</a></div>
+<div class="head3"><a id="ToC_188" href="#dqx1ids_oat_180" class="toclink">setCurrMenuItem 関数</a></div>
+<div class="head2"><a id="ToC_192" href="#dqx1ids_oat_181" class="toclink">output クラス</a></div>
+<div class="head3"><a id="ToC_193" href="#dqx1ids_oat_182" class="toclink">set_pagetitle 関数</a></div>
+<div class="head3"><a id="ToC_196" href="#dqx1ids_oat_183" class="toclink">add_to_output 関数</a></div>
+<div class="head1"><a id="ToC_199" href="#dqx1ids_oat_060" class="toclink">OAT のメイン メニューのカスタマイズ方法</a></div>
+<div class="head1"><a id="ToC_200" href="#dqx1ids_cm_not" class="toclink">特記事項</a></div>
+<div class="head2"><a id="ToC_201" href="#dqx1trademarks" class="toclink">商標
+</a></div>
+<div class="head2"><a id="ToC_202" href="#dqx1ids_oat_016" class="toclink">Copyright</a></div>
+</div>
+<h1 id="dqx1ids_oat.dita"><a href="#ToC_1">IBM OpenAdmin Tool (OAT) for Informix</a></h1>
+<div>
+<p>IBM&reg; OpenAdmin Tool (OAT) for Informix&reg; は、IBM Informix データベース サーバのパフォーマンスを管理および分析する Web アプリケーションです。Web サーバにインストールされている単一の OAT から複数のデータベース サーバ インスタンスを管理できます。どのブラウザからでも、Web サーバにアクセスしてすべてのデータベース サーバを管理できます。</p></div>
+<p>
+<p>OAT を使用すると、以下のようにデータベース サーバのパフォーマンスを監視および分析できます。
+</p>
+<ul>
+<li>詳細ステータス レポート、アラート情報、およびメッセージ ログを使用して、データベース サーバの状態を監視できます。</li>
+<li>IBM Informix Health Advisor Plug-in for OpenAdmin Tool (OAT) を使用して、データベース サーバの状態、電子メールの結果、および推奨事項を分析できます。</li>
+<li>パフォーマンス履歴の詳細グラフを使用して、長期的にパフォーマンス統計を監視できます。</li>
+<li>スケジューラが収集するデータを監視できます。スケジューラは管理タスクを実行し、SQL 文を使用して情報を収集します。</li>
+<li>データベース サーバ上のデータベースおよび表に対してシステム検証チェックを実行できます。</li>
+<li>システム レポートおよび <strong><strong><samp>onstat</samp></strong></strong> コマンドを実行できます。</li>
+<li>SQL 文をドリル ダウンしてパフォーマンス詳細を確認し、SQL 文を最適化できます。</li></ul>
+<p>OAT を使用すると、以下の管理タスクを実行できます。
+</p>
+<ul>
+<li>データベース サーバ (構成、ユーザ アクセス権、仮想プロセッサなど) を管理できます。</li>
+<li>スケジューラのタスクを作成および監視できます。</li>
+<li>自動統計更新 (AUS: Auto Update Statistics) 保守システムを管理できます。このシステムは、自動的に統計を更新して、問合せパフォーマンスを最適化します。</li>
+<li>IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT) を使用して、データベースおよび表オブジェクトを管理できます。</li>
+<li>データベース サーバの格納領域を管理すること、およびリカバリ ログを管理することができます。</li>
+<li>表を圧縮すること、および表のフラグメント化をなくすことで領域を最適化できます。</li>
+<li>データベース サーバの格納領域をバックアップします。</li>
+<li>表に対して SQL 文を実行すること、および標準 SQL 操作を実行することができます。</li>
+<li>高可用性クラスタを監視および管理できます。</li>
+<li>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) を使用して、エンタープライズ レプリケーションを監視および管理できます。</li>
+<li>IBM Informix TimeSeries Plug-in for OpenAdmin Tool (OAT) を使用して、時系列に関連するデータベース オブジェクト (表、インデックス、仮想表、および <strong>TimeSeries</strong> サブタイプ、コンテナおよびカレンダを含む) を監視および管理できます。</li></ul>
+<p>IBM OpenAdmin Tool (OAT) for Informix は、IBM Informix Client Software Development Kit (Client SDK) をインストールするとき、または IBM Informix ソフトウェア バンドルをインストールし Client SDK または IBM Informix Connect を選択すると、インストールできます。このインストール プログラムには、OAT、Health Advisor プラグイン、Replication プラグイン、Schema Manager プラグイン、TimeSeries プラグイン、および OAT を実行するために必要なすべてのソフトウェア (事前構成された Apache、PHP、PDO_informix など) が含まれています。</p>
+<p>また、IBM Informix Free Product Download ページ <a href="https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd" target="_blank">https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd (新しいウィンドウで開く)</a> から OpenAdmin Tool Community Edition を入手することもできます。OpenAdmin Tool Community Edition には、OAT とオプションのプラグインは含まれていますが、サポートするソフトウェアは含まれていません。
+このエディションは手動でインストールする必要があります。</p></p>
+<h1 id="dqx1ids_oat_019"><a href="#ToC_2">データベース サーバへの接続方法</a></h1>
+<h2 id="dqx1ids_oat_007"><a href="#ToC_3">データベース サーバへのログイン</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix を使用して、データベース サーバにログインします。</p></div>
+<p>
+<p>データベース サーバにログインするには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT ルート URL: http://<em>server name</em>/openadmin に移動します。</li>
+<li>OAT の<strong>「ログイン」</strong>ページで<strong>「サーバ詳細」</strong>フィールドに入力します。</li>
+<li>「<strong>ログイン</strong>」をクリックします。</li></ol>
+<p>
+<p>OAT を介してデータベース サーバに接続されます。</p></p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq7">
+<span class="notetitle">ヒント:</span> <span class="notebody">データベース サーバが OAT グループのメンバである場合は、代わりに OAT グループにログインして、データベース サーバに接続できます。OAT グループには、データベース サーバの接続情報が含まれています。OAT グループにログインすると、再度ログインすることなくグループ内の別のデータベース サーバに切り替えることができます。</span></div></div>
+<h2 id="dqx1ids_oat_009"><a href="#ToC_4">OAT グループ内のデータベース サーバへのログイン</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix でデータベース サーバ接続のグループにログインして、データベース サーバに接続します。</p></div>
+<p>
+<p>OAT グループには、データベース サーバの接続情報が含まれています。OAT グループにログインすると、再度ログインすることなくグループ内の別のデータベース サーバに切り替えることができます。</p></p>
+<p>
+<p>OAT グループ内のデータベース サーバにログインするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT ルート URL: http://<em>server name</em>/openadmin に移動します。</li>
+<li>OAT の<strong>「ログイン」</strong>ページの<strong>「OAT グループ」</strong>リストで、接続先のサーバが含まれている OAT グループを選択します。</li>
+<li>OAT グループのパスワードを入力します。</li>
+<li>「<strong>サーバの取得</strong>」をクリックします。</li>
+<li>サーバのリストからサーバを選択します。サーバ情報が「<strong>サーバ詳細</strong>」のフィールドに取り込まれます。</li>
+<li>「<strong>サーバ詳細</strong>」領域の「<strong>パスワード</strong>」フィールドで、入力済みのパスワードを受け入れるか、有効なパスワードを入力し、「 <strong>ログイン</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="#dqx1ids_oat_003">OAT グループの追加</a>
+<br />IBM OpenAdmin Tool (OAT) for Informix 内のデータベース サーバ接続のグループを定義します。</li></ul>
+<h2 id="dqx1ids_oat_010"><a href="#ToC_5">OAT グループ内の別のサーバへの切替え</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix でデータベース サーバ接続のグループ内の別のデータベース サーバに接続します。</p></div>
+<p>
+<p>OAT グループには、データベース サーバの接続情報が含まれています。OAT グループにログインすると、再度ログインすることなくグループ内の別のデータベース サーバに切り替えることができます。</p></p>
+<p>
+<p>OAT グループ内の別のデータベース サーバに切り替えるには、OAT ページの上部にある<strong>「サーバ」</strong>リストでデータベース サーバを選択します。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="#dqx1ids_oat_003">OAT グループの追加</a>
+<br />IBM OpenAdmin Tool (OAT) for Informix 内のデータベース サーバ接続のグループを定義します。</li></ul>
+<h1 id="dqx1ids_oat_061"><a href="#ToC_6">データベース サーバの動作の監視方法</a></h1>
+<h2 id="dqx1ids_oat_166"><a href="#ToC_7">データベース サーバの状態の監視</a></h2>
+<div>
+<p>特定のデータベース サーバの状態をリアルタイムで監視するか、または OAT グループ内のすべてのサーバの状態を同時に表示します。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>ダッシュボードを使用すると、特定のデータベース サーバの状態を監視できます。このダッシュボードには、メモリと領域の使用量、ロック数、トランザクション数、問合せ数、および読込みと書込みが最多である表が表示されます。</p>
+<p>マルチサーバ ダッシュボードには、OAT グループ内のすべてのデータベース サーバの状態を表示できます。詳細については、このダッシュボードから、IBM OpenAdmin Tool (OAT) for Informix の他のページにアクセスします。</p></p>
+<p>
+<p>データベース サーバの状態を監視するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ヘルス センタ」</strong>&gt;<strong>「ダッシュボード」</strong>をクリックします。</li>
+<li>ダッシュボードをリフレッシュするには、リフレッシュ アイコンをクリックするか、またはリフレッシュ レートを変更します。</li></ol>
+<h2 id="dqx1ids_oat_175"><a href="#ToC_8">ダッシュボードのカスタマイズ</a></h2>
+<div>
+<p>ダッシュボードに表示される特定のデータベース サーバの状態に関する情報を変更します。</p></div><a id="idx3"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq17">
+<span class="notetitle">前提条件:</span> <span class="notebody">IBM OpenAdmin Tool (OAT) for Informix の<strong>「管理」</strong>メニューがパスワードで保護されている場合は、パスワードを入力しないとこのタスクを実行できません。</span></div></div>
+<p>
+<p>OAT ダッシュボードには、データベース サーバに関する情報 (例えば、メモリー使用率、トランザクション数) が表示されます。ダッシュボードをカスタマイズすると、データベース サーバに関して表示する情報を指定できます。</p></p>
+<p>
+<p>ダッシュボードをカスタマイズするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT の<strong>「管理」</strong>メニューで、<strong>「ダッシュボード マネージャ (Dashboard Manager)」</strong>をクリックします。</li>
+<li>ダッシュボードのレイアウト エディタを開くには、ダッシュボードをダブルクリックします。</li></ol>
+<h2 id="dqx1ids_oat_176"><a href="#ToC_9">ダッシュボードの状態しきい値の変更</a></h2>
+<div>
+<p>マルチサーバ ダッシュボードに表示される状態標識のしきい値を変更します。</p></div><a id="idx4"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq22">
+<span class="notetitle">前提条件:</span> <span class="notebody">IBM Informix Health Advisor Plug-in for OpenAdmin Tool (OAT) をインストールする必要があります。</span></div></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のマルチサーバ ダッシュボードには、OAT グループ内のデータベース サーバの状態標識が表示されます。
+例えば、データベース サーバ上の DB 領域のフリー スペースが指定のしきい値を下回ると、データベース サーバに対する警告標識が表示されます。</p>
+<p>メモリ、領域、および入出力の合計に対するチャンクの割合の状態しきい値を変更できます。これらのしきい値は、Health Advisor プラグインのデフォルト設定です。</p></p>
+<p>
+<p>ダッシュボードの状態しきい値を変更するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ヘルス センタ」</strong>&gt;<strong>「Health Advisor」</strong>をクリックします。</li>
+<li><strong>「プロファイル」</strong>ページで、現行プロファイルがデフォルト プロファイルであることを確認します。</li>
+<li><strong>「アラーム」</strong>タブをクリックします。</li>
+<li>以下のアラームのしきい値を変更します。
+<table id="wq26" width="90%" summary="この表では、各行に 1 つの選択肢を示してあります。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq27" align="left"><strong>Health Advisor プラグインのアラームしきい値</strong></th>
+<th id="wq28" align="left">ダッシュボードの状態しきい値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>OS 空きメモリ</strong></td>
+<td headers="wq28"><strong>メモリ</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>DB 領域フリー スペース</strong></td>
+<td headers="wq28"><strong>領域</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>チャンク入出力操作</strong></td>
+<td headers="wq28"><strong>入出力</strong>: <strong>入出力合計に対するチャンクの割合</strong></td>
+</tr>
+</tbody>
+</table></li></ol>
+<h2 id="dqx1ids_oat_167"><a href="#ToC_10">アラートとイベント アラームの監視</a></h2>
+<div>
+<p>データベース サーバにより生成されたイベント アラームと、タスク スケジューラまたは組込みタスクおよびセンサによって生成されたアラートを監視します。</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>アラートとイベント アラームを監視するには、次のようにします。</p>
+<p>OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「ヘルス センタ」</strong>&gt;<strong>「アラート」</strong>をクリックします。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0674.htm#ids_adr_0674" target="_blank">イベント アラーム パラメータ (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0676.htm#ids_adr_0676" target="_blank">イベント アラーム ID (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0275.htm#ids_adr_0275" target="_blank">ph_alert 表 (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_oat_057"><a href="#ToC_11">管理コマンド履歴の確認</a></h2>
+<div>
+<p>データベース サーバで実行された SQL 管理 API 関数を、コマンドを実行したユーザ、コマンドを実行した時間、コマンド、データベース サーバから戻されたメッセージなどの情報を含めて確認します。</p></div><a id="idx7"></a><a id="idx8"></a>
+<p>
+<p>管理コマンドを確認するには、次のようにします。</p>
+<p>OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「ログ」</strong>&gt;<strong>「管理コマンド」</strong>をクリックします。</p></p>
+<h2 id="dqx1ids_oat_160"><a href="#ToC_12">オンライン メッセージ ログの監視</a></h2>
+<div>
+<p>データベース サーバ用オンライン メッセージ ログの最新部分を表示します。
+</p></div><a id="idx9"></a><a id="idx10"></a>
+<p>
+<p>オンライン メッセージ ログを監視するには、次のようにします。</p>
+<p>OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「ログ」</strong>&gt;<strong>「オンライン ログ」</strong>をクリックします。エラーは赤色で強調表示され、警告は黄色で強調表示されます。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">エラー メッセージ (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_oat_161"><a href="#ToC_13">オンライン メッセージ ログの削除</a></h2>
+<div>
+<p>データベース サーバのオンライン メッセージ ログ ファイルを、削除または切捨てます。
+</p></div><a id="idx11"></a><a id="idx12"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq33">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_161__d8639e117">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70.xC3 が必要です。</span></span></div></div>
+<p>
+<p>オンライン メッセージ ログを削除するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ログ」</strong>&gt;<strong>「オンライン ログ」</strong>をクリックします。</li>
+<li>次のいずれかを実行します。<ul>
+<li>ログ ファイルを削除するには、「<strong>削除</strong>」をクリックします。</li>
+<li>ログ ファイルを残したままログ ファイルのメッセージを削除するには、「<strong>切捨て</strong>」をクリックします。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_162"><a href="#ToC_14">オンライン メッセージ ログのローテーション</a></h2>
+<div>
+<p>データベース サーバのオンライン メッセージ ログ ファイルの有効化、無効化、変更を自動的にローテーションします。
+</p></div><a id="idx13"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq37">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_162__d8714e117">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70.xC3 が必要です。</span></span></div></div>
+<p>
+<p>自動ログ ローテーションを構成して、オンライン メッセージ ログ ファイルのサイズを制御できます。
+オンライン メッセージ ログのローテーション時に、データベース サーバはログ ファイルを新しいログ ファイルに切り替えて、ID 番号を前のログ ファイルから 1 ずつ増加させます。
+ログ ファイルがこの最大数に達すると、最も ID 番号の大きいログ ファイルが削除されます。
+</p></p>
+<p>
+<p>オンライン メッセージ ログをローテーションするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ログ」</strong>&gt;<strong>「オンライン ログ」</strong>をクリックします。</li>
+<li>「<strong>オンライン メッセージ ログ ローテーション</strong>」タブをクリックします。タスクの有効化または無効化、スケジュールの変更、ログ ファイルの最大数を決定するパラメータの編集ができます。
+</li></ol>
+<h2 id="dqx1ids_oat_163"><a href="#ToC_15">ON-Bar 動作ログの監視</a></h2>
+<div>
+<p>データベース サーバの ON-Bar 動作ログを確認します。</p></div><a id="idx14"></a><a id="idx15"></a>
+<p>
+<p>ON-Bar 動作ログを監視するには、次のようにします。</p>
+<p>OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「ログ」</strong>&gt;<strong>「ON-Bar 動作」</strong>をクリックします。エラーは赤色で強調表示され、警告は黄色で強調表示されます。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">エラー メッセージ (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_oat_164"><a href="#ToC_16">ON-Bar 動作ログの削除</a></h2>
+<div>
+<p>データベース サーバの ON-Bar 動作ログ ファイルを、削除または切捨てます。
+</p></div><a id="idx16"></a><a id="idx17"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq43">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_164__d8824e117">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70.xC3 が必要です。</span></span></div></div>
+<p>
+<p>ON-Bar 動作ログを削除するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ログ」</strong>&gt;<strong>「ON-Bar 動作」</strong>をクリックします。</li>
+<li>次のいずれかを実行します。<ul>
+<li>ログ ファイルを削除するには、「<strong>削除</strong>」をクリックします。</li>
+<li>ログ ファイルを残したままログ ファイルのメッセージを削除するには、「<strong>切捨て</strong>」をクリックします。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_165"><a href="#ToC_17">ON-Bar 動作ログのローテーション</a></h2>
+<div>
+<p>データベース サーバの ON-Bar 動作ログ ファイルの有効化、無効化、変更を自動的にローテーションします。
+</p></div><a id="idx18"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq47">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_165__d8899e117">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70.xC3 が必要です。</span></span></div></div>
+<p>
+<p>自動ログ ローテーションを構成して、ログ ファイルのサイズを制御できます。
+ログのローテーション時に、データベース サーバは新しいログ ファイルに切り替えて、ID 番号を前のログ ファイルから 1 ずつ増加させます。
+ログ ファイルがこの最大数に達すると、最も ID 番号の大きいログ ファイルが削除されます。
+</p></p>
+<p>
+<p>ON-Bar 動作ログをローテーションするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「ログ」</strong>&gt;<strong>「ON-Bar 動作」</strong>をクリックします。</li>
+<li>「<strong>ON-Bar 動作ログ ローテーション</strong>」タブをクリックします。タスクの有効化または無効化、スケジュールの変更、ログ ファイルの最大数を決定するパラメータの編集ができます。
+</li></ol>
+<h1 id="dqx1ids_oat_079"><a href="#ToC_18">システム スペースの管理方法</a></h1>
+<h2 id="dqx1ids_oat_143"><a href="#ToC_19">領域使用量の監視</a></h2>
+<div>
+<p>データベース サーバの領域使用量と格納領域に関する情報を確認します。
+特定の格納領域の場合、領域使用量と最適化、および領域内のチャンク、表、およびインデックスに関する情報を確認します。</p></div><a id="idx19"></a><a id="idx20"></a>
+<p>
+<p>領域使用量を監視するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。ページに、データベース サーバの領域使用量に関する情報のパネルが表示されます。</li>
+<li>詳細情報を表示するには、パネルの展開ボタンをクリックしてパネルを展開します。</li>
+<li>特定の格納領域に関する情報を表示するには、リストで領域を選択します。ページに、その領域の領域使用量に関する情報のパネルが表示されます。</li>
+<li>選択した領域に関する詳細情報を表示するには、パネルを展開します。</li></ol>
+<h2 id="dqx1ids_oat_127"><a href="#ToC_20">領域使用状況の管理</a></h2>
+<div>
+<p>データベース サーバの格納領域を管理します。</p></div>
+<h3 id="dqx1ids_oat_017"><a href="#ToC_21">領域の作成</a></h3>
+<div>
+<p>データベース サーバの DB 領域、一時 DB 領域、BLOB 領域、または SB 領域を作成します。</p></div><a id="idx21"></a><a id="idx22"></a>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix を使用して領域を作成するときに、領域を拡張可能にすることもできます。データベース サーバは必要な場合にチャンクを追加または拡張することで格納領域のサイズを自動的に拡張します。自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</p></p>
+<p>
+<p>領域を作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li><strong>「アクション」</strong>&gt;<strong>「領域の作成」</strong>をクリックします。</li>
+<li>「<strong>スペースの作成</strong>」ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_021.htm#ids_sapi_021" target="_blank">create dbspace 引数: DB 領域の作成 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_022.htm#ids_sapi_022" target="_blank">create sbspace 引数: SB 領域の作成 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_019.htm#ids_sapi_019" target="_blank">create blobspace 引数: BLOB 領域の作成 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_023.htm#ids_sapi_023" target="_blank">create tempdbspace 引数: 一時 DB 領域の作成 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_134"><a href="#ToC_22">領域の変更</a></h3>
+<div>
+<p>データベース サーバが必要な場合にチャンクを追加または拡張することで格納領域のサイズを拡張できるようにするかどうか指定します。サーバが領域を拡張するのに使用できる最小サイズを設定します。</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq57">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>領域を変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>領域</strong>」パネルを展開します。</li>
+<li>「<strong>領域</strong>」ページで、領域を選択します。</li>
+<li>「<strong>変更</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_106.htm#ids_sapi_106" target="_blank">modify space sp_sizes 引数: 格納領域の作成サイズまたは拡張サイズの変更 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_126"><a href="#ToC_23">領域の削除</a></h3>
+<div>
+<p>DB 領域、一時 DB 領域、BLOB 領域、または SB 領域を削除します。</p></div><a id="idx25"></a><a id="idx26"></a>
+<p>
+<p>領域を削除するとき、フリー スペースをストレージ プールに返却するオプションを選択できます。ストレージ プールを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</p></p>
+<p>
+<p>領域を削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>領域</strong>」パネルを展開します。</li>
+<li>「<strong>領域</strong>」ページで、領域を選択します。</li>
+<li>「<strong>削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_084.htm#ids_sapi_084" target="_blank">drop dbspace 引数: DB 領域の削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_027.htm#ids_sapi_027" target="_blank">drop sbspace 引数: SB 領域の削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_024.htm#ids_sapi_024" target="_blank">drop blobspace 引数: BLOB 領域の削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_028.htm#ids_sapi_028" target="_blank">drop tempdbspace 引数: 一時 DB 領域の削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_116.htm#ids_sapi_116" target="_blank">drop dbspace to storagepool 引数: 空の DB 領域からストレージ プールへの領域の返却 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_119.htm#ids_sapi_119" target="_blank">drop sbspace to storagepool 引数: 空の SB 領域からストレージ プールへの領域の返却 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_117.htm#ids_sapi_117" target="_blank">drop tempdbspace to storagepool 引数: 空の一時 DB 領域からストレージ プールへの領域の返却 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_135"><a href="#ToC_24">チャンクの追加</a></h3>
+<div>
+<p>チャンクを格納領域に追加します。</p></div><a id="idx27"></a><a id="idx28"></a>
+<p>
+<p>チャンクを追加する場合、パスを指定すること、またはストレージ プールからチャンクを作成することができます。ストレージ プールを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</p></p>
+<p>
+<p>チャンクを追加するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>チャンク</strong>」パネルを展開します。</li>
+<li>「<strong>追加</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p>
+<p>チャンクを拡張可能にするには、チャンクを選択し、「<strong>変更</strong>」をクリックします。この操作を実行するには、IBM Informix バージョン 11.70 が必要です。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk 引数: 新規チャンクの追加 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_115.htm#ids_sapi_115" target="_blank">create chunk from storagepool 引数: ストレージ プールからのチャンクの作成 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_136"><a href="#ToC_25">チャンクの変更</a></h3>
+<div>
+<p>必要な場合に、データベース サーバにより自動的にチャンクを拡張できるようにするかどうかを指定します。</p></div><a id="idx29"></a><a id="idx30"></a><a id="idx31"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq68">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_136__d6760e103">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>
+<p>チャンクを変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>チャンク</strong>」パネルを展開します。</li>
+<li>「<strong>チャンク</strong>」ページで、チャンクを選択します。</li>
+<li>「<strong>変更</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_104.htm#ids_sapi_104" target="_blank">modify chunk extendable 引数: チャンクを拡張可能としてマーク (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_105.htm#ids_sapi_105" target="_blank">modify chunk extendable off 引数: チャンクを拡張不可としてマーク (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_138"><a href="#ToC_26">チャンクの削除</a></h3>
+<div>
+<p>DB 領域、BLOB 領域、または SB 領域からチャンクを削除します。</p></div><a id="idx32"></a><a id="idx33"></a>
+<p>
+<p>チャンクを削除するとき、フリー スペースをストレージ プールに返却するオプションを選択できます。ストレージ プールを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</p></p>
+<p>
+<p>チャンクを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>チャンク</strong>」パネルを展開します。</li>
+<li>「<strong>チャンク</strong>」ページで、チャンクを選択します。</li>
+<li>「<strong>削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_025.htm#ids_sapi_025" target="_blank">drop chunk 引数: チャンクの削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_121.htm#ids_sapi_121" target="_blank">drop chunk to storagepool 引数: 空のチャンクからストレージ プールへの領域の返却 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_oat_142"><a href="#ToC_27">格納領域の自動追加</a></h2>
+<div>
+<p>領域が必要になったときに、データベース サーバにより自動的に格納領域が追加されるように構成します。サーバが領域を拡張するのに使用できるストレージ プールにエントリを追加し、領域の拡張に関するしきい値を設定します。</p></div>
+<div>
+<div class="note-noindent" id="wq74">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_142__d7301e98">自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>サーバにより自動的に格納領域が追加されるように構成すると、領域は必要に応じて割り当てられ、領域をより効率的に使用できます。</p>
+<p>領域が必要になると、サーバは格納領域にチャンクを追加することで、格納領域 (DB 領域、SB 領域、BLOB 領域、一時 DB 領域、または一時 SB 領域) を拡張します。格納領域がミラーリングされていない DB 領域または一時 DB領域の場合、サーバにより格納領域内のチャンクを拡張することもできます。データベース サーバにより操作が実行されるのを待たずに、直ちに領域を拡張すること、またはチャンクを拡張することができます。</p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動での領域拡張または拡張可能チャンクの拡張 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_144"><a href="#ToC_28">データベース サーバにより格納領域が自動的に追加されるように構成</a></h3>
+<div>
+<p>領域が必要になったときに、データベース サーバにより自動的に格納領域が追加されるように構成し、領域の拡張に関するしきい値を設定します。</p></div><a id="idx34"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq76">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_144__d7378e98">自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>
+<p>データベース サーバにより格納領域が追加されるように構成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>ストレージ プール</strong>」パネルを展開します。</li>
+<li>「<strong>自動領域拡張</strong>」を選択します。</li>
+<li>フリー スペースしきい値および待機時間を指定します。</li>
+<li>「<strong>保存</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1097.htm#ids_adr_1097" target="_blank">SP_AUTOEXPAND 構成パラメータ (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1038.htm#ids_adr_1038" target="_blank">SP_THRESHOLD 構成パラメータ (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1039.htm#ids_adr_1039" target="_blank">SP_WAITTIME 構成パラメータ (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_139"><a href="#ToC_29">ストレージ プール エントリの追加</a></h3>
+<div>
+<p>領域が必要になったときに、データベース サーバが格納領域を自動的に追加するのに使用できるディレクトリ、ファイル、およびデバイスを定義します。</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq80">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_139__d7043e98">自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>
+<p>ストレージ プール エントリを追加するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>ストレージ プール</strong>」パネルを展開します。</li>
+<li>「<strong>追加</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_100.htm#ids_sapi_100" target="_blank">storagepool add 引数: ストレージ プール エントリの追加 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_140"><a href="#ToC_30">ストレージ プール エントリの変更</a></h3>
+<div>
+<p>領域が必要になったときに、データベース サーバが格納領域を自動的に追加するのに使用できるディレクトリ、ファイル、およびデバイスを変更します。</p></div><a id="idx37"></a><a id="idx38"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq84">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_140__d7123e98">自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>
+<p>ストレージ プール エントリを変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>ストレージ プール</strong>」パネルを展開します。</li>
+<li>「<strong>ストレージ プール</strong>」ページで、ストレージ プール エントリを選択します。</li>
+<li>「<strong>変更</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_102.htm#ids_sapi_102" target="_blank">storagepool modify 引数: ストレージ プール エントリの変更 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_141"><a href="#ToC_31">ストレージ プール エントリの削除</a></h3>
+<div>
+<p>ストレージ プール内のすべてのエントリを削除するか、またはエラーのあるエントリ、フル エントリ、または特定のエントリを削除します。</p></div><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq88">
+<span class="notetitle">前提条件:</span> <span class="notebody"><span id="dqx1ids_oat_141__d7212e98">自動格納領域プロビジョニングを使用するには、IBM Informix バージョン 11.70 が必要です。</span></span></div></div>
+<p>
+<p>ストレージ プール エントリを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「格納領域」</strong>をクリックします。</li>
+<li>「<strong>ストレージ プール</strong>」パネルを展開します。</li>
+<li>「<strong>ストレージ プール</strong>」ページで、ストレージ プール エントリを選択します。
+
+<p>エラーのあるすべてのエントリまたはフル エントリを削除するには、<strong>「表示」</strong>&gt;<strong>「エラー エントリ」</strong>または<strong>「フル エントリ」</strong>をクリックし、すべてのエントリを選択します。</p></li>
+<li>「<strong>削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_101.htm#ids_sapi_101" target="_blank">storagepool delete 引数: ストレージ プール エントリの削除 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_109.htm#ids_sapi_109" target="_blank">storagepool purge 引数: ストレージ プール エントリの削除 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_055"><a href="#ToC_32">領域の拡張</a></h3>
+<div>
+<p>データベース サーバにより自動的に領域が拡張されるのを待たずに、直ちに領域を拡張します。</p></div><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq92">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。領域を拡張可能にする必要があり、データベース サーバが領域を拡張するために使用できるエントリをストレージ プールに含める必要があります。領域を拡張可能にするには、「<strong>変更</strong>」をクリックします。ストレージ プール エントリを追加するには、<strong>「ストレージ プール」</strong>パネルを展開し、<strong>「追加」</strong>をクリックします。</span></div></div>
+<p>
+<p>領域を拡張するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_055__d2578e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>「<strong>領域</strong>」パネルを展開します。</li>
+<li>「<strong>領域</strong>」ページで、領域を選択します。</li>
+<li>「<strong>拡張</strong>」をクリックします。</li>
+<li>オプション: 領域を拡張する量を指定するには、または領域にチャンクを追加するには、<strong>「領域の拡張」</strong>ページで<strong>「詳細オプションを表示」</strong>をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="#dqx1ids_oat_134">領域の変更</a>
+<br />データベース サーバが必要な場合にチャンクを追加または拡張することで格納領域のサイズを拡張できるようにするかどうか指定します。サーバが領域を拡張するのに使用できる最小サイズを設定します。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動での領域拡張または拡張可能チャンクの拡張 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_108.htm#ids_sapi_108" target="_blank">modify space expand 引数: 領域のサイズの拡張 (SQL 管理 API) (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk 引数: 新規チャンクの追加 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_137"><a href="#ToC_33">チャンクの拡張</a></h3>
+<div>
+<p>データベース サーバにより自動的にチャンクが拡張されるのを待たずに、直ちにチャンクを拡張します。</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq96">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。チャンクを拡張可能にする必要があり、データベース サーバがチャンクを拡張するために使用できるエントリをストレージ プールに含める必要があります。チャンクを拡張可能にするには、「<strong>変更</strong>」をクリックします。ストレージ プール エントリを追加するには、<strong>「ストレージ プール」</strong>パネルを展開し、<strong>「追加」</strong>をクリックします。</span></div></div>
+<p>
+<p>チャンクを拡張するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_137__d6856e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>「<strong>チャンク</strong>」パネルを展開します。</li>
+<li>「<strong>チャンク</strong>」ページで、チャンクを選択します。</li>
+<li>「<strong>拡張</strong>」をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動領域管理 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="#dqx1ids_oat_136">チャンクの変更</a>
+<br />必要な場合に、データベース サーバにより自動的にチャンクを拡張できるようにするかどうかを指定します。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動での領域拡張または拡張可能チャンクの拡張 (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_103.htm#ids_sapi_103" target="_blank">modify chunk extend 引数: チャンクのサイズの拡張 (SQL 管理 API) (管理者リファレンス)</a></li></ul>
+<h2 id="dqx1ids_oat_128.dita"><a href="#ToC_34">格納領域の最適化</a></h2>
+<div>
+<p>表、インデックス、およびフラグメントを圧縮し、フリー スペースを統合 (リパック) し、フリー スペースを DB 領域へ返却 (縮小) し、エクステントをマージ (フラグメント解消) します。表と表フラグメントを圧縮解除します。</p></div><a id="idx45"></a><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<div>
+<div class="note-noindent" id="wq99">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域の最適化の操作を実行するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<h3 id="dqx1ids_oat_146"><a href="#ToC_35">格納領域の自動最適化</a></h3>
+<div>
+<p>データ格納領域を最適化するために、表とフラグメントの圧縮、リパック、縮小、およびフラグメント解消を自動的に実行するようにデータベース サーバを構成します。</p></div><a id="idx53"></a><a id="idx54"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq101">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域最適化ポリシーを適用するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<p>
+<p>最適化ポリシーを実装するスケジューラ タスクを有効化または無効化できます。ポリシーによって、表とフラグメントを圧縮、縮小、リパック、およびフラグメント解消する時期を決定するしきい値が設定されます。各操作のしきい値を更新するか、またはこれらのしきい値を無効にすることができます。また、スケジューラ タスクの実行時点を指定することもできます。</p>
+<p>表と表フラグメントが圧縮されるときには、シンプル ラージ オブジェクト (TEXT データ型と BYTE データ型) が組み込まれます。</p></p>
+<p>
+<p>格納領域を自動的に最適化するようにデータベース サーバを構成するには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_146__d7537e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>「<strong>サーバ最適化ポリシー</strong>」タブをクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1380.htm#ids_admin_1380" target="_blank">格納領域最適化 (Storage optimization) (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_129"><a href="#ToC_36">圧縮の見積り</a></h3>
+<div>
+<p>表、インデックス、およびフラグメントに含まれるデータを圧縮することによって節約できる領域の量の見積りを更新します。</p></div><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq106">
+<span class="notetitle">前提条件:</span> <span class="notebody">表および表フラグメントの圧縮保存を見積もるには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.50.xC6 以降が必要です。インデックスの圧縮、およびシンプル ラージ オブジェクト (TEXT データ型と BYTE データ型) が含まれている表の圧縮を見積もるには、OAT に Informix 12.10 が必要です。</span></div></div>
+<p>
+<p>圧縮の見積りを使用して、表、インデックス、またはフラグメントに含まれるデータを圧縮するかどうかを決定できます。表と表フラグメントの圧縮見積もりには、シンプル ラージ オブジェクト (TEXT データ型と BYTE データ型) が含まれます。圧縮見積もりが可能な場合は、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>&gt;<strong>「表およびインデックス」</strong>ページの<strong>「領域使用量」</strong>列に表示されます。最新見積りの時刻が、吹出しヘルプに示されます。</p></p>
+<p>
+<p>圧縮見積りを更新するには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_129__d5856e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表、インデックス、およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong>&gt;<strong>「データの更新」</strong>をクリックします。</li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h3 id="dqx1ids_oat_130"><a href="#ToC_37">データの圧縮</a></h3>
+<div>
+<p>表、インデックス、およびフラグメントに含まれるデータを圧縮して、必要なディスク領域の量を削減します。</p></div><a id="idx58"></a><a id="idx59"></a><a id="idx60"></a><a id="idx61"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq112">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域の最適化の操作を実行するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<div>
+<div class="note-noindent" id="wq113">
+<span class="notetitle">重要:</span> <span class="notebody">表または表フラグメントには、2000 行以上が含まれている必要があります。インデックスまたはインデックス フラグメントの基となる表にも、2000 行以上が含まれている必要があります。切り離された B ツリー インデックス (一意なツリー インデックス、重複したツリー インデックス、ツリー インデックスの有向グラフを含む) を圧縮できます。</span></div></div>
+<p>
+<p>表、インデックス、またはフラグメントを圧縮すると、圧縮タスクによってコンプレッション ディクショナリが作成され、行が移動されずに行内のデータが圧縮されます。表を圧縮するときには、パーティションに保管されているシンプル ラージ オブジェクト (TEXT データ型と BYTE データ型) を同じ DB 領域に含めることができます。圧縮タスクの一部として、フリー スペースを統合 (リパック) でき、フリー スペースを DB 領域に返却 (縮小) できます。また、エクステントの数を削減 (フラグメント解消) することもできます。</p></p>
+<p>
+<p>表、インデックス、およびフラグメントを圧縮するには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_130__d5990e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表、インデックス、およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong> &gt; <strong>「領域の最適化」</strong>をクリックします。</li>
+<li>「<strong>圧縮</strong>」を選択します。</li>
+<li>オプション: 以下のとおり、追加の操作を選択します。
+<ul>
+<li>フリー スペースを統合するには、「<strong>リパック</strong>」を選択します。</li>
+<li>フリー スペースを DB 領域に返却するには、「<strong>縮小</strong>」を選択します。</li>
+<li>エクステントの数を削減するには、「<strong>エクステントのフラグメント解消</strong>」を選択します。</li></ul></li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h3 id="dqx1ids_oat_131"><a href="#ToC_38">表および表フラグメントの圧縮解除</a></h3>
+<div>
+<p>以前に圧縮した表および表フラグメントを圧縮解除します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq119">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域最適化操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。</span></div></div>
+<p>
+<p>圧縮解除すると、挿入操作と更新操作の圧縮の停止、コンプレッション ディクショナリの活動停止、および元のページに収まらない行への新規ページの割り当ても行われます。</p></p>
+<p>
+<p>表および表フラグメントを圧縮解除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_131__d6154e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong> &gt; <strong>「領域の最適化」</strong>をクリックします。</li>
+<li>「<strong>圧縮解除</strong>」を選択します。</li>
+<li>オプション: 圧縮解除操作中のデータへのアクセスを防ぐ目的で、表およびフラグメントに排他的なロックをかけるには、<strong>「オフライン」</strong>を選択します。</li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h3 id="dqx1ids_oat_132"><a href="#ToC_39">フリー スペースの統合</a></h3>
+<div>
+<p>圧縮時に、または圧縮せずに個別に、表、インデックス、およびフラグメントに含まれるフリー スペースを統合 (リパック) します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq125">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域の最適化の操作を実行するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>フリー スペースを統合するには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_132__d6257e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表、インデックス、およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong> &gt; <strong>「領域の最適化」</strong>をクリックします。</li>
+<li>「<strong>リパック</strong>」を選択します。</li>
+<li>オプション: 以下のとおり、追加の操作を選択します。
+<ul>
+<li>表、インデックス、フラグメントを圧縮する場合は、<strong>「圧縮」</strong>を選択します。</li>
+<li>フリー スペースを DB 領域に返却するには、「<strong>縮小</strong>」を選択します。</li>
+<li>エクステントの数を削減するには、「<strong>エクステントのフラグメント解消</strong>」を選択します。</li></ul></li>
+<li>オプション: リパック操作中のデータへのアクセスを防ぐ目的で、表、インデックス、およびフラグメントに排他的なロックをかけるには、<strong>「オフライン」</strong>を選択します。表、インデックス、およびフラグメントを圧縮する場合、または領域を縮小する場合は、このオプションは無効です。</li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h3 id="dqx1ids_oat_133"><a href="#ToC_40">フリー スペースの DB 領域への返却 (縮小)</a></h3>
+<div>
+<p>フリー スペースを DB 領域に返却 (領域を縮小) して、表、インデックス、およびフラグメントのサイズを削減します。</p></div><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq131">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域の最適化の操作を実行するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<p>
+<p>フリー スペースを DB 領域に返却するには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_133__d6414e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表、インデックス、およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong> &gt; <strong>「領域の最適化」</strong>をクリックします。</li>
+<li>「<strong>縮小</strong>」を選択します。</li>
+<li>オプション: 以下のとおり、追加の操作を選択します。
+<ul>
+<li>表、インデックス、フラグメントを圧縮する場合は、<strong>「圧縮」</strong>を選択します。</li>
+<li>フリー スペースを統合するには、「<strong>リパック</strong>」を選択します。</li>
+<li>エクステントの数を削減するには、「<strong>エクステントのフラグメント解消</strong>」を選択します。</li></ul></li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h3 id="dqx1ids_oat_119"><a href="#ToC_41">エクステントのフラグメント解消</a></h3>
+<div>
+<p>表、インデックス、およびフラグメント内のエクステントをマージして、エクステント数を削減し、問合せパフォーマンスを向上させます。
+</p></div><a id="idx67"></a><a id="idx68"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq136">
+<span class="notetitle">前提条件:</span> <span class="notebody">領域の最適化の操作を実行するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.50.xC6 以降が必要です。フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。インデックスとシンプル ラージ オブジェクト (テキスト (TEXT) 型およびバイト (BYTE) 型のデータ型) を圧縮する場合は、OAT に Informix 12.10 が必要です。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>エクステントのフラグメント解消を行うには、次のようにします。</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_119__d5145e313">OAT のメニューで、<strong>「スペース管理」</strong>&gt;<strong>「格納領域」</strong>をクリックします。</span></li>
+<li>選択済みのデータベース サーバで、「<strong>表およびインデックス</strong>」パネルを展開します。</li>
+<li>表、インデックス、およびフラグメントを選択します。</li>
+<li><strong>「アクション」</strong> &gt; <strong>「領域の最適化」</strong>をクリックします。</li>
+<li>「<strong>エクステントのフラグメント解消</strong>」を選択します。</li>
+<li>オプション: 以下のとおり、追加の操作を選択します。
+<ul>
+<li>表、インデックス、フラグメントを圧縮する場合は、<strong>「圧縮」</strong>を選択します。</li>
+<li>フリー スペースを統合するには、「<strong>リパック</strong>」を選択します。</li>
+<li>フリー スペースを DB 領域に返却するには、「<strong>縮小</strong>」を選択します。</li></ul></li></ol>
+<p>
+<p>タスクの進行を監視するには、「<strong>タスク状況</strong>」タブをクリックします。</p></p>
+<h2 id="dqx1ids_oat_084"><a href="#ToC_42">リカバリ ログの管理</a></h2>
+<div>
+<p>データベース サーバのチェックポイント、論理ログ、物理ログの表示と管理を行います。
+</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<h3 id="dqx1ids_oat_088"><a href="#ToC_43">チェックポイント履歴の表示</a></h3>
+<div>
+<p>チェックポイントの完了をスレッドが待機した回数を含む、基本のチェックポイント情報を判別するためにチェックポイント履歴を表示します。
+</p></div>
+<p>
+<p>チェックポイント履歴を使用して、チェックポイント間隔が適当かどうかを判断することができます。
+</p></p>
+<p>
+<p>チェックポイント履歴を表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>チェックポイント</strong>」タブをクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">チェックポイント (Checkpoints) (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1153.htm#ids_adr_1153" target="_blank">sysckptinfo (管理者リファレンス)</a></li></ul>
+<h3 id="dqx1ids_oat_087"><a href="#ToC_44">チェックポイントの強制</a></h3>
+<div>
+<p>バッファをディスクにフラッシュする、ブロック化または非ブロック化チェックポイントを強制実行します。</p></div>
+<p>
+<p>チェックポイントを強制実行するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li>「<strong>チェックポイント</strong>」セクションで、チェックポイントのタイプを選択します。
+<ul>
+<li><strong>標準チェックポイント</strong>: 非ブロック化チェックポイントを強制実行するには、このオプションを選択します。
+</li>
+<li><strong>同期チェックポイント</strong>: ブロック化チェックポイントを強制実行するには、このオプションを選択します。
+</li></ul></li>
+<li>「<strong>チェックポイントの実行</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">チェックポイント (Checkpoints) (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_089"><a href="#ToC_45">論理ログの統計の表示</a></h3>
+<div>
+<p>サイズ、使用率、状態、および満杯率を含む、論理ログの統計を表示します。
+</p></div>
+<p>
+<p>論理ログの統計を表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>論理ログ</strong>」タブをクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">論理ログ ファイルの管理 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_080"><a href="#ToC_46">論理ログの追加</a></h3>
+<div>
+<p>DB 領域に論理ログを追加します。</p></div>
+<p>
+<p>論理ログを追加するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li><strong>「論理ログの追加」</strong>セクションで、次のフィールドに入力します。<ul>
+<li><strong>「DB 領域名」</strong>: ログを追加する DB 領域を選択します。</li>
+<li><strong>「サイズ」</strong>: ログのサイズを KB (キロバイト) で入力します。</li>
+<li><strong>「数 (Number)」</strong>: 追加するログの数を入力します。</li>
+<li><strong>「属性」</strong>: 現行のログの後ろにログを追加するか、既存のログの最後に追加するかを指定します。</li></ul></li>
+<li>「<strong>追加</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0740.htm#ids_admin_0740" target="_blank">論理ログ ファイルの手動追加 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_148"><a href="#ToC_47">次の論理ログへの切替え</a></h3>
+<div>
+<p>次の論理ログ ファイルへ即時に切り替えます。</p></div>
+<p>
+<p>現在のログ ファイルがいっぱいになる前に、次の論理ログへ切り替えられます。
+</p></p>
+<p>
+<p>次の論理ログへ切り替えるには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li><strong>「論理ログの切替え」</strong>セクションの「<strong>切替え</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">論理ログ ファイルの管理 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_083"><a href="#ToC_48">論理ログの削除</a></h3>
+<div>
+<p>論理ログを削除し、DB 領域内の利用可能なディスク領域の量を増やします。
+</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq154">
+<span class="notetitle">重要:</span> <span class="notebody">現在使用中のログ ファイル、または最新のチェックポイント レコードを含むログ ファイルは削除できません。</span></div></div>
+<p>
+<p>ログ ファイルの状態によって、データベース サーバがディスク領域を解放する時期が決まります。
+</p></p>
+<ul>
+<li>書き込みが行われていないログ ファイルを削除すると、ログはデータベース サーバにより即時に削除され、領域が解放されます。</li>
+<li>使用中のログ ファイルを削除する場合、データベース サーバはそのログ ファイルを削除済みとしてマークします。
+ログ ファイルとルート DB 領域を含む DB 領域のフル バックアップを実行した後、データベース サーバはログ ファイルを削除し、領域を解放します。
+</li></ul>
+<p>
+<p>論理ログを削除するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li>「<strong>論理ログの削除</strong>」セクションで、論理ログ番号のリストからログを選択します。
+</li>
+<li>「<strong>削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">論理ログ ファイルの管理 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_090"><a href="#ToC_49">物理ログの統計の表示</a></h3>
+<div>
+<p>ログ サイズ、使用量、およびバッファ サイズを含む、物理ログの統計を表示します。
+</p></div>
+<p>
+<p>物理ログの統計を表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>物理ログ</strong>」タブをクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">物理ログの管理 (管理者ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_086"><a href="#ToC_50">物理ログの移動</a></h3>
+<div>
+<p>物理ログを異なる DB 領域へ移動し、ログのサイズを変更します。
+</p></div>
+<p>
+<p>物理ログを移動するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「リカバリ ログ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li>「<strong>物理ログの移動</strong>」セクションで、次のフィールドに入力します。
+<ul>
+<li>「<strong>DB 領域名</strong>」: ログへ移動する DB 領域名を選択します。
+</li>
+<li>「<strong>サイズ</strong>」: ログのサイズを KB (キロバイト) 単位で入力します。
+</li>
+<li>「<strong>確定</strong>」: 移動を確定するには「<strong>物理ログを移動する</strong>」を選択します。</li></ul></li>
+<li>「<strong>移動</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">物理ログの管理 (管理者ガイド)</a></li></ul>
+<h1 id="dqx1ids_oat_001"><a href="#ToC_51">データベース サーバの管理方法</a></h1>
+<h2 id="dqx1ids_oat_170"><a href="#ToC_52">サーバ メモリの管理</a></h2>
+<div>
+<p>サーバ メモリの使用量についての情報を表示し、自動的な低メモリ管理を有効にします。
+メモリが非常に少なくなったときに、データベース サーバが処理を継続するために取るアクションを構成します。
+</p></div><a id="idx72"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq163">
+<span class="notetitle">前提条件:</span> <span class="notebody">低位アドレス メモリを自動管理するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC3 以降または Informix 11.50.xC9 が必要です。</span></div></div>
+<p>
+<p>サーバ メモリを管理するには、次のようにします。</p>
+<p>OAT のメニューで、<strong>「サーバ管理」</strong>&gt;<strong>「メモリ マネージャ
+」</strong>をクリックします。</p></p>
+<h2 id="dqx1ids_oat_004"><a href="#ToC_53">高可用性クラスタの管理</a></h2>
+<h3 id="dqx1ids_oat_059"><a href="#ToC_54">高可用性クラスタのための接続の構成</a></h3>
+<div>
+<p>IBM Informix サーバで <strong>idsd</strong> デーモンをセット アップして、高可用性クラスタに含まれるサーバを起動できるようにするか、または共用ディスク副 (SDS) サーバを追加できるようにします。
+</p></div><a id="idx73"></a><a id="idx74"></a><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq166">
+<span class="notetitle">前提条件:</span> <span class="notebody">この手順を実行するには、Informix サーバで root 権限を持っている必要があります。</span></div></div>
+<p>
+<p>遠隔管理タスク (高可用性クラスタに含まれるサーバの起動、副サーバの追加など) を実行するために IBM OpenAdmin Tool (OAT) for Informix を使用するには、次のデーモンを Informix サーバにインストールして構成します。
+</p></p>
+<ul>
+<li>インターネット サービス デーモン (UNIX および Linux 用のインターネット デーモン <strong>xinetd</strong> または <strong>inetd</strong> など)</li>
+<li>OAT でリモート Informix サーバを開始できるようにするデーモン プロセス <strong>idsd</strong>。
+このデーモンは、Informix サーバと同じホスト上にあり、ユーザ <strong>informix</strong> がアクセスできるディレクトリに配置されている必要があります。
+<strong>idsd</strong> デーモンは、<strong>xinetd</strong> デーモンまたは <strong>inetd</strong> デーモン経由で起動されます。</li></ul>
+<div>
+<div class="note-noindent" id="dqx1ids_oat_059__dup0002">
+<span class="notetitle">重要:</span> <span class="notebody">Windows または MAC OS では遠隔管理機能を使用できません。</span></div></div>
+<p>
+<p>インターネット デーモンおよび <strong>idsd</strong> デーモンを構成するには、次のようにします。</p></p>
+<ol type="1">
+<li><strong>idsd</strong> デーモンが Informix とともに <samp><em>$INFORMIXDIR</em>/bin</samp> ディレクトリにインストールされていることを確認します。所有者およびグループが <strong>informix</strong> であり、権限が <samp class="xph">0754</samp> であることを確認します。<p>次に例を示します。</p>
+<pre class="xmp"><code>[informix@myhost]/usr/informix/bin% ls -la idsd
+    -rwxr-xr--  1 informix informix 23717 Oct 15 16:34 idsd</code></pre></li>
+<li>サーバで、接続の暗号化をセット アップします。Informix 11.70 では、IBM JRE 1.6 以降の一部として使用可能な GSKCmd ツールを使用します。以前のバージョンの Informix では、IBM Global Security Kit に含まれる GSKCmd ツールを使用します。
+
+<ol type="a">
+<li>ご使用のプラットフォームに応じた次の GSKCmd コマンド行パラメータを使用して、キー データベースを作成します。
+<pre class="xmp"><code><em>command</em> -keydb -create -db <span class="synph"><span class="var">keydb_name</span></span>.kdb -pw <span class="synph"><span class="var">password</span></span> -type cms -stash</code></pre>次に例を示します。<pre class="xmp"><code>gsk8cmd -keydb -create -db mydb.kdb -pw mypassw0rd -type cms -stash</code></pre></li>
+<li>次の GSKCmd コマンド行パラメータを使用して、自己署名証明書を作成します。<pre class="xmp"><code><em>command</em> -cert -create -db <em>keydb_name</em>.kdb -pw <em>password</em> -label <em>label_text</em>
+    -dn <em>distinguished name</em> 
+    -size &lt;1024 | 512 | 2048&gt; -default_cert yes </code></pre><em>distinguished
+name</em> は、X.500 識別名です。<em>distinguished name</em> は、次の形式の引用符付きストリング
+です。CN=<em>common name</em> (必須),
+O=<em>organization</em>, OU=<em>organization unit</em>,
+L=<em>location</em>, ST=<em>state or province</em>,
+C=<em>country</em>。
+
+
+<p>次に例を示します。</p>
+<pre class="xmp"><code>gsk8cmd -cert -create -db mydb.kdb -pw mypassw0rd -label mycertificatelabel
+    -dn "CN=lenexa.ibm.com,O=ibm,OU=IBM HTTP Server,ST=KS,C=US" 
+    -size 1024 -default_cert yes</code></pre></li></ol></li>
+<li><strong>xinetd</strong> または <strong>inetd</strong> 構成ファイルを編集のために開き、<strong>idsd</strong> デーモンのサービス エントリを追加します。<div>
+<div class="note-noindent" id="wq171">
+<span class="notetitle">重要:</span> <span class="notebody">GSKIT_VERSION 構成パラメータがデフォルト以外のバージョンの GSKit に設定されている場合は、<strong>xinetd</strong> または <strong>inetd</strong> サービス エントリに <samp class="xph">-g <em>NUMBER</em></samp> サーバ プログラム引数を追加して、GSKit のバージョンを指定します。</span></div></div>
+
+<ul>
+<li><strong>xinetd</strong> サーバ デーモンの場合は <samp class="xph">/etc/xinetd.conf</samp> です。<pre class="xmp"><code>service idsd
+             {
+             disable = no
+             socket_type = stream 
+             protocol = tcp
+             user = root
+             wait = no 	    
+             server = /usr/informix/bin/idsd
+             server_args = -l /usr/informix/idsd.log 
+                 -k /usr/informix/idsd -n idsd_label
+             }</code></pre></li>
+<li>UNIX の <strong>inetd</strong> サーバ デーモンの場合は <samp class="xph">/etc/inetd.conf</samp> です。<pre class="xmp"><code>idsd stream tcp nowait root /usr/informix/bin/idsd idsd 
+    -l /usr/informix/idsd.log -k /usr/informix/idsd -n idsd_label</code></pre></li></ul></li>
+<li>ファイル <samp class="xph">/etc/services</samp> を編集用に開き
+、<samp class="xph">idsd</samp> という名前のサービスを追加します。次に例を示します。<pre class="xmp"><code>idsd 10000/tcp</code></pre>この例では、
+ポート番号 10000 を使用していますが、1024 より大きい、既に使用中でない
+他の任意のポートを使用できます。ただし、名前は <samp class="xph">idsd</samp> である必要があり、
+プロトコルは <samp class="xph">tcp</samp> である必要があります。</li>
+<li><strong>xinetd</strong> サービス デーモンまたは <strong>inetd</strong> サービス デーモンを再開します。大部分のインプリメンテーションでは、実行中の <strong>inetd</strong> プロセス
+または <strong>xinetd</strong> プロセスに SIGHUP シグナルを送信することにより再開できます。一方、一部の Linux プラットフォームでは、root として次のコマンドを実行できます。
+<pre class="xmp"><code>service xinetd restart</code></pre></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_ssl_006.htm#ids_ssl_006" target="_blank">IBM Global Security Kit (セキュリティ ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_058"><a href="#ToC_55">高可用性クラスタの検索</a></h3>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix を使用して、高可用性クラスタを特定し、監視および管理ができるようにします。</p></div><a id="idx83"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq173">
+<span class="notetitle">前提条件:</span> <span class="notebody">高可用性クラスタ内のサーバを OAT グループに追加します。
+OAT グループ内のサーバ上のクラスタのみが<strong>「高可用性クラスタ」</strong>ページに表示されます。サーバを OAT グループに追加するには、OAT の<strong>「管理」</strong>メニューで<strong>「接続の管理」</strong>&gt;<strong>「接続の追加」</strong>をクリックします。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>高可用性クラスタを検索するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong> &gt; <strong>「クラスタ」</strong>をクリックします。</li>
+<li>「<strong>クラスタの検索</strong>」をクリックします。
+
+<p>クラスタが検出されたら、クラスタ内のサーバ (主サーバ、高可用性データ レプリケーション (HDR) サーバ、共用ディスク副 (SDS) サーバ、およびリモート スタンドアロン副 (RSS) サーバ) がリストされた、<strong>「検索されたクラスタ」</strong>ページが表示されます。</p></li>
+<li>デフォルト名を受け入れるか、クラスタの新規の一意の名前を入力します。
+見つかったクラスタごとにこのステップを反復します。
+</li></ol>
+<h3 id="dqx1ids_oat_020"><a href="#ToC_56">クラスタのトポロジの表示</a></h3>
+<div>
+<p>高可用性クラスタのトポロジを表示します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq178">
+<span class="notetitle">前提条件:</span> <span class="notebody">IBM OpenAdmin Tool (OAT) for Informix でクラスタを見つけ出し、名前を付けます。
+『<a href="#dqx1ids_oat_058">高可用性クラスタの検索</a>』を参照してください。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>クラスタのトポロジを表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong> &gt; <strong>「クラスタ」</strong>をクリックします。</li>
+<li>「<strong>クラスタ</strong>」の下でクラスタを選択します。「<strong>クラスタのトポロジ</strong>」およびサーバのリストが
+表示されます。
+
+
+<p>選択したクラスタのトポロジには、主サーバと副サーバの関係が表示されます。
+この副サーバには、高可用性データ レプリケーション (HDR)、共用ディスク副 (SDS) サーバ、
+および遠隔スタンドアロン副 (RSS) サーバを含みます。
+</p></li></ol>
+<h3 id="dqx1ids_oat_021"><a href="#ToC_57">クラスタに含まれるサーバの状態の表示</a></h3>
+<div>
+<p>高可用性クラスタに含まれるサーバの状態を表示します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq183">
+<span class="notetitle">前提条件:</span> <span class="notebody">IBM OpenAdmin Tool (OAT) for Informix でクラスタを見つけ出し、名前を付けます。
+『<a href="#dqx1ids_oat_058">高可用性クラスタの検索</a>』を参照してください。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>クラスタに含まれるサーバの状態の表示を表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong> &gt; <strong>「クラスタ」</strong>をクリックします。</li>
+<li>「<strong>クラスタ</strong>」の下でクラスタを選択します。「<strong>クラスタのトポロジ</strong>」およびサーバのリストが
+表示されます。
+<p>リストには、主サーバと副サーバの状態が表示されます。
+この副サーバには、高可用性データ レプリケーション (HDR)、共用ディスク副 (SDS) サーバ、
+および遠隔スタンドアロン副 (RSS) サーバを含みます。
+</p></li></ol>
+<h3 id="dqx1ids_oat_022"><a href="#ToC_58">SDS サーバの追加</a></h3>
+<div>
+<p>共用ディスク副 (SDS) サーバ接続を高可用性クラスタに追加します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq188">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>IBM OpenAdmin Tool (OAT) for Informix でクラスタを見つけ出し、名前を付けます。
+『<a href="#dqx1ids_oat_058">高可用性クラスタの検索</a>』を参照してください。</li>
+<li>Informix データベース サーバに <strong>idsd</strong> デーモンをインストールし、構成します。『<a href="#dqx1ids_oat_059">高可用性クラスタのための接続の構成</a>』を参照してください。</li></ul></span></div></div>
+<p>
+<p>
+<br />SDS サーバ接続を追加するには、次の手順を実行します。<br /></p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong> &gt; <strong>「クラスタ」</strong>をクリックします。</li>
+<li>「<strong>クラスタ</strong>」の下でクラスタを選択します。クラスタのトポロジおよびサーバのリストが表示されます。</li>
+<li>「<strong>SDS の追加</strong>」をクリックします。「<strong>SDS サーバの追加</strong>」ウィザードを完了します。</li></ol>
+<h3 id="dqx1ids_oat_023"><a href="#ToC_59">クラスタ内のサーバの開始または停止</a></h3>
+<div>
+<p>高可用性クラスタ内のサーバをオンライン モードまたはオフライン モードに変更します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq192">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>IBM OpenAdmin Tool (OAT) for Informix でクラスタを見つけ出し、名前を付けます。
+『<a href="#dqx1ids_oat_058">高可用性クラスタの検索</a>』を参照してください。</li>
+<li>Informix データベース サーバに <strong>idsd</strong> デーモンをインストールし、構成します。『<a href="#dqx1ids_oat_059">高可用性クラスタのための接続の構成</a>』を参照してください。</li></ul></span></div></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq194">
+<span class="notetitle">重要:</span> <span class="notebody">共用ディスク副 (SDS) サーバを停止すると、そのサーバは、OAT でクラスタ内に表示されなくなります。その SDS サーバを OAT 表示に復元するには、手動でサーバを再起動してから、<strong>「クラスタの検索」</strong>をクリックします。クラスタが検出されると、SDS サーバがクラスタのサーバのリストに表示されます。</span></div></div>
+<p>
+<p>副サーバを始動または停止するには、以下の手順に従います。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong> &gt; <strong>「クラスタ」</strong>をクリックします。</li>
+<li>「<strong>クラスタ</strong>」の下でクラスタを選択します。クラスタのトポロジおよびサーバのリストが表示されます。</li>
+<li>サーバのリストで、停止または開始するサーバの「<strong>変更</strong>」
+をクリックします。「<strong>サーバの変更</strong>」ページ
+に、サーバの状態が表示され、サーバを開始または停止
+できるかどうかが示されます。</li>
+<li>「<strong>開始</strong>」または「<strong>停止</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_168"><a href="#ToC_60">時系列の管理</a></h2>
+<div>
+<p>時系列に関連付けられたデータベース オブジェクト　(表、インデックス、仮想表、および TimeSeries のサブタイプ、コンテナ、カレンダを含む) を確認および管理します。
+</p></div>
+<p>
+<p>時系列は、時間の経過に伴う変化が記録された一連のデータです。
+各エントリは、タイム スタンプが付けられて、データベースに格納されます。Informix TimeSeries 機能拡張は、時系列データを管理するための <strong>TimeSeries</strong> データ型、コンテナ、およびカレンダを提供します。
+</p></p>
+<p>
+<p>時系列を管理するには、次のようにします。</p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「SQL ToolBox」</strong>&gt;<strong>「TimeSeries」</strong>をクリックします。データベース サーバ内の時系列を含むデータベースと表のリストが表示されます。
+</p>
+<ul>
+<li>データベースまたは表についての情報を表示するには、リストからデータベースまたは表をクリックします。
+</li>
+<li>特定のデータベース オブジェクトまたは表オブジェクトの詳細情報を表示するには、オブジェクト パネルで拡張アイコンをクリックします。</li></ul></p>
+<h2 id="dqx1ids_oat_027"><a href="#ToC_61">データベース サーバの構成パラメータの管理</a></h2>
+<div>
+<p>現在のデータベース サーバの <strong>onconfig</strong> ファイルのパラメータの値を表示し、変更します。</p></div>
+<p>
+<p>現行の IBM Informix データベース サーバの構成パラメータの値の多くは、IBM OpenAdmin Tool (OAT) for Informix を使用して変更できます。</p></p>
+<p>
+<p>データベース サーバの構成パラメータを管理するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「構成」</strong>をクリックします。</li>
+<li>パラメータのリストをフィルタリングするには、<strong>「表示」</strong>リストから以下のビューを選択します。<ul>
+<li><strong>基本</strong>: すべての環境に適用できる基本的な構成パラメータを表示します。</li>
+<li><strong>動的</strong>: ユーザが変更できるパラメータを表示します。</li>
+<li><strong>推奨事項</strong>: OAT の推奨に従っていない値が設定されているパラメータを表示します。
+推奨に従っていない設定のパラメータはすべて、黄色で強調表示されています。</li></ul></li>
+<li>パラメータを表示または変更するには、パラメータ名をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_077"><a href="#ToC_62">システムの検証検査の実行</a></h2>
+<h3 id="dqx1ids_oat_030"><a href="#ToC_63">現行サーバの 1 つ以上のデータベースまたは表の検証</a></h3>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「システムの検証」</strong>を展開します。</p>
+<p>現行サーバにある 1 つ以上のデータベースまたは表を検証するには、次のオプションのうちのいずれかを使用します。
+</p></p>
+<p></p>
+<ul>
+<li>すべてのデータベースのすべての表を検証するには、「<strong>データベース名</strong>」フィールドで「<strong>すべて</strong>」を選択し、
+「<strong>表名</strong>」フィールドで「<strong>すべて</strong>」を選択します。
+</li>
+<li>いずれかのデータベースのすべての表を検証するには、「<strong>データベース名</strong>」フィールドでデータベースの名前を選択し、
+「<strong>表名</strong>」フィールドで「<strong>すべて</strong>」を選択します。
+</li>
+<li>特定の 1 つの表を検証するには、「<strong>データベース名</strong>」フィールドでデータベースの名前を選択し、
+「<strong>表名</strong>」フィールドで表の名前を選択します。
+表がどのデータベースに存在するかが不明な場合は、「<strong>データベース名</strong>」フィールドをデフォルト値「<strong>すべて</strong>」のままにします。
+「<strong>表名</strong>」リストで表の名前を検索します。</li></ul>
+<h3 id="dqx1ids_oat_031"><a href="#ToC_64">現行サーバにおける 1 つ以上の DB 領域のエクステントの検証</a></h3>
+<p></p>
+<ol type="1">
+<li><strong>「サーバ管理」</strong>&gt;<strong>「システムの検証」</strong>を展開します。</li>
+<li>DB 領域の名前を選択するか、または「すべて」を選択して、すべての DB 領域を選択します。</li>
+<li>「<strong>エクステントの検査</strong>」をクリックします。検査されるエクステントごとに
+状況メッセージが表示されます。このとき、検査が正常に完了されたか
+どうかが検証されます。</li></ol>
+<h2 id="dqx1ids_oat_078"><a href="#ToC_65">仮想プロセッサの管理</a></h2>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「仮想プロセッサ」</strong>を展開します。プロセッサの全体図
+が表示されます。</p>
+<p>このページから仮想プロセッサを追加または削除したり、
+表示する仮想プロセッサのクラスを<strong>「VP クラス」</strong>表から選択することができます。
+<strong>「クラスの VP」</strong>ページでクラスを追加または削除
+することもできます。</p></p>
+<h2 id="dqx1ids_oat_096"><a href="#ToC_66">ユーザ特権の付与および制限</a></h2>
+<h3 id="dqx1ids_oat_032"><a href="#ToC_67">データベース レベル アクセス権のユーザへの付与</a></h3>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>データベースを選択します。</li>
+<li>「<strong>新規アクセス権の付与</strong>」で、ユーザ名 (例えば <samp>myUserName</samp>) を入力します。
+
+<p>Windows では、20 文字を超えるユーザ名は使用できません。</p></li>
+<li>ユーザのデータベース レベル アクセス権を選択します。</li>
+<li>「<strong>付与</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">データベース レベル アクセス権 (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_033"><a href="#ToC_68">ユーザのデータベース レベル アクセス権の変更</a></h3>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>データベースを選択します。</li>
+<li>ユーザ名が含まれる行で、<strong>「変更」</strong>をクリックします。</li>
+<li>ユーザのデータベース レベル アクセス権を選択します。ユーザのアクセス権を取り消すには、<strong>「取消し」</strong>を選択します。</li>
+<li>「<strong>保存</strong>」をクリックしてアクセス権を変更します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">データベース レベル アクセス権 (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_034"><a href="#ToC_69">ユーザのデータベース レベル アクセス権の取消し</a></h3>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>データベースを選択します。</li>
+<li>ユーザ名が含まれる行で、<strong>「変更」</strong>をクリックします。</li>
+<li>リストから<strong>「取消し」</strong>を選択します。</li>
+<li>「<strong>保存</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_oat_093"><a href="#ToC_70">表レベル アクセス権のユーザへの付与</a></h3>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>表レベル アクセス権</strong>」タブをクリックします。</li>
+<li>データベースを選択します。</li>
+<li>「<strong>新規アクセス権の付与</strong>」で、ユーザ名 (例えば <samp>myUserName</samp>) を入力します。</li>
+<li>表を選択します。</li>
+<li>そのユーザの 1 つ以上の表レベル アクセス権を選択します。</li>
+<li>「<strong>付与</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">表レベル アクセス権 (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_035"><a href="#ToC_71">ユーザの表レベル アクセス権の変更</a></h3><a id="idx84"></a>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>表レベル アクセス権</strong>」タブをクリックします。</li>
+<li>データベースを選択します。</li>
+<li>ユーザ名が含まれる行で、<strong>「変更」</strong>をクリックします。</li>
+<li>ユーザのアクセス権チェック ボックスを選択またはクリアします。
+</li>
+<li>「<strong>保存</strong>」をクリックしてアクセス権を変更します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">表レベル アクセス権 (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_036"><a href="#ToC_72">ユーザの表レベル アクセス権の取消し</a></h3><a id="idx85"></a>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>表レベル アクセス権</strong>」タブをクリックします。</li>
+<li>データベースを選択します。</li>
+<li>ユーザ名が含まれる行で、<strong>「変更」</strong>をクリックします。</li>
+<li>ユーザのアクセス権チェック ボックスをすべてクリアします。</li>
+<li>「<strong>保存</strong>」をクリックしてアクセス権を変更します。</li></ol>
+<h2 id="dqx1ids_oat_120"><a href="#ToC_73">内部ユーザの管理 (UNIX、Linux)</a></h2>
+<div>
+<p>内部認証済みユーザ、およびホスト オペレーティング システムにアカウントを持たないユーザの追加と変更を行います。
+</p></div>
+<div>
+<div class="note-noindent" id="wq219">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>内部ユーザを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.70 が必要です。</li>
+<li>データベース認証を使用してユーザを作成するには、Informix 11.70.xC2 以降が必要です。
+</li>
+<li>Informix 11.70.xC3 以降の場合、内部ユーザを作成するには、事前にマップ ユーザ サロゲート ファイルをセットアップする必要があります。</li></ul></span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">内部ユーザ (UNIX、Linux) (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">接続セキュリティ (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">allowed.surrogates ファイルのマップ ユーザ サロゲート (UNIX、Linux) (セキュリティ ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_124"><a href="#ToC_74">サーバでの内部ユーザのアクセス権の設定 (UNIX、Linux)</a></h3>
+<div>
+<p>データベース サーバで、すべての内部ユーザに適用するアクセス権のレベルを選択します。
+</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq221">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>内部ユーザを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.70 が必要です。</li>
+<li>データベース認証を使用してユーザを作成するには、Informix 11.70.xC2 以降が必要です。
+</li>
+<li>Informix 11.70.xC3 以降の場合、内部ユーザを作成するには、事前にマップ ユーザ サロゲート ファイルをセットアップする必要があります。</li></ul></span></div></div>
+<p>
+<p>サーバで内部ユーザのアクセス権を設定するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>内部ユーザ</strong>」タブをクリックします。</li>
+<li>内部ユーザのアクセス権のレベル、「<strong>ベーシック</strong>」または「<strong>管理</strong>」を選択します。
+サーバのユーザ マッピングを無効にするには、「<strong>アクセス権なし</strong>」を選択します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">内部ユーザ (UNIX、Linux) (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">接続セキュリティ (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">allowed.surrogates ファイルのマップ ユーザ サロゲート (UNIX、Linux) (セキュリティ ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_121"><a href="#ToC_75">内部ユーザの追加 (UNIX、Linux)</a></h3>
+<div>
+<p>内部認証済みユーザ、およびホスト オペレーティング システムにアカウントを持たないユーザを追加します。
+</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq225">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>内部ユーザを使用するには、IBM OpenAdmin
+Tool (OAT) for Informix に IBM Informix 11.70 が必要です。</li>
+<li>データベース認証を使用してユーザを作成するには、Informix 11.70.xC2 以降が必要です。
+</li>
+<li>Informix 11.70.xC3 以降の場合、内部ユーザを作成するには、事前にマップ ユーザ サロゲート ファイルをセットアップする必要があります。</li></ul></span></div></div>
+<p><span id="dqx1ids_oat_121__d5348e715">データベース サーバによって格納されたハッシュされたパスワードを使用して証明書を検査することによって、データベース サーバが認証するユーザを追加します。
+ユーザがデータベース サーバのホスト コンピュータのオペレーティング システム アカウントを所持しているかどうかに関係なく、各ユーザに適切なユーザ アクセス権およびグループ アクセス権をマップすることによって、それらのユーザにデータベース アクセス権を付与します。</span>
+ユーザは、オペレーティング システム ユーザ名またはオペレーティング システム ユーザ ID にマップでき、さらに 1 つ以上のグループ ID にマップできます。<samp class="xph">/etc/informix/allowed.surrogates</samp> で指定されたオペレーティング システム ユーザ名、ユーザ ID、グループ名、およびグループ ID によって、どのオペレーティング システム ユーザおよびグループがマップ ユーザのサロゲートとして機能できるかが決まります。
+</p>
+<p>
+<p>内部ユーザを追加するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>内部ユーザ</strong>」タブをクリックします。</li>
+<li>「<strong>内部ユーザの追加</strong>」ページで「<strong>追加</strong>」をクリックし、フィールドに入力します。</li></ol>
+<p></p>
+<div>
+<div class="note-noindent" id="wq229">
+<span class="notetitle">要確認:</span> <span class="notebody">このサーバのすべての内部ユーザに適用するアクセス権のレベルを設定します。すべての内部ユーザに適用されるアクセス権は、個々の内部ユーザに対するアクセス権より優先されます。</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">内部ユーザ (UNIX、Linux) (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">接続セキュリティ (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">allowed.surrogates ファイルのマップ ユーザ サロゲート (UNIX、Linux) (セキュリティ ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1821.htm#ids_sqs_1821" target="_blank">CREATE USER 文 (UNIX、Linux) (SQL ガイド: 構文)</a></li></ul>
+<h3 id="dqx1ids_oat_122"><a href="#ToC_76">内部ユーザの編集 (UNIX、Linux)</a></h3>
+<div>
+<p>内部ユーザのプロパティを編集します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq231">
+<span class="notetitle">前提条件:</span> <span class="notebody">内部ユーザの場合は、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>内部ユーザを編集するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>内部ユーザ</strong>」タブをクリックします。</li>
+<li>リストから内部ユーザを選択し、「<strong>編集</strong>」をクリックします。</li>
+<li>「<strong>内部ユーザの編集</strong>」ページでフィールドを編集します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">内部ユーザ (UNIX、Linux) (セキュリティ ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">接続セキュリティ (セキュリティ ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1824.htm#ids_sqs_1824" target="_blank">ALTER USER 文 (UNIX、Linux) (SQL ガイド: 構文)</a></li></ul>
+<h3 id="dqx1ids_oat_123"><a href="#ToC_77">内部ユーザの削除 (UNIX、Linux)</a></h3>
+<div>
+<p>内部ユーザのアカウントを削除します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq235">
+<span class="notetitle">前提条件:</span> <span class="notebody">内部ユーザの場合は、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>内部ユーザを削除するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong> &gt; <strong>「ユーザ特権」</strong>をクリックします。</li>
+<li>「<strong>内部ユーザ</strong>」タブをクリックします。</li>
+<li>リストから内部ユーザを選択し、「<strong>削除</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_145"><a href="#ToC_78">トラステッド コンテキストの作成</a></h2>
+<div>
+<p>データベースのトラステッド コンテキストを作成します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq239">
+<span class="notetitle">前提条件:</span> <span class="notebody">データベース セキュリティ管理者 (DBSECADM) ロールのみが、トラステッド コンテキストを作成、変更、または削除できます。トラステッド コンテキストの場合は、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70 が必要です。</span></div></div>
+<p>
+<p>トラステッド コンテキストは、トラステッド データベース接続のプロパティを定義するデータベース オブジェクトです。トラステッド接続では、クライアントとサーバの間の層で、クライアント ユーザの ID を行使できるようにします。
+トラステッド コンテキストにより、ミドルウェア サーバまたはその他のアプリケーション環境で実行されるアプリケーションがアクセスするデータベースの適切な監査管理およびセキュリティ メカニズムが提供されます (特に、ユーザ接続に、制限付きアクセス権または機密アクセス権によるデータベース リソースへのアクセスが含まれる場合)。</p></p>
+<p>
+<p>トラステッド コンテキストを作成するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong>&gt;<strong>「トラステッド コンテキスト」</strong>をクリックします。</li>
+<li>データベースをクリックします。</li>
+<li><strong>「アクション」</strong>&gt;<strong>「作成」</strong>をクリックします。</li>
+<li>ページでフィールドに入力します。</li></ol>
+<h3 id="dqx1ids_oat_147"><a href="#ToC_79">トラステッド コンテキストの管理</a></h3>
+<div>
+<p>データベースのトラステッド コンテキストの変更、有効化、無効化、または削除を行います。
+</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq244">
+<span class="notetitle">前提条件:</span> <span class="notebody">データベース セキュリティ管理者 (DBSECADM) ロールのみが、トラステッド コンテキストを作成、変更、または削除できます。トラステッド コンテキストの場合は、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70 が必要です。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>トラステッド コンテキストを管理するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「サーバ管理」</strong>&gt;<strong>「トラステッド コンテキスト」</strong>をクリックします。</li>
+<li>トラステッド コンテキストを含むデータベースをクリックします。</li>
+<li>トラステッド コンテキストのチェック ボックスを選択します。</li>
+<li>「<strong>操作</strong>」をクリックし、次に適切な操作をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_037"><a href="#ToC_80">自動統計更新の管理</a></h2>
+<div>
+<p>表統計用の自動統計更新 (AUS: Auto Update Statistics) 保守システムを確認および調整します。
+</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>AUS 保守システムは、新しいオプティマイザ統計が必要な表およびインデックスを識別し、適切な UPDATE STATISTICS 文を実行して問合せパフォーマンスを最適化します。使用しているシステムによっては、AUS 有効期限ポリシーまたはスケジュールを調整する必要がある場合があります。</p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「構成」</strong>ページで、AUS ポリシーを制御およびモニタできます。</p>
+<p><strong>「SQL ToolBox」</strong>&gt;<strong>「スキーマ マネージャ」</strong>&gt;<strong>「統計」</strong>ページで IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT) を使用すると、表の統計を確認できます。</p>
+<h3 id="dqx1ids_oat_038"><a href="#ToC_81">自動統計更新の構成および有効化</a></h3>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「構成」</strong>をクリックします。</li>
+<li>システムの性能および要件に基づいて、デフォルト値がご使用のシステムにとって有効であるかどうかを判別します。<ol type="a">
+<li>統計情報を次に再構築するまでの最大時間を指定するには、AUS_AGE パラメータで日数 (30、60、または 90 など) を入力します。</li>
+<li>表の変更部分が何パーセントになったら統計の再作成を開始するのかを
+指定するには、20 または 50 などのパーセント数を AUS_CHANGE パラメータに
+入力します。</li>
+<li>AUS で推奨されるガイドライン ルールを使用するかどうかを指定するには
+、AUS_AUTO_RULES パラメータのリストから「<strong>オン</strong>」または
+「<strong>オフ</strong>」を選択します。デフォルトは「<strong>オン</strong>」です。</li>
+<li>統計情報が必ず再構築される行数を指定するには、AUS_SMALL_TABLES パラメーターに数を入力します。
+デフォルトは 100 です。</li>
+<li>PDQ 優先順位を指定するには、AUS_PDQ パラメータ
+に -1 から 100 までの数を入力します。デフォルトは 10 です。並列データベース問合せ (PDQ) の優先順位は、データベース サーバが並列処理にリソースを使用する方法を決定する 1 つの要因です。
+</li>
+<li>統計情報タスクの更新を実行するために使用するスレッドの数を指定するには、スレッドの数を入力します。OAT は、この AUS タスクの数をタスク スケジューラに実行要求します。このオプションを使用するには、IBM Informix バージョン 11.70 が必要です。</li></ol></li>
+<li>変更内容を維持するには、<strong>「保存」</strong>をクリックします。</li>
+<li>AUS タスクが有効かどうかを判別するには、「<strong>情報</strong>」タブをクリックし、以下のタスクをクリックします。
+<ul>
+<li>自動統計更新の評価</li>
+<li>自動統計更新のリフレッシュ<div>
+<div class="note-noindent" id="wq251">
+<span class="notetitle">注:</span> <span class="notebody">自動統計更新のリフレッシュ タスクに関して実行する作業がない場合、タスクは自動的に無効になります。
+自動統計更新の評価タスクが次回実行されたときに、リフレッシュ タスクの対象となる作業が作成された場合は、評価タスクによってリフレッシュ タスクが自動的に有効になります。</span></div></div></li></ul>「<strong>タスク詳細</strong>」ページが表示されます。</li>
+<li>「<strong>タスクの有効化</strong>」フィールドまでスクロールダウンし、
+このフィールドが選択されていることを確認します。</li>
+<li>実行ウィンドウを設定するフィールドを使用して、タスクの実行頻度を指定します。AUS はリソースを大量に消費する操作であるため、特定の実行ウィンドウを定義できます。実行ウィンドウの定義は、
+開始時刻と終了時刻および実行する曜日を含みます。
+デフォルトでは、実行時ウィンドウは毎日午前 1:00 から午前 5:00 までです。</li>
+<li>変更をすべて保存するには「<strong>保存</strong>」をクリックします。
+</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_756.htm#ids_prf_756" target="_blank">AUS 有効期限ポリシー (パフォーマンス ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_039"><a href="#ToC_82">サーバにおけるリフレッシュおよび評価の表示</a></h3>
+<p>
+<p></p></p>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「自動更新統計」</strong>&gt;<strong>「リスト」</strong>を展開することで、保留状態または完了済みの UPDATE STATISTICS コマンドを表示できます。リストから「<strong>保留状態のコマンド</strong>」または「<strong>完了済みコマンド</strong>」のいずれかを選択してください。<br />リフレッシュ タスクに関して実行する作業がない場合、
+スケジューラでリフレッシュ タスクが自動で無効になります。
+ただし、評価タスクが次回実行されたときに、リフレッシュ タスクの
+対象となる作業が作成された場合は、評価タスクがリフレッシュ タスクを自動で
+有効にします。<br /></p></p>
+<h3 id="dqx1ids_oat_040"><a href="#ToC_83">統計の即時評価の要求</a></h3>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「自動更新統計」</strong>&gt;<strong>「一般」</strong>を展開し、<strong>「評価のリフレッシュ」</strong>をクリックします。
+自動更新統計 (AUS) は、前の更新からのエンジン フィードバックを分析し、取り込みますが、統計は更新しません。
+</p></p>
+<h3 id="dqx1ids_oat_041"><a href="#ToC_84">統計の次回更新時期の決定</a></h3>
+<p>
+<p>統計の次回更新時期を決定するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「一般」</strong>をクリックします。</li>
+<li>グラフの下にある<strong>「自動統計の実行まで」</strong>フィールドを確認します。これは、統計情報を次回更新するまでの時間数および分数を指定します。</li></ol>
+<h3 id="dqx1ids_oat_042"><a href="#ToC_85">現行の自動更新統計設定の表示</a></h3>
+<p>
+<p>自動更新統計 (AUS) に関する次の情報を表示できます。</p>
+<ul>
+<li>データベースが更新された時刻を確認するには、「<strong>最終検査時刻</strong>」列
+を参照します。この値は、統計情報を更新する必要のある表を判定するために
+実行された最後の評価のタイム スタンプです。</li>
+<li>現行グループ内で AUS が有効化されているデータベースを確認するには、
+「<strong>データベース</strong>」列を参照します。</li>
+<li>特定のデータベースに関する統計情報が欠落している表の数を確認するには、
+「<strong>統計情報が欠落している表</strong>」列を参照します。これらの表は、
+統計情報の更新に関して推奨される基本ガイドラインに従いません。
+<p>統計情報および分布の最小セットは、インデックスすべて (またはインデックスが存在しない場合は表) における LOW での実行、インデックスのリード キーすべてにおける HIGH での実行、
+および非リード キーすべてにおける MEDIUM での実行で構成されます。</p></li>
+<li>特定のデータベースにおけるリフレッシュの必要な表の数を確認するには、「<strong>統計のリフレッシュが必要な小規模表 </strong>」列および「<strong>統計のリフレッシュが必要な大規模表 </strong>」列を参照します。</li>
+<li>特定のデータベースにおけるリフレッシュ済みの表の数を確認するには、
+「<strong>リフレッシュ済みの表の数</strong>」列を参照します。</li></ul></p>
+<h3 id="dqx1ids_oat_043"><a href="#ToC_86">自動更新統計設定の監視</a></h3>
+<p></p>
+<ol type="1">
+<li><strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「一般」</strong>を展開します。
+</li>
+<li><strong>「データベースごとの自動更新統計」</strong>表を確認します。この表には、現行データベースの統計情報の更新状態が表示されます。
+</li></ol>
+<h3 id="dqx1ids_oat_044"><a href="#ToC_87">自動更新統計によって生成されたアラートの表示</a></h3>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「アラート」</strong>を展開します。
+このページには、データベースで統計を実行するときに自動更新統計 (AUS) が生成したアラートが表示されます。
+各アラートは、色付きのアイコン (赤、黄、または緑) による重要度の
+レベルおよびアラートのタイプ (エラー、警告、または情報) によって分類
+されます。</p></p>
+<h3 id="dqx1ids_oat_045"><a href="#ToC_88">自動更新統計の異常実行のクリーンアップ</a></h3>
+<p>
+<p><strong>「サーバ管理」</strong>&gt;<strong>「自動統計更新」</strong>&gt;<strong>「一般」</strong>を展開し、<strong>「クリーンアップ」</strong>をクリックします。
+</p></p>
+<h2 id="dqx1ids_oat_156"><a href="#ToC_89">データベース サーバ データのバックアップ</a></h2>
+<div>
+<p>データベース サーバの格納領域のバックアップの構成とスケジュールを行います。
+</p></div>
+<div>
+<div class="note-noindent" id="wq262">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC2 が必要です。</span></div></div>
+<p>バックアップの構成とスケジュールを行う前に、リカバリのゴールを計画します。
+データの適切なバックアップ保護について計画を立案するには、データベース サーバの構成と動作、およびインストール済みソフトウェアで使用可能なバックアップ媒体の種類を分析する必要があります。計画には、記憶媒体、ディスク、コンピュータ、コントローラの予算、およびネットワークの大きさなども考慮します。</p>
+<p>OAT でバックアップを構成すると、設定したスケジュールに基づいて格納領域が自動的にバックアップされます。</p>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_009.htm#ids_bar_009" target="_blank">バックアップおよび復元の計画 (バックアップおよび復元ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_157"><a href="#ToC_90">ontape を使用したデータのバックアップ</a></h3>
+<div>
+<p><strong><samp>ontape</samp></strong> ユーティリティを使用して、データベース サーバ用格納領域のバックアップを構成します。</p></div><a id="idx88"></a><a id="idx89"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq264">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC2 が必要です。</span></div></div>
+<p>
+<p>データベース サーバには、データをバックアップおよび復元するための 2 つのユーティリティ (<strong><strong><samp>ontape</samp></strong></strong> および ON-Bar) が用意されています。OAT で <strong><strong><samp>ontape</samp></strong></strong> を使用すると、格納領域をバックアップできます。OAT でバックアップを構成すると、設定したスケジュールに基づいて格納領域が自動的にバックアップされます。</p></p>
+<p>
+<p><strong><samp>ontape</samp></strong> を使用してバックアップするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「バックアップ」</strong>をクリックします。</li>
+<li>バックアップ ウィザードを使用してバックアップを構成するには、次の指示にしたがってください。
+
+
+<p>バックアップが OAT で既に構成されている場合、バックアップ ウィザードは表示されません。「<strong>構成</strong>」タブをクリックして、構成の確認または変更を行うことができます。
+</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_183.htm#ids_bar_183" target="_blank">バックアップ システム (Backup systems) (バックアップおよび復元ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_177.htm#ids_bar_177" target="_blank">ON-Bar ユーティリティと ontape ユーティリティの比較 (バックアップおよび復元ガイド)</a></li></ul>
+<h3 id="dqx1ids_oat_158"><a href="#ToC_91">バックアップの構成とスケジュールの変更</a></h3>
+<div>
+<p>データベース サーバの格納領域のバックアップの構成とスケジュールを変更します。
+</p></div><a id="idx90"></a><a id="idx91"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq269">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC2 が必要です。</span></div></div>
+<p>
+<p>OAT でバックアップを構成すると、設定したスケジュールに基づいて格納領域が自動的にバックアップされます。バックアップ構成とスケジュールを変更できます。</p></p>
+<p>
+<p>バックアップ構成を変更するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「バックアップ」</strong>をクリックします。</li>
+<li>「<strong>構成</strong>」タブをクリックします。</li></ol>
+<h3 id="dqx1ids_oat_159"><a href="#ToC_92">バックアップの要求時実行</a></h3>
+<div>
+<p>データベース サーバの格納領域をバックアップするためのタスクを即時に実行要求します。
+</p></div><a id="idx92"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq274">
+<span class="notetitle">前提条件:</span> <span class="notebody">この操作を実行するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC2 が必要です。</span></div></div>
+<p>
+<p>OAT でバックアップを構成すると、設定したスケジュールに基づいて格納領域が自動的にバックアップされます。OAT のバックアップ構成を使用したバックアップを、要求時に実行することもできます。
+</p></p>
+<p>
+<p>バックアップを要求時に実行するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「スペース管理」</strong> &gt; <strong>「バックアップ」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」タブをクリックします。</li>
+<li>バックアップを実行するバックアップの行で、「<strong>バックアップ</strong>」をクリックします。</li></ol>
+<h1 id="dqx1ids_oat_073"><a href="#ToC_93">スケジューラ タスクの管理方法</a></h1>
+<h2 id="dqx1ids_oat_074"><a href="#ToC_94">スケジューラ タスクの追加</a></h2>
+<p>
+<p>指定した時間および頻度でタスクまたはセンサーのいずれかを実行するスケジューラ タスクを
+作成できます。</p>
+<ul>
+<li>タスクは、特定のジョブを特定の時刻または間隔で実行する方法を
+提供します。</li>
+<li>センサーは、情報を収集して保存します。</li></ul></p>
+<h3 id="dqx1ids_oat_046"><a href="#ToC_95">新規タスクの追加</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq280">
+<span class="notetitle">重要:</span> <span class="notebody">タスクを作成した時刻は、そのタスクの最初の実行に影響します。
+
+<ul>
+<li>現在時刻が、指定した開始時刻と停止時刻の間に入っている場合、
+タスクは現在時刻から実行されます。以降の実行は、頻度値に指定した間隔
+で行われます。したがって、例えば、
+現在時刻が指定した開始時刻と停止時刻の間に入っており、頻度に 15 分を
+設定した場合、タスクの最初の実行はタスクをスケジュールした直後に開始
+され、次回の実行は 15 分後に行われます。
+</li>
+<li>一方、現在時刻が開始時刻と停止時刻の間に入っていない場合は、
+次回の開始時刻までタスクの実行が待機されます。これは、当日であるか翌日であるかの
+いずれかになります。例えば、現在時刻が午前 1:00 であり、次の開始時刻が午後 7:00 (19:00) の場合、タスクは、同じ日の 19:00 に開始されます。</li></ul></span></div></div>
+<p>新規タスクを追加するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li>「タスクのスケジュール」ページで「<strong>新規タスクの追加</strong>」をクリックします。</li>
+<li>「<strong>追加するタスクのタイプ</strong>」の下の「<strong>タスク</strong>」をクリックしてから「<strong>次へ</strong>」をクリックします。</li>
+<li>「<strong>タスク名</strong>」フィールドに名前を入力します。例えば、<samp>MyTask</samp> です。</li>
+<li>「<strong>タスク グループ</strong>」リストからカテゴリを選択します。</li>
+<li>新規タスクの説明をテキスト フィールドに追加し、
+「<strong>次へ</strong>」をクリックします。</li>
+<li>タスクの実行が許可されるタイム フレームを指定します。例えば、毎日の
+午前 10 時 (10:00) から午後 6 時 (18:00) までのすべての時間です。<ol type="a">
+<li>時間間隔の開始時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して指定します (例: <samp class="xph">10:00:00</samp>)。</li>
+<li>時間間隔の停止時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して指定します (例: <samp class="xph">18:00:00</samp>)。<samp class="xph">NEVER</samp> を指定することもできます。</li>
+<li>許可される時間間隔の間でタスクを実行できる頻度を、日、時、分 (<samp class="xph">d</samp> Days <samp class="xph">h</samp> Hours <samp class="xph">m</samp> Minutes) で指定します (例: 0 Days 1 Hours 00 Minutes)。</li></ol></li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>タスクが実行するコマンド ステートメントを指定します。例えば、その他タスクを削除するには、次のようなステートメントを
+入力します。
+<pre class="xmp"><code>delete from ph_task where tk_group='MISC'</code></pre></li>
+<li>「<strong>次へ</strong>」をクリックします。確認ページが表示されます。</li>
+<li>各選択項目の入力内容を確認します。<ul>
+<li>入力が正しければ「<strong>終了</strong>」をクリックして確認し、
+タスクを作成します。</li>
+<li>誤った値を訂正するために前のページに戻るには「<strong>戻る</strong>」を
+クリックします。</li></ul></li></ol>
+<h3 id="dqx1ids_oat_047"><a href="#ToC_96">新規センサーの追加</a></h3>
+<p></p>
+<ol type="1">
+<li>「タスクのスケジュール」ページで「<strong>新規タスクの追加</strong>」をクリックします。</li>
+<li>「<strong>追加するタスクのタイプ</strong>」の下の「<strong>センサー</strong>」をクリックしてから「<strong>次へ</strong>」をクリックします。</li>
+<li>「<strong>センサー名</strong>」フィールドに名前を入力します。例えば、<samp>MySensor</samp> です。</li>
+<li>「<strong>センサ グループ</strong>」リストからカテゴリを選択します。</li>
+<li>新規タスクの説明をテキスト フィールドに追加し、
+「<strong>次へ</strong>」をクリックします。</li>
+<li>センサーを実行できる許容可能なタイム フレーム (例えば、毎日午前 10:00 時から午後 6:00 時の間の毎時) を指定します。
+
+<ol type="a">
+<li>時間間隔の開始時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して
+指定します。例えば、<samp class="xph">10:00:00</samp> です。</li>
+<li>時間間隔の停止時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して
+指定します。例えば、<samp class="xph">18:00:00</samp> です。</li>
+<li>許可される時間間隔の間でタスクを実行できる頻度を、日、時、分で
+指定します。<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 時間 <samp class="xph">m</samp> 分例えば、0 日 1 時間 00 分 です。</li>
+<li>データの削除時間を、日、時、分で指定します
+。<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 時間 <samp class="xph">m</samp> 分例えば、1 日 0 時間 0 分 です。</li></ol></li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>「<strong>結果表の名前</strong>」フィールドに
+センサー データを保持する結果表の名前を指定します。例えば、<samp class="xph">MyResults</samp> です。</li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>「<strong>SQL 文</strong>」フィールドに列名および定義を入力することにより、
+結果表の SQL 文を完成します。例えば、taskA (task_id は 10) の戻り値を TaskA_ReturnCode 表に
+収集する場合は、次のような SQL 文を入力します。
+<pre class="xmp"><code>create table TaskA_ReturnCode(task_name varchar(20), errorcode integer)</code></pre></li>
+<li>センサーが実行するコマンド ステートメントを指定します。次に例を示します。<pre class="xmp"><code>insert into TaskA_ReturnCode 
+    values('TaskA', (select run_retcode from ph_run where run_task_id=10))</code></pre></li>
+<li>各選択項目の入力内容を確認します。
+
+<ul>
+<li>入力が正しければ「<strong>終了</strong>」をクリックして確認し、
+センサーを作成します。</li>
+<li>誤った値をすべて更新するために前のページに戻るには「<strong>戻る</strong>」を
+クリックします。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_075"><a href="#ToC_97">スケジューラ タスクの有効化</a></h2>
+<div>
+<p>無効になっているスケジューラ タスクを有効にします。</p></div>
+<p>
+<p>スケジューラ タスクを有効にするには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li><strong>「タスク スケジューラ」</strong> &gt; <strong>「スケジューラ」</strong>を展開します。</li>
+<li>タスクをクリックします。そのタスクの「<strong>タスク詳細</strong>」ページが
+表示されます。</li>
+<li>「<strong>タスクの有効化</strong>」を選択します。</li>
+<li>「<strong>保存</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_076"><a href="#ToC_98">スケジューラ タスクの許容される時間間隔の変更</a></h2>
+<p>
+<p>許容される時間間隔とは、タスクの実行が許可されるタイム フレームであり、
+例えば、午前 10:00 から午後 6:00 までの間です。</p></p>
+<p></p>
+<ol type="1">
+<li><strong>「タスク スケジューラ」</strong> &gt; <strong>「スケジューラ」</strong>を展開します。「タスク詳細」ページに、
+スケジュールの詳細を含むタスクのリストが表示されます。</li>
+<li>頻度またはスケジュールされた実行時間の詳細を変更するには、タスク名を
+クリックします。タスクを実行する日または時間を
+更新できます。</li>
+<li>時間間隔の開始時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して
+指定します。例えば
+、<samp class="xph">10:00:00</samp> という指定は、午前 10 時を
+表します。</li>
+<li>時間間隔の停止時刻を 24 時間時計形式 <samp class="xph">hh:mm:ss</samp> を使用して
+指定します。例えば、<samp>18:00:00</samp> という指定は、午後 6 時を表します。</li>
+<li>許可される時間間隔の間でタスクを実行できる頻度を、日、時、分 (<samp class="xph">d</samp> Days <samp class="xph">h</samp> Hours <samp class="xph">m</samp> Minutes) で指定します (例: <samp class="xph">0</samp> Days <samp class="xph">1</samp> Hours <samp class="xph">00</samp> Minutes)。</li>
+<li>タスクを実行<em>しない</em> すべての曜日について「<strong>無効</strong>」
+を選択します。</li>
+<li>「<strong>保存</strong>」をクリックして変更を保存します。</li></ol>
+<h2 id="dqx1ids_oat_015"><a href="#ToC_99">スケジューラ タスクの削除</a></h2>
+<p></p>
+<div>
+<div class="note-noindent" id="wq294">
+<span class="notetitle">制約事項:</span> <span class="notebody">システム タスクは削除できません。</span></div></div>
+<p>ユーザ定義のタスクを削除するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li><strong>「タスク スケジューラ」</strong> &gt; <strong>「スケジューラ」</strong>を展開します。</li>
+<li>「<strong>タスクの削除</strong>」をクリックします。「タスク リスト」表に「<strong>タスクの削除</strong>」列が
+追加されます。各タスクに「<strong>削除</strong>」ボタンが
+あります。システム タスクの場合、「削除」ボタンは
+使用不可になっています。</li>
+<li>タスク名を見付けて「<strong>削除</strong>」をクリックします。センサー用のタスクの場合は、そのセンサーに関連付けられた結果表を削除するよう
+プロンプトが出されます。</li>
+<li>その表の処理方法を決定します。
+
+<ul>
+<li>タスクに加え結果表も削除する場合は「<strong>はい</strong>」を
+クリックします。</li>
+<li>タスクを削除するときに表を保持する場合は「<strong>いいえ</strong>」を
+クリックします。</li>
+<li>タスクおよび表の削除をキャンセルするには「<strong>キャンセル</strong>」を
+クリックします。</li></ul></li></ol>
+<h1 id="dqx1ids_oat_062"><a href="#ToC_100">パフォーマンス情報の探索方法</a></h1>
+<h2 id="dqx1ids_oat_064"><a href="#ToC_101">SQL Explorer を使用した問合せパフォーマンスの分析</a></h2>
+<p>
+<p>SQL Explorer を使用するには SQL トレースをオンにする必要があります。</p>
+<p>SQL Explorer を使用して、問合せのドリル ダウンを実行します。SQL Explorer では
+、SQL トレースを使用して、システムで実行された各 SQL 文の統計情報を収集し、
+文の履歴を表示します。次のセクションでは、SQL トレースをオンにする方法、および SQL Explorer を使用する方法について説明します。</p></p>
+<h3 id="dqx1ids_oat_091"><a href="#ToC_102">SQL トレースの有効化</a></h3>
+<p></p>
+<ol type="1">
+<li><strong>「パフォーマンス分析」</strong>&gt;<strong>「SQL Explorer」</strong>にナビゲートします。SQL トレースが
+実行されていない場合は、次のメッセージが表示されます。「<samp>現在 SQL トレースはオフです。
+「管理」オプションを使用してオンに戻してください。</samp></li>
+<li>「<strong>管理</strong>」をクリックして、「SQL トレースのプロフィール」
+ページにナビゲートします。</li>
+<li>「<strong>トレース状態</strong>」リストから「<strong>オン</strong>」を選択します。</li>
+<li><strong>「保存」</strong>をクリックして、SQL トレースをオンにします。</li></ol>
+<h3 id="dqx1ids_oat_092"><a href="#ToC_103">SQL トレースの無効化</a></h3>
+<p></p>
+<ol type="1">
+<li><strong>「パフォーマンス分析」</strong>&gt;<strong>「SQL Explorer」</strong>にナビゲートします。SQL トレースが
+オンであれば、SQL Explorer 用のタブを選択できます。SQL トレースが
+既にオフの場合は、次のメッセージが表示されます。「<samp>現在 SQL トレースはオフです。
+「管理」オプションを使用してオンに戻してください。</samp></li>
+<li>「<strong>トレース管理</strong>」タブをクリックして、「SQL トレースのプロフィール」
+ページにナビゲートします。</li>
+<li>「<strong>トレース状態</strong>」リストから「<strong>オフ</strong>」を選択します。</li>
+<li><strong>「保存」</strong>をクリックして、SQL トレースをオフにします。</li></ol>
+<h3 id="dqx1ids_oat_048"><a href="#ToC_104">SQL トレースのオプションの指定</a></h3>
+<p>
+<p>SQL Explorer は、現行サーバで実行された SQL 文の詳細情報を
+表示します。「<strong>トレース管理</strong>」ページから、トレース対象であり
+、SQL Explorer で使用できる情報を指定できます。</p></p>
+<p>
+<p>SQL Explorer の詳細を設定するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「SQL Explorer」</strong>&gt;<strong>「トレース管理」</strong>をクリックします。</li>
+<li>次の SQL トレース オプションを指定します。<ul>
+<li>グローバルまたはユーザ トレース モードを選択します。このオプションは、IBM Informix 11.50.xC3 以降で表示されます。詳細については、『<a href="#dqx1ids_oat_095">トレース モード</a>』を参照してください。</li>
+<li>表の名前をトレース情報に含めるには「<strong>表名</strong>」
+チェック ボックスを選択します。</li>
+<li>プロシジャ スタックをトレース情報に含めるには「<strong>プロシジャ スタック</strong>」
+チェック ボックスを選択します。</li>
+<li>ホスト変数に関する情報をトレース情報に含めるには
+「<strong>ホスト変数</strong>」チェック ボックスを選択します。</li>
+<li>トレース オプションが変更されて保存されたときに、トレース バッファを空にするには
+「<strong>トレース バッファのクリア</strong>」チェック ボックスを選択します。</li>
+<li>トレースする文の数 (500 から 2147483647 まで) を入力します。</li>
+<li>SQL 文ごとの最大トレース サイズをバイト単位 (512 から 102400 まで) で入力します。</li></ul></li>
+<li>「<strong>保存</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oat_095">トレース モード</h4>
+<p>
+<p><strong>「トレース モード」</strong>オプションは、IBM Informix 11.50.xC3 以降で表示されます。</p></p>
+<p></p>
+<ul>
+<li>サーバ全体の SQL 文をトレースするには「<strong>グローバル</strong>」を選択
+します。SQL Explorer では「<strong>データベースのトレース</strong>」リストおよび「 <strong>ユーザのトレース</strong>」リストで
+指定されているものを除くすべてのデータベースおよびユーザ セッションの情報を表示できます。</li>
+<li>データベースまたはユーザ セッションのリストに対する SQL 文をトレース
+するには「<strong>ユーザ</strong>」を選択します。SQL Explorer では「<strong>データベースのトレース</strong>」リストおよび「 <strong>ユーザのトレース</strong>」リストが空でない場合、これらのリストで
+指定されているデータベースおよびユーザ セッションのみの情報を表示できます。
+
+<ul>
+<li>「<strong>データベースのトレース</strong>」または「<strong>ユーザのトレース</strong>」のリストを表示するには、「<strong>表示</strong>」をクリックします。これらのリストを
+非表示にするには「<strong>非表示</strong>」をクリックします。</li>
+<li>「<strong>データベースのトレース</strong>」リストを変更するには、次のようにします。<ul>
+<li>データベースの追加: 「<strong>トレース対象外データベース</strong>」リストから
+データベース名を選択し、「<strong>+</strong>」をクリックします。データベース名が
+「<strong>トレース対象データベース</strong>」リストに表示されます。</li>
+<li>データベースの削除: 「<strong>トレース対象データベース</strong>」リストから
+データベース名を選択し、「<strong>-</strong>」をクリックします。データベース名が
+「<strong>トレース対象外データベース</strong>」リストに表示されます。</li></ul></li>
+<li>「<strong>ユーザのトレース</strong>」リストを変更するには、次のようにします。<ul>
+<li>ユーザの追加: 「<strong>トレース対象外</strong>」リストから
+データベース名を選択し、「<strong>+</strong>」をクリックします。データベース名が
+「<strong>トレース対象データベース</strong>」リストに表示されます。</li>
+<li>ユーザの削除: 「<strong>トレース対象データベース</strong>」リストから
+データベース名を選択し、「<strong>-</strong>」をクリックします。データベース名が
+「<strong>トレース対象外データベース</strong>」リストに表示されます。</li></ul></li></ul></li></ul>
+<h3 id="dqx1ids_oat_049"><a href="#ToC_106">SQL トレースの一時停止</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq308">
+<span class="notetitle">前提条件:</span> <span class="notebody">リソースを解放せずに SQL トレースを一時停止するオプションを使用するには、IBM Informix 11.50.xC3 以降が必要です。</span></div></div>
+<p>
+<p>SQL トレースを一時停止するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「SQL Explorer」</strong>&gt;<strong>「トレース管理」</strong>をクリックします。</li>
+<li>「<strong>トレース状態</strong>」リストで「<strong>一時停止</strong>」をクリックします。</li>
+<li>「<strong>保存</strong>」をクリックします。トレースは一時停止されます。</li></ol>
+<h3 id="dqx1ids_oat_050"><a href="#ToC_107">中断状態からの SQL トレースの再開</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq312">
+<span class="notetitle">前提条件:</span> <span class="notebody">中断状態の SQL トレースを再開するためのオプションを使用するには、IBM Informix 11.50.xC3 以降が必要です。</span></div></div>
+<p>
+<p>SQL トレースを再開するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「SQL Explorer」</strong>&gt;<strong>「トレース管理」</strong>をクリックします。</li>
+<li>「<strong>トレース状態</strong>」リストで「<strong>再開</strong>」をクリックします。</li>
+<li>「<strong>保存</strong>」をクリックします。トレースは再開されます。</li></ol>
+<h3 id="dqx1ids_oat_105.dita"><a href="#ToC_108">最新データと保存データの切替え</a></h3>
+<div>
+<p>指定した期間の間、最新の SQL トレース データと
+保存された SQL トレース データを切り替えます。</p></div>
+<p>
+<p>SQL トレース データを表示するには、SQL トレースをオンにする必要があります。「<strong>トレース管理</strong>」ページで、「<strong>トレース状態</strong>」に「 <strong>オン</strong>」を設定します。
+『<a href="#dqx1ids_oat_091">SQL トレースの有効化</a>』を参照してください。</p>
+<p>保存済みデータに切り替えるには、
+次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong>を展開してから、<strong>「SQL Explorer」</strong>をクリックします。</li>
+<li>履歴の SQL トレース データを表示するために「<strong>保存済みデータに切替え</strong>」をクリックします。</li>
+<li>履歴データの時間枠を設定するには、<strong>「開始」</strong>フィールドと<strong>「終了」</strong>フィールドに日時を指定します。</li>
+<li>現行データに戻すには、「<strong>最新データに切替え</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_oat_065"><a href="#ToC_109">動作サマリからのドリル ダウン</a></h3>
+<div>
+<p>問合せのドリル ダウンを使用して、SQL 文についての統計情報を検討します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq319">
+<span class="notetitle">前提条件:</span> <span class="notebody">問合せドリル ダウンを使用するには、SQL トレースが<strong>「オン」</strong>に設定されている必要があります。
+<a href="#dqx1ids_oat_091">SQL トレースの有効化</a>を参照してください。</span></div></div>
+<p>
+<p>SQL 文をドリル ダウンするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「SQL Explorer」</strong>をクリックします。SQL Explorer のページが表示されます。</li>
+<li>SQL 文のタイプに対するドリル ダウン アイコンをクリックするか、「<strong>トランザクション (Transactions)</strong>」タブをクリックしてから、トランザクションに対するドリル ダウン アイコンをクリックします。ドリル ダウン アイコンをクリックして、続けてさらに詳細な情報を表示させることができます。</li></ol>
+<h3 id="dqx1ids_oat_067"><a href="#ToC_110">トランザクションによるドリル ダウン</a></h3>
+<div>
+<p>問合せのドリル ダウンを使用して、トランザクションに対する SQL 文についての統計情報を確認します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq323">
+<span class="notetitle">前提条件:</span> <span class="notebody">問合せドリル ダウンを使用するには、SQL トレースが<strong>「オン」</strong>に設定されている必要があります。
+<a href="#dqx1ids_oat_091">SQL トレースの有効化</a>を参照してください。</span></div></div>
+<p>
+<p>トランザクションによるドリル ダウンを実行するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「SQL Explorer」</strong>をクリックします。SQL Explorer のページが表示されます。</li>
+<li>「<strong>トランザクション</strong>」タブをクリックして、最新 100 トランザクションのトランザクション時間のリストを表示します。</li>
+<li>トランザクションに対するドリル ダウン アイコンをクリックします。そのトランザクションで実行された SQL 文のリストが
+表示されます。ドリル ダウン アイコンをクリックして文に対する統計情報を表示します。</li></ol>
+<h3 id="dqx1ids_oat_066"><a href="#ToC_111">SQL 文のタイプによるドリル ダウン</a></h3>
+<div>
+<p>文のタイプによる問合せのドリル ダウンを使用して、SQL 文についての統計情報を確認します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq327">
+<span class="notetitle">前提条件:</span> <span class="notebody">問合せドリル ダウンを使用するには、SQL トレースが<strong>「オン」</strong>に設定されている必要があります。
+<a href="#dqx1ids_oat_091">SQL トレースの有効化</a>を参照してください。</span></div></div>
+<p>
+<p>SQL タイプによるドリル ダウンを実行するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「SQL Explorer」</strong>をクリックします。SQL Explorer のページが表示されます。システムで実行された文は、SQL 文グループごとのサマリ統計情報とともに、タイプ別にグループ化されます。</li>
+<li>文のタイプに対するドリル ダウン アイコンをクリックします。実行された SQL 文のリストが表示されます。文に対する、次いで文の実行に対するドリル ダウン アイコンをクリックして、ドリル ダウンを継続することができます。文の統計情報が表示されます。</li></ol>
+<h2 id="dqx1ida_oat_104"><a href="#ToC_112">SQL 文の最適化</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix を使用して、外部ディレクティブを作成し SQL 文を最適化します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq331">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>データベース サーバの <samp>onconfig</samp> ファイルで、EXT_DIRECTIVES 構成パラメータに 1 または 2 を設定して、外部ディレクティブを保存できるようにします。EXT_DIRECTIVES 構成パラメータを変更した後、その変更を有効にするには、データベース サーバを再始動する必要があります。
+</li>
+<li>SQL トレースがオンであり、「<strong>トレース管理</strong>」ページ
+で「<strong>表名</strong>」オプションが選択されていることを確認します。『<a href="#dqx1ids_oat_091">SQL トレースの有効化</a>』および『<a href="#dqx1ids_oat_048">SQL トレースのオプションの指定</a>』を参照してください。</li></ul></span></div></div>
+<p>
+<p>SQL 文に適用する外部ディレクティブを作成できます。
+ディレクティブは、問合せオプティマイザに問合せの実行方法を
+指示するコメントです。外部ディレクティブは、SQL 文の問合せ実行計画
+を変更する方法を提供します。
+外部ディレクティブを SQL 文に適用した後、その SQL 文を
+再実行するたびに、その SQL 文の問合せ実行計画が順次変更されます。
+</p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq333">
+<span class="notetitle">重要:</span> <span class="notebody">SQL 文を再実行するときには、その文が、ディレクティブを適用した SQL 文と完全に一致している必要があります。例えば、大文字化されている文字が同じであり、スペーシングが同じである必要があります。</span></div></div>
+<p>外部ディレクティブを作成するには、
+次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「SQL Explorer」</strong>をクリックします。</li>
+<li>SQL 文にドリル ダウンします。<ol type="a">
+<li>「<strong>SQL</strong>」タブをクリックします。</li>
+<li>リスト内の SQL 文をクリックします。</li>
+<li>SQL 文実行のリスト内の行をクリックします。</li></ol></li>
+<li>「<strong>最適化</strong>」タブをクリックします。</li>
+<li>「<strong>追加</strong>」をクリックします。</li>
+<li>「<strong>ディレクティブの追加</strong>」ページで、ディレクティブを選択します。必要に応じて、表およびインデックスを選択します。SQL 文に対し複数のディレクティブを追加するには、「<strong>さらに追加</strong>」をクリックします。「<strong>追加</strong>」をクリックすると、ページが閉じます。</li>
+<li>ディレクティブの適用方法を指定するには、「<strong>適用</strong>」をクリックします。デフォルトは
+「<strong>非アクティブ</strong>」であり、ディレクティブは SQL 文に
+適用されません。</li></ol>
+<h2 id="dqx1ids_oat_068"><a href="#ToC_113">ユーザ セッションの探索</a></h2>
+<p>
+<p>セッション エクスプローラを使用して、ユーザ セッションを表示および停止できます。</p>
+<p>サーバで現在実行されているセッションを確認するには、<strong>「パフォーマンス分析」</strong>&gt;<strong>「Session Explorer」</strong>を展開します。</p></p>
+<p>
+<p>サーバで実行中の
+いずれかのセッションを表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「Session Explorer」</strong>をクリックします。</li>
+<li>セッション ID 番号 (SID) をクリックします。「<strong>セッション情報</strong>」ページが
+開きます。このページは、ユーザ名、ユーザがサーバに接続した時刻、メモリ使用量、
+オープンされた表の数など、セッションに関する統計情報を含みます。
+</li>
+<li>セッションに関する追加のパフォーマンス情報を表示するには、タブをクリックします。<table id="wq340" width="90%" summary="この表では、各行に 1 つの選択肢を示してあります。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq341" align="left"><strong>タブ名</strong></th>
+<th id="wq342" align="left">説明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq341"><strong>SQL</strong></td>
+<td headers="wq342">セッションが実行した SQL コマンドの数</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>ロック</strong></td>
+<td headers="wq342">セッションが保持しているロックの数</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>スレッド</strong></td>
+<td headers="wq342">セッションが実行したスレッドの数</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>メモリ</strong></td>
+<td headers="wq342">セッションが使用したメモリ</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>ネットワーク</strong></td>
+<td headers="wq342">セッションの入出力データ</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>環境</strong></td>
+<td headers="wq342">セッションの環境変数値</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>プロフィール</strong></td>
+<td headers="wq342">セッションに関するサマリ パフォーマンス情報</td>
+</tr>
+</tbody>
+</table></li></ol>
+<h3 id="dqx1ids_oat_056"><a href="#ToC_114">ユーザ セッションの停止</a></h3>
+<p>
+<p>ユーザ セッションを停止するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「Session Explorer」</strong>をクリックします。</li>
+<li>セッションの行の最後の列で、停止アイコンをクリックします。
+</li></ol>
+<h2 id="dqx1ids_oat_169"><a href="#ToC_115">パフォーマンス履歴の表示</a></h2>
+<div>
+<p>プロファイルが作成されたフィールドに関する、自動チェックポイント、ディスクとバッファの動作、メモリ、仮想プロセッサ、および B ツリー スキャナを含む履歴データを表示します。
+</p></div><a id="idx93"></a>
+<p>
+<p>特定のフィールドにおける長期のデータを表示し、複数のサーバでのパフォーマンスの比較を行うことができます。
+例えば、サーバ上の合計ディスク読込みと合計ディスク書込みの比較、または 2 つのサーバ上の合計ディスク書込みの比較を行えます。
+</p></p>
+<p>
+<p>パフォーマンス履歴を表示するには、次のようにします。</p></p>
+<ol type="1">
+<li>OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong>&gt;<strong>「パフォーマンス履歴」</strong>をクリックします。</li>
+<li>表示するフィールドを選択します。</li>
+<li>オプション: 追加のサーバを 3 つまで選択します。</li></ol>
+<h2 id="dqx1ids_oat_063"><a href="#ToC_116">システム性能レポートの実行</a></h2>
+<div>
+<p>現在のデータと履歴データに基づいて、システム性能レポートを作成します。</p></div>
+<p>
+<p>システム性能レポートを実行するには、以下のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「システム レポート」</strong>をクリックします。</li>
+<li>レポートのデータ タイプのタブ (<strong>「現行レポート (Current Reports)」</strong>または<strong>「履歴レポート (Historical Reports)」</strong>) をクリックします。</li>
+<li>レポートを指定するには、以下のようにします。<ul>
+<li>特定のレポートを表示するには、レポート名をクリックします。例えば、<strong>「ディスク領域使用量」</strong>です。</li>
+<li>結合されたレポートで、タイプごとにレポートを表示するには、レポートのタイプを選択し、<strong>「レポートの作成」</strong>をクリックします。例えば、<strong>「ディスク」</strong>を選択してディスク使用量についてのレポートを表示します。レポートは新しいウィンドウで表示されます。</li>
+<li>結合されたレポートで、複数のレポートを表示するには、レポートのチェック ボックスを選択し、<strong>「レポートの作成」</strong>をクリックします。レポートは新しいウィンドウで表示されます。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_173"><a href="#ToC_117">監視範囲</a></h2>
+<div>
+<p>現行データベース サーバで、データベース内のエクステントの数を表すグラフを表示します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq351">
+<span class="notetitle">前提条件:</span> <span class="notebody">グラフを表示するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC4 以降が必要です。</span></div></div>
+<p>
+<p>エクステントを監視するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「システム レポート」</strong>をクリックします。</li>
+<li><strong>「グラフ (Graphs)」</strong>タブをクリックします。</li>
+<li><strong>「オブジェクト タイプ (Object type)」</strong>リストで<strong>「エクステント
+」</strong>を選択します。</li></ol>
+<p>
+<p>このタイプのグラフは、ヒート マップやツリー マップと呼ばれることもあります。
+グラフは、IBM ILOG Elixir&reg; ツリー マップ コントロールを使用して作成します。</p></p>
+<h2 id="dqx1ids_oat_174"><a href="#ToC_118">バッファ プールの監視</a></h2>
+<div>
+<p>現行データベース サーバで、データベースのバッファ プールにキャッシュされたページの割合を表すグラフを表示します。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq356">
+<span class="notetitle">前提条件:</span> <span class="notebody">グラフを表示するには、OpenAdmin Tool (OAT) for Informix に IBM Informix 11.70.xC4 以降が必要です。</span></div></div>
+<p>
+<p>バッファ プールを監視するには、次のようにします。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「パフォーマンス分析」</strong> &gt; <strong>「システム レポート」</strong>をクリックします。</li>
+<li><strong>「グラフ (Graphs)」</strong>タブをクリックします。</li>
+<li><strong>「オブジェクト タイプ (Object type)」</strong>リストで<strong>「バッファ プール (Buffer pool)」</strong>を選択します。</li></ol>
+<p>
+<p>このタイプのグラフは、ヒート マップやツリー マップと呼ばれることもあります。
+グラフは、IBM ILOG Elixir ツリー マップ コントロールを使用して作成します。</p></p>
+<h2 id="dqx1ida_oat_117"><a href="#ToC_119"><strong><samp>onstat</samp></strong> ユーティリティを使用したサーバの監視</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix で <strong><strong><samp>onstat</samp></strong></strong> ユーティリティを使用して、データベース サーバのパフォーマンスおよび状態情報を表示します。</p></div>
+<p>
+<p><strong><strong><samp>onstat</samp></strong></strong> ユーティリティを使用すると、データベース サーバの状態を確認すること、および動作を監視することができます。</p>
+<p><strong><samp>onstat</samp></strong> ユーティリティを使用するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT メニューで<strong>「パフォーマンス分析」</strong>を展開してから<strong>「onstat ユーティリティ」</strong>をクリックします。</li>
+<li><strong><strong><samp>onstat</samp></strong></strong> オプションを入力します。<samp class="xph">onstat</samp> と入力する必要はありません。</li>
+<li>「<strong>実行</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連する参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1063.htm#ids_adr_1063" target="_blank">onstat ポータル: 機能カテゴリ別 onstat ユーティリティ コマンド (管理者リファレンス)</a></li></ul>
+<h1 id="dqx1ids_oat_012"><a href="#ToC_120">データベースおよび表の管理方法</a></h1>
+<h2 id="dqx1ids_oat_013"><a href="#ToC_121">サーバ上のデータベースの検討</a></h2>
+<p>
+<p>「<strong>SQL Toolbox</strong>」を展開してから「<strong>データベース</strong>」をクリックします。
+このページには、現行のサーバにあるデータベースのリストおよび規模の大きい 6 個のデータベース
+が使用しているスペースのグラフが表示されます。</p></p>
+<h2 id="dqx1ids_oat_014"><a href="#ToC_122">データベースへの接続</a></h2>
+<p>
+<p>データベースに接続すると、データベース表、スキーマ、プロシジャ、および
+ルーチンを検討できます。</p>
+<p>データベースに接続するには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li><strong>「SQL Toolbox」</strong>を展開してから<strong>「データベース」</strong>をクリックします。このページには、現行のサーバにあるデータベースのリストおよび規模の大きい 6 個のデータベース
+が使用しているスペースのグラフが表示されます。</li>
+<li>「<strong>データベース</strong>」のリストで、データベースの名前を
+クリックします。「<strong>表</strong>」ページに、データベースに含まれる表の
+リストが表示されます。選択したデータベースの名前
+が、ページの右上にある「<strong>データベース</strong>」フィールドに
+表示されます。</li>
+<li>オプション: カタログ表の名前を組み込むには、<strong>「データベース カタログ表の組込み」</strong>を選択し、<strong>「実行要求」</strong>をクリックします。カタログ表とユーザ表を組み合わせたリスト
+が表示されます。
+
+<ul>
+<li>表を参照するには、「<strong>参照</strong>」列のアイコンをクリックします。</li>
+<li>表の列の情報を表示するには、「<strong>名前</strong>」列の表を
+クリックします。</li>
+<li>表のパーティション情報を表示するには、「<strong>パーティション番号</strong>」列の
+値をクリックします。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_094"><a href="#ToC_123">スキーマの表示</a></h2>
+<p>
+<p>データベースに接続する必要があります。『<a href="#dqx1ids_oat_014">データベースへの接続</a>』を参照してください。</p>
+<p>スキーマを表示するには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>「<strong>SQL Toolbox</strong>」を展開してから「<strong>Schema Browser</strong>」をクリックします。
+
+
+<p>表およびそのスキーマのリストが表示されます。
+接続先のデータベースの名前が、ページの右上にある「<strong>データベース</strong>」フィールドに
+表示されます。</p></li>
+<li>表示する表の参照アイコンを選択します。
+
+<p>表に対する SELECT * 文の結果セットが表示されます。
+</p></li></ol>
+<h2 id="dqx1ids_oat_069"><a href="#ToC_124">データベースのプロシジャおよびルーチンの検討</a></h2>
+<p>
+<p>データベースに接続する必要があります。『<a href="#dqx1ids_oat_014">データベースへの接続</a>』を参照してください。</p>
+<p>データベースの
+プロシジャおよびルーチンを検討するには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>「<strong>SQL Toolbox</strong>」を展開してから「<strong>Schema Browser</strong>」をクリックします。
+
+
+<p>表およびそのスキーマのリストが表示されます。
+接続先のデータベースの名前が、ページの右上にある「<strong>データベース</strong>」フィールドに
+表示されます。</p></li>
+<li>「<strong>SPL/UDR</strong>」タブを選択します。
+
+<p>「<strong>プロシジャ/関数</strong>」
+リストが表示されます。</p></li></ol>
+<h2 id="dqx1ids_oat_106"><a href="#ToC_125">標準 SQL 操作の実行: 問合せ、挿入、更新、削除</a></h2>
+<div>
+<p>表の特定の行を表示してから行を更新または削除するか、表に新規行を挿入する
+簡単な問合せを、例示問合せを使用して作成します。</p></div><a id="idx94"></a><a id="idx95"></a><a id="idx96"></a><a id="idx97"></a>
+<h3 id="dqx1ids_oat_109"><a href="#ToC_126">問合せの実行</a></h3>
+<div>
+<p>例示問合せを使用して、表の特定の行を表示する
+簡単な問合せを作成します。</p></div><a id="idx98"></a><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>表に対する問合せを実行してから、結果として表示された行の確認、更新、
+または削除を行うことができます。</p>
+<p>問合せを実行するには、
+次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「SQL Toolbox」</strong>を展開してから、<strong>「例示問合せ」</strong>をクリックします。</li>
+<li>表を検索するには、表名の任意の部分を<strong>「検索」</strong>フィールドに入力し、<strong>「検索」</strong>をクリックします。
+データベースを展開して、表を表示することもできます。
+<div>
+<div class="note-noindent" id="wq376">
+<span class="notetitle">注:</span> <span class="notebody">リストには、例示問合せ (QBE) を使用して作業できる表のみが表示されます。QBE で作業できない表は表示されません。例えば、システム表、つまりシステム データベース (<strong>sysadmin</strong> データベースを除く) 内の表、および QBE が対応していない型である BLOB、バイト (BYTE)、CLOB、ディスティンクト (DISTINCT) 型、リスト (LIST)、マルチセット (MULTISET)、各国語文字 (NCHAR)、各国語可変長文字 (NVARCHAR)、行 (ROW)、セット (SET)、テキスト (TEXT)、およびユーザ定義データ型 (UDT) を含む表などは表示されません。</span> </div></div>
+
+<p>選択した表
+に含まれる列が「<strong>問合せ</strong>」ページに表示されます。</p></li>
+<li>問合せの抽出条件を入力するには、列の横のボタンをクリックして「<strong>問合せの抽出条件の入力</strong>」ページを開きます。</li>
+<li>演算子のリストから演算子を選択し、値を入力して
+「<strong>追加</strong>」をクリックします。
+
+<p>問合せの抽出条件
+が表に表示されます。別の条件を追加する場合は、
+まず「<strong>AND</strong>」または「<strong>OR</strong>」を選択します。</p></li>
+<li>「<strong>OK</strong>」をクリックします。
+
+<p>ページが閉じ、問合せの抽出条件が列に表示されます。</p></li>
+<li>問合せを実行するには「<strong>実行</strong>」をクリックします。
+
+<p>ページに、問合せ行を一度に 1 行ずつ表示します。
+問合せの抽出条件を一切入力せずに問合せを実行すると、
+表のすべての行が表示されます。</p>
+
+<p>行をスクロールする
+には、矢印ボタンを使用します。</p></li></ol>
+<h3 id="dqx1ids_oat_110"><a href="#ToC_127">表の行の更新</a></h3>
+<div>
+<p>例示問合せを使用して、データベース サーバの表の行を更新します。
+</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq378">
+<span class="notetitle">注:</span> <span class="notebody">IBM OpenAdmin Tool (OAT) for Informix で例示問合せを使用して更新できるのは、固有 ID を持つ行のみです。固有 ID には、主キー、一意性制約、一意性インデックス、および
+表がフラグメント化されていない場合の行 ID が含まれます。</span></div></div>
+<p>データベース サーバの
+表の行を更新するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li>例示問合せを使用して問合せを実行します。『<a href="#dqx1ids_oat_109">問合せの実行</a>』を参照してください。</li>
+<li>必要に応じて、矢印ボタンを使用し、行までスクロールします。</li>
+<li>行の変更内容をフィールドに入力します。</li>
+<li>「<strong>行の更新</strong>」をクリックします。
+
+<p>データベース サーバで
+行が更新されます。</p></li></ol>
+<h3 id="dqx1ids_oat_111"><a href="#ToC_128">表の行の削除</a></h3>
+<div>
+<p>例示問合せを使用して、データベース サーバの表の行を削除します。
+</p></div><a id="idx103"></a><a id="idx104"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq382">
+<span class="notetitle">注:</span> <span class="notebody">IBM OpenAdmin Tool (OAT) for Informix で例示問合せを使用して削除できるのは、固有 ID を持つ行のみです。固有 ID には、主キー、一意性制約、一意性インデックス、および
+表がフラグメント化されていない場合の行 ID が含まれます。</span></div></div>
+<p>データベース サーバの
+表の行を削除するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li>例示問合せを使用して問合せを実行します。『<a href="#dqx1ids_oat_109">問合せの実行</a>』を参照してください。</li>
+<li>必要に応じて、矢印ボタンを使用し、行までスクロールします。<div>
+<div class="note-noindent" id="wq385">
+<span class="notetitle">重要:</span> <span class="notebody">行を削除すると、その行は、データベース サーバで永久的に削除されます。削除を元に戻すことはできません。</span></div></div></li>
+<li>「<strong>行の削除</strong>」をクリックします。
+
+<p>データベース サーバで
+行が削除されます。</p></li></ol>
+<h3 id="dqx1ids_oat_112"><a href="#ToC_129">表の行の挿入</a></h3>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix で例示問合せを使用して、データベース サーバの表に行を挿入します。
+</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>データベース サーバの
+表に行を挿入するには、次のようにします。
+</p></p>
+<p></p>
+<ol type="1">
+<li>OAT メニューで<strong>「SQL Toolbox」</strong>を展開してから<strong>「例示問合せ」</strong>をクリックします。</li>
+<li>表を検索するには、表名の任意の部分を<strong>「検索」</strong>フィールドに入力し、<strong>「検索」</strong>をクリックします。
+データベースを展開して、表を表示することもできます。
+<div>
+<div class="note-noindent" id="wq389">
+<span class="notetitle">注:</span> <span class="notebody">リストには、例示問合せ (QBE) を使用して作業できる表のみが表示されます。QBE で作業できない表は表示されません。例えば、システム表、つまりシステム データベース (<strong>sysadmin</strong> データベースを除く) 内の表、および QBE が対応していない型である バイト (BYTE)、テキスト (TEXT)、BLOB、CLOB、各国語文字 (NCHAR)、各国語可変長文字 (NVARCHAR)、セット (SET)、マルチセット (MULTISET)、リスト (LIST)、行 (ROW)、ディスティンクト (DISTINCT) 型、およびユーザ定義データ型 (UDT) を含む表などは表示されません。</span></div></div>
+
+<p>選択した表
+に含まれる列が「<strong>問合せ</strong>」ページに表示されます。</p></li>
+<li>「<strong>挿入</strong>」タブをクリックします。</li>
+<li>フィールドに値を入力します。<div>
+<div class="note-noindent" id="wq390">
+<span class="notetitle">ヒント:</span> <span class="notebody">各フィールドの吹出しヘルプによって、文字 (CHAR) 型、10 進数 (DECIMAL) 型、または日時 (DATETIME) 型など、必要な型が識別されます。</span></div></div></li>
+<li>「<strong>行の追加</strong>」をクリックします。
+
+<p>データベース サーバで
+の表に行が挿入されます。</p></li></ol>
+<h1 id="dqx1ids_oat_005"><a href="#ToC_130">サーバへのアクセスのセット アップ方法</a></h1>
+<h2 id="dqx1ids_oat_003"><a href="#ToC_131">OAT グループの追加</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix 内のデータベース サーバ接続のグループを定義します。</p></div><a id="idx107"></a>
+<p>
+<p>OAT グループを使用すると、データベース サーバをグループ化して管理でき、個別のサーバではなくグループにログインできます。</p>
+<p>OAT グループを追加するには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「管理」</strong>メニューで、<strong>「接続の管理」</strong>を展開してから<strong>「グループの追加」</strong>をクリックします。</li>
+<li>「<strong>グループ名</strong>」フィールドで、グループの
+英数字の名前を入力します。</li>
+<li>「<strong>パスワード</strong>」フィールドで、英数字のパスワード
+を入力します。</li>
+<li>オプション: グループに読取り専用アクセス権を付与するように指定するには、<strong>「読取り専用」</strong>を選択します。<div>
+<div class="note-noindent" id="wq394">
+<span class="notetitle">重要:</span> <span class="notebody">読取り専用グループに属するユーザは、サーバを変更できません。ただしこれらのユーザは、サーバ内の機密データにアクセスすることはできます。読取り専用グループのメンバシップは、サーバに含まれている詳細データの
+表示を許可するユーザのみに限定して与えてください。</span></div></div>
+
+<p>読取り専用グループの制約事項の詳細については、『<a href="#dqx1ids_oat_051">読取り専用グループの制約事項</a>』を参照してください。</p></li>
+<li>「<strong>追加</strong>」をクリックして、グループ情報を保存し、グループを
+追加します。</li></ol>
+<p>
+<p>次に、サーバ接続をグループに追加します。<a href="#dqx1ids_oat_002">サーバ接続の作成</a>を参照してください。</p></p>
+<h2 id="dqx1ids_oat_002"><a href="#ToC_132">サーバ接続の作成</a></h2>
+<div>
+<p>サーバ接続を、IBM OpenAdmin Tool (OAT) for Informix で定義したデータベース サーバ接続のグループに追加します。</p></div>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「管理」</strong>メニューで、<strong>「接続の管理」</strong>を展開してから<strong>「接続の追加」</strong>をクリックします。</li>
+<li><strong>「グループ名」</strong>リストから、サーバ接続を追加する OAT グループを選択します。</li>
+<li>接続情報を入力します。<div>
+<div class="note-noindent" id="wq398">
+<span class="notetitle">重要:</span> <span class="notebody">Informix Connect を使用する場合、または IBM Informix Client Software Development Kit (Client SDK) V3.0 より前のバージョンの Client SDK を使用する場合は、追加する新規接続ごとに、その接続に対応する SQLHOSTS エントリが Web サーバ コンピュータに存在することを確認してください。</span></div></div></li>
+<li>「<strong>保存</strong>」をクリックして接続を追加します。</li></ol>
+<h2 id="dqx1ids_oat_114"><a href="#ToC_133">接続情報のエクスポート</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のデータベース サーバ接続のグループの接続情報を XML ファイルにエクスポートします。</p></div>
+<p>
+<p>接続情報をエクスポートするには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「ログイン」</strong>ページで<strong>「管理」</strong>をクリックします。OAT の管理メニューおよびページが表示されます。</li>
+<li><strong>「接続の管理」</strong>&gt;<strong>「接続管理」</strong>をクリックします。</li>
+<li>ユーザ名およびパスワードを XML ファイルに含めるには、
+「<strong>機密のパスワード情報をエクスポートされる XML ファイルに含める (Include sensitive password information in exported XML file)</strong>」
+を選択します。デフォルトでは、エクスポートされた情報には、OAT グループのユーザ名とパスワードは<em>含まれていません</em>。</li>
+<li>「<strong>XML にエクスポート</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_113"><a href="#ToC_134">接続情報のインポート</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のデータベース サーバ接続のグループの接続情報を XML ファイルからインポートします。</p></div>
+<p>
+<p>インポートする接続ファイルは、OAT によってエクスポートされた接続ファイルと同じ形式である必要があります。このファイルの説明については
+「<strong>接続管理</strong>」ページにあるヘルプ ボタンを
+クリックしてください。</p>
+<p>接続情報をインポートするには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「ログイン」</strong>ページで<strong>「管理」</strong>をクリックします。OAT の管理メニューおよびページが表示されます。</li>
+<li><strong>「接続の管理」</strong>&gt;<strong>「接続管理」</strong>をクリックします。</li>
+<li>「<strong>XML ファイルからの接続情報のインポート
+XML file)</strong>」で、参照して、接続情報を含む XML ファイルを見つけます。</li>
+<li>既存の接続データを置換するには、「<strong>既存の接続情報をすべて削除</strong>」を選択します。 または、既存の接続データに
+情報を追加する場合は、このオプションをクリアしたままにします。</li>
+<li>「<strong>XML からインポート</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_171"><a href="#ToC_135">非デフォルト ロケールでデータベースへアクセスする</a></h2>
+<div>
+<p>マルチバイトのデータベース ロケールを含む、デフォルトの英語 (en_us) 以外のロケールを持つデータベースを管理します。
+</p></div><a id="idx108"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq406">
+<span class="notetitle">前提条件:</span> <span class="notebody">
+<ul>
+<li>IBM OpenAdmin Tool (OAT) for Informix には、OAT を介してアクセスするすべてのデータベースに使用する UTF-8 ロケールが必要です。IBM Informix Client Software Development Kit (Client SDK) に組み込まれていないロケールを使用してデータベースにアクセスするには、IBM Informix International Language Supplement (ILS) を使用してロケールをインストールします。OAT をインストールしたら、OAT がインストールされているマシンの Informix Connect または Client SDK ディレクトリに ILS をインストールします。
+ILS を使用して、OAT で使用されている Informix Connect または Client SDK ディレクトリに追加のロケール (UTF-8 バージョンなど) をインストールします。</li>
+<li>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) には Informix 11.70.xC4 が必要です。</li>
+<li>データベース名には英文字を使用する必要があります。</li></ul></span></div></div>
+<p>
+<p>Informix でサポートされるデータベース ロケールのデータは、OAT を使用して表示および変更できます。
+例えば、イタリア語または日本語のロケールがあるデータベースにアクセスすることができます。
+</p>
+<p>Replication Plug-in でデフォルト以外のロケールを使用してデータベースを表示する場合は、<strong>「言語」</strong>リストおよび<strong>「ロケール」</strong>リストを使用して適切なデータベース ロケールを選択します。</p></p>
+<h1 id="dqx1ids_oat_098"><a href="#ToC_136">OAT のセキュリティの構成方法</a></h1>
+<h2 id="dqx1ids_oat_072"><a href="#ToC_137">読取り専用アクセス権を持つ OAT グループの作成</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix でデータベース サーバ接続のグループを作成し、グループのメンバがサーバに含まれている情報を表示できるが変更できないようにします。</p></div><a id="idx109"></a><a id="idx110"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq409">
+<span class="notetitle">重要:</span> <span class="notebody">読取り専用グループに属するユーザは、サーバを変更できません。ただしこれらのユーザは、サーバ内の機密データにアクセスすることはできます。読取り専用グループのメンバシップは、サーバに含まれている詳細データの
+表示を許可するユーザのみに限定して与えてください。</span></div></div>
+<p>読取り専用グループの制約事項の詳細については、『<a href="#dqx1ids_oat_051">読取り専用グループの制約事項</a>』を参照してください。</p>
+<p>読取り専用アクセス権を持つグループを
+作成するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「管理」</strong>メニューで、<strong>「接続の管理」</strong>&gt;<strong>「グループの追加」</strong>をクリックします。</li>
+<li>「<strong>グループ名</strong>」フィールドで、グループの
+英数字の名前を入力します。</li>
+<li>「<strong>パスワード</strong>」フィールドで、英数字のパスワード
+を入力します。</li>
+<li>グループが読取りアクセス権を持つことを指定するために
+「<strong>読取り専用</strong>」を選択します。</li>
+<li>「<strong>追加</strong>」をクリックして、グループ情報を保存し、グループを
+追加します。</li></ol>
+<p>
+<p>次に、サーバ接続をグループに追加します。<a href="#dqx1ids_oat_002">サーバ接続の作成</a>を参照してください。</p></p>
+<h3 id="dqx1ids_oat_051"><a href="#ToC_138">読取り専用グループの制約事項</a></h3><a id="idx111"></a>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix の読取り専用グループには、以下の制約事項があります。
+</p>
+<ul>
+<li><strong>「ヘルス センタ」</strong>:
+
+<ul>
+<li>アラートを表示することはできますが、表示するアラートを変更することはできません。</li>
+<li>Informix Health Advisor Plug-in for OAT を使用して、要求時に現行プロファイルに対して <strong>Health Advisor</strong> を実行することはできません。
+プロファイルをロードすることはできますが、プロファイルを追加したり削除したりすることはできません。プロファイルのアラームを確認することはできますが、アラームを有効化、無効化、または変更することはできません。<strong>「スケジュール」</strong>ページまたは<strong>「通知」</strong>ページにアクセスすることはできません。<strong>Health Advisor</strong> Plug-in には Informix 11.50.C7 以降が必要です。</li></ul></li>
+<li>「<strong>ログ</strong>」: 制限はありません。</li>
+<li>「<strong>タスク スケジューラ</strong>」: スケジューラ タスクの追加、変更、または削除を行うことは
+できません。</li>
+<li><strong>「スペース管理」</strong>
+
+<ul>
+<li>格納領域および領域使用情報を表示できますが、領域およびチャンクを追加、変更、削除することはできません。</li>
+<li>ストレージ プール エントリの追加、変更、削除はできません。ストレージ プールを使用するには、OAT に IBM Informix バージョン 11.70 が必要です。</li>
+<li>「<strong>リカバリ ログ</strong>」ページから「<strong>管理</strong>」ページ
+や「<strong>リカバリ ポリシー</strong>」ページにアクセスすることはできません。</li>
+<li>領域最適化情報を表示することはできますが、表、インデックス、フラグメントを圧縮、リパック、縮小したり、表、フラグメントを圧縮解除したりすることはできません。圧縮見積りを更新できません。
+インデックスを圧縮するには、OAT に Informix 12.10 が必要です。</li>
+<li>表、フラグメント、またはインデックスのフラグメント解消はできません。<span id="dqx1ids_oat_051__preq-defrag-ce">フラグメント解消の操作を実行するには、OAT に Informix 11.70 以降が必要です。</span></li></ul></li>
+<li>「<strong>サーバ管理</strong>」<ul>
+<li>「<strong>構成</strong>」ページで <strong>onconfig</strong> ファイルの構成パラメータを表示することは
+できますが、更新はできません。</li>
+<li>サーバに対するユーザ特権を表示できますが、変更できません。</li>
+<li>内部ユーザを表示することはできますが、変更することはできません。内部ユーザを使用するには、OAT に Informix バージョン 11.70 が必要です。</li>
+<li>システムの検証を実行できません。</li>
+<li>仮想プロセッサ (VP) を表示できますが、追加または削除することはできません。</li>
+<li>「<strong>自動更新統計</strong>」(AUS) のページを表示できますが、関連する「<strong>スケジューラ</strong>」タスクの変更、
+評価のリフレッシュ、または前の実行のクリーンアップを行うことはできません。AUS を
+構成できません。</li>
+<li>信頼できるコンテキストの表示はできますが、作成、変更、削除、有効化、無効化はできません。トラステッド コンテキストを使用するには、OAT に Informix 11.70 が必要です。</li></ul></li>
+<li><strong>「パフォーマンス分析」</strong>
+
+<ul>
+<li>パフォーマンス レポートおよびトレース情報を表示することはできますが、SQL TRACE をオンまたはオフに切り替えたり、SQL 文を最適化したりすることはできません。</li>
+<li>ユーザ セッションを表示できますが停止することはできません。</li></ul></li>
+<li><strong>「SQL ToolBox」</strong>
+
+<ul>
+<li>「<strong>SQL エディタ</strong>」にアクセスすることはできません (マスタ DBA アカウント
+のみ可能)。</li>
+<li><strong>「Schema Browser」</strong>を使用して表を参照することはできません。</li>
+<li>「<strong>例示問合せ</strong>」にアクセスできません。</li></ul></li>
+<li>「<strong>レプリケーション</strong>」<ul>
+<li>クラスタを表示できますが、新しいクラスタを検索すること、リモート サーバを停止または開始すること、および「<strong>クラスタ</strong>」ページから高可用性クラスタの SDS サーバを追加することはできません。</li>
+<li>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) を使用してグリッドを表示することはできますが、グリッドを作成または修正することはできません。グリッドを使用するには、OAT に Informix 11.70 が必要です。</li>
+<li>Replication Plug-in を使用してドメイン、ノード、およびレプリケーションの詳細を表示することはできますが、管理コマンドを実行することはできません。</li>
+<li>Replication Plug-in を使用して、<strong>「接続マネージャ」</strong>で接続単位、サービス レベル アグリーメント (SLA)、およびフェイルオーバー構成を表示することはできますが、管理操作を実行することはできません。接続マネージャを使用するには、IBM OpenAdmin Tool (OAT) for Informix に Informix 11.70.xC3 および Connection Manager (Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 とともにパッケージ化されている) が必要です。</li></ul></li>
+<li><strong>「スキーマ マネージャ」</strong>: Informix Schema Manager Plug-in for OAT を使用してデータベース、表、および関連オブジェクトを表示することはできますが、これらのオブジェクトを作成、変更、または削除することはできません。
+データのロードおよびアンロードはできません。</li></ul></p>
+<h2 id="dqx1ids_oat_070"><a href="#ToC_139">「管理」構成のページへのアクセスの制限</a></h2>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix の「ログイン」ページにアクセスできるすべてのユーザが OAT の「管理」ページにアクセスできるため、「管理」ページへのアクセスを制限することが重要です。これらのページを使用して OAT を構成します (サーバ グループ
+へのアクセスの指定など)。
+</p>
+<p>これらのページへの無許可アクセスを防ぐには、
+次のいずれかまたは両方の方式を使用します。</p></p>
+<ul>
+<li><strong>「必須」</strong>: OAT を構成する「管理」のページをパスワードで保護します。『<a href="#dqx1ids_oat_071">「管理」構成のページに対するパスワード保護の提供: Apache の例</a>』を参照してください。</li>
+<li>「<strong>推奨</strong>」: サーバ グループに対してアクセスを制限します。
+これには、読取り専用グループにおけるものを含みます。『<a href="#dqx1ids_oat_072">読取り専用アクセス権を持つ OAT グループの作成</a>』を参照してください。</li></ul>
+<h2 id="dqx1ids_oat_071"><a href="#ToC_140">「管理」構成のページに対するパスワード保護の提供: Apache の例</a></h2>
+<p>
+<p>セキュリティのために、IBM OpenAdmin Tool (OAT) for Informix の「管理」ページへのアクセスを制限します。「<strong>管理</strong>」のページは、
+「<strong>ログイン</strong>」ページからアクセスでき、したがってすべてのユーザに
+公開されているため、これらのページのパスワード保護が重要です。
+</p>
+<p>これを行う方法の 1 つとして、Web サーバが提供する標準装備の認証機構を使用する
+方法があります。例えば、インストール ディレクトリ <strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong> を保護できます。</p>
+<p><strong>例</strong>: Apache 内から OAT ディレクトリを保護するには、次のようにします。</p></p>
+<p></p>
+<ol type="1">
+<li>Apache に付属の <strong>htpasswd</strong> ユーティリティを使用して、Web からアクセスできない
+ディレクトリにパスワード ファイルを作成します。</li>
+<li>次のいずれかのファイルに認証ディレクティブを追加します。<ul>
+<li><strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong> ファイル</li>
+<li><strong>httpd.conf</strong> ファイル</li></ul></li>
+<li>ディレクティブは、<samp class="xph">&lt;Directory&gt;</samp> セクション内に配置します。次に例を示します。<pre class="xmp"><code>&lt;Directory <em>OATINSTALL</em>/admin&gt;
+AuthType Basic
+AuthName "OAT Admin"
+AuthUserFile <em>PASSWORDFILE</em>
+Require ValidUser
+&lt;/Directory&gt;</code></pre>ここで、<em>PASSWORDFILE</em> は
+、<strong>htpasswd</strong> ユーティリティを使用してパスワード ファイルを作成したディレクトリです。</li></ol>
+<p>
+<p>詳細情報および例については、Apache Software Foundation の Web サイト <a href="http://www.apache.org" target="_blank">www.apache.org (新しいウィンドウで開く)</a> で Apache HTTP サーバ バージョン 2.0 の認証、許可、およびアクセス コントロールに関する記事を参照してください。
+</p></p>
+<h2 id="dqx1ids_oat_052"><a href="#ToC_141">OAT 用 HTTPS の構成 (Linux)</a></h2>
+<div>
+<p>HTTPS を使用すると、IBM OpenAdmin Tool (OAT) for Informix の Web サーバを保護でき、Web サーバでの盗聴、改ざん、メッセージ偽造、およびネットワーク妨害を防ぐことができます。</p></div><a id="idx112"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq420">
+<span class="notetitle">前提条件:</span> <span class="notebody">OAT 用 Apache サーバがインストールされているコンピュータに、OpenSSL をインストールする必要があります。OpenSSL は、OpenSSL Project Web サイト www.openssl.org からダウンロードしインストールできます。</span></div></div>
+<p>HTTPS を有効化すると、OAT クライアントからのメッセージは、暗号化されてから OAT Web サーバに送信されます。暗号化することで、無許可ユーザは、回線越しに聴取して機密情報を盗み出すことができなくなります。HTTPS を有効化すると、OAT クライアントは OAT ホストによる認証も行うことができるようになるため、無許可ユーザが OAT クライアントを欺いて不正な Web サーバを使用することができなくなります。</p>
+<div>
+<div class="note-noindent" id="wq421">
+<span class="notetitle">重要:</span> <span class="notebody">HTTPS では、OAT Web サーバとクライアント間の通信のみが暗号化されます。IBM Informix データベース サーバ
+と Web サーバ間の通信は暗号化されません。
+IBM Informix バージョン 9.4 以降では、暗号通信サポート モジュールを使用して、Informix サーバと OAT Web サーバ間のデータを暗号化できます。暗号化と Informix サーバの詳細については、developerWorks&reg; の Web サイトで『Encryption over the wire with IDS 9.40』を参照してください。</span></div></div>
+<p>IBM Informix Client Software Development Kit (Client SDK) とともに OAT をインストールした場合は、インストール プログラムによって、OAT を実行するために必要なソフトウェア (事前構成された Apache、PHP、PDO_informix など) が提供されます。Linux では、OAT とともにインストールされた Apache Web サーバは、<strong>mod_ssl</strong> 暗号化モジュール対応のサーバです。このモジュールは、HTTPS を有効化するために必要です。</p>
+<p>Linux 上の OAT で HTTPS を有効化するには、以下の手順を実行します。
+</p>
+<ol type="1">
+<li>OAT クライアントがユーザ独自の証明書に基づいて Web サーバを認証できるようにするため、Web サーバの暗号化キーおよび証明書を作成します。
+</li>
+<li>HTTPS を有効化するように Apache を構成します。</li></ol><p class="indatacontent">HTTPS の有効化の詳細については、developerWorks Web サイトで『Securing the OpenAdmin Tool for Informix web server with HTTPS』を参照してください。</p>
+<p>
+<h3 id="wq423">暗号化キーの作成</h3>
+<p>キーは暗号化と暗号解読で使用されます。キーは通常、パブリック キーとプライベート キーのペアになっています。パブリック キーはメッセージの暗号化に使用され、プライベート キーはメッセージの暗号解読に使用されます。証明書は、Web サーバを認証する文書です。HTTPS 対応の Web サーバには、信頼できる認証局の署名が付いた証明書があり、これによって Web サーバが検証されます。Web サーバが HTTPS 対応になったら、クライアントは、Web サーバに対して標準接続とセキュア接続のどちらを確立するかを選択します。標準接続を確立する場合は、クライアントは Web ブラウザに <samp>http://<em>web server_url</em></samp> と入力します。セキュア接続を確立する場合は、クライアントは <samp>https://<em>web server_url</em></samp> と入力します。</p>
+<p>プライベート キーとパブリック キーのペアおよび証明書を生成するには、OpenSSL のインストール先の bin ディレクトリに含まれている <samp>openssl</samp> 実行可能ファイルを使用します。</p>
+<p>このコマンドを実行してプライベート キーを生成すると、プライベート キーを保護するためのパスフレーズ (パスワード) を入力するように求められます。プライベート キーの使用が求められるコマンドを実行するときには必ず、このパスフレーズを再入力する必要があります。例えば、Apache Web サーバを起動するとき、またはプライベート キーを使用して証明書を生成するときに、パスフレーズを入力する必要があります。Linux では、セキュリティ上の理由から、パスフレーズを使用して、プライベート キーを保護し暗号化します。</p>
+<p>プライベート キーを生成するには、OpenSSL がインストールされているコンピュータで次のコマンドを実行します。</p></p>
+<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre>
+<p>プライベート キーが <strong>privkey.pem</strong> ファイル内に作成されます。
+このファイルには Web サーバの暗号解読キーが含まれているため、安全な場所に保管してください。証明書を生成するときには、関連付けられたパブリック キーを生成するために、このファイルが使用されます。パブリック キーは証明書に組み込まれます。</p>
+<p>
+<h3 id="wq424">証明書の作成</h3>
+<p>プライベート キーを作成したら、Web サーバの ID を認証するための証明書を作成します。証明書を生成するには、証明書署名要求を作成し、その要求を信頼できる認証局に送信します。その認証局から証明書が発行されます。</p>
+<p>証明書署名要求を生成するには、次のコマンドを実行します。</p>
+<pre class="xmp"><code>openssl req -new -key privkey.pem -out cert.csr</code></pre>
+<p>証明書署名要求の詳細については、認証局に問い合わせてください。</p>
+<p>また、認証局を利用せずに自己署名証明書を作成することもできます。ただし、自己署名証明書は推奨されません。</p>
+<p>自己署名証明書を生成するには、次のコマンドを実行します。</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL から、情報を入力するように求められます。証明書は <samp>cacert.pem</samp> ファイルに保管されます。
+このファイルは、ID を検証するために Web クライアントに向けて表示されます。このファイルには、Web クライアントのパブリック キーが含まれているため、通信を暗号化できます。</p>
+<p>暗号化キーの詳細については、OpenSSL の資料を参照してください。</p></p>
+<p>
+<h3 id="wq425">HTTPS を有効化するための Apache の構成</h3>
+<p>HTTPS を有効化するには、Apache 構成ファイルおよび Apache SSL 構成ファイルを更新します。</p></p>
+<ol type="1">
+<li>Apache 構成ファイルを見つけ出します。パスには、以下の例のように、Apache のバージョンが含まれています。
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/httpd.conf</code></pre></li>
+<li>Apache 構成ファイルで、<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp> という行からコメントを削除します。
+<p>この行は、デフォルトでコメント化されています。このコメントを削除すると、Apache SSL 構成ファイルが <samp>httpd.conf</samp> ファイルに組み込まれます。</p></li>
+<li>Apache SSL 構成ファイルを見つけ出します。パスには、以下の例のように、Apache のバージョンが含まれています。
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>Apache SSL 構成ファイルで、SSL ポート番号が使用可能なポートに設定されていることを確認します。
+<p>HTTPS には個別の SSL ポートが必要です。デフォルトでは、SSL ポート番号は 443 に設定されます。このポートが使用不可である場合は、<strong>Listen</strong> ディレクティブおよび仮想ホスト セクションで SSL ポートを変更します。</p></li>
+<li>Apache SSL 構成ファイルで、<strong>SSLCertificateKeyFile</strong> ディレクティブが、作成したプライベート キー ファイル (<samp>privkey.pem</samp>) の正しい場所を示していることを確認します。</li>
+<li><strong>SSLCertificateFile</strong> ディレクティブが、作成した証明書ファイル (<samp>cacert.pem</samp>) の正しい場所を示していることを確認します。</li>
+<li>オプション: Web サーバが受け入れる暗号を制御するには、<strong>SSLCipherSuite</strong> ディレクティブを編集します。<strong>SSLCipherSuite</strong> ディレクティブについては、Apache <strong>mod_ssl</strong> の資料を参照してください。</li></ol>
+<p>HTTPS 構成の詳細については、Apache Web サイト www.apache.org を参照してください。</p>
+<p>
+<h3 id="wq427">構成のテスト</h3>
+<p>HTTPS の変更を有効にするには、Web サーバを再起動する必要があります。Web サーバを再起動するため、OAT のインストール先のディレクトリに含まれている <strong>StopApache</strong> スクリプトを実行してから、<strong>StartApache</strong> スクリプトを実行します。パスフレーズを入力するように求められます。これを入力しないと、Web サーバを起動できません。</p>
+<p>Web サーバを再起動したら、Web ブラウザに URL <samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp> を入力して OAT を開きます。
+OAT ログイン ページが表示される前に、OAT Web サーバの証明書を表示して受け入れるように求められます。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連情報</strong>:</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1dt2mg202"><a href="#ToC_146">OAT 用 HTTPS の構成 (Windows)</a></h2>
+<div>
+<p>HTTPS を使用すると、IBM OpenAdmin Tool (OAT) for Informix の Web サーバを保護でき、Web サーバでの盗聴、改ざん、メッセージ偽造、およびネットワーク妨害を防ぐことができます。</p></div><a id="idx113"></a>
+<p>
+<p>HTTPS を有効化すると、OAT クライアントからのメッセージは、暗号化されてから OAT Web サーバに送信されます。暗号化することで、無許可ユーザは、回線越しに聴取して機密情報を盗み出すことができなくなります。HTTPS を有効化すると、OAT クライアントは OAT ホストによる認証も行うことができるようになるため、無許可ユーザが OAT クライアントを欺いて不正な Web サーバを使用することができなくなります。</p></p>
+<div>
+<div class="note-noindent" id="wq429">
+<span class="notetitle">重要:</span> <span class="notebody">HTTPS では、OAT Web サーバとクライアント間の通信のみが暗号化されます。IBM Informix データベース サーバ
+と Web サーバ間の通信は暗号化されません。
+IBM Informix バージョン 9.4 以降では、暗号通信サポート モジュールを使用して、Informix サーバと OAT Web サーバ間のデータを暗号化できます。暗号化と Informix サーバの詳細については、developerWorks の Web サイトで『Encryption over the wire with IDS 9.40』を参照してください。</span></div></div>
+<p>IBM Informix Client Software Development Kit (Client SDK) とともに OAT をインストールした場合は、インストール プログラムによって、OAT を実行するために必要なソフトウェア (事前構成された Apache、PHP、PDO_informix など) が提供されます。Windows では、OAT とともにインストールされた Apache Web サーバを、<strong>mod_ssl</strong> モジュール対応の Apache Web サーバに置き換える必要があります。このモジュールは、HTTPS を有効化するために必要です。</p>
+<p>Windows 上の OAT で HTTPS を有効化するには、以下の手順を実行します。
+</p>
+<ol type="1">
+<li>OAT とともにインストールされた Apache Web サーバを、<strong>mod_ssl</strong> 暗号化モジュール対応の Apache Web サーバに置き換えます。</li>
+<li>OAT クライアントがユーザ独自の証明書に基づいて Web サーバを認証できるようにするため、Web サーバの暗号化キーおよび証明書を作成します。
+</li>
+<li>HTTPS を有効化するように Apache を構成します。</li></ol><p class="indatacontent">HTTPS の有効化の詳細については、developerWorks Web サイトで『Securing the OpenAdmin Tool for Informix web server with HTTPS』を参照してください。</p>
+<p>
+<h3 id="wq431">OAT Apache Web サーバの置換</h3>
+<p>OAT Apache Web サーバを置き換えるには、次のようにします。</p></p>
+<ol type="1">
+<li>Apache Web サイト httpd.apache.org から Apache HTTP Server をダウンロードします。
+OpenSSL 0.9.8t (MSI インストーラ) が含まれている Win32 Binary の Apache 2.2.x バージョン (使用可能な最新版) を選択します。</li>
+<li>OAT Apache Web サーバを停止します。<strong>「スタート」</strong>メニューに、OAT のメニュー項目<strong>「IBM OpenAdmin Tool for Informix」</strong>があります。そこから OAT Apache Web サーバを停止するには、<strong>「Apache Service for OpenAdmin Tool の停止 (Stop Apache Service for OpenAdmin Tool)」</strong>をクリックします。さらに、システム トレイで Apache Monitor が実行されていないことを確認します。</li>
+<li>OAT の <samp>Apache_2.2.22</samp> ディレクトリの名前を <samp>Apache_2.2.22_noSSL</samp> に変更して、Apache バイナリ ファイルのバックアップ コピーを作成します。この Apache ディレクトリ内の構成ファイルの一部を、後述の手順で使用します。</li>
+<li>Apache MSI インストーラを実行します。標準インストールを実行し、インストール ディレクトリを <em>/oat/installation/directory/</em><samp>Apache_2.2.22</samp> に設定します。
+<div>
+<div class="note-noindent" id="wq433">
+<span class="notetitle">重要:</span> <span class="notebody">2.2.22 より新しいバージョンの Apache をインストールする場合でも、ディレクトリ名を <samp>Apache_2.2.22</samp> にします。OAT のインストールとそのサービスが、ディレクトリ名 <samp>Apache_2.2.22</samp> を使用するように構成されています。
+これらは、新しい Apache インストールのディレクトリ名が異なる場合は機能しません。</span></div></div></li>
+<li>Apache 構成ファイル <em>/oat/installation/directory/</em><samp class="xph">Apache_2.2.22/conf/httpd.conf</samp> を編集します。
+この <samp>httpd.conf</samp> ファイルに以下の行を追加するか、またはコメントを外します。
+<pre class="xmp"><code>LoadModule php5_module
+"<em>c:\oat\installation\dir</em>\PHP_5.2.4\php5apache2_2.dll"
+LoadModule ssl_module modules/mod_ssl.so
+AddType application/x-httpd-php .php
+PhpIniDir '<em>c:\oat\installation\dir</em>\PHP_5.2.4'</code></pre></li>
+<li><samp>httpd.conf</samp> ファイルで、<samp class="xph">Listen 80</samp> (または <samp class="xph">Listen 8080</samp>) という行を更新します。
+この行は、OAT Web サーバのポート番号を示しています。80 または 8080 を、OAT とともにインストールされた元の OAT Apache Web サーバと同じポート番号に置き換えます。</li>
+<li><samp>httpd.conf</samp> ファイルで、<samp class="xph">ServerName www.example.com:80</samp> という行を更新します。この行は、サーバがそれ自体を識別するために使用する名前とポートを示しています。この行を、元の OAT Apache 構成ファイル <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf の <samp class="xph">ServerName</samp> 行全体に置き換えます。</li>
+<li><samp>httpd.conf</samp> ファイルで、<samp class="xph">DirectoryIndex index.html</samp> という行を更新します。この行は、ディレクトリが要求された場合に Apache から提供されるファイルを設定します。この行を <samp class="xph">DirectoryIndex index.html index.php</samp> に変更します。</li>
+<li>元の OAT Apache 構成ファイル <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf で、<samp class="xph">setenv INFORMIXDIR</samp> という行を見つけ出します。この行は、OAT の Apache 環境の INFORMIXDIR 変数を設定します。新しい Apache Web サーバの変数を設定するには、この行を新しい Apache Web サーバの <samp>httpd.conf</samp> ファイルにコピーします。このファイルの終わりに行を追加できます。</li>
+<li><em>c:\oat\installation\dir\</em><samp>Apache_2.2.22_noSSL\htdocs\openadmin\</samp> ディレクトリ全体を <em>c:\oat\installation\dir\</em><samp>Apache_2.2.22\htdocs\openadmin\</samp> にコピーします。
+すべての OAT ソース コードがこのディレクトリに含まれています。</li>
+<li>コマンド プロンプトで以下のコマンドを実行して、PHP Apache ハンドラおよび <strong>mod_ssl</strong> モジュールが正常にロードされていることを確認します。
+<pre class="xmp"><code>cd <em>c:\oat\installation\dir\</em>Apache_2.2.22\bin\
+httpd.exe &ndash;M</code></pre>このコマンドにより、Apache モジュールのリストが表示されます。
+<strong>php5_module</strong> および <strong>ssl_module</strong> がリストに含まれていることを確認します。
+これで、新しい Web サーバが OAT 用に正しくセットアップされていることを確認できました。</li>
+<li><strong>「スタート」</strong>メニューで<strong>「IBM OpenAdmin Tool for Informix」</strong>をクリックしてから、<strong>「Apache Service for OpenAdmin Tool の停止 (Start Apache Service for OpenAdmin Tool)」</strong>をクリックします。Web ブラウザを使用して OAT にアクセスできます。Web サーバは <strong>mod_ssl</strong> 対応ですが、HTTPS はまだオンに切り替えられていません。</li></ol>
+<p>
+<h3 id="wq434">暗号化キーの作成</h3>
+<p>キーは暗号化と暗号解読で使用されます。キーは通常、パブリック キーとプライベート キーのペアになっています。パブリック キーはメッセージの暗号化に使用され、プライベート キーはメッセージの暗号解読に使用されます。証明書は、Web サーバを認証する文書です。HTTPS 対応の Web サーバには、信頼できる認証局の署名が付いた証明書があり、これによって Web サーバが検証されます。Web サーバが HTTPS 対応になったら、クライアントは、Web サーバに対して標準接続とセキュア接続のどちらを確立するかを選択します。標準接続を確立する場合は、クライアントは Web ブラウザに <samp>http://<em>web server_url</em></samp> と入力します。セキュア接続を確立する場合は、クライアントは <samp>https://<em>web server_url</em></samp> と入力します。</p>
+<p>プライベート キーとパブリック キーのペアおよび証明書を生成するには、新しい Apache Web サーバーのインストール先の <samp>bin</samp> ディレクトリに含まれている <samp>openssl</samp> 実行可能ファイルを使用します。</p>
+<p>このコマンドを実行してプライベート キーを生成すると、プライベート キーを保護するためのパスフレーズ (パスワード) を入力するように求められます。Windows では、Apache はプライベート キーのパスフレーズをサポートしていないため、以下のステップで説明しているようにパスフレーズを削除する必要があります。</p>
+<p>プライベート キーを作成するには、次のようにします。</p></p>
+<ol type="1">
+<li>プライベート キーを生成するには、新しい Apache Web サーバがインストールされているコンピュータで次のコマンドを実行します。<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre></li>
+<li>パスフレーズを削除するには、次のコマンドを実行します。
+<pre class="xmp"><code>openssl rsa -in privkey.pem -out privkey_nopassphrase.pem</code></pre></li></ol>
+<p><samp>privkey_nopassphrase.pem</samp> ファイル内に、暗号化されていないプライベート キーが作成されます。
+このファイルには暗号化されていない形式のプライベート キーが含まれているため、安全な場所に保管してください。証明書を生成するときには、関連付けられたパブリック キーを生成するために、このファイルが使用されます。パブリック キーは証明書に組み込まれます。</p>
+<p>
+<h3 id="wq436">証明書の作成</h3>
+<p>プライベート キーを作成したら、Web サーバの ID を認証するための証明書を作成します。証明書を作成するには、証明書署名要求を生成し、その要求を信頼できる認証局に送信します。その認証局から証明書が発行されます。</p>
+<p>証明書署名要求を生成するには、次のコマンドを実行します。</p>
+<pre class="xmp"><code>openssl req -new -key privkey_nopassphrase.pem -out cert.csr</code></pre>
+<p>証明書署名要求の詳細については、認証局に問い合わせてください。</p>
+<p>また、認証局を利用せずに自己署名証明書を作成することもできます。ただし、自己署名証明書は推奨されません。</p>
+<p>自己署名証明書を生成するには、次のコマンドを実行します。</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey_nopassphrase.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL から、情報を入力するように求められます。証明書は <samp>cacert.pem</samp> ファイルに保管されます。
+このファイルは、ID を検証するために Web クライアントに向けて表示されます。このファイルには、Web クライアントのパブリック キーが含まれているため、通信を暗号化できます。</p>
+<p>暗号化キーの詳細については、OpenSSL の資料を参照してください。</p></p>
+<p>
+<h3 id="wq437">HTTPS を有効化するための Apache の構成</h3>
+<p>HTTPS を有効化するには、Apache 構成ファイルおよび Apache SSL 構成ファイルを更新します。</p></p>
+<ol type="1">
+<li>Apache 構成ファイルを見つけ出します。パスには、以下の例のように、Apache のバージョンが含まれています。
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/httpd.conf</code></pre></li>
+<li>Apache 構成ファイルで、<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp> という行からコメントを削除します。
+<p>この行は、デフォルトでコメント化されています。このコメントを削除すると、Apache SSL 構成ファイルが <samp>httpd.conf</samp> ファイルに組み込まれます。</p></li>
+<li>Apache SSL 構成ファイルを見つけ出します。パスには、以下の例のように、Apache のバージョンが含まれています。
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>Apache SSL 構成ファイルで、SSL ポート番号が使用可能なポートに設定されていることを確認します。
+<p>HTTPS には個別の SSL ポートが必要です。デフォルトでは、SSL ポート番号は 443 に設定されます。このポートが使用不可である場合は、<strong>Listen</strong> ディレクティブおよび仮想ホスト セクションで SSL ポートを変更します。</p></li>
+<li>Apache SSL 構成ファイルで、<strong>SSLCertificateKeyFile</strong> ディレクティブが、作成したプライベート キー ファイル (<samp>privkey_nopassphrase.pem</samp>) の正しい場所を示していることを確認します。</li>
+<li><strong>SSLCertificateFile</strong> ディレクティブが、作成した証明書ファイル (<samp>cacert.pem</samp>) の正しい場所を示していることを確認します。</li>
+<li>オプション: Web サーバが受け入れる暗号を制御するには、<strong>SSLCipherSuite</strong> ディレクティブを編集します。<strong>SSLCipherSuite</strong> ディレクティブについては、Apache <strong>mod_ssl</strong> の資料を参照してください。</li></ol>
+<p>HTTPS 構成の詳細については、Apache Web サイト www.apache.org を参照してください。</p>
+<p>
+<h3 id="wq439">構成のテスト</h3>
+<p>HTTPS の変更を有効にするには、Web サーバを再起動する必要があります。<samp>apachemonitor.exe</samp> または<strong>「スタート」</strong>メニューのショートカットを使用して、Web サーバを再起動します。</p>
+<p>Web サーバを再起動したら、Web ブラウザに URL <samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp> を入力して OAT を開きます。
+OAT ログイン ページが表示される前に、OAT Web サーバの証明書を表示して受け入れるように求められます。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連情報</strong>:</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1ids_oat_053"><a href="#ToC_152">SQL Toolbox のパスワード保護の無効化または有効化</a></h2>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 2.22 以降には、SQL Toolbox の自動パスワード保護が備わっています。SQL Toolbox に接続するときは、有効なユーザ ID およびパスワード
+を指定する必要があります。</p></p>
+<div>
+<div class="note-noindent" id="wq441">
+<span class="notetitle">前提条件:</span> <span class="notebody">SQL Toolbox のパスワード保護を無効化または有効化するには、OAT の「管理」構成ページにアクセスできる必要があります。このページもパスワードで保護できます。</span></div></div>
+<div>
+<div class="note-noindent" id="wq442">
+<span class="notetitle">重要:</span> <span class="notebody">セキュリティのため、「管理」構成ページをパスワードで保護してください。詳細については、『<a href="#dqx1ids_oat_071">「管理」構成のページに対するパスワード保護の提供: Apache の例</a>』を参照してください。</span></div></div>
+<p>パスワード保護を無効化するには、次のようにします。</p>
+<p></p>
+<ol type="1">
+<li>OAT の<strong>「管理」</strong>メニューで<strong>「OAT 構成」</strong>をクリックします。</li>
+<li>「<strong>SQL Toolbox を使用するときにログイン クリデンシャルを要求するedentials when using
+SQL Toolbox)</strong>」をクリアします。</li>
+<li>「<strong>保存</strong>」をクリックして変更を保存します。</li>
+<li>パスワード保護を再度有効にするには、「<strong>SQL Toolbox を使用するときにログイン クリデンシャルを要求するedentials when using
+SQL Toolbox)</strong>」を選択し、「<strong>保存</strong>」をクリックします。</li></ol>
+<h1 id="dqx1ids_oat_054"><a href="#ToC_153">OAT 用プラグインの管理方法</a></h1>
+<h2 id="dqx1ids_oat_000"><a href="#ToC_154">OAT 用プラグインのインストール</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のプラグインをインストールします。</p></div><a id="idx114"></a><a id="idx115"></a>
+<p>
+<p>OAT のインストール パッケージには、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT)、IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT)、および IBM Informix TimeSeries Plug-in for OpenAdmin Tool (OAT) が含まれています。
+これらのプラグインは、OAT とともに自動的にインストールされ、インストール中に有効化できます。</p></p>
+<div>
+<div class="note-noindent" id="wq446">
+<span class="notetitle">重要:</span> <span class="notebody">プラグインがインストールされると、プラグイン圧縮ファイルが削除されます。プラグインをアンインストールしたら、プラグイン圧縮ファイルをプラグイン ディレクトリにリストアしない限り、再インストールできません。</span>
+</div></div>
+<p>
+<p>OAT のプラグインをインストールするには、次のようにします。</p></p>
+<ol type="1">
+<li>圧縮プラグイン ファイルを、<samp><em>OATDirectory</em>/plugin_install</samp> にコピーします。例: <samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp></li>
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」メニューで、「<strong>プラグイン マネージャ
+</strong>」をクリックします。</li>
+<li><strong>「インストールされていないプラグイン」</strong>リストで、プラグインを含んでいる行の<strong>「インストール」</strong>をクリックします。
+
+
+<p>プラグインは、<strong>「インストールされているプラグイン」</strong>リストに表示され、デフォルトで有効になっています。プラグイン メニュー項目が、OAT メニューに表示されます。OAT メニューのプラグイン メニュー項目の位置を変更するには、<strong>「メニュー マネージャ」</strong>ページへ移動します。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連するタスク</strong>:</li>
+<li><a href="#dqx1ids_oat_060">OAT のメイン メニューのカスタマイズ方法</a>
+<br />IBM OpenAdmin Tool (OAT) for Informix のメニュー項目の順序を削除、復元、または変更します。</li></ul>
+<h2 id="dqx1ids_oat_150"><a href="#ToC_155">OAT 用プラグインの有効化</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のプラグインを有効化します。</p></div><a id="idx116"></a><a id="idx117"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq450">
+<span class="notetitle">前提条件:</span> <span class="notebody">プラグインをインストールしてからでないと、有効化できません。
+『<a href="#dqx1ids_oat_000">OAT 用プラグインのインストール</a>』を参照してください。</span></div></div>
+<p>
+<p>OAT 用のプラグインを有効化するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」メニューで、「<strong>プラグイン マネージャ
+</strong>」をクリックします。</li>
+<li>「<strong>インストール済みプラグイン</strong>」リストで、プラグインが含まれている行の「<strong>有効</strong>」チェック ボックスを選択します。</li></ol>
+<h2 id="dqx1ids_oat_115"><a href="#ToC_156">OAT 用プラグインのアップグレード</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のプラグインをアップグレードします。</p></div><a id="idx118"></a><a id="idx119"></a>
+<p>
+<p>OAT のプラグインをアップグレードするには、次のようにします。</p></p>
+<ol type="1">
+<li>圧縮プラグイン ファイルを、<samp><em>OATDirectory</em>/plugin_install</samp> にコピーします。例: <samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp></li>
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」メニューで、「<strong>プラグイン マネージャ
+</strong>」をクリックします。</li>
+<li><strong>「インストールされていないプラグイン」</strong>リストで、プラグインを含んでいる行の<strong>「アップグレード」</strong>をクリックします。
+前のバージョンのプラグインは、新規バージョンのプラグインで上書きされます。
+更新後バージョンのプラグインが<strong>「インストールされているプラグイン」</strong>リストに表示され、デフォルトで有効になっています。</li></ol>
+<h2 id="dqx1ids_oat_116"><a href="#ToC_157">OAT 用プラグインの無効化</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のプラグインを無効化します。</p></div><a id="idx120"></a><a id="idx121"></a>
+<p>
+<p>OAT 用のプラグインを無効化するには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」メニューで、「<strong>プラグイン マネージャ
+</strong>」をクリックします。</li>
+<li><strong>「インストールされているプラグイン」</strong>リストで、プラグインを含んでいる行の<strong>「有効化 (Enabled)」</strong>チェック ボックスをクリアします。</li></ol>
+<p>
+<p>プラグインはインストールされたままです。再び有効化することができます。</p></p>
+<h2 id="dqx1ids_oat_149"><a href="#ToC_158">OAT 用プラグインのアンインストール</a></h2>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のプラグインをアンインストールします。</p></div><a id="idx122"></a><a id="idx123"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq459">
+<span class="notetitle">重要:</span> <span class="notebody">プラグインがインストールされると、プラグイン圧縮ファイルが削除されます。プラグインをアンインストールしたら、プラグイン圧縮ファイルをプラグイン ディレクトリにリストアしない限り、再インストールできません。</span>
+</div></div>
+<p>
+<p>OAT のプラグインをアンインストールするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li>「<strong>管理</strong>」メニューで、「<strong>プラグイン マネージャ
+</strong>」をクリックします。</li>
+<li>「<strong>インストール済みプラグイン</strong>」リストで、プラグインが含まれている行の「<strong>アンインストール</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oat_151"><a href="#ToC_159">idsadmin クラス関数</a></h2>
+<div>
+<p><strong><samp>idsadmin</samp></strong> クラスは、IBM OpenAdmin Tool (OAT) for Informix 用プラグインの基本関数 (データベース接続の作成、言語ファイルのロード、出力の HTML 形式へのレンダリングなど) のライブラリを提供します。
+</p></div>
+<p><strong><samp>idsadmin</samp></strong> オブジェクトは各モジュールへ、モジュールのコンストラクタのパラメータとして渡されます。
+</p>
+<h3 id="dqx1ids_oat_152"><a href="#ToC_160">isreadonly 関数</a></h3>
+<div>
+<p><strong><samp>isreadonly </samp></strong> は、ユーザが読取り専用グループでログインしたかどうかを示します。
+この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx124"></a><a id="idx125"></a><a id="idx126"></a>
+<p>
+<h4 id="wq462">構文
+</h4></p>
+<pre class="xmp"><code>isreadonly ()</code></pre>
+<p>
+<h4 id="wq463">使用法
+</h4>
+<p><strong><samp>isreadonly</samp></strong> 関数は、ユーザが、読取り専用アクセス権を持つグループを使用して OAT へログインしたかどうかを判別するために使用します。
+ユーザが OAT の何にアクセスできるか、またそのユーザに何が使用可能になるかを判別するために、この情報を使用できます。
+</p></p>
+<p>
+<h4 id="wq464">戻り値
+</h4>
+<p>戻り値が true の場合、それはそのユーザが読取り専用のアクセス権を持つグループでログインしたことを示します。
+</p>
+<p>戻り値が false の場合、それはそのユーザが読取り専用の制限のないアクセス権を持つグループでログインしたことを示します。
+</p></p>
+<p>
+<h4 id="wq465">例
+</h4>
+<p>この例では、ユーザが読取り専用の場合、エラーが戻され、メッセージが表示されます。
+この例では、<samp class="xph">PermissionRequired</samp> は言語キーワードであり、メッセージ本体ではありません。
+</p></p>
+<pre class="xmp"><code>if ( $this-&gt;idsadmin-&gt;isreadonly() )
+{
+    $this-&gt;idsadmin-&gt;fatal_error($this-&gt;idsadmin-&gt;lang("PermissionRequired"));
+    return;         
+}</code></pre>
+<h3 id="dqx1ids_oat_153"><a href="#ToC_165">get_database 関数</a></h3>
+<div>
+<p><strong><samp>get_database</samp></strong> 関数は、データベース サーバ上のデータベースへの接続を確立します。
+この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx127"></a><a id="idx128"></a><a id="idx129"></a>
+<p>
+<h4 id="wq466">構文
+</h4></p>
+<pre class="xmp"><code>get_database($dbname="sysmaster",$use_user=false)</code></pre>
+<table id="wq467" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq468" width="20%" align="left">変数</th>
+<th id="wq469" width="39%" align="left">内容</th>
+<th id="wq470" width="40%" align="left">制約事項
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq468"><em>dbname</em></td>
+<td headers="wq469">データベース名です。</td>
+<td headers="wq470">オプション。デフォルト値は <samp class="xph">sysmaster</samp> です。</td>
+</tr>
+<tr>
+<td headers="wq468"><em>use_user</em></td>
+<td headers="wq469">データベースへ接続するために SQL ToolBox ユーザを使用するかどうかの標識です。
+SQL ToolBox を使用している場合は、値を true に設定します。</td>
+<td headers="wq470">オプション。デフォルトは <samp class="xph">false</samp> です。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq471">戻り値
+</h4>
+<p>戻り値は PDO データベース接続です。</p></p>
+<p>
+<h4 id="wq472">例
+</h4>
+<p>この例は <strong><samp>sysmaster</samp></strong> データベースへの接続を確立します。</p></p>
+<pre class="xmp"><code> $db = $this-&gt;idsadmin-&gt;get_database("sysmaster");</code></pre>
+<h3 id="dqx1ids_oat_154"><a href="#ToC_169">load_lang 関数</a></h3>
+<div>
+<p><strong><samp>load_lang</samp></strong> 関数は、モジュール用の言語ファイルを <strong><samp>idsadmin</samp></strong> 言語配列へロードします。この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p>
+<h4 id="wq473">構文
+</h4></p>
+<pre class="xmp"><code>load_lang($keyword)</code></pre>
+<table id="wq474" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq475" width="20%" align="left">変数</th>
+<th id="wq476" width="39%" align="left">内容</th>
+<th id="wq477" width="40%" align="left">制約事項
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq475"><em>keyword</em></td>
+<td headers="wq476">モジュールにロードする言語ファイルを指定するキーワードです。
+慣例により、このキーワードは、モジュールの act キーワードと同じです。
+言語ファイルにはモジュールのテキスト ストリングが入っています。
+</td>
+<td headers="wq477"></td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq478">使用法
+</h4>
+<p><strong><samp>load_lang</samp></strong> 関数は <samp>lang_<em>keyword</em>.xml</samp>、例えば、<samp>lang_admin.xml</samp> または <samp>lang_health.xml</samp> をロードします。
+<strong><samp>load_lang</samp></strong> 関数は通常、モジュールのクラス コンストラクタの一部として呼び出されます。
+</p></p>
+<p>
+<h4 id="wq479">例
+</h4>
+<p>この例で、クラス コンストラクタは health モジュールの言語ファイルをロードします。</p></p>
+<pre class="xmp"><code>function __construct(&amp;$idsadmin)
+{
+        $this-&gt;idsadmin = &amp;$idsadmin;
+
+        $this-&gt;idsadmin-&gt;load_lang("health");
+}</code></pre>
+<h3 id="dqx1ids_oat_155"><a href="#ToC_173">lang 関数</a></h3>
+<div>
+<p><strong><samp>lang</samp></strong> 関数は、現行の言語で特定のメッセージを戻します。
+この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p>
+<h4 id="wq480">構文
+</h4></p>
+<pre class="xmp"><code>lang($item, $parameters=array())</code></pre>
+<table id="wq481" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq482" width="20%" align="left">変数</th>
+<th id="wq483" width="39%" align="left">内容</th>
+<th id="wq484" width="40%" align="left">制約事項
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq482"><em>item</em></td>
+<td headers="wq483">現行の言語で戻されるテキスト ストリングの名前です。
+</td>
+<td headers="wq484"></td>
+</tr>
+<tr>
+<td headers="wq482"><em>parameters</em></td>
+<td headers="wq483">パラメータの配列です。パラメータが "{0}"、"{1}"、"{2}" などに置き換えられます。</td>
+<td headers="wq484">オプション。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq485">使用法
+</h4>
+<p><strong><samp>lang</samp></strong> 関数は、ロードされた言語ファイルから特定のメッセージを検索します。
+現行の言語が英語ではなく、指定されたメッセージが見つからない場合、メッセージは英語で戻されます。
+メッセージが英語で使用できない場合は、エラーが戻されます。
+</p></p>
+<p>
+<h4 id="wq486">例</h4>
+<p>この例は、項目 <samp class="xph">taskdetailssaved</samp> のテキストを現行の言語で検索し、状況メッセージとして出力します。
+</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("taskdetailssaved"));</code></pre>
+<p>言語ファイルに含まれるモジュールの項目は、この例で示されているように英語です。
+</p>
+<pre class="xmp"><code>&lt;taskdetailssaved&gt;&lt;![CDATA[Task details saved successfully.]]&gt;&lt;/taskdetailssaved&gt;</code></pre>
+<p>この例では、OAT の<strong>「ヘルス センタ」</strong>&gt;<strong>「アラート」</strong>ページのブラウザ ページ タイトルを設定します。
+</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("alerts") );</code></pre>
+<p>これは、英語およびスペイン語の言語ファイルからの、モジュール用の言語ファイルの項目です。
+</p>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alerts]]&gt;&lt;/alerts&gt;</code></pre>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alertas]]&gt;&lt;/alerts&gt;</code></pre>
+<h3 id="dqx1ids_oat_177"><a href="#ToC_177">error 関数</a></h3>
+<div>
+<p><strong><samp>error</samp></strong> 関数は、エラー アイコンとともにメッセージを表示します。この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx136"></a><a id="idx137"></a>
+<p>
+<h4 id="wq487">構文
+</h4></p>
+<pre class="xmp"><code>error($msg="")</code></pre>
+<table id="wq488" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq489" width="34%" align="left">変数</th>
+<th id="wq490" width="65%" align="left">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq489"><em>msg</em></td>
+<td headers="wq490">エラー メッセージ。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq491">使用法
+</h4>
+<p><strong><samp>idsadmin</samp></strong> クラスには、メッセージを表示する関数が含まれています。<strong><samp>error</samp></strong> 関数は、エラー アイコンとともにメッセージを表示するため、エラー メッセージに適しています。</p></p>
+<p>
+<h4 id="wq492">例
+</h4>
+<p>この例では、保存操作が失敗したことを示すメッセージを表示します。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error("Save failed: ");</code></pre>
+<p>以下の例では、メッセージをローカライズするために、言語関数を使用しています。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error($this-&gt;idsadmin-&gt;lang("save_failed"));</code></pre>
+<p>これは、モジュール用言語ファイル (英語版言語ファイル) の項目です。
+</p>
+<pre class="xmp"><code>&lt;save_failed&gt;&lt;![CDATA[Save failed: ]]&gt;&lt;/save_failed&gt;</code></pre>
+<h3 id="dqx1ids_oat_178"><a href="#ToC_181">status 関数</a></h3>
+<div>
+<p><strong><samp>status</samp></strong> 関数は、メッセージを表示します。この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx138"></a><a id="idx139"></a>
+<p>
+<h4 id="wq493">構文
+</h4></p>
+<pre class="xmp"><code>status($msg="")</code></pre>
+<table id="wq494" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq495" width="34%" align="left">変数</th>
+<th id="wq496" width="65%" align="left">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq495"><em>msg</em></td>
+<td headers="wq496">メッセージ。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq497">例
+</h4>
+<p>この例では、保存操作が成功したことを示すメッセージを表示します。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("The changes to the email program were saved."));</code></pre>
+<p>以下の例では、メッセージをローカライズするために、言語関数を使用しています。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("saved_email"));</code></pre>
+<p>これは、モジュール用言語ファイル (英語版言語ファイル) の項目です。
+</p>
+<pre class="xmp"><code>&lt;saved_email&gt;&lt;![CDATA[The changes to the email program were saved.]]&gt;&lt;/saved_email&gt;</code></pre>
+<h3 id="dqx1ids_oat_179"><a href="#ToC_184">format_units 関数</a></h3>
+<div>
+<p><strong><samp>format_units</samp></strong> 関数は、整数バイト値を最適な可読形式 (例えば、KB、MB、GB) で形式設定します。この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx140"></a><a id="idx141"></a>
+<p>
+<h4 id="wq498">構文
+</h4></p>
+<pre class="xmp"><code>format_units($value,$prec=2 )</code></pre>
+<table id="wq499" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq500" width="20%" align="left">変数</th>
+<th id="wq501" width="39%" align="left">内容</th>
+<th id="wq502" width="39%" align="left">制約事項
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq500"><em>value</em></td>
+<td headers="wq501">バイト単位の整数値。</td>
+<td headers="wq502">整数である必要があります。</td>
+</tr>
+<tr>
+<td headers="wq500"><em>prec</em></td>
+<td headers="wq501">形式設定された数値の精度。</td>
+<td headers="wq502">オプション。整数である必要があります。デフォルトは 2 で、小数点以下 2 桁を指定します。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq503">戻り値
+</h4>
+<p>戻り値は、形式設定された数値で、単位を示す接尾辞 (B、KB、MB、GB、TB、PB、EB) が付けられます。</p></p>
+<p>
+<h4 id="wq504">例
+</h4>
+<p>この例では、$formatted_page_size 変数に、形式設定された値 2 K が格納されます。</p></p>
+<pre class="xmp"><code>$page_size = 2048;
+$formatted_page_size = $this-&gt;idsadmin-&gt;format_units($page_size);</code></pre>
+<h3 id="dqx1ids_oat_180"><a href="#ToC_188">setCurrMenuItem 関数</a></h3>
+<div>
+<p><strong><samp>setCurrMenuItem</samp></strong> は、メニューの現在の項目を強調表示します。この機能は、IBM OpenAdmin Tool (OAT) for Informix のプラグインの基本機能のライブラリを提供する、<strong><samp>idsadmin</samp></strong> クラスの一部です。</p></div><a id="idx142"></a><a id="idx143"></a>
+<p>
+<h4 id="wq505">構文
+</h4></p>
+<pre class="xmp"><code>setCurrMenuItem($item="")</code></pre>
+<table id="wq506" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq507" width="20%" align="left">変数</th>
+<th id="wq508" width="39%" align="left">内容</th>
+<th id="wq509" width="39%" align="left">制約事項
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq507"><em>item</em></td>
+<td headers="wq508">メニュー項目のキー名。</td>
+<td headers="wq509">キー名が存在している必要があります。存在しないメニュー項目変数を引き渡すと、エラーは発生しませんが、メニューではどの項目も強調表示されません。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq510">使用法
+</h4>
+<p><strong><samp>setCurrMenuItem</samp></strong> 関数は、ブラウザで Web ページがレンダリングされたときに、現行メニュー項目を強調表示して設定します。この関数では、メニュー項目は作成されません。</p></p>
+<p>
+<h4 id="wq511">例
+</h4>
+<p>この例では、現行メニュー項目を「格納領域」に設定します。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;setCurrMenuItem("storage");</code></pre>
+<h2 id="dqx1ids_oat_181"><a href="#ToC_192">output クラス</a></h2>
+<div>
+<p><strong><samp>output</samp></strong> クラスは、IBM OpenAdmin Tool (OAT) for Informix の HTML ページ (OAT プラグインのページを含む) の表示を処理します。</p></div>
+<h3 id="dqx1ids_oat_182"><a href="#ToC_193">set_pagetitle 関数</a></h3>
+<div>
+<p><strong><samp>set_pagetitle</samp></strong> 関数は、IBM OpenAdmin Tool (OAT) for Informix のプラグインのページのブラウザ ページ タイトルを設定します。この関数は、<strong><samp>output</samp></strong> クラスの一部で、OAT および OAT プラグインの HTML ページの表示を処理します。</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<h4 id="wq512">構文
+</h4></p>
+<pre class="xmp"><code>set_pagetitle($title="")</code></pre>
+<table id="wq513" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq514" width="34%" align="left">変数</th>
+<th id="wq515" width="65%" align="left">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq514"><em>title</em></td>
+<td headers="wq515">Web ブラウザのページの名前。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq516">例
+</h4>
+<p>この例では、ブラウザ ページ タイトルを Health Advisor に設定します。
+</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle("Health Advisor");</code></pre>
+<p>以下の例では、メッセージをローカライズするために、言語関数を使用しています。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("prod_name"));</code></pre>
+<p>これは、モジュール用言語ファイル (英語版言語ファイル) の項目です。
+</p>
+<pre class="xmp"><code>&lt;prod_name&gt;&lt;![CDATA[Health Advisor]]&gt;&lt;/prod_name&gt;</code></pre>
+<h3 id="dqx1ids_oat_183"><a href="#ToC_196">add_to_output 関数</a></h3>
+<div>
+<p><strong><samp>add_to_output</samp></strong> 関数は、HTML を、IBM OpenAdmin Tool (OAT) for Informix のプラグインのページへ付加します。この関数は、<strong><samp>output</samp></strong> クラスの一部で、OAT および OAT プラグインの HTML ページの表示を処理します。</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<h4 id="wq517">構文
+</h4></p>
+<pre class="xmp"><code>add_to_output($html="")</code></pre>
+<table id="wq518" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq519" width="34%" align="left">変数</th>
+<th id="wq520" width="65%" align="left">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq519"><em>html</em></td>
+<td headers="wq520">ページに追加する HTML。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq521">例
+</h4>
+<p>この例では、「Run Health Advisor (Health Advisor の実行)」というラベルのボタンを表示するように HTML タグを設定します。さらに、<strong><samp>add_to_output</samp></strong> 関数が、これらのタグを、Web ページのレンダリングに使用される HTML に付加します。</p></p>
+<pre class="xmp"><code>$html = "&lt;input type='submit' class='button' name='runReports' value='Run Health Advisor'/&gt;";
+$this-&gt;idsadmin-&gt;html-&gt;add_to_output($html);</code></pre>
+<h1 id="dqx1ids_oat_060"><a href="#ToC_199">OAT のメイン メニューのカスタマイズ方法</a></h1>
+<div>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニュー項目の順序を削除、復元、または変更します。</p></div><a id="idx148"></a><a id="idx149"></a><a id="idx150"></a><a id="idx151"></a>
+<p>
+<p>OAT メニューをカスタマイズするには、次のようにします。</p></p>
+<ol type="1">
+<li>OAT の <strong>「ログイン」</strong>ページまたは OAT のメニューで、<strong>「管理」</strong>をクリックします。</li>
+<li><strong>「管理」</strong>メニューで、<strong>「メニュー マネージャ」</strong>をクリックします。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_200">特記事項</a></h1>
+<p>本書は米国 IBM が提供する製品およびサービスについて作成したものです。</p>
+<p>本書に記載の製品、サービス、または機能が日本においては提供されていない場合があります。
+日本で利用可能な製品、サービス、および機能については、日本 IBM の営業担当員にお尋ねください。
+本書で IBM 製品、プログラム、またはサービスに言及していても、その IBM 製品、プログラム、または
+サービスのみが使用可能であることを意味するものではありません。
+これらに代えて、IBM の知的所有権を侵害することのない、機能的に同等の
+製品、プログラム、またはサービスを使用することができます。
+ただし、IBM 以外の製品とプログラムの操作またはサービスの
+評価および検証は、お客様の責任で行っていただきます。</p>
+<p>IBM は、本書に記載されている内容に関して特許権 (特許出願中のものを含む) を保有している場合があります。
+本書の提供は、お客様にこれらの特許権について
+実施権を許諾することを意味するものではありません。
+実施権についてのお問い合わせは、書面にて下記宛先にお送りください。
+</p>
+<div class="lines">〒242-8502
+神奈川県大和市下鶴間1623番14号
+日本アイ・ビー・エム株式会社
+法務・知的財産
+知的財産権ライセンス渉外<!--IBM Director of Licensing
+<br />
+IBM Corporation
+<br />
+North Castle Drive
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A. --><br />
+</div>
+<p>NONE:
+</p>
+<div class="lines">〒103-8510<br />
+東京都中央区日本橋箱崎町19番21号<br />
+日本アイ・ビー・エム株式会社<br />
+法務・知的財産<br />
+知的財産権ライセンス渉外<br />
+</div>
+<p>以下の保証は、国または地域の法律に沿わない場合は、適用されません。
+IBM およびその直接または間接の子会社は、本書を特定物として現存するままの状態で提供し、
+商品性の保証、特定目的適合性の保証および法律上の瑕疵担保責任を含む
+すべての明示もしくは黙示の保証責任を負わないものとします。
+国または地域によっては、法律の強行規定により、保証責任の制限が
+禁じられる場合、強行規定の制限を受けるものとします。</p>
+<p>この情報には、技術的に不適切な記述や誤植を含む場合があります。
+本書は定期的に見直され、必要な変更は本書の次版に組み込まれます。
+IBM は予告なしに、随時、この文書に記載されている製品またはプログラムに対して、
+改良または変更を行うことがあります。</p>
+<p>本書において製造元所有以外の Web サイトに言及している場合がありますが、便宜のため記載しただけであり、決してそれらの Web サイトを推奨するものではありません。それらの Web サイトにある資料は、この IBM 製品の資料の一部ではありません。それらの Web サイトは、お客様の責任でご使用ください。</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p>本プログラムのライセンス保持者で、(i) 独自に作成したプログラムと
+その他のプログラム (本プログラムを含む) との間での情報交換、
+および (ii) 交換された情報の相互利用を可能にすることを目的として、
+本プログラムに関する情報を必要とする方は、下記に連絡してください。
+</p>
+<div class="lines">IBM Corporation
+<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San Jose, CA 95141-1003
+<br />
+U.S.A.<br />
+</div>
+<p>本プログラムに関する上記の情報は、適切な使用条件の下で使用すること
+ができますが、有償の場合もあります。</p>
+<p>本書で説明されているライセンス・プログラムまたはその他のライセンス資
+料は、IBM 所定のプログラム契約の契約条項、IBM プログラムのご使用条件、
+またはそれと同等の条項に基づいて、IBM より提供されます。</p>
+<p>この文書に含まれるいかなるパフォーマンス・データも、管理環境下で
+決定されたものです。
+そのため、他の操作環境で得られた結果は、異なる可能性があります。
+一部の測定が、開発レベルのシステムで行われた可能性がありますが、
+その測定値が、一般に利用可能なシステムのものと同じである保証はありません。
+さらに、一部の測定値が、推定値である可能性があります。
+実際の結果は、異なる可能性があります。お客様は、お客様の特定の環境に適したデータを確かめる必要があります。</p>
+<p>IBM 以外の製品に関する情報は、その製品の供給者、出版物、
+もしくはその他の公に利用可能なソースから入手したものです。IBM は、それらの製品のテストは行っておりません。したがって、
+他社製品に関する実行性、互換性、またはその他の要求については確証できません。
+IBM 以外の製品の性能に関する質問は、それらの製品の供給者にお願いします。</p>
+<p>IBM の将来の方向または意向に関する記述については、
+予告なしに変更または撤回される場合があり、単に目標を示しているものです。</p>
+<p>表示されている IBM の価格は IBM が小売り価格として提示しているもので、
+現行価格であり、通知なしに変更されるものです。
+卸価格は、異なる場合があります。</p>
+<p>本書はプランニング目的としてのみ記述されています。記述内容は
+製品が使用可能になる前に変更になる場合があります。</p>
+<p>本書には、日常の業務処理で用いられるデータや報告書の例が含まれています。
+より具体性を与えるために、それらの例には、個人、企業、ブランド、
+あるいは製品などの名前が含まれている場合があります。
+これらの名称はすべて架空のものであり、
+名称や住所が類似する企業が実在しているとしても、それは偶然にすぎません。</p>
+<p>著作権使用許諾:</p>
+<p>本書には、様々なオペレーティング・プラットフォームでのプログラミング手法を例示するサンプル・アプリケーション・プログラムがソース言語で掲載されています。お客様は、サンプル・プログラムが書かれているオペレーティング・
+プラットフォームのアプリケーション・プログラミング・インターフェースに
+準拠したアプリケーション・プログラムの開発、使用、販売、配布を目的として、
+いかなる形式においても、IBM に対価を支払うことなくこれを複製し、改変し、
+配布することができます。
+このサンプル・プログラムは、あらゆる条件下における完全なテストを経ていません。従って IBM は、これらのサンプル・プログラムについて信頼性、利便性もしくは機能性が
+あることをほのめかしたり、保証することはできません。
+これらのサンプル・プログラムは特定物として現存するままの状態で提供されるものであり、いかなる保証も提供されません。IBM は、お客様の当該サンプル・プログラムの使用から生ずるいかなる損害に対しても一切の責任を負いません。</p>
+<p>それぞれの複製物、サンプル・プログラムのいかなる部分、またはすべての派生的創作物にも、次の
+ように、著作権表示を入れていただく必要があります。</p>
+<p>&copy; (お客様の会社名) (西暦年).このコードの一部は、IBM Corp. のサンプル・プログラムから取られています。</p>
+<p>&copy; Copyright IBM
+Corp. _年を入れる_.All rights reserved.</p>
+<p>この情報をソフトコピーでご覧になっている場合は、写真やカラーの図表は
+表示されない場合があります。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_201">商標
+</a></h2>
+<p>IBM、IBM ロゴおよび ibm.com は、世界の多くの国で登録された International Business Machines Corporation の商標です。他の製品名およびサービス名等は、それぞれ IBM または各社の商標である場合があります。
+現時点での IBM の商標リストについては、<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> の「Copyright and trademark information」をご覧ください。</p>
+<p>Adobe、Adobe ロゴ、PostScript は、Adobe Systems Incorporated の米国およびその他の国における登録商標または商標です。</p>
+<p>Intel、Itanium、Pentium は Intel Corporation または子会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Java&trade; およびすべての Java 関連の商標およびロゴは Oracle やその関連会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Linux は、Linus Torvalds の米国およびその他の国における商標です。</p>
+<p>Microsoft、Windows、および Windows NT は、Microsoft Corporation の米国およびその他の国における商標です。</p>
+<p>UNIX は The Open Group の米国およびその他の国における登録商標です。</p>
+<p>他の会社名、製品名およびサービス名等はそれぞれ各社の商標です。</p>
+<h2 id="dqx1ids_oat_016"><a href="#ToC_202">Copyright</a></h2>
+<p>
+<p>本書には、IBM の専有情報が含まれています。
+その情報は、使用許諾条件に基づき提供され、著作権により保護されています。
+本書に記載される情報には、いかなる製品の保証も含まれていません。また、本書で提供されるいかなる記述も、製品保証として解釈すべきではありません。
+</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p><strong>&copy; Copyright
+International Business Machines Corporation 2007, 2013.</strong></p>
+<p><!-- US Government Users Restricted Rights -- Use, duplication
+or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. --></p>
+<p>&copy; Copyright The
+PHP Group 1997-2010. 追加情報については、<samp>license/notices.txt</samp> ファイルを参照してください。</p></p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

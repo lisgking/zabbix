@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Mostrar]]></Show>
+<CommandHistory><![CDATA[Histórico de Comandos]]></CommandHistory>
+<OnlineLog><![CDATA[Log On-line]]></OnlineLog>
+
+<LogDelete><![CDATA[Excluir Log]]></LogDelete>
+<LogTruncate><![CDATA[Truncar Log]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Log de Mensagem On-line]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Rotação de Log de Mensagens On-line]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[Log de Atividades ON-Bar]]></BarActLog>
+<BarActLogRotate><![CDATA[Rotação do Log de Atividades ON-Bar]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Partes]]></chunks>
+<commands><![CDATA[Comandos]]></commands>
+<Databases><![CDATA[Bancos de Dados]]></Databases>
+<Alerts><![CDATA[Alertas]]></Alerts>
+<Message><![CDATA[Mensagem]]></Message>
+<Messages><![CDATA[Mensagens]]></Messages>
+<OnBarActLog><![CDATA[Log de Atividades ON-Bar]]></OnBarActLog>
+<onconfigfile><![CDATA[Arquivo Onconfig]]></onconfigfile>
+<Name><![CDATA[Nome]]></Name>
+<CurrentValue><![CDATA[Valor Atual]]></CurrentValue>
+<ChunkInfo><![CDATA[Informações de Parte]]></ChunkInfo>
+<ChunkNumber><![CDATA[Número da Parte]]></ChunkNumber>
+<ChunkPath><![CDATA[Nome do Caminho]]></ChunkPath>
+<Size><![CDATA[Tamanho]]></Size>
+<Offset><![CDATA[Deslocamento]]></Offset>
+<Free><![CDATA[Livre]]></Free>
+<CmdHistory><![CDATA[Histórico do Comando Admin]]></CmdHistory>
+<User><![CDATA[Usuário]]></User>
+<Time><![CDATA[Horário]]></Time>
+<CommandExecuted><![CDATA[Comando Executado]]></CommandExecuted>
+<ReturnMsg><![CDATA[Mensagem de Retorno]]></ReturnMsg>
+<CreateDate><![CDATA[Data de Criação]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Essa ação exclui as mensagens no arquivo de log de mensagens. O arquivo de log de mensagens é retido. Deseja continuar?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Essa ação exclui o arquivo de log de mensagens. Deseja continuar?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[O ID da tarefa para a tarefa online_log_rotate não foi localizado. A rotação do arquivo de log requer o Informix 11.70.xC3. Verifique a versão do servidor de banco de dados.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[O ID da tarefa para a tarefa bar_act_log_rotate não foi localizado. A rotação do arquivo de log requer o Informix 11.70.xC3. Verifique a versão do servidor de banco de dados.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Sucesso]]></Success>
+<Error><![CDATA[Erro]]></Error>
+<Warning><![CDATA[Aviso]]></Warning>
+</lang>

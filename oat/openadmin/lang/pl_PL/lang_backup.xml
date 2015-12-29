@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Kopia zapasowa]]></Backup>
+<noBackupSupport><![CDATA[Kopia zapasowa jest obsługiwana tylko na serwerach Informix typu serwer standardowy, serwer podstawowy lub zdalny autonomiczny serwer pomocniczy (RSS).]]></noBackupSupport>
+<sdsServer>![CDATA[Masz połączenie z serwerem pomocniczym dysku współużytkowanego (SDS).]]</sdsServer>
+<hdrSecondary>![CDATA[Masz połączenie z serwerem pomocniczym HDR.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[Kopia zapasowa w OAT wymaga produktu Informix w wersji 11.70.xC2.]]></noBackupSupportServerVersion>
+<notAvail>Niedostępne</notAvail>
+<onbarBackProcMissing>Na serwerze brak procedury składowanej wymaganej do wykonywania kopii zapasowych za pomocą programu ON-Bar. Sprawdź, czy podczas startu serwera został wykonany skrypt sch_oat.sql.</onbarBackProcMissing>
+<Unknown>Nieznana</Unknown>
+</lang>

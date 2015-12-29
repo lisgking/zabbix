@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Health Monitor]]></health>
+<alerts><![CDATA[Alerts]]></alerts>
+<aus><![CDATA[Auto Update Statistics]]></aus>
+<scheduler><![CDATA[Task Scheduler]]></scheduler>
+<taskdetails><![CDATA[Task Details]]></taskdetails>
+<taskruntimes><![CDATA[Task Runtimes]]></taskruntimes>
+<task_run_list><![CDATA[Task Run List]]></task_run_list>
+<num_executions><![CDATA[Number of Executions]]></num_executions>
+<avg_time><![CDATA[Average Time (s)]]></avg_time>
+<total_time><![CDATA[Total Time (s)]]></total_time>
+<last_run_time><![CDATA[Last Run Time]]></last_run_time>
+<last_execution_status><![CDATA[Last Execution Status]]></last_execution_status>
+<edittaskparam><![CDATA[Edit Task Parameter]]></edittaskparam>
+<AddNewTask><![CDATA[Add a New Task]]></AddNewTask>
+<Save><![CDATA[Save]]></Save>
+<Cancel><![CDATA[Cancel]]></Cancel>
+<CronTaskList><![CDATA[Cron Task List]]></CronTaskList>
+<EditParam><![CDATA[Edit Parameter]]></EditParam>
+<addtask><![CDATA[Add Task]]></addtask>
+<deletetask><![CDATA[Delete Task]]></deletetask>
+<name_field_empty><![CDATA[The name field is empty. Please specify a name.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Another task in the database is using the same name. Please specify another name.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[Name must start with a letter or "_" and contain letters, digits, or "_".]]></invalid_table_name>
+<table_name_duplicate><![CDATA[The table name is already in use. Please specify another table name.]]></table_name_duplicate>
+<save_failed><![CDATA[Save Failed: ]]></save_failed>
+<what_task_type><![CDATA[What type of task would you like to add?]]></what_task_type>
+<task><![CDATA[Task]]></task>
+<sensor><![CDATA[Sensor]]></sensor>
+<next><![CDATA[Next]]></next>
+<back><![CDATA[Back]]></back>
+<cancel><![CDATA[Cancel]]></cancel>
+<finish><![CDATA[Finish]]></finish>
+<new_sensor_setup><![CDATA[New Sensor Setup]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[Save task parameter failed.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[New Task Setup]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Specify the sensor name and group]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Specify the task name and group]]></what_task_name_and_group>
+<sensor_name><![CDATA[Sensor Name]]></sensor_name>
+<task_name><![CDATA[Task Name]]></task_name>
+<sensor_group><![CDATA[Sensor Group]]></sensor_group>
+<task_group><![CDATA[Task Group]]></task_group>
+<type_error><![CDATA[There are some problems in the new task setup process. Please cancel and restart the new task setup process]]></type_error>
+<ph_group_error><![CDATA[Failed to retrieve group choices from PH_GROUP table. Please make sure PH_GROUP and SYSADMIN database is working properly.]]></ph_group_error>
+<task_desc><![CDATA[Provide description for the new task.]]></task_desc>
+<sensor_desc><![CDATA[Provide description for the new sensor.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Specify the schedule for the new sensor.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Specify the schedule for the new task.]]></what_task_schedule>
+<start_time><![CDATA[Start Time (24-Hour Clock)]]></start_time>
+<stop_time><![CDATA[Stop Time (24-Hour Clock)]]></stop_time>
+<frequency><![CDATA[Frequency]]></frequency>
+<delete_time><![CDATA[Data Delete]]></delete_time>
+<what_result_table><![CDATA[Specify the name of a new result table in which to store the sensor data results.]]></what_result_table>
+<result_table_name><![CDATA[Result Table Name]]></result_table_name>
+<what_tk_create><![CDATA[Complete the SQL statement to create the result table by entering the column names of the result table.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Specify the command that the new sensor should run.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Specify the command that the new task should run.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Enter a single statement SQL command or user-defined function.]]></custom_sql>
+<stored_routine><![CDATA[Select a stored routine]]></stored_routine>
+<stored_routine_error><![CDATA[Failed to retrieve stored routines. Please fix SYSPROCEDURES table if you want to use stored routines.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Verify the following specifics for the sensor you want to create.  Click Finish to confirm and create the sensor.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Verify the following specifics for the task you want to create.  Click Finish to confirm and create the task.]]></verify_specs_task>
+<name><![CDATA[Name]]></name>
+<group><![CDATA[Group]]></group>
+<type><![CDATA[Type]]></type>
+<desc><![CDATA[Description]]></desc>
+<deltask><![CDATA[Delete Task]]></deltask>
+<result_table_create><![CDATA[Result Table Create Statement]]></result_table_create>
+<execute_command><![CDATA[Execution Command]]></execute_command>
+<task_name_check_error><![CDATA[Failed to validate if the task name is currently used. Please check the ph_task table in the sysadmin database.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Failed to validate if the table name is currently used. Please check the systables table in the sysadmin database]]></table_name_check_error>
+<sensor_check_ok><![CDATA[The new sensor has been scheduled successfully.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[The new sensor setup is not successful. Please run the setup again]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[The sensor will run according to schedule but there are some problems with the command.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Please check the following error code. Click on the link to debug the command.]]></debug_exec_stmt>
+<debug_command><![CDATA[Debug Command]]></debug_command>
+<task_check_ok><![CDATA[The new task has been scheduled successfully.]]></task_check_ok>
+<task_check_failed><![CDATA[The new task setup is not successful. Please run the setup again]]></task_check_failed>
+<task_check_bad_exec><![CDATA[The task will run according to schedule but there are some problems with the command.]]></task_check_bad_exec>
+<setup_fail><![CDATA[Setup Failed!]]></setup_fail>
+<setup_success><![CDATA[Setup Successfully!]]></setup_success>
+<setup_success_with_problems><![CDATA[Setup complete but problems exist]]></setup_success_with_problems>
+<return_code><![CDATA[Return Code :]]></return_code>
+<time_error><![CDATA[The stop time cannot be earlier than the start time.]]></time_error>
+<freq_error><![CDATA[The frequency cannot be 0 days, 0 hours, 0 minutes, 0 seconds]]></freq_error>
+<execute_stmt_empty><![CDATA[The execution statement cannot be empty.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[The create statement cannot be empty.]]></create_stmt_empty>
+<startup_only><![CDATA[Run Only at Server Startup]]></startup_only>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<NoExecutionStmt><![CDATA[The execution statement for a task cannot be empty.]]></NoExecutionStmt>
+<NEVER><![CDATA[NEVER]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[Task deletion failed]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Failed to delete the result table]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[The task has been deleted successfully]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[Delete is not allowed for system tasks]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Delete associated result table]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[This feature is not available for your current server version.]]></FeatureUnavailable>
+<AlertList><![CDATA[Alert List]]></AlertList>
+<severity><![CDATA[Severity]]></severity>
+<alerttype><![CDATA[Alert Type]]></alerttype>
+<state><![CDATA[State]]></state>
+<alertstate><![CDATA[Alert State]]></alertstate>
+<message><![CDATA[Message]]></message>
+<grouptoview><![CDATA[Group to View]]></grouptoview>
+<taskdetails><![CDATA[Task Details]]></taskdetails>
+<taskname><![CDATA[Task Name]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[Execution Statement]]></executionstmt>
+<resulttable><![CDATA[Result Table]]></resulttable>
+<starttime><![CDATA[Start Time]]></starttime>
+<stopttime><![CDATA[Stop Time]]></stopttime>
+<time><![CDATA[Time]]></time>
+<frequency><![CDATA[Frequency]]></frequency>
+<datadelete><![CDATA[Data Delete]]></datadelete>
+<WeekDay1><![CDATA[Monday]]></WeekDay1>
+<WeekDay2><![CDATA[Tuesday]]></WeekDay2>
+<WeekDay3><![CDATA[Wednesday]]></WeekDay3>
+<WeekDay4><![CDATA[Thursday]]></WeekDay4>
+<WeekDay5><![CDATA[Friday]]></WeekDay5>
+<WeekDay6><![CDATA[Saturday]]></WeekDay6>
+<WeekDay7><![CDATA[Sunday]]></WeekDay7>
+<enabletask><![CDATA[Enable Task]]></enabletask>
+<taskparams><![CDATA[Task Parameters]]></taskparams>
+<paramname><![CDATA[Parameter Name]]></paramname>
+<description><![CDATA[Description]]></description>
+<value><![CDATA[Value]]></value>
+<valuetype><![CDATA[ValueType]]></valuetype>
+<edittaskparam><![CDATA[Edit Task Parameter]]></edittaskparam>
+<view><![CDATA[View]]></view>
+<NEW><![CDATA[NEW]]></NEW>
+<ADDRESSED><![CDATA[ADDRESSED]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[ACKNOWLEDGED]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[IGNORED]]></IGNORED>
+<INFO><![CDATA[INFO]]></INFO>
+<WARNING><![CDATA[WARNING]]></WARNING>
+<ERROR><![CDATA[ERROR]]></ERROR>
+<COLORGREEN><![CDATA[GREEN]]></COLORGREEN>
+<COLORRED><![CDATA[RED]]></COLORRED>
+<COLORYELLOW><![CDATA[YELLOW]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[Task Schedule]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<Enabled><![CDATA[Enabled]]></Enabled>
+<Disabled><![CDATA[Disabled]]></Disabled>
+<runfrequency><![CDATA[Run Frequency]]></runfrequency>
+<execution><![CDATA[Execution]]></execution>
+<taskdetailssaved><![CDATA[Task details successfully saved.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[Task parameter successfully saved.]]></TaskParamSaved>
+<recheck><![CDATA[Recheck]]></recheck>
+<ignore><![CDATA[Ignore]]></ignore>
+<correct><![CDATA[Correct]]></correct>
+<Days><![CDATA[Days]]></Days>
+<Hours><![CDATA[Hours]]></Hours>
+<Minutes><![CDATA[Minutes]]></Minutes>
+<Seconds><![CDATA[Seconds]]></Seconds>
+<ALARM><![CDATA[ALARM #{0}]]></ALARM>
+<Warning><![CDATA[Warning]]></Warning>
+<Error><![CDATA[Error]]></Error>
+<Info><![CDATA[Info]]></Info>
+<green><![CDATA[Green]]></green>
+<yellow><![CDATA[Yellow]]></yellow>
+<red><![CDATA[Red]]></red>
+<TaskNotFound><![CDATA[The task was not found.]]></TaskNotFound>
+</lang>

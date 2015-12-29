@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[系統驗證]]></mainTitle>
+<checkDataFormat><![CDATA[檢查資料格式]]></checkDataFormat>
+<databaseName><![CDATA[資料庫名稱]]></databaseName>
+<tableName><![CDATA[表格名稱]]></tableName>
+<chkTable><![CDATA[檢查表格]]></chkTable>
+<chkExtFormat><![CDATA[檢查延伸範圍格式]]></chkExtFormat>
+<extName><![CDATA[資料庫空間名稱]]></extName>
+<chkExtent><![CDATA[檢查延伸範圍]]></chkExtent>
+<valResTo><![CDATA[驗證結果至...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - 系統驗證]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 驗證完成。]]></oncheckComplete>
+<ValidationResults><![CDATA[驗證結果...]]></ValidationResults>
+<SysValNotValid><![CDATA[次要伺服器上的「系統驗證」無效。]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[請注意：執行檢查可能會耗用大量的程序資源，視涉及的頁數而定。此動作會讀取指定表格的所有頁面、排除 blobpage 及 sbpage，並且檢查每個頁面的一致性。要繼續嗎？]]></confirmCheckData>
+<NotYetImpl><![CDATA[OpenAdmin Tool 無法在此頁面上顯示含有多個非英文資料庫語言環境的資料庫伺服器相關資訊。資料庫伺服器包含多個非英文資料庫語言環境。]]></NotYetImpl>
+</lang>

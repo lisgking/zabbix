@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise replication]]></er>
+<GridRepl><![CDATA[Rács]]></GridRepl>
+<noGridSupport><![CDATA[A rács esetében az Informix OAT replikációs bedolgozója Informix 11.70 változatot követel meg.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[A replikációs bedolgozó nincs megfelelően telepítve. A Replikációs bedolgozó telepítéséhez kattintson az Admin menü Bedolgozókezelő menüpontjára.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Az Informix OAT replikációs bedolgozója megköveteli, hogy az OAT eszközbe informix vagy DBSA felhasználóként jelentkezzen be.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Az ER befogási folyamat jelenlegi állapota]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[A logikai naplóoldalak száma DDRBLOCK értékének eléréséig]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Sorba állított tranzakciók száma]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Soradatokhoz használt lemezterület százalékos aránya]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Az ER rács jelenlegi állapota]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Szétkapcsolt csomópontok száma]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Függőben lévő tranzakciók száma]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Az ER alkalmazási folyamat jelenlegi állapota]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Tranzakció fogadásához szükséges átlagos várakozási idő (másodpercben)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Tranzakciók alkalmazásának meghibásodási gyakorisága]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[A(z) {0} csomópont SQLHOSTS fájljában a következő kiszolgálócsoport-azonosító többször szerepel: {1}.  Az SQLHOSTS fájlban minden kiszolgálócsoporthoz egyedi azonosítót kell adni úgy, hogy az azonosító beállításban (i=szám) egyedi értéket ad meg.]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[A(z) {0} csomópont SQLHOSTS fájlja a következő kiszolgálócsoportokat nem tartalmazza: {1}.  Ha a csomópont gyökér vagy nem-gyökér csomópont, akkor teljeskörű SQLHOSTS információkkal kell rendelkeznie a tartományban található összes kiszolgálócsoportról.  Ha a csomópont levélcsomópont, akkor legalább a szülő kiszolgálócsoportjára vonatkozó SQLHOSTS információkkal rendelkeznie kell.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[A(z) {0} csomópont SQLHOSTS fájlja a kapcsolattípus mezőben nem a megfelelő értékeket tartalmazza. Az SQLHOSTS fájlban szereplő minden csoport egy tagjának rendelkeznie kell a támogatott hálózati protokollokkal és adatbázis-kiszolgáló típusokkal.  Az Enterprise Replication (ER) a következő hálózati protokollokat támogatja: soctcp, tlitcp, socssl, tlispx, socimc, tliimc és sqlmux. Az ER az on és ol adatbázis-kiszolgáló típusokat támogatja. Az ER nem használhat olyan kapcsolatot, amelyhez az SQLHOSTS fájlban a kommunikáció támogatási modul (CSM) van beállítva.  Az ER csak titkosítási konfigurációs paraméterek beállításán keresztül titkosítható.  Ha ügyfél/kiszolgáló titkosítást kíván ER titkosítással kombinálni, akkor minden adatbázis-kiszolgálóhoz két hálózati kapcsolatot állítson be. A hálózati titkosítással és az SQLHOSTS fájllal kapcsolatos további információkat az Informix információs központban talál.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[A(z) {0} csomópont SQLHOSTS fájljában a(z) {1} csoport több önálló kiszolgálót vagy azok álneveit tartalmazza.  A(z) {1} csoport a(z) {2} kiszolgálót tartalmazza.  Az OAT nem képes ezt a kiszolgálót az Enterprise Replication (ER) számára meghatározni, mert a kiszolgáló magas szintű rendelkezésre állású fürt része.  Ha a kiszolgálót ER számára meg kívánja határozni, akkor használja a cdr define server parancsot a parancssorból.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[A(z) {0} kiszolgáló egy magas szintű rendelkezésre állású fürt másodlagos kiszolgálója.  Az OAT nem tudja ezt a kiszolgálót az Enterprise Replication (ER) szolgáltatás számára meghatározni.  Futtassa a kiszolgáló meghatározása műveletet a magas szintű rendelkezésre állású fürt elsődleges kiszolgálóján.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Nem lehet csatlakozni a(z) {0} kiszolgálóhoz: {1}.  A csomópont és az ER konfiguráció szinkronizálására kijelölt {0} kiszolgáló között nem alakítható ki megbízható kapcsolat. Ellenőrizze a hálózati kapcsolatokat.  A hálózati környezet Enterprise Replication szolgáltatásra végzett felkészítésével kapcsolatos további információkat az Informix információs központban talál.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[A(z) {0} kiszolgáló csoportazonosítója a(z) {1} csomópont és a(z) {2} csomópont SQLHOSTS fájljaiban különböző.  A(z) {1} csomópont és a(z) {2} csomópont SQLHOSTS fájljaiban ellenőrizze az azonosító beállítás (i=szám) értékét a(z) {0} kiszolgáló esetében.  A két értéknek egyeznie kell.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[A(z) {0} kiszolgáló nem Enterprise Replication (ER) kiszolgáló, mert nem rendelkezik a globális katalógust tartalmazó syscdr adatbázissal.  Az ER tartománybeállítások szinkronizálása érdekben olyan kiszolgálót jelöljön ki, amely részt vet az ER replikációban.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[A(z) {0} kiszolgáló levélcsomópont.  Levélcsomópont nem lehet az ER tartománybeállításokat szinkronizáló kiszolgáló. Jelöljön ki egy gyökér vagy nem-gyökér csomópontot.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Ez a kiszolgáló már részt vesz Enteprise Replication (ER) tevékenységben.  Válasszon másik kiszolgálót.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[Az OAT nem képes ezt a kiszolgálót az Enterprise Replication (ER) számára meghatározni, mert az magas szintű rendelkezésre állású fürt része.  Ha a kiszolgálót ER számára meg kívánja határozni, akkor használja a 'cdr define server' parancsot a parancssorból.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[A(z) {1} kiszolgáló {0} csoportneve érvénytelen.  A folytatás előtt frissítse a csoportnevet a kiszolgáló SQLHOSTS fájljában.]]></Invalid_Group_Name>
+<Error><![CDATA[Hiba]]></Error>
+<ConnectionFailed><![CDATA[A csatlakozás meghiúsult]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[A kiszolgálóhoz nem állnak rendelkezésre kapcsolatra vonatkozó részletek.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[A parancs hossza meghaladja az Admin API korlátait.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Admin aszinkron feladat sikeresen elküldve.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Szabad (MB)]]></Free_MB>
+<Used_MB><![CDATA[Felhasznált (MB)]]></Used_MB>
+</lang>

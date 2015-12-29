@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="es-es" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2009, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="Schema Manager, database objects, table objects, reviewing, statistics, table, fragment, creating, database, databases" />
+<meta name="keywords" content="dropping, tables, drop table, delete table, deleting, truncate table, truncating, indexes, enabling, disabling, external tables, unloading data" />
+<meta name="keywords" content="loading data" />
+<title>Plug-in de Informix Schema Manager para OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Plug-in de Informix Schema Manager para OAT</h1>
+<br />
+<div id="wq1">
+<h1>Contenido
+</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Plug-in de Informix Schema Manager para OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_osm_005" class="toclink">Visualización de objetos de bases de datos</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_osm_006" class="toclink">Visualización de objetos de tablas</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_osm_019" class="toclink">Revisión de estadísticas de tabla</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_osm_021" class="toclink">Creación de una base de datos</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_osm_022" class="toclink">Descartar una base de datos</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_osm_020" class="toclink">Gestión de tablas e índices</a></div>
+<div class="head3"><a id="ToC_8" href="#dqx1ids_osm_003" class="toclink">Creación de una tabla</a></div>
+<div class="head3"><a id="ToC_9" href="#dqx1ids_osm_001" class="toclink">Eliminación de una tabla</a></div>
+<div class="head3"><a id="ToC_10" href="#dqx1ids_osm_002" class="toclink">Truncamiento de una tabla</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_osm_016" class="toclink">Creación de un índice</a></div>
+<div class="head3"><a id="ToC_12" href="#dqx1ids_osm_018" class="toclink">Inhabilitación o habilitación de un índice</a></div>
+<div class="head3"><a id="ToC_13" href="#dqx1ids_osm_017" class="toclink">Eliminación de un índice</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_osm_011" class="toclink">Carga y descarga de datos con tablas externas</a></div>
+<div class="head3"><a id="ToC_15" href="#dqx1ids_osm_008" class="toclink">Carga de datos con una tabla externa</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_osm_009" class="toclink">Descarga de datos a una tabla externa</a></div>
+<div class="head3"><a id="ToC_17" href="#dqx1ids_osm_007" class="toclink">Creación de una tabla externa</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_osm_010" class="toclink">Visualización de la información de tablas externas</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_osm_013" class="toclink">Visualización del estado de las tareas de carga y descarga</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_osm_012" class="toclink">Ejecución de tareas de carga y descarga guardadas</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_osm_014" class="toclink">Supresión de tareas de carga y descarga</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_osm_015" class="toclink">Creación de un grupo de tareas guardadas de carga y descarga</a></div>
+<div class="head1"><a id="ToC_23" href="#dqx1ids_cm_not" class="toclink">Avisos</a></div>
+<div class="head2"><a id="ToC_24" href="#dqx1trademarks" class="toclink">Marcas registradas</a></div>
+<div class="head2"><a id="ToC_25" href="#dqx1ids_osm_000" class="toclink">Copyright</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Plug-in de Informix Schema Manager para OAT</a></h1>
+<div>
+<p>El Plug-in de IBM&reg; Informix&reg; Schema Manager proporciona una
+interfaz gráfica para visualizar y administrar bases de datos y tablas.</p></div>
+<p>Con el plug-in Gestor de esquemas, puede realizar las siguientes tareas:</p>
+<ul>
+<li>Crear y descartar bases de datos, tablas e índices.</li>
+<li>Cargar y descargar datos gestionados y almacenados fuera del servidor de base de datos utilizando tablas externas.</li>
+<li>Supervisar información sobre las estadísticas de tablas y fragmentos.</li>
+<li>Especificar si las estadísticas de distribución de datos se calculan sólo en los fragmentos
+que cambian en una tabla fragmentada o en toda la tabla.</li>
+<li>Ver información sobre objetos de bases de datos incluyendo procedimientos y funciones almacenadas,
+secuencias, tipos de datos definidos por el usuario (UDT), privilegios, módulos de DataBlade&reg;, agregados, conversiones y
+clases de operador.</li>
+<li>Ver información sobre objetos de tablas incluyendo columnas, índices, referencias, privilegios,
+UDT, restricciones, fragmentos y desencadenantes.</li></ul>
+<h2 id="dqx1ids_osm_005"><a href="#ToC_2">Visualización de objetos de bases de datos</a></h2>
+<div>
+<p>Ver información sobre procedimientos y funciones almacenadas,
+secuencias, tipos de datos definidos por el usuario (UDT), privilegios, módulos de DataBlade, agregados, conversiones y
+clases de operador.</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>Para ver objetos de bases de datos:</p></p>
+<p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>Seleccione la base de datos en la lista.
+
+<p>La
+página muestra un panel de información para cada objeto de base de datos.</p></li>
+<li>Para ver más detalles sobre un objeto de base de datos, pulse
+el botón de ampliación en el panel del objeto.</li></ol>
+<h2 id="dqx1ids_osm_006"><a href="#ToC_3">Visualización de objetos de tablas</a></h2>
+<div>
+<p>Ver información sobre columnas, índices, referencias, privilegios,
+tipos de datos definidos por el usuario (UDT), restricciones, fragmentos y desencadenantes.</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>Para ver objetos de tablas:</p></p>
+<p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>Para encontrar una tabla, especifique cualquier parte del nombre de la tabla en el campo <strong>Buscar</strong> y pulse <strong>Buscar</strong>.
+También puede ampliar una base de datos para
+ver las tablas.</li>
+<li>Opcional: Seleccione los filtros para incluir más
+tablas en la lista:<ul>
+<li>Para incluir catálogos de sistema, seleccione <strong>Incluir catálogos</strong>.
+ </li>
+<li>Para incluir vistas, seleccione <strong>Incluir vistas</strong>.
+Una vista es una tabla virtual basada en una sentencia SELECT especificada.</li>
+<li>Para incluir sinónimos, seleccione <strong>Incluir sinónimos</strong>.
+Un sinónimo es un nombre alternativo para un objeto de tabla, de vista o de secuencia. Normalmente, los sinónimos hacen referencia a tablas que no están en la base de datos actual.</li></ul></li>
+<li>Seleccione la tabla en la lista.
+
+<p>La página muestra un panel de información para cada objeto de tabla.</p></li>
+<li>Para ver más detalles sobre un objeto de tabla, pulse
+el botón de ampliación en el panel del objeto.</li></ol>
+<h2 id="dqx1ids_osm_019"><a href="#ToC_4">Revisión de estadísticas de tabla</a></h2>
+<div>
+<p>Revise la información sobre las estadísticas de
+tabla y fragmento, incluyendo cuándo se registraron por última vez las estadísticas, la distribución de datos y el porcentaje de filas cambiadas.
+Especifique las opciones para actualizar automáticamente las estadísticas de la tabla.</p></div><a id="idx5"></a><a id="idx6"></a><a id="idx7"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">Requisito previo:</div>
+<div class="notebody">IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión
+11.70 para
+especificar las opciones para actualizar automáticamente las estadísticas de la tabla y para visualizar cierta información,
+por ejemplo, el porcentaje de filas cambiadas.
+</div></div>
+<p>
+<p>Para revisar las estadísticas de tabla:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Amplíe la base de datos en la lista.</li>
+<li>Seleccione la tabla en la lista.</li>
+<li><span id="dqx1ids_osm_019__d1219e94">Amplíe el panel <strong>Estadísticas</strong>.</span></li>
+<li>Para mostrar las estadísticas del nivel de los fragmentos, pulse <strong>Estadísticas de fragmento</strong>. Esta información se muestra para IBM Informix versión 11.70.</li></ol>
+<h2 id="dqx1ids_osm_021"><a href="#ToC_5">Creación de una base de datos</a></h2>
+<div>
+<p>Cree una base de datos y especifique el entorno local de base de datos.</p></div><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_osm_021__preq-create-db">Requisito previo:</div>
+<div class="notebody">Para crear una base de datos, OpenAdmin Tool (OAT) para Informix requiere IBM Informix 11.70.xC2.</div></div>
+<p>
+<p>
+<br />Para crear una base de datos:<br /></p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Crear base de datos</strong>.</li>
+<li>Siga las indicaciones del asistente Crear base de datos.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceptos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_082.htm#ids_ddi_082" target="_blank">Utilizar CREATE DATABASE (Guía de diseño de bases de datos)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.glsug.doc/ids_gug_037.htm#ids_gug_037" target="_blank">El entorno local de la base de datos (guía del usuario de GLS)</a></li></ul>
+<ul class="simple">
+<li><strong>Referencia relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0368.htm#ids_sqs_0368" target="_blank">Sentencia CREATE DATABASE (sintaxis SQL)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_127.htm#ids_sapi_127" target="_blank">Crear argumento de base de datos: Crear una base de datos (API de administración SQL) (referencia del administrador)</a></li></ul>
+<h2 id="dqx1ids_osm_022"><a href="#ToC_6">Descartar una base de datos</a></h2>
+<div>
+<p>Elimine una base de datos y suprima las tablas y los datos almacenados en ella.</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq16">Requisito previo:</div>
+<div class="notebody">Para descartar una base de datos, OpenAdmin Tool (OAT) para Informix requiere IBM Informix 11.70.xC2.</div></div>
+<p>
+<p>
+<br />Para descartar una base de datos:<br /></p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>Seleccione la base de datos.</li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Descartar base de datos</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Referencia relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0713.htm#ids_sqs_0713" target="_blank">La sentencia DROP DATABASE (Sintaxis SQL)</a></li></ul>
+<h2 id="dqx1ids_osm_020"><a href="#ToC_7">Gestión de tablas e índices</a></h2>
+<div>
+<p>Crear, eliminar y truncar tablas. Crear, inhabilitar y eliminar índices.</p></div>
+<h3 id="dqx1ids_osm_003"><a href="#ToC_8">Creación de una tabla</a></h3>
+<div>
+<p>Crear una tabla y definir los atributos necesarios para hacer que la tabla sea totalmente funcional.</p></div><a id="idx12"></a><a id="idx13"></a>
+<p>
+<p>Para crear una tabla:</p></p>
+<p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>Seleccione la base de datos en la que crear la tabla.</li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Crear tabla</strong>.</li>
+<li>Siga las pautas del asistente Crear tabla.</li></ol>
+<h3 id="dqx1ids_osm_001"><a href="#ToC_9">Eliminación de una tabla</a></h3>
+<div>
+<p>Eliminar una tabla con sus índices y datos correspondientes.</p></div><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a><a id="idx17"></a>
+<p>
+<p>Cuando suprime una tabla, también elimina los datos almacenados
+en ella y cualquier índice, restricción, desencadenante, privilegio de acceso y
+sinónimo local. También suprime todas las vistas basadas en la
+tabla y cualquier tabla de violaciones y diagnósticos.</p>
+<p>Para
+eliminar una tabla:</p></p>
+<p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>En la lista, amplíe la base de datos que contiene la tabla.</li>
+<li>Seleccione la tabla.</li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Eliminar
+tabla</strong>.</li></ol>
+<h3 id="dqx1ids_osm_002"><a href="#ToC_10">Truncamiento de una tabla</a></h3>
+<div>
+<p>Suprimir todas las filas de una tabla y liberar el espacio de almacenamiento correspondiente o reservar el espacio de almacenamiento para su reutilización por la tabla y sus índices.</p></div><a id="idx18"></a><a id="idx19"></a>
+<p>
+<p>La reutilización del espacio de almacenamiento puede hacer que la administración de almacenamiento sea más eficaz en aplicaciones en las que una tabla se vacía y se recarga con filas nuevas periódicamente.</p>
+<p>Para truncar una tabla:</p></p>
+<p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>En la lista, amplíe la base de datos que contiene la tabla.</li>
+<li>Seleccione la tabla.</li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Truncar
+tabla</strong>.</li>
+<li>Opcional: Seleccione <strong>Reservar el espacio de almacenamiento</strong> para mantener el espacio de almacenamiento asignado a la tabla.</li></ol>
+<h3 id="dqx1ids_osm_016"><a href="#ToC_11">Creación de un índice</a></h3>
+<div>
+<p>Crear un índice para una o más columnas de una tabla.</p></div><a id="idx20"></a><a id="idx21"></a>
+<p>
+<p></p></p>
+<p>
+<p>Para crear un índice:</p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li id="dqx1ids_osm_016__step-select-db-table">En la lista, amplíe la base de datos y seleccione la tabla.</li>
+<li id="dqx1ids_osm_016__step-create-index">En el menú <strong>Acciones</strong>, pulse <strong>Crear índice</strong>.</li>
+<li><span id="dqx1ids_osm_016__step-follow-create-index">Siga las pautas del asistente Crear índice.</span></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceptos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_359.htm#ids_prf_359" target="_blank">Índices y consideraciones sobre el rendimiento de índices (guía de rendimiento)</a></li></ul>
+<ul class="simple">
+<li><strong>Referencia relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0401.htm#ids_sqs_0401" target="_blank">La sentencia CREATE INDEX (Sintaxis SQL)</a></li></ul>
+<h3 id="dqx1ids_osm_018"><a href="#ToC_12">Inhabilitación o habilitación de un índice</a></h3>
+<div>
+<p>Inhabilitar un índice o habilitar un índice que estaba inhabilitado.</p></div><a id="idx22"></a><a id="idx23"></a><a id="idx24"></a><a id="idx25"></a>
+<p>
+<p>De forma predeterminada, un índice está habilitado. El servidor de base de datos reconoce el índice y lo actualiza durante las operaciones de inserción, eliminación y actualización.
+Cuando se inhabilita un índice, ya no se actualiza durante estas operaciones.</p></p>
+<p>
+<p>Para habilitar o inhabilitar un índice:</p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>En la lista, amplíe la base de datos que contenga la tabla a la que se aplica el índice para seleccionar la tabla.</li>
+<li>Amplíe el panel <strong>Índices</strong>.</li>
+<li>Seleccione el índice.</li>
+<li>En el menú <strong>Acciones</strong> para el panel, pulse <strong>Habilitar índice</strong> o <strong>Inhabilitar índice</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceptos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0435.htm#ids_sqs_0435" target="_blank">Cómo trata el servidor de base de datos los índices inhabilitados(Sintaxis SQL) </a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0166.htm#ids_sqs_0166" target="_blank">Definiciones de las modalidades de objetos de la base de datos (Sintaxis SQL) </a></li></ul>
+<h3 id="dqx1ids_osm_017"><a href="#ToC_13">Eliminación de un índice</a></h3>
+<div>
+<p>Eliminar un índice; por ejemplo, eliminar un índice que ya no es eficaz.</p></div><a id="idx26"></a><a id="idx27"></a>
+<p>
+<p></p></p>
+<p>
+<p>Para eliminar un índice:</p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>En la lista, amplíe la base de datos que contenga la tabla a la que se aplica el índice para seleccionar la tabla.</li>
+<li>Amplíe el panel <strong>Índices</strong>.</li>
+<li>Seleccione el índice.</li>
+<li>En el menú <strong>Acciones</strong> para el panel, pulse <strong>Eliminar índice</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tareas relacionadas</strong>: </li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_332.htm#ids_prf_332" target="_blank">Descartar índices para mejorar la eficiencia de la actualización de tabla (Guía de rendimiento)</a></li></ul>
+<ul class="simple">
+<li><strong>Referencia relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_0718.htm#ids_sqs_0718" target="_blank">La sentencia DROP INDEX (Sintaxis SQL)</a></li></ul>
+<h2 id="dqx1ids_osm_011"><a href="#ToC_14">Carga y descarga de datos con tablas externas</a></h2>
+<div>
+<p>Cargar y descargar datos gestionados y almacenados fuera del servidor de base de datos utilizando tablas externas.</p></div><a id="idx28"></a><a id="idx29"></a><a id="idx30"></a>
+<div>
+<div class="notetitle" id="wq37">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<h3 id="dqx1ids_osm_008"><a href="#ToC_15">Carga de datos con una tabla externa</a></h3>
+<div>
+<p>Cargar datos en una tabla de base de datos desde una fuente externa
+al servidor de la base de datos utilizando una tabla externa.</p></div><a id="idx31"></a><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq39">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Para cargar datos con una tabla externa:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Seleccione la tabla de base de datos a la que cargar datos.
+
+<p>Para encontrar una tabla, especifique cualquier parte del nombre de la tabla en el campo <strong>Busar</strong> y pulse <strong>Buscar</strong>.
+También puede ampliar una base de datos para
+ver las tablas.</p></li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Cargar
+tabla</strong>.</li>
+<li>Siga las pautas del asistente Cargar tabla.</li></ol>
+<h3 id="dqx1ids_osm_009"><a href="#ToC_16">Descarga de datos a una tabla externa</a></h3>
+<div>
+<p>Descargar datos de una tabla de base de datos a una tabla externa.</p></div><a id="idx33"></a><a id="idx34"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq43">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Para descargar datos a una tabla externa:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Seleccione la tabla de base de datos de la que descargar datos.
+
+<p>Para encontrar una tabla, especifique cualquier parte del nombre de la tabla en el campo <strong>Busar</strong> y pulse <strong>Buscar</strong>.
+También puede ampliar una base de datos para
+ver las tablas.</p></li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Descargar tabla</strong>.</li>
+<li>Siga las pautas del asistente Descargar tabla.</li></ol>
+<h3 id="dqx1ids_osm_007"><a href="#ToC_17">Creación de una tabla externa</a></h3>
+<div>
+<p>Cree una tabla que se gestione y almacene fuera del servidor de datos para cargar y descargar datos.</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq47">Requisito previo:</div>
+<div class="notebody">Para crear tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6. </div></div>
+<p>
+<p>Para crear una tabla externa:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Seleccione la base de datos para la que crear la tabla.</li>
+<li>En el menú <strong>Acciones</strong>, pulse <strong>Crear tabla</strong>.</li>
+<li>Siga las pautas del asistente Crear tabla.
+
+<p>Para <strong>Tipo de tabla</strong>, seleccione un tipo de tabla externo: </p>
+<ul>
+<li><strong>Externa fija</strong>: Tabla en formato de
+texto de anchura fija cuyos datos se gestionan y almacenan fuera del servidor de
+base de datos de Informix.</li>
+<li><strong>Externa delimitada</strong>: Tabla en
+formato de texto delimitado cuyos datos se gestionan y almacenan fuera del servidor
+de base de datos de Informix.</li>
+<li><strong>Informix externa</strong>: Tabla en formato
+de texto interno de Informix cuyos datos se gestionan y almacenan fuera del servidor
+de base de datos de Informix. 
+
+<p>Las tablas externas se utilizan para cargar y descargar datos para la base de datos.</p></li></ul></li></ol>
+<h3 id="dqx1ids_osm_010"><a href="#ToC_18">Visualización de la información de tablas externas</a></h3>
+<div>
+<p>Ver información sobre una tabla externa.</p></div><a id="idx37"></a>
+<p>
+<p>Esta información se visualiza para Informix 11.50.xC6 o
+posterior.</p></p>
+<p>
+<p>Para ver información sobre una tabla externa:</p></p>
+<ol type="1">
+<li>En el menú de IBM OpenAdmin
+Tool (OAT) para Informix, pulse <strong>SQL Toolbox</strong> &gt; <strong>Schema Manager</strong>. </li>
+<li>Para encontrar una tabla, especifique cualquier parte del nombre de la tabla en el campo <strong>Busar</strong> y pulse <strong>Buscar</strong>.
+También puede ampliar una base de datos para
+ver las tablas.</li>
+<li>Seleccione la tabla en la lista.
+
+<p>La página muestra un panel de información para cada objeto de tabla.</p></li>
+<li>Para ver más detalles sobre un objeto de tabla, pulse
+el botón de ampliación en el panel del objeto.
+
+<p>El panel <strong>Información de la tabla</strong> y el panel <strong>Columnas</strong> muestran información específica de las tablas externas.</p></li></ol>
+<h3 id="dqx1ids_osm_013"><a href="#ToC_19">Visualización del estado de las tareas de carga y descarga</a></h3>
+<div>
+<p>Ver el estado de las tareas sometidas mediante IBM OpenAdmin Tool (OAT) para Informix para cargar y descargar datos utilizando tablas externas. </p></div><a id="idx38"></a><a id="idx39"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Para ver el estado de las tareas de carga y descarga:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Pulse la base de datos o la tabla en la que se ejecuta la tarea.</li>
+<li>Amplíe el panel <strong>Información</strong>.</li>
+<li>Pulse la ficha <strong>Estado de la tarea</strong>.
+
+<p>Para mostrar más información sobre una tarea, incluidos los códigos de error y los mensajes de retorno, pulse
+el icono de detalles de la tarea.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceptos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">Mensajes de error (Guía del administrador)</a></li></ul>
+<h3 id="dqx1ids_osm_012"><a href="#ToC_20">Ejecución de tareas de carga y descarga guardadas</a></h3>
+<div>
+<p>Ejecutar tareas que cargan y descargan datos utilizando tablas externas.</p></div><a id="idx40"></a><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq58">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Cuando se carga o descargan datos utilizando tablas externas, la tarea se guarda. Puede volver a ejecutar la tarea o eliminarla.</p></p>
+<p>
+<p>Para ejecutar una tarea de carga o descarga guardada:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Pulse la base de datos o la tabla en la que se ejecuta la tarea.</li>
+<li>Amplíe el panel <strong>Información</strong>.</li>
+<li>Pulse el separador <strong>Tareas</strong>.</li>
+<li>Seleccione las tareas que desee ejecutar.</li>
+<li>En el menú <strong>Acciones</strong> para el panel, pulse <strong>Enviar</strong>.</li></ol>
+<h3 id="dqx1ids_osm_014"><a href="#ToC_21">Supresión de tareas de carga y descarga</a></h3>
+<div>
+<p>Suprimir una tarea de carga o descarga, o el estado de una tarea de carga o descarga.</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq63">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Al cargar o descargar datos utilizando OAT, la tarea se guarda.
+Puede volver a enviar la tarea o eliminarla. También puede suprimir el estado de las tareas enviadas.</p></p>
+<div>
+<div class="notetitle" id="wq65">Importante:</div>
+<div class="notebody">Cuando se
+suprime una tarea en la página <strong>Tarea</strong>, los resultados de la tarea también se suprimen
+de la página <strong>Estado de tarea</strong>.
+Cuando se suprime un estado de tarea, sólo se suprime el estado de tarea.</div></div>
+<p>
+<p>Para suprimir tareas de carga y descarga:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Pulse la base de datos o la tabla en la que se ejecuta la tarea.</li>
+<li>Amplíe el panel <strong>Información</strong>.</li>
+<li>Seleccione el separador correspondiente: <ul>
+<li>Para suprimir la tarea y el estado de la tarea, pulse el separador <strong>Tareas</strong>.</li>
+<li>Para suprimir sólo el estado de la tarea, pulse el separador <strong>Estado de tarea</strong>.</li></ul></li>
+<li>Seleccione la tarea.</li>
+<li>Pulse <strong>Acciones</strong> &gt; <strong>Suprimir</strong>.</li></ol>
+<h3 id="dqx1ids_osm_015"><a href="#ToC_22">Creación de un grupo de tareas guardadas de carga y descarga</a></h3>
+<div>
+<p>Agrupar tareas guardadas de manera que se puedan enviar juntas.</p></div><a id="idx45"></a><a id="idx46"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq69">Requisito previo:</div>
+<div class="notebody">Para cargar y descargar datos con tablas externas,
+IBM OpenAdmin
+Tool (OAT) para Informix requiere IBM Informix versión 11.50.xC6
+o posterior.</div></div>
+<p>
+<p>Al cargar o descargar datos utilizando OAT, la tarea se guarda.
+Puede ejecutar de nuevo la tarea, eliminarla o agruparla con otras tareas guardadas.</p></p>
+<p>
+<p>Para crear un grupo de tareas de carga o descarga guardadas:</p></p>
+<ol type="1">
+<li>En el menú OAT, pulse <strong>SQL Toolbox</strong> &gt;<strong>Gestor de esquemas</strong>.</li>
+<li>Pulse la base de datos o la tabla en la que se ejecuta la tarea.</li>
+<li>Amplíe el panel <strong>Información</strong>.</li>
+<li>Pulse el separador <strong>Tareas</strong>.</li>
+<li>Seleccione las tareas que desee incluir en el grupo. Las tareas de carga y descarga se pueden incluir en el mismo grupo.</li>
+<li>En el menú <strong>Acciones</strong> para el panel, pulse <strong>Crear grupo</strong> y escriba un nombre para el grupo.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_23">Avisos</a></h1>
+<p>Esta información se ha desarrollado para productos y servicios ofrecidos
+en los EE.UU. </p>
+<p>Es posible que IBM no ofrezca los productos, los servicios o las características que se describen en este documento en otros países. Consulte con el representante local de IBM
+para obtener información acerca de los productos y servicios que actualmente están disponibles en su localidad. Las referencias hechas a productos, programas o servicios IBM
+no pretenden afirmar ni dar a entender que únicamente puedan utilizarse dichos productos,
+programas o servicios
+IBM. En su lugar podrá utilizarse cualquier producto, programa
+o servicios que disponga de funciones equivalentes y que no infrinja
+ningún derecho de propiedad intelectual de IBM. No
+obstante, es responsabilidad del usuario evaluar y verificar el funcionamiento
+de cualquier producto, programa o servicio que no sea de IBM.  </p>
+<p>IBM
+puede tener patentes o solicitudes de patente pendientes de aprobación que cubran alguno de los temas tratados en esta documentación. El suministro de este documento no le
+confiere ninguna licencia sobre dichas patentes. Puede enviar consultas acerca
+de licencias, por escrito, a la dirección siguiente:  </p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation
+<br />
+North Castle Drive
+<br />
+Armonk, NY 10504-1785
+<br />
+EE.UU. <br />
+</div>
+<p>Para consultas sobre licencias referentes a información sobre el juego de caracteres
+de doble byte (DBCS), póngase en contacto con el departamento de propiedad intelectual
+de IBM de su país o envíe las consultas, por escrito, a:
+</p>
+<div class="lines">Licencia de propiedad intelectual
+<br />
+Ley de propiedad legal e intelectual
+<br />
+IBM Japan, Ltd.
+<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku
+<br />
+Tokio 103-8510, Japón<br />
+</div>
+<p>El párrafo siguiente no se aplica al Reino Unido ni a ningún otro país donde las disposiciones en él expuestas sean incompatibles con la legislación local: INTERNATIONAL BUSINESS MACHINES CORPORATION PROPORCIONA ESTA PUBLICACIÓN "TAL CUAL" SIN GARANTÍA DE NINGUNA CLASE, YA SEA EXPLÍCITA O IMPLÍCITA, INCLUIDAS, PERO SIN LIMITARSE A ELLAS, LAS GARANTÍAS IMPLÍCITAS DE NO VULNERABILIDAD, COMERCIALIZACIÓN O IDONEIDAD PARA UN PROPÓSITO DETERMINADO. Algunos estados no permiten la renuncia a las garantías explícitas o implícitas
+en determinadas transacciones, por lo que puede que esta declaración no le sea
+aplicable. </p>
+<p>Esta información puede contener imprecisiones técnicas o errores
+tipográficos. Periódicamente, se efectúan cambios en la información aquí
+incluida; estos cambios se incorporarán en nuevas ediciones de la publicación. IBM puede realizar mejoras y/o cambios en el producto o productos y/o programas que se describen en esta publicación en cualquier momento y sin previo aviso.</p>
+<p>Las referencias hechas en esta información a sitios web que no sean de IBM
+se proporcionan únicamente por comodidad y de ningún modo suponen un aval de
+dichos sitios web. 
+Los materiales de estos sitios web no forman parte de los materiales de IBM para este producto y el uso que se haga de estos sitios web es de entera responsabilidad del usuario. </p>
+<p>IBM puede utilizar o distribuir la información que se le facilite del modo
+que IBM considere oportuno sin incurrir en ninguna obligación con el remitente. </p>
+<p>Los licenciatarios de este programa que deseen obtener información sobre el
+mismo con el fin de permitir: (i) el intercambio de información entre programas
+creados de forma independiente y otros programas (incluido éste) y (ii) el uso
+mutuo de la información intercambiada, deben ponerse en contacto con: </p>
+<div class="lines">IBM Corporation
+<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San José, CA 95141-1003
+<br />
+EE.UU.<br />
+</div>
+<p>Esta información puede estar disponible, de acuerdo con los términos y
+condiciones pertinentes, incluido, en algunos casos, el pago de una tarifa. </p>
+<p>IBM proporciona el programa bajo licencia que se describe en este documento y todo el material bajo licencia
+disponible para el mismo bajo los términos del Acuerdo de cliente de IBM, el Acuerdo internacional de licencias
+de programas de IBM o cualquier acuerdo equivalente entre las partes.</p>
+<p>Los datos de rendimiento que contiene esta publicación se han determinado en
+un entorno controlado. Por ello, los resultados obtenidos en otros entornos
+operativos pueden variar significativamente. Algunas medidas pueden haberse
+tomado en sistemas en desarrollo y no se garantiza que tales medidas sean las
+mismas en los sistemas disponibles de forma generalizada. Además, es posible que algunas medidas se hayan calculado mediante extrapolación. Los resultados reales pueden variar. Los usuarios de este documento deberán
+verificar los datos adecuados para su entorno específico. </p>
+<p>La información concerniente a productos que no sean de IBM se ha conseguido
+de los suministradores de dichos productos, de sus anuncios publicados o bien
+de otras fuentes públicas. IBM no ha probado esos productos y no puede confirmar la exactitud del rendimiento, la compatibilidad ni ninguna otra afirmación referente a productos que no son de IBM. Las preguntas sobre las
+prestaciones de los productos que no son de IBM deben ir dirigidas a los
+suministradores de dichos productos. </p>
+<p>Todas las referencias a intenciones u orientaciones futuras de IBM están sujetas
+a cambios o retractación sin previo aviso, y representan únicamente metas y objetivos. </p>
+<p>Todos los precios de IBM mostrados son los precios de venta al por menor sugeridos de IBM, son actuales y están sujetos a cambios sin previo aviso. Los precios de los concesionarios pueden variar. </p>
+<p>Esta información ser proporciona únicamente para fines de planificación. La información de este documento
+está sujeta a cambios antes de que los productos que se describen estén disponibles. </p>
+<p>Esta información contiene ejemplos de datos e informes que se utilizan en las operaciones comerciales diarias. Para ilustrarlos lo más exhaustivamente posible, los ejemplos incluyen nombres de personas, compañías, marcas y productos. Todos estos nombres son ficticios y cualquier similitud con los nombres y direcciones utilizados por una compañía comercial real es pura coincidencia. </p>
+<p>LICENCIA DE COPYRIGHT: </p>
+<p>Esta información contiene programas de aplicación de ejemplo en lenguaje fuente, que ilustran técnicas de programación en diversas plataformas operativas. Puede copiar, modificar y distribuir libremente estos programas de ejemplo, sin pagar por ello a IBM, con la finalidad de desarrollar, utilizar, comercializar o distribuir programas de aplicación conformes a la interfaz de programación de aplicación para la plataforma operativa para la cual se han escrito los programas de ejemplo.
+Estos ejemplos no se han probado en profundidad bajo
+todas las condiciones. Por
+lo tanto, IBM,
+no puede garantizar ni dar por sentada la fiabilidad, la utilidad ni el
+funcionamiento de estos programas. Los programas de ejemplo se proporcionan "TAL CUAL", sin garantía de ningún
+tipo. IBM no se responsabilizará de los daños que puedan ocasionarse debido al uso de los programas de ejemplo. </p>
+<p>Cada copia o fragmento de estos programas de ejemplo o de cualquier trabajo derivado debe incluir un aviso de copyright como el que se muestra a continuación: </p>
+<p>&copy; (nombre de su empresa) (años). Algunas partes de este código se
+derivan de programas de ejemplo de IBM Corp. </p>
+<p>&copy; Copyright IBM Corp. _año o años_. Reservados todos los derechos. </p>
+<p>Si está visualizando esta información en copia software,
+es posible que las fotografías y las ilustraciones en color no aparezcan. </p>
+<h2 id="dqx1trademarks"><a href="#ToC_24">Marcas registradas</a></h2>
+<p>IBM, el logotipo de IBM e ibm.com son marcas registradas de International Business Machines Corp.,registradas en muchas jurisdicciones del mundo. Otros nombres de productos y servicios pueden ser marcas registradas de IBM o
+de otras empresas. Encontrará una lista actualizada de marcas registradas de IBM en Internet, en el
+sitio "Copyright and trademark information" en
+<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>. </p>
+<p>Adobe, el logotipo Adobe y PostScript son marcas registradas de Adobe Systems Incorporated en los Estados Unidos y/u otros países.</p>
+<p>Intel, Itanium y Pentium son marcas registradas de Intel Corporation
+o de alguna de sus empresas subsidiarias en los Estados Unidos de América y en otros
+países. </p>
+<p>Java&trade; y todas las marcas registradas y logotipos basados en Java
+son marcas registradas de Oracle y/o sus filiales. </p>
+<p>Linux es una marca registrada de Linus Torvalds en los Estados Unidos y/o en otros países.</p>
+<p>Microsoft, Windows y Windows NT son marcas registradas de Microsoft Corporation en los
+Estados Unidos de América y/o en otros países.</p>
+<p>UNIX es una marca registrada de The Open Group en los Estados Unidos y/o en otros países.
+</p>
+<p>Otros nombres de empresas, productos o servicios utilizados
+en esta publicación pueden ser marcas registradas o marcas de
+servicio de terceros. </p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_25">Copyright</a></h2>
+<p>Este documento contiene información sobre productos patentados de IBM. Se proporciona según un acuerdo de
+licencia y está protegido por la ley de la propiedad intelectual. La información
+contenida en esta publicación no incluye ninguna garantía de producto, por lo que
+ninguna declaración proporcionada en este manual deberá interpretarse como tal.</p>
+<p>Cuando envía información a IBM, otorga a IBM un derecho no exclusivo a utilizar o distribuir dicha
+información en la forma en que IBM considere adecuada, sin contraer por ello ninguna
+obligación con el remitente. </p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2009,
+2013.</strong> </p>
+<p>Derechos restringidos para los usuarios del gobierno de los EE.UU. -- Uso,
+duplicación o difusión restringidos por el GSA ADP Schedule Contract con IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. Consulte el archivo <samp class="xph">license/notices.txt</samp> si desea más información.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

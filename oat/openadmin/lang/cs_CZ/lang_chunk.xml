@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Diskové bloky]]></Chunks>
+<Chunk><![CDATA[Diskový blok]]></Chunk>
+<MirrorChunk><![CDATA[Zrcadlený diskový blok]]></MirrorChunk>
+<ChunkIO><![CDATA[I/O diskového bloku]]></ChunkIO>
+<ChunkTable><![CDATA[Vypsání tabulky diskového bloku]]></ChunkTable>
+<MirrorTable><![CDATA[Vypsání tabulky zrcadleného diskového bloku]]></MirrorTable>
+<ChunkNum><![CDATA[Číslo diskového bloku]]></ChunkNum>
+<SpaceName><![CDATA[Název prostoru]]></SpaceName>
+<PageSize><![CDATA[Velikost stránky]]></PageSize>
+<Offset><![CDATA[Posun]]></Offset>
+<Size><![CDATA[Velikost]]></Size>
+<Free><![CDATA[Volné]]></Free>
+<Used><![CDATA[Použito %]]></Used>
+<Status><![CDATA[Stav]]></Status>
+<Path><![CDATA[Cesta]]></Path>
+<ChunkPath><![CDATA[Cesta k diskovému bloku]]></ChunkPath>
+<Reads><![CDATA[Čtení]]></Reads>
+<Writes><![CDATA[Zápisy]]></Writes>
+<TotalIO><![CDATA[Celkem čtení a zápisů]]></TotalIO>
+<IOTableTitle><![CDATA[I/O podle diskových bloků]]></IOTableTitle>
+<IOGraphTitle><![CDATA[I/O 20 nejfrekventovanějších diskových bloků]]></IOGraphTitle>
+<ONLINE><![CDATA[ONLINE]]></ONLINE>
+<OFFLINE><![CDATA[OFFLINE]]></OFFLINE>
+<RECOVERING><![CDATA[ZOTAVENÍ]]></RECOVERING>
+</lang>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[체크포인트 정보]]></checkpointInfo>
+<Checkpoints><![CDATA[체크포인트]]></Checkpoints>
+<Interval><![CDATA[간격]]></Interval>
+<Type><![CDATA[유형]]></Type>
+<Caller><![CDATA[트리거]]></Caller>
+<Time><![CDATA[시간]]></Time>
+<CritTime><![CDATA[Crit 시간]]></CritTime>
+<FlushTime><![CDATA[플러시 시간]]></FlushTime>
+<CPTime><![CDATA[Ckpt 지속 기간]]></CPTime>
+<NDirtyBuffers><![CDATA[더티 버퍼 수]]></NDirtyBuffers>
+<LSN><![CDATA[LSN]]></LSN>
+<NCritWaits><![CDATA[대기 수]]></NCritWaits>
+<BlockTime><![CDATA[블록 시간]]></BlockTime>
+</lang>

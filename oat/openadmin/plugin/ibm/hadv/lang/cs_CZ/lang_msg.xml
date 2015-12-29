@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Červený alarm: Kontroluje, zda je nastaven konfigurační parametr DBSPACETEMP. Žlutý alarm: Kontroluje, zda v hodnotě konfiguračního parametru DBSPACETEMP nejsou žádné mezery.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda není konfigurační parametr DUMPDIR nastaven na adresář uvedený v prahové hodnotě žlutého alarmu.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je povoleno dynamické přidělování protokolu (DYNAMIC_LOGS).]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Červený alarm: Kontroluje, zda nejsou soubory logického transakčního protokolu uloženy v kořenovém prostoru dbspace (ROOTDBS). Žlutý alarm: Kontroluje, zda nejsou v prostoru dbspace, kde jsou uloženy soubory logického transakčního protokolu, uloženy žádné tabulky.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Červený alarm: Kontroluje, zda je horní mez dlouhých transakcí (LTXHWM) nižší než prahová hodnota červeného alarmu, pokud je vypnuto dynamické přidělování protokolů (DYNAMIC_LOGS). Žlutý alarm: Kontroluje, zda je horní mez dlouhých transakcí (LTXHWM) nižší než prahová hodnota žlutého alarmu, pokud je vypnuto dynamické přidělování protokolů.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je naposledy použitého minima neaktualizovaných (lru_min_dirty) vyšší než prahová hodnota žlutého alarmu.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda není konfigurační parametr LTAPEDEV nastaven na adresář uvedený v prahové hodnotě žlutého alarmu.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je nastavena volba noage konfiguračního parametru VPCLASS.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda není databázový server nastavený, aby pokračoval, když je nějaký prostor dbspace mimo provoz (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Červený alarm: Kontroluje, zda není fyzický protokol uložen v kořenovém prostoru dbspace (ROOTDBS). Žlutý alarm: Kontroluje, zda nejsou v prostoru dbspace, kde je uložen fyzický protokol, uloženy žádné tabulky.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je vypnutý konfigurační parametr MULTIPROCESSOR, když je nastaven konfigurační parametr SINGLE_CPU_VP.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda není konfigurační parametr TAPEDEV nastaven na adresář uvedený v prahové hodnotě žlutého alarmu.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Červený alarm: Kontroluje, zda je počet dnes vytvořených souborů ATS nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet dnes vytvořených souborů ATS nižší než prahová hodnota žlutého alarmu.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Červený alarm: Kontroluje, zda je procentní část stránek protokolu zbývajících před zablokováním transakce (DDRBLOCK) vyšší než procentní část uvedená jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část stránek protokolu zbývajících před zablokováním transakce vyšší než procentní část uvedená jako prahová hodnota žlutého alarmu.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Červený alarm: Kontroluje, zda jsou uzly v klastru ER aktivní a replikují data. Žlutý alarm: Není.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Červený alarm: Kontroluje, zda je počet dnes vytvořených souborů RIS nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet dnes vytvořených souborů RIS nižší než prahová hodnota žlutého alarmu.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Červený alarm: Kontroluje, zda je procentní část volné paměti dostupné pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část volné paměti dostupné pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je počet online procesorů v operačním systému stejný jako počet procesorů v operačním systému.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Červený alarm: Není. Žlutý alarm: Kontroluje, zda je počet virtuálních procesorů třídy CPU vyšší než procentní část CPU v operačním systému, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Červený alarm: Kontroluje, zda je počet deskriptorů otevřených souborů na jeden proces pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet deskriptorů otevřených souborů na jeden proces pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Červený alarm: Kontroluje, zda je počet sad semaforů pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet sad semaforů pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Červený alarm: Kontroluje, zda je počet semaforů pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet semaforů pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Červený alarm: Kontroluje, zda je počet ID sdílených pamětí (shmid) pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet ID sdílených pamětí (shmid) pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Červený alarm: Kontroluje, zda je maximální velikost segmentu sdílené paměti (SHMMAX) pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je maximální velikost segmentu sdílené paměti (SHMMAX) pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Červený alarm: Kontroluje, zda je celkový počet segmentů sdílené paměti (shmNumSegs) pro operační systém vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je celkový počet segmentů sdílené paměti (shmNumSegs) pro operační systém vyšší než prahová hodnota žlutého alarmu.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Červený alarm: Kontroluje, zda nedostatek prostředků logického transakčního protokolu (LLOG) nezpůsobuje blokování během zpracování kontrolních bodů. Žlutý alarm: Kontroluje, zda nedostatek prostředků logického transakčního protokolu (LLOG) nespouští kontrolní body.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Červený alarm: Kontroluje, zda nedostatek prostředků fyzického protokolu (PLOG) nezpůsobuje blokování během zpracování kontrolních bodů. Žlutý alarm: Kontroluje, zda nedostatek prostředků fyzického protokolu (PLOG) nespouští kontrolní body.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Červený alarm: Kontroluje, zda je doba strávená v kritických sekcích při zpracování kontrolních bodů nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je doba strávená v kritických sekcích při zpracování kontrolních bodů nižší než prahová hodnota žlutého alarmu.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Červený alarm: Kontroluje, zda je počet vyprázdnění disku za sekundu při zpracování kontrolních bodů vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet vyprázdnění disku za sekundu při zpracování kontrolních bodů vyšší než prahová hodnota žlutého alarmu.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Červený alarm: Kontroluje, zda je nejdelší doba, po kterou transakce čeká při zpracování kontrolních bodů, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je nejdelší doba, po kterou transakce čeká při zpracování kontrolních bodů, nižší než prahová hodnota žlutého alarmu.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Červený alarm: Kontroluje, zda je počet čtení z vyrovnávací paměti pro tabulku nižší než procentní část všech čtení z vyrovnávací paměti, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet čtení z vyrovnávací paměti pro tabulku nižší než procentní část všech čtení z vyrovnávací paměti, která je uvedena v prahové hodnotě žlutého alarmu.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Červený alarm: Kontroluje, zda je počet zápisů do vyrovnávací paměti pro tabulku nižší než procentní část všech zápisů do vyrovnávací paměti, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet zápisů do vyrovnávací paměti pro tabulku nižší než procentní část všech zápisů do vyrovnávací paměti, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Červený alarm: Kontroluje, zda je počet sekvenčních skenování pro tabulku nižší než procentní část všech sekvenčních skenování, která je uvedena v prahové hodnotě červeného alarmu. Žlutý alarm: Kontroluje, zda je počet sekvenčních skenování pro tabulku nižší než procentní část všech sekvenčních skenování, která je uvedena v prahové hodnotě žlutého alarmu.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Červený alarm: Kontroluje, zda je procentní část čtení, která jsou ukládána do vyrovnávací paměti (%cached), vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část čtení, která jsou ukládána do vyrovnávací paměti (%cached), vyšší než prahová hodnota žlutého alarmu.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Červený alarm: Kontroluje, zda je procentní část zápisů, které jsou ukládány do vyrovnávací paměti (%cached), vyšší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část zápisů, které jsou ukládány do vyrovnávací paměti (%cached), vyšší než prahová hodnota žlutého alarmu.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Červený alarm: Kontroluje, zda je procentní část celkového počtu řazení, kterou tvoří řazení disku, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část celkového počtu řazení, kterou tvoří řazení disku, nižší než prahová hodnota žlutého alarmu.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Červený alarm: Kontroluje, zda je procentní část celkového počtu transakcí, kterou tvoří odvolané transakce, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část celkového počtu transakcí, kterou tvoří odvolané transakce, nižší než prahová hodnota žlutého alarmu.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Červený alarm: Kontroluje, zda je procentní část celkového počtu zápisů, kterou tvoří zápisy na popředí, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část celkového počtu zápisů, kterou tvoří zápisy na popředí, nižší než prahová hodnota žlutého alarmu.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Červený alarm: Kontroluje, zda je poměr stránek logického transakčního protokolu k I/O nižší než procentní část vyrovnávací paměti logického transakčního protokolu (LOGBUFF), která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je poměr stránek logického transakčního protokolu k I/O vyšší než procentní část vyrovnávací paměti logického transakčního protokolu (LOGBUFF), která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Červený alarm: Kontroluje, zda je procentní část celkového počtu žádostí o zámek, kterou tvoří čekání na zámek, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část celkového počtu žádostí o zámek, kterou tvoří čekání na zámek, nižší než prahová hodnota žlutého alarmu.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Červený alarm: Kontroluje, zda je poměr stránek fyzického protokolu k I/O nižší než procentní část vyrovnávací paměti fyzického protokolu (PHYSBUFF), která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je poměr stránek fyzického protokolu k I/O vyšší než procentní část vyrovnávací paměti fyzického protokolu (PHYSBUFF), která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Červený alarm: Kontroluje, zda je procentní část celkového počtu příkazů SQL, kterou tvoří sekvenční skenování, nižší než prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je procentní část celkového počtu příkazů SQL, kterou tvoří sekvenční skenování, nižší než prahová hodnota žlutého alarmu.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Červený alarm: Kontroluje, zda jsou všechny diskové bloky online. Žlutý alarm: Není.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Červený alarm: Kontroluje, zda je počet operací I/O pro jednotlivé diskové bloky nižší než procentní část všech operací I/O, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet operací I/O pro jednotlivé diskové bloky nižší než procentní část všech operací I/O, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Červený alarm: Kontroluje, zda je počet operací čtení pro jednotlivé diskové bloky nižší než procentní část všech operací čtení, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet operací čtení pro jednotlivé diskové bloky nižší než procentní část všech operací čtení, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Červený alarm: Kontroluje, zda je počet operací zápisu pro jednotlivé diskové bloky nižší než procentní část všech operací zápisu, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je počet operací zápisu pro jednotlivé diskové bloky nižší než procentní část všech operací zápisu, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Červený alarm: Kontroluje, zda je volný prostor v jednotlivých prostorech dbspace větší než procentní část celkového prostoru v daném prostoru dbspace, která je uvedena jako prahová hodnota červeného alarmu. Žlutý alarm: Kontroluje, zda je volný prostor v jednotlivých prostorech dbspace větší než procentní část celkového prostoru v daném prostoru dbspace, která je uvedena jako prahová hodnota žlutého alarmu.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Červený alarm: Hledá tabulky, jejichž procentní část maximálního volného prostoru na stránku je nižší než prahová hodnota červeného alarmu. Žlutý alarm: Hledá tabulky, jejichž procentní část maximálního volného prostoru na stránku je nižší než prahová hodnota žlutého alarmu.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

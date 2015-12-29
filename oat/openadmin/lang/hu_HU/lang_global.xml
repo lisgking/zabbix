@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_global">
+<help><![CDATA[Súgó]]></help>
+<language><![CDATA[Nyelv]]></language>
+<switchServer><![CDATA[Váltás a következő kiszolgálóra:]]></switchServer>
+<switchDatabase><![CDATA[Váltás a következő adatbázisra:]]></switchDatabase>
+<confirmContinue><![CDATA[Kívánja folytatni?]]></confirmContinue>
+<confirmSqltoolboxLogout><![CDATA[Kijelentkezés az SQL eszközkészletből. Kívánja folytatni?]]></confirmSqltoolboxLogout>
+<ok><![CDATA[OK]]></ok>
+<featureNotSupported><![CDATA[Ehhez a szolgáltatáshoz Informix {0} változat szükséges.]]></featureNotSupported>
+<couldNotLoadSwitchLocale><![CDATA[Az OAT nem tudja elérni az adatbázis területi beállítás adatait az adatbázis-kiszolgálón.]]></couldNotLoadSwitchLocale>
+</lang>

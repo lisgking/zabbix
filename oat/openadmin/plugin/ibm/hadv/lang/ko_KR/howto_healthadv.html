@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" xml:lang="ko-kr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="dc.language" scheme="rfc1766" content="ko-kr" />
+<meta name="dc.date" scheme="iso8601" content="2011-09-01" />
+<meta name="copyright" content="&copy; Copyright IBM Corp. 2011" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="type" content="concept, task, task, task, task, task" />
+<title>Informix 상태 어드바이저 플러그인 - OAT용</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body>
+<a id="Top_Of_Page" name="Top_Of_Page"></a>
+<h1>Informix 상태 어드바이저 플러그인 - OAT용</h1>
+<br />
+<a name="wq1"></a>
+<div id="wq1">
+<h1>목차</h1>
+<div class="head1"><a id="ToC_1" name="ToC_1" href="#dqx1ids_oha.dita" class="toclink">Informix 상태 어드바이저 플러그인</a></div>
+<div class="head2"><a id="ToC_2" name="ToC_2" href="#dqx1ids_oha_002" class="toclink">상태 어드바이저 실행</a></div>
+<div class="head2"><a id="ToC_3" name="ToC_3" href="#dqx1ids_oha_001" class="toclink">프로파일 추가</a></div>
+<div class="head2"><a id="ToC_4" name="ToC_4" href="#dqx1ids_oha_003" class="toclink">프로파일에 대해 경보 설정</a></div>
+<div class="head2"><a id="ToC_5" name="ToC_5" href="#dqx1ids_oha_004" class="toclink">프로파일에 대한 작업 스케줄링</a></div>
+<div class="head2"><a id="ToC_6" name="ToC_6" href="#dqx1ids_oha_005" class="toclink">전자 우편 통지 구성</a></div>
+<div class="head1"><a id="ToC_7" name="ToC_7" href="#dqx1ids_cm_not" class="toclink">주의사항</a></div>
+<div class="head2"><a id="ToC_8" name="ToC_8" href="#dqx1trademarks" class="toclink">상표</a></div>
+<div class="head2"><a id="ToC_9" name="ToC_9" href="#dqx1ids_osm_000" class="toclink">저작권</a></div>
+</div>
+<a name="dqx1ids_oha.dita"></a>
+<h1 id="dqx1ids_oha.dita"><a href="#ToC_1">Informix 상태 어드바이저
+플러그인</a></h1>
+<div>
+<p>IBM&reg; Informix&reg; 상태 어드바이저
+플러그인은
+Informix 데이터베이스 서버의 상태를 분석합니다.
+상태 어드바이저 플러그인은 데이터베이스 서버, 데이터베이스 및 운영 체제에 대한 정보를 수집하여
+결과와 권장사항이 포함된 보고서를 작성합니다.</p></div>
+<a name="wq2"></a>
+<div class="notetitle" id="wq2">전제조건:</div>
+<div class="notebody">상태 어드바이저 플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>상태 어드바이저 플러그인에는 데이터베이스 서버의 조건 즉,
+구성, Enterprise Replication(ER), 운영 체제(OS), 성능 및 스토리지를 점검하는
+일련의 경보가 포함되어 있습니다.
+사용 가능한 경보와 경보에 대한 스레시홀드를 지정하는
+프로파일을 작성할 수 있습니다.  정기적으로 특정 프로파일을 사용하여 상태 어드바이저를
+실행하도록 작업을 스케줄할 수 있습니다.  결과가 담긴 전자 우편 통지의 수신자를 지정할 수 있습니다. 
+또한 필요 시 현재 프로파일에 대해 상태 어드바이저를 실행하고 보고서를 볼 수도 있습니다.</p>
+<a name="dqx1ids_oha_002"></a>
+<h2 id="dqx1ids_oha_002"><a href="#ToC_2">상태 어드바이저 실행</a></h2>
+<div>
+<p>필요 시 현재 프로파일에 대해 상태 어드바이저를 실행하고 보고서를 봅니다.</p></div>
+<p></p>
+<a name="wq4"></a>
+<div class="notetitle" id="wq4">전제조건:</div>
+<div class="notebody">IBM Informix 상태 어드바이저
+플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>
+<p>상태 어드바이저 플러그인은
+Informix 데이터베이스 서버 상태 어드바이저 프로파일은 사용 가능한 경보와 경보에 대한
+스레시홀드를 지정합니다.</p></p>
+<p>
+<p>상태 어드바이저를 실행하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>Health Center</strong> &gt; <strong>상태 어드바이저</strong>를 클릭하십시오. </li>
+<li>옵션: 현재 프로파일을 변경하려면 <strong>프로파일</strong> 페이지에서
+목록의 프로파일을 클릭한 다음 <strong>로드</strong>를 클릭하십시오. </li>
+<li><strong>상태 어드바이저</strong> 실행을 클릭하십시오.  새 브라우저 창에 보고서가 표시됩니다.</li></ol>
+<a name="dqx1ids_oha_001"></a>
+<h2 id="dqx1ids_oha_001"><a href="#ToC_3">프로파일 추가</a></h2>
+<div>
+<p>IBM Informix 상태 어드바이저
+플러그인에 프로파일을 추가합니다.</p></div>
+<p></p>
+<a name="wq9"></a>
+<div class="notetitle" id="wq9">전제조건:</div>
+<div class="notebody">상태 어드바이저 플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>
+<p>상태 어드바이저 플러그인은
+Informix 데이터베이스 서버 사용 가능한 경보와 경보에 대한 스레시홀드를 지정하는
+프로파일을 작성할 수 있습니다.  정기적으로 특정 프로파일을 사용하여 상태 어드바이저를
+실행하도록 작업을 스케줄할 수 있습니다. </p></p>
+<p>
+<p>프로파일을 추가하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>Health Center</strong> &gt; <strong>상태 어드바이저</strong>를 클릭하십시오. </li>
+<li><strong>프로파일</strong> 페이지에서 프로파일의 고유 이름을 입력하고
+<strong>추가</strong>를 클릭하십시오. </li></ol>
+<a name="dqx1ids_oha_003"></a>
+<h2 id="dqx1ids_oha_003"><a href="#ToC_4">프로파일에 대해 경보 설정</a></h2>
+<div>
+<p>IBM Informix 상태 어드바이저
+플러그인에서 프로파일에 사용 가능한 경보와 경보에 대한 스레시홀드를 지정합니다.</p></div>
+<p></p>
+<a name="wq14"></a>
+<div class="notetitle" id="wq14">전제조건:</div>
+<div class="notebody">상태 어드바이저 플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>
+<p>상태 어드바이저 플러그인은
+Informix 데이터베이스 서버 상태 어드바이저 프로파일은 사용 가능한 경보와 경보에 대한
+스레시홀드를 지정합니다.</p></p>
+<p>
+<p>프로파일에 대한 경보를 설정하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>Health Center</strong> &gt; <strong>상태 어드바이저</strong>를 클릭하십시오. </li>
+<li>옵션: 현재 프로파일을 변경하려면 <strong>프로파일</strong> 페이지에서
+목록의 프로파일을 클릭한 다음 <strong>로드</strong>를 클릭하십시오. </li>
+<li><strong>경보</strong> 탭을 클릭하십시오. </li>
+<li>프로파일에 포함시키려는 경보에 대해 <strong>사용</strong> 선택란을 체크하십시오. </li>
+<li>경보의 스레시홀드를 검토하거나 변경하려면 <strong>스레시홀드 수정</strong>을 클릭하십시오.</li></ol>
+<a name="dqx1ids_oha_004"></a>
+<h2 id="dqx1ids_oha_004"><a href="#ToC_5">프로파일에 대한 작업 스케줄링</a></h2>
+<div>
+<p>정기적으로 특정 프로파일을 사용하여 상태 어드바이저를 실행하도록 작업을 스케줄합니다.</p></div>
+<p></p>
+<a name="wq19"></a>
+<div class="notetitle" id="wq19">전제조건:</div>
+<div class="notebody">IBM Informix 상태 어드바이저
+플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>
+<p>상태 어드바이저 플러그인은
+Informix 데이터베이스 서버 상태 어드바이저 프로파일은 사용 가능한 경보와 경보에 대한
+스레시홀드를 지정합니다.
+현재 프로파일에 대해 상태 어드바이저를 실행하도록 작업을 스케줄할 수 있습니다.</p></p>
+<p>
+<p>현재 프로파일에 대한 작업을 스케줄하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>Health Center</strong> &gt; <strong>상태 어드바이저</strong>를 클릭하십시오. </li>
+<li>옵션: 현재 프로파일을 변경하려면 <strong>프로파일</strong> 페이지에서
+목록의 프로파일을 클릭한 다음 <strong>로드</strong>를 클릭하십시오. </li>
+<li><strong>스케줄</strong> 탭을 클릭하십시오.</li>
+<li>구성 필드를 사용하여 작업 스케줄을 지정하십시오. </li></ol>
+<a name="dqx1ids_oha_005"></a>
+<h2 id="dqx1ids_oha_005"><a href="#ToC_6">전자 우편 통지 구성</a></h2>
+<div>
+<p>전자 우편 프로그램을 구성하고 검사 결과의 수신처를 지정합니다.</p></div>
+<p></p>
+<a name="wq24"></a>
+<div class="notetitle" id="wq24">전제조건:</div>
+<div class="notebody">IBM Informix 상태 어드바이저
+플러그인에는
+IBM Informix 11.50 이상이 필요합니다.</div>
+<p>
+<p> 상태 어드바이저 플러그인은 검사 결과 및
+권장사항이 포함된 보고서를 작성합니다.
+전자 우편 구성은 전자 우편을 발송하는 운영 체제에 따라 결정됩니다.
+전자 우편은 데이터베이스 서버가 위치한 컴퓨터에서 발송됩니다.
+현재 프로파일에 대한 전자 우편 프로그램을 구성할 수 있습니다.</p></p>
+<p>
+<p>현재 프로파일에 대한 전자 우편 통지를 구성하려면 다음을 수행하십시오.</p></p>
+<ol type="1">
+<li>OAT 메뉴에서 <strong>Health Center</strong> &gt; <strong>상태 어드바이저</strong>를 클릭하십시오. </li>
+<li>옵션: 현재 프로파일을 변경하려면 <strong>프로파일</strong> 페이지에서
+목록의 프로파일을 클릭한 다음 <strong>로드</strong>를 클릭하십시오. </li>
+<li><strong>통지</strong> 탭을 클릭하십시오.  구성 예를 보려면 페이지의 도움말 버튼을 클릭하십시오.</li></ol>
+<a name="dqx1ids_cm_not"></a>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_7">주의사항</a></h1>
+<p>이 정보는 미국에서 제공되는 제품 및 서비스용으로 작성된 것입니다.</p>
+<p>IBM은 다른 국가에서 이 책에 기술된 제품, 서비스 또는 기능을 제공하지 않을 수도
+있습니다. 현재 사용할 수 있는 제품 및 서비스에 대한 정보는 한국 IBM 담당자에게 문의하십시오.
+이 책에서 IBM 제품, 프로그램 또는 서비스를 언급했다고 해서 해당 IBM 제품, 프로그램 또는 서비스만을
+사용할 수 있다는 것을 의미하지는 않습니다.
+IBM의 지적 재산권을
+침해하지 않는 한, 기능상으로 동등한 제품, 프로그램 또는 서비스를 대신 사용할 수도 있습니다. 그러나 비IBM 제품, 프로그램 또는 서비스의 운영에 대한 평가 및
+검증은 사용자의 책임입니다.</p>
+<p>IBM은 이 책에서 다루고 있는 특정 내용에 대해 특허를 보유하고 있거나 현재 특허 출원
+중일 수 있습니다. 이 책을 제공한다고 해서 특허에 대한 라이센스까지 부여하는 것은
+아닙니다. 라이센스에 대한 의문사항은 다음으로 문의하십시오.
+</p>
+<div class="lines">135-700<br />
+서울특별시 강남구 도곡동 467-12, 군인공제회관빌딩<br />
+한국 아이.비.엠 주식회사<br />
+고객만족센터<br />
+전화번호: 080-023-8080<br />
+</div>
+<p>2바이트(DBCS) 정보에 관한 라이센스 문의는 한국 IBM 고객만족센터에 문의하거나 다음 주소로 서면 문의하시기 바랍니다. </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan Ltd.<br />
+1623-14, Shimotsuruma, Yamato-shi<br />
+Kanagawa 242-8502 Japan<br />
+</div>
+<p>다음 단락은 현지법과 상충하는 영국이나 기타 국가에서는 적용되지 않습니다. IBM은 타인의 권리 비침해,
+상품성 및 특정 목적에의 적합성에 대한 묵시적 보증을 포함하여(단, 이에 한하지 않음) 묵시적이든 명시적이든 어떠한 종류의 보증 없이 이 책을 "현상태대로" 제공합니다. 일부 국가에서는 특정 거래에서 명시적 또는 묵시적
+보증의 면책사항을 허용하지 않으므로, 이 사항이 적용되지 않을 수도 있습니다.</p>
+<p>이 정보에는 기술적으로 부정확한 내용이나 인쇄상의 오류가 있을 수 있습니다. 이 정보는 주기적으로
+변경되며, 변경된 사항은 최신판에 통합됩니다. IBM은 이 책에서 설명한 제품 및/또는 프로그램을 사전
+통지 없이 언제든지 개선 및/또는 변경할 수 있습니다.</p>
+<p>이 정보에서 언급되는 비IBM의 웹 사이트는 단지 편의상 제공된
+것으로, 어떤 방식으로든 이들 웹 사이트를 옹호하고자 하는 것은 아닙니다.
+해당 웹 사이트의 자료는 본 IBM 제품 자료의 일부가 아니므로
+해당 웹 사이트 사용으로 인한 위험은 사용자 본인이 감수해야 합니다.</p>
+<p>IBM은 귀하의 권리를 침해하지 않는 범위 내에서 적절하다고 생각하는 방식으로 귀하가 제공한 정보를
+사용하거나 배포할 수 있습니다.</p>
+<p>(i) 독립적으로 작성된 프로그램과 기타 프로그램(본 프로그램 포함)간의 정보
+교환 및 (ii) 교환된 정보의 상호 이용을 목적으로 본 프로그램에 관한 정보를 얻고자 하는 라이센스
+사용자는 다음 주소로 문의하십시오. </p>
+<div class="lines">135-700<br />
+서울특별시 강남구 도곡동 467-12, 군인공제회관빌딩<br />
+한국 아이.비.엠 주식회사<br />
+고객만족센터 <br />
+</div>
+<p>이러한 정보는 해당 조건(예를 들면, 사용료 지불 등)하에서 사용될 수 있습니다.</p>
+<p>이 정보에 기술된 라이센스가 부여된 프로그램 및 프로그램에 대해 사용 가능한 모든 라이센스가 부여된 자료는 IBM이
+IBM 기본 계약, IBM 프로그램 라이센스 계약(IPLA) 또는 이와 동등한 계약에 따라
+제공한 것입니다.</p>
+<p>본 문서에 포함된 모든 성능 데이터는 제한된 환경에서 산출된 것입니다. 따라서
+다른 운영 환경에서 얻어진 결과는 상당히 다를 수 있습니다. 일부 성능은 개발 단계의 시스템에서 측정되었을 수 있으므로 이러한 측정치가
+일반적으로 사용되고 있는 시스템에서도 동일하게 나타날 것이라고는 보증할 수 없습니다. 또한
+일부 성능은 추정을 통해 추측되었을 수도 있으므로 실제 결과는 다를 수 있습니다. 이 책의 사용자는 해당 데이터를 본인의 특정 환경에서 검증해야 합니다.</p>
+<p>비IBM 제품에 관한 정보는 해당 제품의 공급업체, 공개 자료 또는 기타 범용 소스로부터
+얻은 것입니다. IBM에서는 이러한 비IBM 제품을 반드시 테스트하지 않았으므로, 이들 제품과 관련된 성능의 정확성, 호환성 또는 기타 주장에 대해서는 확인할 수 없습니다. 비IBM 제품의 성능에 대한 의문사항은 해당 제품의 공급업체에 문의하십시오.</p>
+<p>IBM이 제시하는 방향 또는 의도에 관한 모든 언급은 특별한 통지 없이 변경될 수 있습니다.</p>
+<p>여기에 나오는 모든 IBM의 가격은 IBM이 제시하는 현 소매가이며 통지 없이 변경될 수 있습니다. 실제 판매가는 다를 수 있습니다.</p>
+<p>이 정보는 계획 수립 목적으로만 사용됩니다. 이 정보는 기술된 제품이 GA(General Availability)되기 전에 변경될 수 있습니다.</p>
+<p>이 정보에는 일상의 비즈니스 운영에서 사용되는 자료 및 보고서에 대한 예제가 들어
+있습니다. 이들 예제에는 개념을 가능한 완벽하게 설명하기 위하여 개인, 회사, 상표 및
+제품의 이름이 사용될 수 있습니다. 이들 이름은 모두 가공의 것이며 실제 기업의 이름 및
+주소와 유사하더라도 이는 전적으로 우연입니다.</p>
+<p>저작권 라이센스:</p>
+<p>이 정보에는 여러 운영 플랫폼에서의 프로그래밍 기법을 보여주는 원어로 된 샘플 응용프로그램이 들어 있습니다. 귀하는
+이러한 샘플 프로그램의 작성 기준이 된 운영 플랫폼의 응용프로그램 프로그래밍 인터페이스(API)에
+부합하는 응용프로그램을 개발, 사용, 판매 또는 배포할 목적으로 추가 비용 없이 이들 샘플 프로그램을 어떠한 형태로든
+복사, 수정 및 배포할 수 있습니다. 이러한 샘플 프로그램은 모든 조건하에서 완전히 테스트된 것은
+아닙니다. 따라서 IBM은 이러한 프로그램의 신뢰성, 서비스 가능성 또는 기능을
+보증하거나 진술하지 않습니다. 샘플 프로그램은 어떠한 종류의 보증 없이 "현상태대로" 제공합니다. IBM은
+샘플 프로그램의 사용에서 발생하는 어떠한 종류의 손상에도 책임을 지지 않습니다.</p>
+<p>이러한 샘플 프로그램 또는 파생 제품의 각 사본이나 그 일부에는 반드시 다음과 같은 저작권 표시가 포함되어야 합니다.</p>
+<p>&copy; (귀하의 회사명) (연도). 이 코드의 일부는 IBM Corp.의 샘플 프로그램에서 파생됩니다.</p>
+<p>&copy; Copyright IBM Corp. _연도_. All rights reserved.</p>
+<p>이 정보를 소프트카피로 확인하는 경우에는 사진과 컬러 삽화가 제대로 나타나지 않을 수도 있습니다.</p>
+<a name="dqx1trademarks"></a>
+<h2 id="dqx1trademarks"><a href="#ToC_8">상표</a></h2>
+<p>IBM, IBM 로고 및
+ibm.com&reg;은
+미국 또는 기타 국가에서 사용되는 International Business Machines Corp.의 상표 또는 등록상표입니다. 기타 제품 및 서비스 이름은
+IBM 또는 기타 회사의 상표입니다. 현재 IBM의 상표 목록은
+웹의 "저작권 및 상표 정보"(<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>)에 있습니다.</p>
+<p>Adobe, Adobe 로고 및PostScript는 미국 또는
+기타 국가에서 사용되는 Adobe Systems
+Incorporated의 상표 또는 등록상표입니다.</p>
+<p>Intel, Itanium 및 Pentium은 미국 또는 기타 국가에서 사용되는
+Intel Corporation 또는 계열사의 상표 또는 등록상표입니다.</p>
+<p>Java 및 모든 Java 기반 상표와 로고는
+Oracle 및/또는 계열사의 상표이거나 등록상표입니다.</p>
+<p>Linux는 미국 또는 기타 국가에서 사용되는 Linus Torvalds의 등록상표입니다.</p>
+<p>Microsoft, Windows 및
+Windows NT는 미국 또는 기타 국가에서 하용되는 Microsoft Corporation의
+상표입니다.</p>
+<p>UNIX는 미국 또는 기타 국가에서 사용되는 The Open Group의 등록상표입니다.</p>
+<p>기타 회사, 제품 또는 서비스 이름은 타사의 상표 또는 서비스표입니다.</p>
+<a name="dqx1ids_osm_000"></a>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_9">저작권</a></h2>
+<p>이 문서에는 IBM의 저작권 정보가 포함되어 있습니다.
+이 정보는 라이센스 계약에 따라 제공되며 저작권법의 보호를 받습니다.
+이 책에 포함된 정보에는 제품 보증이 포함되어 있지 않으며
+이 책의 어떤 문구도 보증을 제공하는 것으로 해석되지 않습니다.</p>
+<p>IBM에 정보를 보내는 경우
+IBM은 귀하의 권리를 침해하지 않는 범위 내에서
+적절하다고 생각하는 방식으로 이 정보를 사용하거나 배포할 수 있습니다.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2007. 추가 정보는 <samp class="xph">license/notices.txt</samp> 파일을 참조하십시오.</p>
+<a id="Bot_Of_Page" name="Bot_Of_Page"></a>
+</body>
+</html>

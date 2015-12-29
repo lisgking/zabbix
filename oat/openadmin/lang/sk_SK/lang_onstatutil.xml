@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[Pomocný program onstat]]></mainTitle>
+<ErrorOnInteractive><![CDATA[Z nástroja OpenAdmin Tool nie je možné spustiť interaktívny režim pomocného programu onstat.]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[Zadajte len voľby. Príkaz <b>onstat</b> poskytuje nástroj OpenAdmin Tool.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[Voľba -r nie je dovolená s príkazmi onstat v nástroji OpenAdmin Tool.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[Voľba -o nie je dovolená s príkazmi onstat v nástroji OpenAdmin Tool.]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[Príkaz onstat obsahuje neplatný znak.]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[Príkazy onstat v nástroji OpenAdmin Tool môžu obsahovať len alfanumerické znaky, pomlčky, čiarky a bodky.]]></ReportValidChars>
+<ErrorPrepend><![CDATA[CHYBA:]]></ErrorPrepend>
+<SubmitAction><![CDATA[Spustiť]]></SubmitAction>
+<OnstatOptions><![CDATA[Zobraziť voľby príkazu onstat]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[Komponent pomocného programu onstat je dostupný len v nasledujúcej verzii servera (alebo vyššej): {0}]]></OnstatFeatureNotAvail>
+</lang>

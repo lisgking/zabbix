@@ -1,0 +1,323 @@
+﻿                              IBM Informix
+      Release Notes for the IBM OpenAdmin Tool (OAT) for Informix
+
+3.11, March 2013
+
+1.0 IBM OpenAdmin Tool (OAT) for Informix 3.11
+
+The Release Notes provide a list of useful topics and links for when you
+install an Informix® database product or fix pack.
+
+
+
+Contents
+*  "Description"
+*  "Announcement"
+*  "System requirements"
+*  "Installing IBM OpenAdmin Tool (OAT) for Informix 3.11"
+*  "Related information"
+
+
+
+Description
+
+The IBM® OpenAdmin Tool (OAT) for Informix is a web application for
+administering and analyzing the performance of IBM Informix database
+servers. You can administer multiple database server instances from a
+single OAT installation on a web server. You can access the web server
+through any browser to administer all your database servers.
+
+OAT includes these plug-ins: the IBM Informix Health Advisor Plug-in for
+OpenAdmin Tool (OAT), the IBM Informix Replication Plug-in for OpenAdmin
+Tool (OAT), the IBM Informix Schema Manager Plug-in for OpenAdmin Tool
+(OAT), and the IBM Informix TimeSeries Plug-in for OpenAdmin Tool (OAT).
+You can create additional plug-ins for OAT to add the functions that you
+need.
+
+For a complete list of what's new in this release, go to
+http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.po.doc/new_features_ce.htm.
+
+The following fixes were made for OAT 3.11:
+
+Table 1. Defects fixed for OAT 3.11
++----------------------------------+----------------------------------+
+| Problem Description              | Component                        |
++----------------------------------+----------------------------------+
+| Reporting of free pages in a     | OAT                              |
+| blobspace is incorrect.          |                                  |
++----------------------------------+----------------------------------+
+| Allow users to set paging        | OAT                              |
+| preferences in the Admin area.   |                                  |
++----------------------------------+----------------------------------+
+| If an SLA is defined for a       | IBM Informix Replication Plug-in |
+| cluster on a disjoint server     | for OpenAdmin Tool (OAT)         |
+| with a rule that does not name   |                                  |
+| specific servers, the disjoint   |                                  |
+| cluster is presented incorrectly |                                  |
+| on the Replication > Connection  |                                  |
+| Manager page.                    |                                  |
++----------------------------------+----------------------------------+
+
+
+
+Announcement
+
+The product announcement letters are available at
+http://www.ibm.com/common/ssi/index.wss. Search for Informix 12.1. See
+the announcement for the following information: 
+*  Detailed product description, including a description of new function
+*  Product-positioning statement
+*  Packaging and ordering details
+*  International compatibility information
+
+
+
+System requirements
+
+For information about supported platforms, system requirements, required
+IBM Informix versions, and other prerequisites see this topic in the
+information center:
+http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.cpi.doc/ids_cpi_028.htm
+
+
+
+Installing IBM OpenAdmin Tool (OAT) for Informix 3.11
+
+OAT is installed by default during a typical installation of the
+following products:
+
+*  IBM Informix Client Software Development Kit (Client SDK), Version
+   4.10
+*  IBM Informix Connect, Version 4.10
+
+For installation instructions, see the topic Installing the OpenAdmin
+Tool for Informix with the Client SDK in the information center:
+http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.cpi.doc/ids_cpi_027.htm
+
+If you are upgrading from an earlier OAT version, additional information
+is in the topic Upgrading from a previous version of the OpenAdmin Tool
+(OAT) for Informix:
+http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.cpi.doc/ids_cpi_031.htm
+
+Alternatively, the OpenAdmin Tool Community Edition is available from
+the IBM Informix Free Product Download page:
+https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&source=swg-informixfpd
+. The OpenAdmin Tool Community Edition includes OAT and the optional
+plug-ins, but it does not include the supporting software. This edition
+must be installed manually. Refer to the README file for installation
+instructions.
+
+
+
+Related information
+*  OpenAdmin Tool website: http://www.openadmintool.org/ for demos and
+   other information.
+*  International Informix Users Group (IIUG) OpenAdmin Tool forum:
+   http://www.iiug.org/forums/oat/
+*  IBM Support Portal: http://www.ibm.com/support/entry/portal/
+
+1.1 Links to non-IBM websites
+
+This product might provide links or references to non-IBM websites and
+resources.
+
+IBM makes no representations, warranties, or other commitments
+whatsoever about any non-IBM Web sites or third-party resources that may
+be referenced, accessible from, or linked to any IBM site. A link to a
+non-IBM Web site does not mean that IBM endorses the content or use of
+such Web site or its owner. In addition, IBM is not a party to or
+responsible for any transactions you may enter into with third parties,
+even if you learn of such parties (or use a link to such parties) from
+an IBM site. Accordingly, you acknowledge and agree that IBM is not
+responsible for the availability of such external sites or resources,
+and is not responsible or liable for any content, services, products, or
+other materials on or available from those sites or resources.
+
+When you access a non-IBM Web site, even one that may contain the
+IBM-logo, please understand that it is independent from IBM, and that
+IBM does not control the content on that Web site. It is up to you to
+take precautions to protect yourself from viruses, worms, trojan horses,
+and other potentially destructive programs, and to protect your
+information as you deem appropriate.
+
+1.2 Notices
+
+This information was developed for products and services offered in the
+U.S.A.
+
+IBM may not offer the products, services, or features discussed in this
+document in other countries. Consult your local IBM representative for
+information on the products and services currently available in your
+area. Any reference to an IBM product, program, or service is not
+intended to state or imply that only that IBM product, program, or
+service may be used. Any functionally equivalent product, program, or
+service that does not infringe any IBM intellectual property right may
+be used instead. However, it is the user's responsibility to evaluate
+and verify the operation of any non-IBM product, program, or service.
+
+IBM may have patents or pending patent applications covering subject
+matter described in this document. The furnishing of this document does
+not grant you any license to these patents. You can send license
+inquiries, in writing, to: 
+
+IBM Director of Licensing
+IBM Corporation
+North Castle Drive
+Armonk, NY 10504-1785
+U.S.A. 
+
+For license inquiries regarding double-byte (DBCS) information, contact
+the IBM Intellectual Property Department in your country or send
+inquiries, in writing, to: 
+
+Intellectual Property Licensing
+Legal and Intellectual Property Law
+IBM Japan, Ltd.
+19-21, Nihonbashi-Hakozakicho, Chuo-ku
+Tokyo 103-8510, Japan
+
+The following paragraph does not apply to the United Kingdom or any
+other country where such provisions are inconsistent with local law:
+INTERNATIONAL BUSINESS MACHINES CORPORATION PROVIDES THIS PUBLICATION
+"AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+Some states do not allow disclaimer of express or implied warranties in
+certain transactions, therefore, this statement may not apply to you.
+
+This information could include technical inaccuracies or typographical
+errors. Changes are periodically made to the information herein; these
+changes will be incorporated in new editions of the publication. IBM may
+make improvements and/or changes in the product(s) and/or the program(s)
+described in this publication at any time without notice.
+
+Any references in this information to non-IBM websites are provided for
+convenience only and do not in any manner serve as an endorsement of
+those websites. The materials at those websites are not part of the
+materials for this IBM product and use of those websites is at your own
+risk.
+
+IBM may use or distribute any of the information you supply in any way
+it believes appropriate without incurring any obligation to you.
+
+Licensees of this program who wish to have information about it for the
+purpose of enabling: (i) the exchange of information between
+independently created programs and other programs (including this one)
+and (ii) the mutual use of the information which has been exchanged,
+should contact: 
+
+IBM Corporation
+J46A/G4
+555 Bailey Avenue
+San Jose, CA 95141-1003
+U.S.A.
+
+Such information may be available, subject to appropriate terms and
+conditions, including in some cases, payment of a fee.
+
+The licensed program described in this document and all licensed
+material available for it are provided by IBM under terms of the IBM
+Customer Agreement, IBM International Program License Agreement or any
+equivalent agreement between us.
+
+Any performance data contained herein was determined in a controlled
+environment. Therefore, the results obtained in other operating
+environments may vary significantly. Some measurements may have been
+made on development-level systems and there is no guarantee that these
+measurements will be the same on generally available systems.
+Furthermore, some measurements may have been estimated through
+extrapolation. Actual results may vary. Users of this document should
+verify the applicable data for their specific environment.
+
+Information concerning non-IBM products was obtained from the suppliers
+of those products, their published announcements or other publicly
+available sources. IBM has not tested those products and cannot confirm
+the accuracy of performance, compatibility or any other claims related
+to non-IBM products. Questions on the capabilities of non-IBM products
+should be addressed to the suppliers of those products.
+
+All statements regarding IBM's future direction or intent are subject to
+change or withdrawal without notice, and represent goals and objectives
+only.
+
+All IBM prices shown are IBM's suggested retail prices, are current and
+are subject to change without notice. Dealer prices may vary.
+
+This information is for planning purposes only. The information herein
+is subject to change before the products described become available.
+
+This information contains examples of data and reports used in daily
+business operations. To illustrate them as completely as possible, the
+examples include the names of individuals, companies, brands, and
+products. All of these names are fictitious and any similarity to the
+names and addresses used by an actual business enterprise is entirely
+coincidental.
+
+COPYRIGHT LICENSE:
+
+This information contains sample application programs in source
+language, which illustrate programming techniques on various operating
+platforms. You may copy, modify, and distribute these sample programs in
+any form without payment to IBM, for the purposes of developing, using,
+marketing or distributing application programs conforming to the
+application programming interface for the operating platform for which
+the sample programs are written. These examples have not been thoroughly
+tested under all conditions. IBM, therefore, cannot guarantee or imply
+reliability, serviceability, or function of these programs. The sample
+programs are provided "AS IS", without warranty of any kind. IBM shall
+not be liable for any damages arising out of your use of the sample
+programs.
+
+Each copy or any portion of these sample programs or any derivative
+work, must include a copyright notice as follows:
+
+© (your company name) (year). Portions of this code are derived from IBM
+Corp. Sample Programs.
+
+© Copyright IBM Corp. _enter the year or years_. All rights reserved.
+
+If you are viewing this information softcopy, the photographs and color
+illustrations may not appear.
+
+1.2.1 Trademarks
+
+IBM, the IBM logo, and ibm.com are trademarks or registered trademarks
+of International Business Machines Corp., registered in many
+jurisdictions worldwide. Other product and service names might be
+trademarks of IBM or other companies. A current list of IBM trademarks
+is available on the web at "Copyright and trademark information" at
+http://www.ibm.com/legal/copytrade.shtml.
+
+Adobe, the Adobe logo, and PostScript are either registered trademarks
+or trademarks of Adobe Systems Incorporated in the United States, and/or
+other countries.
+
+Genero and its logo are registered trademarks of Four Js Development
+Tools Europe Ltd.
+
+Intel, Itanium, and Pentium are trademarks or registered trademarks of
+Intel Corporation or its subsidiaries in the United States and other
+countries.
+
+Java(TM) and all Java-based trademarks and logos are trademarks or
+registered trademarks of Oracle and/or its affiliates.
+
+Linux is a registered trademark of Linus Torvalds in the United States,
+other countries, or both.
+
+Microsoft, Windows, and Windows NT are trademarks of Microsoft
+Corporation in the United States, other countries, or both.
+
+UNIX is a registered trademark of The Open Group in the United States
+and other countries.
+
+Other company, product, or service names may be trademarks or service
+marks of others.
+
+Contact support: http://www.ibm.com/support/entry/portal/
+
+© Copyright IBM Corp. 1996, 2013
+
+© Copyright The PHP Group 1997-2010. See the license/notices.txt file
+for additional information.
+

@@ -1,0 +1,10 @@
+LÝSANS BÝLGÝLERÝ
+
+Aþaðýda listelenen programlar, IBM Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi (IBM form numarasý Z125-5589-05) koþullarýna ek olarak aþaðýdaki koþullar kapsamýnda lisanslanýr.
+
+Program Adý: IBM OpenAdmin Tool - Enterprise Replication Plugin V3.11
+Program Numarasý: Tool
+
+L/N:  L-DDAY-94MTA8
+D/N:  L-DDAY-94MTA8
+P/N:  L-DDAY-94MTA8 

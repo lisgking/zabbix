@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-cn" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, reference, reference, task, task, reference, reference, reference, reference, reference, reference, reference, reference, task, reference, reference, reference, reference, reference, reference, reference, reference, reference, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="复制集, 定义, 定义, 复制集, 复制, 复制, 模板, 实现, 模板, 实例化" />
+<meta name="keywords" content="实现模板, 删除, 网格, 网格, 创建, 任务, 命令, 源服务器, 成员服务器, 服务器, 修改, ER 服务器" />
+<meta name="keywords" content="Enterprise Replication 服务器, 异常终止的事务假脱机 (ATS), 行信息假脱机 (RIS), 暂挂, 暂挂, 复制, 恢复" />
+<meta name="keywords" content="停止, 启动, 重新启动, 禁用, 启用, 断开连接, 删除, 连接, 管理, 查看属性, 复制集属性, 查看" />
+<meta name="keywords" content="启动, 停止, 恢复, 恢复为活动状态, 复制集, 添加, 参与者, 规则, 冲突解决, 作用域, 复制频率" />
+<meta name="keywords" content="复制整行, 查看参与者, 复制属性, 一致性, 检查, 不一致的行, 修复, 同步" />
+<meta name="keywords" content="复制检查或同步任务, 删除检查或同步任务, 复制集检查或同步任务, 任务状态, 任务状态, 连接管理器" />
+<meta name="keywords" content="连接单元, 高可用性集群, 服务器集, 故障转移配置, 服务级别协议, SLA" />
+<title>Informix Replication Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Replication Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>目录</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oer.dita" class="toclink">Informix Replication Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oer_002" class="toclink">设置 Replication 插件</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oer_003" class="toclink">监视 Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_4" href="#dqx1ids_oer_004" class="toclink">查看 ER 域的拓扑</a></div>
+<div class="head3"><a id="ToC_5" href="#dqx1ids_oer_005" class="toclink">配置警报阈值</a></div>
+<div class="head3"><a id="ToC_6" href="#dqx1ids_oer_006" class="toclink">检查 Enterprise Replication 域上的警报</a></div>
+<div class="head3"><a id="ToC_7" href="#dqx1ids_oer_007" class="toclink">查看 Enterprise Replication 节点的状态</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_oer_011" class="toclink">监视节点的日志捕获信息</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_oer_016" class="toclink">监视节点的发送队列</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_oer_018" class="toclink">监视 Enterprise Replication 节点的网络 I/O</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_oer_019" class="toclink">监视节点的磁盘空间使用率</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_oer_020" class="toclink">监视节点的接收队列</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oer_021" class="toclink">监视已复制数据如何应用到目标节点</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oer_024" class="toclink">查看失败事务的 ATS 和 RIS 文件</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oer_026" class="toclink">查看 Enterprise Replication 错误</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oer_028" class="toclink">查看 ER 配置参数</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oer_029" class="toclink">管理 Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oer_070" class="toclink">设置 Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oer_060" class="toclink">使用模板设置 Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oer_098" class="toclink">使用网格管理 Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oer_071.dita" class="toclink">管理 Enterprise Replication 服务器</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oer_037.dita" class="toclink">管理复制集</a></div>
+<div class="head3"><a id="ToC_78" href="#dqx1ids_oer_036.dita" class="toclink">管理复制</a></div>
+<div class="head3"><a id="ToC_94" href="#dqx1ids_oer_050.dita" class="toclink">在复制服务器间再同步数据</a></div>
+<div class="head3"><a id="ToC_105" href="#dqx1ids_oer_054" class="toclink">监视任务状态</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oer_030" class="toclink">更改 ER 配置参数</a></div>
+<div class="head2"><a id="ToC_109" href="#dqx1ids_oer_115.dita" class="toclink">管理客户机连接</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oer_116" class="toclink">查看连接单元</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oer_117" class="toclink">添加连接单元</a></div>
+<div class="head3"><a id="ToC_112" href="#dqx1ids_oer_118" class="toclink">修改故障转移配置</a></div>
+<div class="head3"><a id="ToC_113" href="#dqx1ids_oer_119" class="toclink">创建服务级别协议</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oer_120" class="toclink">修改服务级别协议</a></div>
+<div class="head3"><a id="ToC_115" href="#dqx1ids_oer_121" class="toclink">创建连接管理器</a></div>
+<div class="head1"><a id="ToC_116" href="#dqx1ids_cm_not" class="toclink">声明</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1trademarks" class="toclink">商标</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oer_000" class="toclink">版权</a></div>
+</div>
+<h1 id="dqx1ids_oer.dita"><a href="#ToC_1">Informix Replication Plug-in for OAT</a></h1>
+<div>
+<p>IBM&reg; Informix&reg; Replication Plug-in for OpenAdmin Tool (OAT) 提供图形界面，用于设置、监视和管理 Enterprise Replication (ER)。您还可以管理互连复制服务器的网格。</p></div>
+<div>
+<div class="notetitle" id="wq2">先决条件：</div>
+<div class="notebody">Replication 插件需要 IBM Informix 11.50.xC4 或更高版本。<span id="dqx1ids_oer.dita__preq-ph-cmxc3">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器</span></div></div>
+<p>
+<p>使用 Replication 插件，您可以监视 ER 服务器和域：</p></p>
+<ul>
+<li>查看 ER 域和所有已知节点的拓扑。</li>
+<li>查看有关域中节点的摘要和详细信息。</li>
+<li>查看有关域中复制和复制集的详细信息。</li>
+<li>设置域的警报阈值。</li></ul>
+<p>可以完成 ER 管理任务：</p>
+<ul>
+<li>定义和修改 ER 服务器、复制和复制集。</li>
+<li>使用模板设置 ER。</li>
+<li>管理服务器、复制集和复制的状态。</li>
+<li>在复制服务器之间再同步数据。</li>
+<li>更改服务器的 ER 配置参数。</li></ul>
+<p>可以在域中创建和管理互连复制服务器的网格：</p>
+<ul>
+<li>查看有关域中网格的信息。</li>
+<li>创建网格，并允许源服务器和用户运行网格命令。</li>
+<li>修改网格以添加服务器，启用或禁用源服务器，或者授权其他用户。</li>
+<li>查看网格命令的状态并重新运行失败的网格命令。</li>
+<li>通过为连接管理器配置服务级别协议 (SLA)，根据复制数据的质量将客户机连接路由至网格中的服务器。</li></ul>
+<p>可以定义连接管理器来为集群、网格、复制集和服务器集的组合管理客户机连接请求。您可以将连接单元添加到连接管理器，启动和停止连接管理器，并创建服务级别协议 (SLA)。</p>
+<h2 id="dqx1ids_oer_002"><a href="#ToC_2">设置 Replication 插件</a></h2>
+<div>
+<p>设置 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 来监视和管理 Enterprise Replication (ER)。</p></div>
+<p>
+<p>要设置 Replication 插件：</p></p>
+<p></p>
+<ol type="1">
+<li>安装 Replication 插件。</li>
+<li>创建 OAT 组。</li>
+<li>通过现有 ER 域中的服务器之一或要为 Enterprise Replication 定义的任何服务器，登录到 OAT。
+
+<p>有关安装 Replication 插件和创建 OAT 组的更多信息，请参阅 OAT 帮助。要访问该帮助，请在 OAT 菜单上单击<strong>帮助</strong> &gt; <strong>OAT 任务帮助</strong>。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关信息</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_470.htm#ids_erp_470" target="_blank">设置和管理 Enterprise Replication（Enterprise Replication 指南）</a></li></ul>
+<h2 id="dqx1ids_oer_003"><a href="#ToC_3">监视 Enterprise Replication</a></h2>
+<div>
+<p>使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 来监视 Enterprise Replication 服务器和域。</p></div>
+<p>
+<p></p></p>
+<h3 id="dqx1ids_oer_004"><a href="#ToC_4">查看 ER 域的拓扑</a></h3>
+<div>
+<p>查看 Enterprise Replication (ER) 域的拓扑或路由映射。</p></div>
+<p>
+<p>要查看当前域的拓扑，请在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</p>
+<p><strong>域</strong>页面会显示当前节点已知的所有 ER 域节点，例如，叶节点会知道自己及其父节点。节点由 SQLHOSTS 文件中定义的组名表示。</p></p>
+<div>
+<div class="notetitle" id="wq9">重要信息：</div>
+<div class="notebody">如果连接到非根节点或连接到叶节点，可查看的信息和可采取的操作将会受到限制。要获取更完整的访问权，请切换到域中的根节点。</div></div>
+<p>在<strong>域</strong>页面上，可以执行以下操作：</p>
+<ul>
+<li>通过查看任何可视警报，确定是否有任何节点需要关注。</li>
+<li>通过将光标悬浮在节点图标上，查看节点名以及任何节点成员的名称。</li>
+<li>通过单击展开图标，显示或隐藏任何非叶节点的子树。</li>
+<li>定制您的视图：<ul>
+<li>要在域上放大或缩小，请使用缩放滑块。</li>
+<li>要查看刷新率，请单击时钟图标。</li>
+<li>要更改刷新率，请单击时钟图标，然后使用滑块来指定刷新率（从 0 秒到 300 秒）。</li>
+<li>要显示节点间的连接线，请单击“正常视图”图标。</li>
+<li>要隐藏连接线，请单击“无连接视图”图标。</li></ul></li></ul>
+<p>要在列表中查看域中的服务器，请单击<strong>服务器列表</strong>选项卡。针对每个服务器，该列表会显示状态、成员服务器、类型、父代（如果适用）、IBM Informix 版本以及上次监视服务器的日期和时间。</p>
+<h3 id="dqx1ids_oer_005"><a href="#ToC_5">配置警报阈值</a></h3>
+<div>
+<p>为 Enterprise Replication (ER) 域配置警报阈值。</p></div>
+<p>
+<p>当达到警报阈值时，会向管理员发送通知，并在<strong>域</strong>页面上显示一个警报图标。
+警报阈值适用于 ER 域中的所有节点。</p>
+<p>要配置阈值：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>编辑阈值</strong>。</li>
+<li>要激活某个阈值，请选中该阈值的<strong>启用</strong>复选框。要取消激活该阈值，请清除该复选框。</li>
+<li>在字段中输入或更改阈值。</li>
+<li>单击<strong>更新阈值</strong>以保存更改。</li></ol>
+<h3 id="dqx1ids_oer_006"><a href="#ToC_6">检查 Enterprise Replication 域上的警报</a></h3>
+<div>
+<p>检查 Enterprise Replication
+(ER) 域中的节点上的警报。</p></div>
+<p>
+<p> 当节点达到或超出警报阈值时，会发出警报。</p>
+<p>要检查警报：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。
+
+<p>将突出显示带有警报的任何节点。</p></li>
+<li>请单击此节点，然后在<strong>操作</strong>菜单上单击<strong>节点状态</strong>。
+
+<p>此时会出现一个页面，其中显示此节点的概要文件数据和任何警报。</p></li>
+<li>要查看选定节点的复制活动，请在<strong>操作</strong>菜单上单击<strong>节点详细信息</strong>。
+
+<p><strong>摘要</strong>页面会显示选定节点的高级统计信息。单击选项卡，以获取有关此节点的更详细信息：</p>
+
+<ul>
+<li><strong>捕获</strong>：在选定节点进行的数据捕获活动。</li>
+<li><strong>发送队列</strong>：针对选定节点及其目标节点和复制的发送队列。</li>
+<li><strong>网络</strong>：选定节点及其伙伴 ER 节点之间的网络活动。
+</li>
+<li><strong>磁盘使用情况</strong>：当发送和接收队列已满并且事务假脱机到磁盘时，选定节点所使用的空间。</li>
+<li><strong>应用</strong>：当前节点上应用的已复制事务。</li>
+<li><strong>ATS</strong>：选定节点的异常终止的事务假脱机 (ATS) 文件。可通过使用 ATS 文件从此页面修复失败的事务。</li>
+<li><strong>RIS</strong>：选定节点的行信息假脱机 (RIS) 文件。可通过使用 RIS 文件从此页面修复失败的事务。</li>
+<li><strong>错误</strong>：与选定节点或域相关的错误。</li>
+<li><strong>配置</strong>：为选定节点定义的 ER 配置参数。可从此页面编辑这些参数。</li></ul></li></ol>
+<h3 id="dqx1ids_oer_007"><a href="#ToC_7">查看 Enterprise Replication 节点的状态</a></h3>
+<div>
+<p>查看 Enterprise Replication
+(ER) 域中节点的状态。</p></div>
+<p>
+<p>可以通过以下方式查看 ER 域中节点的状态：</p>
+<ul>
+<li>要查看 IBM OpenAdmin Tool (OAT) for Informix 所连接的节点，请在 OAT 菜单上单击<strong>复制</strong> &gt; <strong> ER 域</strong>。此时会显示此节点的详细页面。</li>
+<li>要查看域中其他节点，请单击此节点。然后，在<strong>操作</strong>菜单上，单击<strong>节点状态</strong>。OAT 会连接到域中选定节点，并会显示此节点的详细页面。</li></ul></p>
+<h4 id="dqx1ids_oer_008">在当前节点查看复制活动的摘要</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中 IBM OpenAdmin Tool (OAT) for Informix 所连接的节点上复制活动的摘要。</p></div>
+<p>
+<p>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong>。</p>
+<p><strong>摘要</strong>页面显示 OAT 所连接的节点的复制活动高级摘要。要查看详细信息，请单击与该部分对应的选项卡。</p>
+<table id="wq18" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>表 1. 节点摘要</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq19" align="left">部分</th>
+<th id="wq20" align="left">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq19"><strong>磁盘使用情况</strong></td>
+<td headers="wq20"><strong>行数据智能大对象空间</strong>字段表明用于行数据假脱机的空间量（和百分比）。如果此值较高，可能需要添加更多空间。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>错误</strong></td>
+<td headers="wq20"><strong>未复审的错误数</strong>字段显示需要阅读的错误数。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>复制</strong></td>
+<td headers="wq20"><strong>活动复制数</strong>字段显示作为此节点对等节点的活动的已知复制数。复制定义了复制参与者以及有关如何复制数据（例如频率）和如何处理复制期间的任何冲突的各种属性。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>捕获
+</strong></td>
+<td headers="wq20">此部分显示有关从逻辑日志捕获事务、日志位置以及用户事务阻塞 (DDRBLOCK) 临近值的统计信息。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>应用</strong></td>
+<td headers="wq20">此部分显示有关选定节点上的应用活动的统计信息。
+</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>发送队列</strong></td>
+<td headers="wq20">此部分显示有关源节点上发送队列中事务的排序的统计信息。
+</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>接收队列
+</strong></td>
+<td headers="wq20">此部分显示有关选定节点上接收队列中事务的统计信息。
+</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>网络</strong></td>
+<td headers="wq20">此部分显示有关选定节点及其伙伴 ER 节点之间的网络活动的统计信息。
+</td>
+</tr>
+</tbody>
+</table></p>
+<h4 id="dqx1ids_oer_009">查看作为复制源的节点</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中作为源服务器的节点。</p></div>
+<p>
+<p>ER 会监视要复制到目标节点的事务的逻辑日志，并将这些事务复制到源服务器上的发送队列。</p>
+<p>您可以在 IBM OpenAdmin Tool (OAT) for Informix 的以下页面上查看有关事务和发送队列的详细信息：<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>、<strong>捕获</strong>和<strong>发送队列</strong>。</p></p>
+<h4 id="dqx1ids_oer_010">查看作为复制目标的节点</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中作为目标服务器的节点。</p></div>
+<p>
+<p>接收队列是要在当前数据库节点应用的事务的等待区域。ER 会将事务应用到正确的数据库，并在成功复制事务之后通知源节点。</p>
+<p>您可以在 IBM OpenAdmin Tool (OAT) for Informix 的以下页面上查看有关事务和发送队列的详细信息：<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>、<strong>发送队列</strong>、<strong>应用</strong>、<strong>ATS</strong> 和 <strong>RIS</strong>。</p></p>
+<h3 id="dqx1ids_oer_011"><a href="#ToC_11">监视节点的日志捕获信息</a></h3>
+<div>
+<p>查看有关 Enterprise Replication (ER) 域中当前节点上日志捕获活动的详细信息。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>捕获</strong>。<strong>捕获</strong>页面会显示以下信息：</p></p>
+<ul>
+<li>当前节点上 ER 日志捕获的状态：正在运行、停止或未初始化。</li>
+<li>当前日志位置以及捕获要进行复制的事务的日志位置。比较这两个日志位置以确定 ER 是否与正在进行的数据库事务同步。</li>
+<li>日志重放位置，即发生故障后 ER 开始将日志信息重新读入日志更新缓冲区的起始点。在所有目标服务器上，此位置之前生成的所有事务都已由 ER 应用或存储在稳定队列空间中。<div>
+<div class="notetitle" id="wq24">重要信息：</div>
+<div class="notebody">为防止丢失数据，请确保永远不会覆盖日志重放位置。如果重放位置无法推进，队列可能已满或远程节点可能已宕机。</div></div></li>
+<li>日志页面总数以及 ER 进入事务阻塞状态（称为 DDRBLOCK 方式）之前的页面数。</li>
+<li>逻辑日志回绕和覆盖 ER 尚未处理的事务之前的页面数。
+</li>
+<li>日志捕获期间从日志捕获高速缓存和磁盘上假脱机的日志条目读取的日志页面数，以及是否存在日志高速缓存溢出。</li>
+<li>是否启用了动态日志记录来防止 DDRBLOCK 方式，以及一些相关信息，包括可请求的动态逻辑日志数以及为创建动态逻辑日志而发出的请求数。</li></ul>
+<h4 id="dqx1ids_oer_012">确定是否正在捕获要进行复制的事务</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中当前节点上的日志捕获活动。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>捕获</strong>。请查看捕获状态和日志位置字段。
+这些字段显示的进度可能会帮助您确定是否正在主动捕获事务。</p></p>
+<table id="wq26" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>表 2. 捕获详细信息</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq27" align="left">字段</th>
+<th id="wq28" align="left">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>捕获状态
+</strong></td>
+<td headers="wq28">当前节点上日志捕获的状态：正在运行、停止或未初始化。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>当前日志位置
+</strong></td>
+<td headers="wq28">当前事务的逻辑日志位置。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>捕获日志位置
+</strong></td>
+<td headers="wq28">正在捕获要进行复制的事务的逻辑日志位置。将捕获日志位置与当前日志位置进行比较，以确定 ER 是否与事务同步。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>重放日志位置
+</strong></td>
+<td headers="wq28">发生故障后 ER 开始将日志信息重新读入日志更新缓冲区的起始点。在所有目标服务器上，此位置之前生成的所有事务都已由 ER 应用或存储在稳定队列空间中。<div>
+<div class="notetitle" id="wq29">重要信息：</div>
+<div class="notebody">为防止丢失数据，请确保永远不会覆盖日志重放位置。如果重放位置无法推进，队列可能已满或远程节点可能已宕机。</div></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dqx1ids_oer_013">监视节点的日志捕获进度</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中当前节点上的日志捕获进度。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>捕获</strong>。定期检查<strong>当前日志位置</strong>和<strong>捕获日志位置</strong>字段，以确定 ER 是否与正在进行的数据库事务同步。</p></p>
+<h4 id="dqx1ids_oer_014">防止 DDRBLOCK 和日志回绕</h4>
+<div>
+<p>防止 Enterprise Replication (ER) 进入事务阻塞状态（称为 DDRBLOCK 方式）。</p></div>
+<p>
+<p>逻辑日志回绕时，会覆盖 ER 尚未处理的事务。事务在尚未存储到发送队列之前即丢失。如果数据库服务器接近日志回绕，ER 会进入 DDRBLOCK 方式。可配置 ER 以动态添加逻辑日志文件，而不是进入 DDRBLOCK 方式。</p></p>
+<ul>
+<li>要监视 DDRBLOCK 的临近值，请在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>捕获</strong>。查看 <strong>DDRBLOCK 的临近值</strong>字段，此字段显示 ER 进入 DDRBLOCK 之前逻辑日志空间中的页面数。</li>
+<li>要防止 DDRBLOCK，请配置 ER 以动态添加逻辑日志文件。
+在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>配置</strong>，并设置 DYNAMIC_LOGS 和 CDR_MAX_DYNAMIC_LOGS 参数。</li>
+<li>要监视日志回绕的临近值，请在 OAT 菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>捕获</strong>。查看<strong>日志回绕的临近值</strong>字段，此字段显示逻辑日志回绕之前逻辑日志空间中的页面数。</li></ul>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">处理潜在的日志回绕（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_015">启用动态日志文件分配</h4>
+<div>
+<p>通过配置 Enterprise Replication (ER) 以动态添加逻辑日志文件，帮助防止 ER 进入事务阻塞状态（称为 DDRBLOCK 方式）。</p></div>
+<p>
+<p>逻辑日志回绕时，会覆盖 ER 尚未处理的事务。事务在尚未存储到发送队列之前即丢失。如果数据库服务器接近日志回绕，ER 会进入 DDRBLOCK 方式。可配置 ER 以动态添加逻辑日志文件，而不是进入 DDRBLOCK 方式。</p>
+<p>要启用动态日志文件分配：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>配置</strong>。</li>
+<li>单击<strong>编辑配置</strong>。</li>
+<li>针对 <strong>DYNAMIC_LOGS</strong>，输入 <samp class="xph">2</samp> 以启用动态日志文件分配。</li>
+<li>针对 <strong>CDR_MAX_DYNAMIC_LOGS</strong>，输入 ER 可在一个会话中发出的动态日志文件请求数。
+或输入 <samp class="xph">-1</samp> 以无限制添加日志。</li></ol>
+<p>
+<p></p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">处理潜在的日志回绕（Enterprise Replication 指南）</a></li></ul>
+<h3 id="dqx1ids_oer_016"><a href="#ToC_16">监视节点的发送队列</a></h3>
+<div>
+<p>监视有关 Enterprise Replication (ER) 域中当前节点上的发送队列的统计信息以及有关以当前节点为复制事务源的目标节点和复制的统计信息。</p></div>
+<p>
+<p>ER 从逻辑日志收集信息并将要传输的数据放入发送队列中。要监视发送队列，请在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>发送队列</strong>。</p>
+<p></p>
+<p><strong>发送队列</strong>页面显示有关发送队列中事务的统计信息。此页面提供有关存储空间、发送到目标节点的事务和发送队列中事务所需的内存的信息。
+还会提供有关以当前节点为复制事务源的目标节点和复制的信息。</p></p>
+<ul>
+<li>要确定队列中的事务数以及是否存储了这些事务，请查看<strong>队列中的事务数
+</strong>、<strong>内存中的事务数</strong>和<strong>假脱机的事务数</strong>字段。</li>
+<li>要确定目标节点上是否正在应用事务，请查看<strong>捕获日志位置</strong>字段。将其与<strong>上次数据确认位置</strong>字段进行比较，此字段指示目标节点上上次应用的事务的逻辑日志位置。</li>
+<li>要确定是否有任何目标节点未应用事务，请查看<strong>已暂挂节点数</strong>字段。
+此外，请单击<strong>目标节点</strong>选项卡以查看每个相关目标节点的连接状态。</li>
+<li>要查看当前节点将数据复制到的目标节点的状态，请单击<strong>目标节点</strong>选项卡。</li>
+<li>要查看当前节点的复制，请单击<strong>复制</strong>选项卡。</li></ul>
+<h4 id="dqx1ids_oer_017">查看与当前节点相关的目标节点和复制</h4>
+<div>
+<p>查看以 Enterprise Replication (ER) 域中当前节点为复制事务源的目标节点和复制。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>发送队列</strong>，然后单击<strong>目标节点</strong>选项卡或<strong>复制</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oer_018"><a href="#ToC_18">监视 Enterprise Replication 节点的网络 I/O</a></h3>
+<div>
+<p>监视 Enterprise Replication (ER) 域中当前节点的网络 I/O 的摘要。查看有关当前节点及其相关节点的详细信息。</p></div>
+<p>
+<p>要检查当前节点的网络活动，请在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>。在<strong>摘要</strong>页面上，<strong>网络</strong>部分会显示以下信息：</p></p>
+<ul>
+<li>已连接节点数</li>
+<li>当前节点发送的消息数</li>
+<li>当前节点接收的消息数</li>
+<li>当前节点上的吞吐率</li>
+<li>由于连接问题或其他问题而未发送的消息数</li></ul>
+<p>要检查当前节点及其相关节点的网络状态，请在 OAT 菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>网络</strong>。<strong>网络</strong>页面会显示已将消息发送到当前节点或已从当前节点接收消息的对等节点的网络活动相关信息。
+对等节点的名称列为 <strong>sqlhosts</strong> 文件中所定义的组名。</p>
+<ul>
+<li>要确定当前节点上的最近网络活动，请查看<strong>网络详细信息</strong>图，此图显示随时间变化的消息数。单击时钟图标以查看或更改刷新率（其范围为 0 秒到 60 秒）。</li>
+<li>要确定对等节点的连接状态，请查看<strong>状态</strong>列。</li>
+<li>要确定对等节点的网络接口 (NIF) 状态，请查看<strong>连接</strong>列。</li></ul>
+<h3 id="dqx1ids_oer_019"><a href="#ToC_19">监视节点的磁盘空间使用率</a></h3>
+<div>
+<p>监视 Enterprise Replication (ER) 域中当前节点上磁盘空间的使用情况。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>磁盘使用情况</strong>。<strong>磁盘使用情况</strong>页面会显示有关 ER 所使用的三个空间区域的信息：</p>
+<ul>
+<li><strong>行数据智能大对象空间</strong>：存储要复制的数据的智能大对象空间。它们在 CDR_QDATA_SBSPACE 参数中定义。
+</li>
+<li><strong>事务记录数据库空间</strong>：存储事务记录的数据库空间。它们在 CDR_HDR_DBSPACE 参数（如果已定义该参数）中定义。
+否则，缺省情况下，事务记录会存储在根数据库空间中。</li>
+<li><strong>分组器页面调度智能大对象空间</strong>：用于大型事务处理的智能大对象空间。它们首先通过 SBSPACETEMP 参数（如果已定义该参数）定义；然后通过 SBSPACENAME 参数（如果已定义该参数）定义；如果前两个参数都未定义，那么通过 CDR_QDATA_SBSPACE 参数定义。
+</li></ul></p>
+<div>
+<div class="notetitle" id="wq40">重要信息：</div>
+<div class="notebody">如果这些空间已满，ER 会挂起，直到导致其假脱机的问题得到解决或分配更多磁盘空间为止。
+</div></div>
+<p>要更改这些参数的值，请在 OAT 菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>配置</strong>，然后单击<strong>编辑配置</strong>。</p>
+<h3 id="dqx1ids_oer_020"><a href="#ToC_20">监视节点的接收队列</a></h3>
+<div>
+<p>监视 Enterprise Replication (ER) 域中当前节点上接收队列中的排队和暂挂事务。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>。查看<strong>接收队列</strong>部分，此部分列出排队和暂挂事务数。</p></p>
+<ul>
+<li>排队事务已从对等节点接收到当前节点上并存储在接收队列中。</li>
+<li>暂挂事务正等待应用到目标节点上。</li></ul>
+<h3 id="dqx1ids_oer_021"><a href="#ToC_21">监视已复制数据如何应用到目标节点</a></h3>
+<div>
+<p>监视已复制数据如何应用到 Enterprise Replication (ER) 域中的当前节点上。</p></div>
+<p>
+<p>目标节点从其他节点接收事务并将其存储到接收队列之后，ER 会将事务应用到目标节点上的表。</p>
+<p>要查看有关已复制数据如何应用到当前节点上的高级摘要，请在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>。请查看<strong>应用</strong>部分。</p>
+<p>要查看有关如何应用已复制数据的详细信息，请在 OAT 菜单上单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>应用</strong>。此页面包含以下三种类型的信息：</p></p>
+<ul>
+<li>有关已复制数据如何应用到当前节点的统计信息</li>
+<li>显示应用事务率和等待时间率的图形数据</li>
+<li>有关每个源节点以及每个节点的已复制数据如何应用到当前节点的统计信息</li></ul>
+<h4 id="dqx1ids_oer_022">监视事务失败数</h4>
+<div>
+<p>监视 Enterprise Replication (ER) 域中当前节点上的事务失败数。</p></div>
+<p>
+<p>可以通过使用以下方法监视事务失败数：</p>
+<ul>
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>摘要</strong>。在<strong>应用</strong>部分中，查看以下字段：<ul>
+<li><strong>事务失败率</strong>：平均每秒事务失败数。</li>
+<li><strong>失败总数</strong>：失败的事务总数。</li>
+<li><strong>ATS 文件计数</strong>：节点上异常终止的事务假脱机 (ATS) 文件的总数。大于 0 的数表示表级别可能发生了失败。</li>
+<li><strong>RIS 文件计数</strong>：节点上行信息假脱机 (RIS) 文件的总数。大于 0 的数表示行级别可能发生了失败。</li></ul></li>
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>应用</strong>。查看当前节点的<strong>失败率</strong>和<strong>失败总数</strong>字段以及<strong>每个节点的应用统计信息</strong>表，此表列出已发送事务的源节点。<strong>失败事务总数</strong>列按照已发送事务的节点，列出当前节点上已失败的事务数。</li>
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>ATS</strong> 和 <strong>RIS</strong>。这些页面列出用于在出现失败后对事务进行再同步的 ATS 文件和 RIS 文件。</li></ul></p>
+<h4 id="dqx1ids_oer_023">确定应用等待时间率</h4>
+<div>
+<p>查看 Enterprise Replication (ER) 域中当前节点上应用的事务等待时间率。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>应用</strong>。</p></p>
+<ul>
+<li>在<strong>应用统计信息</strong>部分中，查看<strong>平均等待时间</strong>和<strong>最长等待时间</strong>字段。</li>
+<li>查看<strong>等待时间</strong>图。</li>
+<li>对于源节点的等待时间率，请查看<strong>每个节点的应用统计信息</strong>部分。</li></ul>
+<p></p>
+<h3 id="dqx1ids_oer_024"><a href="#ToC_24">查看失败事务的 ATS 和 RIS 文件</a></h3>
+<div>
+<p>查看 Enterprise Replication (ER) 域中当前节点上失败事务的异常终止的事务假脱机 (ATS) 文件和行信息假脱机 (RIS) 文件。</p></div>
+<p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>ATS</strong> 或 <strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>RIS</strong>，然后单击文件名。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_257.htm#ids_erp_257" target="_blank">失败的事务（ATS 和 RIS）文件（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oer_063">使用 ATS 文件修复失败的事务</a><br />使用异常终止的事务假脱机 (ATS) 文件来修复失败的事务。ATS 修复任务会调整无法应用到目标服务器的行。</li>
+<li><a href="#dqx1ids_oer_064">使用 RIS 文件修复失败的事务</a><br />使用行信息假脱机 (RIS) 文件来修复失败的事务。RIS 修复任务会调整无法应用到目标服务器的行。</li></ul>
+<h3 id="dqx1ids_oer_026"><a href="#ToC_25">查看 Enterprise Replication 错误</a></h3>
+<div>
+<p>查看 Enterprise Replication (ER) 域中当前节点的错误或整个域的错误。</p></div>
+<p>
+<p>要查看 ER 错误：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong> &gt; <strong>错误</strong>。</li>
+<li>在<strong>错误</strong>列表中，选择要查看的错误：<ul>
+<li>域中所有节点的错误</li>
+<li>由于当前节点发送的命令而引起其他节点上生成的错误</li>
+<li>由于其他节点上的命令而引起当前节点上生成的错误</li></ul></li>
+<li>在<strong>查看状态</strong>列表中，选择要查看的错误的状态：所有、已查看或未查看。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_287.htm#ids_erp_287" target="_blank">cdr 命令行实用程序参考（Enterprise Replication 指南）</a></li></ul>
+<h3 id="dqx1ids_oer_028"><a href="#ToC_26">查看 ER 配置参数</a></h3>
+<div>
+<p>查看当前节点的 Enterprise Replication (ER) 配置参数的值。</p></div>
+<p>
+<p>要查看 ER 配置参数：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>节点详细信息</strong>。</li>
+<li>单击<strong>配置</strong>选项卡。此时会显示参数以及它们的当前值。</li>
+<li>要更改配置参数的值，请单击<strong>编辑配置</strong>。</li></ol>
+<h2 id="dqx1ids_oer_029"><a href="#ToC_27">管理 Enterprise Replication</a></h2>
+<div>
+<p>使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 来定义和管理 ER 服务器、复制集、复制和参与者。检查并修复数据不一致。更改 ER 配置参数。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">重要信息：</div>
+<div class="notebody">Replication 插件需要 IBM Informix V11.50.xC4 或更高版本。</div></div>
+<h3 id="dqx1ids_oer_070"><a href="#ToC_28">设置 Enterprise Replication</a></h3>
+<div>
+<p>以下主题描述如何使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 设置 Enterprise Replication (ER)。</p></div>
+<h4 id="dqx1ids_oer_.49">为 Enterprise Replication 定义服务器</h4>
+<div>
+<p>使服务器成为现有 Enterprise Replication (ER) 域中的新节点，或成为新 ER 域中的第一个节点。</p></div>
+<p>
+<p>要为 Enterprise Replication 定义服务器：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>定义新服务器</strong>。</li>
+<li>遵循“定义服务器”向导中的指导信息。</li></ol>
+<h4 id="dqx1ids_oer_048.dita">定义复制集</h4>
+<div>
+<p>创建新复制集。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>复制集组合了多个复制，以形成可作为整体一起管理的集合。可以使用单个命令启动、停止、暂挂或恢复集合内的所有复制。</p>
+<p>要定义复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>定义复制集</strong>。</li>
+<li>输入复制集的名称。
+名称必须唯一且不能与复制名称相同。
+</li>
+<li>为集合选择复制。<ul>
+<li>要添加复制，请在<strong>可用复制</strong>列表中选择这些复制，然后单击<strong>添加</strong>，或者单击<strong>全部添加</strong>。</li>
+<li>要除去复制，请在<strong>此复制集</strong>列表中选择这些复制，然后单击<strong>除去</strong>，或者单击<strong>全部除去</strong>。</li></ul></li>
+<li>可选：要使此集成为专有复制集，请选择<strong>复制专属于此集</strong>。</li>
+<li>要为复制集设置频率选项，请单击<strong>下一步</strong>；要使用缺省值创建复制集，请单击<strong>完成</strong>。</li>
+<li>可选：指定复制的<strong>频率</strong>。缺省值是在数据到达时立即执行。</li>
+<li>要创建复制集，请单击<strong>完成</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_181.htm#ids_erp_181" target="_blank">专有复制集（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_046.dita">定义复制</h4>
+<div>
+<p>定义复制参与者和复制属性（包括复制数据的频率和处理冲突的方法）。</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>使用“定义复制”操作，可以定义严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。所有包含主复制的数据库服务器都必须能够与主复制数据库服务器建立直接连接。</p></p>
+<div>
+<div class="notetitle" id="wq62">先决条件：</div>
+<div class="notebody">表必须具有主键才能作为复制参与者。此外，表还必须是实际的表，而不能是同义词、视图或序列。同时也不能是外部表。只有能作为复制参与者的表才会出现在可选择的表的列表中。</div></div>
+<p>要定义复制和复制参与者：</p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>定义复制</strong>。</li>
+<li>输入复制的唯一名称。</li>
+<li>从<strong>主复制服务器</strong>列表选择要用作主复制基础的服务器组。</li>
+<li>要在目标服务器上自动创建主复制服务器上存在而目标服务器上不存在的表，请选择<strong>在目标服务器上创建缺少的表</strong>。</li>
+<li>使用过滤器选择要定义为复制中参与者的表和复制服务器。<ol type="a">
+<li>对于<strong>数据库过滤器</strong>，输入数据库名称的整体或部分。</li>
+<li>对于<strong>表过滤器</strong>，输入表名称的整体或部分。继续过滤列表，直到为每个服务器显示单个参与者为止。</li>
+<li>要选择过滤器指定的所有参与者，请单击<strong>选择</strong>。
+
+<p>还可通过在列表中单击表来进行选择或取消选择。</p></li></ol> 
+<div>
+<div class="notetitle" id="wq66">注意：</div>
+<div class="notebody">主复制服务器必须是新复制中的参与者。选择要参与复制的表时，必须选择主复制服务器上的表。</div></div></li>
+<li>指定参与者类型：主参与者或仅接收参与者。缺省值为主参与者：该参与者既可发送也可接收数据。要更改选项，请单击相应图标。
+</li>
+<li>指定应用复制数据时需要使用的特权。缺省值为表所有者。要更改选项，请单击相应图标。
+</li>
+<li>要为复制设置高级选项，请单击<strong>下一步</strong>；要使用高级选项的缺省值创建复制，请单击<strong>完成</strong>。
+
+<p>ER 验证不同服务器上的表是否具有一致的列数据类型和相同列名。如果没有出现<strong>下一步</strong>和<strong>完成</strong>，那么表不一致。</p></li>
+<li>可选：指定高级选项：<ul>
+<li><strong>冲突解决作用域</strong>。缺省值为事务。</li>
+<li><strong>冲突解决规则</strong>。缺省值为时间戳记。</li>
+<li><strong>浮点格式</strong>。缺省值为 IEEE。</li>
+<li><strong>激活异常终止的事务假脱机 (ATS)</strong>。缺省情况下，ATS 未启用。</li>
+<li><strong>激活行信息假脱机 (RIS)</strong>。缺省情况下，RIS 未启用。</li>
+<li><strong>复制整行</strong>。缺省情况下，将复制整行。此选项已启用。</li>
+<li><strong>触发目标上的触发器</strong>。缺省情况下，触发器不会在目标表上触发。</li>
+<li><strong>保留删除的行</strong>。缺省情况下，不会保留删除的行。</li>
+<li>复制的<strong>频率</strong>。缺省值是在数据到达时立即执行。</li></ul></li>
+<li>要创建复制，请单击<strong>完成</strong>。</li></ol>
+<h3 id="dqx1ids_oer_060"><a href="#ToC_32">使用模板设置 Enterprise Replication</a></h3>
+<div>
+<p>使用模板来设置和部署 Enterprise Replication。</p></div>
+<p>模板使用有关数据库、表组、列和主键的模式信息来定义一组主复制和一个复制集。首先，定义一个模板，然后在要复制数据的服务器上将该模板实例化。</p>
+<h4 id="dqx1ids_oer_061">定义模板</h4>
+<div>
+<p>创建模板。指定要用于模板的表、这些表所在的数据库和 Enterprise Replication (ER) 服务器以及模板选项。</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>模板定义一组主复制和一个复制集。构成模板的内容包括：有关数据库的模式信息、一组表、列属性以及标识行的主键。</p>
+<p>要定义模板：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>模板</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>定义新模板</strong>。</li>
+<li>输入模板名称。
+名称必须唯一，且不能与复制或复制集名称相同。</li>
+<li>在<strong>服务器</strong>列表上，展开服务器名称和数据库，以显示表。<div>
+<div class="notetitle" id="wq70">提示：</div>
+<div class="notebody">要过滤列表，在<strong>服务器过滤器</strong>文本框中开始输入服务器名称，在<strong>数据库过滤器</strong>文本框中输入数据库名称。</div></div></li>
+<li>为模板选择表。<ul>
+<li>要将数据库中的所有表添加到列表，请选择<strong>表</strong>列表中的数据库，然后单击<strong>添加</strong>。</li>
+<li>要添加特定表，请选择该表，然后单击<strong>添加</strong>。</li>
+<li>要从模板中除去某个表，请选择该表，然后单击<strong>除去</strong>，或单击<strong>全部除去</strong>。</li></ul></li>
+<li>要使用缺省选项创建模板，请单击<strong>完成</strong>，或单击<strong>下一步</strong>以指定以下任何选项，然后单击<strong>完成</strong>。<ul>
+<li><strong>冲突解决作用域</strong>。缺省值为事务。</li>
+<li><strong>冲突解决规则</strong>。缺省值为忽略。</li>
+<li><strong>浮点格式</strong>。缺省值为 IEEE。</li>
+<li><strong>激活异常终止的事务假脱机 (ATS)</strong>。缺省情况下，ATS 未启用。</li>
+<li><strong>激活行信息假脱机 (RIS)</strong>。缺省情况下，RIS 未启用。</li>
+<li><strong>触发目标上的触发器</strong>。缺省情况下，触发器不会在目标表上触发。</li>
+<li><strong>保留删除的行</strong>。缺省情况下，不会保留删除的行。</li></ul></li></ol>
+<p>
+<p>现在可使用<strong>实现模板</strong>操作来将 ER 域中数据库服务器上的模板实例化。</p></p>
+<div>
+<div class="notetitle" id="wq72">重要信息：</div>
+<div class="notebody">要基于模板中的复制来复制 ER 域中的数据，必须至少在两个服务器上将该模板实例化。</div></div>
+<h4 id="dqx1ids_oer_062">实现模板</h4>
+<div>
+<p>将 Enterprise Replication (ER) 服务器上的模板实例化。</p></div><a id="idx7"></a><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq74">先决条件：</div>
+<div class="notebody">必须定义模板，然后才能将该模板实例化。请参阅<a href="#dqx1ids_oer_061">定义模板</a></div></div>
+<p>
+<p>要将模板实例化：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>模板</strong>选项卡。</li>
+<li>在模板列表中，选择要实例化的模板。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>实现模板</strong>。</li>
+<li>在<strong>可用服务器</strong>列表中，选择要在其中将模板实例化的服务器。<div>
+<div class="notetitle" id="wq78">提示：</div>
+<div class="notebody">开始在<strong>服务器过滤器</strong>文本框中输入服务器名称以过滤列表。</div></div></li>
+<li>要使用缺省选项在服务器上将模板实例化，请单击<strong>完成</strong>，或单击<strong>下一步</strong>以指定以下任何选项，然后单击<strong>完成</strong>。<ul>
+<li><strong>创建缺少的表</strong>。选择此选项后，将在目标服务器上自动创建主复制服务器上存在而目标服务器上不存在的表。缺省情况下，已选中该选项。缺省情况下，已创建表的数据库空间将设置为与数据库的数据库空间相同。</li>
+<li><strong>使用表所有者特权应用复制的数据</strong>。指定源表的所有者是实现模板时创建的表的所有者。
+缺省情况下，表为用户 <strong>informix</strong> 所有。
+</li>
+<li><strong>将服务器设置为仅接收</strong>。指定目标服务器为“仅接收”服务器。
+缺省情况下，这些服务器既可发送也可接收复制的数据。</li>
+<li><strong>同步数据</strong>。指定一个服务器，以用作将模板实例化的服务器上的数据同步源。指定如何处理目标服务器上存在而数据源服务器上不存在的行。
+缺省情况下，将从目标服务器删除多余的行。</li></ul></li></ol>
+<h4 id="dqx1ids_oer_092.dita">删除模板</h4>
+<div>
+<p>删除 Enterprise Replication (ER) 模板以及模板实例化时创建的任何复制集。</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq80">重要信息：</div>
+<div class="notebody">删除模板不会同时删除模板实例化时创建的复制。</div></div>
+<p>要删除模板：</p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>模板</strong>选项卡。</li>
+<li>选择模板。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除模板</strong>。</li></ol>
+<h3 id="dqx1ids_oer_098"><a href="#ToC_36">使用网格管理 Enterprise Replication</a></h3>
+<div>
+<p>管理 Enterprise Replication (ER) 域中一组互连复制服务器。定义网格，授权可从其中运行网格命令的服务器，授权运行命令的用户，监视网格任务状态，并重新运行网格命令。将客户机连接路由到网格中的复制服务器。</p></div><a id="idx12"></a>
+<div>
+<div class="notetitle" id="wq83">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_098__d6820e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">网格设置和管理（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_102">创建网格</h4>
+<div>
+<p>定义 Enterprise Replication (ER) 域中互连复制服务器的网格。授权可从其中运行网格命令的服务器和运行命令的用户。</p></div><a id="idx13"></a><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq85">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_102__d7078e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>可以基于现有 ER 域定义网格。</p></p>
+<p>
+<p>要创建网格：</p></p>
+<ol type="1">
+<li>通过在 OAT 登录页面上或在 OAT 页面顶部的<strong>服务器</strong>列表中选择服务器，连接到 ER 域中的复制服务器。</li>
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建网格</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">网格设置和管理（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_109">删除网格</h4>
+<div>
+<p>删除 Enterprise Replication (ER) 域中互连复制服务器的网格。</p></div><a id="idx17"></a><a id="idx18"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq90">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_109__d7757e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>要删除网格：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除网格</strong>。</li></ol>
+<h4 id="dqx1ids_oer_103">将成员添加到网格</h4>
+<div>
+<p>将服务器添加到 Enterprise Replication (ER) 域中互连复制服务器的网格中，并视情况向某个服务器授权以便从中运行网格命令。</p></div><a id="idx19"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq94">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_103__d7168e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>可以将 ER 域中的其他服务器添加到网格。</p></p>
+<p>
+<p>要将服务器添加到网格：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>在<strong>网格成员</strong>页面的<strong>操作</strong>菜单上，单击<strong>添加成员</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">网格设置和管理（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_108">更改网格的用户</h4>
+<div>
+<p>向用户授权，使其能够针对 Enterprise Replication (ER) 域中互连复制服务器的网格运行网格命令，或除去用户运行网格命令的授权。</p></div><a id="idx20"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq99">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_108__d7667e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>已授权用户可从网格中任何源服务器运行网格命令。</p></p>
+<p>
+<p>要更改网格的用户：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>在<strong>网格成员</strong>页面的<strong>操作</strong>菜单上，单击<strong>更改用户</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<h4 id="dqx1ids_oer_104">启用或禁用网格的源服务器</h4>
+<div>
+<p>向服务器授权，使其能够在 Enterprise Replication (ER) 域中互连复制服务器的网格中运行命令，或从服务器除去该授权。</p></div><a id="idx21"></a><a id="idx22"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq104">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_104__d7258e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>在源服务器上运行的网格命令会传播到网格中的所有其他服务器。只有源服务器可以运行网格命令。成员服务器无权运行网格命令。</p></p>
+<p>
+<p>要启用或禁用网格的源服务器：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>单击<strong>网格成员</strong>页面上的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击相应操作：<strong>启用源服务器</strong>或<strong>禁用源服务器</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">网格设置和管理（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_105">监视网格任务的状态</h4>
+<div>
+<p>监视通过 Enterprise Replication (ER) 域中互连复制服务器的网格运行的任务的状态。</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq109">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_105__d7354e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>在源服务器上运行的网格命令会传播到网格中的所有其他服务器。</p></p>
+<p>
+<p>要监视网格任务的状态：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>单击<strong>状态</strong>选项卡。
+
+<p>要在特定服务器上查看某个命令的结果，请展开包含该命令的行。要查看更多详细信息，请单击网格成员的详细信息图标。</p></li></ol>
+<h4 id="dqx1ids_oer_106">重新运行网格命令</h4>
+<div>
+<p>重新运行在 Enterprise Replication (ER) 域中互连复制服务器网格内的一个或多个服务器上运行失败的命令。</p></div><a id="idx25"></a><a id="idx26"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq114">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_106__d7450e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>在源服务器上运行的网格命令会传播到网格中的所有其他服务器。可以在命令运行失败的服务器上重新运行该命令。</p>
+<p>将服务器添加到网格中时，先前通过网格运行的任何命令会在该服务器上具有暂挂状态。如果要在新网格服务器上运行先前的网格命令，请重新运行该命令。如果不希望在新服务器上运行先前的网格命令，请除去该命令。</p></p>
+<p>
+<p>要重新运行网格命令：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>单击<strong>状态</strong>选项卡。
+
+<p>要在特定服务器上查看某个命令的结果，请展开包含该命令的行。要查看更多详细信息，请单击网格成员的详细信息图标。</p></li>
+<li>单击此命令。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>重新运行命令</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_566.htm#ids_erp_566" target="_blank">重新运行失败的网格例程（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_550.htm#ids_erp_550" target="_blank">ifx_grid_redo() 过程（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_107">除去网格命令</h4>
+<div>
+<p>除去在 Enterprise Replication (ER) 域中互连复制服务器网格内的服务器上运行的命令的元数据和任务状态。</p></div><a id="idx27"></a><a id="idx28"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq119">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_107__d7562e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>在源服务器上运行的网格命令会传播到网格中的所有其他服务器。可以除去成功完成或不打算重新运行的网格命令。时不时除去完成的网格命令可防止存储这些命令的数据库变得过大。</p>
+<p>将服务器添加到网格中时，先前通过网格运行的任何命令会在该服务器上具有暂挂状态。如果要在新网格服务器上运行先前的网格命令，请重新运行该命令。如果不希望在新服务器上运行先前的网格命令，请除去该命令。</p></p>
+<p>
+<p>要除去网格命令：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>网格</strong>。</li>
+<li>单击<strong>网格</strong>列表中的网格。</li>
+<li>单击<strong>状态</strong>选项卡。</li>
+<li>单击此命令。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>除去</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_562.htm#ids_erp_562" target="_blank">维护网格（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_557.htm#ids_erp_557" target="_blank">ifx_grid_purge() 过程（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_111">路由网格中的客户机连接</h4>
+<div>
+<p>通过为连接管理器配置服务级别协议 (SLA)，根据复制数据的质量和事务等待时间将客户机连接路由至网格中的复制服务器。</p></div><a id="idx29"></a>
+<div>
+<div class="notetitle" id="wq123">先决条件：</div>
+<div class="notebody">对于网格，IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 IBM Informix 11.70。对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>连接管理器使用 SLA 来确定要与客户机应用程序连接的服务器。可以创建 SLA，以基于最短等待时间、最少应用失败次数和最少工作负载，将客户机连接路由到网格中的复制服务器。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1387.htm#ids_admin_1387" target="_blank">支持高可用性和可伸缩性的组件（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">路由网格中的客户机连接（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm 实用程序（管理员参考）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1108.htm#ids_adr_1108" target="_blank">复制集的配置文件（管理员参考）</a></li></ul>
+<h5 id="dqx1ids_oer_113">查看网格的 SLA</h5>
+<div>
+<p>查看由连接管理器监视其连接的网格的服务级别协议 (SLA)。</p></div><a id="idx30"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq125">先决条件：</div>
+<div class="notebody">对于网格，IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 IBM Informix 11.70。对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>连接管理器使用 SLA 来确定要与客户机应用程序连接的服务器。</p></p>
+<p>
+<p>要查看网格的 SLA：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击列表中的网格。</li>
+<li>单击网格的 SLA 选项卡。</li></ol>
+<h5 id="dqx1ids_oer_110">创建网格的 SLA</h5>
+<div>
+<p>使用连接管理器创建网格的服务级别协议 (SLA)。</p></div><a id="idx31"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq130">先决条件：</div>
+<div class="notebody">对于网格，IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 IBM Informix 11.70。对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。必须将网格定义为连接管理器的连接单元。</div></div>
+<p>
+<p>服务级别协议 (SLA) 是指定客户机应用程序与它们的服务提供者（在此情况下为 Informix 数据库服务器）之间的合同。连接管理器根据服务级别协议将客户机应用程序连接到相应服务器。连接管理器可接受客户机连接请求，并将这些请求重定向给相应服务器，或充当客户机应用程序与服务器之间的代理服务器。</p>
+<p>监视 Quality of Data 时，连接管理器可以基于应用失败次数、事务等待时间和工作负载，将客户机连接路由到复制服务器。不监视 Quality of Data 时，连接管理器只能基于工作负载路由客户机连接。要在 SLA 中指定应用失败次数和等待时间，请通过在<strong>复制</strong> &gt; <strong>ER 域</strong>页面上修改作为网格成员的服务器，启用 Quality of Data 监视。</p></p>
+<p>
+<p>要创建网格的 SLA：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击列表中的网格。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建 SLA</strong>。</li>
+<li>完成该向导。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm 实用程序（管理员参考）</a></li></ul>
+<h5 id="dqx1ids_oer_112">修改网格的 SLA</h5>
+<div>
+<p>使用连接管理器修改网格的服务级别协议 (SLA)。</p></div><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq135">先决条件：</div>
+<div class="notebody">对于网格，IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 IBM Informix 11.70。对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>服务级别协议 (SLA) 是指定客户机应用程序与它们的服务提供者（在此情况下为 Informix 数据库服务器）之间的合同。连接管理器根据服务级别协议将客户机应用程序连接到相应服务器。连接管理器可接受客户机连接请求，并将这些请求重定向给相应服务器，或充当客户机应用程序与服务器之间的代理服务器。</p>
+<p>监视 Quality of Data 时，连接管理器可以基于应用失败次数、事务等待时间和工作负载，将客户机连接路由到复制服务器。不监视 Quality of Data 时，连接管理器只能基于工作负载路由客户机连接。要在 SLA 中指定应用失败次数和等待时间，请通过在<strong>复制</strong> &gt; <strong>ER 域</strong>页面上修改作为网格成员的服务器，启用 Quality of Data 监视。</p></p>
+<p>
+<p>要修改网格的 SLA：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击列表中的网格。</li>
+<li>单击 SLA 选项卡。</li>
+<li>单击列表中的 SLA。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改 SLA</strong>。</li>
+<li>完成该向导。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm 实用程序（管理员参考）</a></li></ul>
+<h5 id="dqx1ids_oer_114">监视网格中的 Quality of Data</h5>
+<div>
+<p>通过监视网格中服务器上的复制数据的质量，连接管理器可以根据应用失败次数和事务等待时间将客户机应用程序路由到服务器。</p></div><a id="idx33"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq140">先决条件：</div>
+<div class="notebody">对于网格，IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 IBM Informix 11.70。对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p> 监视 Quality of Data 时，连接管理器可以基于应用失败次数、事务等待时间和工作负载，将客户机连接路由到复制服务器。不监视 Quality of Data 时，连接管理器只能基于工作负载路由客户机连接。连接管理器使用服务级别协议 (SLA) 来确定要与客户机应用程序连接的服务器。SLA 在<strong>复制</strong> &gt; <strong>连接管理器</strong>页面上进行配置。</p></p>
+<p>
+<p>要监视网格的复制数据的质量：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上，选择网格中的服务器以作为进行数据质量监视的主服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>选择此选项以监视 Quality of Data。</li></ol>
+<p>
+<p></p>
+<p>监视 Quality of Data 时，会对网格中复制服务器上的失败事务数进行计数。同步数据时，可以重置网格中复制服务器上的失败事务计数，也可以继续添加到当前计数。要维护有关 Quality of Data 的准确信息，请在同步数据时重置该计数。</p>
+<p>在<strong>复制</strong> &gt; <strong>复制</strong> &gt; <strong>复制集</strong>或<strong>复制</strong>页面上，使用<strong>检查或同步数据</strong>操作重置失败事务计数。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">路由网格中的客户机连接（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_539.htm#ids_erp_539" target="_blank">cdr define qod（Enterprise Replication 指南）</a></li></ul>
+<h3 id="dqx1ids_oer_071.dita"><a href="#ToC_50">管理 Enterprise Replication 服务器</a></h3>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器的属性或更改 ER 服务器的状态。</p></div>
+<h4 id="dqx1ids_oer_078.dita">修改 ER 服务器</h4>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器来更改服务器上的 ATS 目录或 RIS 目录、空闲超时或者某些参与者的类型。</p></div>
+<h5 id="dqx1ids_oer_067.dita">更改 ATS 和 RIS 文件位置和格式</h5>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器以更改异常终止的事务假脱机 (ATS) 和行信息假脱机 (RIS) 文件的位置或文件格式。</p></div><a id="idx34"></a><a id="idx35"></a><a id="idx36"></a><a id="idx37"></a><a id="idx38"></a><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq146">先决条件：</div>
+<div class="notebody">更改 ATS 或 RIS 目录之前，先创建该目录的位置。</div></div>
+<p>
+<p>要更改 ATS 和 RIS 文件位置和格式：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>选择<strong>在以下目录中生成 ATS 文件</strong>，并输入要存储 ATS 文件的现有目录的完整路径。</li>
+<li>选择<strong>在以下目录中生成 RIS 文件</strong>，并输入要存储 RIS 文件的现有目录的完整路径。</li>
+<li>指定 ATS 和 RIS 文件的格式：<ul>
+<li>要生成 ER 在修复失败事务时可处理的文本文件，请选择<strong>文本</strong>。（缺省）</li>
+<li>要生成可使用的 XML 文件（如果自行编写定制修复脚本），请选择 <strong>XML</strong>。</li>
+<li>要生成文本文件和 XML 文件，请选择<strong>两者</strong>。</li></ul></li>
+<li>单击<strong>保存</strong>。<p>此时会显示选定的选项以及操作的结果。</p>
+
+<p>在<strong>复制</strong>页面上，可以使用<strong>修改复制</strong>操作为复制激活 ATS 和 RIS 文件生成。</p></li></ol>
+<h5 id="dqx1ids_oer_068.dita">更改 ER 服务器的空闲超时</h5>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器以更改空闲超时。</p></div><a id="idx41"></a><a id="idx42"></a><a id="idx43"></a><a id="idx44"></a><a id="idx45"></a>
+<p>
+<p>空闲超时是指在服务器断开连接之前，该服务器和 ER 域中其他服务器之间的连接可保持空闲的时间量。</p>
+<p>要更改 ER 服务器的空闲超时：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>针对<strong>空闲超时</strong>，选择<strong>启用</strong>并输入时间（以分钟计）。
+
+<p>输入 0（零）分钟或保留该字段为空相当于选择<strong>禁用</strong>。</p></li>
+<li>单击<strong>保存</strong>。<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<h5 id="dqx1ids_oer_069.dita">更改 ER 服务器上参与者的类型</h5>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器以更改其冲突解决规则为<em>忽略</em> 的参与者的类型。</p></div><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<p>
+<p>参与者类型指示参与者是既可发送也可接收复制的数据，还是仅接收复制的数据。当冲突解决规则为忽略时，参与者类型不会影响冲突解决。因此，服务器上复制中具有该规则的所有参与者均可通过一个操作进行更改。</p>
+<p>要更改参与者的类型：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>选择<strong>参与者类型</strong>：<ul>
+<li><strong>主参与者</strong>：参与者既可发送也可接收复制的数据。</li>
+<li><strong>仅接收参与者</strong>：参与者只能从主参与者接收数据。
+</li></ul></li>
+<li>单击<strong>保存</strong>。<p>此时会显示选定的选项以及操作的结果。</p>
+<div>
+<div class="notetitle" id="wq156">提示：</div>
+<div class="notebody">您还可以使用<strong>复制</strong>页面上的<strong>修改复制</strong>操作来更改这些复制及其他复制的类型。</div></div></li></ol>
+<h5 id="dqx1ids_oer_066.dita">在 ER 服务器上禁用 ATS 或 RIS 文件生成</h5>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器以禁用异常终止的事务假脱机 (ATS) 或行信息假脱机 (RIS)。</p></div><a id="idx53"></a><a id="idx54"></a><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a><a id="idx58"></a><a id="idx59"></a>
+<p>
+<p>通过修改服务器，可以为 ER 服务器上的所有复制禁用 ATS 或 RIS 文件生成。要为特定复制禁用 ATS 或 RIS，请修改该复制。</p>
+<p>要在 ER 服务器上禁用 ATS 或 RIS 文件生成：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>要禁用 ATS 文件生成，请选择<strong>禁用 ATS 文件生成</strong>。</li>
+<li>要禁用 RIS 文件生成，请选择<strong>禁用 RIS 文件生成</strong>。</li>
+<li>单击<strong>保存</strong>。<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<h5 id="dqx1ids_oer_074.dita">在 ER 服务器上启用 ATS 或 RIS 文件生成</h5>
+<div>
+<p>修改 Enterprise Replication (ER) 服务器以启用异常终止的事务假脱机 (ATS) 或行信息假脱机 (RIS)。</p></div><a id="idx60"></a><a id="idx61"></a><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p>
+<p>如果针对某个服务器将 ATS 或 RIS 文件的目录设置为空，那么不会生成这些文件。通过修改服务器，可以启用 ATS 或 RIS 文件生成。</p>
+<p>要在 ER 服务器上启用 ATS 或 RIS 文件生成：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改服务器</strong>。</li>
+<li>要启用 ATS 文件生成：<ul>
+<li>选择<strong>在以下目录中生成 ATS 文件</strong>，并输入要存储 ATS 文件的现有目录的完整路径。</li>
+<li>选择<strong>在临时目录中生成 ATS 文件</strong>。ATS 文件将存储在 <samp>/tmp</samp> 目录（在 UNIX 系统上）和 <samp>%INFORMIXDIR%\tmp</samp> 目录（在 Windows 系统上）。</li></ul></li>
+<li>要启用 RIS 文件生成：<ul>
+<li>选择<strong>在以下目录中生成 RIS 文件</strong>，并输入要存储 RIS 文件的现有目录的完整路径。</li>
+<li>选择<strong>在临时目录中生成 RIS 文件</strong>。RIS 文件将存储在 <samp>/tmp</samp> 目录（在 UNIX 系统上）和 <samp>%INFORMIXDIR%\tmp</samp> 目录（在 Windows 系统上）。</li></ul></li>
+<li>指定 ATS 和 RIS 文件的格式：<ul>
+<li>要生成 ER 在修复操作期间可处理的文本文件，请选择<strong>文本</strong>。</li>
+<li>要生成可使用的 XML 文件（如果自行编写定制修复脚本），请选择 <strong>XML</strong>。</li>
+<li>要生成文本文件和 XML 文件，请选择<strong>两者</strong>。</li></ul></li>
+<li>单击<strong>保存</strong>。<p>此时会显示选定的选项以及操作的结果。</p>
+
+<p>在<strong>复制</strong>页面上，可以使用<strong>修改复制</strong>操作为复制激活 ATS 和 RIS 文件生成。</p></li></ol>
+<h4 id="dqx1ids_oer_099.dita">停止或重新启动服务器上的复制</h4>
+<div>
+<p>在数据库服务器上临时停止或重新启动 Enterprise Replication (ER)。</p></div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix，可以通过多种方式在不停止服务器的情况下停止服务器上的复制。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">临时停止服务器上的复制（Enterprise Replication 指南）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">重新启动服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_084.dita">Suspending replication for a server</h5>
+<div>
+<p>暂挂从域中指定服务器向 Enterprise Replication (ER) 服务器交付复制的数据。</p></div><a id="idx67"></a><a id="idx68"></a>
+<p>
+<p>如果不希望完全停止服务器的 ER 处理，可以暂挂对服务器的数据复制。暂挂对服务器的复制时，域中其他服务器彼此间会继续复制数据。它们会对暂挂服务器的复制数据进行排队，但不会进行发送。暂挂服务器的网络连接不会受影响。暂挂服务器会继续接收其他消息，如确认和控制消息。</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_084.dita__important">重要信息：</div>
+<div class="notebody">暂挂对服务器的复制时，请确保域中其他 ER 服务器上的发送队列未满。</div></div>
+<p>要暂挂服务器的复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择要暂挂复制的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>暂挂复制</strong>。</li>
+<li>选择要暂挂从中向此服务器交付复制数据的服务器。</li>
+<li>单击<strong>暂挂</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_203.htm#ids_erp_203" target="_blank">暂挂服务器复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_085.dita">恢复已暂挂服务器的复制</h5>
+<div>
+<p>恢复复制数据到 Enterprise
+Replication (ER) 服务器的暂挂交付。</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq167">先决条件：</div>
+<div class="notebody">已使用<strong>暂挂复制</strong>操作或使用 <strong>cdr</strong> 命令行实用程序的 <strong>cdr suspend server</strong> 命令暂挂对 ER 服务器的复制。</div></div>
+<p>
+<p>暂挂对服务器的复制时，域中其他服务器彼此间会继续复制数据。它们会对暂挂服务器的复制数据进行排队，但不会进行发送。当恢复对服务器的复制时，会交付排队的数据。</p>
+<p>要恢复暂挂的复制服务器：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择暂挂的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>恢复复制</strong>。</li>
+<li>选择要从中恢复向此服务器交付复制数据的服务器。</li>
+<li>单击<strong>恢复</strong>。</li></ol>
+<h5 id="dqx1ids_oer_088.dita">停止服务器上的复制</h5>
+<div>
+<p>停止 Enterprise Replication (ER) 服务器上的复制而不关闭服务器。</p></div><a id="idx72"></a><a id="idx73"></a><a id="idx74"></a>
+<p></p>
+<div class="attention"><span class="attentiontitle">注意：</span>使用此操作时应格外小心，且仅应在 IBM 软件支持建议您这样做的情况下执行此操作。</div>
+<div>
+<div class="notetitle" id="wq172">重要信息：</div>
+<div class="notebody">停止服务器上的复制时，不会在该服务器上捕获或应用复制的事务。为了确保一致性，请验证服务器上不会发生任何数据库更新。确保域中其他 ER 服务器上的发送队列未满。</div></div>
+<p>
+<p>要停止服务器上的复制：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>停止服务器</strong>。</li></ol>
+<p>
+<p>要重新启动服务器上的复制，请使用<strong>启动复制</strong>操作。停止并重新启动服务器不会重新启动该服务器上的复制。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">临时停止服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_089.dita">Restarting replication on a server</h5>
+<div>
+<p>重新启动 Enterprise Replication (ER) 服务器上的复制。</p></div><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a>
+<p>
+<p>在使用<strong>停止复制</strong>操作停止复制或复制出于其他原因（如内存分配问题）而停止之后，可以在服务器上重新启动复制。</p>
+<p>在服务器上重新启动复制时，ER 会激活至其他已连接复制服务器的所有连接。复制停止期间在其他服务器上发生的所有相应的数据库事务都将复制到此服务器上。</p></p>
+<p>
+<p>要重新启动服务器上的复制：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>启动服务器</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">重新启动服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_090">清空队列并重新启动复制</h5>
+<div>
+<p>在 Enterprise Replication (ER) 服务器上清空暂挂事务的复制队列并重新启动复制。</p></div><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq180">先决条件：</div>
+<div class="notebody">如果此 ER 服务器已从备份复原，但复原未包含重放位置的所有日志文件，或系统未复原为当前日志文件，请将日志文件唯一标识推进到最新的日志文件唯一标识之后。要推进日志位置，请在命令行上使用 <strong><strong><samp>onmode -l</samp></strong></strong> 命令切换到下一个逻辑日志文件。</div></div>
+<p>
+<p>要清空队列并重新启动复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>清除启动复制</strong>。</li></ol>
+<p>
+<p>执行<strong>清除启动复制</strong>操作后，使用<strong>检查或同步复制</strong>或者<strong>检查或同步复制集</strong>操作来同步数据。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">重新启动服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0721.htm#ids_admin_0721" target="_blank">切换到下一个逻辑日志文件（管理员指南）</a></li></ul>
+<h5 id="dqx1ids_oer_100.dita">禁用服务器的复制</h5>
+<div>
+<p>停止 Enterprise Replication (ER) 服务器上的复制，同时在已禁用服务器上保留有关已删除行的信息。</p></div><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq186">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_100.dita__d6883e8">要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>如果复制使用时间戳记或“删除优先”冲突解决规则，或如果没有足够的磁盘空间来避免过速运行重放位置，那么使用此操作临时停止复制服务器上的复制。</p>
+<p>在服务器上禁用复制时，服务器不会将其事务排队，ER 域中其他复制服务器不会将已禁用服务器的已复制事务排队。然而，有关已禁用服务器上的任何已删除行的信息会保存在删除表中。重新启动复制并同步数据时，可利用时间戳记修复。</p>
+<p>例如，如果服务器使用“删除优先”冲突解决规则，且在禁用复制之前已在服务器上删除某个事务，那么在启用复制并同步数据时，删除操作会复制到域中的其他服务器。</p>
+<p>要禁用服务器的复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择要禁用其复制的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>禁用复制</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">临时停止服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_101.dita">为已禁用的服务器启用复制</h5>
+<div>
+<p>在已禁用复制的 Enterprise Replication (ER) 服务器上重新启动复制。</p></div><a id="idx83"></a><a id="idx84"></a><a id="idx85"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq191">先决条件：</div>
+<div class="notebody">已使用<strong>禁用复制</strong>操作或 <strong>cdr</strong> 命令行实用程序的 <strong><samp>cdr disable server</samp></strong> 命令停止服务器上的复制。要执行此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</div></div>
+<p>
+<p>在服务器上禁用复制时，服务器不会将其事务排队，ER 域中其他复制服务器不会将已禁用服务器的已复制事务排队。然而，有关已禁用服务器上的任何已删除行的信息会保存在删除表中。重新启动复制并同步数据时，可利用时间戳记修复。</p>
+<p>要为已禁用的服务器启用复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择已禁用的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>恢复复制</strong>。</li>
+<li>单击<strong>启用复制</strong>。</li></ol>
+<p>
+<p>启用复制后，通过检查并修复<strong>复制</strong> &gt; <strong>复制集</strong>页面上的复制集，将服务器与复制域中的其他服务器同步。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">重新启动服务器上的复制（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_086.dita">断开 ER 服务器的连接</h4>
+<div>
+<p>断开域中某个 Enterprise Replication (ER) 服务器与其他 ER 服务器的网络连接。</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_086.dita__important">重要信息：</div>
+<div class="notebody">断开服务器的连接时，ER 会继续工作并将事务排队。请确保域中所有其他 ER 服务器上的发送队列不会变满。</div></div>
+<p>要断开 ER 服务器的连接：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择要断开连接的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>断开服务器的连接</strong>。</li>
+<li>选择要与之断开连接的服务器。</li>
+<li>单击<strong>断开连接</strong>。</li></ol>
+<h4 id="dqx1ids_oer_087.dita">重新连接 ER 服务器</h4>
+<div>
+<p>重新将域中某个 Enterprise Replication (ER) 服务器连接到其他 ER 服务器。</p></div><a id="idx88"></a><a id="idx89"></a>
+<p>
+<p>要重新连接 ER 服务器：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择要重新连接的服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>连接服务器</strong>。</li>
+<li>选择要重新连接到的服务器。</li>
+<li>单击<strong>连接</strong>。</li></ol>
+<h4 id="dqx1ids_oer_091.dita">删除 ER 服务器</h4>
+<div>
+<p>从 Enterprise Replication (ER) 域中删除服务器并停止与该服务器之间的所有数据复制。</p></div><a id="idx90"></a><a id="idx91"></a><a id="idx92"></a>
+<p>
+<p>要删除 ER 服务器：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>复制</strong> &gt; <strong>ER 域</strong>。</li>
+<li>在<strong>路由拓扑</strong>页面或<strong>服务器列表</strong>页面上选择服务器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除服务器</strong>。</li></ol>
+<p>
+<p>要删除整个 ER 域，请在域中每个服务器上执行<strong>删除服务器</strong>操作。</p></p>
+<div>
+<div class="notetitle" id="wq206">限制：</div>
+<div class="notebody">您不可以删除具有非根或叶子代的服务器。应先删除服务器的子代，然后再删除父服务器。</div></div>
+<h3 id="dqx1ids_oer_037.dita"><a href="#ToC_68">管理复制集</a></h3>
+<div>
+<p>在集合中添加或删除复制，更改复制频率，或者启动、停止、暂挂、恢复或删除复制集。</p></div><a id="idx93"></a><a id="idx94"></a>
+<p>在创建复制集后，您可以集中或单独管理属于该集合的复制。如果复制集是专有的，那么必须将各个复制作为集合的一部分进行管理。</p>
+<p>在复制集上执行某个操作（除了删除复制集之外）等同于单独在复制集内每个复制上执行该操作。</p>
+<h4 id="dqx1ids_oer_065.dita">修改复制集</h4>
+<div>
+<p>添加或删除复制，或更改集合中所有复制的复制频率。</p></div><a id="idx95"></a><a id="idx96"></a>
+<h5 id="dqx1ids_oer_082.dita">添加和删除复制集内的复制</h5>
+<div>
+<p>修改复制集以添加或删除复制。</p></div><a id="idx97"></a><a id="idx98"></a>
+<p>
+<p>要添加或删除复制集内的复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>选择复制集。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制集</strong>。</li>
+<li>要将某个复制添加到集合中，请在<strong>可用复制</strong>列表中选择该复制，然后单击<strong>添加</strong>。</li>
+<li>要除去某个复制，请在<strong>此复制集</strong>列表中选择该复制，然后单击<strong>除去</strong>。</li>
+<li>单击<strong>完成</strong>。</li></ol>
+<h5 id="dqx1ids_oer_083.dita">更改复制集的复制频率</h5>
+<div>
+<p>修改复制集以为集合中的所有复制指定复制之间的时间间隔。</p></div><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>要更改复制集的复制频率：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>选择复制集。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制集</strong>。</li>
+<li>要更改复制集内所有复制的频率选项，请单击<strong>下一步</strong>。</li>
+<li>指定复制的<strong>频率</strong>。<div>
+<div class="notetitle" id="wq213">重要信息：</div>
+<div class="notebody">如果更改频率选项，那么更改会应用到集合内的所有复制。</div></div></li>
+<li>单击<strong>完成</strong>。</li></ol>
+<h4 id="dqx1ids_oer_035.dita">查看复制集属性</h4>
+<div>
+<p>查看复制集的属性和状态。</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>要查看集合中复制的列表，请展开复制集名称。
+
+<p>要查看<strong>复制集</strong>页面上信息的描述，请单击“帮助”图标。</p></li></ol>
+<h4 id="dqx1ids_oer_039.dita">启动复制集</h4>
+<div>
+<p>将复制集内所有复制的状态更改为活动。</p></div><a id="idx103"></a><a id="idx104"></a>
+<p>
+<p>当复制处于活动状态时，Enterprise Replication (ER) 会从源服务器的逻辑日志中捕获数据，并将其传送给目标服务器上的活动参与者。
+</p>
+<p>要启动复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合中复制的列表，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>启动复制集</strong>。</li>
+<li>在<strong>启动复制集</strong>页面上选择要启动的参与者。<ul>
+<li>要启动复制集内的所有参与者，请选中<strong>所有参与者</strong>复选框。</li>
+<li>要启动特定参与者，请选中要启动的每个参与者的复选框。参与者由数据库服务器指定。</li></ul></li>
+<li>要执行所启动复制的初始同步，请完成以下步骤：<ol type="a">
+<li>选中<strong>同步数据</strong>复选框。</li>
+<li>从服务器列表选择要进行同步的数据源服务器。</li>
+<li>指定如何处理目标服务器上存在而数据源服务器上不存在的行。
+
+<ul>
+<li><strong>删除</strong>：从目标服务器中删除多余的行。</li>
+<li><strong>保留</strong>：在目标服务器上保留多余的行。</li>
+<li><strong>合并</strong>：在目标服务器上保留多余的行，并将这些行复制到源服务器。</li></ul></li></ol></li>
+<li>要启动复制集，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_041.dita">停止复制集</h4>
+<div>
+<p>将复制集内所有复制的状态更改为不活动。</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>停止某个复制时，该复制的状态会更改为<em>不活动</em>，并且会删除发送队列中针对该复制的任何数据。当某个复制处于不活动状态时，Enterprise Replication 不会传输或处理任何数据库更改。通常，仅当对于该表不大可能发生复制活动时才停止复制。</p>
+<p>要停止复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合中复制的列表，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>停止复制集</strong>。</li>
+<li>在<strong>停止复制集</strong>页面上选择要停止的参与者。<ul>
+<li> 要停止复制中的所有参与者，请选中<strong>所有参与者</strong>复选框。</li>
+<li>要停止特定参与者，请选中要停止的每个参与者的复选框。参与者由数据库服务器指定。</li></ul></li>
+<li>要停止复制集，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_043.dita">暂挂复制集</h4>
+<div>
+<p>暂挂复制集内的所有复制。</p></div><a id="idx107"></a><a id="idx108"></a>
+<p>
+<p>当某个复制处于<em>暂挂</em> 状态时，Enterprise Replication 会捕获并累积对源数据库的更改，但不会将捕获到的数据传输到目标数据库。</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_043.dita__important">重要信息：</div>
+<div class="notebody">当某个复制集暂挂时，Enterprise Replication 会将复制的数据保存在发送队列中，直到该复制集恢复为止。如果在复制集暂挂时为该集合内的复制生成了大量数据，那么发送队列空间可能会变满，从而导致数据丢失。如果复制集内的某个复制暂挂，Enterprise Replication 不会同步事务。例如，如果表 X 的复制暂挂，那么将分割用于更新表 X 和 Y 的事务。</div></div>
+<p>要暂挂复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合中复制的列表，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>暂挂复制集</strong>。在<strong>暂挂复制集</strong>页面上，列表会显示复制集内的参与者（由数据库服务器指定）。由于暂挂复制会使所有参与者进入暂挂状态，因此会选中所有参与者。</li>
+<li>要暂挂复制集，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_045.dita">恢复复制集</h4>
+<div>
+<p>将复制集内的已暂挂复制恢复为活动状态。</p></div><a id="idx109"></a><a id="idx110"></a><a id="idx111"></a>
+<p>
+<p>对于所有参与者，恢复复制集会使该复制集内包含的所有复制进入活动状态。</p>
+<p>要恢复复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合中复制的列表，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>恢复复制集</strong>。在<strong>恢复复制集</strong>页面上，列表会显示复制集内的参与者（由数据库服务器指定）。由于恢复复制会使所有参与者进入活动状态，因此会选中所有参与者。</li>
+<li>要将复制集恢复为活动状态，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_093.dita">删除复制集</h4>
+<div>
+<p>从 Enterprise Replication (ER) 域删除复制集。</p></div><a id="idx112"></a><a id="idx113"></a>
+<p>
+<p>删除复制集不会同时删除属于复制集的复制。未更改复制和关联的数据。</p></p>
+<div class="attention"><span class="attentiontitle">注意：</span>不要删除基于时间的专有复制集。这样做可能会导致数据不一致。
+</div>
+<p>要删除复制集：</p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>选择复制集。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除复制集</strong>。</li></ol>
+<h3 id="dqx1ids_oer_036.dita"><a href="#ToC_78">管理复制</a></h3>
+<div>
+<p>添加或除去复制，更改复制属性，启动、停止、暂挂或恢复复制。</p></div><a id="idx114"></a><a id="idx115"></a>
+<h4 id="dqx1ids_oer_075.dita">修改复制</h4>
+<div>
+<p>修改 Enterprise Replication (ER) 复制以添加或删除参与者，更改主复制服务器或更改复制属性。</p></div>
+<h5 id="dqx1ids_oer_072.dita">添加和删除参与者</h5>
+<div>
+<p>修改复制以添加或删除参与者。</p></div><a id="idx116"></a><a id="idx117"></a><a id="idx118"></a><a id="idx119"></a><a id="idx120"></a><a id="idx121"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq233">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>要添加或除去参与者：</p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>可选：要在目标服务器上自动创建主复制服务器上存在而目标服务器上不存在的表，请选择<strong>在目标服务器上创建缺少的表</strong>。
+
+<p>将创建的表会以<em>斜体</em>显示在列表中。</p></li>
+<li>要添加参与者：<ol type="a">
+<li>在列表中，展开服务器组和数据库以显示表名称。</li>
+<li>单击表名称以将其选为参与者。选定的表以<strong>粗体</strong>显示。</li>
+<li>指定参与者类型：主参与者或仅接收参与者。缺省值为主参与者：该参与者既可发送也可接收数据。要更改选项，请单击相应图标。
+</li>
+<li>指定应用复制数据时需要使用的特权。缺省值为表所有者。要更改选项，请单击相应图标。
+</li></ol></li>
+<li>要删除参与者：<ol type="a">
+<li>在列表中，展开服务器组和数据库以显示表名称。</li>
+<li>单击表名称以清除此选择。
+
+<p>删除参与者时，将停止向该服务器组上的该表复制数据。</p></li></ol></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_095.dita">更改主复制服务器</h5>
+<div>
+<p>修改复制以更改用作主复制基础的服务器组。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq239">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>主复制服务器必须是复制中的参与者。</p>
+<p>
+<p>要更改主复制服务器：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>主复制服务器</strong>列表旁边的图标。</li>
+<li>在<strong>主复制服务器</strong>列表中选择服务器组。</li>
+<li>可选：要在目标服务器上自动创建主复制服务器上存在而目标服务器上不存在的表，请选择<strong>在目标服务器上创建缺少的表</strong>。
+
+<p>将创建的表会以<em>斜体</em>显示在列表中。</p></li>
+<li>可选：要添加参与者：<ol type="a">
+<li>在列表中，展开服务器组和数据库以显示表名称。</li>
+<li>单击表名称以将其选为参与者。选定的表以<strong>粗体</strong>显示。</li>
+<li>指定参与者类型：主参与者或仅接收参与者。缺省值为主参与者：该参与者既可发送也可接收数据。要更改选项，请单击相应图标。
+</li>
+<li>指定应用复制数据时需要使用的特权。缺省值为表所有者。要更改选项，请单击相应图标。
+</li></ol></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_073.dita">更改冲突解决规则和作用域</h5>
+<div>
+<p>修改复制以更改冲突解决规则或作用域。</p></div><a id="idx122"></a><a id="idx123"></a><a id="idx124"></a><a id="idx125"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq244">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>冲突解决规则决定了如何解决已复制事务之间的冲突。每个冲突解决规则的运作方式因作用域而异。</p>
+<p>要更改冲突解决规则或作用域：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定<strong>冲突解决作用域</strong>。
+
+<p>一旦更改冲突解决规则，就必须指定作用域，即便不打算更改它。</p></li>
+<li>指定<strong>冲突解决规则</strong>。
+
+<p>无法将冲突解决规则从“忽略”更改为其他规则或从其他规则更改为“忽略”。</p></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_076.dita">更改复制的复制频率</h5>
+<div>
+<p>修改复制以指定复制之间的时间间隔或执行复制的时间。</p></div><a id="idx126"></a><a id="idx127"></a><a id="idx128"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq249">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>要更改复制的复制频率：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定<strong>复制频率</strong>。</li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_077.dita">激活 ATS 和 RIS 文件生成</h5>
+<div>
+<p>修改复制以激活或取消激活异常终止的事务假脱机 (ATS) 和行信息假脱机 (RIS) 文件生成。</p></div><a id="idx129"></a><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq254">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>要激活 ATS 和 RIS 文件生成：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>要激活 ATS 文件生成，请选择<strong>异常终止的事务假脱机 (ATS)</strong>。</li>
+<li>要激活 RIS 文件生成，请选择<strong>行信息假脱机 (RIS)</strong>。</li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p>
+
+<p>ATS 文件和 RIS 文件的缺省位置为临时目录。可以在<strong>节点详细信息</strong> &gt; <strong>配置</strong>页面上指定 ATS 文件和 RIS 文件的目录。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_079.dita">复制整行或更改的列</h5>
+<div>
+<p>修改复制以指定是复制整行还是仅复制更改的列。</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq259">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>缺省情况下，Enterprise Replication (ER) 会复制整行并启用更新插入，即使仅有一列发生更改。然而，包含 BLOB 或 CLOB 数据的列仅在其内容已更改时才会更新，不管其他列是否已更改。</p>
+<p>要指定是复制整行还是复制更改的列：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定是否复制整行：<ul>
+<li>要复制整行并启用更新插入，请选择<strong>复制整行</strong>。如果还将“删除优先”指定为冲突解决规则，将禁用更新插入。</li>
+<li>要仅复制更改的列并禁用更新插入，请清除此选项。</li></ul></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_080.dita">启用和禁用触发器</h5>
+<div>
+<p>修改复制以指定应用复制的数据时是否触发触发器。</p></div><a id="idx136"></a><a id="idx137"></a><a id="idx138"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq264">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>缺省情况下，当复制在目标表上引发插入、更新或删除操作时，与该表关联的触发器不会触发。修改复制时，可以指定应用复制的数据时是否触发触发器。</p>
+<p>要启用或禁用触发器：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定是启用还是禁用触发器：<ul>
+<li>要启用触发器，请选择<strong>触发目标上的触发器</strong>。</li>
+<li>要禁用触发器，请清除此选项。</li></ul></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_051.htm#ids_erp_051" target="_blank">触发器（Enterprise Replication 指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h5 id="dqx1ids_oer_081.dita">保留或除去删除的行</h5>
+<div>
+<p>修改复制以保留或除去目标服务器上删除的行。</p></div><a id="idx139"></a><a id="idx140"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq269">先决条件：</div>
+<div class="notebody">使用“修改复制”操作，可以修改严格主复制及其参与者。主复制会验证不同服务器上的复制表是否具有一致的列数据类型。而严格主复制还会验证复制表是否具有相同的列名。</div></div>
+<p>
+<p>缺省情况下，会从 Enterprise Replication (ER) 域中的所有节点除去删除的行。如果某些删除的行在 ER 域中的其他节点上删除，可以指定在目标服务器上保留这些行。</p>
+<p>要指定是保留还是除去删除的行：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改复制</strong>。
+
+<p>此列表会显示域中的服务器组，其中以<strong>粗体</strong>显示了参与者。</p></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定是否保留删除的行：<ul>
+<li>要在目标服务器上保留 ER 域中其他节点上已删除的行，请选择<strong>保留删除的行</strong>。如果将“删除优先”指定为冲突解决规则，那么无法使用此选项。</li>
+<li>要从域中所有节点除去删除的行，请清除此选项。</li></ul></li>
+<li>要修改复制，请单击<strong>完成</strong>。
+
+<p>此时会显示选定的选项以及操作的结果。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">创建严格主复制（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_034.dita">查看复制属性</h4>
+<div>
+<p>查看复制和复制参与者的属性和状态。</p></div><a id="idx141"></a><a id="idx142"></a><a id="idx143"></a>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>要查看复制参与者的属性，请展开复制名称。
+
+<p>要查看<strong>复制</strong>页面上信息的描述，请单击“帮助”图标。</p></li></ol>
+<h4 id="dqx1ids_oer_038.dita">启动复制</h4>
+<div>
+<p>启动处于不活动状态的复制。</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<p>如果某个复制属于专有复制集，那么必须启动此复制所属的复制集。</p>
+<p>要启动复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>启动复制</strong>。</li>
+<li>在<strong>启动复制</strong>页面上选择要启动的参与者。<ul>
+<li>要启动复制中的所有参与者，请选中<strong>所有参与者</strong>复选框。</li>
+<li>要启动特定参与者，请选中要启动的每个参与者的复选框。</li></ul></li>
+<li>要执行所启动复制的初始同步，请完成以下步骤：<ol type="a">
+<li>选中<strong>同步数据</strong>复选框。</li>
+<li>从服务器列表选择要进行同步的数据源服务器。</li>
+<li>指定如何处理目标服务器上存在而数据源服务器上不存在的行。
+
+<ul>
+<li><strong>删除</strong>：从目标服务器中删除多余的行。</li>
+<li><strong>保留</strong>：在目标服务器上保留多余的行。</li>
+<li><strong>合并</strong>：在目标服务器上保留多余的行，并将这些行复制到源服务器。</li></ul></li></ol></li>
+<li>要启动复制，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_040.dita">停止复制</h4>
+<div>
+<p>停止处于活动状态的复制。</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<p>停止某个复制时，该复制的状态会更改为<em>不活动</em>，并且会删除发送队列中针对该复制的任何数据。当某个复制处于不活动状态时，Enterprise Replication 不会传输或处理任何数据库更改。通常，仅当对于该表不大可能发生复制活动时才停止复制。</p>
+<p>如果某个复制属于专有复制集，那么必须停止该复制集才能停止该复制。</p>
+<p>要停止复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>停止复制</strong>。</li>
+<li>在<strong>停止复制</strong>页面上选择要停止的参与者。<ul>
+<li> 要停止复制中的所有参与者，请选中<strong>所有参与者</strong>复选框。</li>
+<li>要停止特定参与者，请选中要停止的每个参与者的复选框。</li></ul></li>
+<li>要停止复制，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_042.dita">暂挂复制</h4>
+<div>
+<p>暂挂处于活动状态的复制。</p></div><a id="idx148"></a><a id="idx149"></a>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>暂挂复制</strong>。在<strong>暂挂复制</strong>页面上，列表会显示复制中的参与者。由于暂挂复制会使所有参与者进入暂挂状态，因此会选中所有参与者。</li>
+<li>要暂挂复制，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_044.dita">恢复复制</h4>
+<div>
+<p>将已暂挂复制的状态恢复为活动状态。</p></div><a id="idx150"></a><a id="idx151"></a><a id="idx152"></a>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>恢复复制</strong>。在<strong>恢复复制</strong>页面上，列表会显示复制中的参与者。由于恢复复制会使所有参与者进入活动状态，因此会选中所有参与者。</li>
+<li>要将复制恢复为活动状态，请单击<strong>确定</strong>。</li></ol>
+<h4 id="dqx1ids_oer_094.dita">删除复制</h4>
+<div>
+<p>从 Enterprise Replication (ER) 域中删除复制，并从所有参与数据库服务器的发送队列中清除所有数据。</p></div><a id="idx153"></a><a id="idx154"></a>
+<p>
+<p>要删除复制：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>选择复制。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除复制</strong>。</li></ol>
+<h3 id="dqx1ids_oer_050.dita"><a href="#ToC_94">在复制服务器间再同步数据</a></h3>
+<div>
+<p>更正已复制表之间的数据不一致。
+检查数据不一致，在检查期间修复不一致，同步数据，或使用异常终止的事务假脱机 (ATS) 和行信息假脱机 (RIS) 文件修复失败的事务。</p></div><a id="idx155"></a><a id="idx156"></a><a id="idx157"></a><a id="idx158"></a><a id="idx159"></a><a id="idx160"></a><a id="idx161"></a><a id="idx162"></a><a id="idx163"></a><a id="idx164"></a><a id="idx165"></a><a id="idx166"></a><a id="idx167"></a><a id="idx168"></a>
+<p>使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT)，可以通过以下方式修复已复制表之间的数据不一致问题：</p>
+<ul>
+<li>检查一致性并修复不一致的行：一致性检查将比较引用服务器与一个或多个目标服务器之间的数据，然后生成描述任何不一致的报告。可以选择在一致性检查期间修复不一致的行。可以执行一致性检查并（可选）同步单个复制或复制集。</li>
+<li>同步数据：同步会将指定的复制或复制集内的每行从引用服务器复制到指定的所有目标服务器。您可以使用直接同步来填充新的目标服务器或已严重不一致的现有目标服务器。</li>
+<li>使用 ATS 或 RIS 文件修复事务：使用 ATS 或 RIS 文件的修复操作会修复与指定 ATS 或 RIS 文件中记录的单个事务关联的行。</li></ul>
+<div>
+<div class="notetitle" id="wq289">重要信息：</div>
+<div class="notebody">运行一致性检查或同步可能会消耗日志文件中的大量空间。运行此命令之前请确保拥有足够的空间。</div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_236.htm#ids_erp_236" target="_blank">检查一致性并修复不一致的行（Enterprise Replication 指南）</a></li></ul>
+<h4 id="dqx1ids_oer_051.dita">检查复制</h4>
+<div>
+<p>运行一致性检查以比较复制中引用服务器与一个或多个目标服务器之间的数据，并生成描述任何不一致的报告。</p></div><a id="idx169"></a><a id="idx170"></a><a id="idx171"></a>
+<p>
+<p>要检查复制：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>检查</strong>。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段或使用 WHERE 子句限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。</li>
+<li>指定要检查的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_052.dita">检查并修复复制</h4>
+<div>
+<p>运行一致性检查以比较复制中引用服务器与一个或多个目标服务器之间的数据，生成描述任何不一致的报告，并修复不一致的行以使其与引用服务器上的行相匹配。</p></div><a id="idx172"></a><a id="idx173"></a><a id="idx174"></a><a id="idx175"></a><a id="idx176"></a><a id="idx177"></a>
+<p>
+<p>要检查并修复复制：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>检查并修复</strong>。</li>
+<li>可选：针对使用时间戳记或“删除优先”冲突解决规则的复制，选择选项以基于最新时间戳记修复不一致问题。此选项需要 IBM Informix V11.70。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段或使用 WHERE 子句限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。此列表显示在复制中作为参与者的服务器。</li>
+<li>指定如何处理目标服务器上存在而引用服务器上不存在的行。缺省值为<strong>删除</strong>：从目标服务器中除去多余的行。</li>
+<li>指定在修复数据期间如何处理目标服务器上的触发器。缺省值为<strong>禁用</strong>：同步期间不触发目标服务器上的触发器。</li>
+<li>指定要检查并修复的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_053.dita">同步复制</h4>
+<div>
+<p>在复制服务器之间同步数据，以修复复制中的不一致数据。</p></div><a id="idx178"></a><a id="idx179"></a><a id="idx180"></a><a id="idx181"></a><a id="idx182"></a><a id="idx183"></a>
+<p>
+<p>要同步复制：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制</strong>选项卡。</li>
+<li>单击表中的复制。要查看参与者，请展开复制名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>同步</strong>。</li>
+<li>可选：要增加同步期间发送队列可使用的内存量，请选择<strong>设置发送队列的大小</strong>并指定大小。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段或使用 WHERE 子句限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。</li>
+<li>指定如何处理目标服务器上存在而引用服务器上不存在的行。缺省值为<strong>删除</strong>：从目标服务器中除去多余的行。</li>
+<li>指定在同步数据期间如何处理目标服务器上的触发器。缺省值为<strong>禁用</strong>：同步期间不触发目标服务器上的触发器。</li>
+<li>指定要同步的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_096.dita">删除复制的检查或同步任务</h4>
+<div>
+<p>删除复制的检查任务、检查并修复任务或同步任务的报告。</p></div><a id="idx184"></a><a id="idx185"></a>
+<p>
+<p>要删除复制任务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>任务状态</strong>选项卡。</li>
+<li>针对<strong>显示</strong>，选择<strong>复制检查或同步状态</strong>。
+</li>
+<li>选中要删除的任务的复选框。<div class="attention"><span class="attentiontitle">注意：</span>单击<strong>删除复制任务</strong>后，会删除选定任务，而不会提示确认删除。</div></li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除复制任务</strong>。</li></ol>
+<h4 id="dqx1ids_oer_057">检查复制集</h4>
+<div>
+<p>运行一致性检查以比较复制集内引用服务器与一个或多个目标服务器之间的数据，并生成描述任何不一致的报告。</p></div><a id="idx186"></a><a id="idx187"></a><a id="idx188"></a>
+<p>
+<p>要检查复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合内的复制，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制集</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>检查</strong>。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。</li>
+<li>指定要使用的进程数。为了实现最佳性能，请选择最大进程数。此数字或者为可用虚拟处理器数，或者为复制集内的复制数（两者取其较小者）。</li>
+<li>指定要检查的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_058">检查并修复复制集</h4>
+<div>
+<p>运行一致性检查以比较复制集内引用服务器与一个或多个目标服务器之间的数据，生成描述任何不一致的报告，并修复不一致的行以使其与引用服务器上的行相匹配。</p></div><a id="idx189"></a><a id="idx190"></a><a id="idx191"></a><a id="idx192"></a><a id="idx193"></a><a id="idx194"></a>
+<p>
+<p>要检查并修复复制集：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合内的复制，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制集</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>检查并修复</strong>。</li>
+<li>可选：针对所有复制使用时间戳记或“删除优先”冲突解决规则的复制集，选择选项以基于最新时间戳记修复不一致问题。此选项需要 IBM Informix V11.70。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。</li>
+<li>指定如何处理目标服务器上存在而引用服务器上不存在的行。缺省值为<strong>删除</strong>：从目标服务器中除去多余的行。</li>
+<li>指定在修复数据期间如何处理目标服务器上的触发器。缺省值为<strong>禁用</strong>：同步期间不触发目标服务器上的触发器。</li>
+<li>指定在修复数据期间如何处理禁用的复制服务器。缺省值为<strong>不启用复制</strong>。</li>
+<li>指定要使用的进程数。为了实现最佳性能，请选择最大进程数。此数字或者为可用虚拟处理器数，或者为复制集内的复制数（两者取其较小者）。</li>
+<li>指定要检查并修复的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_059">同步复制集</h4>
+<div>
+<p>在复制服务器之间同步数据，以修复复制集内的不一致数据。</p></div><a id="idx195"></a><a id="idx196"></a><a id="idx197"></a><a id="idx198"></a><a id="idx199"></a><a id="idx200"></a>
+<p>
+<p>要同步复制集：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>复制集</strong>选项卡。</li>
+<li>单击表中的复制集。要查看集合内的复制，请展开复制集名称。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>检查或同步复制集</strong>。</li>
+<li>输入名称以标识任务，以便可以在<strong>任务状态</strong>页面上对其进行监视。</li>
+<li>选择<strong>同步</strong>。</li>
+<li>可选：要增加同步期间发送队列可使用的内存量，请选择<strong>设置发送队列的大小</strong>并指定大小。</li>
+<li>针对<strong>频率</strong>，指定何时执行操作。单击<strong>完成</strong>时，缺省值为<strong>立即</strong>。</li>
+<li>可选：选择选项以按照时间段限制要检查的行数。</li>
+<li>选择<strong>引用服务器</strong>以用作数据的引用副本。</li>
+<li>指定如何处理目标服务器上存在而引用服务器上不存在的行。缺省值为<strong>删除</strong>：从目标服务器中除去多余的行。</li>
+<li>指定在同步数据期间如何处理目标服务器上的触发器。缺省值为<strong>禁用</strong>：同步期间不触发目标服务器上的触发器。</li>
+<li>指定在修复数据期间如何处理禁用的复制服务器。缺省值为<strong>不启用复制</strong>。</li>
+<li>指定要使用的进程数。为了实现最佳性能，请选择最大进程数。此数字或者为可用虚拟处理器数，或者为复制集内的复制数（两者取其较小者）。</li>
+<li>指定要同步的目标服务器。
+
+<p>要监视任务的进度并查看一致性报告，请单击<strong>任务状态</strong>选项卡。</p></li></ol>
+<h4 id="dqx1ids_oer_097.dita">删除复制集的检查或同步任务</h4>
+<div>
+<p>删除复制集的检查任务、检查并修复任务或同步任务的报告。</p></div><a id="idx201"></a><a id="idx202"></a>
+<p>
+<p>要删除复制集任务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>任务状态</strong>选项卡。</li>
+<li>针对<strong>显示</strong>，选择<strong>复制集检查或同步状态</strong>。
+</li>
+<li>选中要删除的任务的复选框。<div class="attention"><span class="attentiontitle">注意：</span>单击<strong>删除复制集任务</strong>后，会删除选定任务，而不会提示确认删除。</div></li>
+<li>在<strong>操作</strong>菜单上，单击<strong>删除复制集任务</strong>。</li></ol>
+<h4 id="dqx1ids_oer_063">使用 ATS 文件修复失败的事务</h4>
+<div>
+<p>使用异常终止的事务假脱机 (ATS) 文件来修复失败的事务。ATS 修复任务会调整无法应用到目标服务器的行。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq311">先决条件：</div>
+<div class="notebody">创建用于存储 ATS 文件的目录，在 Enterprise Replication (ER) 服务器上启用 ATS 文件生成，并激活用于复制的 ATS 文件生成。</div></div>
+<p>
+<p>当已复制的事务由于冲突而无法应用到目标数据库以及整个事务失败时，会生成 ATS 文件。使用 ATS 文件修复事务时，修复的是与 ATS 文件中记录的事务关联的行。</p>
+<p>要使用 ATS 文件修复事务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击 <strong>ATS</strong> 选项卡。</li>
+<li>在<strong>异常终止的事务假脱机 (ATS) 文件</strong>表中，选中 ATS 文件的复选框。
+
+<p>如果您不同时修复所有可用的 ATS 文件，一些修复任务可能会因为维护表之间的关系时出现问题（引用完整性约束）而失败。
+</p></li>
+<li>单击<strong>修复</strong>。</li>
+<li>查看选定要进行修复的 ATS 文件。
+
+<p>要查看某个 ATS 文件的详细信息，请单击该文件的名称。</p></li>
+<li>单击<strong>修复</strong>。</li>
+<li>监视任务的进度，并在 <strong>ATS 修复任务状态</strong>列表中查看结果。
+
+<p>要显示某个任务的详细信息，请单击列表中的相应文件名。</p></li></ol>
+<h4 id="dqx1ids_oer_064">使用 RIS 文件修复失败的事务</h4>
+<div>
+<p>使用行信息假脱机 (RIS) 文件来修复失败的事务。RIS 修复任务会调整无法应用到目标服务器的行。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq316">先决条件：</div>
+<div class="notebody">创建用于存储 RIS 文件的目录，在 Enterprise Replication (ER) 服务器上启用 RIS 文件生成，并激活用于复制的 RIS 文件生成。</div></div>
+<p>
+<p>当已定义行作用域的复制事务由于冲突而无法应用到目标数据库以及整个事务失败时，会生成 RIS 文件。使用 RIS 文件修复事务时，修复的是 RIS 文件中记录的行。</p>
+<p>要使用 RIS 文件修复事务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击 <strong>RIS</strong> 选项卡。</li>
+<li>在<strong>行信息假脱机 (RIS)</strong> 表中，选中 RIS 文件的复选框。
+
+<p>如果您不同时修复所有可用的 RIS 文件，一些修复任务可能会因为维护表之间的关系时出现问题（引用完整性约束）而失败。
+</p></li>
+<li>单击<strong>修复</strong>。</li>
+<li>查看选定要进行修复的 RIS 文件。
+
+<p>要查看某个 RIS 文件的详细信息，请单击该文件的名称。</p></li>
+<li>单击<strong>修复</strong>。</li>
+<li>监视任务的进度，并在 <strong>RIS 修复任务状态</strong>列表中查看结果。
+
+<p>要显示某个任务的详细信息，请单击列表中的相应文件名。</p></li></ol>
+<h3 id="dqx1ids_oer_054"><a href="#ToC_105">监视任务状态</a></h3>
+<div>
+<p>监视复制和复制集的检查任务、检查并修复任务以及同步任务的进度和结果。</p></div>
+<h4 id="dqx1ids_oer_055">监视复制任务</h4>
+<div>
+<p>监视复制的检查任务、检查并修复任务以及同步任务的进度和结果。</p></div><a id="idx203"></a><a id="idx204"></a>
+<p>
+<p>对复制运行一致性检查任务、检查并修复任务或同步任务后，任务的状态和结果会在<strong>任务状态</strong>页面上显示并更新。</p>
+<p>要监视任务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>任务状态</strong>选项卡。</li>
+<li>选择<strong>复制检查或同步状态</strong>。此列表显示任务的状态。可单击列标题以对列表排序。</li>
+<li>要显示有关任务的更多详细信息，请单击任务名称。
+
+<p>在<strong>复制任务的详细信息</strong>页面上，单击“刷新”按钮以更新正在运行的任务的详细信息。</p></li></ol>
+<h4 id="dqx1ids_oer_056">监视复制集任务</h4>
+<div>
+<p>监视复制集的检查任务、检查并修复任务以及同步任务的进度和结果。</p></div><a id="idx205"></a><a id="idx206"></a>
+<p>
+<p>对复制集运行一致性检查任务、检查并修复任务或同步任务后，任务的状态和结果会在<strong>任务状态</strong>页面上显示并更新。</p>
+<p>要监视任务：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>复制</strong>。</li>
+<li>单击<strong>任务状态</strong>选项卡。</li>
+<li>选择<strong>复制集检查或同步状态</strong>。此列表显示任务的状态。可单击列标题以对列表排序。</li>
+<li>要显示有关任务的更多详细信息，请单击任务名称。</li>
+<li>在<strong>复制集任务的详细信息</strong>页面上，单击某个复制的名称以显示有关此复制的详细信息。
+
+<p>单击“刷新”按钮以更新正在运行的任务的详细信息。</p></li></ol>
+<h3 id="dqx1ids_oer_030"><a href="#ToC_108">更改 ER 配置参数</a></h3>
+<div>
+<p>更改 Enterprise Replication (ER) 域中节点的配置参数。</p></div>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>复制</strong>，然后单击<strong>节点详细信息</strong>。</li>
+<li>单击<strong>配置</strong>选项卡。此时会显示参数以及它们的当前值。</li>
+<li>单击<strong>编辑配置</strong>。</li>
+<li>在字段中输入更改。</li>
+<li>单击<strong>保存更改</strong>。</li></ol>
+<h2 id="dqx1ids_oer_115.dita"><a href="#ToC_109">管理客户机连接</a></h2>
+<div>
+<p>通过使用连接管理器，监视并维护客户机连接，并且将客户机连接请求定向到网格、高可用性集群、复制集或服务器集内的相应服务器。</p></div>
+<div>
+<div class="notetitle" id="dqx1ids_oer_115.dita__preq-cmxc3">先决条件：</div>
+<div class="notebody"><span id="dqx1ids_oer_115.dita__preq-ph-cmxc3">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器</span>。</div></div>
+<p>连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。连接单元是网格、高可用性集群、复制集或服务器集内数据库服务器的集合。单个连接管理器可管理多个连接单元。</p>
+<div>
+<div class="notetitle" id="wq328">重要信息：</div>
+<div class="notebody">连接管理器要求连接管理器名称、SLA 名称、集群名称和服务器集名称必须全部是 ASCII 字符，即使非英语语言环境亦如此。</div></div>
+<h3 id="dqx1ids_oer_116"><a href="#ToC_110">查看连接单元</a></h3>
+<div>
+<p>查看由连接管理器监视其连接的网格、高可用性集群、复制集和服务器集。</p></div><a id="idx207"></a><a id="idx208"></a><a id="idx209"></a><a id="idx210"></a><a id="idx211"></a><a id="idx212"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq330">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。连接单元是网格、高可用性集群、复制集或服务器集内数据库服务器的集合。单个连接管理器可管理多个连接单元。</p></p>
+<p>
+<p>要查看连接管理器的连接单元：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击列表中的连接单元。</li></ol>
+<h3 id="dqx1ids_oer_117"><a href="#ToC_111">添加连接单元</a></h3>
+<div>
+<p>向连接管理器分配网格、集群、复制集或服务器集，为连接单元创建服务级别协议。对于集群，还可配置故障转移。</p></div><a id="idx213"></a><a id="idx214"></a><a id="idx215"></a><a id="idx216"></a><a id="idx217"></a><a id="idx218"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq335">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>连接单元是网格、高可用性集群、复制集或服务器集内数据库服务器的集合。连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。</p></p>
+<p>
+<p>要添加连接单元：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>添加连接单元</strong>。</li>
+<li>完成该向导。</li></ol>
+<h3 id="dqx1ids_oer_118"><a href="#ToC_112">修改故障转移配置</a></h3>
+<div>
+<p>使用连接管理器为高可用性集群修改故障转移配置。</p></div><a id="idx219"></a><a id="idx220"></a><a id="idx221"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq340">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>故障转移配置会指定当主服务器故障时接管主服务器角色的辅助服务器。</p></p>
+<p>
+<p>要修改故障转移配置：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击集群。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改连接单元</strong>。</li>
+<li>完成该向导。</li></ol>
+<h3 id="dqx1ids_oer_119"><a href="#ToC_113">创建服务级别协议</a></h3>
+<div>
+<p>使用连接管理器为网格、集群或复制集创建服务级别协议。</p></div><a id="idx222"></a><a id="idx223"></a><a id="idx224"></a><a id="idx225"></a><a id="idx226"></a><a id="idx227"></a><a id="idx228"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq345">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。必须将网格、集群或复制集定义为连接管理器的连接单元。</div></div>
+<p>
+<p>服务级别协议 (SLA) 是指定客户机应用程序与它们的服务提供者（在此情况下为 Informix 数据库服务器）之间的合同。连接管理器根据服务级别协议将客户机应用程序连接到相应服务器。连接管理器可接受客户机连接请求，并将这些请求重定向给相应服务器，或充当客户机应用程序与服务器之间的代理服务器。</p>
+<p>连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。监视 Quality of Data 时，连接管理器可以基于应用失败次数、事务等待时间和工作负载，将客户机连接路由到复制服务器。不监视 Quality of Data 时，连接管理器只能基于工作负载路由客户机连接。要在 SLA 中指定应用失败次数和等待时间，请通过在<strong>复制</strong> &gt; <strong>ER 域</strong>页面上修改作为网格成员的服务器，启用 Quality of Data 监视。</p></p>
+<p>
+<p>要创建服务级别协议：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击列表中的连接单元。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建 SLA</strong>。</li>
+<li>完成该向导。</li></ol>
+<h3 id="dqx1ids_oer_120"><a href="#ToC_114">修改服务级别协议</a></h3>
+<div>
+<p>使用连接管理器修改网格、集群、复制集或服务器集的服务级别协议。</p></div><a id="idx229"></a><a id="idx230"></a><a id="idx231"></a><a id="idx232"></a><a id="idx233"></a><a id="idx234"></a><a id="idx235"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq350">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>服务级别协议 (SLA) 是指定客户机应用程序与它们的服务提供者（在此情况下为 Informix 数据库服务器）之间的合同。连接管理器根据服务级别协议将客户机应用程序连接到相应服务器。连接管理器可接受客户机连接请求，并将这些请求重定向给相应服务器，或充当客户机应用程序与服务器之间的代理服务器。</p>
+<p>连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。连接单元是网格、高可用性集群、复制集或服务器集内数据库服务器的集合。</p></p>
+<p>
+<p>要修改服务级别协议：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>单击连接管理器。</li>
+<li>单击网格、集群、复制集或服务器集。</li>
+<li>单击 SLA 选项卡。</li>
+<li>单击列表中的 SLA。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>修改 SLA</strong>。</li>
+<li>完成该向导。</li></ol>
+<h3 id="dqx1ids_oer_121"><a href="#ToC_115">创建连接管理器</a></h3>
+<div>
+<p>创建连接管理器，并将网格、集群、复制集或服务器集定义为连接单元，为连接单元创建服务级别协议。</p></div><a id="idx236"></a><a id="idx237"></a><a id="idx238"></a><a id="idx239"></a><a id="idx240"></a><a id="idx241"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq355">先决条件：</div>
+<div class="notebody">对于连接管理器，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3 以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 随附的连接管理器。</div></div>
+<p>
+<p>连接管理器提供负载均衡，并基于服务级别协议 (SLA) 将客户机连接请求定向到连接单元中的相应服务器。连接单元是网格、高可用性集群、复制集或服务器集内数据库服务器的集合。单个连接管理器可管理多个连接单元。</p>
+<p>您可以使用 OAT 为 OAT 所连接的数据库服务器创建一个连接管理器。</p></p>
+<p>
+<p>要创建连接管理器：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>连接管理器</strong>。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建</strong>。</li>
+<li>完成该向导。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_116">声明</a></h1>
+<p>本信息是为在美国国内供应的产品和服务而编写的。</p>
+<p>IBM 可能在其他国家或地区不提供本文档中讨论的产品、服务或功能特性。有关您所在区域当前可获得的产品和服务的信息，请向您当地的 IBM 代表咨询。任何对 IBM 产品、程序或服务的引用并非意在明示或暗示只能使用 IBM 的产品、程序或服务。只要不侵犯 IBM 的知识产权，任何同等功能的产品、程序或服务，都可以代替 IBM 产品、程序或服务。但是，评估和验证任何非 IBM 产品、程序或服务的操作，由用户自行负责。</p>
+<p>IBM 公司可能已拥有或正在申请与本文档内容有关的各项专利。提供本文档并未授予用户使用这些专利的任何许可。
+您可以用书面方式将许可查询寄往：</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation 
+<br />
+North Castle Drive 
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A. <br />
+</div>
+<p>有关双字节 (DBCS) 信息的许可查询，请与您所在国家或地区的 IBM 知识产权部门联系，或用书面方式将查询寄往：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>以下段落对于英国和与当地法律有不同规定的其他国家或地区均不适用：INTERNATIONAL BUSINESS MACHINES CORPORATION“按现状”提供本出版物，不附有任何种类的（无论是明示的还是暗含的）保证，包括但不限于暗含的有关非侵权、适销和适用于某特定用途的保证。某些国家或地区在某些交易中不允许免除明示或暗含的保证。因此本条款可能不适用于您。</p>
+<p>本信息中可能包含技术方面不够准确的地方或印刷错误。
+此处的信息将定期更改；这些更改将编入本出版物的新版本中。IBM 可以随时对本出版物中描述的产品和/或程序进行改进和/或更改，而不另行通知。</p>
+<p>本资料中对非 IBM Web 站点的任何引用都是为了方便起见才提供的,不以任何方式充当对那些 Web 站点的保证。那些 Web 站点中的资料不是 IBM 产品资料的一部分，使用那些 Web 站点带来的风险将由您自行承担。</p>
+<p>IBM 可以按它认为适当的任何方式使用或分发您所提供的任何信息而无须对您承担任何责任。</p>
+<p>本程序的被许可方如果要了解有关程序的信息以达到如下目的：(i) 允许在独立创建的程序和其他程序（包括本程序）之间进行信息交换，以及 (ii) 允许对已经交换的信息进行相互使用，请与下列地址联系：
+</p>
+<div class="lines">IBM Corporation 
+<br />
+J46A/G4 
+<br />
+555 Bailey Avenue 
+<br />
+San Jose, CA 95141-1003 
+<br />
+U.S.A.
+<br />
+</div>
+<p>只要遵守适当的条件和条款，包括某些情形下的一定数量的付费，都可获得这方面的信息。</p>
+<p>本文档中描述的许可程序及其所有可用的许可资料均由 IBM 依据 IBM 客户协议、IBM 国际程序许可协议或任何同等协议中的条款提供。</p>
+<p>此处包含的任何性能数据都是在受控环境中测得的。
+因此，在其他操作环境中获得的数据可能会有明显的不同。有些测量可能是在开发级的系统上进行的，因此不保证与一般可用系统上进行的测量结果相同。
+此外，有些测量是通过推算而估计的，实际结果可能会有差异。本文档的用户应当验证其特定环境的适用数据。</p>
+<p>涉及非 IBM 产品的信息可从这些产品的供应商、其出版说明或其他可公开获得的资料中获取。IBM 没有对这些产品进行测试，也无法确认其性能的精确性、兼容性或任何其他关于非 IBM 产品的声明。有关非 IBM 产品性能的问题应当向这些产品的供应商提出。</p>
+<p>所有关于 IBM 未来方向或意向的声明都可随时更改或收回，而不另行通知，它们仅仅表示了目标和意愿而已。</p>
+<p>所有 IBM 的价格均是 IBM 当前的建议零售价，可随时更改而不另行通知。经销商的价格可与此不同。</p>
+<p>本信息仅用于规划的目的。
+在所描述的产品上市之前，此处的信息会有更改。</p>
+<p>本信息包含在日常业务操作中使用的数据和报告的示例。为尽可能表述完整，这些示例将包括个人、公司、品牌和产品的名称。所有这些名字都是虚构的，若现实生活中实际业务企业使用的名字和地址与此相似，纯属巧合。</p>
+<p>版权许可：</p>
+<p>本资料包括源语言形式的样本应用程序，这些样本说明不同操作平台上的编程方法。如果是为按照在编写样本程序的操作平台上的应用程序编程接口 (API) 进行应用程序的开发、使用、经销或分发为目的，您可以任何形式对这些样本程序进行复制、修改、分发，而无须向 IBM 付费。这些示例并未在所有条件下作全面测试。因此，IBM 不能担保或暗示这些程序的可靠性、可维护性或功能。样本程序“按现状”提供，不附有任何种类的保证。对于因使用样本程序所引起的任何损害，IBM 概不负责。</p>
+<p>凡这些样本程序的每份拷贝或其任何部分或任何衍生产品，都必须包含如下版权声明：</p>
+<p>&copy; （贵公司的名称）（年）。此部分代码是根据 IBM 公司的样本程序衍生出来的。</p>
+<p>&copy; Copyright IBM Corp. （输入年份）. All rights reserved.</p>
+<p>如果您正在查看本信息的软拷贝，图片和彩色图例可能无法显示。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_117">商标</a></h2>
+<p>IBM、IBM 徽标和 ibm.com 是 International Business Machines Corp. 在全球许多管辖区域注册的商标或注册商标。其他产品和服务名称可能是 IBM 或其他公司的商标。当前的 IBM 商标列表，可从 Web 站点 <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> 上“版权和商标信息”部分获取。</p>
+<p>Adobe、Adobe 徽标和 PostScript 是 Adobe Systems Incorporated 在美国和/或其他国家或地区的注册商标或商标。</p>
+<p>Intel、Itanium 和 Pentium 是 Intel Corporation 或其子公司在美国和其他国家或地区的商标或注册商标。</p>
+<p>Java&trade; 和所有基于 Java 的商标和徽标是 Oracle 和/或其子公司的商标或注册商标。</p>
+<p>Linux 是 Linus Torvalds 在美国和/或其他国家或地区的注册商标。</p>
+<p>Microsoft、Windows 和 Windows NT 是 Microsoft Corporation 在美国和/或其他国家或地区的商标。</p>
+<p>UNIX 是 The Open Group 在美国和其他国家或地区的注册商标。</p>
+<p>其他公司、产品或服务名称可能是其他公司的商标或服务标记。</p>
+<h2 id="dqx1ids_oer_000"><a href="#ToC_118">版权</a></h2>
+<p>本文档包含 IBM 的专利信息。它是根据许可协议提供的，并受版权法保护。本出版物包含的信息不包括任何产品保证，且本手册提供的任何声明不应作如此解释。
+</p>
+<p>当您发送信息给 IBM 后，即授予 IBM 非专有权，IBM 对于您所提供的任何信息，有权利以任何它认为适当的方式使用或分发，而不必对您负任何责任。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2008, 2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. 请参阅 <samp class="xph">license/notices.txt</samp> 文件，获取其他信息。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

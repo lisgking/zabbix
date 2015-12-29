@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL 工具箱蹦現畫面 - 產品編號資訊]]></PartTitle>
+<Partition><![CDATA[分割區]]></Partition>
+<PartInfoFor><![CDATA[下列項目的分割區資訊 {0}]]></PartInfoFor>
+<Pgsize><![CDATA[頁面大小]]></Pgsize>
+<NumExtAlloc><![CDATA[配置的延伸範圍數]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[配置的總頁數]]></TPgsAlloc>
+<NDataPgs><![CDATA[資料頁數]]></NDataPgs>
+<Lockid><![CDATA[鎖定 ID]]></Lockid>
+<HasIPgs><![CDATA[表格分割區包括索引頁嗎？]]></HasIPgs>
+<Rowsize><![CDATA[列大小]]></Rowsize>
+<NRows><![CDATA[列數]]></NRows>
+<PagesUsed><![CDATA[使用頁數]]></PagesUsed>
+<errNoPartnum><![CDATA[錯誤：未設定產品編號。]]></errNoPartnum>
+<errNotHex><![CDATA[錯誤：值必須為十六進位格式 -- 字首為 <0x>。]]></errNotHex>
+</lang>

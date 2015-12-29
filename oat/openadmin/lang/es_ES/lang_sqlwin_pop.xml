@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[Ventana emergente de SQL Toolbox - Información sobre el número de partición]]></PartTitle>
+<Partition><![CDATA[Partición]]></Partition>
+<PartInfoFor><![CDATA[Información de partición de {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Tamaño de página]]></Pgsize>
+<NumExtAlloc><![CDATA[Número de extensiones asignadas]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Total de páginas asignadas]]></TPgsAlloc>
+<NDataPgs><![CDATA[Número de páginas de datos]]></NDataPgs>
+<Lockid><![CDATA[ID de bloqueo]]></Lockid>
+<HasIPgs><![CDATA[¿La partición de la tabla incluye páginas de índice?]]></HasIPgs>
+<Rowsize><![CDATA[Tamaño de fila]]></Rowsize>
+<NRows><![CDATA[Número de filas]]></NRows>
+<PagesUsed><![CDATA[Páginas utilizadas]]></PagesUsed>
+<errNoPartnum><![CDATA[Error: el número de partición no está definido.]]></errNoPartnum>
+<errNotHex><![CDATA[Error: el valor debe estar en formato hexadecimal -- empiece con el prefijo <0x>.]]></errNotHex>
+</lang>

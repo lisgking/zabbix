@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs-CZ" xml:lang="cs-cz">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="cs-cz" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, koncept, úloha, task, task, task" />
+<title>Informix TimeSeries Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix TimeSeries Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Obsah</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Informix
+TimeSeries Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_ots_001" class="toclink">Přezkoumání časových řad</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_ots_002" class="toclink">Vytvoření kontejneru</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_ots_003" class="toclink">Vytvoření kalendáře</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_ots_004" class="toclink">Vytvoření virtuální tabulky</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_cm_not" class="toclink">Upozornění</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1trademarks" class="toclink">Ochranné známky</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_ots_000" class="toclink">Copyright</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Informix
+TimeSeries Plug-in for OAT</a></h1>
+<div>
+<p>Produkt IBM&reg; Informix&reg; TimeSeries Plug-in
+for OpenAdmin Tool (OAT) nabízí grafické rozhraní pro administraci databázových objektů, které souvisejí s časovou řadou, včetně podtypů
+<strong>TimeSeries</strong>, kontejnerů a kalendářů.</p></div>
+<div>
+<div class="notetitle" id="wq2">Požadavky:</div>
+<div class="notebody">U produktu Informix verze 11.50
+a nižší musí být instalován a v databázi registrován modul Informix TimeSeries DataBlade&reg;.</div></div>
+<p>Časová řada je sada dat, jejich proměnlivost v čase je zaznamenávána. Každá položka je opatřena časovým razítkem a uložena v databázi. Rozšíření Informix TimeSeries poskytuje datový typ, kontejnery a kalendáře <strong>TimeSeries</strong>
+pro správu dat časových řad.</p>
+<p>Pomocí modulu plug-in TimeSeries je možné monitorovat databázové objekty související s časovými řadami:</p>
+<ul>
+<li>Zobrazit podtypy <strong>TimeSeries</strong>, kontejnery a kalendáře, které se používají pro data časových řad v databázi.</li>
+<li>Zobrazit tabulky a indexy, které obsahují podtypy <strong>TimeSeries</strong>.</li>
+<li>Zobrazit virtuální tabulky, které jsou založené na tabulkách obsahujících podtypy <strong>TimeSeries</strong>.</li>
+<li>Monitorovat procentní část prostoru využívaného v kontejnerech a v prostorech dbspace pro tyto kontejnery.</li></ul>
+<p>Také je možné vytvářet a rušit kontejnery, kalendáře a virtuální tabulky.</p>
+<h2 id="dqx1ids_ots_001"><a href="#ToC_2">Přezkoumání časových řad</a></h2>
+<div>
+<p>Přezkoumejte databázové objekty, které souvisejí s časovou řadou,
+včetně tabulek, indexů a virtuálních tabulek a podtypů <strong>TimeSeries</strong>, kontejnerů a kalendářů.</p></div>
+<p>
+<p>Postup přezkoumání časové řady:</p>
+<p>V nabídce nástroje IBM OpenAdmin
+Tool (OAT) for Informix klepněte na položku <strong>Panel nástrojů SQL</strong> &gt; <strong>TimeSeries</strong>. Zobrazí se seznam databází a tabulek v databázovém
+serveru, které obsahují data časových řad.
+</p>
+<ul>
+<li>Chcete-li zobrazit informace
+pro konkrétní databázi či tabulku, klepněte na ni v seznamu.</li>
+<li>Chcete-li zobrazit další informace o specifickém databázovém či
+tabulkovém objektu, klepněte na tlačítko rozbalení na panelu objektu.</li></ul></p>
+<h2 id="dqx1ids_ots_002"><a href="#ToC_3">Vytvoření kontejneru</a></h2>
+<div>
+<p>Vytvořte kontejner pro časovou řadu. Vytvořte více kontejnerů určením více než jednoho kontejneru pro každý
+prostor dbspace nebo výběrem více než jednoho prostoru dbspace pro kontejnery.</p></div>
+<p>
+<p>Postup vytvoření kontejneru:</p></p>
+<ol type="1">
+<li>V nabídce nástroje IBM OpenAdmin
+Tool (OAT) for Informix klepněte na položku <strong>Panel nástrojů SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>Klepněte na databázi, která obsahuje časovou řadu.</li>
+<li>V nabídce <strong>Akce</strong> klepněte na volbu <strong>Vytvořit
+kontejner</strong>.</li>
+<li>Vyplňte pole na stránce.</li></ol>
+<h2 id="dqx1ids_ots_003"><a href="#ToC_4">Vytvoření kalendáře</a></h2>
+<div>
+<p>Vytvořte kalendář, který bude přidružen k časové řadě.</p></div>
+<p>
+<p>Každá časová řada je přidružena ke kalendáři. Kalendář definuje sadu platných časů, ve kterých může
+časová řada zaznamenávat data; určuje, kdy a jako často budou položky
+přijímány. Kalendář se skládá z data zahájení,
+vzorku a intervalu. Zvažte tento příklad: počáteční datum vzorku
+je neděle; vzorek je 1 vypnuto, 5 zapnuto, 1 vypnuto; a interval je
+den. Pro tento vzorek nebudou informace shromažďovány první den
+v neděli. Informace budou shromažďovány po prvních pět dnů,
+tedy od pondělí do pátku. Informace nebudou shromažďovány poslední den, tedy v sobotu.</p></p>
+<p>
+<p>Postup vytvoření kalendáře:</p></p>
+<ol type="1">
+<li>V nabídce nástroje IBM OpenAdmin
+Tool (OAT) for Informix klepněte na položku <strong>Panel nástrojů SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>Klepněte na databázi, která obsahuje časovou řadu.</li>
+<li>V nabídce <strong>Akce</strong> klepněte na volbu <strong>Vytvořit
+kalendář</strong>.</li>
+<li>Vyplňte pole na stránce.</li></ol>
+<h2 id="dqx1ids_ots_004"><a href="#ToC_5">Vytvoření virtuální tabulky</a></h2>
+<div>
+<p>Vytvořte virtuální tabulku, která je založena na tabulce obsahující
+podtyp <strong>TimeSeries</strong>.</p></div>
+<p>
+<p>Virtuální tabulka je relační tabulka se stejným schématem jako
+má základní tabulka, s výjimkou sloupce <strong>TimeSeries</strong>. Sloupec <strong>TimeSeries</strong> je nahrazen sloupci podtypu <strong>TimeSeries</strong>. Prvky ve sloupci <strong>TimeSeries</strong> jsou jednotlivé sloupce
+ve virtuální tabulce. Virtuální tabulka obsahuje všechna data, která jsou v základní
+tabulce, včetně dat zapouzdřených v podtypu <strong>TimeSeries</strong>.</p></p>
+<p>
+<p>Postup vytvoření virtuální tabulky:</p></p>
+<ol type="1">
+<li>V nabídce nástroje IBM OpenAdmin
+Tool (OAT) for Informix klepněte na položku <strong>Panel nástrojů SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>V seznamu rozbalte databázi, která obsahuje základní tabulku,
+a klepněte na tuto tabulku.</li>
+<li>V nabídce <strong>Akce</strong> klepněte na volbu <strong>Vytvořit
+virtuální tabulku</strong>.</li>
+<li>Vyplňte pole na stránce.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_6">Upozornění</a></h1>
+<p>Informace se vztahují k produktům a službám nabízeným v USA.</p>
+<p>IBM nemusí nabízet produkty, služby nebo vlastnosti zmiňované
+v tomto dokumentu v jiných zemích. Informace o produktech a
+službách, které jsou momentálně ve vaší zemi dostupné, můžete
+získat od zástupce společnosti IBM pro vaši oblast. Žádný z odkazů
+na produkty, programové vybavení nebo služby není zamýšlen
+jako tvrzení, že lze použít pouze tyto produkty, programové
+vybavení nebo služby společnosti IBM. Jako náhrada mohou být použity
+libovolné funkčně ekvivalentní produkty, programové vybavení nebo
+služby, které neporušují žádné intelektuální vlastnické právo
+společnosti IBM.
+Za operace prováděné produkty, programy nebo
+službami, které nepochází od společnosti IBM, nese zodpovědnost
+uživatel-</p>
+<p>Společnost IBM může mít patenty nebo podané žádosti o patent, které
+zahrnují předmět tohoto dokumentu. Vlastnictví tohoto dokumentu vám nedává
+žádná práva k těmto patentům. Písemné žádosti o licenci můžete odesílat na adresu:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>Pokud máte zájem o licenci v zemi s dvoubajtovou
+znakovou sadou (DBCS), kontaktujte zastoupení společnosti IBM ve vaší zemi nebo písemně zastoupení
+společnosti IBM na adrese: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>Následující odstavec se netýká Velké Británie ani kterékoliv jiné
+země, kde taková opatření odporují místním zákonům:
+ SPOLEČNOST INTERNATIONAL BUSINESS MACHINES CORPORATION
+POSKYTUJE TUTO PUBLIKACI "TAK, JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU (VYJÁDŘENÉ VÝSLOVNĚ ČI VYPLÝVAJÍCÍ Z OKOLNOSTÍ) VČETNĚ, A TO ZEJMÉNA, JAKÝCHKOLIV ZÁRUK PRODEJNOSTI A VHODNOSTI PRO URČITÝ ÚČEL A ZÁRUK NEPORUŠENÍ PRÁV TŘETÍCH STRAN VYPLÝVAJÍCÍCH Z OKOLNOSTÍ.
+Toto prohlášení se na vás nemusí vztahovat, pokud váš stát nedovoluje
+zřeknutí se výslovné a předpokládané záruky v některých transakcích.</p>
+<p>Tato příručka může obsahovat technické nepřesnosti nebo typografické
+chyby. Informace zde uvedené jsou pravidelně aktualizovány a v příštích
+vydáních této příručky již budou tyto změny zahrnuty. IBM může kdykoliv bez upozornění zdokonalovat nebo měnit produkty a programy popsané na těchto stránkách.</p>
+<p>Jakékoli odkazy v těchto informacích na weby jiných společností než IBM jsou poskytovány pouze pro větší pohodlí uživatele a nemohou být žádným způsobem vykládány jako schválení těchto webů společností IBM. Materiály obsažené na takových webech nejsou součástí materiálů pro tento produkt IBM a mohou být používány pouze na vlastní riziko.</p>
+<p>IBM může použít nebo distribuovat jakékoliv informace, které jí sdělíte, libovolným způsobem, který považuje za odpovídající, aniž by jí tím vznikl jakýkoliv závazek vůči vám.</p>
+<p>Držitelé licence tohoto programu, kteří si přejí mít přístup i k
+informacím o tomto programu za účelem (i) výměny informací mezi nezávisle
+vytvořenými programy a jinými programy (včetně tohoto) a (ii)
+vzájemného použití sdílených informací, mohou kontaktovat: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Informace tohoto typu
+mohou být za odpovídajících podmínek dostupné. V některých případech
+ může být požadováno zaplacení poplatku.</p>
+<p>Program popsaný v tomto dokumentu a všechny materiály s ním
+související, které podléhají licenci, jsou dodávány IBM v
+souladu s textem smlouvy IBM Customer Agreement, IBM International Program License Agreement nebo smlouvy ekvivalentní, uzavřené mezi zákazníkem a IBM.</p>
+<p>Všechny zde uvedené informace o výkonu byly zjištěny v řízeném prostředí. Výsledky zjištěné v jiném provozním prostředí se tudíž mohou výrazně lišit. Některá
+měření byla provedena v systémech s vývojovým prostředím a neexistuje
+žádná záruka, že tato měření budou stejná v obecně dostupných
+systémech. Některá měření mohla být také odhadnuta extrapolací. Skutečné výsledky se mohou lišit. Uživatelé tohoto dokumentu by měli příslušné údaje ověřit ve vlastním specifickém prostředí.</p>
+<p>Informace týkající se produktů jiných společností byly získány od
+dodavatelů těchto produktů, z jejich tištěných materiálů nebo z jiných
+veřejně dostupných zdrojů. IBM netestovala tyto
+produkty a nemůže potvrdit spolehlivost jejich provozu,
+kompatibilitu nebo jiné tvrzení týkající se těchto produktů. Otázky týkající se možností produktů jiných společností by měly být
+adresovány dodavatelům těchto produktů.</p>
+<p>Všechna tvrzení o budoucím zaměření nebo úmyslech IBM
+mohou být bez upozornění změněna nebo zrušena a představují pouze
+hrubý nástin cílů a podmínek společnosti.</p>
+<p>Všechny uvedené ceny jsou současnými cenami pro koncové zákazníky navrženými IBM a mohou být bez upozornění změněny. Ceny prodejců se mohou od
+těchto cen lišit.</p>
+<p>Tento dokument je určen výlučně pro účely plánování. Informace poskytnuté v tomto dokumentu mohou být měněny do doby zpřístupnění popisovaných produktů.</p>
+<p>V rámci informací zde uvedených jsou uvedeny příklady sestav a dat, které jsou používány při každodenních operacích. Kvůli úplnosti obsahují příklady jmen jednotlivců, společností, značek a produktů. Všechna tato jména jsou smyšlená a jakákoli podobnost s existujícími jmény či adresami je čistě náhodná.</p>
+<p>LICENCE PRO VÝHRADU AUTORSKÝCH PRÁV:</p>
+<p>Tyto informace obsahují ukázkové programy ve zdrojovém jazyce, které ilustrují programovací techniky na různých platformách. Tyto vzorové programy můžete kopírovat, měnit a distribuovat v libovolné formě bez nutnosti úhrady IBM, za účelem vývoje, používání, marketingu
+nebo distribuce aplikačních programů přizpůsobených
+aplikačnímu programovému rozhraní pro operační platformu, pro kterou byly vzorové programové
+napsány. Tyto příklady nebyly důkladně testovány za veškerých podmínek. IBM proto nemůže zaručit spolehlivost, možnost opravy či funkčnost těchto programů ani tyto záruky nelze nijak vyvozovat. Ukázkové programy jsou poskytnuty, "TAK, JAK JSOU", bez jakékoli záruky. IBM nenese žádnou odpovědnost za škody, které vyvstanou v souvislosti s používáním ukázkových programů.</p>
+<p>Každá kopie nebo část těchto vzorových programů nebo jakákoli odvozená práce musí zahrnovat následující doložku o autorských právech:</p>
+<p>&copy; (název vaší společnosti) (rok). Části tohoto kódu jsou odvozeny
+od kódu vzorových programů IBM Corp.</p>
+<p>&copy; Copyright IBM Corp. _zadejte rok nebo roky_. Všechna práva vyhrazena.</p>
+<p>Pokud si prohlížíte tyto informace v souboru, nemusí se fotografie a barevné ilustrace zobrazit.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_7">Ochranné známky</a></h2>
+<p>IBM, logo IBM a ibm.com jsou ochranné známky nebo registrované ochranné známky společnosti International Business Machines Corp. registrované v mnoha zemích. Další názvy produktů a služeb mohou být ochrannými známkami společnosti IBM či jiných společností. Aktuální seznam ochranných známek IBM je k dispozici na webu "Copyright and trademark information" ((Copyright a informace o ochranné známce) na adrese <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Adobe, logo Adobe a PostScript jsou ochranné známky nebo registrované ochranné známky Adobe Systems
+Incorporated v USA a případně v dalších jiných zemích.</p>
+<p>Intel, Itanium a Pentium jsou ochranné známky společnosti Intel Corporation či jejích dceřiných společností v USA a případně v dalších jiných zemích.</p>
+<p>Java&trade; a všechny ochranné známky a loga založená na jazyce Java jsou ochranné známky nebo registrované ochranné známky společnosti Oracle anebo jejích přidružených jednotek.</p>
+<p>Linux je registrovaná ochranná známka Linuse Torvaldse v USA a případně v dalších jiných zemích.</p>
+<p>Microsoft, Windows a Windows NT jsou ochranné známky Microsoft Corporation v USA a případně v dalších jiných zemích.</p>
+<p>UNIX je registrovaná ochranná známka The Open Group v USA a případně  v dalších jiných zemích.</p>
+<p>Další názvy společností, produktů nebo služeb mohou být ochranné známky nebo
+servisní známky jiných stran.</p>
+<h2 id="dqx1ids_ots_000"><a href="#ToC_8">Copyright</a></h2>
+<p>Tento dokument obsahuje informace, které jsou vlastnictvím IBM. Poskytuje se na základě licenční smlouvy a je chráněn zákonem o autorských právech. Informace uvedené v této příručce nezahrnují záruky na produkt a jakékoliv prohlášení v tomto dokumentu by se mělo interpretovat jako takové.</p>
+<p>Odešlete-li informace IBM, udělujete tím IBM nevýlučné právo použít nebo šířit tyto informace libovolným způsobem, který IBM považuje za vhodný, bez vzniku jakýchkoliv závazků vůči vám.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. Další informace viz soubor <samp class="xph">license/notices.txt</samp>.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

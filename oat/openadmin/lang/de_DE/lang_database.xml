@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Chunks]]></Chunks>
+<NoSQLToExecute><![CDATA[Kein auszuführendes SQL]]></NoSQLToExecute>
+<QueryF><![CDATA[Abfrage:]]></QueryF>
+<ErrorF><![CDATA[Fehler:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Datenbankabfrage fehlgeschlagen:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Verbindung ist fehlgeschlagen.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[Benutzer {0} hat keine Berechtigung, eine Verbindung zur Datenbank {1} herzustellen.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[zu viele Fehler]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - Keine Dashboard-ID gefunden]]></ErrorGetPanels>
+</lang>

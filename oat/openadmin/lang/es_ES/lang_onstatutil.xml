@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[Programa de utilidad onstat]]></mainTitle>
+<ErrorOnInteractive><![CDATA[No se puede acceder a la modalidad interactiva onstat a través de la herramienta OpenAdmin.]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[Introduzca sólo las opciones. El mandato <b>onstat</b> se proporciona con la herramienta OpenAdmin.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[La opción -r no está permitida en los mandatos onstat de la herramienta OpenAdmin.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[La opción -o no está permitida en los mandatos onstat de la herramienta OpenAdmin.]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[El mandato onstat contenía un carácter no válido.]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[Sólo se permiten caracteres alfanuméricos, guiones, comas y puntos en los mandatos onstat de la herramienta OpenAdmin.]]></ReportValidChars>
+<ErrorPrepend><![CDATA[ERROR:]]></ErrorPrepend>
+<SubmitAction><![CDATA[Ejecutar]]></SubmitAction>
+<OnstatOptions><![CDATA[Visualizar opciones onstat]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[La característica de utilidad onstat sólo está disponible en la siguiente versión del servidor (o superior): {0}]]></OnstatFeatureNotAvail>
+</lang>

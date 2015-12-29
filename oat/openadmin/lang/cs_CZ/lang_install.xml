@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[Instalovat nástroj OpenAdmin]]></install_page_title>
+<next><![CDATA[Další]]></next>
+<save><![CDATA[Uložit]]></save>
+<finish><![CDATA[Dokončit]]></finish>
+<warning><![CDATA[Varování]]></warning>
+<language><![CDATA[Jazyk:]]></language>
+<error_occurred><![CDATA[Došlo k chybě]]></error_occurred>
+<error_message><![CDATA[Chybová zpráva:]]></error_message>
+
+<welcome><![CDATA[Úvodní stránka]]></welcome>
+<welcome_message><![CDATA[Tento instalační program instaluje produkt OpenAdmin Tool Community Edition {0}.]]></welcome_message>
+<prerequisite_message><![CDATA[Informace o nezbytných položkách pro instalaci produktu OpenAdmin Tool naleznete v souboru {0}.]]></prerequisite_message>
+<readme><![CDATA[soubor readme]]></readme>
+<license_message><![CDATA[Chcete-li nainstalovat a používat produkt OpenAdmin Tool Community Edition, musíte přijmout následující licenční smlouvu.]]></license_message>
+<license_agreement><![CDATA[Licenční smlouva]]></license_agreement>
+<i_accept><![CDATA[Souhlasím s podmínkami licenční smlouvy.]]></i_accept>
+<error_accept_license_first><![CDATA[Aby bylo možné pokračovat v instalaci, je nutné potvrdit přijetí podmínek licenčního ujednání.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[Soubor install.lock v instalačním adresáři zastavil instalaci. Odeberte soubor a pokračujte v instalaci.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Nezbytné moduly PHP]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[Následující moduly PHP jsou zapotřebí k provozu nástroje OpenAdmin Tool (OAT).]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[Ikona X signalizuje, že modul nebyl nalezen. Zkontrolujte svou instalaci PHP a nainstalujte chybějící moduly.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Doporučené moduly PHP]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[Následující moduly PHP jsou doporučovány pro nástroj OAT.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Důležité: Některé funkce v nástroji OAT jsou bez těchto modulů omezeny, třebaže k instalaci a používání nástroje OAT tyto moduly nejsou požadovány.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[Některé z požadovaných modulů PHP nejsou instalovány.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Chybějící moduly:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Některé z doporučených modulů PHP nejsou instalovány. Některé funkce v nástroji OAT jsou bez těchto modulů omezeny, třebaže k instalaci a používání nástroje OAT tyto moduly nejsou požadovány.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Chybějící doporučené moduly:]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[Konfigurace OAT]]></oat_config>
+<parameter><![CDATA[Parametr]]></parameter>
+<description><![CDATA[Popis]]></description>
+<value><![CDATA[Hodnota]]></value>
+<LANG><![CDATA[Výchozí jazyk]]></LANG>
+<LANG_desc><![CDATA[Výchozí jazyk pro stránky nástroje OAT.]]></LANG_desc>
+<BASEURL><![CDATA[Základní adresa URL]]></BASEURL>
+<BASEURL_desc><![CDATA[Adresa URL, na níž je nástroj OAT instalován. Použijte tento formát: http://název_serveru:port/umístění.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[instalační adresář]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[Adresář pro instalaci nástroje OAT.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Adresář databáze připojení]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[Adresář pro databázi připojení nástroje OAT. Určete zabezpečený adresář, který není v adresáři dokumentů webového serveru.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[Adresář databáze připojení ({0}) je v adresáři dokumentů webového serveru. Toto umístění vystavuje nástroj OAT bezpečnostnímu riziku. Kvůli bezpečnosti změňte umístění databáze připojení. Chcete-li toto varování ignorovat, znovu klepněte na tlačítko Uložit.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[domovská stránka]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Domovská stránka nástroje OAT]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Úvodní stránka]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Centrum narušení > Panel dashboard > Souhrn skupiny]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Centrum narušení > Panel dashboard > Výkon serveru]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Vlastní]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Obnovovací interval]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[Doba (v sekundách) mezi aktualizacemi stavu serveru. Stav serveru se zobrazuje na stránce Centrum narušení > Panel dashboard > Souhrn skupiny.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Řádek na stránku]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[Výchozí počet zobrazovaných řádků na jednu stránku při zobrazování dat ve formátu tabulky.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[Zabezpečení panelu nástrojů SQL]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Požadovat přihlašovací pověření pro panel nástrojů SQL.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Doba připojení k Informix]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[Doba (v sekundách), po kterou se nástroj OAT pokouší o připojení k databázovému serveru před vrácením chyby (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Opakování pokusu o připojení k Informix]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Počet pokusů o připojení k databázovému serveru, jež nástroj OAT provádí během doby připojení k Informix (INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[Toto pole je povinné: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[Adresář určený jako instalační adresář ({0}) neexistuje. Zadejte platný instalační adresář.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[Adresář určený pro databázi připojení ({0}) není platný. Ověřte, zda adresář existuje a zda do něj lze zapisovat.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[Adresář {0} není přístupný. Ověřte, zda adresář existuje a zda do něj lze zapisovat.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[Soubor {0} není přístupný. Ověřte, zda soubor existuje a zda do něj lze zapisovat.]]></file_not_accessible>
+
+<conndb><![CDATA[Databáze připojení]]></conndb>
+<conndb_desc><![CDATA[Databáze připojení obsahuje informace o připojení, jež zadáváte pro servery, k nimž se nástroj OAT může připojovat.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[Chcete-li vytvořit databázi připojení, klepněte na tlačítko Další.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[Chcete-li provést upgrade databáze připojení, klepněte na tlačítko Další.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[Zpracování databáze připojení bylo dokončeno úspěšně.]]></conndb_complete>
+<conndb_not_set><![CDATA[V souboru conf/config.php není nastaven parametr pro adresář databáze připojení (CONNDBDIR). Zkontrolujte tento soubor a poté znovu zahajte instalaci.]]></conndb_not_set>
+<conndb_processing><![CDATA[Zpracovává se soubor {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[Databáze připojení nebyla úspěšně instalována. Tabulku {0} nebylo možno vytvořit. Odeberte databázi připojení a spusťte instalaci znovu.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[Upgrade databáze připojení se nezdařil. Došlo k chybě v souboru (0}, sekci {1}. Odeberte databázi připojení a spusťte instalaci znovu. Veškeré zachované informace o připojení budou ztraceny.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[Upgrade informace o verzi v databázi připojení neproběhl úspěšně. Odeberte databázi připojení a spusťte instalaci znovu.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[Upgrade informace o verzi pro modul plug-in IBM Example v databázi připojení neproběhl úspěšně. Odeberte databázi připojení a spusťte instalaci znovu.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Moduly plug-in k instalaci]]></choose_plugins>
+<zip_extension_required><![CDATA[K instalaci modulů plug-in je zapotřebí modul PHP zip.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[Moduly plug-in nebyly instalovány. Instalační program není schopen zapisovat do dočasného adresáře nástroje OAT (tmp). Zkontrolujte oprávnění pro adresář. Poté použijte správce modulů plug-in v nástroji OAT k instalaci modulů plug-in.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[Nejsou k dispozici žádné moduly plug-in pro instalaci.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Modul plug-in]]></plugin_name>
+<plugin_author><![CDATA[Autor]]></plugin_author>
+<plugin_version><![CDATA[Verze]]></plugin_version>
+<plugin_server_version><![CDATA[Verze Informix]]></plugin_server_version>
+<plugin_license><![CDATA[Licence]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Instalovat?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Souhlasíte s podmínkami licenční smlouvy pro modul plug-in?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Výsledky instalace modulů plug-in]]></plugin_install>
+<no_plugins_selected><![CDATA[Nebyly vybrány žádné moduly plug-in k instalaci.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[{0} byl nainstalován úspěšně.]]></plugin_install_complete>
+
+<install_complete><![CDATA[Instalace nástroje OpenAdmin Tool je dokončena]]></install_complete>
+<install_complete_details><![CDATA[Nástroj OpenAdmin Tool byl nainstalován úspěšně. Chcete-li zavřít tuto stránku a přejít na stránku přihlášení do nástroje OAT, klepněte na tlačítko Dokončit.]]></install_complete_details>
+
+</lang>

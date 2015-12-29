@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[会话不再存在。]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[会话标识无效。]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[用户 {0} 没有查看会话当前语句的许可权。]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[用户 {0} 没有查看会话 SQL 的许可权。]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[错误：]]></ErrorF>
+</lang>

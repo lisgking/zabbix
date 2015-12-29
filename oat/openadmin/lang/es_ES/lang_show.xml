@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Mostrar]]></Show>
+<CommandHistory><![CDATA[Historial de mandatos]]></CommandHistory>
+<OnlineLog><![CDATA[Registro en línea]]></OnlineLog>
+
+<LogDelete><![CDATA[Suprimir registro]]></LogDelete>
+<LogTruncate><![CDATA[Truncar registro]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Registro de mensajes en línea]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Rotación de registro de mensajes en línea]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[Registro de actividades de ON-Bar]]></BarActLog>
+<BarActLogRotate><![CDATA[Rotación de registros de actividades de ON-Bar]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Bloques de datos]]></chunks>
+<commands><![CDATA[Mandatos]]></commands>
+<Databases><![CDATA[Bases de datos]]></Databases>
+<Alerts><![CDATA[Alertas]]></Alerts>
+<Message><![CDATA[Mensaje]]></Message>
+<Messages><![CDATA[Mensajes]]></Messages>
+<OnBarActLog><![CDATA[Registro de actividades de ON-Bar]]></OnBarActLog>
+<onconfigfile><![CDATA[Archivo Onconfig]]></onconfigfile>
+<Name><![CDATA[Nombre]]></Name>
+<CurrentValue><![CDATA[Valor actual]]></CurrentValue>
+<ChunkInfo><![CDATA[Información del bloque de datos]]></ChunkInfo>
+<ChunkNumber><![CDATA[Número del bloque de datos]]></ChunkNumber>
+<ChunkPath><![CDATA[Nombre de vía de acceso]]></ChunkPath>
+<Size><![CDATA[Tamaño]]></Size>
+<Offset><![CDATA[Desplazamiento]]></Offset>
+<Free><![CDATA[Libre]]></Free>
+<CmdHistory><![CDATA[Historial de mandatos del administrador]]></CmdHistory>
+<User><![CDATA[Usuario]]></User>
+<Time><![CDATA[Hora]]></Time>
+<CommandExecuted><![CDATA[Mandato ejecutado]]></CommandExecuted>
+<ReturnMsg><![CDATA[Mensaje de retorno]]></ReturnMsg>
+<CreateDate><![CDATA[Fecha de creación]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Esta acción suprime los mensajes en el archivo de registro de mensajes. El archivo de registro de mensajes se conserva. ¿Desea continuar?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Esta acción suprime el archivo de registro de mensajes. ¿Desea continuar?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[El ID de tarea para la tarea online_log_rotate no se ha encontrado. La rotación de archivos de registro requiere Informix 11.70.xC3. Verifique la versión del servidor de bases de datos.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[El ID de tarea para la tarea bar_act_log_rotate no se ha encontrado. La rotación de archivos de registro requiere Informix 11.70.xC3. Verifique la versión del servidor de bases de datos.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Correcto]]></Success>
+<Error><![CDATA[Error]]></Error>
+<Warning><![CDATA[Aviso]]></Warning>
+</lang>

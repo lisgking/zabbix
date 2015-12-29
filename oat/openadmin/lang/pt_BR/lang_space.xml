@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[DBSpaces]]></mainTitle>
+<dbspace><![CDATA[DBSpace]]></dbspace>
+<dbspaceName><![CDATA[Nome de DBSpace]]></dbspaceName>
+<owner><![CDATA[Proprietário]]></owner>
+<pagesize><![CDATA[Tamanho da Página]]></pagesize>
+<createTime><![CDATA[Tempo de Criação]]></createTime>
+<dbspaceInfo><![CDATA[Informação de DBSpace]]></dbspaceInfo>
+<utilization><![CDATA[{0} Utilização]]></utilization>
+<indexPages><![CDATA[Páginas de Índices]]></indexPages>
+<dataPages><![CDATA[Páginas de Dados]]></dataPages>
+<otherPages><![CDATA[Outras Páginas]]></otherPages>
+<freePages><![CDATA[Páginas Livres]]></freePages>
+<TableName><![CDATA[Nome da Tabela]]></TableName>
+<StartAddr><![CDATA[Iniciar Endereço]]></StartAddr>
+<EndAddr><![CDATA[Finalizar Endereço]]></EndAddr>
+<size><![CDATA[Tamanho]]></size>
+<Status><![CDATA[Status]]></Status>
+<ExtentList><![CDATA[Listagem de Extensão]]></ExtentList>
+<TableList><![CDATA[Listagem de Tabela]]></TableList>
+<Database><![CDATA[Banco de dados]]></Database>
+<Table><![CDATA[Tabela]]></Table>
+<Collate><![CDATA[Agrupar]]></Collate>
+<Rows><![CDATA[Linhas]]></Rows>
+<SystemIntegrity><![CDATA[Integridade de]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Verificar Formato de Tabela Dbspace]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Verificar Extensões de Dbspace]]></butCheckDbsExt>
+<RowSize><![CDATA[Tamanho das Linhas]]></RowSize>
+<Created><![CDATA[Criado]]></Created>
+<AllocPages><![CDATA[Páginas Alocadas]]></AllocPages>
+<UsedPages><![CDATA[Páginas Usadas]]></UsedPages>
+<NumExtents><![CDATA[Nº de Extensões]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Número]]></Number>
+<Name><![CDATA[Nome]]></Name>
+<Type><![CDATA[Tipo]]></Type>
+<default><![CDATA[Padrão]]></default>
+<CreateSpace><![CDATA[Criar um Espaço]]></CreateSpace>
+<Create><![CDATA[Criar]]></Create>
+<numChunks><![CDATA[# de Partes]]></numChunks>
+<UsedPer><![CDATA[% Usada]]></UsedPer>
+<Data><![CDATA[Dados]]></Data>
+<Index><![CDATA[Índice]]></Index>
+<Other><![CDATA[Outros]]></Other>
+<Free><![CDATA[Livre]]></Free>
+<noDropDBSpace><![CDATA[Não é possível descartar rootdbs.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Incluir Espaço em]]></AddSpaceto>
+<Path><![CDATA[Caminho]]></Path>
+<Offset><![CDATA[Deslocamento]]></Offset>
+<FileCreation><![CDATA[Criação de Arquivo]]></FileCreation>
+<MayCreateFile><![CDATA[Criar Arquivo Se Não Existir Nenhum]]></MayCreateFile>
+<FileMustExist><![CDATA[O Arquivo Deve Existir]]></FileMustExist>
+<DropSpace><![CDATA[Descartar Espaço {0}]]></DropSpace>
+<AddChunk><![CDATA[Incluir Parte]]></AddChunk>
+<Used><![CDATA[Usado]]></Used>
+<AddMirror><![CDATA[Incluir Espelho]]></AddMirror>
+<AddChunkMirror><![CDATA[Incluir Parte com Espelho]]></AddChunkMirror>
+<StartMirror><![CDATA[Iniciar Espelho]]></StartMirror>
+<StopMirror><![CDATA[Parar Espelho]]></StopMirror>
+<AddMirrorto><![CDATA[Incluir Espelho em]]></AddMirrorto>
+<MirrorPath><![CDATA[Caminho de Espelho]]></MirrorPath>
+<MirrorOffset><![CDATA[Deslocamento de Espelho]]></MirrorOffset>
+<MirroringStarted><![CDATA[O Espelho é Iniciado]]></MirroringStarted>
+<MirroringStopped><![CDATA[O Espelho é Interrompido]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - Validação do Sistema]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Validação de oncheck concluída.]]></oncheckComplete>
+<NoPermission><![CDATA[Usuários de somente leitura não têm permissão para fazer isso. Você efetuou login como um usuário de somente leitura.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Esta ação não é válida em servidores secundários.]]></NotValidOnSecondary>
+<Error><![CDATA[Erro:]]></Error>
+<DropDBSpaceFailed><![CDATA[Falha ao descartar DBSpace.  O seguinte valor de DBSpace não foi configurado corretamente:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Falha na criação de DBSpace.  A ação de DBSpace]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[não é válida.]]></IsNotValid>
+<DATASpace><![CDATA[Espaço de DADOS]]></DATASpace>
+<DataSpaceL><![CDATA[Espaço de Dados]]></DataSpaceL>
+<TEMPSpace><![CDATA[Espaço TEMPORÁRIO]]></TEMPSpace>
+<TempSpaceL><![CDATA[Espaço Temporário]]></TempSpaceL>
+<BLOBSpace><![CDATA[Espaço BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Criação de DBSpace bem-sucedida]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Falha na criação de DBSpace.  O seguinte valor de DBSpace não está configurado corretamente:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Falha na criação de DBSpace.  A ação de DBSpace não é válida]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[O descarte de DBSpace não foi confirmado]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Resultados da Validação para ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Resultados da Validação ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Falha ao incluir a parte no dbspace:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Parte incluída com êxito]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Incluindo parte no dbspace:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Parte espelhada incluída com êxito]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Falha ao incluir espelho no dbspace:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[O seguinte valor de espelho não está configurado corretamente:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Espelho incluído com êxito]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Falha ao iniciar espelho no dbspace:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[O início do espelho não foi confirmado no dbspace:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Falha ao parar o espelho para dbspace:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[A parada do espelho não foi confirmada no dbspace:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Dbspace]]></Dbspace>
+<TempDbspace><![CDATA[Dbspace Temporário]]></TempDbspace>
+<MirroredDbspace><![CDATA[Dbspace Espelhado]]></MirroredDbspace>
+<Blobspace><![CDATA[Blobspace]]></Blobspace>
+<MirroredBlobspace><![CDATA[Blobspace Espelhado]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Blobspace Inteligente]]></SmartBlobspace>
+<TempSbspace><![CDATA[Temp Blobspace Inteligente]]></TempSbspace>
+<MirroredSbspace><![CDATA[Blobspace Inteligente Espelhado]]></MirroredSbspace>
+<DataPages><![CDATA[Páginas de Dados]]></DataPages>
+<IndexPages><![CDATA[Páginas de Índices]]></IndexPages>
+<OtherPages><![CDATA[Outras Páginas]]></OtherPages>
+<FreePages><![CDATA[Páginas Livres]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[O valor de DBSpace não está configurado corretamente:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Resumo]]></summary>
+<admin><![CDATA[Admin.]]></admin>
+<tables><![CDATA[Tabelas]]></tables>
+<extents><![CDATA[Extensões]]></extents>
+<validation><![CDATA[Validação]]></validation>
+<Disabled><![CDATA[Desativado]]></Disabled>
+<Recovering><![CDATA[Recuperando]]></Recovering>
+<Operational><![CDATA[Operacional]]></Operational>
+</lang>

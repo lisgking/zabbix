@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Резервное копирование]]></Backup>
+<noBackupSupport><![CDATA[Резервное копирование поддерживается только на серверах Informix типов Standard, Primary или Remote Standalone Secondary (RSS).]]></noBackupSupport>
+<sdsServer>![CDATA[Вы соединены с сервером Shared Disk Secondary (SDS).]]</sdsServer>
+<hdrSecondary>![CDATA[Вы соединены со вторичным сервером HDR.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[Для резервного копирования в OAT необходим Informix версии 11.70.xC2.]]></noBackupSupportServerVersion>
+<notAvail>Недоступно</notAvail>
+<onbarBackProcMissing>Хранимая процедура, необходимая для резервного копирования ON-Bar, отсутствует на сервере. Проверьте, был выполнен ли сценарий sch_oat.sql при запуске сервера.</onbarBackProcMissing>
+<Unknown>Неизвестно</Unknown>
+</lang>

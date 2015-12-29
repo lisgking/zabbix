@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Menedżer wtyczek]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Menedżer wtyczek nie może zapisywać w katalogu tymczasowym programu OAT: tmp. Aby zainstalować wtyczkę, musisz mieć uprawnienie do zapisywania w katalogu tymczasowym OAT. Po uzyskaniu uprawnienia do zapisywania w tym katalogu ponownie zainstaluj wtyczkę.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Nie można otworzyć menedżera wtyczek, ponieważ wymaga on skonfigurowania PHP z zainstalowanym modułem ZIP. Moduł ZIP tego PHP, którego używa OAT, nie jest zainstalowany. Skonfiguruj na serwerze WWW PHP z zainstalowanym modułem ZIP. Możesz też reinstalować OAT przy użyciu instalatora OAT, który konfiguruje PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Wtyczka nie została zainstalowana.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Wtyczki zainstalowane]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Wtyczki jeszcze niezainstalowane]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Nie wybrano żadnej wtyczki do zainstalowania.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Nie jest dostępna żadna aktualizacja.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Menedżer wtyczek nie może zapisywać w katalogu wtyczek. Po uzyskaniu uprawnienia do zapisywania w tym katalogu ponownie zainstaluj wtyczkę.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Obecnie zainstalowana wersja]]></CurrVerInstalled>
+<Unknown><![CDATA[Nieznana]]></Unknown>
+<ClickToEnable><![CDATA[Kliknij, aby włączyć]]></ClickToEnable>
+<ClickToDisable><![CDATA[Kliknij, aby wyłączyć]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Nie można usunąć pliku: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Wtyczka została pomyślnie zaktualizowana.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Wtyczka została pomyślnie zainstalowana.]]></PluginInstalled>
+<Name><![CDATA[Nazwa]]></Name>
+<Author><![CDATA[Autor]]></Author>
+<Description><![CDATA[Opis]]></Description>
+<Version><![CDATA[Wersja]]></Version>
+<ServerVersion><![CDATA[Wersja serwera]]></ServerVersion>
+<MinOATVersion><![CDATA[Minimalna wersja OAT]]></MinOATVersion>
+<Install><![CDATA[Zainstaluj]]></Install>
+<Uninstall><![CDATA[Deinstaluj]]></Uninstall>
+<Upgrade><![CDATA[Aktualizuj]]></Upgrade>
+<Enabled><![CDATA[Włączona]]></Enabled>
+<updating><![CDATA[Aktualizowanie]]></updating>
+<LatestInstalled><![CDATA[Ostatnio zainstalowana]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[To działanie spowoduje zdeinstalowanie wtyczki {0}. Skompresowany plik wtyczki zostanie usunięty po jej zainstalowaniu. Po zdeinstalowaniu wtyczki nie można jej reinstalować, dopóki skompresowany plik wtyczki nie zostanie odtworzony w katalogu wtyczek.  \n\nCzy chcesz kontynuować?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Wtyczka została pomyślnie zdeinstalowana.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Wtyczka nie została zdeinstalowana.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT próbował zdeinstalować wtyczkę, ale nie znalazł identyfikatora wtyczki. W menu Administrator kliknij opcję Menedżer wtyczek i przejrzyj listę zainstalowanych wtyczek. W razie potrzeby ponownie zdeinstaluj wtyczkę.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Wtyczka została zdeinstalowana, ale nie usunięto następujących plików:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Możesz usunąć te pliki z komputera.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[Element menu dotyczący wtyczki nie został usunięty. Ten element menu można usunąć na stronie Menedżer menu.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Nie zainstalowano wybranej wtyczki. Ta wtyczka wymaga programu OAT w wersji przynajmniej {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Zgadzam się]]></Agree>
+<Disagree><![CDATA[Nie zgadzam się]]></Disagree>
+</lang>

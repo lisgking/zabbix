@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Spravovat oprávnění]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Oprávnění uživatele]]></UserPrivileges>
+<Database><![CDATA[Databáze]]></Database>
+<DBPrivileges><![CDATA[Oprávnění na úrovni databáze]]></DBPrivileges>
+<TablePrivileges><![CDATA[Oprávnění na úrovni tabulky]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Oprávnění k rozhraní SQL Admin API]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Interní uživatelé]]></NonOsUsers>
+<Name><![CDATA[Název]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<DefRole><![CDATA[Výchozí role]]></DefRole>
+<Tabname><![CDATA[Název tabulky]]></Tabname>
+<User><![CDATA[Uživatel]]></User>
+<Grantor><![CDATA[Postupitel]]></Grantor>
+<Privilege><![CDATA[Oprávnění]]></Privilege>
+<Privileges><![CDATA[Oprávnění]]></Privileges>
+<Username><![CDATA[Jméno uživatele]]></Username>
+<Grant><![CDATA[Udělit]]></Grant>
+<GrantNewPriv><![CDATA[Udělit nové oprávnění]]></GrantNewPriv>
+<Roles><![CDATA[Role]]></Roles>
+<CreateNewRole><![CDATA[Vytvořit novou roli]]></CreateNewRole>
+<Create><![CDATA[Vytvořit]]></Create>
+<RoleName><![CDATA[Název role]]></RoleName>
+<NoUserError><![CDATA[Udělení se nezdařilo: nebylo poskytnuto jméno uživatele.]]></NoUserError>
+<NoPrivError><![CDATA[Udělení se nezdařilo: nebyla poskytnuta úroveň oprávnění.]]></NoPrivError>
+<NoTabError><![CDATA[Udělení se nezdařilo: nebyl poskytnut název tabulky.]]></NoTabError>
+<NoRoleError><![CDATA[Udělení se nezdařilo: nebyl poskytnut název role.]]></NoRoleError>
+<NoPermission><![CDATA[Uživatelé s oprávněním jen pro čtení k tomu nemají přístup. Jste přihlášeni jako uživatel s oprávněním jen pro čtení.]]></NoPermission>
+<NoDatabasesError><![CDATA[Na tomto databázovém serveru není k dispozici žádná nesystémová databáze.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Udělení bylo úspěšné pro uživatele]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Oprávnění bylo odvoláno pro uživatele]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Oprávnění bylo uloženo pro uživatele]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Udělení bylo úspěšné pro tabulku]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[pro uživatele]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Oprávnění bylo odvoláno pro uživatele]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[pro tabulku]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Oprávnění bylo uloženo pro uživatele]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Vytvoření bylo úspěšné pro roli]]></CreateSuccessForRole>
+<Connect><![CDATA[Connect]]></Connect>
+<Resource><![CDATA[Resource]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[Select]]></Select>
+<Update><![CDATA[Update]]></Update>
+<Insert><![CDATA[Insert]]></Insert>
+<Delete><![CDATA[Delete]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Alter]]></Alter>
+<References><![CDATA[References]]></References>
+<Under><![CDATA[Under]]></Under>
+<Modify><![CDATA[Upravit]]></Modify>
+<Revoke><![CDATA[Odvolat]]></Revoke>
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+<GrantFailed><![CDATA[Udělení se nezdařilo]]></GrantFailed>
+<CreateFailed><![CDATA[Vytvoření se nezdařilo]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[V případě interních uživatelů vyžaduje nástroj OAT produkt Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[V případě oprávnění příkazu rozhraní SQL Administration API vyžaduje nástroj OAT produkt Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

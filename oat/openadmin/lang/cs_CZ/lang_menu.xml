@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[Domů]]></home>
+<expand><![CDATA[Rozšířit]]></expand>
+<collapse><![CDATA[Sbalit]]></collapse>
+<logs><![CDATA[Protokoly]]></logs>
+<alertsummary><![CDATA[Souhrn výstrah]]></alertsummary>
+<alerts><![CDATA[Výstrahy]]></alerts>
+<admincommands><![CDATA[Příkaz Admin]]></admincommands>
+<onlinelog><![CDATA[Zprávy online]]></onlinelog>
+<baractlog><![CDATA[Aktivita ON-Bar]]></baractlog>
+<healthcenter><![CDATA[Centrum narušení]]></healthcenter>
+<details><![CDATA[Podrobnosti]]></details>
+<taskdetails><![CDATA[Podrobnosti úlohy]]></taskdetails>
+<runtimes><![CDATA[Časy spuštění úloh]]></runtimes>
+<scheduler><![CDATA[Plánovač]]></scheduler>
+<space><![CDATA[Administrace prostoru]]></space>
+<VP><![CDATA[Virtuální procesory]]></VP>
+<dbspaces><![CDATA[Prostory DBSpace]]></dbspaces>
+<RecoveryLogs><![CDATA[Protokoly pro zotavení]]></RecoveryLogs>
+<storage><![CDATA[Úložiště]]></storage>
+<chunks><![CDATA[Diskové bloky]]></chunks>
+<reservedspace><![CDATA[Vyhrazený prostor]]></reservedspace>
+<performance><![CDATA[Analýza výkonu]]></performance>
+<sql><![CDATA[Editor SQL]]></sql>
+<sqlexplorer><![CDATA[Průzkumník SQL]]></sqlexplorer>
+<io><![CDATA[I/O]]></io>
+<Reports><![CDATA[Sestavy systému]]></Reports>
+<sessionexplorer><![CDATA[Průzkumník relací]]></sessionexplorer>
+<uReports><![CDATA[Sestavy uživatelů]]></uReports>
+<sqltoolbox><![CDATA[Panel nástrojů SQL]]></sqltoolbox>
+<databases><![CDATA[Databáze]]></databases>
+<schemabrowser><![CDATA[Prohlížeč schématu]]></schemabrowser>
+<tables><![CDATA[Tabulky]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[Užitečné odkazy]]></UsefulLinks>
+<about><![CDATA[O produktu OAT]]></about>
+<train><![CDATA[Školení]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[Administrátor]]></admin>
+<mach11><![CDATA[Klastry]]></mach11>
+<dashboard><![CDATA[Panel dashboard]]></dashboard>
+<help><![CDATA[Nápověda]]></help>
+<logout><![CDATA[Odhlášení]]></logout>
+<taskscheduler><![CDATA[Plánovač úloh]]></taskscheduler>
+<serveradmin><![CDATA[Administrace serveru]]></serveradmin>
+<configuration><![CDATA[Konfigurace]]></configuration>
+<HowDoI><![CDATA[Nápověda k úloze OAT]]></HowDoI>
+<readme><![CDATA[Soubor README]]></readme>
+<releasenotes><![CDATA[Poznámky k verzi]]></releasenotes>
+<onconfigparam><![CDATA[Konfigurace]]></onconfigparam>
+<privileges><![CDATA[Oprávnění uživatele]]></privileges>
+<highavail><![CDATA[Vysoká dostupnost]]></highavail>
+<PerformanceHist><![CDATA[Historie výkonu]]></PerformanceHist>
+<SystemValidation><![CDATA[Ověření systému]]></SystemValidation>
+<OATconfig><![CDATA[Konfigurace nástroje OAT]]></OATconfig>
+<connadmin><![CDATA[Administrátor připojení]]></connadmin>
+<connmgt><![CDATA[Správa připojení]]></connmgt>
+<addgroup><![CDATA[Přidat skupinu]]></addgroup>
+<addconn><![CDATA[Přidat připojení]]></addconn>
+<helpadmin><![CDATA[Administrátor nápovědy]]></helpadmin>
+<helpmgt><![CDATA[Správa nápovědy]]></helpmgt>
+<helpdb><![CDATA[Databáze nápovědy]]></helpdb>
+<addhelp><![CDATA[Přidat nápovědu]]></addhelp>
+<OATlogin><![CDATA[Přihlásit se k aplikaci OAT]]></OATlogin>
+<aus><![CDATA[Automatické aktualizace statistik]]></aus>
+<qbe><![CDATA[Dotaz podle příkladu]]></qbe>
+<onstat><![CDATA[Obslužný program onstat]]></onstat>
+<replication><![CDATA[Replikace]]></replication>
+<trustedcontext><![CDATA[Důvěryhodný kontext]]></trustedcontext>
+<security><![CDATA[Zabezpečení]]></security>
+<backup><![CDATA[Záloha]]></backup>
+<MemoryMgr><![CDATA[Správce paměti]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

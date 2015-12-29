@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Проверка системы]]></mainTitle>
+<checkDataFormat><![CDATA[Проверка формата данных]]></checkDataFormat>
+<databaseName><![CDATA[Имя базы данных]]></databaseName>
+<tableName><![CDATA[Имя таблицы]]></tableName>
+<chkTable><![CDATA[Проверка таблицы]]></chkTable>
+<chkExtFormat><![CDATA[Проверка формата экстента]]></chkExtFormat>
+<extName><![CDATA[Имя пространства базы данных]]></extName>
+<chkExtent><![CDATA[Проверка экстента]]></chkExtent>
+<valResTo><![CDATA[Поместить результаты проверки в ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - проверка системы]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Проверка с помощью oncheck завершена.]]></oncheckComplete>
+<ValidationResults><![CDATA[Результаты проверки ...]]></ValidationResults>
+<SysValNotValid><![CDATA[Проверка системы на дополнительных серверах невозможна.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Внимание: При выполнении проверки может расходоваться большой объем ресурсов, в зависимости от числа задействованных страниц. Это действие читает для указанных таблиц все страницы, включая страницы больших двоичных объектов и страницы сложных больших объектов, а также проверяет каждую страницу на согласованность. Продолжить?]]></confirmCheckData>
+<NotYetImpl><![CDATA[На этой странице OpenAdmin Tool не может вывести информацию для сервера баз данных с несколькими неанглийскими локалями базы данных. Сервер баз данных содержит несколько неанглийских локалей базы данных.]]></NotYetImpl>
+</lang>

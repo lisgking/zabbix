@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL eszközkészlet]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL eszközkészlet - Adatbázisok]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL eszközkészlet - Táblák]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL eszközkészlet - Tábla kiválasztása]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL eszközkészlet - Tárolt eljárások]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL eszközkészlet - Tábla információk]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL eszközkészlet - Tábla töredékek]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL eszközkészlet - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[Kattintson a csatlakoztatni kívánt adatbázis nevére.]]></ClickDbConn>
+<Databases><![CDATA[Adatbázisok]]></Databases>
+<TotalRows><![CDATA[Összes sor: ]]></TotalRows>
+<Tables><![CDATA[Táblázatok]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[Eredmény]]></SQLResult>
+<SQLTree><![CDATA[Lekérdezésfa]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[HIBA: nincs lekérdezés]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[HIBA: nincs lekérdezésfa]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[HIBA: nincs aktuális SQL munkamenet/kapcsolat]]></SQLErr_NoConn>
+<Column_Info><![CDATA[Oszlop információk]]></Column_Info>
+<Table_Browse><![CDATA[Tábla böngészése]]></Table_Browse>
+<Fragments><![CDATA[Töredékek]]></Fragments>
+<Name><![CDATA[Név]]></Name>
+<Collation><![CDATA[Leválogatás]]></Collation>
+<CreateDate><![CDATA[Létrehozás dátuma]]></CreateDate>
+<Logging><![CDATA[Naplózás]]></Logging>
+<IncCatalog><![CDATA[Adatbázis katalógus táblák tartalmazása?]]></IncCatalog>
+<Submit><![CDATA[Küldés]]></Submit>
+<ChkRtTypes><![CDATA[Ellenőrizze a kiválasztandó rutintípusokat (langid):]]></ChkRtTypes>
+<Owner><![CDATA[Tulajdonos]]></Owner>
+<Procid><![CDATA[Procid]]></Procid>
+<Type><![CDATA[Típus]]></Type>
+<Numargs><![CDATA[Numargs]]></Numargs>
+<ParamTypes><![CDATA[Paramétertípusok]]></ParamTypes>
+<Mode><![CDATA[Mód]]></Mode>
+<Langid><![CDATA[Nyelvazonosító]]></Langid>
+<FragDispTitle><![CDATA[Töredezettségi információk a következőről:]]></FragDispTitle>
+<Partnum><![CDATA[Partíciószám]]></Partnum>
+<FragmentType><![CDATA[Töredéktípus]]></FragmentType>
+<Expression><![CDATA[Kifejezés]]></Expression>
+<Dbspace><![CDATA[Adatbázis-terület]]></Dbspace>
+<Partition><![CDATA[Partíció]]></Partition>
+<ColDispTitle><![CDATA[Tábla információk a következőről:]]></ColDispTitle>
+<Colno><![CDATA[Oszlopszám]]></Colno>
+<Colname><![CDATA[Colname]]></Colname>
+<Coltype><![CDATA[Coltype]]></Coltype>
+<Collength><![CDATA[Collength]]></Collength>
+<ExtendedType><![CDATA[Kiterjesztett típus]]></ExtendedType>
+<Browse><![CDATA[Tallózás]]></Browse>
+<Tabid><![CDATA[Táblaazonosító]]></Tabid>
+<Rowsize><![CDATA[Sorméret]]></Rowsize>
+<NRows><![CDATA[Sorok száma]]></NRows>
+<NIndexes><![CDATA[Indexek száma]]></NIndexes>
+<Locklevel><![CDATA[Zárolási szint]]></Locklevel>
+<Fextsize><![CDATA[Első kiterjedés mérete]]></Fextsize>
+<Nextsize><![CDATA[Következő kiterjedés mérete]]></Nextsize>
+<PagesUsed><![CDATA[Használt lapok]]></PagesUsed>
+<View><![CDATA[Nézet]]></View>
+<chooseDB><![CDATA[Kérem válasszon adatbázist.]]></chooseDB>
+<butRunQuery><![CDATA[Lekérdezés futtatása]]></butRunQuery>
+<butSaveToFile><![CDATA[Lekérdezés mentése fájlba]]></butSaveToFile>
+<butClear><![CDATA[Törlés]]></butClear>
+<spanRunQuery><![CDATA[Kattintson ide a lekérdezés futtatásához az adatbázison.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[Kattintson ide a lekérdezés mentéséhez szövegfájlba.]]></spanSaveToFile>
+<spanClear><![CDATA[Kattintson ide a lekérdezés-szerkesztő ablak kiürítéséhez.]]></spanClear>
+<ColOpt><![CDATA[Oszlop beállítás]]></ColOpt>
+<ShowAll><![CDATA[Összes megjelenítése]]></ShowAll>
+<Show255><![CDATA[255 karakter megjelenítése]]></Show255>
+<ShowInFile><![CDATA[Megjelenítés fájlban]]></ShowInFile>
+<ShowSize><![CDATA[Csak méret megjelenítése]]></ShowSize>
+<IgnoreCol><![CDATA[Oszlop mellőzése]]></IgnoreCol>
+<ShowImage><![CDATA[Megjelenítés képként]]></ShowImage>
+<Import><![CDATA[Importálás]]></Import>
+<spanImport><![CDATA[Kattintson ide a lekérdezés importálásához fájlból]]></spanImport>
+<ImportQFrom><![CDATA[Lekérdezés importálása innen:]]></ImportQFrom>
+<Change><![CDATA[Módosítás]]></Change>
+<Reset><![CDATA[Visszaállítás]]></Reset>
+<QOutput><![CDATA[Lekérdezés kimenete]]></QOutput>
+<Error><![CDATA[Hiba]]></Error>
+<filename><![CDATA[Fájlnév]]></filename>
+<error_num><![CDATA[Hibaszám]]></error_num>
+<size_too_big><![CDATA[A fájlméret túl nagy]]></size_too_big>
+<size_is_0><![CDATA[A fájlméret 0]]></size_is_0>
+<not_text_type><![CDATA[A fájl nem szövegfájl]]></not_text_type>
+<cannot_read_file><![CDATA[A fájl nem olvasható]]></cannot_read_file>
+<Return><![CDATA[Vissza]]></Return>
+<Syntax><![CDATA[Szintaktikai hiba történt]]></Syntax>
+<QUERY><![CDATA[LEKÉRDEZÉS]]></QUERY>
+<NumFet><![CDATA[Lehívott szám]]></NumFet>
+<AllRowsFet><![CDATA[Összes sor lehívva]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[Ennél a lekérdezésnél csak korlátozott számú sor kerül lehívásra]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[Néhány lekérdezéstípus esetében lehívásra kerülő sorok jelenlegi maximális száma]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[Egyszerre csak egy SQL utasítás hajtható végre.  A bevitel első pontosvesszője utáni összes karakter eltávolításra került.]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[A mentés meghiúsult: Nincs fájlba mentendő lekérdezés.]]></Save_NoQuery>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<NeedToLogin><![CDATA[Be kell jelentkezni.]]></NeedToLogin>
+<SelectDB><![CDATA[Válassza ki az adatbázist, amelyhez csatlakozni kíván.]]></SelectDB>
+<ConnectingDB><![CDATA[Csatlakozás az adatbázishoz]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[SQL lekérdezésszerkesztő]]></SQLQueryEditor>
+<OneStmt><![CDATA[egyszerre egy utasítás]]></OneStmt>
+<RowFetchLimit><![CDATA[Az order by, group by, subquery, distinct, union és aggregate részkifejezéseket tartalmazó lekérdezéseknél a lehívandó sorok számára vonatkozó korlát:]]></RowFetchLimit> 
+<ShowAllText><![CDATA[Összes szöveg megjelenítése]]></ShowAllText>
+<ShowSomeText><![CDATA[Néhány szöveg megjelenítése]]></ShowSomeText>
+<ShowInFile><![CDATA[Megjelenítés fájlban]]></ShowInFile>
+<IgnoreText><![CDATA[Szöveg mellőzése]]></IgnoreText>
+<IgnoreByte><![CDATA[Byte mellőzése]]></IgnoreByte>
+<SaveInFile><![CDATA[Mentés fájlba]]></SaveInFile>
+<file><![CDATA[fájl]]></file>
+<filesize><![CDATA[méret={0}]]></filesize>
+<filetype><![CDATA[{0} fájl]]></filetype>
+<ErrorUnableToChg><![CDATA[Hiba: A beállítás nem módosítható.]]></ErrorUnableToChg>
+<SQLResults><![CDATA[SQL eredmények]]></SQLResults>
+<SizeSixDBs><![CDATA[A 6 legnagyobb adatbázis mérete]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[Kijelentkezés: SQL eszközkészlet]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[Bejelentkezve mint]]></LoggedInAs>
+<ClickToSelect><![CDATA[Kattintson ide select * végrehajtásához a táblán.]]></ClickToSelect>
+<PartitionInfo><![CDATA[Partíció információk]]></PartitionInfo>
+<CloseWindow><![CDATA[Ablak bezárása]]></CloseWindow>
+<DisplayOptions><![CDATA[Beállítások megjelenítése]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[Eljárások/Függvények ({0})]]></ProceduresFunctions>
+<Function><![CDATA[Függvény]]></Function>
+<Procedure><![CDATA[Eljárás]]></Procedure>
+<All><![CDATA[Összes]]></All>
+<Buffered><![CDATA[Pufferelt]]></Buffered>
+<Unbuffered><![CDATA[Nem-pufferelt]]></Unbuffered>
+<NotLogged><![CDATA[Nem-naplózott]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[Legutóbbi statisztika]]></LastStats>
+<Pages><![CDATA[Lapok]]></Pages>
+<pages><![CDATA[lapok]]></pages>
+<byte_blob><![CDATA[Byte/Blob]]></byte_blob>
+<text_clob><![CDATA[Text/Clob]]></text_clob>
+</lang>

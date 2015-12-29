@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Virtual Processors]]></virtualprocessors>
+<vps><![CDATA[VPs]]></vps>
+<vpclasses><![CDATA[VP Classes]]></vpclasses>
+<vpid><![CDATA[VP ID]]></vpid>
+<class><![CDATA[Class]]></class>
+<cnt><![CDATA[VPs]]></cnt>
+<total><![CDATA[Total]]></total>
+<usercpu><![CDATA[User CPU Time]]></usercpu>
+<syscpu><![CDATA[System CPU Time]]></syscpu>
+<totalcpu><![CDATA[Total CPU Time]]></totalcpu>
+<classdetails><![CDATA[Class details]]></classdetails>
+<nodrop><![CDATA[Cannot drop the last vp of a class]]></nodrop>
+<tomuchdrop><![CDATA[Drop failed. Cannot drop more vps than exist.]]></tomuchdrop>
+<success><![CDATA[Action was successful.]]></success>
+<VPValNotSet><![CDATA[Action not possible. The following VP value is not set correctly:]]></VPValNotSet>
+<VPType><![CDATA[VP Type]]></VPType>
+<Count><![CDATA[Count]]></Count>
+<AddDropVP><![CDATA[Add or Drop a VP]]></AddDropVP>
+<add><![CDATA[Add]]></add>
+<drop><![CDATA[Drop]]></drop>
+<addVP><![CDATA[Add VP]]></addVP>
+<dropVP><![CDATA[Drop VP]]></dropVP>
+<modifyingClass><![CDATA[Modifying class]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Virtual Processors - Global Information]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[VPs of Class: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Sorry, option is not available]]></OptionNotAvail>
+<seconds><![CDATA[seconds]]></seconds>
+</lang>

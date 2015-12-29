@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[Home]]></home>
+<expand><![CDATA[Expand]]></expand>
+<collapse><![CDATA[Collapse]]></collapse>
+<logs><![CDATA[Logs]]></logs>
+<alertsummary><![CDATA[Alert Summary]]></alertsummary>
+<alerts><![CDATA[Alerts]]></alerts>
+<admincommands><![CDATA[Admin Command]]></admincommands>
+<onlinelog><![CDATA[Online Messages]]></onlinelog>
+<baractlog><![CDATA[ON-Bar Activity]]></baractlog>
+<healthcenter><![CDATA[Health Center]]></healthcenter>
+<details><![CDATA[Details]]></details>
+<taskdetails><![CDATA[Task Details]]></taskdetails>
+<runtimes><![CDATA[Task Runtimes]]></runtimes>
+<scheduler><![CDATA[Scheduler]]></scheduler>
+<space><![CDATA[Space Administration]]></space>
+<VP><![CDATA[Virtual Processors]]></VP>
+<dbspaces><![CDATA[DBSpaces]]></dbspaces>
+<RecoveryLogs><![CDATA[Recovery Logs]]></RecoveryLogs>
+<storage><![CDATA[Storage]]></storage>
+<chunks><![CDATA[Chunks]]></chunks>
+<reservedspace><![CDATA[Reserved Space]]></reservedspace>
+<performance><![CDATA[Performance Analysis]]></performance>
+<sql><![CDATA[SQL Editor]]></sql>
+<sqlexplorer><![CDATA[SQL Explorer]]></sqlexplorer>
+<io><![CDATA[IO]]></io>
+<Reports><![CDATA[System Reports]]></Reports>
+<sessionexplorer><![CDATA[Session Explorer]]></sessionexplorer>
+<uReports><![CDATA[User Reports]]></uReports>
+<sqltoolbox><![CDATA[SQL ToolBox]]></sqltoolbox>
+<databases><![CDATA[Databases]]></databases>
+<schemabrowser><![CDATA[Schema Browser]]></schemabrowser>
+<tables><![CDATA[Tables]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[Useful Links]]></UsefulLinks>
+<about><![CDATA[About OAT]]></about>
+<train><![CDATA[Training]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[Admin]]></admin>
+<mach11><![CDATA[Clusters]]></mach11>
+<dashboard><![CDATA[Dashboard]]></dashboard>
+<help><![CDATA[Help]]></help>
+<logout><![CDATA[Logout]]></logout>
+<taskscheduler><![CDATA[Task Scheduler]]></taskscheduler>
+<serveradmin><![CDATA[Server Administration]]></serveradmin>
+<configuration><![CDATA[Configuration]]></configuration>
+<HowDoI><![CDATA[OAT Task Help]]></HowDoI>
+<readme><![CDATA[Readme]]></readme>
+<releasenotes><![CDATA[Release Notes]]></releasenotes>
+<onconfigparam><![CDATA[Configuration]]></onconfigparam>
+<privileges><![CDATA[User Privileges]]></privileges>
+<highavail><![CDATA[High Availability]]></highavail>
+<PerformanceHist><![CDATA[Performance History]]></PerformanceHist>
+<SystemValidation><![CDATA[System Validation]]></SystemValidation>
+<OATconfig><![CDATA[OAT Config]]></OATconfig>
+<connadmin><![CDATA[Connection Admin]]></connadmin>
+<connmgt><![CDATA[Manage Connections]]></connmgt>
+<addgroup><![CDATA[Add Group]]></addgroup>
+<addconn><![CDATA[Add Connection]]></addconn>
+<helpadmin><![CDATA[Help Admin]]></helpadmin>
+<helpmgt><![CDATA[Manage Help]]></helpmgt>
+<helpdb><![CDATA[Help Database]]></helpdb>
+<addhelp><![CDATA[Add Help]]></addhelp>
+<OATlogin><![CDATA[OAT Login]]></OATlogin>
+<aus><![CDATA[Auto Update Statistics]]></aus>
+<qbe><![CDATA[Query By Example]]></qbe>
+<onstat><![CDATA[onstat Utility]]></onstat>
+<replication><![CDATA[Replication]]></replication>
+<trustedcontext><![CDATA[Trusted Context]]></trustedcontext>
+<security><![CDATA[Security]]></security>
+<backup><![CDATA[Backup]]></backup>
+<MemoryMgr><![CDATA[Memory Manager]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

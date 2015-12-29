@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM 예제 플러그인]]></ibm_example_plugin>
+<example><![CDATA[예:]]></example>
+<table><![CDATA[테이블]]></table>
+<piechart><![CDATA[원형 차트]]></piechart>
+<linechart><![CDATA[선형 차트]]></linechart>
+<barchart><![CDATA[막대형 차트]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[사용자 및 순차 스캔]]></users_and_seqscans>
+<username><![CDATA[사용자 이름]]></username>
+<numseqscans><![CDATA[순차 스캔 수]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[상위 20개 청크의 입출력]]></Pie_Chart_Title>
+<Chunk><![CDATA[청크]]></Chunk>
+<TotalIO><![CDATA[총 입출력]]></TotalIO>
+<Chunk_num><![CDATA[청크 {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[체크포인트 그래프]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[더티 버퍼 수]]></dirty_buffers>
+<waits><![CDATA[대기 수]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[영역 그래프]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[더티 버퍼 수]]></dirty_buffers>
+<waits><![CDATA[대기 수]]></waits>
+
+</lang>

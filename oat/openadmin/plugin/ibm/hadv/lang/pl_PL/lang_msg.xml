@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Alarm czerwony: sprawdza, czy został ustawiony parametr konfiguracyjny DBSPACETEMP.  Alarm żółty: sprawdza, czy w wartości parametru konfiguracyjnego DBSPACETEMP nie ma spacji.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy parametr konfiguracyjny DUMPDIR nie jest ustawiony na katalog określony jako próg alarmu żółtego.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy jest włączone dynamiczne przydzielanie dzienników (DYNAMIC_LOGS).]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Alarm czerwony: sprawdza, czy pliki dziennika logicznego nie są zapisywane w głównym obszarze dbspace (ROOTDBS). Alarm żółty: sprawdza, czy w obszarze dbspace, w którym są przechowywane pliki dziennika logicznego, nie są zapisywane żadne tabele.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Alarm czerwony: sprawdza, czy wskaźnik wysokiego poziomu dla długich transakcji (LTXHWM) nie przekracza progu alarmu czerwonego, gdy wyłączone jest dynamiczne przydzielanie dzienników (DYNAMIC_LOGS).  Alarm żółty: sprawdza, czy ostrzegawczy wskaźnik poziomu długich transakcji (LTXHWM) nie przekracza progu alarmu żółtego, gdy wyłączone jest dynamiczne przydzielanie dzienników.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy minimalna liczba zmodyfikowanych stron w kolejce LRU (lru_min_dirty) jest wyższa niż próg alarmu żółtego.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy parametr konfiguracyjny LTAPEDEV nie jest ustawiony na katalog określony na jako próg alarmu żółtego.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy została ustawiona opcja NOAGE parametru konfiguracyjnego VPCLASS.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy serwer bazy danych nie został ustawiony w tryb kontynuacji pracy po wyłączeniu obszaru dbspace (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Alarm czerwony: sprawdza, czy dziennik fizyczny nie jest przechowywany w głównym obszarze dbspace (ROOTDBS). Alarm żółty: sprawdza, czy w obszarze dbspace, w którym jest przechowywany dziennik fizyczny, nie są zapisywane żadne tabele.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy w sytuacji, gdy ustawiono parametr konfiguracyjny SINGLE_CPU_VP, wyłączony został parametr MULTIPROCESSOR.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy parametr konfiguracyjny TAPEDEV nie jest ustawiony na katalog określony na liście wartości progu alarmu żółtego.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Alarm czerwony: sprawdza, czy liczba utworzonych dziś plików ATS nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy liczba utworzonych dziś plików ATS nie przekracza progu alarmu żółtego.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Alarm czerwony: sprawdza, czy procentowy udział stron dziennika pozostałych do rozpoczęcia blokowania transakcji (DDRBLOCK) nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procentowy udział stron dziennika pozostałych do rozpoczęcia blokowania transakcji nie przekracza progu alarmu żółtego.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Alarm czerwony: sprawdza, czy węzły klastra ER są aktywne i replikują dane. Alarm żółty: brak.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Alarm czerwony: sprawdza, czy liczba utworzonych dziś plików RIS nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy liczba utworzonych dziś plików RIS nie przekracza progu alarmu żółtego.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Alarm czerwony: sprawdza, czy procent wolnej pamięci dostępnej dla systemu operacyjnego przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy procent wolnej pamięci dostępnej dla systemu operacyjnego przekracza próg alarmu żółtego.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy liczba włączonych procesorów w systemie operacyjnym jest równa łącznej liczbie procesorów w systemie operacyjnym.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Alarm czerwony: brak. Alarm żółty: sprawdza, czy stosunek liczby procesorów wirtualnych CPU do liczby wszystkich procesorów w systemie operacyjnym przekracza wartość procentową określoną jako próg alarmu żółtego.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Alarm czerwony: sprawdza, czy liczba deskryptorów otwartych plików na proces w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy liczba deskryptorów otwartych plików na proces w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Alarm czerwony: sprawdza, czy liczba zestawów semaforów w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy liczba zestawów semaforów w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Alarm czerwony: sprawdza, czy łączna liczba semaforów w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy łączna liczba semaforów w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Alarm czerwony: sprawdza, czy liczba identyfikatorów pamięci współużytkowanej (shmid) w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy liczba identyfikatorów pamięci współużytkowanej (shmid) w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Alarm czerwony: sprawdza, czy maksymalna wielkość segmentu pamięci współużytkowanej (SHMMAX) w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy maksymalna wielkość segmentu pamięci współużytkowanej (SHMMAX) w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Alarm czerwony: sprawdza, czy łączna liczba segmentów pamięci współużytkowanej (shmNumSegs) w systemie operacyjnym przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy łączna liczba segmentów pamięci współużytkowanej (shmNumSegs) w systemie operacyjnym przekracza próg alarmu żółtego.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Alarm czerwony: sprawdza, czy niedostateczne zasoby dzienników logicznych (LLOG) nie powodują blokowania podczas przetwarzania punktów kontrolnych.  Alarm żółty: sprawdza, czy niedostateczne zasoby dzienników logicznych (LLOG) nie powodują uruchamiania punktów kontrolnych.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Alarm czerwony: sprawdza, czy niedostateczne zasoby dzienników fizycznych (PLOG) nie powodują blokowania podczas przetwarzania punktów kontrolnych.  Alarm żółty: sprawdza, czy niedostateczne zasoby dzienników fizycznych (PLOG) nie powodują uruchamiania punktów kontrolnych.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Alarm czerwony: sprawdza, czy czas poświęcony na przetwarzanie sekcji krytycznych podczas przetwarzania punktów kontrolnych nie przekracza progu alarmu czerwonego.  Alarm żółty: sprawdza, czy czas poświęcony na przetwarzanie sekcji krytycznych podczas przetwarzania punktów kontrolnych nie przekracza progu alarmu żółtego.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Alarm czerwony: sprawdza, czy liczba opróżnień buforu na dysk na sekundę podczas przetwarzania punktów kontrolnych przekracza próg alarmu czerwonego.  Alarm żółty: sprawdza, czy liczba opróżnień buforu na dysk na sekundę podczas przetwarzania punktów kontrolnych przekracza próg alarmu żółtego.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Alarm czerwony: sprawdza, czy najdłuższy czas oczekiwania transakcji podczas przetwarzania punktów kontrolnych nie przekracza progu alarmu czerwonego.  Alarm żółty: sprawdza, czy najdłuższy czas oczekiwania transakcji podczas przetwarzania punktów kontrolnych nie przekracza progu alarmu żółtego.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby odczytów z buforu dla pojedynczej tabeli do liczby wszystkich odczytów z buforu nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby odczytów z buforu dla pojedynczej tabeli do liczby wszystkich odczytów z buforu nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby zapisów w buforze dla pojedynczej tabeli do liczby wszystkich zapisów w buforze nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby zapisów w buforze dla pojedynczej tabeli do liczby wszystkich zapisów w buforze nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby przeglądań sekwencyjnych dla pojedynczej tabeli do liczby wszystkich przeglądań sekwencyjnych nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby przeglądań sekwencyjnych dla pojedynczej tabeli do liczby wszystkich przeglądań sekwencyjnych nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Alarm czerwony: sprawdza, czy procent odczytów poddawanych buforowaniu (%cached) przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy procent odczytów poddawanych buforowaniu (%cached) przekracza próg alarmu żółtego.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Alarm czerwony: sprawdza, czy procent zapisów poddawanych buforowaniu (%cached) przekracza próg alarmu czerwonego. Alarm żółty: sprawdza, czy procent zapisów poddawanych buforowaniu (%cached) przekracza próg alarmu żółtego.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Alarm czerwony: sprawdza, czy procent sortowań na dysku wśród wszystkich operacji sortowania nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procent sortowań na dysku wśród wszystkich operacji sortowania nie przekracza progu alarmu żółtego.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Alarm czerwony: sprawdza, czy procent transakcji wycofanych wśród wszystkich transakcji nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procent transakcji wycofanych wśród wszystkich transakcji nie przekracza progu alarmu żółtego.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Alarm czerwony: sprawdza, czy procent zapisów pierwszoplanowych wśród wszystkich operacji zapisu nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procent zapisów pierwszoplanowych wśród wszystkich operacji zapisu nie przekracza progu alarmu żółtego.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby stron dziennika logicznego do liczby operacji we/wy nie przekracza wartości procentowej buforu dziennika logicznego (LOGBUFF) określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby stron dziennika logicznego do liczby operacji we/wy przekracza wartość procentową buforu dziennika logicznego (LOGBUFF) określoną jako próg alarmu żółtego.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Alarm czerwony: sprawdza, czy procent oczekiwań na blokady wśród wszystkich żądań blokad nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procent oczekiwań na blokady wśród wszystkich żądań blokad nie przekracza progu alarmu żółtego.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby stron dziennika fizycznego do liczby operacji we/wy nie przekracza wartości procentowej buforu dziennika fizycznego (PHYSBUFF) określonej jako próg alarmu czerwonego.  Alarm żółty: sprawdza, czy stosunek liczby stron dziennika fizycznego do liczby operacji we/wy przekracza wartość procentową buforu dziennika fizycznego (PHYSBUFF) określoną jako próg alarmu żółtego.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Alarm czerwony: sprawdza, czy procent przeglądań sekwencyjnych wśród wszystkich instrukcji SQL nie przekracza progu alarmu czerwonego. Alarm żółty: sprawdza, czy procent przeglądań sekwencyjnych wśród wszystkich instrukcji SQL nie przekracza progu alarmu żółtego.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Alarm czerwony: sprawdza, czy wszystkie porcje są w trybie z połączeniem. Alarm żółty: brak.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby operacji we/wy dla każdej porcji do liczby wszystkich operacji we/wy nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby operacji we/wy dla każdej porcji do liczby wszystkich operacji we/wy nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby operacji odczytu dla każdej porcji do liczby wszystkich operacji odczytu nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby operacji odczytu dla każdej porcji do liczby wszystkich operacji odczytu nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Alarm czerwony: sprawdza, czy stosunek liczby operacji zapisu dla każdej porcji do liczby wszystkich operacji zapisu nie przekracza wartości procentowej określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy stosunek liczby operacji zapisu dla każdej porcji do liczby wszystkich operacji zapisu nie przekracza wartości procentowej określonej jako próg alarmu żółtego.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Alarm czerwony: sprawdza, czy procent wolnego miejsca w każdym obszarze dbspace przekracza procentową ilość wolnego miejsca w tym obszarze określoną jako próg alarmu czerwonego.  Alarm żółty: sprawdza, czy procent wolnego miejsca w każdym obszarze dbspace przekracza procentową ilość wolnego miejsca w tym obszarze określoną jako próg alarmu żółtego.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Alarm czerwony: sprawdza, czy istnieją tabele, w których procent maksymalnego wolnego miejsca na każdą stronę spadł poniżej wartości określonej jako próg alarmu czerwonego. Alarm żółty: sprawdza, czy istnieją tabele, w których procent maksymalnego wolnego miejsca na każdą stronę spadł poniżej wartości określonej jako próg alarmu żółtego.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

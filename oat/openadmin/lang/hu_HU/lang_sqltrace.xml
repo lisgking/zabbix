@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL-böngésző]]></SQLExplorer>
+<ShowSQL><![CDATA[Megjelenítés - SQL]]></ShowSQL>
+<StmtType><![CDATA[Utasítás típusa]]></StmtType>
+<TXTime><![CDATA[Tranzakció ideje]]></TXTime>
+<Freq><![CDATA[Gyakoriság]]></Freq>
+<SQLAdmin><![CDATA[SQL nyomkövetési admin]]></SQLAdmin>
+<SQLType><![CDATA[SQL típus]]></SQLType>
+<SQLProfile><![CDATA[SQL profil]]></SQLProfile>
+<SQLList><![CDATA[SQL lista]]></SQLList>
+<TXGroup><![CDATA[Tranzakciók]]></TXGroup>
+<Count><![CDATA[Számláló]]></Count>
+<AvgRT><![CDATA[Átl. válaszidő]]></AvgRT>
+<MaxRT><![CDATA[Max. válaszidő]]></MaxRT>
+<AvgMem><![CDATA[Átl. memória]]></AvgMem>
+<RowProc><![CDATA[Feldolgozott sorok]]></RowProc>
+<NoData><![CDATA[Nincsenek elérhető adatok]]></NoData>
+<SQLStmtSum><![CDATA[SQL utasítás összegzés]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL utasítás]]></SQLStmt>
+<SID><![CDATA[Munkamenet-azonosító]]></SID>
+<NRecentTX><![CDATA[100 legújabb tranzakció]]></NRecentTX>
+<SQLFreq><![CDATA[SQL gyakoriság összefoglalása]]></SQLFreq>
+<LockWait><![CDATA[Zárolás várakozási idő]]></LockWait>
+<SQLDrill><![CDATA[SQL lekövetés]]></SQLDrill>
+<DrillDown><![CDATA[Lekövetés]]></DrillDown>
+<WaitIOTime><![CDATA[Várakozási I/O idő]]></WaitIOTime>
+<UID><![CDATA[Felhasználói azonosító]]></UID>
+<CompTime><![CDATA[Utasítás befejezési ideje]]></CompTime>
+<RespTime><![CDATA[Válaszidő]]></RespTime>
+<Database><![CDATA[Adatbázis]]></Database>
+<Statement><![CDATA[Utasítás]]></Statement>
+<StmtStats><![CDATA[Utasítás statisztikák]]></StmtStats>
+<pgReads><![CDATA[Lapolvasások]]></pgReads>
+<BufReads><![CDATA[Pufferolvasások]]></BufReads>
+<ReadCache><![CDATA[Gyorsítótárat olvas]]></ReadCache>
+<DataBufReads><![CDATA[Adatpuffer olvasások]]></DataBufReads>
+<IndexBuffReads><![CDATA[Indexpuffer olvasások]]></IndexBuffReads>
+<PgWrites><![CDATA[Lapírások]]></PgWrites>
+<BufWrites><![CDATA[Pufferírások]]></BufWrites>
+<WriteCache><![CDATA[Gyorsítótárba ír]]></WriteCache>
+<NumLockWait><![CDATA[Zárolási várakozások száma]]></NumLockWait>
+<LockRequests><![CDATA[Zárolási kérések]]></LockRequests>
+<LockWaitTime><![CDATA[Zárolás várakozási idő (mp)]]></LockWaitTime>
+<LogSpace><![CDATA[Naplóterület]]></LogSpace>
+<DiskSorts><![CDATA[Lemez rendezések]]></DiskSorts>
+<MemSorts><![CDATA[Memória rendezések]]></MemSorts>
+<NumTables><![CDATA[Táblák száma]]></NumTables>
+<NumIter><![CDATA[Iterátorok száma]]></NumIter>
+<TExecs><![CDATA[Összes végrehajtás]]></TExecs>
+<TExecTime><![CDATA[Összes végrehajtási idő (mp)]]></TExecTime>
+<AvgExecTime><![CDATA[Átlagos végrehajtási idő (mp)]]></AvgExecTime>
+<MaxExecTime><![CDATA[Maximális végrehajtási idő (mp)]]></MaxExecTime>
+<TNumIOWait><![CDATA[I/O várakozások száma]]></TNumIOWait>
+<IOWaitTime><![CDATA[I/O várakozási idő (mp)]]></IOWaitTime>
+<AvgIOWait><![CDATA[Átlagos várakozási idő (mp)]]></AvgIOWait>
+<RowsPerSec><![CDATA[Átlagos sor/másodperc]]></RowsPerSec>
+<EstCost><![CDATA[Becsült költség]]></EstCost>
+<EstRows><![CDATA[Becsült sorok]]></EstRows>
+<ActRows><![CDATA[Tényleges sorok]]></ActRows>
+<SQLErr><![CDATA[SQL hiba]]></SQLErr>
+<ISAMErr><![CDATA[ISAM hiba]]></ISAMErr>
+<IsoLevel><![CDATA[Elkülönítési szint]]></IsoLevel>
+<SQLMem><![CDATA[SQL memória]]></SQLMem>
+<SQLTbadParam><![CDATA[Helytelen paraméter az SQL nyomkövetés módosítására tett kísérlet során.]]></SQLTbadParam>
+<Modify><![CDATA[Módosítás]]></Modify>
+<High><![CDATA[Magas]]></High>
+<Medium><![CDATA[Közepes]]></Medium>
+<Low><![CDATA[Alacsony]]></Low>
+<MaxSQLTrace><![CDATA[Nyomkövetésre kerülő SQL szöveg maximális mennyisége.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[Nyomkövetési szint]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[Nyomkövetésre kerülő SQL ok száma.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[Az sql nyomkövetést kapcsolja be és ki.]]></TraceOnOff>
+<On><![CDATA[Be]]></On>
+<Off><![CDATA[Ki]]></Off>
+<SQLTraceOpt><![CDATA[SQL nyomkövetési beállítások megadása]]></SQLTraceOpt>
+<Mode><![CDATA[Mód]]></Mode>
+<NumTrace><![CDATA[Nyomkövetések száma]]></NumTrace>
+<TraceSize><![CDATA[Nyomkövetési méret]]></TraceSize>
+<SQLTraceInfo><![CDATA[SQL nyomkövetési információk]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[Nyomkövetett SQL utasítások száma]]></NumSQLTraced>
+<TraceBufSize><![CDATA[Nyomkövetési puffer mérete]]></TraceBufSize>
+<OldTracedStmt><![CDATA[Legrégibb nyomkövetett utasítás]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[Nyomkövetési puffer időtartama]]></TraceBufDuration>
+<SQLSeen><![CDATA[Megtekintett SQL utasítások]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL nyomkövetés elindítva]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[SQL utasítások másodpercenként]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[Felhasznált SQL nyomkövetési memória]]></TraceMemUsed>
+<RowPerSec><![CDATA[Sor/másodperc]]></RowPerSec>
+<ListSQL><![CDATA[SQL listázás]]></ListSQL>
+<TxStatsSummary><![CDATA[Tranzakciós statisztika összegzése]]></TxStatsSummary>
+<NumSQL><![CDATA[Utasítás számláló]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[Utasítás hoszt változók]]></StmtHVars>
+<Pos><![CDATA[Pozíció]]></Pos>
+<Type><![CDATA[Típus]]></Type>
+<Value><![CDATA[Érték]]></Value>
+<Error_GD_NotEnabled><![CDATA[A GD a PHP nyelvben nem engedélyezett.  A lekérdezésfa nem jeleníthető meg.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix változat:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[SQL nyomkövetés mentése]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[Az aktuális syssqltrace információkat menti táblába]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[SQL utasítás összegzés]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[SQL gyakoriság összefoglalása]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL lekövetés]]></SQLDrillDown>
+<Count><![CDATA[Számláló]]></Count>
+<AvgRunTime><![CDATA[Átlagos futási idő]]></AvgRunTime>
+<LockWaitTime><![CDATA[Zárolás várakozási idő]]></LockWaitTime>
+<WaitIOTime><![CDATA[Várakozási I/O idő]]></WaitIOTime>
+<CompleteTime><![CDATA[Befejezés időpontja]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[A direktívák támogatásának engedélyezéséhez az EXT_DIRECTIVES értékét 1-re vagy 2-re kell beállítani.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[A lekérdezéshez mentett direktívák léteznek]]></SavedDir>
+<DirectivesSaved><![CDATA[Direktívák lementve]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[Ehhez a lekérdezéshez még nincsenek mentett direktívák]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[Direktívák törölve. Nincsenek frissítendő újak.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[A tábla nyomkövetési információk nem léteznek.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[Nem találhatók indexek]]></NoIndexesFound>
+<NoRowsFound><![CDATA[Nincsenek sorok.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL NYOMKÖVETÉS LETILTVA]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[Az SQL nyomkövetés tiltott]]></SQLTracingOff>
+<NoSQLID><![CDATA[Érvénytelen szolgáltatás/sqltrace.php argumentum]]></NoSQLID>
+<InvalidArgument><![CDATA[Érvénytelen szolgáltatás/sqltrace.php argumentum]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[Kattintson ide az SQL utasítás további részleteinek megjelenítéséhez]]></ClickForSQLDetails>
+<DrillDown><![CDATA[Lekövetés]]></DrillDown>
+<ORDERED_Description><![CDATA[Az optimalizáló kényszerítése a táblák SELECT utasításban megadott sorrendben végzett összefésülésére.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[Az első sor visszaadása a lehető leggyorsabban.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[A teljes lekérdezés végrehajtása a lehető leggyorsabban.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[Ne használjon többindexes keresést a megadott tábla eléréséhez.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[Ne használja a csillag-összekapcsolású végrehajtási tervet.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[Ha lehetséges, akkor használjon csillag-összekapcsolású végrehajtási tervet.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[A csillag-összekapcsolású végrehajtási tervben ténytáblaként használandó tábla kiválasztása.]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[A csillag-összekapcsolású végrehajtási tervben nem ténytáblaként használandó táblák kiválasztása.]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[Azoknak az indexeknek a megadása, amelyeket NEM szabad használni, amikor saját magával összekapcsolt index útvonal segítségével fér hozzá táblához.]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[Annak az indexnek a megadása, amely akkor kerül felhasználásra, amikor saját magával összekapcsolt index útvonal segítségével fér hozzá táblához.]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[Tábla elérésekor használandó többszörös indexek megadása.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[Tábla elérésekor NEM használandó indexek megadása.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[Tábla elérésekor használandó indexek megadása.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[Tábla elérésekor kerülje a teljes táblakeresés használatát.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[Teljes táblakeresés használata a tábla eléréséhez.]]></FULL_Description>
+<USE_NL_Description><![CDATA[Megadott táblák használata belső táblaként beágyazott-ciklus összefésülésben.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[Megadott táblák belső táblaként használatának elkerülése beágyazott-ciklus összefésülésben.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[Dinamikus kivonatösszefésülés használata a megadott tábla eléréséhez.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[Ne használjon dinamikus kivonatösszefésülést a megadott tábla eléréséhez.]]></AVOID_HASH_Description>
+<Index><![CDATA[Index]]></Index>
+<Table><![CDATA[Tábla]]></Table>
+<Cost><![CDATA[Költség]]></Cost>
+<RowsEstimated><![CDATA[Becsült sorok]]></RowsEstimated>
+<RowsProcessed><![CDATA[Feldolgozott sorok]]></RowsProcessed>
+<ElapsedTime><![CDATA[Eltelt idő]]></ElapsedTime>
+<NotYetImpl><![CDATA[Ezen az oldalon az OpenAdmin eszköz nem tud információkat megjeleníteni olyan adatbázis-kiszolgálóról, amely több nem-angol adatbázis területi beállítással rendelkezik. Az adatbázis-kiszolgáló több nem-angol adatbázis területi beállítást tartalmaz.]]></NotYetImpl>
+<QueryTree><![CDATA[Lekérdezésfa]]></QueryTree>
+<QueryTreeNA><![CDATA[A lekérdezésfa nem érhető el ehhez az utasításhoz.]]></QueryTreeNA>
+</lang>
+
+

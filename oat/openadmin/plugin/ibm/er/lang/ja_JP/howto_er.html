@@ -1,0 +1,2348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP" xml:lang="ja-jp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="ja-jp" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, reference, reference, task, task, reference, reference, reference, reference, reference, reference, reference, reference, task, reference, reference, reference, reference, reference, reference, reference, reference, reference, task, task, reference, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="レプリケート セット, 定義, 定義, レプリケート セット, レプリケート, レプリケート, テンプレート, 実体化, テンプレート, インスタンス化" />
+<meta name="keywords" content="テンプレートの実体化, 削除, グリッド, グリッド, 作成, タスク, コマンド, ソース サーバ, メンバ サーバ, サーバ, 変更, ER サーバ" />
+<meta name="keywords" content="エンタープライズ レプリケーション サーバ, 中断トランザクション スプール (ATS), 行情報スプール (RIS), 一時停止, 一時停止, レプリケーション, 再開" />
+<meta name="keywords" content="停止, 開始, 再開, 無効化, 有効化, 切断, 削除, 接続, 管理, プロパティの表示, レプリケート セットの属性, 表示" />
+<meta name="keywords" content="開始, 停止, 再開, アクティブに戻す, レプリケート セット, 追加, 関係先, 規則, 競合解決, 範囲, レプリケーション頻度" />
+<meta name="keywords" content="すべての行のレプリケート, 関係先の表示, レプリケート属性, 一貫性, 検査, 競合する行, 修復, 同期" />
+<meta name="keywords" content="レプリケート検査または同期タスク, 検査タスクまたは同期タスクの削除, レプリケート セットの検査タスクまたは同期タスク, タスクの状態, タスクの状態, 接続マネージャ" />
+<meta name="keywords" content="接続単位, 高可用性クラスタ, サーバ セット, フェイルオーバー構成, サービス レベル アグリーメント, SLA" />
+<title>Informix Replication Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Replication Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>内容</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oer.dita" class="toclink">Informix Replication Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oer_002" class="toclink">レプリケーション プラグインのセットアップ</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oer_003" class="toclink">エンタープライズ レプリケーションの監視</a></div>
+<div class="head3"><a id="ToC_4" href="#dqx1ids_oer_004" class="toclink">ER ドメインのトポロジの表示</a></div>
+<div class="head3"><a id="ToC_5" href="#dqx1ids_oer_005" class="toclink">アラートしきい値の構成</a></div>
+<div class="head3"><a id="ToC_6" href="#dqx1ids_oer_006" class="toclink">エンタープライズ レプリケーション ドメインに関するアラートの検査</a></div>
+<div class="head3"><a id="ToC_7" href="#dqx1ids_oer_007" class="toclink">エンタープライズ レプリケーション ノードの状態の表示</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_oer_011" class="toclink">ノードのログ キャプチャ情報の監視</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_oer_016" class="toclink">ノードの送信キューの監視</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_oer_018" class="toclink">エンタープライズ レプリケーション ノードのネットワーク入出力の監視</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_oer_019" class="toclink">ノードのディスク領域使用量の監視</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_oer_020" class="toclink">ノードの受信キューの監視</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oer_021" class="toclink">ターゲット ノードでのレプリケート データの適用方法の監視</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oer_024" class="toclink">失敗したトランザクションに関する ATS ファイルおよび RIS ファイルの確認</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oer_026" class="toclink">エンタープライズ レプリケーションのエラーの確認</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oer_028" class="toclink">ER 構成パラメータの表示</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oer_029" class="toclink">エンタープライズ レプリケーションの管理</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oer_070" class="toclink">エンタープライズ レプリケーションのセットアップ</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oer_060" class="toclink">テンプレートを使用したエンタープライズ レプリケーションのセットアップ</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oer_098" class="toclink">グリッドを使用したエンタープライズ レプリケーションの管理</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oer_071.dita" class="toclink">エンタープライズ レプリケーション サーバの管理</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oer_037.dita" class="toclink">レプリケート セットの管理</a></div>
+<div class="head3"><a id="ToC_78" href="#dqx1ids_oer_036.dita" class="toclink">レプリケートの管理</a></div>
+<div class="head3"><a id="ToC_94" href="#dqx1ids_oer_050.dita" class="toclink">レプリケーション サーバ間のデータの再同期</a></div>
+<div class="head3"><a id="ToC_105" href="#dqx1ids_oer_054" class="toclink">タスクの状態の監視</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oer_030" class="toclink">ER 構成パラメータの変更</a></div>
+<div class="head2"><a id="ToC_109" href="#dqx1ids_oer_115.dita" class="toclink">クライアント接続の管理</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oer_116" class="toclink">接続単位の表示</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oer_117" class="toclink">接続単位の追加</a></div>
+<div class="head3"><a id="ToC_112" href="#dqx1ids_oer_118" class="toclink">フェイルオーバー構成の変更</a></div>
+<div class="head3"><a id="ToC_113" href="#dqx1ids_oer_119" class="toclink">サービス レベル アグリーメントの作成</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oer_120" class="toclink">サービス レベル アグリーメントの変更</a></div>
+<div class="head3"><a id="ToC_115" href="#dqx1ids_oer_121" class="toclink">接続マネージャの作成</a></div>
+<div class="head1"><a id="ToC_116" href="#dqx1ids_cm_not" class="toclink">特記事項</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1trademarks" class="toclink">商標
+</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oer_000" class="toclink">著作権表示</a></div>
+</div>
+<h1 id="dqx1ids_oer.dita"><a href="#ToC_1">Informix Replication Plug-in for OAT</a></h1>
+<div>
+<p>IBM&reg; Informix&reg; Replication Plug-in for OpenAdmin Tool (OAT) には、エンタープライズ レプリケーション (ER) をセットアップ、監視、および管理するためのグラフィカル インターフェイスが用意されています。また、相互接続されたレプリケーション サーバのグリッドを管理することもできます。</p></div>
+<div>
+<div class="notetitle" id="wq2">前提条件:</div>
+<div class="notebody">レプリケーション プラグインには、IBM Informix 11.50.xC4 以降が必要です。<span id="dqx1ids_oer.dita__preq-ph-cmxc3">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</span></div></div>
+<p>
+<p>レプリケーション プラグインを使用すると、以下のように ER サーバおよびドメインを監視できます。</p></p>
+<ul>
+<li>ER ドメインと既知のすべてのノードのトポロジの表示。</li>
+<li>ドメイン内のノードに関するサマリと詳細情報の表示。</li>
+<li>ドメイン内のレプリケートおよびレプリケート セットに関する詳細情報の表示。</li>
+<li>ドメインのアラートしきい値の設定。</li></ul>
+<p>以下の ER 管理タスクを完了できます。</p>
+<ul>
+<li>ER サーバ、レプリケート、およびレプリケート セットの定義および変更。</li>
+<li>テンプレートを使用して ER をセットアップ。</li>
+<li>サーバ、レプリケート セット、およびレプリケートの状態の管理。</li>
+<li>レプリケーション サーバ間のデータの再同期。</li>
+<li>サーバの ER 構成パラメータの変更。</li></ul>
+<p>ドメイン内の相互接続されたレプリケーション サーバのグリッドを作成して管理できます。</p>
+<ul>
+<li>ドメイン内のグリッドに関する情報の表示。</li>
+<li>グリッドの作成、およびソース サーバとユーザに対するグリッド コマンドの実行可能化。</li>
+<li>サーバの追加、ソース サーバの有効化または無効化、あるいは追加ユーザへの許可を行うための、グリッドの変更。</li>
+<li>グリッド コマンドの状態の確認と、障害のあったグリッド コマンドの再実行。</li>
+<li>接続マネージャ用のサービス レベル アグリーメント (SLA) の構成による、複製されたデータの品質を基にした、クライアント接続のグリッド内サーバへのルーティング。</li></ul>
+<p>クラスタ、グリッド、レプリケーション セット、およびサーバ セットの組み合せに対するクライアント接続要求を管理するため、接続マネージャを定義できます。接続マネージャへの接続単位の追加、接続マネージャの起動と停止、およびサービス レベル アグリーメント (SLA) の作成ができます。</p>
+<h2 id="dqx1ids_oer_002"><a href="#ToC_2">レプリケーション プラグインのセットアップ</a></h2>
+<div>
+<p>エンタープライズ レプリケーション (ER) を監視および管理するには、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) をセットアップします。</p></div>
+<p>
+<p>レプリケーション プラグインをセット アップするには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>レプリケーション プラグインをインストールします。</li>
+<li>OAT グループを作成します。</li>
+<li>既存の ER ドメイン内のいずれかのサーバまたはエンタープライズ レプリケーション用に定義するサーバの OAT にログオンします。
+
+<p>レプリケーション プラグインのインストールおよび OAT グループの作成の詳細については、OAT ヘルプを参照してください。ヘルプにアクセスするには、OAT のメニューで<strong>「ヘルプ」</strong>&gt;<strong>「OAT タスク ヘルプ」</strong>をクリックします。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_470.htm#ids_erp_470" target="_blank">エンタープライズ レプリケーションのセットアップおよび管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h2 id="dqx1ids_oer_003"><a href="#ToC_3">エンタープライズ レプリケーションの監視</a></h2>
+<div>
+<p>エンタープライズ レプリケーション サーバおよびドメインを監視するには、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) を使用します。</p></div>
+<p>
+<p></p></p>
+<h3 id="dqx1ids_oer_004"><a href="#ToC_4">ER ドメインのトポロジの表示</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメインのトポロジ、つまりルーティング マップを表示します。</p></div>
+<p>
+<p>現行ドメインのトポロジを表示するには、IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</p>
+<p>「<strong>ドメイン</strong>」ページに、現行ノードに認識されているすべての ER ドメイン ノードが表示されます (例えば、リーフ ノードはそれ自体とその親を認識します)。ノードは、SQLHOSTS ファイルに定義されているグループ名で指示されます。</p></p>
+<div>
+<div class="notetitle" id="wq9">重要:</div>
+<div class="notebody">非ルート ノードまたはリーフ ノードに接続されている場合、表示できる情報と実行できる操作は限定されます。さらに多くにアクセスするには、ドメイン内のルート ノードに切り替えてください。</div></div>
+<p>「<strong>ドメイン</strong>」ページで、以下の操作を実行できます。</p>
+<ul>
+<li>ビジュアル アラートを検討することにより注意の必要なノードがあるかどうかを判断します。</li>
+<li>ノード アイコン上にマウスを移動してノード名とノード メンバを表示する。</li>
+<li>展開アイコンをクリックして、非リーフ ノードのサブツリーを表示または非表示にする。</li>
+<li>ビューをカスタマイズする。<ul>
+<li>ドメインをズームインまたはズームアウトするには、「ズーム」スライダを使用します。</li>
+<li>リフレッシュ レートを表示するには、クロック アイコンをクリックします。</li>
+<li>リフレッシュ レートを変更するには、クロック アイコンをクリックしてから、スライダを使用して 0 秒から 300秒までのリフレッシュ レートを指定します。</li>
+<li>ノード間の接続線を表示するには、「標準ビュー (Normal View)」アイコンをクリックします。</li>
+<li>接続線を非表示にするには、「接続非表示ビュー (No Connection View)」アイコンをクリックします。</li></ul></li></ul>
+<p>リスト内のドメインにあるサーバを表示するには、「<strong>サーバ リスト</strong>」タブをクリックします。各サーバについて、リストに、状態、メンバ サーバ、タイプ、親 (該当する場合)、IBM Informix のバージョン、およびサーバが最後に監視された日時が表示されます。</p>
+<h3 id="dqx1ids_oer_005"><a href="#ToC_5">アラートしきい値の構成</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメインのアラート用のしきい値を構成します。</p></div>
+<p>
+<p>アラートしきい値に達すると、管理者に通知が送信されて、「<strong>ドメイン</strong>」ページにアラート アイコンが表示されます。
+アラートしきい値は、ER ドメイン内のすべてのノードに適用されます。</p>
+<p>しきい値を構成するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>しきい値の編集 (Edit Thresholds)</strong>」をクリックします。</li>
+<li>しきい値を活動化するには、しきい値の「<strong>有効化 (Enable)</strong>」チェック ボックスを選択します。しきい値を非活動化するには、チェック ボックスを消去します。</li>
+<li>フィールド内にしきい値を入力するか、または変更します。</li>
+<li>「<strong>しきい値の更新</strong>」をクリックして、変更内容を保持します。</li></ol>
+<h3 id="dqx1ids_oer_006"><a href="#ToC_6">エンタープライズ レプリケーション ドメインに関するアラートの検査</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内のノードに関するアラートを検査します。</p></div>
+<p>
+<p> アラートは、ノードがアラートしきい値に一致するか超えると発生します。</p>
+<p>アラートを検査するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」&gt;「<strong>ER ドメイン</strong>」をクリックします。
+
+<p>アラートのあるノードは強調表示されます。</p></li>
+<li>ノードをクリックしてから、「<strong>操作</strong>」メニューで「<strong>ノードの状態</strong>」をクリックします。
+
+<p>ページに、ノードのプロファイル データとアラートが表示されます。</p></li>
+<li>選択したノードのレプリケーション動作を確認するには、「<strong>操作</strong>」メニューで「<strong>ノード詳細</strong>」をクリックします。
+
+<p>「<strong>サマリ</strong>」ページに、選択したノードのハイレベル統計が表示されます。タブをクリックして、ノードに関する詳細情報を表示します。</p>
+
+<ul>
+<li>「<strong>キャプチャ</strong>」: 選択したノードでのデータ キャプチャ動作。</li>
+<li>「<strong>送信キュー</strong>」: 選択したノードとそのターゲット ノードおよびレプリケートの送信キュー。</li>
+<li>「<strong>ネットワーク</strong>」: 選択したノードとそのパートナー ER ノードとの間のネットワーク動作。</li>
+<li>「<strong>ディスク使用量</strong>」: 送信キューと受信キューがフルになり、トランザクションがディスクにスプールされる場合に、選択したノードが使用する領域。</li>
+<li>「<strong>適用</strong>」: 現行のノードで適用されたレプリケート トランザクション。</li>
+<li>「<strong>ATS</strong>」: 選択したノードの中断トランザクション スプール (ATS) ファイル。このページから ATS ファイルを使用することで、失敗したトランザクションを修復できます。</li>
+<li>「<strong>RIS</strong>」: 選択したノードの行情報スプール (RIS) ファイル。このページから RIS ファイルを使用することで、失敗したトランザクションを修復できます。</li>
+<li>「<strong>エラー</strong>」: 選択したノードまたはドメインに関連するエラー。</li>
+<li>「<strong>構成</strong>」:選択したノードに対し定義されている ER 構成パラメータ。このページからパラメータを編集できます。</li></ul></li></ol>
+<h3 id="dqx1ids_oer_007"><a href="#ToC_7">エンタープライズ レプリケーション ノードの状態の表示</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内のノードの状態を表示します。</p></div>
+<p>
+<p>ER ドメイン内のノードの状態は、以下のようにして表示できます。</p>
+<ul>
+<li>IBM OpenAdmin Tool (OAT) for Informix の接続先のノードを表示するには、OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。ノードの詳細ページが表示されます。</li>
+<li>ドメイン内の各ノードを表示するには、ノードをクリックします。次に「<strong>操作</strong>」メニューで「<strong>ノードの状態</strong>」をクリックします。OAT はドメイン内の選択したノードに接続し、そのノードの詳細ページが表示されます。</li></ul></p>
+<h4 id="dqx1ids_oer_008">現行ノードでのレプリケーション動作のサマリの表示</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内にある IBM OpenAdmin Tool (OAT) for Informix の接続先のノードで、レプリケーション動作のサマリを表示します。</p></div>
+<p>
+<p>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>をクリックします。</p>
+<p>「<strong>サマリ</strong>」ページに、OAT の接続先ノードのレプリケーション動作のハイレベル サマリが表示されます。詳細情報を表示するには、セクションに対応するタブをクリックします。</p>
+<table id="wq18" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>表 1. ノードのサマリ</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq19" align="left">セクション</th>
+<th id="wq20" align="left">説明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq19"><strong>ディスク使用量</strong></td>
+<td headers="wq20">「<strong>行データの SB 領域</strong>」フィールドで、 行データ スプールに使用される領域量 (および割合) を示します。この値が大きいときは、追加領域が必要となる場合があります。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>エラー</strong></td>
+<td headers="wq20">「<strong>未検討エラー (Unreviewed Errors)</strong>」フィールドには、読む必要のあるエラーの番号が表示されます。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>レプリケート</strong></td>
+<td headers="wq20">「<strong>アクティブ レプリケート (Active Replicates)</strong>」フィールドは、このノードのピアである既知のレプリケートがアクティブになっている数を示します。レプリケートで、レプリケーション関係先とデータをレプリケートする方法についてのさまざまな属性 (頻度やレプリケーション中の競合を処理する方法など) を定義します。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>キャプチャ</strong></td>
+<td headers="wq20">このセクションには、論理ログからのトランザクションのキャプチャに関する統計情報、ログの場所、およびユーザ トランザクション ブロック (DDRBLOCK) への接近性が表示されます。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>適用</strong></td>
+<td headers="wq20">このセクションには、選択したノードでの適用動作に関する統計情報が表示されます。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>送信キュー</strong></td>
+<td headers="wq20">このセクションには、ソース ノードの送信キュー内のトランザクションの順序に関する統計情報が表示されます。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>受信キュー</strong></td>
+<td headers="wq20">このセクションには、選択したノードの受信キュー内のトランザクションに関する統計情報が表示されます。</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>ネットワーク</strong></td>
+<td headers="wq20">このセクションには、選択したノードとそのパートナー ER ノードとの間のネットワーク動作に関する統計情報が表示されます。</td>
+</tr>
+</tbody>
+</table></p>
+<h4 id="dqx1ids_oer_009">ノードをレプリケーション ソースとして表示</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内のノードをソース サーバとして表示します。</p></div>
+<p>
+<p>ER は、ターゲット ノードにレプリケートされるトランザクションの論理ログを監視して、それらをソース サーバの送信キューにコピーします。</p>
+<p>IBM OpenAdmin Tool (OAT) for Informix の各ページ (<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>、<strong>「キャプチャ」</strong>、<strong>「送信キュー」</strong>) で、トランザクションおよび送信キューに関する詳細情報を確認できます。</p></p>
+<h4 id="dqx1ids_oer_010">ノードをレプリケーション ターゲットとして表示</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内のノードをターゲット サーバとして表示します。</p></div>
+<p>
+<p>受信キューは、現行データベース ノードで適用されるトランザクション用の待機域です。ER は、トランザクションを現行のデータベースに適用し、トランザクションが正常にレプリケートされた時点でソース ノードに通知を行います。</p>
+<p>IBM OpenAdmin Tool (OAT) for Informix の各ページ (<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>、<strong>「送信キュー」</strong>、<strong>「適用」</strong>、<strong>「ATS」</strong>、<strong>「RIS」</strong>) で、トランザクションおよび送信キューに関する詳細情報を確認できます。</p></p>
+<h3 id="dqx1ids_oer_011"><a href="#ToC_11">ノードのログ キャプチャ情報の監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードでのログ キャプチャ動作に関する詳細情報を表示します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「キャプチャ」</strong>をクリックします。「<strong>キャプチャ</strong>」ページに次の情報が表示されます。</p></p>
+<ul>
+<li>現行ノードでの ER ログ キャプチャの状態 (実行中、ダウン、または未初期化)。</li>
+<li>現行のログの位置、およびレプリケーション用のトランザクションがキャプチャされるログ位置。ログ位置を比較して、ER が進行中のデータベース トランザクションを追随しているかどうかを判別します。</li>
+<li>ログの再実行位置。これは、障害発生後に、ER がログ更新バッファへのログ情報の再読み取りを開始する位置です。すべてのターゲット サーバでこの位置より前に生成されたトランザクションはすべて、ER によって適用されているか、または安定キュー領域に格納されています。<div>
+<div class="notetitle" id="wq24">重要:</div>
+<div class="notebody">データの損失を防ぐために、ログの再実行位置が上書きされないようにしてください。再実行位置が前進しない場合は、キューがフルか遠隔ノードがダウンしている可能性があります。</div></div></li>
+<li>ログ ページの合計数、および ER がトランザクション ブロック状態 (別名 DDRBLOCK モード) になるまでのページの数。</li>
+<li>論理ログが循環し、ER がまだ処理していないトランザクションが上書きされるまでのページの数。</li>
+<li>ログ キャプチャ中にログ キャプチャ キャッシュおよびディスク上のスプールされたログ項目から読み取るログ ページの数、およびログ キャッシュのオーバーフローの有無。</li>
+<li>DDRBLOCK モードを回避するために動的ロギングが有効かどうか、および要求できる動的論理ログの数、動的論理ログを作成するために実行された要求の数などの関連情報。</li></ul>
+<h4 id="dqx1ids_oer_012">レプリケーション用のトランザクションがキャプチャされているかどうかの判別</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードでのログ キャプチャ動作を確認します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「キャプチャ」</strong>をクリックします。キャプチャ状態およびログ位置のフィールドを確認します。このフィールドの進行状況表示が、トランザクションがアクティブにキャプチャされているかどうかの判別に役立ちます。</p></p>
+<table id="wq26" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>表 2. キャプチャの詳細</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq27" align="left">フィールド</th>
+<th id="wq28" align="left">説明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>キャプチャ状態</strong></td>
+<td headers="wq28">現行ノードでのログ キャプチャの状態 (実行中、ダウン、または未初期化)。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>現行ログ位置</strong></td>
+<td headers="wq28">現行トランザクションの論理ログ位置。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>キャプチャ ログ位置</strong></td>
+<td headers="wq28">レプリケーション用のトランザクションがキャプチャされる論理ログ位置。キャプチャ ログ位置と現行ログ位置を比較して、ER がトランザクションを追随しているかどうかを判別します。</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>再実行ログ位置</strong></td>
+<td headers="wq28">障害発生後に、ER がログ更新バッファへのログ情報の再読み取りを開始する位置。すべてのターゲット サーバでこの位置より前に生成されたトランザクションはすべて、ER によって適用されているか、または安定キュー領域に格納されています。<div>
+<div class="notetitle" id="wq29">重要:</div>
+<div class="notebody">データの損失を防ぐために、ログの再実行位置が上書きされないようにしてください。再実行位置が前進しない場合は、キューがフルか遠隔ノードがダウンしている可能性があります。</div></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dqx1ids_oer_013">ノードのログ キャプチャの進行状況の監視</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードでのログ キャプチャの進行状況を確認します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「キャプチャ」</strong>をクリックします。「<strong>現行ログ位置</strong>」フィールドと「<strong>キャプチャ ログ位置</strong>」フィールドを定期的に確認し、ER が進行中のデータベース トランザクションを追随しているかどうかを判別します。</p></p>
+<h4 id="dqx1ids_oer_014">DDRBLOCK およびログ循環の防止</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) がトランザクション ブロック状態 (別名 DDRBLOCK モード) になるのを防止します。</p></div>
+<p>
+<p>論理ログが循環すると、ER がまだ処理していないトランザクションが上書きされます。トランザクションは、送信キューに格納される前に失われます。データベース サーバでログ循環への切り替えが近づいてくると、ER は DDRBLOCK モードになります。ER を構成することで、DDRBLOCK モードに移行する代わりに、論理ログ ファイルが動的に追加されるようにすることができます。</p></p>
+<ul>
+<li>DDRBLOCK への接近性を監視するには、IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「キャプチャ」</strong>をクリックします。<strong>「DDRBLOCK への接近性」</strong>フィールドを確認します。このフィールドには、ER が DDRBLOCK に移行するまでの論理ログ領域内のページの数が表示されます。</li>
+<li>DDRBLOCK を防止するには、ER を構成して、論理ログ ファイルが動的に追加されるようにします。OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細</strong>」&gt;「<strong>構成」</strong>をクリックし、DYNAMIC_LOGS パラメータおよび CDR_MAX_DYNAMIC_LOGS パラメータを設定します。</li>
+<li>ログ循環への接近性を監視するには、OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「キャプチャ」</strong>をクリックします。<strong>「ログ循環への接近性」</strong>フィールドを確認します。このフィールドには、論理ログが循環するまでの論理ログ領域内のページの数が表示されます。</li></ul>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">発生する可能性のあるログ循環への対処 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_015">動的ログ ファイル割当ての有効化</h4>
+<div>
+<p>論理ログ ファイルが動的に追加されるように ER を構成することで、エンタープライズ レプリケーション (ER) がトランザクション ブロック状態 (別名 DDRBLOCK モード) になるのを防止します。</p></div>
+<p>
+<p>論理ログが循環すると、ER がまだ処理していないトランザクションが上書きされます。トランザクションは、送信キューに格納される前に失われます。データベース サーバでログ循環への切り替えが近づいてくると、ER は DDRBLOCK モードになります。ER を構成することで、DDRBLOCK モードに移行する代わりに、論理ログ ファイルが動的に追加されるようにすることができます。</p>
+<p>動的ログ ファイル割当てを有効にするには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「構成」</strong>をクリックします。</li>
+<li>「<strong>構成の編集</strong>」をクリックします。</li>
+<li>「<strong>DYNAMIC_LOGS</strong>」に <samp class="xph">2</samp> を入力して、動的ログ ファイル割当てを有効にします。</li>
+<li>「<strong>CDR_MAX_DYNAMIC_LOGS</strong>」に、セッションにおいて ER が実行できる動的ログ ファイル要求の数を入力します。または、<samp class="xph">-1</samp> を入力して、ログが無制限に追加されるようにします。</li></ol>
+<p>
+<p></p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">発生する可能性のあるログ循環への対処 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h3 id="dqx1ids_oer_016"><a href="#ToC_16">ノードの送信キューの監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードの送信キューに関する統計、および現行ノードがレプリケートトランザクションのソースであるとき、そのターゲット ノードとレプリケートに関する統計を監視します。</p></div>
+<p>
+<p>ER は論理ログから情報を収集して、転送するデータを送信キューに配置します。送信キューを監視するには、IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション</strong>」&gt;「<strong>ノード詳細」</strong>&gt;<strong>「送信キュー」</strong>をクリックします。</p>
+<p></p>
+<p>「<strong>送信キュー</strong>」ページに、送信キュー内のトランザクションに関する統計情報が表示されます。このページでは、格納領域、ターゲット ノードに送信されるトランザクション、送信キュー内のトランザクションに必要なメモリに関する情報が提供されます。また、現行ノードがレプリケート トランザクションのソースであるとき、そのターゲット ノードとレプリケートに関する情報も提供されます。</p></p>
+<ul>
+<li>キューにあるトランザクションの数とこれらが格納されるかどうかを判別するには、「<strong>キュー内のトランザクション</strong>」、「<strong>メモリ内のトランザクション</strong>」、および「<strong>スプールされたトランザクション</strong>」フィールドを確認してください。</li>
+<li>ターゲット ノードでトランザクションが適用されているかどうか判別するには、「<strong>キャプチャ ログ位置</strong>」フィールドを確認します。これと「<strong>最後のデータ肯定応答 (Last Data Acknowledged)</strong>」フィールドを比較します。このフィールドでは、ターゲット ノードで適用された最後のトランザクションの論理ログ位置が示されます。</li>
+<li>トランザクションを適用していないターゲット ノードがあるかどうか判別するには、「<strong>中断状態のノード</strong>」フィールドを確認します。また、「<strong>ターゲット ノード</strong>」タブをクリックして、各関連ターゲット ノードの接続状態を確認します。</li>
+<li>現行ノードがデータをレプリケートする先のターゲット ノードの状態を表示するには、「<strong>ターゲット ノード</strong>」タブをクリックします。</li>
+<li>現行ノードのレプリケートを表示するには、「<strong>レプリケート</strong>」タブをクリックします。</li></ul>
+<h4 id="dqx1ids_oer_017">現行ノードに関連したターゲット ノードおよびレプリケートの表示</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードがレプリケート トランザクションのソースであるとき、そのターゲット ノードとレプリケートを表示します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「送信キュー」</strong>をクリックし、<strong>「ターゲット ノード」</strong>タブまたは<strong>「レプリケート」</strong>タブをクリックします。</p></p>
+<h3 id="dqx1ids_oer_018"><a href="#ToC_18">エンタープライズ レプリケーション ノードのネットワーク入出力の監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードのネットワーク入出力のサマリを監視します。現行ノードとその関連ノードに関する詳細情報を確認します。</p></div>
+<p>
+<p>現行ノードのネットワーク動作を検査するには、IBM OpenAdmin
+Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>をクリックします。「<strong>サマリ</strong>」ページの「<strong>ネットワーク</strong>」セクションに次の情報が表示されます。</p></p>
+<ul>
+<li>接続状態のノード数</li>
+<li>現行ノードによって送信されたメッセージ数</li>
+<li>現行ノードによって受信されたメッセージ数</li>
+<li>現行ノードでのスループット率</li>
+<li>接続などの問題によって送信されなかったメッセージ数</li></ul>
+<p>現行ノードと関連ノードのネットワーク状況を確認するには、OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「ネットワーク」</strong>をクリックします。「<strong>ネットワーク</strong>」ページに、現行ノードに対してメッセージを送受信したピア ノードとのネットワーク動作に関する情報が表示されます。ピア ノード名は、<strong>sqlhosts</strong> ファイルに定義されているグループ名としてリストされます。</p>
+<ul>
+<li>現行ノードでの最近のネットワーク動作を確認するには、「<strong>ネットワークの詳細</strong>」グラフを確認します。このグラフには、時間の経過に伴うメッセージ数が表示されます。リフレッシュ レート (0 秒から 60 秒の範囲) を表示または変更するには、クロック アイコンをクリックします。</li>
+<li>ピア ノードの接続状態を確認するには、「<strong>状態</strong>」列を確認します。</li>
+<li>ピア ノードのネットワーク インターフェイス (NIF) 状態を確認するには、「<strong>接続</strong>」列を確認します。</li></ul>
+<h3 id="dqx1ids_oer_019"><a href="#ToC_19">ノードのディスク領域使用量の監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードで使用されているディスク領域使用量を監視します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「ディスク使用量」</strong>をクリックします。「<strong>ディスク使用量</strong>」ページに、ER で使用される次の 3 つの領域に関する情報が表示されます。</p>
+<ul>
+<li><strong>行データ SB 領域</strong>: レプリケートされるデータを格納する SB 領域。これは、CDR_QDATA_SBSPACE パラメータで定義されます。</li>
+<li><strong>トランザクション レコード DB 領域</strong>: トランザクション レコードを格納する DB 領域。これらの領域は、CDR_QHDR_DBSPACE パラメータで定義されます (このパラメータが定義されている場合)。領域が定義されていない場合、デフォルトでは、トランザクション レコードはルート DB 領域に格納されます。</li>
+<li><strong>グループ化機能ページング SB 領域</strong>: 大規模なトランザクション処理に使用される SB 領域。これらの領域は、最初に SBSPACETEMP パラメータで定義されます (パラメータが定義されている場合)。次に SBSPACENAME パラメータで定義されます (パラメータが定義されている場合)。これらのパラメータが定義されていない場合、CDR_QDATA_SBSPACE パラメータで定義されます。</li></ul></p>
+<div>
+<div class="notetitle" id="wq40">重要:</div>
+<div class="notebody">これらの領域がフルの場合、スプーリングを発生させる問題を解決するか、または追加のディスク領域を割り当てるまで、ER はハングします。</div></div>
+<p>これらのパラメータの値を変更するには、OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「構成」</strong>をクリックし、<strong>「構成の編集」</strong>をクリックします。</p>
+<h3 id="dqx1ids_oer_020"><a href="#ToC_20">ノードの受信キューの監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードで、受信キューに入れられたトランザクション、および受信キュー内の保留トランザクションを監視します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>をクリックします。「<strong>受信キュー</strong>」セクションを確認します。このセクションには、キューに入れられたトランザクションおよび保留トランザクションの数がリストされます。</p></p>
+<ul>
+<li>キューに入れられたトランザクションは、現行ノードでピア ノードから受信されて受信キューに格納されています。</li>
+<li>保留トランザクションは、ターゲット ノードで適用されるのを待機しています。</li></ul>
+<h3 id="dqx1ids_oer_021"><a href="#ToC_21">ターゲット ノードでのレプリケート データの適用方法の監視</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードでのレプリケート データの適用方法を監視します。</p></div>
+<p>
+<p>ターゲット ノードが他のノードからトランザクションを受信し、それらのトランザクションを受信キューに格納した後、ER はトランザクションをターゲット ノードの表に適用します。</p>
+<p>現行ノードでのレプリケート データの適用方法のハイレベル サマリを表示するには、IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>をクリックします。「<strong>適用</strong>」セクションを確認します。</p>
+<p>レプリケート データの適用方法に関する詳細情報を表示するには、OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「適用」</strong>をクリックします。このページには、以下の 3 種類の情報が含まれています。</p></p>
+<ul>
+<li>現行ノードでのレプリケート データの適用方法に関する統計情報</li>
+<li>トランザクション適用比率と待ち時間比率を表示するグラフィック データ</li>
+<li>各ソース ノードに関する統計情報、および各ノードからのレプリケート データが現行ノードでどのように適用されているかについての統計情報</li></ul>
+<h4 id="dqx1ids_oer_022">トランザクション失敗の監視</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードでのトランザクション失敗の数を監視します。</p></div>
+<p>
+<p>次の方法を使用してトランザクション失敗を監視できます。</p>
+<ul>
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「サマリ」</strong>をクリックします。「<strong>適用</strong>」セクションで、次のフィールドを確認します。<ul>
+<li><strong>トランザクション失敗比率 (Transaction Fail Rate)</strong>: 秒あたりの平均トランザクション障害数。
+</li>
+<li><strong>合計失敗数</strong>: 失敗したトランザクションの合計数。</li>
+<li><strong>ATS ファイル カウント</strong>: ノードでの中断トランザクション スプール (ATS) ファイルの合計数。0 よりも大きい数は、表レベルでの障害発生の可能性を示します。</li>
+<li><strong>RIS ファイル カウント</strong>: ノードでの行情報スプール (RIS) ファイルの合計数。0 よりも大きい数は、行レベルでの障害発生の可能性を示します。</li></ul></li>
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「適用」</strong>をクリックします。現行ノードの「<strong>失敗レート</strong>」フィールドと「 <strong>合計失敗数</strong>」フィールド、およびトランザクションを送信したソース ノードがリストされる「<strong>ノードごとに統計を適用 </strong>」表を確認します。「<strong>失敗したトランザクション合計 (Total
+Failed Transactions)</strong>」列に、トランザクションを送信したノード別に、現行ノードで失敗したトランザクション数がリストされます。</li>
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「ATS」</strong>および<strong>「RIS」</strong>をクリックします。これらのページには、失敗が発生した後にトランザクションを再同期するのに使用される ATS ファイルおよび RIS ファイルがリストされます。</li></ul></p>
+<h4 id="dqx1ids_oer_023">適用待ち時間比率の判別</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードで適用されるトランザクションの待ち時間比率を確認します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「適用」</strong>をクリックします。</p></p>
+<ul>
+<li>「<strong>統計の適用</strong>」セクションで、「<strong>平均待ち時間</strong>」フィールドと「<strong>最大待ち時間</strong>」フィールドを確認します。</li>
+<li>「<strong>待ち時間</strong>」グラフを確認します。</li>
+<li>ソース ノード別の待ち時間比率については、「<strong>ノードごとに統計を適用</strong>」セクションを確認します。</li></ul>
+<p></p>
+<h3 id="dqx1ids_oer_024"><a href="#ToC_24">失敗したトランザクションに関する ATS ファイルおよび RIS ファイルの確認</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードで失敗したトランザクションについて、中断トランザクション スプール (ATS) ファイルおよび行情報スプール (RIS) ファイルを確認します。</p></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「ATS」</strong>または<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「RIS」</strong>をクリックし、ファイル名をクリックします。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_257.htm#ids_erp_257" target="_blank">失敗したトランザクション (ATS および RIS) のファイル (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="#dqx1ids_oer_063">失敗したトランザクションを ATS ファイルを使用して修復</a>
+<br />中断トランザクション スプール (ATS) ファイルを使用して、失敗したトランザクションを修復します。ATS 修復タスクはターゲット サーバでの適用に失敗した行を調整します。</li>
+<li><a href="#dqx1ids_oer_064">失敗したトランザクションを RIS ファイルを使用して修復</a>
+<br />行情報スプール (RIS) ファイルを使用して、失敗したトランザクションを修復します。RIS 修復タスクはターゲット サーバでの適用に失敗した行を調整します。</li></ul>
+<h3 id="dqx1ids_oer_026"><a href="#ToC_25">エンタープライズ レプリケーションのエラーの確認</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の現行ノードのエラー、またはドメイン全体のエラーを確認します。</p></div>
+<p>
+<p>ER のエラーを確認するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>&gt;<strong>「エラー」</strong>をクリックします。</li>
+<li>「<strong>エラー</strong>」リストで、確認するエラーを選択します。<ul>
+<li>ドメイン内のすべてのノードのエラー</li>
+<li>現行ノードから送信されたコマンドの結果として他のノードで発生したエラー</li>
+<li>他のノードからのコマンドの結果として現行ノードで発生したエラー</li></ul></li>
+<li>「<strong>状態の確認 (Review Status)</strong>」リストで、確認するエラーの状態 (すべて、検討済み、または未検討) を選択します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_287.htm#ids_erp_287" target="_blank">cdr コマンド行ユーティリティ関連情報 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h3 id="dqx1ids_oer_028"><a href="#ToC_26">ER 構成パラメータの表示</a></h3>
+<div>
+<p>現行ノードのエンタープライズ レプリケーション (ER) 構成パラメータの値を表示します。</p></div>
+<p>
+<p>ER 構成パラメータを表示するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ノード詳細」</strong>をクリックします。</li>
+<li>「<strong>構成</strong>」タブをクリックします。パラメータとその現行値が表示されます。</li>
+<li>構成パラメータの値を変更するには、「<strong>構成の編集</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oer_029"><a href="#ToC_27">エンタープライズ レプリケーションの管理</a></h2>
+<div>
+<p>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) を使用して、ER サーバ、レプリケート セット、レプリケート、および関係先を定義および管理します。
+データの競合を検査し、修復します。
+ER 構成パラメータを変更します。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">重要:</div>
+<div class="notebody">レプリケーション プラグインには、IBM Informix Version
+11.50.xC4 以降が必要です。</div></div>
+<h3 id="dqx1ids_oer_070"><a href="#ToC_28">エンタープライズ レプリケーションのセットアップ</a></h3>
+<div>
+<p>これらのトピックでは、IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) を使用してエンタープライズ レプリケーション (ER) をセットアップする方法を説明します。</p></div>
+<h4 id="dqx1ids_oer_.49">エンタープライズ レプリケーション用のサーバの定義</h4>
+<div>
+<p>サーバを、既存エンタープライズ レプリケーション (ER) ドメイン内の新規ノードまたは新規 ER ドメイン内の最初のノードにします。</p></div>
+<p>
+<p>エンタープライズ レプリケーション用のサーバを定義するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>新規サーバの定義</strong>」をクリックします。</li>
+<li>「サーバの定義」ウィザードの指示に従います。</li></ol>
+<h4 id="dqx1ids_oer_048.dita">レプリケート セットの定義</h4>
+<div>
+<p>新規 レプリケート セットを作成します。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>レプリケート セットでは、複数のレプリケートを結合して、ユニットとしてまとめて管理できるセットを形成します。単一コマンドを使用して、セット内のすべてのレプリケートを開始、停止、一時停止、または再開することができます。</p>
+<p>レプリケート セットを定義するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>を展開し、<strong>「レプリケート」</strong>をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの定義</strong>」をクリックします。</li>
+<li>レプリケート セットの名前を入力します。名前は一意でなければならず、レプリケート名と同じにはできません。</li>
+<li>セットのレプリケートを選択します。<ul>
+<li>レプリケートを追加するには、「<strong>使用可能なレプリケート (Available
+Replicates)</strong>」リストからレプリケートを選択して「<strong>追加</strong>」または「<strong>すべて追加</strong>」をクリックします。</li>
+<li>レプリケートを削除するには、「<strong>このレプリケート セット</strong>」リストからレプリケートを選択して「<strong>削除</strong>」をクリックするか、または「 <strong>すべて削除</strong>」をクリックします。</li></ul></li>
+<li>オプション: このセットを専用のレプリケート セットにするには、<strong>「レプリケートは、このセット専用です」</strong>を選択します。</li>
+<li>レプリケート セットの頻度オプションを設定するには、「<strong>次へ (Next)</strong>」をクリックするか、デフォルト値でレプリケート セットを作成するには、「<strong>終了 (Finish)</strong>」をクリックします。</li>
+<li>オプション: レプリケーションの<strong>「頻度」</strong>を指定します。デフォルトは、データが到着すると即時です。</li>
+<li>レプリケート セットを作成するには、「<strong>終了</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_181.htm#ids_erp_181" target="_blank">排他的レプリケート セット (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_046.dita">レプリケートの定義</h4>
+<div>
+<p>データをレプリケートする頻度や競合を処理する方法など、レプリケーション関係先およびレプリケーション属性を定義します。
+</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>レプリケートの定義操作では、厳密なマスター レプリケートおよびその関係先を定義します。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+マスター レプリケートが含まれるすべてのデータベース サーバは、マスター レプリケート データベース サーバとの直接接続を確立できる必要があります。
+</p></p>
+<div>
+<div class="notetitle" id="wq62">前提条件:</div>
+<div class="notebody">表には、レプリケーション関係先となる主キーが必要です。
+また、表は実際の表である必要があります。
+シノニム、ビュー、またはシーケンスを指定することはできません。また、外部表も指定できません。
+レプリケーション関係先として指定できる表のみ、選択可能な表のリストに表示されます。
+</div></div>
+<p>レプリケートおよびレプリケーション関係先を定義するには、次の手順を実行します。
+</p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>を展開し、<strong>「レプリケート」</strong>をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの定義」</strong>をクリックします。</li>
+<li>レプリケートに固有の名前を入力します。</li>
+<li>「<strong>マスター レプリケート サーバ</strong>」リストから、マスター レプリケートのベースとして使用するサーバ グループを選択します。</li>
+<li>マスター レプリケート サーバには存在し、ターゲット サーバには存在しない表を、ターゲット サーバ上で自動的に作成するには、<strong>「ターゲット サーバ上に欠落している表を作成します」</strong>を選択します。</li>
+<li>フィルタを使用して、レプリケート内で関係先として定義する表およびレプリケーション サーバを選択します。
+<ol type="a">
+<li><strong>「データベース フィルタ」</strong>に、データベース名の一部または全部を入力します。
+</li>
+<li><strong>「表フィルタ」</strong>に、表名の一部または全部を入力します。
+各サーバについて、1 つの関係先が表示されるまで、リストのフィルタ処理を続行します。
+</li>
+<li>フィルタにより指定されたすべての関係先を選択するには、<strong>「選択」</strong>をクリックします。
+
+<p>リスト内の表をクリックすることでも、表の選択またはクリアを行うことができます。
+</p></li></ol> 
+<div>
+<div class="notetitle" id="wq66">注:</div>
+<div class="notebody">マスター レプリケート サーバは、新規レプリケート内の関係先である必要があります。
+表を選択してレプリケート内に関与させるには、マスター レプリケート サーバで表を選択する必要があります。
+</div></div></li>
+<li>関係先のタイプ (主または受信専用) を指定します。デフォルトは主です。関係先は、データの送受信を行います。
+オプションを変更するには、アイコンをクリックします。</li>
+<li>レプリケート データの適用に使用するアクセス権を指定します。
+デフォルトは表の所有者です。オプションを変更するには、アイコンをクリックします。</li>
+<li>レプリケートの拡張オプションを設定するには、<strong>「次へ」</strong>をクリックします。拡張オプションのデフォルト値でレプリケートを作成するには、<strong>「終了」</strong>をクリックします。
+
+<p>ER は、各種サーバ上の表に、一貫した列データ型および同じ列名が存在することを検証します。
+<strong>「次へ」</strong>および<strong>「終了」</strong>が無効な場合、表は整合していません。
+</p></li>
+<li>オプション: 拡張オプションを指定します。<ul>
+<li><strong>競合解決範囲</strong>。デフォルトはトランザクションです。</li>
+<li><strong>競合解決ルール</strong>。デフォルトはタイム スタンプです。
+</li>
+<li><strong>浮動小数点形式</strong>。デフォルトは IEEE です。</li>
+<li><strong>中断トランザクション スプール (ATS) を活動化する (Activate aborted transaction spooling (ATS))</strong>。
+デフォルトでは、ATS は無効になっています。</li>
+<li><strong>行情報スプール (RIS) を活動化する (Activate row information spooling (RIS))</strong>。
+デフォルトでは、RIS は無効になっています。</li>
+<li><strong>すべての行のレプリケート (Replicate full row)</strong>。デフォルトでは、すべての行がレプリケートされます。
+このオプションは有効です。</li>
+<li><strong>デスティネーションでトリガを起動 (Fire triggers at destination)</strong>。デフォルトでは、デスティネーション表ではトリガは発生しません。</li>
+<li><strong>削除された行の保持 (Retain deleted rows)</strong>。デフォルトでは、削除された行は保持されません。</li>
+<li>レプリケーションの<strong>頻度</strong>。デフォルトは、データが到着すると即時です。</li></ul></li>
+<li>レプリケートを作成するには、<strong>「終了」</strong>をクリックします。</li></ol>
+<h3 id="dqx1ids_oer_060"><a href="#ToC_32">テンプレートを使用したエンタープライズ レプリケーションのセットアップ</a></h3>
+<div>
+<p>テンプレートを使用して、エンタープライズ レプリケーションをセットアップして配置します。</p></div>
+<p>テンプレートはデータベース、表のグループ、列、および主キーに関するスキーマ情報を使用して、マスター レプリケートのグループおよびレプリケート セットを定義します。まず、テンプレートを定義してから、データをレプリケートするサーバでテンプレートをインスタンス化します。</p>
+<h4 id="dqx1ids_oer_061">テンプレートの定義</h4>
+<div>
+<p>テンプレートを作成します。テンプレートに使用する表、表が存在するデータベースとエンタープライズ レプリケーション (ER) サーバ、およびテンプレート オプションを指定します。</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>テンプレートで、マスター レプリケートのグループおよびレプリケート セットを定義します。テンプレートは、データベース、表のグループ、列属性、および行を識別する主キーに関するスキーマ情報で構成されます。</p>
+<p>テンプレートを定義するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>を展開し、<strong>「レプリケート」</strong>をクリックします。</li>
+<li>「<strong>テンプレート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>新規テンプレートの定義</strong>」をクリックします。</li>
+<li>テンプレートの名前を入力します。名前は一意でなければならず、レプリケートまたはレプリケート セット名と同じにはできません。</li>
+<li>「<strong>サーバ</strong>」リストで、表を表示するサーバ名およびデータベースを展開します。<div>
+<div class="notetitle" id="wq70">ヒント:</div>
+<div class="notebody">リストをフィルタリングするには、「<strong>サーバ フィルタ</strong>」テキスト ボックスにサーバ名を入力し、「<strong>データベース フィルタ</strong>」テキスト ボックスにデータベース名を入力します。</div></div></li>
+<li>テンプレート用の表を選択します。<ul>
+<li>データベース内のすべての表をリストに追加するには、「<strong>表</strong>」リスト内のデータベースを選択して「<strong>追加</strong>」をクリックします。</li>
+<li>特定の表を追加するには、表を選択して「<strong>追加</strong>」をクリックします。</li>
+<li>テンプレートから表を削除するには、その表を選択して「<strong>削除</strong>」をクリックするか、または「<strong>すべて削除</strong>」をクリックします。</li></ul></li>
+<li>デフォルト オプションでテンプレートを作成するには「<strong>終了</strong>」をクリックするか、または「<strong>次へ</strong>」をクリックして次のいずれかのオプションを指定してから「<strong>終了</strong>」をクリックします。<ul>
+<li><strong>競合解決範囲</strong>。デフォルトはトランザクションです。</li>
+<li><strong>競合解決ルール</strong>。デフォルトは「無視する」です。</li>
+<li><strong>浮動小数点形式</strong>。デフォルトは IEEE です。</li>
+<li><strong>中断トランザクション スプール (ATS) を活動化する (Activate aborted transaction spooling (ATS))</strong>。
+デフォルトでは、ATS は無効になっています。</li>
+<li><strong>行情報スプール (RIS) を活動化する (Activate row information spooling (RIS))</strong>。
+デフォルトでは、RIS は無効になっています。</li>
+<li><strong>デスティネーションでトリガを起動 (Fire triggers at destination)</strong>。デフォルトでは、デスティネーション表ではトリガは発生しません。</li>
+<li><strong>削除された行の保持 (Retain deleted rows)</strong>。デフォルトでは、削除された行は保持されません。</li></ul></li></ol>
+<p>
+<p>これで、「<strong>テンプレートの実体化 (Realize Template)</strong>」操作を使用して、ER ドメイン内のデータベース サーバでテンプレートをインスタンス化できます。</p></p>
+<div>
+<div class="notetitle" id="wq72">重要:</div>
+<div class="notebody">テンプレートのレプリケートに基づいて ER ドメイン内のデータをレプリケートするには、少なくとも 2 つのサーバでテンプレートをインスタンス化する必要があります。</div></div>
+<h4 id="dqx1ids_oer_062">テンプレートの実体化</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバでテンプレートをインスタンス化します。</p></div><a id="idx7"></a><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq74">前提条件:</div>
+<div class="notebody">テンプレートをインスタンス化するには、事前にテンプレートを定義しておく必要があります。『<a href="#dqx1ids_oer_061">テンプレートの定義</a>』を参照してください。</div></div>
+<p>
+<p>テンプレートをインスタンス化するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>テンプレート</strong>」タブをクリックします。</li>
+<li>テンプレートのリストから、インスタンス化するテンプレートを選択します。</li>
+<li>「<strong>アクション</strong>」メニューで、「<strong>テンプレートの実体化 (Realize Template)</strong>」をクリックします。</li>
+<li>「<strong>使用可能なサーバ (Available Servers)</strong>」リストから、テンプレートのインスタンス化を実行するサーバを選択します。<div>
+<div class="notetitle" id="wq78">ヒント:</div>
+<div class="notebody">リストをフィルタリングするには、「<strong>サーバ フィルタ</strong>」テキスト ボックスにサーバ名を入力します。</div></div></li>
+<li>デフォルト オプションでテンプレートをサーバでインスタンス化するには「<strong>終了</strong>」をクリックするか、または「<strong>次へ</strong>」をクリックして次のいずれかのオプションを指定してから「<strong>終了</strong>」をクリックします。<ul>
+<li><strong>欠落表を作成 (Create missing tables)</strong>。このオプションを選択すると、マスター レプリケート サーバに存在するがターゲット サーバに存在しない表は、ターゲット サーバに自動的に作成されます。このオプションは、デフォルトで選択されています。作成される表の DB 領域はデフォルトで、データベースと同じ DB 領域に設定されます。</li>
+<li><strong>レプリケート データに表所有者のアクセス権を適用 (Apply replicated data with table owner privileges)</strong>。
+ソース表の所有者は、テンプレートを実体化するときに作成される表の所有者とすることを指定します。デフォルトでは、表の所有者はユーザ <strong>informix</strong> です。</li>
+<li><strong>サーバを受信専用に設定 (Set the server to receive only)</strong>。ターゲット サーバは受信専用サーバであることを指定します。デフォルトでは、サーバは、レプリケート データを送信および受信します。</li>
+<li><strong>データを同期化 (Synchronize data)</strong>。サーバは、テンプレートがインスタンス化されるサーバ上でのデータ同期化のソースとして動作することを指定します。データ ソース サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。デフォルトでは、余分な行はターゲット サーバから削除されます。</li></ul></li></ol>
+<h4 id="dqx1ids_oer_092.dita">テンプレートの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) テンプレートと、このテンプレートがインスタンス化されたときに作成されたすべてのレプリケート セットを削除します。</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq80">重要:</div>
+<div class="notebody">テンプレートを削除しても、テンプレートがインスタンス化されたときに作成されたレプリケートは削除されません。</div></div>
+<p>テンプレートを削除するには、次の手順で行います。</p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>テンプレート</strong>」タブをクリックします。</li>
+<li>テンプレートを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>テンプレートの削除</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_oer_098"><a href="#ToC_36">グリッドを使用したエンタープライズ レプリケーションの管理</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのセットを管理します。グリッドの定義、サーバへのグリッド コマンド実行許可、ユーザへのコマンド実行許可、グリッド タスクの状態の監視、およびグリッド コマンドの再実行を行います。クライアント接続をグリッド内のレプリケーション サーバにルーティングします。</p></div><a id="idx12"></a>
+<div>
+<div class="notetitle" id="wq83">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_098__d6820e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">グリッドのセット アップと管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_102">グリッドの作成</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドを定義します。グリッド コマンドを実行するサーバ、およびコマンドを実行するユーザに許可を与えます。</p></div><a id="idx13"></a><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq85">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_102__d7078e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>既存の ER ドメインに基づいてグリッドを定義できます。</p></p>
+<p>
+<p>グリッドを作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>ER ドメイン内のレプリケーション サーバに接続するため、OAT ログイン ページから、あるいは OAT ページの上部にある「<strong>サーバ</strong>」リストから、サーバを選択します。</li>
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>グリッドの作成</strong>」をクリックします。</li>
+<li>ページのフィールドすべてに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">グリッドのセット アップと管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_109">グリッドの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドを削除します。</p></div><a id="idx17"></a><a id="idx18"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq90">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_109__d7757e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>グリッドを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>グリッドの削除</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_103">グリッドへのメンバの追加</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドにサーバを追加し、オプションでグリッド コマンドの実行元にするサーバに許可を与えます。</p></div><a id="idx19"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq94">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_103__d7168e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>ER ドメインにある他のサーバをグリッドに追加できます。</p></p>
+<p>
+<p>グリッドにサーバを追加するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>グリッド メンバ</strong>」ページの「<strong>操作</strong>」メニューで、「<strong>メンバの追加</strong>」をクリックします。</li>
+<li>ページのフィールドすべてに入力します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">グリッドのセット アップと管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_108">グリッドのユーザの変更</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドで、グリッド コマンドを実行できるようにユーザに許可を与えるか、あるいはユーザに付与したグリッド コマンドの実行許可を削除します。</p></div><a id="idx20"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq99">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_108__d7667e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>許可ユーザは、グリッド内のどのソース サーバからでもグリッド コマンドを実行できます。</p></p>
+<p>
+<p>グリッドのユーザを変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>グリッド メンバ</strong>」ページの「<strong>操作</strong>」メニューで、「<strong>ユーザの変更</strong>」をクリックします。</li>
+<li>ページのフィールドすべてに入力します。</li></ol>
+<h4 id="dqx1ids_oer_104">グリッドにあるソース サーバの有効化または無効化</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドでサーバにコマンド実行を可能にするか、あるいはサーバに付与された許可を削除します。</p></div><a id="idx21"></a><a id="idx22"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq104">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_104__d7258e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>ソース サーバで実行されるグリッド コマンドは、グリッド内の他のすべてのサーバに伝搬します。グリッド コマンドを実行できるのは、ソース サーバのみです。メンバ サーバは、グリッド コマンドの実行許可を与えられていません。</p></p>
+<p>
+<p>グリッドにあるソース サーバを有効化または無効化するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>グリッド メンバ</strong>」ページでサーバをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>ソース サーバの有効化</strong>」と「<strong>ソース サーバの無効化</strong>」のいずれか該当する操作をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">グリッドのセット アップと管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_105">グリッド タスクの状態の監視</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッドを介して実行されるタスクの状態を監視します。</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq109">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_105__d7354e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>ソース サーバで実行されるグリッド コマンドは、グリッド内の他のすべてのサーバに伝搬します。</p></p>
+<p>
+<p>グリッド タスクの状態を監視するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>状態</strong>」タブをクリックします。
+
+<p>特定のサーバ上のコマンドの結果を表示するには、コマンドを含む行を展開します。詳細を表示するには、グリッド メンバの詳細アイコンをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_106">グリッド コマンドの再実行</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッド内の 1 つ以上のサーバで失敗したコマンドを再実行します。</p></div><a id="idx25"></a><a id="idx26"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq114">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_106__d7450e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>ソース サーバで実行されるグリッド コマンドは、グリッド内の他のすべてのサーバに伝搬します。コマンドは、失敗したサーバ上で再実行できます。</p>
+<p>グリッドにサーバを追加すると、そのグリッドを介して前に実行されたコマンドはすべて、当該サーバに対して保留状態になります。新規グリッド サーバ上で前のグリッド コマンドを実行する場合は、コマンドを再実行してください。新規サーバ上で前のグリッド コマンドを実行しない場合は、コマンドを削除してください。</p></p>
+<p>
+<p>グリッド コマンドを再実行するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>状態</strong>」タブをクリックします。
+
+<p>特定のサーバ上のコマンドの結果を表示するには、コマンドを含む行を展開します。詳細を表示するには、グリッド メンバの詳細アイコンをクリックします。</p></li>
+<li>コマンドをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>コマンドの再実行</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_566.htm#ids_erp_566" target="_blank">失敗したグリッド ルーチンの再実行 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_550.htm#ids_erp_550" target="_blank">ifx_grid_redo() プロシジャ (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_107">グリッド コマンドの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内の相互接続されたレプリケーション サーバのグリッド内にあるサーバで実行したコマンドに関する、メタデータとタスク状況を削除します。</p></div><a id="idx27"></a><a id="idx28"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq119">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_107__d7562e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>ソース サーバで実行されるグリッド コマンドは、グリッド内の他のすべてのサーバに伝搬します。正常に完了したグリッド コマンドまたは再実行する計画のないグリッド コマンドは削除できます。完了したグリッド コマンドを時折削除することにより、グリッド コマンドが格納されたデータベースが大きくなりすぎないようにしてください。</p>
+<p>グリッドにサーバを追加すると、そのグリッドを介して前に実行されたコマンドはすべて、当該サーバに対して保留状態になります。新規グリッド サーバ上で前のグリッド コマンドを実行する場合は、コマンドを再実行してください。新規サーバ上で前のグリッド コマンドを実行しない場合は、コマンドを削除してください。</p></p>
+<p>
+<p>グリッド コマンドを削除するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「グリッド」</strong>をクリックします。</li>
+<li>「<strong>グリッド</strong>」リスト内のグリッドをクリックします。</li>
+<li>「<strong>状態</strong>」タブをクリックします。</li>
+<li>コマンドをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>削除</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_562.htm#ids_erp_562" target="_blank">グリッドの管理 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_557.htm#ids_erp_557" target="_blank">ifx_grid_purge() プロシジャ (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_111">グリッドでのクライアント接続のルーティング</h4>
+<div>
+<p>接続マネージャ用のサービス レベル アグリーメント (SLA) を構成することにより、複製されたデータとトランザクション待ち時間との品質を基にして、クライアント接続をグリッド内のレプリケーション サーバにルーティングします。</p></div><a id="idx29"></a>
+<div>
+<div class="notetitle" id="wq123">前提条件:</div>
+<div class="notebody">グリッドを使用するために、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) は、IBM Informix 11.70 を必要とします。接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>接続マネージャは SLA を使用して、クライアント アプリケーションと接続するサーバを決定します。SLA を作成することにより、グリッド内レプリケーション サーバへのクライアント接続のルーティングを、最小待ち時間、最小適用失敗回数、および最小ワークロードを基にして行えます。</p>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1387.htm#ids_admin_1387" target="_blank">高可用性およびスケーラビリティをサポートするコンポーネント (管理者ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">グリッドでのクライアント接続のルーティング (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm ユーティリティ (管理者リファレンス)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1108.htm#ids_adr_1108" target="_blank">レプリケート セット用構成ファイル (管理者リファレンス)</a></li></ul>
+<h5 id="dqx1ids_oer_113">グリッド用 SLA の表示</h5>
+<div>
+<p>接続マネージャが監視する接続を使用するグリッド用のサービス レベル アグリーメント (SLA) を表示します。</p></div><a id="idx30"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq125">前提条件:</div>
+<div class="notebody">グリッドを使用するために、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) は、IBM Informix 11.70 を必要とします。接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>接続マネージャは SLA を使用して、クライアント アプリケーションと接続するサーバを決定します。</p></p>
+<p>
+<p>グリッド用 SLA を表示するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>リスト内のグリッドをクリックします。</li>
+<li>グリッドの SLA タブをクリックします。</li></ol>
+<h5 id="dqx1ids_oer_110">グリッド用 SLA の作成</h5>
+<div>
+<p>接続マネージャを使用して、グリッド用サービス レベル アグリーメント (SLA) を作成します。</p></div><a id="idx31"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq130">前提条件:</div>
+<div class="notebody">グリッドを使用するために、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) は、IBM Informix 11.70 を必要とします。接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。グリッドは、接続マネージャ用の接続単位として定義されていなければなりません。</div></div>
+<p>
+<p>サービス レベル アグリーメント (SLA) は、指定されたクライアント アプリケーションと、サービス プロバイダ、この場合は Informix データベース サーバとの間の契約です。接続マネージャは、サービス レベル アグリーメントに基づき、クライアント アプリケーションを適切なサーバに接続します。接続マネージャは、クライアントの接続要求を受信すると、その要求を適切なサーバにリダイレクトするか、またはクライアント アプリケーションとサーバとの間のプロキシ サーバなどの機能にリダイレクトします。</p>
+<p>データ品質を監視している場合、接続マネージャによるクライアント接続のレプリケーション サーバへのルーティングを、適用失敗回数、トランザクション待ち時間、およびワークロードを基にして行えます。データ品質を監視していない場合、接続マネージャによるクライアント接続のルーティングは、ワークロードのみを基にして行えます。適用の失敗と SLA での待ち時間を指定するには、データ品質の監視を有効化するように、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>ページでグリッド メンバであるサーバを変更します。</p></p>
+<p>
+<p>グリッド用 SLA を作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>リスト内のグリッドをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>SLA の作成</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm ユーティリティ (管理者リファレンス)</a></li></ul>
+<h5 id="dqx1ids_oer_112">グリッド用 SLA の変更</h5>
+<div>
+<p>接続マネージャを使用して、グリッド用サービス レベル アグリーメント (SLA) を変更します。</p></div><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq135">前提条件:</div>
+<div class="notebody">グリッドを使用するために、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) は、IBM Informix 11.70 を必要とします。接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>サービス レベル アグリーメント (SLA) は、指定されたクライアント アプリケーションと、サービス プロバイダ、この場合は Informix データベース サーバとの間の契約です。接続マネージャは、サービス レベル アグリーメントに基づき、クライアント アプリケーションを適切なサーバに接続します。接続マネージャは、クライアントの接続要求を受信すると、その要求を適切なサーバにリダイレクトするか、またはクライアント アプリケーションとサーバとの間のプロキシ サーバなどの機能にリダイレクトします。</p>
+<p>データ品質を監視している場合、接続マネージャによるクライアント接続のレプリケーション サーバへのルーティングを、適用失敗回数、トランザクション待ち時間、およびワークロードを基にして行えます。データ品質を監視していない場合、接続マネージャによるクライアント接続のルーティングは、ワークロードのみを基にして行えます。適用の失敗と SLA での待ち時間を指定するには、データ品質の監視を有効化するように、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>ページでグリッド メンバであるサーバを変更します。</p></p>
+<p>
+<p>グリッド用 SLA を変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>リスト内のグリッドをクリックします。</li>
+<li>「SLA」タブをクリックします。</li>
+<li>リスト内の SLA をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>SLA の変更</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">oncmsm ユーティリティ (管理者リファレンス)</a></li></ul>
+<h5 id="dqx1ids_oer_114">グリッド内のデータ品質の監視</h5>
+<div>
+<p>グリッド内のサーバ上にある複製されたデータの品質を監視することにより、接続マネージャが適用の失敗とトランザクション待ち時間を基にして、クライアント アプリケーションをサーバにルーティングできるようにします。</p></div><a id="idx33"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq140">前提条件:</div>
+<div class="notebody">グリッドを使用するために、IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) は、IBM Informix 11.70 を必要とします。接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p> データ品質を監視している場合、接続マネージャによるクライアント接続のレプリケーション サーバへのルーティングを、適用失敗回数、トランザクション待ち時間、およびワークロードを基にして行えます。データ品質を監視していない場合、接続マネージャによるクライアント接続のルーティングは、ワークロードのみを基にして行えます。接続マネージャはサービス レベル アグリーメント (SLA) を使用して、クライアント アプリケーションと接続するサーバを決定します。SLA は、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>ページで構成します。</p></p>
+<p>
+<p>グリッドの複製されたデータの品質を監視するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページで、グリッド内の、データ品質用マスター サーバにするサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li>データ品質監視のオプションを選択します。</li></ol>
+<p>
+<p></p>
+<p>データ品質が監視されると、グリッド内のレプリケーション サーバ上で失敗したトランザクションの数がカウントされます。データを同期するとき、グリッド内レプリケーション サーバで失敗したトランザクション数をリセットできます。あるいは、現行カウントへの追加を継続することもできます。データ品質に関して正確な情報を管理するには、データ同期の際にカウントをリセットしてください。</p>
+<p>失敗トランザクション数は、<strong>「レプリケーション」</strong>&gt;<strong>「レプリケート」</strong>&gt;<strong>「レプリケート セット」</strong>または<strong>「レプリケート」</strong>ページの<strong>「データの検査または同期」</strong>アクションでリセットします。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">グリッドでのクライアント接続のルーティング (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_539.htm#ids_erp_539" target="_blank">cdr define qod (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h3 id="dqx1ids_oer_071.dita"><a href="#ToC_50">エンタープライズ レプリケーション サーバの管理</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバの属性、または ER サーバの状態を変更します。</p></div>
+<h4 id="dqx1ids_oer_078.dita">ER サーバの変更</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、サーバ上の ATS ディレクトリまたは RIS ディレクトリ、アイドル状態タイムアウト、あるいは一部の関係先のタイプを変更します。</p></div>
+<h5 id="dqx1ids_oer_067.dita">ATS および RIS ファイルの場所および形式の変更</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、中断トランザクション スプール (ATS) ファイルおよび行情報スプール (RIS) ファイルの場所またはファイル形式を変更します。</p></div><a id="idx34"></a><a id="idx35"></a><a id="idx36"></a><a id="idx37"></a><a id="idx38"></a><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq146">前提条件:</div>
+<div class="notebody">ATS または RIS ディレクトリを変更する前に、ディレクトリの場所を作成します。</div></div>
+<p>
+<p>ATS および RIS ファイルの場所および形式を変更するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li><strong>「ATS ファイルを次のディレクトリに生成する」</strong>を選択し、ATS ファイルを格納する既存のディレクトリの完全パスを入力します。</li>
+<li><strong>「RIS ファイルを次のディレクトリに生成する」</strong>を選択し、RIS ファイルを格納する既存のディレクトリの完全パスを入力します。</li>
+<li>ATS および RIS ファイルの形式を指定します。<ul>
+<li>失敗したトランザクションを修復するために ER が処理できるテキスト ファイルを生成するには、「<strong>テキスト</strong>」を選択します (デフォルト)。</li>
+<li>ユーザー独自のカスタム修復スクリプトを作成する場合に使用できる XML ファイルを生成するには、「<strong>XML</strong>」を選択します。</li>
+<li>テキスト ファイルと XML ファイルを生成するには、「<strong>両方 (Both)</strong>」を選択します。</li></ul></li>
+<li>「<strong>保存</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p>
+
+<p>「<strong>レプリケートの変更</strong>」操作で、「<strong>レプリケート</strong>」ページ上のレプリケート用の ATS および RIS ファイル生成を起動できます。</p></li></ol>
+<h5 id="dqx1ids_oer_068.dita">ER サーバのアイドル状態タイムアウトの変更</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、アイドル状態タイムアウトを変更します。</p></div><a id="idx41"></a><a id="idx42"></a><a id="idx43"></a><a id="idx44"></a><a id="idx45"></a>
+<p>
+<p>アイドル状態タイムアウトは、ER ドメイン内のあるサーバとその他のサーバ間の接続が、サーバを切断するまでにアイドル状態となっている時間です。</p>
+<p>ER サーバのアイドル状態タイムアウトを変更するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li>「<strong>アイドル状態タイムアウト</strong>」には、「<strong>オン</strong>」を選択して時間 (分単位) を入力します。
+
+<p>0 (ゼロ) 分を入力するか、このフィールドをブランクにしておくことは、「<strong>オフ</strong>」を選択することと同じです。</p></li>
+<li>「<strong>保存</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<h5 id="dqx1ids_oer_069.dita">ER サーバ上の関係先のタイプの変更</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、競合解決ルールが「<em>無効</em>」である関係先のタイプを変更します。</p></div><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<p>
+<p>関係先のタイプで、関係先はレプリケート データの送信および受信を行うか、または受信のみであるかを指示します。関係先のタイプは、ルールが無視の場合、競合解決に影響しません。したがって、そのルールでのレプリケートでは、サーバ上のすべての関係先は、1 つの操作で変更できます。</p>
+<p>関係先のタイプを変更するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li>「<strong>関係先のタイプ (Participant type)</strong>」を選択します。<ul>
+<li><strong>主</strong>: 関係先はレプリケート データを送信および受信します。</li>
+<li><strong>受信専用</strong>: 関係先は、主関係先からのデータの受信のみです。</li></ul></li>
+<li>「<strong>保存</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p>
+<div>
+<div class="notetitle" id="wq156">ヒント:</div>
+<div class="notebody">これらのレプリケートまたは他のレプリケートのタイプを、「<strong>レプリケート</strong>」ページ上の「<strong>レプリケートの変更</strong>」操作を使用して変更することもできます。</div></div></li></ol>
+<h5 id="dqx1ids_oer_066.dita">ER サーバでの ATS または RIS ファイル生成を無効にする</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、中断トランザクション スプール (ATS) または行情報スプール (RIS) を無効にします。</p></div><a id="idx53"></a><a id="idx54"></a><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a><a id="idx58"></a><a id="idx59"></a>
+<p>
+<p>サーバを変更して、ER サーバ上のすべてのレプリケートの ATS または RIS ファイル生成を無効にすることができます。特定のレプリケートに対して ATS または RIS を無効にするには、そのレプリケートを変更します。</p>
+<p>ER サーバでの ATS または RIS ファイル生成を無効にするには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li>ATS ファイルの生成を無効にするには、<strong>「ATS ファイル生成の無効化 (Disable ATS file generation)」</strong>を選択します。</li>
+<li>RIS ファイルの生成を無効にするには、<strong>「RIS ファイル生成の無効化 (Disable RIS file generation)」</strong>を選択します。</li>
+<li>「<strong>保存</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<h5 id="dqx1ids_oer_074.dita">ER サーバでの ATS または RIS ファイル生成を有効にする</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバを変更して、中断トランザクション スプール (ATS) または行情報スプール (RIS) を有効にします。</p></div><a id="idx60"></a><a id="idx61"></a><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p>
+<p>ATS ファイルまたは RIS ファイルのディレクトリがあるサーバでは NULL に設定されている場合、これらのファイルは生成されません。サーバを変更して、ATS または RIS ファイル生成を有効にすることができます。</p>
+<p>ER サーバでの ATS または RIS ファイル生成を有効にするには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの変更</strong>」をクリックします。</li>
+<li>ATS ファイルの生成を有効にするには、次の手順を実行します。<ul>
+<li><strong>「ATS ファイルを次のディレクトリに生成する」</strong>を選択し、ATS ファイルを格納する既存のディレクトリの完全パスを入力します。</li>
+<li><strong>「一時ディレクトリでの ATS ファイルの生成 (Generate the ATS files in the temporary directory)」</strong>を選択します。
+ATS ファイルは、<samp>/tmp</samp> ディレクトリ (UNIX システムの場合) および <samp>%INFORMIXDIR%\tmp</samp> ディレクトリ (Windows システムの場合) に格納されます。</li></ul></li>
+<li>RIS ファイルの生成を有効にするには、次の手順を実行します。<ul>
+<li><strong>「RIS ファイルを次のディレクトリに生成する」</strong>を選択し、RIS ファイルを格納する既存のディレクトリの完全パスを入力します。</li>
+<li><strong>「一時ディレクトリでの RIS ファイルの生成 (Generate the RIS files in the temporary directory)」</strong>を選択します。
+RIS ファイルは、<samp>/tmp</samp> ディレクトリ (UNIX システムの場合) および <samp>%INFORMIXDIR%\tmp</samp> ディレクトリ (Windows システムの場合) に格納されます。</li></ul></li>
+<li>ATS および RIS ファイルの形式を指定します。<ul>
+<li>修復操作中に ER が処理できるテキスト ファイルを生成するには、「<strong>テキスト</strong>」を選択します </li>
+<li>ユーザー独自のカスタム修復スクリプトを作成する場合に使用できる XML ファイルを生成するには、「<strong>XML</strong>」を選択します。</li>
+<li>テキスト ファイルと XML ファイルを生成するには、「<strong>両方 (Both)</strong>」を選択します。</li></ul></li>
+<li>「<strong>保存</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p>
+
+<p>「<strong>レプリケートの変更</strong>」操作で、「<strong>レプリケート</strong>」ページ上のレプリケート用の ATS および RIS ファイル生成を起動できます。</p></li></ol>
+<h4 id="dqx1ids_oer_099.dita">サーバでのレプリケーションの停止と再開</h4>
+<div>
+<p>データベース サーバでエンタープライズ レプリケーション (ER) の一時的な停止または再開を行います。</p></div>
+<p>IBM OpenAdmin Tool (OAT) for Informix を使用することにより、サーバを停止せずに、いくつかの方法でサーバ上のレプリケーションを停止できます。</p>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">サーバでのレプリケーションの一時停止 (エンタープライズ レプリケーション ガイド)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">サーバでのレプリケーションの再開 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_084.dita">サーバのレプリケーションの一時停止</h5>
+<div>
+<p>ドメイン内の指定されたサーバからエンタープライズ レプリケーション (ER) サーバへのレプリケート データの送信を一時停止します。</p></div><a id="idx67"></a><a id="idx68"></a>
+<p>
+<p>サーバの ER 処理を完全に停止しない場合は、サーバへのデータのレプリケーションを一時停止することができます。サーバへのレプリケーションが一時停止されても、ドメイン内の他のサーバは相互にデータのレプリケートを続行します。中断状態のサーバのレプリケート データをキューに入れますが、送信はしません。
+中断状態のサーバへのネットワーク接続は影響されません。中断状態のサーバは、確認応答や制御メッセージなどの他のメッセージの受信を続行します。</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_084.dita__important">重要:</div>
+<div class="notebody">サーバへのレプリケーションを一時停止するときは、ドメイン内の他の ER サーバ上の送信キューがフルにならないようにしてください。</div></div>
+<p>サーバのレプリケーションを一時停止するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページで、レプリケーションを一時停止するサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケーションの一時停止</strong>」をクリックします。</li>
+<li>サーバへのレプリケート データの送信を一時停止する送信元のサーバを選択します。</li>
+<li>「<strong>一時停止</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_203.htm#ids_erp_203" target="_blank">サーバに対するレプリケートの一時停止 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_085.dita">中断状態サーバへのレプリケーションの再開</h5>
+<div>
+<p>中断状態のエンタープライズ レプリケーション (ER) サーバへのレプリケート データの送信を再開します。</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq167">前提条件:</div>
+<div class="notebody">ER サーバへのレプリケーションは、<strong>「レプリケーションの一時停止」</strong>操作または<strong>cdr</strong> コマンド行ユーティリティの <strong>cdr suspend server</strong> コマンドで一時停止されています。</div></div>
+<p>
+<p>サーバへのレプリケーションが中断状態の場合、ドメイン内の他のサーバは相互にデータのレプリケートを続行します。中断状態のサーバのレプリケート データをキューに入れますが、送信はしません。
+サーバへのレプリケーションが再開されると、キューに入れられたデータは送信されます。</p>
+<p>中断状態のレプリケーション サーバを再開するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページで、中断状態のサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケーションの再開</strong>」をクリックします。</li>
+<li>サーバへのレプリケート データの送信を再開する送信元のサーバを選択します。</li>
+<li>「<strong>再開</strong>」をクリックします。</li></ol>
+<h5 id="dqx1ids_oer_088.dita">サーバでのレプリケーションの停止</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバをシャットダウンしないで、このサーバ上のレプリケーションを停止します。</p></div><a id="idx72"></a><a id="idx73"></a><a id="idx74"></a>
+<p></p>
+<div class="attention"><span class="attentiontitle">注意:</span> このアクションは、必ず IBM ソフトウェア サポートの指示に従い、慎重に行ってください。</div>
+<div>
+<div class="notetitle" id="wq172">重要:</div>
+<div class="notebody">サーバ上のレプリケーションを停止すると、レプリケート トランザクションはサーバではキャプチャまたは適用されません。一貫性を確実にするために、サーバでデータベース更新は行われないことを確認してください。ドメイン内の他の ER サーバ上の送信キューがフルにならないようにしてください。</div></div>
+<p>
+<p>サーバでのレプリケーションを停止するには、次の手順で行います。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューにある「<strong>サーバの停止</strong>」をクリックします。</li></ol>
+<p>
+<p>サーバでレプリケーションを再開するには、「<strong>レプリケーションの開始</strong>」操作を使用します。サーバを停止して再開したとき、サーバでのレプリケーションは再開されません。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">サーバでのレプリケーションの一時停止 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_089.dita">サーバでのレプリケーションの再開</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバでレプリケーションを再開します。</p></div><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a>
+<p>
+<p>「<strong>レプリケーションの停止</strong>」操作でレプリケーションを停止した後、またはメモリ割り当て問題などの別の理由でレプリケーションを停止した後に、サーバでレプリケーションを再開することができます。</p>
+<p>サーバでレプリケーションを再開する場合、ER は接続された他のレプリケーション サーバへのすべての接続を活動化します。レプリケーションが停止中に他のサーバで発生した該当するすべてのデータベース トランザクションが、このサーバにレプリケートされます。</p></p>
+<p>
+<p>サーバでレプリケーションを再開するには、次の手順で行います。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューにある「<strong>サーバの開始</strong>」をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">サーバでのレプリケーションの再開 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_090">キューを空にしてレプリケーションを再開</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバで保留トランザクションのレプリケーション キューを空にして、レプリケーションを再開します。</p></div><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq180">前提条件:</div>
+<div class="notebody">ER サーバがバックアップから復元されたが、復元には再実行位置からのすべてのログ ファイルが含まれていなかったか、システムが現行ログ ファイルまで復元されていない場合、ログ ファイル一意 ID 番号を最新のログ ファイル一意 ID 番号を過ぎるまで進めます。ログ位置を進めるには、コマンド行で <strong><strong><samp>onmode -l</samp></strong></strong> コマンドを使用して次の論理ログ ファイルに切り替えます。</div></div>
+<p>
+<p>キューを空にした状態でレプリケーションを再開するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケーションのクリーン スタート (Clean
+Start Replication)</strong>」をクリックします。</li></ol>
+<p>
+<p>「<strong>レプリケーションのクリーン スタート (Clean Start Replication)</strong>」操作を実行した後、「<strong>レプリケーションの検査または同期化 (Check or Sync Replicate)</strong>」または「<strong>レプリケーション セットの検査または同期化 (Check or Sync Replicate Set)</strong>」操作を使用してデータを同期化します。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">サーバでのレプリケーションの再開 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連参照情報</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0721.htm#ids_admin_0721" target="_blank">次の論理ログ ファイルへの切替え (管理者ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_100.dita">サーバでのレプリケーションの無効化</h5>
+<div>
+<p>エンタープライズ レプリケーション (ER) サーバのレプリケーションを停止し、その間、無効化したサーバ上で削除された行に関する情報は維持します。</p></div><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq186">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_100.dita__d6883e8">この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</span></div></div>
+<p>
+<p>レプリケートでタイム スタンプ競合解決規則または削除優先競合解決規則を使用する場合、または再実行位置オーバーランを回避するための十分なディスク領域がない場合、この操作を使用してレプリケーション サーバ上のレプリケーションを一時的に停止してください。</p>
+<p>サーバでレプリケーションが無効化されているときは、そのサーバはトランザクションをキューに入れず、ER ドメイン内の他のレプリケーション サーバは無効化されたサーバ用のレプリケート トランザクションをキューに入れません。ただし、無効化されたサーバ上で削除された行に関する情報はすべて、削除表に保存されます。レプリケーションを再開してデータを同期するときに、タイム スタンプ修復を利用できます。</p>
+<p>例えば、サーバで削除優先競合解決規則が使用されていて、レプリケーションを無効化する前にサーバ上でトランザクションが削除された場合、レプリケーションを有効化してデータを同期した時点で、ドメイン内の他のサーバに削除操作が複製されます。</p>
+<p>サーバのレプリケーションを無効化するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li><strong>「ルーティング トポロジ」</strong>ページまたは<strong>「サーバ リスト」</strong>ページで、レプリケーションを無効化するサーバを選択します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケーションの無効化」</strong>をクリックします。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">サーバでのレプリケーションの一時停止 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_101.dita">無効化されたサーバのレプリケーションの有効化</h5>
+<div>
+<p>レプリケーションが無効化されたエンタープライズ レプリケーション (ER) サーバでレプリケーションを再開します。</p></div><a id="idx83"></a><a id="idx84"></a><a id="idx85"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq191">前提条件:</div>
+<div class="notebody">サーバ上のレプリケーションが<strong>「レプリケーションの無効化」</strong>操作、または <strong>cdr</strong> コマンド行ユーティリティの <strong><samp>cdr disable server</samp></strong> コマンドを使用して停止されています。この操作を実行するには、IBM OpenAdmin Tool (OAT) for Informix に IBM Informix バージョン 11.70 が必要です。</div></div>
+<p>
+<p>サーバでレプリケーションが無効化されているときは、そのサーバはトランザクションをキューに入れず、ER ドメイン内の他のレプリケーション サーバは無効化されたサーバ用のレプリケート トランザクションをキューに入れません。ただし、無効化されたサーバ上で削除された行に関する情報はすべて、削除表に保存されます。レプリケーションを再開してデータを同期するときに、タイム スタンプ修復を利用できます。</p>
+<p>無効化されたサーバのレプリケーションを有効化するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li><strong>「ルーティング トポロジ」</strong>ページまたは<strong>「サーバ リスト」</strong>ページで、無効化されたサーバを選択します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケーションの再開」</strong>をクリックします。</li>
+<li><strong>「レプリケーションの有効化」</strong>をクリックします。</li></ol>
+<p>
+<p>レプリケーションを有効化した後、サーバとレプリケーション ドメイン内の他のサーバを同期するため、<strong>「レプリケート」</strong>&gt;<strong>「レプリケート セット」</strong>ページでレプリケート セットの検査と修復を行います。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">サーバでのレプリケーションの再開 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_086.dita">ER サーバの切断</h4>
+<div>
+<p>ドメイン内のエンタープライズ レプリケーション (ER) サーバと他の ER サーバとの間のネットワーク接続をドロップします。</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_086.dita__important">重要:</div>
+<div class="notebody">サーバを切断しても、ER は機能し続け、トランザクションをキューに入れます。ドメイン内の他のすべての ER サーバ上の送信キューがフルにならないようにしてください。</div></div>
+<p>ER サーバを切断するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページで、切断するサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの切断</strong>」をクリックします。</li>
+<li>切断するサーバを選択します。</li>
+<li>「<strong>切断</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_087.dita">ER サーバの再接続</h4>
+<div>
+<p>ドメイン内のエンタープライズ レプリケーション (ER) サーバを他の ER サーバに再接続します。</p></div><a id="idx88"></a><a id="idx89"></a>
+<p>
+<p>ER サーバを再接続するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページで、再接続するサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの接続</strong>」をクリックします。</li>
+<li>再接続先のサーバを選択します。</li>
+<li>「<strong>接続</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_091.dita">ER サーバの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメインからサーバを削除し、サーバとの間のすべてのデータのレプリケーションを停止します。</p></div><a id="idx90"></a><a id="idx91"></a><a id="idx92"></a>
+<p>
+<p>ER サーバを削除するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>をクリックします。</li>
+<li>「<strong>ルーティング トポロジ</strong>」ページまたは「<strong>サーバ リスト</strong>」ページでサーバを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>サーバの削除</strong>」をクリックします。</li></ol>
+<p>
+<p>ER ドメイン全体を削除するには、ドメイン内の各サーバに対して「<strong>サーバの削除</strong>」操作を実行します。</p></p>
+<div>
+<div class="notetitle" id="wq206">制約事項:</div>
+<div class="notebody">非ルートの子またはリーフの子を持つサーバは削除できません。親サーバを削除する前に、そのサーバの子を削除してください。</div></div>
+<h3 id="dqx1ids_oer_037.dita"><a href="#ToC_68">レプリケート セットの管理</a></h3>
+<div>
+<p>セットからのレプリケートの追加または削除、レプリケーション頻度の変更、あるいはレプリケート セットの開始、停止、一時停止、再開、または削除を行います。</p></div><a id="idx93"></a><a id="idx94"></a>
+<p>レプリケート セットを作成する場合は、そのセットに属するレプリケートをまとめてまたは個別に管理できます。レプリケート セットが排他的である場合は、セットの一部として個別のレプリケートを管理する必要があります。</p>
+<p>レプリケート セットに対して操作を実行することは (レプリケート セットの削除を除く)、レプリケート セット内の各レプリケートに対して個別に操作を実行することと同じです。</p>
+<h4 id="dqx1ids_oer_065.dita">レプリケート セットの変更</h4>
+<div>
+<p>レプリケートを追加または削除するか、あるいはセット内のすべてのレプリケートのレプリケーション頻度を変更します。</p></div><a id="idx95"></a><a id="idx96"></a>
+<h5 id="dqx1ids_oer_082.dita">レプリケート セットへのレプリケートの追加または削除</h5>
+<div>
+<p>レプリケート セットを変更してレプリケートを追加または削除します。</p></div><a id="idx97"></a><a id="idx98"></a>
+<p>
+<p>レプリケート セットにレプリケートを追加または削除するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>レプリケート セットを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの変更</strong>」をクリックします。</li>
+<li>レプリケート セットにレプリケートを追加するには、「<strong>使用可能なレプリケート</strong>」リストからレプリケートを選択して「<strong>追加</strong>」をクリックします。</li>
+<li>レプリケートを削除するには、「<strong>このレプリケート セット</strong>」リストからレプリケート (複数可) を選択して「<strong>削除</strong>」をクリックします。</li>
+<li>「<strong>終了</strong>」をクリックします。</li></ol>
+<h5 id="dqx1ids_oer_083.dita">レプリケート セットのレプリケーション頻度の変更</h5>
+<div>
+<p>レプリケート セットを変更して、セット内のすべてのレプリケートのレプリケーション間の間隔を指定します。</p></div><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>レプリケート セットのレプリケーション頻度を変更するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>を展開し、<strong>「レプリケート」</strong>をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>レプリケート セットを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの変更</strong>」をクリックします。</li>
+<li>セット内のすべてのレプリケートの頻度オプションを変更するには、「<strong>次へ</strong>」をクリックします。</li>
+<li>レプリケーションの「<strong>頻度</strong>」を指定します。<div>
+<div class="notetitle" id="wq213">重要:</div>
+<div class="notebody">頻度オプションを変更すると、その変更がセット内のすべてのレプリケートに適用されます。</div></div></li>
+<li>「<strong>終了</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_035.dita">レプリケート セット プロパティの表示</h4>
+<div>
+<p>レプリケート セットのプロパティと状態を表示します。</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>セット内のレプリケートのリストを表示するには、レプリケート セット名を展開します。
+
+<p>「<strong>レプリケート セット</strong>」ページ上の情報の説明を表示するには、「ヘルプ」アイコンをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_039.dita">レプリケート セットの始動</h4>
+<div>
+<p>レプリケート セット内のすべてのレプリケートの状態をアクティブな状態に変更します。</p></div><a id="idx103"></a><a id="idx104"></a>
+<p>
+<p>レプリケートがアクティブな場合、エンタープライズ レプリケーション (ER) は、ソース サーバ上の論理ログからデータをキャプチャし、ターゲット サーバ上のアクティブな関係先に転送します。
+</p>
+<p>レプリケート セットを始動するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートのリストを表示するには、レプリケート セット名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セットの始動 (Start Replicate Set)」</strong>をクリックします。</li>
+<li><strong>「レプリケート セットの始動 (Start Replicate Set)」</strong>ページで、始動する関係先を選択します。
+<ul>
+<li>レプリケート セット内のすべての関係先を始動するには、<strong>「すべての関係先 (All Participants)」</strong>チェック ボックスを選択します。</li>
+<li>特定の関係先を始動するには、始動する各関係先についてチェック ボックスを選択します。
+関係先は、データベース サーバにより指定されます。
+</li></ul></li>
+<li>始動するレプリケートの初期同期を実行するには、次の手順を実行します。
+<ol type="a">
+<li><strong>「データの同期 (Synchronize data)」</strong>チェック ボックスを選択します。
+</li>
+<li>サーバのリストから、同期するデータ ソース サーバを選択します。
+</li>
+<li>データ ソース サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。
+
+<ul>
+<li><strong>「削除」</strong>: ターゲット サーバから余分な行を削除します。
+</li>
+<li><strong>「維持 (Keep)」</strong>: ターゲット サーバ上の余分な行を維持します。
+</li>
+<li><strong>「マージ (Merge)」</strong>: ターゲット サーバ上の余分な行を維持し、それらをソース サーバにレプリケートします。</li></ul></li></ol></li>
+<li>レプリケート セットを始動するには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_041.dita">レプリケート セットの停止</h4>
+<div>
+<p>レプリケート セット内のすべてのレプリケートの状態を非アクティブな状態に変更します。</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>レプリケートを停止すると、レプリケートの状態は<em>非アクティブ</em> に変更され、そのレプリケートに対する送信キュー内のデータが削除されます。
+レプリケートが非アクティブである場合、エンタープライズ レプリケーションは、データベース変更を転送または処理しません。
+通常は、当該表についてレプリケーション アクティビティが発生しないと考えられる場合にのみレプリケーションを停止します。
+</p>
+<p>レプリケート セットを停止するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートのリストを表示するには、レプリケート セット名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セットの停止 (Stop Replicate Set)」</strong>をクリックします。</li>
+<li><strong>「レプリケート セットの停止 (Stop Replicate Set)」</strong>ページで、停止する関係先を選択します。
+<ul>
+<li>レプリケート内のすべての関係先を停止するには、<strong>「すべての関係先 (All Participants)」</strong>チェック ボックスを選択します。</li>
+<li>特定の関係先を停止するには、停止する各関係先についてチェック ボックスを選択します。
+関係先は、データベース サーバにより指定されます。
+</li></ul></li>
+<li>レプリケート セットを停止するには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_043.dita">レプリケート セットの一時停止</h4>
+<div>
+<p>レプリケート セット内のすべてのレプリケートを一時停止します。</p></div><a id="idx107"></a><a id="idx108"></a>
+<p>
+<p>レプリケートが<em>一時停止</em> 状態である場合、エンタープライズ レプリケーションは、ソース データベースに対する変更をキャプチャおよび蓄積しますが、キャプチャしたデータをターゲット データベースに転送しません。
+</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_043.dita__important">重要:</div>
+<div class="notebody">レプリケート セットが一時停止されている場合、エンタープライズ レプリケーションは、当該セットが再開されるまで、レプリケート データを送信キュー内で保留します。
+一時停止中に、当該セット内のレプリケートについて膨大なデータが生成された場合、送信キュー領域がいっぱいになり、データが失われる可能性があります。
+レプリケート セット内のレプリケートが一時停止されている場合、エンタープライズ レプリケーションは、トランザクションを同期しません。
+例えば、表 X のレプリケーションが一時停止した場合、表 X および Y を更新するトランザクションが分割されます。</div></div>
+<p>レプリケート セットを一時停止するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートのリストを表示するには、レプリケート セット名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セットの一時停止」</strong>をクリックします。<strong>「レプリケート セットの一時停止」</strong>ページで、データベース サーバにより指定された、レプリケート セット内の関係先がリストに表示されます。レプリケートを一時停止すると関係先はすべて一時停止状態になるため、すべての関係先が選択されます。</li>
+<li>レプリケート セットを一時停止するには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_045.dita">レプリケート セットの再開</h4>
+<div>
+<p>レプリケート セット内の一時停止中のレプリケートをアクティブな状態に戻します。
+</p></div><a id="idx109"></a><a id="idx110"></a><a id="idx111"></a>
+<p>
+<p>レプリケート セットを再開すると、レプリケート セットに含まれるすべてのレプリケートが、すべての関係先についてアクティブな状態になります。
+</p>
+<p>レプリケート セットを再開するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートのリストを表示するには、レプリケート セット名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セットの再開 (Resume Replicate Set)」</strong>をクリックします。<strong>「レプリケート セットの再開 (Resume Replicate Set)」</strong>ページで、データベース サーバにより指定された、レプリケート セット内の関係先がリストに表示されます。レプリケートを再開すると関係先はすべてアクティブ状態になるため、すべての関係先が選択されます。</li>
+<li>レプリケート セットをアクティブな状態に戻すには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_093.dita">レプリケート セットの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメインからレプリケート セットを削除します。</p></div><a id="idx112"></a><a id="idx113"></a>
+<p>
+<p>レプリケート セットを削除しても、そのレプリケート セットに属するレプリケートは削除されません。レプリケートと関連データは変更されません。</p></p>
+<div class="attention"><span class="attentiontitle">注意: </span>時間ベースの排他的レプリケート セットは削除しないでください。削除すると、競合するデータとなる場合があります。</div>
+<p>レプリケート セットを削除するには、次の手順で行います。</p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>レプリケート セットを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの削除</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_oer_036.dita"><a href="#ToC_78">レプリケートの管理</a></h3>
+<div>
+<p>関係先の追加または削除、レプリケート属性の変更、レプリケートの開始、停止、一時停止、または再開を行います。</p></div><a id="idx114"></a><a id="idx115"></a>
+<h4 id="dqx1ids_oer_075.dita">レプリケートの変更</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) レプリケートを変更して関係先を追加または削除、マスター レプリケート サーバを変更、またはレプリケート属性を変更します。</p></div>
+<h5 id="dqx1ids_oer_072.dita">関係先の追加および削除</h5>
+<div>
+<p>レプリケートを変更して、関係先を追加または削除します。</p></div><a id="idx116"></a><a id="idx117"></a><a id="idx118"></a><a id="idx119"></a><a id="idx120"></a><a id="idx121"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq233">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>関係先を追加または削除するには、次の手順を実行します。</p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの変更」</strong>をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li>オプション: マスター レプリケート サーバには存在し、ターゲット サーバには存在しない表を、ターゲット サーバ上で自動的に作成するには、<strong>「ターゲット サーバ上に欠落している表を作成します」</strong>を選択します。
+
+<p>作成される表は、リスト内に<em>イタリック体</em> で表示されます。</p></li>
+<li>関係先を追加するには、次の手順を実行します。<ol type="a">
+<li>リストで、サーバ グループおよびデータベースを展開し、表名を表示します。
+</li>
+<li>表名をクリックして、関係先として選択します。表が選択されると、<strong>太字</strong>になります。 </li>
+<li>関係先のタイプ (主または受信専用) を指定します。デフォルトは主です。関係先は、データの送受信を行います。
+オプションを変更するには、アイコンをクリックします。</li>
+<li>レプリケート データの適用に使用するアクセス権を指定します。
+デフォルトは表の所有者です。オプションを変更するには、アイコンをクリックします。</li></ol></li>
+<li>関係先を削除するには、次の手順を実行します。<ol type="a">
+<li>リストで、サーバ グループおよびデータベースを展開し、表名を表示します。
+</li>
+<li>表名をクリックして、選択状態をクリアします。
+
+<p>関係先を削除する場合、当該サーバ グループの当該表に対するデータのレプリケートを停止します。
+</p></li></ol></li>
+<li>レプリケートを変更するには、<strong>「終了」</strong>をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_095.dita">マスター レプリケート サーバの変更</h5>
+<div>
+<p>マスター レプリケートのベースであるレプリケートを変更して、サーバ グループを変更します。
+</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq239">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>マスター レプリケート サーバは、レプリケート内の関係先である必要があります。
+</p>
+<p>
+<p>マスター レプリケート サーバを変更するには、次の手順を実行します。
+</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの変更」</strong>をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li><strong>「マスター レプリケート サーバ (Master replicate server)」</strong>リストの横にあるアイコンをクリックします。</li>
+<li><strong>「マスター レプリケート サーバ (Master replicate server)」</strong>リストで、サーバ グループを選択します。
+</li>
+<li>オプション: マスター レプリケート サーバには存在し、ターゲット サーバには存在しない表を、ターゲット サーバ上で自動的に作成するには、「<strong>ターゲット サーバ上に欠落している表を作成します</strong>」を選択します。
+
+<p>作成される表は、リスト内に<em>イタリック体</em> で表示されます。</p></li>
+<li>オプション: 関係先を追加するには、次の手順を実行します。<ol type="a">
+<li>リストで、サーバ グループおよびデータベースを展開し、表名を表示します。
+</li>
+<li>表名をクリックして、関係先として選択します。表が選択されると、<strong>太字</strong>になります。</li>
+<li>関係先のタイプ (主または受信専用) を指定します。デフォルトは主です。関係先は、データの送受信を行います。
+オプションを変更するには、アイコンをクリックします。</li>
+<li>レプリケート データの適用に使用するアクセス権を指定します。
+デフォルトは表の所有者です。オプションを変更するには、アイコンをクリックします。</li></ol></li>
+<li>レプリケートを変更するには、<strong>「終了」</strong>をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_073.dita">競合解決ルールおよび範囲の変更</h5>
+<div>
+<p>レプリケートを変更して、競合解決ルールまたは範囲を変更します。
+</p></div><a id="idx122"></a><a id="idx123"></a><a id="idx124"></a><a id="idx125"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq244">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>競合解決ルールは、レプリケート トランザクション間の競合を解決する方法を決定します。
+各競合解決ルールは、範囲に応じて異なる動作になります。
+</p>
+<p>競合解決ルールまたは範囲を変更するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li><strong>「次へ」</strong>をクリックします。</li>
+<li><strong>「競合解決範囲」</strong>を指定します。
+
+<p>競合解決ルールを変更する場合、範囲を変更しない場合でも、範囲も指定する必要があります。
+</p></li>
+<li><strong>「競合解決ルール」</strong>を指定します。
+
+<p>競合解決ルールを、無視状態から別のルールに変更したり、別のルールから無視状態に変更することはできません。
+</p></li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_076.dita">レプリケートのレプリケーション頻度の変更</h5>
+<div>
+<p>レプリケートを変更して、レプリケーション間の間隔またはレプリケーションを実行するタイミングを指定します。</p></div><a id="idx126"></a><a id="idx127"></a><a id="idx128"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq249">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>レプリケートのレプリケーション頻度を変更するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li><strong>「次へ」</strong>をクリックします。</li>
+<li><strong>「レプリケーション頻度 (Replication frequency)」</strong>を指定します。</li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_077.dita">ATS および RIS ファイル生成の活動化</h5>
+<div>
+<p>レプリケートを変更して、中断トランザクション スプール (ATS) ファイルおよび行情報スプール (RIS) ファイルの生成を活動化または非活動化します。</p></div><a id="idx129"></a><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq254">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>ATS および RIS ファイルの生成を活動化するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>ATS ファイルの生成を活動化するには、<strong>「中断トランザクション スプール (ATS)」</strong>を選択します。</li>
+<li>RIS ファイルの生成を活動化するには、<strong>「行情報スプール (RIS)」</strong>を選択します。</li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p>
+
+<p>ATS ファイルおよび RIS ファイルのデフォルトの格納場所は、temp ディレクトリです。<strong>「ノード詳細」</strong>&gt;<strong>「構成」</strong>ページで、ATS ファイルおよび RIS ファイルのディレクトリを指定できます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_079.dita">すべての行または変更列のレプリケート</h5>
+<div>
+<p>レプリケートを変更して、すべての行をレプリケートするのか、変更列のみレプリケートするのかを指定します。
+</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq259">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>デフォルトでは、エンタープライズ レプリケーション (ER) は、1 つの列のみ変更されている場合でも、すべての行をレプリケートし、アップサートを有効化します。
+ただし、BLOB または CLOB データが含まれる列は、他の列が変更されたかどうかにかかわらず、その列内容が変更されたときにのみ更新されます。
+</p>
+<p>すべての行をレプリケートするのか、変更列のみレプリケートするのかを指定するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li><strong>「次へ」</strong>をクリックします。</li>
+<li>すべての行をレプリケートするかどうかを指定します。<ul>
+<li>すべての行をレプリケートし、アップサートできるようにするには、<strong>「すべての行のレプリケート (Replicate full row)」</strong>を選択します。競合解決ルールとして削除優先も指定する場合、アップサートは無効になります。
+</li>
+<li>変更列のみレプリケートし、アップサートを無効にするには、このオプションをクリアします。
+</li></ul></li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_080.dita">トリガの有効化および無効化</h5>
+<div>
+<p>レプリケートを変更して、レプリケート データの適用時にトリガを起動するかどうかを指定します。
+</p></div><a id="idx136"></a><a id="idx137"></a><a id="idx138"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq264">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>デフォルトでは、レプリケートによりターゲット表で挿入、更新、または削除が実行されるとき、表に関連付けられているトリガは起動されません。
+レプリケートを変更する場合、レプリケート データの適用時にトリガを起動するかどうかを指定できます。
+</p>
+<p>トリガを有効化または無効化するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>トリガを有効化するのか、無効化するのかを指定します。
+<ul>
+<li>トリガを有効にするには、<strong>「デスティネーションでトリガを起動 (Fire triggers at destination)」</strong>を選択します。</li>
+<li>トリガを無効にするには、このオプションをクリアします。</li></ul></li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連概念</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_051.htm#ids_erp_051" target="_blank">トリガ (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h5 id="dqx1ids_oer_081.dita">削除済み行の保存または除去</h5>
+<div>
+<p>レプリケートを変更して、ターゲット サーバで削除済み行を保存または除去します。
+</p></div><a id="idx139"></a><a id="idx140"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq269">前提条件:</div>
+<div class="notebody">レプリケートの変更操作では、厳密なマスター レプリケートおよびその関係先を変更できます。
+マスター レプリケートは、各種サーバ上のレプリケート表に、一貫した列データ型が存在することを検証します。
+厳密なマスター レプリケートも、レプリケート表に同じ列名があることを検証します。
+</div></div>
+<p>
+<p>デフォルトでは、削除された行は、エンタープライズ レプリケーション (ER) ドメイン内のすべてのノードから除去されます。行が ER ドメイン内の他のノードで削除された場合に、削除済み行をターゲット サーバに保存するように指定できます。</p>
+<p>削除済み行を保存するのか、除去するのかを指定するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの変更</strong>」をクリックします。
+
+<p>リストに、関係先とともにドメイン内のサーバ グループが<strong>太字</strong>で表示されます。</p></li>
+<li>「<strong>次へ</strong>」をクリックします。</li>
+<li>削除済み行を保存するかどうかを指定します。<ul>
+<li>行が ER ドメイン内の他のノードで削除された場合に、削除済み行をターゲット サーバに保存するには、<strong>「削除された行の保持 (Retain deleted rows)」</strong>を選択します。競合解決ルールとして削除優先を指定する場合、このオプションは使用できません。
+</li>
+<li>削除済み行をドメイン内のすべてのノードから除去するには、このオプションをクリアします。
+</li></ul></li>
+<li>レプリケートを変更するには、「<strong>終了</strong>」をクリックします。
+
+<p>選択したオプションと操作の結果が表示されます。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">強制マスター レプリケートの作成 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_034.dita">レプリケート プロパティの表示</h4>
+<div>
+<p>レプリケートおよびレプリケート関係先のプロパティと状態を表示します。</p></div><a id="idx141"></a><a id="idx142"></a><a id="idx143"></a>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>レプリケート関係先のプロパティを表示するには、レプリケート名を展開します。
+
+<p>「<strong>レプリケート</strong>」ページ上の情報の説明を表示するには、「ヘルプ」アイコンをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_038.dita">レプリケートの始動</h4>
+<div>
+<p>非アクティブなレプリケートを始動します。</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<p>レプリケートが排他的なレプリケート セットに属している場合、レプリケートが属しているレプリケート セットを始動する必要があります。
+</p>
+<p>レプリケートを始動するには、次の手順を実行します。
+</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの始動 (Start Replicate)」</strong>をクリックします。</li>
+<li><strong>「レプリケートの始動 (Start Replicate)」</strong>ページで、始動する関係先を選択します。
+<ul>
+<li>レプリケート内のすべての関係先を始動するには、<strong>「すべての関係先 (All Participants)」</strong>チェック ボックスを選択します。</li>
+<li>特定の関係先を始動するには、始動する各関係先についてチェック ボックスを選択します。
+</li></ul></li>
+<li>始動するレプリケートの初期同期を実行するには、次の手順を実行します。
+<ol type="a">
+<li><strong>「データの同期 (Synchronize data)」</strong>チェック ボックスを選択します。
+</li>
+<li>サーバのリストから、同期するデータ ソース サーバを選択します。
+</li>
+<li>データ ソース サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。
+
+<ul>
+<li><strong>「削除」</strong>: ターゲット サーバから余分な行を削除します。
+</li>
+<li><strong>「維持 (Keep)」</strong>: ターゲット サーバ上の余分な行を維持します。
+</li>
+<li><strong>「マージ (Merge)」</strong>: ターゲット サーバ上の余分な行を維持し、それらをソース サーバにレプリケートします。</li></ul></li></ol></li>
+<li>レプリケートを始動するには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_040.dita">レプリケートの停止</h4>
+<div>
+<p>アクティブなレプリケートを停止します。</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<p>レプリケートを停止すると、レプリケートの状態は<em>非アクティブ</em> に変更され、そのレプリケートに対する送信キュー内のデータが削除されます。
+レプリケートが非アクティブである場合、エンタープライズ レプリケーションは、データベース変更を転送または処理しません。
+通常は、当該表についてレプリケーション アクティビティが発生しないと考えられる場合にのみレプリケーションを停止します。
+</p>
+<p>レプリケートが排他的なレプリケート セットに属している場合、レプリケートを停止するには、レプリケート セットを停止する必要があります。
+</p>
+<p>レプリケートを停止するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの停止 (Stop Replicate)」</strong>をクリックします。</li>
+<li><strong>「レプリケートの停止 (Stop Replicate)」</strong>ページで、停止する関係先を選択します。
+<ul>
+<li>レプリケート内のすべての関係先を停止するには、「<strong>すべての関係先 (All Participants)</strong>」チェック ボックスを選択します。</li>
+<li>特定の関係先を停止するには、停止する各関係先についてチェック ボックスを選択します。
+</li></ul></li>
+<li>レプリケートを停止するには、<strong>「OK」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_042.dita">レプリケートの一時停止</h4>
+<div>
+<p>アクティブ状態のレプリケートを一時停止します。</p></div><a id="idx148"></a><a id="idx149"></a>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの一時停止</strong>」をクリックします。「<strong>レプリケートの一時停止</strong>」ページで、リストにレプリケート内の関係先が表示されます。レプリケートを一時停止すると関係先はすべて一時停止状態になるため、すべての関係先が選択されます。</li>
+<li>レプリケートを一時停止するには、「<strong>OK</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_044.dita">レプリケートの再開</h4>
+<div>
+<p>一時停止されたレプリケートの状態をアクティブに戻します。</p></div><a id="idx150"></a><a id="idx151"></a><a id="idx152"></a>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの再開</strong>」をクリックします。「<strong>レプリケートの再開</strong>」ページで、リストにレプリケート内の関係先が表示されます。レプリケートを再開すると関係先はすべてアクティブ状態になるため、すべての関係先が選択されます。</li>
+<li>レプリケートをアクティブ状態に戻すには、「<strong>OK</strong>」をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_094.dita">レプリケートの削除</h4>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメインからレプリケートを削除して、関係するすべてのデータベース サーバの送信キューからデータをすべてパージします。</p></div><a id="idx153"></a><a id="idx154"></a>
+<p>
+<p>レプリケートを削除するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>レプリケートを選択します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの削除</strong>」をクリックします。</li></ol>
+<h3 id="dqx1ids_oer_050.dita"><a href="#ToC_94">レプリケーション サーバ間のデータの再同期</a></h3>
+<div>
+<p>レプリケート表間のデータの競合を訂正します。
+データの競合を検査するか、検査時に競合を修復するか、データを同期化するか、または中断トランザクション スプール (ATS) ファイルと行情報スプール (RIS) ファイルを使用して失敗したトランザクションを修復します。</p></div><a id="idx155"></a><a id="idx156"></a><a id="idx157"></a><a id="idx158"></a><a id="idx159"></a><a id="idx160"></a><a id="idx161"></a><a id="idx162"></a><a id="idx163"></a><a id="idx164"></a><a id="idx165"></a><a id="idx166"></a><a id="idx167"></a><a id="idx168"></a>
+<p>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) では、レプリケート表間のデータの競合を以下の方法で修復できます。</p>
+<ul>
+<li>一貫性を検査し、競合する行を修復する。一貫性検査では、参照サーバと 1 つ以上のターゲット サーバとの間のデータを比較して、競合を記述するレポートを生成します。
+一貫性検査時に競合する行を修復することを選択できます。
+単一レプリケートまたはレプリケート セットに対して一貫性検査およびオプションの同期化を実行できます。</li>
+<li>データを同期化する: 同期では、指定されたレプリケートまたはレプリケート セット内のすべての行が、参照サーバからすべての指定されたターゲット サーバにレプリケートされます。直接同期を使用して、新規ターゲット サーバまたは重大な競合状態になった既存のターゲット サーバにデータを設定することができます。</li>
+<li>ATS または RIS ファイルを使用してトランザクションを修復する。ATS または RIS ファイルを使用した修復では、指定された ATS または RIS ファイルに記録されている単一トランザクションと関連付けられている行を修復します。</li></ul>
+<div>
+<div class="notetitle" id="wq289">重要:</div>
+<div class="notebody">一貫性検査または同期化を実行すると、ログ ファイルの大量の領域を消費する場合があります。
+このコマンドを実行する前に、十分な領域があることを確認してください。</div></div>
+<p></p>
+<ul class="simple">
+<li><strong>関連タスク</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_236.htm#ids_erp_236" target="_blank">一貫性を検査し、矛盾する行を修復 (エンタープライズ レプリケーション ガイド)</a></li></ul>
+<h4 id="dqx1ids_oer_051.dita">レプリケートの検査</h4>
+<div>
+<p>整合性検査を実行して、レプリケート内の 1 つ以上のターゲット サーバと参照サーバとの間でデータを比較し、競合を記述するレポートを生成します。
+</p></div><a id="idx169"></a><a id="idx170"></a><a id="idx171"></a>
+<p>
+<p>レプリケートを検査するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケートの検査または同期 (Check or Sync Replicate)」</strong>をクリックします。</li>
+<li><strong>「タスクの状態 (Task Status)」</strong>ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li><strong>「検査 (Check)」</strong>を選択します。</li>
+<li><strong>「頻度」</strong>では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに、または WHERE 節を使用して、検査する行数を制限するオプションを選択します。</li>
+<li>データの参照コピーとして使用する<strong>「参照サーバ (Reference server)」</strong>を選択します。
+</li>
+<li>検査するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、<strong>「タスクの状態 (Task Status)」</strong>タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_052.dita">レプリケートの検査および修復</h4>
+<div>
+<p>整合性検査を実行して、レプリケート内の 1 つ以上のターゲット サーバと参照サーバとの間でデータを比較し、競合を記述するレポートを生成し、競合した行を参照サーバ上の行と一致するように修復します。
+</p></div><a id="idx172"></a><a id="idx173"></a><a id="idx174"></a><a id="idx175"></a><a id="idx176"></a><a id="idx177"></a>
+<p>
+<p>レプリケートを検査および修復するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの検査または同期 (Check or Sync Replicate)</strong>」をクリックします。</li>
+<li><strong>「タスクの状態 (Task Status)」</strong>ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li><strong>「検査および修復 (Check and Repair)」</strong>を選択します。</li>
+<li>オプション: タイム スタンプ競合解決規則または削除優先競合解決規則を使用するレプリケートの場合、最新タイム スタンプを基にした競合修復オプションを選択します。このオプションを使用するには、IBM Informix バージョン 11.70 が必要です。</li>
+<li>「<strong>頻度</strong>」では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに、または WHERE 節を使用して、検査する行数を制限するオプションを選択します。</li>
+<li>データの参照コピーとして使用する<strong>「参照サーバ (Reference server)」</strong>を選択します。
+リストに、レプリケート内の関係先であるサーバが表示されます。
+</li>
+<li>参照サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。デフォルトは<strong>「削除」</strong>で、ターゲット サーバから余分な行を削除します。</li>
+<li>データの修復中にターゲット サーバでトリガを処理する方法を指定します。
+デフォルトは<strong>「オフ」</strong>です。同期中にターゲット サーバでトリガを起動しません。
+</li>
+<li>検査および修復するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、<strong>「タスクの状態 (Task Status)」</strong>タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_053.dita">レプリケートの同期化</h4>
+<div>
+<p>レプリケーション サーバ間でデータを同期し、レプリケート内の競合するデータを修復します。
+</p></div><a id="idx178"></a><a id="idx179"></a><a id="idx180"></a><a id="idx181"></a><a id="idx182"></a><a id="idx183"></a>
+<p>
+<p>レプリケートを同期するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート</strong>」タブをクリックします。</li>
+<li>表の中のレプリケートをクリックします。関係先を表示するには、レプリケート名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケートの検査または同期 (Check or Sync Replicate)</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li><strong>「同期 (Sync)」</strong>を選択します。</li>
+<li>オプション: 同期中に送信キューが使用できるメモリ量を増加させるには、<strong>「送信キューのサイズの設定 (Set the size of the send queue)」</strong>を選択し、サイズを指定します。</li>
+<li>「<strong>頻度</strong>」では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに、または WHERE 節を使用して、検査する行数を制限するオプションを選択します。</li>
+<li>データの参照コピーとして使用する<strong>「参照サーバ (Reference server)」</strong>を選択します。
+</li>
+<li>参照サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。デフォルトは<strong>「削除」</strong>で、ターゲット サーバから余分な行を削除します。</li>
+<li>データの同期中にターゲット サーバでトリガを処理する方法を指定します。
+デフォルトは<strong>「オフ」</strong>です。同期中にターゲット サーバでトリガを起動しません。
+</li>
+<li>同期するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、<strong>「タスクの状態 (Task Status)」</strong>タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_096.dita">レプリケートの検査タスクまたは同期タスクの削除</h4>
+<div>
+<p>レプリケートの検査、検査と修復、または同期の各タスクからのレポートを削除します。
+</p></div><a id="idx184"></a><a id="idx185"></a>
+<p>
+<p>レプリケート タスクを削除するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」タブをクリックします。</li>
+<li><strong>「表示」</strong>で、<strong>「レプリケート検査または同期状態 (Replicate check or sync status)」</strong>を選択します。</li>
+<li>削除するタスクについて、チェック ボックスを選択します。<div class="attention"><span class="attentiontitle">注意: </span><strong>「レプリケート タスクの削除 (Delete Replicate Tasks)」</strong>をクリックすると、選択されたタスクが確認なしで削除されます。</div></li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート タスクの削除 (Delete Replicate Tasks)」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_057">レプリケート セットの検査</h4>
+<div>
+<p>整合性検査を実行して、レプリケート セット内の 1 つ以上のターゲット サーバと参照サーバとの間でデータを比較し、競合を記述するレポートを生成します。
+</p></div><a id="idx186"></a><a id="idx187"></a><a id="idx188"></a>
+<p>
+<p>レプリケート セットを検査するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートを表示するには、レプリケート セット名を展開します。</li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セットの検査または同期 (Check or Sync Replicate Set)」</strong>をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li>「<strong>検査 (Check)</strong>」を選択します。</li>
+<li>「<strong>頻度</strong>」では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに検査する行数を制限するオプションを選択します。
+</li>
+<li>データの参照コピーとして使用する<strong>「参照サーバ (Reference Server)」</strong>を選択します。
+</li>
+<li>使用するプロセス数を指定します。最良のパフォーマンスを得るには、プロセスの最大数を選択します。
+この数は、使用可能な仮想プロセッサ数と、レプリケート セット内のレプリケート数のいずれか小さい方です。
+</li>
+<li>検査するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、<strong>「タスクの状態 (Task Status)」</strong>タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_058">レプリケート セットの検査および修復</h4>
+<div>
+<p>整合性検査を実行して、レプリケート セット内の 1 つ以上のターゲット サーバと参照サーバとの間でデータを比較し、競合を記述するレポートを生成し、競合した行を参照サーバ上の行と一致するように修復します。
+</p></div><a id="idx189"></a><a id="idx190"></a><a id="idx191"></a><a id="idx192"></a><a id="idx193"></a><a id="idx194"></a>
+<p>
+<p>レプリケート セットを検査および修復するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートを表示するには、レプリケート セット名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの検査または同期 (Check or Sync Replicate Set)</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li>「<strong>検査および修復 (Check and Repair)</strong>」を選択します。</li>
+<li>オプション: レプリケート セットに含まれるレプリケートがすべてタイム スタンプ競合解決規則または削除優先競合解決規則を使用する場合、そのレプリケート セットには最新タイム スタンプを基にした競合修復オプションを選択します。このオプションを使用するには、IBM Informix バージョン 11.70 が必要です。</li>
+<li>「<strong>頻度</strong>」では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに検査する行数を制限するオプションを選択します。
+</li>
+<li>データの参照コピーとして使用する「<strong>参照サーバ (Reference server)</strong>」を選択します。
+</li>
+<li>参照サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。デフォルトは<strong>「削除」</strong>で、ターゲット サーバから余分な行を削除します。</li>
+<li>データの修復中にターゲット サーバでトリガを処理する方法を指定します。
+デフォルトは<strong>「オフ」</strong>です。同期中にターゲット サーバでトリガを起動しません。
+</li>
+<li>データ修復中の無効レプリケーション サーバの処理方法を指定します。デフォルトは「<strong>レプリケーションを有効にしません</strong>」です。</li>
+<li>使用するプロセス数を指定します。最良のパフォーマンスを得るには、プロセスの最大数を選択します。
+この数は、使用可能な仮想プロセッサ数と、レプリケート セット内のレプリケート数のいずれか小さい方です。
+</li>
+<li>検査および修復するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、<strong>「タスクの状態 (Task Status)」</strong>タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_059">レプリケート セットの同期化</h4>
+<div>
+<p>レプリケーション サーバ間でデータを同期し、レプリケート セット内の競合するデータを修復します。
+</p></div><a id="idx195"></a><a id="idx196"></a><a id="idx197"></a><a id="idx198"></a><a id="idx199"></a><a id="idx200"></a>
+<p>
+<p>レプリケート セットを同期するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>レプリケート セット</strong>」タブをクリックします。</li>
+<li>表内のレプリケート セットをクリックします。セット内のレプリケートを表示するには、レプリケート セット名を展開します。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>レプリケート セットの検査または同期 (Check or Sync Replicate Set)</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」ページで監視できるように、タスクを識別するための名前を入力します。</li>
+<li>「<strong>同期 (Sync)</strong>」を選択します。</li>
+<li>オプション: 同期中に送信キューが使用できるメモリ量を増加させるには、「<strong>送信キューのサイズの設定 (Set the size of the send queue)</strong>」を選択し、サイズを指定します。</li>
+<li>「<strong>頻度</strong>」では、操作を実行するタイミングを指定します。
+デフォルトは「<strong>即時</strong>」で、「<strong>終了</strong>」のクリック時に実行されます。</li>
+<li>オプション: 時間枠ごとに検査する行数を制限するオプションを選択します。
+</li>
+<li>データの参照コピーとして使用する<strong>「参照サーバ (Reference server)」</strong>を選択します。
+</li>
+<li>参照サーバに存在しない、ターゲット サーバ上の行を処理する方法を指定します。デフォルトは<strong>「削除」</strong>で、ターゲット サーバから余分な行を削除します。</li>
+<li>データの同期中にターゲット サーバでトリガを処理する方法を指定します。
+デフォルトは<strong>「オフ」</strong>です。同期中にターゲット サーバでトリガを起動しません。
+</li>
+<li>データ修復中の無効レプリケーション サーバの処理方法を指定します。デフォルトは「<strong>レプリケーションを有効にしません</strong>」です。</li>
+<li>使用するプロセス数を指定します。最良のパフォーマンスを得るには、プロセスの最大数を選択します。
+この数は、使用可能な仮想プロセッサ数と、レプリケート セット内のレプリケート数のいずれか小さい方です。
+</li>
+<li>同期するターゲット サーバを指定します。
+
+<p>タスクの進行を監視し、一貫性レポートを確認するには、「<strong>タスクの状態 (Task Status)</strong>」タブをクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_097.dita">レプリケート セットの検査タスクまたは同期タスクの削除</h4>
+<div>
+<p>レプリケート セットの検査、検査と修復、または同期の各タスクからのレポートを削除します。
+</p></div><a id="idx201"></a><a id="idx202"></a>
+<p>
+<p>レプリケート セット タスクを削除するには、次の手順を実行します。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」タブをクリックします。</li>
+<li><strong>「表示」</strong>で、<strong>「レプリケート セットの検査または同期状態 (Replicate check or sync status)」</strong>を選択します。</li>
+<li>削除するタスクについて、チェック ボックスを選択します。<div class="attention"><span class="attentiontitle">注意: </span><strong>「レプリケート セット タスクの削除 (Delete Replicate Set Tasks)」</strong>をクリックすると、選択されたタスクが確認なしで削除されます。</div></li>
+<li><strong>「操作」</strong>メニューで、<strong>「レプリケート セット タスクの削除 (Delete Replicate Set Tasks)」</strong>をクリックします。</li></ol>
+<h4 id="dqx1ids_oer_063">失敗したトランザクションを ATS ファイルを使用して修復</h4>
+<div>
+<p>中断トランザクション スプール (ATS) ファイルを使用して、失敗したトランザクションを修復します。ATS 修復タスクはターゲット サーバでの適用に失敗した行を調整します。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq311">前提条件:</div>
+<div class="notebody">ATS ファイルを格納するディレクトリを作成し、エンタープライズ レプリケーション (ER) サーバでの ATS ファイル生成を有効にして、レプリケート用の ATS ファイル生成を活動化します。</div></div>
+<p>
+<p>ATS ファイルは、競合およびトランザクション全体が失敗したために、ターゲット データベースへのレプリケート トランザクションの適用が失敗したときに生成されます。ATS ファイルを使用してトランザクションを修復する場合は、ATS ファイルに記録されているトランザクションに関連付けられている行を修復します。</p>
+<p>ATS ファイルを使用してトランザクションを修復するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>ATS</strong>」タブをクリックします。</li>
+<li><strong>「中断トランザクション スプール (ATS) ファイル」</strong>表で、ATS ファイルのチェック ボックスを選択します。
+
+<p>使用可能なすべての ATS ファイルを同時に修復しない場合、表間の関係の保守の問題 (参照整合性の制約) により、一部の修復タスクが失敗することがあります。</p></li>
+<li>「<strong>修復</strong>」をクリックします。</li>
+<li>修復用に選択した ATS ファイルを確認します。
+
+<p>ATS ファイルの詳細を表示するには、ファイルの名前をクリックします。</p></li>
+<li>「<strong>修復</strong>」をクリックします。</li>
+<li>タスクの進行を監視して、「<strong>ATS 修復タスクの状態 (ATS Repair Task Status)</strong>」リストで結果を確認します。
+
+<p>タスクの詳細を表示するには、リスト内のファイル名をクリックします。</p></li></ol>
+<h4 id="dqx1ids_oer_064">失敗したトランザクションを RIS ファイルを使用して修復</h4>
+<div>
+<p>行情報スプール (RIS) ファイルを使用して、失敗したトランザクションを修復します。RIS 修復タスクはターゲット サーバでの適用に失敗した行を調整します。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq316">前提条件:</div>
+<div class="notebody">RIS ファイルを格納するディレクトリを作成し、エンタープライズ レプリケーション (ER) サーバでの RIS ファイル生成を有効にして、レプリケート用の RIS ファイル生成を活動化します。</div></div>
+<p>
+<p>RIS ファイルは、競合およびトランザクション全体が失敗したために、行範囲が定義されたレプリケート トランザクションをターゲット データベースに適用できなかったときに生成されます。RIS ファイルを使用してトランザクションを修復する場合は、RIS ファイルに記録されている行を修復します。</p>
+<p>RIS ファイルを使用してトランザクションを修復するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>RIS</strong>」タブをクリックします。</li>
+<li><strong>「行情報スプール (RIS)」</strong>表で、RIS ファイルのチェック ボックスを選択します。
+
+<p>使用可能なすべての RIS ファイルを同時に修復しない場合、表間の関係の保守の問題 (参照整合性の制約) により、一部の修復タスクが失敗することがあります。</p></li>
+<li>「<strong>修復</strong>」をクリックします。</li>
+<li>修復用に選択した RIS ファイルを確認します。
+
+<p>RIS ファイルの詳細を表示するには、ファイルの名前をクリックします。</p></li>
+<li>「<strong>修復</strong>」をクリックします。</li>
+<li>タスクの進行を監視して、「<strong>RIS 修復タスクの状態 (RIS Repair Task Status)</strong>」リストで結果を確認します。
+
+<p>タスクの詳細を表示するには、リスト内のファイル名をクリックします。</p></li></ol>
+<h3 id="dqx1ids_oer_054"><a href="#ToC_105">タスクの状態の監視</a></h3>
+<div>
+<p>レプリケートおよびレプリケート セットの検査、検査と修復、および同期化の各タスクの進行を監視します。</p></div>
+<h4 id="dqx1ids_oer_055">レプリケート タスクの監視</h4>
+<div>
+<p>レプリケートの検査、検査と修復、および同期化の各タスクの進行を監視します。</p></div><a id="idx203"></a><a id="idx204"></a>
+<p>
+<p>レプリケートに対して一貫性検査、検査と修復、または同期化タスクを実行した後、タスクの状態と結果が「<strong>タスクの状態 (Task Status)</strong>」ページに表示および更新されます。</p>
+<p>タスクを監視するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」タブをクリックします。</li>
+<li>「<strong>レプリケート検査または同期状態 (Replicate check or sync status)</strong>」を選択します。リストに、タスクの状態が表示されます。列見出しをクリックして、リストをソートします。</li>
+<li>タスクの詳細を表示するには、タスク名をクリックします。
+
+<p>「<strong>レプリケート タスクの詳細 (Details of Replicate Task)</strong>」ページで、「リフレッシュ」ボタンをクリックして実行中のタスクの詳細を更新します。</p></li></ol>
+<h4 id="dqx1ids_oer_056">レプリケート セット タスクの監視</h4>
+<div>
+<p>レプリケート セットの検査、検査と修復、および同期化の各タスクの進行を監視します。</p></div><a id="idx205"></a><a id="idx206"></a>
+<p>
+<p>レプリケート セットに対して一貫性検査、検査と修復、または同期化タスクを実行した後、タスクの状態と結果が「<strong>タスクの状態 (Task Status)</strong>」ページに表示および更新されます。</p>
+<p>タスクを監視するには、次の手順で行います。</p></p>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、「<strong>レプリケーション</strong>」を展開し、「<strong>レプリケート</strong>」をクリックします。</li>
+<li>「<strong>タスクの状態 (Task Status)</strong>」タブをクリックします。</li>
+<li>「<strong>レプリケート セットの検査または同期状態 (Replicate set check or sync status)</strong>」を選択します。リストに、タスクの状態が表示されます。列見出しをクリックして、リストをソートします。</li>
+<li>タスクの詳細を表示するには、タスク名をクリックします。</li>
+<li>「<strong>レプリケート セット タスクの詳細 (Details of Replicate Set Task)</strong>」ページで、レプリケートの名前をクリックしてそれに関する詳細を表示します。
+
+<p>「リフレッシュ」ボタンをクリックして実行中のタスクの詳細を更新します。</p></li></ol>
+<h3 id="dqx1ids_oer_030"><a href="#ToC_108">ER 構成パラメータの変更</a></h3>
+<div>
+<p>エンタープライズ レプリケーション (ER) ドメイン内のノードの構成パラメータを変更します。</p></div>
+<p></p>
+<ol type="1">
+<li>IBM OpenAdmin Tool (OAT) for Informix のメニューで、<strong>「レプリケーション」</strong>を展開し、<strong>「ノード詳細」</strong>をクリックします。</li>
+<li>「<strong>構成</strong>」タブをクリックします。パラメータとその現行値が表示されます。</li>
+<li>「<strong>構成の編集</strong>」をクリックします。</li>
+<li>フィールドに変更内容を入力します。</li>
+<li>「<strong>変更を保存</strong>」をクリックします。</li></ol>
+<h2 id="dqx1ids_oer_115.dita"><a href="#ToC_109">クライアント接続の管理</a></h2>
+<div>
+<p>接続マネージャを使用することにより、クライアント接続の監視と管理を行い、クライアント接続要求をグリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の適切なサーバに送信します。</p></div>
+<div>
+<div class="notetitle" id="dqx1ids_oer_115.dita__preq-cmxc3">前提条件:</div>
+<div class="notebody"><span id="dqx1ids_oer_115.dita__preq-ph-cmxc3">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</span></div></div>
+<p>接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。接続単位とは、グリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の、データベース サーバのコレクションです。単一の接続マネージャで複数の接続単位を管理できます。</p>
+<div>
+<div class="notetitle" id="wq328">重要:</div>
+<div class="notebody">接続マネージャでは、英語以外のロケールの場合でも、接続マネージャ名、SLA 名、クラスタ名、およびサーバ セット名をすべて ASCII 文字にする必要があります。</div></div>
+<h3 id="dqx1ids_oer_116"><a href="#ToC_110">接続単位の表示</a></h3>
+<div>
+<p>接続マネージャによって監視される接続を持つグリッド、高可用性クラスタ、レプリケート セット、およびサーバ セットを表示します。</p></div><a id="idx207"></a><a id="idx208"></a><a id="idx209"></a><a id="idx210"></a><a id="idx211"></a><a id="idx212"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq330">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。接続単位とは、グリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の、データベース サーバのコレクションです。単一の接続マネージャで複数の接続単位を管理できます。</p></p>
+<p>
+<p>接続マネージャ用接続単位を表示するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>リスト内の接続単位をクリックします。</li></ol>
+<h3 id="dqx1ids_oer_117"><a href="#ToC_111">接続単位の追加</a></h3>
+<div>
+<p>グリッド、クラスタ、レプリケート セット、またはサーバ セットを接続マネージャに割り当て、その接続単位用のサービス レベル アグリーメントを作成します。クラスタの場合、フェイルオーバーの構成も行います。</p></div><a id="idx213"></a><a id="idx214"></a><a id="idx215"></a><a id="idx216"></a><a id="idx217"></a><a id="idx218"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq335">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>接続単位とは、グリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の、データベース サーバのコレクションです。接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。</p></p>
+<p>
+<p>接続単位を追加するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>接続単位の追加</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<h3 id="dqx1ids_oer_118"><a href="#ToC_112">フェイルオーバー構成の変更</a></h3>
+<div>
+<p>接続マネージャを使用して、高可用性クラスタのフェイルオーバー構成を変更します。</p></div><a id="idx219"></a><a id="idx220"></a><a id="idx221"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq340">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>フェイルオーバー構成は、主サーバに障害が発生したときにロールを引き継ぐ副サーバを指定します。</p></p>
+<p>
+<p>フェイルオーバー構成を変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>クラスタをクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>接続単位の変更</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<h3 id="dqx1ids_oer_119"><a href="#ToC_113">サービス レベル アグリーメントの作成</a></h3>
+<div>
+<p>接続マネージャを使用して、グリッド、クラスタ、またはレプリケート セット用のサービス レベル アグリーメントを作成します。</p></div><a id="idx222"></a><a id="idx223"></a><a id="idx224"></a><a id="idx225"></a><a id="idx226"></a><a id="idx227"></a><a id="idx228"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq345">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。グリッド、クラスタ、およびレプリケート セットは、接続マネージャ用の接続単位として定義しなければなりません。
+</div></div>
+<p>
+<p>サービス レベル アグリーメント (SLA) は、指定されたクライアント アプリケーションと、サービス プロバイダ、この場合は Informix データベース サーバとの間の契約です。接続マネージャは、サービス レベル アグリーメントに基づき、クライアント アプリケーションを適切なサーバに接続します。接続マネージャは、クライアントの接続要求を受信すると、その要求を適切なサーバにリダイレクトするか、またはクライアント アプリケーションとサーバとの間のプロキシ サーバなどの機能にリダイレクトします。</p>
+<p>接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。データ品質を監視している場合、接続マネージャによるクライアント接続のレプリケーション サーバへのルーティングを、適用失敗回数、トランザクション待ち時間、およびワークロードを基にして行えます。データ品質を監視していない場合、接続マネージャによるクライアント接続のルーティングは、ワークロードのみを基にして行えます。適用の失敗と SLA での待ち時間を指定するには、データ品質の監視を有効化するように、<strong>「レプリケーション」</strong>&gt;<strong>「ER ドメイン」</strong>ページでグリッド メンバであるサーバを変更します。</p></p>
+<p>
+<p>サービス レベル アグリーメントを作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>リスト内の接続単位をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>SLA の作成</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<h3 id="dqx1ids_oer_120"><a href="#ToC_114">サービス レベル アグリーメントの変更</a></h3>
+<div>
+<p>接続マネージャを使用して、グリッド、クラスタ、レプリケート セット、またはサーバ セット用のサービス レベル アグリーメントを変更します。</p></div><a id="idx229"></a><a id="idx230"></a><a id="idx231"></a><a id="idx232"></a><a id="idx233"></a><a id="idx234"></a><a id="idx235"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq350">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>サービス レベル アグリーメント (SLA) は、指定されたクライアント アプリケーションと、サービス プロバイダ、この場合は Informix データベース サーバとの間の契約です。接続マネージャは、サービス レベル アグリーメントに基づき、クライアント アプリケーションを適切なサーバに接続します。接続マネージャは、クライアントの接続要求を受信すると、その要求を適切なサーバにリダイレクトするか、またはクライアント アプリケーションとサーバとの間のプロキシ サーバなどの機能にリダイレクトします。</p>
+<p>接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。接続単位とは、グリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の、データベース サーバのコレクションです。</p></p>
+<p>
+<p>サービス レベル アグリーメントを変更するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>接続マネージャをクリックします。</li>
+<li>グリッド、クラスタ、レプリケート セット、またはサーバ セットをクリックします。</li>
+<li>「SLA」タブをクリックします。</li>
+<li>リスト内の SLA をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>SLA の変更</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<h3 id="dqx1ids_oer_121"><a href="#ToC_115">接続マネージャの作成</a></h3>
+<div>
+<p>接続マネージャを作成し、グリッド、クラスタ、レプリケート セット、またはサーバ セットを接続単位として定義し、その接続単位用のサービス レベル アグリーメントを作成します。</p></div><a id="idx236"></a><a id="idx237"></a><a id="idx238"></a><a id="idx239"></a><a id="idx240"></a><a id="idx241"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq355">前提条件:</div>
+<div class="notebody">接続マネージャを使用する場合、IBM OpenAdmin Tool (OAT) for Informix は、Informix 11.70.xC3 と、Informix 11.70.xC3 または IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 にパッケージされている接続マネージャを必要とします。</div></div>
+<p>
+<p>接続マネージャは負荷分散を提供し、サービス レベル アグリーメント (SLA) を基にしてクライアント接続要求を接続単位内の適切なサーバに送信します。接続単位とは、グリッド内、高可用性クラスタ内、レプリケート セット内、またはサーバ セット内の、データベース サーバのコレクションです。単一の接続マネージャで複数の接続単位を管理できます。</p>
+<p>OAT を使用することで、OAT の接続先データベース サーバに接続マネージャを 1 つ作成できます。</p></p>
+<p>
+<p>接続マネージャを作成するには、次の手順を実行します。</p></p>
+<ol type="1">
+<li>OAT メニューで、<strong>「レプリケーション」</strong>&gt;<strong>「接続マネージャ」</strong>をクリックします。</li>
+<li>「<strong>操作</strong>」メニューで、「<strong>作成</strong>」をクリックします。</li>
+<li>ウィザードを完了します。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_116">特記事項</a></h1>
+<p>本書は米国 IBM が提供する製品およびサービスについて作成したものです。</p>
+<p>本書に記載の製品、サービス、または機能が日本においては提供されていない場合があります。
+日本で利用可能な製品、サービス、および機能については、日本 IBM の営業担当員にお尋ねください。
+本書で IBM 製品、プログラム、またはサービスに言及していても、その IBM 製品、プログラム、または
+サービスのみが使用可能であることを意味するものではありません。
+これらに代えて、IBM の知的所有権を侵害することのない、機能的に同等の
+製品、プログラム、またはサービスを使用することができます。
+ただし、IBM 以外の製品とプログラムの操作またはサービスの
+評価および検証は、お客様の責任で行っていただきます。</p>
+<p>IBM は、本書に記載されている内容に関して特許権 (特許出願中のものを含む) を保有している場合があります。
+本書の提供は、お客様にこれらの特許権について
+実施権を許諾することを意味するものではありません。
+実施権についてのお問い合わせは、書面にて下記宛先にお送りください。
+</p>
+<div class="lines">〒242-8502
+<br />
+IBM Corporation<br />
+日本アイ・ビー・エム株式会社
+<br />
+法務・知的財産
+<br />
+知的財産権ライセンス渉外<br />
+</div>
+<p>NONE:
+</p>
+<div class="lines">〒103-8510<br />
+東京都中央区日本橋箱崎町19番21号<br />
+日本アイ・ビー・エム株式会社<br />
+法務・知的財産<br />
+知的財産権ライセンス渉外<br />
+</div>
+<p>以下の保証は、国または地域の法律に沿わない場合は、適用されません。
+IBM およびその直接または間接の子会社は、本書を特定物として現存するままの状態で提供し、
+商品性の保証、特定目的適合性の保証および法律上の瑕疵担保責任を含む
+すべての明示もしくは黙示の保証責任を負わないものとします。
+国または地域によっては、法律の強行規定により、保証責任の制限が
+禁じられる場合、強行規定の制限を受けるものとします。</p>
+<p>この情報には、技術的に不適切な記述や誤植を含む場合があります。
+本書は定期的に見直され、必要な変更は本書の次版に組み込まれます。
+IBM は予告なしに、随時、この文書に記載されている製品またはプログラムに対して、
+改良または変更を行うことがあります。</p>
+<p>本書において IBM 以外の Web サイトに言及している場合がありますが、便宜のため記載しただけであり、決してそれらの Web サイトを推奨するものではありません。それらの Web サイトにある資料は、この IBM 製品の資料の一部では
+ありません。それらの Web サイトは、お客様の責任でご使用ください。
+</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p>本プログラムのライセンス保持者で、(i) 独自に作成したプログラムと
+その他のプログラム (本プログラムを含む) との間での情報交換、
+および (ii) 交換された情報の相互利用を可能にすることを目的として、
+本プログラムに関する情報を必要とする方は、下記に連絡してください。
+</p>
+<div class="lines">IBM Corporation<br />
+J46A/G4
+<br />
+555 Bailey Avenue
+<br />
+San Jose, CA 95141-1003
+<br />
+U.S.A.<br />
+</div>
+<p>本プログラムに関する上記の情報は、適切な使用条件の下で使用すること
+ができますが、有償の場合もあります。</p>
+<p>本書で説明されているライセンス・プログラムまたはその他のライセンス資
+料は、IBM 所定のプログラム契約の契約条項、IBM プログラムのご使用条件、
+またはそれと同等の条項に基づいて、IBM より提供されます。</p>
+<p>この文書に含まれるいかなるパフォーマンス・データも、管理環境下で
+決定されたものです。
+そのため、他の操作環境で得られた結果は、異なる可能性があります。
+一部の測定が、開発レベルのシステムで行われた可能性がありますが、
+その測定値が、一般に利用可能なシステムのものと同じである保証はありません。
+さらに、一部の測定値が、推定値である可能性があります。
+実際の結果は、異なる可能性があります。お客様は、お客様の特定の環境に適したデータを確かめる必要があります。</p>
+<p>IBM 以外の製品に関する情報は、その製品の供給者、出版物、
+もしくはその他の公に利用可能なソースから入手したものです。IBM は、それらの製品のテストは行っておりません。したがって、
+他社製品に関する実行性、互換性、またはその他の要求については確証できません。
+IBM 以外の製品の性能に関する質問は、それらの製品の供給者にお願いします。</p>
+<p>IBM の将来の方向または意向に関する記述については、
+予告なしに変更または撤回される場合があり、単に目標を示しているものです。</p>
+<p>表示されている IBM の価格は IBM が小売り価格として提示しているもので、
+現行価格であり、通知なしに変更されるものです。
+卸価格は、異なる場合があります。</p>
+<p>本書はプランニング目的としてのみ記述されています。記述内容は
+製品が使用可能になる前に変更になる場合があります。</p>
+<p>本書には、日常の業務処理で用いられるデータや報告書の例が含まれています。
+より具体性を与えるために、それらの例には、個人、企業、ブランド、
+あるいは製品などの名前が含まれている場合があります。
+これらの名称はすべて架空のものであり、
+名称や住所が類似する企業が実在しているとしても、それは偶然にすぎません。</p>
+<p>著作権使用許諾:</p>
+<p>本書には、様々なオペレーティング・プラットフォームでのプログラミング手法を例示するサンプル・アプリケーション・プログラムがソース言語で掲載されています。お客様は、サンプル・プログラムが書かれているオペレーティング・
+プラットフォームのアプリケーション・プログラミング・インターフェースに
+準拠したアプリケーション・プログラムの開発、使用、販売、配布を目的として、
+いかなる形式においても、IBM に対価を支払うことなくこれを複製し、改変し、
+配布することができます。
+このサンプル・プログラムは、あらゆる条件下における完全なテストを経ていません。
+従って IBM は、これらのサンプル・プログラムについて信頼性、利便性もしくは機能性が
+あることをほのめかしたり、保証することはできません。
+これらのサンプル・プログラムは特定物として現存するままの状態で提供されるものであり、いかなる保証も提供されません。
+IBM は、お客様の当該サンプル・プログラムの使用から生ずるいかなる損害に対しても一切の責任を負いません。</p>
+<p>それぞれの複製物、サンプル・プログラムのいかなる部分、またはすべての派生的創作物にも、次の
+ように、著作権表示を入れていただく必要があります。</p>
+<p>&copy; (お客様の会社名) (西暦年).
+このコードの一部は、IBM Corp. のサンプル・プログラムから取られています。</p>
+<p>&copy; Copyright IBM
+Corp. _年を入れる_.All rights reserved.</p>
+<p>この情報をソフトコピーでご覧になっている場合は、写真やカラーの図表は
+表示されない場合があります。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_117">商標
+</a></h2>
+<p>IBM、IBM ロゴ、および ibm.com は、世界の多くの国で登録された International Business Machines Corp. の商標です。他の製品名およびサービス名等は、それぞれ IBM または各社の商標である場合があります。
+現時点での IBM の商標リストについては、<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> をご覧ください。</p>
+<p>Adobe、Adobe ロゴ、PostScript は、Adobe Systems Incorporated の米国およびその他の国における登録商標または商標です。</p>
+<p>Intel、Itanium、Pentium は、Intel Corporation または子会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Java&trade; およびすべての Java 関連の商標およびロゴは Oracle やその関連会社の米国およびその他の国における商標または登録商標です。</p>
+<p>Linux は、Linus Torvalds の米国およびその他の国における商標です。</p>
+<p>Microsoft、Windows、および Windows NT は、Microsoft Corporation の米国およびその他の国における商標です。</p>
+<p>UNIX は The Open Group の米国およびその他の国における登録商標です。</p>
+<p>他の会社名、製品名およびサービス名等はそれぞれ各社の商標です。</p>
+<h2 id="dqx1ids_oer_000"><a href="#ToC_118">著作権表示</a></h2>
+<p>本書には、IBM の専有情報が含まれています。
+その情報は、使用許諾条件に基づき提供され、著作権により保護されています。
+本書に記載される情報には、いかなる製品の保証も含まれていません。また、本書で提供されるいかなる記述も、製品保証として解釈すべきではありません。</p>
+<p>IBM は、お客様が提供するいかなる情報も、お客様に対してなんら義務も負うことのない、
+自ら適切と信ずる方法で、使用もしくは配布することができるものとします。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2008,
+2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. 追加情報については、<samp class="xph">license/notices.txt</samp> ファイルを参照してください。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

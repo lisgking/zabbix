@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onconfig">
+<ADMIN_MODE_USERS_DESC><![CDATA[관리 모드에서 데이터베이스 서버에 액세스할 수 있는 사용자(및 사용자 informix와 DBSA 그룹 사용자)를 지정합니다. ]]></ADMIN_MODE_USERS_DESC>
+<ADMIN_USER_MODE_WITH_DBSA_DESC><![CDATA[관리 모드일 때 사용자 <i>informix</i> 및 DBSA 그룹 사용자가 데이터베이스 서버에 액세스할 수 있는지 여부를 지정합니다. ]]></ADMIN_USER_MODE_WITH_DBSA_DESC>
+<ADTERR_DESC><![CDATA[(UNIX) ADTERR 감사 레코드 작성 중 오류가 발생하는 경우 데이터베이스 서버의 작동 방식을 지정합니다. ]]></ADTERR_DESC>
+<ADTMODE_DESC><![CDATA[(UNIX) 감사 레벨을 제어합니다. ]]></ADTMODE_DESC>
+<ADTPATH_DESC><![CDATA[(UNIX) 데이터베이스 서버가 감사 파일을 저장하는 디렉토리를 지정합니다. ]]></ADTPATH_DESC>
+<ADTSIZE_DESC><![CDATA[(UNIX) 감사 파일의 최대 크기를 지정합니다. ]]></ADTSIZE_DESC>
+<AFCRASH_DESC><![CDATA[AFCRASH에 대해 0x10 비트가 설정되어 있는 경우 Java 가상 시스템이 생성하는 모든 메시지는 JVM_vpid 파일에 로그됩니다. 여기서 vpid는 Java 가상 프로세서의 프로세서 ID입니다. 이 파일은 JVPLOG 파일이 저장된 디렉토리에 저장됩니다. ]]></AFCRASH_DESC>
+<AFFAIL_DESC><![CDATA[]]></AFFAIL_DESC>
+<AFF_NPROCS_DESC><![CDATA[프로세서 친화도를 지원하는 멀티프로세서 컴퓨터에서 AFF_NPROCS는 데이터베이스 서버가 CPU 가상 프로세서를 바인드할 수 있는 CPU의 수를 지정합니다. ]]></AFF_NPROCS_DESC>
+<AFF_SPROC_DESC><![CDATA[프로세서 친화도를 지원하는 멀티프로세서 컴퓨터에서 AFF_SPROC는 데이터베이스 서버가 CPU 가상 프로세서를 바인드할 수 있는 CPU의 수를 0에서부터 지정합니다. ]]></AFF_SPROC_DESC>
+<ALARMPROGRAM_DESC><![CDATA[이벤트 경보 표시]]></ALARMPROGRAM_DESC>
+<ALLOW_NEWLINE_DESC><![CDATA[데이터베이스 서버가 인용 문자열에서 모든 세션이나 특정 세션에 개행 문자()를 사용할 수 있도록 지정합니다.]]></ALLOW_NEWLINE_DESC>
+<ALRM_ALL_EVENTS_DESC><![CDATA[ALARMPROGRAM을 MSGPATH에 로그된 모든 이벤트에 대해 실행할지 또는 주목할만한 이벤트에 대해서만 실행할지를 지정합니다. ]]></ALRM_ALL_EVENTS_DESC>
+<ASF_SOCTCP_BACKLOG_DESC><![CDATA[소켓(SOCTCP) 사용 시 큐의 연결 수를 지정합니다. ]]></ASF_SOCTCP_BACKLOG_DESC>
+<AUTO_AIOVPS_DESC><![CDATA[입출력 워크로드가 기존 AIO VP의 성능을 초과하는 것을 발견하는 경우, 데이터베이스 서버가 AIO VP 및 페이지 클리너 스레드의 수를 자동으로 증가시킬 수 있도록 합니다.]]></AUTO_AIOVPS_DESC>
+<AUTO_CKPTS_DESC><![CDATA[트랜잭션 장애를 방지하기 위해 서버가 좀 더 빈번하게 체크포인트를 트리거할 수 있도록 합니다.]]></AUTO_CKPTS_DESC>
+<AUTO_LRU_TUNING_DESC><![CDATA[자동 LRU 조정 사용]]></AUTO_LRU_TUNING_DESC>
+<AUTO_READAHEAD_DESC><![CDATA[자동 미리 읽기 모드를 변경하거나 자동 미리 읽기를 사용 안함으로 설정합니다. 자동 미리 읽기 조작은 데이터베이스 서버에서 쿼리가 I/O에 직면할 때 비동기 페이지 요청을 발행하는 방식으로 쿼리 성능을 향상시킵니다. 0 = 자동 미리 읽기 사용 안함. 1 = 표준 모드에서 자동 미리 읽기 요청 사용. 2 = 공격 모드에서 자동 미리 읽기 요청 사용.]]></AUTO_READAHEAD_DESC>
+<AUTO_REPREPARE_DESC><![CDATA[자동으로 SPL 루틴을 다시 최적화하는 Dynamic Server 기능이 효력을 갖는지 여부를 제어하고, SPL 루틴이나 준비된 객체가 참조하는 테이블 스키마가 변경된 후 준비된 객체를 다시 준비합니다.]]></AUTO_REPREPARE_DESC>
+<AUTO_STAT_MODE_DESC><![CDATA[데이터베이스 서버의 갱신 통계을 사용 가능 또는 사용 불가능하게 합니다. ]]></AUTO_STAT_MODE_DESC>
+<BACKUP_FILTER_DESC><![CDATA[필터 프로그램 및 옵션의 경로 이름을 지정합니다.]]></BACKUP_FILTER_DESC>
+<BAR_ACT_LOG_DESC><![CDATA[ON-Bar 활동 로그 파일의 위치를 지정합니다.]]></BAR_ACT_LOG_DESC>
+<BAR_BSALIB_PATH_DESC><![CDATA[Storage Manager에서 XBSA 공유 라이브러리의 경로 이름과 파일 이름을 지정합니다.]]></BAR_BSALIB_PATH_DESC>
+<BAR_CKPTSEC_TIMEOUT_DESC><![CDATA[외부 백업을 수행하는 동안 기본 서버에서 체크포인트가 도착할 때까지 RS 보조 서버가 대기해야 하는 초 단위 시간을 지정합니다. 기본 서버에서 체크포인트가 시간종료되어 백업이 실패하는 경우, BAR_CKPTSEC_TIMEOUT 구성 매개변수를 사용하여 기본 서버에서 체크포인트가 도착할 때까지 RS 보조 서버가 대기해야 하는 시간을 늘릴 수 있습니다.]]></BAR_CKPTSEC_TIMEOUT_DESC> 
+<BAR_DEBUG_DESC><![CDATA[ON-Bar 활동 로그에서 메시지 디버깅 레벨을 지정합니다.]]></BAR_DEBUG_DESC>
+<BAR_DEBUG_LOG_DESC><![CDATA[ON-Bar 디버그 로그의 위치를 지정합니다.]]></BAR_DEBUG_LOG_DESC>
+<BAR_HISTORY_DESC><![CDATA[Sysutils 데이터베이스가 백업 히스토리를 유지보수하는지 여부를 지정합니다.]]></BAR_HISTORY_DESC>
+<BAR_IXBAR_PATH_DESC><![CDATA[ON-Bar 시동 파일의 이름과 경로를 무시합니다. 기본적으로 ON-Bar 시동 파일은 $INFORMIXDIR/etc 디렉토리에 작성되며 이름은 'ixbar.<SERVER_NUM>'입니다.]]></BAR_IXBAR_PATH_DESC>
+<BAR_MAX_BACKUP_DESC><![CDATA[각 ON-Bar 명령에 허용되는 병렬 백업 프로세스의 최대 수를 지정합니다.]]></BAR_MAX_BACKUP_DESC>
+<BAR_NB_XPORT_COUNT_DESC><![CDATA[각 백업 또는 복원 프로세스의 공유 메모리 데이터 버퍼 수를 지정합니다.]]></BAR_NB_XPORT_COUNT_DESC>
+<BAR_PERFORMANCE_DESC><![CDATA[ON-Bar 활동 로그에 인쇄할 성능 통계 레벨을 지정합니다.]]></BAR_PERFORMANCE_DESC>
+<BAR_PROGRESS_FREQ_DESC><![CDATA[백업 또는 복원 진행 상황 메시지가 활동 로그에 표시되는 빈도를 분 단위로 지정합니다.]]></BAR_PROGRESS_FREQ_DESC>
+<BAR_RETRY_DESC><![CDATA[ON-Bar가 데이터 백업, 논리 로그 백업 또는 복원 작업을 첫 번째 시도에서 실패하는 경우 이를 재시도하는 횟수를 지정합니다.]]></BAR_RETRY_DESC>
+<BAR_SIZE_FACTOR_DESC><![CDATA[백업 전에 백업 객체의 크기 추정값을 증가시킵니다. 추정값이 Storage Manager로 전달되기 전, BAR_SIZE_FACTOR 매개변수의 값이 원래 백업 객체 크기의 백분율로 계산된 후 추정값에 추가됩니다.]]></BAR_SIZE_FACTOR_DESC>
+<BAR_XFER_BUF_SIZE_DESC><![CDATA[데이터베이스 서버가 ON-Bar 및 Storage Manager에 전달하는 각 전송 버퍼의 크기를 지정합니다. 최대 버퍼 크기가 64KB이므로 BAR_XFER_BUF_SIZE * pagesize <= 64KB입니다.]]></BAR_XFER_BUF_SIZE_DESC>
+<BATCHEDREAD_INDEX_DESC><![CDATA[옵티마이저가 인덱스 버퍼에서 키 세트를 페치할 수 있게 합니다. 이로 인해 버퍼를 읽는 횟수가 줄어 성능이 향상됩니다.]]></BATCHEDREAD_INDEX_DESC>
+<BATCHEDREAD_TABLE_DESC><![CDATA[압축된 테이블, 페이지보다 큰 행이 있는 테이블 및 VARCHAR, LVARCHAR 및 NVARCHAR 데이터가 있는 테이블에서 라이트 스캔을 사용 가능하게 하거나 비활성화합니다.]]></BATCHEDREAD_TABLE_DESC>
+<BLOCKTIMEOUT_DESC><![CDATA[스레드 또는 데이터베이스 서버가 정지하는 시간(초)을 지정합니다.]]></BLOCKTIMEOUT_DESC>
+<BTSCANNER_DESC><![CDATA[삭제할 인덱스 항목을 자동으로 결정하는 B-트리 스캐너를 설정합니다.]]></BTSCANNER_DESC>
+<BUFFERPOOL_DESC><![CDATA[onconfig.std 파일의 두 라인으로 구성됩니다. 첫 번째 라인은 시작 시 해당 버퍼 풀이 작성되지 않은 페이지 크기로 DBSPACE를 작성하는 데 사용되는 기본값을 지정하고, 두 번째 라인은 데이터베이스 서버의 버퍼 풀 기본값을 지정합니다.]]></BUFFERPOOL_DESC>
+<BUFFERS_DESC><![CDATA[데이터베이스 서버 사용자 스레드가 클라이언트 응용프로그램을 대신하여 디스크 입출력에 사용할 수 있는 최대 공유 메모리 버퍼 수를 지정합니다.]]></BUFFERS_DESC>
+<CDR_APPLY_DESC><![CDATA[데이터 동기화 스레드의 최소 및 최대 수를 지정합니다.]]></CDR_APPLY_DESC>
+<CDR_DELAY_PURGE_DTC_DESC><![CDATA[삭제 우선 충돌 해결 규칙을 지원하는 삭제 테이블의 보유 기간을 지정합니다.]]></CDR_DELAY_PURGE_DTC_DESC>
+<CDR_DBSPACE_DESC><![CDATA[syscdr 데이터베이스가 작성되는 DBSPACE를 지정합니다.]]></CDR_DBSPACE_DESC>
+<CDR_DSLOCKWAIT_DESC><![CDATA[데이터 동기화 구성요소가 데이터베이스 로크의 해제를 대기하는 시간(초)을 지정합니다.]]></CDR_DSLOCKWAIT_DESC>
+<CDR_ENV_DESC><![CDATA[Enterprise Replication 환경 변수(CDR_LOGDELTA, CDR_PERFLOG, CDR_ROUTER 또는 CDR_RMSCALEFACT)를 설정합니다.]]></CDR_ENV_DESC>
+<CDR_EVALTHREADS_DESC><![CDATA[Enterprise Replication가 시작되어 병렬 기능을 사용할 수 있을 때 작성하는 그룹 평가자 스레드의 수를 지정합니다.]]></CDR_EVALTHREADS_DESC>
+<CDR_LOG_LAG_ACTION_DESC><![CDATA[Enterprise Replication이 잠재적 로그 랩 상황에 응답하는 방법을 지정합니다. 여러 개의 값을 결합하려면 +를 사용하십시오. logstage = 압축된 논리 로그 스테이징 사용 가능; dlog = 논리 로그의 동적 추가 사용 가능; ignore = 로그 랩핑 가능성 무시; ddrblock = 클라이언트 응용프로그램 갱신 활동 차단; shutdown = 영향 받은 서버에서 Enterprise Replication 종료.
+]]></CDR_LOG_LAG_ACTION_DESC>
+<CDR_LOG_STAGING_MAXSIZE_DESC><![CDATA[Enterprise Replication에서 압축된 로그 파일 스테이징에 사용하는 공간 최대량을 지정합니다.]]></CDR_LOG_STAGING_MAXSIZE_DESC>
+<CDR_MAX_DYNAMIC_LOGS_DESC><![CDATA[Enterprise Replication이 한 개의 서버 세션에서 작성할 수 있는 동적 로그 파일 요청의 수를 지정합니다.]]></CDR_MAX_DYNAMIC_LOGS_DESC>
+<CDR_NIFCOMPRESS_DESC><![CDATA[데이터베이스 서버가 소스 데이터베이스 서버에서 대상 데이터베이스 서버로 데이터를 송신할 때 사용하는 압축 레벨을 지정합니다.]]></CDR_NIFCOMPRESS_DESC>
+<CDR_QDATA_SBSPACE_DESC><![CDATA[Enterprise Replication이 스풀된 트랜잭션 행 데이터를 저장하는 데 사용하는 최대 32개의 SBSPACE 이름 목록을 지정합니다.]]></CDR_QDATA_SBSPACE_DESC>
+<CDR_QHDR_DBSPACE_DESC><![CDATA[Enterprise Replication이 송신 및 수신 큐에서 스풀된 트랜잭션 레코드 헤더를 저장하는 데 사용하는 DBSPACE의 위치를 지정합니다.]]></CDR_QHDR_DBSPACE_DESC>
+<CDR_QUEUEMEM_DESC><![CDATA[송신 및 수신 큐에 사용되는 최대 메모리 양을 지정합니다.]]></CDR_QUEUEMEM_DESC>
+<CDR_SERIAL_DESC><![CDATA[복제에 정의된 테이블에서 직렬 및 SERIAL8 컬럼에 대한 값 생성을 제어합니다.]]></CDR_SERIAL_DESC>
+<CDR_SUPPRESS_ATSRISWARN_DESC><![CDATA[ATS 및 RIS 파일에서 표시되지 않는 데이터 동기화 오류 및 경고 코드 번호를 지정합니다.]]></CDR_SUPPRESS_ATSRISWARN_DESC>
+<CHECKALLDOMAINSFORUSER_DESC><![CDATA[네트워크된 Windows 환경에서 모든 도메인의 모든 사용자 이름 검사를 사용 가능하게 하거나 비활성화합니다.]]></CHECKALLDOMAINSFORUSER_DESC>
+<CKPTINTVL_DESC><![CDATA[데이터베이스 서버가 체크포인트의 필요 여부를 판별하는 빈도를 초 단위로 지정합니다.]]></CKPTINTVL_DESC>
+<CLEANERS_DESC><![CDATA[데이터베이스 서버 조작 중 사용 가능한 페이지 클리너 스레드 수를 지정합니다.]]></CLEANERS_DESC>
+<CONSOLE_DESC><![CDATA[콘솔 메시지의 파일 이름과 경로 이름을 지정합니다.]]></CONSOLE_DESC>
+<CONVERSION_GUARD_DESC><![CDATA[업그레이드 프로세스 중에 오류가 발생할 경우 Informix 서버가 서버 새 버전으로의 업그레이드를 중지하는지 또는 계속하는지 여부를 지정합니다. 0 = 사용 안함. 서버가 중지되지 않습니다. 1 = 복원 지점을 사용 가능하게 하고 복원 지점 데이터 캡처와 관련된 오류가 발생할 경우 업그레이드를 중지합니다. 2 = 복원 지점을 사용 가능하게 하고 오류가 발생할 경우에도 업그레이드를 계속합니다.]]></CONVERSION_GUARD_DESC>
+<DATASKIP_DESC><![CDATA[매체 오류의 가점을 방지하는 데 사용됩니다.]]></DATASKIP_DESC>
+<DB_LIBRARY_PATH_DESC><![CDATA[데이터베이스 서버가 외부 모듈(예: DataBlade&reg; Modules)을 로드해올 수 있는 콤마로 분리된 유효 디렉토리 접두부 위치 목록을 지정합니다.]]></DB_LIBRARY_PATH_DESC>
+<DBCREATE_PERMISSION_DESC><![CDATA[데이터베이스 작성 권한을 지정된 사용자로 제한합니다.]]></DBCREATE_PERMISSION_DESC>
+<DBSERVERALIASES_DESC><![CDATA[대체 데이터베이스 서버 이름 목록을 지정하고 하나의 데이터베이스 서버에 여러 개의 별명을 지정할 수 있도록 하여 SQL 호스트 파일 또는 디렉토리의 각 항목이 고유 이름을 갖도록 합니다.]]></DBSERVERALIASES_DESC>
+<DBSERVERNAME_DESC><![CDATA[특정 데이터베이스 서버와 관련된 고유 이름을 지정합니다.]]></DBSERVERNAME_DESC>
+<DBSPACETEMP_DESC><![CDATA[데이터베이스 서버가 임시 테이블의 스토리지를 전역으로 관리할 때 사용하는 DBSPACE 목록을 지정합니다.]]></DBSPACETEMP_DESC>
+<DD_HASHMAX_DESC><![CDATA[데이터 사전 캐시에 있는 각 해시 버킷의 최대 테이블 수를 지정합니다.]]></DD_HASHMAX_DESC>
+<DD_HASHSIZE_DESC><![CDATA[데이터 사전 캐시에 있는 각 해시 버킷의 최대 테이블 수를 지정합니다.]]></DD_HASHSIZE_DESC>
+<DEADLOCK_TIMEOUT_DESC><![CDATA[데이터베이스 서버 스레드가 로크를 획득하기 위해 대기할 수 있는 최대 시간(초)을 지정합니다. 원격 데이터베이스 서버를 필요로 하는 분산 쿼리에만 이 매개변수를 사용하십시오.]]></DEADLOCK_TIMEOUT_DESC>
+<DEF_TABLE_LOCKMODE_DESC><![CDATA[데이터베이스의 기본 로크 모드를 지정합니다. PAGE 또는 ROW로 설정할 수 있습니다.]]></DEF_TABLE_LOCKMODE_DESC>
+<DEFAULTESCCHAR_DESC><![CDATA[기본 Esc 문자를 지정합니다.]]></DEFAULTESCCHAR_DESC>
+<DELAY_APPLY_DESC><![CDATA[RS 보조 서버가 로그 적용 전에 대기하는 시간을 지정합니다.]]></DELAY_APPLY_DESC>
+<DIRECT_IO_DESC><![CDATA[DBSPACE 청크에 사용된 가공된 파일의 직접 입출력 사용을 제어합니다.]]></DIRECT_IO_DESC>
+<DIRECTIVES_DESC><![CDATA[SQL 지시문의 사용을 가능하게 하거나 불가능하게 합니다.]]></DIRECTIVES_DESC>
+<DISABLE_B162428_XA_FIX_DESC><![CDATA[1로 설정할 경우, Dynamic Server 9.40 이하 버전용으로 작성된 응용프로그램이 올바로 작동하는지 확인하십시오.]]></DISABLE_B162428_XA_FIX_DESC>
+<DISTR_QUERY_FLAGS_DESC><![CDATA[]]></DISTR_QUERY_FLAGS_DESC>
+<DRAUTO_DESC><![CDATA[보조 데이터베이스 서버가 HDR 오류에 반응하는 방식을 결정합니다. 이 매개변수의 값은 두 HDR 서버에서 동일해야 합니다.]]></DRAUTO_DESC>
+<DRDA_COMMBUFFSIZE_DESC><![CDATA[DRDA 통신 버퍼의 크기를 지저합니다.]]></DRDA_COMMBUFFSIZE_DESC>
+<DRIDXAUTO_DESC><![CDATA[보조 고가용성 데이터 복제(HDR) 서버가 손상된 인덱스를 발견하는 경우 기본 HDR 서버가 자동으로 인덱스 복제를 시작하는지 여부를 지정합니다.]]></DRIDXAUTO_DESC>
+<DRINTERVAL_DESC><![CDATA[고가용성 데이터 복제 버퍼의 최대 플러시 간격을 초 단위로 지정합니다. 동시에 갱신하려면 매개변수를 -1로 설정하십시오.]]></DRINTERVAL_DESC>
+<DRLOSTFOUND_DESC><![CDATA[dr.lostfound.timestamp 파일의 경로 이름을 지정합니다.]]></DRLOSTFOUND_DESC>
+<DRTIMEOUT_DESC><![CDATA[고가용성 데이터 복제 쌍의 경우, 고가용성 데이터 복제 쌍의 데이터베이스 서버가 쌍에 있는 다른 데이터베이스 서버로부터 전송 승인을 대기하는 시간을 초 단위로 지정합니다.]]></DRTIMEOUT_DESC>
+<DS_HASHSIZE_DESC><![CDATA[데이터베이스 서버가, UPDATE STATISTICS 명령문이 MEDIUM 또는 HIGH 모드에서 생성하는 컬럼 통계에 액세스하고 이를 저장할 때 사용하는 데이터 분산 캐시의 해시 버킷 수를 지정합니다.]]></DS_HASHSIZE_DESC>
+<DS_MAX_QUERIES_DESC><![CDATA[동시에 실행할 수 있는 병렬 데이터베이스 쿼리(PDQ)의 최대 수를 지정합니다.]]></DS_MAX_QUERIES_DESC>
+<DS_MAX_SCANS_DESC><![CDATA[데이터베이스 서버가 동시에 실행할 수 있는 병렬 데이터베이스 쿼리(PDQ) 스캔 스레드의 수를 제한합니다.]]></DS_MAX_SCANS_DESC>
+<DS_NONPDQ_QUERY_MEM_DESC><![CDATA[병렬 데이터베이스 쿼리(PDQ)가 아닌 쿼리에 사용할 수 있는 메모리의 양을 증가시킵니다.]]></DS_NONPDQ_QUERY_MEM_DESC>
+<DS_POOLSIZE_DESC><![CDATA[데이터베이스 서버가, UPDATE STATISTICS 명령문이 MEDIUM 또는 HIGH 모드에서 생성하는 컬럼 통계에 액세스하고 이를 저장할 때 사용하는 데이터 분산 캐시에서 각 해시 버킷의 최대 엔트리 수를 지정합니다.]]></DS_POOLSIZE_DESC>
+<DS_TOTAL_MEMORY_DESC><![CDATA[PDQ 쿼리에 사용할 수 있는 메모리의 양을 지정합니다. 컴퓨터 실제 메모리에서 고정 오버헤드(예: 운영 체제 크기 및 버퍼 풀 크기)를 뺀 값보다 작아야 합니다.]]></DS_TOTAL_MEMORY_DESC>
+<DUMPCNT_DESC><![CDATA[(UNIX) 하나의 데이터베이스 서버 스레드가 공유 메모리를 덤프하거나 G 코어를 호출하여 코어 파일을 생성하게 되는 가정 오류의 수를 지정합니다. 가정은 결과가 참이라는 예상을 하고 일부 조건 또는 표현식을 테스트하는 것입니다.]]></DUMPCNT_DESC>
+<DUMPCORE_DESC><![CDATA[(UNIX) 가정 오류로 인해 가상 프로세서가 코어 이미지를 덤프하는지 여부를 제어합니다. 코어 파일은 데이터베이스 서버가 마지막으로 호출된 디렉토리에 남아 있습니다. 0 = 코어 이미지 덤프 안 함, 1 = 코어 이미지 덤프.]]></DUMPCORE_DESC>
+<DUMPDIR_DESC><![CDATA[데이터베이스 서버가 공유 메모리, G 코어 파일 또는 실패한 가정의 메시지를 덤프하는 디렉토리를 저장합니다. 공유 메모리가 대형일 수 있으므로 공간이 아주 많은 파일 시스템으로 DUMPDIR을 설정하십시오. DUMPDIR이 설정된 디렉토리가 있어야 서버를 시작할 수 있습니다.]]></DUMPDIR_DESC>
+<DUMPGCORE_DESC><![CDATA[(UNIX) G 코어를 지원하는 운영 체제에서 사용됩니다. 설정되는 경우 데이터베이스 서버는 가상 프로세서에 가정 오류가 발생할 때마다 G 코어를 호출합니다. G 코어 유틸리티는 DUMPDIR이 지정하는 디렉토리의 core.pid.cnt 파일로 코어 이미지를 덤프하고 처리를 계속하도록 가상 프로세서에 지시합니다. 0 = G 코어 덤프 안 함, 1 = G 코어 덤프.]]></DUMPGCORE_DESC>
+<DUMPSHMEM_DESC><![CDATA[(UNIX) 가정 오류 시 공유 메모리가 덤프됨을 표시합니다. 데이터베이스 서버가 사용하는 모든 공유 메모리가 덤프됩니다. 따라서 덤프되는 양이 아주 많을 수 있습니다. 공유 메모리 덤프의 위치는 DUMPDIR이 지정하는 디렉토리의 shmem.pid.cnt 파일입니다. 0 = 공유 메모리 덤프 안 함, 1 = 공유 메모리 덤프.]]></DUMPSHMEM_DESC>
+<DYNAMIC_LOGS_DESC><![CDATA[데이터베이스 서버의 동적 로그 할당 레벨을 지정합니다. 0 = 동적 로그 할당 없음, 1 = 로그가 필수인 경우 경고하고 논리 로그의 수동 할당을 위해 일시정지, 2 = 동적 로그 할당을 켜고 각 로그가 동적으로 추가되는 경우 경고함. ]]></DYNAMIC_LOGS_DESC>
+<EILSEQ_COMPAT_MODE_DESC><![CDATA[클라이언트 응용프로그램에 의해 삽입되는 문자 데이터에 현재 로케일에서 인식되지 않는 코드 포인트 순서가 포함되는지 여부에 대한 검사를 사용 가능하게 하거나 비활성화합니다. 0 = 현재 로케일로 수신되는 문자 순서의 유효성을 검증합니다. 1 = 수신되는 문자 순서의 유효성을 검증하지 않습니다.]]></EILSEQ_COMPAT_MODE_DESC>
+<ENABLE_SNAPSHOT_COPY_DESC><![CDATA[ifxclone 유틸리티를 사용한 서버 복제를 사용 가능하게 하거나 비활성화합니다.]]></ENABLE_SNAPSHOT_COPY_DESC>
+<ENCRYPT_CDR_DESC><![CDATA[Enterprise Replication의 암호화 레벨을 설정합니다. 0 = 암호화하지 않음, 1 = 가능한 경우 암호화, 2 = 항상 암호화. ]]></ENCRYPT_CDR_DESC>
+<ENCRYPT_CIPHERS_DESC><![CDATA[현재 데이터베이스 세션에서 사용할 수 있는 모든 암호 및 모드를 정의합니다. ENCRYPT_CIPHERS는 Enterprise Replication 및 고가용성 데이터 복제(HDR)에만 사용됩니다.]]></ENCRYPT_CIPHERS_DESC>
+<ENCRYPT_HDR_DESC><![CDATA[HDR 암호화를 사용 가능 또는 사용 불가능하게 합니다. 0 = HDR 암호화 사용 안함, 1 = HDR 암호화 사용.]]></ENCRYPT_HDR_DESC>
+<ENCRYPT_MAC_DESC><![CDATA[메시지 인증 코드(MAC) 생성 레벨을 제어하며, Enterprise Replication 및 고가용성 데이터 복제(HDR)에만 사용됩니다. 'Off' = MAC 생성 사용 안함, 'low' = 모든 메시지에서 XOR 폴딩 사용, 'medium' = 20바이트를 초과하는 모든 메시지에 SHA1 MAC 생성 사용, 더 작은 메시지에 XOR 폴딩 사용, 'high' = 모든 메시지에 SHA1 MAC 생성 사용. 예: ENCRYPT_MAC medium,high]]></ENCRYPT_MAC_DESC>
+<ENCRYPT_MACFILE_DESC><![CDATA[메시지 인증 코드(MAC) 키 파일의 완전 경로 이름 목록을 지정하며, Enterprise Replication 및 고가용성 데이터 복제(HDR)에만 사용됩니다. ]]></ENCRYPT_MACFILE_DESC>
+<ENCRYPT_SMX_DESC><![CDATA[고가용성 보조 서버 구성의 암호화 레벨을 설정합니다. 0 =  암호화하지 않음, 1 = 가능한 경우 암호화 - 대상 데이터베이스 서버도 암호화를 지원하는 경우에 한하여 SMX 트랜잭션에 암호화가 사용됨, 2 = 항상 암호화 - 암호화된 데이터베이스 서버에 대한 연결만 허용됩니다.]]></ENCRYPT_SMX_DESC>
+<ENCRYPT_SWITCH_DESC><![CDATA[암호 또는 비밀키가 재협상되는 빈도를 정의합니다. 재협상이 이루어지는 기본 시간은 1시간 간격입니다. ENCRYPT_SWITCH는 Enterprise Replication 및 고가용성 데이터 복제(HDR)에만 사용됩니다.]]></ENCRYPT_SWITCH_DESC>
+<EXPLAIN_STAT_DESC><![CDATA[설명 출력 파일에 쿼리 통계 섹션을 포함시킬 수 있도록 하거나 포함시킬 수 없도록 합니다.]]></EXPLAIN_STAT_DESC>
+<EXT_DIRECTIVES_DESC><![CDATA[외부 SQL 지시문의 사용을 가능하게 하거나 불가능하게 합니다. EXT_DIRECTIVES 구성 매개변수를 클라이언트 측 IFX_EXTDIRECTIVES 환경 변수와 함께 사용하여 외부 지시문을 사용 가능하게 합니다.<br><br>0 = Off. IFX_EXTDIRECTIVES가 on인 경우에도 지시문을 사용할 수 없습니다. <br>1 = On. IFX_EXTDIRECTIVES가 on인 경우 세션에 지시문을 사용할 수 있습니다.<br>2 = On. IFX_EXTDIRECTIVES가 설정되지 읺은 경우에도 지시문을 사용할 수 있습니다.]]></EXT_DIRECTIVES_DESC>
+<EXTSHMADD_DESC><![CDATA[사용자가 추가하는 확장 가상 세그먼트의 크기를 지정합니다. 값의 범위는 1024 - 524,288KB입니다. ]]></EXTSHMADD_DESC>
+<FAILOVER_CALLBACK_DESC><![CDATA[데이터베이스 서버가 보조 서버에서 기본 또는 표준 서버로 전환할 때 FAILOVER_CALLBACK이 지정하는 스크립트를 실행합니다. 스크립트의 완전 경로 이름으로 FAILOVER_CALLBACK을 설정하십시오.]]></FAILOVER_CALLBACK_DESC>
+<FAILOVER_TX_TIMEOUT_DESC><![CDATA[고가용성 클러스터 환경에서 장애 복구 후 서버가 트랜잭션을 롤백하기 전에 대기하는 최대 시간(초)을 표시합니다. 이를 통해 트랜잭션을 완료할 수 있습니다.]]></FAILOVER_TX_TIMEOUT_DESC>
+<FASTPOLL_DESC><![CDATA[네트워크의 급속 폴링을 사용 가능 또는 사용 불가능하게 합니다. FASTPOLL은 플랫폼별로 다릅니다. 0 = 급속 폴링 사용 안함, 1 = 급속 폴링 사용.]]></FASTPOLL_DESC>
+<FILLFACTOR_DESC><![CDATA[인덱스 페이지의 채움 정도를 1 - 100 사이에서 지정합니다. 값이 적으면 인덱스가 커질 여지가 있습니다. 값이 높으면 인덱스가 최소로 설치됩니다. 인덱스가 가득 찬 경우(100%), 신규 삽입 시 노드가 분할됩니다.]]></FILLFACTOR_DESC>
+<FULL_DISK_INIT_DESC><![CDATA[기존 데이터베이스 서버 인스턴스의 예기치 않은 디스크 초기화를 방지하는 안전 장치를 사용 가능하게 합니다. 첫 번째 청크의 첫 번째 페이지(페이지 0)가 루트 경로 위치에 있을 때 디스크 초기화 명령이 실행 가능한지 여부를 지정합니다. 0 = 루트 경로 위치에 페이지 0이 없는 경우에만 oninit -i 명령이 실행됩니다. 1 = 모든 상황에서 oninit -i 명령이 실행되지만 디스크 초기화 후 FULL_DISK_INIT 구성 매개변수를 0으로 재설정합니다.]]></FULL_DISK_INIT_DESC>
+<GSKIT_VERSION_DESC><![CDATA[데이터베이스 서버가 암호화 및 SSL 통신에 사용하는 IBM&reg; Global Security Kit(GSKit)의 주 버전을 지정합니다. ]]></GSKIT_VERSION_DESC>
+<HA_ALIAS_DESC><![CDATA[보조 서버가 기본 서버에 연결할 때, 장애 복구 발생 시 사용할 네트워크의 별명을 지정합니다.]]></HA_ALIAS_DESC>
+<HETERO_COMMIT_DESC><![CDATA[혼합 커미트 트랜잭션에서 데이터베이스 서버가 IBM Informix Gateway 제품에 참여할 준비가 되어 있는지 여부를 지정합니다. 1 = 혼합 커미트 사용 가능, 0 = 혼합 커미트 사용 불가능.]]></HETERO_COMMIT_DESC>
+<IFX_EXTEND_ROLE_DESC><![CDATA[데이터베이스 서버 관리자(기본적으로, 사용자 informix)가 DataBlade&reg; 모듈 또는 사용자 정의 루틴(UDR)을 등록할 수 있는 사용자를 설정하는 보안 동작을 구현할 수 있도록 합니다. 1 또는 On(기본값) = 관리자가 EXTERNAL절이 있는 UDR을 작성 또는 제거할 권한을 사용자에게 부여할 수 있도록 EXTEND 역할을 사용 가능하게 합니다. 0 또는 Off = 모든 사용자가 외부 루틴을 등록할 수 있도록 EXTEND 역할을 사용 불가능하게 합니다.]]></IFX_EXTEND_ROLE_DESC>
+<IFX_FOLDVIEW_DESC><![CDATA[보기 폴딩을 사용 가능 또는 사용 불가능하게 합니다. 0 또는 Off(기본값) = 보기 폴딩 사용 불가능, 1 또는 On = 보기 폴딩 사용 가능.]]></IFX_FOLDVIEW_DESC>
+<INDEX_SELFJOIN_DESC><![CDATA[]]></INDEX_SELFJOIN_DESC>
+<ISM_DATA_POOL_DESC><![CDATA[스토리지 영역을 백업하기 위한 볼륨 풀을 지정합니다.]]></ISM_DATA_POOL_DESC>
+<ISM_LOG_POOL_DESC><![CDATA[논리 로그를 백업하기 위한 볼륨 풀을 지정합니다.]]></ISM_LOG_POOL_DESC>
+<JDKVERSION_DESC><![CDATA[JDK(Java Development Kit) 또는 JRE(Java Runtime Environment) 릴리스의 버전 번호를 지정합니다.]]></JDKVERSION_DESC>
+<JVPARGS_DESC><![CDATA[Java VM 옵션을 지정합니다.]]></JVPARGS_DESC>
+<JVPDEBUG_DESC><![CDATA[1로 설정할 경우 JVPLOG 파일에 추적 메시지가 작성됩니다.]]></JVPDEBUG_DESC>
+<JVPHOME_DESC><![CDATA[IBM Informix JDBC 드라이버가 설치되는 디렉토리를 지정합니다.]]></JVPHOME_DESC>
+<JVPLOGFILE_DESC><![CDATA[Java VP 로그 파일의 절대 경로 이름을 지정합니다.]]></JVPLOGFILE_DESC>
+<JVPPROPFILE_DESC><![CDATA[Java VP 등록 정보 파일의 절대 경로 이름을 지정합니다.]]></JVPPROPFILE_DESC>
+<JVPJAVAVM_DESC><![CDATA[JVM(Java Virtual Machine)에 사용할 라이브러리를 지정합니다.]]></JVPJAVAVM_DESC>
+<JVPJAVAHOME_DESC><![CDATA[데이터베이스 서버의 JRE(Java Runtime Environment)가 설치된 디렉토리를 지정합니다.]]></JVPJAVAHOME_DESC>
+<JVMTHREAD_DESC><![CDATA[JVM에 사용할 스레드 패키지(녹색 또는 기본)를 지정합니다. ]]></JVMTHREAD_DESC>
+<JVPJAVALIB_DESC><![CDATA[JVPJAVAHOME에서 Java VM 라이브러리의 위치까지 경로를 지정합니다. ]]></JVPJAVALIB_DESC>
+<JVPCLASSPATH_DESC><![CDATA[초기 Java 클래스 경로 설정을 지정합니다. ]]></JVPCLASSPATH_DESC>
+<LIMITNUMSESSIONS_DESC><![CDATA[Informix 데이터베이스 서버에 연결할 최대 세션 수 및 세션 수가 최대값에 도달하는 경우 데이터베이스 서버가 online.log 파일에 경고 메시지를 인쇄할지 여부를 정의합니다. ]]></LIMITNUMSESSIONS_DESC>
+<LISTEN_TIMEOUT_DESC><![CDATA[서버가 연결을 대기하는 시간(초)을 지정합니다.]]></LISTEN_TIMEOUT_DESC>
+<LOCKS_DESC><![CDATA[로크 테이블의 초기 크기를 지정합니다. 로크 테이블은 세션이 사용하는 각 로크의 항목을 유지합니다. ]]></LOCKS_DESC>
+<LOG_INDEX_BUILDS_DESC><![CDATA[인덱스 페이지 로깅의 사용 여부를 설정합니다. ]]></LOG_INDEX_BUILDS_DESC>
+<LOG_STAGING_DIR_DESC><![CDATA[RS 보조 서버의 로그 파일 지연 적용이 사용 가능할 때 기본 서버의 로그 파일이 저장되는 디렉토리를 지정합니다.]]></LOG_STAGING_DIR_DESC>
+<LOGBUFF_DESC><![CDATA[공유 메모리에 있는 세 개의 논리 로그 버퍼의 크기(KB)를 지정합니다. 삼중 버퍼링을 사용하면, 버퍼 중 하나가 디스크로 플러시되는 동안 사용자 스레드가 활성 버퍼에 쓸 수 있습니다. RTO_SERVER_RESTART를 사용하는 경우 LOGBUFF를 256KB로 설정하십시오.]]></LOGBUFF_DESC>
+<LOGFILES_DESC><![CDATA[데이터베이스 서버가 디스크 초기화 중 작성하는 논리 로그 파일의 수를 지정합니다. 논리 로그 파일의 수를 변경하려면 논리 로그 파일을 추가 또는 제거하십시오. ]]></LOGFILES_DESC>
+<LOGSIZE_DESC><![CDATA[논리 로그 파일 작성 시 사용되는 크기(KB)를 지정합니다. 그래도 기존 논리 로그 파일의 크기는 변경되지 않습니다. 논리 로그의 전체 크기는 LOGSIZE * LOGFILES입니다.]]></LOGSIZE_DESC>
+<LOW_MEMORY_MGR_DESC><![CDATA[자동 메모리 부족 관리 사용하면 서버에서 메모리 한계값에 도달했을 때의 기본 동작을 변경할 수 있습니다. 1 = 데이터베이스 서버가 시작할 때 자동 메모리 부족 관리 사용. 0 = 자동 메모리 부족 관리 사용 안함.]]></LOW_MEMORY_MGR_DESC>
+<LOW_MEMORY_RESERVE_DESC><![CDATA[롤백 활동과 같은 중요 활동에 필요하거나 서버의 여유 메모리에 제한이 있는 경우 특정 양의 메모리를 킬로바이트 단위로 예약할 수 있습니다.]]></LOW_MEMORY_RESERVE_DESC>
+<LRUS_DESC><![CDATA[공유 메모리 버퍼 풀에 있는 LRU(least-recently-used) 큐의 수를 지정합니다. ]]></LRUS_DESC>
+<LRU_MAX_DIRTY_DESC><![CDATA[큐가 정리되는 LRU 큐에서 수정되는 페이지의 백분율을 지정합니다. ]]></LRU_MAX_DIRTY_DESC>
+<LRU_MIN_DIRTY_DESC><![CDATA[페이지 정리가 필수가 아닌 LRU 큐에서 수정되는 페이지의 백분율을 지정합니다. ]]></LRU_MIN_DIRTY_DESC>
+<LTAPEBLK_DESC><![CDATA[ontape를 사용하는 경우 논리 로그가 백업되는 장치의 블록 크기를 지정합니다. 또한 LTAPEBLK는 onload 또는 onunload의 -1 옵션을 사용할 때 데이터가 로드 및 언로드되는 장치의 블록 크기도 지정합니다. onload 또는 onunload의 경우 명령행에 다른 블록 크기를 지정하십시오.]]></LTAPEBLK_DESC>
+<LTAPEDEV_DESC><![CDATA[ontape를 사용하는 경우 논리 로그가 백업되는 장치 또는 디렉토리 파일 시스템을 지정합니다. 또한 onload 또는 onunload의 -1 옵션을 사용할 때 데이터가 로드 및 언로드되는 장치도 지정합니다. ]]></LTAPEDEV_DESC>
+<LTAPESIZE_DESC><![CDATA[ontape를 사용하는 경우 논리 로그가 백업되는 장치의 최대 테이프 크기를 지정합니다. 또한 LTAPESIZE는 onload 또는 onunload의 -1 옵션을 사용할 때 데이터가 로드 및 언로드되는 장치의 최대 테이프 크기도 지정합니다. onload 또는 onunload를 사용하는 경우 명령행에 테이프 크기를 지정하십시오. 테이프의 전체 용량을 사용하려면 LTAPESIZE를 0으로 설정하십시오.]]></LTAPESIZE_DESC>
+<LTXEHWM_DESC><![CDATA[긴 트랜잭션, 배타적 액세스, 하이 워터 마크를 지정합니다. 트랜잭션이 긴 트랜잭션 하이 워터 마크에 도달했을 때 커미트 또는 롤백되지 않으면 긴 트랜잭션입니다. 논리 로그 영역이 LTXEHWM 스레시홀드 값에 도달하면, 논리 로그에 액세스할 수 있는 배타적 액세스 권한이 현재 롤백 중인 긴 트랜잭션에 주어집니다. ]]></LTXEHWM_DESC>
+<LTXHWM_DESC><![CDATA[긴 트랜잭션 하이 워터 마크를 지정합니다. 긴 트랜잭션 하이 워터 마크는 사용 가능한 로그 영역의 백분율로, 로그 영역이 가득 찰 경우 긴 트랜잭션을 검사하도록 데이터베이스 서버를 트리거합니다. ]]></LTXHWM_DESC>
+<MAX_FILL_DATA_PAGES_DESC><![CDATA[행의 길이가 가변적인 테이블에서 페이지당 더 많은 행을 삽입할 수 있도록 하는 기능을 사용 또는 사용 안함으로 합니다. 0 = 사용 안함, 1 = 사용.]]></MAX_FILL_DATA_PAGES_DESC>
+<MAX_INCOMPLETE_CONNECTIONS_DESC><![CDATA[세션에서 불완전 연결의 최대 수를 지정합니다. 이 수에 도달하면, 서버에서 서비스 거부가 일어날 수도 있다는 내용의 오류 메시지가 온라인 메시지 로그에 작성됩니다. 기본값은 1024입니다. ]]></MAX_INCOMPLETE_CONNECTIONS_DESC>
+<MAX_PDQPRIORITY_DESC><![CDATA[데이터베이스 서버가 한 DSS 쿼리에 할당할 수 있는 PDQ 리소스를 제한합니다. ]]></MAX_PDQPRIORITY_DESC>
+<MIRROR_DESC><![CDATA[데이터베이스 서버의 미러링을 사용 가능 또는 사용 불가능하게 합니다. 초기화 과정에서 루트 DBSPACE 및 중요 데이터를 미러링하는 것이 좋습니다. 0 = 미러링 사용 불가능, 1 = 미러링 사용. ]]></MIRROR_DESC>
+<MIRROROFFSET_DESC><![CDATA[루트 DBSPACE의 초기 청크에 미러로 작용하는 청크에 도달하려면 필요한 장치 또는 디스크 파티션으로 오프셋을 지정합니다. ]]></MIRROROFFSET_DESC>
+<MIRRORPATH_DESC><![CDATA[루트 DBSPACE의 초기 청크에 미러 청크의 완전 경로 이름을 지정합니다. MIRRORPATH는 실제 미러 청크의 청크 경로 이름에 대한 링크입니다. 미러 청크에는 짧은 경로 이름을 선택하십시오. ]]></MIRRORPATH_DESC>
+<MSG_DATE_DESC><![CDATA[사용 가능한 경우 온라인 로그에 있는 각 메시지의 서두에 날짜를 추가합니다. ]]></MSG_DATE_DESC>
+<MSGPATH_DESC><![CDATA[메시지 로그 파일의 완전 경로 이름을 지정합니다. 데이터베이스 서버는 조작 중 상태 메시지와 진단 메시지를 이 파일을 기록합니다. ]]></MSGPATH_DESC>
+<MULTIPROCESSOR_DESC><![CDATA[데이터베이스 서버가 단일 프로세서 컴퓨터 또는 멀티프로세서 컴퓨터에 적합한 방식으로 로킹을 수행하는지 여부를 지정합니다. 0 = 멀티프로세서 없음, 1 = 멀티프로세서 사용 가능.]]></MULTIPROCESSOR_DESC>
+<MQCHLLIB_DESC><![CDATA[IBM&reg; WebSphere&reg; MQ 클라이언트 채널 정의 테이블이 있는 디렉토리의 경로를 지정합니다.]]></MQCHLLIB_DESC>
+<MQCHLTAB_DESC><![CDATA[IBM&reg; WebSphere&reg; MQ 클라이언트 채널 정의 테이블의 이름을 지정합니다.]]></MQCHLTAB_DESC>
+<MQSERVER_DESC><![CDATA[채널을 정의하고 IBM&reg; WebSphere&reg; MQ 서버의 위치를 지정하며 사용할 통신 방법을 지정합니다.]]></MQSERVER_DESC>
+<NET_IO_TIMEOUT_ALARM_DESC><![CDATA[네트워크에서 쓰기 조작이 30분 이상 실행이 불가능한 경우 이를 통지받을 수 있도록 제어합니다.]]></NET_IO_TIMEOUT_ALARM_DESC>
+<NETTYPE_DESC><![CDATA[네트워크 연결을 설명합니다.]]></NETTYPE_DESC>
+<NOAGE_DESC><![CDATA[프로세스가 장시간에 걸쳐 실행되는 경우 일부 운영 체제는 프로세스의 우선순위를 하향 조정합니다. NOAGE를 1로 설정한 경우, 운영 체제별 CPU 가상 프로세서 우선 순위 에이징은 사용 불가능합니다. NOAGE를 기본값인 0으로 설정하면 운영 체제는 처리 시간이 축적되면서 다른 프로세스뿐 아니라 CPU 가상 프로세서의 우선순위를 하향 조정합니다. 운영 체제가 우선 순위 에이징을 지원하는 경우 NOAGE를 1로 설정할 것을 권장합니다. ]]></NOAGE_DESC>
+<NO_DESC_FOUND_DESC><![CDATA[관리 모드에서 데이터베이스 서버에 액세스할 수 있는 사용자(및 사용자 informix와 DBSA 그룹 사용자)를 지정하지 않습니다. ]]></NO_DESC_FOUND_DESC>
+<NS_CACHE_DESC><![CDATA[내부 데이터베이스 서버 캐시에서 호스트, 서비스, 사용자 및 그룹 연결에 대한 이름 서비스 정보를 얻는 만기 시간을 지정합니다.]]></NS_CACHE_DESC>
+<NUMAIOVPS_DESC><![CDATA[실행할 AIO 클래스의 가상 프로세서 수를 지정합니다. 커널 비동기 입출력이 구현되지 않은 경우, AIO 가상 프로세서는 로그 파일에 대한 입출력 이외의 모든 데이터베이스 서버 디스크 입출력을 수행합니다. <BR><A href='index.php?act=vps&do=global'>가상 프로세서 페이지</A>의 OpenAdmin 내에서 가상 프로세서 관리를 수행할 수 있습니다. ]]></NUMAIOVPS_DESC>
+<NUMCPUVPS_DESC><![CDATA[실행할 CPU 클래스의 가상 프로세서 수를 지정합니다. CPU 가상 프로세서는 내부 스레드뿐 아니라 클라이언트 응용프로그램에 의한 연결 결과 시작되는 모든 스레드를 실행합니다. <BR><A href='index.php?act=vps&do=global'>가상 프로세서 페이지</A>의 OpenAdmin 내에서 가상 프로세서 관리를 수행할 수 있습니다. ]]></NUMCPUVPS_DESC>
+<NUMFDSERVERS_DESC><![CDATA[UNIX에서 Informix 가상 프로세서(VP) 간에 이관되는 네트워크 연결을 처리하는 폴 스레드 최대 수를 지정합니다.]]></NUMFDSERVERS_DESC>
+<OFF_RECVRY_THREADS_DESC><![CDATA[(콜드 복원 중) 데이터베이스 서버가 오프라인일 때 논리 복구에 사용되는 복구 스레드 수를 지정합니다. 이 스레드 수는 급속 복구에서 논리 로그 레코드를 롤포워드하는 데에도 사용됩니다.]]></OFF_RECVRY_THREADS_DESC>
+<ON_RECVRY_THREADS_DESC><![CDATA[(웜 복원 중) 데이터베이스 서버가 온라인일 때 논리 복구에 사용하는 최대 복구 스레드 수를 지정합니다. ]]></ON_RECVRY_THREADS_DESC>
+<ONDBSPACEDOWN_DESC><![CDATA[중요하지 않은 DBSPACE 내의 기본 청크에서 비활성화 이벤트가 발생할 때 데이터베이스 서버가 취하는 동작을 정의합니다. <br><br>0 = 데이터베이스 서버가 DBSPACE를 오프라인으로 표시하고 계속합니다. <br>1 = 데이터베이스 서버가 중단됩니다. <br>2 = 데이터베이스 서버가 청크 상태를 로그에 기록하고 사용자 입력을 대기합니다.]]></ONDBSPACEDOWN_DESC>
+<ONLIDX_MAXMEM_DESC><![CDATA[단일 preimage 풀과 단일 updator 로그 풀에 할당되는 메모리의 양을 제한합니다. preimage 및 updator 로그 풀(즉, pimage_partnum 및 ulog_partnum)은 CREATE INDEX ONLINE 명령문 실행 시 작성되는 공유 메모리 풀입니다. 명령문 실행이 완료되면 풀이 비워집니다. ]]></ONLIDX_MAXMEM_DESC>
+<OPCACHEMAX_DESC><![CDATA[(UNIX) 광학 서브시스템의 메모리 캐시 크기를 지정합니다. 광학 서브시스템을 사용하는 경우에만 이 매개변수를 사용하십시오. ]]></OPCACHEMAX_DESC>
+<OPT_GOAL_DESC><![CDATA[두 개의 최적화 목표(첫 번째 행 최적화, 모든 행 최적화) 중 하나를 쿼리에 사용 가능하게 합니다. 0 = FIRST_ROWS. -1 = ALL_ROWS(기본값). ]]></OPT_GOAL_DESC>
+<OPTCOMPIND_DESC><![CDATA[옵티마이저가 응용프로그램에 적합한 쿼리 계획을 선택할 수 있도록 합니다. <br><br>0 = 순서화된 각 테이블 쌍에 대해 적절한 인덱스가 존재하는 경우, 옵티마이저는 테이블 스캔에 우선하여 인덱스 스캔을 선택합니다. 이 값을 사용하면 이전 데이터베이스 서버 버전과 호환합니다. <br>1 = 격리 레벨이 반복 가능한 읽기(RR)가 아닌 경우 옵티마이저의 실행 경로 결정이 쉽지 않습니다. 최적의 성능을 원할 경우 이 설정이 권장됩니다. <br>2 = 모든 격리 레벨에서 옵티마이저의 실행 경로 결정이 쉽지 않습니다. 테이블 스캔에 비해 인덱스 스캔에 우선순위가 주어지지 않습니다. 변수를 설정하지 않을 경우 이 값이 기본값입니다. ]]></OPTCOMPIND_DESC>
+<OPTICAL_LIB_PATH_DESC><![CDATA[광학 Storage Manager를 사용하는 경우 OPTICAL_LIB_PATH를 광학 Storage Manager 라이브러리로 설정하십시오. ]]></OPTICAL_LIB_PATH_DESC>
+<PAM_STACKSIZE_DESC><![CDATA[PAM 모듈의 스택 크기를 사용자 정의합니다. ]]></PAM_STACKSIZE_DESC>
+<PC_HASHSIZE_DESC><![CDATA[데이터베이스 서버가 사용하는 UDR 캐시의 해시 버킷 수를 지정합니다. ]]></PC_HASHSIZE_DESC>
+<PC_POOLSIZE_DESC><![CDATA[UDR 캐시에 저장되는 최대 UDR 수를 지정합니다.]]></PC_POOLSIZE_DESC>
+<PHYSBUFF_DESC><![CDATA[공유 메모리에 있는 두 물리 로그 버퍼의 크기(KB)를 지정합니다. PHYSBUFF 매개변수의 크기는 데이터베이스 서버가 물리 로그 버퍼를 물리 로그 파일로 플러시하는 빈도를 결정합니다. ]]></PHYSBUFF_DESC>
+<PHYSDBS_DESC><![CDATA[물리 로그를 포함하는 DBSPACE의 이름을 지정합니다. 디스크 장치 경쟁을 줄이기 위해 물리 로그를 루트 DBSPACE 이외의 DBSPACE로 이동할 수 있습니다. <BR>OpenAdmin 내의 물리 로그 관리는 <A href='index.php?act=rlogs&do=admin'>복구 로그 -> 관리</A>에서 수행할 수 있습니다. ]]></PHYSDBS_DESC>
+<PHYSFILE_DESC><![CDATA[물리 로그의 크기를 지정합니다. PHYSFILE은 onparams 유틸리티를 사용하여 동적으로 변경할 수 있습니다. <BR>OpenAdmin 내의 물리 로그 관리는 <A href='index.php?act=rlogs&do=admin'>복구 로그 -> 관리</A>에서 수행할 수 있습니다. ]]></PHYSFILE_DESC>
+<PLCY_HASHSIZE_DESC><![CDATA[보안 정책 정보 캐시에 있는 해시 버킷 수를 지정합니다. ]]></PLCY_HASHSIZE_DESC>
+<PLCY_POOLSIZE_DESC><![CDATA[사용자 LBAC 보증서 정보 캐시의 각 해시 버킷에 있는 최대 엔트리 수를 지정합니다. ]]></PLCY_POOLSIZE_DESC>
+<PLOG_OVERFLOW_PATH_DESC><![CDATA[물리 로그 파일이 오버플로하는 경우 급속 복구 중 사용되는 파일의 위치를 지정합니다. 파일 이름은 plog_extend.servernum이며 기본적으로 /tmp 디렉토리에 위치합니다. 다른 위치를 지정하려면 완전 경로 이름을 사용하십시오. ]]></PLOG_OVERFLOW_PATH_DESC>
+<PN_STAGEBLOB_THRESHOLD_DESC><![CDATA[라운드 로빈 분할에서 BYTE 및 TEXT 데이터의 영역을 예약합니다. ]]></PN_STAGEBLOB_THRESHOLD_DESC>
+<PRELOAD_DLL_FILE_DESC><![CDATA[데이터베이스 서버가 초기화될 때 로드되는 공유 라이브러리 파일 또는 동적 링크 라이브러리 파일(DLL)의 경로 이름을 지정합니다. 다중 파일을 로드할 경우 각 경로 이름은 별도의 엔트리로 지정됩니다.]]></PRELOAD_DLL_FILE_DESC>
+<QSTATS_DESC><![CDATA[큐 통계를 인쇄하기 위해 onstat -g qst를 사용 가능 또는 사용 불가능하게 합니다. 0 = 큐 통계 사용 불가능, 1 = 큐 통계 사용 가능]]></QSTATS_DESC>
+<RA_PAGES_DESC><![CDATA[AUTO_READAHEAD 구성 매개변수를 사용 안함으로 설정한 경우, 미리 읽기를 시도할 디스크 페이지의 수를 정의하는 데 RA_PAGES 구성 매개변수를 사용하십시오. AUTO_READAHEAD 구성 매개변수를 사용하도록 설정하고 미리 읽기가 자동으로 발생하는 경우, 서버는 RA_PAGES 구성 매개변수에 지정된 정보를 무시합니다.]]></RA_PAGES_DESC>
+<RA_THRESHOLD_DESC><![CDATA[순차적 데이터 레코드 스캔 중 데이터베이스 서버가 읽을 때 RA_PAGES에서 사용됩니다. RA_THRESHOLD는 미리 읽기 스레시홀드 즉, 다음 미리 읽기를 수행하도록 데이터베이스 서버에 신호를 보내는 메모리의 미처리 데이터 페이지 수를 지정합니다. RA_THRESHOLD의 값이 RA_PAGES 값보다 크면, RA_THRESHOLD는 RA_PAGES/2의 값을 갖습니다.]]></RA_THRESHOLD_DESC>
+<RAS_LLOG_SPEED_DESC><![CDATA[]]></RAS_LLOG_SPEED_DESC>
+<RAS_PLOG_SPEED_DESC><![CDATA[]]></RAS_PLOG_SPEED_DESC>
+<REDIRECTED_WRITES_DESC><![CDATA[기본 및 보조 서버 사이의 SMX 파이프 수를 지정합니다. ]]></REDIRECTED_WRITES_DESC>
+<RESIDENT_DESC><![CDATA[공유 메모리의 상주 및 가상 세그먼트가 운영 체제 물리적 메모리에 남는지 여부를 지정합니다. <BR><BR>0 = 꺼짐<BR>1 = 상주 세그먼트만 로그합니다. <BR>n = 상주 세그먼트와 다음 n-1 가상 세그먼트를 로그합니다. <BR>-1 = 모든 상주 및 가상 세그먼트를 로크합니다.]]></RESIDENT_DESC>
+<REMOTE_SERVER_CFG_DESC><![CDATA[데이터베이스 서버가 있는 컴퓨터에서 신뢰하는 원격 호스트를 나열하는 파일의 이름을 지정합니다.]]></REMOTE_SERVER_CFG_DESC>
+<REMOTE_USERS_CFG_DESC><![CDATA[원격 호스트에 있는 신뢰성 있는 사용자의 이름을 나열하는 파일의 이름을 지정합니다.]]></REMOTE_USERS_CFG_DESC>
+<RESTARTABLE_RESTORE_DESC><![CDATA[데이터베이스 서버가 오류 발생 시점에서 실패한 물리 또는 콜드 논리 복원을 재시작할 수 있도록 하거나 할 수 없게 합니다. ON-Bar에서 재시작 가능 복원을 수행하려면 onbar -RESTART 명령을 사용하십시오. 재시작 가능 복원을 사용하려면 물리 로그의 크기를 늘리십시오. 값: On 또는 Off ]]></RESTARTABLE_RESTORE_DESC>
+<RESTORE_FILTER_DESC><![CDATA[필터 프로그램 및 옵션(예: 암호화)의 경로 이름을 지정합니다. ]]></RESTORE_FILTER_DESC>
+<RESTORE_POINT_DIR_DESC><![CDATA[새 버전의 데이터베이스 서버로의 실패한 업그레이드 중에 복원 지점 파일이 저장되는 디렉토리의 경로 이름을 지정합니다.]]></RESTORE_POINT_DIR_DESC>
+<ROOTNAME_DESC><![CDATA[이 데이터베이스 서버 구성의 루트 DBSPACE 이름을 지정합니다. 데이터베이스 서버가 관리하는 모든 DBSPACE 사이에서 고유한 이름이어야 합니다. ]]></ROOTNAME_DESC>
+<ROOTOFFSET_DESC><![CDATA[루트 DBSPACE의 초기 청크가 시작된 디스크 영역 할당(파일, 디스크 파티션 또는 장치)으로 오프셋(KB)을 지정합니다. ]]></ROOTOFFSET_DESC>
+<ROOTPATH_DESC><![CDATA[루트 DBSPACE에서 초기 청크의 완전 경로 이름(장치 또는 파일 이름 포함)을 지정합니다. ROOTPATH는 예약 페이지에 청크 이름으로 저장됩니다. UNIX의 경우 ROOTPATH가 지정하는 파일의 권한을 660으로 설정해야 하며 소유자와 그룹이 모두 informix여야 합니다. Windows의 경우 Informix-Admin 그룹의 멤버가 ROOTPATH에서 지정하는 파일을 소유해야 합니다.]]></ROOTPATH_DESC>
+<ROOTSIZE_DESC><![CDATA[루트 DBSPACE의 초기 청크 크기를 KB 단위로 지정합니다. 데이터베이스 서버를 초기화한 후 ROOTSIZE를 변경하려면 사용자 데이터를 완전히 언로드했다가 다시 로드하십시오. ]]></ROOTSIZE_DESC>
+<RSS_FLOW_CONTROL_DESC><![CDATA[최소 하나 이상의 RS 보조 서버가 포함된 고가용성 클러스터에서 사용하도록 설정된 흐름 제어 내에서의 경계를 지정합니다. 흐름 제어는 기본 서버의 로그 활동을 제한하는 방법을 제공함으로써 클러스터에 있는 RS 보조 서버가 처리 트랜잭션에서 멀리 떨어지지 않도록 방지합니다.]]></RSS_FLOW_CONTROL_DESC>
+<RTO_SERVER_RESTART_DESC><![CDATA[Dynamic Server를 재시작하고 서버를 온라인 또는 대기 모드로 만든 후, RTO(Recovery Time Objective) 표준을 사용하여 Dynamic Server가 복구해야 하는 시간의 양을 설정할 수 있도록 합니다.]]></RTO_SERVER_RESTART_DESC>
+<S6_USE_REMOTE_SERVER_CFG_DESC><![CDATA[REMOTE_SERVER_CFG 구성 매개변수와 함께 사용되는 이 매개변수는 신뢰되지 않은 네트워크 환경에서 보안 서버 연결을 인증하는 데 사용되는 파일을 지정합니다. 1 = REMOTE_SERVER_CFG 구성 매개변수를 통해 지정된 파일에 나열된 서버는 신뢰할 수 있는 연결입니다. 2 = $INFORMIXDIR/etc/host.equiv 파일은 sqlhost 정보에서 s=6을 설정하여 정의된 대로 보안 포트를 통해 연결하는 서버를 인증하는 데 사용됩니다.]]></S6_USE_REMOTE_SERVER_CFG_DESC>
+<SB_CHECK_FOR_TEMP_DESC><![CDATA[임시 스마트 대형 객체가 영구 테이블에 복사되지 않도록 합니다. 0 = 허용, 1 = 중단.]]></SB_CHECK_FOR_TEMP_DESC>
+<SBSPACENAME_DESC><![CDATA[기본 SBSPACE의 이름을 지정합니다. 데이터베이스 테이블에 스토리지 영역을 명시적으로 지정하지 않는 스마트 대형 객체가 포함된 경우 해당 데이터는 SBSPACENAME이 지정하는 SBSPACE에 저장됩니다. ]]></SBSPACENAME_DESC>
+<SBSPACETEMP_DESC><![CDATA[메타데이터 또는 사용자 데이터 로깅 없이 임시 스마트 대형 객체를 저장하기 위한 기본 임시 SBSPACE의 이름을 지정합니다. ]]></SBSPACETEMP_DESC>
+<SDS_ENABLE_DESC><![CDATA[SD 보조 서버 기능을 사용 가능하게 합니다. SD 보조 서버 기능을 사용하려면 기본 서버와 SD 보조 서버에서 SDS_ENABLE을 1(사용 가능)로 설정해야 합니다. <br><br>0 = SD 보조 서버 기능 사용 불가능. <br>1 = SD 보조 서버 기능 사용 가능. ]]></SDS_ENABLE_DESC>
+<SDS_PAGING_DESC><![CDATA[버퍼 페이징 파일로 작용하는 두 파일의 위치를 지정합니다. SDS_PAGING을 설정하지 않으면 SD 보조 서버를 시작하지 못합니다. ]]></SDS_PAGING_DESC>
+<SDS_LOGCHECK_DESC><![CDATA[기본 서버에서 로그 활동을 생성 중인지 여부를 SD 보조 서버가 발견하기를 대기하는 초 단위 시간을 지정합니다. 지정된 시간에 기본 서버에서 생성된 로그 활동이 없는 경우 장애 복구 처리를 시작할 수 있습니다. SDS_LOGCHECK 구성 매개변수를 사용하여 기본 서버가 로그 활동을 생성 중인지 여부를 결정하고 기본 서버의 장애 복구를 허용 또는 중단할 수 있습니다. ]]></SDS_LOGCHECK_DESC>
+<SDS_TEMPDBS_DESC><![CDATA[SD 보조 서버가 임시 DBSPACE를 동적으로 작성할 때 사용하는 정보를 지정합니다. ]]></SDS_TEMPDBS_DESC>
+<SDS_TIMEOUT_DESC><![CDATA[기본 서버가 SD 보조 서버로부터 로그 위치 승인이 송신되기를 대기하는 초 단위 시간을 지정합니다. ]]></SDS_TIMEOUT_DESC>
+<SECURITY_LOCALCONNECTION_DESC><![CDATA[프로그램을 실행하는 로컬 사용자의 ID가 데이터베이스에 액세스하는 사용자의 ID와 같게 하여 로컬 연결의 보안을 확인합니다. <br><br>0 = 보안 검사가 이루어지지 않음. <br>1 = Dynamic Server는 프로그램을 실행하는 사용자의 ID가 데이터베이스에 연결하려는 사용자의 ID와 일치하는지 확인합니다. <br>2 = 1과 동일하며, 이 외에 Dynamic Server는 네트워크 API에서 피어 포트 번호를 검색하여 클라이언트 프로그램으로부터 연결이 수신되는지 확인합니다. 시스템에 SOCTCP 또는 IPCSTR 네트워크 프로토콜이 있는 경우 2를 지정하십시오. ]]></SECURITY_LOCALCONNECTION_DESC>
+<SERVERNUM_DESC><![CDATA[공유 메모리의 상대적 위치를 0 - 255 사이에서 지정합니다. 로컬 컴퓨터의 각 데이터베이스 서버에서는 값이 고유해야 하지만 네트워크에서는 그렇지 않습니다. 0 값이 onconfig.std 파일의 기본값이므로 부주의하게 SERVERNUM가 중복되는 것을 방지하려면 0보다 큰 값을 선택하십시오.]]></SERVERNUM_DESC>
+<SEQ_CACHE_SIZE_DESC><![CDATA[순서 캐시에 값을 미리 할당할 수 있는 순서 객체의 최대 수를 지정합니다. 이 구성 매개변수를 설정하지 않을 경우 기본적으로 캐시 옵션에서 10개 정도의 서로 다른 순서 객체만 정의할 수 있습니다. ]]></SEQ_CACHE_SIZE_DESC>
+<SHMADD_DESC><![CDATA[공유 메모리의 가상 분할 영역에 동적으로 추가되는 세그먼트의 크기를 지정합니다. ]]></SHMADD_DESC>
+<SHMBASE_DESC><![CDATA[SHMBASE의 값을 변경하지 마십시오. 공유 메모리가 첨부되는 기본 주소를 가상 프로세서의 메모리 영역으로 지정합니다. 공유 메모리 세그먼트의 주소는 SHMBASE 값에서 시작하며 상한(플랫폼마다 다름)에 도달할 때까지 증가합니다. ]]></SHMBASE_DESC>
+<SHMNOACCESS_DESC><![CDATA[첨부된 공유 메모리를 사용하지 않도록 가상 메모리 주소 범위를 지정합니다. ]]></SHMNOACCESS_DESC>
+<SHMTOTAL_DESC><![CDATA[데이터베이스 서버가 시스템에 배치할 수 있는 메모리 수요의 한도를 지정합니다. ]]></SHMTOTAL_DESC>
+<SHMVIRT_ALLOCSEG_DESC><![CDATA[Dynamic Server가 새 메모리 세그먼트를 할당하고, 서버가 새 메모리 세그먼트를 할당할 수 없을 경우 경보 레벨이 활성화되어 서버에 메모리가 부족하지 않도록 하는 스레시홀드를 지정합니다. 일단 경보 레벨이 활성화되면 새 메모리 세그먼트를 할당할 수 없을 경우 매30분마다 경보가 반복됩니다. <br><br>경보 레벨 값은 1 - 5 사이입니다. <br>1 = 무시해도 됨 <br>2 = 정보<br>3 = 주의<br>4 = 비상<br>5 = 치명적]]></SHMVIRT_ALLOCSEG_DESC>
+<SHMVIRTSIZE_DESC><![CDATA[가상 공유 메모리 세그먼트의 초기 크기를 지정합니다. ]]></SHMVIRTSIZE_DESC>
+<SINGLE_CPU_VP_DESC><![CDATA[데이터베이스 서버가 CPU 가상 프로세서를 하나만 사용하여 실행되는지 여부를 지정합니다. 0 = 2개 이상의 CPU VP를 사용하여 실행, 0이 아닌 수 = 1개의 CPU VP를 사용하여 실행.]]></SINGLE_CPU_VP_DESC>
+<SMX_COMPRESS_DESC><![CDATA[데이터베이스 서버가 소스 데이터베이스 서버에서 대상 데이터베이스 서버로 데이터를 송신하기 전에 사용하는 압축 레벨을 지정합니다.]]></SMX_COMPRESS_DESC>
+<SORT_MERGE_SIZE_DESC><![CDATA[]]></SORT_MERGE_SIZE_DESC>
+<SP_AUTOEXPAND_DESC><![CDATA[스토리지 영역에서 자동 작성 및 청크 확장을 사용하거나 사용하지 않습니다.]]></SP_AUTOEXPAND_DESC>
+<SP_THRESHOLD_DESC><![CDATA[데이터베이스 서버에 필요한 스토리지 풀의 최소 영역을 정의하여 자동으로 영역을 확장합니다. 50 이하의 값은 백분율을 표시합니다. 1000 이상의 값은 KB를 표시합니다.]]></SP_THRESHOLD_DESC>
+<SP_WAITTIME_DESC><![CDATA[영역 초과 오류를 리턴하기 전에 스레드가 확장할 DBSPACE, 임시 DBSPACE, SBSPACE, 임시 SBSPACE 또는 BLOBSPACE를 대기하는 최대 시간(초)을 지정합니다.]]></SP_WAITTIME_DESC>
+<SQL_LOGICAL_CHAR_DESC><![CDATA[내장 문자 자료형 선언에서 크기 스펙 확장을 사용 가능하게 하거나 비활성화합니다.]]></SQL_LOGICAL_CHAR_DESC>
+<SQLTRACE_DESC><![CDATA[SQL 추적 기능의 시작 환경을 제어합니다. ]]></SQLTRACE_DESC>
+<SSL_KEYSTORE_LABEL_DESC><![CDATA[SSL(Secure Sockets Layer) 키 및 디지털 인증서를 저장하는 키스토어 데이터베이스에 사용되는 서버 디지털 인증서의 레이블을 지정합니다. ]]></SSL_KEYSTORE_LABEL_DESC>
+<STACKSIZE_DESC><![CDATA[데이터베이스 서버 사용자 스레드의 스택 크기를 지정합니다. ]]></STACKSIZE_DESC>
+<STAGEBLOB_DESC><![CDATA[광학 서브시스템이 광 디스크의 스토리지용으로 지정된 TEXT 및 BYTE 데이터를 저장하는 영역의 BLOBSPACE 이름을 지정합니다.]]></STAGEBLOB_DESC>
+<STATCHANGE_DESC><![CDATA[갱신 통계 연산에 대해 자동 모드를 사용할 때 갱신에 대해 규정화할 분산 통계의 테이블 또는 분할에 필요한 최소한의 변경사항 백분율을 지정합니다.]]></STATCHANGE_DESC>
+<STMT_CACHE_DESC><![CDATA[데이터베이스 서버가 SQL문 캐시를 사용하는지 여부를 결정합니다. <br>0 = SQL문 캐시가 사용되지 않음.<br>1 = SQL문 캐시가 사용 가능하지만, STMT_CACHE 환경 변수를 1로 설정하지 않거나 세션에 대해 SET STATEMENT CACHE ON SQL문을 실행하지 않을 경우 사용자 세션은 캐시를 사용하지 않습니다.  <br>2 = SQL문 캐시 켜짐. 모든 명령문이 캐시됩니다. ]]></STMT_CACHE_DESC>
+<STMT_CACHE_HITS_DESC><![CDATA[SQL문 캐시에 완전히 삽입되기 전에 명령문에 대한 히트(참조) 수를 지정합니다. 다음 테이블은 가능한 값에 대해 설명합니다. <br><br>0 = SQL문 캐시에 자격이 부여된 모든 명령문을 완전히 삽입합니다. <br>n>0 = 명령문 히트 수에 도달하여 모든 완전한 명령문이 캐시에 삽입될 때까지 명령문에는 키전용 엔트리가 주어집니다. <br>n>1 = ad hoc 쿼리가 캐시에 진입하지 못하게 합니다. ]]></STMT_CACHE_HITS_DESC>
+<STMT_CACHE_NOLIMIT_DESC><![CDATA[자격이 부여된 명령문을 명령문 캐시에 삽입할지 여부를 제어합니다. 다음 테이블은 가능한 값에 대해 설명합니다. 0 = 캐시에 비해 너무 많은 양의 메모리가 할당되는 것을 방지하기 위해 명령문의 캐시 삽입을 금지합니다. 1 = 캐시 크기에 관계 없이 항상 명령문을 SQL문 캐시에 삽입합니다. ]]></STMT_CACHE_NOLIMIT_DESC>
+<STMT_CACHE_NUMPOOL_DESC><![CDATA[SQL문 캐시의 메모리 풀 수를 지정합니다. 이들 메모리 풀에 대한 정보를 얻으려면 onstat -g ssc 풀을 사용하십시오. ]]></STMT_CACHE_NUMPOOL_DESC>
+<STMT_CACHE_SIZE_DESC><![CDATA[SQL문 캐시의 크기를 KB 단위로 지정합니다. 새 캐시 크기는 다음 번에 명령문이 캐시에 추가될 때 효력을 갖습니다. ]]></STMT_CACHE_SIZE_DESC>
+<STOP_APPLY_DESC><![CDATA[RS 보조 서버가 기본 서버에서 수신된 로그 파일을 적용하지 못하게 합니다.]]></STOP_APPLY_DESC>
+<STORAGE_FULL_ALARM_DESC><![CDATA[스토리지 영역이 가득 찰 경우 메시지 및 경보의 빈도와 심각도를 구성합니다. ]]></STORAGE_FULL_ALARM_DESC>
+<SYSALARMPROGRAM_DESC><![CDATA[evidence.sh 스크립트의 완전 경로 이름을 지정합니다. 데이터베이스 서버는 데이터베이스 서버 오류가 발생하면 evidence.sh를 실행합니다. 기술 지원부에서는 evidence.sh 스크립트의 출력을 사용하여 데이터베이스 서버 오류의 원인을 진단합니다. Windows&reg;의 경우 evidence.bat이 완료될 수 있도록 명령 확장자를 사용 가능하게 해야 합니다.]]></SYSALARMPROGRAM_DESC>
+<SYSSBSPACENAME_DESC><![CDATA[UPDATE STATISTICS 명령이 특정 사용자 정의 자료형에 대해 수집하는 통계를 데이터베이스 서버가 저장하는 SBSPACE의 이름을 지정합니다. ]]></SYSSBSPACENAME_DESC>
+<TAPEBLK_DESC><![CDATA[스토리지 영역 백업 중 ontape이 기록하는 장치의 블록 크기를 지정합니다. 또한 TAPEBLK는 onload 또는 onunload 유틸리티를 사용할 때 데이터가 로드 또는 언로드되는 장치의 기본 블록 크기도 지정합니다. ]]></TAPEBLK_DESC>
+<TAPEDEV_DESC><![CDATA[ontape가 스토리지 영역을 백업하는 장치 또는 디렉토리 파일 시스템을 지정합니다. 또한 TAPEDEV는 onload 또는 onunload 유틸리티를 사용할 때 데이터가 로드 또는 언로드되는 기본 장치도 지정합니다. ]]></TAPEDEV_DESC>
+<TAPESIZE_DESC><![CDATA[ontape가 스토리지 영역을 백업하는 장치의 크기를 지정합니다. 또한 onload 또는 onunload 유틸리티를 사용할 때 데이터가 로드 또는 언로드되는 기본 장치의 크기도 지정합니다. 테이프의 전체 실제 용량을 사용하려면 TAPESIZE를 0으로 설정하십시오.]]></TAPESIZE_DESC>
+<TBLSPACE_STATS_DESC><![CDATA[TABLESPACE 통계 컬렉션을 켜고 끕니다. 0 = 끄기, 1 = 켜기.]]></TBLSPACE_STATS_DESC>
+<TBLTBLFIRST_DESC><![CDATA[루트 DBSPACE에서 TABLESPACE TABLESPACE의 첫 익스텐트 크기를 지정합니다. ]]></TBLTBLFIRST_DESC>
+<TBLTBLNEXT_DESC><![CDATA[루트 DBSPACE에서 TABLESPACE TABLESPACE의 다음 익스텐트 크기를 지정합니다. ]]></TBLTBLNEXT_DESC>
+<TEMPTAB_NOLOG_DESC><![CDATA[임시 테이블에서 로깅을 사용 불가능하게 합니다. <BR><BR>0 = 임시 테이블 조작에서 논리 로깅 사용 가능 <BR>1 = 임시 테이블 조작에서 논리 로깅 사용 불가능 ]]></TEMPTAB_NOLOG_DESC>
+<TXTIMEOUT_DESC><![CDATA[2단계 커미트의 참여자가 참여자 복구를 시작하기까지 대기하는 시간의 양을 지정합니다. 이 매개변수는 원격 데이터베이스 서버를 필요로 하는 분산 쿼리에만 사용됩니다. ]]></TXTIMEOUT_DESC>
+<UNSECURE_ONSTAT_DESC><![CDATA['1'로 설정된 경우 모든 사용자가 실행 중인 SQL문을 볼 수 있도록 합니다. ]]></UNSECURE_ONSTAT_DESC>
+<UPDATABLE_SECONDARY_DESC><![CDATA[기본 서버와 보조 서버 간에 설정할 연결 수를 설정합니다. 이 구성 매개변수를 설정하면 클라이언트 응용프로그램에서 고가용성 보조 서버에 대해 갱신, 삽입 및 삭제 조작을 수행할 수 있습니다.]]></UPDATABLE_SECONDARY_DESC>
+<USERMAPPING_DESC><![CDATA[데이터베이스 서버가 맵핑된 사용자로부터 연결을 수락하는지 여부와, 맵핑된 사용자가 수락될 경우 이 사용자에게 관리자 권한이 부여되는지 여부를 표시합니다. BASIC = 맵핑된 사용자는 기본 권한을 가질 수 있습니다. ADMIN = 맵핑된 사용자가 관리자 권한을 가질 수 있습니다. OFF = 사용자 맵핑이 꺼져 있습니다.]]></USERMAPPING_DESC>
+<USE_BATCHEDREAD_DESC><![CDATA[]]></USE_BATCHEDREAD_DESC>
+<USE_KOBATCHEDREAD_DESC><![CDATA[]]></USE_KOBATCHEDREAD_DESC>
+<USELASTCOMMITTED_DESC><![CDATA[CR(COMMITTED READ) 격리 레벨의 LAST COMMITTED 기능이 내재적으로 효력을 갖는 격리 레벨을 지정합니다. ]]></USELASTCOMMITTED_DESC>
+<USEOSTIME_DESC><![CDATA[데이터베이스 서버가 SQL문을 위해 운영 체제로부터 현재 시간을 확인하는 경우 subsecond 정밀도를 사용할지 여부를 지정합니다. 0 = 끄기, 1 = 켜기.]]></USEOSTIME_DESC>
+<USRC_HASHSIZE_DESC><![CDATA[사용자 LBAC 보증서 정보 캐시에 있는 해시 버킷 수를 지정합니다. ]]></USRC_HASHSIZE_DESC>
+<USRC_POOLSIZE_DESC><![CDATA[사용자 LBAC 보증서 정보 캐시의 각 해시 버킷에 있는 최대 엔트리 수를 지정합니다. ]]></USRC_POOLSIZE_DESC>
+<USTLOW_SAMPLE_DESC><![CDATA[UPDATE STATISTICS LOW 연산에 대한 통계 수집 중에 샘플링을 사용 가능으로 설정합니다. 100K를 초과한 단말 페이지가 포함된 인덱스의 경우 샘플링 통계의 콜렉션이 UPDATE STATISTICS LOW 연산 속도를 높일 수 있습니다. ]]></USTLOW_SAMPLE_DESC> 
+<VP_MEMORY_CACHE_KB_DESC><![CDATA[데이터베이스 서버가 CPU VP의 전용 메모리 블록에 액세스할 수 있도록 합니다.]]></VP_MEMORY_CACHE_KB_DESC>
+<VPCLASS_DESC><![CDATA[가상 프로세서(VP)의 클래스를 지정하고 사용자 정의 VP를 작성하며 필수 매개변수를 지정할 수 있도록 합니다. ]]></VPCLASS_DESC>
+<WSTATS_DESC><![CDATA[시스템 내의 스레드에 대한 대기 통계를 인쇄할 수 있는 onstat -g wst 명령을 사용 가능하게 합니다. ]]></WSTATS_DESC>
+<NO_DESC_FOUND><![CDATA[설명 없음]]></NO_DESC_FOUND>
+<ON_RECOMMEND><![CDATA[이 onconfig 매개변수는 작동시키는 것이 좋습니다(1로 설정). ]]></ON_RECOMMEND>
+<OFF_RECOMMEND><![CDATA[이 onconfig 매개변수는 작동시키지 않는 것이 좋습니다(0으로 설정). ]]></OFF_RECOMMEND>
+<ZERO_RECOMMEND><![CDATA[이 onconfig 매개변수는 0으로 설정하는 것이 좋습니다.]]></ZERO_RECOMMEND>
+<NONTEMP_RECOMMEND><![CDATA[이 onconfig 매개변수는 NULL이 되면 안 되며 서버 시스템의 임시 디렉토리를 가리켜도 안 됩니다. ]]></NONTEMP_RECOMMEND>
+<AFF_NPROCS_SPROC_RECOMMEND><![CDATA[AFF_SPROC 및 AFF_NPROC 사이의 차가 실제 프로세서 수를 초과하지 않게 하십시오. 시스템의 실제 프로세서 수는 {0}입니다.]]></AFF_NPROCS_SPROC_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND><![CDATA[ALARAMPROGRAM은 "$INFORMIXDIR/etc/alarmprogram.sh"(UNIX/Linux) 또는 "$INFORMIXDIR/etc/alarmprogram.bat"(Windows)로 설정하는 것이 좋습니다.]]></ALARMPROGRAM_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND_NO><![CDATA[현재 ALARMPROGRAM이 유효한 위치로 설정되어 있지 않습니다.]]></ALARMPROGRAM_RECOMMEND_NO>
+<BAR_DEBUG_RECOMMEND><![CDATA[특정 문제를 디버그하기 위해 기술 지원부에서 달리 지시한 경우가 아니면 BAR_DEBUG를 0으로 유지하십시오.]]></BAR_DEBUG_RECOMMEND>
+<BAR_NB_XPORT_COUNT_RECOMMEND><![CDATA[BAR_NB_XPORT_COUNT는 5 - 99 사이의 값으로 설정하십시오.]]></BAR_NB_XPORT_COUNT_RECOMMEND>
+<BAR_XFER_BUF_SIZE_RECOMMEND_15><![CDATA[이 서버의 페이지 크기는 4K입니다. 따라서 BAR_XFER_BUF_SIZE를 15로 설정하십시오. ]]></BAR_XFER_BUF_SIZE_RECOMMEND_15>
+<BAR_XFER_BUF_SIZE_RECOMMEND_31><![CDATA[이 서버의 페이지 크기는 2K입니다. 따라서 BAR_XFER_BUF_SIZE를 31로 설정하십시오. ]]></BAR_XFER_BUF_SIZE_RECOMMEND_31>
+<BTSCANNER_RECOMMEND><![CDATA[BTSCANNER은 NULL이 되면 안 됩니다. 영(0)이 아닌 Alice 스캐닝 설정을 포함해야 합니다. ]]></BTSCANNER_RECOMMEND>
+<CCFLAGS_RECOMMEND><![CDATA[특정 문제를 디버그하기 위해 기술 지원부에서 달리 지시한 경우가 아니면 CCFLAGS를 0으로 유지하십시오.]]></CCFLAGS_RECOMMEND>
+<CKPTINTVL_RECOMMEND><![CDATA[CKPTINTVL을 30초 이상으로 설정하십시오. ]]></CKPTINTVL_RECOMMEND>
+<CLEANERS_RECOMMEND><![CDATA[CLEANERS는 최소 VP 수 및 청크 수로 설정하십시오. 현재 서버에서 권장되는 cleaners 수는 다음과 같습니다. ]]></CLEANERS_RECOMMEND>
+<DATASKIP_RECOMMEND><![CDATA[DATASKIP은 'OFF'로 설정하십시오. ]]></DATASKIP_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND><![CDATA[DB_LIBRARY_PATH의 모든 구성요소는 $INFOMRIXDIR에 배치하십시오. ]]></DB_LIBRARY_PATH_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND_NO><![CDATA[이 서버에는 $INFORMIXDIR에 없는 DB_LIBRARY_PATH 구성요소가 있습니다. 의도적으로 그렇게 한 경우, 보안상의 이유로 이들 외부 디렉토리를 사용자 informix가 소유하고 있고 사용자 informix에게만 쓰기 권한이 있는지 확인하십시오. ]]></DB_LIBRARY_PATH_RECOMMEND_NO>
+<DBSPACETEMP_RECOMMEND><![CDATA[DBSPACETEMP는 NULL이 되면 안 되며 나열된 각 영역은 기존의 임시 DBSPACE입니다. ]]></DBSPACETEMP_RECOMMEND>
+<DEF_TABLE_LOCKMODE_RECOMMEND_ROW><![CDATA[서버에 로크 대기가 있습니다. DEF_TABLE_LOCKMODE를 'row'로 설정하십시오.]]></DEF_TABLE_LOCKMODE_RECOMMEND_ROW>
+<DEF_TABLE_LOCKMODE_RECOMMEND><![CDATA[DEF_TABLE_LOCKMODE를 'row'로 설정하십시오. 현재 'page'로 설정되어 있고 서버에 로크 대기가 있는 경우 DEF_TABLE_LOCKMODE를 'row'로 변경하십시오. 그러나 DEF_TABLE_LOCKMODE가 이미 'row'로 설정되어 있거나 현재 서버에 로그 대기가 없을 수 있습니다. ]]></DEF_TABLE_LOCKMODE_RECOMMEND>
+<DS_NONPDQ_QUERY_MEM_RECOMMEND><![CDATA[DS_NONPDQ_QUERY_MEM은 512KB 이상이어야 합니다. DS_TOTAL_MEMORY도 참조하십시오. DS_NONPDQ_QUERY_MEMORY는 DS_TOTAL_MEMORY 값의 25퍼센트를 초과할 수 없습니다.]]></DS_NONPDQ_QUERY_MEM_RECOMMEND>
+<DS_TOTAL_MEMORY_RECOMMEND><![CDATA[DS_TOTAL_MEMORY는 최소 2048KB여야 하고 DS_NONPDQ_QUERY_MEM 크기의 4배 이상이어야 합니다.]]></DS_TOTAL_MEMORY_RECOMMEND>
+<EXTSHMADD_RECOMMEND_OK><![CDATA[이 서버의 확장 가상 세그먼트 크기에 따라 EXTSHMADD의 현재 값은 OpenAdmin Tool의 권장사항을 준수합니다. ]]></EXTSHMADD_RECOMMEND_OK>
+<EXTSHMADD_RECOMMEND_NO><![CDATA[이 서버의 확장 가상 세그먼트 크기에 따라 EXTSHMADD를 다음 값 이상이 되게 늘리십시오.]]></EXTSHMADD_RECOMMEND_NO>
+<FILLFACTOR_RECOMMEND><![CDATA[FILLFACTOR는 40 - 98 퍼센트 사이로 설정하십시오.]]></FILLFACTOR_RECOMMEND>
+<LISTEN_TIMEOUT_RECOMMEND><![CDATA[LISTEN_TIMEOUT는 2초 이상 180초 미만으로 설정하십시오.]]></LISTEN_TIMEOUT_RECOMMEND>
+<LOCKS_RECOMMEND_OK><![CDATA[데이터베이스 서버의 총 로크 수가 LOCKS에 지정된 크기를 초과한 적이 없으므로 LOCKS의 현재 값은 OpenAdmin Tool의 권장사항을 충족합니다.]]></LOCKS_RECOMMEND_OK>
+<LOCKS_RECOMMEND_NO><![CDATA[데이터베이스 서버의 로크 테이블이 LOCKS에 지정된 크기를 초과합니다. 10%씩 LOCKS를 늘리십시오.]]></LOCKS_RECOMMEND_NO>
+<LOGBUFF_RECOMMEND_OK><![CDATA[데이터베이스 서버의 논리 로그 쓰기에 따라 LOGBUFF의 현재 값은 OpenAdmin Tool의 권장사항을 충족합니다.]]></LOGBUFF_RECOMMEND_OK>
+<LOGBUFF_RECOMMEND_NO><![CDATA[데이터베이스 서버의 논리 로그 쓰기에 따라 LOGBUFF의 현재 값이 낮습니다. 10%씩 LOGBUFF를 늘리십시오.]]></LOGBUFF_RECOMMEND_NO>
+<LTAPEBLK_RECOMMEND_LOW><![CDATA[LTAPEBLK의 현재 설정이 낮습니다. 테이프 드라이브 스펙을 확인하십시오. 대부분의 테이프 드라이브가 현재 구성 이상의 블록 크기를 지원합니다. LTAPEBLK를 늘리면 백업 및 복원 성능이 증진됩니다.]]></LTAPEBLK_RECOMMEND_LOW>
+<LTAPEBLK_RECOMMEND_HIGH><![CDATA[LTAPEBLK의 현재 설정이 비교적 높습니다. 테이프 드라이브 스펙을 확인하여 이 정도로 높은 값을 지원하는지 확인하십시오. ]]></LTAPEBLK_RECOMMEND_HIGH>
+<LTXHWM_RECOMMEND><![CDATA[LTXHWM은 LTXEHWM 미만이어야 합니다. LTXHWM을 25 - 80 퍼센트 사이로 설정하십시오.]]></LTXHWM_RECOMMEND>
+<LTXEHWM_RECOMMEND><![CDATA[LTXHWM은 LTXEHWM 미만이어야 합니다. LTXEHWM을 25 - 90 퍼센트 사이로 설정하십시오.]]></LTXEHWM_RECOMMEND>
+<MULTIPROCESSOR_RECOMMEND_ON><![CDATA[시스템 구성에 따르면 MULTIPROCESSOR를 켜는 것이 좋습니다. ]]></MULTIPROCESSOR_RECOMMEND_ON>
+<MULTIPROCESSOR_RECOMMEND_OFF><![CDATA[시스템 구성에 따르면 MULTIPROCESSOR를 끄는 것이 좋습니다. ]]></MULTIPROCESSOR_RECOMMEND_OFF>
+<NUMCPUVPS_RECOMMEND_OK><![CDATA[데이터베이스 서버의 성능에 따라 NUMCPUVPS의 현재 값은 OpenAdmin Tool의 권장사항을 준수합니다.]]></NUMCPUVPS_RECOMMEND_OK>
+<NUMCPUVPS_RECOMMEND_NO><![CDATA[데이터베이스 서버의 성능에 준한다면 NUMCPUVPS를 증가시키는 것이 좋습니다.]]></NUMCPUVPS_RECOMMEND_NO>
+<NUMCPUVPS_RECOMMEND_ATMAX><![CDATA[데이터베이스 서버의 성능에 준한다면 NUMCPUVPS를 증가시키는 것이 좋습니다. 그러나 NUMCPUVPS는 이미 시스템의 최대값으로 설정되어 있습니다. 따라서 성능을 개선하려면 하드웨어를 추가로 구입하는 것이 좋습니다. ]]></NUMCPUVPS_RECOMMEND_ATMAX>
+<PHYSBUFF_RECOMMEND_OK><![CDATA[데이터베이스 서버의 물리 로그 쓰기에 따라 PHYSBUFF의 현재 값은 OpenAdmin Tool의 권장사항을 충족합니다.]]></PHYSBUFF_RECOMMEND_OK>
+<PHYSBUFF_RECOMMEND_NO><![CDATA[데이터베이스 서버의 물리 로그 쓰기에 따르면 PHYSBUFF의 현재 값이 낮습니다. 10%씩 PHYSBUFF를 늘리십시오.]]></PHYSBUFF_RECOMMEND_NO>
+<RESIDENT_RECOMMEND><![CDATA[RESIDENT는 끄지 않는 거이 좋습니다. 서버에 RESIDENT가 0으로 설정된 경우 2나 -1로 변경하십시오. ]]></RESIDENT_RECOMMEND>
+<RTO_SERVER_RESTART_RECOMMEND><![CDATA[RTO_SERVER_RESTART는 사용 가능하게 하는 것이 좋습니다(0으로 설정하지 않음). ]]></RTO_SERVER_RESTART_RECOMMEND>
+<QSTATS_RECOMMEND><![CDATA[QSTATS가 켜질 경우 성능에 상당한 영향을 미치므로 기술 지원부에서 특정 문제를 디버그하기 위해 켜두도록 지시한 경우가 아니면 제품 시스템에서는 QSTATS를 꺼두는 것이 좋습니다. ]]></QSTATS_RECOMMEND>
+<SHMADD_RECOMMEND_OK><![CDATA[데이터베이스 서버의 가상 메모리 세그먼트 수에 따라 SHMADD의 현재 값은 OpenAdmin Tool의 권장사항을 충족합니다.]]></SHMADD_RECOMMEND_OK>
+<SHMADD_RECOMMEND_NO><![CDATA[데이터베이스 서버의 가상 메모리 세그먼트 수에 준하면 SHMADD의 값을 증가시키는 것이 좋습니다. ]]></SHMADD_RECOMMEND_NO>
+<SHMTOTAL_RECOMMEND_OK><![CDATA[이 서버의 공유 메모리 사용에 따라 SHMTOTAL의 현재 값은 OpenAdmin Tool의 권장사항을 준수합니다.]]></SHMTOTAL_RECOMMEND_OK>
+<SHMTOTAL_RECOMMEND_NO><![CDATA[데이터베이스 서버가 SHMTOTAL 한도에 도달하면 응용프로그램 오류가 발생할 수 있습니다. 이 서버의 공유 메모리 사용에 준하면 SHMTOTAL을 다음 값 이상이 되게 늘리십시오. ]]></SHMTOTAL_RECOMMEND_NO>
+<SHMVIRTSIZE_RECOMMEND_OK><![CDATA[데이터베이스 서버의 가상 메모리 세그먼트 수에 따라 SHMVIRTSIZE의 현재 값은 OpenAdmin Tool의 권장사항을 충족합니다.]]></SHMVIRTSIZE_RECOMMEND_OK>
+<SHMVIRTSIZE_RECOMMEND_NO><![CDATA[데이터베이스 서버의 가상 메모리 세그먼트 수에 준하면 SHMVIRTSIZE를 현재 설정보다 크고 현재 설정 미만이 되지 않게 증가시키는 것이 좋습니다. ]]></SHMVIRTSIZE_RECOMMEND_NO>
+<SBSPACETEMP_RECOMMEND><![CDATA[이 서버에 SBSPACE가 있습니다. 따라서 SBSPACETEMP가 NULL이 되면 안 되며 나열된 각 영역은 기존의 임시 SBSPACE입니다.]]></SBSPACETEMP_RECOMMEND>
+<SINGLE_CPU_VP_RECOMMEND_ON><![CDATA[데이터베이스 서버 시스템에 실제 프로세스가 하나만 있습니다. 그러므로 SINGLE_CPU_VPS를 켜는 것이 좋습니다. ]]></SINGLE_CPU_VP_RECOMMEND_ON>
+<SINGLE_CPU_VP_RECOMMEND_ON_CHECK><![CDATA[매뉴얼을 참조하여 SINGLE_CPU_VP의 제한사항을 파악하고 이를 켜는 것이 좋습니다. ]]></SINGLE_CPU_VP_RECOMMEND_ON_CHECK>
+<SYSALARMPROGRAM_RECOMMEND><![CDATA[SYSALARAMPROGRAM은 "$INFORMIXDIR/etc/evidence.sh"(UNIX/Linux) 또는 "$INFORMIXDIR/etc/evidence.bat"(Windows)로 설정하는 것이 좋습니다.]]></SYSALARMPROGRAM_RECOMMEND>
+<SYSALARMPROGRAM_RECOMMEND_NO><![CDATA[그러나 현재 SYSALARMPROGRAM이 유효한 위치로 설정되어 있지 않습니다. ]]></SYSALARMPROGRAM_RECOMMEND_NO>
+<TAPEBLK_RECOMMEND_LOW><![CDATA[TAPEBLK의 현재 설정이 낮습니다. 테이프 드라이브 스펙을 확인하십시오. 대부분의 테이프 드라이브가 현재 구성 이상의 블록 크기를 지원합니다. TAPEBLK를 늘리면 백업 및 복원 성능이 증진됩니다.]]></TAPEBLK_RECOMMEND_LOW>
+<TAPEBLK_RECOMMEND_HIGH><![CDATA[TAPEBLK의 현재 설정이 비교적 높습니다. 테이프 드라이브 스펙을 확인하여 이 정도로 높은 값을 지원하는지 확인하십시오. ]]></TAPEBLK_RECOMMEND_HIGH>
+<TBLTBLFIRST_RECOMMEND><![CDATA[TBLTBLFIRST는 이 서버의 평균 TABLESPACE TABLESPACE 파티션 크기 이상으로 설정하는 것이 좋습니다. 현재 시스템의 TABLESPACE TABLESPACE 파티션 크기는 다음과 같습니다. <BR>]]></TBLTBLFIRST_RECOMMEND>
+<TBLTBLNEXT_RECOMMEND><![CDATA[TBLTBLFIRST는 이 서버의 평균 TABLESPACE TABLESPACE 파티션 크기의 25% 이상으로 설정하는 것이 좋습니다. 현재 시스템의 TABLESPACE TABLESPACE 파티션 크기는 다음과 같습니다. <BR>]]></TBLTBLNEXT_RECOMMEND>
+<TEMPTAB_NOLOG_RECOMMEND><![CDATA[HDR 또는 Mach11 환경에서 실행할 때 응용프로그램이 이를 지원하는 경우 임시 테이블 조작 시 논리 로깅이 사용되지 않도록 TEMPTAB_NOLOG를 켜두는 것이 좋습니다. 이를 켜면 복제 환경에서 성능이 증진됩니다. ]]></TEMPTAB_NOLOG_RECOMMEND>
+<TRACEFLAGS_RECOMMEND><![CDATA[TRACEFLAGS가 켜질 경우 성능에 영향을 미치므로 기술 지원부에서 특정 문제를 디버그하기 위해 켜두도록 지시한 경우가 아니면 제품 시스템에서는 TRACEFLAGS를 꺼두는 것(0으로 설정)이 좋습니다. ]]></TRACEFLAGS_RECOMMEND>
+<TRACES_RECOMMEND><![CDATA[TRACES가 켜질 경우 성능에 영향을 미치므로 기술 지원부에서 특정 문제를 디버그하기 위해 켜두도록 지시한 경우가 아니면 제품 시스템에서는 TRACES를 꺼두는 것(0으로 설정)이 좋습니다. ]]></TRACES_RECOMMEND>
+<WSTATS_RECOMMEND><![CDATA[WSTATS가 켜질 경우 성능에 상당한 영향을 미치므로 기술 지원부에서 특정 문제를 디버그하기 위해 켜두도록 지시한 경우가 아니면 제품 시스템에서는 WSTATS를 꺼두는 것이 좋습니다. ]]></WSTATS_RECOMMEND>
+</lang>

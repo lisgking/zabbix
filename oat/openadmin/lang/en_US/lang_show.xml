@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Show]]></Show>
+<CommandHistory><![CDATA[Command History]]></CommandHistory>
+<OnlineLog><![CDATA[Online Log]]></OnlineLog>
+
+<LogDelete><![CDATA[Delete Log]]></LogDelete>
+<LogTruncate><![CDATA[Truncate Log]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Online Message Log]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Online Message Log Rotation]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[ON-Bar Activity Log]]></BarActLog>
+<BarActLogRotate><![CDATA[ON-Bar Activity Log Rotation]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Chunks]]></chunks>
+<commands><![CDATA[Commands]]></commands>
+<Databases><![CDATA[Databases]]></Databases>
+<Alerts><![CDATA[Alerts]]></Alerts>
+<Message><![CDATA[Message]]></Message>
+<Messages><![CDATA[Messages]]></Messages>
+<OnBarActLog><![CDATA[ON-Bar Activity Log]]></OnBarActLog>
+<onconfigfile><![CDATA[Onconfig File]]></onconfigfile>
+<Name><![CDATA[Name]]></Name>
+<CurrentValue><![CDATA[Current Value]]></CurrentValue>
+<ChunkInfo><![CDATA[Chunk Information]]></ChunkInfo>
+<ChunkNumber><![CDATA[Chunk Number]]></ChunkNumber>
+<ChunkPath><![CDATA[Path Name]]></ChunkPath>
+<Size><![CDATA[Size]]></Size>
+<Offset><![CDATA[Offset]]></Offset>
+<Free><![CDATA[Free]]></Free>
+<CmdHistory><![CDATA[Admin Command History]]></CmdHistory>
+<User><![CDATA[User]]></User>
+<Time><![CDATA[Time]]></Time>
+<CommandExecuted><![CDATA[Command Executed]]></CommandExecuted>
+<ReturnMsg><![CDATA[Return Message]]></ReturnMsg>
+<CreateDate><![CDATA[Create Date]]></CreateDate>
+<AreYouSureTruncate><![CDATA[This action deletes the messages in the message log file. The message log file is retained. Do you want to continue?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[This action deletes the message log file. Do you want to continue?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[The task ID for the task online_log_rotate was not found. Log file rotation requires Informix 11.70.xC3. Verify the database server version.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[The task ID for the task bar_act_log_rotate was not found. Log file rotation requires Informix 11.70.xC3. Verify the database server version.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Success]]></Success>
+<Error><![CDATA[Error]]></Error>
+<Warning><![CDATA[Warning]]></Warning>
+</lang>

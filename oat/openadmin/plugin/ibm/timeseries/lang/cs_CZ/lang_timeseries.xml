@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[Fragmentovaná tabulka]]></FragmentedTable>
+<PseudoTable><![CDATA[Pseudotabulka]]></PseudoTable>
+<NotApplicable><![CDATA[Nelze použít]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[Na této stránce nemůže nástroj OpenAdmin Tool zobrazit informace pro databázový server s více než jednou databází v neanglickém národním prostředí. Databázový server obsahuje více než jednu databázi v neanglickém národním prostředí.]]></ErrorMultipleLocales>
+</lang>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[SQL Toolbox ログイン]]></switchuser>
+<loginprompt><![CDATA[SQL Toolbox を使用するユーザ名およびパスワード入力します]]></loginprompt>
+<empty><![CDATA[ユーザ名およびパスワードを空にすることはできません]]></empty>
+<error><![CDATA[エラーが発生しました]]></error>
+<username><![CDATA[ユーザ名]]></username>
+<password><![CDATA[パスワード]]></password>
+<login><![CDATA[ログイン]]></login>
+<SwitchingUser><![CDATA[ユーザの切替え]]></SwitchingUser>
+</lang>

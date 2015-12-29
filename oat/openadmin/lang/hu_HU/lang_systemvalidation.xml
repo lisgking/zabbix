@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Rendszerellenőrzés]]></mainTitle>
+<checkDataFormat><![CDATA[Adatformátum ellenőrzése]]></checkDataFormat>
+<databaseName><![CDATA[Adatbázisnév]]></databaseName>
+<tableName><![CDATA[Táblanév]]></tableName>
+<chkTable><![CDATA[Táblázat ellenőrzése]]></chkTable>
+<chkExtFormat><![CDATA[Kiterjedésformátum ellenőrzése]]></chkExtFormat>
+<extName><![CDATA[Adatbázis-terület neve]]></extName>
+<chkExtent><![CDATA[Kiterjedés ellenőrzése]]></chkExtent>
+<valResTo><![CDATA[Érvényesítési eredmények a következő számára: ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - Rendszerellenőrzés]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck érvényesítés befejezve.]]></oncheckComplete>
+<ValidationResults><![CDATA[Érvényesítési eredmények ...]]></ValidationResults>
+<SysValNotValid><![CDATA[A rendszerérvényesítés másodlagos rendszereken nem érvényes.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Figyelem: Az ellenőrzés futtatása, az érintett lapok számától függően, nagy mennyiségű feldolgozási erőforrást vehet igénybe. A művelet a megadott táblához tartozó összes lapot (a blobpage és sbpage lapokat is beleértve) beolvassa és minden egyes lapon következetesség-ellenőrzést végez. Kívánja folytatni?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Ezen az oldalon az OpenAdmin eszköz nem tud információkat megjeleníteni olyan adatbázis-kiszolgálóról, amely több nem-angol adatbázis területi beállítással rendelkezik. Az adatbázis-kiszolgáló több nem-angol adatbázis területi beállítást tartalmaz.]]></NotYetImpl>
+</lang>

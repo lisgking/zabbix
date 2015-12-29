@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Alarme vermelho: Verifica se o parâmetro de configuração DBSPACETEMP está configurado.  Alarme amarelo: Verifica se não há espaços no valor do parâmetro de configuração DBSPACETEMP.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o parâmetro de configuração DUMPDIR não está configurado com o diretório listado no limite do alarme amarelo.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se a alocação de log dinâmico (DYNAMIC_LOGS) está ativada.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Alarme vermelho: Verifica se os arquivos de log lógico não estão armazenados no dbspace raiz (ROOTDBS). Alarme amarelo: Verifica se não há tabelas armazenadas no dbspace no qual os arquivos de log lógicos estão armazenados.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Alarme vermelho: Verifica se o limite máximo de transação longa (LTXHWM) está abaixo do limite do alarme vermelho, se a alocação de log dinâmico (DYNAMIC_LOGS) está desativada.  Alarme amarelo: Verifica se o limite máximo de transação longa (LTXHWM) está abaixo do limite do alarme amarelo, se a alocação de log dinâmico está desativada.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o valor do campo sujo mínimo menos utilizado recentemente (lru_min_dirty) está acima do limite do alarme amarelo.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o parâmetro de configuração LTAPEDEV não está configurado com o diretório listado no limite do alarme amarelo.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se a opção noage do parâmetro de configuração VPCLASS está configurada.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o servidor de banco de dados não está configurado para continuar quando um dbspace está inativo (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Alarme vermelho: Verifica se o log físico não está armazenado no dbspace raiz (ROOTDBS). Alarme amarelo: Verifica se não há tabelas armazenadas no dbspace no qual o log físico está armazenado.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica que, se o parâmetro de configuração SINGLE_CPU_VP estiver configurado, o parâmetro de configuração MULTIPROCESSOR deve estar desativado.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o parâmetro de configuração TAPEDEV não está configurado com o diretório listado no limite do alarme amarelo.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Alarme vermelho: Verifica se o número de arquivos ATS criados hoje está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se o número de arquivos ATS criados hoje está abaixo do limite de alarme amarelo.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Alarme vermelho: Verifica se a porcentagem de páginas de log que restam antes do início do bloqueio de transação (DDRBLOCK) está acima da porcentagem listada no limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem de páginas de log que restam antes do início do bloqueio de transação está acima da porcentagem listada no limite de alarme amarelo.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Alarme vermelho: Verifica se os nós no cluster ER estão ativos e replicando os dados. Alarme amarelo: Nenhum.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Alarme vermelho: Verifica se o número de arquivos RIS criados hoje está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se o número de arquivos RIS criados hoje está abaixo do limite de alarme amarelo.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Alarme vermelho: Verifica se a porcentagem de memória livre disponível ao sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem de memória livre disponível ao sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o número de processadores on-line no sistema operacional é equivalente ao número de processadores no sistema operacional.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Alarme vermelho: Nenhum. Alarme amarelo: Verifica se o número de processadores virtuais de CPU está acima da porcentagem de CPUs no sistema operacional que é listada como limite de alarme amarelo.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Alarme vermelho: Verifica se o número de descritores de arquivos abertos por processo para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o número de descritores de arquivos abertos por processo para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Alarme vermelho: Verifica se o número de conjuntos de semáforos para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o número de conjuntos de semáforos para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Alarme vermelho: Verifica se o número total de semáforos para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o número total de semáforos para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Alarme vermelho: Verifica se o número de IDs de memória compartilhada (shmid) para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o número de IDs de memória compartilhada (shmid) para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Alarme vermelho: Verifica se o tamanho máximo de um segmento de memória compartilhada (SHMMAX) para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o tamanho máximo de um segmento de memória compartilhada (SHMMAX) para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Alarme vermelho: Verifica se o número total de segmentos de memória compartilhada (shmNumSegs) para o sistema operacional está acima do limite de alarme vermelho. Alarme amarelo: Verifica se o número total de segmentos de memória compartilhada (shmNumSegs) para o sistema operacional está acima do limite de alarme amarelo.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Alarme vermelho: Verifica se uma escassez de recursos de log lógico (LLOG) não causa bloqueio durante o processamento de ponto de verificação.  Alarme amarelo: Verifica se uma escassez de recursos de log lógico (LLOG) não aciona pontos de verificação.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Alarme vermelho: Verifica se uma escassez de recursos de log físico (PLOG) não causa bloqueio durante o processamento de ponto de verificação.  Alarme amarelo: Verifica se uma escassez de recursos de log físico (PLOG) não aciona pontos de verificação.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Alarme vermelho: Verifica se o tempo gasto em seções críticas durante o processamento de ponto de verificação está abaixo do limite de alarme vermelho.  Alarme amarelo: Verifica se o tempo gasto em seções críticas durante o processamento de ponto de verificação está abaixo do limite de alarme amarelo.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Alarme vermelho: Verifica se o número de limpezas de disco por segundo durante o processamento de ponto de verificação está acima do limite de alarme vermelho.  Alarme amarelo: Verifica se o número de limpezas de disco por segundo durante o processamento de ponto de verificação está acima do limite de alarme amarelo.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Alarme vermelho: Verifica se o tempo mais longo que uma transação aguarda durante o processamento de ponto de verificação está abaixo do limite de alarme vermelho.  Alarme amarelo: Verifica se o tempo mais longo que uma transação aguarda durante o processamento de ponto de verificação está abaixo do limite de alarme amarelo.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Alarme vermelho: Verifica se o número de leituras de buffer de uma tabela é inferior à porcentagem de todas as leituras de buffer que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de leituras de buffer de uma tabela é inferior à porcentagem de todas as leituras de buffer que está listada no limite de alarme amarelo.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Alarme vermelho: Verifica se o número de gravações em buffer de uma tabela é inferior à porcentagem de todas as gravações em buffer que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de gravações em buffer de uma tabela é inferior à porcentagem de todas as gravações em buffer que está listada como limite de alarme amarelo.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Alarme vermelho: Verifica se o número de varreduras sequenciais de uma tabela é inferior à porcentagem de todas as varreduras sequenciais que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de varreduras sequenciais de uma tabela é inferior à porcentagem de todas as varreduras sequenciais que está listada como limite de alarme amarelo.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Alarme vermelho: Verifica se a porcentagem de leituras em cache para buffers (%cached) está acima do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem de leituras em cache para buffers (%cached) está acima do limite de alarme amarelo.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Alarme vermelho: Verifica se a porcentagem de gravações em cache para buffers (%cached) está acima do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem de gravações em cache para buffers (%cached) está acima do limite de alarme amarelo.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Alarme vermelho: Verifica se a porcentagem do total de classificações que são classificações de disco está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem do total de classificações que são classificações de disco está abaixo do limite de alarme amarelo.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Alarme vermelho: Verifica se a porcentagem do total de transações que são transações retrocedidas está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem do total de transações que são transações retrocedidas está abaixo do limite de alarme amarelo.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Alarme vermelho: Verifica se a porcentagem do total de gravações que são gravações em primeiro plano está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem do total de gravações que são gravações em primeiro plano está abaixo do limite de alarme amarelo.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Alarme vermelho: Verifica se a proporção de páginas de log lógico para E/S está abaixo da porcentagem do buffer de log lógico (LOGBUFF) que é listada como limite de alarme vermelho. Alarme amarelo: Verifica se a proporção de páginas de log lógico para E/S está acima da porcentagem do buffer de log lógico (LOGBUFF) que é listada como limite de alarme amarelo.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Alarme vermelho: Verifica se a porcentagem do total de solicitações de bloqueio que são esperas de bloqueio está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem do total de solicitações de bloqueio que são esperas de bloqueio está abaixo do limite de alarme amarelo.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Alarme vermelho: Verifica se a proporção de páginas de log físico para E/S está abaixo da porcentagem do buffer de log físico (PHYSBUFF) que é listada como limite de alarme vermelho.  Alarme amarelo: Verifica se a proporção de páginas de log físico para E/S está acima da porcentagem do buffer de log físico (PHYSBUFF) que é listada como limite de alarme amarelo.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Alarme vermelho: Verifica se a porcentagem do total de instruções SQL que são varreduras sequenciais está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica se a porcentagem do total de instruções SQL que são varreduras sequenciais está abaixo do limite de alarme amarelo.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Alarme vermelho: Verifica se todos os chunks estão on-line. Alarme amarelo: Nenhum.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Alarme vermelho: Verifica se o número de operações de E/S de cada chunk está abaixo da porcentagem de todas as operações de E/S que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de operações de E/S de cada chunk está abaixo da porcentagem de todas as operações de E/S que está listada como limite de alarme amarelo.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Alarme vermelho: Verifica se o número de operações de leitura de cada chunk está abaixo da porcentagem de todas as operações de leitura que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de operações de leitura de cada chunk está abaixo da porcentagem de todas as operações de leitura que está listada como limite de alarme amarelo.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Alarme vermelho: Verifica se o número de operações de gravação de cada chunk está abaixo da porcentagem de todas as operações de gravação que está listada como limite de alarme vermelho. Alarme amarelo: Verifica se o número de operações de gravação de cada chunk está abaixo da porcentagem de todas as operações de gravação que está listada como limite de alarme amarelo.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Alarme vermelho: Verifica se o espaço livre em cada dbspace está acima da porcentagem do total de espaço no dbspace que é listada como limite de alarme vermelho.  Alarme amarelo: Verifica se o espaço livre em cada dbspace está acima da porcentagem do total de espaço no dbspace que é listada como limite de alarme amarelo.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Alarme vermelho: Verifica tabelas cuja porcentagem de espaço livre máximo por página está abaixo do limite de alarme vermelho. Alarme amarelo: Verifica tabelas cuja porcentagem de espaço livre máximo por página está abaixo do limite de alarme amarelo.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

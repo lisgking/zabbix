@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Processori virtuali]]></virtualprocessors>
+<vps><![CDATA[VP]]></vps>
+<vpclasses><![CDATA[Classi VP]]></vpclasses>
+<vpid><![CDATA[ID VP]]></vpid>
+<class><![CDATA[Classe]]></class>
+<cnt><![CDATA[VP]]></cnt>
+<total><![CDATA[Totale]]></total>
+<usercpu><![CDATA[Tempo CPU utente]]></usercpu>
+<syscpu><![CDATA[Tempo CPU sistema]]></syscpu>
+<totalcpu><![CDATA[Tempo totale CPU]]></totalcpu>
+<classdetails><![CDATA[Dettagli classe]]></classdetails>
+<nodrop><![CDATA[Impossibile eliminare l'ultimo VP di una classe]]></nodrop>
+<tomuchdrop><![CDATA[Eliminazione non riuscita. Impossibile eliminare più vp di quelli esistenti.]]></tomuchdrop>
+<success><![CDATA[Azione eseguita correttamente.]]></success>
+<VPValNotSet><![CDATA[Azione impossibile. Il seguente valore VP non è impostato correttamente:]]></VPValNotSet>
+<VPType><![CDATA[Tipo VP]]></VPType>
+<Count><![CDATA[Conteggio]]></Count>
+<AddDropVP><![CDATA[Aggiungi o rimuovi un VP]]></AddDropVP>
+<add><![CDATA[Aggiungi]]></add>
+<drop><![CDATA[Elimina]]></drop>
+<addVP><![CDATA[Aggiungi VP]]></addVP>
+<dropVP><![CDATA[Elimina VP]]></dropVP>
+<modifyingClass><![CDATA[Modifica della classe]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Processori virtuali - Informazioni generali]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[VP di classe: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Opzione non disponibile]]></OptionNotAvail>
+<seconds><![CDATA[secondi]]></seconds>
+</lang>

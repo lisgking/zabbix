@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="cm" targetNamespace="urn:cm"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:cm"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        	xmlns:tns="urn:cm" targetNamespace="urn:cm">
+        	<xsd:complexType name="anyType"></xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+    <wsdl:message name="getConnMgrsRequest">
+    	<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getConnMgrsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getGridsRequest">
+    	<wsdl:part name="serverName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="portNum" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="userName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="pswd" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getGridsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getGridMembersRequest">
+    	<wsdl:part name="gridName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+    	<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+    	<wsdl:part name="sort_column" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getGridMembersResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="postCMEventRequest">
+    	<wsdl:part name="query" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="postCMEventResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+      
+    <wsdl:message name="getReplSetsRequest">
+    	<wsdl:part name="serverName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="portNum" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="userName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="pswd" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getReplSetsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getReplSetMembersRequest">
+    	<wsdl:part name="replSetName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+    	<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+    	<wsdl:part name="sort_column" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getReplSetMembersResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+
+    <wsdl:message name="getConnectionsdbServersRequest">
+    </wsdl:message>
+    <wsdl:message name="getConnectionsdbServersResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getERTopologyInfoRequest">
+    </wsdl:message>
+
+    <wsdl:message name="getERTopologyInfoResponse">
+        <wsdl:part name="return" type="xsd:anyType" />
+    </wsdl:message>
+
+    <wsdl:message name="getClusterRequest"></wsdl:message>
+    <wsdl:message name="getClusterResponse">
+        <wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+
+
+    <wsdl:message name="getWorldViewRequest">
+        <wsdl:part name="udrs" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getWorldViewResponse">
+        <wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="runCommandRequest">
+    	<wsdl:part name="command" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="runCommandResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>    
+
+    <wsdl:message name="getUnitInfoForCmRequest">
+    	<wsdl:part name="cmName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="unitName" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getUnitInfoForCmResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getDataForUnitRequest">
+    	<wsdl:part name="cmName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="unitName" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="unitType" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="connNum" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getDataForUnitResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <portType name="cmPort">
+			
+
+        <wsdl:operation name="getConnMgrs">
+        	<wsdl:input message="typens:getConnMgrsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getConnMgrsResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getGrids">
+        	<wsdl:input message="typens:getGridsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getGridsResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getGridMembers">
+        	<wsdl:input message="typens:getGridMembersRequest"></wsdl:input>
+        	<wsdl:output message="typens:getGridMembersResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="postCMEvent">
+        	<wsdl:input message="typens:postCMEventRequest"></wsdl:input>
+        	<wsdl:output message="typens:postCMEventResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getReplSets">
+        	<wsdl:input message="typens:getReplSetsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getReplSetsResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getReplSetMembers">
+        	<wsdl:input message="typens:getReplSetMembersRequest"></wsdl:input>
+        	<wsdl:output message="typens:getReplSetMembersResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getConnectionsdbServers">
+        	<wsdl:input message="typens:getConnectionsdbServersRequest"></wsdl:input>
+        	<wsdl:output message="typens:getConnectionsdbServersResponse"></wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getERTopologyInfo">
+            <wsdl:documentation>Obtain the ER Topology information</wsdl:documentation>
+            <wsdl:input message="typens:getERTopologyInfoRequest"></wsdl:input>
+            <wsdl:output message="typens:getERTopologyInfoResponse"></wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getCluster">
+            <wsdl:documentation>Get Cluster Info</wsdl:documentation>
+            <wsdl:input message="typens:getClusterRequest"></wsdl:input>
+            <wsdl:output message="typens:getClusterResponse"></wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getWorldView">
+            <wsdl:input message="typens:getWorldViewRequest"></wsdl:input>
+            <wsdl:output message="typens:getWorldViewResponse"></wsdl:output>
+        </wsdl:operation>        
+        
+        <wsdl:operation name="runCommand">
+            <wsdl:input message="typens:runCommandRequest"></wsdl:input>
+            <wsdl:output message="typens:runCommandResponse"></wsdl:output>
+        </wsdl:operation>                
+        <wsdl:operation name="getUnitInfoForCm">
+        	<wsdl:input message="typens:getUnitInfoForCmRequest"></wsdl:input>
+        	<wsdl:output message="typens:getUnitInfoForCmResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getDataForUnit">
+        	<wsdl:input message="typens:getDataForUnitRequest"></wsdl:input>
+        	<wsdl:output message="typens:getDataForUnitResponse"></wsdl:output>
+        </wsdl:operation>
+    </portType>
+
+
+    <!-- define protocol details for each Ports -->
+    <binding name="cmBinding" type="typens:cmPort">
+
+    	<soap:binding style="rpc"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+
+
+    	<wsdl:operation name="getConnMgrs">
+    		<soap:operation soapAction="urn:cm/getConnMgrs" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getGrids">
+    		<soap:operation soapAction="urn:cm/getGrids" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getGridMembers">
+    		<soap:operation soapAction="urn:cm/getGridMembers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="postCMEvent">
+    		<soap:operation soapAction="urn:cm/postCMEvent" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getReplSets">
+    		<soap:operation soapAction="urn:cm/getReplSets" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getReplSetMembers">
+    		<soap:operation soapAction="urn:cm/getReplSetMembers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getConnectionsdbServers">
+    		<soap:operation soapAction="urn:cm/getConnectionsdbServers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:cm"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+        <wsdl:operation name="getERTopologyInfo">
+            <soap:operation soapAction="urn:cm/getERTopologyInfo" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getCluster">
+            <soap:operation soapAction="urn:cm/getCluster" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getWorldView">
+            <soap:operation soapAction="urn:cm/getWorldView" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>            	
+        <wsdl:operation name="getUnitInfoForCm">
+            <soap:operation soapAction="urn:cm/getUnitInfoForCm" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>           
+         	
+        <wsdl:operation name="getDataForUnit">
+            <soap:operation soapAction="urn:cm/getDataForUnit" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="runCommand">
+            <soap:operation soapAction="urn:cm/runCommand" />
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:cm"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </wsdl:output>
+        </wsdl:operation>            	
+    </binding>
+
+
+    <wsdl:service name="cmService">
+    	<wsdl:port name="cmPort" binding="typens:cmBinding">
+    		<soap:address location="ucmService.php" />
+    	</wsdl:port>
+    </wsdl:service>
+</definitions>

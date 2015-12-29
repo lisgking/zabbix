@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Egészségfigyelő]]></health>
+<alerts><![CDATA[Riasztások]]></alerts>
+<aus><![CDATA[Automatikus frissítésű statisztikák]]></aus>
+<scheduler><![CDATA[Feladatütemező]]></scheduler>
+<taskdetails><![CDATA[Feladat részletei]]></taskdetails>
+<taskruntimes><![CDATA[Feladat futási környezetek]]></taskruntimes>
+<task_run_list><![CDATA[Feladat futási lista]]></task_run_list>
+<num_executions><![CDATA[Végrehajtások száma]]></num_executions>
+<avg_time><![CDATA[Átlagos idő (mp)]]></avg_time>
+<total_time><![CDATA[Összes idő (mp)]]></total_time>
+<last_run_time><![CDATA[Utolsó futás ideje]]></last_run_time>
+<last_execution_status><![CDATA[Utolsó végrehajtási állapot]]></last_execution_status>
+<edittaskparam><![CDATA[Feladat paraméter szerkesztése]]></edittaskparam>
+<AddNewTask><![CDATA[Új feladat hozzáadása]]></AddNewTask>
+<Save><![CDATA[Mentés]]></Save>
+<Cancel><![CDATA[Mégse]]></Cancel>
+<CronTaskList><![CDATA[Cron feladatlista]]></CronTaskList>
+<EditParam><![CDATA[Paraméter szerkesztése]]></EditParam>
+<addtask><![CDATA[Feladat hozzáadása]]></addtask>
+<deletetask><![CDATA[Feladat törlése]]></deletetask>
+<name_field_empty><![CDATA[A név mező üres. Adjon meg egy nevet.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Az adatbázisban másik feladat ugyanezt a nevet használja. Adjon meg másik nevet.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[A névnek betűvel, vagy "_" karakterrel kell kezdődnie, és betűket, számokat, vagy "_" karaktert tartalmazhat.]]></invalid_table_name>
+<table_name_duplicate><![CDATA[A táblanév már használatban van. Adjon meg másik táblanevet.]]></table_name_duplicate>
+<save_failed><![CDATA[A mentés meghiúsult: ]]></save_failed>
+<what_task_type><![CDATA[Milyen típusú feladatot kíván hozzáadni?]]></what_task_type>
+<task><![CDATA[Feladat]]></task>
+<sensor><![CDATA[Érzékelő]]></sensor>
+<next><![CDATA[Következő]]></next>
+<back><![CDATA[Vissza]]></back>
+<cancel><![CDATA[Mégse]]></cancel>
+<finish><![CDATA[Befejezés]]></finish>
+<new_sensor_setup><![CDATA[Új érzékelő beállítása]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[A feladat paraméter mentése meghiúsult.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[Új feladat beállítása]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Adja meg az érzékelő nevét és csoportját]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Adja meg a feladat nevét és csoportját]]></what_task_name_and_group>
+<sensor_name><![CDATA[Érzékelőnév]]></sensor_name>
+<task_name><![CDATA[Feladatnév]]></task_name>
+<sensor_group><![CDATA[Érzékelő csoportja]]></sensor_group>
+<task_group><![CDATA[Feladat csoportja]]></task_group>
+<type_error><![CDATA[Problémák vannak az új feladat beállítási folyamatában. Szakítsa meg és indítsa újra az új feladat beállítási folyamatot]]></type_error>
+<ph_group_error><![CDATA[Nem sikerült lekérni a csoportkínálatot a PH_GROUP táblából. Győződjön meg róla, hogy a PH_GROUP és a SYSADMIN adatbázis megfelelően működnek.]]></ph_group_error>
+<task_desc><![CDATA[Adja meg az új feladat leírását.]]></task_desc>
+<sensor_desc><![CDATA[Adja meg az új érzékelő leírását.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Adja meg az új érzékelő ütemezését.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Adja meg az új feladat ütemezését.]]></what_task_schedule>
+<start_time><![CDATA[Kezdési idő (24 órás óra)]]></start_time>
+<stop_time><![CDATA[Leállítási idő (24 órás óra)]]></stop_time>
+<frequency><![CDATA[Gyakoriság]]></frequency>
+<delete_time><![CDATA[Adatok törlése]]></delete_time>
+<what_result_table><![CDATA[Adja meg egy új eredmény tábla nevét, amelyben az érzékelő adatok tárolásra kerülnek.]]></what_result_table>
+<result_table_name><![CDATA[Eredmény tábla neve]]></result_table_name>
+<what_tk_create><![CDATA[Hajtsa végre az eredmény táblát létrehozó SQL utasítást az eredmény tábla oszlopneveit megadva.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Adja meg a parancsot, amit az új érzékelőnek futtatnia kell.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Adja meg a parancsot, amit az új feladatnak futtatnia kell.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Adjon meg egyetlen utasításból álló SQL parancsot vagy felhasználói függvényt.]]></custom_sql>
+<stored_routine><![CDATA[Tárolt rutin kiválasztása]]></stored_routine>
+<stored_routine_error><![CDATA[A tárolt rutinok lekérése meghiúsult. Javítsa ki SYSPROCEDURES táblát, ha tárolt rutinokat kíván használni.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Ellenőrizze a létrehozni kívánt érzékelő következő jellemzőit.  A megerősítéshez és az érzékelő létrehozásához kattintson a Befejezés gombra.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Ellenőrizze a létrehozni kívánt feladat következő jellemzőit.  A megerősítéshez és a feladat létrehozásához kattintson a Befejezés gombra.]]></verify_specs_task>
+<name><![CDATA[Név]]></name>
+<group><![CDATA[Csoport]]></group>
+<type><![CDATA[Típus]]></type>
+<desc><![CDATA[Leírás]]></desc>
+<deltask><![CDATA[Feladat törlése]]></deltask>
+<result_table_create><![CDATA[Eredmény tábla létrehozása utasítás]]></result_table_create>
+<execute_command><![CDATA[Végrehajtási parancs]]></execute_command>
+<task_name_check_error><![CDATA[Nem sikerült érvényesíteni, mert a feladatnév pillanatnyilag használatban van. Ellenőrizze a ph_task táblát a sysadmin adatbázisban.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Nem sikerült érvényesíteni, mert a táblanév pillanatnyilag használatban van. Ellenőrizze a systables táblát a sysadmin adatbázisban.]]></table_name_check_error>
+<sensor_check_ok><![CDATA[Az új érzékelő sikeresen ütemezésre került.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[Az új érzékelő beállítása sikertelen. Futtassa újra a beállítást]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[Az érzékelő az ütemezés szerint fog futni, de problémák vannak a paranccsal.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Kérem vizsgálja meg a következő hibakódot. A parancs hibakereséséhez kattintson a hivatkozásra.]]></debug_exec_stmt>
+<debug_command><![CDATA[Hibakeresés parancs]]></debug_command>
+<task_check_ok><![CDATA[Az új feladat sikeresen ütemezésre került.]]></task_check_ok>
+<task_check_failed><![CDATA[Az új feladat beállítása sikertelen. Futtassa újra a beállítást]]></task_check_failed>
+<task_check_bad_exec><![CDATA[A feladat az ütemezés szerint fog futni, de problémák vannak a paranccsal.]]></task_check_bad_exec>
+<setup_fail><![CDATA[A beállítás nem sikerült!]]></setup_fail>
+<setup_success><![CDATA[A beállítás sikeres!]]></setup_success>
+<setup_success_with_problems><![CDATA[A beállítás kész, de problémák vannak]]></setup_success_with_problems>
+<return_code><![CDATA[Visszatérési kód :]]></return_code>
+<time_error><![CDATA[A leállítási idő a kezdési időnél nem lehet korábbi.]]></time_error>
+<freq_error><![CDATA[A gyakoriság nem lehet 0 nap, 0 óra, 0 perc, 0 másodperc.]]></freq_error>
+<execute_stmt_empty><![CDATA[A végrehajtási utasítás nem lehet üres.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[A létrehozási utasítás nem lehet üres.]]></create_stmt_empty>
+<startup_only><![CDATA[Futtatás csak a kiszolgáló indításakor]]></startup_only>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<NoExecutionStmt><![CDATA[Feladat végrehajtási utasítása nem lehet üres.]]></NoExecutionStmt>
+<NEVER><![CDATA[SOHA]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[A feladat törlése meghiúsult.]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Az eredmény tábla törlése nem sikerült]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[A feladat sikeresen törlésre került]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[A törlés rendszerfeladatok esetében nem engedélyezett]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Társított eredmény tábla törlése]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[Ez a szolgáltatás a jelenlegi kiszolgálóváltozaton nem érhető el.]]></FeatureUnavailable>
+<AlertList><![CDATA[Riasztáslista]]></AlertList>
+<severity><![CDATA[Fontosság]]></severity>
+<alerttype><![CDATA[Riasztás típusa]]></alerttype>
+<state><![CDATA[Állapot]]></state>
+<alertstate><![CDATA[Riasztás állapota]]></alertstate>
+<message><![CDATA[Üzenet]]></message>
+<grouptoview><![CDATA[Megjelenítendő csoport]]></grouptoview>
+<taskdetails><![CDATA[Feladat részletei]]></taskdetails>
+<taskname><![CDATA[Feladatnév]]></taskname>
+<id><![CDATA[Azonosító]]></id>
+<executionstmt><![CDATA[Végrehajtási utasítás]]></executionstmt>
+<resulttable><![CDATA[Eredmény tábla]]></resulttable>
+<starttime><![CDATA[Indítási idő]]></starttime>
+<stopttime><![CDATA[Leállítási idő]]></stopttime>
+<time><![CDATA[Idő]]></time>
+<frequency><![CDATA[Gyakoriság]]></frequency>
+<datadelete><![CDATA[Adatok törlése]]></datadelete>
+<WeekDay1><![CDATA[Hétfő]]></WeekDay1>
+<WeekDay2><![CDATA[Kedd]]></WeekDay2>
+<WeekDay3><![CDATA[Szerda]]></WeekDay3>
+<WeekDay4><![CDATA[Csütörtök]]></WeekDay4>
+<WeekDay5><![CDATA[Péntek]]></WeekDay5>
+<WeekDay6><![CDATA[Szombat]]></WeekDay6>
+<WeekDay7><![CDATA[Vasárnap]]></WeekDay7>
+<enabletask><![CDATA[Feladat engedélyezése]]></enabletask>
+<taskparams><![CDATA[Feladat paraméterek]]></taskparams>
+<paramname><![CDATA[Paraméter neve]]></paramname>
+<description><![CDATA[Leírás]]></description>
+<value><![CDATA[Érték]]></value>
+<valuetype><![CDATA[ÉrtékTípus]]></valuetype>
+<edittaskparam><![CDATA[Feladat paraméter szerkesztése]]></edittaskparam>
+<view><![CDATA[Nézet]]></view>
+<NEW><![CDATA[ÚJ]]></NEW>
+<ADDRESSED><![CDATA[CÍMZETT]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[NYUGTÁZOTT]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[MELLŐZÖTT]]></IGNORED>
+<INFO><![CDATA[INFO]]></INFO>
+<WARNING><![CDATA[FIGYELMEZTETÉS]]></WARNING>
+<ERROR><![CDATA[HIBA]]></ERROR>
+<COLORGREEN><![CDATA[ZÖLD]]></COLORGREEN>
+<COLORRED><![CDATA[VÖRÖS]]></COLORRED>
+<COLORYELLOW><![CDATA[SÁRGA]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[Feladat ütemezés]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[H]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[K]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[S]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[K]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[P]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[V]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[V]]></WeekDay7Letter>
+<Enabled><![CDATA[Engedélyezett]]></Enabled>
+<Disabled><![CDATA[Letiltva]]></Disabled>
+<runfrequency><![CDATA[Futtatási gyakoriság]]></runfrequency>
+<execution><![CDATA[Végrehajtás]]></execution>
+<taskdetailssaved><![CDATA[A feladat részletei sikeresen mentésre kerültek.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[A feladat paraméter sikeresen mentésre került.]]></TaskParamSaved>
+<recheck><![CDATA[Újraellenőrzés]]></recheck>
+<ignore><![CDATA[Mellőzés]]></ignore>
+<correct><![CDATA[Javítás]]></correct>
+<Days><![CDATA[Nap]]></Days>
+<Hours><![CDATA[Óra]]></Hours>
+<Minutes><![CDATA[Perc]]></Minutes>
+<Seconds><![CDATA[Másodperc]]></Seconds>
+<ALARM><![CDATA[RIASZTÁS #{0}]]></ALARM>
+<Warning><![CDATA[Figyelmeztetés]]></Warning>
+<Error><![CDATA[Hiba]]></Error>
+<Info><![CDATA[Info]]></Info>
+<green><![CDATA[Zöld]]></green>
+<yellow><![CDATA[Sárga]]></yellow>
+<red><![CDATA[Vörös]]></red>
+<TaskNotFound><![CDATA[A feladat nem található.]]></TaskNotFound>
+</lang>

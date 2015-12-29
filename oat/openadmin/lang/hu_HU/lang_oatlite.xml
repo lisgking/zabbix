@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Nem lehet csatlakozni az adatbázis-kiszolgálóhoz]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[A kiszolgáló offline]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[Az OAT Informix 11.10 vagy újabb változatot igényel.]]></ServerVersionLessThan11>
+<Standard><![CDATA[Szabványos]]></Standard>
+<Primary><![CDATA[Elsődleges]]></Primary>
+<Secondary><![CDATA[Másodlagos]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[igen]]></yes>
+<no><![CDATA[nem]]></no>
+<partial><![CDATA[részleges]]></partial>
+</lang>

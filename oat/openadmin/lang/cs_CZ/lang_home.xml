@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Domů]]></home>
+
+<dashboard><![CDATA[Panel dashboard]]></dashboard>
+<dashboard_name_perf><![CDATA[Výkon serveru]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[Tento panel dashboard zobrazuje informace o tabulkách, dotazech a procesoru.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Využití prostředků]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[Tento panel dashboard zobrazuje informace o paměti, prostoru a zámcích.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Paměť databázového serveru]]></panel_title_memory>
+<panel_desc_memory><![CDATA[Tento panel zobrazuje využití sdílené paměti pro databázový server.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Relace]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[Tento panel zobrazuje počet připojených relací pro databázový server.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Čtení a zápisy z/do sítě]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[Tento panel zobrazuje počet volání I/O pro čtení a zápisy z/do sítě.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[Diskový vstup/výstup]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[Tento panel zobrazuje dobu čekání diskového vstupu/výstupu. Panel vyžaduje Informix 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Paměť operačního systému]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[Tento panel zobrazuje využití paměti pro operační systém (OS). Panel vyžaduje Informix 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Transakce]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[Tento panel zobrazuje počet transakcí pro databázový server.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Využití prostoru]]></panel_title_space>
+<panel_desc_space><![CDATA[Tento panel zobrazuje volný prostor a využitý prostor pro každý prostor dbspace.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Zámky]]></panel_title_locks>
+<panel_desc_locks><![CDATA[Tento panel zobrazuje počet zámků pro databázový server.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Nejvyšší tabulky - Čtení]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[Tento panel zobrazuje tabulky s nejvyšším počtem čtení.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[Čas CPU]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[Tento panel zobrazuje čas CPU uživatele a systému.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Nejvyšší tabulky - Upravené]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[Tento panel zobrazuje tabulky s nejvyšším počtem vložení, aktualizací a odstranění.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Celkový počet operací SQL]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[Tento panel zobrazuje celkový počet zpracovaných, vložených, aktualizovaných a odstraněných řádků.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[Počet operací SQL za sekundu]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[Tento panel zobrazuje počet zpracovaných, vložených, aktualizovaných a odstraněných řádků za sekundu.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Úvodní stránka]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[Na této stránce nemůže nástroj OpenAdmin Tool zobrazit informace pro databázový server s více než jednou databází v neanglickém národním prostředí. Databázový server obsahuje více než jednu databázi v neanglickém národním prostředí.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Průzkumník relací]]></sessionexplorer>
+<ChartTest><![CDATA[Graf - Test]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[Datový prostor]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Nelze načíst informace o připojení pro databázový server.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Připojení se nezdařilo: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Chyba: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[Databázový server je blokován. OAT nemůže načíst žádné další stavové informace.]]></ServerBlocked>
+</lang>

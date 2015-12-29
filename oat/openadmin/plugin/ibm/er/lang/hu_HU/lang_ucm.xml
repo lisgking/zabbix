@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[Kapcsolatkezelő]]></ucm>
+<noCMSupportServerVersion><![CDATA[Az OAT kapcsolatkezelő az Informix 11.70.xC3 változatát igényli.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[A Kapcsolatkezelő művelet meghiúsult. Részletekért tekintse meg a Kapcsolatkezelő naplófájlját.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Nem található csatlakozási egység a(z) {0} Kapcsolatkezelőhöz.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[A rendszer a(z) {0} csatlakozási egységet találta.]]></ConnUnitNotFound>
+</lang>

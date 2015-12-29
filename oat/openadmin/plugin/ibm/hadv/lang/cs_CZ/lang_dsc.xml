@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[Dynamické přidělování protokolu]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[Paměť souborů logických transakčních protokolů]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU Min Dirty]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[Paměť fyzických protokolů]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[Soubory ATS]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[Uzel ER mimo provoz]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[Soubory RIS]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[Volná paměť OS]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[Procesory OS online]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[Virtuální procesory OS]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[Limit otevřených souborů OS]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[ID semaforů OS]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[Semafory OS]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[ID sdílené paměti OS]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[Spuštění CKPT způsobil LLOG]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[Spuštění CKPT způsobil PLOG]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[Kritická sekce]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[Vyprázdnění disku]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[Nejdelší čekání]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[Čtení z vyrovnávací paměti na jednu tabulku]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[Zápis do vyrovnávací paměti na jednu tabulku]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[Počet sekvenčních skenování na jednu tabulku]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[Počet čtení z vyrovnávací paměti uložených v mezipaměti]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[Počet zápisů do vyrovnávací paměti uložených v mezipaměti]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[Řazení disku]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[Odvolání transakce]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[Zápisy na popředí]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[Počet stránek LLOG na I/O]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[Čekání na zámek]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[Počet stránek PLOG na I/O]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[Sekvenční skenování]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[Diskové bloky offline]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[Operace I/O diskových bloků]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[Čtení I/O z diskových bloků]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[Zápisy I/O do diskových bloků]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[Volné místo v prostoru dbspace]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[Velikost řádku]]></dsc_Rowsize>
+
+</lang>

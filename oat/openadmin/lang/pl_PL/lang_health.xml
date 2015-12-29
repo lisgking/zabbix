@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Monitor poprawności]]></health>
+<alerts><![CDATA[Alerty]]></alerts>
+<aus><![CDATA[Automatyczna aktualizacja statystyk]]></aus>
+<scheduler><![CDATA[Program planujący zadania]]></scheduler>
+<taskdetails><![CDATA[Szczegóły zadania]]></taskdetails>
+<taskruntimes><![CDATA[Czasy wykonania zadań]]></taskruntimes>
+<task_run_list><![CDATA[Lista uruchamiania zadań]]></task_run_list>
+<num_executions><![CDATA[Liczba wykonań]]></num_executions>
+<avg_time><![CDATA[Czas średni (s)]]></avg_time>
+<total_time><![CDATA[Czas łączny (s)]]></total_time>
+<last_run_time><![CDATA[Czas ostatniego uruchomienia]]></last_run_time>
+<last_execution_status><![CDATA[Status ostatniego wykonania]]></last_execution_status>
+<edittaskparam><![CDATA[Edytuj parametr zadania]]></edittaskparam>
+<AddNewTask><![CDATA[Dodaj nowe zadanie]]></AddNewTask>
+<Save><![CDATA[Zapisz]]></Save>
+<Cancel><![CDATA[Anuluj]]></Cancel>
+<CronTaskList><![CDATA[Lista zadań Cron]]></CronTaskList>
+<EditParam><![CDATA[Edytuj parametr]]></EditParam>
+<addtask><![CDATA[Dodaj zadanie]]></addtask>
+<deletetask><![CDATA[Usuń zadanie]]></deletetask>
+<name_field_empty><![CDATA[Pole nazwy jest puste. Podaj nazwę.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Inne zadanie w bazie danych ma tę samą nazwę. Podaj inną nazwę.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[Nazwa musi zaczynać się od litery lub znaku "_" i może zawierać litery, cyfry i znaki "_".]]></invalid_table_name>
+<table_name_duplicate><![CDATA[Ta nazwa tabeli jest już używana. Podaj inną nazwę tabeli.]]></table_name_duplicate>
+<save_failed><![CDATA[Zapisywanie nie powiodło się: ]]></save_failed>
+<what_task_type><![CDATA[Jakiego typu zadanie chcesz dodać?]]></what_task_type>
+<task><![CDATA[Zadanie]]></task>
+<sensor><![CDATA[Czujnik]]></sensor>
+<next><![CDATA[Dalej]]></next>
+<back><![CDATA[Wstecz]]></back>
+<cancel><![CDATA[Anuluj]]></cancel>
+<finish><![CDATA[Zakończ]]></finish>
+<new_sensor_setup><![CDATA[Konfiguracja nowego czujnika]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[Zapisywanie parametru zadania nie powiodło się.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[Konfiguracja nowego zadania]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Podaj nazwę i grupę czujnika]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Podaj nazwę i grupę zadania]]></what_task_name_and_group>
+<sensor_name><![CDATA[Nazwa czujnika]]></sensor_name>
+<task_name><![CDATA[Nazwa zadania]]></task_name>
+<sensor_group><![CDATA[Grupa czujnika]]></sensor_group>
+<task_group><![CDATA[Grupa zadania]]></task_group>
+<type_error><![CDATA[Wystąpiły problemy w procesie konfiguracji nowego zadania. Anuluj i zrestartuj proces konfiguracji nowego zadania]]></type_error>
+<ph_group_error><![CDATA[Nie powiodło się pobieranie opcji grup z tabeli PH_GROUP. Upewnij się, że bazy danych PH_GROUP i SYSADMIN działają prawidłowo.]]></ph_group_error>
+<task_desc><![CDATA[Podaj opis nowego zadania.]]></task_desc>
+<sensor_desc><![CDATA[Podaj opis nowego czujnika.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Określ harmonogram dla nowego czujnika.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Określ harmonogram dla nowego zadania.]]></what_task_schedule>
+<start_time><![CDATA[Czas uruchomienia (zegar 24-godzinny)]]></start_time>
+<stop_time><![CDATA[Czas zatrzymania (zegar 24-godzinny)]]></stop_time>
+<frequency><![CDATA[Częstotliwość]]></frequency>
+<delete_time><![CDATA[Usuwanie danych]]></delete_time>
+<what_result_table><![CDATA[Podaj nazwę nowej tabeli wyników, w której będą przechowywane dane wynikowe z czujnika.]]></what_result_table>
+<result_table_name><![CDATA[Nazwa tabeli wyników]]></result_table_name>
+<what_tk_create><![CDATA[Uzupełnij instrukcję SQL, aby utworzyć tabelę wyników, wprowadzając nazwy kolumn tej tabeli.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Określ komendę, którą powinien uruchomić nowy czujnik.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Określ komendę, którą powinno uruchomić nowe zadanie.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Wprowadź pojedynczą instrukcję SQL lub funkcję zdefiniowaną przez użytkownika.]]></custom_sql>
+<stored_routine><![CDATA[Wybierz podprogram składowany]]></stored_routine>
+<stored_routine_error><![CDATA[Pobieranie podprogramów składowanych nie powiodło się. Napraw tabelę SYSPROCEDURES, jeśli chcesz używać podprogramów składowanych.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Zweryfikuj następujące dane czujnika, który ma zostać utworzony.  Kliknij przycisk Zakończ, aby potwierdzić i utworzyć czujnik.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Zweryfikuj następujące dane zadania, które ma zostać utworzone.  Kliknij przycisk Zakończ, aby potwierdzić i utworzyć zadanie.]]></verify_specs_task>
+<name><![CDATA[Nazwa]]></name>
+<group><![CDATA[Grupa]]></group>
+<type><![CDATA[Typ]]></type>
+<desc><![CDATA[Opis]]></desc>
+<deltask><![CDATA[Usuń zadanie]]></deltask>
+<result_table_create><![CDATA[Instrukcja tworzenia tabeli wyników]]></result_table_create>
+<execute_command><![CDATA[Komenda wykonania]]></execute_command>
+<task_name_check_error><![CDATA[Nie powiodło się sprawdzenie, czy nazwa zadania jest już używana. Sprawdź tabelę ph_task w bazie danych sysadmin.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Nie powiodło się sprawdzenie, czy nazwa tabeli jest już używana. Sprawdź tabelę systables w bazie danych sysadmin]]></table_name_check_error>
+<sensor_check_ok><![CDATA[Harmonogram nowego czujnika został pomyślnie zaplanowany.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[Konfiguracja nowego czujnika nie powiodła się. Uruchom konfigurację ponownie.]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[Czujnik będzie uruchamiany zgodnie z harmonogramem, ale występują problemy z komendą.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Sprawdź następujący kod błędu. Kliknij odsyłacz, aby debugować komendę.]]></debug_exec_stmt>
+<debug_command><![CDATA[Debuguj komendę]]></debug_command>
+<task_check_ok><![CDATA[Harmonogram nowego zadania został pomyślnie zaplanowany.]]></task_check_ok>
+<task_check_failed><![CDATA[Konfiguracja nowego zadania nie powiodła się. Uruchom konfigurację ponownie.]]></task_check_failed>
+<task_check_bad_exec><![CDATA[Zadanie będzie uruchamiane zgodnie z harmonogramem, ale występują problemy z komendą.]]></task_check_bad_exec>
+<setup_fail><![CDATA[Konfiguracja nie powiodła się!]]></setup_fail>
+<setup_success><![CDATA[Konfiguracja powiodła się!]]></setup_success>
+<setup_success_with_problems><![CDATA[Konfiguracja została zakończona, ale występują problemy]]></setup_success_with_problems>
+<return_code><![CDATA[Kod powrotu:]]></return_code>
+<time_error><![CDATA[Czas zatrzymania nie może być wcześniejszy od czasu uruchomienia.]]></time_error>
+<freq_error><![CDATA[Częstotliwość nie może być równa 0 dni, 0 godzin, 0 minut, 0 sekund]]></freq_error>
+<execute_stmt_empty><![CDATA[Instrukcja wykonania nie może być pusta.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[Instrukcja tworzenia nie może być pusta.]]></create_stmt_empty>
+<startup_only><![CDATA[Uruchamiaj tylko przy starcie serwera]]></startup_only>
+<NoPermission><![CDATA[Użytkownicy z uprawnieniami tylko do odczytu nie mają uprawnień do wykonania tej czynności. Użytkownik jest zalogowany jako użytkownik z uprawnieniami tylko do odczytu.]]></NoPermission>
+<NoExecutionStmt><![CDATA[Instrukcja wykonania zadania nie może być pusta.]]></NoExecutionStmt>
+<NEVER><![CDATA[NIGDY]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[Usuwanie zadania nie powiodło się]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Usuwanie tabeli wyników nie powiodło się]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[Zadanie zostało pomyślnie usunięte]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[Nie jest dozwolone usuwanie zadań systemowych]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Usuń powiązaną tabelę wyników]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[Ta funkcja nie jest dostępna w zainstalowanej wersji serwera.]]></FeatureUnavailable>
+<AlertList><![CDATA[Lista alertów]]></AlertList>
+<severity><![CDATA[Istotność]]></severity>
+<alerttype><![CDATA[Typ alertu]]></alerttype>
+<state><![CDATA[Stan]]></state>
+<alertstate><![CDATA[Stan alertu]]></alertstate>
+<message><![CDATA[Komunikat]]></message>
+<grouptoview><![CDATA[Grupa do wyświetlenia]]></grouptoview>
+<taskdetails><![CDATA[Szczegóły zadania]]></taskdetails>
+<taskname><![CDATA[Nazwa zadania]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[Instrukcja wykonania]]></executionstmt>
+<resulttable><![CDATA[Tabela wyników]]></resulttable>
+<starttime><![CDATA[Czas uruchomienia]]></starttime>
+<stopttime><![CDATA[Czas zatrzymania]]></stopttime>
+<time><![CDATA[Czas]]></time>
+<frequency><![CDATA[Częstotliwość]]></frequency>
+<datadelete><![CDATA[Usuwanie danych]]></datadelete>
+<WeekDay1><![CDATA[Poniedziałek]]></WeekDay1>
+<WeekDay2><![CDATA[Wtorek]]></WeekDay2>
+<WeekDay3><![CDATA[Środa]]></WeekDay3>
+<WeekDay4><![CDATA[Czwartek]]></WeekDay4>
+<WeekDay5><![CDATA[Piątek]]></WeekDay5>
+<WeekDay6><![CDATA[Sobota]]></WeekDay6>
+<WeekDay7><![CDATA[Niedziela]]></WeekDay7>
+<enabletask><![CDATA[Włącz zadanie]]></enabletask>
+<taskparams><![CDATA[Parametry zadania]]></taskparams>
+<paramname><![CDATA[Nazwa parametru]]></paramname>
+<description><![CDATA[Opis]]></description>
+<value><![CDATA[Wartość]]></value>
+<valuetype><![CDATA[Typ wartości]]></valuetype>
+<edittaskparam><![CDATA[Edytuj parametr zadania]]></edittaskparam>
+<view><![CDATA[Widok]]></view>
+<NEW><![CDATA[NOWE]]></NEW>
+<ADDRESSED><![CDATA[Z INTERWENCJĄ]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[POTWIERDZONE]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[IGNOROWANE]]></IGNORED>
+<INFO><![CDATA[INFO]]></INFO>
+<WARNING><![CDATA[OSTRZEŻENIE]]></WARNING>
+<ERROR><![CDATA[BŁĄD]]></ERROR>
+<COLORGREEN><![CDATA[ZIELONY]]></COLORGREEN>
+<COLORRED><![CDATA[CZERWONY]]></COLORRED>
+<COLORYELLOW><![CDATA[ŻÓŁTY]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[Harmonogram zadania]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[P]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[C]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[Ś]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[C]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[P]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[N]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[N]]></WeekDay7Letter>
+<Enabled><![CDATA[Włączone]]></Enabled>
+<Disabled><![CDATA[Wyłączone]]></Disabled>
+<runfrequency><![CDATA[Częstotliwość uruchamiania]]></runfrequency>
+<execution><![CDATA[Wykonanie]]></execution>
+<taskdetailssaved><![CDATA[Szczegóły zadania zapisane pomyślnie.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[Parametr zadania zapisany pomyślnie.]]></TaskParamSaved>
+<recheck><![CDATA[Sprawdź ponownie]]></recheck>
+<ignore><![CDATA[Ignoruj]]></ignore>
+<correct><![CDATA[Popraw]]></correct>
+<Days><![CDATA[dni]]></Days>
+<Hours><![CDATA[godz.]]></Hours>
+<Minutes><![CDATA[min.]]></Minutes>
+<Seconds><![CDATA[sekundy]]></Seconds>
+<ALARM><![CDATA[ALARM nr {0}]]></ALARM>
+<Warning><![CDATA[Ostrzeżenie]]></Warning>
+<Error><![CDATA[Błąd]]></Error>
+<Info><![CDATA[Informacje]]></Info>
+<green><![CDATA[Zielony]]></green>
+<yellow><![CDATA[Żółty]]></yellow>
+<red><![CDATA[Czerwony]]></red>
+<TaskNotFound><![CDATA[Nie znaleziono zadania.]]></TaskNotFound>
+</lang>

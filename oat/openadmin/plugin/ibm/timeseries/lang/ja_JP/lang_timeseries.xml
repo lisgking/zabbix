@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[フラグメント表]]></FragmentedTable>
+<PseudoTable><![CDATA[疑似表]]></PseudoTable>
+<NotApplicable><![CDATA[不適応]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[OpenAdmin Tool は、このページに英語以外の複数のデータベース ロケールでデータベース サーバの情報を表示することができません。データベース サーバに、英語以外のデータベース ロケールが複数含まれています。]]></ErrorMultipleLocales>
+</lang>

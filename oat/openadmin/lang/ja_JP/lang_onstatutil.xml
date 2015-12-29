@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[onstat ユーティリティ]]></mainTitle>
+<ErrorOnInteractive><![CDATA[onstat 対話モードは OpenAdmin Tool をとおしてアクセスできません。]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[オプションのみを入力します。コマンド <b>onstat</b> は OpenAdmin Tool により提供されます。]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[-r オプションは OpenAdmin Tool の onstat コマンドでは許可されません。]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[-o オプションは OpenAdmin Tool の onstat コマンドでは許可されません。]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[onstat コマンドに無効文字が含まれています。]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[英数字、ダッシュ、カンマ、およびピリオドのみが OpenAdmin Tool の onstat コマンドで使用できます。]]></ReportValidChars>
+<ErrorPrepend><![CDATA[エラー:]]></ErrorPrepend>
+<SubmitAction><![CDATA[実行]]></SubmitAction>
+<OnstatOptions><![CDATA[onstat オプションの表示]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[onstat ユーティリティ機能は、サーバ バージョン {0} またはこれ以上でのみ使用可能です。]]></OnstatFeatureNotAvail>
+</lang>

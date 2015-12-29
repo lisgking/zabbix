@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onconfig">
+<ADMIN_MODE_USERS_DESC><![CDATA[管理モードでデータベース サーバにアクセスできるユーザ (ユーザ informix および DBSA グループのユーザ以外で) を指定します。]]></ADMIN_MODE_USERS_DESC>
+<ADMIN_USER_MODE_WITH_DBSA_DESC><![CDATA[ユーザ <i>informix</i> および DBSA グループ ユーザが、管理モードであるデータベース サーバに接続できるかどうかを指定します。]]></ADMIN_USER_MODE_WITH_DBSA_DESC>
+<ADTERR_DESC><![CDATA[(UNIX) ADTERR は、監査レコードを書き込む際にエラーが発生したときのデータベース サーバの動作を指定します。]]></ADTERR_DESC>
+<ADTMODE_DESC><![CDATA[(UNIX) 監査のレベルを制御します。]]></ADTMODE_DESC>
+<ADTPATH_DESC><![CDATA[(UNIX) データベース サーバが監査ファイルを保存するディレクトリを指定します。]]></ADTPATH_DESC>
+<ADTSIZE_DESC><![CDATA[(UNIX) 監査ファイルの最大サイズを指定します。]]></ADTSIZE_DESC>
+<AFCRASH_DESC><![CDATA[AFCRASH に対して 0x10 ビットがオンの場合は、Java 仮想マシンが生成するすべてのメッセージが JVM_vpid ファイルに記録されます。ここで vpid は、Java 仮想プロセッサのプロセス ID です。このファイルは、JVPLOG ファイルが格納されるディレクトリに格納されます。]]></AFCRASH_DESC>
+<AFFAIL_DESC><![CDATA[]]></AFFAIL_DESC>
+<AFF_NPROCS_DESC><![CDATA[プロセッサ親和性 (アフィニティ) に対応しているマルチプロセッサ コンピュータでは、AFF_NPROCS を使用して、データベース サーバが CPU 仮想プロセッサをバインドできる CPU の数が指定されます。]]></AFF_NPROCS_DESC>
+<AFF_SPROC_DESC><![CDATA[プロセッサ親和性 (アフィニティ) に対応しているマルチプロセッサ コンピュータでは、AFF_SPROC を使用して、データベース サーバが CPU への CPU 仮想プロセッサのバインドを開始する CPU (0 から開始) が指定されます。]]></AFF_SPROC_DESC>
+<ALARMPROGRAM_DESC><![CDATA[イベント アラームを表示します]]></ALARMPROGRAM_DESC>
+<ALLOW_NEWLINE_DESC><![CDATA[データベース サーバで、引用符付きストリングにおける復帰改行文字 (
+) を許可するのが、すべてのセッションと特定のセッションのいずれに対してであるのかを指定します。]]></ALLOW_NEWLINE_DESC>
+<ALRM_ALL_EVENTS_DESC><![CDATA[ALARMPROGRAM を、MSGPATH に記録されるすべてのイベントで実行するのか、注目に値するイベントのみで実行するのかを指定します。]]></ALRM_ALL_EVENTS_DESC>
+<ASF_SOCTCP_BACKLOG_DESC><![CDATA[ソケット (SOCTCP) を使用する場合に、キュー内の接続の数を指定します。]]></ASF_SOCTCP_BACKLOG_DESC>
+<AUTO_AIOVPS_DESC><![CDATA[入出力ワークロードが既存の AIO VP のパフォーマンスを上回っていることをデータベース サーバが検出したときに、AIO VP およびページ クリーナ スレッドの数を、データベース サーバが自動で増やせるようにします。]]></AUTO_AIOVPS_DESC>
+<AUTO_CKPTS_DESC><![CDATA[トランザクションのブロックを避けるために、チェックポイントのトリガ頻度を上げることを、サーバに許可します。]]></AUTO_CKPTS_DESC>
+<AUTO_LRU_TUNING_DESC><![CDATA[自動 LRU 調整の有効化]]></AUTO_LRU_TUNING_DESC>
+<AUTO_READAHEAD_DESC><![CDATA[自動先読みモードを変更するか、自動先読みを無効化します。自動先読み操作は、問合せで入出力が発生していることをデータベース サーバが検出したときに非同期ページ要求を発行することにより、問合せのパフォーマンスを向上するのに役立ちます。0 = 自動先読み要求を無効化します。1 = 自動先読み要求を標準モードで有効化します。2 = 自動先読み要求をアグレッシブ モードで有効化します。]]></AUTO_READAHEAD_DESC>
+<AUTO_REPREPARE_DESC><![CDATA[SPL ルーチンまたは準備済みオブジェクトが参照する表のスキーマが変更された後で、SPL ルーチンの再最適化と準備済みオブジェクトの再準備を自動で実行する Dynamic Server 機能が有効であるかどうかを制御します。]]></AUTO_REPREPARE_DESC>
+<AUTO_STAT_MODE_DESC><![CDATA[データベース サーバの統計の自動更新を有効化または無効化します。]]></AUTO_STAT_MODE_DESC>
+<BACKUP_FILTER_DESC><![CDATA[フィルタ プログラムのパス名およびすべてのオプションを指定します。]]></BACKUP_FILTER_DESC>
+<BAR_ACT_LOG_DESC><![CDATA[ON-Bar 動作ログ ファイルの場所を指定します。]]></BAR_ACT_LOG_DESC>
+<BAR_BSALIB_PATH_DESC><![CDATA[格納域マネージャのための XBSA 共有ライブラリのパス名およびファイル名を指定します。]]></BAR_BSALIB_PATH_DESC>
+<BAR_CKPTSEC_TIMEOUT_DESC><![CDATA[外部バックアップの実行中に、チェックポイントが主サーバから到達するまで RS 副サーバが待機する必要がある時間を秒単位で指定します。主サーバからのチェックポイントがタイムアウトするためバックアップが失敗する場合、BAR_CKPTSEC_TIMEOUT 構成パラメータを使用して、チェックポイントが主サーバから到達するまで RS 副サーバが待機する必要がある時間を増やすことができます。]]></BAR_CKPTSEC_TIMEOUT_DESC> 
+<BAR_DEBUG_DESC><![CDATA[ON-Bar 動作ログでのデバッグ メッセージのレベルを指定します。]]></BAR_DEBUG_DESC>
+<BAR_DEBUG_LOG_DESC><![CDATA[ON-Bar デバッグ ログの場所を指定します。]]></BAR_DEBUG_LOG_DESC>
+<BAR_HISTORY_DESC><![CDATA[sysutils データベースでバックアップ履歴を管理するかどうかを指定します。]]></BAR_HISTORY_DESC>
+<BAR_IXBAR_PATH_DESC><![CDATA[ON-Bar ブート ファイルの名前およびパスを上書きします。デフォルトでは、ON-Bar ブート ファイルは $INFORMIXDIR/etc に作成され、「ixbar.<SERVER_NUM>」という名前です。]]></BAR_IXBAR_PATH_DESC>
+<BAR_MAX_BACKUP_DESC><![CDATA[各 ON-Bar コマンドで許可される並列バックアップ プロセスの最大数を指定します。]]></BAR_MAX_BACKUP_DESC>
+<BAR_NB_XPORT_COUNT_DESC><![CDATA[バックアップ プロセスまたは復元プロセスごとの共有メモリ データ バッファの数を指定します。]]></BAR_NB_XPORT_COUNT_DESC>
+<BAR_PERFORMANCE_DESC><![CDATA[ON-Bar 動作ログに出力するパフォーマンス統計のレベルを指定します。]]></BAR_PERFORMANCE_DESC>
+<BAR_PROGRESS_FREQ_DESC><![CDATA[動作ログにバックアップまたは復元の進捗メッセージを表示する頻度を分単位で指定します。]]></BAR_PROGRESS_FREQ_DESC>
+<BAR_RETRY_DESC><![CDATA[最初の試行が失敗した場合に、ON-Bar で、データ バックアップ、論理ログ バックアップ、または復元操作を再試行する回数を指定します。]]></BAR_RETRY_DESC>
+<BAR_SIZE_FACTOR_DESC><![CDATA[バックアップの前に、バックアップ オブジェクトのサイズの見積りを大きくします。BAR_SIZE_FACTOR パラメータの値は、元のバックアップ オブジェクト サイズの割合として計算され、見積もりが格納域マネージャに通知される前に見積りに追加されます。]]></BAR_SIZE_FACTOR_DESC>
+<BAR_XFER_BUF_SIZE_DESC><![CDATA[データベース サーバが ON-Bar および格納域マネージャに渡す各転送バッファのサイズを指定します。最大バッファ サイズは 64 KB であるため、BAR_XFER_BUF_SIZE * pagesize <= 64 KB です。]]></BAR_XFER_BUF_SIZE_DESC>
+<BATCHEDREAD_INDEX_DESC><![CDATA[オプティマイザがインデックス バッファからキーのセットを自動的に取り出せるようにします。これにより、バッファが読み取られる回数が減り、その結果パフォーマンスが向上します。]]></BATCHEDREAD_INDEX_DESC>
+<BATCHEDREAD_TABLE_DESC><![CDATA[圧縮された表、ページより大きい行が含まれる表、および VARCHAR、LVARCHAR、NVARCHAR データが含まれる表での簡単な走査を有効化または無効化します。]]></BATCHEDREAD_TABLE_DESC>
+<BLOCKTIMEOUT_DESC><![CDATA[スレッドまたはデータベース サーバが停止する秒数を指定します。]]></BLOCKTIMEOUT_DESC>
+<BTSCANNER_DESC><![CDATA[B ツリー スキャナーを設定します。B ツリー スキャナーは、削除するインデックス項目を自動で決定します。]]></BTSCANNER_DESC>
+<BUFFERPOOL_DESC><![CDATA[onconfig.std ファイルの 2 行で構成されます。最初の行は、始動時に作成されたバッファ プールに対応するサイズのものがまだ存在しないページ サイズの DB 領域を作成するときに使用されるデフォルト値を指定します。第 2 の行は、バッファ プールに対するデータベース サーバのデフォルト値を指定します。]]></BUFFERPOOL_DESC>
+<BUFFERS_DESC><![CDATA[データベース サーバ ユーザ スレッドで、クライアント アプリケーションのディスク入出力で使用するために持つ共有メモリ バッファの最大数を指定します。]]></BUFFERS_DESC>
+<CDR_APPLY_DESC><![CDATA[データ同期スレッドの最小数および最大数を指定します。
+]]></CDR_APPLY_DESC>
+<CDR_DELAY_PURGE_DTC_DESC><![CDATA[削除優先競合解決規則に対応するために削除表を保存する期間の長さを指定します。
+]]></CDR_DELAY_PURGE_DTC_DESC>
+<CDR_DBSPACE_DESC><![CDATA[syscdr データベースが作成される DB 領域を指定します。]]></CDR_DBSPACE_DESC>
+<CDR_DSLOCKWAIT_DESC><![CDATA[データ同期コンポーネントが、データベース ロックの解放を待機する秒数を指定します。]]></CDR_DSLOCKWAIT_DESC>
+<CDR_ENV_DESC><![CDATA[エンタープライズ レプリケーション環境変数の CDR_LOGDELTA、CDR_PERFLOG、CDR_ROUTER、または CDR_RMSCALEFACT を設定します。]]></CDR_ENV_DESC>
+<CDR_EVALTHREADS_DESC><![CDATA[エンタープライズ レプリケーションの開始時に作成するグループ評価スレッドの数を指定し、並列処理を有効化します。]]></CDR_EVALTHREADS_DESC>
+<CDR_LOG_LAG_ACTION_DESC><![CDATA[発生する可能性のあるログ循環状態にエンタープライズ レプリケーションでどのように対応するかを指定します。複数の値を + で結合してください。logstage = 圧縮された論理ログのステージングを有効化する。dlog = 論理ログの動的追加を有効にする。ignore = ログ循環の可能性を無視する。ddrblock = クライアント アプリケーション更新動作をブロックする。shutdown = 影響を受けるサーバ上のエンタープライズ レプリケーションをシャットダウンする。
+]]></CDR_LOG_LAG_ACTION_DESC>
+<CDR_LOG_STAGING_MAXSIZE_DESC><![CDATA[エンタープライズ レプリケーションが圧縮ログ ファイルのステージングに使用する領域の最大量を指定します。
+]]></CDR_LOG_STAGING_MAXSIZE_DESC>
+<CDR_MAX_DYNAMIC_LOGS_DESC><![CDATA[エンタープライズ レプリケーションが 1 つのサーバ セッションで行うことのできる動的ログ ファイル要求の数を指定します。]]></CDR_MAX_DYNAMIC_LOGS_DESC>
+<CDR_NIFCOMPRESS_DESC><![CDATA[データベース サーバがソース データベース サーバからターゲット データベース サーバにデータを送信する前に使用する圧縮のレベルを指定します。]]></CDR_NIFCOMPRESS_DESC>
+<CDR_QDATA_SBSPACE_DESC><![CDATA[エンタープライズ レプリケーションがスプールされたトランザクション行データの格納に使用する 32 個までの SB 領域名のリストを指定します。]]></CDR_QDATA_SBSPACE_DESC>
+<CDR_QHDR_DBSPACE_DESC><![CDATA[エンタープライズ レプリケーションが、送信および受信のキューからのスプールされたトランザクション レコード ヘッダの格納に使用する DB 領域の場所を指定します。]]></CDR_QHDR_DBSPACE_DESC>
+<CDR_QUEUEMEM_DESC><![CDATA[送信キューおよび受信キューに使用されるメモリの最大量を指定します。]]></CDR_QUEUEMEM_DESC>
+<CDR_SERIAL_DESC><![CDATA[レプリケーション用に定義されている表内のシリアル (SERIAL) 型列および 8 バイト シリアル (SERIAL8) 型列に対する値の生成の制御を有効化します。]]></CDR_SERIAL_DESC>
+<CDR_SUPPRESS_ATSRISWARN_DESC><![CDATA[ATS ファイルおよび RIS ファイルで抑制するデータ同期エラーおよび警告コードの番号を指定します。]]></CDR_SUPPRESS_ATSRISWARN_DESC>
+<CHECKALLDOMAINSFORUSER_DESC><![CDATA[ネットワーク Windows 環境におけるすべてのユーザ名についてのすべてのドメインの検査を有効化または無効化します。]]></CHECKALLDOMAINSFORUSER_DESC>
+<CKPTINTVL_DESC><![CDATA[チェックポイントが必要かどうかをデータベース サーバが検査する頻度を秒数で指定します。]]></CKPTINTVL_DESC>
+<CLEANERS_DESC><![CDATA[データベース サーバ操作の際に使用可能なページ クリーナ スレッドの数を指定します。]]></CLEANERS_DESC>
+<CONSOLE_DESC><![CDATA[コンソール メッセージ用のパス名およびファイル名を指定します。]]></CONSOLE_DESC>
+<CONVERSION_GUARD_DESC><![CDATA[アップグレード処理中にエラーが発生した場合に、Informix サーバはサーバの新規バージョンへのアップグレードを停止するか続行するかを指定します。0 = 無効。サーバを停止しない。1 = 復元ポイントを有効化し、復元ポイント データのキャプチャに関連するエラーが発生した場合はアップグレードを停止する。2 = 復元ポイントを有効化にし、エラーが発生してもアップグレードを続行する。]]></CONVERSION_GUARD_DESC>
+<DATASKIP_DESC><![CDATA[メディア時点障害を防止するために使用されます。]]></DATASKIP_DESC>
+<DB_LIBRARY_PATH_DESC><![CDATA[データベース サーバが DataBlade&reg; モジュールなどの外部モジュールをロードできる、有効なディレクトリ接頭部ロケーションのカンマ区切りリストを指定します。]]></DB_LIBRARY_PATH_DESC>
+<DBCREATE_PERMISSION_DESC><![CDATA[データベースを作成するアクセス権を、指定のユーザに制限します。]]></DBCREATE_PERMISSION_DESC>
+<DBSERVERALIASES_DESC><![CDATA[代替 dbservername のリストを指定し、1 台のデータベース サーバに対する複数別名の割当てを許可します。このとき、sqlhosts ファイルまたはレジストリの各エントリが必ず一意な名前を持つようにします。]]></DBSERVERALIASES_DESC>
+<DBSERVERNAME_DESC><![CDATA[データベース サーバのこの特定のオカレンスに関連付ける一意な名前を指定します。]]></DBSERVERNAME_DESC>
+<DBSPACETEMP_DESC><![CDATA[データベース サーバが一時表の記憶域をグローバルに管理するために使用する DB 領域のリストを指定します。]]></DBSPACETEMP_DESC>
+<DD_HASHMAX_DESC><![CDATA[データ ディクショナリ キャッシュの各ハッシュ バケットに含まれる表の最大数を指定します。]]></DD_HASHMAX_DESC>
+<DD_HASHSIZE_DESC><![CDATA[データ ディクショナリ キャッシュの各ハッシュ バケットに含まれる表の最大数を指定します。]]></DD_HASHSIZE_DESC>
+<DEADLOCK_TIMEOUT_DESC><![CDATA[データベース サーバ スレッドがロックを獲得するために待機できる最大秒数を指定します。このパラメータは、リモート データベース サーバを含む分散問合せのみで使用してください。]]></DEADLOCK_TIMEOUT_DESC>
+<DEF_TABLE_LOCKMODE_DESC><![CDATA[データベースのデフォルトのロック モードを指定します。設定できる値は、PAGE または ROW です。]]></DEF_TABLE_LOCKMODE_DESC>
+<DEFAULTESCCHAR_DESC><![CDATA[デフォルトのエスケープ文字を指定します。]]></DEFAULTESCCHAR_DESC>
+<DELAY_APPLY_DESC><![CDATA[RS 副サーバがログの適用まで待機する時間の長さを指定します。]]></DELAY_APPLY_DESC>
+<DIRECT_IO_DESC><![CDATA[DB 領域チャンクに使用されるクックド ファイルの直接入出力の使用を制御します。]]></DIRECT_IO_DESC>
+<DIRECTIVES_DESC><![CDATA[SQL ディレクティブの使用を有効化または無効化します。]]></DIRECTIVES_DESC>
+<DISABLE_B162428_XA_FIX_DESC><![CDATA[1 に設定すると、Dynamic Server 9.40 以前のバージョン用に作成されたアプリケーションが適切に機能するようになります。]]></DISABLE_B162428_XA_FIX_DESC>
+<DISTR_QUERY_FLAGS_DESC><![CDATA[]]></DISTR_QUERY_FLAGS_DESC>
+<DRAUTO_DESC><![CDATA[HDR 障害に対する副データベース サーバの反応を決定します。このパラメータは、両方の HDR サーバで同じ値を持つ必要があります。]]></DRAUTO_DESC>
+<DRDA_COMMBUFFSIZE_DESC><![CDATA[DRDA 通信バッファのサイズを指定します。]]></DRDA_COMMBUFFSIZE_DESC>
+<DRIDXAUTO_DESC><![CDATA[副高可用性データ レプリケーション (HDR) サーバが破損したインデックスを検出したときに、主 HDR サーバがインデックス レプリケーションを自動で開始するかどうかを指定します。]]></DRIDXAUTO_DESC>
+<DRINTERVAL_DESC><![CDATA[高可用性データ レプリケーション バッファのフラッシュの最大間隔を秒数で指定します。同期して更新するには、このパラメータに -1 を設定します。]]></DRINTERVAL_DESC>
+<DRLOSTFOUND_DESC><![CDATA[dr.lostfound.timestamp ファイルのパス名を指定します。]]></DRLOSTFOUND_DESC>
+<DRTIMEOUT_DESC><![CDATA[高可用性データ レプリケーション ペアの場合に、高可用性データ レプリケーション ペアに含まれるデータベース サーバが、ペアのもう一方のデータベース サーバから送信される転送確認応答を待機する時間の長さを、秒数で指定します。]]></DRTIMEOUT_DESC>
+<DS_HASHSIZE_DESC><![CDATA[UPDATE STATISTICS 文によって MEDIUM モードまたは HIGH モードの際に生成される列統計の格納およびアクセスにデータベース サーバが使用する、データ配分キャッシュ内のハッシュ バケットの数を指定します。]]></DS_HASHSIZE_DESC>
+<DS_MAX_QUERIES_DESC><![CDATA[並行して実行できる並列データベース問合せ (PDQ) の最大数を指定します。]]></DS_MAX_QUERIES_DESC>
+<DS_MAX_SCANS_DESC><![CDATA[データベース サーバが並行して実行できる並列データベース問合せ (PDQ) 走査スレッドの数を制限します。]]></DS_MAX_SCANS_DESC>
+<DS_NONPDQ_QUERY_MEM_DESC><![CDATA[並列データベース問合せ (PDQ) でない問合せで使用可能なメモリの量を増やします。]]></DS_NONPDQ_QUERY_MEM_DESC>
+<DS_POOLSIZE_DESC><![CDATA[UPDATE STATISTICS 文によって MEDIUM モードまたは HIGH モードの際に生成される列統計の格納およびアクセスにデータベース サーバが使用する、データ配分キャッシュ内の各ハッシュ バケットに含まれるエントリの最大数を指定します。]]></DS_POOLSIZE_DESC>
+<DS_TOTAL_MEMORY_DESC><![CDATA[PDQ 問合せで使用可能なメモリの量を指定します。コンピュータの物理メモリから、オペレーティング システムのサイズやバッファ プールのサイズなどの固定オーバーヘッドを減算したサイズ未満である必要があります。]]></DS_TOTAL_MEMORY_DESC>
+<DUMPCNT_DESC><![CDATA[(UNIX) データベース サーバ スレッドの 1 つが共有メモリをダンプするか、gcore を呼び出してコア ファイルを生成することになる、アサーション障害の数を指定します。アサーションとは、結果が真になることを予期して実行されるなんらかの条件または式のテストです。]]></DUMPCNT_DESC>
+<DUMPCORE_DESC><![CDATA[(UNIX) アサーション障害によって、仮想プロセッサがコア イメージをダンプするかどうかを制御します。コア ファイルは、データベース サーバが最後に起動されたディレクトリに残されます。0 = コア イメージをダンプしない。1 = コア イメージをダンプする。]]></DUMPCORE_DESC>
+<DUMPDIR_DESC><![CDATA[データベース サーバが、共有メモリ、gcore ファイル、または失敗したアサーションからのメッセージをダンプするディレクトリを指定します。共有メモリは大容量の場合があるため、DUMPDIR の設定先は、大量のスペースのあるファイル システムにしてください。サーバを起動するには、DUMPDIR に設定するディレクトリが存在している必要があります。]]></DUMPDIR_DESC>
+<DUMPGCORE_DESC><![CDATA[(UNIX) gcore に対応しているオペレーティング システムで使用されます。設定した場合、データベース サーバでは、仮想プロセッサでアサーション障害が発生するたびに gcore を呼び出します。gcore ユーティリティでは、DUMPDIR によって指定されたディレクトリにある core.pid.cnt ファイルにコア イメージをダンプして処理を続行するよう仮想プロセッサに指示します。0 = gcore をダンプしない。1 = gcore をダンプする。]]></DUMPGCORE_DESC>
+<DUMPSHMEM_DESC><![CDATA[(UNIX) アサーション障害の際に共有メモリをダンプする必要があることを指示します。データベース サーバが使用している共有メモリすべてがダンプされ、通常は、非常に大容量です。この共有メモリ ダンプは、DUMPDIR によって指定されたディレクトリの shmem.pid.cnt ファイルに配置されます。0 = 共有メモリをダンプしない。1 = 共有メモリをダンプする。]]></DUMPSHMEM_DESC>
+<DYNAMIC_LOGS_DESC><![CDATA[データベース サーバの動的ログ割当てのレベルを指定します。0 = 動的ログ割当てなし。1 = ログが必要とされたときにアラートを出し、論理ログを手動で割り当てられるように一時停止する。2 = 動的ログ割当てがオンで、各ログが動的に追加されたときにアラートする。]]></DYNAMIC_LOGS_DESC>
+<EILSEQ_COMPAT_MODE_DESC><![CDATA[クライアント アプリケーションによって挿入された文字データに、現行ロケールで認識されないコード ポイント シーケンスが含まれているかどうかの検査を有効化または無効化します。0 = 現行ロケールを使用して着信文字シーケンスを検証する。1 = 着信文字シーケンスを検証しない。]]></EILSEQ_COMPAT_MODE_DESC>
+<ENABLE_SNAPSHOT_COPY_DESC><![CDATA[ifxclone ユーティリティを使用して、サーバのクローンを作成する機能を有効化または無効化します。]]></ENABLE_SNAPSHOT_COPY_DESC>
+<ENCRYPT_CDR_DESC><![CDATA[エンタープライズ レプリケーションのための暗号化のレベルを設定します。0 = 暗号化しない。1 = 可能な場合に暗号化する。2 = 常に暗号化する。]]></ENCRYPT_CDR_DESC>
+<ENCRYPT_CIPHERS_DESC><![CDATA[現行のデータベース セッションで使用できるすべての暗号およびモードを定義します。ENCRYPT_CIPHERS は、エンタープライズ レプリケーションと高可用性データ レプリケーションにのみ使用されます。]]></ENCRYPT_CIPHERS_DESC>
+<ENCRYPT_HDR_DESC><![CDATA[HDR 暗号化を有効化または無効化します。0 = HDR 暗号化を無効化する。1 = HDR 暗号化を有効化する。]]></ENCRYPT_HDR_DESC>
+<ENCRYPT_MAC_DESC><![CDATA[メッセージ認証子 (MAC) の生成のレベルを制御し、エンタープライズ レプリケーションと高可用性データ レプリケーションにのみ使用されます。「Off」= MAC 生成を使用しない。「low」= すべてのメッセージに XOR フォールディングを使用する。「medium」= 長さ 20 バイトを超えるすべてのメッセージに SHA1 MAC 生成を使用し、それより小さいメッセージには XOR フォールディングを使用する。「high」= すべてのメッセージに SHA1 MAC 生成を使用する。例: ENCRYPT_MAC medium,high]]></ENCRYPT_MAC_DESC>
+<ENCRYPT_MACFILE_DESC><![CDATA[メッセージ認証子 (MAC) キー ファイルの絶対パス名のリストを指定し、エンタープライズ レプリケーションと高可用性データ レプリケーションにのみ使用されます。]]></ENCRYPT_MACFILE_DESC>
+<ENCRYPT_SMX_DESC><![CDATA[エンタープライズ レプリケーション副サーバ構成のための暗号化のレベルを設定します。0 = 暗号化なし。1 = 可能な場合に暗号化する。暗号化は、ターゲット データベース サーバも暗号化に対応しているときに SMX トランザクションのみに使用されます。2 = 常に暗号化する。暗号化されたデータベース サーバへの接続のみが許可されます。]]></ENCRYPT_SMX_DESC>
+<ENCRYPT_SWITCH_DESC><![CDATA[暗号または秘密鍵のリネゴシエーションの頻度を定義します。このリネゴシエーションが実行されるデフォルト時間は 1 時間に 1 回です。ENCRYPT_SWITCH は、エンタープライズ レプリケーションと高可用性データ レプリケーションにのみ使用されます。]]></ENCRYPT_SWITCH_DESC>
+<EXPLAIN_STAT_DESC><![CDATA[explain 出力ファイルでの Query Statistics セクションの組み込みを有効化または無効化します。]]></EXPLAIN_STAT_DESC>
+<EXT_DIRECTIVES_DESC><![CDATA[外部 SQL ディレクティブの使用を有効化または無効化します。EXT_DIRECTIVES 構成パラメータと、クライアント サイドの IFX_EXTDIRECTIVES 環境変数を組み合わせて使用することにより、外部ディレクティブを有効化します。<br><br>0 = オフ。ディレクティブは、IFX_EXTDIRECTIVES がオンであっても有効化できません。<br>1 = オン。IFX_EXTDIRECTIVES がオンであれば、セッションに対してディレクティブを有効化できます。<br>2 = オン。IFX_EXTDIRECTIVES が設定されていない場合であっても、ディレクティブを使用できます。]]></EXT_DIRECTIVES_DESC>
+<EXTSHMADD_DESC><![CDATA[追加する拡張仮想セグメントのサイズを指定します。値の範囲は 1024 から 524,288 KB です。]]></EXTSHMADD_DESC>
+<FAILOVER_CALLBACK_DESC><![CDATA[データベース サーバが副サーバから主サーバまたは標準サーバに遷移するときに、データベース サーバは、FAILOVER_CALLBACK に指定されているスクリプトを実行します。スクリプトの絶対パス名を FAILOVER_CALLBACK に設定してください。]]></FAILOVER_CALLBACK_DESC>
+<FAILOVER_TX_TIMEOUT_DESC><![CDATA[高可用性クラスタ環境において、トランザクションをロール バックする前にサーバが待機するフェイルオーバ後の最大秒数を指定します。これにより、トランザクションは完了することができます。]]></FAILOVER_TX_TIMEOUT_DESC>
+<FASTPOLL_DESC><![CDATA[ネットワークの高速ポーリングを有効化または無効化します。FASTPOLL はプラットフォーム固有です。0 = 高速ポーリングを無効化します。1 = 高速ポーリングを有効化します。]]></FASTPOLL_DESC>
+<FILLFACTOR_DESC><![CDATA[インデックス ページの使用率を 1 から 100 までで指定します。小さい値を指定すると、インデックスの増大の余裕ができます。大きい値の場合は、インデックスが圧縮されます。インデックスがフル (100 パーセント) だと、すべての新規挿入で、ノードが分割されることになります。]]></FILLFACTOR_DESC>
+<FULL_DISK_INIT_DESC><![CDATA[既存のデータベース サーバ インスタンスのディスクが誤って初期化されるのを防ぐ安全機能を有効化します。最初のチャンクの先頭ページ (ページ ゼロ) がルート パス位置に存在する場合にディスク初期化コマンドを実行できるかどうかを指定します。0 = oninit -i コマンドは、ルート パス位置にページ ゼロがない場合のみ実行されます。1 = oninit -i コマンドはどのような状況でも実行されますが、ディスクの初期化後に FULL_DISK_INIT 構成パラメータは 0 にリセットされます。]]></FULL_DISK_INIT_DESC>
+<GSKIT_VERSION_DESC><![CDATA[データベース サーバが暗号化と SSL 通信に使用する IBM&reg; Global Security Kit (GSKit) のメジャー バージョンを指定します。]]></GSKIT_VERSION_DESC>
+<HA_ALIAS_DESC><![CDATA[副サーバが主サーバに接続するときに、フェイルオーバの発生時に使用するネットワーク別名の名前を指定します。]]></HA_ALIAS_DESC>
+<HETERO_COMMIT_DESC><![CDATA[異機種間コミット トランザクションで、IBM Informix Gateway 製品に加わるようデータベース サーバを準備するかどうかを指定します。1 = 異機種間コミットを有効化する。0 = 異機種間コミットを無効化する。]]></HETERO_COMMIT_DESC>
+<IFX_EXTEND_ROLE_DESC><![CDATA[デフォルトではユーザ informix であるデータベース サーバ管理者 (DBSA) が、DataBlade&reg; モジュールまたはユーザ定義ルーチン (UDR) を登録できるユーザを設定するセキュリティ対策を実装できるようにします。1 または On (デフォルト) = EXTERNAL 節を持つ UDR を作成または削除するアクセス権を管理者がユーザに付与できるよう、EXTEND ロールを有効化する。0 または Off = すべてのユーザが外部ルーチンを登録できるよう、EXTEND ロールを無効化する。]]></IFX_EXTEND_ROLE_DESC>
+<IFX_FOLDVIEW_DESC><![CDATA[ビュー フォールディングを有効化または無効化します。0 または Off (デフォルト) = ビュー フォールディングを無効化する。1 または On = ビュー フォールディングを有効化する。]]></IFX_FOLDVIEW_DESC>
+<INDEX_SELFJOIN_DESC><![CDATA[]]></INDEX_SELFJOIN_DESC>
+<ISM_DATA_POOL_DESC><![CDATA[格納領域のバックアップ用のボリューム プールを指定します。]]></ISM_DATA_POOL_DESC>
+<ISM_LOG_POOL_DESC><![CDATA[論理ログのバックアップ用のボリューム プールを指定します。]]></ISM_LOG_POOL_DESC>
+<JDKVERSION_DESC><![CDATA[Java 開発キット (JDK) または Java Runtime Environment (JRE) リリースのバージョン番号を指定します。]]></JDKVERSION_DESC>
+<JVPARGS_DESC><![CDATA[Java VM のオプションを指定します。]]></JVPARGS_DESC>
+<JVPDEBUG_DESC><![CDATA[1 に設定された場合は、トレース メッセージを JVPLOG ファイルに書き込みます。]]></JVPDEBUG_DESC>
+<JVPHOME_DESC><![CDATA[IBM Informix JDBC ドライバのクラスがインストールされるディレクトリを指定します。]]></JVPHOME_DESC>
+<JVPLOGFILE_DESC><![CDATA[Java VP ログ ファイルの絶対パス名を指定します。]]></JVPLOGFILE_DESC>
+<JVPPROPFILE_DESC><![CDATA[Java VP プロパティ ファイルの絶対パス名を指定します。]]></JVPPROPFILE_DESC>
+<JVPJAVAVM_DESC><![CDATA[Java 仮想マシン (JVM) に使用するライブラリを指定します。]]></JVPJAVAVM_DESC>
+<JVPJAVAHOME_DESC><![CDATA[データベース サーバ用の Java Runtime Environment (JRE) のインストール先ディレクトリを指定します。]]></JVPJAVAHOME_DESC>
+<JVMTHREAD_DESC><![CDATA[JVM に使用するスレッド パッケージ (グリーンまたはネイティブ) を指定します。]]></JVMTHREAD_DESC>
+<JVPJAVALIB_DESC><![CDATA[JVPJAVAHOME から Java VM ライブラリの場所へのパスを指定します。]]></JVPJAVALIB_DESC>
+<JVPCLASSPATH_DESC><![CDATA[初期 Java クラス パス設定を指定します。]]></JVPCLASSPATH_DESC>
+<LIMITNUMSESSIONS_DESC><![CDATA[Informix データベース サーバに接続する最大セッション数を定義し、セッション数が最大数に近くなったときに、データベース サーバで警告メッセージを online.log ファイルに出力する必要があるかどうかを定義します。]]></LIMITNUMSESSIONS_DESC>
+<LISTEN_TIMEOUT_DESC><![CDATA[サーバが接続を待機する秒数を指定します。]]></LISTEN_TIMEOUT_DESC>
+<LOCKS_DESC><![CDATA[ロック表の初期サイズを指定します。ロック表では、セッションが使用するロックごとに 1 つのエントリが保持されます。]]></LOCKS_DESC>
+<LOG_INDEX_BUILDS_DESC><![CDATA[インデックス ページ ロギングを有効化または無効化します。]]></LOG_INDEX_BUILDS_DESC>
+<LOG_STAGING_DIR_DESC><![CDATA[RS 副サーバ上のログ ファイルの遅延アプリケーションが有効である場合に、主サーバからのログ ファイルが格納されるディレクトリを指定します。]]></LOG_STAGING_DIR_DESC>
+<LOGBUFF_DESC><![CDATA[共有メモリにある 3 つの論理ログ バッファのサイズを KB 単位で指定します。三重バッファ方式により、ユーザ スレッドでは、他のいずれかのバッファがディスクにフラッシュされている間に、アクティブ バッファに書き込むことができます。RTO_SERVER_RESTART を使用しているときは、LOGBUFF に 256 KB を設定してください。]]></LOGBUFF_DESC>
+<LOGFILES_DESC><![CDATA[データベース サーバがディスク初期設定の際に作成する論理ログ ファイルの数を指定します。論理ログ ファイルの数を変更するには、論理ログ ファイルを追加または削除します。]]></LOGFILES_DESC>
+<LOGSIZE_DESC><![CDATA[論理ログ ファイルを作成するときに使用されるサイズを KB 単位で指定します。既存の論理ログ ファイルのサイズは変更されません。論理ログ サイズの合計は、LOGSIZE * LOGFILES です。]]></LOGSIZE_DESC>
+<LOW_MEMORY_MGR_DESC><![CDATA[自動低位アドレス メモリ管理を有効化します。これを使用すると、サーバがメモリ制限に達したときのサーバのデフォルト動作を変更できます。1 = データベース サーバ起動時に自動低位アドレス メモリ管理を有効化します。0 = 自動低位アドレス メモリ管理を無効化します。]]></LOW_MEMORY_MGR_DESC>
+<LOW_MEMORY_RESERVE_DESC><![CDATA[重要な動作 (ロール バック動作など) を実行する必要があり、かつサーバの空きメモリが限られている場合に使用する目的で、一定量のメモリ (KB) を予約します。]]></LOW_MEMORY_RESERVE_DESC>
+<LRUS_DESC><![CDATA[共有メモリ バッファ プールの LRU (最低使用頻度) 管理列の数を指定します。]]></LRUS_DESC>
+<LRU_MAX_DIRTY_DESC><![CDATA[管理列のクリーニングが開始される、LRU 管理列における変更されたページの割合を指定します。]]></LRU_MAX_DIRTY_DESC>
+<LRU_MIN_DIRTY_DESC><![CDATA[ページのクリーニングが必須でなくなる、LRU 管理列における変更されたページの割合を指定します。]]></LRU_MIN_DIRTY_DESC>
+<LTAPEBLK_DESC><![CDATA[ontape を使用する場合に、論理ログのバックアップ先であるデバイスのブロック サイズを指定します。LTAPEBLK は、onload または onunload の -l オプションを使用する場合における、データのロード先またはアンロード先のデバイスのブロック サイズも指定します。onload または onunload の場合は、コマンド行で別のブロック サイズを指定してください。]]></LTAPEBLK_DESC>
+<LTAPEDEV_DESC><![CDATA[ontape を使用する場合に、論理ログのバックアップ先であるデバイスまたはディレクトリ ファイル システムを指定します。onload または onunload の -l オプションを使用する場合における、データのロード先またはアンロード先のデバイスも指定します。]]></LTAPEDEV_DESC>
+<LTAPESIZE_DESC><![CDATA[ontape の場合に、論理ログのバックアップ先であるデバイスの最大テープ サイズを指定します。LTAPESIZE は、onload または onunload の -l オプションを使用する場合における、データのロード先またはアンロード先のデバイスの最大テープ サイズも指定します。onload または onunload を使用する場合は、コマンド行で別のテープ サイズを指定してください。テープの全容量を使用する場合は、LTAPESIZE を 0 に設定します。]]></LTAPESIZE_DESC>
+<LTXEHWM_DESC><![CDATA[ロング トランザクション、排他アクセス、高水位マークを指定します。ロング トランザクション高水位マークに達したときにコミットもロールバックもされなければ、トランザクションは長期です。論理ログ スペースが LTXEHWM しきい値に達すると、その時点でロールバック中のロング トランザクションに、論理ログに対する排他アクセスが与えられます。]]></LTXEHWM_DESC>
+<LTXHWM_DESC><![CDATA[ロング トランザクション、高水位マークを指定します。ロング トランザクション高水位マークは、使用可能なログ スペースがこの割合まで満たされたときに、データベース サーバによるロング トランザクションの検査が起動される割合です。]]></LTXHWM_DESC>
+<MAX_FILL_DATA_PAGES_DESC><![CDATA[可変長の行を持つ表でページごとに挿入される行を追加する能力を有効化または無効化します。0 = 無効。1 = 有効。]]></MAX_FILL_DATA_PAGES_DESC>
+<MAX_INCOMPLETE_CONNECTIONS_DESC><![CDATA[1 セッションでの不完全な接続の最大数を指定します。この数に達すると、サーバがサービス妨害攻撃を受けている恐れがあることを示すエラー メッセージがオンライン メッセージ ログに書き込まれます。デフォルトは 1024 です。]]></MAX_INCOMPLETE_CONNECTIONS_DESC>
+<MAX_PDQPRIORITY_DESC><![CDATA[データベース サーバが任意の 1 つの DSS 問合せに割り当てることのできる PDQ リソースを制限します。]]></MAX_PDQPRIORITY_DESC>
+<MIRROR_DESC><![CDATA[データベース サーバのミラーリングを有効化または無効化します。初期設定の一部として、ルート DB 領域および重要なデータをミラーリングすることをお勧めします。0 = ミラーリング無効。1 = ミラーリング有効。]]></MIRROR_DESC>
+<MIRROROFFSET_DESC><![CDATA[ルート DB 領域の初期チャンクのミラーとして機能するチャンクに到達するために必要な、ディスク パーティションまたはデバイスへのオフセットを指定します。]]></MIRROROFFSET_DESC>
+<MIRRORPATH_DESC><![CDATA[ルート DB 領域の初期チャンクに対するミラー チャンクの絶対パス名を指定します。MIRRORPATH は、実際のミラー チャンクのチャンク パス名に対するリンクである必要があります。ミラー チャンクの短いパス名を選択してください。]]></MIRRORPATH_DESC>
+<MSG_DATE_DESC><![CDATA[有効化すると、オンライン ログの各メッセージの先頭に日付が追加されます。]]></MSG_DATE_DESC>
+<MSGPATH_DESC><![CDATA[メッセージ ログ ファイルの絶対パス名を指定します。データベース サーバでは、作動時に、状態メッセージおよび診断メッセージをこのファイルに書き込みます。]]></MSGPATH_DESC>
+<MULTIPROCESSOR_DESC><![CDATA[データベース サーバが、単一プロセッサ コンピュータに適した方法でロックを実行するのか、マルチプロセッサ コンピュータに適した方法で実行するのかを指定します。0 = マルチプロセッサなし。1 = マルチプロセッサが使用可能。]]></MULTIPROCESSOR_DESC>
+<MQCHLLIB_DESC><![CDATA[IBM&reg; WebSphere&reg; MQ クライアント チャネル定義表を格納しているディレクトリへのパスを指定します。]]></MQCHLLIB_DESC>
+<MQCHLTAB_DESC><![CDATA[IBM&reg; WebSphere&reg; MQ クライアント チャネル定義表の名前を指定します。]]></MQCHLTAB_DESC>
+<MQSERVER_DESC><![CDATA[チャネルを定義し、IBM&reg; WebSphere&reg; MQ サーバの位置および使用する通信方式を指定します。]]></MQSERVER_DESC>
+<NET_IO_TIMEOUT_ALARM_DESC><![CDATA[ネットワーク書込み操作が 30 分間以上にわたってブロックされた場合に通知を受けるどうかを制御します。]]></NET_IO_TIMEOUT_ALARM_DESC>
+<NETTYPE_DESC><![CDATA[ネットワーク接続を記述します。]]></NETTYPE_DESC>
+<NOAGE_DESC><![CDATA[一部のオペレーティング システムでは、プロセスの実行期間が長くなると、プロセスの優先順位を下げます。NOAGE に 1 を設定すると、オペレーティング システムによる CPU 仮想プロセッサの優先度エージングが無効になります。NOAGE をデフォルトの 0 に設定した場合は、CPU 仮想プロセッサおよびその他のプロセスの処理時間が累積されるに連れて、オペレーティング システムによりその優先順位が下げられることがあります。オペレーティング システムが優先度エージングに対応している場合は、NOAGE に 1 を設定することをお勧めします。]]></NOAGE_DESC>
+<NO_DESC_FOUND_DESC><![CDATA[管理モードでデータベース サーバにアクセスできるユーザ (ユーザ informix および DBSA グループのユーザ以外で) を指定しません。]]></NO_DESC_FOUND_DESC>
+<NS_CACHE_DESC><![CDATA[内部データベース サーバ キャッシュからホスト、サービス、ユーザ、およびグループの接続のネーム サービス情報を取得する際の有効期限を指定します。]]></NS_CACHE_DESC>
+<NUMAIOVPS_DESC><![CDATA[実行する AIO クラスの仮想プロセッサ数を指定します。カーネル非同期入出力が実装されていなければ、AIO 仮想プロセッサが、ログ ファイルへの入出力以外のデータベース サーバ ディスク入出力すべてを実行します。<BR>仮想プロセッサの管理は、OpenAdmin の<A href='index.php?act=vps&do=global'>「仮想プロセッサ」ページ</A>で実行できます。]]></NUMAIOVPS_DESC>
+<NUMCPUVPS_DESC><![CDATA[実行する CPU クラスの仮想プロセッサ数を指定します。CPU 仮想プロセッサは、クライアント アプリケーションの接続の結果として開始されるすべてのスレッドおよび内部スレッドを実行します。<BR>仮想プロセッサの管理は、OpenAdmin の<A href='index.php?act=vps&do=global'>「仮想プロセッサ」ページ</A>で実行できます。]]></NUMCPUVPS_DESC>
+<NUMFDSERVERS_DESC><![CDATA[UNIX において、Informix 仮想プロセッサ (VP) 間のネットワーク接続マイグレーションを処理するポーリング スレッドの最大数を指定します。]]></NUMFDSERVERS_DESC>
+<OFF_RECVRY_THREADS_DESC><![CDATA[データベース サーバがオフラインであるときの論理的リカバリ (コールド復元時) で使用されるリカバリ スレッドの数を指定します。この数のスレッドが、高速復旧での論理ログ レコードのロール フォワードにも使用されます。]]></OFF_RECVRY_THREADS_DESC>
+<ON_RECVRY_THREADS_DESC><![CDATA[データベース サーバがオンラインであるときの論理的リカバリ (ウォーム復元時) でデータベース サーバが使用するリカバリ スレッドの最大数を指定します。]]></ON_RECVRY_THREADS_DESC>
+<ONDBSPACEDOWN_DESC><![CDATA[非クリティカル DB 領域の主チャンクで何らかの無効化イベントが発生した場合にデータベース サーバが行う処理を定義します。<br><br>0 = データベース サーバはその DB 領域をオフラインであるとマークして続行する。<br>1 = データベース サーバは異常終了する。<br>2 = データベース サーバはチャンクの状態をログに書き込み、ユーザ入力を待機する。]]></ONDBSPACEDOWN_DESC>
+<ONLIDX_MAXMEM_DESC><![CDATA[単一のプリイメージ プールおよび単一の updator ログ プールに割り当てるメモリの量を制限します。プリイメージおよび updator ログのプールである pimage_partnum および ulog_partnum は、CREATE INDEX ONLINE 文の実行時に作成される共有メモリ プールです。これらのプールは、文の実行の完了時に解放されます。]]></ONLIDX_MAXMEM_DESC>
+<OPCACHEMAX_DESC><![CDATA[(UNIX) 光ディスク サブシステムのメモリ キャッシュのサイズを指定します。このパラメータは光ディスク サブシステムを使用する場合のみ使用してください。]]></OPCACHEMAX_DESC>
+<OPT_GOAL_DESC><![CDATA[問合せの 2 つの最適化目標である FIRST ROWS での最適化と ALL ROWS での最適化のいずれかを有効化します。0 = FIRST_ROWS。-1 = ALL_ROWS (デフォルト)。]]></OPT_GOAL_DESC>
+<OPTCOMPIND_DESC><![CDATA[オプティマイザによるアプリケーションに適した問合せ予定の選択を支援します。<br><br>0 = 順序付けされた各表のペアに適切なインデックスが存在する場合、オプティマイザは表走査に優先してインデックス走査を選択する。この値では、前のバージョンのデータベース サーバとの互換性が保証されます。<br>1 = オプティマイザは、排他レベルが繰返し可能読込みでない場合、コストを使用して実行パスを決定する。最適なパフォーマンスのためには、この設定をお勧めします。<br>2 = オプティマイザは、すべての排他レベルで、コストを使用して実行パスを決定する。インデックス走査は、表走査より優先されません。この値は、この変数を設定しなかった場合のデフォルトです。]]></OPTCOMPIND_DESC>
+<OPTICAL_LIB_PATH_DESC><![CDATA[光格納域マネージャを使用する場合は、OPTICAL_LIB_PATH に、光格納域マネージャ ライブラリの場所を設定してください。]]></OPTICAL_LIB_PATH_DESC>
+<PAM_STACKSIZE_DESC><![CDATA[PAM モジュールのスタック サイズをカスタマイズします。]]></PAM_STACKSIZE_DESC>
+<PC_HASHSIZE_DESC><![CDATA[データベース サーバが使用する、UDR キャッシュ内のハッシュ バケットの数を指定します。]]></PC_HASHSIZE_DESC>
+<PC_POOLSIZE_DESC><![CDATA[UDR キャッシュに格納される UDR の最大数を指定します。]]></PC_POOLSIZE_DESC>
+<PHYSBUFF_DESC><![CDATA[共有メモリ内の 2 つの物理ログ バッファのサイズを KB 単位で指定します。PHYSBUFF パラメータの値により、データベース サーバが物理ログ バッファを物理ログ ファイルにフラッシュする必要のある頻度が決まります。]]></PHYSBUFF_DESC>
+<PHYSDBS_DESC><![CDATA[物理ログを含む DB 領域の名前を指定します。ディスク競合を減らすため、物理ログをルート DB 領域以外の DB 領域に移動できます。<BR>OpenAdmin での物理ログの管理を<A href='index.php?act=rlogs&do=admin'>「リカバリ ログ」->「管理」</A>で実行できます。]]></PHYSDBS_DESC>
+<PHYSFILE_DESC><![CDATA[物理ログのサイズを指定します。PHYSFILE は、onparams ユーティリティを使用して、動的に変更できます。<BR>OpenAdmin での物理ログの管理を<A href='index.php?act=rlogs&do=admin'>「リカバリ ログ」->「管理」</A>で実行できます。]]></PHYSFILE_DESC>
+<PLCY_HASHSIZE_DESC><![CDATA[セキュリティ ポリシー情報キャッシュ内のハッシュ バケットの数を指定します。]]></PLCY_HASHSIZE_DESC>
+<PLCY_POOLSIZE_DESC><![CDATA[ユーザ LBAC クリデンシャル情報キャッシュの各ハッシュ バケットに含まれるエントリの最大数を指定します。]]></PLCY_POOLSIZE_DESC>
+<PLOG_OVERFLOW_PATH_DESC><![CDATA[物理ログ ファイルがオーバーフローした場合の高速リカバリで使用されるファイルの場所を指定します。このファイルの名前は plog_extend.servernum であり、デフォルトでは、/tmp に配置されます。別の場所を指定するには、絶対パス名を使用します。]]></PLOG_OVERFLOW_PATH_DESC>
+<PN_STAGEBLOB_THRESHOLD_DESC><![CDATA[ラウンド ロビン分散において BYTE および TEXT データ用に領域を予約します。]]></PN_STAGEBLOB_THRESHOLD_DESC>
+<PRELOAD_DLL_FILE_DESC><![CDATA[データベース サーバの初期化時にロードされる動的リンク ライブラリ ファイル (DLL) または共有ライブラリ ファイルのパス名を指定します。複数のファイルをロードする場合は、各パス名を個別のエントリとして指定します。]]></PRELOAD_DLL_FILE_DESC>
+<QSTATS_DESC><![CDATA[onstat -g qst によるキュー統計の出力を有効化または無効化します。0 = キュー統計を無効化する。1 = キュー統計を有効化する。]]></QSTATS_DESC>
+<RA_PAGES_DESC><![CDATA[AUTO_READAHEAD 構成パラメータを無効化した場合は、RA_PAGES 構成パラメータを使用して、先読みを試みるディスク ページの数を定義します。AUTO_READAHEAD 構成パラメータが有効化されており、先読みが自動で発生する場合、サーバは、RA_PAGES 構成パラメータに指定されている情報を無視します。]]></RA_PAGES_DESC>
+<RA_THRESHOLD_DESC><![CDATA[データベース サーバによるデータ レコードの順次走査の際の読込みで、RA_PAGES と組み合わせて使用されます。RA_THRESHOLD は、先読みしきい値を指定します。つまり、データベース サーバに次の先読みの実行をシグナル通知する、メモリー内の未処理データ ページの数です。RA_THRESHOLD の値が RA_PAGES の値より大きい場合、RA_THRESHOLD の値は RA_PAGES/2 になります。]]></RA_THRESHOLD_DESC>
+<RAS_LLOG_SPEED_DESC><![CDATA[]]></RAS_LLOG_SPEED_DESC>
+<RAS_PLOG_SPEED_DESC><![CDATA[]]></RAS_PLOG_SPEED_DESC>
+<REDIRECTED_WRITES_DESC><![CDATA[主サーバと副サーバの間の SMX パイプの数を指定します。]]></REDIRECTED_WRITES_DESC>
+<RESIDENT_DESC><![CDATA[共有メモリの常駐セグメントおよび仮想セグメントをオペレーティング システムの物理メモリに常駐させたままにするかどうかを指定します。<BR><BR>0 = オフ。<BR>1 = 常駐セグメントのみをロック。<BR>n = 常駐セグメントおよび続く n-1 個の仮想セグメントをロック。<BR>-1 = 常駐セグメントおよび仮想セグメントすべてをロック。]]></RESIDENT_DESC>
+<REMOTE_SERVER_CFG_DESC><![CDATA[データベース サーバが存在するコンピュータによって信頼されているリモート ホストをリストしたファイルの名前を指定します。]]></REMOTE_SERVER_CFG_DESC>
+<REMOTE_USERS_CFG_DESC><![CDATA[リモート ホストに存在するトラステッド ユーザの名前をリストしたファイルの名前を指定します。]]></REMOTE_USERS_CFG_DESC>
+<RESTARTABLE_RESTORE_DESC><![CDATA[データベース サーバによる、障害が発生したポイントでの失敗した物理的復元または論理的コールド復元の再開を有効化または無効化します。ON-Bar による再開可能復元を実行するには、onbar -RESTART コマンドを使用します。再開可能復元を使用する場合は、物理ログのサイズを大きくしてください。値は On または Off です。]]></RESTARTABLE_RESTORE_DESC>
+<RESTORE_FILTER_DESC><![CDATA[フィルタ プログラムのパス名および暗号などすべてのオプションを指定します。]]></RESTORE_FILTER_DESC>
+<RESTORE_POINT_DIR_DESC><![CDATA[データベース サーバの新規バージョンへのアップグレードが失敗したときに復元ポイント ファイルが格納されるディレクトリのパス名を指定します。]]></RESTORE_POINT_DIR_DESC>
+<ROOTNAME_DESC><![CDATA[このデータベース サーバ構成のルート DB 領域に対する名前を指定します。この名前は、そのデータベース サーバで管理する DB 領域すべてにおいて一意である必要があります。]]></ROOTNAME_DESC>
+<ROOTOFFSET_DESC><![CDATA[割り当てられたディスク領域 (ファイル、ディスク パーティション、またはデバイス) 内でのルート DB 領域の初期チャンクの開始位置を示すオフセットを KB 単位で指定します。]]></ROOTOFFSET_DESC>
+<ROOTPATH_DESC><![CDATA[ルート DB 領域の初期チャンクの絶対パス名を、デバイスまたはファイル名を含めて指定します。ROOTPATH は、チャンク名として予約ページに格納されます。UNIX では、ROOTPATH によって指定されるファイルのアクセス権に 660 を設定する必要があり、所有者とグループの両方が informix である必要があります。Windows では、Informix 管理者グループのメンバが ROOTPATH の指定するファイルを所有している必要があります。]]></ROOTPATH_DESC>
+<ROOTSIZE_DESC><![CDATA[ルート DB 領域の初期チャンクのサイズを KB 単位で指定します。データベース サーバの初期化後に ROOTSIZE を変更する場合は、データを完全にアンロードして再ロードします。]]></ROOTSIZE_DESC>
+<RSS_FLOW_CONTROL_DESC><![CDATA[1 つ以上の RS 副サーバが含まれている高可用性クラスタでフロー制御を有効化する境界を指定します。フロー制御は、クラスタ内の副サーバのトランザクション処理が極端に遅れないように、主サーバのログ動作を制限する方法を提供します。]]></RSS_FLOW_CONTROL_DESC>
+<RTO_SERVER_RESTART_DESC><![CDATA[Dynamic Server の再起動後に Dynamic Server が問題から復旧してオンライン モードまたは静止モードになるまでの許容時間 (秒単位) を設定する際に、目標復旧時間 (RTO) 標準を使用できるようにします。]]></RTO_SERVER_RESTART_DESC>
+<S6_USE_REMOTE_SERVER_CFG_DESC><![CDATA[REMOTE_SERVER_CFG 構成パラメータとともに使用する場合、このパラメータは非トラステッド ネットワーク環境においてセキュアなサーバ接続を認証するために使用するファイルを指定します。1 = REMOTE_SERVER_CFG 構成パラメータによって指定されたファイルにリストされたサーバは、トラステッド接続です。2 = sqlhost 情報で s=6 に設定され定義されているセキュアなポートを介して接続されているサーバの認証に $INFORMIXDIR/etc/host.equiv ファイルが使用されます。]]></S6_USE_REMOTE_SERVER_CFG_DESC>
+<SB_CHECK_FOR_TEMP_DESC><![CDATA[永続表への一時スマート ラージ オブジェクトのコピーを抑止します。0 = 許可。1 = 抑止。]]></SB_CHECK_FOR_TEMP_DESC>
+<SBSPACENAME_DESC><![CDATA[デフォルト SB 領域の名前を指定します。格納領域を明示的に指定しないスマート ラージ オブジェクト列がデータベース表に含まれる場合、そのデータは SBSPACENAME によって指定された SB 領域に格納されます。]]></SBSPACENAME_DESC>
+<SBSPACETEMP_DESC><![CDATA[メタデータやユーザ データ ロギングのない一時スマート ラージ オブジェクトを格納するためのデフォルト一時 SB 領域の名前を指定します。]]></SBSPACETEMP_DESC>
+<SDS_ENABLE_DESC><![CDATA[SD 副サーバ機能を有効化します。SD 副サーバ機能を有効化するには、主サーバと SD 副サーバの両方で SDS_ENABLE に 1 (有効) を設定する必要があります。<br><br>0 = SD 副サーバ機能を無効化する。<br>1 = SD 副サーバ機能を有効化する。]]></SDS_ENABLE_DESC>
+<SDS_PAGING_DESC><![CDATA[バッファ ページング ファイルとして機能する 2 つのファイルの場所を指定します。SDS_PAGING を設定しないと、SD 副サーバを起動できないことがあります。]]></SDS_PAGING_DESC>
+<SDS_LOGCHECK_DESC><![CDATA[主サーバがログ動作を生成しているかどうかの検出を SD 副サーバが待機する時間を秒単位で指定します。指定した時間内に主サーバによってログ動作が生成されない場合、フェイルオーバー処理の開始が許可されます。主サーバがログ動作を生成しているかを判別し、主サーバのフェイルオーバーを許可するか回避するかを指定するには、SDS_LOGCHECK 構成パラメータを使用します。]]></SDS_LOGCHECK_DESC>
+<SDS_TEMPDBS_DESC><![CDATA[SD 副サーバが一時 DB 領域を動的に作成するために使用する情報を指定します。]]></SDS_TEMPDBS_DESC>
+<SDS_TIMEOUT_DESC><![CDATA[主サーバが SD 副サーバからのログ位置肯定応答の送信を待機する時間を秒単位で指定します。]]></SDS_TIMEOUT_DESC>
+<SECURITY_LOCALCONNECTION_DESC><![CDATA[プログラムを実行しているローカル ユーザの ID がデータベースにアクセスしようとしているユーザと同じ ID であることを確認することにより、ローカル接続のセキュリティを検証します。<br><br>0 = セキュリティ検査を実行しない。<br>1 = プログラムを実行しているユーザの ID がデータベースに接続しようとしているユーザの ID と一致するかどうかを Dynamic Server が検証する。<br>2 = 1 と同じ検証に加え、Dynamic Server は、ネットワーク API からピアのポート番号を取得して、クライアント プログラムからの接続であることを検証する。システムにネットワーク プロトコルの SOCTCP または IPCSTR が備わっている場合は、2 を指定してください。]]></SECURITY_LOCALCONNECTION_DESC>
+<SERVERNUM_DESC><![CDATA[共有メモリ内の相対位置を 0 から 255 までで指定します。この値は、ローカル コンピュータ上のデータベース サーバごとに固有である必要がありますが、ネットワーク上で固有である必要はありません。値 0 は、onconfig.std ファイルでのデフォルトであるため、SERVERNUM が不注意で重複しないようにするために、0 以外の値を選択してください。]]></SERVERNUM_DESC>
+<SEQ_CACHE_SIZE_DESC><![CDATA[シーケンス キャッシュで事前割振り値を持つことのできるシーケンス オブジェクトの最大数を指定します。この構成パラメータを設定しなかった場合は、デフォルトにより、CACHE オプションで定義できる異なるシーケンス オブジェクトは 10 個までになります。]]></SEQ_CACHE_SIZE_DESC>
+<SHMADD_DESC><![CDATA[共有メモリ仮想部に動的に追加されるセグメントのサイズを指定します。]]></SHMADD_DESC>
+<SHMBASE_DESC><![CDATA[SHMBASE の値は変更しないでください。この値は、仮想プロセッサのメモリ スペースに付加される共有メモリのベース アドレスを指定します。共有メモリ セグメントのアドレスは、SHMBASE 値から開始され、プラットフォーム固有の上限値まで増大します。]]></SHMBASE_DESC>
+<SHMNOACCESS_DESC><![CDATA[共有メモリを付加する際に使用されないようにするための仮想メモリ アドレス範囲を指定します。]]></SHMNOACCESS_DESC>
+<SHMTOTAL_DESC><![CDATA[データベース サーバがシステムに対して要求できるメモリの限度を指定します。]]></SHMTOTAL_DESC>
+<SHMVIRT_ALLOCSEG_DESC><![CDATA[Dynamic Server が新規メモリ セグメントを割り当てる必要のあるしきい値およびサーバがこの新規メモリ セグメントを割り当てることができない場合のアラーム レベルを指定し、これによって、サーバが決してメモリ不足にならないようにします。アラーム レベルがいったん活動化されると、新規メモリ セグメントを割り当てることができない場合、30 分ごとに反復されます。<br><br>アラーム レベルの値は 1 から 5 までであり、次の意味を持ちます。<br>1 = 注意する必要なし<br>2 = 情報<br>3 = アテンション<br>4 = 緊急<br>5 = 致命的]]></SHMVIRT_ALLOCSEG_DESC>
+<SHMVIRTSIZE_DESC><![CDATA[仮想共有メモリ セグメントの初期サイズを指定します。]]></SHMVIRTSIZE_DESC>
+<SINGLE_CPU_VP_DESC><![CDATA[データベース サーバが 1 台の CPU 仮想プロセッサのみで稼働しているかどうかを指定します。0 = 複数台の CPU VP で稼働。ゼロ以外のすべての値 = 1 台の CPU VP のみで稼働。]]></SINGLE_CPU_VP_DESC>
+<SMX_COMPRESS_DESC><![CDATA[ソース データベース サーバからターゲット データベース サーバへのデータ送信の前にデータベース サーバで使用される圧縮のレベルを指定します。]]></SMX_COMPRESS_DESC>
+<SORT_MERGE_SIZE_DESC><![CDATA[]]></SORT_MERGE_SIZE_DESC>
+<SP_AUTOEXPAND_DESC><![CDATA[格納領域でのチャンクの自動作成または拡張を有効化または無効化します。]]></SP_AUTOEXPAND_DESC>
+<SP_THRESHOLD_DESC><![CDATA[データベース サーバが領域を自動的に拡張できるようにするために必要なストレージ プールの領域の最小容量を定義します。50 以下の値は、割合を示します。1000 以上の値は、キロバイト数を示します。]]></SP_THRESHOLD_DESC>
+<SP_WAITTIME_DESC><![CDATA[スレッドが DB 領域、一時 DB 領域、SB 領域、一時 SB 領域、または BLOB 領域の拡張を待機する期間の最大秒数を指定します。待機時間がこの秒数を超えると、領域不足エラーが返されます。]]></SP_WAITTIME_DESC>
+<SQL_LOGICAL_CHAR_DESC><![CDATA[組込み文字データ型の宣言におけるサイズ指定の拡張を有効化または無効化します。]]></SQL_LOGICAL_CHAR_DESC>
+<SQLTRACE_DESC><![CDATA[SQL トレース機能の起動環境を制御します。]]></SQLTRACE_DESC>
+<SSL_KEYSTORE_LABEL_DESC><![CDATA[Secure Sockets Layer (SSL) キーおよびディジタル証明書を格納するキー ストア データベースで使用されるサーバ ディジタル証明書のラベルを指定します。]]></SSL_KEYSTORE_LABEL_DESC>
+<STACKSIZE_DESC><![CDATA[データベース サーバ ユーザ スレッドのスタック サイズを指定します。]]></STACKSIZE_DESC>
+<STAGEBLOB_DESC><![CDATA[光ディスクに格納される予定のテキスト (TEXT) 型データおよびバイト (BYTE) 型データのステージングのために光ディスク サブシステムが使用する領域に対する BLOB 領域名を指定します。]]></STAGEBLOB_DESC>
+<STATCHANGE_DESC><![CDATA[UPDATE STATISTICS 操作の自動モードが有効な場合に、分散統計が更新対象となるための、表またはフラグメントにおける最小変化率を指定します。]]></STATCHANGE_DESC>
+<STMT_CACHE_DESC><![CDATA[データベース サーバが SQL 文キャッシュを使用するかどうかを決定します。<br>0 = SQL 文キャッシュを使用しない。<br>1 = SQL 文キャッシュを有効化する一方で、ユーザ セッションでは、環境変数 STMT_CACHE に 1 を設定するか、セッションで SQL 文の SET STATEMENT CACHE ON を実行していない場合、このキャッシュを使用しない。<br>2 = SQL 文キャッシュをオンにする。すべての文がキャッシュされます。]]></STMT_CACHE_DESC>
+<STMT_CACHE_HITS_DESC><![CDATA[SQL 文キャッシュに文が完全に挿入されるまでの文のヒット (参照) 回数を指定します。次の表に、可能値を示します。<br><br>0 = 修飾のある文すべてを SQL 文キャッシュに完全に挿入します。<br>n>0 = 文のヒット数に達するまで、文にキーのみのエントリが与えられ、完全修飾の文すべてがキャッシュに挿入されます。<br>n>1 = アドホックな問合せがキャッシュに入らないようにします。]]></STMT_CACHE_HITS_DESC>
+<STMT_CACHE_NOLIMIT_DESC><![CDATA[修飾のある文を SQL 文キャッシュに挿入するかどうかを制御します。次の表に、可能値を示します。0 = 文がキャッシュに挿入されないようにして、キャッシュ用に大量のメモリが割り当てられないようにします。1 = キャッシュ サイズを問わず、文を常に SQL 文キャッシュに挿入します。]]></STMT_CACHE_NOLIMIT_DESC>
+<STMT_CACHE_NUMPOOL_DESC><![CDATA[SQL 文キャッシュのメモリ プールの数を指定します。これらのメモリ プールに関する情報を取得するには、onstat -g ssc pool を使用します。]]></STMT_CACHE_NUMPOOL_DESC>
+<STMT_CACHE_SIZE_DESC><![CDATA[SQL 文キャッシュのサイズを KB 単位で指定します。新規キャッシュ サイズは、文が次回キャッシュに追加されるときに有効になります。]]></STMT_CACHE_SIZE_DESC>
+<STOP_APPLY_DESC><![CDATA[主サーバから受信したログ ファイルを RS 副サーバが適用するのを停止します。]]></STOP_APPLY_DESC>
+<STORAGE_FULL_ALARM_DESC><![CDATA[格納領域がフルになるときのメッセージとアラームの頻度と重大度を構成します。]]></STORAGE_FULL_ALARM_DESC>
+<SYSALARMPROGRAM_DESC><![CDATA[evidence.sh スクリプトの絶対パス名を指定します。データベース サーバでは、データベース サーバ障害が発生したときに evidence.sh を実行します。テクニカル サポートでは、evidence.sh スクリプトの出力を使用して、データベース サーバ障害の原因を診断します。Windows&reg; において evidence.bat が正常に完了されるには、コマンド拡張機能を有効化する必要があります。]]></SYSALARMPROGRAM_DESC>
+<SYSSBSPACENAME_DESC><![CDATA[特定のユーザ定義データ型に対して UPDATE STATISTICS 文が収集する統計情報をデータベース サーバが格納する SB 領域の名前を指定します。]]></SYSSBSPACENAME_DESC>
+<TAPEBLK_DESC><![CDATA[ontape が格納領域のバックアップ時に書き込むデバイスのブロックサイズを指定します。TAPEBLK は、onload ユーティリティまたは onunload ユーティリティを使用する場合に、データのロード先またはアンロード先になるデバイスのデフォルト ブロック サイズも指定します。]]></TAPEBLK_DESC>
+<TAPEDEV_DESC><![CDATA[ontape による格納領域のバックアップ先であるデバイスまたはディレクトリ ファイル システムを指定します。TAPEDEV は、onload ユーティリティまたは onunload ユーティリティを使用する場合に、データのロード先またはアンロード先になるデフォルト デバイスも指定します。]]></TAPEDEV_DESC>
+<TAPESIZE_DESC><![CDATA[ontape が格納領域のバックアップ先にするデバイスのサイズを指定します。onload または onunload を使用する場合に、データのロード先またはアンロード先になるデフォルト デバイスのサイズも指定します。テープの全容量を使用する場合は、TAPESIZE を 0 に設定します。]]></TAPESIZE_DESC>
+<TBLSPACE_STATS_DESC><![CDATA[表領域統計の収集をオン/オフにします。0 = オフ。1 = オン。]]></TBLSPACE_STATS_DESC>
+<TBLTBLFIRST_DESC><![CDATA[ルート DB 領域での表領域表領域の初期エクステント サイズを指定します。]]></TBLTBLFIRST_DESC>
+<TBLTBLNEXT_DESC><![CDATA[ルート DB 領域での表領域表領域の追加エクステント サイズを指定します。]]></TBLTBLNEXT_DESC>
+<TEMPTAB_NOLOG_DESC><![CDATA[一時表でのログ機能を無効にします。<BR><BR>0 = 一時表操作での論理ログ機能を有効化する。<BR>1 = 一時表操作での論理ログ機能を無効化する。]]></TEMPTAB_NOLOG_DESC>
+<TXTIMEOUT_DESC><![CDATA[2 相コミットの関係先が関係先復旧を開始するまでに待機する時間を指定します。このパラメータは、リモート データベース サーバを含む分散問合せのみで使用されます。]]></TXTIMEOUT_DESC>
+<UNSECURE_ONSTAT_DESC><![CDATA[「1」に設定すると、実行中の SQL 文を全ユーザが表示できるようになります。]]></UNSECURE_ONSTAT_DESC>
+<UPDATABLE_SECONDARY_DESC><![CDATA[主サーバと副サーバの間に確立する接続数を設定します。この構成パラメータを設定すると、クライアント アプリケーションは高可用性副サーバに対して更新、挿入、および削除の操作を実行できるようになります。]]></UPDATABLE_SECONDARY_DESC>
+<USERMAPPING_DESC><![CDATA[データベース サーバがマップ ユーザからの接続を受け入れるかどうかを指定します。マップ ユーザが受け入れられる場合は、マップ ユーザに対して管理者アクセス権限を付与できるかどうかを指定します。ベーシック = マップ ユーザにベーシック アクセス権限を付与できます。管理 = マップ ユーザに管理者アクセス権限を付与できます。オフ = ユーザ マッピングがオフになります。]]></USERMAPPING_DESC>
+<USE_BATCHEDREAD_DESC><![CDATA[]]></USE_BATCHEDREAD_DESC>
+<USE_KOBATCHEDREAD_DESC><![CDATA[]]></USE_KOBATCHEDREAD_DESC>
+<USELASTCOMMITTED_DESC><![CDATA[COMMITTED READ 排他レベルの LAST COMMITTED 機能が暗黙で有効になる排他レベルを指定します。]]></USELASTCOMMITTED_DESC>
+<USEOSTIME_DESC><![CDATA[SQL 文のためにオペレーティング システムから現在時刻を取得するときに、データベース サーバで秒未満の精度を使用するかどうかを指定します。0 = オフ。1 = オン。]]></USEOSTIME_DESC>
+<USRC_HASHSIZE_DESC><![CDATA[ユーザ LBAC クリデンシャル情報キャッシュ内のハッシュ バケットの数を指定します。]]></USRC_HASHSIZE_DESC>
+<USRC_POOLSIZE_DESC><![CDATA[ユーザ LBAC クリデンシャル情報キャッシュの各ハッシュ バケットに含まれるエントリの最大数を指定します。]]></USRC_POOLSIZE_DESC>
+<USTLOW_SAMPLE_DESC><![CDATA[UPDATE STATISTICS LOW 操作の統計を収集する際のサンプリングを有効にします。100K リーフ ページを超えるインデックスの場合、サンプリングによる統計の収集によって UPDATE STATISTICS LOW 操作の速度を上げることができます。]]></USTLOW_SAMPLE_DESC> 
+<VP_MEMORY_CACHE_KB_DESC><![CDATA[CPU VP のプライベート メモリ ブロックにデータベース サーバがアクセスできるようにします。]]></VP_MEMORY_CACHE_KB_DESC>
+<VPCLASS_DESC><![CDATA[仮想プロセッサ (VP) のクラスの指定、ユーザ定義 VP の作成、および必須パラメータの指定を許可します。]]></VPCLASS_DESC>
+<WSTATS_DESC><![CDATA[onstat -g wst コマンドによる、システム内のスレッドに関する待機統計の出力を有効化します。]]></WSTATS_DESC>
+<NO_DESC_FOUND><![CDATA[説明が見つかりません]]></NO_DESC_FOUND>
+<ON_RECOMMEND><![CDATA[この onconfig パラメータをオンにする (1 を設定する) ことをお勧めします。]]></ON_RECOMMEND>
+<OFF_RECOMMEND><![CDATA[この onconfig パラメータをオフにする (0 を設定する) ことをお勧めします。]]></OFF_RECOMMEND>
+<ZERO_RECOMMEND><![CDATA[この onconfig パラメータにゼロを設定することをお勧めします。]]></ZERO_RECOMMEND>
+<NONTEMP_RECOMMEND><![CDATA[この onconfig パラメータを NULL にしないことをお勧めしますが、サーバ マシンの一時ディレクトリを指さないようにしてください。]]></NONTEMP_RECOMMEND>
+<AFF_NPROCS_SPROC_RECOMMEND><![CDATA[AFF_SPROC と AFF_NPROC の差を物理プロセッサの数より大きくすることをお勧めします。マシンの物理プロセッサ数は {0} です。]]></AFF_NPROCS_SPROC_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND><![CDATA[ALARAMPROGRAM に「$INFORMIXDIR/etc/alarmprogram.sh」(UNIX/Linux) または「$INFORMIXDIR/etc/alarmprogram.bat」(Windows) を設定することをお勧めします。]]></ALARMPROGRAM_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND_NO><![CDATA[現在、ALARMPROGRAM に、有効な場所が設定されていません。]]></ALARMPROGRAM_RECOMMEND_NO>
+<BAR_DEBUG_RECOMMEND><![CDATA[特定の問題をデバッグするためにテクニカル サポートから別の設定を推奨されていない限り、BAR_DEBUG は 0 のままにすることをお勧めします。]]></BAR_DEBUG_RECOMMEND>
+<BAR_NB_XPORT_COUNT_RECOMMEND><![CDATA[BAR_NB_XPORT_COUNT に 5 から 99 までの値を設定することをお勧めします。]]></BAR_NB_XPORT_COUNT_RECOMMEND>
+<BAR_XFER_BUF_SIZE_RECOMMEND_15><![CDATA[このサーバのページ サイズは 4 K です。したがって、BAR_XFER_BUF_SIZE に 15 を設定することをお勧めします。]]></BAR_XFER_BUF_SIZE_RECOMMEND_15>
+<BAR_XFER_BUF_SIZE_RECOMMEND_31><![CDATA[このサーバのページ サイズは 2 K です。したがって、BAR_XFER_BUF_SIZE に 31 を設定することをお勧めします。]]></BAR_XFER_BUF_SIZE_RECOMMEND_31>
+<BTSCANNER_RECOMMEND><![CDATA[BTSCANNER を NULL にしないでください。非ゼロである、ALICE 走査用の設定を含む必要があります。]]></BTSCANNER_RECOMMEND>
+<CCFLAGS_RECOMMEND><![CDATA[特定の問題をデバッグするためにテクニカル サポートから別の設定を推奨されていない限り、CCFLAGS は 0 のままにすることをお勧めします。]]></CCFLAGS_RECOMMEND>
+<CKPTINTVL_RECOMMEND><![CDATA[CKPTINTVL に 30 秒以上を設定することをお勧めします。]]></CKPTINTVL_RECOMMEND>
+<CLEANERS_RECOMMEND><![CDATA[VP の数とチャンクの数で最小のほうを CLEANERS に設定することをお勧めします。現行サーバにおいて推奨されるクリーナ数:]]></CLEANERS_RECOMMEND>
+<DATASKIP_RECOMMEND><![CDATA[DATASKIP に「OFF」を設定することをお勧めします。]]></DATASKIP_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND><![CDATA[DB_LIBRARY_PATH のコンポーネントすべてを $INFOMRIXDIR に配置することをお勧めします。]]></DB_LIBRARY_PATH_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND_NO><![CDATA[このサーバには、$INFORMIXDIR に配置されていない DB_LIBRARY_PATH コンポーネントがあります。意図的なものである場合は、セキュリティ上の理由から、それらの外部ディレクトリの所有者がユーザ informix であり、ユーザ informix のみが書込み許可を持つことを確認してください。]]></DB_LIBRARY_PATH_RECOMMEND_NO>
+<DBSPACETEMP_RECOMMEND><![CDATA[DBSPACETEMP を NULL にすることはできず、リストされている各スペースは、既存の一時 DB 領域である必要があります。]]></DBSPACETEMP_RECOMMEND>
+<DEF_TABLE_LOCKMODE_RECOMMEND_ROW><![CDATA[サーバにロック待機が存在します。DEF_TABLE_LOCKMODE に「row」を設定することをお勧めします。]]></DEF_TABLE_LOCKMODE_RECOMMEND_ROW>
+<DEF_TABLE_LOCKMODE_RECOMMEND><![CDATA[一般に、DEF_TABLE_LOCKMODE は「row」に設定することをお勧めします。現在「page」が設定されており、サーバにロック待機が存在しているため、DEF_TABLE_LOCKMODE を「row」に変更することをお勧めします。ただし、DEF_TABLE_LOCKMODE に既に「row」が設定されているか、サーバに現在ロック待機が存在していないかのいずれかです。]]></DEF_TABLE_LOCKMODE_RECOMMEND>
+<DS_NONPDQ_QUERY_MEM_RECOMMEND><![CDATA[DS_NONPDQ_QUERY_MEM は、512 KB 以上にすることをお勧めします。DS_NONPDQ_QUERY_MEMORY が DS_TOTAL_MEMORY の値の 25% を超えることはできないため、DS_TOTAL_MEMORY も確認してください。]]></DS_NONPDQ_QUERY_MEM_RECOMMEND>
+<DS_TOTAL_MEMORY_RECOMMEND><![CDATA[DS_TOTAL_MEMORY は、2048 KB 以上である必要があり、DS_NONPDQ_QUERY_MEM のサイズの 4 倍以上である必要があります。]]></DS_TOTAL_MEMORY_RECOMMEND>
+<EXTSHMADD_RECOMMEND_OK><![CDATA[このサーバの拡張仮想セグメントのサイズに基づいて、EXTSHMADD の現行値は OpenAdmin Tool の推奨に従います。]]></EXTSHMADD_RECOMMEND_OK>
+<EXTSHMADD_RECOMMEND_NO><![CDATA[このサーバの拡張仮想セグメントのサイズに基づいて、EXTSHMADD を次の値以上に大きくすることをお勧めします]]></EXTSHMADD_RECOMMEND_NO>
+<FILLFACTOR_RECOMMEND><![CDATA[FILLFACTOR は 40 から 98% の間にすることをお勧めします。]]></FILLFACTOR_RECOMMEND>
+<LISTEN_TIMEOUT_RECOMMEND><![CDATA[LISTEN_TIMEOUT は 2 秒を超え 180 秒未満にすることをお勧めします。]]></LISTEN_TIMEOUT_RECOMMEND>
+<LOCKS_RECOMMEND_OK><![CDATA[データベース サーバのロック総数は、LOCKS に指定されているサイズを超えていないため、LOCKS の現行値は OpenAdmin Tool の推奨と合致しています。]]></LOCKS_RECOMMEND_OK>
+<LOCKS_RECOMMEND_NO><![CDATA[データベース サーバのロック表が、LOCKS に指定されたサイズを超えています。LOCKS を 10% 大きくしてみてください。]]></LOCKS_RECOMMEND_NO>
+<LOGBUFF_RECOMMEND_OK><![CDATA[データベース サーバの論理ログ書込み数に基づくと、LOGBUFF の現行値は OpenAdmin Tool の推奨に合致しています。]]></LOGBUFF_RECOMMEND_OK>
+<LOGBUFF_RECOMMEND_NO><![CDATA[データベース サーバの論理ログ書込み数に基づくと、LOGBUFF の現行値は、低めです。LOGBUFF を 10% 大きくしてみてください。]]></LOGBUFF_RECOMMEND_NO>
+<LTAPEBLK_RECOMMEND_LOW><![CDATA[LTAPEBLK の現行設定は低めです。大部分のテープ ドライブでは、現在の構成よりも大きいブロック サイズに対応しているため、ご使用のテープ ドライブの規格を確認してください。LTAPEBLK を大きくすると、バックアップと復元のパフォーマンスが向上する可能性があります。]]></LTAPEBLK_RECOMMEND_LOW>
+<LTAPEBLK_RECOMMEND_HIGH><![CDATA[LTAPEBLK の現行設定はかなり高めです。ご使用のテープ ドライブの規格を調べて、それほどまで大きい値に対応しているかを確認してください。]]></LTAPEBLK_RECOMMEND_HIGH>
+<LTXHWM_RECOMMEND><![CDATA[LTXHWM は LTXEHWM 未満である必要があります。LTXHWM は 25 から 80% の間にすることをお勧めします。]]></LTXHWM_RECOMMEND>
+<LTXEHWM_RECOMMEND><![CDATA[LTXHWM は LTXEHWM 未満である必要があります。LTXEHWM は 25 から 90% の間にすることをお勧めします。]]></LTXEHWM_RECOMMEND>
+<MULTIPROCESSOR_RECOMMEND_ON><![CDATA[システム構成に基づき、MULTIPROCESSOR を ON にすることをお勧めします。]]></MULTIPROCESSOR_RECOMMEND_ON>
+<MULTIPROCESSOR_RECOMMEND_OFF><![CDATA[システム構成に基づき、MULTIPROCESSOR を OFF にすることをお勧めします。]]></MULTIPROCESSOR_RECOMMEND_OFF>
+<NUMCPUVPS_RECOMMEND_OK><![CDATA[データベース サーバのパフォーマンスに基づくと、NUMCPUVPS の現行値は、OpenAdmin Tool の推奨に従っています。]]></NUMCPUVPS_RECOMMEND_OK>
+<NUMCPUVPS_RECOMMEND_NO><![CDATA[データベース サーバのパフォーマンスに基づき、NUMCPUVPS を大きくすることをお勧めします。]]></NUMCPUVPS_RECOMMEND_NO>
+<NUMCPUVPS_RECOMMEND_ATMAX><![CDATA[データベース サーバのパフォーマンスに基づくと、NUMCPUVPS を大きくすることが推奨されます。ただし NUMCPUVPS には既にご使用のシステムの最大が設定されています。したがって、パフォーマンスを向上させるには、ハードウェアの追加購入をお勧めします。]]></NUMCPUVPS_RECOMMEND_ATMAX>
+<PHYSBUFF_RECOMMEND_OK><![CDATA[データベース サーバの物理ログ書込み数に基づくと、PHYSBUFF の現行値は、OpenAdmin Tool の推奨に合致しています。]]></PHYSBUFF_RECOMMEND_OK>
+<PHYSBUFF_RECOMMEND_NO><![CDATA[データベース サーバの物理ログ書込み数に基づくと、PHYSBUFF の現行値は、低めです。PHYSBUFF を 10% 大きくしてみてください。]]></PHYSBUFF_RECOMMEND_NO>
+<RESIDENT_RECOMMEND><![CDATA[RESIDENT はオフにしないことをお勧めします。サーバで RESIDENT に 0 が設定されている場合は、2 または -1 に変更することを検討してください。]]></RESIDENT_RECOMMEND>
+<RTO_SERVER_RESTART_RECOMMEND><![CDATA[RTO_SERVER_RESTART は無効にしない (つまり 0 を設定しない) ことをお勧めします。]]></RTO_SERVER_RESTART_RECOMMEND>
+<QSTATS_RECOMMEND><![CDATA[QSTATS をオンにするとパフォーマンスに大きく影響します。したがって、特定の問題をデバッグするためにテクニカル サポートからオンにするよう推奨された場合を除き、実動システムでは QSTATS をオフにすることをお勧めします。]]></QSTATS_RECOMMEND>
+<SHMADD_RECOMMEND_OK><![CDATA[データベース サーバの仮想メモリ セグメント数に基づくと、SHMADD の現行値は、OpenAdmin Tool の推奨に合致しています。]]></SHMADD_RECOMMEND_OK>
+<SHMADD_RECOMMEND_NO><![CDATA[データベース サーバの仮想メモリ セグメント数に基づき、SHMADD の値を大きくすることをお勧めします。]]></SHMADD_RECOMMEND_NO>
+<SHMTOTAL_RECOMMEND_OK><![CDATA[サーバの共有メモリ使用量に基づくと、SHMTOTAL の現行値は OpenAdmin Tool の推奨に従っています。]]></SHMTOTAL_RECOMMEND_OK>
+<SHMTOTAL_RECOMMEND_NO><![CDATA[データベース サーバが SHMTOTAL 制限に達すると、アプリケーション障害が発生する恐れがあります。このサーバの共有メモリ使用量に基づき、SHMTOTAL を次の値以上に大きくすることをお勧めします]]></SHMTOTAL_RECOMMEND_NO>
+<SHMVIRTSIZE_RECOMMEND_OK><![CDATA[データベース サーバの仮想メモリ セグメント数に基づくと、SHMVIRTSIZE の現行値は、OpenAdmin Tool の推奨に合致しています。]]></SHMVIRTSIZE_RECOMMEND_OK>
+<SHMVIRTSIZE_RECOMMEND_NO><![CDATA[データベース サーバの仮想メモリ セグメント数に基づき、SHMVIRTSIZE の値を現行設定より大きく、次の値より小さい値にすることをお勧めします。]]></SHMVIRTSIZE_RECOMMEND_NO>
+<SBSPACETEMP_RECOMMEND><![CDATA[このサーバに SB 領域が存在します。したがって、SBSPACETEMP を NULL にすることはできず、リストされている各スペースは、既存の一時 SB 領域である必要があります。]]></SBSPACETEMP_RECOMMEND>
+<SINGLE_CPU_VP_RECOMMEND_ON><![CDATA[データベース サーバ マシンの物理プロセッサは 1 つのみです。したがって、SINGLE_CPU_VPS をオンにすることをお勧めします。]]></SINGLE_CPU_VP_RECOMMEND_ON>
+<SINGLE_CPU_VP_RECOMMEND_ON_CHECK><![CDATA[資料を参照して SINGLE_CPU_VP による制限を理解してからオンにすることを検討することをお勧めします。]]></SINGLE_CPU_VP_RECOMMEND_ON_CHECK>
+<SYSALARMPROGRAM_RECOMMEND><![CDATA[SYSALARAMPROGRAM に「$INFORMIXDIR/etc/evidence.sh」(UNIX/Linux) または「$INFORMIXDIR/etc/evidence.bat」(Windows) を設定することをお勧めします。]]></SYSALARMPROGRAM_RECOMMEND>
+<SYSALARMPROGRAM_RECOMMEND_NO><![CDATA[ただし、現在 SYSALARMPROGRAM には、有効な場所が設定されていません。]]></SYSALARMPROGRAM_RECOMMEND_NO>
+<TAPEBLK_RECOMMEND_LOW><![CDATA[TAPEBLK の現行設定は低めです。大部分のテープ ドライブでは、現在の構成よりも大きいブロック サイズに対応しているため、ご使用のテープ ドライブの規格を確認してください。TAPEBLK を大きくすると、バックアップと復元のパフォーマンスが向上する可能性があります。]]></TAPEBLK_RECOMMEND_LOW>
+<TAPEBLK_RECOMMEND_HIGH><![CDATA[TAPEBLK の現行設定はかなり高めです。ご使用のテープ ドライブの規格を調べて、それほどまで大きい値に対応しているかを確認してください。]]></TAPEBLK_RECOMMEND_HIGH>
+<TBLTBLFIRST_RECOMMEND><![CDATA[このサーバの表領域表領域パーティションの平均サイズ以上を TBLTBLFIRST に設定することをお勧めします。システムの表領域表領域パーティションの現行サイズは、次のとおりです。<BR>]]></TBLTBLFIRST_RECOMMEND>
+<TBLTBLNEXT_RECOMMEND><![CDATA[このサーバの表領域表領域パーティションの平均サイズまたは 25% 増しを TBLTBLFIRST に設定することをお勧めします。システムの表領域表領域パーティションの現行サイズは、次のとおりです。<BR>]]></TBLTBLNEXT_RECOMMEND>
+<TEMPTAB_NOLOG_RECOMMEND><![CDATA[HDR 環境または MACH11 環境で稼働しており、アプリケーションが対応している場合は、一時表操作における論理ログ機能を無効化するために、TEMPTAB_NOLOG を ON にすることをお勧めします。これを ON にするとレプリケーション環境でのパフォーマンスが向上する可能性があります。]]></TEMPTAB_NOLOG_RECOMMEND>
+<TRACEFLAGS_RECOMMEND><![CDATA[TRACEFLAGS をオンにするとパフォーマンスに影響することがあります。したがって、特定の問題をデバッグするためにテクニカル サポートからオンにするよう推奨された場合を除き、実動システムでは TRACEFLAGS をオフにする (ゼロを設定) ことをお勧めします。]]></TRACEFLAGS_RECOMMEND>
+<TRACES_RECOMMEND><![CDATA[TRACES をオンにするとパフォーマンスに影響することがあります。したがって、特定の問題をデバッグするためにテクニカル サポートからオンにするよう推奨された場合を除き、実動システムでは TRACES をオフにする (ゼロを設定) ことをお勧めします。]]></TRACES_RECOMMEND>
+<WSTATS_RECOMMEND><![CDATA[WSTATS をオンにするとパフォーマンスに大きく影響します。したがって、特定の問題をデバッグするためにテクニカル サポートからオンにするよう推奨された場合を除き、実動システムでは WSTATS をオフにすることをお勧めします。]]></WSTATS_RECOMMEND>
+</lang>

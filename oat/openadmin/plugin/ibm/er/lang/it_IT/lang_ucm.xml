@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[Connection Manager]]></ucm>
+<noCMSupportServerVersion><![CDATA[Connection Manager in OAT richiede Informix Versione 11.70.xC3.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[Operazione di Connection Manager non riuscita. Controllare il file di log di Connection Manager per i dettagli.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Nessuna unità di connessione trovata per Connection Manager {0}.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[L'unità di connessione {0} non è stata trovata.]]></ConnUnitNotFound>
+</lang>

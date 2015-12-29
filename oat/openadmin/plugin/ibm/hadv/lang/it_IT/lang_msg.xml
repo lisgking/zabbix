@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Allarme rosso: controlla che il parametro di configurazione DBSPACETEMP sia impostato.  Allarme giallo: controlla che non vi siano spazi nel valore per il parametro di configurazione DBSPACETEMP.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il parametro di configurazione DUMPDIR non sia impostato sulla directory elencata nella soglia dell'allarme giallo.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che l'allocazione di log dinamici (DYNAMIC_LOGS) sia abilitata.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Allarme rosso: controlla che i file di log logici non siano memorizzati nello spazio DB root (ROOTDBS). Allarme giallo: controlla che non vi siano tabelle memorizzate nello spazio DB in cui sono memorizzati i file di log logici.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Allarme rosso: controlla che il livello più alto delle transazioni lunghe (LTXHWM) sia al di sotto della soglia di allarme rosso, se l'allocazione di log dinamici (DYNAMIC_LOGS) è disattivata.  Allarme giallo: controlla che il livello più alto delle transazioni lunghe (LTXHWM) sia al di sotto della soglia di allarme giallo, se l'allocazione di log dinamici è disattivata.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il valore per il campo dirty minimo meno utilizzato di recente (lru_min_dirty) sia al di sopra della soglia di allarme giallo.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il parametro di configurazione LTAPEDEV non sia impostato sulla directory elencata nella soglia dell'allarme giallo.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che l'opzione noage del parametro di configurazione VPCLASS sia impostata.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il server di database non sia impostato per continuare quando uno spazio DB non è attivo (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Allarme rosso: controlla che il log fisico non sia memorizzato nello spazio DB root (ROOTDBS). Allarme giallo: controlla che non vi siano tabelle memorizzate nello spazio DB in cui è memorizzato il log fisico.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che se il parametro di configurazione SINGLE_CPU_VP è impostato, il parametro di configurazione MULTIPROCESSOR è disattivato.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il parametro di configurazione TAPEDEV non sia impostato sulla directory elencata nella soglia dell'allarme giallo.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Allarme rosso: controlla che il numero di file ATS creati oggi sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che il numero di file ATS creati oggi sia al di sotto della soglia di allarme giallo.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Allarme rosso: controlla che la percentuale di pagine di log rimanente prima dell'avvio del blocco delle transazioni (DDRBLOCK) sia al di sopra della percentuale elencata nella soglia di allarme rosso. Allarme giallo: controlla che la percentuale di pagine log rimanente prima dell'avvio del blocco delle transazioni sia al di sopra della percentuale elencata nella soglia di allarme giallo.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Allarme rosso: controlla che i nodi nel cluster ER siano attivi e stiano replicando i dati. Allarme giallo: nessuno.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Allarme rosso: controlla che il numero di file RIS creati oggi sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che il numero di file RIS creati oggi sia al di sotto della soglia di allarme giallo.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Allarme rosso: controlla che la percentuale di memoria libera disponibile per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di memoria libera disponibile per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il numero di processori online nel sistema operativo sia equivalente al numero di processori nel sistema operativo.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Allarme rosso: nessuno. Allarme giallo: controlla che il numero di processori virtuali della CPU sia al di sopra della percentuale di CPU nel sistema operativo elencata come soglia di allarme giallo.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Allarme rosso: controlla che il numero di descrittori di file aperti per processo per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che il numero di descrittori di file aperti per processo per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Allarme rosso: controlla che il numero di serie di semafori per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che il numero di serie di semafori per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Allarme rosso: controlla che il numero totale di semafori per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che il numero totale di semafori per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Allarme rosso: controlla che il numero di ID di memoria condivisa (shmid) per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che il numero di ID di memoria condivisa (shmid) per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Allarme rosso: controlla che la dimensione massima di un segmento di memoria condivisa (SHMMAX) per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che la dimensione massima di un segmento di memoria condivisa (SHMMAX) per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Allarme rosso: controlla che il numero totale di segmenti di memoria condivisa (shmNumSegs) per il sistema operativo sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che il numero totale di segmenti di memoria condivisa (shmNumSegs) per il sistema operativo sia al di sopra della soglia di allarme giallo.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Allarme rosso: controlla che un'insufficienza di risorse di log logico (LLOG) non causi un blocco durante l'elaborazione del checkpoint.  Yellow alarm:  Checks that a shortage of logical log resources (LLOG) does not trigger checkpoints.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Allarme rosso: controlla che un'insufficienza di risorse di log fisico (PLOG) non causi un blocco durante l'elaborazione del checkpoint.  Allarme giallo: controlla che un'insufficienza di risorse di log fisico (PLOG) non attivi i checkpoint.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Allarme rosso: controlla che il tempo trascorso nelle sezioni critiche durante l'elaborazione del checkpoint sia al di sotto della soglia di allarme rosso.  Allarme giallo: controlla che il tempo trascorso nelle sezioni critiche durante l'elaborazione del checkpoint sia al di sotto della soglia di allarme giallo.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Allarme rosso: controlla che il numero di cancellazioni disco al secondo durante l'elaborazione del checkpoint sia al di sopra della soglia di allarme rosso.  Allarme giallo: controlla che il numero di cancellazioni disco al secondo durante l'elaborazione del checkpoint sia al di sopra della soglia di allarme giallo.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Allarme rosso: controlla che il tempo più lungo per cui una transazione attende durante l'elaborazione del checkpoint sia al di sotto della soglia di allarme rosso.  Allarme giallo: controlla che il tempo più lungo per cui una transazione attende durante l'elaborazione del checkpoint sia al di sotto della soglia di allarme giallo.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Allarme rosso: controlla che il numero di letture buffer per una tabella sia inferiore alla percentuale di tutte le letture buffer elencata come soglia di allarme rosso. Allarme giallo: controlla che il numero di letture buffer per una tabella sia inferiore alla percentuale di tutte le letture buffer elencata nella soglia di allarme giallo.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Allarme rosso: controlla che il numero di scritture buffer per una tabella sia inferiore alla percentuale di tutte le scritture buffer elencata come soglia di allarme rosso. Allarme giallo: controlla che il numero di scritture buffer per una tabella sia inferiore alla percentuale di tutte le scritture buffer elencata come soglia di allarme giallo.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Allarme rosso: controlla che il numero di scansioni sequenziali per una tabella sia inferiore alla percentuale di tutte le scansioni sequenziali elencata nella soglia di allarme rosso. Allarme giallo: controlla che il numero di scansioni sequenziali per una tabella sia inferiore alla percentuale di tutte le scansioni sequenziali elencata nella soglia di allarme giallo.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Allarme rosso: controlla che la percentuale di letture dei buffer memorizzate nella cache (%cached) sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di letture dei buffer memorizzate nella cache (%cached) sia al di sopra della soglia di allarme giallo.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Allarme rosso: controlla che la percentuale di scritture dei buffer memorizzate nella cache (%cached) sia al di sopra della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di scritture dei buffer memorizzate nella cache (%cached) sia al di sopra della soglia di allarme giallo.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Allarme rosso: controlla che la percentuale di ordinamenti totali costituita da ordinamenti disco sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di ordinamenti totali costituita da ordinamenti disco sia al di sotto della soglia di allarme giallo.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Allarme rosso: controlla che la percentuale di transazioni totali costituita da transazioni sottoposti a rollback sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di transazioni totali costituita da transazioni sottoposti a rollback sia al di sotto della soglia di allarme giallo.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Allarme rosso: controlla che la percentuale di scritture totali costituita da scritture in primo piano sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di scritture totali costituita da scritture in primo piano sia al di sotto della soglia di allarme giallo.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Allarme rosso: controlla che il rapporto tra pagine di log logico e I/O sia al di sotto della percentuale del buffer di log logico (LOGBUFF) elencata come soglia di allarme rosso. Allarme giallo: controlla che il rapporto tra pagine di log logico e I/O sia al di sopra della percentuale del buffer di log logico (LOGBUFF) elencata come soglia di allarme giallo.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Allarme rosso: controlla che la percentuale di richieste di blocco totali rappresentata da attese di blocco sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di richieste di blocco totali rappresentata da attese di blocco sia al di sotto della soglia di allarme giallo.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Allarme rosso: controlla che il rapporto tra pagine di log fisco e I/O sia al di sotto della percentuale del buffer di log fisico (PHYSBUFF) elencata come soglia di allarme rosso.  Allarme giallo: controlla che il rapporto tra pagine di log fisico e I/O sia al di sopra della percentuale del buffer di log fisico (PHYSBUFF) elencata come soglia di allarme giallo.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Allarme rosso: controlla che la percentuale di istruzioni SQL totali costituita da scansioni sequenziali sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla che la percentuale di istruzioni SQL totali costituita da scansioni sequenziali sia al di sotto della soglia di allarme giallo.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Allarme rosso: controlla che tutte le porzioni siano online. Allarme giallo: nessuno.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Allarme rosso: controlla che il numero di operazioni I/O per ogni porzione sia al di sotto della percentuale di tutte le operazioni I/O elencata come soglia di allarme rosso. Allarme giallo: controlla che il numero di operazioni I/O per ogni porzione sia al di sotto della percentuale di tutte le operazioni I/O elencata come soglia di allarme giallo.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Allarme rosso: controlla che il numero di operazioni di lettura per ogni porzione sia al di sotto della percentuale di tutte le operazioni di lettura elencata come soglia di allarme rosso. Allarme giallo: controlla che il numero di operazioni di lettura per ogni porzione sia al di sotto della percentuale di tutte le operazioni di lettura elencata come soglia di allarme giallo.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Allarme rosso: controlla che il numero di operazioni di scrittura per ogni porzione sia al di sotto della percentuale di tutte le operazioni di scrittura elencata come soglia di allarme rosso. Allarme giallo: controlla che il numero di operazioni di scrittura per ogni porzione sia al di sotto della percentuale di tutte le operazioni di scrittura elencata come soglia di allarme giallo.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Allarme rosso: controlla che lo spazio libero in ogni spazio db sia al di sopra della percentuale di spazio totale nello spazio db elencata come soglia di allarme rosso.  Allarme giallo: controlla che lo spazio libero in ogni spazio db sia al di sopra della percentuale di spazio totale nello spazio db elencata come soglia di allarme giallo.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Allarme rosso: controlla la presenza di tabelle la cui percentuale di spazio libero massimo per pagina sia al di sotto della soglia di allarme rosso. Allarme giallo: controlla la presenza di tabelle la cui percentuale di spazio libero massimo per pagina sia al di sotto della soglia di allarme giallo.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

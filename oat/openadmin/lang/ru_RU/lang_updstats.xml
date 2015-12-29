@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Автоматическое обновление статистики]]></mainTitle>
+<generalTab><![CDATA[Общие]]></generalTab>
+<infoTab><![CDATA[Информация]]></infoTab>
+<configTab><![CDATA[Конфигурация]]></configTab>
+<listTab><![CDATA[Команды]]></listTab>
+<ListConfig><![CDATA[Конфигурация автоматического обновления статистики]]></ListConfig>
+<ConfParam><![CDATA[Параметр]]></ConfParam>
+<ConfValue><![CDATA[Значение]]></ConfValue>
+<ConfDesc><![CDATA[Описание]]></ConfDesc>
+<ListDBSsummary><![CDATA[Автоматическое обновление статистики о базах данных]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Время последней проверки]]></ListDBSTime>
+<ListDBSName><![CDATA[База данных]]></ListDBSName>
+<ListDBSMissed><![CDATA[Таблицы, для которых статистика отсутствует]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Небольшие таблицы, для которых нужно обновить статистику]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Большие таблицы, для которых нужно обновить статистику]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Таблицы с обновленной статистикой]]></ListDBSDone>
+<CleanupOK><![CDATA[Очистка прошла успешно.]]></CleanupOK>
+<CleanupBAD><![CDATA[Очистка завершилась неудачно.]]></CleanupBAD>
+<fix><![CDATA[Нажмите кнопку Очистить для устранения проблемы.]]></fix>
+<Save><![CDATA[Сохранить]]></Save>
+<Cancel><![CDATA[Отмена]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Конфигурация автоматического обновления статистики]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Обновлять статистику каждые:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Обновлять статистику, когда изменяется таблица:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Для обновления статистики использовать руководства]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Обновлять статистику для всех таблиц, у которых число строк меньше заданного значения:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[Запустить операторы изменения статистики с приоритетом PDQ:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Запустить задачи автоматического изменения статистики с заданным числом потоков:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[потоков]]></AUS_THREADS>
+<Threads><![CDATA[Потоки]]></Threads>
+<days><![CDATA[дн.]]></days>
+<on><![CDATA[на]]></on>
+<off><![CDATA[выкл.]]></off>
+<Evaluating><![CDATA[Производится оценка ...]]></Evaluating>
+<saveTaskOK><![CDATA[Подробности задач были успешно сохранены.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[Подробности задач не были сохранены.]]></saveTaskBAD>
+<Missed><![CDATA[Таблицы, для которых статистика отсутствует]]></Missed>
+<Needed_Large><![CDATA[Большие таблицы, которым нужно обновить статистику]]></Needed_Large>
+<Needed_Small><![CDATA[Малые таблицы, которым нужно обновить статистику]]></Needed_Small>
+<Done><![CDATA[Таблицы с обновленной статистикой]]></Done>
+<ChartSummary><![CDATA[Оценка автоматического обновления статистики]]></ChartSummary>
+<ListCommands><![CDATA[Команды обновления статистики]]></ListCommands>
+<ListPriority><![CDATA[Приоритет]]></ListPriority>
+<ListExec><![CDATA[Команда]]></ListExec>
+<RefreshEvaluation><![CDATA[Оценить сейчас]]></RefreshEvaluation>
+<Cleanup><![CDATA[Чистка]]></Cleanup>
+<Cleanup_tooltip><![CDATA[Запускать задачу по очистке в случае генерирования задачами AUS ошибок. Задача по очистке удаляет внутренние рабочие таблицы AUS и перезапускает задачу Оценка AUS.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Экспорт команд]]></ExportCmds>
+<AUSAlerts><![CDATA[Оповещения AUS]]></AUSAlerts>
+<alerts><![CDATA[Оповещения]]></alerts>
+<ListTime><![CDATA[Время завершения]]></ListTime>
+<lastEval><![CDATA[Последняя оценка завершена в ]]></lastEval>
+<runIn><![CDATA[Обновление автоматического изменения статистики будет запущено {0}.]]></runIn>
+<ausDisabled><![CDATA[Автоматическое изменение статистики отключено]]></ausDisabled>
+<configSaveErr><![CDATA[Ошибка при сохранении параметров конфигурации AUS]]></configSaveErr>
+<noValue><![CDATA[Значение не указано]]></noValue>
+<notPositiveInt><![CDATA[Значение должно быть целым положительным числом]]></notPositiveInt>
+<notInt_1_10><![CDATA[Значение должно быть целым числом в диапазоне от 1 до 10]]></notInt_1_10>
+<notInt_0_100><![CDATA[Значение должно быть целым числом в диапазоне от 0 до 100]]></notInt_0_100>
+<notInt_-1_100><![CDATA[Значение должно быть целым числом в диапазоне от -1 до 100]]></notInt_-1_100>
+<notInt_0_1><![CDATA[Значение должно быть 0 или 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[Данная возможность недоступна для текущей версии сервера.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Проблема при выполнении оценки:]]></ProblemWithEval>
+<ReturnCode><![CDATA[Код возврата - {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[Оценка завершена.]]></ReEvalComplete>
+<RequestEval><![CDATA[Запустить задачу оценки автоматического изменения статистики сейчас, чтобы на основании конфигурации AUS определить, какую статистику нужно обновить. ]]></RequestEval>
+<PendingCmds><![CDATA[Ожидающие команды]]></PendingCmds>
+<CompletedCmds><![CDATA[Завершенные команды]]></CompletedCmds>
+<save><![CDATA[Сохранить]]></save>
+<cancel><![CDATA[Отмена]]></cancel>
+<add><![CDATA[Добавить]]></add>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<Time><![CDATA[Время]]></Time>
+<Type><![CDATA[Тип]]></Type>
+<Color><![CDATA[Цвет]]></Color>
+<Message><![CDATA[Сообщение]]></Message>
+<runfrequency><![CDATA[Частота запуска]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Расписание автоматического обновления статистики]]></AutoUpdStatsSched>
+<Name><![CDATA[Имя]]></Name>
+<WeekDay1Letter><![CDATA[П]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[В]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[С]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[В]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[П]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[С]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[С]]></WeekDay7Letter>
+<starttime><![CDATA[Время начала]]></starttime>
+<stopttime><![CDATA[Время окончания]]></stopttime>
+<Priority><![CDATA[приоритет]]></Priority>
+<Rows><![CDATA[строк]]></Rows>
+<Parameter><![CDATA[Параметр]]></Parameter>
+<Value><![CDATA[Значение]]></Value>
+<Actions><![CDATA[Действия]]></Actions>
+<Tables><![CDATA[Таблицы]]></Tables>
+<hours><![CDATA[час.]]></hours>
+<minutes><![CDATA[мин.]]></minutes>
+<saveConfigSuccessful><![CDATA[Конфигурация автоматического изменения статистики успешно сохранена.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[Задача изменения статистики выполняется с несколькими потоками. Эта опция доступна только для OAT.]]></specifiedNumbOfThread>
+</lang>

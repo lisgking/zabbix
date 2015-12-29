@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Журналы восстановления]]></mainTitle>
+<lognum><![CDATA[Номер]]></lognum>
+<uniqid><![CDATA[Уникальный ID]]></uniqid>
+<size><![CDATA[Размер]]></size>
+<SwitchComment><![CDATA[Переход к следующему логическому журналу]]></SwitchComment>
+<attributes><![CDATA[Атрибуты]]></attributes>
+<used><![CDATA[Используется]]></used>
+<location><![CDATA[Расположение]]></location>
+<notes><![CDATA[Замечания]]></notes>
+<lastfilled><![CDATA[Дата последней записи]]></lastfilled>
+<ltitle><![CDATA[Состояние логического журнала]]></ltitle>
+<notFull><![CDATA[Не переполнен]]></notFull>
+<UsedBackedUp><![CDATA[Использован, создана резервная копия]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Использован, содержит текущую информацию]]></UsedCurrent>
+<Used><![CDATA[Используется]]></Used>
+<Free><![CDATA[Свободно]]></Free>
+<BackedUp><![CDATA[Создана резервная копия]]></BackedUp>
+<Pages><![CDATA[Страницы]]></Pages>
+<pages><![CDATA[страниц]]></pages>
+<Usage><![CDATA[Использование]]></Usage>
+<PagesPerSec><![CDATA[Процент заполнения]]></PagesPerSec>
+<PLogUsage><![CDATA[Использование физического журнала]]></PLogUsage>
+<PLogInfo><![CDATA[Информация физического журнала]]></PLogInfo>
+<PLogSize><![CDATA[Размер физического журнала]]></PLogSize>
+<PLogUsed><![CDATA[Заполненный объем]]></PLogUsed>
+<PlogLocation><![CDATA[Расположение]]></PlogLocation>
+<PlogStartPos><![CDATA[Начальное смещение]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Размер буфера]]></PlogBuffSize>
+<LLogUsage><![CDATA[Использование логического журнала]]></LLogUsage>
+<mLogicalLogs><![CDATA[Логические журналы ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Физический журнал]]></mPhysicalLog>
+<mAdmin><![CDATA[Администрирование]]></mAdmin>
+<mCheckpoints><![CDATA[Контрольные точки]]></mCheckpoints>
+<NewAdd><![CDATA[Только что добавлено]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Удаление логического журнала не подтверждено.  Подтвердите операцию и запустите ее заново.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Удаление физического журнала не подтверждено.  Подтвердите операцию и запустите ее заново.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Перемещение физического журнала]]></MPhysicalLog>
+<Confirm><![CDATA[Подтвердить]]></Confirm>
+<Move><![CDATA[Переместить]]></Move>
+<mRPolicy><![CDATA[Политики восстановления]]></mRPolicy>
+<syncckpt><![CDATA[Контрольная точка синхронизации]]></syncckpt>
+<normckpt><![CDATA[Обычная контрольная точка]]></normckpt>
+<dockpt><![CDATA[Создать контрольную точку]]></dockpt>
+<Checkpoint><![CDATA[контрольная точка]]></Checkpoint>
+<NoMove><![CDATA[Не перемещать физический журнал]]></NoMove>
+<DropLLog><![CDATA[Удалить логический журнал]]></DropLLog>
+<NoDropLLog><![CDATA[Не удалять логический журнал]]></NoDropLLog>
+<ON><![CDATA[ON]]></ON>
+<OFF><![CDATA[ВЫКЛ.]]></OFF>
+<InvalidValue><![CDATA[Введено недопустимое значение]]></InvalidValue>
+<save><![CDATA[Сохранить]]></save>
+<cancel><![CDATA[Отмена]]></cancel>
+<rto_title><![CDATA[RTO - целевое время восстановления]]></rto_title>
+<rto><![CDATA[Желаемая продолжительность восстановления данных]]></rto>
+<rto_error><![CDATA[Ошибка при изменении RTO Server Resart.]]></rto_error>
+<minute><![CDATA[мин.]]></minute>
+<minutes><![CDATA[мин.]]></minutes>
+<autoChkpts><![CDATA[Автоматические контрольные точки]]></autoChkpts>
+<autoChkpts_error><![CDATA[Ошибка при изменении автоматических контрольных точек]]></autoChkpts_error>
+<autoLRU><![CDATA[Автоматическая настройка LRU]]></autoLRU>
+<autoLRU_error><![CDATA[Ошибка при изменении автоматической настройки LRU]]></autoLRU_error>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Добавлены логические журналы]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[После текущего журнала]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[В конце журналов]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Имя пространства базы данных]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Ошибка при изменении физического журнала.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Ошибка при переходе к следующему логическому журналу.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[сек.]]></seconds>
+<AddLogicalLog><![CDATA[Добавить логический журнал]]></AddLogicalLog>
+<Add><![CDATA[Добавить]]></Add>
+<Drop><![CDATA[Удалить]]></Drop>
+<LogicalLogNum><![CDATA[Номер логического журнала]]></LogicalLogNum>
+<Confirm><![CDATA[Подтвердить]]></Confirm>
+<SwitchLog><![CDATA[Переключить логический журнал]]></SwitchLog>
+<Switch><![CDATA[Переключить]]></Switch>
+<KB><![CDATA[Кбайт]]></KB>
+<MB><![CDATA[Мбайт]]></MB>
+<GB><![CDATA[Гбайт]]></GB>
+</lang>

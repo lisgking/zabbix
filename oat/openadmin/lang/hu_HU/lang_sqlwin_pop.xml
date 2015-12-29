@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL eszközkészlet előugró - Partnum információk]]></PartTitle>
+<Partition><![CDATA[Partíció]]></Partition>
+<PartInfoFor><![CDATA[Partíció információk a következőről: {0}]]></PartInfoFor>
+<Pgsize><![CDATA[lapméret]]></Pgsize>
+<NumExtAlloc><![CDATA[Lefoglalt kiterjedések száma]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Összes lefoglalt lap]]></TPgsAlloc>
+<NDataPgs><![CDATA[Adatlapok száma]]></NDataPgs>
+<Lockid><![CDATA[Lockid]]></Lockid>
+<HasIPgs><![CDATA[A tábla partíció tartalmazza az indexlapokat?]]></HasIPgs>
+<Rowsize><![CDATA[Rowsize]]></Rowsize>
+<NRows><![CDATA[Sorok száma]]></NRows>
+<PagesUsed><![CDATA[Használt lapok]]></PagesUsed>
+<errNoPartnum><![CDATA[Hiba: a partnum nincs beállítva.]]></errNoPartnum>
+<errNotHex><![CDATA[Hiba: az értéknek hex formátumban kel lennie -- kezdje <0x> előtaggal.]]></errNotHex>
+</lang>

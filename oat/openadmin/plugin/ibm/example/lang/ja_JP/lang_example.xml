@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM サンプル プラグイン]]></ibm_example_plugin>
+<example><![CDATA[例:]]></example>
+<table><![CDATA[表]]></table>
+<piechart><![CDATA[円グラフ]]></piechart>
+<linechart><![CDATA[折れ線グラフ]]></linechart>
+<barchart><![CDATA[棒グラフ]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[ユーザおよび順次スキャン]]></users_and_seqscans>
+<username><![CDATA[ユーザ名]]></username>
+<numseqscans><![CDATA[順次スキャンの数]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[上位 20 チャンクの入出力]]></Pie_Chart_Title>
+<Chunk><![CDATA[チャンク]]></Chunk>
+<TotalIO><![CDATA[合計入出力]]></TotalIO>
+<Chunk_num><![CDATA[チャンク {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[チェックポイント グラフ]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[使用済みバッファ数]]></dirty_buffers>
+<waits><![CDATA[待機数]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[領域グラフ]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[使用済みバッファ数]]></dirty_buffers>
+<waits><![CDATA[待機数]]></waits>
+
+</lang>

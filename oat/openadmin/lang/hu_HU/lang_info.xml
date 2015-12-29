@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_info">
+<linksTitle><![CDATA[Hasznos hivatkozások]]></linksTitle>
+<aboutTitle><![CDATA[Az OAT névjegye]]></aboutTitle>
+<productInfo><![CDATA[Termékinformációk]]></productInfo>
+<productName><![CDATA[Terméknév]]></productName>
+<version><![CDATA[Változat]]></version>
+<buildtimestamp><![CDATA[Összeállítási időpecsét]]></buildtimestamp>
+<copyright><![CDATA[&copy; Copyright IBM Corporation. 2007, 2013.<br/>&copy; Copyright The PHP Group 1999-2010.<br/>További információkat a notices.txt fájlban talál.]]></copyright>
+<IBMInfo><![CDATA[IBM]]></IBMInfo>
+<IIUGInfo><![CDATA[IIUG]]></IIUGInfo>
+<IBMInformixHomepage><![CDATA[IBM Informix termékcsalád]]></IBMInformixHomepage>
+<IBMInformixProducts><![CDATA[IBM Informix termékekkel kapcsolatos információk]]></IBMInformixProducts>
+<OATHomePage><![CDATA[OpenAdmin Tool]]></OATHomePage>
+<OATHomePageDesc><![CDATA[OpenAdmin Tool (OAT) termékkel kapcsolatos információk]]></OATHomePageDesc>
+<OATForum><![CDATA[OpenAdmin Tool fórum]]></OATForum>
+<OATForumDesc><![CDATA[OAT támogatási fórum, amelynek gazdája a Nemzetközi Informix felhasználói csoport (IIUG)]]></OATForumDesc>
+<InfoCenter_v11.50><![CDATA[IBM Informix v11.50 információs központ]]></InfoCenter_v11.50>
+<InfoCenter_v11.50_Desc><![CDATA[IBM Informix v11.50 dokumentációja]]></InfoCenter_v11.50_Desc>
+<InfoCenter_v11.70><![CDATA[IBM Informix v11.70 információs központ]]></InfoCenter_v11.70>
+<InfoCenter_v11.70_Desc><![CDATA[IBM Informix v11.70 dokumentációja]]></InfoCenter_v11.70_Desc>
+<InfoCenter_v12.10><![CDATA[IBM Informix v12.10 információs központ]]></InfoCenter_v12.10>
+<InfoCenter_v12.10_Desc><![CDATA[IBM Informix v12.10 dokumentációja]]></InfoCenter_v12.10_Desc>
+<IDSProdSupport><![CDATA[IBM támogatási portál: Informix kiszolgálók]]></IDSProdSupport>
+<IDSProdSupportPage><![CDATA[IBM Informix kiszolgálók támogatása]]></IDSProdSupportPage>
+<InformixProdSupp><![CDATA[IBM támogatási portál: Informix termékcsalád]]></InformixProdSupp>
+<InformixProdSuppPage><![CDATA[IBM Informix termékek támogatása]]></InformixProdSuppPage>
+<InformixDevZone><![CDATA[IBM developerWorks: IBM Informix]]></InformixDevZone>
+<InformixDevZoneDesc><![CDATA[Informix technikai információk az IBM fejlesztőknek és informatikai szakembereknek szóló információforrásai között]]></InformixDevZoneDesc>
+<IIUGHome><![CDATA[Nemzetközi Informix felhasználói csoport]]></IIUGHome>
+<IIUGHomePage><![CDATA[Nemzetközi Informix felhasználói csoport (IIUG) honlapja]]></IIUGHomePage>
+<IIUGSuppForumOAT><![CDATA[OpenAdmin Tool (OAT) támogatási fóruma; gazda: IIUG]]></IIUGSuppForumOAT>
+<IIUGForums><![CDATA[Informix fórumok]]></IIUGForums>
+<IIUGForumsDesc><![CDATA[IBM Informix termékek támogatási fóruma; gazda: IIUG]]></IIUGForumsDesc>
+<InformixEvents><![CDATA[IIUG eseménynaptár]]></InformixEvents>
+<InformixUserEventSchedule><![CDATA[Esemény-ütemterv Informix felhasználók számára]]></InformixUserEventSchedule>
+<IIUGSponsorProgram><![CDATA[IIUG szponzorprogram]]></IIUGSponsorProgram>
+<IIUGSponsorProgramDesc><![CDATA[IIUG közösség támogatási programok és céges hirdetési lehetőségek]]></IIUGSponsorProgramDesc>
+<OATForIDSText><![CDATA[OpenAdmin Tool Community Edition]]></OATForIDSText>
+<PHPConfiguration><![CDATA[PHP konfiguráció]]></PHPConfiguration>
+<ExternalLinksNotice><![CDATA[Nem IBM webhelyekre vezető hivatkozásokkal kapcsolatos]]></ExternalLinksNotice>
+</lang>

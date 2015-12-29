@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[플러그인 관리자]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[플러그인 관리자가 OAT 임시 디렉토리 tmp에 쓸 수 없습니다. 플러그인을 설치하려면 OAT 임시 디렉토리에 쓸 수 있는 권한이 있어야 합니다. 이 디렉토리에 쓸 수 있는 권한을 얻은 후 플러그인을 다시 설치하십시오.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[플러그인 관리자는 zip 모듈이 설치된 상태에서 PHP를 구성해야 하므로 플러그인 관리자를 열 수 없습니다. OAT에서 사용 중인 PHP에 zip 모듈이 설치되어 있지 않습니다. 웹 서버에서 zip 모듈이 설치된 상태에서 PHP를 구성하십시오. 또는 PHP를 구성하는 OAT 설치 프로그램을 사용하여 OAT를 재설치해도 됩니다.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[플러그인이 설치되지 않았습니다.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[설치된 플러그인]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[설치되지 않은 플러그인]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[설치를 위해 선택된 플러그인이 없습니다.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[사용 가능한 업그레이드가 없습니다.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[플러그인 관리자가 플러그인 디렉토리에 쓸 수 없습니다. 이 디렉토리에 쓸 수 있는 권한을 얻은 후 플러그인을 다시 설치하십시오.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[현재 설치된 버전]]></CurrVerInstalled>
+<Unknown><![CDATA[알 수 없음]]></Unknown>
+<ClickToEnable><![CDATA[사용 가능하게 하려면 클릭함]]></ClickToEnable>
+<ClickToDisable><![CDATA[비활성화하려면 클릭함]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[이 파일은 삭제할 수 없습니다: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[플러그인이 업그레이드되었습니다.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[플러그인이 설치되었습니다.]]></PluginInstalled>
+<Name><![CDATA[이름]]></Name>
+<Author><![CDATA[작성자]]></Author>
+<Description><![CDATA[설명]]></Description>
+<Version><![CDATA[버전]]></Version>
+<ServerVersion><![CDATA[서버 버전]]></ServerVersion>
+<MinOATVersion><![CDATA[최소 OAT 버전]]></MinOATVersion>
+<Install><![CDATA[설치]]></Install>
+<Uninstall><![CDATA[설치 제거]]></Uninstall>
+<Upgrade><![CDATA[업그레이드]]></Upgrade>
+<Enabled><![CDATA[사용]]></Enabled>
+<updating><![CDATA[갱신 중]]></updating>
+<LatestInstalled><![CDATA[마지막 설치]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[이 동작은 {0} 플러그인을 설치 제거합니다. 플러그인이 설치되면 플러그인 압축 파일이 삭제됩니다. 플러그인이 설치 제거된 후에는 플러그인 압축 파일을 플러그인 디렉토리에 복원할 때까지 플러그인을 재설치할 수 없습니다. \n\n계속하시겠습니까?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[플러그인이 설치 제거되었습니다.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[플러그인이 설치 제거되지 않았습니다.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT가 플러그인을 설치 제거하려 했지만 플러그인 ID를 찾을 수 없습니다. Admin 메뉴에서 플러그인 관리자를 클릭하여 설치된 플러그인 목록을 검토하십시오. 필요한 경우 플러그인을 다시 설치 제거하십시오.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[플러그인이 설치 제거되었지만 다음 파일을 제거할 수 없습니다:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[컴퓨터에서 이러한 파일을 삭제할 수 있습니다.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[플러그인의 메뉴 항목이 삭제되지 않았습니다. 메뉴 관리자 페이지에서 메뉴 항목을 삭제할 수 있습니다.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[선택한 플러그인을 설치할 수 없습니다. 플러그인에 필요한 OAT 최소 버전은 {0}입니다.]]></MinOATVersionError>
+<Agree><![CDATA[동의함]]></Agree>
+<Disagree><![CDATA[동의하지 않음]]></Disagree>
+</lang>

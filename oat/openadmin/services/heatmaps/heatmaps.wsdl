@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="HeatMaps" targetNamespace="urn:HeatMaps"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:HeatMaps"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getDatabases">
+	</message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getExtentData">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getExtentDataResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getBufferData">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getBufferDataResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="HeatMapsPort">
+		
+		<operation name="getDatabases">
+			<input  message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		
+		<operation name="getExtentData">
+			<input  message="typens:getExtentData" />
+			<output message="typens:getExtentDataResponse" />
+		</operation>
+		
+		<operation name="getBufferData">
+			<input  message="typens:getBufferData" />
+			<output message="typens:getBufferDataResponse" />
+		</operation>
+		
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="HeatMapsBinding" type="typens:HeatMapsPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:HeatMapsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getExtentData">
+			<soap:operation soapAction="urn:HeatMapsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getBufferData">
+			<soap:operation soapAction="urn:HeatMapsAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:HeatMaps"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+	</binding>
+
+	<service name="HeatMapsService">
+		<port name="HeatMapsPort" binding="typens:HeatMapsBinding">
+			<soap:address location="services/heatmaps/heatMapsService.php" />
+		</port>
+	</service>
+</definitions>

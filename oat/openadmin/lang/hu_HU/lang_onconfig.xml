@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onconfig">
+<ADMIN_MODE_USERS_DESC><![CDATA[Megadja, hogy mely felhasználók (az
+informix felhasználón és a DBSA csoport felhasználóin kívül) férhetnek
+hozzá az adatbázis-kiszolgálóhoz adminisztráció módban.]]></ADMIN_MODE_USERS_DESC>
+<ADMIN_USER_MODE_WITH_DBSA_DESC><![CDATA[Megadja, hogy az <i>informix</i>
+felhasználó és a DBSA csoport felhasználói csatlakozhatnak-e az
+adatbázis-kiszolgálóhoz, amíg az adminisztrációs módban van.]]></ADMIN_USER_MODE_WITH_DBSA_DESC>
+<ADTERR_DESC><![CDATA[(UNIX) Az ADTERR határozza meg, hogyan viselkedik az
+adatbázis-kiszolgáló, ha megfigyelési rekord írása közben hibába ütközik.]]></ADTERR_DESC>
+<ADTMODE_DESC><![CDATA[(UNIX) A megfigyelési szintet vezérli.]]></ADTMODE_DESC>
+<ADTPATH_DESC><![CDATA[(UNIX) Azt a könyvtárat adja meg, ahová az
+adatbázis-kiszolgáló a megfigyelési fájlokat menti.]]></ADTPATH_DESC>
+<ADTSIZE_DESC><![CDATA[(UNIX) Megfigyelési fájl maximális méretét adja meg.]]></ADTSIZE_DESC>
+<AFCRASH_DESC><![CDATA[Ha az AFCRASH 0x10 bitje bekapcsolt állapotban van,
+akkor a Java virtuális gép által előállított összes üzenet a JVM_vpid
+fájlban kerül naplózásra, ahol vpid a Java virtuális processzor folyamatazonosítója. Ez
+a fájl ugyanabban a könyvtárban kerül tárolásra, mint a JVPLOG fájl.]]></AFCRASH_DESC>
+<AFFAIL_DESC><![CDATA[]]></AFFAIL_DESC>
+<AFF_NPROCS_DESC><![CDATA[A processzor-rokonságot támogató
+többprocesszoros számítógépeken az AFF_NPROCS határozza meg azon CPU-k
+számát, amelyekhez az adatbázis-kiszolgáló CPU virtuális processzorokat köthet.]]></AFF_NPROCS_DESC>
+<AFF_SPROC_DESC><![CDATA[A processzor-rokonságot támogató többprocesszoros
+számítógépeken az AFF_SPROC adja meg azt a CPU-t (0-val kezdve), amelyen
+az adatbázis-kiszolgáló a CPU virtuális processzorok CPU-khoz kötését megkezdi.]]></AFF_SPROC_DESC>
+<ALARMPROGRAM_DESC><![CDATA[Esemény riasztások megjelenítése]]></ALARMPROGRAM_DESC>
+<ALLOW_NEWLINE_DESC><![CDATA[Megadja, hogy az adatbázis-kiszolgáló megengedi a newline karakter (
+) használatát az idézőjelek közé zárt karaktersorozatokban akár az összes
+munkamenetben, akár egy bizonyos munkamenetben.]]></ALLOW_NEWLINE_DESC>
+<ALRM_ALL_EVENTS_DESC><![CDATA[Megadja, hogy az ALARMPROGRAM a MSGPATH
+útvonalon naplózott összes esemény esetében lefut-e, vagy csak a figyelemre méltó eseményeknél.]]></ALRM_ALL_EVENTS_DESC>
+<ASF_SOCTCP_BACKLOG_DESC><![CDATA[A sorban található kapcsolatok számát
+adja meg Socketek (SOCTCP) használata esetén.]]></ASF_SOCTCP_BACKLOG_DESC>
+<AUTO_AIOVPS_DESC><![CDATA[Lehetővé teszi az adatbázis-kiszolgáló számára
+az AIO VP-k és laptisztító szálak számának növelését, amikor az
+adatbázis-kiszolgáló észleli, hogy az I/O munkaterhelés a meglévő AIO VP-k
+teljesítményét meghaladta.]]></AUTO_AIOVPS_DESC>
+<AUTO_CKPTS_DESC><![CDATA[A kiszolgáló számára a tranzakció
+blokkolás elkerülése érdekében gyakoribb ellenőrzési pont
+aktiválást tesz lehetővé.]]></AUTO_CKPTS_DESC>
+<AUTO_LRU_TUNING_DESC><![CDATA[Az automatikus LRU hangolást engedélyezi.]]></AUTO_LRU_TUNING_DESC>
+<AUTO_READAHEAD_DESC><![CDATA[Módosítja az automatikus előreolvasási módot vagy letiltja az automatikus előreolvasást.  Az automatikus előreolvasási műveletek javítják a lekérdezések teljesítményét azáltal, hogy aszinkron lapozási kéréseket adnak ki, amikor az adatbázis-kiszolgáló I/O-műveletet igénylő lekérdezéssel találkozik.  0 = Automatikus előreolvasási kérések letiltása.  1 = Automatikus előreolvasási kérések engedélyezése szabványos módban.  2 = Automatikus előreolvasási kérések engedélyezése agresszív módban.]]></AUTO_READAHEAD_DESC>
+<AUTO_REPREPARE_DESC><![CDATA[Azt vezérli, hogy a Dinamikus
+kiszolgáló szolgáltatás, ami az az SPL rutinokat automatikusan
+újraoptimalizálja és újraelőkészíti az előkészített objektumokat,
+ha az SPL rutin vagy az előkészített objektum által hivatkozott tábla
+sémája megváltozott, be van-e kapcsolva.]]></AUTO_REPREPARE_DESC>
+<AUTO_STAT_MODE_DESC><![CDATA[Az automatikusan frissülő statisztikákat engedélyezi vagy tiltja le az adatbázis-kiszolgálón.]]></AUTO_STAT_MODE_DESC>
+<BACKUP_FILTER_DESC><![CDATA[A szűrőprogram útvonalát és esetleges
+beállításait adja meg.]]></BACKUP_FILTER_DESC>
+<BAR_ACT_LOG_DESC><![CDATA[Az ON-Bar tevékenység naplófájl helyét adja meg.]]></BAR_ACT_LOG_DESC>
+<BAR_BSALIB_PATH_DESC><![CDATA[A tárolókezelő megosztott XBSA
+függvénytárának útvonalát és fájlnevét adja meg.]]></BAR_BSALIB_PATH_DESC>
+<BAR_CKPTSEC_TIMEOUT_DESC><![CDATA[Azt az időmennyiséget adja meg másodpercben, ameddig az RS másodlagos kiszolgálónak várakoznia kell az ellenőrzési pont megérkezésére az elsődleges kiszolgálóról, a külső biztonsági mentés elkészítése során. Ha egy mentés meghiúsul, mert az ellenőrzési pont az elsődleges kiszolgálóról túllépte az időkorlátot, akkor a BAR_CKPTSEC_TIMEOUT konfigurációs paraméter segítségével növelheti azt az időmennyiséget, amit az RS másodlagos kiszolgálónak várakoznia kell az elsődleges kiszolgálótól érkező ellenőrzési pontra.]]></BAR_CKPTSEC_TIMEOUT_DESC> 
+<BAR_DEBUG_DESC><![CDATA[A hibakeresési üzenetek szintjét adja meg az
+ON-Bar tevékenység naplóban.]]></BAR_DEBUG_DESC>
+<BAR_DEBUG_LOG_DESC><![CDATA[Az ON-Bar hibakeresési napló helyét adja meg.]]></BAR_DEBUG_LOG_DESC>
+<BAR_HISTORY_DESC><![CDATA[Megadja, hogy a sysutils adatbázis fenntart-e
+biztonsági mentés előzményeket.]]></BAR_HISTORY_DESC>
+<BAR_IXBAR_PATH_DESC><![CDATA[Felülbírálja az ON-Bar rendszerbetöltési fájl nevét és útvonalát.  Az ON-Bar rendszerbetöltési fájl alapértelmezésben az $INFORMIXDIR/etc könyvtárban kerül létrehozásra és a neve 'ixbar.<SERVER_NUM>'.]]></BAR_IXBAR_PATH_DESC>
+<BAR_MAX_BACKUP_DESC><![CDATA[Az egyes ON-Bar parancsok esetében
+engedélyezett párhuzamos mentési folyamatok maximális számát adja meg.]]></BAR_MAX_BACKUP_DESC>
+<BAR_NB_XPORT_COUNT_DESC><![CDATA[Az egyes mentési és visszaállítási
+folyamatok osztott-memóriás adatpuffereinek számát adja meg.]]></BAR_NB_XPORT_COUNT_DESC>
+<BAR_PERFORMANCE_DESC><![CDATA[Az ON-Bar tevékenység naplóba
+nyomtatandó teljesítmény statisztikák szintjét adja meg.]]></BAR_PERFORMANCE_DESC>
+<BAR_PROGRESS_FREQ_DESC><![CDATA[A mentési és visszaállítási
+üzenetek tevékenység naplóbeli megjelenési gyakoriságát adja meg percekben.]]></BAR_PROGRESS_FREQ_DESC>
+<BAR_RETRY_DESC><![CDATA[Megadja, hogy az ON-Bar hányszor próbálkozzon újra
+adatmentéssel, logikai napló mentéssel  vagy visszaállítási művelettel,
+ha az első kísérlet meghiúsul.]]></BAR_RETRY_DESC>
+<BAR_SIZE_FACTOR_DESC><![CDATA[A mentési objektum méretére vonatkozó becslést egészíti ki a mentés előtt. A BAR_SIZE_FACTOR paraméter értéke az eredeti mentési objektum méretének százalékaként kerül kiszámításra, majd hozzáadásra kerül a becsléshez mielőtt az kommunikálásra kerülne a tárolókezelő felé.]]></BAR_SIZE_FACTOR_DESC>
+<BAR_XFER_BUF_SIZE_DESC><![CDATA[Az adatbázis-kiszolgáló által az ON-Bar
+alkalmazásnak és a tárolókezelőnek átadott egyes átviteli pufferek méretét
+adja meg.  A maximális pufferméret 64 kilobyte, így BAR_XFER_BUF_SIZE *
+lapméret <= 64 kilobyte.]]></BAR_XFER_BUF_SIZE_DESC>
+<BATCHEDREAD_INDEX_DESC><![CDATA[Kulcskészlet automatikus lehívását teszi lehetővé az optimalizáló számára indexpufferből. Ez csökkenti a puffer olvasásainak számát, növelve ezáltal a teljesítményt.]]></BATCHEDREAD_INDEX_DESC>
+<BATCHEDREAD_TABLE_DESC><![CDATA[Engedélyezi vagy letiltja az egyszerűsített kereséseket a tömörített táblákon, a lap méreténél nagyobb sorokat tartalmazó táblákon, valamint a VARCHAR, LVARCHAR és NVARCHAR adatokat tartalmazó táblákon.]]></BATCHEDREAD_TABLE_DESC>
+<BLOCKTIMEOUT_DESC><![CDATA[A másodpercek számát adja meg, amennyi
+időre a szál vagy adatbázis-kiszolgáló lefagy.]]></BLOCKTIMEOUT_DESC>
+<BTSCANNER_DESC><![CDATA[A B-fa elemzőt állítja be, amely automatikusan
+eldönti, hogy mely index elemeket kell törölni.]]></BTSCANNER_DESC>
+<BUFFERPOOL_DESC><![CDATA[Két fájlból áll az onconfig.std fájlban:
+az első sor azokat az alapértékeket adja meg, amelyekkel az
+adatbázis-terület olyan lapmérettel kerül létrehozásra, amihez még nem
+lett megfelelő puffertár létrehozva indításkor; a második sor az
+adatbázis-kiszolgáló puffertárának alapértékeit adja meg.]]></BUFFERPOOL_DESC>
+<BUFFERS_DESC><![CDATA[Az osztott-memória pufferek maximális számát
+adja meg, amit az adatbázis-kiszolgáló felhasználói szálai
+ügyfélalkalmazások I/O műveleteihez használhatnak fel.]]></BUFFERS_DESC>
+<CDR_APPLY_DESC><![CDATA[Az adatszinkronizálási szálak minimális és maximális számát adja meg.]]></CDR_APPLY_DESC>
+<CDR_DELAY_PURGE_DTC_DESC><![CDATA[Megadja, hogy a törlés az erősebb konfliktusfeloldási szabály támogatása érdekében mennyi ideig kell a törölt táblákat megőrizni.]]></CDR_DELAY_PURGE_DTC_DESC>
+<CDR_DBSPACE_DESC><![CDATA[Azt az adatbázis-területet adja meg, ahol a
+syscdr adatbázis  létrehozásra kerül.]]></CDR_DBSPACE_DESC>
+<CDR_DSLOCKWAIT_DESC><![CDATA[A másodpercek számát adja meg, ameddig az
+Adatszinkronizálás összetevő az adatbázis-zárolások felszabadítására várakozik.]]></CDR_DSLOCKWAIT_DESC>
+<CDR_ENV_DESC><![CDATA[A CDR_LOGDELTA, CDR_PERFLOG, CDR_ROUTER vagy
+CDR_RMSCALEFACT Enterprise replication környezeti változókat állítja be.]]></CDR_ENV_DESC>
+<CDR_EVALTHREADS_DESC><![CDATA[Az Enterprise replication indításakor
+létrehozandó csoportkiértékelő szálak számát adja meg, valamint
+engedélyezi a párhuzamosságot.]]></CDR_EVALTHREADS_DESC>
+<CDR_LOG_LAG_ACTION_DESC><![CDATA[Meghatározza hogy az Enterprise Replication
+hogyan válaszoljon a lehetséges napló-újrakezdési helyzetekre. Több értéket a +
+jellel fűzhet össze. logstage = Tömörített logikai napló állomásoztatás
+engedélyezése; dlog = Logikai naplók dinamikus hozzáadásának engedélyezése;
+ignore = Lehetséges napló-újrakezdés figyelmen kívül hagyása; ddrblock =
+Ügyfélalkalmazások frissítési tevékenységének tiltása; shutdown = Enterprise
+Replication leállítása az érintett kiszolgálón.]]></CDR_LOG_LAG_ACTION_DESC>
+<CDR_LOG_STAGING_MAXSIZE_DESC><![CDATA[Az Enterprise Replication által a tömörített naplófájlok állomásoztatásához használt terület maximális mennyiségét adja meg.]]></CDR_LOG_STAGING_MAXSIZE_DESC>
+<CDR_MAX_DYNAMIC_LOGS_DESC><![CDATA[Az Enterprise replication által egy
+kiszolgáló munkamenetben kiadható dinamikus naplófájl kérések számát adja meg.]]></CDR_MAX_DYNAMIC_LOGS_DESC>
+<CDR_NIFCOMPRESS_DESC><![CDATA[Az adatbázis-kiszolgáló által
+használt tömörítési szintet adja meg, mielőtt az az adatokat a forrás
+adatbázis-kiszolgálóról a cél adatbázis-kiszolgálóra küldi.]]></CDR_NIFCOMPRESS_DESC>
+<CDR_QDATA_SBSPACE_DESC><![CDATA[Annak a legfeljebb 32
+nagyobjektum-területnek a nevét tartalmazó listát adja meg, amelyeket az Enterprise replication sorba állított tranzakciós soradatok tárolására használ.]]></CDR_QDATA_SBSPACE_DESC>
+<CDR_QHDR_DBSPACE_DESC><![CDATA[Annak az adatbázis-területnek a
+helyét adja meg, amit az Enterprise replication a küldési és fogadási
+sorokból sorba állított tranzakciós rekord fejlécek tárolására használ.]]></CDR_QHDR_DBSPACE_DESC>
+<CDR_QUEUEMEM_DESC><![CDATA[A küldési és fogadási sorokhoz használt
+maximális memóriamennyiséget adja meg.]]></CDR_QUEUEMEM_DESC>
+<CDR_SERIAL_DESC><![CDATA[A táblákban replikációs céllal
+meghatározott soros és SERIAL8 oszlopok értékeinek előállítása
+feletti felügyelet engedélyezi.]]></CDR_SERIAL_DESC>
+<CDR_SUPPRESS_ATSRISWARN_DESC><![CDATA[Az ATS és RIS fájlokban
+kikapcsolandó adatszinkronizálási hiba és figyelmeztetés kódszámokat adja meg.]]></CDR_SUPPRESS_ATSRISWARN_DESC>
+<CHECKALLDOMAINSFORUSER_DESC><![CDATA[Hálózatos Windows környezetben engedélyezi vagy letiltja az összes felhasználónév keresését minden tartományban.]]></CHECKALLDOMAINSFORUSER_DESC>
+<CKPTINTVL_DESC><![CDATA[Azt a gyakoriságot adja meg másodpercben,
+amilyen gyakorisággal az adatbázis-kiszolgáló megnézi, hogy
+szükség van-e ellenőrzési pontra.]]></CKPTINTVL_DESC>
+<CLEANERS_DESC><![CDATA[Az adatbázis-kiszolgáló műveletek alatt
+rendelkezésre álló laptisztító szálak számát adja meg.]]></CLEANERS_DESC>
+<CONSOLE_DESC><![CDATA[A konzol üzenetek útvonalát és fájlnevét adja meg.]]></CONSOLE_DESC>
+<CONVERSION_GUARD_DESC><![CDATA[Megadja, hogy az Informix kiszolgáló leállítja vagy folytatja az új kiszolgálóváltozatra frissítést, ha a frissítési folyamat során hiba lép fel. 0 = tiltott. A kiszolgáló nem kerül leállításra. 1 = Visszaállítási pontot engedélyez és leállítja a frissítést, ha a visszaállítási pont adatok lementéséhez kapcsolódó hiba lép fel. 2 = Visszaállítási pontot engedélyez és a frissítést hiba esetén is folytatja.]]></CONVERSION_GUARD_DESC>
+<DATASKIP_DESC><![CDATA[Adathordozó meghibásodási pontok elkerülésére használják.]]></DATASKIP_DESC>
+<DB_LIBRARY_PATH_DESC><![CDATA[Azoknak a könyvtár előtag helyeknek
+a vesszővel elválasztott listáját adja meg, ahonnan az
+adatbázis-kiszolgáló külső modulokat (például DataBlade&reg; modulokat)
+tölthet be.]]></DB_LIBRARY_PATH_DESC>
+<DBCREATE_PERMISSION_DESC><![CDATA[A megadott felhasználó
+adatbázis létrehozási jogosultságát korlátozza.]]></DBCREATE_PERMISSION_DESC>
+<DBSERVERALIASES_DESC><![CDATA[Alternatív adatbázis-kiszolgáló
+nevekből álló listát ad meg, valamint lehetővé teszi több álnév
+hozzárendelését az adatbázis-kiszolgálóhoz, ezáltal biztosítva,
+hogy az sqlhosts fájlban vagy a rendszerleíró adatbázisban található
+minden egyes bejegyzés egy egyedi név legyen.]]></DBSERVERALIASES_DESC>
+<DBSERVERNAME_DESC><![CDATA[Az adatbázis-kiszolgáló ezen
+előforduláshoz tartozó egyedi nevet ad meg.]]></DBSERVERNAME_DESC>
+<DBSPACETEMP_DESC><![CDATA[Azoknak az adatbázis-területeknek a
+listáját adja meg, amelyeket az adatbázis-kiszolgáló az ideiglenes
+táblák tárolásának globális kezelésére használ.]]></DBSPACETEMP_DESC>
+<DD_HASHMAX_DESC><![CDATA[Az adatszótár gyorsítótár egyes
+kivonat-tárolóegységeiben található táblák maximális számát adja meg.]]></DD_HASHMAX_DESC>
+<DD_HASHSIZE_DESC><![CDATA[Az adatszótár gyorsítótár egyes
+kivonat-tárolóegységeiben található táblák maximális számát adja meg.]]></DD_HASHSIZE_DESC>
+<DEADLOCK_TIMEOUT_DESC><![CDATA[A másodpercek maximális számát
+adja meg, ameddig az adatbázis-kiszolgáló zárolás
+foganatosítására várakozhat.  Ezt a paramétert csak távoli
+adatbázis-kiszolgálót érintő, osztott lekérdezések esetében használja.]]></DEADLOCK_TIMEOUT_DESC>
+<DEF_TABLE_LOCKMODE_DESC><![CDATA[Az adatbázis alapértelmezett
+zárolási módját adja meg; PAGE vagy ROW értékre állítható be.]]></DEF_TABLE_LOCKMODE_DESC>
+<DEFAULTESCCHAR_DESC><![CDATA[Az alapértelmezett kilépési karaktert adja meg.]]></DEFAULTESCCHAR_DESC>
+<DELAY_APPLY_DESC><![CDATA[Megadja, hogy a másodlagos RS kiszolgálóknak mennyit ideig kell várakozniuk naplók alkalmazása előtt.]]></DELAY_APPLY_DESC>
+<DIRECT_IO_DESC><![CDATA[Az adatbázis-terület csonkokhoz használt
+kész fájlok közvetlen I/O műveleteinek használatát vezérli.]]></DIRECT_IO_DESC>
+<DIRECTIVES_DESC><![CDATA[Az SQL direktívák használatát engedélyezi vagy tiltja le.]]></DIRECTIVES_DESC>
+<DISABLE_B162428_XA_FIX_DESC><![CDATA[Ha 1 értékre van beállítva, akkor
+azt biztosítja, hogy a Dynamic server 9.40 és korábbi változataira írt
+alkalmazások megfelelően működjenek.]]></DISABLE_B162428_XA_FIX_DESC>
+<DISTR_QUERY_FLAGS_DESC><![CDATA[]]></DISTR_QUERY_FLAGS_DESC>
+<DRAUTO_DESC><![CDATA[Eldönti, hogy a másodlagos
+adatbázis-kiszolgáló hogyan reagál HDR hibára. A paramétert mindkét HDR
+kiszolgálón azonos értékre kell beállítani.]]></DRAUTO_DESC>
+<DRDA_COMMBUFFSIZE_DESC><![CDATA[A DRDA kommunikációs puffer méretét adja meg.]]></DRDA_COMMBUFFSIZE_DESC>
+<DRIDXAUTO_DESC><![CDATA[Megadja, hogy az elsődleges Magas szintű
+rendelkezésre állású adatreplikáció (HDR) kiszolgáló automatikusan
+megkezdi-e az indexek replikálását, ha a másodlagos HDR kiszolgáló
+sérült indexet észlel.]]></DRIDXAUTO_DESC>
+<DRINTERVAL_DESC><![CDATA[A magas szintű rendelkezésre állású
+adateplikációs puffer kiürítései közötti maximális időtartamot adja
+meg. Ha szinkron módon kíván frissíteni, akkor állítsa be a paramétert -1 értékre.]]></DRINTERVAL_DESC>
+<DRLOSTFOUND_DESC><![CDATA[A dr.lostfound.timestamp fájl elérési útját adja meg.]]></DRLOSTFOUND_DESC>
+<DRTIMEOUT_DESC><![CDATA[Magas szintű rendelkezésre állású adatreplikációs
+párok esetében azt az időtartamot adja meg másodpercben, amennyit az
+adatbázis-kiszolgáló egy magas szintű rendelkezésre állású
+adatreplikációs párban átvitel nyugtázásra vár a párban lévő
+másik adatbázis-kiszolgálótól.]]></DRTIMEOUT_DESC>
+<DS_HASHSIZE_DESC><![CDATA[Azoknak a kivonat-tárolóegységeknek a
+számát adja meg az adat-terjesztési gyorsítótárban, amelyeket az
+adatbázis-kiszolgáló az UPDATE STATISTICS utasítás által MEDIUM vagy HIGH
+módban előállított oszlop statisztikák tárolására és elérésre használ.]]></DS_HASHSIZE_DESC>
+<DS_MAX_QUERIES_DESC><![CDATA[A párhuzamosan futtatható párhuzamos
+adatbázis lekérdezések (PDQ) maximális számát adja meg.]]></DS_MAX_QUERIES_DESC>
+<DS_MAX_SCANS_DESC><![CDATA[Az adatbázis-kiszolgáló által
+párhuzamosan végrehajtható Párhuzamos adatbázis lekérdezés (PDQ)
+keresőszálak számát korlátozza.]]></DS_MAX_SCANS_DESC>
+<DS_NONPDQ_QUERY_MEM_DESC><![CDATA[Az olyan lekérdezés számára
+elérhető memóriamennyiséget növeli, amely nem Párhuzamos adatbázis
+lekérdezés (PDQ).]]></DS_NONPDQ_QUERY_MEM_DESC>
+<DS_POOLSIZE_DESC><![CDATA[Azoknak az egyes kivonat-tárolóegységekben
+található bejegyzéseknek a maximális számát adja meg az adat-terjesztési
+gyorsítótárban, amelyeket az adatbázis-kiszolgáló az UPDATE STATISTICS
+utasítás által MEDIUM vagy HIGH módban előállított oszlop statisztikák
+tárolására és elérésre használ.]]></DS_POOLSIZE_DESC>
+<DS_TOTAL_MEMORY_DESC><![CDATA[A PDQ lekérdezések számára elérhető
+memória mennyiségét adja meg. Ennek kevesebbnek kell lennie, mint a
+számítógép fizikai memóriája mínusz a rögzített ráhagyás (például
+az operációs rendszer és a puffertár mérete).]]></DS_TOTAL_MEMORY_DESC>
+<DUMPCNT_DESC><![CDATA[(UNIX) Azoknak az érvényesítési hibáknak a
+számát adja meg, amelyek esetében egy adatbázis-kiszolgáló szál
+kiíratja az osztott memóriát vagy a gcore meghívásával magfájlt állít
+elő. Az érvényesítés valamely feltétel vagy kifejezés vizsgálata azzal az
+elvárással, hogy a kimenet igaz lesz.]]></DUMPCNT_DESC>
+<DUMPCORE_DESC><![CDATA[(UNIX) Azt vezérli, hogy az érvényesítési
+hibák mag-képfájl kiíratására késztetik-e a virtuális processzort. A
+magfájl abban a könyvtárban marad, ahonnan az adatbázis-kiszolgáló
+utoljára meghívásra került. 0 = Nincs mag-képfájl kiíratás; 1 = Mag-képfájl kiíratása.]]></DUMPCORE_DESC>
+<DUMPDIR_DESC><![CDATA[Olyan könyvtárat ad meg, ahová az
+adatbázis-kiszolgáló osztott memóriát, gcore fájlokat vagy
+sikertelen érvényesítésből származó üzeneteket írat ki. Mivel az
+osztott memória nagy lehet, ezért a DUMPDIR értékeként olyan
+fájlrendszert adjon meg, amely jelentős mennyiségű területtel
+rendelkezik. A kiszolgáló indításához a DUMPDIR változóban beállított
+könyvtárnak léteznie kell.]]></DUMPDIR_DESC>
+<DUMPGCORE_DESC><![CDATA[(UNIX) A gcore segédprogramot támogató operációs
+rendszerekkel használják. Ha be van állítva, akkor az
+adatbázis-kiszolgáló mindig meghívja a gcore segédprogramot, valahányszor
+egy virtuális processzor érvényesítési hibát észlel. A gcore
+segédprogram arra utasítja a virtuális processzort, hogy mag-képfájlt
+írasson ki a core.pid.cnt fájlba a DUMPDIR által meghatározott
+könyvtárban, majd folytassa a feldolgozást. 0 = Nincs gcore kiíratás; 1 =
+Van gcore kiíratás.]]></DUMPGCORE_DESC>
+<DUMPSHMEM_DESC><![CDATA[(UNIX) Azt jelzi, hogy érvényesítési hiba
+esetén az osztott memóriát ki kell íratni. Az adatbázis-kiszolgáló által
+használt összes osztott memória kiíratásra kerül; ez valószínűleg elég
+nagy. Az osztott memória kiíratása a shmem.pid.cnt fájlba történik, a
+DUMPDIR által megadott könyvtárban. 0 = Nincs osztott memória kiíratás; 1
+= Osztott memória kiíratása.]]></DUMPSHMEM_DESC>
+<DYNAMIC_LOGS_DESC><![CDATA[Az adatbázis-kiszolgáló dinamikus
+naplófoglalási szintjét adja meg.  0 = Nincs dinamikus naplófoglalás; 1 =
+Riasztás, ha napló szükséges és várakozás a logikai naplókézi
+lefoglalására; 2 = Dinamikus naplófoglalás bekapcsolása és riasztás,
+amikor az egyes naplók dinamikusan kerülnek hozzáadásra.]]></DYNAMIC_LOGS_DESC>
+<EILSEQ_COMPAT_MODE_DESC><![CDATA[Engedélyezi vagy letiltja annak ellenőrzését, hogy az ügyfélalkalmazások által beszúrt karakteres adatok tartalmaznak-e olyan kódpont-szekvenciákat, amelyeket az aktuális területi beállítás nem ismer fel. 0 = Bejövő karakterszekvenciák érvényesítése az aktuális területi beállítás ellenében. 1 = A bejövő karakterszekvenciák nem kerülnek érvényesítésre.]]></EILSEQ_COMPAT_MODE_DESC>
+<ENABLE_SNAPSHOT_COPY_DESC><![CDATA[Engedélyezi vagy letiltja a kiszolgálók ifxclone segédprogrammal végzett klónozását.]]></ENABLE_SNAPSHOT_COPY_DESC>
+<ENCRYPT_CDR_DESC><![CDATA[Az Enterprise replication titkosítási szintjét
+állítja be.  0 = Nincs titkosítás; 1 = Titkosítás, ha lehetséges; 2 =
+Mindig titkosít.]]></ENCRYPT_CDR_DESC>
+<ENCRYPT_CIPHERS_DESC><![CDATA[Az aktuális adatbázis munkamenet által
+használható összes rejtjelet és módot határozza meg. Az ENCRYPT_CIPHERS
+csak Enterprise replication és Magas szintű rendelkezésre
+állású adatreplikáció esetén használatos.]]></ENCRYPT_CIPHERS_DESC>
+<ENCRYPT_HDR_DESC><![CDATA[A HDR titkosítást engedélyezi vagy
+tiltja le; 0 = HDR titkosítás letiltása, 1 = HDR titkosítás engedélyezése.]]></ENCRYPT_HDR_DESC>
+<ENCRYPT_MAC_DESC><![CDATA[Az üzenethitelesítési kód (MAC)
+előállítást vezérli és kizárólag Enterprise replication és Magas
+szintű rendelkezésre állású adatreplikáció esetén használatos.Off' =
+nincs MAC előállítás, 'low' = XOR befoglalás használata minden
+üzeneten, 'medium' = SHA1 MAC előállítás használata a 20 byte-nál
+hosszabb üzenetek esetében és XOR befoglalás a kisebb üzeneteknél, 'high'
+= SHA1 MAC előállítás használata az összes üzeneten. Például: ENCRYPT_MAC medium,high]]></ENCRYPT_MAC_DESC>
+<ENCRYPT_MACFILE_DESC><![CDATA[Az üzenethitelesítési kód (MAC) kulcsfájlok
+teljes útvonalainak listáját adja meg és kizárólag Enterprise replication és
+Magas szintű rendelkezésre állású adatreplikáció esetén használatos.]]></ENCRYPT_MACFILE_DESC>
+<ENCRYPT_SMX_DESC><![CDATA[A magas szintű rendelkezésre állású
+másodlagos kiszolgáló konfigurációk titkosítási szintjét állítja be. 0 =
+nincs titkosítás; 1 = Titkosítás, ahol lehetséges - SMX
+tranzakciók esetében csak akkor kerül titkosítás felhasználásra,
+ha a titkosítást az adatbázis-kiszolgáló is támogatja; 2 = Mindig
+titkosít - csak titkosított adatbázis-kiszolgálókkal kialakított
+kapcsolatok használta engedélyezett.]]></ENCRYPT_SMX_DESC>
+<ENCRYPT_SWITCH_DESC><![CDATA[A rejtjelek és kulcsok
+újraegyeztetésének gyakoriságát adja meg. Az egyeztetés alapértelmezésben
+óránként egyszer megy végbe. Az ENCRYPT_SWITCH csak Enterprise replication
+és Magas szintű rendelkezésre állású adatreplikáció esetén használatos.]]></ENCRYPT_SWITCH_DESC>
+<EXPLAIN_STAT_DESC><![CDATA[Lekérdezés statisztika szakasz
+befoglalását engedélyezi vagy tiltja le a magyarázat kimeneti fájlban.]]></EXPLAIN_STAT_DESC>
+<EXT_DIRECTIVES_DESC><![CDATA[A külső SQL direktívák használatát
+engedélyezi vagy tiltja le. A külső direktívák használatát az
+EXT_DIRECTIVES konfigurációs paraméter és az IFX_EXTDIRECTIVES
+ügyfél-oldali környezeti változó együttes alkalmazásával teszi lehetővé.<br><br>0
+= Kikapcsolva. A direktíva nem engedélyezhető akkor sem, ha az
+IFX_EXTDIRECTIVES be van kapcsolva.<br>1 = Bekapcsolva. A direktíva a
+munkameneten engedélyezhető, ha az IFX_EXTDIRECTIVES be van kapcsolva.<br>2
+= Bekapcsolva. A direktíva akkor is használható, ha az IFX_EXTDIRECTIVES
+nincs beállítva.]]></EXT_DIRECTIVES_DESC>
+<EXTSHMADD_DESC><![CDATA[A hozzáadható kiterjesztés virtuális
+szegmensek méretét adja meg. Értéktartománya 1024 - 524,288 kilobyte.]]></EXTSHMADD_DESC>
+<FAILOVER_CALLBACK_DESC><![CDATA[Az adatbázis-kiszolgáló a
+FAILOVER_CALLBACK által megadott parancsfájlt hajtja végre, ha az
+adatbázis-kiszolgáló másodlagos kiszolgálóról elsődleges vagy szabvány
+kiszolgálóra áll át. A FAILOVER_CALLBACK értékeként a parancsfájl teljes
+elérési útját állítsa be.]]></FAILOVER_CALLBACK_DESC>
+<FAILOVER_TX_TIMEOUT_DESC><![CDATA[Magas szintű rendelkezésre állású fürtözött környezetekben az átállás utáni másodpercek maximális számát jelzi, amennyit a kiszolgáló a tranzakciók visszagörgetése előtt várakozhat. Ez lehetővé teheti a tranzakciók befejezését.]]></FAILOVER_TX_TIMEOUT_DESC>
+<FASTPOLL_DESC><![CDATA[A hálózat gyors lekérdezését engedélyezi
+vagy tiltja le. A FASTPOLL platformra jellemző. 0 = gyors
+lekérdezés letiltása; 1 = Gyors lekérdezés engedélyezése.]]></FASTPOLL_DESC>
+<FILLFACTOR_DESC><![CDATA[Az indexlap telítettség fokát adja meg 1-től
+100-ig. Alacsony érték helyet biztosít az index növekedéséhez. Magas érték
+tömöríti az indexet. Ha az index megtelik (100 %), akkor minden új
+beszúrás a csomópontok felosztását eredményezi. ]]></FILLFACTOR_DESC>
+<FULL_DISK_INIT_DESC><![CDATA[Biztonsági mechanizmust engedélyez, amely megakadályozza véletlen lemezinicializálást meglévő adatbázis-kiszolgáló példányon. Meghatározza, hogy az inicializálási parancs lefuttatható-e, ha az első csonk első lapja (0. lap) létezik a gyökérútvonalon. 0 = Az oninit -i parancs csak akkor fut le, ha nincs 0. lap a gyökérútvonalon. 1 = Az oninit -i parancs minden körülmények között lefut, de a lemez inicializálása után a FULL_DISK_INIT konfigurációs paramétert is visszaállítja nullára.]]></FULL_DISK_INIT_DESC>
+<GSKIT_VERSION_DESC><![CDATA[Az adatbázis-kiszolgáló által a titkosításhoz és az SSl kommunikációhoz használt IBM&reg; Global Security Kit (GSKit) főverziószámát adja meg.]]></GSKIT_VERSION_DESC>
+<HA_ALIAS_DESC><![CDATA[Amikor a másodlagos kiszolgáló elsődleges
+kiszolgálóhoz csatlakozik, akkor megad egy átállás esetén használható
+hálózati álnevet.]]></HA_ALIAS_DESC>
+<HETERO_COMMIT_DESC><![CDATA[Megadja, hogy az adatbázis-kiszolgáló
+fel van-e készítve heterogén véglegesítési tranzakciókban az IBM Informix
+Gateway termékekkel közös részvételre. 1 = Heterogén véglegesítés
+engedélyezése; 0 = Heterogén véglegesítés letiltása.]]></HETERO_COMMIT_DESC>
+<IFX_EXTEND_ROLE_DESC><![CDATA[Az adatbázis-kiszolgáló
+adminisztrátort (DBSA) engedélyezi (alapértelmezésben az informix
+felhasználó) olyan biztonsági intézkedések megvalósítása érdekében,
+amelyek meghatározzák, hogy mely felhasználók regisztrálhatnak
+DataBlade&reg; modulokat és felhasználói rutinokat(UDR); 1 vagy
+Bekapcsolva (alapértelmezés) = Engedélyezi az EXTEND szerepet, így az
+adminisztrátorok létrehozási vagy megszüntetési jogot adományozhatnak a
+felhasználónak az EXTERNAL részkifejezést tartalmazó UDR rutinokra; 0 vagy
+Kikapcsolva = Letiltja az EXTEND szerepet, így minden felhasználó
+regisztrálhat külső rutint.]]></IFX_EXTEND_ROLE_DESC>
+<IFX_FOLDVIEW_DESC><![CDATA[A nézet befoglalást engedélyezi vagy
+tiltja le; 0 vagy Kikapcsolva (alapértelmezés) = A nézet befoglalás
+letiltása, 1 vagy Bekapcsolva = A nézet befoglalás engedélyezése.]]></IFX_FOLDVIEW_DESC>
+<INDEX_SELFJOIN_DESC><![CDATA[]]></INDEX_SELFJOIN_DESC>
+<ISM_DATA_POOL_DESC><![CDATA[A tárterületek mentésére szolgáló kötetkészletet adja meg.]]></ISM_DATA_POOL_DESC>
+<ISM_LOG_POOL_DESC><![CDATA[A logikai naplók mentésére szolgáló kötetkészletet adja meg.]]></ISM_LOG_POOL_DESC>
+<JDKVERSION_DESC><![CDATA[A Java fejlesztőkészlet (JDK) vagy Java
+futási környezet (JRE) kiadás verziószámát adja meg ]]></JDKVERSION_DESC>
+<JVPARGS_DESC><![CDATA[Java VM beállításokat ad meg.]]></JVPARGS_DESC>
+<JVPDEBUG_DESC><![CDATA[Ha 1 értékre van beállítva, akkor nyomkövetési
+üzeneteket ír a JVPLOG fájlba.]]></JVPDEBUG_DESC>
+<JVPHOME_DESC><![CDATA[Azt a könyvtárat adja meg, ahol az IBM Informix
+JDBC illesztőprogram osztályai telepítve vannak.]]></JVPHOME_DESC>
+<JVPLOGFILE_DESC><![CDATA[A Java VP naplófájlok abszolút útvonalát adja meg.]]></JVPLOGFILE_DESC>
+<JVPPROPFILE_DESC><![CDATA[A Java VP tulajdonságfájlok abszolút útvonalát adja meg.]]></JVPPROPFILE_DESC>
+<JVPJAVAVM_DESC><![CDATA[A Java virtuális géppel (JVM) használható függvénytárakat adja meg.]]></JVPJAVAVM_DESC>
+<JVPJAVAHOME_DESC><![CDATA[Azt a könyvtárat adja meg, ahol az
+adatbázis-kiszolgáló Java futási környezete (JRE) telepítve van.]]></JVPJAVAHOME_DESC>
+<JVMTHREAD_DESC><![CDATA[A Java virtuális géppel használatos szálcsomagot
+(zöld vagy natív) adja meg.]]></JVMTHREAD_DESC>
+<JVPJAVALIB_DESC><![CDATA[A Java VM függvénytárak helyének elérési útját
+adja meg a JVPJAVAHOME által meghatározott helyről kiindulva.]]></JVPJAVALIB_DESC>
+<JVPCLASSPATH_DESC><![CDATA[A kezdeti Java osztályútvonal beállítást adja meg.]]></JVPCLASSPATH_DESC>
+<LIMITNUMSESSIONS_DESC><![CDATA[Az Informix adatbázis-kiszolgálóhoz csatlakoztatható munkamenetek maximális számát adja meg, valamint meghatározza, hogy az adatbázis-kiszolgáló ír-e figyelmeztető üzeneteket az online.log fájlba, ha a munkamenetek száma a maximális számot megközelíti.]]></LIMITNUMSESSIONS_DESC>
+<LISTEN_TIMEOUT_DESC><![CDATA[A másodpercek számát adja meg, amennyit a
+kiszolgáló egy kapcsolatra várakozik.]]></LISTEN_TIMEOUT_DESC>
+<LOCKS_DESC><![CDATA[A zárolási tábla kiinduló méretét adja meg. A
+zárolási tábla a munkamenet által használt összes zárolásról
+tartalmaz egy bejegyzést.]]></LOCKS_DESC>
+<LOG_INDEX_BUILDS_DESC><![CDATA[Az indexlap naplózást engedélyezi vagy tiltja le.]]></LOG_INDEX_BUILDS_DESC>
+<LOG_STAGING_DIR_DESC><![CDATA[Azt a könyvtárat adja meg, ahol az elsődleges kiszolgálóról származó naplófájlok tárolása történik, ha a másodlagos RS kiszolgálókon a naplófájlok késleltetett alkalmazása engedélyezett.]]></LOG_STAGING_DIR_DESC>
+<LOGBUFF_DESC><![CDATA[A három logikai napló puffer méretét adja meg
+az osztott memóriában (kilobyte-ban). A háromszoros pufferelés a
+felhasználói szálak számára megengedi, hogy az aktív pufferbe
+írjanak, miközben a többi puffer valamelyike éppen kiürítésre kerül a
+lemezre. RTO_SERVER_RESTART használata esetén állítsa a LOGBUFF méretét
+256 kilobyte-ra.]]></LOGBUFF_DESC>
+<LOGFILES_DESC><![CDATA[Az adatbázis-kiszolgáló által az
+inicializálás során létrehozott logikai naplófájlok számát adja meg. A
+logikai naplófájlok számának módosításához adjon hozzá vagy szüntessen
+meg logikai naplófájlokat.]]></LOGFILES_DESC>
+<LOGSIZE_DESC><![CDATA[A logikai naplófájlok létrehozásakor
+használt méretet adja meg kilobyte-ban. A meglévő logikai naplófájlok
+méretét nem módosítja. A teljes logikai napló méret = LOGSIZE * LOGFILES.]]></LOGSIZE_DESC>
+<LOW_MEMORY_MGR_DESC><![CDATA[Engedélyezi a memóriahiányos helyzetek automatikus kezelését. Segítségével megadhatja, hogyan viselkedjen alapértelmezésben a kiszolgáló, ha eléri a memóriakorlátját. 1 = Memóriahiányos helyzetek automatikus kezelésének engedélyezése az adatbázis-kiszolgáló indításakor. 0 = Memóriahiányos helyzetek automatikus kezelésének letiltása.]]></LOW_MEMORY_MGR_DESC>
+<LOW_MEMORY_RESERVE_DESC><![CDATA[Adott (kilobyte-ban megadott) mennyiségű memóriát foglal le, amely akkor kerül felhasználásra, ha kritikus tevékenységek (például visszagörgetés) szükségesek, és kiszolgáló szabad memóriája korlátozott.]]></LOW_MEMORY_RESERVE_DESC>
+<LRUS_DESC><![CDATA[Az LRU (legkevésbé régen használt) sorok számát adja
+meg az osztott memória puffertárban.]]></LRUS_DESC>
+<LRU_MAX_DIRTY_DESC><![CDATA[Az LRU sorok módosított lapjainak százalékát
+adja meg, amelynek elérése esetén a sor kiürítésre kerül.]]></LRU_MAX_DIRTY_DESC>
+<LRU_MIN_DIRTY_DESC><![CDATA[Az LRU sorok módosított lapjainak százalékát
+adja meg, amelynek elérése esetén a sor kiürítése már nem kötelező.]]></LRU_MIN_DIRTY_DESC>
+<LTAPEBLK_DESC><![CDATA[Ontape használata esetén annak az eszköznek a
+blokkméretét adja meg, amelyre a logikai naplók mentésre kerülnek. Az
+LTAPEBLK annak az eszköznek a blokkméretét is megadja, ahová adatok
+kerülnek betöltésre vagy onnan kiürítésre, ha az onload vagy onunload
+esetében a -l paramétert használja. Onload vagy onunload esetén adjon meg
+eltérő blokkméretet a parancssorban.]]></LTAPEBLK_DESC>
+<LTAPEDEV_DESC><![CDATA[Ontape használata esetén annak az eszköznek vagy
+könyvtárnak a fájlrendszerét adja meg, amelyre a logikai naplók mentésre
+kerülnek. Azt az eszközt is megadja,
+ahová adatok kerülnek betöltésre vagy onnan kiürítésre, ha az onload vagy
+onunload esetében a -l paramétert használja.]]></LTAPEDEV_DESC>
+<LTAPESIZE_DESC><![CDATA[Ontape használata esetén annak az eszköznek a
+maximális maximális szalagméretét adja meg, amelyre a logikai naplók
+mentésre kerülnek. Az LTAPESIZE annak az eszköznek a maximális
+szalagméretét is megadja, ahová adatok kerülnek betöltésre vagy onnan kiürítésre, ha
+az onload vagy onunload esetében a -l paramétert használja. Onload vagy
+onunload esetén adjon meg eltérő szalagméretet a parancssorban. A szalag teljes kapacitásának használatához állítsa 0-ra az LTAPESIZE értékét.]]></LTAPESIZE_DESC>
+<LTXEHWM_DESC><![CDATA[A hosszú-tranzakció, kizárólagos-hozzáférés
+felső határértéket adja meg. A tranzakció akkor hosszú, ha a
+hosszú-tranzakció felső határérték elérésekor nem kerül véglegesítésre
+vagy visszagörgetésre. Ha a logikai napló terület az LTXEHWM
+küszöbértéket eléri, akkor a pillanatnyilag visszagörgetés alatt
+alló hosszú tranzakció kizárólagos hozzáférést kap a logikai
+naplóhoz.]]></LTXEHWM_DESC>
+<LTXHWM_DESC><![CDATA[A hosszú-tranzakció felső határértéket adja meg. A
+hosszú-tranzakció felső határérték a rendelkezésre álló
+logikai napló terület azon százaléka, amelynek kitöltése esetén az
+adatbázis-kiszolgáló ellenőrzi a hosszú tranzakciókat.]]></LTXHWM_DESC>
+<MAX_FILL_DATA_PAGES_DESC><![CDATA[Azt a képességet engedélyezi vagy
+tiltja le, hogy laponként több beszúrandó oldal kerüljön
+hozzáadásra a változó hosszúságú sorokat tartalmazó táblákban; 0 =
+Tiltott, 1 = Engedélyezett.]]></MAX_FILL_DATA_PAGES_DESC>
+<MAX_INCOMPLETE_CONNECTIONS_DESC><![CDATA[A befejezetlen csatlakozások
+maximális számát adja meg a munkamenetben. Ezen szám elérése után az
+online üzenetnaplóba hibaüzenet kerül, ami arról szól, hogy a
+kiszolgálót szolgáltatás megbénítása támadás érhette. Alapértéke 1024]]></MAX_INCOMPLETE_CONNECTIONS_DESC>
+<MAX_PDQPRIORITY_DESC><![CDATA[Az adatbázis-kiszolgáló által bármely DSS
+lekérdezés számára lefoglalható PDQ erőforrásokat korlátozza.]]></MAX_PDQPRIORITY_DESC>
+<MIRROR_DESC><![CDATA[A tükrözést engedélyezi vagy tiltja le az
+adatbázis-kiszolgálón. A fő adatbázis-területeket és a fontos adatokat
+ajánlott az inicializálás részeként tükrözni; 0 = tükrözés letiltása, 1 =
+tükrözés engedélyezése.]]></MIRROR_DESC>
+<MIRROROFFSET_DESC><![CDATA[Azt az eltolást adja meg a lemezpartíción vagy
+eszközön, amely a fő adatbázis-terület kezdeti
+csonkjának tükrözéseként szolgáló csonk eléréséhez szükséges.]]></MIRROROFFSET_DESC>
+<MIRRORPATH_DESC><![CDATA[A fő adatbázis-terület kezdeti
+csonkjához tartozó tükrözött csonk teljes elérési útját adja meg. A
+MIRRORPATH változónak a ténylegesen tükrözött csonk csonkolási útvonalára
+mutató hivatkozást kel tartalmaznia. Válassza ki a tükrözött csonk
+rövid útvonalát.]]></MIRRORPATH_DESC>
+<MSG_DATE_DESC><![CDATA[Ha engedélyezett, akkor az online napló minden
+egyes üzenetéhez elejéhez dátumot ad hozzá.]]></MSG_DATE_DESC>
+<MSGPATH_DESC><![CDATA[Az üzenetnapló-fájl teljes elérési útját adja meg. Az
+adatbázis-kiszolgáló működés közben állapot üzeneteket és diagnosztikai
+üzeneteket ír ebbe a fájlba.]]></MSGPATH_DESC>
+<MULTIPROCESSOR_DESC><![CDATA[Megadja, hogy az
+adatbázis-kiszolgáló egyprocesszoros vagy többprocesszoros számítógépek
+számára megfelelő módon kezeli-e a zárolásokat; 0 = Nem többprocesszoros,
+1 = Többprocesszoros elérhető]]></MULTIPROCESSOR_DESC>
+<MQCHLLIB_DESC><![CDATA[AZ IBM&reg; WebSphere&reg; MQ ügyfélcsatorna-meghatározás táblát tartalmaz könyvtár elérési útját adja meg.]]></MQCHLLIB_DESC>
+<MQCHLTAB_DESC><![CDATA[AZ IBM&reg; WebSphere&reg; MQ ügyfélcsatorna-meghatározás tábla nevét adja meg.]]></MQCHLTAB_DESC>
+<MQSERVER_DESC><![CDATA[Meghatároz egy csatornát, megadja az IBM&reg; WebSphere&reg; MQ kiszolgáló helyét és megadja a használandó kommunikációs metódust.]]></MQSERVER_DESC>
+<NET_IO_TIMEOUT_ALARM_DESC><![CDATA[Megadja, hogy kell-e értesítést küldeni, ha a hálózati írási műveletek több mint 30 perce blokkolva vannak.]]></NET_IO_TIMEOUT_ALARM_DESC>
+<NETTYPE_DESC><![CDATA[Hálózati kapcsolatot ír le.]]></NETTYPE_DESC>
+<NOAGE_DESC><![CDATA[Néhány operációs rendszer csökkenti a folyamatok
+prioritását, ha a folyamatok hosszú ideig futnak. Ha a NOAGE beállítása 1,
+akkor a CPU virtuális processzorok operációs rendszer általi
+prioritás öregítését letiltja. Ha a NOAGE beállítása az alapértelmezett 0,
+akkor az operációs rendszer a CPU virtuális processzorok és más folyatok
+prioritását is csökkentheti, amint azok feldolgozási időt halmoznak fel, Ha
+az operációs rendszer a prioritás öregítést támogatja, akkor a NOAGE
+paramétert ajánlott 1 értékre beállítani.]]></NOAGE_DESC>
+<NO_DESC_FOUND_DESC><![CDATA[A No megadja, hogy mely felhasználók (az
+informix felhasználón és a DBSA csoport felhasználóin kívül) férhetnek hozzá az
+adatbázis-kiszolgálóhoz adminisztráció módban.]]></NO_DESC_FOUND_DESC>
+<NS_CACHE_DESC><![CDATA[A hoszt-, szolgáltatás, felhasználó- és csoportkapcsolatok névszolgáltatás információinak belső adatbázis-kiszolgáló gyorsítótárból végzett lekérdezésének lejárati idejét határozza meg.]]></NS_CACHE_DESC>
+<NUMAIOVPS_DESC><![CDATA[Az AIO osztály futtatandó virtuális
+processzorainak számát adja meg. Hacsak nincs kernel-aszinkron I/O
+megvalósítva, a naplófájlokba irányuló I/O műveleteken kívül minden
+adatbázis-kiszolgáló lemez I/O műveletet az AIO virtuális processzorok
+hajtanak végre.<BR>A virtuális processzorok
+adminisztrációja az OpenAdmin programon belül végezhető a <A
+href='index.php?act=vps&do=global'> Virtuális processzorok oldalon </A>]]></NUMAIOVPS_DESC>
+<NUMCPUVPS_DESC><![CDATA[A CPU osztály futtatandó virtuális
+processzorainak számát adja meg. CPU virtuális processzorok futtatnak
+minden szálat, amely ügyfélalkalmazás csatlakozásának eredményeként indul
+el, valamint a belső szálakat is.<BR>A virtuális processzorok
+adminisztrációja az OpenAdmin programon belül végezhető a <A
+href='index.php?act=vps&do=global'> Virtuális processzorok oldalon </A>]]></NUMCPUVPS_DESC>
+<NUMFDSERVERS_DESC><![CDATA[UNIX platformon a hálózati kapcsolatok Informix virtuális processzorok (VP-k) közötti átállításának kezelésére szolgáló lekérdezési szálak maximális számát adja meg.]]></NUMFDSERVERS_DESC>
+<OFF_RECVRY_THREADS_DESC><![CDATA[A logikai helyreállításban
+használt helyreállítási szálak számát adja meg, ha az
+adatbázis-kiszolgáló offline (hidegvisszaállítás közben). Ez a számszám
+használatos a logikai napló rekordok előregörgetésekor is gyors
+helyreállításban.]]></OFF_RECVRY_THREADS_DESC>
+<ON_RECVRY_THREADS_DESC><![CDATA[Az adatbázis-kiszolgáló által logikai
+helyreállításban használt helyreállítási maximális szálak számát adja meg,
+ha az adatbázis-kiszolgáló online (melegvisszaállítás közben).]]></ON_RECVRY_THREADS_DESC>
+<ONDBSPACEDOWN_DESC><![CDATA[Az adatbázis-kiszolgáló által végrehajtandó
+művelete határozza meg arra az esetre, ha nem-kritikus adatbázis-területen
+lévő elsődleges csonkon letiltási esemény történik.<br><br>0 = Az
+adatbázis-kiszolgáló az adatbázis-területet offlineként jelöli meg és
+folytatja a működést.<br>1 = Az adatbázis-kiszolgáló megszakításrakerül.<br>2
+= Az adatbázis-kiszolgáló a csonk állapotát kiírja a naplókba és
+felhasználói bevitelre vár.]]></ONDBSPACEDOWN_DESC>
+<ONLIDX_MAXMEM_DESC><![CDATA[Egyetlen előkép tár és egyetlen frissítő
+napló tár számára lefoglalt memória mennyiségét korlátozza. Az
+előkép és frissítő napló tárak (pimage_partnum és ulog_partnum) olyan
+osztott memória tárak, amelyek a CREATE INDEX ONLINE utasítás
+végrehajtásakor kerülnek létrehozásra. A tárak az utasítás
+végrehajtásának befejezésekor kerülnek felszabadításra.]]></ONLIDX_MAXMEM_DESC>
+<OPCACHEMAX_DESC><![CDATA[(UNIX) Az Optikai alrendszer memória
+gyorsítótárának méretét adja meg. A paramétert csak az Optikai alrendszer
+használata esetén alkalmazza.]]></OPCACHEMAX_DESC>
+<OPT_GOAL_DESC><![CDATA[Két lekérdezés optimalizálási cél közül
+engedélyezi az egyiket: Optimalizálás ELSŐ SOROKRA, vagy
+optimalizálás MINDEN SORRA; 0 = FIRST_ROWS. -1 = ALL_ROWS, az
+alapértelmezés.]]></OPT_GOAL_DESC>
+<OPTCOMPIND_DESC><![CDATA[Segít az optimalizálónak a megfelelő
+lekérdezési terv kiválasztásában az alkalmazás számára.<br><br>0 = Ha
+minden rendezett táblapárhoz létezik megfelelő index, akkor az
+optimalizáló a táblakeresésekkel szemben az indexkereséseket részesíti
+előnyben. Ez az érték biztosítja a kompatibilitást az adatbázis-kiszolgáló
+korábbi változataival.<br>1 = Az optimalizáló költségek segítségével
+állapít meg egy végrehajtási útvonalat, ha az elkülönítési szint
+beállítása nem Ismételhető olvasás. Az optimális teljesítmény érdekében
+ez a beállítás ajánlott.<br>2 = Az optimalizáló bármely elkülönítés
+szint esetén költségek segítségével állapítja meg a végrehajtási
+útvonalat. Az indexkeresések nem élveznek előnyt a táblakeresésekkel
+szemben. Ez az alapértelmezett érték, ha a változó nincs beállítva.]]></OPTCOMPIND_DESC>
+<OPTICAL_LIB_PATH_DESC><![CDATA[Optikai tárolókezelő használata esetén
+állítsa be az OPTICAL_LIB_PATH változót az optikai tárolókezelő
+függvénytár helyére.]]></OPTICAL_LIB_PATH_DESC>
+<PAM_STACKSIZE_DESC><![CDATA[A PAM modulok veremméretét szabja személyre.]]></PAM_STACKSIZE_DESC>
+<PC_HASHSIZE_DESC><![CDATA[Az adatbázis-kiszolgáló által használt
+kivonat-tárolóegységek számár adja meg az UDR gyorsítótárakban.]]></PC_HASHSIZE_DESC>
+<PC_POOLSIZE_DESC><![CDATA[Az UDR gyorsítótárban tárolt maximális UDR számot adja meg.]]></PC_POOLSIZE_DESC>
+<PHYSBUFF_DESC><![CDATA[Az osztott memória két fizikai napló
+pufferének méretét adja meg kilobyte-ban. A PHYSBUFF paraméter értéke
+dönti el, hogy az adatbázis-kiszolgálónak milyen gyakran kell a fizikai
+napló puffert a fizikai naplófájlba ürítenie.]]></PHYSBUFF_DESC>
+<PHYSDBS_DESC><![CDATA[A fizikai naplót tartalmazó
+adatbázis-terület nevét adja meg. A lemez-versenyhelyzet csökkentése
+érdekében a fizikai naplót áthelyezheti a fő adatbázis-területtől eltérő
+adatbázis-területre. <BR>A fizikai
+napló adminisztrációja az OpenAdmin programon belül a <A
+href='index.php?act=rlogs&do=admin'> helyreállítási naplók -> Admin </A>
+helyen történik]]></PHYSDBS_DESC>
+<PHYSFILE_DESC><![CDATA[A fizikai napló méretét adja meg. A PHYSFILE
+értéke az onparams segédprogrammal dinamikusan módosítható. <BR>A fizikai
+napló adminisztrációja az OpenAdmin programon belül a <A
+href='index.php?act=rlogs&do=admin'> helyreállítási naplók -> Admin </A>
+helyen történik]]></PHYSFILE_DESC>
+<PLCY_HASHSIZE_DESC><![CDATA[A biztonsági házirend információk
+gyorsítótárban lévő kivonat-tárolóegységek számát adja meg.]]></PLCY_HASHSIZE_DESC>
+<PLCY_POOLSIZE_DESC><![CDATA[A felhasználó LBAC hitelesítési információi
+gyorsítótár egyes kivonat-tárolóegységeiben található bejegyzések
+maximális számát adja meg.]]></PLCY_POOLSIZE_DESC>
+<PLOG_OVERFLOW_PATH_DESC><![CDATA[A fizikai naplófájl túlcsordulása
+esetén végzett gyors helyreállítás során használt fájl helyét adja
+meg. A fájlnév plog_extend.servernum és alapértelmezésben a /tmp
+könyvtárban található. Másik hely megadásakor használja a teljes elérési utat.]]></PLOG_OVERFLOW_PATH_DESC>
+<PN_STAGEBLOB_THRESHOLD_DESC><![CDATA[Területet foglal le BYTE és TEXT adatok számára körbeforgó töredékekben.]]></PN_STAGEBLOB_THRESHOLD_DESC>
+<PRELOAD_DLL_FILE_DESC><![CDATA[Az adatbázis-kiszolgáló inicializálásakor
+betöltésre kerülő megosztott függvénytár-fájl vagy dinamikus csatolású
+függvénytár (DLL) elérési útját adja meg. Ha
+több fájl kerül betöltésre, akkor minden egyes elérési út különálló
+bejegyzésként kerül megadásra.]]></PRELOAD_DLL_FILE_DESC>
+<QSTATS_DESC><![CDATA[Engedélyezi vagy letiltja a sorstatisztikák
+nyomtatását az onstat -g qst számára; 0 = Sorstatisztikák tiltása, 1 =
+Sorstatisztikák engedélyezése]]></QSTATS_DESC>
+<RA_PAGES_DESC><![CDATA[Az AUTO_READAHEAD konfigurációs paraméter letiltásakor a RA_PAGES konfigurációs paraméterrel adja meg az előre beolvasandó lemezes lapok számát. Ha az AUTO_READAHEAD konfigurációs paraméter engedélyezett és automatikus előreolvasás történik, akkor a kiszolgáló figyelmen kívül hagyja a RA_PAGES konfigurációs paraméterben megadott értéket.]]></RA_PAGES_DESC>
+<RA_THRESHOLD_DESC><![CDATA[Az RA_PAGES paraméterrel együtt
+használatos, amikor az adatbázis-kiszolgáló adatrekordok szekvenciális
+keresésekor beolvasást végez. Az RA_THRESHOLD adja meg az
+előre-beolvasási küszöbértéket; azaz a memóriában lévő,
+feldolgozatlan adatlapok azon számát, amely jelzi az
+adatbázis-kiszolgálónak, hogy a következő előre-beolvasást végre kell
+hajtani. Ha az RA_THRESHOLD értéke nagyobb, mint az RA_PAGES értéke, akkor
+az RA_THRESHOLD értéke RA_PAGES/2.]]></RA_THRESHOLD_DESC>
+<RAS_LLOG_SPEED_DESC><![CDATA[]]></RAS_LLOG_SPEED_DESC>
+<RAS_PLOG_SPEED_DESC><![CDATA[]]></RAS_PLOG_SPEED_DESC>
+<REDIRECTED_WRITES_DESC><![CDATA[Az elsődleges és másodlagos
+kiszolgálók közötti SMX adatcsatornák számát adja meg.]]></REDIRECTED_WRITES_DESC>
+<RESIDENT_DESC><![CDATA[Megadja, hogy az osztott memória rezidens
+és virtuális szegmensei rezidensek maradnak-e az operációs
+rendszer fizikai memóriájában.<BR><BR>0 = kikapcsolva<BR>1 = csak a
+rezidens szegmens zárolása<BR>n = a rezidens szegmens és a
+következő n-1 virtuális szegmens zárolása<BR>-1 = minden rezidens és
+virtuális szegmens zárolása]]></RESIDENT_DESC>
+<REMOTE_SERVER_CFG_DESC><![CDATA[Annak a fájlnak a nevét adja meg, amely a távoli hosztokat sorolja fel, amelyekben az adatbázis-kiszolgálót futtató számítógép megbízik.]]></REMOTE_SERVER_CFG_DESC>
+<REMOTE_USERS_CFG_DESC><![CDATA[A távoli hosztokon létező megbízható felhasználók neveit felsoroló fájl nevét adja meg.]]></REMOTE_USERS_CFG_DESC>
+<RESTARTABLE_RESTORE_DESC><![CDATA[Az adatbázis-kiszolgáló számára
+lehetővé teszi meghibásodott fizikai vagy hideg logikai visszaállítás
+újraindítását attól a ponttól, ahol a meghibásodás előfordult. Ha az
+ON-Bar segítségével újraindítható visszaállítást kíván végrehajtani, akkor
+használja az onbar -RESTART parancsot. Ha újraindítható
+visszaállítást tervez, akkor növelje a fizikai napló méretét. Értékei:
+Bekapcsolva vagy Kikapcsolva ]]></RESTARTABLE_RESTORE_DESC>
+<RESTORE_FILTER_DESC><![CDATA[Szűrőprogram útvonalának és esetleges
+beállításainak (például titkosítás) megadása.]]></RESTORE_FILTER_DESC>
+<RESTORE_POINT_DIR_DESC><![CDATA[Annak a könyvtárnak az útvonalát adja meg, ahol az adatbázis-kiszolgáló új változatára végzett meghiúsult frissítés visszaállítási pont fájljainak tárolása történik.]]></RESTORE_POINT_DIR_DESC>
+<ROOTNAME_DESC><![CDATA[Az adatbázis-kiszolgáló konfiguráció fő
+adatbázis-területének nevét adja meg. A névnek az adatbázis-kiszolgáló
+által kezelt összes adatbázis-területen egyedinek kell lennie. ]]></ROOTNAME_DESC>
+<ROOTOFFSET_DESC><![CDATA[A lemezterület (fájl, lemezpartíció
+vagy eszköz) foglalásbeli eltolást adja meg (kilobyte-ban), amelyen a fő
+adatbázis-terület kiinduló csonkja kezdődik.]]></ROOTOFFSET_DESC>
+<ROOTPATH_DESC><![CDATA[A fő adatbázis-terület kezdeti csonkjának teljes
+elérési útját adja meg, a eszköz vagy fájl nevével együtt. A ROOTPATH
+tárolás a fenntartott lapokon csonknévként történik. UNIX platformon a
+ROOTPATH által megadott fájl engedélyeit 660 értékre kell beállítani, a
+tulajdonos és a csoport pedig egyaránt az informix legyen. Windows
+rendszeren az Informix-Admin csoport egy tagjának kell a ROOTPATH által
+megadott fájlt birtokolnia. ]]></ROOTPATH_DESC>
+<ROOTSIZE_DESC><![CDATA[A fő adatbázis-terület kezdeti csonkjának méretét
+adja meg kilobyte-ban. Ha a ROOTSIZE értékét az adatbázis-kiszolgáló
+inicializálása után kívánja módosítani, akkor teljesen ürítse ki és
+töltse be újra az adatokat.]]></ROOTSIZE_DESC>
+<RSS_FLOW_CONTROL_DESC><![CDATA[Megadja határokat, amelyek között a folyamvezérlés engedélyezett a legalább egy RS másodlagos kiszolgálót tartalmazó magas szintű rendelkezésre állást nyújtó fürtökben. A folyamvezérlés révén csökken az elsődleges kiszolgáló naplózási tevékenysége, így a fürt RS másodlagos kiszolgálói nem maradnak le túlzottan a tranzakciók feldolgozásával.]]></RSS_FLOW_CONTROL_DESC>
+<RTO_SERVER_RESTART_DESC><![CDATA[Lehetővé teszi helyreállítási idő
+célkitűzés (RTO) szabványok használatát annak az időmennyiségnek a
+megadásához (másodpercben), amire a Dynamic Server programnak szüksége van
+egy probléma utáni helyreállításához, miután a Dynamic Server
+alkalmazást újraindítja és a kiszolgálót online vagy felfüggesztett
+módba helyezi.]]></RTO_SERVER_RESTART_DESC>
+<S6_USE_REMOTE_SERVER_CFG_DESC><![CDATA[A REMOTE_SERVER_CFG konfigurációs  paraméterrel együtt használva ez a paraméter adja meg, melyik fájlt kell a biztonságos kiszolgálókapcsolatok hitelesítéséhez használni megbízhatatlan hálózati környezetben. 1 = A REMOTE_SERVER_CFG konfigurációs paraméter által megadott fájlban felsorolt kiszolgálók megbízható kapcsolatok. 2 = A biztonságos porton keresztül csatlakozó kiszolgálók az $INFORMIXDIR/etc/host.equiv fájl segítségével kerülnek hitelesítésre az sqlhost információk között szereplő s=6 beállítás által meghatározott módon.]]></S6_USE_REMOTE_SERVER_CFG_DESC>
+<SB_CHECK_FOR_TEMP_DESC><![CDATA[Megakadályozza az ideiglenes intelligens nagy objektumok állandó táblákba másolását. 0 = Engedélyezés, 1 = Tiltás.]]></SB_CHECK_FOR_TEMP_DESC>
+<SBSPACENAME_DESC><![CDATA[Az alapértelmezett nagyobjektum-terület nevét
+adja meg. Ha adatbázistáblái olyan intelligens-nagyobjektum oszlopokat
+tartalmaznak, amelyek nem határoznak meg kifejezetten tárterületet, akkor
+az adatok tárolása az SBSPACENAME által meghatározott
+nagyobjektum-területen történik.]]></SBSPACENAME_DESC>
+<SBSPACETEMP_DESC><![CDATA[Az ideiglenes intelligens nagyobjektumok
+metaadatok és felhasználó naplózás nélküli tárolására szolgáló
+alapértelmezett ideiglenes nagyobjektum-terület nevét adja meg.]]></SBSPACETEMP_DESC>
+<SDS_ENABLE_DESC><![CDATA[SD másodlagos kiszolgáló funkcionalitást
+tesz lehetővé. Az SD másodlagos kiszolgáló funkcionalitás engedélyezéséhez
+az SDS_ENABLE paramétert 1 értékre (engedélyezés) kell beállítani mind az
+elsődleges, mind az SD másodlagos kiszolgálón.<br><br>0 = SD
+másodlagos kiszolgáló funkcionalitás letiltása.<br>1 = SD másodlagos
+kiszolgáló funkcionalitás engedélyezése.]]></SDS_ENABLE_DESC>
+<SDS_PAGING_DESC><![CDATA[A puffer-lapozófájlként szolgáló két fájl
+helyét adja meg. Ha az SDS_PAGING nincs beállítva, akkor az SD
+másodlagos kiszolgáló indítása meghiúsulhat.]]></SDS_PAGING_DESC>
+<SDS_LOGCHECK_DESC><![CDATA[Azt az időmennyiséget adja meg másodpercben, amennyit az SD másodlagos kiszolgáló annak észlelésére várakozik, hogy az elsődleges kiszolgáló előállít-e naplótevékenységet. Ha az elsődleges kiszolgáló nem állít elő naplótevékenységet a megadott időn belül, akkor engedélyezett az átállási feldolgozás indítása. Az SDS_LOGCHECK konfigurációs paraméter segítségével állapíthatja meg, hogy az elsődleges kiszolgáló előállít-e naplótevékenységet, illetve ennek segítségével engedélyezheti vagy tilthatja meg az átállást az elsődleges kiszolgálón.]]></SDS_LOGCHECK_DESC>
+<SDS_TEMPDBS_DESC><![CDATA[Az SD másodlagos kiszolgáló által az
+adatbázis-területek dinamikus létrehozásához használt információkat
+adja meg. ]]></SDS_TEMPDBS_DESC>
+<SDS_TIMEOUT_DESC><![CDATA[Azt az időmennyiséget adja meg
+másodpercben, amennyit az elsődleges kiszolgáló az SD másodlagos
+kiszolgálótól érkező naplópozíció visszaigazolásra várakozni fog.]]></SDS_TIMEOUT_DESC>
+<SECURITY_LOCALCONNECTION_DESC><![CDATA[A helyi kapcsolatok
+biztonságát ellenőrzi meggyőződve róla, hogy a programot futtató
+helyi felhasználó azonosítója és az adatbázis elérését megpróbáló
+felhasználó azonosítója ugyanaz.<br><br>0 = nem történik
+biztonság ellenőrzés.<br>1 = A Dynamic Server ellenőrzi, hogy a programot
+futtató helyi felhasználó azonosítója és az adatbázishoz csatlakozni
+próbáló felhasználó azonosítója ugyanaz-e.<br>2 = ugyanaz, mint az 1
+esetén, plusz a Dynamic Server a hálózati alkalmazás programozási
+felülettől lekéri a partner portszámát és ellenőrzi, hogy a
+kapcsolat az ügyfélprogramtól érkezik-e. Akkor adjon meg 2 értéket, ha
+rendszere SOCTCP vagy IPCSTR hálózati protokollt használ.]]></SECURITY_LOCALCONNECTION_DESC>
+<SERVERNUM_DESC><![CDATA[Relatív helyet ad meg az osztott memóriában
+0 és 255 között. Az értéknek minden egyes adatbázis-kiszolgáló esetében
+egyedinek kell lennie a helyi számítógépen, de nem a hálózaton. Mivel
+az onconfig.std fájlban az alapértelmezett érték 0, ezért a SERVERNUM
+gondatlan másolásának elkerülése érdekében válasszon 0-tól eltérő értéket.]]></SERVERNUM_DESC>
+<SEQ_CACHE_SIZE_DESC><![CDATA[Azoknak a sorozatobjektumoknak a
+maximális számát adja meg, amelyek előre-lefoglalt értékkel
+rendelkezhetnek a sorozat gyorsítótárban. Ha ez a konfigurációs paraméter
+nincs beállítva, akkor alapértelmezésben legfeljebb 10 különböző
+sorozatobjektum határozható meg a CACHE paraméterrel.]]></SEQ_CACHE_SIZE_DESC>
+<SHMADD_DESC><![CDATA[Az osztott memória virtuális részéhez
+dinamikusan hozzáadásra kerülő szegmens méretét adja meg.]]></SHMADD_DESC>
+<SHMBASE_DESC><![CDATA[Ne módosítsa az SHMBASE értékét. Azt az alapcímet
+adja meg, ahol az osztott memória a virtuális processzor
+memóriaterületéhez csatlakozik. Az osztott memória szegmensek címei az
+SHMBASE értékénél kezdődnek és az adott platformra jellemző felső korlátig nőnek.]]></SHMBASE_DESC>
+<SHMNOACCESS_DESC><![CDATA[Virtuális memória címtartományt ad meg
+az osztott memória csatlakoztatásának elkerülése érdekében.]]></SHMNOACCESS_DESC>
+<SHMTOTAL_DESC><![CDATA[Az adatbázis-kiszolgáló által a
+rendszerrel szemben támasztható memóriaigény korlátját adja meg.]]></SHMTOTAL_DESC>
+<SHMVIRT_ALLOCSEG_DESC><![CDATA[Küszöbértéket határoz meg, amelynél
+a Dynamic Server alkalmazásnak új memóriaszegmenst kell lefoglalnia és
+megadja a riasztási szintet, ami akkor kerül aktiválásra, ha a kiszolgáló
+az új memóriaszegmenst nem tudja lefoglalni így biztosítva, hogy a
+kiszolgáló sohasem fusson ki a memóriából. A riasztási szint aktiválása
+után a riasztás 30 percenként ismétlődik, ha nem foglalható le új
+memóriaszegmens.<br><br>A riasztási szint értékek 1-től 5-ig
+terjedhetnek, ahol:<br>1 = Jelentéktelen<br>2 = Információ<br>3 =
+Figyelem<br>4 = Vészhelyzet<br>5 = Végzetes]]></SHMVIRT_ALLOCSEG_DESC>
+<SHMVIRTSIZE_DESC><![CDATA[A virtuális osztott memória szegmens
+kiinduló méretét adja meg.]]></SHMVIRTSIZE_DESC>
+<SINGLE_CPU_VP_DESC><![CDATA[Megadja hogy az adatbázis-kiszolgáló
+csak egy CPU virtuális processzorral fut-e. 0 = Több CPU VP processzorral
+fut; Bármely nullától különböző szám = Csak 1 CPU VP processzorral fut.]]></SINGLE_CPU_VP_DESC>
+<SMX_COMPRESS_DESC><![CDATA[Az adatbázis-kiszolgáló által használt tömörítési szintet adja meg, mielőtt az az adatokat a forrás adatbázis-kiszolgálóról a cél adatbázis-kiszolgálóra küldi.]]></SMX_COMPRESS_DESC>
+<SORT_MERGE_SIZE_DESC><![CDATA[]]></SORT_MERGE_SIZE_DESC>
+<SP_AUTOEXPAND_DESC><![CDATA[Engedélyezi vagy letiltja a csonkok
+automatikus létrehozását vagy kiterjesztését a tárolóterületen.]]></SP_AUTOEXPAND_DESC>
+<SP_THRESHOLD_DESC><![CDATA[Azt a minimális területmennyiséget határozza
+meg a tárolókészletben, amelyre az adatbázis-kiszolgálónak egy terület
+kiterjesztéséhez szüksége van. 50 vagy az alatti érték százalékos értéket jelent. Az 1000 és annál nagyobb értékek kilobyte-ot jelentenek.]]></SP_THRESHOLD_DESC>
+<SP_WAITTIME_DESC><![CDATA[A másodpercek maximális számát adja meg,
+amennyit a szál a adatbázis-terület, ideiglenes adatbázis-terület, nagyobjektum-terület, ideiglenes nagyobjektum-terület vagy
+blob-terület kiterjesztésére várakozik, mielőtt nincs elegendő terület hibát ad
+vissza.]]></SP_WAITTIME_DESC>
+<SQL_LOGICAL_CHAR_DESC><![CDATA[Engedélyezi vagy letiltja a méretspecifikációk kibontását a beépített karakteres adattípusok deklarációiban.]]></SQL_LOGICAL_CHAR_DESC>
+<SQLTRACE_DESC><![CDATA[Az SQL nyomkövetési szolgáltatás
+indítási környezetét vezérli.]]></SQLTRACE_DESC>
+<SSL_KEYSTORE_LABEL_DESC><![CDATA[A Védett socket réteg (SSL)
+kulcsokat és digitális tanúsítványokat tároló
+kulcstároló-adatbázisban használt kiszolgáló digitális
+tanúsítványok azonosítóját adja meg.]]></SSL_KEYSTORE_LABEL_DESC>
+<STACKSIZE_DESC><![CDATA[Az adatbázis-kiszolgáló felhasználói
+szálainak veremméretét adja meg.]]></STACKSIZE_DESC>
+<STAGEBLOB_DESC><![CDATA[Annak a területnek a blob-terület nevét adja meg,
+ahol az Optikai alrendszer azokat a TEXT és BYTE adatokat
+állomásoztatja, amelyek cél tárolási területe optikai lemezen található.]]></STAGEBLOB_DESC>
+<STATCHANGE_DESC><![CDATA[Ha az UPDATE STATISTICS műveletek automatikus
+üzemmódja engedélyezett, akkor azt a minimális százalékos változást adja
+meg, aminek a táblázatban vagy töredékben be kell következnie ahhoz, hogy a
+terjesztési statisztikák frissíthetőnek minősüljenek.]]></STATCHANGE_DESC>
+<STMT_CACHE_DESC><![CDATA[Megadja, hogy az adatbázis-kiszolgáló
+használja-e az SQL utasítás gyorsítótárat.<br>0 = Nem használja az SQL
+utasítás gyorsítótárat.<br>1 = Az SQL utasítás gyorsítótár engedélyezett,
+de a felhasználó munkamenetek a gyorsítótárat nem használják kivéve, ha az
+STMT_CACHE környezeti változót 1 értékre állítják vagy munkamenetükön
+végrehajtják a SET STATEMENT CACHE ON SQL utasítást.<br>2 = SQL
+utasítás gyorsítótár bekapcsolva. Minden utasítás a gyorsítótárba kerül.]]></STMT_CACHE_DESC>
+<STMT_CACHE_HITS_DESC><![CDATA[Az utasítás találatainak
+(hivatkozásainak) számát adja meg, mielőtt az teljesen
+beillesztésre kerül az SQL utasítás gyorsítótárba. A lehetséges értékeket
+az alábbi táblázat írja le.<br><br>0 = Minden minősített utasítást
+teljesen beilleszt az SQL utasítás gyorsítótárba<br>n>0 = Az
+utasítások az utasításszám elérésig csak-kulcs bejegyzéseket kapnak
+és minden teljes képzésű utasítás beillesztésre kerül a gyorsítótárba.<br>n>1
+= Megakadályozza az alkalmi lekérdezésék bekerülését a gyorsítótárba.]]></STMT_CACHE_HITS_DESC>
+<STMT_CACHE_NOLIMIT_DESC><![CDATA[Azt szabályozza, hogy a
+minősített utasításokat be kell-e illeszteni az SQL utasítás
+gyorsítótárba. A lehetséges értékeket az alábbi táblázat írja le. 0 =
+Az utasítások beillesztését a gyorsítótárba nagy
+mennyiségű gyorsítótár-memória lefoglalásának elkerülése
+érdekében megakadályozza; 1 = Az utasításokat mindig beilleszti az SQL
+utasítás gyorsítótárba, tekintet nélkül a gyorsítótár méretére.]]></STMT_CACHE_NOLIMIT_DESC>
+<STMT_CACHE_NUMPOOL_DESC><![CDATA[Az SQL utasítás gyorsítótár
+memóriatárainak számát adja meg. A memóriatárakkal kapcsolatos információk
+az onstat -g ssc pool parancs segítségével kérdezhetők le.]]></STMT_CACHE_NUMPOOL_DESC>
+<STMT_CACHE_SIZE_DESC><![CDATA[Az SQL utasítás gyorsítótárak méretét
+adja meg kilobyte-ban. Az új gyorsítótárméret akkor lép életbe, amikor a
+gyorsítótárba legközelebb utasítás kerül.]]></STMT_CACHE_SIZE_DESC>
+<STOP_APPLY_DESC><![CDATA[Másodlagos RS kiszolgálón leállítja az elsődleges kiszolgálótól kapott naplófájlok alkalmazását.]]></STOP_APPLY_DESC>
+<STORAGE_FULL_ALARM_DESC><![CDATA[Az üzenetek és riasztások gyakoriságát és
+fontosságát állítja be, amikor a tárterületek megtelnek.]]></STORAGE_FULL_ALARM_DESC>
+<SYSALARMPROGRAM_DESC><![CDATA[Az evidence.sh parancsfájl teljes
+elérési útját adja meg. Az adatbázis-kiszolgáló az evidence.sh
+parancsfájlt adatbázis-kiszolgáló hiba előfordulásakor hajtja végre. A
+technikai támogatás az evidence.sh script parancsfájl kimenetét használja
+az adatbázis-kiszolgáló hiba diagnosztizálásához. Windows&reg; platformon
+a sikeres végrehajtáshoz az evidence.bat parancskiterjesztéseit
+engedélyezni kell. ]]></SYSALARMPROGRAM_DESC>
+<SYSSBSPACENAME_DESC><![CDATA[Annak a nagyobjektum-területnek a
+nevét adja meg, ahol az adatbázis-kiszolgáló az UPDATE STATISTICS
+utasítás által bizonyos felhasználói adattípusokról gyűjtött
+statisztikákat tárolja.]]></SYSSBSPACENAME_DESC>
+<TAPEBLK_DESC><![CDATA[Annak az eszköznek a blokkméretét adja meg, amelyre
+az ontape tárterület mentés során ír. Az TAPEBLK annak az eszköznek az
+alapértelmezett blokkméretét is megadja, ahová adatok kerülnek
+betöltésre vagy onnan kiürítésre az onload vagy onunload
+segédprogramokok használatakor.]]></TAPEBLK_DESC>
+<TAPEDEV_DESC><![CDATA[Annak az eszköznek vagy könyvtárnak a
+fájlrendszerét adja meg, amelyre az ontape tárterületeket ment. A
+TAPEDEV az alapértelmezett eszközt is megadja, ahová adatok kerülnek
+betöltésre vagy onnan kiürítésre az onload vagy onunload
+segédprogramokok használatakor.]]></TAPEDEV_DESC>
+<TAPESIZE_DESC><![CDATA[Annak az eszköznek a méretét adja meg, amelyre az
+ontape tárterületeket ment. Annak az alapértelmezett eszköznek a nevét is
+megadja, ahová adatok kerülnek betöltésre vagy onnan kiürítésre az onload
+vagy onunload segédprogramokok használatakor. A szalag teljes fizikai kapacitásának használatához állítsa 0-ra a TAPESIZE értékét.]]></TAPESIZE_DESC>
+<TBLSPACE_STATS_DESC><![CDATA[A táblaterület statisztikák gyűjtését
+kapcsolja be és ki. 0 = Kikapcsolva, 1 = Bekapcsolva.]]></TBLSPACE_STATS_DESC>
+<TBLTBLFIRST_DESC><![CDATA[A tblspace táblaterület első kiterjedésméretét
+adja meg a fő adatbázis-területen.]]></TBLTBLFIRST_DESC>
+<TBLTBLNEXT_DESC><![CDATA[A tblspace táblaterület következő
+kiterjedésméretét adja meg a fő adatbázis-területen.]]></TBLTBLNEXT_DESC>
+<TEMPTAB_NOLOG_DESC><![CDATA[Letiltja az ideiglenes táblák naplózását.<BR><BR>0
+= Ideiglenes tábla műveletek logikai naplózásának engedélyezése.<BR>1 =
+Ideiglenes tábla műveletek logikai naplózásának tiltása.]]></TEMPTAB_NOLOG_DESC>
+<TXTIMEOUT_DESC><![CDATA[Azt az időmennyiséget adja meg, amennyit egy
+kétfázisú véglegesítés résztvevője vár, mielőtt résztvevő-helyreállítást
+kezdeményez. Ez a paraméter csak távoli adatbázis-kiszolgálót érintő,
+osztott lekérdezések esetében használatos.]]></TXTIMEOUT_DESC>
+<UNSECURE_ONSTAT_DESC><![CDATA[Ha értéke 1, akkor minden felhasználó számára
+lehetővé teszi a futó SQL utasítások megjelenítését.]]></UNSECURE_ONSTAT_DESC>
+<UPDATABLE_SECONDARY_DESC><![CDATA[Az elsődleges és másodlagos kiszolgálók között kialakítandó kapcsolatok számát állítja be. Ennek a konfigurációs paraméternek a beállítása teszi lehetővé az ügyfélalkalmazások számára frissítési, beszúrási és törlési műveletek végrehajtását magas szintű rendelkezésre állású másodlagos kiszolgálón.]]></UPDATABLE_SECONDARY_DESC>
+<USERMAPPING_DESC><![CDATA[Azt jelzi, hogy az adatbázis-kiszolgáló
+elfogadja-e leképezett felhasználók csatlakozását és ha igen, akkor ezek a
+felhasználók kaphatnak-e adminisztrátori jogosultságokat. BASIC = A leképezett
+felhasználóknak alapszintű jogosultságaik lehetnek. ADMIN = A leképezett
+felhasználóknak adminisztrátori jogosultságaik lehetnek. OFF = A felhasználók
+leképezése ki van kapcsolva.]]></USERMAPPING_DESC>
+<USE_BATCHEDREAD_DESC><![CDATA[]]></USE_BATCHEDREAD_DESC>
+<USE_KOBATCHEDREAD_DESC><![CDATA[]]></USE_KOBATCHEDREAD_DESC>
+<USELASTCOMMITTED_DESC><![CDATA[Azt az elkülönítési szintet adja
+meg, amelyre a COMMITTED READ elkülönítési szint LAST COMMITTED
+szolgáltatása kifejezetten érvényben van.]]></USELASTCOMMITTED_DESC>
+<USEOSTIME_DESC><![CDATA[Megadja, hogy az adatbázis-kiszolgálónak
+másodperc-alatti pontosságot kell-e használnia, amikor az
+operációs rendszertől az SQL utasítások számára lekérdezi az
+aktuális időt. 0 = Kikapcsolva, 1 = Bekapcsolva.]]></USEOSTIME_DESC>
+<USRC_HASHSIZE_DESC><![CDATA[A felhasználó LBAC hitelesítési információi
+gyorsítótár kivonat-tárolóegységeiben található bejegyzések számát adja meg.]]></USRC_HASHSIZE_DESC>
+<USRC_POOLSIZE_DESC><![CDATA[A felhasználó LBAC hitelesítési információi
+gyorsítótár egyes kivonat-tárolóegységeiben található bejegyzések
+maximális számát adja meg.]]></USRC_POOLSIZE_DESC>
+<USTLOW_SAMPLE_DESC><![CDATA[Engedélyezi a mintavételezést az UPDATE STATISTICS LOW műveletek által végzett statisztikai adatgyűjtés során. Több, mint 100K levél oldalt tartalmazó index esetén a mintavételezésből végzett statisztikai adatgyűjtés növelheti az UPDATE STATISTICS LOW műveletek sebességét.]]></USTLOW_SAMPLE_DESC> 
+<VP_MEMORY_CACHE_KB_DESC><![CDATA[Az adatbázis-kiszolgáló számára
+lehetővé teszi a CPU VP privát memóriablokkjainak elérését.]]></VP_MEMORY_CACHE_KB_DESC>
+<VPCLASS_DESC><![CDATA[A felhasználó számára virtuális processzorokból
+(VP) álló osztály kijelölését, felhasználói VP létrehozását és a szükséges
+paraméterek megadását teszi lehetővé.]]></VPCLASS_DESC>
+<WSTATS_DESC><![CDATA[Az onstat -g wst parancs számár engedélyezi a
+a szálak várakozási statisztikáinak nyomtatását a rendszeren belül.]]></WSTATS_DESC>
+<NO_DESC_FOUND><![CDATA[Nem találhatók leírás]]></NO_DESC_FOUND>
+<ON_RECOMMEND><![CDATA[Ezt az onconfig paramétert ajánlatos
+bekapcsolni (1 értékre beállítani).]]></ON_RECOMMEND>
+<OFF_RECOMMEND><![CDATA[Ezt az onconfig paramétert ajánlatos kikapcsolni
+(0 értékre beállítani).]]></OFF_RECOMMEND>
+<ZERO_RECOMMEND><![CDATA[Ezt az onconfig paramétert ajánlatos nulla
+értékre beállítani.]]></ZERO_RECOMMEND>
+<NONTEMP_RECOMMEND><![CDATA[Ezt az onconfig paramétert nem ajánlott
+null értékre állítani és nem szabad a kiszolgálógép temp
+könyvtárára mutatnia.]]></NONTEMP_RECOMMEND>
+<AFF_NPROCS_SPROC_RECOMMEND><![CDATA[Az AFF_SPROC és az AFF_NPROC értéke
+közötti különbségnek ajánlatos a fizikai processzorok számánál nagyobbnak
+lennie.  A fizikai processzorok száma a(z) {0} számítógépen.]]></AFF_NPROCS_SPROC_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND><![CDATA[Az ALARAMPROGRAM paramétert ajánlott
+"$INFORMIXDIR/etc/alarmprogram.sh" (UNIX/Linux) vagy
+"$INFORMIXDIR/etc/alarmprogram.bat" (Windows) értékre beállítani.]]></ALARMPROGRAM_RECOMMEND>
+<ALARMPROGRAM_RECOMMEND_NO><![CDATA[Úgy tűnik, hogy az ALARMPROGRAM
+pillanatnyilag nincs érvényes helyre beállítva.]]></ALARMPROGRAM_RECOMMEND_NO>
+<BAR_DEBUG_RECOMMEND><![CDATA[Ajánlott a BAR_DEBUG értékét nullán
+tartani, hacsak a technikai támogatás bizonyos probléma felderítése
+érdekében másképp nem javasolta.]]></BAR_DEBUG_RECOMMEND>
+<BAR_NB_XPORT_COUNT_RECOMMEND><![CDATA[A BAR_NB_XPORT_COUNT paramétert
+ajánlatos 5 és 99 közötti értékre beállítani]]></BAR_NB_XPORT_COUNT_RECOMMEND>
+<BAR_XFER_BUF_SIZE_RECOMMEND_15><![CDATA[A kiszolgáló lapmérete 4K.  Ajánlott
+tehát a BAR_XFER_BUF_SIZE értékét 15-re beállítani.]]></BAR_XFER_BUF_SIZE_RECOMMEND_15>
+<BAR_XFER_BUF_SIZE_RECOMMEND_31><![CDATA[A kiszolgáló lapmérete 2K.  Ajánlott
+tehát a BAR_XFER_BUF_SIZE értékét 31-re beállítani.]]></BAR_XFER_BUF_SIZE_RECOMMEND_31>
+<BTSCANNER_RECOMMEND><![CDATA[A BTSCANNER értéke nem lehet null.  Alice
+keresési beállítást kell tartalmaznia, ami nem-nulla]]></BTSCANNER_RECOMMEND>
+<CCFLAGS_RECOMMEND><![CDATA[Ajánlott a CCFLAGS értékét nullán
+tartani, hacsak a technikai támogatás bizonyos probléma felderítése
+érdekében másképp nem javasolta.]]></CCFLAGS_RECOMMEND>
+<CKPTINTVL_RECOMMEND><![CDATA[A CKPTINTVL paramétert 30 másodperc
+vagy nagyobb értékre ajánlott beállítani.]]></CKPTINTVL_RECOMMEND>
+<CLEANERS_RECOMMEND><![CDATA[A CLEANERS értékét ajánlott a virtuális
+processzorok és csonkok számának minimumára beállítani.  Az aktuális
+kiszolgálón a tisztítók javasolt száma: ]]></CLEANERS_RECOMMEND>
+<DATASKIP_RECOMMEND><![CDATA[A DATASKIP paramétert ajánlott 'OFF' értékre beállítani.]]></DATASKIP_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND><![CDATA[A DB_LIBRARY_PATH összes összetevőjét
+ajánlott az $INFOMRIXDIR könyvtárban elhelyezni.]]></DB_LIBRARY_PATH_RECOMMEND>
+<DB_LIBRARY_PATH_RECOMMEND_NO><![CDATA[Ezen a kiszolgálón olyan
+DB_LIBRARY_PATH összetevők vannak, amelyek nem az $INFORMIXDIR könyvtárban
+találhatók.  Ha ez szándékos, akkor biztonsági okokból ellenőrizze, hogy
+ezen külső könyvtárak tulajdonosa az informix felhasználó-e és írási joga
+szintén csak az informix felhasználónak van-e.]]></DB_LIBRARY_PATH_RECOMMEND_NO>
+<DBSPACETEMP_RECOMMEND><![CDATA[A DBSPACETEMP értéke nem lehet null és
+minden egyes felsorolt területnek létező ideiglenes adatbázis-területnek
+kell lennie.]]></DBSPACETEMP_RECOMMEND>
+<DEF_TABLE_LOCKMODE_RECOMMEND_ROW><![CDATA[Zárolási várakozások vannak a
+kiszolgálón.  A DEF_TABLE_LOCKMODE paramétert ajánlott 'row' étékre
+beállítani.]]></DEF_TABLE_LOCKMODE_RECOMMEND_ROW>
+<DEF_TABLE_LOCKMODE_RECOMMEND><![CDATA[Az általános ajánlás szerint a
+DEF_TABLE_LOCKMODE paramétert ajánlott 'row' értékre beállítani.  Ha jelenlegi
+beállítása 'page' és zárolási várakozások vannak a kiszolgálón, ezért
+ajánlott a DEF_TABLE_LOCKMODE értékét 'row' értékre módosítani.  A
+DEF_TABLE_LOCKMODE azonban már 'row' értékre van beállítva VAGY
+pillanatnyilag nincsenek zárolási várakozások a kiszolgálón.]]></DEF_TABLE_LOCKMODE_RECOMMEND>
+<DS_NONPDQ_QUERY_MEM_RECOMMEND><![CDATA[A DS_NONPDQ_QUERY_MEM értékének
+ajánlott 512 vagy több kilobyte-nak lennie.  Nézze meg a DS_TOTAL_MEMORY
+beállítását is, mivel a DS_NONPDQ_QUERY_MEMORY a DS_TOTAL_MEMORY értékének
+25 százalékát nem haladhatja meg.]]></DS_NONPDQ_QUERY_MEM_RECOMMEND>
+<DS_TOTAL_MEMORY_RECOMMEND><![CDATA[A DS_TOTAL_MEMORY értékének legalább
+2048 KB-nak kell lennie és a DS_NONPDQ_QUERY_MEM méretének négyszeresénél
+nagyobbnak vagy azzal egyenlőnek kell lennie.]]></DS_TOTAL_MEMORY_RECOMMEND>
+<EXTSHMADD_RECOMMEND_OK><![CDATA[A kiszolgáló kiterjesztés virtuális szegmenseinek mérete alapján az EXTSHMADD jelenlegi értéke az OpenAdmin Tool ajánlását követi.]]></EXTSHMADD_RECOMMEND_OK>
+<EXTSHMADD_RECOMMEND_NO><![CDATA[A kiszolgáló kiterjesztés virtuális
+szegmenseinek mérete alapján az EXTSHMADD értékét ajánlott a következőnél
+nagyobbra vagy azzal egyenlő értékre növelnie: ]]></EXTSHMADD_RECOMMEND_NO>
+<FILLFACTOR_RECOMMEND><![CDATA[A FILLFACTOR értékét 40 és 98
+százalék közötti értékre ajánlott beállítani.]]></FILLFACTOR_RECOMMEND>
+<LISTEN_TIMEOUT_RECOMMEND><![CDATA[A LISTEN_TIMEOUT értékét 2 másodpercnél
+nagyobb, de 180 másodpercnél kisebb értékre ajánlott beállítani.]]></LISTEN_TIMEOUT_RECOMMEND>
+<LOCKS_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgáló összes zárolásainak száma a LOCKS paraméterben megadott értéke soha nem haladta meg, ezért a LOCKS jelenlegi értéke megfelel az OpenAdmin Tool ajánlásának.]]></LOCKS_RECOMMEND_OK>
+<LOCKS_RECOMMEND_NO><![CDATA[A kiszolgáló zárolási táblája a LOCKS
+paraméterben megadott méretet túllépte.  Próbálja meg növelni LOCKS értékét
+10 százalékkal.]]></LOCKS_RECOMMEND_NO>
+<LOGBUFF_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgáló logikai napló írásai alapján a LOGBUFF aktuális értéke megfelel az OpenAdmin Tool ajánlásának.]]></LOGBUFF_RECOMMEND_OK>
+<LOGBUFF_RECOMMEND_NO><![CDATA[Az adatbázis-kiszolgáló logikai napló
+írásai alapján a LOGBUFF aktuális értéke alacsony.  Próbálja meg növelni
+LOGBUFF értékét 10 százalékkal.]]></LOGBUFF_RECOMMEND_NO>
+<LTAPEBLK_RECOMMEND_LOW><![CDATA[Az LTAPEBLK jelenlegi beállítása
+alacsony.  Vizsgálja
+meg a szalagos meghajtó meghatározásokat, mivel a legtöbb szalagos
+meghajtó a jelenlegi konfigurációnál nagyobb blokkméretet támogat.  A LTAPEBLK növelése javíthatja a mentések és
+visszaállítások teljesítményét.]]></LTAPEBLK_RECOMMEND_LOW>
+<LTAPEBLK_RECOMMEND_HIGH><![CDATA[Az LTAPEBLK jelenlegi beállítása túl
+magas.  Vizsgálja meg a szalagos meghajtó meghatározásokat és győződjön meg
+róla, hogy azok képesek ilyen nagy érték támogatására.]]></LTAPEBLK_RECOMMEND_HIGH>
+<LTXHWM_RECOMMEND><![CDATA[Az LTXHWM értékének kisebbnek kell lennie az
+LTXEHWM értékénél.  Az LTXHWM értékét 25 és 80 százalék közötti
+értékre ajánlott beállítani.]]></LTXHWM_RECOMMEND>
+<LTXEHWM_RECOMMEND><![CDATA[Az LTXHWM értékének kisebbnek kell lennie az
+LTXEHWM értékénél.  Az LTXEHWM értékét 25 és 90 százalék közötti értékre
+ajánlott beállítani.]]></LTXEHWM_RECOMMEND>
+<MULTIPROCESSOR_RECOMMEND_ON><![CDATA[Rendszerkonfigurációja alapján a
+MULTIPROCESSOR paramétert ajánlott bekapcsolnia.]]></MULTIPROCESSOR_RECOMMEND_ON>
+<MULTIPROCESSOR_RECOMMEND_OFF><![CDATA[Rendszerkonfigurációja alapján a
+MULTIPROCESSOR paramétert ajánlott kikapcsolnia.]]></MULTIPROCESSOR_RECOMMEND_OFF>
+<NUMCPUVPS_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgáló teljesítménye alapján a NUMCPUVPS jelenlegi értéke megfelel az OpenAdmin Tool ajánlásának.]]></NUMCPUVPS_RECOMMEND_OK>
+<NUMCPUVPS_RECOMMEND_NO><![CDATA[Az adatbázis-kiszolgáló teljesítménye
+alapján ajánlott a NUMCPUVPS értékét növelnie.]]></NUMCPUVPS_RECOMMEND_NO>
+<NUMCPUVPS_RECOMMEND_ATMAX><![CDATA[Az adatbázis-kiszolgáló teljesítménye
+alapján ajánlott lenne a NUMCPUVPS értékét növelnie.  A NUMCPUVPS értéke
+azonban már a rendszeren lehetséges maximális értékre van beállítva.  Ezért
+a teljesítmény javítása érdekében ajánlott további hardvert vásárolnia.]]></NUMCPUVPS_RECOMMEND_ATMAX>
+<PHYSBUFF_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgáló fizikai napló írásai alapján a PHYSBUFF aktuális értéke megfelel az OpenAdmin Tool ajánlásának.]]></PHYSBUFF_RECOMMEND_OK>
+<PHYSBUFF_RECOMMEND_NO><![CDATA[Az adatbázis-kiszolgáló fizikai napló
+írásai alapján a PHYSBUFF aktuális értéke alacsony.  Próbálja meg növelni
+PHYSBUFF értékét 10 százalékkal.]]></PHYSBUFF_RECOMMEND_NO>
+<RESIDENT_RECOMMEND><![CDATA[A RESIDENT paramétert ajánlatos
+kikapcsolni.  Ha a kiszolgálón a RESIDENT értéke 0, akkor fontolja meg
+annak módosítását 2 vagy -1 értékre.]]></RESIDENT_RECOMMEND>
+<RTO_SERVER_RESTART_RECOMMEND><![CDATA[Az RTO_SERVER_RESTART paramétert
+nem ajánlott letiltani (azaz 0 értékre állítani).]]></RTO_SERVER_RESTART_RECOMMEND>
+<QSTATS_RECOMMEND><![CDATA[A QSTATS bekapcsolása esetén jelentős hatással
+lehet a teljesítményre, ezért éles rendszereken ajánlott a QSTATS
+kikapcsolása kivéve, ha a Technikai támogatás javasolta a bekapcsolását
+adott probléma felderítése érdekében.]]></QSTATS_RECOMMEND>
+<SHMADD_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgálón található virtuális memória szegmensek száma alapján az SHMADD jelenlegi értéke megfelel az OpenAdmin Tool ajánlásának.]]></SHMADD_RECOMMEND_OK>
+<SHMADD_RECOMMEND_NO><![CDATA[Az adatbázis-kiszolgálón található virtuális
+memória szegmensek száma alapján az SHMADD értékét ajánlott növelnie.]]></SHMADD_RECOMMEND_NO>
+<SHMTOTAL_RECOMMEND_OK><![CDATA[A kiszolgáló osztott memória felhasználása alapján az SHMTOTAL jelenlegi értéke az OpenAdmin Tool ajánlását követi.]]></SHMTOTAL_RECOMMEND_OK>
+<SHMTOTAL_RECOMMEND_NO><![CDATA[Ha az adatbázis-kiszolgáló az SHMTOTAL
+korlátot eléri, akkor alkalmazáshibák fordulhatnak elő.  A kiszolgáló
+osztott memória felhasználása alapján ajánlatos az SHMTOTAL értékét a
+következőnél nagyobbra vagy azzal egyenlő értékűre növelnie: ]]></SHMTOTAL_RECOMMEND_NO>
+<SHMVIRTSIZE_RECOMMEND_OK><![CDATA[Az adatbázis-kiszolgálón található virtuális memória szegmensek száma alapján az SHMVIRTSIZE jelenlegi értéke megfelel az OpenAdmin Tool ajánlásának.]]></SHMVIRTSIZE_RECOMMEND_OK>
+<SHMVIRTSIZE_RECOMMEND_NO><![CDATA[Az adatbázis-kiszolgálón található
+virtuális memória szegmensek száma alapján ajánlatos az SHMVIRTSIZE értékét a
+következőnél nagyobbra vagy azzal egyenlő értékűre növelnie: ]]></SHMVIRTSIZE_RECOMMEND_NO>
+<SBSPACETEMP_RECOMMEND><![CDATA[A kiszolgálón nagyobjektum-területek
+találhatók.  Ezért az SBSPACETEMP értéke nem lehet null és
+minden egyes felsorolt területnek létező ideiglenes nagyobjektum-területnek
+kell lennie.]]></SBSPACETEMP_RECOMMEND>
+<SINGLE_CPU_VP_RECOMMEND_ON><![CDATA[Az adatbázis-kiszolgáló számítógépen csak egy fizikai processzor található.  Ezért a SINGLE_CPU_VPS
+paramétert ajánlott bekapcsolnia.]]></SINGLE_CPU_VP_RECOMMEND_ON>
+<SINGLE_CPU_VP_RECOMMEND_ON_CHECK><![CDATA[A SINGLE_CPU_VP által
+megvalósított korlátozások megértéséhez ajánlott elolvasnia a
+kézikönyvet és megfontolni a paraméter bekapcsolását.]]></SINGLE_CPU_VP_RECOMMEND_ON_CHECK>
+<SYSALARMPROGRAM_RECOMMEND><![CDATA[A SYSALARAMPROGRAM paramétert
+ajánlott "$INFORMIXDIR/etc/evidence.sh" (UNIX/Linux) vagy
+"$INFORMIXDIR/etc/evidence.bat" (Windows) értékre beállítani.]]></SYSALARMPROGRAM_RECOMMEND>
+<SYSALARMPROGRAM_RECOMMEND_NO><![CDATA[Úgy tűnik azonban, hogy a
+SYSALARMPROGRAM pillanatnyilag nincs érvényes helyre beállítva.]]></SYSALARMPROGRAM_RECOMMEND_NO>
+<TAPEBLK_RECOMMEND_LOW><![CDATA[A TAPEBLK jelenlegi beállítása alacsony.  Vizsgálja
+meg a szalagos meghajtó meghatározásokat, mivel a legtöbb szalagos
+meghajtó a jelenlegi konfigurációnál nagyobb blokkméretet támogat.  A
+TAPEBLK növelése javíthatja a mentések és visszaállítások teljesítményét.]]></TAPEBLK_RECOMMEND_LOW>
+<TAPEBLK_RECOMMEND_HIGH><![CDATA[A TAPEBLK jelenlegi beállítása túl
+magas.  Vizsgálja meg a szalagos meghajtó meghatározásokat és győződjön meg
+róla, hogy azok képesek ilyen nagy érték támogatására.]]></TAPEBLK_RECOMMEND_HIGH>
+<TBLTBLFIRST_RECOMMEND><![CDATA[A TBLTBLFIRST értékét ajánlott a
+kiszolgáló táblaterület partícióinak átlagos méretével azonos vagy annál
+nagyobb értékre beállítani.  A rendszer táblaterület partícióinak jelenlegi
+mérete a következő: <BR>]]></TBLTBLFIRST_RECOMMEND>
+<TBLTBLNEXT_RECOMMEND><![CDATA[A TBLTBLFIRST értékét ajánlott a kiszolgáló
+táblaterület partíciók átlagos méretének 25 százalékával azonos vagy annál
+nagyobb értékre beállítani.  A rendszer táblaterület partícióinak jelenlegi
+mérete a következő: <BR>]]></TBLTBLNEXT_RECOMMEND>
+<TEMPTAB_NOLOG_RECOMMEND><![CDATA[HDR vagy Mach11 környezet
+használata esetén, ha az alkalmazások azt támogatják, akkor ajánlott a
+TEMPTAB_NOLOG paramétert bekapcsolni, hogy az ideiglenes táblaműveletek
+logikai naplózása letiltásra kerüljön.  A paraméter bekapcsolása
+javíthatja a replikációs környezet teljesítményét.]]></TEMPTAB_NOLOG_RECOMMEND>
+<TRACEFLAGS_RECOMMEND><![CDATA[A TRACEFLAGS bekapcsolása esetén hatással
+lehet a teljesítményre, ezért éles rendszereken ajánlott a TRACEFLAGS
+kikapcsolása (0 értékre állítása) kivéve, ha a Technikai támogatás
+javasolta a bekapcsolását adott probléma felderítése érdekében.]]></TRACEFLAGS_RECOMMEND>
+<TRACES_RECOMMEND><![CDATA[A TRACES bekapcsolása esetén hatással lehet a
+teljesítményre, ezért éles rendszereken ajánlott a TRACES kikapcsolása (0
+értékre állítása) kivéve, ha a Technikai támogatás javasolta a
+bekapcsolását adott probléma felderítése érdekében.]]></TRACES_RECOMMEND>
+<WSTATS_RECOMMEND><![CDATA[A WSTATS bekapcsolása esetén jelentős hatással
+lehet a teljesítményre, ezért éles rendszereken ajánlott a WSTATS
+kikapcsolása kivéve, ha a Technikai támogatás javasolta a bekapcsolását adott probléma
+felderítése érdekében.]]></WSTATS_RECOMMEND>
+</lang>

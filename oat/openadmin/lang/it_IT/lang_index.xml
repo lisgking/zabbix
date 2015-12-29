@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[Versione PHP minima richiesta: 5.2.4.  Versione PHP trovata:]]></MinPHPVersion>
+<GenTime><![CDATA[Ora di generazione]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[OAT richiede Informix versione 11.10 o superiore.]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[Il plug-in {0} richiede Informix versione {1}.]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[Funzione di esecuzione non presente nel modulo {0}.]]></NoModuleRunFunction>
+<SorryModule><![CDATA[L'URL non è un indirizzo di pagina OAT valido. Impossibile trovare il modulo {0} nella directory di moduli OAT. Verificare che il nome del modulo corrisponda alla parola chiave "act" nell'URL.]]></SorryModule>
+<InvalidURL_do_param><![CDATA[L'URL non è un indirizzo di pagina OAT valido. Fare clic su un elemento nel menu OAT o su un link nella pagina OAT per visualizzare le pagine OAT.]]></InvalidURL_do_param>
+</lang>

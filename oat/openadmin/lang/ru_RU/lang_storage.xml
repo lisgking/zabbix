@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[Хранение]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[Оптимизация пространства]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[Функция сжатия доступна только в указанной и последующих версиях сервера:]]></CompressOnlyAvail>
+<ErrorF><![CDATA[Ошибка:]]></ErrorF>
+<NoOwner><![CDATA[Владелец не указан]]></NoOwner>
+<NoTable><![CDATA[Таблица не указана]]></NoTable>
+<InvalidDB><![CDATA[Ошибочная база данных]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[Недостаточно строк в таблице]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[Недостаточно строк во фрагменте]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[Номер раздела]]></PartNum>
+<required><![CDATA[Обязательный]]></required>
+<actual><![CDATA[Фактический]]></actual>
+<Failed><![CDATA[НЕУДАЧНО]]></Failed>
+<ErrorMultipleLocales><![CDATA[На этой странице OpenAdmin Tool не может вывести информацию для сервера баз данных с несколькими неанглийскими локалями базы данных. Сервер баз данных содержит несколько неанглийских локалей базы данных.]]></ErrorMultipleLocales>
+</lang>

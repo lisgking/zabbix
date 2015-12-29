@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="DashBoard" targetNamespace="urn:DashBoard"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:DashBoard"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:DashBoard">
+
+			<xsd:import
+				namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+
+			<xsd:complexType name="getDBSpaceByIdResult">
+				<xsd:all>
+					<xsd:element name="dbsnum" type="xsd:int" />
+					<xsd:element name="name" type="xsd:string" />
+					<xsd:element name="owner" type="xsd:string" />
+					<xsd:element name="pagesize" type="xsd:int" />
+					<xsd:element name="fchunk" type="xsd:int" />
+					<xsd:element name="nchunks" type="xsd:int" />
+					<xsd:element name="is_mirrored" type="xsd:int" />
+					<xsd:element name="is_blobspace" type="xsd:int" />
+					<xsd:element name="is_sbspace" type="xsd:int" />
+					<xsd:element name="is_temp" type="xsd:int" />
+					<xsd:element name="flags" type="xsd:int" />
+				</xsd:all>
+			</xsd:complexType>
+
+			<xsd:complexType name="DashBoardResult">
+				<xsd:all>
+					<xsd:element name="defectId" type="xsd:string" />
+					<xsd:element name="abstract"
+						type="typens:ArrayOfDashBoardResult" />
+				</xsd:all>
+			</xsd:complexType>
+
+			<xsd:complexType name="putDashBoardPanelsType">
+				<xsd:sequence>
+					<xsd:element name="panels" type="xsd:anyType" maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
+
+
+			<xsd:complexType name="ArrayOfDashBoardResult">
+				<xsd:complexContent mixed="false">
+					<xsd:restriction base="soapenc:Array">
+						<xsd:attribute ref="soapenc:arrayType"
+							wsdl:arrayType="ArrayOfDashBoardResult []" />
+					</xsd:restriction>
+				</xsd:complexContent>
+			</xsd:complexType>
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getDBSpaces"></message>
+
+	<message name="getDBSpacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBSpacesIO"></message>
+
+	<message name="getDBSpacesIOResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBSpaceById">
+		<part name="dbsNum" type="xsd:int" />
+	</message>
+
+	<message name="getDBSpaceByIdResponse">
+		<part name="return" type="typens:getDBSpaceByIdResult" />
+	</message>
+
+	<message name="getChunksByDBS">
+		<part name="dbsNum" type="xsd:int" />
+	</message>
+
+	<message name="getChunksByDBSResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getMemory"></message>
+
+	<message name="getMemoryResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getOSMemory"></message>
+	<message name="getOSMemoryResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTransac"></message>
+	<message name="getTransacResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getLocks"></message>
+
+	<message name="getLocksResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getNumSessions"></message>
+
+	<message name="getNumSessionsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDiskIO"></message>
+
+	<message name="getDiskIOResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>	
+
+	<message name="getNetworkReadsWrites"></message>
+
+	<message name="getNetworkReadsWritesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTableReads"></message>
+
+	<message name="getTableReadsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTopTablesModified"></message>
+
+	<message name="getTopTablesModifiedResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getCpu"></message>
+
+	<message name="getCpuResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getSQLActionsTotal"></message>
+
+	<message name="getSQLActionsTotalResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getSQLActions"></message>
+
+	<message name="getSQLActionsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getServersInGroup"></message>
+
+	<message name="getServersInGroupResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getServerStatus">
+		<part name="conn_num" type="xsd:int" />
+		<part name="force_refresh" type="xsd:boolean" />
+	</message>
+
+	<message name="getServerStatusResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDashBoards"></message>
+	<message name="getDashBoardsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getPanels">
+		<part name="dashboardId" type="xsd:int" />
+	</message>
+	<message name="getPanelsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getPanelsForDashBoard">
+		<part name="dashboardId" type="xsd:int" />
+	</message>
+	<message name="getPanelsForDashBoardResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="putDashBoard">
+		<part name="dashId"           type="xsd:int"    />
+		<part name="dashboardName"    type="xsd:string" />
+		<part name="dashboardDesc"    type="xsd:string" />
+		<part name="dashboardRefresh" type="xsd:int"    />
+	</message>
+	
+	<message name="putDashBoardResponse">
+		<part name="return" type="xsd:int" />
+	</message>
+
+	<message name="putDashBoardPanels">
+		<part name="dashId" type="xsd:int" />
+		<part name="dashboardPanels" type="typens:putDashBoardPanelsType" />
+	</message>
+	<message name="putDashBoardPanelsResponse">
+		<part name="return" type="xsd:int" />
+	</message>
+
+	<message name="deleteDashBoard">
+		<part name="dashId" type="xsd:int" />
+	</message>
+	<message name="deleteDashBoardResponse">
+		<part name="return" type="xsd:int" />
+	</message>
+
+
+	<!-- portType expose the services and defines their input / output routines -->
+	<portType name="DashBoardPort">
+		<operation name="getDBSpaces">
+			<input message="typens:getDBSpaces" />
+			<output message="typens:getDBSpacesResponse" />
+		</operation>
+
+		<operation name="getDBSpacesIO">
+			<input message="typens:getDBSpacesIO" />
+			<output message="typens:getDBSpacesIOResponse" />
+		</operation>
+
+		<operation name="getDBSpaceById">
+			<input message="typens:getDBSpaceById" />
+			<output message="typens:getDBSpaceByIdResponse" />
+		</operation>
+		<operation name="getChunksByDBS">
+			<input message="typens:getChunksByDBS" />
+			<output message="typens:getChunksByDBSResponse" />
+		</operation>
+
+		<operation name="getMemory">
+			<input message="typens:getMemory" />
+			<output message="typens:getMemoryResponse" />
+		</operation>
+
+		<operation name="getOSMemory">
+			<input message="typens:getOSMemory" />
+			<output message="typens:getOSMemoryResponse" />
+		</operation>
+
+		<operation name="getTransac">
+			<input message="typens:getTransac" />
+			<output message="typens:getTransacResponse" />
+		</operation>
+
+		<operation name="getLocks">
+			<input message="typens:getLocks" />
+			<output message="typens:getLocksResponse" />
+		</operation>
+
+		<operation name="getNumSessions">
+			<input message="typens:getNumSessions" />
+			<output message="typens:getNumSessionsResponse" />
+		</operation>
+
+		<operation name="getDiskIO">
+			<input message="typens:getDiskIO" />
+			<output message="typens:getDiskIOResponse" />
+		</operation>
+
+		<operation name="getNetworkReadsWrites">
+			<input message="typens:getNetworkReadsWrites" />
+			<output message="typens:getNetworkReadsWritesResponse" />
+		</operation>
+
+		<operation name="getCpu">
+			<input message="typens:getCpu" />
+			<output message="typens:getCpuResponse" />
+		</operation>
+
+		<operation name="getTableReads">
+			<input message="typens:getTableReads" />
+			<output message="typens:getTableReadsResponse" />
+		</operation>
+		
+		<operation name="getTopTablesModified">
+			<input message="typens:getTopTablesModified" />
+			<output message="typens:getTopTablesModifiedResponse" />
+		</operation>
+		
+		<operation name="getSQLActionsTotal">
+			<input message="typens:getSQLActionsTotal" />
+			<output message="typens:getSQLActionsTotalResponse" />
+		</operation>
+		
+		<operation name="getSQLActions">
+			<input message="typens:getSQLActions" />
+			<output message="typens:getSQLActionsResponse" />
+		</operation>
+		
+		<operation name="getServersInGroup">
+			<input message="typens:getServersInGroup" />
+			<output message="typens:getServersInGroupResponse" />
+		</operation>
+		
+		<operation name="getServerStatus">
+			<input message="typens:getServerStatus" />
+			<output message="typens:getServerStatusResponse" />
+		</operation>
+
+		<operation name="getDashBoards">
+			<input message="typens:getDashBoards" />
+			<output message="typens:getDashBoardsResponse" />
+		</operation>
+
+		<operation name="getPanels">
+			<input message="typens:getPanels" />
+			<output message="typens:getPanelsResponse" />
+		</operation>
+
+		<operation name="getPanelsForDashBoard">
+			<input message="typens:getPanelsForDashBoard" />
+			<output message="typens:getPanelsForDashBoardResponse" />
+		</operation>
+
+		<operation name="putDashBoard">
+			<input message="typens:putDashBoard" />
+			<output message="typens:putDashBoardResponse" />
+		</operation>
+
+		<operation name="putDashBoardPanels">
+			<input message="typens:putDashBoardPanels" />
+			<output message="typens:putDashBoardPanelsResponse" />
+		</operation>
+
+		<operation name="deleteDashBoard">
+			<input message="typens:deleteDashBoard" />
+			<output message="typens:deleteDashBoardResponse" />
+		</operation>
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="DashBoardBinding" type="typens:DashBoardPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+			
+		<operation name="getDBSpaces">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDBSpacesIO">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBSpaceById">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getChunksByDBS">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getMemory">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getOSMemory">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTransac">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getLocks">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getNumSessions">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDiskIO">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getNetworkReadsWrites">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getCpu">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>	
+		
+		<operation name="getSQLActionsTotal">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getSQLActions">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTableReads">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTopTablesModified">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+				
+		<operation name="getServersInGroup">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+				
+		<operation name="getServerStatus">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDashBoards">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getPanels">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getPanelsForDashBoard">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="putDashBoard">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="putDashBoardPanels">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="deleteDashBoard">
+			<soap:operation soapAction="urn:DashBoardAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:DashBoard"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+	</binding>
+
+	<service name="DashBoardService">
+		<port name="DashBoardPort" binding="typens:DashBoardBinding">
+			<soap:address
+				location="services/dashboard/dashboardService.php" />
+		</port>
+	</service>
+</definitions>

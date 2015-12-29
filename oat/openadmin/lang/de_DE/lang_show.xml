@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Anzeigen]]></Show>
+<CommandHistory><![CDATA[Befehlsprotokoll]]></CommandHistory>
+<OnlineLog><![CDATA[Onlineprotokoll]]></OnlineLog>
+
+<LogDelete><![CDATA[Protokoll löschen]]></LogDelete>
+<LogTruncate><![CDATA[Protokoll abschneiden]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Onlinenachrichtenprotokoll]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Rotation des Onlinenachrichtenprotokolls]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[On-Bar-Aktivitätenprotokoll]]></BarActLog>
+<BarActLogRotate><![CDATA[Rotation des ON-Bar-Aktivitätenprotokolls]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Chunks]]></chunks>
+<commands><![CDATA[Befehle]]></commands>
+<Databases><![CDATA[Datenbanken]]></Databases>
+<Alerts><![CDATA[Alerts]]></Alerts>
+<Message><![CDATA[Nachricht]]></Message>
+<Messages><![CDATA[Nachrichten]]></Messages>
+<OnBarActLog><![CDATA[On-Bar-Aktivitätenprotokoll]]></OnBarActLog>
+<onconfigfile><![CDATA[ONCONFIG-Datei]]></onconfigfile>
+<Name><![CDATA[Name]]></Name>
+<CurrentValue><![CDATA[Aktueller Wert]]></CurrentValue>
+<ChunkInfo><![CDATA[Chunkinformationen]]></ChunkInfo>
+<ChunkNumber><![CDATA[Chunknummer]]></ChunkNumber>
+<ChunkPath><![CDATA[Pfadname]]></ChunkPath>
+<Size><![CDATA[Größe]]></Size>
+<Offset><![CDATA[Relative Position]]></Offset>
+<Free><![CDATA[Frei]]></Free>
+<CmdHistory><![CDATA[Verwaltungsbefehlsprotokoll]]></CmdHistory>
+<User><![CDATA[Benutzer]]></User>
+<Time><![CDATA[Zeit]]></Time>
+<CommandExecuted><![CDATA[Ausgeführter Befehl]]></CommandExecuted>
+<ReturnMsg><![CDATA[Antwortnachricht]]></ReturnMsg>
+<CreateDate><![CDATA[Erstellungsdatum]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Durch diese Aktion werden die Nachrichten in der Nachrichtenprotokolldatei gelöscht. Die Nachrichtenprotokolldatei wird beibehalten. Wollen Sie fortfahren?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Durch diese Aktion wird die Nachrichtenprotokolldatei gelöscht. Wollen Sie fortfahren?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[Die Task-ID für die Task online_log_rotate wurde nicht gefunden. Die Protokolldateirotation erfordert Informix 11.70.xC3. Prüfen Sie die Version des Datenbankservers.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[Die Task-ID für die Task bar_act_log_rotate wurde nicht gefunden. Die Protokolldateirotation erfordert Informix 11.70.xC3. Prüfen Sie die Version des Datenbankservers.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Erfolg]]></Success>
+<Error><![CDATA[Fehler]]></Error>
+<Warning><![CDATA[Warnung]]></Warning>
+</lang>

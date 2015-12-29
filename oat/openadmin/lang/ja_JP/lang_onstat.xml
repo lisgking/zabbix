@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[onstat 情報]]></mainTitle>
+<SystemReports><![CDATA[システム レポート]]></SystemReports>
+<Daterange><![CDATA[日付範囲の選択:]]></Daterange>
+<from><![CDATA[開始日:]]></from>
+<to><![CDATA[終了日:]]></to>
+<Month1><![CDATA[1 月]]></Month1>
+<Month2><![CDATA[2 月]]></Month2>
+<Month3><![CDATA[3 月]]></Month3>
+<Month4><![CDATA[4 月]]></Month4>
+<Month5><![CDATA[5 月]]></Month5>
+<Month6><![CDATA[6 月]]></Month6>
+<Month7><![CDATA[7 月]]></Month7>
+<Month8><![CDATA[8 月]]></Month8>
+<Month9><![CDATA[9 月]]></Month9>
+<Month10><![CDATA[10 月]]></Month10>
+<Month11><![CDATA[11 月]]></Month11>
+<Month12><![CDATA[12 月]]></Month12>
+<mCurrent><![CDATA[現行レポート]]></mCurrent>
+<mHistorical><![CDATA[履歴レポート]]></mHistorical>
+<HeatMaps><![CDATA[グラフ]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[グラフを表示する場合、OAT には Informix 11.70.xC4 が必要です。]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></nopermission>
+<NetworkUsage><![CDATA[ネットワーク使用量レポート]]></NetworkUsage>
+<MemoryPools><![CDATA[メモリ プール レポート]]></MemoryPools>
+<MemoryUsage><![CDATA[サーバ メモリ使用量レポート]]></MemoryUsage>
+<SQLCache><![CDATA[SQL キャッシュ レポート]]></SQLCache>
+<Sessions><![CDATA[セッション レポート]]></Sessions>
+<VPReport><![CDATA[仮想プロセッサ レポート]]></VPReport>
+<SysBackups><![CDATA[システム バックアップ レポート]]></SysBackups>
+<TableProf><![CDATA[表プロファイル レポート]]></TableProf>
+<ResourceUsage><![CDATA[コンピュータ リソース情報]]></ResourceUsage>
+<CompInfo><![CDATA[コンピュータ OS 情報]]></CompInfo>
+<PPID><![CDATA[PID]]></PPID>
+<Class><![CDATA[クラス]]></Class>
+<ReadyQ><![CDATA[レディー状態のキューの長さ]]></ReadyQ>
+<VP><![CDATA[仮想プロセッサの合計 CPU 使用量]]></VP>
+<NetUserRep><![CDATA[ネットワーク使用量レポート]]></NetUserRep>
+<NetID><![CDATA[ネットワーク ID]]></NetID>
+<SID><![CDATA[ユーザ セッション ID]]></SID>
+<ClientName><![CDATA[クライアント名]]></ClientName>
+<ReadCount><![CDATA[受信数]]></ReadCount>
+<WriteCount><![CDATA[送信数]]></WriteCount>
+<ReadBytes><![CDATA[合計受信数]]></ReadBytes>
+<WriteBytes><![CDATA[合計送信数]]></WriteBytes>
+<ConTime><![CDATA[セッション開始時刻]]></ConTime>
+<Protocol><![CDATA[プロトコル]]></Protocol>
+<SysNetIO><![CDATA[入出力操作単位]]></SysNetIO>
+<SysNetTXF><![CDATA[データ転送単位]]></SysNetTXF>
+<MemSegUsage><![CDATA[メモリ セグメント使用量]]></MemSegUsage>
+<MemOSUsage><![CDATA[コンピュータ メモリ使用量]]></MemOSUsage>
+<Usage><![CDATA[使用量]]></Usage>
+<Resident><![CDATA[常駐]]></Resident>
+<Virutal><![CDATA[仮想]]></Virutal>
+<Message><![CDATA[メッセージ]]></Message>
+<Other><![CDATA[その他]]></Other>
+<Allocated><![CDATA[割り当て済み]]></Allocated>
+<Free><![CDATA[フリー]]></Free>
+<SelectReportType><![CDATA[タイプ別レポート選択]]></SelectReportType>
+<ClearAll><![CDATA[すべてクリア]]></ClearAll>
+<AllRept><![CDATA[すべてを選択]]></AllRept>
+<Disk><![CDATA[ディスク]]></Disk>
+<Performance><![CDATA[パフォーマンス]]></Performance>
+<InvalidDateRangeError><![CDATA[終了日が開始日より前になっています。開始日より後の終了日を選択してください。]]></InvalidDateRangeError>
+<Net><![CDATA[ネット]]></Net>
+<Network><![CDATA[ネットワーク]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[表]]></Tables>
+<Users><![CDATA[ユーザ]]></Users>
+<CreateReport><![CDATA[レポートの作成]]></CreateReport>
+<ReportRun><![CDATA[レポート実行]]></ReportRun>
+<StartDate><![CDATA[開始日]]></StartDate>
+<EndDate><![CDATA[終了日]]></EndDate>
+<ServerUptime><![CDATA[サーバ稼働時間]]></ServerUptime>
+<Top><![CDATA[トップ]]></Top>
+<Basic><![CDATA[ベーシック]]></Basic>
+<ServerConfig><![CDATA[サーバ構成]]></ServerConfig>
+<ParamName><![CDATA[パラメータ名]]></ParamName>
+<ParamID><![CDATA[パラメータ ID]]></ParamID>
+<OnconfigParamDetails><![CDATA[onconfig パラメータ詳細]]></OnconfigParamDetails>
+<Value><![CDATA[値]]></Value>
+<ParamType><![CDATA[パラメータ タイプ]]></ParamType>
+<Description><![CDATA[説明]]></Description>
+<MinValue><![CDATA[最小値]]></MinValue>
+<MaxValue><![CDATA[最大値]]></MaxValue>
+<PossibleValues><![CDATA[可能値]]></PossibleValues>
+<Recommendation><![CDATA[推奨事項]]></Recommendation>
+<RecommendationMessage><![CDATA[パラメータ名をクリックすると、詳細情報を表示したり、動的パラメータを変更したりできます。推奨事項が設定されているパラメータは、黄色で強調表示されます。]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[この onconfig パラメータの値は、OpenAdmin Tool の推奨に従っています。]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[この onconfig パラメータの値は、OpenAdmin Tool の推奨に従っていません。]]></Recommendation_NO>
+<Warning><![CDATA[警告]]></Warning>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[キャンセル]]></Cancel>
+<Back><![CDATA[戻る]]></Back>
+<Dynamic><![CDATA[動的]]></Dynamic>
+<NotDynamic><![CDATA[動的でない]]></NotDynamic>
+<ParamNotDynamic><![CDATA[パラメータは動的に構成可能ではありません。]]></ParamNotDynamic>
+<Configurable><![CDATA[構成可能]]></Configurable>
+<OnconfigOption><![CDATA[表示]]></OnconfigOption>
+<ShowAll><![CDATA[すべて]]></ShowAll>
+<ShowBasic><![CDATA[ベーシック]]></ShowBasic>
+<ShowDynamic><![CDATA[動的]]></ShowDynamic>
+<ShowRecommend><![CDATA[推奨事項]]></ShowRecommend>
+<SaveOption><![CDATA[保存オプション]]></SaveOption>
+<SaveMem><![CDATA[メモリ内に保存]]></SaveMem>
+<SaveMemFile><![CDATA[メモリおよびファイルに保存]]></SaveMemFile>
+<Server><![CDATA[サーバ]]></Server>
+<WaitSesRpt><![CDATA[待機セッション レポート]]></WaitSesRpt>
+<WaitSes><![CDATA[待機セッション]]></WaitSes>
+<ResourceOwner><![CDATA[リソース所有者]]></ResourceOwner>
+<ResourceType><![CDATA[リソース タイプ]]></ResourceType>
+<WaitObject><![CDATA[待機オブジェクト]]></WaitObject>
+<WaitItem><![CDATA[待機項目]]></WaitItem>
+<WaitInfo><![CDATA[待機情報]]></WaitInfo>
+<ResourceUsageReport><![CDATA[リソース使用量レポート]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[リソース サマリ レポート]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[対象の週の終了]]></ForWeekEnding>
+<MaxConns><![CDATA[最大接続数]]></MaxConns>
+<MaxCPUVPS><![CDATA[最大 CPU VPS]]></MaxCPUVPS>
+<MAXVPS><![CDATA[最大 VPS]]></MAXVPS>
+<DiskSize><![CDATA[ディスク サイズ]]></DiskSize>
+<DiskUsed><![CDATA[使用済みディスク]]></DiskUsed>
+<Memory><![CDATA[メモリ]]></Memory>
+<MemoryUsed><![CDATA[使用済みメモリ]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[セマフォ情報]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[共有メモリ情報]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[プロセスあたりの最大オープン ファイル]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[OS ページ サイズ]]></OSPageSize>
+<TotalCPUs><![CDATA[プロセッサ合計]]></TotalCPUs>
+<OnlineCPUs><![CDATA[オンライン プロセッサ]]></OnlineCPUs>
+<CPUs><![CDATA[プロセッサ]]></CPUs>
+<HostName><![CDATA[ホスト名]]></HostName>
+<OSName><![CDATA[OS 名]]></OSName>
+<OSRel><![CDATA[OS リリース]]></OSRel>
+<OSVer><![CDATA[OS バージョン]]></OSVer>
+<CPUType><![CDATA[コンピュータ タイプ]]></CPUType>
+<TotalMem><![CDATA[コンピュータの合計メモリ]]></TotalMem>
+<TotalFreeMem><![CDATA[コンピュータの空きメモリ]]></TotalFreeMem>
+<BackupReport><![CDATA[バックアップ レポート]]></BackupReport>
+<Number><![CDATA[番号]]></Number>
+<Name><![CDATA[名前]]></Name>
+<Position><![CDATA[位置]]></Position>
+<Level0><![CDATA[レベル 0]]></Level0>
+<Level1><![CDATA[レベル 1]]></Level1>
+<Level2><![CDATA[レベル 2]]></Level2>
+<BackupReport><![CDATA[バックアップ レポート]]></BackupReport>
+<TableProfileInfo><![CDATA[表プロファイル情報]]></TableProfileInfo>
+<TableName><![CDATA[表名]]></TableName>
+<Locks><![CDATA[ロック]]></Locks>
+<LockRequests><![CDATA[ロック要求]]></LockRequests>
+<DeadLocks><![CDATA[デッド ロック]]></DeadLocks>
+<LockWaits><![CDATA[ロック待機]]></LockWaits>
+<LockTimeouts><![CDATA[ロック タイムアウト]]></LockTimeouts>
+<LogRecords><![CDATA[ログ レコード]]></LogRecords>
+<LogSpace><![CDATA[ログ領域]]></LogSpace>
+<MaxLogSpace><![CDATA[最大ログ領域]]></MaxLogSpace>
+<ReadCache><![CDATA[読込みキャッシュ]]></ReadCache>
+<WriteCache><![CDATA[書込みキャッシュ]]></WriteCache>
+<DiskReads><![CDATA[ディスク読込み]]></DiskReads>
+<DiskWrites><![CDATA[ディスク書込み]]></DiskWrites>
+<RowsProcessed><![CDATA[処理済み行]]></RowsProcessed>
+<RowsInserted><![CDATA[挿入行]]></RowsInserted>
+<RowsUpdated><![CDATA[更新行]]></RowsUpdated>
+<RowsDeleted><![CDATA[削除行]]></RowsDeleted>
+<SequentialScans><![CDATA[順次走査]]></SequentialScans>
+<UserID><![CDATA[ユーザ ID]]></UserID>
+<GroupID><![CDATA[グループ ID]]></GroupID>
+<SessionID><![CDATA[セッション ID]]></SessionID>
+<PID><![CDATA[PID]]></PID>
+<Connected><![CDATA[接続済み]]></Connected>
+<OpenTables><![CDATA[オープン表]]></OpenTables>
+<TotalMemory><![CDATA[合計メモリ]]></TotalMemory>
+<UsedMemory><![CDATA[使用済みメモリ]]></UsedMemory>
+<FreeMemory><![CDATA[空きメモリ]]></FreeMemory>
+<Sorts><![CDATA[ソート]]></Sorts>
+<LargestSorts><![CDATA[最大ソート]]></LargestSorts>
+<DiskSorts><![CDATA[ディスク ソート]]></DiskSorts>
+<MemorySorts><![CDATA[メモリ ソート]]></MemorySorts>
+<BufferWrites><![CDATA[バッファ書込み]]></BufferWrites>
+<BufferReads><![CDATA[バッファ読込み]]></BufferReads>
+<FGWrites><![CDATA[FG 書込み]]></FGWrites>
+<FGReads><![CDATA[FG 読込み]]></FGReads>
+<Commits><![CDATA[コミット]]></Commits>
+<Rollbacks><![CDATA[ロール バック]]></Rollbacks>
+<LongTXs><![CDATA[ロング トランザクション]]></LongTXs>
+<ConnectTime><![CDATA[接続時間]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[ユーザ]]></User>
+<SessionList><![CDATA[セッション リスト]]></SessionList>
+<NoData><![CDATA[データなし]]></NoData>
+<SQLCachesList><![CDATA[SQL キャッシュ リスト]]></SQLCachesList>
+<CacheName><![CDATA[キャッシュ名]]></CacheName>
+<Ratio><![CDATA[率]]></Ratio>
+<Hits><![CDATA[ヒット]]></Hits>
+<Misses><![CDATA[ミス]]></Misses>
+<Removed><![CDATA[削除済み]]></Removed>
+<InUse><![CDATA[使用中]]></InUse>
+<CacheEntries><![CDATA[キャッシュ エントリ]]></CacheEntries>
+<SharedMemorySegList><![CDATA[共有メモリ セグメント リスト]]></SharedMemorySegList>
+<SegmentType><![CDATA[セグメント タイプ]]></SegmentType>
+<Size><![CDATA[サイズ]]></Size>
+<Used><![CDATA[使用済み]]></Used>
+<Total><![CDATA[合計]]></Total>
+<Address><![CDATA[アドレス]]></Address>
+<Key><![CDATA[キー]]></Key>
+<FLAGS><![CDATA[フラグ]]></FLAGS>
+<Class><![CDATA[クラス]]></Class>
+<ID><![CDATA[ID]]></ID>
+<MemPoolList><![CDATA[メモリ プール リスト]]></MemPoolList>
+<ON><![CDATA[オン]]></ON>
+<OFF><![CDATA[オフ]]></OFF>
+<OnconfigParamError><![CDATA[次の ID の onconfig パラメータを見つけることができませんでした]]></OnconfigParamError>
+<OnconfigFile><![CDATA[onconfig ファイル]]></OnconfigFile>
+<SystemReports><![CDATA[システム レポート]]></SystemReports>
+<ComputerInfo><![CDATA[コンピュータ情報]]></ComputerInfo>
+<diskspace><![CDATA[ディスク領域使用量]]></diskspace>
+<diskspace_tooltip><![CDATA[ディスク領域の使用状況を表示してレポートを出します]]></diskspace_tooltip>
+<diskio><![CDATA[ディスク入出力レベル]]></diskio>
+<diskio_tooltip><![CDATA[ディスクの入出力状況を表示してレポートを出します]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[オンライン ログ]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[onlne.log の末尾を表示します]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[サーバ管理コマンド]]></showCommands>
+<showCommands_tooltip><![CDATA[実行されるサーバ管理コマンドを表示します]]></showCommands_tooltip>
+<showllogs><![CDATA[論理ログ]]></showllogs>
+<showllogs_tooltip><![CDATA[論理ログの状態を表示します (例: リカバリ ログなど)]]></showllogs_tooltip>
+<showplogs><![CDATA[物理ログ]]></showplogs>
+<showplogs_tooltip><![CDATA[物理ログの状態を表示します]]></showplogs_tooltip>
+<checkpoints><![CDATA[チェックポイントの表示]]></checkpoints>
+<checkpoints_tooltip><![CDATA[最新のチェックポイント情報を表示します]]></checkpoints_tooltip>
+<backup><![CDATA[システムのバックアップ]]></backup>
+<backup_tooltip><![CDATA[DB 領域によるシステム バックアップ の状態を表示します]]></backup_tooltip>
+<mem><![CDATA[メモリ プール]]></mem>
+<mem_tooltip><![CDATA[ユーザおよびシステムのメモリ プールをすべて表示します]]></mem_tooltip>
+<seg><![CDATA[サーバ メモリ使用量]]></seg>
+<seg_tooltip><![CDATA[セグメント単位でサーバ メモリの概要を表示します]]></seg_tooltip>
+<net><![CDATA[ネットワークの概要]]></net>
+<net_tooltip><![CDATA[ネットワーク トラフィックの概要を表示します]]></net_tooltip>
+<ppf><![CDATA[表の操作]]></ppf>
+<ppf_tooltip><![CDATA[表単位でパフォーマンス情報を示します]]></ppf_tooltip>
+<config><![CDATA[サーバ構成]]></config>
+<config_tooltip><![CDATA[サーバ構成ファイルを表示します]]></config_tooltip>
+<ses><![CDATA[セッション リスト]]></ses>
+<ses_tooltip><![CDATA[すべてのユーザ セッションのリストです]]></ses_tooltip>
+<sqlcache><![CDATA[SQL キャッシュの表示]]></sqlcache>
+<sqlcache_tooltip><![CDATA[さまざまな SQL キャッシュの統計を表示します]]></sqlcache_tooltip>
+<showByType><![CDATA[SQL 文のサマリ]]></showByType>
+<showByType_tooltip><![CDATA[実行された SQL 文のサマリです]]></showByType_tooltip>
+<showslowSQL><![CDATA[最も時間を要する SQL 文]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[最も時間が必要な SQL 文を表示します]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[最も入出力時間を要する SQL]]></showmostIO>
+<showmostIO_tooltip><![CDATA[最も入出力時間が必要な SQL 文を表示します]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[最もバッファ動作に時間を要する SQL]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[最もバッファ プール動作に時間が必要な SQL 文を表示します]]></showmostBuff_tooltip>
+<glo><![CDATA[仮想プロセッサ]]></glo>
+<glo_tooltip><![CDATA[さまざまな仮想プロセッサの使用効率を表示します]]></glo_tooltip>
+<showdbtab><![CDATA[データベースの表示]]></showdbtab>
+<showdbtab_tooltip><![CDATA[異なるデータベースとデータベースの基本属性を表示します]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[コンピュータ OS 情報]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[コンピュータ オペレーティング システムを表示します]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[コンピュータ リソース情報]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[コンピュータのリソース情報を表示します]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[待機セッション レポート]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[リソース上で待機しているセッションを表示します]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[バイト]]></bytes>
+<Bytes><![CDATA[バイト]]></Bytes>
+<blocks><![CDATA[ブロック]]></blocks>
+<Blocks><![CDATA[ブロック]]></Blocks>
+<Type><![CDATA[タイプ]]></Type>
+<Count><![CDATA[カウント]]></Count>
+<locklist><![CDATA[ロック リスト]]></locklist>
+<locklistfortab><![CDATA[{0} のロック リスト]]></locklistfortab>
+<locklistforses><![CDATA[セッション {0} のロック リスト]]></locklistforses>
+<locklist_tooltip><![CDATA[データベース サーバに対するアクティブなロックを表示します。]]></locklist_tooltip>
+<locksWaiters><![CDATA[待ち側のあるロック数]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[待ち側のあるロックを表示します。]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[表あたりのロック数]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[ロックについての情報を表別に表示します。]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[セッションあたりのロック数]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[ロックについての情報をセッション別に表示します。]]></locksPerSes_tooltip>
+<Owner><![CDATA[所有者]]></Owner>
+<OwnerSID><![CDATA[所有者セッション ID]]></OwnerSID>
+<Waiter><![CDATA[待ち側]]></Waiter>
+<WaitSID><![CDATA[待ち側セッション ID]]></WaitSID>
+<LkType><![CDATA[ロック タイプ]]></LkType>
+<LkObject><![CDATA[ロックされたオブジェクト]]></LkObject>
+<RowID><![CDATA[行 ID]]></RowID>
+<Partnum><![CDATA[パーティション番号]]></Partnum>
+<LockEstablished><![CDATA[ロック開始時刻]]></LockEstablished>
+<SID><![CDATA[セッション ID]]></SID>
+<Database><![CDATA[データベース]]></Database>
+<IsolationLevel><![CDATA[排他レベル]]></IsolationLevel>
+<ActiveLocks><![CDATA[アクティブなロック]]></ActiveLocks>
+<lockid><![CDATA[ロック ID]]></lockid>
+<LockDuration><![CDATA[ロックの継続期間]]></LockDuration>
+<WaitTime><![CDATA[待機時間]]></WaitTime>
+<ReportMaxRows><![CDATA[最大で {0} 行表示します。]]></ReportMaxRows>
+</lang>

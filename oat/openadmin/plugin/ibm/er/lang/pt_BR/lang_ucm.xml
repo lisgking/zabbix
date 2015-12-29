@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[Gerenciador de Conexões]]></ucm>
+<noCMSupportServerVersion><![CDATA[O Gerenciador de Conexões no OAT requer o Informix Versão 11.70.xC3.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[A operação do Gerenciador de Conexões falhou. Verifique o arquivo de log do Gerenciador de Conexões para obter os detalhes.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Nenhuma unidade de conexão localizada para o Gerenciador de Conexões {0}.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[A unidade de conexão {0} não foi localizada.]]></ConnUnitNotFound>
+</lang>

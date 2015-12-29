@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="iwa">
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+<notSupportedServerVersionIWA><![CDATA[V případě produktu Informix Warehouse Accelerator vyžaduje nástroj OAT produkt Informix 12.10.xCx.]]></notSupportedServerVersionIWA>
+</lang>

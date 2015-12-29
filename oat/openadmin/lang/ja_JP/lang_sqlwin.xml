@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL Toolbox]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL Toolbox - データベース]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL Toolbox - 表]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL Toolbox - 表の選択]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL Toolbox - ストアド プロシジャ]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL Toolbox - 表情報]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL Toolbox - 表フラグメント]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL Toolbox - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[接続先のデータベース名をクリックしてください。]]></ClickDbConn>
+<Databases><![CDATA[データベース]]></Databases>
+<TotalRows><![CDATA[合計行数: ]]></TotalRows>
+<Tables><![CDATA[表]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[結果]]></SQLResult>
+<SQLTree><![CDATA[問合せツリー]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[エラー: 問合せなし]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[エラー: 問合せツリーなし]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[エラー: 現行 SQL セッション/接続なし]]></SQLErr_NoConn>
+<Column_Info><![CDATA[列情報]]></Column_Info>
+<Table_Browse><![CDATA[表の参照]]></Table_Browse>
+<Fragments><![CDATA[フラグメント]]></Fragments>
+<Name><![CDATA[名前]]></Name>
+<Collation><![CDATA[照合]]></Collation>
+<CreateDate><![CDATA[作成日]]></CreateDate>
+<Logging><![CDATA[ログ機能]]></Logging>
+<IncCatalog><![CDATA[データベース カタログ表の組込み]]></IncCatalog>
+<Submit><![CDATA[実行要求]]></Submit>
+<ChkRtTypes><![CDATA[選択するルーチン タイプ (langid) にチェックマークを付けます。]]></ChkRtTypes>
+<Owner><![CDATA[所有者]]></Owner>
+<Procid><![CDATA[Procid]]></Procid>
+<Type><![CDATA[タイプ]]></Type>
+<Numargs><![CDATA[Numargs]]></Numargs>
+<ParamTypes><![CDATA[パラメータ タイプ]]></ParamTypes>
+<Mode><![CDATA[モード]]></Mode>
+<Langid><![CDATA[Langid]]></Langid>
+<FragDispTitle><![CDATA[フラグメント化情報]]></FragDispTitle>
+<Partnum><![CDATA[パーティション番号]]></Partnum>
+<FragmentType><![CDATA[フラグメント タイプ]]></FragmentType>
+<Expression><![CDATA[式]]></Expression>
+<Dbspace><![CDATA[DB 領域]]></Dbspace>
+<Partition><![CDATA[パーティション]]></Partition>
+<ColDispTitle><![CDATA[表情報]]></ColDispTitle>
+<Colno><![CDATA[列番号]]></Colno>
+<Colname><![CDATA[列名]]></Colname>
+<Coltype><![CDATA[列型]]></Coltype>
+<Collength><![CDATA[列長]]></Collength>
+<ExtendedType><![CDATA[拡張タイプ]]></ExtendedType>
+<Browse><![CDATA[参照]]></Browse>
+<Tabid><![CDATA[表 ID]]></Tabid>
+<Rowsize><![CDATA[行サイズ]]></Rowsize>
+<NRows><![CDATA[行の数]]></NRows>
+<NIndexes><![CDATA[インデックスの数]]></NIndexes>
+<Locklevel><![CDATA[ロック レベル]]></Locklevel>
+<Fextsize><![CDATA[初期エクステント サイズ]]></Fextsize>
+<Nextsize><![CDATA[追加エクステント サイズ]]></Nextsize>
+<PagesUsed><![CDATA[使用済みページ]]></PagesUsed>
+<View><![CDATA[表示]]></View>
+<chooseDB><![CDATA[データベースを選択してください。]]></chooseDB>
+<butRunQuery><![CDATA[問合せの実行]]></butRunQuery>
+<butSaveToFile><![CDATA[問合せをファイルに保存]]></butSaveToFile>
+<butClear><![CDATA[クリア]]></butClear>
+<spanRunQuery><![CDATA[データベースに対して問合せを実行するにはクリックします。]]></spanRunQuery>
+<spanSaveToFile><![CDATA[問合せテキストをファイルに保存するにはクリックします。]]></spanSaveToFile>
+<spanClear><![CDATA[問合せエディタ ウィンドウをクリアするにはクリックします。]]></spanClear>
+<ColOpt><![CDATA[列のオプション]]></ColOpt>
+<ShowAll><![CDATA[すべて表示]]></ShowAll>
+<Show255><![CDATA[255 文字を表示]]></Show255>
+<ShowInFile><![CDATA[ファイル内を表示]]></ShowInFile>
+<ShowSize><![CDATA[サイズのみ表示]]></ShowSize>
+<IgnoreCol><![CDATA[列を無視]]></IgnoreCol>
+<ShowImage><![CDATA[イメージとして表示]]></ShowImage>
+<Import><![CDATA[インポート]]></Import>
+<spanImport><![CDATA[ファイルから問合せをインポートするにはクリックします。]]></spanImport>
+<ImportQFrom><![CDATA[問合せのインポート元:]]></ImportQFrom>
+<Change><![CDATA[変更]]></Change>
+<Reset><![CDATA[リセット]]></Reset>
+<QOutput><![CDATA[問合せ出力]]></QOutput>
+<Error><![CDATA[エラー]]></Error>
+<filename><![CDATA[ファイル名]]></filename>
+<error_num><![CDATA[Error num]]></error_num>
+<size_too_big><![CDATA[ファイル サイズが大きすぎます]]></size_too_big>
+<size_is_0><![CDATA[ファイル サイズが 0 です]]></size_is_0>
+<not_text_type><![CDATA[ファイルはテキスト ファイルではありません]]></not_text_type>
+<cannot_read_file><![CDATA[ファイルを読み込めません]]></cannot_read_file>
+<Return><![CDATA[リターン]]></Return>
+<Syntax><![CDATA[構文エラーが発生しました]]></Syntax>
+<QUERY><![CDATA[問合せ]]></QUERY>
+<NumFet><![CDATA[フェッチ数]]></NumFet>
+<AllRowsFet><![CDATA[フェッチされた全行]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[この問合せでは、限られた数の行のみがフェッチされます。]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[一部のタイプの問合せでフェッチされる現行の最大行数です]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[一度に実行できる SQL 文は 1 つのみです。入力の最初のセミコロンより後の文字はすべて削除されました。]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[保存失敗: ファイルに保存する問合せがありません。]]></Save_NoQuery>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<NeedToLogin><![CDATA[ログインが必要です。]]></NeedToLogin>
+<SelectDB><![CDATA[接続先のデータベースを選択します。]]></SelectDB>
+<ConnectingDB><![CDATA[データベースへの接続中]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[SQL Query Editor]]></SQLQueryEditor>
+<OneStmt><![CDATA[一度に一文ずつ]]></OneStmt>
+<RowFetchLimit><![CDATA[順序、グループ化、副問合せ、ディスティンクト、共同体、集合体を使用した問合せの場合、フェッチする行数は制限されます。]]></RowFetchLimit> 
+<ShowAllText><![CDATA[すべてのテキストを表示]]></ShowAllText>
+<ShowSomeText><![CDATA[一部のテキストを表示]]></ShowSomeText>
+<ShowInFile><![CDATA[ファイル内を表示]]></ShowInFile>
+<IgnoreText><![CDATA[テキストの無視]]></IgnoreText>
+<IgnoreByte><![CDATA[バイトの無視]]></IgnoreByte>
+<SaveInFile><![CDATA[ファイルに保存]]></SaveInFile>
+<file><![CDATA[ファイル]]></file>
+<filesize><![CDATA[サイズ={0}]]></filesize>
+<filetype><![CDATA[{0} ファイル]]></filetype>
+<ErrorUnableToChg><![CDATA[エラー: オプションを変更できません]]></ErrorUnableToChg>
+<SQLResults><![CDATA[SQL 結果]]></SQLResults>
+<SizeSixDBs><![CDATA[上位 6 データベースのサイズ]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[ログアウト: SQL ToolBox]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[次のユーザでログイン]]></LoggedInAs>
+<ClickToSelect><![CDATA[表に対して select * を実行する場合クリックします。]]></ClickToSelect>
+<PartitionInfo><![CDATA[パーティション情報]]></PartitionInfo>
+<CloseWindow><![CDATA[ウィンドウを閉じる]]></CloseWindow>
+<DisplayOptions><![CDATA[オプションの表示]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[プロシジャ/関数 ({0})]]></ProceduresFunctions>
+<Function><![CDATA[関数]]></Function>
+<Procedure><![CDATA[プロシジャ]]></Procedure>
+<All><![CDATA[すべて]]></All>
+<Buffered><![CDATA[バッファ付き]]></Buffered>
+<Unbuffered><![CDATA[バッファなし]]></Unbuffered>
+<NotLogged><![CDATA[ログに記録されていない]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[最終統計]]></LastStats>
+<Pages><![CDATA[ページ]]></Pages>
+<pages><![CDATA[ページ]]></pages>
+<byte_blob><![CDATA[Byte/Blob]]></byte_blob>
+<text_clob><![CDATA[Text/Clob]]></text_clob>
+</lang>

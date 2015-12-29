@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="genSelect" targetNamespace="urn:genSelect"
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:typens="urn:genSelect"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	>
+
+
+	<!-- Types are what will be sent / received via the services -->
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="doSelect">
+		<part name="id" type="xsd:string" />
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="doSelectResponse">
+		<part  name="return" type="xsd:anyType" />
+	</message>
+
+	<!-- portType expose the services and defines their input / output routines -->
+	<portType name="genSelectPort">
+		<operation name="doSelect">
+			<input message="typens:doSelect" />
+			<output message="typens:doSelectResponse" />
+		</operation>
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="genSelectBinding" type="typens:genSelectPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="doSelect">
+			<soap:operation soapAction="urn:genSelectAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:genSelect"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:genSelect"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+	</binding>
+
+	<service name="genSelectService">
+		<port name="genSelectPort" binding="typens:genSelectBinding">
+			<soap:address location="services/genSelect/genSelectService.php" />
+		</port>
+	</service>
+</definitions>

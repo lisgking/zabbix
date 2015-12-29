@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Zobrazit]]></Show>
+<CommandHistory><![CDATA[Historie příkazů]]></CommandHistory>
+<OnlineLog><![CDATA[Online protokol]]></OnlineLog>
+
+<LogDelete><![CDATA[Odstranit protokol]]></LogDelete>
+<LogTruncate><![CDATA[Zkrátit protokol]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Online protokol zpráv]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Rotace online protokolů zpráv]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[Protokol aktivit ON-Bar]]></BarActLog>
+<BarActLogRotate><![CDATA[Rotace protokolů aktivit ON-Bar]]></BarActLogRotate>
+
+<onconfig><![CDATA[ONCONFIG]]></onconfig>
+<chunks><![CDATA[Diskové bloky]]></chunks>
+<commands><![CDATA[Příkazy]]></commands>
+<Databases><![CDATA[Databáze]]></Databases>
+<Alerts><![CDATA[Výstrahy]]></Alerts>
+<Message><![CDATA[Zpráva]]></Message>
+<Messages><![CDATA[zprávy]]></Messages>
+<OnBarActLog><![CDATA[Protokol aktivit ON-Bar]]></OnBarActLog>
+<onconfigfile><![CDATA[Soubor ONCONFIG]]></onconfigfile>
+<Name><![CDATA[Název]]></Name>
+<CurrentValue><![CDATA[Aktuální hodnota]]></CurrentValue>
+<ChunkInfo><![CDATA[Informace o diskových blocích]]></ChunkInfo>
+<ChunkNumber><![CDATA[Číslo diskového bloku]]></ChunkNumber>
+<ChunkPath><![CDATA[Název cesty]]></ChunkPath>
+<Size><![CDATA[Velikost]]></Size>
+<Offset><![CDATA[Posun]]></Offset>
+<Free><![CDATA[Volné]]></Free>
+<CmdHistory><![CDATA[Historie příkazů Admin]]></CmdHistory>
+<User><![CDATA[Uživatel]]></User>
+<Time><![CDATA[Čas]]></Time>
+<CommandExecuted><![CDATA[Spuštěný příkaz]]></CommandExecuted>
+<ReturnMsg><![CDATA[Návratová zpráva]]></ReturnMsg>
+<CreateDate><![CDATA[Datum vytvoření]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Tato akce odstraní zprávy v souboru protokolu zpráv. Soubor protokolu zpráv je uchován. Chcete pokračovat?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Tato akce odstraní soubor protokolu zpráv. Chcete pokračovat?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[Nebylo nalezeno ID úlohy pro úlohu online_log_rotate. Rotace souborů protokolů vyžaduje Informix 11.70.xC3. Zkontrolujte verzi databázového serveru.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[Nebylo nalezeno ID úlohy pro úlohu bar_act_log_rotate. Rotace souborů protokolů vyžaduje Informix 11.70.xC3. Zkontrolujte verzi databázového serveru.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Úspěch]]></Success>
+<Error><![CDATA[Chyba]]></Error>
+<Warning><![CDATA[Varování]]></Warning>
+</lang>

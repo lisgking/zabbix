@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[Klastry o wysokiej dostępności]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[Serwer podstawowy jest nieosiągalny]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[Klaster jest nieosiągalny]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[Nie można rozpoznać klastra]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[Buforowany serwer podstawowy nie należy do klastra]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[Brak serwera podstawowego w klastrze]]></NoPrimaryInCluster>
+</lang>

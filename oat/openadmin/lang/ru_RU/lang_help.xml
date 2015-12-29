@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="help">
+<OATHelp><![CDATA[OAT - Справка]]></OATHelp>
+<Help><![CDATA[Справка]]></Help>
+<CloseWindow><![CDATA[Закрыть окно]]></CloseWindow>
+<ErrorOpeningDB><![CDATA[При открытии базы данных справки произошла ошибка]]></ErrorOpeningDB>
+<SorryNoHelpFound><![CDATA[Для этой страницы тема справки не найдена. <br/><br/>Дополнительные справки о многих задачах OAT можно найти в Информационном центре IBM&reg; Informix&reg;.]]></SorryNoHelpFound>
+</lang>

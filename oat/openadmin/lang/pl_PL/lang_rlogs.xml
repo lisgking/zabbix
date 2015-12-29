@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Dzienniki odtwarzania]]></mainTitle>
+<lognum><![CDATA[Numer]]></lognum>
+<uniqid><![CDATA[Unikalny identyfikator]]></uniqid>
+<size><![CDATA[Wielkość]]></size>
+<SwitchComment><![CDATA[Przełącz na następny dziennik logiczny]]></SwitchComment>
+<attributes><![CDATA[Atrybuty]]></attributes>
+<used><![CDATA[Wykorzystane]]></used>
+<location><![CDATA[Położenie]]></location>
+<notes><![CDATA[Uwagi]]></notes>
+<lastfilled><![CDATA[Ostatnio wypełniono]]></lastfilled>
+<ltitle><![CDATA[Status dziennika logicznego]]></ltitle>
+<notFull><![CDATA[Niezapełnione]]></notFull>
+<UsedBackedUp><![CDATA[Wykorzystane, z kopią zapasową]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Wykorzystane, bieżące]]></UsedCurrent>
+<Used><![CDATA[Wykorzystane]]></Used>
+<Free><![CDATA[Wolne]]></Free>
+<BackedUp><![CDATA[Z kopią zapasową]]></BackedUp>
+<Pages><![CDATA[Strony]]></Pages>
+<pages><![CDATA[strony]]></pages>
+<Usage><![CDATA[Wykorzystanie]]></Usage>
+<PagesPerSec><![CDATA[Szybkość zapełniania]]></PagesPerSec>
+<PLogUsage><![CDATA[Wykorzystanie dziennika fizycznego]]></PLogUsage>
+<PLogInfo><![CDATA[Informacje o dzienniku fizycznym]]></PLogInfo>
+<PLogSize><![CDATA[Wielkość dziennika fizycznego]]></PLogSize>
+<PLogUsed><![CDATA[Wykorzystana ilość]]></PLogUsed>
+<PlogLocation><![CDATA[Położenie]]></PlogLocation>
+<PlogStartPos><![CDATA[Przesunięcie początku]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Wielkość buforu]]></PlogBuffSize>
+<LLogUsage><![CDATA[Wykorzystanie dziennika logicznego]]></LLogUsage>
+<mLogicalLogs><![CDATA[Dzienniki logiczne ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Dziennik fizyczny]]></mPhysicalLog>
+<mAdmin><![CDATA[Administrator]]></mAdmin>
+<mCheckpoints><![CDATA[Punkty kontrolne]]></mCheckpoints>
+<NewAdd><![CDATA[Nowo dodany]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Usunięcie dziennika logicznego nie zostało potwierdzone.  Potwierdź i spróbuj ponownie wykonać operację.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Przeniesienie dziennika logicznego nie zostało potwierdzone.  Potwierdź i spróbuj ponownie wykonać operację.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Przenieś dziennik fizyczny]]></MPhysicalLog>
+<Confirm><![CDATA[Potwierdź]]></Confirm>
+<Move><![CDATA[Przenieś]]></Move>
+<mRPolicy><![CDATA[Strategie odtwarzania]]></mRPolicy>
+<syncckpt><![CDATA[Synchronizuj punkt kontrolny]]></syncckpt>
+<normckpt><![CDATA[Normalny punkt kontrolny]]></normckpt>
+<dockpt><![CDATA[Wykonaj punkt kontrolny]]></dockpt>
+<Checkpoint><![CDATA[Punkt kontrolny]]></Checkpoint>
+<NoMove><![CDATA[Nie przenoś dziennika fizycznego]]></NoMove>
+<DropLLog><![CDATA[Usuń dziennik logiczny]]></DropLLog>
+<NoDropLLog><![CDATA[Nie usuwaj dziennika logicznego]]></NoDropLLog>
+<ON><![CDATA[WŁ.]]></ON>
+<OFF><![CDATA[WYŁ.]]></OFF>
+<InvalidValue><![CDATA[Wprowadzono niepoprawną wartość]]></InvalidValue>
+<save><![CDATA[Zapisz]]></save>
+<cancel><![CDATA[Anuluj]]></cancel>
+<rto_title><![CDATA[RTO - Docelowy czas odtwarzania]]></rto_title>
+<rto><![CDATA[Docelowy czas odtwarzania]]></rto>
+<rto_error><![CDATA[Błąd podczas modyfikowania docelowego czasu restartu serwera.]]></rto_error>
+<minute><![CDATA[minuta]]></minute>
+<minutes><![CDATA[min.]]></minutes>
+<autoChkpts><![CDATA[Automatyczne punkty kontrolne]]></autoChkpts>
+<autoChkpts_error><![CDATA[Błąd podczas modyfikowania automatycznych punktów kontrolnych.]]></autoChkpts_error>
+<autoLRU><![CDATA[Automatyczne strojenie LRU]]></autoLRU>
+<autoLRU_error><![CDATA[Błąd podczas modyfikowania automatycznego strojenia LTU.]]></autoLRU_error>
+<NoPermission><![CDATA[Użytkownicy z uprawnieniami tylko do odczytu nie mają uprawnień do wykonania tej czynności. Użytkownik jest zalogowany jako użytkownik z uprawnieniami tylko do odczytu.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Dodano dzienniki logiczne]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[Po bieżącym dzienniku]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[Na końcu dzienników]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Nazwa obszaru DBSpace]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Błąd podczas modyfikowania dziennika fizycznego.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[W trakcie przełączania na następny dziennik logiczny wystąpił błąd.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[s]]></seconds>
+<AddLogicalLog><![CDATA[Dodaj dziennik logiczny]]></AddLogicalLog>
+<Add><![CDATA[Dodaj]]></Add>
+<Drop><![CDATA[Usuń]]></Drop>
+<LogicalLogNum><![CDATA[Numer dziennika logicznego]]></LogicalLogNum>
+<Confirm><![CDATA[Potwierdź]]></Confirm>
+<SwitchLog><![CDATA[Przełącz dziennik logiczny]]></SwitchLog>
+<Switch><![CDATA[Przełącz]]></Switch>
+<KB><![CDATA[kB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

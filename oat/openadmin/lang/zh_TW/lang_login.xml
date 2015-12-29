@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[管理]]></admin>
+<connect><![CDATA[連接]]></connect>
+<connection><![CDATA[連線]]></connection>
+<connections><![CDATA[連線]]></connections>
+<getservers><![CDATA[取得伺服器]]></getservers>
+<server><![CDATA[伺服器]]></server>
+<hostname><![CDATA[主機名稱]]></hostname>
+<informixserver><![CDATA[Informix 伺服器]]></informixserver>
+<idsprotocol><![CDATA[Informix 通訊協定]]></idsprotocol>
+<login><![CDATA[登入]]></login>
+<log_in><![CDATA[登入]]></log_in>
+<logging_in><![CDATA[正在登入...]]></logging_in>
+<loggingout><![CDATA[登出]]></loggingout>
+<no_user><![CDATA[需要使用者名稱。]]></no_user>
+<missingpassword><![CDATA[需要密碼。]]></missingpassword>
+<missinginformixserver><![CDATA[需要 Informix 伺服器。]]></missinginformixserver>
+<missinghost><![CDATA[需要主機名稱。]]></missinghost>
+<missingport><![CDATA[需要埠號。]]></missingport>
+<group><![CDATA[OAT 群組]]></group>
+<groups><![CDATA[群組]]></groups>
+<password><![CDATA[密碼]]></password>
+<port><![CDATA[埠]]></port>
+<help><![CDATA[說明]]></help>
+<quicklogin><![CDATA[登入 OAT 群組]]></quicklogin>
+<selectaconnection><![CDATA[選取伺服器]]></selectaconnection>
+<serverdetails><![CDATA[連接至伺服器]]></serverdetails>
+<username><![CDATA[使用者名稱]]></username>
+<aboutOAT><![CDATA[關於 OAT]]></aboutOAT>
+<readme><![CDATA[Readme]]></readme>
+<HowDoI><![CDATA[OAT 作業說明]]></HowDoI>
+<cookies_required><![CDATA[需要 Cookie 登入 OpenAdmin Tool。可能是 Web 瀏覽器不支援 Cookie，所以 OAT 才無法讓您登入。]]></cookies_required>
+<LoginRedirectDesc><![CDATA[讓您登入。]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[錯誤：未指定任何連線號碼。]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[錯誤：沒有任何群組。]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[登入詳細資料無效。]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[群組密碼無效 - 請重試]]></InvalidGroupPwd>
+<Default><![CDATA[預設]]></Default>
+<login_instructions><![CDATA[登入 OAT 群組以連接至群組中的伺服器，或直接連接至伺服器。OAT 群組包含一或多個資料庫伺服器的連線資訊。OAT 群組定義於「OAT 管理」頁面。]]></login_instructions>
+<quicklogin_instructions><![CDATA[選取 OAT 群組，輸入群組密碼，然後按一下「取得伺服器」。]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[輸入或確認伺服器的連線資訊。]]></serverdetails_instructions>
+<test_connection><![CDATA[測試連線]]></test_connection>
+<testing_connection><![CDATA[正在測試連線...]]></testing_connection>
+<ConnectionFailed><![CDATA[連線失敗：]]></ConnectionFailed>
+</lang>

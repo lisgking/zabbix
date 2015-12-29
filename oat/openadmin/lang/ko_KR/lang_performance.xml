@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[성능 히스토리]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[프로파일링을 수행할 데이터가 충분하지 않습니다.]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[데이터베이스 서버 {0}에 연결할 수 없습니다.]]></DatabaseConnectionFailed>
+</lang>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[onstat 유틸리티]]></mainTitle>
+<ErrorOnInteractive><![CDATA[onstat 대화식 모드는 OpenAdmin Tool로 액세스할 수 없습니다. ]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[옵션만 입력하십시오. <b>onstat</b> 명령은 OpenAdmin Tool에서 제공됩니다.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[-r 옵션은 OpenAdmin Tool의 onstat 명령에서 허용되지 않습니다.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[-o 옵션은 OpenAdmin Tool의 onstat 명령에서 허용되지 않습니다. ]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[onstat 명령에 잘못된 문자가 포함되어 있습니다. ]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[OpenAdmin Tool의 onstat 명령에는 문자와 숫자, 대시, 콤마, 마침표가 허용됩니다. ]]></ReportValidChars>
+<ErrorPrepend><![CDATA[오류:]]></ErrorPrepend>
+<SubmitAction><![CDATA[실행]]></SubmitAction>
+<OnstatOptions><![CDATA[onstat 옵션 표시]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[onstat 유틸리티 기능은 다음 서버 버전(또는 그 이상)에서만 사용할 수 있습니다. {0}]]></OnstatFeatureNotAvail>
+</lang>

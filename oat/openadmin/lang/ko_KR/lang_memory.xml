@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_memory">
+<MemoryMgr><![CDATA[메모리 관리자]]></MemoryMgr>
+<MemoryFeatureUnavailable><![CDATA[메모리 관리자를 사용하려면 IBM Informix 11.50.xC1 이상이 필요합니다.]]></MemoryFeatureUnavailable>
+</lang>

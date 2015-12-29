@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Сетка]]></GridRepl>
+<noGridSupport><![CDATA[В сетке подключаемому модулю Informix Replication для OAT требуется Informix 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Подключаемый модуль репликации установлен неправильно. Для установки подключаемого модуля репликации в меню Администрирование выберите пункт Менеджер подключаемых модулей.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Для использования подключаемого модуля Informix Replication для OAT нужно зарегистрироваться в OAT как пользователь informix или DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Текущее состояние процесса сбора данных ER]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Число страниц логического журнала до DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Число транзакций, находящихся в спулинге]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Процент дискового пространства, используемый для строковых данных]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Текущее состояние сети ER]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Число отключенных узлов]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Число отложенных транзакций]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Текущее состояние процесса применения ER]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Среднее время задержки при получении транзакции (в секундах)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Скорость транзакций обработки неисправностей]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[В файле SQLHOSTS для узла {0} следующие ID групп серверов являются дублирующими: {1}.  В файле SQLHOSTS присвойте каждой из групп серверов уникальный ID, указав уникальное значение для опции идентификатора (i=число).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[Файл SQLHOSTS для узла {0} не включает следующие группы серверов: {1}.  Если узел является корневым или некорневым узлом, в файле должна быть полная информация SQLHOSTS о всех группах серверов в домене.  Если узел является листовым узлом, в файле, по крайней мере, должна быть информация SQLHOSTS об его родительской группе серверов.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[Файл SQLHOSTS для узла {0} не содержит правильных значений для поля с типом соединения. Один член каждой группы в файле SQLHOSTS должен иметь поддерживаемые сетевые протоколы и типы серверов баз данных.  Enterprise Replication (ER) поддерживает сетевые протоколы soctcp, tlitcp, socssl, tlispx, socimc, tliimc и sqlmux. ER поддерживает типы серверов баз данных on и ol. ER не может использовать соединение, сконфигурированное с опцией модуля поддержки связи (CSM) в файле SQLHOSTS.  Шифрование ER может осуществляться только путем установки параметров конфигурации шифрования.  Чтобы объединить шифрование при передаче по сети между клиентом и сервером с шифрованием ER, сконфигурируйте по два сетевых соединения для каждого из серверов баз данных. Дополнительную информацию о шифровании при передаче по сети и SQLHOSTS смотрите в Информационном центре Informix.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[В файле SQLHOSTS для узла {0} группа {1} содержит несколько автономных серверов или их алиасов.  Группа {1} содержит сервер {2}.  OAT не может определить этот сервер для Enterprise Replication (ER), так как этот сервер является частью кластера с высокой доступностью.  Чтобы определить этот сервер для ER, используйте в командной строке команду cdr define server.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Сервер {0} - это вторичный сервер в кластере высокой доступности.  OAT не может определить этот сервер для Enterprise Replication (ER).  Запустите действие определения сервера на первичном сервере в кластере высокой доступности.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Не удается соединиться с сервером {0}: {1}.  Доверенное соединение не может быть установлено между новым узлом и сервером {0}, который вы выбрали для синхронизации конфигурации ER. Проверьте сетевые соединения.  Дополнительную информацию о подготовке сетевой среды для Enterprise Replication смотрите в Информационном центре Informix.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[ID группы для сервера {0} не совпадает в файлах SQLHOSTS для узлов {1} и {2}.  В файлах SQLHOSTS для узлов {1} и {2} проверьте значение опции идентификатора (i=число) для сервера {0}.  Эти значения должны совпадать.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Сервер {0} не является сервером Enterprise Replication (ER), так как на нем нет базы данных syscdr, содержащей глобальный каталог.  Для синхронизации домена ER выберите сервер, участвующий в ER.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Сервер {0} не является листовым узлом.  Листовой сервер не может быть сервером, синхронизирующим конфигурацию домена ER. Выберите корневой или некорневой сервер.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Этот сервер уже участвует в работе Enteprise Replication (ER).  Выберите другой сервер.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[OAT не может определить этот сервер для Enterprise Replication (ER), так как он является частью кластера с высокой доступностью.  Чтобы задать этот сервер в ER, введите в командной строке команду 'cdr define server'.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[Имя группы {0} недопустимо для сервера {1}.  Обновите имя группы в файле SQLHOSTS перед тем, как продолжить.]]></Invalid_Group_Name>
+<Error><![CDATA[Ошибка]]></Error>
+<ConnectionFailed><![CDATA[Сбой соединения]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[Сведения о соединениях для этого сервера отсутствуют.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[Длина команды превышает предельное значение для интерфейса прикладного программирования администратора.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Задача admin async успешно инициализирована.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Свободно (Мбайт)]]></Free_MB>
+<Used_MB><![CDATA[Используется (Мбайт)]]></Used_MB>
+</lang>

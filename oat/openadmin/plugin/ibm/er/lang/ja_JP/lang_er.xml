@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[エンタープライズ レプリケーション]]></er>
+<GridRepl><![CDATA[グリッド]]></GridRepl>
+<noGridSupport><![CDATA[グリッドに関して、OAT 用の Informix レプリケーション プラグインは Informix 11.70 を必要とします。]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[レプリケーション プラグインが正しくインストールされていません。レプリケーション プラグインをインストールするには、「管理」メニューで「プラグイン マネージャ」をクリックしてください。]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[OAT 用の Informix レプリケーション プラグインでは、ユーザ informix として、または DBSA として OAT にログインする必要があります。]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[ER キャプチャ処理の現行状態です]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[DDRBLOCK までの論理ログ ページ数]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[スプールされたトランザクションの数]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[行データに使用されているディスク領域の割合]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[ER ネットワークの現行状態です]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[接続していないノードの数]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[保留トランザクションの数]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[ER 適用処理の現行状態です]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[トランザクションを受信するまでの平均待ち時間 (秒)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[トランザクション適用失敗率]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[ノード {0} の SQLHOSTS ファイルで次のサーバ グループ ID が重複しています: {1}。SQLHOSTS ファイルで、各サーバ グループに固有 ID を指定するため、ID オプション (i=number) に固有値を指定してください。]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[ノード {0} の SQLHOSTS ファイルに次のサーバ グループが含まれていません: {1}。ノードがルート ノードまたは非ルート ノードの場合、このファイルにはドメイン内のすべてのサーバ グループに関する完全な SQLHOSTS 情報が含まれている必要があります。ノードがリーフ ノードの場合、少なくとも親サーバ グループの SQLHOSTS 情報が含まれている必要があります。]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[ノード {0} の SQLHOSTS ファイルの接続タイプ フィールドに正しい値が指定されていません。SQLHOSTS ファイルの各グループの 1 つのメンバには、サポートされているネットワーク プロトコルとデータベース サーバ タイプが必要です。エンタープライズ レプリケーション (ER) でサポートされているネットワーク プロトコルは、soctcp、tlitcp、socssl、tlispx、socimc、tliimc、および sqlmux です。ER ではサポートされているデータベース サーバ タイプは on とol です。ER では、SQLHOSTS ファイルで通信サポート モジュール (CSM) オプションを使用して構成されている接続は使用できません。ER を暗号化する唯一の方法は、暗号化構成パラメータを設定する方法です。ER 暗号化とクライアント/サーバ ネットワーク暗号化を組み合わせるため、データベース サーバごとに 2 つのネットワーク接続を構成します。ネットワーク暗号化と SQLHOSTS について詳しくは、Informix インフォメーション センターを参照してください。]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[ノード {0} の SQLHOSTS ファイルで、グループ {1} にスタンドアロン サーバまたはその別名以外のサーバが含まれています。グループ {1}  にサーバ {2} が含まれています。このサーバは高可用性クラスタの一部であるため、OAT では、エンタープライズ レプリケーション (ER) 用にこのサーバを定義することはできません。このサーバを ER 用に定義するには、コマンド行からコマンド cdr define server を使用します。]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[サーバ {0} は、高可用性クラスタにおける副サーバです。OAT は、このサーバをエンタープライズ レプリケーション (ER) 用に定義することができません。高可用性クラスタの主サーバに対してサーバ定義アクションを実行してください。]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[サーバ {0} に接続できませんでした: {1}。新規ノードとサーバ {0} (ER 構成を同期するために選択したサーバ) の間にトラステッド接続を確立できません。ネットワーク接続を確認してください。エンタープライズ レプリケーションのネットワーク環境の準備について詳しくは、Informix インフォメーション センターを参照してください。]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[ノード {1} とノード {2} の SQLHOSTS ファイルで、サーバ {0} のグループ ID が異なります。ノード {1} とノード {2} の SQLHOSTS ファイルで、サーバ {0} の ID オプション (i=number) の値を確認してください。これらの値が同一でなければなりません。]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[サーバ {0} には、広域カタログが含まれている syscdr データベースがないため、このサーバはエンタープライズ レプリケーション(ER) サーバではありません。ER ドメイン構成を同期するために、ER に関与するサーバを選択してください。]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[サーバ {0} はリーフ ノードです。リーフ ノードを、ER ドメイン構成を同期するサーバにすることはできません。ルート ノードまたは非ルート ノードを選択してください。]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[このサーバは既にエンタープライズ レプリケーション (ER) 動作に関与しています。別のサーバを選択してください。]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[このサーバは高可用性クラスタの一部であるため、OAT では、エンタープライズ レプリケーション (ER) 用にこのサーバを定義することはできません。このサーバを ER 用に定義するには、コマンド行からコマンド「cdr define server」を使用します。]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[サーバ {1} のグループ名 {0} が無効です。サーバの SQLHOSTS ファイルのグループ名を更新してから続行してください。]]></Invalid_Group_Name>
+<Error><![CDATA[エラー]]></Error>
+<ConnectionFailed><![CDATA[接続失敗]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[このサーバの接続詳細がありません。]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[コマンドの長さが Admin API の制限を超えています。]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[管理非同期タスクは正常に実行要求されました。]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[空き (MB)]]></Free_MB>
+<Used_MB><![CDATA[使用済み (MB)]]></Used_MB>
+</lang>

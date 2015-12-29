@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL Toolbox]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL Toolbox - Database]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL Toolbox - Tabelle]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL Toolbox - Selezione tabella]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL Toolbox - Procedure memorizzate]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL Toolbox - Informazioni tabella]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL Toolbox - Frammenti tabella]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL Toolbox - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[Fare clic sul nome di un database per connettersi.]]></ClickDbConn>
+<Databases><![CDATA[Database]]></Databases>
+<TotalRows><![CDATA[Totale righe: ]]></TotalRows>
+<Tables><![CDATA[Tabelle]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[Risultato]]></SQLResult>
+<SQLTree><![CDATA[Struttura ad albero di query]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[ERRORE: nessuna query]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[ERRORE: nessuna struttura ad albero di query]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[ERRORE: nessuna sessione/connessione SQL corrente]]></SQLErr_NoConn>
+<Column_Info><![CDATA[Informazioni colonna]]></Column_Info>
+<Table_Browse><![CDATA[Esplorazione tabella]]></Table_Browse>
+<Fragments><![CDATA[Frammenti]]></Fragments>
+<Name><![CDATA[Nome]]></Name>
+<Collation><![CDATA[Ordinamento]]></Collation>
+<CreateDate><![CDATA[Data creazione]]></CreateDate>
+<Logging><![CDATA[Registrazione]]></Logging>
+<IncCatalog><![CDATA[Includere tabelle catalogo database?]]></IncCatalog>
+<Submit><![CDATA[Inoltra]]></Submit>
+<ChkRtTypes><![CDATA[Controlla i tipi di routine (ID lingua) da selezionare:]]></ChkRtTypes>
+<Owner><![CDATA[Proprietario]]></Owner>
+<Procid><![CDATA[ID processo]]></Procid>
+<Type><![CDATA[Tipo]]></Type>
+<Numargs><![CDATA[Numero argomenti]]></Numargs>
+<ParamTypes><![CDATA[Tipi di parametro]]></ParamTypes>
+<Mode><![CDATA[Modalità]]></Mode>
+<Langid><![CDATA[ID lingua]]></Langid>
+<FragDispTitle><![CDATA[Informazioni frammentazione per]]></FragDispTitle>
+<Partnum><![CDATA[Numero di partizione]]></Partnum>
+<FragmentType><![CDATA[Tipo frammento]]></FragmentType>
+<Expression><![CDATA[Espressione]]></Expression>
+<Dbspace><![CDATA[Spazio DB]]></Dbspace>
+<Partition><![CDATA[Partizione]]></Partition>
+<ColDispTitle><![CDATA[Informazioni tabella per]]></ColDispTitle>
+<Colno><![CDATA[Numero colonna]]></Colno>
+<Colname><![CDATA[Nome colonna]]></Colname>
+<Coltype><![CDATA[Tipo colonna]]></Coltype>
+<Collength><![CDATA[Lunghezza colonna]]></Collength>
+<ExtendedType><![CDATA[Tipo esteso]]></ExtendedType>
+<Browse><![CDATA[Esplora]]></Browse>
+<Tabid><![CDATA[ID tabella]]></Tabid>
+<Rowsize><![CDATA[Dimensione riga]]></Rowsize>
+<NRows><![CDATA[Numero di righe]]></NRows>
+<NIndexes><![CDATA[Numero di indici]]></NIndexes>
+<Locklevel><![CDATA[Livello di blocco]]></Locklevel>
+<Fextsize><![CDATA[Dimensione prima estensione]]></Fextsize>
+<Nextsize><![CDATA[Dimensione di estensione successiva]]></Nextsize>
+<PagesUsed><![CDATA[Pagine utilizzate]]></PagesUsed>
+<View><![CDATA[Visualizza]]></View>
+<chooseDB><![CDATA[Selezionare un database.]]></chooseDB>
+<butRunQuery><![CDATA[Esegui query]]></butRunQuery>
+<butSaveToFile><![CDATA[Salva query in file]]></butSaveToFile>
+<butClear><![CDATA[Cancella]]></butClear>
+<spanRunQuery><![CDATA[Fare clic per eseguire la query nel database.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[Fare clic per salvare il testo della query in un file.]]></spanSaveToFile>
+<spanClear><![CDATA[Fare clic per cancellare la finestra dell'editor query.]]></spanClear>
+<ColOpt><![CDATA[Opzione colonna]]></ColOpt>
+<ShowAll><![CDATA[Mostra tutto]]></ShowAll>
+<Show255><![CDATA[Mostra 255 caratteri]]></Show255>
+<ShowInFile><![CDATA[Mostra nel file]]></ShowInFile>
+<ShowSize><![CDATA[Mostra solo dimensione]]></ShowSize>
+<IgnoreCol><![CDATA[Ignora colonna]]></IgnoreCol>
+<ShowImage><![CDATA[Mostra come immagine]]></ShowImage>
+<Import><![CDATA[Importa]]></Import>
+<spanImport><![CDATA[Fare clic per importare una query da un file]]></spanImport>
+<ImportQFrom><![CDATA[Importa query da:]]></ImportQFrom>
+<Change><![CDATA[Modifica]]></Change>
+<Reset><![CDATA[Reimposta]]></Reset>
+<QOutput><![CDATA[Output query]]></QOutput>
+<Error><![CDATA[Errore]]></Error>
+<filename><![CDATA[Nome file]]></filename>
+<error_num><![CDATA[Numero errore]]></error_num>
+<size_too_big><![CDATA[Dimensione file troppo grande]]></size_too_big>
+<size_is_0><![CDATA[Dimensione file è 0]]></size_is_0>
+<not_text_type><![CDATA[Il file non è un file di testo]]></not_text_type>
+<cannot_read_file><![CDATA[Impossibile leggere il file]]></cannot_read_file>
+<Return><![CDATA[Invio]]></Return>
+<Syntax><![CDATA[Si è verificato un errore di sintassi]]></Syntax>
+<QUERY><![CDATA[QUERY]]></QUERY>
+<NumFet><![CDATA[Numero recuperato]]></NumFet>
+<AllRowsFet><![CDATA[Tutte le righe recuperate]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[Per questa query verrà recuperato solo un numero limitato di righe.]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[Numero massimo corrente di righe che verranno recuperate per alcuni tipi di query]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[È possibile eseguire solo un'istruzione SQL per volta.  Tutti i caratteri dopo il primo punto e virgola dell'input sono stati cancellati.]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[Salvataggio non riuscito: nessuna query da salvare nel file.]]></Save_NoQuery>
+<NoPermission><![CDATA[Gli utenti in sola lettura non dispongono dell'autorizzazione per eseguire questa operazione. È stato effettuato l'accesso come utente in sola lettura.]]></NoPermission>
+<NeedToLogin><![CDATA[È necessario accedere.]]></NeedToLogin>
+<SelectDB><![CDATA[Selezionare il database a cui connettersi.]]></SelectDB>
+<ConnectingDB><![CDATA[Connessione al database]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[Editor query SQL]]></SQLQueryEditor>
+<OneStmt><![CDATA[un'istruzione per volta]]></OneStmt>
+<RowFetchLimit><![CDATA[Per le query con order by, group by, subquery, distinto, unioni e aggregati, il numero di righe da recuperare è limitato a:]]></RowFetchLimit> 
+<ShowAllText><![CDATA[Mostra tutto il testo]]></ShowAllText>
+<ShowSomeText><![CDATA[Mostra una parte del testo]]></ShowSomeText>
+<ShowInFile><![CDATA[Mostra nel file]]></ShowInFile>
+<IgnoreText><![CDATA[Ignora testo]]></IgnoreText>
+<IgnoreByte><![CDATA[Ignora byte]]></IgnoreByte>
+<SaveInFile><![CDATA[Salva in file]]></SaveInFile>
+<file><![CDATA[file]]></file>
+<filesize><![CDATA[dimensione={0}]]></filesize>
+<filetype><![CDATA[File {0}]]></filetype>
+<ErrorUnableToChg><![CDATA[Errore: impossibile modificare opzione]]></ErrorUnableToChg>
+<SQLResults><![CDATA[Risultati SQL]]></SQLResults>
+<SizeSixDBs><![CDATA[Dimensione dei 6 database più grandi]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[Disconnetti: SQL ToolBox]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[Accesso effettuato come]]></LoggedInAs>
+<ClickToSelect><![CDATA[Fare clic per effettuare una selezione * nella tabella.]]></ClickToSelect>
+<PartitionInfo><![CDATA[Informazioni partizione]]></PartitionInfo>
+<CloseWindow><![CDATA[Chiudi finestra]]></CloseWindow>
+<DisplayOptions><![CDATA[Opzioni di visualizzazione]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[Procedure/Funzioni ({0})]]></ProceduresFunctions>
+<Function><![CDATA[Funzione]]></Function>
+<Procedure><![CDATA[Procedura]]></Procedure>
+<All><![CDATA[Tutto]]></All>
+<Buffered><![CDATA[Con buffer]]></Buffered>
+<Unbuffered><![CDATA[Senza buffer]]></Unbuffered>
+<NotLogged><![CDATA[Non registrato]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[Ultime statistiche]]></LastStats>
+<Pages><![CDATA[Pagine]]></Pages>
+<pages><![CDATA[pagine]]></pages>
+<byte_blob><![CDATA[Byte/Blob]]></byte_blob>
+<text_clob><![CDATA[Testo/Clob]]></text_clob>
+</lang>

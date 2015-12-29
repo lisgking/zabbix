@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Bloques de datos]]></Chunks>
+<Chunk><![CDATA[Bloque de datos]]></Chunk>
+<MirrorChunk><![CDATA[Bloque de datos de réplica]]></MirrorChunk>
+<ChunkIO><![CDATA[E/S de bloque]]></ChunkIO>
+<ChunkTable><![CDATA[Listado de tablas del bloque de datos]]></ChunkTable>
+<MirrorTable><![CDATA[Listado de tablas del bloque de datos de réplica]]></MirrorTable>
+<ChunkNum><![CDATA[Número del bloque de datos]]></ChunkNum>
+<SpaceName><![CDATA[Nombre de espacio]]></SpaceName>
+<PageSize><![CDATA[Tamaño de página]]></PageSize>
+<Offset><![CDATA[Desplazamiento]]></Offset>
+<Size><![CDATA[Tamaño]]></Size>
+<Free><![CDATA[Libre]]></Free>
+<Used><![CDATA[% usado]]></Used>
+<Status><![CDATA[Estado]]></Status>
+<Path><![CDATA[Vía de acceso]]></Path>
+<ChunkPath><![CDATA[Vía de acceso del bloque de datos]]></ChunkPath>
+<Reads><![CDATA[Lecturas]]></Reads>
+<Writes><![CDATA[Grabaciones]]></Writes>
+<TotalIO><![CDATA[Total de lecturas y grabaciones]]></TotalIO>
+<IOTableTitle><![CDATA[E/S por bloque]]></IOTableTitle>
+<IOGraphTitle><![CDATA[E/S de los 20 bloques principales]]></IOGraphTitle>
+<ONLINE><![CDATA[EN LÍNEA]]></ONLINE>
+<OFFLINE><![CDATA[FUERA DE LÍNEA]]></OFFLINE>
+<RECOVERING><![CDATA[RECUPERANDO]]></RECOVERING>
+</lang>

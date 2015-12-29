@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[권한 관리]]></ManagePrivileges>
+<UserPrivileges><![CDATA[사용자 권한]]></UserPrivileges>
+<Database><![CDATA[데이터베이스]]></Database>
+<DBPrivileges><![CDATA[데이터베이스 레벨 권한]]></DBPrivileges>
+<TablePrivileges><![CDATA[테이블 레벨 권한]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL 관리 API 권한]]></AdminPrivileges>
+<NonOsUsers><![CDATA[내부 사용자]]></NonOsUsers>
+<Name><![CDATA[이름]]></Name>
+<Type><![CDATA[유형]]></Type>
+<DefRole><![CDATA[기본 역할]]></DefRole>
+<Tabname><![CDATA[테이블 이름]]></Tabname>
+<User><![CDATA[사용자]]></User>
+<Grantor><![CDATA[권한 부여자]]></Grantor>
+<Privilege><![CDATA[권한]]></Privilege>
+<Privileges><![CDATA[권한]]></Privileges>
+<Username><![CDATA[사용자 이름]]></Username>
+<Grant><![CDATA[권한 부여]]></Grant>
+<GrantNewPriv><![CDATA[새 권한 부여]]></GrantNewPriv>
+<Roles><![CDATA[역할]]></Roles>
+<CreateNewRole><![CDATA[새 역할 작성]]></CreateNewRole>
+<Create><![CDATA[작성]]></Create>
+<RoleName><![CDATA[역할 이름]]></RoleName>
+<NoUserError><![CDATA[권한 부여에 실패했습니다. 사용자 이름이 제공되지 않았습니다.]]></NoUserError>
+<NoPrivError><![CDATA[권한 부여에 실패했습니다. 권한 레벨이 제공되지 않았습니다.]]></NoPrivError>
+<NoTabError><![CDATA[권한 부여에 실패했습니다. 테이블 이름이 제공되지 않았습니다.]]></NoTabError>
+<NoRoleError><![CDATA[작성에 실패했습니다. 역할 이름이 제공되지 않았습니다.]]></NoRoleError>
+<NoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></NoPermission>
+<NoDatabasesError><![CDATA[이 데이터베이스 서버에서 사용할 수 있는 비시스템 데이터베이스가 없습니다.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[사용자 권한 부여에 성공함]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[사용자 권한이 취소됨]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[사용자 권한이 저장됨]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[테이블 권한 부여에 성공함]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[사용자]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[사용자 권한이 취소됨]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[테이블]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[사용자 권한이 저장됨]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[역할 작성에 성공함]]></CreateSuccessForRole>
+<Connect><![CDATA[연결]]></Connect>
+<Resource><![CDATA[리소스]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[연결]]></CONNECT>
+<RESOURCE><![CDATA[리소스]]></RESOURCE>
+<Select><![CDATA[선택]]></Select>
+<Update><![CDATA[갱신]]></Update>
+<Insert><![CDATA[삽입]]></Insert>
+<Delete><![CDATA[삭제]]></Delete>
+<Index><![CDATA[인덱스]]></Index>
+<Alter><![CDATA[변경]]></Alter>
+<References><![CDATA[참조]]></References>
+<Under><![CDATA[아래]]></Under>
+<Modify><![CDATA[수정]]></Modify>
+<Revoke><![CDATA[취소]]></Revoke>
+<ErrorF><![CDATA[오류:]]></ErrorF>
+<GrantFailed><![CDATA[권한 부여에 실패함]]></GrantFailed>
+<CreateFailed><![CDATA[작성에 실패함]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[내부 사용자의 경우 OAT에 Informix 11.70이 필요합니다.
+]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[SQL 관리 API 명령 권한의 경우 OAT에 Informix 12.10이 필요합니다.]]></AdminPrivileges_min_server_version>
+</lang>

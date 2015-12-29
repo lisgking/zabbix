@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Mentés]]></Backup>
+<noBackupSupport><![CDATA[A biztonsági mentés csak Informix Általános és Elsődleges kiszolgálótípusokon, illetve Távoli önálló másodlagos (RSS) kiszolgálókon támogatott.]]></noBackupSupport>
+<sdsServer>![CDATA[Osztott lemezes másodlagos (SDS) kiszolgálóhoz csatlakozott.]]</sdsServer>
+<hdrSecondary>![CDATA[HDR másodlagos kiszolgálóhoz csatlakozott.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[A biztonsági mentés az OAT alkalmazásban Informix 11.70.xC2 változatot igényel.]]></noBackupSupportServerVersion>
+<notAvail>Nem elérhető</notAvail>
+<onbarBackProcMissing>Az ON-Bar mentésekhez szükséges tárolt eljárás hiányzik a kiszolgálóról. Ellenőrizze, hogy a sch_oat.sql parancsfájl végrehajtásra került-e a kiszolgáló indításakor.</onbarBackProcMissing>
+<Unknown>Ismeretlen</Unknown>
+</lang>

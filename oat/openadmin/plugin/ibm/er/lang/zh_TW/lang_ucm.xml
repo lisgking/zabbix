@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[連線管理程式]]></ucm>
+<noCMSupportServerVersion><![CDATA[OAT 中的「連線管理程式」需要 Informix 11.70.xC3 版。]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[「連線管理程式」作業失敗。如需詳細資料，請檢查「連線管理程式」日誌檔。]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[找不到「連線管理程式」{0} 的連線單元。]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[找不到連線單元 {0}。]]></ConnUnitNotFound>
+</lang>

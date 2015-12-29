@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[プラグイン マネージャ]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[プラグイン マネージャは OAT 一時ディレクトリ tmp に書き込めません。プラグインをインストールするには、OAT 一時ディレクトリへの書込み許可が必要です。このディレクトリへの書込み許可を取得し、プラグインを再インストールしてください。]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[プラグイン マネージャでは zip モジュールがインストールされた PHP が構成されていなければならないため、プラグイン マネージャをオープンできません。OAT が使用している PHP には zip モジュールがインストールされていません。zip モジュールがインストールされた PHP を Web サーバに構成してください。あるいは、OAT インストーラを使用して OAT を再インストールすると、インストーラによって PHP が構成されます。]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[プラグインはインストールされませんでした。]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[インストール済みプラグイン]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[インストールされていないプラグイン]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[インストールするプラグインが選択されませんでした。]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[利用できるアップグレードはありません。]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[プラグイン マネージャはプラグイン ディレクトリに書き込めません。このディレクトリへの書込み許可を取得し、プラグインを再インストールしてください。]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[インストール済みの現行バージョン]]></CurrVerInstalled>
+<Unknown><![CDATA[不明]]></Unknown>
+<ClickToEnable><![CDATA[有効化する場合にクリックします]]></ClickToEnable>
+<ClickToDisable><![CDATA[無効化する場合にクリックします]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[このファイルを削除できませんでした: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[プラグインは正常にアップグレードされました。]]></PluginUpgraded>
+<PluginInstalled><![CDATA[プラグインは正常にインストールされました。]]></PluginInstalled>
+<Name><![CDATA[名前]]></Name>
+<Author><![CDATA[作成者]]></Author>
+<Description><![CDATA[説明]]></Description>
+<Version><![CDATA[バージョン]]></Version>
+<ServerVersion><![CDATA[サーバ バージョン]]></ServerVersion>
+<MinOATVersion><![CDATA[OAT 最小バージョン]]></MinOATVersion>
+<Install><![CDATA[インストール]]></Install>
+<Uninstall><![CDATA[アンインストール]]></Uninstall>
+<Upgrade><![CDATA[アップグレード]]></Upgrade>
+<Enabled><![CDATA[有効]]></Enabled>
+<updating><![CDATA[更新中]]></updating>
+<LatestInstalled><![CDATA[インストール済みの最新]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[この操作により、プラグイン {0} がアンインストールされます。プラグインをインストールするときに、プラグイン圧縮ファイルは削除されます。プラグインをアンインストールすると、プラグイン圧縮ファイルがプラグイン ディレクトリに復元されるまで、プラグインを再インストールすることはできません。\n\n続行しますか?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[プラグインは正常にアンインストールされました。]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[プラグインはアンインストールされませんでした。]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT はプラグインをアンインストールしようとしましたが、プラグイン ID が見つかりませんでした。「管理」メニューで、「プラグイン マネージャ」をクリックし、インストールされたプラグインのリストを確認します。必要な場合は、プラグインをもう一度アンインストールしてください。]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[プラグインはアンインストールされましたが、以下のファイルを削除できませんでした。]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[コンピュータからこれらのファイルを削除できます。]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[プラグインのメニュー項目は削除されませんでした。「メニュー マネージャ」ページでメニュー項目を削除できます。]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[選択されたプラグインはインストールできません。プラグインに必要な OAT 最小バージョンは {0} です。]]></MinOATVersionError>
+<Agree><![CDATA[同意]]></Agree>
+<Disagree><![CDATA[不同意]]></Disagree>
+</lang>

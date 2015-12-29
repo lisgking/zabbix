@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[To exclude nodes from the check, enter the node names separated by commas.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[To exclude tables from the check, enter the partition numbers separated by commas.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[To exclude tables from the check, enter the partition numbers separated by commas.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[To exclude tables from the check, enter the partition numbers separated by commas.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[To exclude chunks from the check, enter the chunk numbers separated by commas.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[To exclude chunks from the check, enter the chunk numbers separated by commas.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[To exclude chunks from the check, enter the chunk numbers separated by commas.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[To exclude dbspaces from the check, enter the dbspace names separated by commas.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[To exclude tables from the check, enter the partition numbers separated by commas.]]></exc_Rowsize>
+</lang>

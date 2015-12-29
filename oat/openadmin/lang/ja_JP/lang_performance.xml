@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[パフォーマンス履歴]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[プロファイル作成のために十分なデータがありません]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[データベース サーバ {0} に接続できません。]]></DatabaseConnectionFailed>
+</lang>

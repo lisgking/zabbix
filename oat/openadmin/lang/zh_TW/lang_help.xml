@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="help">
+<OATHelp><![CDATA[OAT - 說明]]></OATHelp>
+<Help><![CDATA[說明]]></Help>
+<CloseWindow><![CDATA[關閉視窗]]></CloseWindow>
+<ErrorOpeningDB><![CDATA[開啟說明資料庫時發生錯誤]]></ErrorOpeningDB>
+<SorryNoHelpFound><![CDATA[找不到此頁面的說明主題。<br/><br/>您可以在 IBM&reg; Informix&reg; 資訊中心內找到許多 OAT 作業的相關說明。]]></SorryNoHelpFound>
+</lang>

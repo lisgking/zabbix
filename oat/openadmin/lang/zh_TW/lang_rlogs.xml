@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[回復日誌]]></mainTitle>
+<lognum><![CDATA[號碼]]></lognum>
+<uniqid><![CDATA[唯一 ID]]></uniqid>
+<size><![CDATA[大小]]></size>
+<SwitchComment><![CDATA[切換至下一個邏輯日誌]]></SwitchComment>
+<attributes><![CDATA[屬性]]></attributes>
+<used><![CDATA[已使用]]></used>
+<location><![CDATA[位置]]></location>
+<notes><![CDATA[附註]]></notes>
+<lastfilled><![CDATA[前次填寫]]></lastfilled>
+<ltitle><![CDATA[邏輯日誌狀態]]></ltitle>
+<notFull><![CDATA[未滿]]></notFull>
+<UsedBackedUp><![CDATA[已使用及備份]]></UsedBackedUp>
+<UsedCurrent><![CDATA[已使用及現行]]></UsedCurrent>
+<Used><![CDATA[已使用]]></Used>
+<Free><![CDATA[可用]]></Free>
+<BackedUp><![CDATA[備份]]></BackedUp>
+<Pages><![CDATA[頁面]]></Pages>
+<pages><![CDATA[頁面]]></pages>
+<Usage><![CDATA[使用情況]]></Usage>
+<PagesPerSec><![CDATA[填寫率]]></PagesPerSec>
+<PLogUsage><![CDATA[實體日誌用量]]></PLogUsage>
+<PLogInfo><![CDATA[實體日誌資訊]]></PLogInfo>
+<PLogSize><![CDATA[實體日誌大小]]></PLogSize>
+<PLogUsed><![CDATA[使用量]]></PLogUsed>
+<PlogLocation><![CDATA[位置]]></PlogLocation>
+<PlogStartPos><![CDATA[啟動偏移]]></PlogStartPos>
+<PlogBuffSize><![CDATA[緩衝區大小]]></PlogBuffSize>
+<LLogUsage><![CDATA[邏輯日誌用量]]></LLogUsage>
+<mLogicalLogs><![CDATA[邏輯日誌]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[實體日誌]]></mPhysicalLog>
+<mAdmin><![CDATA[管理]]></mAdmin>
+<mCheckpoints><![CDATA[檢查點]]></mCheckpoints>
+<NewAdd><![CDATA[最近新增]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[未確認「邏輯日誌」捨棄。請確認並重試作業。]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[未確認「實體日誌」移動。請確認並重試作業。]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[移動實體日誌]]></MPhysicalLog>
+<Confirm><![CDATA[確認]]></Confirm>
+<Move><![CDATA[移動]]></Move>
+<mRPolicy><![CDATA[回復原則]]></mRPolicy>
+<syncckpt><![CDATA[同步檢查點]]></syncckpt>
+<normckpt><![CDATA[一般檢查點]]></normckpt>
+<dockpt><![CDATA[執行檢查點]]></dockpt>
+<Checkpoint><![CDATA[檢查點]]></Checkpoint>
+<NoMove><![CDATA[不移動實體日誌]]></NoMove>
+<DropLLog><![CDATA[捨棄邏輯日誌]]></DropLLog>
+<NoDropLLog><![CDATA[不捨棄邏輯日誌]]></NoDropLLog>
+<ON><![CDATA[開啟]]></ON>
+<OFF><![CDATA[關閉]]></OFF>
+<InvalidValue><![CDATA[輸入的值無效]]></InvalidValue>
+<save><![CDATA[儲存]]></save>
+<cancel><![CDATA[取消]]></cancel>
+<rto_title><![CDATA[RTO - 回復時間目標]]></rto_title>
+<rto><![CDATA[回復時間目標]]></rto>
+<rto_error><![CDATA[修改「RTO 伺服器重新啟動」時發生錯誤。]]></rto_error>
+<minute><![CDATA[分鐘]]></minute>
+<minutes><![CDATA[分鐘]]></minutes>
+<autoChkpts><![CDATA[自動檢查點]]></autoChkpts>
+<autoChkpts_error><![CDATA[修改「自動檢查點」時發生錯誤。]]></autoChkpts_error>
+<autoLRU><![CDATA[自動 LRU 調整]]></autoLRU>
+<autoLRU_error><![CDATA[修改「自動 LRU 調整」時發生錯誤。]]></autoLRU_error>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<LogicalLogsAdded><![CDATA[已新增邏輯日誌]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[現行日誌之後]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[日誌結束時]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[DBSpace 名稱]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[修改實體日誌時發生錯誤。]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[切換至下一個邏輯日誌時發生錯誤。]]></ErrorWithSwitchLog>
+<seconds><![CDATA[秒]]></seconds>
+<AddLogicalLog><![CDATA[新增邏輯日誌]]></AddLogicalLog>
+<Add><![CDATA[新增]]></Add>
+<Drop><![CDATA[捨棄]]></Drop>
+<LogicalLogNum><![CDATA[邏輯日誌號碼]]></LogicalLogNum>
+<Confirm><![CDATA[確認]]></Confirm>
+<SwitchLog><![CDATA[切換邏輯日誌]]></SwitchLog>
+<Switch><![CDATA[切換]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

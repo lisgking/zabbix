@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[Legalább 5.2.4-es PHP változat szükséges.  A talált PHP változat:]]></MinPHPVersion>
+<GenTime><![CDATA[Előállítás ideje]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[Az OAT Informix 11.10 vagy újabb változatot igényel.]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[A(z) {0} bedolgozó Informix {1} változatot igényel.]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[A futtatási funkció hiányzik a(z) {0} modulból.]]></NoModuleRunFunction>
+<SorryModule><![CDATA[Az URL nem érvényes OAT oldalcím. A(z) {0} modul nem található az OAT modulkönyvtárban. Ellenőrizze, hogy a modulnév megegyezik-e az URL címben szereplő "act" kulcsszóval.]]></SorryModule>
+<InvalidURL_do_param><![CDATA[Az URL nem érvényes OAT oldalcím. Az OAT oldalak megjelenítéséhez kattintson az OAT menü menüpontjára vagy OAT oldalon található hivatkozásra.]]></InvalidURL_do_param>
+</lang>

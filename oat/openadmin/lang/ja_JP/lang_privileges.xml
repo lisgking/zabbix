@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[アクセス権の管理]]></ManagePrivileges>
+<UserPrivileges><![CDATA[ユーザ特権]]></UserPrivileges>
+<Database><![CDATA[データベース]]></Database>
+<DBPrivileges><![CDATA[データベース レベル アクセス権]]></DBPrivileges>
+<TablePrivileges><![CDATA[表レベル アクセス権]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL 管理 API アクセス権]]></AdminPrivileges>
+<NonOsUsers><![CDATA[内部ユーザ]]></NonOsUsers>
+<Name><![CDATA[名前]]></Name>
+<Type><![CDATA[タイプ]]></Type>
+<DefRole><![CDATA[デフォルト ロール]]></DefRole>
+<Tabname><![CDATA[表名]]></Tabname>
+<User><![CDATA[ユーザ]]></User>
+<Grantor><![CDATA[権限授与者]]></Grantor>
+<Privilege><![CDATA[アクセス権]]></Privilege>
+<Privileges><![CDATA[アクセス権]]></Privileges>
+<Username><![CDATA[ユーザ名]]></Username>
+<Grant><![CDATA[付与]]></Grant>
+<GrantNewPriv><![CDATA[新規アクセス権の付与]]></GrantNewPriv>
+<Roles><![CDATA[ロール]]></Roles>
+<CreateNewRole><![CDATA[新規ロールの作成]]></CreateNewRole>
+<Create><![CDATA[作成]]></Create>
+<RoleName><![CDATA[ロール名]]></RoleName>
+<NoUserError><![CDATA[付与失敗: ユーザ名が指定されませんでした。]]></NoUserError>
+<NoPrivError><![CDATA[付与失敗: アクセス権レベルが指定されませんでした。]]></NoPrivError>
+<NoTabError><![CDATA[付与失敗: 表名が指定されませんでした。]]></NoTabError>
+<NoRoleError><![CDATA[作成失敗: ロール名が指定されませんでした。]]></NoRoleError>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<NoDatabasesError><![CDATA[このデータベース サーバでシステム以外のデータベースがありません。]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[ユーザに正常に付与されました]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[ユーザのアクセス権が取り消されました]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[ユーザのアクセス権が保存されました]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[表に正常に付与されました]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[ユーザ]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[ユーザのアクセス権が取り消されました]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[表]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[ユーザのアクセス権が保存されました]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[役割に対して正常に作成されました]]></CreateSuccessForRole>
+<Connect><![CDATA[接続]]></Connect>
+<Resource><![CDATA[リソース]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[選択]]></Select>
+<Update><![CDATA[更新]]></Update>
+<Insert><![CDATA[挿入]]></Insert>
+<Delete><![CDATA[削除]]></Delete>
+<Index><![CDATA[インデックス]]></Index>
+<Alter><![CDATA[変更]]></Alter>
+<References><![CDATA[参照]]></References>
+<Under><![CDATA[アンダー]]></Under>
+<Modify><![CDATA[変更]]></Modify>
+<Revoke><![CDATA[取消し]]></Revoke>
+<ErrorF><![CDATA[エラー:]]></ErrorF>
+<GrantFailed><![CDATA[付与失敗]]></GrantFailed>
+<CreateFailed><![CDATA[作成失敗]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[内部ユーザの場合、OAT には Informix 11.70 が必要です。]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[SQL 管理 API コマンド アクセス権の場合、OAT には Informix 12.10 が必要です。]]></AdminPrivileges_min_server_version>
+</lang>

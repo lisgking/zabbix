@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Convalida di sistema]]></mainTitle>
+<checkDataFormat><![CDATA[Controlla formato dati]]></checkDataFormat>
+<databaseName><![CDATA[Nome database]]></databaseName>
+<tableName><![CDATA[Nome tabella]]></tableName>
+<chkTable><![CDATA[Controlla tabella]]></chkTable>
+<chkExtFormat><![CDATA[Controlla formato estensione]]></chkExtFormat>
+<extName><![CDATA[Nome spazio DB]]></extName>
+<chkExtent><![CDATA[Controlla estensione]]></chkExtent>
+<valResTo><![CDATA[Risultati convalida in...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[convalida del sistema oncheck]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[convalida oncheck completata.]]></oncheckComplete>
+<ValidationResults><![CDATA[Risultati convalida...]]></ValidationResults>
+<SysValNotValid><![CDATA[Convalida del sistema non valida in secondari.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Gli utenti in sola lettura non dispongono dell'autorizzazione per eseguire questa operazione. È stato effettuato l'accesso come utente in sola lettura.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Attenzione: l'esecuzione di un controllo può richiedere l'impiego di una notevole quantità di risorse di elaborazione, in base al numero di pagine interessate. L'azione legge tutte le pagine per le tabelle specificate, ad esclusione delle pagine BLOB e le pagine SLOB, e verifica la congruenza di ogni pagina. Si desidera continuare?]]></confirmCheckData>
+<NotYetImpl><![CDATA[In questa pagina, OpenAdmin Tool non è in grado di visualizzare le informazioni per un server di database con più impostazioni internazionali non in lingua inglese. Il server di database contiene più impostazioni internazionali non in lingua inglese.]]></NotYetImpl>
+</lang>

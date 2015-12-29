@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_global">
+<help><![CDATA[Nápověda]]></help>
+<language><![CDATA[Jazyk]]></language>
+<switchServer><![CDATA[Přepnout na server:]]></switchServer>
+<switchDatabase><![CDATA[Přepnout na databázi:]]></switchDatabase>
+<confirmContinue><![CDATA[Chcete pokračovat?]]></confirmContinue>
+<confirmSqltoolboxLogout><![CDATA[Odhlásit se od panelu nástrojů SQL. Chcete pokračovat?]]></confirmSqltoolboxLogout>
+<ok><![CDATA[OK]]></ok>
+<featureNotSupported><![CDATA[Tato funkce vyžaduje produkt Informix verze {0}.]]></featureNotSupported>
+<couldNotLoadSwitchLocale><![CDATA[Nástroj OAT nemůže přistoupit k informacím o národním prostředí databáze na databázovém serveru.]]></couldNotLoadSwitchLocale>
+</lang>

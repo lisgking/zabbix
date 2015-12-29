@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Vörös riasztás: ellenőrzi, hogy a DBSPACETEMP konfigurációs paraméter be van-e állítva.  Sárga riasztás: ellenőrzi, hogy nincsenek-e szóközök a DBSPACETEMP konfigurációs paraméter értékében.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a DUMPDIR konfigurációs paraméter nem a sárga riasztás küszöbértékében felsorolt könyvtárra van-e beállítva.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a dinamikus naplófoglalás (DYNAMIC_LOGS) engedélyezett-e.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Vörös riasztás: ellenőrzi, hogy a logikai naplófájlok tárolása nem a fő adatbázis-területen (ROOTDBS) történik-e. Sárga riasztás: ellenőrzi, hogy a logikai naplók tárolására szolgáló adatbázis-területen nincsenek-e tárolt táblák.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Vörös riasztás: ha a dinamikus naplófoglalás (DYNAMIC_LOGS) ki van kapcsolva, akkor ellenőrzi, hogy hosszú tranzakciós felső határérték (LTXHWM) a vörös riasztási küszöbérték alatt van-e.  Sárga riasztás: ha a dinamikus naplófoglalás ki van kapcsolva, akkor ellenőrzi, hogy hosszú tranzakciós felső határérték (LTXHWM) a sárga riasztási küszöbérték alatt van-e.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a legrégebben használt minimális piszkos (lru_min_dirty) érték a sárga riasztási küszöbérték felett van-e.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy az LTAPEDEV konfigurációs paraméter nem a sárga riasztás küszöbértékében felsorolt könyvtárra van-e beállítva.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a VPCLASS konfigurációs paraméter noage paramétere be van-e állítva.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy az adatbázis-kiszolgáló nem a működés folytatására van-e beállítva leállított adatbázis-terület észlelése esetén (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Vörös riasztás: ellenőrzi, hogy a fizikai napló tárolása nem a fő adatbázis-területen (ROOTDBS) történik-e. Sárga riasztás: ellenőrzi, hogy a fizikai napló tárolására szolgáló adatbázis-területen nincsenek-e tárolt táblák.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy amennyiben a SINGLE_CPU_VP konfigurációs paraméter be van állítva, akkor a MULTIPROCESSOR konfigurációs paraméter ki van-e kapcsolva.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a TAPEDEV konfigurációs paraméter nem a sárga riasztás küszöbértékében felsorolt könyvtárra van-e beállítva.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Vörös riasztás: ellenőrzi, hogy a ma létrehozott ATS fájlok száma a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy a ma létrehozott ATS fájlok száma a sárga riasztási küszöbérték alatt van-e.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Vörös riasztás: ellenőrzi, hogy a tranzakció blokkolás (DDRBLOCK) megkezdése előtt hátralévő naplólapok százalékos aránya a vörös riasztási küszöbértékben felsorolt értéke felett van-e. Sárga riasztás: ellenőrzi, hogy a tranzakció blokkolás megkezdése előtt hátralévő naplólapok százalékos aránya a sárga riasztási küszöbértékben felsorolt értéke felett van-e.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Vörös riasztás: ellenőrzi, hogy az ER fürtben található csomópontok aktívak-e és replikálnak-e adatokat. Sárga riasztás: nincs.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Vörös riasztás: ellenőrzi, hogy a ma létrehozott RIS fájlok száma a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy a ma létrehozott RIS fájlok száma a sárga riasztási küszöbérték alatt van-e.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer számára rendelkezésre álló szabad memória százalékos aránya a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer számára rendelkezésre álló szabad memória százalékos aránya a sárga riasztási küszöbérték felett van-e.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy az operációs rendszer online processzorainak száma megegyezik-e az operációs rendszer processzorainak számával.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Vörös riasztás: nincs. Sárga riasztás: ellenőrzi, hogy a CPU virtuális processzorok száma a sárga riasztási küszöbértékként megadott operációs rendszeri CPU-k százalékos aránya felett van-e.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer folyamatonként megnyitott fájlleíróinak száma a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer folyamatonként megnyitott fájlleíróinak száma a sárga riasztási küszöbérték felett van-e.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer szemaforkészleteinek száma a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer szemaforkészleteinek száma a sárga riasztási küszöbérték felett van-e.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer összes szemaforjának száma a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer összes szemaforjának száma a sárga riasztási küszöbérték felett van-e.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer osztott memória azonosítóinak (shmid) száma a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer osztott memória azonosítóinak (shmid) száma a sárga riasztási küszöbérték felett van-e.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer osztott memória szegmensének maximális mérete (SHMMAX) száma a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer osztott memória szegmensének maximális mérete (SHMMAX) száma a sárga riasztási küszöbérték felett van-e.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Vörös riasztás: ellenőrzi, hogy az operációs rendszer osztott memória szegmenseinek teljes száma (shmNumSegs) a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy az operációs rendszer osztott memória szegmenseinek teljes száma (shmNumSegs) a sárga riasztási küszöbérték felett van-e.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Vörös riasztás: ellenőrzi, hogy a logikai napló erőforrások (LLOG) nem megfelelő száma nem okoz-e blokkolást az ellenőrzési pont feldolgozás során.  Sárga riasztás: ellenőrzi, hogy a logikai napló erőforrások (LLOG) nem megfelelő száma nem aktivál-e ellenőrzési pontokat.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Vörös riasztás: ellenőrzi, hogy a fizikai napló erőforrások (PLOG) nem megfelelő száma nem okoz-e blokkolást az ellenőrzési pont feldolgozás során.  Sárga riasztás: ellenőrzi, hogy a fizikai napló erőforrások (PLOG) nem megfelelő száma nem aktivál-e ellenőrzési pontokat.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Vörös riasztás: ellenőrzi, hogy az ellenőrzési pont feldolgozás során a kritikus szakaszokban töltött idő a vörös riasztási küszöbérték alatt van-e.  Sárga riasztás: ellenőrzi, hogy az ellenőrzési pont feldolgozás során a kritikus szakaszokban töltött idő a sárga riasztási küszöbérték alatt van-e.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Vörös riasztás: ellenőrzi, hogy a lemezürítések másodpercenkénti száma az ellenőrzési pont feldolgozás során a vörös riasztási küszöbérték felett van-e.  Sárga riasztás: ellenőrzi, hogy a lemezürítések másodpercenkénti száma az ellenőrzési pont feldolgozás során a sárga riasztási küszöbérték felett van-e.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Vörös riasztás: ellenőrzi, hogy a leghosszabb idő, amit egy tranzakció az ellenőrzési pont feldolgozás során várakozással tölt, a vörös riasztási küszöbérték alatt van-e.  Sárga riasztás: ellenőrzi, hogy a leghosszabb idő, amit egy tranzakció az ellenőrzési pont feldolgozás során várakozással tölt, a sárga riasztási küszöbérték alatt van-e.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Vörös riasztás: ellenőrzi, hogy adott tábla pufferolvasásainak száma kevesebb-e, mint a vörös riasztási küszöbértékként megadott összes pufferolvasás százalékos aránya. Sárga riasztás: ellenőrzi, hogy adott tábla pufferolvasásainak száma kevesebb-e, mint a sárga riasztási küszöbértékként megadott összes pufferolvasás százalékos aránya.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Vörös riasztás: ellenőrzi, hogy adott tábla pufferírásinak száma kevesebb-e, mint a vörös riasztási küszöbértékként megadott összes pufferírás százalékos aránya. Sárga riasztás: ellenőrzi, hogy adott tábla pufferírásinak száma kevesebb-e, mint a sárga riasztási küszöbértékként megadott összes pufferírás százalékos aránya.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Vörös riasztás: ellenőrzi, hogy adott tábla szekvenciális kereséseinek száma kevesebb-e, mint a vörös riasztási küszöbértékként megadott összes szekvenciális keresés százalékos aránya. Sárga riasztás: ellenőrzi, hogy adott tábla szekvenciális kereséseinek száma kevesebb-e, mint a sárga riasztási küszöbértékként megadott összes szekvenciális keresés százalékos aránya.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Vörös riasztás: ellenőrzi, hogy ideiglenes pufferekben tárolt (%cached) olvasások százalékos aránya a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy ideiglenes pufferekben tárolt (%cached) olvasások százalékos aránya a sárga riasztási küszöbérték felett van-e.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Vörös riasztás: ellenőrzi, hogy ideiglenes pufferekben tárolt (%cached) írások százalékos aránya a vörös riasztási küszöbérték felett van-e. Sárga riasztás: ellenőrzi, hogy ideiglenes pufferekben tárolt (%cached) írások százalékos aránya a sárga riasztási küszöbérték felett van-e.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Vörös riasztás: ellenőrzi, hogy az összes rendezés közül a lemezrendezések százalékos aránya a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy az összes rendezés közül a lemezrendezések százalékos aránya a sárga riasztási küszöbérték alatt van-e.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Vörös riasztás: ellenőrzi, hogy az összes tranzakció közül a visszagörgetett tranzakciók százalékos aránya a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy az összes tranzakció közül a visszagörgetett tranzakciók százalékos aránya a sárga riasztási küszöbérték alatt van-e.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Vörös riasztás: ellenőrzi, hogy az összes írás közül az előtérben végzett írások százalékos aránya a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy az összes írás közül az előtérben végzett írások százalékos aránya a sárga riasztási küszöbérték alatt van-e.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Vörös riasztás: ellenőrzi, hogy logikai naplólapok I/O műveletekhez viszonyított százalékos aránya a vörös riasztási küszöbértékként megadott logikai napló puffer (LOGBUFF) százalékos érték alatt van-e. Sárga riasztás: ellenőrzi, hogy logikai naplólapok I/O műveletekhez viszonyított százalékos aránya a sárga riasztási küszöbértékként megadott logikai napló puffer (LOGBUFF) százalékos érték alatt van-e.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Vörös riasztás: ellenőrzi, hogy az összes zárolási kérés közül a zárolási várakozások százalékos aránya a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy az összes zárolási kérés közül a zárolási várakozások százalékos aránya a sárga riasztási küszöbérték alatt van-e.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Vörös riasztás: ellenőrzi, hogy fizikai naplólapok I/O műveletekhez viszonyított százalékos aránya a vörös riasztási küszöbértékként megadott fizikai napló puffer (PHYSBUFF) százalékos érték alatt van-e.  Sárga riasztás: ellenőrzi, hogy fizikai naplólapok I/O műveletekhez viszonyított százalékos aránya a sárga riasztási küszöbértékként megadott fizikai napló puffer (PHYSBUFF) százalékos érték alatt van-e.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Vörös riasztás: ellenőrzi, hogy az összes SQL utasítás közül a szekvenciális keresések százalékos aránya a vörös riasztási küszöbérték alatt van-e. Sárga riasztás: ellenőrzi, hogy az összes SQL utasítás közül a szekvenciális keresések százalékos aránya a sárga riasztási küszöbérték alatt van-e.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Vörös riasztás: Ellenőzi, hogy minden csonk online állapotú-e. Sárga riasztás: nincs.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Vörös riasztás: ellenőrzi, hogy az egyes csonkok I/O műveleteinek száma a vörös riasztási küszöbértékként megadott összes I/O művelet százalékos aránya érték alatt van-e. Sárga riasztás: ellenőrzi, hogy az egyes csonkok I/O műveleteinek száma a sárga riasztási küszöbértékként megadott összes I/O művelet százalékos aránya érték alatt van-e.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Vörös riasztás: ellenőrzi, hogy az egyes csonkok olvasási műveleteinek száma a vörös riasztási küszöbértékként megadott összes olvasási művelet százalékos aránya érték alatt van-e. Sárga riasztás: ellenőrzi, hogy az egyes csonkok olvasási műveleteinek száma a sárga riasztási küszöbértékként megadott összes olvasási művelet százalékos aránya érték alatt van-e.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Vörös riasztás: ellenőrzi, hogy az egyes csonkok írási műveleteinek száma a vörös riasztási küszöbértékként megadott összes írási művelet százalékos aránya érték alatt van-e. Sárga riasztás: ellenőrzi, hogy az egyes csonkok írási műveleteinek száma a sárga riasztási küszöbértékként megadott összes írási művelet százalékos aránya érték alatt van-e.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Vörös riasztás: ellenőrzi, hogy az egyes adatbázis-területek szabad területének mennyisége a vörös riasztási küszöbértékként megadott adatbázis-terület teljes területének százalékos aránya érték felett van-e.  Sárga riasztás: ellenőrzi, hogy az egyes adatbázis-területek szabad területének mennyisége a sárga riasztási küszöbértékként megadott adatbázis-terület teljes területének százalékos aránya érték felett van-e.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Vörös riasztás: olyan táblákat keres, amelyekben a laponkénti maximális szabad terület százalékos aránya a vörös riasztási küszöbérték alatt van. Sárga riasztás: olyan táblákat keres, amelyekben a laponkénti maximális szabad terület százalékos aránya a sárga riasztási küszöbérték alatt van.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

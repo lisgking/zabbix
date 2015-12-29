@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+
+<menu id="home" name="Admin Home" lang="AdminHome" link="index.php?act=admin"/>
+
+<menu id="config" name="OAT Config" lang="OATconfig" link="index.php?act=admin&amp;do=config"/>
+  
+<menu id="ConnMgt" name="Manage Connections" lang="connmgt" expanded="false">
+    <item name="ConnectionAdmin" lang="connadmin" link="index.php?act=admin&amp;do=showgroups" />
+	<item name="Add Group" lang="addgroup" link="index.php?act=admin&amp;do=addGroup" />
+    <item name="Add Connection" lang="addconn" link="index.php?act=admin&amp;do=addconn" title="Add a connection" />
+</menu>
+
+<menu id="HelpMgt" name="Manage Help" lang="helpmgt" expanded="false" >
+	<item name="Help Admin" lang="helpadmin"  link="index.php?act=admin&amp;do=help" />
+	<item name="Add Help" lang="addhelp" link="index.php?act=admin&amp;do=addhelp" title="Add Help" />
+</menu>
+
+<menu id="pluginmgr" name="Plug-in Manager" lang="pluginmgr" title="Plugin Manager" link="index.php?act=admin&amp;do=pluginmgr"/>
+
+<menu id="menumgr" name="Menu Manager" lang="menumgr" title="Menu Manager" link="index.php?act=admin&amp;do=menumgr"/>
+
+<menu id="dashboard" name="Dashboard" lang="DashboardMgr" link="index.php?act=admin&amp;do=picker"/>
+
+<menu id="home" name="OAT Login" lang="OATlogin" title="Return to the main OAT menu" link="../index.php"/>
+
+<menu id="Help" name="Help" lang="help" link="javascript:pop('{$this->idsadmin->in['act']}','{$this->idsadmin->in['do']}');"/>
+
+</menus>

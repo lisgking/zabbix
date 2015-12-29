@@ -1,0 +1,33 @@
+<oat_plugin>
+
+    <plugin_info>
+        <plugin_name>Health Advisor</plugin_name> 
+        <plugin_author>IBM</plugin_author> 
+        <plugin_desc>The IBM Informix Health Advisor Plug-in for OpenAdmin Tool analyzes the health of the Informix database server.</plugin_desc>  
+        <plugin_version>3.11</plugin_version> 
+        <plugin_buildtime>2013-02-20 05:00:34</plugin_buildtime>
+        <plugin_minimum_oat_version>3.11</plugin_minimum_oat_version> 
+        <plugin_server_version>11.50.xC7</plugin_server_version> 
+        <plugin_upgrade_url>none</plugin_upgrade_url> 
+        <plugin_license>ibm/hadv/license/LA_en.txt</plugin_license>
+    </plugin_info>
+
+
+    <plugin_menu>
+	<menu id="healthcenter" name="Health Center" lang="healthcenter" >
+            <item name="hadv_menu"
+                link="index.php?act=ibm/hadv/healthadv&amp;do=profile"
+                title="Health Advisor" lang="hadv_menu"
+                parent="Health Center" />
+            <item name="Health Advisor Help"  
+                link="javascript:showDocuments('plugin/ibm/hadv/howto_healthadv.html', 'HealthAdvisorHelp')"
+                title="Health Advisor Plug-in Help" lang="howto_healthadv"
+                parent="Help" />
+        </menu>
+    </plugin_menu>
+
+
+</oat_plugin>
+
+
+

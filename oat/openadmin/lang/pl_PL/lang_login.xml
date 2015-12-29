@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Administrator]]></admin>
+<connect><![CDATA[Połącz]]></connect>
+<connection><![CDATA[Połączenie]]></connection>
+<connections><![CDATA[Połączenia]]></connections>
+<getservers><![CDATA[Pobierz serwery]]></getservers>
+<server><![CDATA[Serwer]]></server>
+<hostname><![CDATA[Nazwa hosta]]></hostname>
+<informixserver><![CDATA[Serwer Informix]]></informixserver>
+<idsprotocol><![CDATA[Protokół Informix]]></idsprotocol>
+<login><![CDATA[Logowanie]]></login>
+<log_in><![CDATA[Zaloguj]]></log_in>
+<logging_in><![CDATA[Logowanie...]]></logging_in>
+<loggingout><![CDATA[Wylogowywanie]]></loggingout>
+<no_user><![CDATA[Nazwa użytkownika jest wymagana.]]></no_user>
+<missingpassword><![CDATA[Hasło jest wymagane.]]></missingpassword>
+<missinginformixserver><![CDATA[Serwer Informix jest wymagany.]]></missinginformixserver>
+<missinghost><![CDATA[Nazwa hosta jest wymagana.]]></missinghost>
+<missingport><![CDATA[Numer portu jest wymagany.]]></missingport>
+<group><![CDATA[Grupa OAT]]></group>
+<groups><![CDATA[Grupy]]></groups>
+<password><![CDATA[Hasło]]></password>
+<port><![CDATA[Port]]></port>
+<help><![CDATA[Pomoc]]></help>
+<quicklogin><![CDATA[Zaloguj się do grupy OAT]]></quicklogin>
+<selectaconnection><![CDATA[Wybierz serwer]]></selectaconnection>
+<serverdetails><![CDATA[Nawiąż połączenie z serwerem]]></serverdetails>
+<username><![CDATA[Nazwa użytkownika]]></username>
+<aboutOAT><![CDATA[OAT - informacje]]></aboutOAT>
+<readme><![CDATA[Readme]]></readme>
+<HowDoI><![CDATA[Pomoc dla zadania OAT]]></HowDoI>
+<cookies_required><![CDATA[Aby możliwe było zalogowanie do programu OpenAdmin Tool, niezbędna jest obsługa plików cookie.  Twoja przeglądarka prawdopodobnie nie obsługuje plików cookie, dlatego nie będzie możliwe zalogowanie do programu OAT.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Trwa logowanie.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Błąd: nie określono numeru połączenia.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Błąd: brak grupy.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Niepoprawne dane logowania.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[Niepoprawne hasło grupy - spróbuj ponownie]]></InvalidGroupPwd>
+<Default><![CDATA[Domyślna]]></Default>
+<login_instructions><![CDATA[Zaloguj się do grupy OAT, aby nawiązać połączenie z serwerem w grupie, lub nawiąż połączenie z serwerem bezpośrednio. Grupa OAT zawiera informacje o połączeniu z jednym lub większą liczbą serwerów baz danych. Grupy OAT są zdefiniowane na stronach administracyjnych OAT.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Wybierz grupę OAT, wprowadź hasło grupy, a następnie kliknij przycisk Pobierz serwery.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Wprowadź lub potwierdź informacje o połączeniu z serwerem.]]></serverdetails_instructions>
+<test_connection><![CDATA[Testuj połączenie]]></test_connection>
+<testing_connection><![CDATA[Testowanie połączenia...]]></testing_connection>
+<ConnectionFailed><![CDATA[Połączenie nie powiodło się:]]></ConnectionFailed>
+</lang>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL Explorer]]></SQLExplorer>
+<ShowSQL><![CDATA[表示 - SQL]]></ShowSQL>
+<StmtType><![CDATA[文のタイプ]]></StmtType>
+<TXTime><![CDATA[トランザクション時間]]></TXTime>
+<Freq><![CDATA[頻度]]></Freq>
+<SQLAdmin><![CDATA[SQL トレース管理]]></SQLAdmin>
+<SQLType><![CDATA[SQL タイプ]]></SQLType>
+<SQLProfile><![CDATA[SQL プロファイル]]></SQLProfile>
+<SQLList><![CDATA[SQL リスト]]></SQLList>
+<TXGroup><![CDATA[トランザクション]]></TXGroup>
+<Count><![CDATA[カウント]]></Count>
+<AvgRT><![CDATA[平均応答時間]]></AvgRT>
+<MaxRT><![CDATA[最大応答時間]]></MaxRT>
+<AvgMem><![CDATA[平均メモリ]]></AvgMem>
+<RowProc><![CDATA[処理済み行]]></RowProc>
+<NoData><![CDATA[使用可能なデータなし]]></NoData>
+<SQLStmtSum><![CDATA[SQL 文のサマリ]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL 文]]></SQLStmt>
+<SID><![CDATA[セッション ID]]></SID>
+<NRecentTX><![CDATA[最新 100 トランザクション]]></NRecentTX>
+<SQLFreq><![CDATA[SQL 頻度サマリ]]></SQLFreq>
+<LockWait><![CDATA[ロック待機時間]]></LockWait>
+<SQLDrill><![CDATA[SQL ドリル ダウン]]></SQLDrill>
+<DrillDown><![CDATA[ドリル ダウン]]></DrillDown>
+<WaitIOTime><![CDATA[入出力待機時間]]></WaitIOTime>
+<UID><![CDATA[ユーザ ID]]></UID>
+<CompTime><![CDATA[文の完了時刻]]></CompTime>
+<RespTime><![CDATA[応答時間]]></RespTime>
+<Database><![CDATA[データベース]]></Database>
+<Statement><![CDATA[文]]></Statement>
+<StmtStats><![CDATA[文の統計]]></StmtStats>
+<pgReads><![CDATA[ページ読込み]]></pgReads>
+<BufReads><![CDATA[バッファ読込み]]></BufReads>
+<ReadCache><![CDATA[キャッシュ読込み]]></ReadCache>
+<DataBufReads><![CDATA[データ バッファ読込み]]></DataBufReads>
+<IndexBuffReads><![CDATA[インデックス バッファ読込み]]></IndexBuffReads>
+<PgWrites><![CDATA[ページ書込み]]></PgWrites>
+<BufWrites><![CDATA[バッファ書込み]]></BufWrites>
+<WriteCache><![CDATA[キャッシュ書込み]]></WriteCache>
+<NumLockWait><![CDATA[ロック待機数]]></NumLockWait>
+<LockRequests><![CDATA[ロック要求]]></LockRequests>
+<LockWaitTime><![CDATA[ロック待機時間 (秒)]]></LockWaitTime>
+<LogSpace><![CDATA[ログ領域]]></LogSpace>
+<DiskSorts><![CDATA[ディスク ソート]]></DiskSorts>
+<MemSorts><![CDATA[メモリ ソート]]></MemSorts>
+<NumTables><![CDATA[表数]]></NumTables>
+<NumIter><![CDATA[反復回数]]></NumIter>
+<TExecs><![CDATA[実行合計]]></TExecs>
+<TExecTime><![CDATA[合計実行時間 (秒)]]></TExecTime>
+<AvgExecTime><![CDATA[平均実行時間 (秒)]]></AvgExecTime>
+<MaxExecTime><![CDATA[最大実行時間 (秒)]]></MaxExecTime>
+<TNumIOWait><![CDATA[入出力待機回数]]></TNumIOWait>
+<IOWaitTime><![CDATA[入出力待機時間 (秒)]]></IOWaitTime>
+<AvgIOWait><![CDATA[平均入出力待機時間 (秒)]]></AvgIOWait>
+<RowsPerSec><![CDATA[平均行数/秒]]></RowsPerSec>
+<EstCost><![CDATA[見積りコスト]]></EstCost>
+<EstRows><![CDATA[見積もられた行]]></EstRows>
+<ActRows><![CDATA[実際の行]]></ActRows>
+<SQLErr><![CDATA[SQL エラー]]></SQLErr>
+<ISAMErr><![CDATA[ISAM エラー]]></ISAMErr>
+<IsoLevel><![CDATA[排他レベル]]></IsoLevel>
+<SQLMem><![CDATA[SQL メモリ]]></SQLMem>
+<SQLTbadParam><![CDATA[SQL トレースを変更しようとしたときパラメータが誤っていました。]]></SQLTbadParam>
+<Modify><![CDATA[変更]]></Modify>
+<High><![CDATA[高]]></High>
+<Medium><![CDATA[中]]></Medium>
+<Low><![CDATA[低]]></Low>
+<MaxSQLTrace><![CDATA[トレースする SQL テキストの上限]]></MaxSQLTrace>
+<TraceLevel><![CDATA[トレース レベル]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[トレースする SQL 文の数です。]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[SQL トレースをオン/オフします。]]></TraceOnOff>
+<On><![CDATA[オン]]></On>
+<Off><![CDATA[オフ]]></Off>
+<SQLTraceOpt><![CDATA[SQL トレース オプションの設定]]></SQLTraceOpt>
+<Mode><![CDATA[モード]]></Mode>
+<NumTrace><![CDATA[トレース数]]></NumTrace>
+<TraceSize><![CDATA[トレース サイズ]]></TraceSize>
+<SQLTraceInfo><![CDATA[SQL トレース情報]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[トレースされた SQL 文の数]]></NumSQLTraced>
+<TraceBufSize><![CDATA[トレース バッファ サイズ]]></TraceBufSize>
+<OldTracedStmt><![CDATA[トレースされた最も古い文]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[トレース バッファの継続時間]]></TraceBufDuration>
+<SQLSeen><![CDATA[トレースされた SQL 文]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL トレース開始]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[秒あたり SQL 文]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[使用された SQL トレース メモリ]]></TraceMemUsed>
+<RowPerSec><![CDATA[行/秒]]></RowPerSec>
+<ListSQL><![CDATA[SQL のリスト]]></ListSQL>
+<TxStatsSummary><![CDATA[トランザクション統計サマリ]]></TxStatsSummary>
+<NumSQL><![CDATA[文カウント]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[文のホスト変数]]></StmtHVars>
+<Pos><![CDATA[位置]]></Pos>
+<Type><![CDATA[タイプ]]></Type>
+<Value><![CDATA[値]]></Value>
+<Error_GD_NotEnabled><![CDATA[GD が PHP で有効化されていません。問合せツリーを表示できません。]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix バージョン:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[SQL トレースの保存]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[現在の syssqltrace 情報を表に保存します]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[SQL 文のサマリ]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[SQL 頻度サマリ]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL ドリル ダウン]]></SQLDrillDown>
+<Count><![CDATA[カウント]]></Count>
+<AvgRunTime><![CDATA[平均実行時間]]></AvgRunTime>
+<LockWaitTime><![CDATA[ロック待機時間]]></LockWaitTime>
+<WaitIOTime><![CDATA[入出力待機時間]]></WaitIOTime>
+<CompleteTime><![CDATA[完了時刻]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[ディレクティブ サポートを有効にするには、EXT_DIRECTIVES に 1 または 2 を設定する必要があります。]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[この問合せの保存済みディレクティブが存在します]]></SavedDir>
+<DirectivesSaved><![CDATA[保存されたディレクティブ]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[この問合せに対する保存されたディレクティブはありません]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[ディレクティブは削除されました。更新する新規のディレクティブはありません。]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[表のトレース情報が存在しません。]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[インデックスが見つかりません]]></NoIndexesFound>
+<NoRowsFound><![CDATA[行が見つかりません]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL トレース無効]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[SQL トレースは無効化されています]]></SQLTracingOff>
+<NoSQLID><![CDATA[services/sqltrace.php に対する引数が無効です]]></NoSQLID>
+<InvalidArgument><![CDATA[services/sqltrace.php に対する引数が無効です]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[クリックしてこの SQL 文の詳細を表示]]></ClickForSQLDetails>
+<DrillDown><![CDATA[ドリル ダウン]]></DrillDown>
+<ORDERED_Description><![CDATA[SELECT 文でリストされている順序による表の結合をオプティマイザに強制します。]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[最初の行を可能な限り早く戻します。]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[問合せ全体を可能な限り早く完了します。]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[指定された表へのアクセスにマルチインデックス走査を使用しません。]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[スター結合実行計画を使用しません。]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[可能な場合はスター結合実行計画を使用します。]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[スター結合実行計画でファクト表として使用する表を選択します。]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[スター結合実行計画でファクト表として使用しない表を選択します。]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[インデックス セルフ結合パスの表にアクセスするときに使用しないインデックスを指定します。]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[インデックス セルフ結合パスの表にアクセスするときに使用するインデックスを指定します。]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[表へのアクセスに使用する複数のインデックスを指定します。]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[表へのアクセスに使用しないインデックスを指定します。]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[表へのアクセスに使用するインデックスを指定します。]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[表へのアクセスで全表走査を使用しないようにします。]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[表へのアクセスで全表走査を使用します。]]></FULL_Description>
+<USE_NL_Description><![CDATA[入れ子ループ結合の内部表として、指定された表を使用します。]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[入れ子ループ結合の内部表として、指定された表を使用しないようにします。]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[指定された表へのアクセスに動的ハッシュ結合を使用します。]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[指定された表へのアクセスに動的ハッシュ結合を使用しません。]]></AVOID_HASH_Description>
+<Index><![CDATA[インデックス]]></Index>
+<Table><![CDATA[表]]></Table>
+<Cost><![CDATA[コスト]]></Cost>
+<RowsEstimated><![CDATA[見積もられた行]]></RowsEstimated>
+<RowsProcessed><![CDATA[処理済み行]]></RowsProcessed>
+<ElapsedTime><![CDATA[経過時間]]></ElapsedTime>
+<NotYetImpl><![CDATA[OpenAdmin Tool は、このページに英語以外の複数のデータベース ロケールでデータベース サーバの情報を表示することができません。データベース サーバに、英語以外のデータベース ロケールが複数含まれています。]]></NotYetImpl>
+<QueryTree><![CDATA[問合せツリー]]></QueryTree>
+<QueryTreeNA><![CDATA[この文では、問合せツリーを使用できません。]]></QueryTreeNA>
+</lang>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Чанки]]></Chunks>
+<NoSQLToExecute><![CDATA[Код SQL, который нужно выполнить, отсутствует]]></NoSQLToExecute>
+<QueryF><![CDATA[Запрос:]]></QueryF>
+<ErrorF><![CDATA[Ошибка:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Запрос к базе данных завершился неудачно:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Не удалось установить соединение.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[У пользователя {0} нет разрешения соединения с базой данных {1}.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[обнаружено слишком много ошибок]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[функция getPanelsForDashBoard - идентификатор панели управления не обнаружен]]></ErrorGetPanels>
+</lang>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Контроль работоспособности]]></health>
+<alerts><![CDATA[Оповещения]]></alerts>
+<aus><![CDATA[Автоматическое обновление статистики]]></aus>
+<scheduler><![CDATA[Планировщик задач]]></scheduler>
+<taskdetails><![CDATA[Подробности задач]]></taskdetails>
+<taskruntimes><![CDATA[Время выполнения задач]]></taskruntimes>
+<task_run_list><![CDATA[Список выполнения задач]]></task_run_list>
+<num_executions><![CDATA[Количество выполненных задач]]></num_executions>
+<avg_time><![CDATA[Среднее время]]></avg_time>
+<total_time><![CDATA[Общее время]]></total_time>
+<last_run_time><![CDATA[Время последнего запуска]]></last_run_time>
+<last_execution_status><![CDATA[Состояние последнего выполнения]]></last_execution_status>
+<edittaskparam><![CDATA[Изменение параметра задачи]]></edittaskparam>
+<AddNewTask><![CDATA[Добавление новой задачи]]></AddNewTask>
+<Save><![CDATA[Сохранить]]></Save>
+<Cancel><![CDATA[Отмена]]></Cancel>
+<CronTaskList><![CDATA[Список задач хрона]]></CronTaskList>
+<EditParam><![CDATA[Изменить параметр]]></EditParam>
+<addtask><![CDATA[Добавление задачи]]></addtask>
+<deletetask><![CDATA[Удаление задачи]]></deletetask>
+<name_field_empty><![CDATA[Поле имени пусто. Задайте имя.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Другая задача базы данных использует то же имя. Задайте другое имя.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[Имя должно начинаться с буквы или символа "_" и содержать буквы, цифры и символы "_".]]></invalid_table_name>
+<table_name_duplicate><![CDATA[Имя таблицы уже используется. Задайте другое имя таблицы.]]></table_name_duplicate>
+<save_failed><![CDATA[Сохранение невозможно: ]]></save_failed>
+<what_task_type><![CDATA[Задачу какого типа нужно добавить?]]></what_task_type>
+<task><![CDATA[Задача]]></task>
+<sensor><![CDATA[Датчик]]></sensor>
+<next><![CDATA[Далее]]></next>
+<back><![CDATA[Назад]]></back>
+<cancel><![CDATA[Отмена]]></cancel>
+<finish><![CDATA[Готово]]></finish>
+<new_sensor_setup><![CDATA[Настройка нового датчика]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[Не удалось сохранить параметр задачи.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[Настройка новой задачи]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Задайте имя и группу датчика]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Задайте имя и группу задачи]]></what_task_name_and_group>
+<sensor_name><![CDATA[Имя датчика]]></sensor_name>
+<task_name><![CDATA[Имя задачи]]></task_name>
+<sensor_group><![CDATA[Группа датчика]]></sensor_group>
+<task_group><![CDATA[Группа задачи]]></task_group>
+<type_error><![CDATA[В процессе настройки новой задачи возникли проблемы. Отмените действие и начните процесс настройки новой задачи заново]]></type_error>
+<ph_group_error><![CDATA[Не удалось получить выбранные группы из таблицы PH_GROUP. Убедитесь, что база данных PH_GROUP и SYSADMIN работает нормально.]]></ph_group_error>
+<task_desc><![CDATA[Введите описание новой задачи.]]></task_desc>
+<sensor_desc><![CDATA[Введите описание нового датчика.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Задайте расписание нового датчика.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Задайте расписание новой задачи.]]></what_task_schedule>
+<start_time><![CDATA[Время начала (по 24-часовой шкале)]]></start_time>
+<stop_time><![CDATA[Время окончания (по 24-часовой шкале)]]></stop_time>
+<frequency><![CDATA[Частота]]></frequency>
+<delete_time><![CDATA[Удаление данных]]></delete_time>
+<what_result_table><![CDATA[Задайте имя новой таблицы результатов, в которой будут храниться результаты данных датчиков.]]></what_result_table>
+<result_table_name><![CDATA[Имя таблицы результатов]]></result_table_name>
+<what_tk_create><![CDATA[Для завершения оператора SQL, создающего таблицу результатов, введите имена столбцов таблицы результатов.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Задайте команду, которая будет выполняться новым датчиком.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Задайте команду, которая будет выполняться новой задачей.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Введите команду SQL из одного оператора или пользовательскую функцию.]]></custom_sql>
+<stored_routine><![CDATA[Выберите хранимую процедуру]]></stored_routine>
+<stored_routine_error><![CDATA[Не удалось получить хранимые процедуры. Если нужно использовать хранимые процедуры, исправьте таблицу SYSPROCEDURES.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Проверьте следующие детали создаваемого датчика.  Нажмите кнопку Готово для подтверждения ввода и создания датчика.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Проверьте следующие детали создаваемой задачи.  Нажмите кнопку Готово для подтверждения ввода и создания задачи.]]></verify_specs_task>
+<name><![CDATA[Имя]]></name>
+<group><![CDATA[Группа]]></group>
+<type><![CDATA[Тип]]></type>
+<desc><![CDATA[Описание]]></desc>
+<deltask><![CDATA[Удаление задачи]]></deltask>
+<result_table_create><![CDATA[Оператор для создания таблицы результатов]]></result_table_create>
+<execute_command><![CDATA[Команда выполнения]]></execute_command>
+<task_name_check_error><![CDATA[Не удалось проверить, используется ли уже имя задачи. Проверьте таблицу ph_task в базе данных sysadmin.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Не удалось проверить, используется ли уже имя таблицы. Проверьте таблицу systables в базе данных sysadmin]]></table_name_check_error>
+<sensor_check_ok><![CDATA[Планировка нового датчика проведена успешно.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[Настройка нового датчика завершилась неудачно. Проведите настройку заново]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[Датчик будет запускаться в соответствии с графиком, но с выполнением команды возникли некоторые проблемы.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Проверьте следующий код ошибки. Для отладки команды щелкните ссылку.]]></debug_exec_stmt>
+<debug_command><![CDATA[Отладка команды]]></debug_command>
+<task_check_ok><![CDATA[Планировка новой задачи проведена успешно.]]></task_check_ok>
+<task_check_failed><![CDATA[Настройка новой задачи завершилась неудачно. Проведите настройку заново]]></task_check_failed>
+<task_check_bad_exec><![CDATA[Задача будет запускаться в соответствии с графиком, но с выполнением команды возникли некоторые проблемы.]]></task_check_bad_exec>
+<setup_fail><![CDATA[Настроить не удалось!]]></setup_fail>
+<setup_success><![CDATA[Настройка проведена успешно!]]></setup_success>
+<setup_success_with_problems><![CDATA[Настройка завершена, но остаются нерешенные проблемы]]></setup_success_with_problems>
+<return_code><![CDATA[Код возврата :]]></return_code>
+<time_error><![CDATA[Время окончания не может предшествовать времени начала.]]></time_error>
+<freq_error><![CDATA[Частота повторения не может быть равна 0 дней, 0 часов, 0 минут, 0 секунд]]></freq_error>
+<execute_stmt_empty><![CDATA[Выполняемый оператор не может быть пустым.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[Оператор создания не может быть пустым.]]></create_stmt_empty>
+<startup_only><![CDATA[Запускать только при запуске сервера]]></startup_only>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<NoExecutionStmt><![CDATA[Выполняемый оператор задачи не может быть пустым.]]></NoExecutionStmt>
+<NEVER><![CDATA[НИКОГДА]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[Удалить задачу не удалось]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Не удалось удалить таблицу результатов]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[Задача удалена успешно]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[Удаление системных задач запрещено]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Удалить связанную таблицу результатов]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[Данная возможность недоступна для текущей версии сервера.]]></FeatureUnavailable>
+<AlertList><![CDATA[Список оповещений]]></AlertList>
+<severity><![CDATA[Критичность]]></severity>
+<alerttype><![CDATA[Тип оповещения]]></alerttype>
+<state><![CDATA[Состояние]]></state>
+<alertstate><![CDATA[Состояние оповещения]]></alertstate>
+<message><![CDATA[Сообщение]]></message>
+<grouptoview><![CDATA[Группа, которую нужно просмотреть]]></grouptoview>
+<taskdetails><![CDATA[Подробности задач]]></taskdetails>
+<taskname><![CDATA[Имя задачи]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[Выполняемый оператор]]></executionstmt>
+<resulttable><![CDATA[Таблица результатов]]></resulttable>
+<starttime><![CDATA[Время начала]]></starttime>
+<stopttime><![CDATA[Время окончания]]></stopttime>
+<time><![CDATA[Время]]></time>
+<frequency><![CDATA[Частота]]></frequency>
+<datadelete><![CDATA[Удаление данных]]></datadelete>
+<WeekDay1><![CDATA[Понедельник]]></WeekDay1>
+<WeekDay2><![CDATA[Вторник]]></WeekDay2>
+<WeekDay3><![CDATA[Среда]]></WeekDay3>
+<WeekDay4><![CDATA[Четверг]]></WeekDay4>
+<WeekDay5><![CDATA[Пятница]]></WeekDay5>
+<WeekDay6><![CDATA[Суббота]]></WeekDay6>
+<WeekDay7><![CDATA[Воскресенье]]></WeekDay7>
+<enabletask><![CDATA[Разрешить выполнение задачи]]></enabletask>
+<taskparams><![CDATA[Параметры задачи]]></taskparams>
+<paramname><![CDATA[Имя параметра]]></paramname>
+<description><![CDATA[Описание]]></description>
+<value><![CDATA[Значение]]></value>
+<valuetype><![CDATA[Тип значения]]></valuetype>
+<edittaskparam><![CDATA[Изменение параметра задачи]]></edittaskparam>
+<view><![CDATA[Просмотреть]]></view>
+<NEW><![CDATA[НОВЫЙ]]></NEW>
+<ADDRESSED><![CDATA[АДРЕСОВАН]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[ПОДТВЕРЖДЕН]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[ИГНОРИРОВАН]]></IGNORED>
+<INFO><![CDATA[ИНФОРМАЦИЯ]]></INFO>
+<WARNING><![CDATA[ПРЕДУПРЕЖДЕНИЕ]]></WARNING>
+<ERROR><![CDATA[ОШИБКА]]></ERROR>
+<COLORGREEN><![CDATA[ЗЕЛЕНЫЙ]]></COLORGREEN>
+<COLORRED><![CDATA[КРАСНЫЙ]]></COLORRED>
+<COLORYELLOW><![CDATA[ЖЕЛТЫЙ]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[График задачи]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<Enabled><![CDATA[Включено]]></Enabled>
+<Disabled><![CDATA[Выключено]]></Disabled>
+<runfrequency><![CDATA[Частота запуска]]></runfrequency>
+<execution><![CDATA[Выполнение]]></execution>
+<taskdetailssaved><![CDATA[Подробности задачи успешно сохранены.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[Параметр задачи успешно сохранен.]]></TaskParamSaved>
+<recheck><![CDATA[Перепроверить]]></recheck>
+<ignore><![CDATA[Игнорировать]]></ignore>
+<correct><![CDATA[Исправить]]></correct>
+<Days><![CDATA[Дн.]]></Days>
+<Hours><![CDATA[Час.]]></Hours>
+<Minutes><![CDATA[Мин.]]></Minutes>
+<Seconds><![CDATA[Сек.]]></Seconds>
+<ALARM><![CDATA[ТРЕВОГА #{0}]]></ALARM>
+<Warning><![CDATA[Предупреждение]]></Warning>
+<Error><![CDATA[Ошибка]]></Error>
+<Info><![CDATA[Сведения]]></Info>
+<green><![CDATA[Зеленый]]></green>
+<yellow><![CDATA[Желтый]]></yellow>
+<red><![CDATA[Красный]]></red>
+<TaskNotFound><![CDATA[Задача не найдена.]]></TaskNotFound>
+</lang>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Add]]></add>
+<alarms><![CDATA[Alarms]]></alarms>
+<alarm_check><![CDATA[Alarm Check]]></alarm_check>
+<alarm_setup><![CDATA[Alarm Setup]]></alarm_setup>
+<alarm_mod><![CDATA[Modify Alarms]]></alarm_mod>
+<alarm_msg><![CDATA[Specify the conditions when an alarm is set.]]></alarm_msg>
+<alarm_name><![CDATA[Alarm name:]]></alarm_name>
+<Always><![CDATA[Always]]></Always>
+<AnyAlarm><![CDATA[Any Alarm]]></AnyAlarm>
+<Anyalarm><![CDATA[Any alarm]]></Anyalarm>
+<all><![CDATA[All]]></all>
+<cancel><![CDATA[Cancel]]></cancel>
+<Config><![CDATA[Config]]></Config>
+<Configuration><![CDATA[Configuration]]></Configuration>
+<Currentprofile><![CDATA[Current profile]]></Currentprofile>
+<CurrentProfile><![CDATA[Current Profile]]></CurrentProfile>
+<del_def_na><![CDATA[The default profile cannot be deleted.]]></del_def_na>
+<deleted_prof><![CDATA[The profile was deleted.]]></deleted_prof>
+<delete><![CDATA[Delete]]></delete>
+<desc><![CDATA[Alarm Name]]></desc>
+<emailprog><![CDATA[Email Program Configuration]]></emailprog>
+<empty_prof_add><![CDATA[The profile name cannot be empty.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Choose a profile from the list.]]></empty_prof_load>
+<enable><![CDATA[Enable]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Exceptions]]></exceptions>
+<exc_intro><![CDATA[This alarm allows exceptions.]]></exc_intro>
+<exc_example><![CDATA[Example: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[From]]></from>
+<Category><![CDATA[Category]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Run Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Information]]></info>
+<ldesc><![CDATA[Description]]></ldesc>
+<description><![CDATA[Description:]]></description>
+<load><![CDATA[Load]]></load>
+<modify><![CDATA[Modify]]></modify>
+<modifysched><![CDATA[Modify Schedule]]></modifysched>
+<modify_threshold><![CDATA[Modify Thresholds]]></modify_threshold>
+<name><![CDATA[Name]]></name>
+<noauth><![CDATA[You are not authorized to access this page.]]></noauth>
+<noalarms><![CDATA[No alarms occurred.]]></noalarms>
+<notification><![CDATA[Notification]]></notification>
+<OS><![CDATA[OS]]></OS>
+<Perf><![CDATA[Performance]]></Perf>
+<profile><![CDATA[Profile]]></profile>
+<profmanagement><![CDATA[Profile Management]]></profmanagement>
+<profmsg><![CDATA[Add, load or delete profiles.]]></profmsg>
+<RedAlarm><![CDATA[Red Alarm]]></RedAlarm>
+<Redalarm_><![CDATA[Red alarm:]]></Redalarm_>
+<Redalarm><![CDATA[Red alarm]]></Redalarm>
+<Redalarmthreshold><![CDATA[Red alarm threshold]]></Redalarmthreshold>
+<send><![CDATA[Send email notification]]></send>
+<save><![CDATA[Save]]></save>
+<save_failed><![CDATA[Save failed: ]]></save_failed>
+<saved_alarms><![CDATA[The changes to the alarm options were saved.]]></saved_alarms>
+<saved_schedule><![CDATA[The changes to the notification options were saved.]]></saved_schedule>
+<saved_email><![CDATA[The changes to the email program were saved.]]></saved_email>
+<schedandnot><![CDATA[Schedule and Notification]]></schedandnot>
+<schedmsg><![CDATA[Profiles can be scheduled to run at specified intervals. The results are sent by email.]]></schedmsg>
+<schedule><![CDATA[Schedule]]></schedule>
+<show><![CDATA[Show]]></show>
+<Storage><![CDATA[Storage]]></Storage>
+<to><![CDATA[To]]></to>
+<thresholds><![CDATA[Thresholds]]></thresholds>
+<threshold_msg><![CDATA[See the alarm description for an explanation of how the threshold values are used.]]></threshold_msg>
+<when><![CDATA[When]]></when>
+<Yellowalarmthreshold><![CDATA[Yellow alarm threshold]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Yellow alarm:]]></Yelalarm_>
+<YelAlarm><![CDATA[Yellow Alarm]]></YelAlarm>
+</lang>

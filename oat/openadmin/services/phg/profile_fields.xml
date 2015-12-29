@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  NOTE: labels get localized inside the Flex Application using resrouceManager. -->
+
+<result>
+    <node     label="AutoCheckpoints"  isBranch="true" > 
+        <item label="acp_dskF_per_S"   isBranch="false" key="acp_dskF_per_S"   >acp_dskF_per_S  </item>
+        <item label="acp_dirty_pgs_S"  isBranch="false" key="acp_dirty_pgs_S"  >acp_dirty_pgs_S </item>
+        <item label="acp_llogs_per_S"  isBranch="false" key="acp_llogs_per_S"  >acp_llogs_per_S </item>
+        <item label="acp_longest_dskF" isBranch="false" key="acp_longest_dskF" >acp_longest_dskF</item>
+        <item label="acp_plogs_per_S"  isBranch="false" key="acp_plogs_per_S"  >acp_plogs_per_S </item>
+    </node>
+
+    <node label="BTreeScanner"        isBranch="true">
+        <item label="bts_threads"      isBranch="false" key="bts_threads"      >bts_threads      </item>     
+        <item label="bts_max_listsize" isBranch="false" key="bts_max_listsize" >bts_max_listsize </item>
+        <item label="bts_rangesize"    isBranch="false" key="bts_rangesize"    >bts_rangesize    </item>
+    </node>
+    
+    <node label="Buffer" isBranch="true">
+        <node     label="BufferReads"  isBranch="true" >  
+            <item label="pf_bufreads"  isBranch="false" key="pf_bufreads"  >pf_bufreads  </item>
+            <item label="bufreads_2K"  isBranch="false" key="bufreads_2K"  >bufreads_2K  </item>
+            <item label="bufreads_4K"  isBranch="false" key="bufreads_4K"  >bufreads_4K  </item>
+            <item label="bufreads_6K"  isBranch="false" key="bufreads_6K"  >bufreads_6K  </item>
+            <item label="bufreads_8K"  isBranch="false" key="bufreads_8K"  >bufreads_8K  </item>
+            <item label="bufreads_10K" isBranch="false" key="bufreads_10K" >bufreads_10K </item>
+            <item label="bufreads_12K" isBranch="false" key="bufreads_12K" >bufreads_12K </item>
+            <item label="bufreads_14K" isBranch="false" key="bufreads_14K" >bufreads_14K </item>
+            <item label="bufreads_16K" isBranch="false" key="bufreads_16K" >bufreads_16K </item>
+        </node>
+    
+        <node     label="BufferWrites"     isBranch="true" > 
+            <item label="pf_bufwrites" isBranch="false" key="pf_bufwrites"  >pf_bufwrites  </item>
+            <item label="bufwrites_2K"  isBranch="false" key="bufwrites_2K"  >bufwrites_2K  </item>
+            <item label="bufwrites_4K"  isBranch="false" key="bufwrites_4K"  >bufwrites_4K  </item>
+            <item label="bufwrites_6K"  isBranch="false" key="bufwrites_6K"  >bufwrites_6K  </item>
+            <item label="bufwrites_8K"  isBranch="false" key="bufwrites_8K"  >bufwrites_8K  </item>
+            <item label="bufwrites_10K" isBranch="false" key="bufwrites_10K" >bufwrites_10K </item>
+            <item label="bufwrites_12K" isBranch="false" key="bufwrites_12K" >bufwrites_12K </item>
+            <item label="bufwrites_14K" isBranch="false" key="bufwrites_14K" >bufwrites_14K </item>
+            <item label="bufwrites_16K" isBranch="false" key="bufwrites_16K" >bufwrites_16K </item>
+        </node>
+        
+        <node     label="BufferWaits"       isBranch="true" > 
+            <item label="pf_buffwts"     isBranch="false" key="pf_buffwts"   >pf_buffwts   </item>
+            <item label="bufwaits_2K"    isBranch="false" key="bufwaits_2K"  >bufwaits_2K  </item>
+            <item label="bufwaits_4K"    isBranch="false" key="bufwaits_4K"  >bufwaits_4K  </item>
+            <item label="bufwaits_6K"    isBranch="false" key="bufwaits_6K"  >bufwaits_6K  </item>
+            <item label="bufwaits_8K"    isBranch="false" key="bufwaits_8K"  >bufwaits_8K  </item>
+            <item label="bufwaits_10K"   isBranch="false" key="bufwaits_10K" >bufwaits_10K </item>
+            <item label="bufwaits_12K"   isBranch="false" key="bufwaits_12K" >bufwaits_12K </item>
+            <item label="bufwaits_14K"   isBranch="false" key="bufwaits_14K" >bufwaits_14K </item>
+            <item label="bufwaits_16K"   isBranch="false" key="bufwaits_16K" >bufwaits_16K </item>
+        </node>
+    </node>
+    
+    <node label="Disk" isBranch="true">
+        <node     label="DiskReads"       isBranch="true" > 
+            <item label="pf_dskreads"     isBranch="false" key="pf_dskreads"  >pf_dskreads  </item>     
+            <item label="dskreads_2K"     isBranch="false" key="dskreads_2K"  >dskreads_2K  </item>
+            <item label="dskreads_4K"     isBranch="false" key="dskreads_4K"  >dskreads_4K  </item>
+            <item label="dskreads_6K"     isBranch="false" key="dskreads_6K"  >dskreads_6K  </item>
+            <item label="dskreads_8K"     isBranch="false" key="dskreads_8K"  >dskreads_8K  </item>
+            <item label="dskreads_10K"    isBranch="false" key="dskreads_10K" >dskreads_10K </item>
+            <item label="dskreads_12K"    isBranch="false" key="dskreads_12K" >dskreads_12K </item>
+            <item label="dskreads_14K"    isBranch="false" key="dskreads_14K" >dskreads_14K </item>
+            <item label="dskreads_16K"    isBranch="false" key="dskreads_16K" >dskreads_16K </item>
+        </node>
+        
+        <node     label="DiskWrites"       isBranch="true" >  
+            <item label="pf_dskwrites"     isBranch="false" key="pf_dskwrites"  >pf_dskwrites  </item>   
+            <item label="dskwrites_2K"     isBranch="false" key="dskwrites_2K"  >dskwrites_2K  </item>
+            <item label="dskwrites_4K"     isBranch="false" key="dskwrites_4K"  >dskwrites_4K  </item>
+            <item label="dskwrites_6K"     isBranch="false" key="dskwrites_6K"  >dskwrites_6K  </item>
+            <item label="dskwrites_8K"     isBranch="false" key="dskwrites_8K"  >dskwrites_8K  </item>
+            <item label="dskwrites_10K"    isBranch="false" key="dskwrites_10K" >dskwrites_10K </item>
+            <item label="dskwrites_12K"    isBranch="false" key="dskwrites_12K" >dskwrites_12K </item>
+            <item label="dskwrites_14K"    isBranch="false" key="dskwrites_14K" >dskwrites_14K </item>
+            <item label="dskwrites_16K"    isBranch="false" key="dskwrites_16K" >dskwrites_16K </item>
+        </node>
+        
+       <node      label="DiskFlushes"    isBranch="true" >  
+            <item label="pf_flushes"     isBranch="false" key="pf_flushes"  >pf_flushes </item>  
+            <item label="flushes_2K"     isBranch="false" key="flushes_2K"  >flushes_2K </item>
+            <item label="flushes_4K"     isBranch="false" key="flushes_4K"  >flushes_4K </item>
+            <item label="flushes_6K"     isBranch="false" key="flushes_6K"  >flushes_6K </item>
+            <item label="flushes_8K"     isBranch="false" key="flushes_8K"  >flushes_8K </item>
+            <item label="flushes_10K"    isBranch="false" key="flushes_10K" >flushes_10K</item>
+            <item label="flushes_12K"    isBranch="false" key="flushes_12K" >flushes_12K</item>
+            <item label="flushes_14K"    isBranch="false" key="flushes_14K" >flushes_14K</item>
+            <item label="flushes_16K"    isBranch="false" key="flushes_16K" >flushes_16K</item>
+        </node>
+        
+        <node     label="ChunkWrites"        isBranch="true" >
+            <item label="pf_chunkwrites"     isBranch="false" key="pf_chunkwrites"  >pf_chunkwrites  </item>
+            <item label="chunkwrites_2K"     isBranch="false" key="chunkwrites_2K"  >chunkwrites_2K  </item>
+            <item label="chunkwrites_4K"     isBranch="false" key="chunkwrites_4K"  >chunkwrites_4K  </item>
+            <item label="chunkwrites_6K"     isBranch="false" key="chunkwrites_6K"  >chunkwrites_6K  </item>
+            <item label="chunkwrites_8K"     isBranch="false" key="chunkwrites_8K"  >chunkwrites_8K  </item>
+            <item label="chunkwrites_10K"    isBranch="false" key="chunkwrites_10K" >chunkwrites_10K </item>
+            <item label="chunkwrites_12K"    isBranch="false" key="chunkwrites_12K" >chunkwrites_12K </item>
+            <item label="chunkwrites_14K"    isBranch="false" key="chunkwrites_14K" >chunkwrites_14K </item>
+            <item label="chunkwrites_16K"    isBranch="false" key="chunkwrites_16K" >chunkwrites_16K </item>
+        </node>
+        
+        <node     label="ForegroundWrites" isBranch="true" >     
+            <item label="pf_fgwrites"      isBranch="false" key="pf_fgwrites"  >pf_fgwrites  </item>
+            <item label="fgwrites_2K"      isBranch="false" key="fgwrites_2K"  >fgwrites_2K  </item>
+            <item label="fgwrites_4K"      isBranch="false" key="fgwrites_4K"  >fgwrites_4K  </item>
+            <item label="fgwrites_6K"      isBranch="false" key="fgwrites_6K"  >fgwrites_6K  </item>
+            <item label="fgwrites_8K"      isBranch="false" key="fgwrites_8K"  >fgwrites_8K  </item>
+            <item label="fgwrites_10K"     isBranch="false" key="fgwrites_10K" >fgwrites_10K </item>
+            <item label="fgwrites_12K"     isBranch="false" key="fgwrites_12K" >fgwrites_12K </item>
+            <item label="fgwrites_14K"     isBranch="false" key="fgwrites_14K" >fgwrites_14K </item>
+            <item label="fgwrites_16K"     isBranch="false" key="fgwrites_16K" >fgwrites_16K </item>
+        </node>
+    </node>  
+
+    <node label="ISAM" isBranch="true">
+        <item label="pf_isamtot"       isBranch="false" key="pf_isamtot"       >pf_isamtot</item>
+        <item label="pf_isopens"       isBranch="false" key="pf_isopens"       >pf_isopens</item>
+        <item label="pf_isstarts"      isBranch="false" key="pf_isstarts"      >pf_isstarts</item>
+        <item label="pf_isreads"       isBranch="false" key="pf_isreads"       >pf_isreads</item>
+        <item label="pf_iswrites"      isBranch="false" key="pf_iswrites"      >pf_iswrites</item>
+        <item label="pf_isdeletes"     isBranch="false" key="pf_isdeletes"     >pf_isdeletes</item>
+        <item label="pf_isrewrites"    isBranch="false" key="pf_isrewrites"    >pf_isrewrites</item>
+        <item label="pf_iscommits"     isBranch="false" key="pf_iscommits"     >pf_iscommits</item>
+        <item label="pf_isrollbacks"   isBranch="false" key="pf_isrollbacks"   >pf_isrollbacks</item>
+    </node>
+    
+    <node label="GeneralProfile" isBranch="true">
+        <item label="CheckpointWaits"  isBranch="false" key="pf_ckptwts"       >pf_ckptwts</item>
+        <item label="DeadLocks"        isBranch="false" key="pf_deadlks"       >pf_deadlks</item>
+        <item label="LatchWaits"       isBranch="false" key="pf_latchwts"      >pf_latchwts</item>
+        <item label="LockRequests"    isBranch="false" key="pf_lockreqs"      >pf_lockreqs</item>
+        <item label="LockTimeouts"     isBranch="false" key="pf_lktouts"       >pf_lktouts</item>
+        <item label="LockWaits"       isBranch="false" key="pf_lockwts"       >pf_lockwts</item>
+        <item label="NumCheckpoints"  isBranch="false" key="pf_numckpts"     >pf_numckpts</item>
+        <item label="pf_ovlock"        isBranch="false" key="pf_ovlock"        >pf_ovlock</item>
+        <item label="pf_ovtrans"       isBranch="false" key="pf_ovtrans"       >pf_ovtrans</item>
+        <item label="pf_ovuser"        isBranch="false" key="pf_ovuser"        >pf_ovuser</item>
+        <item label="Compresses"       isBranch="false" key="pf_compress"      >pf_compress</item>
+    </node>
+
+    <node label="Memory"                 isBranch="true">
+        <item label="allocated_mem"      isBranch="false" key="allocated_mem"      >allocated_mem</item>
+        <item label="used_mem"           isBranch="false" key="used_mem"           >used_mem</item>
+        <item label="free_mem"           isBranch="false" key="free_mem"           >free_mem</item>
+        <item label="allocated_mem_virt" isBranch="false" key="allocated_mem_virt" >allocated_mem_virt</item>
+        <item label="used_mem_virt"      isBranch="false" key="used_mem_virt"      >used_mem_virt</item>
+        <item label="free_mem_virt"      isBranch="false" key="free_mem_virt"      >free_mem_virt</item>
+    </node>
+    
+    <node label="RecoveryLogs" isBranch="true">
+        <item label="pf_llgpagewrites" isBranch="false" key="pf_llgpagewrites" >pf_llgpagewrites</item>
+        <item label="pf_llgrecs"       isBranch="false" key="pf_llgrecs"       >pf_llgrecs</item>
+        <item label="pf_llgwrites"     isBranch="false" key="pf_llgwrites"     >pf_llgwrites</item>
+        <item label="pf_plgpagewrites" isBranch="false" key="pf_plgpagewrites" >pf_plgpagewrites</item>
+        <item label="pf_plgwrites"     isBranch="false" key="pf_plgwrites"     >pf_plgwrites</item>
+    </node>
+    
+    <node label="Sorts"        isBranch="true">
+        <item label="pf_totalsorts"    isBranch="false" key="pf_totalsorts"    >pf_totalsorts</item>      
+        <item label="DiskSorts"        isBranch="false" key="pf_disksorts"     >pf_disksorts</item>
+        <item label="pf_memsorts"      isBranch="false" key="pf_memsorts"      >pf_memsorts</item>
+        <item label="pf_maxsortspace"  isBranch="false" key="pf_maxsortspace"  >pf_maxsortspace</item>
+    </node>
+    
+    <node label="SystemIO"        isBranch="true">
+        <item label="pf_pagreads"      isBranch="false" key="pf_pagreads"      >pf_pagreads</item>
+        <item label="pf_pagwrites"     isBranch="false" key="pf_pagwrites"     >pf_pagwrites</item>
+        <item label="pf_dpra"          isBranch="false" key="pf_dpra"          >pf_dpra</item>
+        <item label="pf_btradata"      isBranch="false" key="pf_btradata"      >pf_btradata  </item>
+        <item label="pf_btraidx"       isBranch="false" key="pf_btraidx"       >pf_btraidx   </item>
+        <item label="pf_rapgs_used"    isBranch="false" key="pf_rapgs_used"    >pf_rapgs_used</item>
+        <item label="pf_lruwrites"     isBranch="false" key="pf_lruwrites"     >pf_lruwrites</item>
+        <item label="SequentialScans"  isBranch="false" key="pf_seqscans"      >pf_seqscans</item>
+    </node>
+    
+    <node label="VirtualProcessors"      isBranch="true">
+        <item label="all_vps_total_time" isBranch="false" key="all_vps_total_time" >all_vps_total_time</item>
+        <item label="all_vps_sys_time"   isBranch="false" key="all_vps_sys_time"   >all_vps_sys_time</item>
+        <item label="all_vps_user_time"  isBranch="false" key="all_vps_user_time"  >all_vps_user_time</item>
+        <item label="cpu_vps_total_time" isBranch="false" key="cpu_vps_total_time" >cpu_vps_total_time</item>
+        <item label="cpu_vps_sys_time"   isBranch="false" key="cpu_vps_sys_time"   >cpu_vps_sys_time</item>
+        <item label="cpu_vps_user_time"  isBranch="false" key="cpu_vps_user_time"  >cpu_vps_user_time</item>
+        <item label="aio_vps_total_time" isBranch="false" key="aio_vps_total_time" >aio_vps_total_time</item>
+        <item label="aio_vps_sys_time"   isBranch="false" key="aio_vps_sys_time"   >aio_vps_sys_time</item>
+        <item label="aio_vps_user_time"  isBranch="false" key="aio_vps_user_time"  >aio_vps_user_time</item>
+        <item label="adm_vps_total_time" isBranch="false" key="adm_vps_total_time" >adm_vps_total_time</item>
+        <item label="adm_vps_sys_time"   isBranch="false" key="adm_vps_sys_time"   >adm_vps_sys_time</item>
+        <item label="adm_vps_user_time"  isBranch="false" key="adm_vps_user_time"  >adm_vps_user_time</item>
+        <item label="msc_vps_total_time" isBranch="false" key="msc_vps_total_time" >msc_vps_total_time</item>
+        <item label="msc_vps_sys_time"   isBranch="false" key="msc_vps_sys_time"   >msc_vps_sys_time</item>
+        <item label="msc_vps_user_time"  isBranch="false" key="msc_vps_user_time"  >msc_vps_user_time</item>
+        <item label="num_ready_threads"  isBranch="false" key="num_ready_threads"  >num_ready_threads</item>
+    </node>
+    
+</result>   

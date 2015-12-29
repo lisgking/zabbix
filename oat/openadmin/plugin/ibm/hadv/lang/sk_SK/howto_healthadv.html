@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk-SK" xml:lang="sk-sk">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="sk-SK" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task, task" />
+<title>Modul Informix Health Advisor Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Modul Informix Health Advisor Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Obsah</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oha.dita" class="toclink">Modul Informix Health Advisor Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oha_002" class="toclink">Spustenie modulu Health Advisor</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oha_001" class="toclink">Pridanie profilu</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oha_003" class="toclink">Nastavenie poplachov pre profily</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oha_004" class="toclink">Naplánovanie úlohy pre profil</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_oha_005" class="toclink">Konfigurácia e-mailových oznámení</a></div>
+<div class="head1"><a id="ToC_7" href="#dqx1ids_cm_not" class="toclink">Vyhlásenia</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1trademarks" class="toclink">Ochranné známky</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_osm_000" class="toclink">Autorské práva</a></div>
+</div>
+<h1 id="dqx1ids_oha.dita"><a href="#ToC_1">Modul Informix Health Advisor Plug-in for OAT</a></h1>
+<div>
+<p>The IBM&reg; Informix&reg; Health Advisor Plug-in
+for OpenAdmin Tool (OAT) analyzuje stav databázového servera Informix. Modul plug-in Health Advisor zhromažďuje
+informácie o databázovom serveri, databázach a operačnom systéme a vytvorí zostavu
+obsahujúcu výsledky analýzy a odporúčania.</p></div>
+<div>
+<div class="notetitle" id="wq2">Požiadavka:</div>
+<div class="notebody">Modul plug-in Health Advisor vyžaduje databázový server IBM Informix 11.50.xC7
+alebo novší.</div></div>
+<p>Modul plug-in Health Advisor obsahuje niekoľko výstrah, ktoré kontrolujú stav na databázovom serveri:
+konfigurácia, komponent Enterprise Replication (ER), operačný systém (OS), výkon a úložný priestor. Môžete vytvoriť profily,
+ktoré budú určovať výstrahy, ktoré budú povolené, a prahové hodnoty pre tieto výstrahy. Taktiež môžete naplánovať úlohu,
+aby sa modul Health Advisor spúšťal s niektorým profilom v pravidelných časových intervaloch. Môžete nastaviť, komu sa budú odosielať
+e-mailové oznámenia s výsledkami. Okrem toho môžete modul Health Advisor spustiť, keď to bude potrebné, s aktuálnym profilom
+a zobraziť zostavu.</p>
+<h2 id="dqx1ids_oha_002"><a href="#ToC_2">Spustenie modulu Health Advisor</a></h2>
+<div>
+<p>Modul Health Advisor môžete spustiť manuálne v aktuálnom profile
+a pozrieť si výslednú zostavu.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq4">Požiadavka:</div>
+<div class="notebody">Modul IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) vyžaduje databázový server IBM Informix 11.50.xC7 alebo novší.</div></div>
+<p>
+<p>Modul plug-in Health Advisor analyzuje stav databázového servera Informix. Profil modulu Health Advisor určuje výstrahy, ktoré sú povolené,
+a prahové hodnoty pre tieto výstrahy.</p></p>
+<p>
+<p>Ak chcete spustiť modul Health Advisor:</p></p>
+<ol type="1">
+<li>V ponuke nástroja OAT kliknite na možnosť <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Voliteľné: Ak chcete zmeniť aktuálny profil, na stránke <strong>Profile</strong> kliknite na profil v zozname
+a potom na tlačidlo <strong>Load</strong>.</li>
+<li>Kliknite na tlačidlo <strong>Run Health Advisor</strong>. Zostava sa zobrazí v novom okne webového prehliadača.</li></ol>
+<h2 id="dqx1ids_oha_001"><a href="#ToC_3">Pridanie profilu</a></h2>
+<div>
+<p>Pridajte profil do modulu IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT).</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">Požiadavka:</div>
+<div class="notebody">Modul plug-in Health Advisor vyžaduje databázový server IBM Informix 11.50.xC7
+alebo novší.</div></div>
+<p>
+<p>Modul plug-in Health Advisor analyzuje stav databázového servera Informix. Môžete vytvoriť profily,
+ktoré budú určovať výstrahy, ktoré budú povolené, a prahové hodnoty pre tieto výstrahy. Taktiež môžete naplánovať úlohu,
+aby sa modul Health Advisor spúšťal s niektorým profilom v pravidelných časových intervaloch. </p></p>
+<p>
+<p>Ak chcete pridať profil:</p></p>
+<ol type="1">
+<li>V ponuke nástroja OAT kliknite na možnosť <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Na stránke <strong>Profile</strong> zadajte jedinečný
+názov profilu a kliknite na tlačidlo <strong>Add</strong>.</li></ol>
+<h2 id="dqx1ids_oha_003"><a href="#ToC_4">Nastavenie poplachov pre profily</a></h2>
+<div>
+<p>Nastavte výstrahy, ktoré sú povolené pre profil, a prahové hodnoty
+pre výstrahy v module IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT).</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq14">Požiadavka:</div>
+<div class="notebody">Modul plug-in Health Advisor vyžaduje databázový server IBM Informix 11.50.xC7
+alebo novší.</div></div>
+<p>
+<p>Modul plug-in Health Advisor analyzuje stav databázového servera Informix. Profil modulu Health Advisor určuje výstrahy, ktoré sú povolené,
+a prahové hodnoty pre tieto výstrahy.</p></p>
+<p>
+<p>Ak chcete nastaviť poplachy pre profil:</p></p>
+<ol type="1">
+<li>V ponuke nástroja OAT kliknite na možnosť <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Voliteľné: Ak chcete zmeniť aktuálny profil, na stránke <strong>Profile</strong> kliknite na profil v zozname
+a potom na tlačidlo <strong>Load</strong>.</li>
+<li>Kliknite na záložku <strong>Alarms</strong>.</li>
+<li>Vyberte začiarkavacie políčko <strong>Enable</strong> poplachu,
+ktorý chcete zahrnúť do profilu.</li>
+<li>Kliknite na tlačidlo <strong>Modify Threshold</strong> a skontrolujte,
+prípadne zmeňte prahy pre daný poplach.</li></ol>
+<h2 id="dqx1ids_oha_004"><a href="#ToC_5">Naplánovanie úlohy pre profil</a></h2>
+<div>
+<p>Naplánujte úlohu, aby sa modul Health Advisor spúšťal s konkrétnym
+profilom v pravidelných intervaloch.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq19">Požiadavka:</div>
+<div class="notebody">Modul IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) vyžaduje databázový server IBM Informix 11.50.xC7 alebo novší.</div></div>
+<p>
+<p>Modul plug-in Health Advisor analyzuje stav databázového servera Informix. Profil modulu Health Advisor určuje výstrahy, ktoré sú povolené,
+a prahové hodnoty pre tieto výstrahy. Taktiež môžete naplánovať úlohu,
+aby sa modul Health Advisor spúšťal s aktuálnym profilom v pravidelných časových intervaloch. </p></p>
+<p>
+<p>Ak chcete naplánovať úlohu pre aktuálny profil:</p></p>
+<ol type="1">
+<li>V ponuke nástroja OAT kliknite na možnosť <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Voliteľné: Ak chcete zmeniť aktuálny profil, na stránke <strong>Profile</strong> kliknite na profil v zozname
+a potom na tlačidlo <strong>Load</strong>.</li>
+<li>Kliknite na záložku <strong>Schedule</strong>.</li>
+<li>Nastavte plán pre úlohu s použitím konfiguračných polí.</li></ol>
+<h2 id="dqx1ids_oha_005"><a href="#ToC_6">Konfigurácia e-mailových oznámení</a></h2>
+<div>
+<p>Môžete nakonfigurovať e-mailovú aplikáciu a určiť príjemcov výsledkov
+kontroly.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq24">Požiadavka:</div>
+<div class="notebody">Modul IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT) vyžaduje databázový server IBM Informix 11.50.xC7 alebo novší.</div></div>
+<p>
+<p> Modul plug-in Health Advisor vytvorí zostavu obsahujúcu výsledky
+kontroly a odporúčania.
+Konfigurácia e-mailu závisí od operačného systému, z ktorého sa odosiela
+e-mail. E-mail sa odosiela z počítača, na ktorom sa nachádza databázový
+server. E-mailovú aplikáciu môžete nakonfigurovať pre aktuálny
+profil.</p></p>
+<p>
+<p>Ak chcete nakonfigurovať e-mailové oznámenia pre aktuálny profil:</p></p>
+<ol type="1">
+<li>V ponuke nástroja OAT kliknite na možnosť <strong>Health Center</strong> &gt; <strong>Health Advisor</strong>.</li>
+<li>Voliteľné: Ak chcete zmeniť aktuálny profil, na stránke <strong>Profile</strong> kliknite na profil v zozname
+a potom na tlačidlo <strong>Load</strong>.</li>
+<li>Kliknite na záložku <strong>Notification</strong>. Príklady konfigurácie si môžete pozrieť po kliknutí na tlačidlo pomoci
+pre túto stránku.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_7">Vyhlásenia</a></h1>
+<p>Tieto informácie sa poskytujú pre produkty a služby
+ponúkané v Spojených štátoch amerických.</p>
+<p>Spoločnosť IBM nemusí produkty, služby a súčasti opísané v tomto dokumente
+ponúkať v iných krajinách. Informácie o produktoch a službách, ktoré sú v súčasnosti
+k dispozícii vo vašej krajine, vám poskytne zástupca spoločnosti IBM. Žiadne zmienky o produktoch, programoch
+alebo službách spoločnosti IBM neznamenajú ani nenaznačujú, že sa môže použiť iba daný produkt, program
+alebo služba spoločnosti IBM. Miesto nich sa môže použiť akýkoľvek funkčne ekvivalentný produkt, program
+alebo služba, ktoré neporušujú práva duševného vlastníctva spoločnosti IBM.
+Avšak, za zhodnotenie a overenie funkčnosti každého produktu, programu alebo služby od spoločnosti inej ako IBM, je zodpovedný užívateľ.</p>
+<p>Spoločnosť IBM môže mať patenty alebo podané žiadosti o patenty vzťahujúce sa na predmet
+tohto dokumentu. Získaním tohto dokumentu nezískavate
+žiadne licencie na tieto patenty. Informácie o licenciách môžete získať na adrese:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>V prípade akýchkoľvek otázok týkajúcich sa licencií na dvojbajtové informácie (DBCS)
+kontaktujte oddelenie duševného vlastníctva spoločnosti IBM vo vašej krajine
+alebo nám pošlite svoje otázky písomne na adresu: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japonsko<br />
+</div>
+<p>Nasledujúci odsek sa neuplatňuje v Spojenom kráľovstve a ani žiadnej
+inej krajine, v ktorej sú takéto ustanovenia v protiklade s miestnymi
+právnymi predpismi: SPOLOČNOSŤ INTERNATIONAL BUSINESS MACHINES CORPORATION POSKYTUJE
+TÚTO PUBLIKÁCIU "TAK AKO JE" BEZ ZÁRUKY AKÉHOKOĽVEK DRUHU, ČI UŽ VÝSLOVNEJ ALEBO MLČKY
+PREDPOKLADANEJ, VRÁTANE, ALE BEZ OBMEDZENIA NA, MLČKY PREDPOKLADANÝCH ZÁRUK NEPORUŠENIA
+PRÁV, PREDAJNOSTI ALEBO VHODNOSTI NA KONKRÉTNY ÚČEL.
+Niektoré štáty nepovoľujú zrieknutie sa výslovných alebo mlčky predpokladaných záruk v určitých operáciách, preto sa na vás toto vyhlásenie nemusí vzťahovať.</p>
+<p>Tieto informácie môžu obsahovať technické nepresnosti alebo typografické
+chyby. Tu uvedené informácie sú pravidelne pozmeňované; tieto zmeny
+budú zahrnuté v nových vydaniach tejto publikácie. Spoločnosť IBM môže kedykoľvek vykonať
+vylepšenia alebo zmeny v produktoch alebo programoch opísaných v tejto publikácii
+bez predchádzajúceho upozornenia.</p>
+<p>Akékoľvek odkazy na webové stránky nepatriace spoločnosti IBM v týchto informáciách sa poskytujú
+iba pre vaše pohodlie a žiadnym spôsobom neslúžia ako podpora týchto webových stránok. Materiály uvedené na týchto webových stránkach nie sú súčasťou materiálov
+k tomuto produktu spoločnosti IBM a použitie týchto webových stránok je na výhradné
+riziko zákazníka.</p>
+<p>Spoločnosť IBM môže používať alebo distribuovať všetky informácie, ktoré jej
+zákazník poskytne, akýmkoľvek spôsobom, ktorý uzná za vhodný, bez toho, aby jej
+vznikli akékoľvek záväzky voči zákazníkovi.</p>
+<p>Držitelia licencií na tento program, ktorí si prajú mať o ňom informácie za
+účelom: (i) výmeny informácií medzi samostatne vytvorenými programami a inými programami (vrátane tohto) a (ii) vzájomného
+používania informácií, ktoré boli vymenené medzi stranami, by sa mali obrátiť na: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Takéto informácie môžu byť dostupné za príslušných podmienok
+a v niektorých prípadoch sa môžu poskytovať aj za poplatok.</p>
+<p>Licenčný program opísaný v tomto dokumente a všetky licenčné materiály, ktoré sú k dispozícii
+pre tento program, poskytuje spoločnosť IBM na základe podmienok zákazníckej zmluvy IBM, zmluvy IBM International
+Program License Agreement alebo inej ekvivalentnej zmluvy uzavretej medzi zmluvnými stranami.</p>
+<p>Všetky údaje o výkone, ktoré tento dokument obsahuje, boli získané v riadenom prostredí. Preto sa výsledky získané v iných prevádzkových prostrediach môžu podstatne odlišovať. Niektoré merania mohli byť vykonané v systémoch vývojovej úrovne, preto neexistuje žiadna záruka, že tieto merania budú rovnaké na bežne dostupných systémoch. Okrem toho, niektoré merania mohli byť odhadnuté pomocou extrapolácie. Skutočné výsledky sa môžu líšiť. Užívatelia tohto dokumentu by si mali overiť údaje vzťahujúce sa na ich špecifické prostredie.</p>
+<p>Informácie týkajúce sa produktov iných spoločností ako IBM boli získané od dodávateľov
+týchto produktov, z uverejnených správ o nich alebo z iných verejne prístupných
+zdrojov. Spoločnosť IBM netestovala tieto produkty a nemôže zaručiť presnosť informácií
+o výkonnosti, kompatibilite a iných aspektoch produktov nepochádzajúcich od spoločnosti
+IBM. Otázky týkajúce sa schopností produktov od iných spoločností ako IBM by ste mali adresovať
+dodávateľom týchto produktov.</p>
+<p>Všetky vyhlásenia týkajúce sa budúceho smerovania alebo úmyslov spoločnosti IBM môžu byť kedykoľvek zmenené alebo odvolané bez oznámenia a predstavujú iba ciele a zámery.</p>
+<p>Všetky ceny spoločnosti IBM predstavujú odporúčané maloobchodné ceny produktov spoločnosti
+IBM, predstavujú aktuálne ceny a môžu sa zmeniť bez predchádzajúceho upozornenia. Ceny u predajcov sa môžu líšiť.</p>
+<p>Tieto informácie sú určené len na účely plánovania. Tu uvedené informácie
+sa môžu zmeniť pred uvedením produktov, ktorých sa týkajú.</p>
+<p>Tieto informácie môžu obsahovať príklady údajov a správ, ktoré sa používajú v každodennej
+obchodnej praxi. Aby čo najvernejšie odrážali skutočnosť, príklady
+obsahujú mená jednotlivcov, názvy spoločností, značiek a produktov. Všetky tieto názvy a mená sú vymyslené a každá podobnosť s menami/názvami a adresami, ktoré používajú
+skutočné spoločnosti, je celkom náhodná.</p>
+<p>LICENCIA NA AUTORSKÉ PRÁVA:</p>
+<p>Tieto informácie obsahujú vzorové aplikačné programy v zdrojovom
+jazyku ilustrujúce programovacie techniky na rôznych operačných
+platformách. Tieto vzorové programy môžete kopírovať, upravovať a distribuovať ľubovoľným spôsobom bez toho, aby vám vznikol finančný záväzok voči spoločnosti IBM, na účely vývoja, používania, predaja alebo distribúcie aplikačných programov, ktoré sú v súlade aplikačným programovacím rozhraním operačnej platformy, pre ktorú boli tieto vzorové programy vytvorené. Tieto príklady
+neboli dôkladne otestované vo všetkých podmienkach. Spoločnosť IBM preto nemôže zaručiť
+spoľahlivosť, použiteľnosť alebo funkčnosť týchto programov. Tieto vzorové programy sa poskytujú "AKO SÚ" bez záruky akéhokoľvek
+druhu. Spoločnosť IBM nebude niesť žiadnu zodpovednosť za žiadne škody, ktoré vzniknú v dôsledku používania týchto vzorových programov.</p>
+<p>Všetky kópie alebo časti týchto vzorových programov alebo akýchkoľvek
+odvodených diel musia obsahovať nasledujúce vyhlásenie o autorských právach:</p>
+<p>&copy; (názov vašej spoločnosti) (rok). Časti tohto kódu sú odvodené zo vzorových programov spoločnosti IBM Corp.</p>
+<p>&copy; Copyright IBM Corp.
+_napíšte rok alebo roky_. Všetky práva vyhradené.</p>
+<p>Ak používate elektronickú verziu týchto informácií, fotografie a farebné
+ilustrácie sa nemusia zobraziť.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_8">Ochranné známky</a></h2>
+<p>IBM, logo IBM a ibm.com sú ochranné známky alebo registrované
+ochranné známky spoločnosti International Business Machines
+Corp. zaregistrované v mnohých krajinách. Ďalšie názvy produktov
+a služieb môžu byť ochranné známky spoločnosti IBM alebo iných subjektov. Aktuálny zoznam ochranných známok spoločnosti IBM
+nájdete na stránke "Informácie o autorských právach a ochranných známkach" na adrese <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Adobe, logo Adobe a PostScript sú registrované ochranné známky alebo ochranné známky
+spoločnosti Adobe Systems Incorporated v Spojených štátoch alebo iných krajinách.</p>
+<p>Intel, Itanium a Pentium sú ochranné známky alebo registrované ochranné známky
+spoločnosti Intel Corporation alebo jej dcérskych spoločností v Spojených štátoch a iných krajinách.</p>
+<p>Java&trade; a všetky s ňou súvisiace ochranné známky a logá sú ochranné známky
+alebo registrované ochranné známky spoločnosti Oracle alebo jej dcérskych spoločností.</p>
+<p>Linux je registrovaná ochranná známka Linusa Torvaldsa v Spojených štátoch alebo iných krajinách.</p>
+<p>Microsoft, Windows a Windows NT sú ochranné známky spoločnosti Microsoft Corporation v Spojených štátoch
+alebo iných krajinách.</p>
+<p>UNIX je registrovaná ochranná známka nadácie The Open Group v Spojených štátoch a iných krajinách.</p>
+<p>Ďalšie názvy spoločností, produktov alebo služieb môžu byť ochranné známky alebo servisné
+značky iných subjektov.</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_9">Autorské práva</a></h2>
+<p>Tento dokument obsahuje majetkové informácie spoločnosti IBM. Poskytuje sa na základe licenčnej zmluvy
+a je chránený zákonom o autorských právach. Informácie v tejto publikácii
+neobsahujú žiadne záruky na produkt a žiadne vyhlásenia uvedené v tejto príručke
+by sa nemali tak interpretovať.</p>
+<p>Odoslaním informácií spoločnosti IBM udeľujete spoločnosti IBM nevýhradné oprávnenie
+na používanie a distribúciu týchto informácií akýmkoľvek spôsobom, ktorý uzná za vhodný,
+bez toho, aby jej vznikli akékoľvek záväzky voči vám.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>Obmedzenie právomocí užívateľov zo štátnej správy USA -- Používanie, kopírovanie alebo zverejňovanie
+týchto informácií je obmedzené na základe zmluvy GSA ADP Schedule Contract so spoločnosťou IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. Ďalšie informácie nájdete v súbore <samp class="xph">license/notices.txt</samp>.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

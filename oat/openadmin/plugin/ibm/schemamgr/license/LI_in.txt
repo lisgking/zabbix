@@ -1,0 +1,10 @@
+INFORMASI LISENSI
+
+Program-program yang tercantum di bawah ini diberi lisensi berdasarkan syarat dan ketentuan berikut ini selain syarat dan ketentuan dari IBM Perjanjian Lisensi Internasional untuk Program Tanpa Garansi (nomor formulir IBM Z125-5589-05).
+
+Nama Program: IBM Informix Schema Manager Plug-in for OpenAdmin Tool V3.11
+Nomor Program: Tool
+
+L/N:  L-DDAY-94MSL3
+D/N:  L-DDAY-94MSL3
+P/N:  L-DDAY-94MSL3 

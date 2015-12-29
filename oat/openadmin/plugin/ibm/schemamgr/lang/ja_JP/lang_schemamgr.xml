@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[スキーマ マネージャ]]></schemamgr>
+<FragmentedTable><![CDATA[フラグメント表]]></FragmentedTable>
+<PseudoTable><![CDATA[疑似表]]></PseudoTable>
+<NotApplicable><![CDATA[不適応]]></NotApplicable>
+<check_admin_log><![CDATA[詳しくは、コマンド履歴またはオンライン ログを確認してください。]]></check_admin_log>
+<running><![CDATA[{0} 実行中]]></running>
+<interval_frag_strategy><![CDATA[フラグメント キー列: {0}。時間隔: {1}。格納先: {2}。]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[ローリング ウィンドウ オプション:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[表を {0} フラグメントに制限]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[表のサイズを {0} に制限]]></rolling_window_limit_by_size>
+<detach><![CDATA[切り離し]]></detach>
+<discard><![CDATA[廃棄]]></discard>
+<x_years><![CDATA[{0} 年]]></x_years>
+<x_months><![CDATA[{0} カ月]]></x_months>
+<x_days><![CDATA[{0} 日]]></x_days>
+</lang>

@@ -1,0 +1,10 @@
+许可信息
+
+除 IBM 无保证程序的国际许可协议 （IBM 书号 Z125-5589-05）中的条款和条件外，下列各程序按照下述条款和条件被特许使用。
+
+程序名称：IBM Informix Health Advisor Plug-in for OpenAdmin Tool V3.11
+程序号：Tool
+
+L/N:  L-DDAY-94MTMX
+D/N:  L-DDAY-94MTMX
+P/N:  L-DDAY-94MTMX 

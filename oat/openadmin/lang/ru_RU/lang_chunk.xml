@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Чанки]]></Chunks>
+<Chunk><![CDATA[Чанк]]></Chunk>
+<MirrorChunk><![CDATA[Зеркальный чанк]]></MirrorChunk>
+<ChunkIO><![CDATA[Ввод/вывод для чанков]]></ChunkIO>
+<ChunkTable><![CDATA[Распечатка таблицы чанков]]></ChunkTable>
+<MirrorTable><![CDATA[Распечатка таблицы зеркальных чанков]]></MirrorTable>
+<ChunkNum><![CDATA[Номер чанка]]></ChunkNum>
+<SpaceName><![CDATA[Имя пространства]]></SpaceName>
+<PageSize><![CDATA[Размер страницы]]></PageSize>
+<Offset><![CDATA[Смещение]]></Offset>
+<Size><![CDATA[Размер]]></Size>
+<Free><![CDATA[Свободно]]></Free>
+<Used><![CDATA[Использовано %]]></Used>
+<Status><![CDATA[Состояние]]></Status>
+<Path><![CDATA[Путь]]></Path>
+<ChunkPath><![CDATA[Путь чанка]]></ChunkPath>
+<Reads><![CDATA[Кол-во оп. чтения]]></Reads>
+<Writes><![CDATA[Кол-во оп. записи]]></Writes>
+<TotalIO><![CDATA[Всего операций чтения и записи]]></TotalIO>
+<IOTableTitle><![CDATA[Ввод/вывод по чанкам]]></IOTableTitle>
+<IOGraphTitle><![CDATA[Ввод-вывод по 20 наиболее активным чанкам]]></IOGraphTitle>
+<ONLINE><![CDATA[В ОПЕРАТИВНОМ СОСТОЯНИИ]]></ONLINE>
+<OFFLINE><![CDATA[В АВТОНОМНОМ СОСТОЯНИИ]]></OFFLINE>
+<RECOVERING><![CDATA[ВОССТАНОВЛЕНИЕ]]></RECOVERING>
+</lang>

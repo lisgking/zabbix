@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[Uložení se nezdařilo:]]></SaveFailed>
+<ValueReqd><![CDATA[hodnota je nezbytná pro]]></ValueReqd>
+<MustBe><![CDATA[musí být 0 (vypnuto) nebo mezi 60 a 1800.]]></MustBe>
+<MustBeRange><![CDATA[musí být v rozsahu]]></MustBeRange>
+<MustBeInSet><![CDATA[musí být v množině]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[musí být menší než nebo rovno]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[musí být větší než nebo rovno]]></MustBeGreaterOrEqual>
+</lang>

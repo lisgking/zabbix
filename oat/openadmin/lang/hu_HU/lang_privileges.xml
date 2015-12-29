@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Jogosultságok kezelése]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Felhasználói jogosultságok]]></UserPrivileges>
+<Database><![CDATA[Adatbázis]]></Database>
+<DBPrivileges><![CDATA[Adatbázis-szintű jogosultságok]]></DBPrivileges>
+<TablePrivileges><![CDATA[Táblaszintű jogosultságok]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL adminisztrációs API jogosultságok]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Belső felhasználók]]></NonOsUsers>
+<Name><![CDATA[Név]]></Name>
+<Type><![CDATA[Típus]]></Type>
+<DefRole><![CDATA[Alapértelmezett szerep]]></DefRole>
+<Tabname><![CDATA[Táblanév]]></Tabname>
+<User><![CDATA[Felhasználó]]></User>
+<Grantor><![CDATA[Adományozó]]></Grantor>
+<Privilege><![CDATA[Jogosultság]]></Privilege>
+<Privileges><![CDATA[Jogosultságok]]></Privileges>
+<Username><![CDATA[Felhasználói név]]></Username>
+<Grant><![CDATA[Megadás]]></Grant>
+<GrantNewPriv><![CDATA[Új jogosultság adományozása]]></GrantNewPriv>
+<Roles><![CDATA[Szerepek]]></Roles>
+<CreateNewRole><![CDATA[Új szerep létrehozása]]></CreateNewRole>
+<Create><![CDATA[Létrehozás]]></Create>
+<RoleName><![CDATA[Szerep neve]]></RoleName>
+<NoUserError><![CDATA[Az adományozás meghiúsult: nincs megadva felhasználónév.]]></NoUserError>
+<NoPrivError><![CDATA[Az adományozás meghiúsult: nincs megadva jogosultság.]]></NoPrivError>
+<NoTabError><![CDATA[Az adományozás meghiúsult: nincs megadva táblanév.]]></NoTabError>
+<NoRoleError><![CDATA[A létrehozás meghiúsult: nincs megadva szerepnév.]]></NoRoleError>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<NoDatabasesError><![CDATA[Ezen az adatbázis-kiszolgálón nincs elérhető nem-rendszer adatbázis.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[A következő felhasználó feljogosítása sikeres:]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[A következő felhasználó jogosultsága visszavonva:]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[A következő felhasználó jogosultsága elmentve:]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[A feljogosítás a következő tábla esetében sikeres:]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[felhasználó:]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[A következő felhasználó jogosultsága visszavonva:]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[tábla:]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[A következő felhasználó jogosultsága elmentve:]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[A következő szerep létrehozása sikeres:]]></CreateSuccessForRole>
+<Connect><![CDATA[Csatlakozás]]></Connect>
+<Resource><![CDATA[Erőforrás]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CSATLAKOZÁS]]></CONNECT>
+<RESOURCE><![CDATA[ERŐFORRÁS]]></RESOURCE>
+<Select><![CDATA[Kiválasztás]]></Select>
+<Update><![CDATA[Frissítés]]></Update>
+<Insert><![CDATA[Beszúrás]]></Insert>
+<Delete><![CDATA[Törlés]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Megváltoztatás]]></Alter>
+<References><![CDATA[Hivatkozások]]></References>
+<Under><![CDATA[Aláhúzás]]></Under>
+<Modify><![CDATA[Módosítás]]></Modify>
+<Revoke><![CDATA[Visszavonás]]></Revoke>
+<ErrorF><![CDATA[Hiba:]]></ErrorF>
+<GrantFailed><![CDATA[A feljogosítás nem sikerült]]></GrantFailed>
+<CreateFailed><![CDATA[A létrehozás nem sikerült]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[Belső felhasználók esetében az OAT Informix 11.70 változatot igényel.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[Az SQL adminisztrációs API parancs jogosultságok esetében az OAT Informix 12.10 változatot igényel.]]></AdminPrivileges_min_server_version>
+</lang>

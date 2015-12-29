@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Správce modulů plug-in]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Správce modulů plug-in nemůže zapisovat do dočasného adresáře OAT: tmp. Chcete-li instalovat modul plug-in, musíte mít oprávnění k zápisu do dočasného adresáře OAT. Získejte oprávnění k zápisu do tohoto adresáře a nainstalujte modul plug-in znovu.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Správce modulů plug-in nelze otevřít, protože vyžaduje, aby byl PHP nakonfigurován s instalovaným modulem zip. PHP, který je používán produktem OAT, nemá nainstalovaný modul zip. Nakonfigurujte na svém webovém serveru PHP s nainstalovaným modulem zip. Případně můžete znovu nainstalovat OAT pomocí instalačního programu OAT, který PHP nakonfiguruje.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Modul plug-in nebyl nainstalován.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Instalované moduly plug-in]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Ještě nenainstalované moduly plug-in]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Nebyl vybrán modul plug-in k instalaci.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Není dostupný žádný upgrade.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Správce modulů plug-in nemůže zapisovat do adresáře modulu plug-in. Získejte oprávnění k zápisu do tohoto adresáře a nainstalujte modul plug-in znovu.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Nainstalována aktuální verze]]></CurrVerInstalled>
+<Unknown><![CDATA[Neznámý]]></Unknown>
+<ClickToEnable><![CDATA[Klepnutím povolíte]]></ClickToEnable>
+<ClickToDisable><![CDATA[Klepnutím zakážete]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Tento soubor nelze odstranit: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Modul plug-in byl úspěšně upgradován.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Modul plug-in byl úspěšně nainstalován.]]></PluginInstalled>
+<Name><![CDATA[Název]]></Name>
+<Author><![CDATA[Autor]]></Author>
+<Description><![CDATA[Popis]]></Description>
+<Version><![CDATA[Verze]]></Version>
+<ServerVersion><![CDATA[Verze serveru]]></ServerVersion>
+<MinOATVersion><![CDATA[Minimální verze OAT]]></MinOATVersion>
+<Install><![CDATA[Instalovat]]></Install>
+<Uninstall><![CDATA[Odinstalovat]]></Uninstall>
+<Upgrade><![CDATA[Upgradovat]]></Upgrade>
+<Enabled><![CDATA[Povoleno]]></Enabled>
+<updating><![CDATA[Aktualizace]]></updating>
+<LatestInstalled><![CDATA[Nejnovější nainstalované]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Tato akce odinstaluje modul plug-in {0}. Komprimovaný soubor modulu plug-in je odstraněn, když je plug-in nainstalován. Po odinstalování nelze modul plug-in znovu nainstalovat, dokud není obnoven komprimovaný soubor modulu plug-in v adresáři modulu plug-in. \n\nChcete pokračovat?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Modul plug-in byl úspěšně odinstalován.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Modul plug-in nebyl odinstalován.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[Produkt OAT se pokusil o odinstalování modulu plug-in, ale nebylo nalezeno ID modulu plug-in. V nabídce Administrátor klepněte na volbu Správce modulů plug-in a zkontrolujte seznam nainstalovaných modulů plug-in. V případě potřeby modul plug-in znovu odinstalujte.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Modul plug-in byl odinstalován, ale nebylo možné odebrat tyto soubory:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Tyto soubory můžete ze svého počítače odstranit.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[Položka nabídky pro modul plug-in nebyla odstraněna. Tuto položku nabídky můžete odstranit na stránce Správce nabídek.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Vybraný modul plug-in nelze nainstalovat. Minimální verze OAT nezbytná pro modul plug-in je {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Souhlasím]]></Agree>
+<Disagree><![CDATA[Nesouhlasím]]></Disagree>
+</lang>

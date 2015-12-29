@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[数据库空间]]></mainTitle>
+<dbspace><![CDATA[数据库空间]]></dbspace>
+<dbspaceName><![CDATA[数据库空间名称]]></dbspaceName>
+<owner><![CDATA[所有者]]></owner>
+<pagesize><![CDATA[页面大小]]></pagesize>
+<createTime><![CDATA[创建时间]]></createTime>
+<dbspaceInfo><![CDATA[数据库空间信息]]></dbspaceInfo>
+<utilization><![CDATA[{0} 利用率]]></utilization>
+<indexPages><![CDATA[索引页面]]></indexPages>
+<dataPages><![CDATA[数据页面]]></dataPages>
+<otherPages><![CDATA[其他页面]]></otherPages>
+<freePages><![CDATA[可用页面]]></freePages>
+<TableName><![CDATA[表名]]></TableName>
+<StartAddr><![CDATA[开始地址]]></StartAddr>
+<EndAddr><![CDATA[结束地址]]></EndAddr>
+<size><![CDATA[大小]]></size>
+<Status><![CDATA[状态]]></Status>
+<ExtentList><![CDATA[扩展数据块列表]]></ExtentList>
+<TableList><![CDATA[表列表]]></TableList>
+<Database><![CDATA[数据库]]></Database>
+<Table><![CDATA[表]]></Table>
+<Collate><![CDATA[整理]]></Collate>
+<Rows><![CDATA[行数]]></Rows>
+<SystemIntegrity><![CDATA[完整性]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[检查数据库空间表格式]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[检查数据库空间扩展数据块]]></butCheckDbsExt>
+<RowSize><![CDATA[行大小]]></RowSize>
+<Created><![CDATA[已创建]]></Created>
+<AllocPages><![CDATA[已分配页面数]]></AllocPages>
+<UsedPages><![CDATA[已使用页面数]]></UsedPages>
+<NumExtents><![CDATA[扩展数据块数]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[数目]]></Number>
+<Name><![CDATA[名称]]></Name>
+<Type><![CDATA[类型]]></Type>
+<default><![CDATA[缺省值]]></default>
+<CreateSpace><![CDATA[创建空间]]></CreateSpace>
+<Create><![CDATA[创建]]></Create>
+<numChunks><![CDATA[块数]]></numChunks>
+<UsedPer><![CDATA[已使用百分比]]></UsedPer>
+<Data><![CDATA[数据]]></Data>
+<Index><![CDATA[索引]]></Index>
+<Other><![CDATA[其他]]></Other>
+<Free><![CDATA[可用]]></Free>
+<noDropDBSpace><![CDATA[无法删除根数据库。]]></noDropDBSpace>
+<AddSpaceto><![CDATA[将空间添加到]]></AddSpaceto>
+<Path><![CDATA[路径]]></Path>
+<Offset><![CDATA[偏移量]]></Offset>
+<FileCreation><![CDATA[文件创建]]></FileCreation>
+<MayCreateFile><![CDATA[如果不存在就创建文件]]></MayCreateFile>
+<FileMustExist><![CDATA[文件必须存在]]></FileMustExist>
+<DropSpace><![CDATA[删除空间 {0}]]></DropSpace>
+<AddChunk><![CDATA[添加块]]></AddChunk>
+<Used><![CDATA[已使用]]></Used>
+<AddMirror><![CDATA[添加镜像]]></AddMirror>
+<AddChunkMirror><![CDATA[添加包含镜像的块]]></AddChunkMirror>
+<StartMirror><![CDATA[启动镜像]]></StartMirror>
+<StopMirror><![CDATA[停止镜像]]></StopMirror>
+<AddMirrorto><![CDATA[将镜像添加到]]></AddMirrorto>
+<MirrorPath><![CDATA[镜像路径]]></MirrorPath>
+<MirrorOffset><![CDATA[镜像偏移量]]></MirrorOffset>
+<MirroringStarted><![CDATA[镜像已开始]]></MirroringStarted>
+<MirroringStopped><![CDATA[镜像已停止]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - 系统验证]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 验证完成。]]></oncheckComplete>
+<NoPermission><![CDATA[只读用户没有执行此操作的许可权。您是以只读用户身份登录的。]]></NoPermission>
+<NotValidOnSecondary><![CDATA[此操作在辅助服务器上无效。]]></NotValidOnSecondary>
+<Error><![CDATA[错误：]]></Error>
+<DropDBSpaceFailed><![CDATA[删除数据库空间失败。以下数据库空间值未正确设置：]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[创建数据库空间失败。数据库空间操作]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[无效。]]></IsNotValid>
+<DATASpace><![CDATA[数据空间]]></DATASpace>
+<DataSpaceL><![CDATA[数据空间]]></DataSpaceL>
+<TEMPSpace><![CDATA[临时空间]]></TEMPSpace>
+<TempSpaceL><![CDATA[临时空间]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB 空间]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[创建数据库空间成功]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[创建数据库空间失败。以下数据库空间值未正确设置：]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[创建数据库空间失败。数据库空间操作无效]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[未确认删除数据库空间]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[验证结果到...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[验证结果...]]></ValidationResults>
+<AddChunkFailed><![CDATA[将块添加到数据库空间时失败：]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[块成功添加]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[将块添加到数据库空间：]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[镜像块成功添加]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[添加数据库空间的镜像失败：]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[以下镜像值未正确设置：]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[镜像成功添加]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[无法对数据库空间启动镜像：]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[未确认对数据库空间的启动镜像：]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[无法对数据库空间停止镜像：]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[未确认对数据库空间的停止镜像：]]></NoConfStopMirror>
+<Dbspace><![CDATA[数据库空间]]></Dbspace>
+<TempDbspace><![CDATA[临时数据库空间]]></TempDbspace>
+<MirroredDbspace><![CDATA[镜像数据库空间]]></MirroredDbspace>
+<Blobspace><![CDATA[Blob 空间]]></Blobspace>
+<MirroredBlobspace><![CDATA[镜像 Blob 空间]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[智能 Blob 空间]]></SmartBlobspace>
+<TempSbspace><![CDATA[临时智能 Blob 空间]]></TempSbspace>
+<MirroredSbspace><![CDATA[镜像智能 Blob 空间]]></MirroredSbspace>
+<DataPages><![CDATA[数据页面]]></DataPages>
+<IndexPages><![CDATA[索引页面]]></IndexPages>
+<OtherPages><![CDATA[其他页面]]></OtherPages>
+<FreePages><![CDATA[可用页面]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[数据库空间值未正确设置：]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[摘要]]></summary>
+<admin><![CDATA[管理]]></admin>
+<tables><![CDATA[表]]></tables>
+<extents><![CDATA[扩展数据块]]></extents>
+<validation><![CDATA[验证]]></validation>
+<Disabled><![CDATA[已禁用]]></Disabled>
+<Recovering><![CDATA[正在恢复]]></Recovering>
+<Operational><![CDATA[可运行]]></Operational>
+</lang>

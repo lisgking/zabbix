@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="help">
+<OATHelp><![CDATA[OAT - Guida]]></OATHelp>
+<Help><![CDATA[Guida]]></Help>
+<CloseWindow><![CDATA[Chiudi finestra]]></CloseWindow>
+<ErrorOpeningDB><![CDATA[Errore durante l'apertura del database di guide]]></ErrorOpeningDB>
+<SorryNoHelpFound><![CDATA[Nessun argomento della guida trovato per questa pagina. <br/><br/>Una guida aggiuntiva per le diverse attività OAT è disponibile nel centro informazioni di IBM&reg; Informix&reg;.]]></SorryNoHelpFound>
+</lang>

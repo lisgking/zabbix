@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[Сохранение невозможно:]]></SaveFailed>
+<ValueReqd><![CDATA[необходимое значение]]></ValueReqd>
+<MustBe><![CDATA[должно быть равно 0 (отключено) или находиться в диапазоне от 60 до 1800.]]></MustBe>
+<MustBeRange><![CDATA[должно находиться в диапазоне]]></MustBeRange>
+<MustBeInSet><![CDATA[должно принадлежать к следующему набору]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[должно быть меньше или равно]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[должно быть больше или равно]]></MustBeGreaterOrEqual>
+</lang>

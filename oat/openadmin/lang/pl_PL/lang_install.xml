@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[Zainstaluj program OpenAdmin Tool]]></install_page_title>
+<next><![CDATA[Dalej]]></next>
+<save><![CDATA[Zapisz]]></save>
+<finish><![CDATA[Zakończ]]></finish>
+<warning><![CDATA[Ostrzeżenie]]></warning>
+<language><![CDATA[Język:]]></language>
+<error_occurred><![CDATA[Wystąpił błąd]]></error_occurred>
+<error_message><![CDATA[Komunikat o błędzie:]]></error_message>
+
+<welcome><![CDATA[Witamy]]></welcome>
+<welcome_message><![CDATA[Ten program instalacyjny instaluje produkt OpenAdmin Tool Community Edition {0}.]]></welcome_message>
+<prerequisite_message><![CDATA[Informacje na temat wymagań wstępnych instalacji OpenAdmin Tool zawiera plik {0}.]]></prerequisite_message>
+<readme><![CDATA[readme]]></readme>
+<license_message><![CDATA[Aby zainstalować program OpenAdmin Tool Community Edition i korzystać z niego, należy zaakceptować następującą umowę licencyjną.]]></license_message>
+<license_agreement><![CDATA[Umowa licencyjna]]></license_agreement>
+<i_accept><![CDATA[Akceptuję warunki umowy licencyjnej.]]></i_accept>
+<error_accept_license_first><![CDATA[Zaakceptuj umowę licencyjną, aby kontynuować instalację.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[Plik install.lock w katalogu instalacyjnym zatrzymał instalację. Usuń ten plik, aby kontynuować instalację.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Wymagane moduły PHP]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[Następujące moduły PHP są wymagane do uruchomienia programu OpenAdmin Tool (OAT).]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[Ikona X wskazuje, że moduł nie został znaleziony. Sprawdź instalację PHP i zainstaluj brakujące moduły.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Zalecane moduły PHP]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[Następujące moduły PHP są zalecane dla programu OAT.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Ważne: bez tych modułów niektóre funkcje programu OAT działają w ograniczonym trybie, mimo że moduły nie są wymagane do zainstalowania i używania programu OAT.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[Niektóre wymagane moduły PHP nie są zainstalowane.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Brak modułów:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Niektóre zalecane moduły PHP nie są zainstalowane. Bez tych modułów niektóre funkcje programu OAT działają w ograniczonym trybie, mimo że moduły nie są wymagane do zainstalowania i używania programu OAT.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Brak zalecanych modułów:]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[Konfiguracja programu OAT]]></oat_config>
+<parameter><![CDATA[Parametr]]></parameter>
+<description><![CDATA[Opis]]></description>
+<value><![CDATA[Wartość]]></value>
+<LANG><![CDATA[Język domyślny]]></LANG>
+<LANG_desc><![CDATA[Język domyślny dla stron programu OAT.]]></LANG_desc>
+<BASEURL><![CDATA[Podstawowy adres URL]]></BASEURL>
+<BASEURL_desc><![CDATA[Adres URL, gdzie jest zainstalowany progam OAT, w następującym formacie: http://nazwaserwera:port/położenie.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[Katalog instalacyjny]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[Katalog, w którym ma zostać zainstalowany program OAT.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Katalog bazy danych połączeń]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[Katalog przeznaczony na bazę danych połączeń programu OAT. Określ bezpieczny katalog znajdujący się poza katalogiem dokumentów na serwerze WWW.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[Baza danych połączeń jest umieszczona w katalogu dokumentów na serwerze WWW (na ścieżce {0}). Naraża to program OAT na nieautoryzowany dostęp do danych. Ze względów bezpieczeństwa należy zmienić położenie bazy danych połączeń. Aby zignorować to ostrzeżenie, kliknij ponownie przycisk Zapisz.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[Strona główna]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Strona główna programu OAT]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Strona powitalna]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Centrum kontroli poprawności > Panel kontrolny > Podsumowanie grupy]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Centrum kontroli poprawności > Panel kontrolny > Wydajność serwera]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Niestandardowe]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Odstęp czasu odświeżania]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[Czas (w sekundach) między aktualizacjami statusu serwera. Status serwera jest wyświetlany na stronie Centrum kontroli poprawności > Panel kontrolny > Podsumowanie grupy.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Liczba wierszy na stronie]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[Domyślna liczba wierszy na stronie, jakie mają być wyświetlane w formacie tabelarycznym danych.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[Zabezpieczenia Narzędzi SQL]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Wymagaj referencji logowania do Narzędzi SQL.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Czas połączenia z Informix]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[Czas w sekundach, przez jaki program OAT próbuje połączyć się z serwerem bazy danych, zanim zwróci informację o błędzie (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Ponowne próby nawiązania połączenia z Informix]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Liczba prób nawiązania przez program OAT połączenia z serwerem bazy danych w czasie połączenia z Informix (INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[To pole jest wymagane: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[Katalog określony jako katalog instalacyjny ({0}) nie istnieje. Określ poprawny katalog instalacyjny.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[Katalog określony jako położenie bazy danych połączeń ({0}) jest niepoprawny. Sprawdź, czy katalog istnieje i czy jest dostępny do zapisu.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[Katalog {0} nie jest dostępny. Sprawdź, czy katalog istnieje i czy jest dostępny do zapisu.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[Plik {0} nie jest dostępny. Sprawdź, czy plik istnieje i czy jest dostępny do zapisu.]]></file_not_accessible>
+
+<conndb><![CDATA[Baza danych połączeń]]></conndb>
+<conndb_desc><![CDATA[Baza danych połączeń zawiera informacje o połączeniach podane dla serwerów, z którymi może się łączyć program OAT.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[Aby utworzyć bazę danych połączeń, kliknij przycisk Dalej.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[Aby zaktualizować bazę danych połączeń do nowej wersji, kliknij przycisk Dalej.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[Przetwarzanie bazy danych połączeń zostało zakończone pomyślnie.]]></conndb_complete>
+<conndb_not_set><![CDATA[Parametr katalogu bazy danych połączeń (CONNDBDIR) nie został ustawiony w pliku conf/config.php.  Sprawdź ten plik, a następnie ponownie uruchom instalację.]]></conndb_not_set>
+<conndb_processing><![CDATA[Przetwarzanie pliku {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[Baza danych połączeń nie została skonfigurowana pomyślnie.  Nie można utworzyć tabeli {0}. Usuń bazę danych połączeń i ponownie uruchom instalację.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[Baza danych połączeń nie została pomyślnie zaktualizowana do nowej wersji.  Wystąpił błąd w pliku {0}, w sekcji {1}. Usuń bazę danych połączeń i ponownie uruchom instalację. Wszystkie zachowane informacje o połączeniach zostaną utracone.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[Informacje o wersji w bazie danych połączeń nie zostały zaktualizowane pomyślnie. Usuń bazę danych połączeń i ponownie uruchom instalację.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[Informacje o wersji przykładowej wtyczki IBM w bazie danych połączeń nie zostały zaktualizowane pomyślnie. Usuń bazę danych połączeń i ponownie uruchom instalację.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Wtyczki do zainstalowania]]></choose_plugins>
+<zip_extension_required><![CDATA[Do zainstalowania wtyczek jest wymagany moduł ZIP języka PHP.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[Wtyczki nie zostały zainstalowane. Program instalacyjny nie może dokonać zapisu w katalogu tymczasowym programu OAT (tmp). Sprawdź uprawnienia do katalogu. Następnie zainstaluj wtyczki za pomocą Menedżera wtyczek programu OAT.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[Brak wtyczek do zainstalowania.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Wtyczka]]></plugin_name>
+<plugin_author><![CDATA[Autor]]></plugin_author>
+<plugin_version><![CDATA[Wersja]]></plugin_version>
+<plugin_server_version><![CDATA[Wersja Informix]]></plugin_server_version>
+<plugin_license><![CDATA[Licencja]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Czy zainstalować?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Czy akceptujesz warunki umowy licencyjnej dla wtyczki?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Wyniki instalacji wtyczki]]></plugin_install>
+<no_plugins_selected><![CDATA[Nie wybrano żadnej wtyczki do zainstalowania.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[Wtyczka {0} została pomyślnie zainstalowana.]]></plugin_install_complete>
+
+<install_complete><![CDATA[Zakończono instalację programu OpenAdmin Tool]]></install_complete>
+<install_complete_details><![CDATA[Program OpenAdmin Tool został pomyślnie zainstalowany.  Aby zamknąć tę stronę i przejść do strony logowania programu OAT, kliknij przycisk Zakończ.]]></install_complete_details>
+
+</lang>

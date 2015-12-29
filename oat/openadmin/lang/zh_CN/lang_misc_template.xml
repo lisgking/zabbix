@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[错误：]]></ErrorF>
+<QueryF><![CDATA[查询：]]></QueryF>
+<PageSize><![CDATA[页面大小]]></PageSize>
+<Descending><![CDATA[降序]]></Descending>
+<Ascending><![CDATA[升序]]></Ascending>
+<ErrorOccurred><![CDATA[出错]]></ErrorOccurred>
+<Reload><![CDATA[重新装入]]></Reload>
+<ClickToReload><![CDATA[单击以重新装入服务器]]></ClickToReload>
+<LoadingMsg><![CDATA[..正在装入..]]></LoadingMsg>
+<PrevPage><![CDATA[上一页]]></PrevPage>
+<NextPage><![CDATA[下一页]]></NextPage>
+<Page><![CDATA[页面]]></Page>
+<Row><![CDATA[行]]></Row>
+<Login><![CDATA[登录]]></Login>
+<OrderAsc><![CDATA[按 {0} 升序排序]]></OrderAsc>
+<OrderDesc><![CDATA[按 {0} 降序排序]]></OrderDesc>
+<Help><![CDATA[帮助]]></Help>
+<Admin><![CDATA[管理]]></Admin>
+<Back><![CDATA[上一步]]></Back>
+<Welcome><![CDATA[欢迎]]></Welcome>
+<CollapseMenu><![CDATA[折叠菜单]]></CollapseMenu>
+<Info><![CDATA[信息]]></Info>
+<Yes><![CDATA[是]]></Yes>
+<No><![CDATA[否]]></No>
+<Cancel><![CDATA[取消]]></Cancel>
+<Delete><![CDATA[删除]]></Delete>
+<Success><![CDATA[成功]]></Success>
+<ErrorL><![CDATA[错误]]></ErrorL>
+<ERROR><![CDATA[错误]]></ERROR>
+<Ignore><![CDATA[忽略]]></Ignore>
+<Under><![CDATA[从属]]></Under>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<TemplateLoadError><![CDATA[无法装入主模板]]></TemplateLoadError>
+<help><![CDATA[帮助]]></help>
+<ServerType><![CDATA[服务器类型]]></ServerType>
+<Version><![CDATA[版本]]></Version>
+<ServerTime><![CDATA[服务器时间]]></ServerTime>
+<BootTime><![CDATA[引导时间]]></BootTime>
+<UpTime><![CDATA[正常运行时间]]></UpTime>
+<Sessions><![CDATA[会话数]]></Sessions>
+<MaxUsers><![CDATA[最大会话数]]></MaxUsers>
+<TotalMem><![CDATA[合计内存]]></TotalMem>
+<FreeMem><![CDATA[可用内存]]></FreeMem>
+<NumCPU><![CDATA[CPU 数量]]></NumCPU>
+<OperatingSys><![CDATA[操作系统]]></OperatingSys>
+<Standard><![CDATA[标准]]></Standard>
+<Primary><![CDATA[主]]></Primary>
+<Secondary><![CDATA[辅助]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[服务器]]></Server>
+<Database><![CDATA[数据库]]></Database>
+<ConnectionFailed><![CDATA[连接失败：{0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[错误：]]></ErrorUF>
+<NoSQLToExecute><![CDATA[没有要执行的 SQL]]></NoSQLToExecute>
+<GroupServers><![CDATA[组服务器]]></GroupServers>
+<MapNotAvail><![CDATA[因为密钥无效，所以地图不可用]]></MapNotAvail>
+<ServerInfo><![CDATA[服务器信息]]></ServerInfo>
+<Info><![CDATA[信息]]></Info>
+<ALL><![CDATA[全部]]></ALL>
+<Enabled><![CDATA[已启用]]></Enabled>
+<Disabled><![CDATA[已禁用]]></Disabled>
+<MB_Locale><![CDATA[数据库语言]]></MB_Locale>
+<MB_Encoding><![CDATA[语言环境]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[选择一种数据库语言以显示该语言的数据库语言环境。然后选择数据库语言环境。]]></MB_Locale_Encoding_tooltip>
+</lang>

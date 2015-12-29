@@ -1,0 +1,10 @@
+INFORMAZIONI RELATIVE ALLA LICENZA
+
+I Programmi descritti di seguito sono forniti in licenza in base alle seguenti clausole e condizioni che integrano quelle di IBM Accordo Internazionale di Licenza per Programmi senza Garanzia (Form number IBM Z125-5589-05).
+
+Nome Programma: IBM OpenAdmin Tool - Enterprise Replication Plugin V3.11
+Numero Programma: Tool
+
+L/N:  L-DDAY-94MTA8
+D/N:  L-DDAY-94MTA8
+P/N:  L-DDAY-94MTA8 

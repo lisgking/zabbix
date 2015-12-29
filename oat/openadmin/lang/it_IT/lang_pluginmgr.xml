@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Programma di gestione dei plug-in]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Il programma di gestione dei plug-in non può scrivere nella directory temporanea OAT: tmp. Per installare un plug-in, occorre disporre dell'autorizzazione per scrivere nella directory temporanea OAT. Ottenere l'autorizzazione necessaria per scrivere in questa directory, quindi installare di nuovo il plug-in.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Impossibile aprire il programma di gestione dei plug-in poiché esso richiede che PHP sia configurato con l'installazione del modulo zip. Nel PHP utilizzato da OAT non è installato il modulo zip. Configurare il PHP sul server Web con il modulo zip installato. In alternativa, è possibile reinstallare OAT utilizzando il programma di installazione OAT, che configura il PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Il plug-in non è stato installato.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Plug-in installati]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Plug-in non ancora installati]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Nessun plug-in selezionato per l'installazione.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Nessun aggiornamento disponibile.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Il programma di gestione dei plug-in non può scrivere nella directory dei plug-in. Ottenere l'autorizzazione necessaria per scrivere in questa directory, quindi installare di nuovo il plug-in.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Versione corrente installata]]></CurrVerInstalled>
+<Unknown><![CDATA[Sconosciuta]]></Unknown>
+<ClickToEnable><![CDATA[Fare clic per abilitare]]></ClickToEnable>
+<ClickToDisable><![CDATA[Fare clic per disabilitare]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Non è stato possibile eliminare il file: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Il plug-in è stato aggiornato correttamente.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Il plug-in è stato installato correttamente.]]></PluginInstalled>
+<Name><![CDATA[Nome]]></Name>
+<Author><![CDATA[Autore]]></Author>
+<Description><![CDATA[Descrizione]]></Description>
+<Version><![CDATA[Versione]]></Version>
+<ServerVersion><![CDATA[Versione server]]></ServerVersion>
+<MinOATVersion><![CDATA[Versione minima OAT]]></MinOATVersion>
+<Install><![CDATA[Installa]]></Install>
+<Uninstall><![CDATA[Disinstalla]]></Uninstall>
+<Upgrade><![CDATA[Aggiorna]]></Upgrade>
+<Enabled><![CDATA[Abilitato]]></Enabled>
+<updating><![CDATA[Aggiornamento]]></updating>
+<LatestInstalled><![CDATA[Ultima installazione]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Questa azione disinstalla il plug-in {0}. Il file compresso del plug-in viene eliminato una volta installato il plug-in. Se il plug-in viene disinstallato, non è possibile reinstallarlo finché il file compresso non verrà ripristinato nella directory dei plug-in.  \n\nSi desidera continuare?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Il plug-in è stato disinstallato correttamente.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Il plug-in non è stato disinstallato.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT ha tentato di disinstallare il plug-in, ma non è stato trovato l'ID plug-in. Nel menu Amministrazione, fare clic su Programma di gestione dei plug-in, quindi controllare l'elenco di plug-in installati. Se necessario, disinstallare di nuovo il plug-in.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Il plug-in è stato disinstallato, ma non è stato possibile rimuovere i seguenti file:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[È possibile eliminare questi file dal computer.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[La voce di menu per il plug-in non è stata eliminata. È possibile eliminare la voce di menu nella pagina Gestore menu.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Impossibile installare il plug-in selezionato. La versione minima OAT richiesta per il plug-in è {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Accetto]]></Agree>
+<Disagree><![CDATA[Rifiuto]]></Disagree>
+</lang>

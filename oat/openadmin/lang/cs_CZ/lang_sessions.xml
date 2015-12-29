@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[Relace již neexistuje.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[Neplatné ID relace.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[Uživatel {0} nemá oprávnění k zobrazení aktuálního příkazu pro relaci.]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[Uživatel {0} nemá oprávnění k zobrazení SQL pro relaci.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+</lang>

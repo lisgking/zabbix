@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[Dynamic Log Allocation]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[Logical Log File Storage]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU Min Dirty]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[Physical Log Storage]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[ATS Files]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER Node Down]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[RIS Files]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[OS Free Memory]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[OS Online Processors]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[OS Virtual Processors]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[OS Open File Limit]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[OS Semaphore IDs]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[OS Semaphores]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[OS Shared-Memory IDs]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[CKPT Triggered by LLOG]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[CKPT Triggered By PLOG]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[Critical Section]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[Disk Flush]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[Longest Wait]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[Buffer Reads per Table]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[Buffer Writes per Table]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[Sequential Scans per Table]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[Buffer Reads Cached]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[Buffer Writes Cached]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[Disk Sorts]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[Rollbacks]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[Foreground Writes]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[LLOG Pages per I/O]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[Lock Waits]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[PLOG Pages per I/O]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[Sequential Scans]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[Offline Chunks]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[Chunk I/O Operations]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[Chunk I/O Reads]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[Chunk I/O Writes]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[Dbspace Free Space]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[Row Size]]></dsc_Rowsize>
+
+</lang>

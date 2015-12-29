@@ -1,0 +1,2041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="ER" targetNamespace="urn:ER"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:ER"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+		<xsd:schema 
+			xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="urn:ER"
+            targetNamespace="urn:ER">
+			<xsd:complexType name="serverArray">
+				<xsd:sequence>
+					<xsd:element name="servers" 
+                                 type="xsd:anyType" 
+                                 maxOccurs="unbounded"/>
+                </xsd:sequence>
+			</xsd:complexType>
+            <xsd:complexType name="anyType"></xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+	<message name="testConnection">
+		<part name="hostName"  		type="xsd:string"/>
+		<part name="portNum"       	type="xsd:string"/>
+		<part name="serverName"     type="xsd:string"/>
+		<part name="username"     	type="xsd:string"/>
+        	<part name="password"       type="xsd:string"/>
+        	<part name="protocol"       type="xsd:string"/>
+    </message>
+
+	<message name="testConnectionResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+	<!--<message name="updateReviewStatus">
+		<part name="errorseqnum"	type="xsd:int"/>
+		<part name="errorserv"     	type="xsd:string"/>
+		<part name="reviewed"	    type="xsd:string"/>
+    </message>
+
+	<message name="updateReviewStatusResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message> -->
+
+	<message name="startStopQOD">
+		<part name="define"     type="xsd:boolean"/>
+		<part name="start"     	type="xsd:boolean"/>
+		<part name="group"     	type="xsd:string"/>	
+	</message>
+    <message name="startStopQODResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getQODStatus">
+    	<part name="group"     	type="xsd:string"/>	
+	</message>
+    <message name="getQODStatusResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+	
+	<message name="resetQOD">
+		<part name="replName"     	type="xsd:string"/>	
+		<part name="replType"     	type="xsd:string"/>
+	</message>
+    <message name="resetQODResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+	
+	<message name="getCurrentERNodeName"></message>
+    <message name="getCurrentERNodeNameResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+	<message name="getCurrentOATGroup"></message>
+    <message name="getCurrentOATGroupResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getOSInfo"></message>
+    <message name="getOSInfoResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="deleteERTasks">
+    	<part name="tasks" type="xsd:string"/>
+    </message>
+    
+    <message name="deleteERTasksResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getConnectionsdbServers"></message>
+    <message name="getConnectionsdbServersResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+
+	<message name="modifyServer">
+		<part name="idletimeout" type="xsd:string"/>
+		<part name="mode" type="xsd:string"/>
+		<part name="atsdir" type="xsd:string"/>
+		<part name="risdir" type="xsd:string"/>
+		<part name="atsrisformat" type="xsd:string"/>
+		<part name="server_group" type="xsd:string"/>
+	</message>
+
+	<message name="modifyServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+    <message name="getNodeInfo">
+		<part name="groupname" type="xsd:string"/>
+	</message>
+
+	<message name="getNodeInfoResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+    
+    <message name="getServerFromCache">
+		<part name="server" type="xsd:string"/>
+		<part name="hostname" type="xsd:string"/>
+	</message>
+
+	<message name="getServerFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+	<message name="addERServerToCache">
+		<part name="group_num"  type="xsd:integer"/>
+		<part name="host"       type="xsd:string"/>
+		<part name="port"       type="xsd:string"/>
+		<part name="server"     type="xsd:string"/>
+		<part name="idsprotocol" type="xsd:string"/>
+        <part name="lat"        type="xsd:decimal"/>
+        <part name="lon"        type="xsd:decimal"/>
+		<part name="username"   type="xsd:string"/>
+		<part name="password"   type="xsd:string"/>
+        <part name="cluster_id" type="xsd:integer"/>
+        <part name="last_type"  type="xsd:integer"/>
+    </message>
+
+	<message name="addERServerToCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+    <message name="getNodeSummaryInfo"></message>
+    <message name="getNodeSummaryInfoResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+
+	<wsdl:message name="getATSFilesInfo"></wsdl:message>
+	<wsdl:message name="getATSFilesInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"/>
+	</wsdl:message>
+
+	<wsdl:message name="getATSFileDetailInfo">
+		<wsdl:part name="atsFilename" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getATSFileDetailInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="getRISFilesInfo"></wsdl:message>
+	<wsdl:message name="getRISFilesInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"/>
+	</wsdl:message>
+
+	<wsdl:message name="getRISFileDetailInfo">
+		<wsdl:part name="risFilename" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getRISFileDetailInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="getCheckSyncJobFailureMessage">
+		<wsdl:part name="jobName" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getCheckSyncJobFailureMessageResponse">
+		<wsdl:part name="return" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="getDiskUsageInfo"></wsdl:message>
+	<wsdl:message name="getDiskUsageInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>	
+	</wsdl:message>
+
+	<message name="getNetworkDetails">
+	</message>
+	
+	<message name="getNetworkDetailsResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+	<message name="getNodeApplyDetails">
+    </message>
+    
+    <message name="getNodeApplyDetailsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+
+    <message name="getNodeSendQueueDetails">
+    </message>
+    
+    <message name="getNodeSendQueueDetailsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+
+	<message name="getERConfigParams">
+		<part name="serverName" type="xsd:string"/>
+    </message>
+    
+    <message name="getERConfigParamsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="updateERConfigParams">
+		<part name="updateTasks" type="xsd:anyType"/>
+    </message>
+    
+    <message name="updateERConfigParamsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+	<message name="getNodeErrorDetails">
+    </message>
+    
+    <message name="getNodeErrorDetailsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+
+	<message name="getERTopologyInfo"></message>
+    
+    <message name="getERTopologyInfoResponse">
+    	<part name="return" type="xsd:anyType" />
+    </message>
+	
+    <message name="getCaptureDetails">
+    </message>
+    
+    <message name="getCaptureDetailsResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getThresholds">
+        <part name="returnDefaults" type="xsd:boolean"/>
+    </message>
+    
+    <message name="getThresholdsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="insertDefaultThresholds">
+    </message>
+    
+    <message name="insertDefaultThresholdsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="updateThresholds">
+         <part name="newThresholds"  type="xsd:string"/>
+    </message>
+    
+    <message name="updateThresholdsResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getWorldView">
+        <part name="deployUDRs" type="xsd:boolean"/>
+    </message>
+    
+    <message name="getWorldViewResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerPage1Validation">
+        <part name="conn_num"  type="xsd:integer"/>
+        <part name="servername"  type="xsd:string"/>
+    </message>
+    
+    <message name="defineServerPage1ValidationResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+
+    <message name="defineServerPage2Validation">
+        <part name="conn_num"  type="xsd:integer"/>
+		<part name="servername"  type="xsd:string"/>
+		<part name="grpname"  type="xsd:string"/>
+        <part name="syncserver"  type="xsd:string"/>
+        <part name="nodeType"  type="xsd:string"/>
+    </message>
+    
+    <message name="defineServerPage2ValidationResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerWizard_createSpace">
+        <part name="conn_num" type="xsd:integer"/>
+        <part name="spaceTasks" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerWizard_createSpaceResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerWizard_modifyOnconfig">
+        <part name="conn_num" type="xsd:integer"/>
+        <part name="configTasks" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerWizard_modifyOnconfigResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineServerWizard_defineServer">
+        <part name="conn_num" type="xsd:integer"/>
+        <part name="group_name" type="xsd:string"/>
+        <part name="sync_server" type="xsd:string"/>
+        <part name="node_type" type="xsd:string"/>
+        <part name="ats_dir" type="xsd:string"/>
+        <part name="ris_dir" type="xsd:string"/>
+        <part name="ats_ris_format" type="xsd:string"/>
+        <part name="idle_timeout" type="xsd:integer"/>
+    </message>
+    
+    <message name="defineServerWizard_defineServerResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+        
+    <message name="performReplicateAction">
+        <part name="action" type="xsd:string"/>
+        <part name="object" type="xsd:string"/>
+        <part name="name" type="xsd:string"/>
+        <part name="server_group_list" type="xsd:string"/>
+        <part name="sync_data_source" type="xsd:string"/>
+        <part name="sync_option" type="xsd:string"/>
+    </message>
+    
+    <message name="performReplicateActionResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="performCheckSyncAction">
+        <part name="action" type="xsd:string"/>
+        <part name="object" type="xsd:string"/>
+        <part name="name" type="xsd:string"/>
+        <part name="job_name" type="xsd:string"/>
+        <part name="ref_data_source" type="xsd:string"/>
+        <part name="target_servers_list" type="xsd:string"/>
+        <part name="repair" type="xsd:boolean"/>
+        <part name="extra_target_rows" type="xsd:string"/>
+        <part name="fire_trigger" type="xsd:string"/>
+        <part name="mem_adjust" type="xsd:string"/>
+        <part name="start_time" type="xsd:string"/>
+        <part name="frequency" type="xsd:string"/>
+        <part name="days_of_week" type="xsd:string"/>
+        <part name="sinceOption" type="xsd:string"/>
+        <part name="whereOption" type="xsd:string"/>
+        <part name="deployUDR" type="xsd:boolean"/>
+        <part name="virtualProcesses" type="xsd:string"/>
+        <part name="use_timestamp" type="xsd:boolean"/>
+        <part name="delete_wins" type="xsd:boolean"/>
+        <part name="enableservers" type="xsd:boolean"/>
+    </message>
+    
+    <message name="performCheckSyncActionResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getCheckSyncValidationInfo">
+    </message>
+
+    <message name="isTimestampOptionValid">
+        <part name="objName" type="xsd:string"/>
+    </message>  
+
+    <message name="isTimestampOptionValidResponse">
+        <part name="return" type="xsd:anyType"/>
+    </message> 
+    
+    <message name="getNumbOfAvailableVirtualProcessors">
+    </message>
+    
+    <message name="getCheckSyncValidationInfoResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+        
+    <message name="getNumbOfAvailableVirtualProcessorsResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getReplicates">
+    </message>
+    
+    <message name="getReplicatesResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getReplicateSets">
+    </message>
+    
+    <message name="getReplicateSetsResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineReplicateSet">
+    	<part name="frequency"   type="xsd:string"/>
+    	<part name="exclusivity" type="xsd:string"/>
+    	<part name="name"        type="xsd:string"/>
+    	<part name="replicates"  type="xsd:anyType"/>
+    </message>
+    
+    <message name="defineReplicateSetResponse">
+    	<part name="return" type="xsd:anyType"/>    	
+    </message>    
+    
+    <message name="getReplicateParticipantCandidateGroups">
+    </message>
+    
+    <message name="getReplicateParticipantCandidateGroupsResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getReplicateParticipantCandidateDatabases">
+    	<part name="group" type="xsd:string"/>
+    </message>
+    
+    <message name="getReplicateParticipantCandidateDatabasesResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getReplicateParticipantCandidateTables">
+    	<part name="group" type="xsd:string"/>
+    	<part name="database" type="xsd:string"/>
+    	<part name="locale" type="xsd:string"/>
+    	<part name="tabname" type="xsd:string"/>
+    	<part name="tabowner" type="xsd:string"/>
+    	<part name="tabname_search_pattern" type="xsd:string"/>
+    </message>
+    
+    <message name="getReplicateParticipantCandidateTablesResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="checkAddParticipantToAllServers">
+    	<part name="group_list" type="xsd:anyType"/>
+    	<part name="dbname" type="xsd:string"/>
+    	<part name="participant" type="xsd:string"/>
+    </message>
+    
+    <message name="checkAddParticipantToAllServersResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getModifyReplicateParticipantInfo">
+    	<part name="repid" type="xsd:string"/>
+    </message>
+    
+    <message name="getModifyReplicateParticipantInfoResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+   
+   	<message name="getCheckSyncReplicateJobs">
+   	</message>
+   	
+   	<message name="getCheckSyncReplicateJobsResponse">
+   		<part name="return" type="xsd:anyType"/>
+   	</message>
+    
+    <message name="getCheckSyncReplicateJobDetail">
+    	<part name="jobName" type="xsd:string"/>
+    	<part name="jobType" type="xsd:string"/>
+    </message>
+    
+    <message name="getCheckSyncReplicateJobDetailResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getCheckSyncReplicateSetJobs">
+    </message>
+    
+    <message name="getCheckSyncReplicateSetJobsResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="getCheckSyncReplicateSetJobDetail">
+    	<part name="jobName" type="xsd:string"/>
+    	<part name="jobType" type="xsd:string"/>
+    </message>
+    
+    <message name="getCheckSyncReplicateSetJobDetailResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+    <message name="doReplicateAction">
+    	<part name="command"	type="xsd:string"/>
+    	<part name="parameters"	type="xsd:string"/>
+    	<part name="action_type"	type="xsd:string"/>
+    </message>
+	                                
+	<message name="doReplicateActionResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+		
+	<message name="deleteReplicate">
+		<part name="name"          type="xsd:string"/>
+		<part name="connectOption" type="xsd:string"/>
+	</message>
+	
+	<message name="deleteReplicateResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+	<message name="getTemplates">
+	</message>
+	
+	<message name="getTemplatesResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+    <message name="defineTemplate">
+    	<part name="command"   	type="xsd:string"/>
+    	<part name="parameters"  type="xsd:string"/>
+    </message>
+    
+    <message name="defineTemplateResponse">
+    	<part name="return" type="xsd:anyType"/>
+    </message>
+    
+   	<message name="getAllReplicateNames">
+   	</message>
+   	
+   	<message name="getAllReplicateNamesResponse">
+   		<part name="return" type="xsd:anyType"/>
+   	</message>
+    
+
+    <wsdl:message name="submitATSRISRepairBatchRequest1">
+    	<wsdl:part name="fileNames" type="xsd:anyType"></wsdl:part>
+    	<wsdl:part name="jobType" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="submitATSRISRepairBatchResponse1">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBatchStatusRequest1">
+    	<wsdl:part name="jobName" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBatchStatusResponse1">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getServersInDomainRequest">
+        <wsdl:part name="templateName" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getServersInDomainResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="submitRealizeTemplateRequest">
+    	<wsdl:part name="command" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="submitRealizeTemplateResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+         
+    <wsdl:message name="getDBSpacesRequest">
+    	<wsdl:part name="serverGroupName" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getDBSpacesResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+     <wsdl:message name="changeModifyReplicateSetRequest">
+    	<wsdl:part name="command" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="replicates" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="changeModifyReplicateSetResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    
+    <wsdl:message name="getServControlServersRequest">
+    	<wsdl:part name="servList" type="xsd:anyType"></wsdl:part>
+    	<wsdl:part name="flag" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getServControlServersResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="execServControlCmdRequest">
+    	<wsdl:part name="command" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="execServControlCmdResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+	<message name="deleteServer">
+		<part name="server"        type="xsd:string"/>
+		<part name="anotherServer" type="xsd:string"/>
+		<part name="options"       type="xsd:string"/>
+	</message>
+	
+	<message name="deleteServerResponse">
+		<part name="return"        type="xsd:anyType"/>
+	</message>
+	
+    
+    <message name="deleteTemplate">
+    	<part name="templateName"  type="xsd:string"></part>
+    	<part name="connectOption" type="xsd:string"></part>
+    </message>
+    
+    <message name="deleteTemplateResponse">
+    	<part name="return" type="xsd:anyType"></part>
+    </message>
+    
+    <message name="deleteReplicateSet">
+    	<part name="replicateSetName" type="xsd:string"></part>
+    	<part name="connectOption"    type="xsd:string"></part>
+    </message>
+    
+    <message name="deleteReplicateSetResponse">
+    	<part name="return" type="xsd:anyType"></part>
+    </message>
+    
+    <portType name="ERPort">
+	<operation name="testConnection">
+            <input  message="typens:testConnection"/>
+            <output message="typens:testConnectionResponse"/>
+    </operation>
+    
+    <!--<operation name="updateReviewStatus">
+            <input  message="typens:updateReviewStatus"/>
+            <output message="typens:updateReviewStatusResponse"/>
+    </operation>-->
+    
+    <operation name="startStopQOD">
+			<documentation>Execute any sql statement</documentation>
+			<input message="typens:startStopQOD" />
+			<output message="typens:startStopQODResponse"></output>
+	</operation>
+	
+	<operation name="getQODStatus">
+			<documentation>Get QOD Status</documentation>
+			<input message="typens:getQODStatus" />
+			<output message="typens:getQODStatusResponse"></output>
+	</operation>
+    
+    <operation name="resetQOD">
+			<documentation>Execute any sql statement</documentation>
+			<input message="typens:resetQOD" />
+			<output message="typens:resetQODResponse"></output>
+	</operation>
+    
+	<operation name="getCurrentERNodeName">
+			<documentation>Obtain the current node name</documentation>
+			<input message="typens:getCurrentERNodeName" />
+			<output message="typens:getCurrentERNodeNameResponse"></output>
+	</operation>
+	
+	<operation name="getCurrentOATGroup">
+			<documentation>Obtain the current OAT group</documentation>
+			<input message="typens:getCurrentOATGroup" />
+			<output message="typens:getCurrentOATGroupResponse"></output>
+	</operation>
+	
+	<operation name="getOSInfo">
+			<documentation>Get Operating System name and informix directory</documentation>
+			<input message="typens:getOSInfo" />
+			<output message="typens:getOSInfoResponse"></output>
+	</operation>
+	
+	<operation name="deleteERTasks">
+			<documentation>Delete ER tasks</documentation>
+			<input message="typens:deleteERTasks" />
+			<output message="typens:deleteERTasksResponse"></output>
+	</operation>
+	
+	<operation name="getConnectionsdbServers">
+			<documentation>Get list of servers stored in the connections.db</documentation>
+			<input message="typens:getConnectionsdbServers" />
+			<output message="typens:getConnectionsdbServersResponse"></output>
+	</operation>
+		
+	<operation name="modifyServer">
+			<input  message="typens:modifyServer"/>
+            <output message="typens:modifyServerResponse"/>
+    </operation>	
+	
+	<operation name="getNodeInfo">
+			<input  message="typens:getNodeInfo"/>
+            <output message="typens:getNodeInfoResponse"/>
+    </operation>
+    
+	<operation name="getServerFromCache">
+			<input  message="typens:getServerFromCache"/>
+            <output message="typens:getServerFromCacheResponse"/>
+    </operation>
+        
+	<operation name="addERServerToCache">
+            <input  message="typens:addERServerToCache"/>
+            <output message="typens:addERServerToCacheResponse"/>
+    </operation>
+        
+	<operation name="getNodeSummaryInfo">
+		<documentation>Obtain the summary information about an ER node</documentation>
+		<input message="typens:getNodeSummaryInfo" />
+		<output message="typens:getNodeSummaryInfoResponse"></output>
+	</operation>
+		
+	<operation name="getERTopologyInfo">
+		<documentation>Obtain the ER Topology information</documentation>
+		<input message="typens:getERTopologyInfo" />
+		<output message="typens:getERTopologyInfoResponse"></output>
+	</operation>
+		
+	<operation name="getNetworkDetails">
+            <input  message="typens:getNetworkDetails" />
+            <output message="typens:getNetworkDetailsResponse" />
+        </operation>     
+	
+	<wsdl:operation name="getATSFilesInfo">
+		<wsdl:documentation>Obtain information about ATS files</wsdl:documentation>
+		<wsdl:input message="typens:getATSFilesInfo"></wsdl:input>
+		<wsdl:output message="typens:getATSFilesInfoResponse"></wsdl:output>
+	</wsdl:operation>
+		
+	<wsdl:operation name="getATSFileDetailInfo">
+		<wsdl:documentation>Obtain information about a single ATS file</wsdl:documentation>
+		<wsdl:input message="typens:getATSFileDetailInfo"></wsdl:input>
+		<wsdl:output message="typens:getATSFileDetailInfoResponse"></wsdl:output>
+	</wsdl:operation>
+		
+	<wsdl:operation name="getRISFilesInfo">
+		<wsdl:documentation>Obtain information about RIS files</wsdl:documentation>
+		<wsdl:input message="typens:getRISFilesInfo"></wsdl:input>
+		<wsdl:output message="typens:getRISFilesInfoResponse"></wsdl:output>
+	</wsdl:operation>
+		
+	<wsdl:operation name="getRISFileDetailInfo">
+		<wsdl:documentation>Obtain information about a single RIS file</wsdl:documentation>
+		<wsdl:input message="typens:getRISFileDetailInfo"></wsdl:input>
+		<wsdl:output message="typens:getRISFileDetailInfoResponse"></wsdl:output>
+	</wsdl:operation>		
+
+	<wsdl:operation name="getCheckSyncJobFailureMessage">
+		<wsdl:documentation>Obtain return message of a command that belong to a task that failed</wsdl:documentation>
+		<wsdl:input message="typens:getCheckSyncJobFailureMessage"></wsdl:input>
+		<wsdl:output message="typens:getCheckSyncJobFailureMessageResponse"></wsdl:output>
+	</wsdl:operation>
+
+	<wsdl:operation name="getDiskUsageInfo">			
+		<wsdl:input message="typens:getDiskUsageInfo"></wsdl:input>
+		<wsdl:output message="typens:getDiskUsageInfoResponse"></wsdl:output>
+	</wsdl:operation>
+
+    	<operation name="getNodeApplyDetails">
+     	    <documentation>Obtain the detailed apply information about an ER node</documentation>
+            <input message="typens:getNodeApplyDetails" />
+      	    <output message="typens:getNodeApplyDetailsResponse"></output>
+	</operation>
+	      
+	<operation name="getCaptureDetails">
+      	    <documentation>Obtain DDR capture details from an ER node</documentation>
+	    <input message="typens:getCaptureDetails"></input>
+      	    <output message="typens:getCaptureDetailsResponse"></output>
+	</operation>
+
+    <operation name="getNodeSendQueueDetails">
+        <documentation>Obtain the detailed send queue information about an ER node</documentation>
+        <input message="typens:getNodeSendQueueDetails" />
+        <output message="typens:getNodeSendQueueDetailsResponse"></output>
+    </operation>
+
+	<operation name="getERConfigParams">
+        <documentation>Obtains some of the CDR config parameter values</documentation>
+        <input message="typens:getERConfigParams" />
+        <output message="typens:getERConfigParamsResponse"></output>
+    </operation>
+    
+    <operation name="updateERConfigParams">
+        <documentation>Updates CDR config parameter values</documentation>
+        <input message="typens:updateERConfigParams" />
+        <output message="typens:updateERConfigParamsResponse"></output>
+    </operation>
+    
+	<operation name="getNodeErrorDetails">
+        <documentation>Obtains the error details for the current ER node</documentation>
+        <input message="typens:getNodeErrorDetails" />
+        <output message="typens:getNodeErrorDetailsResponse"></output>
+    </operation>
+
+    <operation name="getThresholds">
+        <documentation>Get the OAT ER Threshold information for this server</documentation>
+        <input message="typens:getThresholds"></input>
+        <output message="typens:getThresholdsResponse"></output>
+    </operation>
+    
+    <operation name="insertDefaultThresholds">
+        <documentation>Insert the default OAT ER Threshold information into this server's ph_threshold table</documentation>
+        <input message="typens:insertDefaultThresholds"></input>
+        <output message="typens:insertDefaultThresholdsResponse"></output>
+    </operation>
+    
+    <operation name="updateThresholds">
+        <documentation>Update the OAT ER Threshold information on all servers in the domain</documentation>
+        <input message="typens:updateThresholds"></input>
+        <output message="typens:updateThresholdsResponse"></output>
+    </operation>
+    
+    <operation name="getWorldView">
+        <documentation>Update the OAT ER Threshold information on all servers in the domain</documentation>
+        <input message="typens:getWorldView"></input>
+        <output message="typens:getWorldViewResponse"></output>
+    </operation>
+    
+    <operation name="defineServerPage1Validation">
+        <documentation>Validation service for page 1 of the Define Server Wizard</documentation>
+        <input message="typens:defineServerPage1Validation"></input>
+        <output message="typens:defineServerPage1ValidationResponse"></output>
+    </operation>
+
+	<operation name="defineServerPage2Validation">
+        <documentation>Validation service for page 2 of the Define Server Wizard: SQLHOSTS Validation</documentation>
+        <input message="typens:defineServerPage2Validation"></input>
+        <output message="typens:defineServerPage2ValidationResponse"></output>
+    </operation>
+
+	<operation name="defineServerWizard_createSpace">
+        <documentation>Execute space create commands for Define Server Wizard</documentation>
+        <input message="typens:defineServerWizard_createSpace"></input>
+        <output message="typens:defineServerWizard_createSpaceResponse"></output>
+    </operation>
+
+	<operation name="defineServerWizard_modifyOnconfig">
+        <documentation>Execute modify onconfig commands for Define Server Wizard</documentation>
+        <input message="typens:defineServerWizard_modifyOnconfig"></input>
+        <output message="typens:defineServerWizard_modifyOnconfigResponse"></output>
+    </operation>
+
+	<operation name="defineServerWizard_defineServer">
+        <documentation>Execute define server command for Define Server Wizard</documentation>
+        <input message="typens:defineServerWizard_defineServer"></input>
+        <output message="typens:defineServerWizard_defineServerResponse"></output>
+    </operation>
+
+	<operation name="performReplicateAction">
+        <documentation>Execute cdr start, stop, suspend, or resume action on a replicate or replicate set</documentation>
+        <input message="typens:performReplicateAction"></input>
+        <output message="typens:performReplicateActionResponse"></output>
+    </operation>
+    
+    <operation name="performCheckSyncAction">
+        <documentation>Execute cdr check or sync action on a replicate or replicate set</documentation>
+        <input message="typens:performCheckSyncAction"></input>
+        <output message="typens:performCheckSyncActionResponse"></output>
+    </operation>
+    
+    <operation name="getCheckSyncValidationInfo">
+        <documentation>Retrieves validation information needed for check/sync wizard</documentation>
+        <input message="typens:getCheckSyncValidationInfo"></input>
+        <output message="typens:getCheckSyncValidationInfoResponse"></output>
+    </operation>
+    
+    <operation name="isTimestampOptionValid">
+        <documentation>Determines whether a replicate set can utilize check repair with timestamp</documentation>
+        <input message="typens:isTimestampOptionValid"></input>
+        <output message="typens:isTimestampOptionValid"></output>
+    </operation>    
+    
+    <operation name="getNumbOfAvailableVirtualProcessors">
+        <documentation>Returned number of available virtual CPUs</documentation>
+        <input message="typens:getNumbOfAvailableVirtualProcessors"></input>
+        <output message="typens:getNumbOfAvailableVirtualProcessorsResponse"></output>
+    </operation>
+
+    <operation name="getReplicates">
+        <documentation>Retrieves all replicates and their participants</documentation>
+        <input message="typens:getReplicates"></input>
+        <output message="typens:getReplicatesResponse"></output>
+    </operation>
+    
+    <operation name="getReplicateSets">
+        <documentation>Retrieves all replicates and their participants</documentation>
+        <input message="typens:getReplicateSets"></input>
+        <output message="typens:getReplicateSetsResponse"></output>
+    </operation>
+    
+	<operation name="defineReplicateSet">
+        <documentation>Defines a new replicate set</documentation>
+        <input message="typens:defineReplicateSet"></input>
+        <output message="typens:defineReplicateSetResponse"></output>
+    </operation>        
+        
+    <operation name="getReplicateParticipantCandidateGroups">
+        <documentation>Retrieves all server group candidates for defining a new replicate</documentation>
+        <input message="typens:getReplicateParticipantCandidateGroups"></input>
+        <output message="typens:getReplicateParticipantCandidateGroupsResponse"></output>
+    </operation>
+    
+    <operation name="getReplicateParticipantCandidateDatabases">
+        <documentation>Retrieves all server database candidates for defining a new replicate on a particular server.</documentation>
+        <input message="typens:getReplicateParticipantCandidateDatabases"></input>
+        <output message="typens:getReplicateParticipantCandidateDatabasesResponse"></output>
+    </operation>
+    
+    <operation name="getReplicateParticipantCandidateTables">
+        <documentation>Retrieves all server table candidates for defining a new replicate on a particular server and database.</documentation>
+        <input message="typens:getReplicateParticipantCandidateTables"></input>
+        <output message="typens:getReplicateParticipantCandidateTablesResponse"></output>
+    </operation>
+    
+    <operation name="checkAddParticipantToAllServers">
+        <input message="typens:checkAddParticipantToAllServers"></input>
+        <output message="typens:checkAddParticipantToAllServersResponse"></output>
+    </operation>
+    
+    <operation name="getModifyReplicateParticipantInfo">
+        <documentation>Retrieves information about the participants of a replicate.</documentation>
+        <input message="typens:getModifyReplicateParticipantInfo"></input>
+        <output message="typens:getModifyReplicateParticipantInfoResponse"></output>
+    </operation>
+    
+    <operation name="doReplicateAction">
+        <documentation>Peforms a replicate action (define, modify, change, or remaster)</documentation>
+        <input message="typens:doReplicateAction"></input>
+        <output message="typens:doReplicateActionResponse"></output>
+    </operation>
+    
+    <operation name="deleteReplicate">
+        <documentation>Adds or deletes participants from a replicate</documentation>
+        <input message="typens:deleteReplicate"></input>
+        <output message="typens:deleteReplicateResponse"></output>
+    </operation>
+    
+    <operation name="getCheckSyncReplicateJobs">
+    	<documentation>Obtains information about all check/sync jobs on replicates</documentation>
+    	<input message="typens:getCheckSyncReplicateJobs"></input>
+    	<output message="typens:getCheckSyncReplicateJobsResponse"></output>
+    </operation>
+    
+    <operation name="getCheckSyncReplicateJobDetail">
+    	<documentation>Obtain details about a given check/sync replicate job</documentation>
+    	<input message="typens:getCheckSyncReplicateJobDetail"></input>
+    	<output message="typens:getCheckSyncReplicateJobDetailResponse"></output>
+    </operation>
+    
+    <operation name="getCheckSyncReplicateSetJobs">
+    	<documentation>Obtain information about all check/sync jobs on replicates</documentation>
+    	<input message="typens:getCheckSyncReplicateSetJobs"></input>
+    	<output message="typens:getCheckSyncReplicateSetJobsResponse"></output>
+    </operation>
+
+	<operation name="getCheckSyncReplicateSetJobDetail">
+		<documentation>Obtain details about a given check/sync replicate set job</documentation>
+		<input message="typens:getCheckSyncReplicateSetJobDetail"></input>
+		<output message="typens:getCheckSyncReplicateSetJobDetailResponse"></output>
+	</operation>
+	
+	<operation name="getTemplates">
+		<documentation>Obtain defined templates</documentation>
+		<input message="typens:getTemplates"></input>
+		<output message="typens:getTemplatesResponse"></output>
+	</operation>
+	
+	<operation name="defineTemplate">
+		<documentation>Defines a template</documentation>
+		<input message="typens:defineTemplate"></input>
+		<output message="typens:defineTemplateResponse"></output>
+	</operation>
+
+	<operation name="getAllReplicateNames">
+		<documentation>Returns all replicate and replicate set names</documentation>
+		<input message="typens:getAllReplicateNames"></input>
+		<output message="typens:getAllReplicateNamesResponse"></output>
+	</operation>
+
+	<wsdl:operation name="submitATSRISRepairBatch">
+		<wsdl:input message="typens:submitATSRISRepairBatchRequest1"></wsdl:input>
+		<wsdl:output message="typens:submitATSRISRepairBatchResponse1"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="getBatchStatus">
+		<wsdl:input message="typens:getBatchStatusRequest1"></wsdl:input>
+		<wsdl:output message="typens:getBatchStatusResponse1"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="getServersInDomain">
+		<wsdl:input message="typens:getServersInDomainRequest"></wsdl:input>
+		<wsdl:output message="typens:getServersInDomainResponse"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="submitRealizeTemplate">
+		<wsdl:input message="typens:submitRealizeTemplateRequest"></wsdl:input>
+		<wsdl:output message="typens:submitRealizeTemplateResponse"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="getDBSpaces">
+		<wsdl:input message="typens:getDBSpacesRequest"></wsdl:input>
+		<wsdl:output message="typens:getDBSpacesResponse"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="changeModifyReplicateSet">
+		<wsdl:input message="typens:changeModifyReplicateSetRequest"></wsdl:input>
+		<wsdl:output message="typens:changeModifyReplicateSetResponse"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="getServControlServers">
+		<wsdl:input message="typens:getServControlServersRequest"></wsdl:input>
+		<wsdl:output message="typens:getServControlServersResponse"></wsdl:output>
+	</wsdl:operation>
+	<wsdl:operation name="execServControlCmd">
+		<wsdl:input message="typens:execServControlCmdRequest"></wsdl:input>
+		<wsdl:output message="typens:execServControlCmdResponse"></wsdl:output>
+	</wsdl:operation>
+	
+	<operation name="deleteServer">
+        <documentation>Delete a server from the ER domain</documentation>
+        <input message="typens:deleteServer"></input>
+        <output message="typens:deleteServerResponse"></output>
+    </operation>
+	<operation name="deleteTemplate">
+        <documentation>Deletes a template</documentation>
+        <input message="typens:deleteTemplate"></input>
+        <output message="typens:deleteTemplateResponse"></output>
+    </operation>
+	
+	<operation name="deleteReplicateSet">
+        <documentation>Deletes a template</documentation>
+        <input message="typens:deleteReplicateSet"></input>
+        <output message="typens:deleteReplicateSetResponse"></output>
+    </operation>
+	
+	</portType>
+
+
+    <!-- define protocol details for each Ports -->
+    <binding name="ERBinding" type="typens:ERPort">
+    	<soap:binding style="rpc"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+
+    	<operation name="testConnection">
+
+    		<soap:operation soapAction="urn:ER/testConnection" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="startStopQOD">
+
+    		<soap:operation soapAction="urn:ER/startStopQOD" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getQODStatus">
+
+    		<soap:operation soapAction="urn:ER/getQODStatus" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="resetQOD">
+
+    		<soap:operation soapAction="urn:ER/resetQOD" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getCurrentERNodeName">
+
+    		<soap:operation soapAction="urn:ER/getCurrentERNodeName" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getCurrentOATGroup">
+
+    		<soap:operation soapAction="urn:ER/getCurrentOATGroup" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	<wsdl:operation name="getOSInfo">
+
+    		<soap:operation soapAction="urn:ER/getOSInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	
+    	
+    	<wsdl:operation name="deleteERTasks">
+
+    		<soap:operation soapAction="urn:ER/deleteERTasks" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getConnectionsdbServers">
+
+    		<soap:operation soapAction="urn:ER/getConnectionsdbServers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<operation name="modifyServer">
+
+    		<soap:operation soapAction="urn:ER/modifyServer" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getNodeInfo">
+
+    		<soap:operation soapAction="urn:ER/getNodeInfo" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getServerFromCache">
+
+    		<soap:operation soapAction="urn:ER/getServerFromCache" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="addERServerToCache">
+
+    		<soap:operation soapAction="urn:ER/addERServerToCache" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="getNodeSummaryInfo">
+
+    		<soap:operation soapAction="urn:ER/getNodeSummaryInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getATSFilesInfo">
+
+    		<soap:operation soapAction="urn:ER/getATSFilesInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getATSFileDetailInfo">
+
+    		<soap:operation soapAction="urn:ER/getATSFileDetailInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getRISFilesInfo">
+
+    		<soap:operation soapAction="urn:ER/getRISFilesInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getRISFileDetailInfo">
+
+    		<soap:operation soapAction="urn:ER/getRISFileDetailInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getCheckSyncJobFailureMessage">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncJobFailureMessage" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getDiskUsageInfo">
+
+    		<soap:operation soapAction="urn:ER/getDiskUsageInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<operation name="getNetworkDetails">
+
+    		<soap:operation soapAction="urn:ER/getNetworkDetails" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="getERTopologyInfo">
+    		<wsdl:documentation></wsdl:documentation>
+
+    		<soap:operation soapAction="urn:ER/getERTopologyInfo" />
+    		<wsdl:input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<operation name="getNodeApplyDetails">
+
+    		<soap:operation soapAction="urn:ER/getNodeApplyDetails" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCaptureDetails">
+
+    		<soap:operation soapAction="urn:ER/getCaptureDetails" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getNodeSendQueueDetails">
+
+    		<soap:operation soapAction="urn:ER/getNodeSendQueueDetails" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getThresholds">
+
+    		<soap:operation soapAction="urn:ER/getThresholds" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="insertDefaultThresholds">
+
+    		<soap:operation soapAction="urn:ER/insertDefaultThresholds" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="updateThresholds">
+
+    		<soap:operation soapAction="urn:ER/updateThresholds" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getERConfigParams">
+
+    		<soap:operation soapAction="urn:ER/getERConfigParams" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="updateERConfigParams">
+
+    		<soap:operation soapAction="urn:ER/updateERConfigParams" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getNodeErrorDetails">
+
+    		<soap:operation soapAction="urn:ER/getNodeErrorDetails" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getWorldView">
+
+    		<soap:operation soapAction="urn:ER/getWorldView" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineServerPage1Validation">
+
+    		<soap:operation
+    			soapAction="urn:ER/defineServerPage1Validation" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineServerPage2Validation">
+
+    		<soap:operation
+    			soapAction="urn:ER/defineServerPage2Validation" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineServerWizard_createSpace">
+
+    		<soap:operation
+    			soapAction="urn:ER/defineServerWizard_createSpace" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineServerWizard_modifyOnconfig">
+
+    		<soap:operation
+    			soapAction="urn:ER/defineServerWizard_modifyOnconfig" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineServerWizard_defineServer">
+
+    		<soap:operation
+    			soapAction="urn:ER/defineServerWizard_defineServer" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="performReplicateAction">
+
+    		<soap:operation soapAction="urn:ER/performReplicateAction" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="performCheckSyncAction">
+
+    		<soap:operation soapAction="urn:ER/performCheckSyncAction" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCheckSyncValidationInfo">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncValidationInfo" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="isTimestampOptionValid">
+
+    		<soap:operation
+    			soapAction="urn:ER/isTimestampOptionValid" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+		<operation name="getNumbOfAvailableVirtualProcessors">
+
+    		<soap:operation
+    			soapAction="urn:ER/getNumbOfAvailableVirtualProcessors" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>	
+
+    	<operation name="getReplicates">
+
+    		<soap:operation soapAction="urn:ER/getReplicates" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getReplicateSets">
+
+    		<soap:operation soapAction="urn:ER/getReplicateSets" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="getReplicateParticipantCandidateGroups">
+
+    		<soap:operation
+    			soapAction="urn:ER/getReplicateParticipantCandidateGroups" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="getReplicateParticipantCandidateDatabases">
+
+    		<soap:operation
+    			soapAction="urn:ER/getReplicateParticipantCandidateDatabases" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="getReplicateParticipantCandidateTables">
+
+    		<soap:operation
+    			soapAction="urn:ER/getReplicateParticipantCandidateTables" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="checkAddParticipantToAllServers">
+
+    		<soap:operation
+    			soapAction="urn:ER/checkAddParticipantToAllServers" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="getModifyReplicateParticipantInfo">
+
+    		<soap:operation
+    			soapAction="urn:ER/getModifyReplicateParticipantInfo" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+    	
+    	<operation name="defineReplicateSet">
+
+    		<soap:operation soapAction="urn:ER/defineReplicateSet" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="doReplicateAction">
+
+    		<soap:operation soapAction="urn:ER/doReplicateAction" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="deleteReplicate">
+
+    		<soap:operation soapAction="urn:ER/deleteReplicate" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCheckSyncReplicateJobs">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncReplicateJobs" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCheckSyncReplicateJobDetail">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncReplicateJobDetail" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCheckSyncReplicateSetJobs">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncReplicateSetJobs" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="getCheckSyncReplicateSetJobDetail">
+
+    		<soap:operation
+    			soapAction="urn:ER/getCheckSyncReplicateSetJobDetail" />
+    		<input>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="submitATSRISRepairBatch">
+    		<soap:operation soapAction="urn:ER/submitATSRISRepairBatch" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getBatchStatus">
+    		<soap:operation soapAction="urn:ER/getBatchStatus" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<operation name="getTemplates">
+    		<soap:operation soapAction="url:ERAction" />
+    		<input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<operation name="defineTemplate">
+    		<soap:operation soapAction="url:ERAction" />
+    		<input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="getServersInDomain">
+    		<soap:operation soapAction="urn:ER/getServersInDomain" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="submitRealizeTemplate">
+    		<soap:operation soapAction="urn:ER/submitRealizeTemplate" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getDBSpaces">
+    		<soap:operation soapAction="urn:ER/getDBSpaces" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<operation name="getAllReplicateNames">
+    		<soap:operation soapAction="url:ERAction" />
+    		<input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</input>
+    		<output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</output>
+    	</operation>
+
+    	<wsdl:operation name="changeModifyReplicateSet">
+    		<soap:operation
+    			soapAction="urn:ER/changeModifyReplicateSet" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+
+    	<wsdl:operation name="getServControlServers">
+    		<soap:operation soapAction="urn:ER/getServControlServers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="execServControlCmd">
+    		<soap:operation soapAction="urn:ER/execServControlCmd" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:ER"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+		
+		<operation name="deleteServer">
+        	<soap:operation soapAction="url:ERAction"/>
+                <input>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </input>
+                <output>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </output>			
+		</operation>
+		<operation name="deleteTemplate">
+        	<soap:operation soapAction="url:ERAction"/>
+                <input>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </input>
+                <output>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </output>			
+		</operation>
+		<operation name="deleteReplicateSet">
+        	<soap:operation soapAction="url:ERAction"/>
+                <input>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </input>
+                <output>
+                    <soap:body use="encoded" namespace="urn:ER"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                </output>			
+		</operation>
+    </binding>
+
+    <service name="ERService">
+        <port name="ERPort" binding="typens:ERBinding">
+            <soap:address location="ERService.php" />
+        </port>
+    </service>
+</definitions>
+

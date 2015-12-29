@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Plug-in Manager]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[The Plug-in Manager cannot write to the OAT temporary directory: tmp. To install a plug-in, you must have permission to write to the OAT temporary directory. Obtain permission to write to this directory, and install the plug-in again.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[The Plug-in Manager cannot open because the Plug-in Manager requires that PHP is configured with the zip module installed. The PHP that OAT is using does not have the zip module installed. Configure the PHP on your web server with the zip module installed. Alternatively, you can reinstall OAT by using the OAT installer, which configures the PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[The plug-in was not installed.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Installed Plug-ins]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Plug-ins Not Yet Installed]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[No plug-in was selected to install.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[No upgrade is available.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[The Plug-in Manager cannot write to the plug-in directory. Obtain permission to write to this directory, and install the plug-in again.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Current Version Installed]]></CurrVerInstalled>
+<Unknown><![CDATA[Unknown]]></Unknown>
+<ClickToEnable><![CDATA[Click to enable]]></ClickToEnable>
+<ClickToDisable><![CDATA[Click to disable]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[This file could not be deleted: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[The plug-in was upgraded successfully.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[The plug-in was installed successfully.]]></PluginInstalled>
+<Name><![CDATA[Name]]></Name>
+<Author><![CDATA[Author]]></Author>
+<Description><![CDATA[Description]]></Description>
+<Version><![CDATA[Version]]></Version>
+<ServerVersion><![CDATA[Server Version]]></ServerVersion>
+<MinOATVersion><![CDATA[Minimum OAT Version]]></MinOATVersion>
+<Install><![CDATA[Install]]></Install>
+<Uninstall><![CDATA[Uninstall]]></Uninstall>
+<Upgrade><![CDATA[Upgrade]]></Upgrade>
+<Enabled><![CDATA[Enabled]]></Enabled>
+<updating><![CDATA[Updating]]></updating>
+<LatestInstalled><![CDATA[Latest Installed]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[This action uninstalls the plug-in {0}. The plug-in compressed file is deleted when the plug-in is installed. After the plug-in is uninstalled, it cannot be reinstalled until the plug-in compressed file is restored to the plug-in directory.  \n\nDo you want to continue?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[The plug-in was uninstalled successfully.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[The plug-in was not uninstalled.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT attempted to uninstall the plug-in, but the plug-in ID was not found. On the Admin menu, click Plug-in Manager, and review the list of installed plug-ins. If necessary, uninstall the plug-in again.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[The plug-in was uninstalled, but the following files could not be removed:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[You can delete these files from your computer.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[The menu item for the plug-in was not deleted. You can delete the menu item on the Menu Manager page.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[The selected plug-in cannot be installed. The OAT minimum version required for the plug-in is {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Agree]]></Agree>
+<Disagree><![CDATA[Disagree]]></Disagree>
+</lang>

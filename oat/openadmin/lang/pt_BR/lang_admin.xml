@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[Admin.]]></admin>
+<login><![CDATA[Login]]></login>
+<AdminHome><![CDATA[Página Inicial do Admin.]]></AdminHome>
+<AdminWelcome><![CDATA[Bem-vindo ao Admin.]]></AdminWelcome>
+<ConnAdmin><![CDATA[Admin. de Conexão]]></ConnAdmin>
+<ConnList><![CDATA[Lista de Conexão]]></ConnList>
+<OATconfig><![CDATA[Configuração do OAT]]></OATconfig>
+<defaultlang><![CDATA[Idioma Padrão]]></defaultlang>
+<baseurl><![CDATA[URL Base]]></baseurl>
+<installdir><![CDATA[Diretório de Instalação]]></installdir>
+<conndb_loc><![CDATA[Diretório de Banco de Dados de Conexões]]></conndb_loc>
+<rowsperpage><![CDATA[Linhas por página]]></rowsperpage>
+<pingerinterval><![CDATA[Atualizar Intervalo]]></pingerinterval>
+<IDSProtocol><![CDATA[Protocolo Informix]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[Protocolo a ser usado]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[Gerenciador de Painel]]></DashboardMgr>
+<ShowConnections><![CDATA[Mostrar Conexões]]></ShowConnections>
+<AddConn><![CDATA[Incluir uma Conexão]]></AddConn>
+<DeleteConn><![CDATA[Excluir uma Conexão]]></DeleteConn>
+<EditConn><![CDATA[Editar uma Conexão]]></EditConn>
+<EditConn_><![CDATA[Editar Conexão: {0}]]></EditConn_>
+<AddGroup><![CDATA[Incluir um Grupo]]></AddGroup>
+<EditGroup><![CDATA[Editar um Grupo]]></EditGroup>
+<EditGroup_><![CDATA[Editar Grupo {0}]]></EditGroup_>
+<DeleteGroup><![CDATA[Excluir Grupo]]></DeleteGroup>
+<HelpAdmin><![CDATA[Admin. de Ajuda]]></HelpAdmin>
+<AddHelp><![CDATA[Incluir um Item de Ajuda]]></AddHelp>
+<DeleteHelp><![CDATA[Excluir um Item de Ajuda]]></DeleteHelp>
+<EditHelp><![CDATA[Editar um Item de Ajuda]]></EditHelp>
+<group><![CDATA[grupo OAT]]></group>
+<groupname><![CDATA[Nome do Grupo]]></groupname>
+<groupname_sc><![CDATA[Nome do grupo]]></groupname_sc>
+<username><![CDATA[Nome de Usuário]]></username>
+<password><![CDATA[Senha]]></password>
+<hostname><![CDATA[Nome do Host]]></hostname>
+<informixserver><![CDATA[Servidor Informix]]></informixserver>
+<port><![CDATA[Porta]]></port>
+<longitude><![CDATA[Longitude]]></longitude>
+<latitude><![CDATA[Latitude]]></latitude>
+<idsdport><![CDATA[Porta idsd]]></idsdport>
+<envvars><![CDATA[Variáveis de Ambiente]]></envvars>
+<varname><![CDATA[Nome da Variável]]></varname>
+<param><![CDATA[Parâmetro]]></param>
+<value><![CDATA[Valor]]></value>
+<readonly><![CDATA[Somente Leitura]]></readonly>
+<readonly_sc><![CDATA[Somente Leitura]]></readonly_sc>
+<collapse><![CDATA[Reduzir]]></collapse>
+<viewmodify><![CDATA[Visualizar&#47Modificar]]></viewmodify>
+<currgroups><![CDATA[Grupos Atuais]]></currgroups>
+<numconn><![CDATA[Conexões]]></numconn>
+<deleteselected><![CDATA[Excluir Selecionado]]></deleteselected>
+<act><![CDATA[Agir]]></act>
+<do><![CDATA[Executar]]></do>
+<title><![CDATA[Título]]></title>
+<description><![CDATA[Descrição]]></description>
+<add><![CDATA[Incluir]]></add>
+<delete><![CDATA[Excluir]]></delete>
+<save><![CDATA[Salvar]]></save>
+<cancel><![CDATA[Cancelar]]></cancel>
+<testconnection><![CDATA[Testar Conexão]]></testconnection>
+<insecureCONNDBDIR><![CDATA[O local do banco de dados de conexão especificado está na raiz do documento do servidor da Web. Isto pode expor o OAT a riscos de segurança. Clique em OK, se ainda desejar continuar.]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[Gerenciador de Plug-in]]></pluginmgr>
+<installplugin><![CDATA[Instalar um Plug-in]]></installplugin>
+<menumgr><![CDATA[Gerenciador de Menus]]></menumgr>
+<secureSQL><![CDATA[Segurança do SQL ToolBox]]></secureSQL>
+<informixcontime><![CDATA[Tempo de Conexão do Informix]]></informixcontime>
+<informixconretry><![CDATA[Nova Tentativa de Conexão do Informix]]></informixconretry>
+<helpDB><![CDATA[Banco de Dados de Ajuda]]></helpDB>
+<selectHelpDB><![CDATA[Selecionar um Banco de Dados de Ajuda]]></selectHelpDB>
+<import><![CDATA[Importar informações de conexão de um arquivo XML]]></import>
+<export><![CDATA[Exportar informações de conexão para um arquivo XML]]></export>
+<importbutton><![CDATA[Importar de XML]]></importbutton>
+<exportbutton><![CDATA[Exportar para XML]]></exportbutton>
+<importcheckbox><![CDATA[Remover todas as informações de conexão existentes antes de importar o arquivo XML.]]></importcheckbox>
+<exportcheckbox><![CDATA[Incluir informações confidenciais de senha no arquivo XML exportado.]]></exportcheckbox>
+<nofile><![CDATA[Nenhum arquivo foi selecionado.]]></nofile>
+<overwriteConfirm><![CDATA[Todas as informações de conexão existentes atualmente serão excluídas. Tem certeza?]]></overwriteConfirm>
+<securityWarning><![CDATA[O arquivo XML exportado contém informações confidenciais de senha, como a senha de informix. Certifique-se de que este arquivo seja salvo em um local seguro.]]></securityWarning>
+<LANG><![CDATA[O idioma padrão das páginas OAT.]]></LANG>
+<CONNDBDIR><![CDATA[O diretório do banco de dados de conexões do OAT. Especifique um diretório seguro que não esteja debaixo do diretório de documentos para o servidor da web.]]></CONNDBDIR>
+<BASEURL><![CDATA[A URL em que o OAT está instalado neste formato: http://servername:port/location.]]></BASEURL>
+<HOMEDIR><![CDATA[O diretório de instalação do OAT.]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[O número padrão de linhas por página a serem exibidas quando os dados forem mostrados em um formato de tabela.]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[O comprimento do tempo (em segundos) entre atualizações de status do servidor. O status do servidor é mostrado na página Health Center > Painel > Resumo do Grupo.]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[A página a ser usada como a página inicial do OAT.]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[Que protocolo usar (por ex., onsoctcp)]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[Requer credenciais de login para o SQL ToolBox.]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[Proteja com senha as páginas Navegador de Esquema, Editor SQL e Consulta por Exemplo. Os usuários podem visualizar ou alterar os dados da tabela nessas páginas.]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[O comprimento de tempo (em segundos) que o OAT tenta se conectar ao servidor de banco de dados antes de retornar um erro (INFORMIXCONTIME).]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[O número de vezes que o OAT tenta se conectar ao servidor de banco de dados durante o tempo de conexão do Informix (INFORMIXCONRETRY).]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[Página Inicial]]></HomePage>
+<home_page_option_welcome><![CDATA[Bem-vindo]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Health Center > Painel > Resumo de Grupo]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Health Center > Painel > Desempenho do Servidor]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Personalizado]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[Falha ao salvar a configuração porque o arquivo não é gravável:]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[Configuração Salva]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[On-line: ATUAL]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Um Servidor Informix é necessário]]></RequiresInformixServer>
+<RequiresHost><![CDATA[Um host é necessário]]></RequiresHost>
+<RequiresPort><![CDATA[Uma porta é necessária]]></RequiresPort>
+<RequiresUser><![CDATA[Um nome de usuário é necessário]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[Falha ao incluir uma nova conexão com código de erro:]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[Falha ao incluir uma nova conexão ao idsd com código de erro:]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[Falha ao inserir no conn_envvars com código de erro:]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[Falha ao atualizar a conexão com código de erro:]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[Falha ao substituir idsd com código de erro:]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[Falha ao excluir do conn_envvars com código de erro:]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[Atualizar: falha ao inserir no into conn_envvars com código de erro:]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[Editando Conexão]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[Ocorreu um erro - número do grupo é necessário]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[Um nome do grupo é necessário]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[Falha ao editar o grupo com código de erro:]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[Editando Grupo]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[Falha ao incluir um novo grupo com código de erro:]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[Incluindo Grupo]]></AddingGroup>
+<AddingConn><![CDATA[Incluindo Conexão]]></AddingConn>
+<ErrorDeletingConn><![CDATA[Erro: função dodelconn chamada com argumentos errados]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[Falha ao excluir a(s) conexão(ões) com código de erro:]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[Exclusão de Conexão(ões) concluída]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[Falha ao excluir o(s) grupo(s) com código de erro:]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[Exclusão de Grupo(s) concluída]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA[Uma 'ação' é necessária]]></RequiresAct>
+<RequiresDescription><![CDATA[Uma descrição é necessária]]></RequiresDescription>
+<AddingHelpFor><![CDATA[Incluindo Ajuda para]]></AddingHelpFor>
+<DeletingHelp><![CDATA[Excluindo Ajuda]]></DeletingHelp>
+<EditingHelpFor><![CDATA[Editando Ajuda para]]></EditingHelpFor>
+<NoHelpDB><![CDATA[Nenhum banco de dados de ajuda para helpdb_id =]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[Problema com o idsadminHelp db -]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[Ocorreu um erro ao abrir o banco de dados de ajuda]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[Falha ao importar grupo]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[Falha ao importar grupo]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[Iniciando a instalação de plug-in...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[Falha de Conexão...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[Erro ao carregar connections.db]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[Tem certeza de que deseja excluir estas conexões?]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[Tem certeza de que deseja excluir? A exclusão de um grupo também excluirá as conexões definidas para esse grupo!]]></SureToDeleteGroup>
+<AskDelete><![CDATA[Tem certeza de que deseja excluir?]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[Testando ... aguarde]]></TestingConnection>
+<InvalidEnvVar><![CDATA[Erro: É necessário especificar o nome e o valor da variável de ambiente.]]></InvalidEnvVar>
+<x_Plugin><![CDATA[Plug-in do {0}]]></x_Plugin>
+</lang>

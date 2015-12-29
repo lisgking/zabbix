@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[менеджер соединений]]></ucm>
+<noCMSupportServerVersion><![CDATA[Для менеджера соединений в OAT требуется Informix Версии 11.70.xC3.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[Операция Менеджера соединений завершилась неудачно. Дополнительную информацию смотрите в файле журнала Менеджера соединений.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Не найдены никакие блоки соединений для Менеджера соединений {0}.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[Блок соединений {0} не найден.]]></ConnUnitNotFound>
+</lang>

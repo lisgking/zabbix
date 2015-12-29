@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[Вход в систему Набор инструментов SQL]]></switchuser>
+<loginprompt><![CDATA[Для работы с Набором инструментов SQL введите имя пользователя и пароль]]></loginprompt>
+<empty><![CDATA[Имя пользователя и пароль не могут быть пустыми]]></empty>
+<error><![CDATA[Произошла ошибка]]></error>
+<username><![CDATA[Имя пользователя]]></username>
+<password><![CDATA[Пароль]]></password>
+<login><![CDATA[Вход в систему]]></login>
+<SwitchingUser><![CDATA[Переключение на другого пользователя]]></SwitchingUser>
+</lang>

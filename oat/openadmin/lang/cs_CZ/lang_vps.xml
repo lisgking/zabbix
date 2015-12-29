@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Virtuální procesory]]></virtualprocessors>
+<vps><![CDATA[Virtuální procesory]]></vps>
+<vpclasses><![CDATA[Třídy virtuálních procesorů]]></vpclasses>
+<vpid><![CDATA[ID VP]]></vpid>
+<class><![CDATA[Třída]]></class>
+<cnt><![CDATA[Virtuální procesory]]></cnt>
+<total><![CDATA[Celkem]]></total>
+<usercpu><![CDATA[Čas CPU uživatele]]></usercpu>
+<syscpu><![CDATA[Čas CPU systému]]></syscpu>
+<totalcpu><![CDATA[Celkový čas CPU]]></totalcpu>
+<classdetails><![CDATA[Podrobnosti o třídě]]></classdetails>
+<nodrop><![CDATA[Nelze zrušit poslední vp třídy]]></nodrop>
+<tomuchdrop><![CDATA[Zrušení se nezdařilo. Nelze zrušit více VP, než kolik existuje.]]></tomuchdrop>
+<success><![CDATA[Akce byla úspěšná.]]></success>
+<VPValNotSet><![CDATA[Akce není možná. Následující hodnota VP není nastavena správně:]]></VPValNotSet>
+<VPType><![CDATA[Typ VP]]></VPType>
+<Count><![CDATA[Počet]]></Count>
+<AddDropVP><![CDATA[Přidat nebo zrušit VP]]></AddDropVP>
+<add><![CDATA[Přidat]]></add>
+<drop><![CDATA[Zrušit]]></drop>
+<addVP><![CDATA[Přidat VP]]></addVP>
+<dropVP><![CDATA[Zrušit VP]]></dropVP>
+<modifyingClass><![CDATA[Modifikující třída]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Virtuální procesory - globální informace]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[Virtuální procesory třídy: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Litujeme, volba není k dispozici]]></OptionNotAvail>
+<seconds><![CDATA[sekundy]]></seconds>
+</lang>

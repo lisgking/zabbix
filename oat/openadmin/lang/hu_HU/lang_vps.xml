@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Virtuális processzorok]]></virtualprocessors>
+<vps><![CDATA[VP-k]]></vps>
+<vpclasses><![CDATA[VP osztályok]]></vpclasses>
+<vpid><![CDATA[VP-azonosító]]></vpid>
+<class><![CDATA[Osztály]]></class>
+<cnt><![CDATA[VP-k]]></cnt>
+<total><![CDATA[Összesen]]></total>
+<usercpu><![CDATA[Felhasználói CPU idő]]></usercpu>
+<syscpu><![CDATA[Rendszer CPU idő]]></syscpu>
+<totalcpu><![CDATA[Összes CPU idő]]></totalcpu>
+<classdetails><![CDATA[Osztály részletei]]></classdetails>
+<nodrop><![CDATA[Osztály utolsó virtuális processzora nem szüntethető meg]]></nodrop>
+<tomuchdrop><![CDATA[A megszüntetés meghiúsult. Nem szüntethető meg több vp, mint amennyi létezik.]]></tomuchdrop>
+<success><![CDATA[A művelet sikeres.]]></success>
+<VPValNotSet><![CDATA[A nem lehetséges. A következő VP nincs megfelelően beállítva:]]></VPValNotSet>
+<VPType><![CDATA[VP típusa]]></VPType>
+<Count><![CDATA[Számláló]]></Count>
+<AddDropVP><![CDATA[VP hozzáadása vagy megszüntetése]]></AddDropVP>
+<add><![CDATA[Hozzáadás]]></add>
+<drop><![CDATA[Megszüntetés]]></drop>
+<addVP><![CDATA[VP hozzáadása]]></addVP>
+<dropVP><![CDATA[VP megszüntetése]]></dropVP>
+<modifyingClass><![CDATA[Osztály módosítása]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Virtuális processzorok - Globális információk]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[A következő osztály virtuális processzorai: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Sajnos a lehetőség nem érhető el]]></OptionNotAvail>
+<seconds><![CDATA[másodperc]]></seconds>
+</lang>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[Хронология производительности]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[Недостаточно данных для профилирования.]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[Не удалось соединиться с сервером баз данных {0}.]]></DatabaseConnectionFailed>
+</lang>

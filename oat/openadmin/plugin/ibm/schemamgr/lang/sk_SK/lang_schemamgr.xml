@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[Správca schém]]></schemamgr>
+<FragmentedTable><![CDATA[Fragmentovaná tabuľka]]></FragmentedTable>
+<PseudoTable><![CDATA[Pseudotabuľka]]></PseudoTable>
+<NotApplicable><![CDATA[Nedá sa použiť]]></NotApplicable>
+<check_admin_log><![CDATA[Ďalšie informácie nájdete v histórii príkazov alebo v online protokole.]]></check_admin_log>
+<running><![CDATA[Spustené: {0}]]></running>
+<interval_frag_strategy><![CDATA[Stĺpec kľúča fragmentu: {0}. Interval: {1}. Uložiť do: {2}.]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[Voľby rolovania okna:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[Obmedziť tabuľku na {0} fragmentov]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[Obmedziť veľkosť tabuľky na {0}]]></rolling_window_limit_by_size>
+<detach><![CDATA[Odpojiť]]></detach>
+<discard><![CDATA[Zahodiť]]></discard>
+<x_years><![CDATA[{0} rokov]]></x_years>
+<x_months><![CDATA[{0} mesiacov]]></x_months>
+<x_days><![CDATA[{0} dní]]></x_days>
+</lang>

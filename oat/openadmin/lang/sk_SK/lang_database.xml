@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Chunky]]></Chunks>
+<NoSQLToExecute><![CDATA[Neexistuje žiadny príkaz SQL na spustenie]]></NoSQLToExecute>
+<QueryF><![CDATA[Dotaz:]]></QueryF>
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Zlyhal dotaz na databázu:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Pripojenie zlyhalo.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[Užívateľ {0} nemá oprávnenie na pripojenie sa k databáze {1}.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[bolo zaznamenaných príliš veľa chýb]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - nenašlo sa žiadne ID riadiaceho panela]]></ErrorGetPanels>
+</lang>

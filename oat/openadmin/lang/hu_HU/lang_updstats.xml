@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Automatikus frissítésű statisztikák]]></mainTitle>
+<generalTab><![CDATA[Általános]]></generalTab>
+<infoTab><![CDATA[Információk]]></infoTab>
+<configTab><![CDATA[Konfiguráció]]></configTab>
+<listTab><![CDATA[Parancsok]]></listTab>
+<ListConfig><![CDATA[Automatikus frissítésű statisztikák beállítása]]></ListConfig>
+<ConfParam><![CDATA[Paraméter]]></ConfParam>
+<ConfValue><![CDATA[Érték]]></ConfValue>
+<ConfDesc><![CDATA[Leírás]]></ConfDesc>
+<ListDBSsummary><![CDATA[Automatikus frissítésű statisztikák adatbázis szerint]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Utolsó ellenőrzés ideje]]></ListDBSTime>
+<ListDBSName><![CDATA[Adatbázis]]></ListDBSName>
+<ListDBSMissed><![CDATA[Hiányzó táblák statisztika]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Statisztika frissítését igénylő kis táblák]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Statisztika frissítését igénylő nagy táblák]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Frissített statisztikájú táblák]]></ListDBSDone>
+<CleanupOK><![CDATA[A takarítás sikeres volt.]]></CleanupOK>
+<CleanupBAD><![CDATA[A takarítás nem sikerült.]]></CleanupBAD>
+<fix><![CDATA[A probléma javításához kattintson a Takarítás lehetőségre.]]></fix>
+<Save><![CDATA[Mentés]]></Save>
+<Cancel><![CDATA[Mégse]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Automatikus frissítésű statisztikák beállítása]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Statisztika frissítése ennyi időnként:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Statisztika frissítése, ha a tábla megváltozik:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Irányelvek használata a statisztika frissítéséhez:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Összes tábla statisztikáinak frissítése, amelyek ennél kevesebb sort tartalmaznak:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[Statisztika frissítési utastíások futtatása a következő PDQ prioritással:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Az Automatikus frissítésű statisztika feladatok futtatása ennyi szállal:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[szál]]></AUS_THREADS>
+<Threads><![CDATA[Szálak]]></Threads>
+<days><![CDATA[nap]]></days>
+<on><![CDATA[itt:]]></on>
+<off><![CDATA[ki]]></off>
+<Evaluating><![CDATA[Kiértékelés ...]]></Evaluating>
+<saveTaskOK><![CDATA[A feladat részletei sikeresen mentésre kerültek.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[A feladat részletei nem kerültek mentésre.]]></saveTaskBAD>
+<Missed><![CDATA[Hiányzó statisztikájú táblák]]></Missed>
+<Needed_Large><![CDATA[Statisztika frissítést igénylő nagy táblák]]></Needed_Large>
+<Needed_Small><![CDATA[Statisztika frissítést igénylő kis táblák]]></Needed_Small>
+<Done><![CDATA[Frissített statisztikájú táblák]]></Done>
+<ChartSummary><![CDATA[Automatikus frissítésű statisztika kiértékelése]]></ChartSummary>
+<ListCommands><![CDATA[Statisztika frissítési parancsok]]></ListCommands>
+<ListPriority><![CDATA[Prioritás]]></ListPriority>
+<ListExec><![CDATA[Parancs]]></ListExec>
+<RefreshEvaluation><![CDATA[Kiértékelés most]]></RefreshEvaluation>
+<Cleanup><![CDATA[Takarítás]]></Cleanup>
+<Cleanup_tooltip><![CDATA[A takarítási fladat futtatása, ha az AUS feladatok hibákat állítanak elő. A takarítási feladat törli a belső AUS munkatáblákat és újrafuttatja az Automatikus frissítésű statisztika kiértékelése feladatot.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Exportálási parancsok]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS riasztások]]></AUSAlerts>
+<alerts><![CDATA[Riasztások]]></alerts>
+<ListTime><![CDATA[Befejezés ideje]]></ListTime>
+<lastEval><![CDATA[Legutóbbi kiértékelés befejezési időpontja: ]]></lastEval>
+<runIn><![CDATA[Az Automatikus frissítésű statisztika frissítése ennyi idő múlva kerül futtatásra: {0}.]]></runIn>
+<ausDisabled><![CDATA[Az Automatikus frissítésű statisztika tiltott]]></ausDisabled>
+<configSaveErr><![CDATA[Hiba az AUS konfigurációs paraméterek mentésekor]]></configSaveErr>
+<noValue><![CDATA[Nincs megadott érték]]></noValue>
+<notPositiveInt><![CDATA[Pozitív egésznek kell lennie]]></notPositiveInt>
+<notInt_1_10><![CDATA[Az értéknek 1 - 10 tartományba eső egész számnak kell lennie]]></notInt_1_10>
+<notInt_0_100><![CDATA[Az értéknek az 0 - 100 tartományba eső egész számnak kell lennie]]></notInt_0_100>
+<notInt_-1_100><![CDATA[Az értéknek a -1 - 100 tartományba eső egész számnak kell lennie]]></notInt_-1_100>
+<notInt_0_1><![CDATA[Az érték 0 vagy 1 lehet]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[Ez a szolgáltatás a jelenlegi kiszolgálóváltozaton nem érhető el.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Probléma a kiértékelés futtatásakor:]]></ProblemWithEval>
+<ReturnCode><![CDATA[A visszatérési kód a következő: {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[A kiértékelés befejeződött.]]></ReEvalComplete>
+<RequestEval><![CDATA[Futtassa most az Automatikus frissítésű statisztika kiértékelése feladatot és állapítsa meg, hogy melyik statisztikát kell az AUS konfiguráció alapján frissíteni. ]]></RequestEval>
+<PendingCmds><![CDATA[Függőben lévő parancsok]]></PendingCmds>
+<CompletedCmds><![CDATA[Befejeződött parancsok]]></CompletedCmds>
+<save><![CDATA[Mentés]]></save>
+<cancel><![CDATA[Mégse]]></cancel>
+<add><![CDATA[Hozzáadás]]></add>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<Time><![CDATA[Idő]]></Time>
+<Type><![CDATA[Típus]]></Type>
+<Color><![CDATA[Szín]]></Color>
+<Message><![CDATA[Üzenet]]></Message>
+<runfrequency><![CDATA[Futtatási gyakoriság]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Automatikus frissítésű statisztikák ütemezése]]></AutoUpdStatsSched>
+<Name><![CDATA[Név]]></Name>
+<WeekDay1Letter><![CDATA[H]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[K]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[S]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[K]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[P]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[V]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[V]]></WeekDay7Letter>
+<starttime><![CDATA[Indítási idő]]></starttime>
+<stopttime><![CDATA[Leállítási idő]]></stopttime>
+<Priority><![CDATA[prioritás]]></Priority>
+<Rows><![CDATA[sor]]></Rows>
+<Parameter><![CDATA[Paraméter]]></Parameter>
+<Value><![CDATA[Érték]]></Value>
+<Actions><![CDATA[Műveletek]]></Actions>
+<Tables><![CDATA[Táblázatok]]></Tables>
+<hours><![CDATA[óra]]></hours>
+<minutes><![CDATA[perc]]></minutes>
+<saveConfigSuccessful><![CDATA[Az Automatikus frissítésű statisztika konfiguráció sikeresen mentésre került.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[A statisztika frissítése feladat ennyi szállal kerül futtatásra. Ez a beállítás csak az OAT alkalmazásban érhető el.]]></specifiedNumbOfThread>
+</lang>

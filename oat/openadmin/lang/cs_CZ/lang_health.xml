@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Monitor stavu]]></health>
+<alerts><![CDATA[Výstrahy]]></alerts>
+<aus><![CDATA[Automatické aktualizace statistik]]></aus>
+<scheduler><![CDATA[Plánovač úloh]]></scheduler>
+<taskdetails><![CDATA[Podrobnosti úlohy]]></taskdetails>
+<taskruntimes><![CDATA[Časy spuštění úloh]]></taskruntimes>
+<task_run_list><![CDATA[Seznam spuštění úlohy]]></task_run_list>
+<num_executions><![CDATA[Počet provedení]]></num_executions>
+<avg_time><![CDATA[Průměrná doba (doby)]]></avg_time>
+<total_time><![CDATA[Celková doba (doby)]]></total_time>
+<last_run_time><![CDATA[Poslední čas spuštění]]></last_run_time>
+<last_execution_status><![CDATA[Stav posledního provedení]]></last_execution_status>
+<edittaskparam><![CDATA[Upravit parametr úlohy]]></edittaskparam>
+<AddNewTask><![CDATA[Přidat novou úlohu]]></AddNewTask>
+<Save><![CDATA[Uložit]]></Save>
+<Cancel><![CDATA[Storno]]></Cancel>
+<CronTaskList><![CDATA[Seznam naplánovaných úloh]]></CronTaskList>
+<EditParam><![CDATA[Upravit parametr]]></EditParam>
+<addtask><![CDATA[Přidat úlohu]]></addtask>
+<deletetask><![CDATA[Odstranit úlohu]]></deletetask>
+<name_field_empty><![CDATA[Pole názvu je prázdné. Zadejte název.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Stejný název používá jiná úloha v databázi. Zadejte jiný název.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[Název musí začínat písmenem nebo znakem "_" a obsahovat písmena, číslice nebo znaky "_".]]></invalid_table_name>
+<table_name_duplicate><![CDATA[Název tabulky se již používá. Zadejte jiný název tabulky.]]></table_name_duplicate>
+<save_failed><![CDATA[Uložení se nezdařilo: ]]></save_failed>
+<what_task_type><![CDATA[Jaký typ úlohy chcete přidat?]]></what_task_type>
+<task><![CDATA[Úloha]]></task>
+<sensor><![CDATA[Senzor]]></sensor>
+<next><![CDATA[Další]]></next>
+<back><![CDATA[Zpět]]></back>
+<cancel><![CDATA[Storno]]></cancel>
+<finish><![CDATA[Dokončit]]></finish>
+<new_sensor_setup><![CDATA[Nastavení nového senzoru]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[Uložení parametru úlohy se nezdařilo.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[Nastavení nové úlohy]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Zadejte název a skupinu senzoru]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Zadejte název a skupinu úlohy]]></what_task_name_and_group>
+<sensor_name><![CDATA[Název senzoru]]></sensor_name>
+<task_name><![CDATA[Název úlohy]]></task_name>
+<sensor_group><![CDATA[Skupina senzorů]]></sensor_group>
+<task_group><![CDATA[Skupina úloh]]></task_group>
+<type_error><![CDATA[V procesu nastavení nové úlohy jsou nějaké problémy. Proces nastavení nové úlohy stornujte a spusťte znovu]]></type_error>
+<ph_group_error><![CDATA[Načtení voleb skupiny z tabulky PH_GROUP se nezdařilo. Zkontrolujte, zda tabulka PH_GROUP a databáze SYSADMIN pracují řádně.]]></ph_group_error>
+<task_desc><![CDATA[Poskytněte popis pro novou úlohu.]]></task_desc>
+<sensor_desc><![CDATA[Poskytněte popis pro nový senzor.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Zadejte plán pro nový senzor.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Zadejte plán pro novou úlohu.]]></what_task_schedule>
+<start_time><![CDATA[Čas zahájení (24hodinový formát)]]></start_time>
+<stop_time><![CDATA[Čas ukončení (24hodinový formát)]]></stop_time>
+<frequency><![CDATA[Frekvence]]></frequency>
+<delete_time><![CDATA[Odstranění dat]]></delete_time>
+<what_result_table><![CDATA[Zadejte název nové tabulky výsledků, do které se mají ukládat výsledky dat senzoru.]]></what_result_table>
+<result_table_name><![CDATA[Název tabulky výsledků]]></result_table_name>
+<what_tk_create><![CDATA[Zadáním názvů sloupců tabulky výsledků dokončete příkaz SQL pro vytvoření tabulky výsledků.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Zadejte příkaz, který by měl nový senzor spustit.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Zadejte příkaz, který by měla nová úloha spustit.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Zadejte jednoduchý příkaz SQL nebo funkci definovanou uživatelem.]]></custom_sql>
+<stored_routine><![CDATA[Vyberte uloženou rutinu]]></stored_routine>
+<stored_routine_error><![CDATA[Načtení uložené rutiny se nezdařilo. Pokud chcete použít uložené rutiny, opravte tabulku SYSPROCEDURES.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Pro senzor, který chcete vytvořit, ověřte následující specifika. Senzor potvrďte a vytvořte klepnutím na tlačítko Dokončit.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Pro úlohu, kterou chcete vytvořit, ověřte následující specifika. Úlohu potvrďte a vytvořte klepnutím na tlačítko Dokončit.]]></verify_specs_task>
+<name><![CDATA[Název]]></name>
+<group><![CDATA[Skupina]]></group>
+<type><![CDATA[Typ]]></type>
+<desc><![CDATA[Popis]]></desc>
+<deltask><![CDATA[Odstranit úlohu]]></deltask>
+<result_table_create><![CDATA[Příkaz vytvoření tabulky výsledků]]></result_table_create>
+<execute_command><![CDATA[Příkaz provedení]]></execute_command>
+<task_name_check_error><![CDATA[Nezdařilo se ověřit, zda se název úlohy aktuálně používá. Zkontrolujte tabulku ph_task v databázi sysadmin.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Nezdařilo se ověřit, zda se název tabulky aktuálně používá. Zkontrolujte tabulku systables v databázi sysadmin.]]></table_name_check_error>
+<sensor_check_ok><![CDATA[Nový senzor byl úspěšně naplánován.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[Nastavení nového senzoru není úspěšné. Spusťte nastavení znovu]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[Senzor se bude spouštět podle plánu, ale existují určité problémy s příkazem.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Zkontrolujte následující kód chyby. Chcete-li příkaz ladit, klepněte na odkaz.]]></debug_exec_stmt>
+<debug_command><![CDATA[Ladit příkaz]]></debug_command>
+<task_check_ok><![CDATA[Nová úloha byla úspěšně naplánována.]]></task_check_ok>
+<task_check_failed><![CDATA[Nastavení nové úlohy není úspěšné. Spusťte nastavení znovu]]></task_check_failed>
+<task_check_bad_exec><![CDATA[Úloha se bude spouštět podle plánu, ale existují určité problémy s příkazem.]]></task_check_bad_exec>
+<setup_fail><![CDATA[Nastavení se nezdařilo!]]></setup_fail>
+<setup_success><![CDATA[Nastavení proběhlo úspěšně!]]></setup_success>
+<setup_success_with_problems><![CDATA[Nastavení bylo dokončeno, ale existují problémy]]></setup_success_with_problems>
+<return_code><![CDATA[Návratový kód :]]></return_code>
+<time_error><![CDATA[Čas ukončení nemůže být dříve než čas zahájení.]]></time_error>
+<freq_error><![CDATA[Frekvence nemůže být 0 dní, 0 hodin, 0 minut, 0 sekund]]></freq_error>
+<execute_stmt_empty><![CDATA[Příkaz provedení nemůže být prázdný.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[Příkaz vytvoření nemůže být prázdný.]]></create_stmt_empty>
+<startup_only><![CDATA[Spustit pouze při spuštění serveru]]></startup_only>
+<NoPermission><![CDATA[Uživatelé s oprávněním jen pro čtení k tomu nemají přístup. Jste přihlášeni jako uživatel s oprávněním jen pro čtení.]]></NoPermission>
+<NoExecutionStmt><![CDATA[Příkaz provedení pro úlohu nemůže být prázdný.]]></NoExecutionStmt>
+<NEVER><![CDATA[NIKDY]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[Odstranění úlohy se nezdařilo]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Nezdařilo se odstranit tabulku výsledků]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[Úloha byla úspěšně odstraněna]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[U systémových úloh není odstranění povoleno]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Odstranit přidruženou tabulku výsledků]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[Tato funkce není pro vaši aktuální verzi serveru dostupná.]]></FeatureUnavailable>
+<AlertList><![CDATA[Seznam výstrah]]></AlertList>
+<severity><![CDATA[Závažnost]]></severity>
+<alerttype><![CDATA[Typ výstrahy]]></alerttype>
+<state><![CDATA[Stav]]></state>
+<alertstate><![CDATA[Stav výstrahy]]></alertstate>
+<message><![CDATA[Zpráva]]></message>
+<grouptoview><![CDATA[Skupina, která se má zobrazit]]></grouptoview>
+<taskdetails><![CDATA[Podrobnosti úlohy]]></taskdetails>
+<taskname><![CDATA[Název úlohy]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[Příkaz provedení]]></executionstmt>
+<resulttable><![CDATA[Tabulka výsledků]]></resulttable>
+<starttime><![CDATA[Čas zahájení]]></starttime>
+<stopttime><![CDATA[Čas ukončení]]></stopttime>
+<time><![CDATA[Čas]]></time>
+<frequency><![CDATA[Frekvence]]></frequency>
+<datadelete><![CDATA[Odstranění dat]]></datadelete>
+<WeekDay1><![CDATA[Pondělí]]></WeekDay1>
+<WeekDay2><![CDATA[Úterý]]></WeekDay2>
+<WeekDay3><![CDATA[Středa]]></WeekDay3>
+<WeekDay4><![CDATA[Čtvrtek]]></WeekDay4>
+<WeekDay5><![CDATA[Pátek]]></WeekDay5>
+<WeekDay6><![CDATA[Sobota]]></WeekDay6>
+<WeekDay7><![CDATA[Neděle]]></WeekDay7>
+<enabletask><![CDATA[Povolit úlohu]]></enabletask>
+<taskparams><![CDATA[Parametry úlohy]]></taskparams>
+<paramname><![CDATA[Název parametru]]></paramname>
+<description><![CDATA[Popis]]></description>
+<value><![CDATA[Hodnota]]></value>
+<valuetype><![CDATA[ValueType]]></valuetype>
+<edittaskparam><![CDATA[Upravit parametr úlohy]]></edittaskparam>
+<view><![CDATA[Pohled]]></view>
+<NEW><![CDATA[NEW]]></NEW>
+<ADDRESSED><![CDATA[ADDRESSED]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[ACKNOWLEDGED]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[IGNORED]]></IGNORED>
+<INFO><![CDATA[INFO]]></INFO>
+<WARNING><![CDATA[WARNING]]></WARNING>
+<ERROR><![CDATA[ERROR]]></ERROR>
+<COLORGREEN><![CDATA[GREEN]]></COLORGREEN>
+<COLORRED><![CDATA[RED]]></COLORRED>
+<COLORYELLOW><![CDATA[YELLOW]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[Plán úlohy]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<Enabled><![CDATA[Povoleno]]></Enabled>
+<Disabled><![CDATA[Zakázáno]]></Disabled>
+<runfrequency><![CDATA[Frekvence spouštění]]></runfrequency>
+<execution><![CDATA[Provedení]]></execution>
+<taskdetailssaved><![CDATA[Podrobnosti úlohy byly úspěšně uloženy.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[Parametr úlohy byl úspěšně uložen.]]></TaskParamSaved>
+<recheck><![CDATA[Znovu zkontrolovat]]></recheck>
+<ignore><![CDATA[Ignorovat]]></ignore>
+<correct><![CDATA[Opravit]]></correct>
+<Days><![CDATA[Dny]]></Days>
+<Hours><![CDATA[Hodiny]]></Hours>
+<Minutes><![CDATA[Minuty]]></Minutes>
+<Seconds><![CDATA[Sekundy]]></Seconds>
+<ALARM><![CDATA[VAROVÁNÍ č.{0}]]></ALARM>
+<Warning><![CDATA[Varování]]></Warning>
+<Error><![CDATA[Chyba]]></Error>
+<Info><![CDATA[Informace]]></Info>
+<green><![CDATA[Zelená]]></green>
+<yellow><![CDATA[Žlutá]]></yellow>
+<red><![CDATA[Červená]]></red>
+<TaskNotFound><![CDATA[Úloha nebyla nalezena.]]></TaskNotFound>
+</lang>

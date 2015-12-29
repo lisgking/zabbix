@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Home]]></home>
+
+<dashboard><![CDATA[Dashboard]]></dashboard>
+<dashboard_name_perf><![CDATA[Serverleistung]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[Dieses Dashboard enthält Informationen zu Tabellen, Abfragen und zur CPU.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Ressourcennutzung]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[Dieses Dashboard enthält Informationen zu Speicher, Speicherplatz und Sperren.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Datenbankserverspeicher]]></panel_title_memory>
+<panel_desc_memory><![CDATA[Diese Anzeige enthält den gemeinsam genutzten Speicher für den Datenbankserver.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Sitzungen]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[Diese Anzeige enthält die Anzahl der verbundenen Sitzungen für den Datenbankserver.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Lese- und Schreibvorgänge im Netz gesamt]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[Diese Anzeige enthält die Anzahl E/A-Aufrufe für Lese- und Schreibvorgänge im Netz.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[Platten-E/A]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[Diese Anzeige enthält die Wartezeit der Platten-E/A. Die Anzeige erfordert Informix 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Betriebssystemspeicher]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[Diese Anzeige enthält die Speicherbelegung des Betriebssystems. Die Anzeige erfordert Informix 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Transaktionen]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[Diese Anzeige enthält die Anzahl Transaktionen für den Datenbankserver.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Speicherbelegung]]></panel_title_space>
+<panel_desc_space><![CDATA[Diese Anzeige enthält den freien und den verwendeten Speicherplatz für jeden Datenbankbereich.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Sperren]]></panel_title_locks>
+<panel_desc_locks><![CDATA[Diese Anzeige enthält die Anzahl Sperren für den Datenbankserver.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Tabellen mit den meisten Lesezugriffen]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[Diese Anzeige enthält die Tabellen mit den meisten Lesevorgängen.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU-Zeit]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[Diese Anzeige enthält die Benutzer- und System-CPU-Zeit.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Tabellen mit den meisten Modifizierungen]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[Diese Anzeige enthält die Tabellen mit den meisten Einfügungen, Aktualisierungen und Löschungen.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Gesamte SQL-Operationen]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[Diese Anzeige enthält die Gesamtzahl der verarbeiteten, eingefügten, aktualisierten und gelöschten Zeilen.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[SQL-Operationen pro Sekunde]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[Diese Anzeige enthält die Anzahl der verarbeiteten, eingefügten, aktualisierten und gelöschten Zeilen pro Sekunde.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Willkommen]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[Auf dieser Seite kann OpenAdmin Tool keine Informationen für einen Datenbankserver mit mehreren nicht englischen Datenbankländereinstellungen anzeigen. Der Datenbankserver enthält mehrere nicht englische Datenbankländereinstellungen.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Sitzungsexplorer]]></sessionexplorer>
+<ChartTest><![CDATA[Diagramm - Test]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[Datenspeicherbereich]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Die Verbindungsinformationen für den Datenbankserver konnten nicht abgerufen werden.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Verbindung fehlgeschlagen: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Fehler: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[Der Datenbankserver ist blockiert. OAT kann keine weiteren Statusinformationen abrufen.]]></ServerBlocked>
+</lang>

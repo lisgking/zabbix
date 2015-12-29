@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Registros de recuperación]]></mainTitle>
+<lognum><![CDATA[Número]]></lognum>
+<uniqid><![CDATA[ID exclusivo]]></uniqid>
+<size><![CDATA[Tamaño]]></size>
+<SwitchComment><![CDATA[Conmutar al siguiente registro lógico]]></SwitchComment>
+<attributes><![CDATA[Atributos]]></attributes>
+<used><![CDATA[Utilizado]]></used>
+<location><![CDATA[Ubicación]]></location>
+<notes><![CDATA[Notas]]></notes>
+<lastfilled><![CDATA[Última vez que se ha llenado]]></lastfilled>
+<ltitle><![CDATA[Estado del registro lógico]]></ltitle>
+<notFull><![CDATA[No completo]]></notFull>
+<UsedBackedUp><![CDATA[Utilizado y con copia de seguridad realizada]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Utilizado y actual]]></UsedCurrent>
+<Used><![CDATA[Utilizado]]></Used>
+<Free><![CDATA[Libre]]></Free>
+<BackedUp><![CDATA[Con copia de seguridad realizada]]></BackedUp>
+<Pages><![CDATA[Páginas]]></Pages>
+<pages><![CDATA[páginas]]></pages>
+<Usage><![CDATA[Uso]]></Usage>
+<PagesPerSec><![CDATA[Tasa de relleno]]></PagesPerSec>
+<PLogUsage><![CDATA[Uso del registro físico]]></PLogUsage>
+<PLogInfo><![CDATA[Información del registro físico]]></PLogInfo>
+<PLogSize><![CDATA[Tamaño del registro físico]]></PLogSize>
+<PLogUsed><![CDATA[Cantidad utilizada]]></PLogUsed>
+<PlogLocation><![CDATA[Ubicación]]></PlogLocation>
+<PlogStartPos><![CDATA[Iniciar desplazamiento]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Tamaño del almacenamiento intermedio]]></PlogBuffSize>
+<LLogUsage><![CDATA[Uso del registro lógico]]></LLogUsage>
+<mLogicalLogs><![CDATA[Registros lógicos ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Registro físico]]></mPhysicalLog>
+<mAdmin><![CDATA[Admin]]></mAdmin>
+<mCheckpoints><![CDATA[Puntos de comprobación]]></mCheckpoints>
+<NewAdd><![CDATA[Recién añadidos]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[El descarte del registro lógico no se ha confirmado.  Confirme la operación y vuelva a intentarla.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[El movimiento del registro físico no se ha confirmado.  Confirme la operación y vuelva a intentarla.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Mover el registro físico]]></MPhysicalLog>
+<Confirm><![CDATA[Confirmar]]></Confirm>
+<Move><![CDATA[Mover]]></Move>
+<mRPolicy><![CDATA[Políticas de recuperación]]></mRPolicy>
+<syncckpt><![CDATA[Punto de comprobación de sincronización]]></syncckpt>
+<normckpt><![CDATA[Punto de comprobación normal]]></normckpt>
+<dockpt><![CDATA[Realizar punto de comprobación]]></dockpt>
+<Checkpoint><![CDATA[Punto de comprobación]]></Checkpoint>
+<NoMove><![CDATA[No mover el registro físico]]></NoMove>
+<DropLLog><![CDATA[Descartar el registro lógico]]></DropLLog>
+<NoDropLLog><![CDATA[No descartar el registro lógico]]></NoDropLLog>
+<ON><![CDATA[Activado]]></ON>
+<OFF><![CDATA[Desactivado]]></OFF>
+<InvalidValue><![CDATA[Se ha especificado un valor no válido]]></InvalidValue>
+<save><![CDATA[Guardar]]></save>
+<cancel><![CDATA[Cancelar]]></cancel>
+<rto_title><![CDATA[RTO - Objetivo de tiempo de recuperación]]></rto_title>
+<rto><![CDATA[Objetivo de tiempo de recuperación]]></rto>
+<rto_error><![CDATA[Error al modificar el reinicio del servidor RTO]]></rto_error>
+<minute><![CDATA[minuto]]></minute>
+<minutes><![CDATA[minutos]]></minutes>
+<autoChkpts><![CDATA[Puntos de comprobación automáticos]]></autoChkpts>
+<autoChkpts_error><![CDATA[Error al modificar puntos de comprobación automáticos.]]></autoChkpts_error>
+<autoLRU><![CDATA[Ajuste automático de LRU]]></autoLRU>
+<autoLRU_error><![CDATA[Error al modificar el ajuste automático de LRU.]]></autoLRU_error>
+<NoPermission><![CDATA[Los usuarios de sólo lectura no tienen permiso para hacer esto. Ha iniciado sesión como un usuario de sólo lectura.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Se han añadido registros lógicos]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[Registro posterior al actual]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[Al final de los registros]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Nombre del espacio de BD]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Error al modificar el registro físico.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Se ha producido un error al conmutar al siguiente registro lógico.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[segundos]]></seconds>
+<AddLogicalLog><![CDATA[Añadir registro lógico]]></AddLogicalLog>
+<Add><![CDATA[Añadir]]></Add>
+<Drop><![CDATA[Descartar]]></Drop>
+<LogicalLogNum><![CDATA[Número de registro lógico]]></LogicalLogNum>
+<Confirm><![CDATA[Confirmar]]></Confirm>
+<SwitchLog><![CDATA[Conmutar registro lógico]]></SwitchLog>
+<Switch><![CDATA[Conmutar]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

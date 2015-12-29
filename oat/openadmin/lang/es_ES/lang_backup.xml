@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Copia de seguridad]]></Backup>
+<noBackupSupport><![CDATA[Se ha soporte a la copia de seguridad sólo en tipos de servidor Informix Standard, servidores primarios o remotos autónomos secundarios (RSS).]]></noBackupSupport>
+<sdsServer>![CDATA[Está conectado a un servidor secundario de disco compartido (SDS).]]</sdsServer>
+<hdrSecondary>![CDATA[Está conectado a un servidor secundario HDR.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[La copia de seguridad en OAT requiere Informix Versión 11.70.xC2.]]></noBackupSupportServerVersion>
+<notAvail>No disponible</notAvail>
+<onbarBackProcMissing>El procedimiento almacenado necesario para las copias de seguridad de ON-Bar no se encuentra en el servidor. Compruebe si el script sch_oat.sql se ha ejecutado durante el inicio del servidor.</onbarBackProcMissing>
+<Unknown>Desconocida</Unknown>
+</lang>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Cannot connect to database server]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[The server is offline]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[OAT requires Informix version 11.10 or higher.]]></ServerVersionLessThan11>
+<mobile_oat_not_supported_min><![CDATA[This OAT address does not support Mobile OAT version {0}. This OAT address requires Mobile OAT version {1} or later.]]></mobile_oat_not_supported_min>
+<mobile_oat_not_supported_max><![CDATA[This OAT address does not support Mobile OAT version {0}. This OAT address supports Mobile OAT version {1} or earlier.]]></mobile_oat_not_supported_max>
+<Standard><![CDATA[Standard]]></Standard>
+<Primary><![CDATA[Primary]]></Primary>
+<Secondary><![CDATA[Secondary]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[yes]]></yes>
+<no><![CDATA[no]]></no>
+<partial><![CDATA[partial]]></partial>
+</lang>

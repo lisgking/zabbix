@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[Klastry s vysokou dostupností]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[Primární je nedostupný]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[Klastr je nedostupný]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[Klastr je mimo rozsah rozpoznávání]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[Primární v mezipaměti není klastrován]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[V klastru není žádný primární]]></NoPrimaryInCluster>
+</lang>

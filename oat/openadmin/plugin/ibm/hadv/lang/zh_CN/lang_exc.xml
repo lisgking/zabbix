@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[要从检查中排除节点，请输入以逗号分隔的节点名。]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[要从检查中排除表，请输入以逗号分隔的分区号。]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[要从检查中排除表，请输入以逗号分隔的分区号。]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[要从检查中排除表，请输入以逗号分隔的分区号。]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[要从检查中排除块，请输入以逗号分隔的块号。]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[要从检查中排除块，请输入以逗号分隔的块号。]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[要从检查中排除块，请输入以逗号分隔的块号。]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[要从检查中排除数据库空间，请输入以逗号分隔的数据库空间名称。]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[要从检查中排除表，请输入以逗号分隔的分区号。]]></exc_Rowsize>
+</lang>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[備份]]></Backup>
+<noBackupSupport><![CDATA[僅 Informix 伺服器類型為「標準」、「主要」或「遠端獨立式次要 (RSS)」的伺服器上才支援備份。]]></noBackupSupport>
+<sdsServer>![CDATA[您已連接至「共用磁碟的次要 (SDS)」伺服器。]]</sdsServer>
+<hdrSecondary>![CDATA[您已連接至「HDR 次要」伺服器。]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[在 OAT 中備份需要 Informix 11.70.xC2 版。]]></noBackupSupportServerVersion>
+<notAvail>無法使用</notAvail>
+<onbarBackProcMissing>伺服器中遺漏 ON-Bar 備份所需的儲存程序。請檢查是否已在伺服器啟動期間執行 sch_oat.sql Script。</onbarBackProcMissing>
+<Unknown>不明</Unknown>
+</lang>

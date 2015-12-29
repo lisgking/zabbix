@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[The session no longer exists.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[Invalid session ID.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[User {0} does not have permission to see the current statement for the session.]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[User {0} does not have permission to see the SQL for the session.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[Error:]]></ErrorF>
+</lang>

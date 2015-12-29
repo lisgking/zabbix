@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Kezdőlap]]></home>
+
+<dashboard><![CDATA[Vezérlőpult]]></dashboard>
+<dashboard_name_perf><![CDATA[Kiszolgáló teljesítménye]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[Ez a kijelzőpult a táblákkal, lekérdezésekkel és CPU-val kapcsolatos információkat jeleníti meg.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Erőforrások felhasználása]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[Ez a kijelzőpult a memóriával, területtel és zárolásokkal kapcsolatos információkat jeleníti meg.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Adatbázis-kiszolgáló memória]]></panel_title_memory>
+<panel_desc_memory><![CDATA[Ez a párbeszédpanel az adatbázis-kiszolgáló osztott memória felhasználását jeleníti meg.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Munkamenetek]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[Ez a párbeszédpanel az adatbázis-kiszolgáló csatlakoztatott munkameneteinek számát jeleníti meg.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Hálózati olvasások és írások]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[Ez a párbeszédpanel a hálózati olvasások és írások I/O hívásait jeleníti meg.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[Lemez I/O]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[Ez a párbeszédpanel a lemez I/O várakozási időt jeleníti meg. A párbeszédpanelhez Informix 12.10 szükséges.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Operációs rendszer memória]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[Ez a párbeszédpanel az operációs rendszer (OS) memóriahasználatát jeleníti meg. A párbeszédpanelhez Informix 11.50 szükséges.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Tranzakciók]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[Ez a párbeszédpanel az adatbázis-kiszolgáló tranzakcióinak számát jeleníti meg.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Területhasználat]]></panel_title_space>
+<panel_desc_space><![CDATA[Ez a párbeszédpanel az egyes adatbázis-területek szabad területét és felhasznált területét jeleníti meg.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Zárolások]]></panel_title_locks>
+<panel_desc_locks><![CDATA[Ez a párbeszédpanel az adatbázis-kiszolgáló zárolásainak számát jeleníti meg.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Top táblák - Olvasások]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[Ez a párbeszédpanel a legtöbbet olvasott táblákat jeleníti meg.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU idő]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[Ez a párbeszédpanel a felhasználói és a rendszer CPU időt jeleníti meg.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Top táblák - Módosított]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[Ez a párbeszédpanel a legtöbb beszúrást, frissítést és törlést tartalmazó táblákat jeleníti meg.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Összes SQL művelet]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[Ez a párbeszédpanel az összes feldolgozott, beszúrt, frissített és törölt sor számát jeleníti meg.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[SQL műveletek másodpercenként]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[Ez a párbeszédpanel a feldolgozott, beszúrt, frissített és törölt sorok másodpercenkénti számát jeleníti meg.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Üdvözlet]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[Ezen az oldalon az OpenAdmin eszköz nem tud információkat megjeleníteni olyan adatbázis-kiszolgálóról, amely több nem-angol adatbázis területi beállítással rendelkezik. Az adatbázis-kiszolgáló több nem-angol adatbázis területi beállítást tartalmaz.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Munkamenet-böngésző]]></sessionexplorer>
+<ChartTest><![CDATA[Diagram - Teszt]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[ADAT terület]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Az adatbázis-kiszolgáló csatlakozási információi nem kérhetők le.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[A csatlakozás nem sikerült: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Hiba: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[Az adatbázis-kiszolgáló tiltott.  Az OAT semmilyen egyéb állapot információt nem tud lekérni.]]></ServerBlocked>
+</lang>

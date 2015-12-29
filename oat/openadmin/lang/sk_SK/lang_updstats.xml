@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Automatická aktualizácia štatistiky]]></mainTitle>
+<generalTab><![CDATA[Všeobecné]]></generalTab>
+<infoTab><![CDATA[Informácie]]></infoTab>
+<configTab><![CDATA[Konfigurácia]]></configTab>
+<listTab><![CDATA[Príkazy]]></listTab>
+<ListConfig><![CDATA[Konfigurácia automatickej aktualizácie štatistiky]]></ListConfig>
+<ConfParam><![CDATA[Parameter]]></ConfParam>
+<ConfValue><![CDATA[Hodnota]]></ConfValue>
+<ConfDesc><![CDATA[Popis]]></ConfDesc>
+<ListDBSsummary><![CDATA[Automatická aktualizácia štatistiky podľa databázy]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Čas poslednej kontroly]]></ListDBSTime>
+<ListDBSName><![CDATA[Databáza]]></ListDBSName>
+<ListDBSMissed><![CDATA[Tabuľky s chýbajúcou štatistikou]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Malé tabuľky vyžadujúce aktualizáciu štatistiky]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Veľké tabuľky vyžadujúce aktualizáciu štatistiky]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Tabuľky s obnovenou štatistikou]]></ListDBSDone>
+<CleanupOK><![CDATA[Čistenie bolo úspešné.]]></CleanupOK>
+<CleanupBAD><![CDATA[Čistenie zlyhalo.]]></CleanupBAD>
+<fix><![CDATA[Ak chcete problém odstrániť, kliknite na Čistenie.]]></fix>
+<Save><![CDATA[Uložiť]]></Save>
+<Cancel><![CDATA[Zrušiť]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Konfigurácia automatickej aktualizácie štatistiky]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Štatistiku obnoviť každých:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Obnoviť štatistiku po zmene v tabuľke:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Štatistiku obnovujte podľa pokynov:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Obnoviť štatistiku pre všetky tabuľky s menším počtom riadkov ako je tento počet riadkov:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[Príkazy aktualizácie štatistiky spustiť pomocou PDQ a prioritou:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Spustiť úlohy Automatickej aktualizácie štatistiky s týmto počtom vláken:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[vlákna]]></AUS_THREADS>
+<Threads><![CDATA[Vlákna]]></Threads>
+<days><![CDATA[dní]]></days>
+<on><![CDATA[zapnuté]]></on>
+<off><![CDATA[vypnuté]]></off>
+<Evaluating><![CDATA[Vyhodnocuje sa ...]]></Evaluating>
+<saveTaskOK><![CDATA[Podrobné informácie o úlohe boli úspešne uložené.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[Podrobné informácie o úlohe neboli uložené.]]></saveTaskBAD>
+<Missed><![CDATA[Tabuľky s chýbajúcou štatistikou]]></Missed>
+<Needed_Large><![CDATA[Veľké tabuľky, ktoré potrebujú obnovenie štatistiky]]></Needed_Large>
+<Needed_Small><![CDATA[Malé tabuľky, ktoré potrebujú obnovenie štatistiky]]></Needed_Small>
+<Done><![CDATA[Tabuľky s obnovenou štatistikou]]></Done>
+<ChartSummary><![CDATA[Hodnotenie automatickej aktualizácie štatistík]]></ChartSummary>
+<ListCommands><![CDATA[Príkazy aktualizácie štatistík]]></ListCommands>
+<ListPriority><![CDATA[Priorita]]></ListPriority>
+<ListExec><![CDATA[Príkaz]]></ListExec>
+<RefreshEvaluation><![CDATA[Hodnotiť teraz]]></RefreshEvaluation>
+<Cleanup><![CDATA[Vyčistiť]]></Cleanup>
+<Cleanup_tooltip><![CDATA[Ak úlohy AUS produkujú chyby, spustite úlohu čistenia. Úloha čistenia odstráni  interné pracovné tabuľky AUS a znovu spustí úlohu Hodnotiť automatickú aktualizáciu štatistiky.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Exportovať príkazy]]></ExportCmds>
+<AUSAlerts><![CDATA[Výstrahy automatickej aktualizácie štatistiky]]></AUSAlerts>
+<alerts><![CDATA[Výstrahy]]></alerts>
+<ListTime><![CDATA[Čas dokončenia]]></ListTime>
+<lastEval><![CDATA[Posledné vyhodnotenie sa dokončilo o ]]></lastEval>
+<runIn><![CDATA[Obnova automatickej aktualizácie štatistiky sa spustí v {0}.]]></runIn>
+<ausDisabled><![CDATA[Automatická aktualizácia štatistiky je zakázaná]]></ausDisabled>
+<configSaveErr><![CDATA[Chyba konfigurovania parametrov automatickej aktualizácie štatistiky]]></configSaveErr>
+<noValue><![CDATA[Nie je zadaná žiadna hodnota]]></noValue>
+<notPositiveInt><![CDATA[Musí byť kladné celé číslo]]></notPositiveInt>
+<notInt_1_10><![CDATA[Hodnota musí byť celé číslo v rozsahu od 1 do 10]]></notInt_1_10>
+<notInt_0_100><![CDATA[Hodnota musí byť celé číslo v rozsahu od 0 do 100]]></notInt_0_100>
+<notInt_-1_100><![CDATA[Hodnota musí byť celé číslo v rozsahu od -1 do 100]]></notInt_-1_100>
+<notInt_0_1><![CDATA[Hodnota musí byť 0 alebo 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[Táto funkcia nie je k dispozícii pre aktuálnu verziu servera.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Nastal problém počas spúšťania hodnotenia:]]></ProblemWithEval>
+<ReturnCode><![CDATA[Návratový kód je {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[Hodnotenie bolo dokončené.]]></ReEvalComplete>
+<RequestEval><![CDATA[Teraz spustite úlohu Hodnotenie automatickej aktualizácie štatistiky, aby ste stanovili ktoré štatistiky musia byť obnovené na základe konfigurácie AUS. ]]></RequestEval>
+<PendingCmds><![CDATA[Príkazy v procese spracovania]]></PendingCmds>
+<CompletedCmds><![CDATA[Dokončené príkazy]]></CompletedCmds>
+<save><![CDATA[[Uložiť]]></save>
+<cancel><![CDATA[Zrušiť]]></cancel>
+<add><![CDATA[Pridať]]></add>
+<NoPermission><![CDATA[Užívatelia s oprávnením len na čítanie nemôžu vykonať túto operáciu. Ste prihlásený ako užívateľ s oprávnením len na čítanie.]]></NoPermission>
+<Time><![CDATA[Čas]]></Time>
+<Type><![CDATA[Typ]]></Type>
+<Color><![CDATA[Farba]]></Color>
+<Message><![CDATA[Správa]]></Message>
+<runfrequency><![CDATA[Frekvencia spúšťania]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Plán štatistiky automatickej aktualizácie]]></AutoUpdStatsSched>
+<Name><![CDATA[Názov]]></Name>
+<WeekDay1Letter><![CDATA[P]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[U]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[S]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[U]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[P]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[Čas spustenia]]></starttime>
+<stopttime><![CDATA[Čas zastavenia]]></stopttime>
+<Priority><![CDATA[priorita]]></Priority>
+<Rows><![CDATA[riadkov]]></Rows>
+<Parameter><![CDATA[Parameter]]></Parameter>
+<Value><![CDATA[Hodnota]]></Value>
+<Actions><![CDATA[Akcie]]></Actions>
+<Tables><![CDATA[Tabuľky]]></Tables>
+<hours><![CDATA[hod.]]></hours>
+<minutes><![CDATA[min.]]></minutes>
+<saveConfigSuccessful><![CDATA[Konfigurácia Automatickej aktualizácie štatistík bola úspešne uložená.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[Úloha aktualizácie štatistiky sa spustí s týmto počtom vláken. Táto voľba je dostupná len v nástroji OAT.]]></specifiedNumbOfThread>
+</lang>

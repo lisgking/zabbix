@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM 範例外掛程式]]></ibm_example_plugin>
+<example><![CDATA[範例：]]></example>
+<table><![CDATA[表格]]></table>
+<piechart><![CDATA[圓餅圖]]></piechart>
+<linechart><![CDATA[折線圖]]></linechart>
+<barchart><![CDATA[長條圖]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[使用者及循序掃描]]></users_and_seqscans>
+<username><![CDATA[使用者名稱]]></username>
+<numseqscans><![CDATA[循序掃描數]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[前 20 個片段的 I/O]]></Pie_Chart_Title>
+<Chunk><![CDATA[片段]]></Chunk>
+<TotalIO><![CDATA[I/O 總計]]></TotalIO>
+<Chunk_num><![CDATA[片段 {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[檢查點圖形]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[dirty 緩衝區數]]></dirty_buffers>
+<waits><![CDATA[等待數]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[空間圖形]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[dirty 緩衝區數]]></dirty_buffers>
+<waits><![CDATA[等待數]]></waits>
+
+</lang>

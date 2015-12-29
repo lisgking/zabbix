@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL Toolbox]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL Toolbox - Databases]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL Toolbox - Tables]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL Toolbox - Table Select]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL Toolbox - Stored Procedures]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL Toolbox - Table Info]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL Toolbox - Table Fragments]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL Toolbox - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[Click on a database name to connect.]]></ClickDbConn>
+<Databases><![CDATA[Databases]]></Databases>
+<TotalRows><![CDATA[Total Rows: ]]></TotalRows>
+<Tables><![CDATA[Tables]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[Result]]></SQLResult>
+<SQLTree><![CDATA[Query Tree]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[ERROR: No query]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[ERROR: No query tree]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[ERROR: No current SQL session/connection]]></SQLErr_NoConn>
+<Column_Info><![CDATA[Column Info]]></Column_Info>
+<Table_Browse><![CDATA[Table Browse]]></Table_Browse>
+<Fragments><![CDATA[Fragments]]></Fragments>
+<Name><![CDATA[Name]]></Name>
+<Collation><![CDATA[Collation]]></Collation>
+<CreateDate><![CDATA[Create Date]]></CreateDate>
+<Logging><![CDATA[Logging]]></Logging>
+<IncCatalog><![CDATA[Include Database Catalog Tables?]]></IncCatalog>
+<Submit><![CDATA[Submit]]></Submit>
+<ChkRtTypes><![CDATA[Check the Routine Types (langid) to Select:]]></ChkRtTypes>
+<Owner><![CDATA[Owner]]></Owner>
+<Procid><![CDATA[Procid]]></Procid>
+<Type><![CDATA[Type]]></Type>
+<Numargs><![CDATA[Numargs]]></Numargs>
+<ParamTypes><![CDATA[Parameter Types]]></ParamTypes>
+<Mode><![CDATA[Mode]]></Mode>
+<Langid><![CDATA[Langid]]></Langid>
+<FragDispTitle><![CDATA[Fragmentation Info for]]></FragDispTitle>
+<Partnum><![CDATA[Partition Num]]></Partnum>
+<FragmentType><![CDATA[Fragment Type]]></FragmentType>
+<Expression><![CDATA[Expression]]></Expression>
+<Dbspace><![CDATA[Dbspace]]></Dbspace>
+<Partition><![CDATA[Partition]]></Partition>
+<ColDispTitle><![CDATA[Table Info for]]></ColDispTitle>
+<Colno><![CDATA[Colno]]></Colno>
+<Colname><![CDATA[Colname]]></Colname>
+<Coltype><![CDATA[Coltype]]></Coltype>
+<Collength><![CDATA[Collength]]></Collength>
+<ExtendedType><![CDATA[Extended Type]]></ExtendedType>
+<Browse><![CDATA[Browse]]></Browse>
+<Tabid><![CDATA[Table ID]]></Tabid>
+<Rowsize><![CDATA[Row Size]]></Rowsize>
+<NRows><![CDATA[# of Rows]]></NRows>
+<NIndexes><![CDATA[# of Indexes]]></NIndexes>
+<Locklevel><![CDATA[Lock Level]]></Locklevel>
+<Fextsize><![CDATA[First Extent Size]]></Fextsize>
+<Nextsize><![CDATA[Next Extent Size]]></Nextsize>
+<PagesUsed><![CDATA[Pages Used]]></PagesUsed>
+<View><![CDATA[View]]></View>
+<chooseDB><![CDATA[Please choose a database.]]></chooseDB>
+<butRunQuery><![CDATA[Run Query]]></butRunQuery>
+<butSaveToFile><![CDATA[Save Query to File]]></butSaveToFile>
+<butClear><![CDATA[Clear]]></butClear>
+<spanRunQuery><![CDATA[Click to run query against database.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[Click to save query text to a file.]]></spanSaveToFile>
+<spanClear><![CDATA[Click to clear query editor window.]]></spanClear>
+<ColOpt><![CDATA[Column Option]]></ColOpt>
+<ShowAll><![CDATA[Show All]]></ShowAll>
+<Show255><![CDATA[Show 255 chars]]></Show255>
+<ShowInFile><![CDATA[Show in File]]></ShowInFile>
+<ShowSize><![CDATA[Show Size Only]]></ShowSize>
+<IgnoreCol><![CDATA[Ignore Column]]></IgnoreCol>
+<ShowImage><![CDATA[Show As Image]]></ShowImage>
+<Import><![CDATA[Import]]></Import>
+<spanImport><![CDATA[Click to import query from file]]></spanImport>
+<ImportQFrom><![CDATA[Import query from:]]></ImportQFrom>
+<Change><![CDATA[Change]]></Change>
+<Reset><![CDATA[Reset]]></Reset>
+<QOutput><![CDATA[Query output]]></QOutput>
+<Error><![CDATA[Error]]></Error>
+<filename><![CDATA[Filename]]></filename>
+<error_num><![CDATA[Error num]]></error_num>
+<size_too_big><![CDATA[Filesize is too big]]></size_too_big>
+<size_is_0><![CDATA[Filesize is 0]]></size_is_0>
+<not_text_type><![CDATA[File is not a text file]]></not_text_type>
+<cannot_read_file><![CDATA[Cannot read file]]></cannot_read_file>
+<Return><![CDATA[Return]]></Return>
+<Syntax><![CDATA[Syntax error has occurred]]></Syntax>
+<QUERY><![CDATA[QUERY]]></QUERY>
+<NumFet><![CDATA[Number Fetched]]></NumFet>
+<AllRowsFet><![CDATA[All Rows Fetched]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[For this query, only limited number of rows will be fetched.]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[Current maximum number of rows that will be fetched for some types of queries]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[Only one SQL statement may be executed at a time.  All characters after the first semi-colon of your input have been removed.]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[Save failed: No query to save to file.]]></Save_NoQuery>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<NeedToLogin><![CDATA[Need to login.]]></NeedToLogin>
+<SelectDB><![CDATA[Select database to connect to.]]></SelectDB>
+<ConnectingDB><![CDATA[Connecting to database]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[SQL Query Editor]]></SQLQueryEditor>
+<OneStmt><![CDATA[one statement at a time]]></OneStmt>
+<RowFetchLimit><![CDATA[For queries with order by, group by, subqueries, distinct, unions, and aggregates, the number of rows to fetch is limited to:]]></RowFetchLimit> 
+<ShowAllText><![CDATA[Show All Text]]></ShowAllText>
+<ShowSomeText><![CDATA[Show Some Text]]></ShowSomeText>
+<ShowInFile><![CDATA[Show In File]]></ShowInFile>
+<IgnoreText><![CDATA[Ignore Text]]></IgnoreText>
+<IgnoreByte><![CDATA[Ignore Byte]]></IgnoreByte>
+<SaveInFile><![CDATA[Save In File]]></SaveInFile>
+<file><![CDATA[file]]></file>
+<filesize><![CDATA[size={0}]]></filesize>
+<filetype><![CDATA[{0} file]]></filetype>
+<ErrorUnableToChg><![CDATA[Error: Unable to change option]]></ErrorUnableToChg>
+<SQLResults><![CDATA[SQL Results]]></SQLResults>
+<SizeSixDBs><![CDATA[Size of the 6 Largest Databases]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[Log Out: SQL ToolBox]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[Logged in as]]></LoggedInAs>
+<ClickToSelect><![CDATA[Click to do a select * on the table.]]></ClickToSelect>
+<PartitionInfo><![CDATA[Partition Info]]></PartitionInfo>
+<CloseWindow><![CDATA[Close Window]]></CloseWindow>
+<DisplayOptions><![CDATA[Display Options]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[Procedures/Functions ({0})]]></ProceduresFunctions>
+<Function><![CDATA[Function]]></Function>
+<Procedure><![CDATA[Procedure]]></Procedure>
+<All><![CDATA[All]]></All>
+<Buffered><![CDATA[Buffered]]></Buffered>
+<Unbuffered><![CDATA[Unbuffered]]></Unbuffered>
+<NotLogged><![CDATA[Not Logged]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[Last Statistics]]></LastStats>
+<Pages><![CDATA[Pages]]></Pages>
+<pages><![CDATA[pages]]></pages>
+<byte_blob><![CDATA[Byte/Blob]]></byte_blob>
+<text_clob><![CDATA[Text/Clob]]></text_clob>
+</lang>

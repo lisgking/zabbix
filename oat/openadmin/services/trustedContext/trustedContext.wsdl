@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="TRUSTED_CONTEXT" targetNamespace="urn:TRUSTED_CONTEXT"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:TRUSTED_CONTEXT"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:TRUSTED_CONTEXT">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+
+	<message name="getDatabases">
+	</message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTrustedContexts">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+	</message>
+
+	<message name="getTrustedContextsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="trustedContextAction">
+		<part name="sql" type="xsd:string" />
+		<part name="dbname" type="xsd:string" />
+		<part name="type" type="xsd:string" />
+	</message>
+
+	<message name="trustedContextActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getRoles">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getRolesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getUsers">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+	</message>
+
+	<message name="getUsersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="TRUSTED_CONTEXTPort">
+		<operation name="getDatabases">
+			<input  message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		<operation name="getTrustedContexts">
+			<input  message="typens:getTrustedContexts" />
+			<output message="typens:getTrustedContextsResponse" />
+		</operation>
+		<operation name="trustedContextAction">
+			<input  message="typens:trustedContextAction" />
+			<output message="typens:trustedContextActionResponse" />
+		</operation>
+		<operation name="getRoles">
+			<input  message="typens:getRoles" />
+			<output message="typens:getRolesResponse" />
+		</operation>
+		<operation name="getUsers">
+			<input  message="typens:getUsers" />
+			<output message="typens:getUsersResponse" />
+		</operation>
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="TRUSTED_CONTEXTBinding" type="typens:TRUSTED_CONTEXTPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:TRUSTED_CONTEXTAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTrustedContexts">
+			<soap:operation soapAction="urn:TRUSTED_CONTEXTAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="trustedContextAction">
+			<soap:operation soapAction="urn:TRUSTED_CONTEXTAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getRoles">
+			<soap:operation soapAction="urn:TRUSTED_CONTEXTAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getUsers">
+			<soap:operation soapAction="urn:TRUSTED_CONTEXTAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:TRUSTED_CONTEXT"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+	</binding>
+
+	<service name="TRUSTED_CONTEXTService">
+		<port name="TRUSTED_CONTEXTPort" binding="typens:TRUSTED_CONTEXTBinding">
+			<soap:address location="services/trustedContext/trustedContextService.php" />
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="GridRepl" targetNamespace="urn:GridRepl"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:GridRepl"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+		<xsd:schema 
+			xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="urn:GridRepl"
+            targetNamespace="urn:GridRepl">
+			<xsd:complexType name="serverArray">
+				<xsd:sequence>
+					<xsd:element name="servers" 
+                                 type="xsd:anyType" 
+                                 maxOccurs="unbounded"/>
+                </xsd:sequence>
+			</xsd:complexType>
+            <xsd:complexType name="anyType"></xsd:complexType>
+            <xsd:element name="runCreateGridCmd">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="in" type="string"></xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+		</xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+	<wsdl:message name="getGridsRequest">
+	</wsdl:message>
+	<wsdl:message name="getGridsResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="getGridMembersRequest">
+		<wsdl:part name="gridid" type="xsd:string"></wsdl:part>
+		<wsdl:part name="regionid" type="xsd:string"></wsdl:part>
+		<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+		<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getGridMembersResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="getGridStatusInfoRequest">
+		<wsdl:part name="gridid" type="xsd:string"></wsdl:part>
+		<wsdl:part name="rows_per_page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="page" type="xsd:integer"></wsdl:part>
+		<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+		<wsdl:part name="search_pattern" type="xsd:string"></wsdl:part>
+		<wsdl:part name="filter" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getGridStatusInfoResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>	
+	
+	<wsdl:message name="getGridMemberOutputRequest">
+		<wsdl:part name="gridid" type="xsd:string"></wsdl:part>
+		<wsdl:part name="stmtid" type="xsd:string"></wsdl:part>		
+		<wsdl:part name="sourceid" type="xsd:string"></wsdl:part>
+		<wsdl:part name="targetid" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getGridMemberOutputResponse">
+		<wsdl:part name="return" type="xsd:string"></wsdl:part>
+	</wsdl:message>	
+		
+	<wsdl:message name="getServersInDomainRequest">
+		<wsdl:part name="gridid" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getServersInDomainResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="runCreateGridCmdRequest">
+		<wsdl:part name="command" type="xsd:string"></wsdl:part>
+		<wsdl:part name="parameters" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="runCreateGridCmdResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="getGridUsersRequest">
+		<wsdl:part name="gridid" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getGridUsersResponse">
+		<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+	</wsdl:message>
+	<portType name="GridReplPort">
+		<wsdl:operation name="getGrids">
+			<wsdl:input message="typens:getGridsRequest"></wsdl:input>
+			<wsdl:output message="typens:getGridsResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getGridMembers">
+			<wsdl:input message="typens:getGridMembersRequest"></wsdl:input>
+			<wsdl:output message="typens:getGridMembersResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getServersInDomain">
+			<wsdl:input message="typens:getServersInDomainRequest"></wsdl:input>
+			<wsdl:output message="typens:getServersInDomainResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="runCreateGridCmd">
+			<wsdl:input message="typens:runCreateGridCmdRequest"></wsdl:input>
+			<wsdl:output message="typens:runCreateGridCmdResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getGridStatusInfo">
+			<wsdl:input message="typens:getGridStatusInfoRequest"></wsdl:input>
+			<wsdl:output message="typens:getGridStatusInfoResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getGridMemberOutput">
+			<wsdl:input message="typens:getGridMemberOutputRequest"></wsdl:input>
+			<wsdl:output message="typens:getGridMemberOutputResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getGridUsers">
+			<wsdl:input message="typens:getGridUsersRequest"></wsdl:input>
+			<wsdl:output message="typens:getGridUsersResponse"></wsdl:output>
+		</wsdl:operation>
+	</portType>
+
+
+    <!-- define protocol details for each Ports -->
+    <binding name="GridReplBinding" type="typens:GridReplPort">
+    	<soap:binding style="rpc"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+
+    	<wsdl:operation name="getGrids">
+    		<soap:operation soapAction="urn:GridRepl/getGrids" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getGridMembers">
+    		<soap:operation soapAction="urn:GridRepl/getGridMembers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getServersInDomain">
+    		<soap:operation
+    			soapAction="urn:GridRepl/getServersInDomain" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="runCreateGridCmd">
+    		<soap:operation soapAction="urn:GridRepl/runCreateGridCmd" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getGridStatusInfo">
+    		<soap:operation soapAction="urn:GridRepl/getGridStatusInfo" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getGridMemberOutput">
+    		<soap:operation
+    			soapAction="urn:GridRepl/getGridMemberOutput" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getGridUsers">
+    		<soap:operation soapAction="urn:GridRepl/getGridUsers" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:GridRepl"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    </binding>
+
+    <service name="GridReplService">
+        <port name="GridReplPort" binding="typens:GridReplBinding">
+            <soap:address location="GridReplService.php" />
+        </port>
+    </service>
+</definitions>
+

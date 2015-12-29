@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[仮想プロセッサ]]></virtualprocessors>
+<vps><![CDATA[VP]]></vps>
+<vpclasses><![CDATA[VP クラス]]></vpclasses>
+<vpid><![CDATA[VP ID]]></vpid>
+<class><![CDATA[クラス]]></class>
+<cnt><![CDATA[VP]]></cnt>
+<total><![CDATA[合計]]></total>
+<usercpu><![CDATA[ユーザ CPU 時間]]></usercpu>
+<syscpu><![CDATA[システム CPU 時間]]></syscpu>
+<totalcpu><![CDATA[合計 CPU 時間]]></totalcpu>
+<classdetails><![CDATA[クラス詳細]]></classdetails>
+<nodrop><![CDATA[クラスの最後の VP は削除できません]]></nodrop>
+<tomuchdrop><![CDATA[削除は失敗しました。存在する VP の数よりも多い VP を削除することはできません。]]></tomuchdrop>
+<success><![CDATA[操作は正常終了しました。]]></success>
+<VPValNotSet><![CDATA[操作は不可です。次の VP 値は正しく設定されていません。]]></VPValNotSet>
+<VPType><![CDATA[VP タイプ]]></VPType>
+<Count><![CDATA[カウント]]></Count>
+<AddDropVP><![CDATA[VP の追加または削除]]></AddDropVP>
+<add><![CDATA[追加]]></add>
+<drop><![CDATA[削除]]></drop>
+<addVP><![CDATA[VP の追加]]></addVP>
+<dropVP><![CDATA[VP の削除]]></dropVP>
+<modifyingClass><![CDATA[クラスの変更]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[仮想プロセッサ - グローバル情報]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[クラスの VP: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[オプションは使用不可です]]></OptionNotAvail>
+<seconds><![CDATA[秒]]></seconds>
+</lang>

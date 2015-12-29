@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[Tördelt tábla]]></FragmentedTable>
+<PseudoTable><![CDATA[Áltábla]]></PseudoTable>
+<NotApplicable><![CDATA[Nem alkalmazható]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[Ezen az oldalon az OpenAdmin eszköz nem tud információkat megjeleníteni olyan adatbázis-kiszolgálóról, amely több nem-angol adatbázis területi beállítással rendelkezik. Az adatbázis-kiszolgáló több nem-angol adatbázis területi beállítást tartalmaz.]]></ErrorMultipleLocales>
+</lang>

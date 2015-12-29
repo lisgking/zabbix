@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="QBE" targetNamespace="urn:QBE"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:QBE"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:QBE">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+
+			<xsd:complexType name="columnInfo">
+				<xsd:all>
+					<xsd:element name="columnName"     type="xsd:string" />
+					<xsd:element name="columnType"     type="xsd:int" />
+					<xsd:element name="columnLength"   type="xsd:int" />
+					<xsd:element name="columnNullable" type="xsd:boolean" />
+				</xsd:all>
+			</xsd:complexType>
+
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getDatabases">
+    </message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTables">
+		<part name="database" type="xsd:string" />
+    </message>
+
+	<message name="getTablesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDatabasesAndTablesWithSearch">
+		<part name="tabname_pattern" type="xsd:string" />
+    </message>
+
+	<message name="getDatabasesAndTablesWithSearchResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	<message name="getColumnInfo">
+		<part name="tabname" type="xsd:string" />
+		<part name="tabid"   type="xsd:int" />
+		<part name="dbname"  type="xsd:string" />
+	</message>
+
+	<message name="getColumnInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+    
+	<message name="getDataForTable">
+		<part name="dbname"  type="xsd:string" />
+		<part name="owner"   type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="filters" type="xsd:anyType" />
+		<part name="gridOrRegname" type="xsd:string" />
+		<part name="rowid"   type="xsd:boolean" />
+		<part name="erkey"   type="xsd:boolean" />
+	</message>
+
+	<message name="getDataForTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="insertRow">
+		<part name="dbname"  type="xsd:string" />
+		<part name="owner"   type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="columnData" type="xsd:anyType" />
+	</message>
+
+	<message name="insertRowResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="updateRow">
+		<part name="dbname"  type="xsd:string" />
+		<part name="owner"   type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="updateColumns" type="xsd:anyType" />
+		<part name="uniqueColumns" type="xsd:anyType" />
+	</message>
+
+	<message name="updateRowResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="deleteRow">
+		<part name="dbname"  type="xsd:string" />
+		<part name="owner"   type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="uniqueColumns" type="xsd:anyType" />
+	</message>
+
+	<message name="deleteRowResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getGridsAndRegions">
+    </message>
+
+	<message name="getGridsAndRegionsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>	
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="QBEPort">
+
+		<operation name="getColumnInfo">
+			<input message="typens:getColumnInfo" />
+			<output message="typens:getColumnInfoResponse" />
+		</operation>
+
+		<operation name="getDatabases">
+	        <input  message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		
+		<operation name="getTables">
+	        <input  message="typens:getTables" />
+			<output message="typens:getTablesResponse" />
+		</operation>
+
+		<operation name="getDatabasesAndTablesWithSearch">
+	        <input  message="typens:getDatabasesAndTablesWithSearch" />
+			<output message="typens:getDatabasesAndTablesWithSearchResponse" />
+		</operation>
+		
+		<operation name="getDataForTable">
+			<input  message="typens:getDataForTable" />
+			<output message="typens:getDataForTableResponse" />
+		</operation>
+		
+		<operation name="insertRow">
+			<input  message="typens:insertRow" />
+			<output message="typens:insertRowResponse" />
+		</operation>
+		
+		<operation name="updateRow">
+			<input  message="typens:updateRow" />
+			<output message="typens:updateRowResponse" />
+		</operation>
+		
+		<operation name="deleteRow">
+			<input  message="typens:deleteRow" />
+			<output message="typens:deleteRowResponse" />
+		</operation>
+		
+		<operation name="getGridsAndRegions">
+	        <input  message="typens:getGridsAndRegions" />
+			<output message="typens:getGridsAndRegionsResponse" />
+		</operation>
+
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="QBEBinding" type="typens:QBEPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="getColumnInfo">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="getTables">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="getDatabasesAndTablesWithSearch">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="getDataForTable">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="insertRow">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="updateRow">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="deleteRow">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+				<operation name="getGridsAndRegions">
+			<soap:operation soapAction="urn:QBEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:QBE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+	</binding>
+
+	<service name="QBEService">
+		<port name="QBEPort" binding="typens:QBEBinding">
+			<soap:address location="services/qbe/qbeService.php" />
+		</port>
+	</service>
+</definitions>

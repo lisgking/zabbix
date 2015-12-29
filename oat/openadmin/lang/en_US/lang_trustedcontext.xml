@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Trusted Context]]></mainTitle>
+<FeatureUnavailable><![CDATA[This feature is not available for your current server version.]]></FeatureUnavailable>
+</lang>

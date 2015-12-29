@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Obszary DBSpace]]></mainTitle>
+<dbspace><![CDATA[Obszar DBSpace]]></dbspace>
+<dbspaceName><![CDATA[Nazwa obszaru DBSpace]]></dbspaceName>
+<owner><![CDATA[Właściciel]]></owner>
+<pagesize><![CDATA[Wielkość strony]]></pagesize>
+<createTime><![CDATA[Czas utworzenia]]></createTime>
+<dbspaceInfo><![CDATA[Informacje o obszarze DBSpace]]></dbspaceInfo>
+<utilization><![CDATA[Wykorzystanie {0}]]></utilization>
+<indexPages><![CDATA[Strony indeksu]]></indexPages>
+<dataPages><![CDATA[Strony danych]]></dataPages>
+<otherPages><![CDATA[Pozostałe strony]]></otherPages>
+<freePages><![CDATA[Wolne strony]]></freePages>
+<TableName><![CDATA[Nazwa tabeli]]></TableName>
+<StartAddr><![CDATA[Adres początkowy]]></StartAddr>
+<EndAddr><![CDATA[Adres końcowy]]></EndAddr>
+<size><![CDATA[Wielkość]]></size>
+<Status><![CDATA[Status]]></Status>
+<ExtentList><![CDATA[Lista przydziałów]]></ExtentList>
+<TableList><![CDATA[Lista tabel]]></TableList>
+<Database><![CDATA[Baza danych]]></Database>
+<Table><![CDATA[Tabela]]></Table>
+<Collate><![CDATA[Uporządkowanie]]></Collate>
+<Rows><![CDATA[Wiersze]]></Rows>
+<SystemIntegrity><![CDATA[Integralność]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Sprawdź format tabel obszaru Dbspace]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Sprawdź przydziały obszaru Dbspace]]></butCheckDbsExt>
+<RowSize><![CDATA[Wielkość wierszy]]></RowSize>
+<Created><![CDATA[Utworzone]]></Created>
+<AllocPages><![CDATA[Przydzielone strony]]></AllocPages>
+<UsedPages><![CDATA[Używane strony]]></UsedPages>
+<NumExtents><![CDATA[Liczba przydziałów]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Numer]]></Number>
+<Name><![CDATA[Nazwa]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<default><![CDATA[Domyślny]]></default>
+<CreateSpace><![CDATA[Utwórz obszar]]></CreateSpace>
+<Create><![CDATA[Utwórz]]></Create>
+<numChunks><![CDATA[Liczba porcji]]></numChunks>
+<UsedPer><![CDATA[Wykorzystane %]]></UsedPer>
+<Data><![CDATA[Dane]]></Data>
+<Index><![CDATA[Indeks]]></Index>
+<Other><![CDATA[Inne]]></Other>
+<Free><![CDATA[Wolne]]></Free>
+<noDropDBSpace><![CDATA[Nie można usuwać baz rootdb.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Dodaj przestrzeń do]]></AddSpaceto>
+<Path><![CDATA[Ścieżka]]></Path>
+<Offset><![CDATA[Przesunięcie]]></Offset>
+<FileCreation><![CDATA[Tworzenie pliku]]></FileCreation>
+<MayCreateFile><![CDATA[Utwórz plik, jeśli nie istnieje]]></MayCreateFile>
+<FileMustExist><![CDATA[Plik musi istnieć]]></FileMustExist>
+<DropSpace><![CDATA[Usuń obszar {0}]]></DropSpace>
+<AddChunk><![CDATA[Dodaj porcję]]></AddChunk>
+<Used><![CDATA[Wykorzystane]]></Used>
+<AddMirror><![CDATA[Dodaj kopię lustrzaną]]></AddMirror>
+<AddChunkMirror><![CDATA[Dodaj porcję z kopią lustrzaną]]></AddChunkMirror>
+<StartMirror><![CDATA[Uruchom kopię lustrzaną]]></StartMirror>
+<StopMirror><![CDATA[Zatrzymaj kopię lustrzaną]]></StopMirror>
+<AddMirrorto><![CDATA[Dodaj kopię lustrzaną do]]></AddMirrorto>
+<MirrorPath><![CDATA[Ścieżka kopii lustrzanej]]></MirrorPath>
+<MirrorOffset><![CDATA[Przesunięcie kopii lustrzanej]]></MirrorOffset>
+<MirroringStarted><![CDATA[Zapis lustrzany jest uruchomiony]]></MirroringStarted>
+<MirroringStopped><![CDATA[Zapis lustrzany jest zatrzymany]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - systemowe sprawdzanie poprawności]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Sprawdzanie poprawności oncheck zakończone.]]></oncheckComplete>
+<NoPermission><![CDATA[Użytkownicy z uprawnieniami tylko do odczytu nie mają uprawnień do wykonania tej czynności. Użytkownik jest zalogowany jako użytkownik z uprawnieniami tylko do odczytu.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Ta akcja nie jest poprawna na serwerach dodatkowych.]]></NotValidOnSecondary>
+<Error><![CDATA[Błąd:]]></Error>
+<DropDBSpaceFailed><![CDATA[Usuwanie obszaru DBSpace nie powiodło się.  Następująca wartość DBSpace nie była prawidłowo ustawiona:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Tworzenie obszaru DBSpace nie powiodło się.  Akcja dotycząca obszaru DBSpace]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[- niepoprawna.]]></IsNotValid>
+<DATASpace><![CDATA[Obszar DATA]]></DATASpace>
+<DataSpaceL><![CDATA[Obszar danych]]></DataSpaceL>
+<TEMPSpace><![CDATA[Obszar TEMP]]></TEMPSpace>
+<TempSpaceL><![CDATA[Obszar tymczasowy]]></TempSpaceL>
+<BLOBSpace><![CDATA[Obszar BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Tworzenie obszaru DBSpace powiodło się]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Tworzenie obszaru DBSpace nie powiodło się.  Następująca wartość DBSpace nie jest prawidłowo ustawiona:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Tworzenie obszaru DBSpace nie powiodło się.  Akcja dotycząca obszaru DBSpace jest niepoprawna]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Usunięcie obszaru DBSpace nie zostało potwierdzone]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Wyniki sprawdzania poprawności do ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Wyniki sprawdzania poprawności ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Nie powiodło się dodawanie porcji do obszaru dbspace:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Porcja została pomyślnie dodana]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Dodawanie porcji do obszaru dbspace:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Porcja lustrzana została dodana pomyślnie]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Nie powiodło się dodawanie kopii lustrzanej w obszarze dbspace:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[Następująca wartość kopii lustrzanej nie jest prawidłowo ustawiona:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Kopia lustrzana została pomyślnie dodana]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Nie powiodło się uruchomienie zapisu lustrzanego w obszarze dbspace:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[Nie potwierdzono uruchomienia zapisu lustrzanego w obszarze dbspace:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Nie powiodło się zatrzymanie zapisu lustrzanego w obszarze dbsapce:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Nie potwierdzono zatrzymania zapisu lustrzanego w obszarze dbspace:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Obszar Dbspace]]></Dbspace>
+<TempDbspace><![CDATA[Tymczasowy obszar Dbspace]]></TempDbspace>
+<MirroredDbspace><![CDATA[Lustrzany obszar Dbspace]]></MirroredDbspace>
+<Blobspace><![CDATA[Obszar Blobspace]]></Blobspace>
+<MirroredBlobspace><![CDATA[Lustrzany obszar Blobspace]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Złożony obszar Blobspace]]></SmartBlobspace>
+<TempSbspace><![CDATA[Tymczasowy złożony obszar Blobspace]]></TempSbspace>
+<MirroredSbspace><![CDATA[Lustrzany złożony obszar Blobspace]]></MirroredSbspace>
+<DataPages><![CDATA[Strony danych]]></DataPages>
+<IndexPages><![CDATA[Strony indeksu]]></IndexPages>
+<OtherPages><![CDATA[Pozostałe strony]]></OtherPages>
+<FreePages><![CDATA[Wolne strony]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Następująca wartość DBSpace nie jest prawidłowo ustawiona:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Podsumowanie]]></summary>
+<admin><![CDATA[Administrator]]></admin>
+<tables><![CDATA[Tabele]]></tables>
+<extents><![CDATA[Przydziały]]></extents>
+<validation><![CDATA[Sprawdzanie poprawności]]></validation>
+<Disabled><![CDATA[Wyłączone]]></Disabled>
+<Recovering><![CDATA[Odzyskiwanie]]></Recovering>
+<Operational><![CDATA[Działające]]></Operational>
+</lang>

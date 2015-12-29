@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL 资源管理器]]></SQLExplorer>
+<ShowSQL><![CDATA[显示 - SQL]]></ShowSQL>
+<StmtType><![CDATA[语句类型]]></StmtType>
+<TXTime><![CDATA[事务时间]]></TXTime>
+<Freq><![CDATA[频率]]></Freq>
+<SQLAdmin><![CDATA[SQL 跟踪管理]]></SQLAdmin>
+<SQLType><![CDATA[SQL 类型]]></SQLType>
+<SQLProfile><![CDATA[SQL 概要文件]]></SQLProfile>
+<SQLList><![CDATA[SQL 列表]]></SQLList>
+<TXGroup><![CDATA[事务]]></TXGroup>
+<Count><![CDATA[计数]]></Count>
+<AvgRT><![CDATA[平均响应时间]]></AvgRT>
+<MaxRT><![CDATA[最大响应时间]]></MaxRT>
+<AvgMem><![CDATA[平均内存]]></AvgMem>
+<RowProc><![CDATA[处理的行数]]></RowProc>
+<NoData><![CDATA[无可用数据]]></NoData>
+<SQLStmtSum><![CDATA[SQL 语句摘要]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL 语句]]></SQLStmt>
+<SID><![CDATA[会话标识]]></SID>
+<NRecentTX><![CDATA[100 个最近事务]]></NRecentTX>
+<SQLFreq><![CDATA[SQL 频率摘要]]></SQLFreq>
+<LockWait><![CDATA[锁定等待时间]]></LockWait>
+<SQLDrill><![CDATA[SQL 向下钻取]]></SQLDrill>
+<DrillDown><![CDATA[向下钻取]]></DrillDown>
+<WaitIOTime><![CDATA[等待 IO 时间]]></WaitIOTime>
+<UID><![CDATA[用户标识]]></UID>
+<CompTime><![CDATA[语句完成时间]]></CompTime>
+<RespTime><![CDATA[响应时间]]></RespTime>
+<Database><![CDATA[数据库]]></Database>
+<Statement><![CDATA[语句]]></Statement>
+<StmtStats><![CDATA[语句统计信息]]></StmtStats>
+<pgReads><![CDATA[页面读取数]]></pgReads>
+<BufReads><![CDATA[缓冲区读取数]]></BufReads>
+<ReadCache><![CDATA[读取高速缓存]]></ReadCache>
+<DataBufReads><![CDATA[数据缓冲区读取数]]></DataBufReads>
+<IndexBuffReads><![CDATA[索引缓冲区读取数]]></IndexBuffReads>
+<PgWrites><![CDATA[页面写入数]]></PgWrites>
+<BufWrites><![CDATA[缓冲区写入数]]></BufWrites>
+<WriteCache><![CDATA[写入高速缓存]]></WriteCache>
+<NumLockWait><![CDATA[锁定等待数]]></NumLockWait>
+<LockRequests><![CDATA[锁定请求数]]></LockRequests>
+<LockWaitTime><![CDATA[锁定等待时间（秒）]]></LockWaitTime>
+<LogSpace><![CDATA[日志空间]]></LogSpace>
+<DiskSorts><![CDATA[磁盘排序数]]></DiskSorts>
+<MemSorts><![CDATA[内存排序数]]></MemSorts>
+<NumTables><![CDATA[表数]]></NumTables>
+<NumIter><![CDATA[迭代器数]]></NumIter>
+<TExecs><![CDATA[执行总数]]></TExecs>
+<TExecTime><![CDATA[总执行时间（秒）]]></TExecTime>
+<AvgExecTime><![CDATA[平均执行时间（秒）]]></AvgExecTime>
+<MaxExecTime><![CDATA[最大执行时间（秒）]]></MaxExecTime>
+<TNumIOWait><![CDATA[IO 等待数]]></TNumIOWait>
+<IOWaitTime><![CDATA[IO 等待时间（秒）]]></IOWaitTime>
+<AvgIOWait><![CDATA[平均 IO 等待（秒）]]></AvgIOWait>
+<RowsPerSec><![CDATA[平均行数/秒]]></RowsPerSec>
+<EstCost><![CDATA[估计成本]]></EstCost>
+<EstRows><![CDATA[估计行数]]></EstRows>
+<ActRows><![CDATA[实际行数]]></ActRows>
+<SQLErr><![CDATA[SQL 错误]]></SQLErr>
+<ISAMErr><![CDATA[ISAM 错误]]></ISAMErr>
+<IsoLevel><![CDATA[隔离级别]]></IsoLevel>
+<SQLMem><![CDATA[SQL 内存]]></SQLMem>
+<SQLTbadParam><![CDATA[尝试修改 SQL 跟踪时参数错误。]]></SQLTbadParam>
+<Modify><![CDATA[修改]]></Modify>
+<High><![CDATA[高]]></High>
+<Medium><![CDATA[中]]></Medium>
+<Low><![CDATA[低]]></Low>
+<MaxSQLTrace><![CDATA[要跟踪的 SQL 文本最大量。]]></MaxSQLTrace>
+<TraceLevel><![CDATA[跟踪级别]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[要跟踪的 SQL 语句数。]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[启用与禁用 SQL 跟踪。]]></TraceOnOff>
+<On><![CDATA[启用]]></On>
+<Off><![CDATA[禁用]]></Off>
+<SQLTraceOpt><![CDATA[设置 SQL 跟踪选项]]></SQLTraceOpt>
+<Mode><![CDATA[方式]]></Mode>
+<NumTrace><![CDATA[跟踪数]]></NumTrace>
+<TraceSize><![CDATA[跟踪大小]]></TraceSize>
+<SQLTraceInfo><![CDATA[SQL 跟踪信息]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[跟踪的 SQL 语句数]]></NumSQLTraced>
+<TraceBufSize><![CDATA[跟踪缓冲区大小]]></TraceBufSize>
+<OldTracedStmt><![CDATA[跟踪的最旧语句]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[跟踪缓冲区持续时间]]></TraceBufDuration>
+<SQLSeen><![CDATA[看到的 SQL 语句数]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL 跟踪启动时间]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[每秒 SQL 语句数]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[已使用的 SQL 跟踪内存]]></TraceMemUsed>
+<RowPerSec><![CDATA[行数/秒]]></RowPerSec>
+<ListSQL><![CDATA[列表 SQL]]></ListSQL>
+<TxStatsSummary><![CDATA[事务统计信息摘要]]></TxStatsSummary>
+<NumSQL><![CDATA[语句计数]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[语句主变量]]></StmtHVars>
+<Pos><![CDATA[位置]]></Pos>
+<Type><![CDATA[类型]]></Type>
+<Value><![CDATA[值]]></Value>
+<Error_GD_NotEnabled><![CDATA[PHP 中未启用 GD。无法显示查询树。]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix 版本：]]></IDSVersion>
+<SaveSQLTrace><![CDATA[保存 SQL 跟踪]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[将当前 syssqltrace 信息保存到表]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[SQL 语句摘要]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[SQL 频率摘要]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL 向下钻取]]></SQLDrillDown>
+<Count><![CDATA[计数]]></Count>
+<AvgRunTime><![CDATA[平均运行时间]]></AvgRunTime>
+<LockWaitTime><![CDATA[锁定等待时间]]></LockWaitTime>
+<WaitIOTime><![CDATA[等待 IO 时间]]></WaitIOTime>
+<CompleteTime><![CDATA[完成时间]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[EXT_DIRECTIVES 必须设置为 1 或 2，以启用伪指令支持。]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[已存在此查询的已保存伪指令]]></SavedDir>
+<DirectivesSaved><![CDATA[已保存的伪指令]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[尚不存在此查询的已保存伪指令]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[伪指令已删除。没有要更新的新伪指令。]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[表跟踪信息不存在。]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[找不到索引]]></NoIndexesFound>
+<NoRowsFound><![CDATA[找不到行。]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL TRACING DISABLED]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[SQL 跟踪已禁用]]></SQLTracingOff>
+<NoSQLID><![CDATA[services/sqltrace.php 的自变量无效]]></NoSQLID>
+<InvalidArgument><![CDATA[services/sqltrace.php 的自变量无效]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[单击获取有关此 SQL 语句的更多详细信息]]></ClickForSQLDetails>
+<DrillDown><![CDATA[向下钻取]]></DrillDown>
+<ORDERED_Description><![CDATA[强制优化器以 SELECT 语句中列出的顺序连接表。]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[尽快返回第一行。]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[尽快完成整个查询。]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[不使用多索引扫描访问指定表。]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[不使用星型连接执行计划。]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[可能的情况下使用星型连接执行计划。]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[选择要在星型连接执行计划中用作事实表的表。]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[选择不在星型连接执行计划中用作事实表的表。]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[指定访问索引自连接路径中的表时不使用的索引。]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[指定访问索引自连接路径中的表时将使用的索引。]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[指定访问表时要使用的多索引。]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[指定访问表时不使用的索引。]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[指定访问表时要使用的索引。]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[避免使用全表扫描来访问表。]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[使用全表扫描来访问表。]]></FULL_Description>
+<USE_NL_Description><![CDATA[使用指定表作为嵌套循环连接的内表。]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[避免将指定表作为嵌套循环连接的内表。]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[使用动态散列连接访问指定表。]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[不使用动态散列连接访问指定表。]]></AVOID_HASH_Description>
+<Index><![CDATA[索引]]></Index>
+<Table><![CDATA[表]]></Table>
+<Cost><![CDATA[成本]]></Cost>
+<RowsEstimated><![CDATA[估计的行数]]></RowsEstimated>
+<RowsProcessed><![CDATA[处理的行数]]></RowsProcessed>
+<ElapsedTime><![CDATA[耗用时间]]></ElapsedTime>
+<NotYetImpl><![CDATA[在此页面上，OpenAdmin Tool 无法显示具有多个非英语数据库语言环境的数据库服务器的信息。该数据库服务器包含多个非英语数据库语言环境。]]></NotYetImpl>
+<QueryTree><![CDATA[查询树]]></QueryTree>
+<QueryTreeNA><![CDATA[此语句的查询树不可用。]]></QueryTreeNA>
+</lang>
+
+

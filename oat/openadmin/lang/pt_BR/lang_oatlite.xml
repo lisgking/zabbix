@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Não é possível conectar ao servidor de banco de dados]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[O servidor está offline]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[O OAT requer o Informix versão 11.10 ou superior.]]></ServerVersionLessThan11>
+<Standard><![CDATA[Padrão]]></Standard>
+<Primary><![CDATA[Primário]]></Primary>
+<Secondary><![CDATA[Secundário]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[sim]]></yes>
+<no><![CDATA[não]]></no>
+<partial><![CDATA[parcial]]></partial>
+</lang>

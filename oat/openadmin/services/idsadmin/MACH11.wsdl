@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="MACH11" targetNamespace="urn:MACH11"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:MACH11"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+		<xsd:schema 
+			xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="urn:MACH11"
+            targetNamespace="urn:MACH11">
+			<xsd:complexType name="serverArray">
+				<xsd:sequence>
+					<xsd:element name="servers" 
+                                 type="xsd:anyType" 
+                                 maxOccurs="unbounded"/>
+                </xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+	<message name="addClusterToCache">
+		<part name="clusterName" type="xsd:string"/>
+	</message>
+
+	<message name="addClusterToCacheResponse">
+		<part name="return" type="xsd:integer"/>
+	</message>
+
+    <message name="addServerToCache">
+		<part name="group_num"  type="xsd:integer"/>
+		<part name="host"       type="xsd:string"/>
+		<part name="port"       type="xsd:string"/>
+		<part name="server"     type="xsd:string"/>
+		<part name="idsprotocol" type="xsd:string"/>
+        <part name="lat"        type="xsd:decimal"/>
+        <part name="lon"        type="xsd:decimal"/>
+		<part name="username"   type="xsd:string"/>
+		<part name="password"   type="xsd:string"/>
+        <part name="cluster_id" type="xsd:integer"/>
+        <part name="last_type"  type="xsd:integer"/>
+    </message>
+
+	<message name="addServerToCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="discoverCluster">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="discoverClusterResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="discoverClusters">
+		<part name="primaries" type="xsd:anyType"/>
+	</message>
+
+	<message name="discoverClustersResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="discoverPrimaries">
+		<part name="searchGroup" type="xsd:boolean"/>
+	</message>
+
+	<message name="discoverPrimariesResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="filterKnownServers">
+		<part name="servers" type="xsd:string"/>
+	</message>
+
+	<message name="filterKnownServersResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+    
+    <message name="getCluster">
+        <part name="clusterName" type="xsd:string"/>
+    </message>
+
+    <message name="getClusterResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getClusterForServer">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getClusterForServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getClusterFromCache">
+        <part name="clusterName" type="xsd:string"/>
+    </message>
+
+    <message name="getClusterFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getClustersFromCache">
+	</message>
+
+    <message name="getClustersFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getClusterStatus">
+		<part name="clusterName" type="xsd:string"/>
+    </message>
+
+    <message name="getClusterStatusResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getConnectionManagers">
+		<part name="server" type="xsd:string"/>
+    </message>
+
+    <message name="getConnectionManagersResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getConnectionManagerSLA">
+		<part name="server" type="xsd:string"/>
+		<part name="sid"    type="xsd:int"/>
+    </message>
+
+    <message name="getConnectionManagerSLAResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getPrimaryForServer">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getPrimaryForServerResponse">
+		<part name="return" type="xsd:string"/>
+	</message>
+
+    <message name="getServerAliases">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getServerAliasesResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getServerConfiguration">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getServerConfigurationResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getServerEnvironmentFromCache">
+		<part name="server" type="xsd:string"/>
+		<part name="format" type="xsd:boolean"/>
+	</message>
+
+	<message name="getServerEnvironmentFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getServerFromCache">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getServerFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getServersFromCache">
+	</message>
+
+	<message name="getServersFromCacheResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getServersInCluster">
+		<part name="clusterName" type="xsd:string"/>
+	</message>
+
+	<message name="getServersInClusterResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="getServerType">
+        <part name="server" type="xsd:string"/>
+    </message>
+
+	<message name="getServerTypeResponse">
+		<part name="return" type="xsd:anyType"/>
+    </message>
+
+	<message name="getSqlHostEntryForServer">
+		<part name="server" type="xsd:string"/>
+		<part name="lookup" type="xsd:string"/>
+	</message>
+
+	<message name="getSqlHostEntryForServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="getSqlHostsFromServer">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="getSqlHostsFromServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="isCachedServer">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isCachedServerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="isClusteredServer">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isClusteredServerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="isPrimaryServer">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isPrimaryServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="isSecondaryServer">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isSecondaryServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="isServerReachable">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isServerReachableResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="isStandardServer">
+        <part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="isStandardServerResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="onModeMakeStandard">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="onModeMakeStandardResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+    <message name="onModeMakePrimary">
+		<part name="server" type="xsd:string"/>
+		<part name="force"  type="xsd:boolean"/>
+	</message>
+
+	<message name="onModeMakePrimaryResponse">
+		<part name="return" type="xsd:anyType"/>
+    </message>
+
+	<message name="onModeMakeHDRSecondary">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="onModeMakeHDRSecondaryResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="onModeMakeRSSSecondary">
+		<part name="server"  type="xsd:string"/>
+		<part name="primary" type="xsd:string"/>
+	</message>
+
+	<message name="onModeMakeRSSSecondaryResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="onModeStub">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="onModeStubResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+
+	<message name="removeAllClustersFromCache">
+	</message>
+
+	<message name="removeAllClustersFromCacheResponse">
+		<part name="return" type="xsd:int"/>
+	</message>
+
+	<message name="startServer">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="startServerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="setupSDSServer">
+		<part name="primary"           type="xsd:string"/>
+		<part name="serverName"        type="xsd:string"/>
+		<part name="serverNumber"      type="xsd:string"/>
+		<part name="host"              type="xsd:string"/>
+		<part name="port"              type="xsd:string"/>
+		<part name="idsprotocol"        type="xsd:string"/>
+		<part name="user"              type="xsd:string"/>
+		<part name="password"          type="xsd:string"/>
+		<part name="idsdPort"          type="xsd:string"/>
+		<part name="informixDirectory" type="xsd:string"/>
+	</message>
+
+	<message name="setupSDSServerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="stopServer">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="stopServerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="updateConnectionManager">
+		<part name="server"      type="xsd:string"/>
+		<part name="description" type="xsd:string"/>
+	</message>
+
+	<message name="updateConnectionManagerResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+	<message name="updateServerInCache">
+		<part name="server" type="xsd:string"/>
+		<part name="clusterId" type="xsd:int"/>
+		<part name="serverType" type="xsd:int"/>
+	</message>
+
+	<message name="updateServerInCacheResponse">
+		<part name="return" type="xsd:int"/>
+	</message>
+
+	<message name="updateServerEnvironmentInCache">
+		<part name="server" type="xsd:string"/>
+	</message>
+
+	<message name="updateServerEnvironmentInCacheResponse">
+		<part name="return" type="xsd:boolean"/>
+	</message>
+
+    <message name="test">
+    </message>
+
+    <message name="testResponse">
+        <part  name="return" type="xsd:anyType" />
+    </message>
+    
+    <!-- portType exposes the services and 
+         defines their input/output routines -->
+
+    <portType name="MACH11Port">
+
+        <operation name="addClusterToCache">
+            <input  message="typens:addClusterToCache"/>
+            <output message="typens:addClusterToCacheResponse"/>
+        </operation>
+
+        <operation name="addServerToCache">
+            <input  message="typens:addServerToCache"/>
+            <output message="typens:addServerToCacheResponse"/>
+        </operation>
+
+        <operation name="discoverCluster">
+            <input  message="typens:discoverCluster"/>
+            <output message="typens:discoverClusterResponse"/>
+        </operation>
+
+        <operation name="discoverClusters">
+            <input  message="typens:discoverClusters"/>
+            <output message="typens:discoverClustersResponse"/>
+        </operation>
+
+        <operation name="discoverPrimaries">
+            <input  message="typens:discoverPrimaries"/>
+            <output message="typens:discoverPrimariesResponse"/>
+        </operation>
+
+        <operation name="filterKnownServers">
+            <input  message="typens:filterKnownServers"/>
+            <output message="typens:filterKnownServersResponse"/>
+        </operation>
+
+        <operation name="getCluster">
+            <input  message="typens:getCluster"/>
+            <output message="typens:getClusterResponse"/>
+        </operation>
+
+		<operation name="getClusterForServer">
+			<input  message="typens:getClusterForServer"/>
+			<output message="typens:getClusterForServerResponse"/>
+		</operation>
+
+		<operation name="getClusterFromCache">
+			<input  message="typens:getClusterFromCache"/>
+			<output message="typens:getClusterFromCacheResponse"/>
+		</operation>
+
+        <operation name="getClustersFromCache">
+            <input  message="typens:getClustersFromCache"/>
+            <output message="typens:getClustersFromCacheResponse"/>
+        </operation>
+
+        <operation name="getClusterStatus">
+            <input  message="typens:getClusterStatus"/>
+            <output message="typens:getClusterStatusResponse"/>
+        </operation>
+
+        <operation name="getConnectionManagers">
+            <input  message="typens:getConnectionManagers"/>
+            <output message="typens:getConnectionManagersResponse"/>
+        </operation>
+
+        <operation name="getConnectionManagerSLA">
+            <input  message="typens:getConnectionManagerSLA"/>
+            <output message="typens:getConnectionManagerSLAResponse"/>
+        </operation>
+
+        <operation name="getPrimaryForServer">
+            <input  message="typens:getPrimaryForServer"/>
+            <output message="typens:getPrimaryForServerResponse"/>
+        </operation>
+
+        <operation name="getServerAliases">
+			<input  message="typens:getServerAliases"/>
+            <output message="typens:getServerAliasesResponse"/>
+        </operation>
+
+        <operation name="getServerConfiguration">
+			<input  message="typens:getServerConfiguration"/>
+            <output message="typens:getServerConfigurationResponse"/>
+        </operation>
+
+        <operation name="getServerEnvironmentFromCache">
+			<input  message="typens:getServerEnvironmentFromCache"/>
+            <output message="typens:getServerEnvironmentFromCacheResponse"/>
+        </operation>
+
+        <operation name="getServerFromCache">
+			<input  message="typens:getServerFromCache"/>
+            <output message="typens:getServerFromCacheResponse"/>
+        </operation>
+
+        <operation name="getServersFromCache">
+			<input  message="typens:getServersFromCache"/>
+            <output message="typens:getServersFromCacheResponse"/>
+        </operation>
+
+        <operation name="getServersInCluster">
+			<input  message="typens:getServersInCluster"/>
+            <output message="typens:getServersInClusterResponse"/>
+        </operation>
+
+        <operation name="getServerType">
+			<input  message="typens:getServerType"/>
+            <output message="typens:getServerTypeResponse"/>
+        </operation>
+
+        <operation name="getSqlHostEntryForServer">
+			<input  message="typens:getSqlHostEntryForServer"/>
+            <output message="typens:getSqlHostEntryForServerResponse"/>
+        </operation>
+
+        <operation name="getSqlHostsFromServer">
+			<input  message="typens:getSqlHostsFromServer"/>
+            <output message="typens:getSqlHostsFromServerResponse"/>
+        </operation>
+
+        <operation name="isCachedServer">
+			<input  message="typens:isCachedServer"/>
+			<output message="typens:isCachedServerResponse"/>
+		</operation>
+
+        <operation name="isClusteredServer">
+			<input  message="typens:isClusteredServer"/>
+			<output message="typens:isClusteredServerResponse"/>
+		</operation>
+
+        <operation name="isPrimaryServer">
+			<input  message="typens:isPrimaryServer"/>
+			<output message="typens:isPrimaryServerResponse"/>
+		</operation>
+
+        <operation name="isSecondaryServer">
+			<input  message="typens:isSecondaryServer"/>
+			<output message="typens:isSecondaryServerResponse"/>
+		</operation>
+
+        <operation name="isServerReachable">
+			<input  message="typens:isServerReachable"/>
+			<output message="typens:isServerReachableResponse"/>
+		</operation>
+
+        <operation name="isStandardServer">
+			<input  message="typens:isStandardServer"/>
+			<output message="typens:isStandardServerResponse"/>
+		</operation>
+
+        <operation name="onModeMakeStandard">
+			<input  message="typens:onModeMakeStandard"/>
+			<output message="typens:onModeMakeStandardResponse"/>
+		</operation>
+
+        <operation name="onModeMakePrimary">
+			<input  message="typens:onModeMakePrimary"/>
+			<output message="typens:onModeMakePrimaryResponse"/>
+		</operation>
+
+        <operation name="onModeMakeHDRSecondary">
+			<input  message="typens:onModeMakeHDRSecondary"/>
+			<output message="typens:onModeMakeHDRSecondaryResponse"/>
+		</operation>
+
+        <operation name="onModeMakeRSSSecondary">
+			<input  message="typens:onModeMakeRSSSecondary"/>
+			<output message="typens:onModeMakeRSSSecondaryResponse"/>
+		</operation>
+
+        <operation name="onModeStub">
+			<input  message="typens:onModeStub"/>
+			<output message="typens:onModeStubResponse"/>
+		</operation>
+
+        <operation name="removeAllClustersFromCache">
+			<input  message="typens:removeAllClustersFromCache"/>
+			<output message="typens:removeAllClustersFromCacheResponse"/>
+		</operation>
+
+        <operation name="startServer">
+			<input  message="typens:startServer"/>
+			<output message="typens:startServerResponse"/>
+		</operation>
+
+        <operation name="setupSDSServer">
+			<input  message="typens:setupSDSServer"/>
+			<output message="typens:setupSDSServerResponse"/>
+		</operation>
+
+        <operation name="stopServer">
+			<input  message="typens:stopServer"/>
+			<output message="typens:stopServerResponse"/>
+		</operation>
+
+        <operation name="updateConnectionManager">
+			<input  message="typens:updateConnectionManager"/>
+			<output message="typens:updateConnectionManagerResponse"/>
+		</operation>
+
+        <operation name="updateServerInCache">
+			<input  message="typens:updateServerInCache"/>
+			<output message="typens:updateServerInCacheResponse"/>
+		</operation>
+
+        <operation name="test">
+            <input  message="typens:test" />
+            <output message="typens:testResponse" />
+        </operation>
+        
+        <operation name="updateServerEnvironmentInCache">
+			<input  message="typens:updateServerEnvironmentInCache"/>
+			<output message="typens:updateServerEnvironmentInCacheResponse"/>
+		</operation>
+    </portType>
+
+    <!-- define protocol details for each Ports -->
+    <binding 
+		name="MACH11Binding" 
+		type="typens:MACH11Port">
+
+        <soap:binding style="rpc"
+            transport="http://schemas.xmlsoap.org/soap/http"/>
+
+	    <operation name="addClusterToCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="addServerToCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="discoverCluster">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="discoverClusters">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="discoverPrimaries">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="filterKnownServers">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+        
+	    <operation name="getCluster">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getClusterForServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getClusterFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getClustersFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getClusterStatus">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getConnectionManagers">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getConnectionManagerSLA">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getPrimaryForServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServerAliases">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServerConfiguration">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServerEnvironmentFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServerFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServersFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServersInCluster">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getServerType">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getSqlHostEntryForServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="getSqlHostsFromServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isCachedServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isClusteredServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isPrimaryServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isSecondaryServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isServerReachable">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="isStandardServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="onModeMakeStandard">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="onModeMakePrimary">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="onModeMakeHDRSecondary">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="onModeMakeRSSSecondary">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="onModeStub">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="removeAllClustersFromCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="startServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="setupSDSServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="stopServer">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="updateConnectionManager">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="updateServerInCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="updateServerEnvironmentInCache">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+
+	    <operation name="test">
+           	<soap:operation soapAction="urn:MACH11Action"/>
+           		<input>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</input>
+				<output>
+               		<soap:body use="encoded" namespace="urn:MACH11"
+                   	encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+           		</output>
+        </operation>
+        
+    </binding>
+
+    <service name="MACH11Service">
+        <port name="MACH11Port" binding="typens:MACH11Binding">
+            <soap:address location="services/idsadmin/MACH11Service.php" />
+        </port>
+    </service>
+</definitions>

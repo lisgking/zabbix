@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL Explorer]]></SQLExplorer>
+<ShowSQL><![CDATA[Zobraziť - SQL]]></ShowSQL>
+<StmtType><![CDATA[Typ príkazu]]></StmtType>
+<TXTime><![CDATA[Čas transakcie]]></TXTime>
+<Freq><![CDATA[Frekvencia]]></Freq>
+<SQLAdmin><![CDATA[Administrácia sledovania SQL]]></SQLAdmin>
+<SQLType><![CDATA[Typ SQL]]></SQLType>
+<SQLProfile><![CDATA[Profil SQL]]></SQLProfile>
+<SQLList><![CDATA[Zoznam SQL]]></SQLList>
+<TXGroup><![CDATA[Transakcie]]></TXGroup>
+<Count><![CDATA[Počet]]></Count>
+<AvgRT><![CDATA[Priemerný čas odozvy]]></AvgRT>
+<MaxRT><![CDATA[Maximálny čas odozvy]]></MaxRT>
+<AvgMem><![CDATA[Priemerná pamäť]]></AvgMem>
+<RowProc><![CDATA[Spracované riadky]]></RowProc>
+<NoData><![CDATA[Nie sú k dispozícii žiadne údaje]]></NoData>
+<SQLStmtSum><![CDATA[Súhrn príkazov SQL]]></SQLStmtSum>
+<SQLStmt><![CDATA[Príkaz SQL]]></SQLStmt>
+<SID><![CDATA[ID relácie]]></SID>
+<NRecentTX><![CDATA[100 najnovších transakcií]]></NRecentTX>
+<SQLFreq><![CDATA[Súhrn frekvencie príkazu SQL]]></SQLFreq>
+<LockWait><![CDATA[Čas čakania na zámok]]></LockWait>
+<SQLDrill><![CDATA[Zobrazenie súvisiacich údajov SQL]]></SQLDrill>
+<DrillDown><![CDATA[Zobraziť súvisiace údaje]]></DrillDown>
+<WaitIOTime><![CDATA[Čas čakania na I/O]]></WaitIOTime>
+<UID><![CDATA[ID užívateľa]]></UID>
+<CompTime><![CDATA[Čas dokončenia príkazu]]></CompTime>
+<RespTime><![CDATA[Čas odozvy]]></RespTime>
+<Database><![CDATA[Databáza]]></Database>
+<Statement><![CDATA[Príkaz]]></Statement>
+<StmtStats><![CDATA[Štatistika príkazu]]></StmtStats>
+<pgReads><![CDATA[Čítania stránky]]></pgReads>
+<BufReads><![CDATA[Čítania vyrovnávacej pamäte]]></BufReads>
+<ReadCache><![CDATA[Pamäť cache pre čítania]]></ReadCache>
+<DataBufReads><![CDATA[Čítania vyrovnávacej pamäte údajov]]></DataBufReads>
+<IndexBuffReads><![CDATA[Čítania vyrovnávacej pamäte indexov]]></IndexBuffReads>
+<PgWrites><![CDATA[Zápisy stránky]]></PgWrites>
+<BufWrites><![CDATA[Zápisy do vyrovnávacej pamäte]]></BufWrites>
+<WriteCache><![CDATA[Pamäť cache zápisov]]></WriteCache>
+<NumLockWait><![CDATA[Počet čakajúcich na uzamknutie]]></NumLockWait>
+<LockRequests><![CDATA[Požiadavky na uzamknutie]]></LockRequests>
+<LockWaitTime><![CDATA[Čas čakania na zámok (s)]]></LockWaitTime>
+<LogSpace><![CDATA[Protokolový priestor]]></LogSpace>
+<DiskSorts><![CDATA[Triedenia na disku]]></DiskSorts>
+<MemSorts><![CDATA[Triedenia v pamäti]]></MemSorts>
+<NumTables><![CDATA[Počet tabuliek]]></NumTables>
+<NumIter><![CDATA[Počet iterátorov]]></NumIter>
+<TExecs><![CDATA[Celkový počet spustení]]></TExecs>
+<TExecTime><![CDATA[Celkový čas vykonania (s)]]></TExecTime>
+<AvgExecTime><![CDATA[Priemerný čas vykonania (s)]]></AvgExecTime>
+<MaxExecTime><![CDATA[Maximálny čas vykonania (s)]]></MaxExecTime>
+<TNumIOWait><![CDATA[Počet čakaní I/O]]></TNumIOWait>
+<IOWaitTime><![CDATA[Čas čakania na I/O (s)]]></IOWaitTime>
+<AvgIOWait><![CDATA[Priemerný čas čakania na I/O (s)]]></AvgIOWait>
+<RowsPerSec><![CDATA[Priemerný počet riadkov/s]]></RowsPerSec>
+<EstCost><![CDATA[Odhadované zaťaženie]]></EstCost>
+<EstRows><![CDATA[Odhadovaný počet riadkov]]></EstRows>
+<ActRows><![CDATA[Skutočný počet riadkov]]></ActRows>
+<SQLErr><![CDATA[Chyba SQL]]></SQLErr>
+<ISAMErr><![CDATA[Chyba ISAM]]></ISAMErr>
+<IsoLevel><![CDATA[Úroveň izolácie]]></IsoLevel>
+<SQLMem><![CDATA[Pamäť SQL]]></SQLMem>
+<SQLTbadParam><![CDATA[Nespr8vnz parameter pri pokuse o modifik8ciu sledovania SQL.]]></SQLTbadParam>
+<Modify><![CDATA[Upraviť]]></Modify>
+<High><![CDATA[Vysoké]]></High>
+<Medium><![CDATA[Stredné]]></Medium>
+<Low><![CDATA[Nízke]]></Low>
+<MaxSQLTrace><![CDATA[Maximálne množstvo textu SQL na sledovanie.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[Úroveň sledovania]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[Počet príkazov SQL na sledovanie.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[Zapína a vypína sledovanie sql.]]></TraceOnOff>
+<On><![CDATA[Zapnúť]]></On>
+<Off><![CDATA[Vypnúť]]></Off>
+<SQLTraceOpt><![CDATA[Nastaviť voľby sledovania SQL]]></SQLTraceOpt>
+<Mode><![CDATA[Režim]]></Mode>
+<NumTrace><![CDATA[Počet sledovaní]]></NumTrace>
+<TraceSize><![CDATA[Sledovať veľkosť]]></TraceSize>
+<SQLTraceInfo><![CDATA[Informácie o sledovaní SQL]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[Počet sledovaných príkazov SQL]]></NumSQLTraced>
+<TraceBufSize><![CDATA[Veľkosť vyrovnávacej pamäte sledovania]]></TraceBufSize>
+<OldTracedStmt><![CDATA[Najstarší sledovaný príkaz]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[Trvanie vyrovnávacej pamäte sledovania]]></TraceBufDuration>
+<SQLSeen><![CDATA[Zobrazené príkazy SQL]]></SQLSeen>
+<SQLTraceStart><![CDATA[Sledovanie SQL spustené]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[Počet príkazov SQL za sekundu]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[Použitá pamäť sledovania SQL]]></TraceMemUsed>
+<RowPerSec><![CDATA[Riadky/s]]></RowPerSec>
+<ListSQL><![CDATA[SQL zoznamu]]></ListSQL>
+<TxStatsSummary><![CDATA[Súhrn štatistiky transakcií]]></TxStatsSummary>
+<NumSQL><![CDATA[Počet príkazov]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[Hostiteľské premenné príkazov]]></StmtHVars>
+<Pos><![CDATA[Poloha]]></Pos>
+<Type><![CDATA[Typ]]></Type>
+<Value><![CDATA[Hodnota]]></Value>
+<Error_GD_NotEnabled><![CDATA[GD nie je povolené v rámci PHP.  Strom dotazov nie je možné zobraziť.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Verzia Informix:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[Uložiť sledovanie SQL]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[Uloží aktuálne informácie syssqltrace do tabuľky]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[Súhrn príkazov SQL]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[Súhrn frekvencie príkazu SQL]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[Zobrazenie súvisiacich údajov SQL]]></SQLDrillDown>
+<Count><![CDATA[Počet]]></Count>
+<AvgRunTime><![CDATA[Priemerný čas vykonávania]]></AvgRunTime>
+<LockWaitTime><![CDATA[Čas čakania na zámok]]></LockWaitTime>
+<WaitIOTime><![CDATA[Čas čakania na I/O]]></WaitIOTime>
+<CompleteTime><![CDATA[Čas dokončenia]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[Parameter EXT_DIRECTIVES musí byť nastavený na hodnotu 1 alebo 2, aby bolo možné podporovať direktívy.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[Pre tento dotaz existujú uložené direktívy]]></SavedDir>
+<DirectivesSaved><![CDATA[Uložené direktívy]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[Pre tento dotaz ešte nie sú uložené žiadne direktívy]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[Direktívy sú vymazané. Neexistujú žiadne nové direktívy na aktualizáciu.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[Informácie sledovania tabuliek neexistujú.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[Nenašli sa žiadne indexy]]></NoIndexesFound>
+<NoRowsFound><![CDATA[Nenašli sa žiadne riadky.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL TRACING DISABLED]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[Sledovanie SQL je zakázané]]></SQLTracingOff>
+<NoSQLID><![CDATA[Neplatný argument pre services/sqltrace.php]]></NoSQLID>
+<InvalidArgument><![CDATA[Neplatný argument pre services/sqltrace.php]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[Kliknite, ak chcete získať ďalšie podrobnosti o tomto príkaze SQL]]></ClickForSQLDetails>
+<DrillDown><![CDATA[Zobraziť súvisiace údaje]]></DrillDown>
+<ORDERED_Description><![CDATA[Vynúťte, aby optimalizátor spojil tabuľky v poradí uvedenom v príkaze SELECT.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[Vráťte sa na prvý riadok tak rýchlo, ako je to len možné.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[Dokončite celkový dotaz tak rýchlo, ako je to len možné.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[Nepoužiť prehľadávanie viacerých indexov pri prístupe k zadanej tabuľke.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[Nepoužiť plán vykonania hviezdicového spojenia.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[Použiť plán vykonania hviezdicového spojenia, ak je to možné.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[Vyberte tabuľku, ktorá sa má použiť ako tabuľka udalostí v pláne vykonania hviezdicového spojenia.]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[Vyberte tabuľky, ktoré sa NEMAJÚ použiť ako tabuľka udalostí v pláne vykonania hviezdicového spojenia.]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[Zadajte indexy, ktoré sa NEMAJÚ použiť pri prístupe k tabuľke s použitím cesty samospojenia indexu.]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[Zadajte index, ktorý sa má použiť pri prístupe k tabuľke s použitím cesty samospojenia indexu.]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[Zadajte viaceré indexy, ktoré sa majú použiť pri prístupe k tabuľke.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[Zadajte indexy, ktoré sa NEMAJÚ použiť pri prístupe k tabuľke.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[Zadajte indexy, ktoré sa majú použiť pri prístupe k tabuľke.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[Vyhnite sa používaniu úplného skenovania tabuliek na prístup k tabuľke.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[Použite úplné skenovanie tabuliek na prístup k tabuľke.]]></FULL_Description>
+<USE_NL_Description><![CDATA[Použite zadané tabuľky ako vnútornú tabuľku v spojení vnorenej slučky.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[Vyhnite sa použitiu zadanej tabuľky ako vnútornej tabuľky v spojení vnorenej slučky.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[Používajte dynamické hašované spojenie na prístup k zadanej tabuľky.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[Nepoužívajte dynamické hašované spojenia na prístup k zadanej tabuľke.]]></AVOID_HASH_Description>
+<Index><![CDATA[Index]]></Index>
+<Table><![CDATA[Tabuľka]]></Table>
+<Cost><![CDATA[Náklady]]></Cost>
+<RowsEstimated><![CDATA[Odhadovaný počet riadkov]]></RowsEstimated>
+<RowsProcessed><![CDATA[Spracované riadky]]></RowsProcessed>
+<ElapsedTime><![CDATA[Uplynutý čas]]></ElapsedTime>
+<NotYetImpl><![CDATA[Nástroj OpenAdmin Tool nemôže na tejto stránke zobraziť informácie o databázovom serveri, ktorý používa viacero neanglických miestnych nastavení databázy. Databázový server obsahuje viacero neanglických miestnych nastavení databázy.]]></NotYetImpl>
+<QueryTree><![CDATA[Strom dotazov]]></QueryTree>
+<QueryTreeNA><![CDATA[Strom dotazov nie je pre tento príkaz k dispozícii.]]></QueryTreeNA>
+</lang>
+
+

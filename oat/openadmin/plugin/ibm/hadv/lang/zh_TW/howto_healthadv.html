@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-tw">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-tw" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="概念, 作業, 作業, 作業, 作業, 作業" />
+<title>OAT 的 Informix Health Advisor 外掛程式</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>OAT 的 Informix Health Advisor 外掛程式</h1>
+<br />
+<div id="wq1">
+<h1>內容</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oha.dita" class="toclink">OAT 的 Informix Health Advisor 外掛程式</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oha_002" class="toclink">執行 Health Advisor</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oha_001" class="toclink">新增設定檔</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oha_003" class="toclink">為設定檔設定警示</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oha_004" class="toclink">為設定檔排程作業</a></div>
+<div class="head2"><a id="ToC_6" href="#dqx1ids_oha_005" class="toclink">配置電子郵件通知</a></div>
+<div class="head1"><a id="ToC_7" href="#dqx1ids_cm_not" class="toclink">注意事項</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1trademarks" class="toclink">商標</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_osm_000" class="toclink">著作權</a></div>
+</div>
+<h1 id="dqx1ids_oha.dita"><a href="#ToC_1">OAT 的 Informix Health Advisor 外掛程式</a></h1>
+<div>
+<p>OpenAdmin Tool (OAT) 的 IBM&reg; Informix&reg; Health Advisor 外掛程式會分析 Informix 資料庫伺服器的狀態。Health Advisor 外掛程式會收集資料庫伺服器、資料庫及作業系統的相關資訊，並建立包含結果和建議的報告。</p></div>
+<div>
+<div class="notetitle" id="wq2">必要條件：</div>
+<div class="notebody">Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>Health Advisor 外掛程式包括一系列的警示，用以檢查資料庫伺服器的狀況：配置、Enterprise Replication (ER)、
+作業系統 (OS)、效能及儲存。您可以建立設定檔，指定啟用的警示及這些警示的臨界值。您可以排定作業，使用特定設定檔定期執行 Health Advisor。您可以指定要接收結果電子郵件通知的對象。您也可以隨需應變，在現行設定檔上執行 Health Advisor 並檢視報告。</p>
+<h2 id="dqx1ids_oha_002"><a href="#ToC_2">執行 Health Advisor</a></h2>
+<div>
+<p>在現行設定檔上隨需應變執行 Health Advisor 並檢視報告。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq4">必要條件：</div>
+<div class="notebody">OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>
+<p>Health Advisor 外掛程式會分析 Informix 資料庫伺服器的狀態。Health Advisor 設定檔會指定啟用的警示，以及這些警示的臨界值。</p></p>
+<p>
+<p>若要執行 Health Advisor：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>選用項目：若要變更現行的設定檔，在<strong>設定檔</strong>頁面上按一下清單中的設定檔，然後按一下<strong>載入</strong>。</li>
+<li>按一下<strong>執行 Health Advisor</strong>。報告即顯示在新的瀏覽器視窗中。</li></ol>
+<h2 id="dqx1ids_oha_001"><a href="#ToC_3">新增設定檔</a></h2>
+<div>
+<p>新增設定檔至 OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 外掛程式。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq9">必要條件：</div>
+<div class="notebody">Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>
+<p>Health Advisor 外掛程式會分析 Informix 資料庫伺服器的狀態。您可以建立設定檔，指定啟用的警示及這些警示的臨界值。您可以排定作業，使用特定設定檔定期執行 Health Advisor。</p></p>
+<p>
+<p>若要新增設定檔：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>在<strong>設定檔</strong>頁面上，輸入設定檔的唯一名稱，然後按一下<strong>新增</strong>。</li></ol>
+<h2 id="dqx1ids_oha_003"><a href="#ToC_4">為設定檔設定警示</a></h2>
+<div>
+<p>在 OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 外掛程式中，指定設定檔啟用的警示，以及這些警示的臨界值。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq14">必要條件：</div>
+<div class="notebody">Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>
+<p>Health Advisor 外掛程式會分析 Informix 資料庫伺服器的狀態。Health Advisor 設定檔會指定啟用的警示，以及這些警示的臨界值。</p></p>
+<p>
+<p>若要為設定檔設定警示：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>選用項目：若要變更現行的設定檔，在<strong>設定檔</strong>頁面上按一下清單中的設定檔，然後按一下<strong>載入</strong>。</li>
+<li>按一下<strong>警示</strong>標籤。</li>
+<li>勾選<strong>啟用</strong>勾選框，以將警示包含在設定檔中。</li>
+<li>按一下<strong>修改臨界值</strong>以檢閱或變更警示的臨界值。</li></ol>
+<h2 id="dqx1ids_oha_004"><a href="#ToC_5">為設定檔排程作業</a></h2>
+<div>
+<p>排程作業並使用特定設定檔定期執行 Health Advisor。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq19">必要條件：</div>
+<div class="notebody">OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>
+<p>Health Advisor 外掛程式會分析 Informix 資料庫伺服器的狀態。Health Advisor 設定檔會指定啟用的警示，以及這些警示的臨界值。您可以為現行設定檔排定作業以執行 Health Advisor。</p></p>
+<p>
+<p>若要為現行設定檔排程作業：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>選用項目：若要變更現行的設定檔，在<strong>設定檔</strong>頁面上按一下清單中的設定檔，然後按一下<strong>載入</strong>。</li>
+<li>按一下<strong>排程</strong>標籤。</li>
+<li>使用配置欄位來指定作業的排程。</li></ol>
+<h2 id="dqx1ids_oha_005"><a href="#ToC_6">配置電子郵件通知</a></h2>
+<div>
+<p>配置電子郵件程式，並指定檢查結果的收件人。</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq24">必要條件：</div>
+<div class="notebody">OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 外掛程式需要 IBM Informix 11.50.xC7 或更新版本。</div></div>
+<p>
+<p> Health Advisor 外掛程式會建立一份報告，其中包含檢查及建議的結果。
+電子郵件配置是根據傳送電子郵件的作業系統。電子郵件會透過資料庫伺服器所在的電腦傳送。
+您可以為現行設定檔配置電子郵件程式。</p></p>
+<p>
+<p>若要為現行設定檔配置電子郵件程式：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>選用項目：若要變更現行的設定檔，在<strong>設定檔</strong>頁面上按一下清單中的設定檔，然後按一下<strong>載入</strong>。</li>
+<li>按一下<strong>通知</strong>標籤。如需配置範例，請按一下頁面上的說明按鈕。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_7">注意事項</a></h1>
+<p>此資訊開發供美國境內提供的產品及服務之用。</p>
+<p>在其他國家/地區中，IBM 可能沒有提供本文件中所提及的各項產品、服務或特性。如需您所在區域是否可使用這些產品與服務的相關資訊，請向當地的 IBM 服務代表查詢。本文件在提及 IBM 的產品、程式或服務時，不表示或暗示只能使用 IBM 的產品、
+程式或服務。只要未侵犯 IBM 的智慧財產權，任何功能相當的產品、程式或服務都可以取代 IBM 的產品、程式或服務。
+不過，其他非 IBM 產品、程式、或服務在運作上的評價與驗證，其責任屬於使用者。</p>
+<p>在本文件中可能包含著 IBM 所擁有之專利或專利申請案。本書使用者並不享有前述專利之任何授權。您可以用書面方式來查詢授權，來函請寄到：
+</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation 
+<br />
+North Castle Drive 
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A.
+<br />
+</div>
+<p>若要查詢有關雙位元組 (DBCS) 資訊的軟體使用權事宜，請聯絡您國家的 IBM 智慧財產部門，或者用書面方式寄到：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>下列段落若與該國之法律條款抵觸，即視為不適用：IBM 僅以「現狀」提供本書，而不提供任何明示或默示之保證（包括但不限於可售性或符合特定效用的保證）。若有些地區在某些交易上並不允許排除上述保證，則該排除無效。</p>
+<p>本書中可能會有技術上或排版印刷上的訛誤。因此，IBM 會定期修訂；
+並將修訂後的內容納入新版中。同時，IBM 得隨時改進並（或）變動本書中所提及的產品及（或）程式。</p>
+<p>這份資訊中所提及的任何非 IBM 網站只供參考使用，IBM 不為這些網站提供任何形式的保證。這些網站上的資料，並非本 IBM 產品所用資料的一部分，因使用該網站造成之損害，由  貴客戶自行負責。</p>
+<p>IBM 得以各種適當的方式使用或散佈由  貴客戶提供的任何資訊，而無需對您負責。</p>
+<p>本程式之獲授權者若希望取得相關資料，以便使用下列資訊者，可洽詢 IBM。其下列資訊指的是：
+ (1) 獨立建立的程式與其他程式（包括此程式）之間更換資訊的方式
+ (2) 相互使用已交換之資訊方法。若有任何問題請聯絡：
+</p>
+<div class="lines">IBM Corporation 
+<br />
+J46A/G4 
+<br />
+555 Bailey Avenue 
+<br />
+San Jose, CA 95141-1003 
+<br />
+U.S.A.
+<br />
+</div>
+<p>上述資料之取得有其特殊要件，在某些情況下必須付費方得使用。</p>
+<p>IBM 基於雙方之「IBM 客戶合約」、「IBM 國際程式授權合約」或任何同等合約之條款，提供本書中所述之授權程式與其所有適用的授權資料。</p>
+<p>任何此處涵蓋的執行效能資料都是在一個受控制的環境下決定出來的。因此，若在其他作業環境下，所得的結果可能會大大不同。有些測定已在開發階段系統上做過，不過這並不保證在一般系統上會出現相同結果。再者，有些測定可能已透過推測方式評估過。但實際結果可能並非如此。本書的使用者應依自己的特定環境，查證適用的資料。</p>
+<p>本書所提及之非 IBM 產品資訊，係一由產品的供應商，或其出版的聲明或其他
+公開管道取得。IBM 並未測試過這些產品，也無法確認這些非 IBM 產品的執行效能、
+相容性、或任何對產品的其他主張是否完全無誤。如果您對非 IBM 產品的性能有任何的疑問，請逕向該產品的供應商查詢。</p>
+<p>有關 IBM 未來動向的任何陳述，僅代表 IBM 的目標而已，並可能於未事先聲明的情況下有所變動或撤回。</p>
+<p>所有標示的 IBM 價格都是 IBM 的現行建議零售價格，可能會不定期變更，不另行通知。經銷商價格可能不同。</p>
+<p>此資訊僅適用於規劃用途。此處的資訊在產品上市前可能有所變更。</p>
+<p>本資訊包含每日企業營運中使用的資料及報告的範例。為盡可能詳盡說明，這些範例會包括個人、公司、品牌及產品的名稱。此等名稱皆屬虛構，凡有類似實際企業所用之名稱及地址者，皆屬巧合。</p>
+<p>COPYRIGHT LICENSE：</p>
+<p>本資訊包含原始語言的範例應用程式，用以說明各種作業平台上的程式設計
+技術。您可以基於研發、使用、銷售或散佈符合作業平台（撰寫範例程式的作
+業平台）之應用程式介面的應用程式等目的，以任何形式複製、修改及散佈這
+些範例程式，而不必向 IBM 付費。這些範例程式未經完整測試。因此，對這些程式的可靠性、服務性或功能，IBM 不予保證。範例程序依「現狀」提供，不帶任何保證。對於您使用範例程式所衍生出的危害，IBM 不負任何擔保責任。</p>
+<p>這些範例程式或任何衍生作品的每一個複本或任何部分都必須附上如下的版權聲明：
+</p>
+<p>&copy;（您的公司名稱）（年份）。本程式碼之一部係衍生自「IBM Corp. 樣本程式」。</p>
+<p>&copy; Copyright IBM Corp. 輸入年份或多個年份。All rights reserved. </p>
+<p>如果您瀏覽的是本資訊的軟體檔，則相片及彩色圖例可能不會顯示。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_8">商標</a></h2>
+<p>IBM、IBM 標誌及 ibm.com 是 International Business Machines Corp 在全球許多國家/地區或司法管轄區的商標或註冊商標。其他產品及服務名稱可能為 IBM 或其他公司的商標。在 Web 上，您可以在 "Copyright and trademark information" 中找到目前的 IBM 商標清單，網址為 <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>。</p>
+<p>Adobe、Adobe 標誌及 PostScript 是 Adobe Systems Incorporated 在美國及（或）其他國家/地區的註冊商標或商標。</p>
+<p>Intel、Itanium 及 Pentium 是 Intel Corporation 或其子公司在美國及其他國家/地區的商標或註冊商標。</p>
+<p>Java&trade; 和所有 Java 型商標和標誌都是 Oracle 及/或其附屬子公司的商標或註冊商標。</p>
+<p>Linux 是 Linus Torvalds 在美國及（或）其他國家/地區的註冊商標。</p>
+<p>Microsoft、Windows 及 Windows NT 是 Microsoft Corporation 在美國及 (或) 其他國家/地區的商標。</p>
+<p>UNIX 是 The Open Group 在美國及其他國家/地區的註冊商標。</p>
+<p>其他公司、產品或服務名稱可能是其他公司的商標或服務標記。</p>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_9">著作權</a></h2>
+<p>本文件包含 IBM 的專利資訊。本文件在授權合約下提供，
+並受著作權法保護。本出版品包含的資訊不包括任何產品保固，而且本手冊提供的任何聲明不應該做如是的解釋。</p>
+<p>將資訊傳送給 IBM 時，即表示將非專屬權利授與 IBM，IBM 得以其認為適當之任何方式來使用或散佈資訊，完全不需對您負責。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. 如需相關資訊，請參閱 <samp class="xph">license/notices.txt</samp> 檔案。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

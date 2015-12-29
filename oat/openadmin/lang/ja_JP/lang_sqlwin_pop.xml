@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL Toolbox ポップアップ - パーティション番号情報]]></PartTitle>
+<Partition><![CDATA[パーティション]]></Partition>
+<PartInfoFor><![CDATA[{0} のパーティション情報]]></PartInfoFor>
+<Pgsize><![CDATA[ページ サイズ]]></Pgsize>
+<NumExtAlloc><![CDATA[割当て済みエクステント数]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[割当て済み合計ページ数]]></TPgsAlloc>
+<NDataPgs><![CDATA[データ ページ数]]></NDataPgs>
+<Lockid><![CDATA[Lockid]]></Lockid>
+<HasIPgs><![CDATA[表パーティションにインデックス ページを含む]]></HasIPgs>
+<Rowsize><![CDATA[行サイズ]]></Rowsize>
+<NRows><![CDATA[行数]]></NRows>
+<PagesUsed><![CDATA[使用済みページ]]></PagesUsed>
+<errNoPartnum><![CDATA[エラー: partnum が設定されていません。]]></errNoPartnum>
+<errNotHex><![CDATA[エラー: 値は 16 進形式であり、プレフィックス <0x> で開始される必要があります。]]></errNotHex>
+</lang>

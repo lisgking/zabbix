@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[Informace obslužného programu onstat]]></mainTitle>
+<SystemReports><![CDATA[Sestavy systému]]></SystemReports>
+<Daterange><![CDATA[Vyberte rozsah dat:]]></Daterange>
+<from><![CDATA[Datum zahájení:]]></from>
+<to><![CDATA[Koncové datum:]]></to>
+<Month1><![CDATA[Led]]></Month1>
+<Month2><![CDATA[Úno]]></Month2>
+<Month3><![CDATA[Bře]]></Month3>
+<Month4><![CDATA[Dub]]></Month4>
+<Month5><![CDATA[Kvě]]></Month5>
+<Month6><![CDATA[Čvn]]></Month6>
+<Month7><![CDATA[Čvc]]></Month7>
+<Month8><![CDATA[Srp]]></Month8>
+<Month9><![CDATA[Zář]]></Month9>
+<Month10><![CDATA[Říj]]></Month10>
+<Month11><![CDATA[Lis]]></Month11>
+<Month12><![CDATA[Pro]]></Month12>
+<mCurrent><![CDATA[Aktuální sestavy]]></mCurrent>
+<mHistorical><![CDATA[Sestavy s historickými daty]]></mHistorical>
+<HeatMaps><![CDATA[Grafy]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[Pro zobrazování grafů nástroj OAT vyžaduje produkt Informix 11.70.xC4.]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[Uživatelé s oprávněním jen pro čtení k tomu nemají přístup. Jste přihlášeni jako uživatel s oprávněním jen pro čtení.]]></nopermission>
+<NetworkUsage><![CDATA[Sestava využití sítě]]></NetworkUsage>
+<MemoryPools><![CDATA[Sestava fondů paměti]]></MemoryPools>
+<MemoryUsage><![CDATA[Sestava využití paměti serveru]]></MemoryUsage>
+<SQLCache><![CDATA[Sestava mezipaměti SQL]]></SQLCache>
+<Sessions><![CDATA[Sestava relací]]></Sessions>
+<VPReport><![CDATA[Sestava virtuálních procesorů]]></VPReport>
+<SysBackups><![CDATA[Sestava záloh systému]]></SysBackups>
+<TableProf><![CDATA[Sestava profilů tabulek]]></TableProf>
+<ResourceUsage><![CDATA[Informace o prostředcích počítače]]></ResourceUsage>
+<CompInfo><![CDATA[Informace o operačním systému počítače]]></CompInfo>
+<PPID><![CDATA[PID]]></PPID>
+<Class><![CDATA[Třída]]></Class>
+<ReadyQ><![CDATA[Délka fronty připravených procesů]]></ReadyQ>
+<VP><![CDATA[Celkové využití CPU virtuálními procesory]]></VP>
+<NetUserRep><![CDATA[Sestava využití sítě]]></NetUserRep>
+<NetID><![CDATA[ID sítě]]></NetID>
+<SID><![CDATA[ID relace uživatele]]></SID>
+<ClientName><![CDATA[Název klienta]]></ClientName>
+<ReadCount><![CDATA[Počet přijatých]]></ReadCount>
+<WriteCount><![CDATA[Počet odeslaných]]></WriteCount>
+<ReadBytes><![CDATA[Přijatých celkem]]></ReadBytes>
+<WriteBytes><![CDATA[Odeslaných celkem]]></WriteBytes>
+<ConTime><![CDATA[Čas zahájení relace]]></ConTime>
+<Protocol><![CDATA[Protokol]]></Protocol>
+<SysNetIO><![CDATA[Podle operací I/O]]></SysNetIO>
+<SysNetTXF><![CDATA[Podle přenosu dat]]></SysNetTXF>
+<MemSegUsage><![CDATA[Využití segmentů paměti]]></MemSegUsage>
+<MemOSUsage><![CDATA[Využití paměti počítače]]></MemOSUsage>
+<Usage><![CDATA[Použití]]></Usage>
+<Resident><![CDATA[Rezidentní]]></Resident>
+<Virutal><![CDATA[Virtuální]]></Virutal>
+<Message><![CDATA[Zpráva]]></Message>
+<Other><![CDATA[Další]]></Other>
+<Allocated><![CDATA[Přidělené]]></Allocated>
+<Free><![CDATA[Volné]]></Free>
+<SelectReportType><![CDATA[Vybrat sestavy podle typu]]></SelectReportType>
+<ClearAll><![CDATA[Vymazat vše]]></ClearAll>
+<AllRept><![CDATA[Vybrat vše]]></AllRept>
+<Disk><![CDATA[Disk]]></Disk>
+<Performance><![CDATA[Výkon]]></Performance>
+<InvalidDateRangeError><![CDATA[Datum ukončení je dřív než datum zahájení. Vyberte datum ukončení, které nastane později než datum zahájení.]]></InvalidDateRangeError>
+<Net><![CDATA[Síť]]></Net>
+<Network><![CDATA[Síť]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[Tabulky]]></Tables>
+<Users><![CDATA[Uživatelé]]></Users>
+<CreateReport><![CDATA[Vytvořit sestavu]]></CreateReport>
+<ReportRun><![CDATA[Spuštění sestavy]]></ReportRun>
+<StartDate><![CDATA[Datum zahájení]]></StartDate>
+<EndDate><![CDATA[Datum ukončení]]></EndDate>
+<ServerUptime><![CDATA[Doba provozu serveru]]></ServerUptime>
+<Top><![CDATA[Nahoru]]></Top>
+<Basic><![CDATA[Základní]]></Basic>
+<ServerConfig><![CDATA[Konfigurace serveru]]></ServerConfig>
+<ParamName><![CDATA[Název parametru]]></ParamName>
+<ParamID><![CDATA[ID parametru]]></ParamID>
+<OnconfigParamDetails><![CDATA[Podrobnosti parametrů souboru ONCONFIG]]></OnconfigParamDetails>
+<Value><![CDATA[Hodnota]]></Value>
+<ParamType><![CDATA[Typ parametru]]></ParamType>
+<Description><![CDATA[Popis]]></Description>
+<MinValue><![CDATA[Minimální hodnota]]></MinValue>
+<MaxValue><![CDATA[Maximální hodnota]]></MaxValue>
+<PossibleValues><![CDATA[Možné hodnoty]]></PossibleValues>
+<Recommendation><![CDATA[Doporučení]]></Recommendation>
+<RecommendationMessage><![CDATA[Po klepnutí na název parametru se zobrazí další informace nebo lze změnit dynamický parametr. Parametry s doporučeními jsou zvýrazněné žlutě.]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[Hodnota tohoto parametru souboru ONCONFIG odpovídá doporučení nástroje OpenAdmin Tool.]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[Hodnota tohoto parametru souboru ONCONFIG neodpovídá doporučení nástroje OpenAdmin Tool.]]></Recommendation_NO>
+<Warning><![CDATA[VAROVÁNÍ]]></Warning>
+<Save><![CDATA[Uložit]]></Save>
+<Cancel><![CDATA[Storno]]></Cancel>
+<Back><![CDATA[Zpět]]></Back>
+<Dynamic><![CDATA[Dynamický]]></Dynamic>
+<NotDynamic><![CDATA[Nedynamický]]></NotDynamic>
+<ParamNotDynamic><![CDATA[Parametr není dynamicky konfigurovatelný.]]></ParamNotDynamic>
+<Configurable><![CDATA[Konfigurovatelný]]></Configurable>
+<OnconfigOption><![CDATA[Zobrazit]]></OnconfigOption>
+<ShowAll><![CDATA[Vše]]></ShowAll>
+<ShowBasic><![CDATA[Základní]]></ShowBasic>
+<ShowDynamic><![CDATA[Dynamický]]></ShowDynamic>
+<ShowRecommend><![CDATA[Doporučení]]></ShowRecommend>
+<SaveOption><![CDATA[Uložit volby]]></SaveOption>
+<SaveMem><![CDATA[Uložit do paměti]]></SaveMem>
+<SaveMemFile><![CDATA[Uložit do paměti a souboru]]></SaveMemFile>
+<Server><![CDATA[Server]]></Server>
+<WaitSesRpt><![CDATA[Sestava čekajících relací]]></WaitSesRpt>
+<WaitSes><![CDATA[Čekající relace]]></WaitSes>
+<ResourceOwner><![CDATA[Vlastník prostředku]]></ResourceOwner>
+<ResourceType><![CDATA[Typ prostředku]]></ResourceType>
+<WaitObject><![CDATA[Objekt čekání]]></WaitObject>
+<WaitItem><![CDATA[Položka čekání]]></WaitItem>
+<WaitInfo><![CDATA[Informace o čekání]]></WaitInfo>
+<ResourceUsageReport><![CDATA[Sestava využití prostředků]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[Sestava souhrnu prostředků]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[Za týden končící]]></ForWeekEnding>
+<MaxConns><![CDATA[Maximální počet připojení]]></MaxConns>
+<MaxCPUVPS><![CDATA[Maximální počet virtuálních procesorů CPU]]></MaxCPUVPS>
+<MAXVPS><![CDATA[Maximální počet virtuálních procesorů]]></MAXVPS>
+<DiskSize><![CDATA[Velikost disku]]></DiskSize>
+<DiskUsed><![CDATA[Použitý disk]]></DiskUsed>
+<Memory><![CDATA[Paměť]]></Memory>
+<MemoryUsed><![CDATA[Použitá paměť]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[Informace semaforu]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[Informace o sdílené paměti]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[Maximální počet otevřených souborů pro jeden proces]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[Velikost stránky operačního systému]]></OSPageSize>
+<TotalCPUs><![CDATA[Celkový počet procesorů]]></TotalCPUs>
+<OnlineCPUs><![CDATA[Počet procesorů online]]></OnlineCPUs>
+<CPUs><![CDATA[Procesory]]></CPUs>
+<HostName><![CDATA[Název hostitele]]></HostName>
+<OSName><![CDATA[Název operačního systému]]></OSName>
+<OSRel><![CDATA[Vydání operačního systému]]></OSRel>
+<OSVer><![CDATA[Verze operačního systému]]></OSVer>
+<CPUType><![CDATA[Typ počítače]]></CPUType>
+<TotalMem><![CDATA[Celková paměť počítače]]></TotalMem>
+<TotalFreeMem><![CDATA[Volná paměť počítače]]></TotalFreeMem>
+<BackupReport><![CDATA[Sestava zálohy]]></BackupReport>
+<Number><![CDATA[Počet]]></Number>
+<Name><![CDATA[Název]]></Name>
+<Position><![CDATA[Pozice]]></Position>
+<Level0><![CDATA[Úroveň-0]]></Level0>
+<Level1><![CDATA[Úroveň-1]]></Level1>
+<Level2><![CDATA[Úroveň-2]]></Level2>
+<BackupReport><![CDATA[Sestava zálohy]]></BackupReport>
+<TableProfileInfo><![CDATA[Informace o profilu tabulek]]></TableProfileInfo>
+<TableName><![CDATA[Název tabulky]]></TableName>
+<Locks><![CDATA[Zámky]]></Locks>
+<LockRequests><![CDATA[Požadavky na zamknutí]]></LockRequests>
+<DeadLocks><![CDATA[Zablokování]]></DeadLocks>
+<LockWaits><![CDATA[Čekání na zámek]]></LockWaits>
+<LockTimeouts><![CDATA[Vypršení časových limitů zámků]]></LockTimeouts>
+<LogRecords><![CDATA[Záznamy protokolu]]></LogRecords>
+<LogSpace><![CDATA[Protokolovací prostor]]></LogSpace>
+<MaxLogSpace><![CDATA[Maximální protokolovací prostor]]></MaxLogSpace>
+<ReadCache><![CDATA[Čtení z mezipaměti]]></ReadCache>
+<WriteCache><![CDATA[Mezipaměť pro zápis]]></WriteCache>
+<DiskReads><![CDATA[Čtení z disku]]></DiskReads>
+<DiskWrites><![CDATA[Zápisy na disk]]></DiskWrites>
+<RowsProcessed><![CDATA[Zpracováno řádků]]></RowsProcessed>
+<RowsInserted><![CDATA[Vložené řádky]]></RowsInserted>
+<RowsUpdated><![CDATA[Aktualizované řádky]]></RowsUpdated>
+<RowsDeleted><![CDATA[Odstraněné řádky]]></RowsDeleted>
+<SequentialScans><![CDATA[Sekvenční skenování]]></SequentialScans>
+<UserID><![CDATA[ID uživatele]]></UserID>
+<GroupID><![CDATA[ID skupiny]]></GroupID>
+<SessionID><![CDATA[ID relace]]></SessionID>
+<PID><![CDATA[PID]]></PID>
+<Connected><![CDATA[Připojeno]]></Connected>
+<OpenTables><![CDATA[Otevřené tabulky]]></OpenTables>
+<TotalMemory><![CDATA[Celková paměť]]></TotalMemory>
+<UsedMemory><![CDATA[Použitá paměť]]></UsedMemory>
+<FreeMemory><![CDATA[Volná paměť]]></FreeMemory>
+<Sorts><![CDATA[Řazení]]></Sorts>
+<LargestSorts><![CDATA[Největší řazení]]></LargestSorts>
+<DiskSorts><![CDATA[Řazení disku]]></DiskSorts>
+<MemorySorts><![CDATA[Řazení paměti]]></MemorySorts>
+<BufferWrites><![CDATA[Zápisy do vyrovnávací paměti]]></BufferWrites>
+<BufferReads><![CDATA[Čtení z vyrovnávací paměti]]></BufferReads>
+<FGWrites><![CDATA[Zápisy FG]]></FGWrites>
+<FGReads><![CDATA[Čtení FG]]></FGReads>
+<Commits><![CDATA[Potvrzení transakce]]></Commits>
+<Rollbacks><![CDATA[Odvolání transakce]]></Rollbacks>
+<LongTXs><![CDATA[Dlouhé transakce]]></LongTXs>
+<ConnectTime><![CDATA[Doba připojení]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[Uživatel]]></User>
+<SessionList><![CDATA[Seznam relací]]></SessionList>
+<NoData><![CDATA[Žádná data]]></NoData>
+<SQLCachesList><![CDATA[Seznam mezipamětí SQL]]></SQLCachesList>
+<CacheName><![CDATA[Název mezipaměti]]></CacheName>
+<Ratio><![CDATA[Poměr]]></Ratio>
+<Hits><![CDATA[Přístupy]]></Hits>
+<Misses><![CDATA[Neúspěšné přístupy]]></Misses>
+<Removed><![CDATA[Odebráno]]></Removed>
+<InUse><![CDATA[Používá se]]></InUse>
+<CacheEntries><![CDATA[Položky mezipaměti]]></CacheEntries>
+<SharedMemorySegList><![CDATA[Seznam segmentů sdílené paměti]]></SharedMemorySegList>
+<SegmentType><![CDATA[Typ segmentu]]></SegmentType>
+<Size><![CDATA[Velikost]]></Size>
+<Used><![CDATA[Použito]]></Used>
+<Total><![CDATA[Celkem]]></Total>
+<Address><![CDATA[Adresa]]></Address>
+<Key><![CDATA[Klíč]]></Key>
+<FLAGS><![CDATA[Příznaky]]></FLAGS>
+<Class><![CDATA[Třída]]></Class>
+<ID><![CDATA[ID]]></ID>
+<MemPoolList><![CDATA[Seznam fondů paměti]]></MemPoolList>
+<ON><![CDATA[ON]]></ON>
+<OFF><![CDATA[OFF]]></OFF>
+<OnconfigParamError><![CDATA[Nebyl nalezen parametr souboru ONCONFIG s ID]]></OnconfigParamError>
+<OnconfigFile><![CDATA[Soubor ONCONFIG]]></OnconfigFile>
+<SystemReports><![CDATA[Sestavy systému]]></SystemReports>
+<ComputerInfo><![CDATA[Informace o počítači]]></ComputerInfo>
+<diskspace><![CDATA[Využití prostoru na disku]]></diskspace>
+<diskspace_tooltip><![CDATA[Zpráva ukazující, kolik prostoru na disku se používá a kolik prostoru je volného]]></diskspace_tooltip>
+<diskio><![CDATA[Úrovně I/O disku]]></diskio>
+<diskio_tooltip><![CDATA[Zpráva ukazující, ke kolika I/O disku došlo]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[Online protokol]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[Zobrazit konec příkazu onlne.log]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[Příkazy administrátora serveru]]></showCommands>
+<showCommands_tooltip><![CDATA[Zobrazit provedené příkazy administrátora serveru]]></showCommands_tooltip>
+<showllogs><![CDATA[Logické transakční protokoly]]></showllogs>
+<showllogs_tooltip><![CDATA[Zobrazit stav logických transakčních protokolů (tj. protokoly pro zotavení)]]></showllogs_tooltip>
+<showplogs><![CDATA[Fyzický protokol]]></showplogs>
+<showplogs_tooltip><![CDATA[Zobrazit stav fyzického protokolu]]></showplogs_tooltip>
+<checkpoints><![CDATA[Zobrazit kontrolní body]]></checkpoints>
+<checkpoints_tooltip><![CDATA[Zobrazit informace u nejnovějších kontrolních bodů]]></checkpoints_tooltip>
+<backup><![CDATA[Zálohy systému]]></backup>
+<backup_tooltip><![CDATA[Zobrazit stav záloh systému prostorem dbspace]]></backup_tooltip>
+<mem><![CDATA[Fondy paměti]]></mem>
+<mem_tooltip><![CDATA[Zobrazit všechny uživatele a fondy systémové paměti]]></mem_tooltip>
+<seg><![CDATA[Využití paměti serveru]]></seg>
+<seg_tooltip><![CDATA[Přehled paměti serveru podle segmentu]]></seg_tooltip>
+<net><![CDATA[Přehled sítě]]></net>
+<net_tooltip><![CDATA[Zobrazit přehled síťového provozu]]></net_tooltip>
+<ppf><![CDATA[Akce tabulky]]></ppf>
+<ppf_tooltip><![CDATA[Informace o výkonu podle tabulky]]></ppf_tooltip>
+<config><![CDATA[Konfigurace serveru]]></config>
+<config_tooltip><![CDATA[Zobrazit konfigurační soubor serveru]]></config_tooltip>
+<ses><![CDATA[Seznam relací]]></ses>
+<ses_tooltip><![CDATA[Seznam relací uživatele]]></ses_tooltip>
+<sqlcache><![CDATA[Zobrazit mezipaměti SQL]]></sqlcache>
+<sqlcache_tooltip><![CDATA[Zobrazit statistiky různých mezipamětí SQL]]></sqlcache_tooltip>
+<showByType><![CDATA[Souhrn příkazů SQL]]></showByType>
+<showByType_tooltip><![CDATA[Souhrn provedených příkazů SQL]]></showByType_tooltip>
+<showslowSQL><![CDATA[Nejpomalejší příkazy SQL]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[Zobrazit nejpomalejší příkazy SQL]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[SQL s nejdelším časem I/O]]></showmostIO>
+<showmostIO_tooltip><![CDATA[Zobrazí příkazy SQL, které spotřebovaly nejvíc času I/O]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[SQL s největší aktivitou vyrovnávací paměti]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[Zobrazit příkazy SQL s největší aktivitou fondu vyrovnávacích pamětí]]></showmostBuff_tooltip>
+<glo><![CDATA[Virtuální procesory]]></glo>
+<glo_tooltip><![CDATA[Zobrazit využití různých virtuálních procesorů]]></glo_tooltip>
+<showdbtab><![CDATA[Zobrazit databáze]]></showdbtab>
+<showdbtab_tooltip><![CDATA[Zobrazit různé databáze a jejich základní atributy]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[Informace o operačním systému počítače]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[Zobrazit informace o operačním systému počítače]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[Informace o prostředcích počítače]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[Zobrazit informace o prostředku počítače]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[Sestava čekajících relací]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[Zobrazit relace čekajících na prostředky]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[bajtů]]></bytes>
+<Bytes><![CDATA[Bajty]]></Bytes>
+<blocks><![CDATA[bloky]]></blocks>
+<Blocks><![CDATA[Bloky]]></Blocks>
+<Type><![CDATA[Typ]]></Type>
+<Count><![CDATA[Počet]]></Count>
+<locklist><![CDATA[Seznam zámků]]></locklist>
+<locklistfortab><![CDATA[Seznam zámků pro {0}]]></locklistfortab>
+<locklistforses><![CDATA[Seznam zámků pro relaci {0}]]></locklistforses>
+<locklist_tooltip><![CDATA[Zobrazte aktivní zámky na databázovém serveru.]]></locklist_tooltip>
+<locksWaiters><![CDATA[Zámky s čekajícími podprocesy]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[Zobrazte zámky, které mají čekající podprocesy.]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[Zámky na jednu tabulku]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[Zobrazte informace o zámcích podle tabulky.]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[Zámky na jednu relaci]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[Zobrazte informace o zámcích podle relace.]]></locksPerSes_tooltip>
+<Owner><![CDATA[Vlastník]]></Owner>
+<OwnerSID><![CDATA[ID relace vlastníka]]></OwnerSID>
+<Waiter><![CDATA[Čekající podproces]]></Waiter>
+<WaitSID><![CDATA[ID relace čekajícího podprocesu]]></WaitSID>
+<LkType><![CDATA[Typ zámku]]></LkType>
+<LkObject><![CDATA[Zamčený objekt]]></LkObject>
+<RowID><![CDATA[ID řádku]]></RowID>
+<Partnum><![CDATA[Číslo logické oblasti]]></Partnum>
+<LockEstablished><![CDATA[Čas zahájení zámku]]></LockEstablished>
+<SID><![CDATA[ID relace]]></SID>
+<Database><![CDATA[Databáze]]></Database>
+<IsolationLevel><![CDATA[Úroveň izolace]]></IsolationLevel>
+<ActiveLocks><![CDATA[Aktivní zámky]]></ActiveLocks>
+<lockid><![CDATA[ID zámku]]></lockid>
+<LockDuration><![CDATA[Trvání zámku]]></LockDuration>
+<WaitTime><![CDATA[Doba čekání]]></WaitTime>
+<ReportMaxRows><![CDATA[Zobrazeno nejvýše {0} řádků.]]></ReportMaxRows>
+</lang>

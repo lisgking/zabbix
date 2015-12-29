@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[시계열]]></timeseries>
+<FragmentedTable><![CDATA[분할된 테이블]]></FragmentedTable>
+<PseudoTable><![CDATA[의사 테이블]]></PseudoTable>
+<NotApplicable><![CDATA[적용할 수 없음]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[이 페이지에서 OpenAdmin Tool은 영어가 아닌 둘 이상의 데이터베이스 로케일을 가진 데이터베이스 서버에 대한 정보를 표시할 수 없습니다. 데이터베이스 서버에는 영어가 아닌 둘 이상의 데이터베이스 로케일이 포함됩니다.]]></ErrorMultipleLocales>
+</lang>

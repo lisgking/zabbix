@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Виртуальные процессоры]]></virtualprocessors>
+<vps><![CDATA[Виртуальные процессоры]]></vps>
+<vpclasses><![CDATA[Классы виртуального процессора]]></vpclasses>
+<vpid><![CDATA[ID виртуального процессора]]></vpid>
+<class><![CDATA[Класс]]></class>
+<cnt><![CDATA[Виртуальные процессоры]]></cnt>
+<total><![CDATA[Всего]]></total>
+<usercpu><![CDATA[Пользовательское процессорное время]]></usercpu>
+<syscpu><![CDATA[Системное процессорное время]]></syscpu>
+<totalcpu><![CDATA[Общее процессорное время]]></totalcpu>
+<classdetails><![CDATA[Подробности класса]]></classdetails>
+<nodrop><![CDATA[Не удается удалить последний виртуальный процессор класса]]></nodrop>
+<tomuchdrop><![CDATA[Удаление завершилось ошибкой. Невозможно удалить больше виртуальных процессоров, чем существует в системе.]]></tomuchdrop>
+<success><![CDATA[Действие успешно выполнено.]]></success>
+<VPValNotSet><![CDATA[Выполнить действие невозможно. Следующее значение виртуального процессора задано неверно:]]></VPValNotSet>
+<VPType><![CDATA[Тип виртуального процессора]]></VPType>
+<Count><![CDATA[Счетчик]]></Count>
+<AddDropVP><![CDATA[Добавить или удалить виртуальный процессор]]></AddDropVP>
+<add><![CDATA[Добавить]]></add>
+<drop><![CDATA[Удалить]]></drop>
+<addVP><![CDATA[Добавить виртуальный процессор]]></addVP>
+<dropVP><![CDATA[Удалить виртуальный процессор]]></dropVP>
+<modifyingClass><![CDATA[Идет изменение класса]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Виртуальные процессоры - общие сведения]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[Виртуальные процессоры с классом: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[К сожалению, эта опция недоступна]]></OptionNotAvail>
+<seconds><![CDATA[сек.]]></seconds>
+</lang>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="gentab">
+<NumRowsAffected><![CDATA[Liczba wierszy, na które ma wpływ operacja:]]></NumRowsAffected>
+<CompletedSuccess><![CDATA[Ukończono pomyślnie.]]></CompletedSuccess>
+<FunctionReturnValue><![CDATA[Wartość zwracana przez funkcję:]]></FunctionReturnValue>
+<Return><![CDATA[Wróć:]]></Return>
+<SyntaxError><![CDATA[Wystąpił błąd składniowy.]]></SyntaxError>
+</lang>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[Сеанс больше не существует.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[Недопустимый ID сеанса.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[У пользователя {0} нет разрешения на просмотр текущего оператора для сеанса.]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[У пользователя {0} нет разрешения на просмотр SQL для сеанса.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[Ошибка:]]></ErrorF>
+</lang>

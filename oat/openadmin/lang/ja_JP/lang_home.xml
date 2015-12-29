@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[ホーム]]></home>
+
+<dashboard><![CDATA[ダッシュボード]]></dashboard>
+<dashboard_name_perf><![CDATA[サーバ パフォーマンス]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[このダッシュボードは、表、問合せ、および CPU についての情報を表示します。]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[リソース使用状況]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[このダッシュボードは、メモリ、領域、およびロックについての情報を表示します。]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[データベース サーバ メモリ]]></panel_title_memory>
+<panel_desc_memory><![CDATA[このパネルは、データベース サーバの共有メモリの使用状況を表示します。]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[セッション]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[このパネルは、データベース サーバに接続されたセッションの数を表示します。]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[ネットワーク読込み/書込み]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[このパネルは、ネットワーク読込み/書込みに関する入出力呼出しの数を表示します。]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[ディスク入出力 (I/O)]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[このパネルは、ディスク入出力 (I/O) の待機時間を表示します。このパネルは Informix 12.10 を必要とします。]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[OS メモリ]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[このパネルは、オペレーティング システム (OS) のメモリ使用状況を表示します。このパネルは Informix 11.50 を必要とします。]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[トランザクション]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[このパネルは、データベース サーバに対するトランザクションの数を表示します。]]></panel_desc_transactions>
+<panel_title_space><![CDATA[領域使用量
+]]></panel_title_space>
+<panel_desc_space><![CDATA[このパネルは、各 DB 領域でのフリー スペースと使用済みスペースを表示します。]]></panel_desc_space>
+<panel_title_locks><![CDATA[ロック]]></panel_title_locks>
+<panel_desc_locks><![CDATA[このパネルは、データベース サーバでのロックの数を表示します。]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[上位の表 - 読込み]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[このパネルは、読込み数が上位の表を表示します。]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU 時間
+]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[このパネルは、ユーザおよびシステムの CPU 時間を表示します。]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[上位の表 - 変更]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[このパネルは、挿入/更新/削除回数が上位の表を表示します。]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[SQL 操作の合計]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[このパネルは、処理/挿入/更新/削除された行の総数を表示します。]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[1 秒あたりの SQL 操作]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[このパネルは、1 秒あたりに処理/挿入/更新/削除された行数を表示します。]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[ようこそ]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[OpenAdmin Tool は、このページに英語以外の複数のデータベース ロケールでデータベース サーバの情報を表示することができません。データベース サーバに、英語以外のデータベース ロケールが複数含まれています。]]></NotYetImpl>
+<sessionexplorer><![CDATA[Session Explorer]]></sessionexplorer>
+<ChartTest><![CDATA[グラフ - テスト]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[データ スペース]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[データベース サーバの接続情報を取得できませんでした。]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[接続失敗: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[エラー: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[データベース サーバがブロックされています。OAT は、この他の状況情報を取得できません。]]></ServerBlocked>
+</lang>

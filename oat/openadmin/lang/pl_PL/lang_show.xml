@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Pokaż]]></Show>
+<CommandHistory><![CDATA[Historia komend]]></CommandHistory>
+<OnlineLog><![CDATA[Dziennik online]]></OnlineLog>
+
+<LogDelete><![CDATA[Usuń dziennik]]></LogDelete>
+<LogTruncate><![CDATA[Obetnij dziennik]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Dziennik komunikatów online]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Rotacja dziennika komunikatów online]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[Dziennik aktywności ON-Bar]]></BarActLog>
+<BarActLogRotate><![CDATA[Rotacja dziennika aktywności ON-Bar]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Porcje]]></chunks>
+<commands><![CDATA[Komendy]]></commands>
+<Databases><![CDATA[Bazy danych]]></Databases>
+<Alerts><![CDATA[Alerty]]></Alerts>
+<Message><![CDATA[Komunikat]]></Message>
+<Messages><![CDATA[Komunikaty]]></Messages>
+<OnBarActLog><![CDATA[Dziennik aktywności ON-Bar]]></OnBarActLog>
+<onconfigfile><![CDATA[Plik onconfig]]></onconfigfile>
+<Name><![CDATA[Nazwa]]></Name>
+<CurrentValue><![CDATA[Bieżąca wartość]]></CurrentValue>
+<ChunkInfo><![CDATA[Informacje o porcji]]></ChunkInfo>
+<ChunkNumber><![CDATA[Numer porcji]]></ChunkNumber>
+<ChunkPath><![CDATA[Ścieżka]]></ChunkPath>
+<Size><![CDATA[Wielkość]]></Size>
+<Offset><![CDATA[Przesunięcie]]></Offset>
+<Free><![CDATA[Wolne]]></Free>
+<CmdHistory><![CDATA[Historia komend administracyjnych]]></CmdHistory>
+<User><![CDATA[Użytkownik]]></User>
+<Time><![CDATA[Czas]]></Time>
+<CommandExecuted><![CDATA[Wykonana komenda]]></CommandExecuted>
+<ReturnMsg><![CDATA[Zwrócony komunikat]]></ReturnMsg>
+<CreateDate><![CDATA[Data utworzenia]]></CreateDate>
+<AreYouSureTruncate><![CDATA[To działanie powoduje usunięcie komunikatów z pliku dziennika komunikatów. Plik dziennika komunikatów zostanie zachowany. Czy chcesz kontynuować?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[To działanie powoduje usunięcie pliku dziennika komunikatów. Czy chcesz kontynuować?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[Nie znaleziono identyfikatora zadania online_log_rotate. Rotacja pliku dziennika wymaga produktu Informix w wersji 11.70.xC3. Sprawdź wersję serwera bazy danych.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[Nie znaleziono identyfikatora zadania bar_act_log_rotate. Rotacja pliku dziennika wymaga produktu Informix w wersji 11.70.xC3. Sprawdź wersję serwera bazy danych.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Powodzenie]]></Success>
+<Error><![CDATA[Błąd]]></Error>
+<Warning><![CDATA[Ostrzeżenie]]></Warning>
+</lang>

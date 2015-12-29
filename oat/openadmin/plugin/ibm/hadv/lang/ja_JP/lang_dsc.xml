@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[動的ログ割当て]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[論理ログ ファイル ストレージ]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU 最小使用済み]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[物理ログ ストレージ]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[ATS ファイル]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER ノード ダウン]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[RIS ファイル]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[OS 空きメモリ]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[OS オンライン プロセッサ]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[OS 仮想プロセッサ]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[OS オープン ファイル限度]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[OS セマフォ ID]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[OS セマフォ]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[OS 共有メモリ ID]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[CKPT (LLOG によるトリガ)]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[CKPT (PLOG によるトリガ)]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[クリティカル セクション]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[ディスク フラッシュ]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[最も長い待機]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[表あたりのバッファ読込み]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[表あたりのバッファ書込み]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[表あたりの順次スキャン]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[キャッシュされたバッファ読込み]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[キャッシュされたバッファ書込み]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[ディスク ソート]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[ロール バック]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[フォアグラウンド書込み
+]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[入出力あたりの LLOG ページ]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[ロック待機]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[入出力あたりの PLOG ページ]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[順次走査]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[オフライン チャンク]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[チャンク入出力操作]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[チャンク入出力 - 読込み]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[チャンク入出力 - 書込み]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[DB 領域のフリー スペース]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[行サイズ]]></dsc_Rowsize>
+
+</lang>

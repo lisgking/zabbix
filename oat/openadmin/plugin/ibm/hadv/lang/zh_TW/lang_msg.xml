@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[紅色警示：檢查是否已設定 DBSPACETEMP 配置參數。  黃色警示：檢查 DBSPACETEMP 配置參數的值中是否沒有空格。]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[紅色警示：無。 黃色警示：檢查 DUMPDIR 配置參數是否未設為黃色警示臨界值中列出的目錄。]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[紅色警示：無。 黃色警示：檢查是否已啟用動態日誌配置 (DYNAMIC_LOGS)。]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[紅色警示：檢查邏輯日誌檔是否未儲存在根資料庫空間 (ROOTDBS) 中。 黃色警示：檢查儲存邏輯日誌檔的資料庫空間中是否沒有儲存任何表格。]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[紅色警示：如果動態日誌配置 (DYNAMIC_LOGS) 已關閉，請檢查長時間交易高臨界值 (LTXHWM) 是否低於紅色警示臨界值。  黃色警示：如果動態日誌配置已關閉，請檢查長時間交易高臨界值 (LTXHWM) 是否低於黃色警示臨界值。]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[紅色警示：無。 黃色警示：檢查近期最少使用的最少錯誤 (lru_min_dirty) 值是否高於黃色警示臨界值。]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[紅色警示：無。 黃色警示：檢查 LTAPEDEV 配置參數是否未設為黃色警示臨界值中列出的目錄。]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[紅色警示：無。 黃色警示：檢查是否已設定 VPCLASS 配置參數的 noage 選項。]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[紅色警示：無。 黃色警示：檢查當資料庫空間關閉 (ONDBSPACEDOWN) 時，資料庫伺服器是否未設為繼續。]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[紅色警示：檢查實體日誌是否未儲存在根資料庫空間 (ROOTDBS) 中。 黃色警示：檢查儲存實體日誌的資料庫空間中是否沒有儲存任何表格。]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[紅色警示：無。 黃色警示：檢查是否已設定 SINGLE_CPU_VP 配置參數，以及 MULTIPROCESSOR 配置參數是否已關閉。]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[紅色警示：無。 黃色警示：檢查 TAPEDEV 配置參數是否未設為黃色警示臨界值中列出的目錄。]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[紅色警示：檢查今天建立的 ATS 檔數目是否低於紅色警示臨界值。 黃色警示：檢查今天建立的 ATS 檔數目是否低於黃色警示臨界值。]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[紅色警示：檢查在交易區塊傳輸 (DDRBLOCK) 開始之前剩餘的日誌頁面百分比是否高於紅色警示臨界值中列出的百分比。 黃色警示：檢查在交易區塊傳輸開始之前剩餘的日誌頁面百分比是否高於黃色警示臨界值中列出的百分比。]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[\紅色警示：檢查 ER 叢集中的節點是否作用中且正在抄寫資料。 黃色警示：無。]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[紅色警示：檢查今天建立的 RIS 檔數目是否低於紅色警示臨界值。 黃色警示：檢查今天建立的 RIS 檔數目是否低於黃色警示臨界值。]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[紅色警示：檢查作業系統的可用記憶體百分比是否高於紅色警示臨界值。 黃色警示：檢查作業系統的可用記憶體百分比是否高於黃色警示臨界值。]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[紅色警示：無。 黃色警示：檢查作業系統中的線上處理器數目是否等於作業系統中的處理器數目。]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[紅色警示：無。 黃色警示：檢查 CPU 虛擬處理器數目是否高於作業系統中列為黃色警示臨界值的 CPU 百分比。]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[紅色警示：檢查作業系統每個處理程序的開啟檔案描述子數目是否高於紅色警示臨界值。 黃色警示：檢查作業系統每個處理程序的開啟檔案描述子數目是否高於黃色警示臨界值。]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[紅色警示：檢查作業系統的號誌集數目是否高於紅色警示臨界值。 黃色警示：檢查作業系統的號誌集數目是否高於黃色警示臨界值。]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[紅色警示：檢查作業系統的號誌總數是否高於紅色警示臨界值。 黃色警示：檢查作業系統的號誌總數是否高於黃色警示臨界值。]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[紅色警示：檢查作業系統的共用記憶體 ID 數目 (shmid) 是否高於紅色警示臨界值。 黃色警示：檢查作業系統的共用記憶體 ID 數目 (shmid) 是否高於黃色警示臨界值。]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[紅色警示：檢查作業系統的共用記憶體區段大小上限 (SHMMAX) 是否高於紅色警示臨界值。 黃色警示：檢查作業系統的共用記憶體區段大小上限 (SHMMAX) 是否高於黃色警示臨界值。]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[紅色警示：檢查作業系統的共用記憶體區段總數 (shmNumSegs) 是否高於紅色警示臨界值。 黃色警示：檢查作業系統的共用記憶體區段總數 (shmNumSegs) 是否高於黃色警示臨界值。]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[紅色警示：檢查若缺少邏輯日誌資源 (LLOG)，是否不會導致處理檢查點期間發生區塊傳輸。黃色警示：檢查若缺少邏輯日誌資源 (LLOG)，是否不會觸發檢查點。]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[紅色警示：檢查若缺少實體日誌資源 (PLOG)，是否不會導致處理檢查點期間發生區塊傳輸。  黃色警示：檢查若缺少實體日誌資源 (PLOG)，是否不會觸發檢查點。]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[紅色警示：檢查處理檢查點期間已在主要區段花費的時間是否低於紅色警示臨界值。  黃色警示：檢查處理檢查點期間已在主要區段花費的時間是否低於黃色警示臨界值。]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[紅色警示：檢查處理檢查點期間每秒磁碟清除數目是否高於紅色警示臨界值。  黃色警示：檢查處理檢查點期間每秒磁碟清除數目是否高於黃色警示臨界值。]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[紅色警示：檢查處理檢查點期間交易等待的最長時間是否低於紅色警示臨界值。  黃色警示：檢查處理檢查點期間交易等待的最長時間是否低於黃色警示臨界值。]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[紅色警示：檢查表格的緩衝區讀取數目是否小於列為紅色警示臨界值的所有緩衝區讀取數百分比。 黃色警示：檢查表格的緩衝區讀取數目是否小於列示在黃色警示臨界值的所有緩衝區讀取數百分比。]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[紅色警示：檢查表格的緩衝區寫入數目是否小於列為紅色警示臨界值的所有緩衝區寫入數百分比。 黃色警示：檢查表格的緩衝區寫入數目是否小於列為黃色警示臨界值的所有緩衝區寫入數百分比。]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[紅色警示：檢查表格的循序掃描數目是否小於列示在紅色警示臨界值的所有循序掃描數百分比。 黃色警示：檢查表格的循序掃描數目是否小於列示在黃色警示臨界值的所有循序掃描數百分比。]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[紅色警示：檢查已快取至緩衝區的讀取數百分比 (%cached) 是否高於紅色警示臨界值。 黃色警示：檢查已快取至緩衝區的讀取數百分比 (%cached) 是否高於黃色警示臨界值。]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[紅色警示：檢查已快取至緩衝區的寫入數百分比 (%cached) 是否高於紅色警示臨界值。 黃色警示：檢查已快取至緩衝區的寫入數百分比 (%cached) 是否高於黃色警示臨界值。]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[紅色警示：檢查作為磁碟排序的總排序數百分比是否低於紅色警示臨界值。 黃色警示：檢查作為磁碟排序的總排序百分比是否低於黃色警示臨界值。]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[紅色警示：檢查作為已回復交易的總交易數百分比是否低於紅色警示臨界值。 黃色警示：檢查作為已回復交易的總交易數百分比是否低於黃色警示臨界值。]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[紅色警示：檢查作為前景寫入的總寫入數百分比是否低於紅色警示臨界值。 黃色警示：檢查作為前景寫入的總寫入數百分比是否低於黃色警示臨界值。]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[紅色警示：檢查邏輯日誌頁面與 I/O 的比例是否低於列為紅色警示臨界值的邏輯日誌緩衝區 (LOGBUFF) 百分比。 黃色警示：檢查邏輯日誌頁面與 I/O 的比例是否高於列為黃色警示臨界值的邏輯日誌緩衝區 (LOGBUFF) 百分比。]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[紅色警示：檢查作為鎖定等待的總鎖定要求數百分比是否低於紅色警示臨界值。 黃色警示：檢查作為鎖定等待的總鎖定要求數百分比是否低於黃色警示臨界值。]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[紅色警示：檢查實體日誌頁面與 I/O 的比例是否低於列為紅色警示臨界值的實體日誌緩衝區 (PHYSBUFF) 百分比。  黃色警示：檢查實體日誌頁面與 I/O 的比例是否高於列為黃色警示臨界值的實體日誌緩衝區 (PHYSBUFF) 百分比。]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[紅色警示：檢查作為循序掃描的總 SQL 陳述式數百分比是否低於紅色警示臨界值。 黃色警示：檢查作為循序掃描的總 SQL 陳述式數百分比是否低於黃色警示臨界值。]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[紅色警示：檢查所有片段是否皆在線上。 黃色警示：無。]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[紅色警示：檢查每個片段的 I/O 作業數目是否低於列為紅色警示臨界值的所有 I/O 作業數百分比。 黃色警示：檢查每個片段的 I/O 作業數目是否低於列為黃色警示臨界值的所有 I/O 作業數百分比。]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[紅色警示：檢查每個片段的讀取作業數目是否低於列為紅色警示臨界值的所有讀取作業數百分比。 黃色警示：檢查每個片段的讀取作業數目是否低於列為黃色警示臨界值的所有讀取作業數百分比。]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[紅色警示：檢查每個片段的寫入作業數目是否低於列為紅色警示臨界值的所有寫入作業數百分比。 黃色警示：檢查每個片段的寫入作業數目是否低於列為黃色警示臨界值的所有寫入作業數百分比。]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[紅色警示：檢查每一個資料庫空間中的可用空間是否高於資料庫空間中列為紅色警示臨界值的總空間百分比。  黃色警示：檢查每一個資料庫空間中的可用空間是否高於資料庫空間中列為黃色警示臨界值的總空間百分比。]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[紅色警示：檢查哪些表格的每個頁面可用空間上限百分比低於紅色警示臨界值。 黃色警示：檢查哪些表格的每個頁面可用空間上限百分比低於黃色警示臨界值。]]></msg_Rowsize>
+
+</lang>
+
+
+
+

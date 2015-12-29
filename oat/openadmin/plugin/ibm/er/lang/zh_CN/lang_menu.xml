@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<er><![CDATA[Enterprise Replication]]></er>
+<gridRepl><![CDATA[网格]]></gridRepl>
+<domain><![CDATA[ER 域]]></domain>
+<node><![CDATA[节点详细信息]]></node>
+<replicates><![CDATA[复制]]></replicates>
+<howto_er><![CDATA[复制帮助]]></howto_er>
+<ucm><![CDATA[连接管理器]]></ucm>
+</lang>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL ToolBox-Popup - Partitionsnummerinformationen]]></PartTitle>
+<Partition><![CDATA[Partition]]></Partition>
+<PartInfoFor><![CDATA[Partitionsinformationen für {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Seitengröße]]></Pgsize>
+<NumExtAlloc><![CDATA[Anzahl zugeordneter Extents]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Insgesamt zugeordnete Seiten]]></TPgsAlloc>
+<NDataPgs><![CDATA[Anzahl Datenseiten]]></NDataPgs>
+<Lockid><![CDATA[Sperr-ID]]></Lockid>
+<HasIPgs><![CDATA[Tabellenpartition umfasst Indexseiten?]]></HasIPgs>
+<Rowsize><![CDATA[Zeilengröße]]></Rowsize>
+<NRows><![CDATA[Anzahl Zeilen]]></NRows>
+<PagesUsed><![CDATA[Belegte Seiten]]></PagesUsed>
+<errNoPartnum><![CDATA[Fehler: Partitionsnummer ist nicht festgelegt.]]></errNoPartnum>
+<errNotHex><![CDATA[Fehler: Wert muss im Hexadezimalformat vorliegen -- mit Präfix <0x> beginnen.]]></errNotHex>
+</lang>

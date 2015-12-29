@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Nelze se připojit k databázovému serveru]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[Server je offline]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[Nástroj OAT vyžaduje produkt Informix verze 11.10 nebo vyšší.]]></ServerVersionLessThan11>
+<Standard><![CDATA[Standardní]]></Standard>
+<Primary><![CDATA[Primární]]></Primary>
+<Secondary><![CDATA[Sekundární]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[ano]]></yes>
+<no><![CDATA[ne]]></no>
+<partial><![CDATA[dílčí]]></partial>
+</lang>

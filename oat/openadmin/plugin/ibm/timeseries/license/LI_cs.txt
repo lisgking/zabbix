@@ -1,0 +1,10 @@
+LICENÈNÍ INFORMACE
+
+Níže uvedené Programy jsou licencovány na základì uvedených podmínek, které platí navíc k podmínkám IBM Mezinárodní licenèní smlouva pro programy bez záruky (IBM F/N Z125-5589-05).
+
+Název Programu: IBM OpenAdmin Tool - TimeSeries Plugin V3.11
+Èíslo Programu: Tool
+
+L/N:  L-DDAY-94MTK8
+D/N:  L-DDAY-94MTK8
+P/N:  L-DDAY-94MTK8 

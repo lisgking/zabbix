@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Para excluir nodos de la comprobación, especifique los nombres de nodo separados por comas.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Para excluir tablas de la comprobación, especifique los números de partición separados por comas.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Para excluir tablas de la comprobación, especifique los números de partición separados por comas.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Para excluir tablas de la comprobación, especifique los números de partición separados por comas.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Para excluir partes de la comprobación, especifique los números de las partes separados por comas.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Para excluir partes de la comprobación, especifique los números de las partes separados por comas.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Para excluir partes de la comprobación, especifique los números de las partes separados por comas.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Para excluir espacios de base de datos de la comprobación, especifique los nombres de espacio de base de datos separados por comas.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Para excluir tablas de la comprobación, especifique los números de partición separados por comas.]]></exc_Rowsize>
+</lang>

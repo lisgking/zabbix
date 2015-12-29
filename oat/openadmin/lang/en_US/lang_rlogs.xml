@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Recovery Logs]]></mainTitle>
+<lognum><![CDATA[Number]]></lognum>
+<uniqid><![CDATA[Unique ID]]></uniqid>
+<size><![CDATA[Size]]></size>
+<SwitchComment><![CDATA[Switch to the next logical log]]></SwitchComment>
+<attributes><![CDATA[Attributes]]></attributes>
+<used><![CDATA[Used]]></used>
+<location><![CDATA[Location]]></location>
+<notes><![CDATA[Notes]]></notes>
+<lastfilled><![CDATA[Last Filled]]></lastfilled>
+<ltitle><![CDATA[Logical Log Status]]></ltitle>
+<notFull><![CDATA[Not Full]]></notFull>
+<UsedBackedUp><![CDATA[Used and Backed Up]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Used and Current]]></UsedCurrent>
+<Used><![CDATA[Used]]></Used>
+<Free><![CDATA[Free]]></Free>
+<BackedUp><![CDATA[Backed Up]]></BackedUp>
+<Pages><![CDATA[Pages]]></Pages>
+<pages><![CDATA[pages]]></pages>
+<Usage><![CDATA[Usage]]></Usage>
+<PagesPerSec><![CDATA[Fill Rate]]></PagesPerSec>
+<PLogUsage><![CDATA[Physical Log Usage]]></PLogUsage>
+<PLogInfo><![CDATA[Physical Log Info]]></PLogInfo>
+<PLogSize><![CDATA[Physical Log Size]]></PLogSize>
+<PLogUsed><![CDATA[Amount Used]]></PLogUsed>
+<PlogLocation><![CDATA[Location]]></PlogLocation>
+<PlogStartPos><![CDATA[Start Offset]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Buffer Size]]></PlogBuffSize>
+<LLogUsage><![CDATA[Logical Log Usage]]></LLogUsage>
+<mLogicalLogs><![CDATA[Logical Logs ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Physical Log]]></mPhysicalLog>
+<mAdmin><![CDATA[Admin]]></mAdmin>
+<mCheckpoints><![CDATA[Checkpoints]]></mCheckpoints>
+<NewAdd><![CDATA[Newly Added]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Logical Log drop not confirmed.  Please confirm and retry operation.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Physical Log move not confirmed.  Please confirm and retry operation.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Move Physical Log]]></MPhysicalLog>
+<Confirm><![CDATA[Confirm]]></Confirm>
+<Move><![CDATA[Move]]></Move>
+<mRPolicy><![CDATA[Recovery Policies]]></mRPolicy>
+<syncckpt><![CDATA[Sync Checkpoint]]></syncckpt>
+<normckpt><![CDATA[Normal Checkpoint]]></normckpt>
+<dockpt><![CDATA[Do Checkpoint]]></dockpt>
+<Checkpoint><![CDATA[Checkpoint]]></Checkpoint>
+<NoMove><![CDATA[Do Not Move the Physical Log]]></NoMove>
+<DropLLog><![CDATA[Drop Logical Log]]></DropLLog>
+<NoDropLLog><![CDATA[Do Not Drop Logical Log]]></NoDropLLog>
+<ON><![CDATA[ON]]></ON>
+<OFF><![CDATA[OFF]]></OFF>
+<InvalidValue><![CDATA[Invalid value entered]]></InvalidValue>
+<save><![CDATA[Save]]></save>
+<cancel><![CDATA[Cancel]]></cancel>
+<rto_title><![CDATA[RTO - Recovery Time Objective]]></rto_title>
+<rto><![CDATA[Recovery Time Objective]]></rto>
+<rto_error><![CDATA[Error while modifying RTO Server Resart.]]></rto_error>
+<minute><![CDATA[minute]]></minute>
+<minutes><![CDATA[minutes]]></minutes>
+<autoChkpts><![CDATA[Auto Checkpoints]]></autoChkpts>
+<autoChkpts_error><![CDATA[Error while modifying Auto Checkpoints.]]></autoChkpts_error>
+<autoLRU><![CDATA[Auto LRU Tuning]]></autoLRU>
+<autoLRU_error><![CDATA[Error while modifying Auto LRU Tuning.]]></autoLRU_error>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Logical logs added]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[After current log]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[At end of logs]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[DBSpace Name]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Error while modifying the physical log.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[An error occured while switching to the next logical log.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[seconds]]></seconds>
+<AddLogicalLog><![CDATA[Add Logical Log]]></AddLogicalLog>
+<Add><![CDATA[Add]]></Add>
+<Drop><![CDATA[Drop]]></Drop>
+<LogicalLogNum><![CDATA[Logical Log Number]]></LogicalLogNum>
+<Confirm><![CDATA[Confirm]]></Confirm>
+<SwitchLog><![CDATA[Switch Logical Log]]></SwitchLog>
+<Switch><![CDATA[Switch]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

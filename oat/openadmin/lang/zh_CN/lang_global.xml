@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_global">
+<help><![CDATA[帮助]]></help>
+<language><![CDATA[语言]]></language>
+<switchServer><![CDATA[切换到服务器：]]></switchServer>
+<switchDatabase><![CDATA[切换到数据库：]]></switchDatabase>
+<confirmContinue><![CDATA[是否要继续？]]></confirmContinue>
+<confirmSqltoolboxLogout><![CDATA[从 SQL 工具箱注销。是否要继续？]]></confirmSqltoolboxLogout>
+<ok><![CDATA[确定]]></ok>
+<featureNotSupported><![CDATA[此功能部件需要 Informix V{0}。]]></featureNotSupported>
+<couldNotLoadSwitchLocale><![CDATA[OAT 不能访问数据库服务器上的数据库语言环境信息。]]></couldNotLoadSwitchLocale>
+</lang>

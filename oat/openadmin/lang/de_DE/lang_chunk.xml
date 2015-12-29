@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Chunks]]></Chunks>
+<Chunk><![CDATA[Chunk]]></Chunk>
+<MirrorChunk><![CDATA[Spiegelchunk]]></MirrorChunk>
+<ChunkIO><![CDATA[Chunk-E/A]]></ChunkIO>
+<ChunkTable><![CDATA[Chunk-Tabellenliste]]></ChunkTable>
+<MirrorTable><![CDATA[Spiegelchunk-Tabellenliste]]></MirrorTable>
+<ChunkNum><![CDATA[Chunknummer]]></ChunkNum>
+<SpaceName><![CDATA[Speicherbereichsname]]></SpaceName>
+<PageSize><![CDATA[Seitengröße]]></PageSize>
+<Offset><![CDATA[Relative Position]]></Offset>
+<Size><![CDATA[Größe]]></Size>
+<Free><![CDATA[Frei]]></Free>
+<Used><![CDATA[Belegt %]]></Used>
+<Status><![CDATA[Status]]></Status>
+<Path><![CDATA[Pfad]]></Path>
+<ChunkPath><![CDATA[Chunkpfad]]></ChunkPath>
+<Reads><![CDATA[Lesevorgänge]]></Reads>
+<Writes><![CDATA[Schreibvorgänge]]></Writes>
+<TotalIO><![CDATA[Lese- und Schreibvorgänge gesamt]]></TotalIO>
+<IOTableTitle><![CDATA[E/A nach Chunk]]></IOTableTitle>
+<IOGraphTitle><![CDATA[E/A der wichtigsten 20 Chunks]]></IOGraphTitle>
+<ONLINE><![CDATA[ONLINE]]></ONLINE>
+<OFFLINE><![CDATA[OFFLINE]]></OFFLINE>
+<RECOVERING><![CDATA[ZURÜCKSCHREIBUNG]]></RECOVERING>
+</lang>

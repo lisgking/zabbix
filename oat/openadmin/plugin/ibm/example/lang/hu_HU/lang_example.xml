@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM példa bedolgozó]]></ibm_example_plugin>
+<example><![CDATA[Példa:]]></example>
+<table><![CDATA[Tábla]]></table>
+<piechart><![CDATA[Kördiagram]]></piechart>
+<linechart><![CDATA[Vonaldiagram]]></linechart>
+<barchart><![CDATA[Oszlopdiagram]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[Felhasználók és szekvenciális keresések]]></users_and_seqscans>
+<username><![CDATA[Felhasználói név]]></username>
+<numseqscans><![CDATA[Szekvenciális keresések száma]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[Első 20 csonk I/O műveletei]]></Pie_Chart_Title>
+<Chunk><![CDATA[Csonk]]></Chunk>
+<TotalIO><![CDATA[Összes I/O]]></TotalIO>
+<Chunk_num><![CDATA[{0} csonk]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[Ellenőrzési pontok diagramja]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[Piszkos pufferek száma]]></dirty_buffers>
+<waits><![CDATA[Várakozások száma]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[Területdiagram]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[Piszkos pufferek száma]]></dirty_buffers>
+<waits><![CDATA[Várakozások száma]]></waits>
+
+</lang>

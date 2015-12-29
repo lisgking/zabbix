@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Helyreállítási naplók]]></mainTitle>
+<lognum><![CDATA[Száma]]></lognum>
+<uniqid><![CDATA[Egyedi azonosító]]></uniqid>
+<size><![CDATA[Méret]]></size>
+<SwitchComment><![CDATA[Váltás a következő logikai naplóra]]></SwitchComment>
+<attributes><![CDATA[Attribútumok]]></attributes>
+<used><![CDATA[Használt]]></used>
+<location><![CDATA[Hely]]></location>
+<notes><![CDATA[Megjegyzések]]></notes>
+<lastfilled><![CDATA[Utolsó kitöltött]]></lastfilled>
+<ltitle><![CDATA[Logikai napló állapota]]></ltitle>
+<notFull><![CDATA[Nincs tele]]></notFull>
+<UsedBackedUp><![CDATA[Használt és mentett]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Használt és aktuális]]></UsedCurrent>
+<Used><![CDATA[Használt]]></Used>
+<Free><![CDATA[Szabad]]></Free>
+<BackedUp><![CDATA[Mentett]]></BackedUp>
+<Pages><![CDATA[Lapok]]></Pages>
+<pages><![CDATA[lapok]]></pages>
+<Usage><![CDATA[Használat]]></Usage>
+<PagesPerSec><![CDATA[Kitöltési arány]]></PagesPerSec>
+<PLogUsage><![CDATA[Fizikai napló felhasználás]]></PLogUsage>
+<PLogInfo><![CDATA[Fizikai napló információk]]></PLogInfo>
+<PLogSize><![CDATA[Fizikai napló mérete]]></PLogSize>
+<PLogUsed><![CDATA[Felhasznált mennyiség]]></PLogUsed>
+<PlogLocation><![CDATA[Hely]]></PlogLocation>
+<PlogStartPos><![CDATA[Kezdő eltolás]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Pufferméret]]></PlogBuffSize>
+<LLogUsage><![CDATA[Logikai napló felhasználás]]></LLogUsage>
+<mLogicalLogs><![CDATA[Logikai naplók ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Fizikai naplók]]></mPhysicalLog>
+<mAdmin><![CDATA[Adminisztrátor]]></mAdmin>
+<mCheckpoints><![CDATA[Ellenőrzési pontok]]></mCheckpoints>
+<NewAdd><![CDATA[Újonnan hozzáadott]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[A logikai napló megszüntetése nincs megerősítve.  Kérem erősítse meg, majd próbálkozzon újra a műveletettel.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[A fizikai napló áthelyezése nincs megerősítve.  Kérem erősítse meg, majd próbálkozzon újra a műveletettel.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Fizikai napló áthelyezése]]></MPhysicalLog>
+<Confirm><![CDATA[Megerősítés]]></Confirm>
+<Move><![CDATA[Áthelyezés]]></Move>
+<mRPolicy><![CDATA[Helyreállítási házirendek]]></mRPolicy>
+<syncckpt><![CDATA[Szinkronizálási ellenőrzési pont]]></syncckpt>
+<normckpt><![CDATA[Normál ellenőrzési pont]]></normckpt>
+<dockpt><![CDATA[Do ellenőrzési pont]]></dockpt>
+<Checkpoint><![CDATA[Ellenőrzési pont]]></Checkpoint>
+<NoMove><![CDATA[Ne helyezze át a fizikai naplót]]></NoMove>
+<DropLLog><![CDATA[Logikai napló megszüntetése]]></DropLLog>
+<NoDropLLog><![CDATA[Ne szüntesse meg a logikai naplót]]></NoDropLLog>
+<ON><![CDATA[BEKAPCSOLVA]]></ON>
+<OFF><![CDATA[KIKAPCSOLVA]]></OFF>
+<InvalidValue><![CDATA[Érvénytelen érték kerül beírásra]]></InvalidValue>
+<save><![CDATA[Mentés]]></save>
+<cancel><![CDATA[Mégse]]></cancel>
+<rto_title><![CDATA[RTO - Helyreállítási idő célkitűzés]]></rto_title>
+<rto><![CDATA[Helyreállítási idő célkitűzés]]></rto>
+<rto_error><![CDATA[Hiba a kiszolgáló újraindítása RTO módosításakor.]]></rto_error>
+<minute><![CDATA[perc]]></minute>
+<minutes><![CDATA[perc]]></minutes>
+<autoChkpts><![CDATA[Automatikus ellenőrzési pontok]]></autoChkpts>
+<autoChkpts_error><![CDATA[Hiba az automatikus ellenőrzési pontok módosításakor.]]></autoChkpts_error>
+<autoLRU><![CDATA[Automatikus LRU hangolás]]></autoLRU>
+<autoLRU_error><![CDATA[Hiba az automatikus LRU hangolás módosításakor.]]></autoLRU_error>
+<NoPermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Logikai naplók hozzáadva]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[A jelenlegi napló után]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[A naplók végén]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Adatbázis-terület neve]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Hiba a fizikai napló módosításakor.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Hiba történt a következő logikai naplóra váltás során.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[másodperc]]></seconds>
+<AddLogicalLog><![CDATA[Logikai napló hozzáadása]]></AddLogicalLog>
+<Add><![CDATA[Hozzáadás]]></Add>
+<Drop><![CDATA[Megszüntetés]]></Drop>
+<LogicalLogNum><![CDATA[Logikai napló száma]]></LogicalLogNum>
+<Confirm><![CDATA[Megerősítés]]></Confirm>
+<SwitchLog><![CDATA[Logikai napló váltás]]></SwitchLog>
+<Switch><![CDATA[Váltás]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

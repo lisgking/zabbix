@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Chcete-li vyloučit uzly z kontrol, zadejte názvy uzlu oddělené čárkami.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Chcete-li vyloučit tabulky z kontrol, zadejte čísla logické oblasti oddělená čárkami.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Chcete-li vyloučit tabulky z kontrol, zadejte čísla logické oblasti oddělená čárkami.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Chcete-li vyloučit tabulky z kontrol, zadejte čísla logické oblasti oddělená čárkami.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Chcete-li vyloučit diskové bloky z kontrol, zadejte čísla diskových bloků oddělená čárkami.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Chcete-li vyloučit diskové bloky z kontrol, zadejte čísla diskových bloků oddělená čárkami.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Chcete-li vyloučit diskové bloky z kontrol, zadejte čísla diskových bloků oddělená čárkami.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Chcete-li vyloučit prostory dbspace z kontrol, zadejte názvy prostorů dbspace oddělené čárkami.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Chcete-li vyloučit tabulky z kontrol, zadejte čísla logické oblasti oddělená čárkami.]]></exc_Rowsize>
+</lang>

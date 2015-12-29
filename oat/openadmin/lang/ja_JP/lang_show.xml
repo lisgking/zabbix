@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[表示]]></Show>
+<CommandHistory><![CDATA[コマンド履歴]]></CommandHistory>
+<OnlineLog><![CDATA[オンライン ログ]]></OnlineLog>
+
+<LogDelete><![CDATA[ログの削除]]></LogDelete>
+<LogTruncate><![CDATA[ログの切捨て]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[オンライン メッセージ ログ]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[オンライン メッセージ ログ ローテーション]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[ON-Bar 動作ログ]]></BarActLog>
+<BarActLogRotate><![CDATA[ON-Bar 動作ログ ローテーション]]></BarActLogRotate>
+
+<onconfig><![CDATA[onconfig]]></onconfig>
+<chunks><![CDATA[チャンク]]></chunks>
+<commands><![CDATA[コマンド]]></commands>
+<Databases><![CDATA[データベース]]></Databases>
+<Alerts><![CDATA[アラート]]></Alerts>
+<Message><![CDATA[メッセージ]]></Message>
+<Messages><![CDATA[メッセージ]]></Messages>
+<OnBarActLog><![CDATA[ON-Bar 動作ログ]]></OnBarActLog>
+<onconfigfile><![CDATA[onconfig ファイル]]></onconfigfile>
+<Name><![CDATA[名前]]></Name>
+<CurrentValue><![CDATA[現行値]]></CurrentValue>
+<ChunkInfo><![CDATA[チャンク情報]]></ChunkInfo>
+<ChunkNumber><![CDATA[チャンク番号]]></ChunkNumber>
+<ChunkPath><![CDATA[パス名]]></ChunkPath>
+<Size><![CDATA[サイズ]]></Size>
+<Offset><![CDATA[オフセット]]></Offset>
+<Free><![CDATA[フリー]]></Free>
+<CmdHistory><![CDATA[管理コマンドの履歴]]></CmdHistory>
+<User><![CDATA[ユーザ]]></User>
+<Time><![CDATA[時間]]></Time>
+<CommandExecuted><![CDATA[実行されたコマンド]]></CommandExecuted>
+<ReturnMsg><![CDATA[戻りメッセージ]]></ReturnMsg>
+<CreateDate><![CDATA[作成日]]></CreateDate>
+<AreYouSureTruncate><![CDATA[この操作により、メッセージ ログ ファイルのメッセージが削除されます。メッセージ ログ ファイルは保持されます。続行しますか?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[この操作により、メッセージ ログ ファイルが削除されます。続行しますか?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[タスク online_log_rotate のタスク ID が見つかりませんでした。ログ ファイル ローテーションを行うには Informix 11.70.xC3 が必要です。データベース サーバのバージョンを確認してください。]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[タスク bar_act_log_rotate のタスク ID が見つかりませんでした。ログ ファイル ローテーションを行うには Informix 11.70.xC3 が必要です。データベース サーバのバージョンを確認してください。]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[正常終了
+]]></Success>
+<Error><![CDATA[エラー]]></Error>
+<Warning><![CDATA[警告]]></Warning>
+</lang>

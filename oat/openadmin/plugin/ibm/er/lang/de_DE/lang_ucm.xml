@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[Connection Manager]]></ucm>
+<noCMSupportServerVersion><![CDATA[Connection Manager in OpenAdmin Tool erfordert Informix Version 11.70.xC3.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[Die Connection Manager-Operation ist fehlgeschlagen. Details finden Sie in der Connection Manager-Protokolldatei.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Für Connection Manager {0} wurden keine Verbindungseinheiten gefunden.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[Die Verbindungseinheit {0} wurde nicht gefunden.]]></ConnUnitNotFound>
+</lang>

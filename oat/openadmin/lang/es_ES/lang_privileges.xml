@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Gestionar privilegios]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Privilegios del usuario]]></UserPrivileges>
+<Database><![CDATA[Base de datos]]></Database>
+<DBPrivileges><![CDATA[Privilegios de nivel de base de datos]]></DBPrivileges>
+<TablePrivileges><![CDATA[Privilegios de nivel de tabla]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Privilegios de API de administrador de SQL]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Usuarios internos]]></NonOsUsers>
+<Name><![CDATA[Nombre]]></Name>
+<Type><![CDATA[Tipo]]></Type>
+<DefRole><![CDATA[Rol predeterminado]]></DefRole>
+<Tabname><![CDATA[Nombre de tabla]]></Tabname>
+<User><![CDATA[Usuario]]></User>
+<Grantor><![CDATA[Otorgante]]></Grantor>
+<Privilege><![CDATA[Privilegio]]></Privilege>
+<Privileges><![CDATA[Privilegios]]></Privileges>
+<Username><![CDATA[Nombre de usuario]]></Username>
+<Grant><![CDATA[Otorgar]]></Grant>
+<GrantNewPriv><![CDATA[Otorgar un privilegio nuevo]]></GrantNewPriv>
+<Roles><![CDATA[Roles]]></Roles>
+<CreateNewRole><![CDATA[Crear un rol nuevo]]></CreateNewRole>
+<Create><![CDATA[Crear]]></Create>
+<RoleName><![CDATA[Nombre de rol]]></RoleName>
+<NoUserError><![CDATA[Fallo de otorgamiento: no se ha proporcionado ningún nombre de usuario.]]></NoUserError>
+<NoPrivError><![CDATA[Fallo de otorgamiento: no se ha proporcionado ningún nivel de privilegio.]]></NoPrivError>
+<NoTabError><![CDATA[Fallo de otorgamiento: no se ha proporcionado ningún nombre de tabla.]]></NoTabError>
+<NoRoleError><![CDATA[Fallo de creación: no se ha proporcionado ningún nombre de rol.]]></NoRoleError>
+<NoPermission><![CDATA[Los usuarios de sólo lectura no tienen permiso para hacer esto. Ha iniciado sesión como un usuario de sólo lectura.]]></NoPermission>
+<NoDatabasesError><![CDATA[No hay ninguna base de datos que no sea del sistema disponible en este servidor de bases de datos.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[El otorgamiento para el usuario ha sido satisfactorio]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Se ha revocado el privilegio para el usuario]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Se ha guardado el privilegio para el usuario]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[El otorgamiento sobre la tabla ha sido satisfactorio]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[para el usuario]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Se ha revocado el privilegio para el usuario]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[sobre la tabla]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Se ha guardado el privilegio para el usuario]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[La creación para el rol ha sido satisfactoria]]></CreateSuccessForRole>
+<Connect><![CDATA[Conectar]]></Connect>
+<Resource><![CDATA[Recurso]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONECTAR]]></CONNECT>
+<RESOURCE><![CDATA[RECURSO]]></RESOURCE>
+<Select><![CDATA[Seleccionar]]></Select>
+<Update><![CDATA[Actualizar]]></Update>
+<Insert><![CDATA[Insertar]]></Insert>
+<Delete><![CDATA[Suprimir]]></Delete>
+<Index><![CDATA[Índice]]></Index>
+<Alter><![CDATA[Modificar]]></Alter>
+<References><![CDATA[Referencias]]></References>
+<Under><![CDATA[Bajo]]></Under>
+<Modify><![CDATA[Modificar]]></Modify>
+<Revoke><![CDATA[Revocar]]></Revoke>
+<ErrorF><![CDATA[Error:]]></ErrorF>
+<GrantFailed><![CDATA[El otorgamiento ha fallado]]></GrantFailed>
+<CreateFailed><![CDATA[La creación ha fallado]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[Para usuarios internos, OAT requiere Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[Para privilegios de mandato de API de administración de SQL, OAT requiere Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

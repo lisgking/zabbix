@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[통계 자동 갱신]]></mainTitle>
+<generalTab><![CDATA[일반]]></generalTab>
+<infoTab><![CDATA[정보]]></infoTab>
+<configTab><![CDATA[구성]]></configTab>
+<listTab><![CDATA[명령]]></listTab>
+<ListConfig><![CDATA[통계 자동 갱신 구성]]></ListConfig>
+<ConfParam><![CDATA[매개변수]]></ConfParam>
+<ConfValue><![CDATA[값]]></ConfValue>
+<ConfDesc><![CDATA[설명]]></ConfDesc>
+<ListDBSsummary><![CDATA[데이터베이스별 통계 자동 갱신]]></ListDBSsummary>
+<ListDBSTime><![CDATA[마지막 검사 시간]]></ListDBSTime>
+<ListDBSName><![CDATA[데이터베이스]]></ListDBSName>
+<ListDBSMissed><![CDATA[통계가 누락된 테이블]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[통계 새로 고침이 필요한 작은 테이블]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[통계 새로 고침이 필요한 큰 테이블]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[새로 고친 통계가 있는 테이블]]></ListDBSDone>
+<CleanupOK><![CDATA[정리에 성공했습니다.]]></CleanupOK>
+<CleanupBAD><![CDATA[정리에 실패했습니다.]]></CleanupBAD>
+<fix><![CDATA[문제를 수정하려면 정리를 클릭하십시오.]]></fix>
+<Save><![CDATA[저장]]></Save>
+<Cancel><![CDATA[취소]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[통계 자동 갱신 구성]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[통계 새로 고침 간격:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[테이블 변경 시 통계 새로 고침:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[가이드라인을 사용하여 통계 새로 고침:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[다음 수보다 적은 행을 가진 모든 테이블에 대한 통계 새로 고침:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[다음 PDQ 우선순위를 사용하여 갱신 통계 명령문 실행:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[다음 수의 스레드를 사용하여 통계 자동 갱신 작업 실행:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[스레드]]></AUS_THREADS>
+<Threads><![CDATA[스레드]]></Threads>
+<days><![CDATA[일]]></days>
+<on><![CDATA[켜짐]]></on>
+<off><![CDATA[꺼짐]]></off>
+<Evaluating><![CDATA[평가 중...]]></Evaluating>
+<saveTaskOK><![CDATA[작업 세부사항이 저장되었습니다.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[작업 세부사항이 저장되지 않았습니다.]]></saveTaskBAD>
+<Missed><![CDATA[통계가 누락된 테이블]]></Missed>
+<Needed_Large><![CDATA[통계 새로 고침이 필요한 큰 테이블]]></Needed_Large>
+<Needed_Small><![CDATA[통계 새로 고침이 필요한 작은 테이블]]></Needed_Small>
+<Done><![CDATA[새로 고친 통계가 있는 테이블]]></Done>
+<ChartSummary><![CDATA[통계 자동 갱신 평가]]></ChartSummary>
+<ListCommands><![CDATA[갱신 통계 명령]]></ListCommands>
+<ListPriority><![CDATA[우선 순위]]></ListPriority>
+<ListExec><![CDATA[명령
+]]></ListExec>
+<RefreshEvaluation><![CDATA[지금 평가]]></RefreshEvaluation>
+<Cleanup><![CDATA[정리]]></Cleanup>
+<Cleanup_tooltip><![CDATA[AUS 작업이 오류를 생성할 경우 정리 작업을 실행합니다. 정리 작업은 내부 AUS 작업 테이블을 삭제하고 통계 자동 갱신 평가 작업을 재실행합니다.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[내보내기 명령]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS 경고]]></AUSAlerts>
+<alerts><![CDATA[경고]]></alerts>
+<ListTime><![CDATA[완료 시간]]></ListTime>
+<lastEval><![CDATA[마지막 평가 완료 시간]]></lastEval>
+<runIn><![CDATA[통계 자동 갱신 새로 고침이 {0}에서 실행됩니다.]]></runIn>
+<ausDisabled><![CDATA[통계 자동 갱신이 사용 안함으로 설정됩니다.]]></ausDisabled>
+<configSaveErr><![CDATA[AUS 구성 매개변수 저장 중 오류 발생]]></configSaveErr>
+<noValue><![CDATA[값을 지정하지 않음]]></noValue>
+<notPositiveInt><![CDATA[양수여야 함]]></notPositiveInt>
+<notInt_1_10><![CDATA[값은 1 - 10 사이의 정수여야 함]]></notInt_1_10>
+<notInt_0_100><![CDATA[값은 0 - 100 사이의 정수여야 함]]></notInt_0_100>
+<notInt_-1_100><![CDATA[값은 -1에서 100 사이의 정수여야 함]]></notInt_-1_100>
+<notInt_0_1><![CDATA[값은 0 또는 1이어야 함]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[현재 서버 버전에서는 이 기능을 사용할 수 없습니다. ]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[평가 실행 관련 문제점:]]></ProblemWithEval>
+<ReturnCode><![CDATA[리턴 코드: {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[평가가 완료되었습니다.]]></ReEvalComplete>
+<RequestEval><![CDATA[AUS 구성에 따라 새로 고쳐야 할 통계를 결정하려면 지금 통계 자동 갱신 평가 작업을 실행하십시오.]]></RequestEval>
+<PendingCmds><![CDATA[명령 보류]]></PendingCmds>
+<CompletedCmds><![CDATA[명령 완료]]></CompletedCmds>
+<save><![CDATA[저장]]></save>
+<cancel><![CDATA[취소]]></cancel>
+<add><![CDATA[추가]]></add>
+<NoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></NoPermission>
+<Time><![CDATA[시간]]></Time>
+<Type><![CDATA[유형]]></Type>
+<Color><![CDATA[색상]]></Color>
+<Message><![CDATA[메시지]]></Message>
+<runfrequency><![CDATA[실행 빈도]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[통계 자동 갱신 스케줄]]></AutoUpdStatsSched>
+<Name><![CDATA[이름]]></Name>
+<WeekDay1Letter><![CDATA[월]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[화]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[수]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[목]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[금]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[토]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[일]]></WeekDay7Letter>
+<starttime><![CDATA[시작 시간]]></starttime>
+<stopttime><![CDATA[중지 시간]]></stopttime>
+<Priority><![CDATA[우선 순위]]></Priority>
+<Rows><![CDATA[행]]></Rows>
+<Parameter><![CDATA[매개변수]]></Parameter>
+<Value><![CDATA[값]]></Value>
+<Actions><![CDATA[동작]]></Actions>
+<Tables><![CDATA[테이블]]></Tables>
+<hours><![CDATA[시간]]></hours>
+<minutes><![CDATA[분]]></minutes>
+<saveConfigSuccessful><![CDATA[통계 자동 갱신 구성이 저장되었습니다.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[이 수의 스레드를 사용하여 갱신 통계 작업이 실행됩니다. 이 옵션은 OAT에서만 사용 가능합니다.]]></specifiedNumbOfThread>
+</lang>

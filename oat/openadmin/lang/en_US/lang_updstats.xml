@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Auto Update Statistics]]></mainTitle>
+<generalTab><![CDATA[General]]></generalTab>
+<infoTab><![CDATA[Information]]></infoTab>
+<configTab><![CDATA[Configuration]]></configTab>
+<listTab><![CDATA[Commands]]></listTab>
+<ListConfig><![CDATA[Auto Update Statistics Configuration]]></ListConfig>
+<ConfParam><![CDATA[Parameter]]></ConfParam>
+<ConfValue><![CDATA[Value]]></ConfValue>
+<ConfDesc><![CDATA[Description]]></ConfDesc>
+<ListDBSsummary><![CDATA[Auto Update Statistics by Database]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Last Time Checked]]></ListDBSTime>
+<ListDBSName><![CDATA[Database]]></ListDBSName>
+<ListDBSMissed><![CDATA[Tables Missing Statistics]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Small Tables Needing Statistics Refreshed]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Large Tables Needing Statistics Refreshed]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Tables with Refreshed Statistics]]></ListDBSDone>
+<CleanupOK><![CDATA[The cleanup was successful.]]></CleanupOK>
+<CleanupBAD><![CDATA[The cleanup failed.]]></CleanupBAD>
+<fix><![CDATA[Click Cleanup to fix the problem.]]></fix>
+<Save><![CDATA[Save]]></Save>
+<Cancel><![CDATA[Cancel]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Auto Update Statistics Configuration]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Refresh the statistics every:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Refresh the statistics when a table changes:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Use the guidelines to refresh the statistics:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Refresh the statistics for all tables with less than this number of rows:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[Run the update statistics statements with PDQ a priority of:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Run the Auto Update Statistics tasks with this number of threads:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[threads]]></AUS_THREADS>
+<Threads><![CDATA[Threads]]></Threads>
+<days><![CDATA[days]]></days>
+<on><![CDATA[on]]></on>
+<off><![CDATA[off]]></off>
+<Evaluating><![CDATA[Evaluating ...]]></Evaluating>
+<saveTaskOK><![CDATA[The task details were saved successfully.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[The task details were not saved.]]></saveTaskBAD>
+<Missed><![CDATA[Tables missing statistics]]></Missed>
+<Needed_Large><![CDATA[Large tables needing statistics refreshed]]></Needed_Large>
+<Needed_Small><![CDATA[Small tables needing statistics refreshed]]></Needed_Small>
+<Done><![CDATA[Tables with refreshed statistics]]></Done>
+<ChartSummary><![CDATA[Auto Update Statistics Evaluation]]></ChartSummary>
+<ListCommands><![CDATA[Update Statistics Commands]]></ListCommands>
+<ListPriority><![CDATA[Priority]]></ListPriority>
+<ListExec><![CDATA[Command]]></ListExec>
+<RefreshEvaluation><![CDATA[Evaluate Now]]></RefreshEvaluation>
+<Cleanup><![CDATA[Cleanup]]></Cleanup>
+<Cleanup_tooltip><![CDATA[Run the cleanup task if the AUS tasks are producing errors. The cleanup task deletes the internal AUS work tables and reruns the Auto Update Statistics Evaluation task.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Export Commands]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS Alerts]]></AUSAlerts>
+<alerts><![CDATA[Alerts]]></alerts>
+<ListTime><![CDATA[Time Completed]]></ListTime>
+<lastEval><![CDATA[Last evaluation completed at ]]></lastEval>
+<runIn><![CDATA[Auto Update Statistics Refresh will run in {0}.]]></runIn>
+<ausDisabled><![CDATA[Auto Update Statistics is disabled]]></ausDisabled>
+<configSaveErr><![CDATA[Error saving AUS config parameters]]></configSaveErr>
+<noValue><![CDATA[No value specified]]></noValue>
+<notPositiveInt><![CDATA[Must be a positive integer]]></notPositiveInt>
+<notInt_1_10><![CDATA[Value must be an integer in the range of 1 to 10]]></notInt_1_10>
+<notInt_0_100><![CDATA[Value must be an integer in the range of 0 to 100]]></notInt_0_100>
+<notInt_-1_100><![CDATA[Value must be an integer in the range of -1 to 100]]></notInt_-1_100>
+<notInt_0_1><![CDATA[Value must be either 0 or 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[This feature is not available for your current server version.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Problem running evaluation:]]></ProblemWithEval>
+<ReturnCode><![CDATA[Return code is {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[Evaluation completed.]]></ReEvalComplete>
+<RequestEval><![CDATA[Run the Auto Update Statistics Evaluation task now to determine which statistics need to be refreshed based on the AUS configuration. ]]></RequestEval>
+<PendingCmds><![CDATA[Pending commands]]></PendingCmds>
+<CompletedCmds><![CDATA[Completed commands]]></CompletedCmds>
+<save><![CDATA[[Save]]></save>
+<cancel><![CDATA[Cancel]]></cancel>
+<add><![CDATA[Add]]></add>
+<NoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></NoPermission>
+<Time><![CDATA[Time]]></Time>
+<Type><![CDATA[Type]]></Type>
+<Color><![CDATA[Color]]></Color>
+<Message><![CDATA[Message]]></Message>
+<runfrequency><![CDATA[Run Frequency]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Auto Update Statistics Schedule]]></AutoUpdStatsSched>
+<Name><![CDATA[Name]]></Name>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[Start Time]]></starttime>
+<stopttime><![CDATA[Stop Time]]></stopttime>
+<Priority><![CDATA[priority]]></Priority>
+<Rows><![CDATA[rows]]></Rows>
+<Parameter><![CDATA[Parameter]]></Parameter>
+<Value><![CDATA[Value]]></Value>
+<Actions><![CDATA[Actions]]></Actions>
+<Tables><![CDATA[Tables]]></Tables>
+<hours><![CDATA[hours]]></hours>
+<minutes><![CDATA[minutes]]></minutes>
+<saveConfigSuccessful><![CDATA[The Auto Update Statistics configuration was saved successfully.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[The update statistic task runs with this number of threads. This option is available in OAT only.]]></specifiedNumbOfThread>
+</lang>

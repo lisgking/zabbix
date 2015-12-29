@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[System Validation]]></mainTitle>
+<checkDataFormat><![CDATA[Check Data Format]]></checkDataFormat>
+<databaseName><![CDATA[Database Name]]></databaseName>
+<tableName><![CDATA[Table Name]]></tableName>
+<chkTable><![CDATA[Check Table]]></chkTable>
+<chkExtFormat><![CDATA[Check Extent Format]]></chkExtFormat>
+<extName><![CDATA[Dbspace Name]]></extName>
+<chkExtent><![CDATA[Check Extent]]></chkExtent>
+<valResTo><![CDATA[Validation Results to ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - System Validation]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck validation complete.]]></oncheckComplete>
+<ValidationResults><![CDATA[Validation Results ...]]></ValidationResults>
+<SysValNotValid><![CDATA[System Validation is not valid on secondaries.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Read-only users do not have permission to do this. You are logged in as a read-only user.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Attention: Running a check can consume a large amount of processing resources, depending on the number of pages involved. The action reads all the pages for the specified tables, excluding blobpages and sbpages, and checks each page for consistency. Do you want to continue?]]></confirmCheckData>
+<NotYetImpl><![CDATA[On this page, the OpenAdmin Tool cannot display information for a database server with more than one non-English database locale. The database server contains more than one non-English database locale.]]></NotYetImpl>
+</lang>

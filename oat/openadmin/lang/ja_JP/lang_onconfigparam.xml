@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[保存失敗:]]></SaveFailed>
+<ValueReqd><![CDATA[値が必要]]></ValueReqd>
+<MustBe><![CDATA[0 (無効) または 60 から 1800 までの間である必要があります。]]></MustBe>
+<MustBeRange><![CDATA[次の範囲内である必要があります]]></MustBeRange>
+<MustBeInSet><![CDATA[次のセットに含まれる必要があります]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[次の値以下である必要があります]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[次の値以上である必要があります]]></MustBeGreaterOrEqual>
+</lang>

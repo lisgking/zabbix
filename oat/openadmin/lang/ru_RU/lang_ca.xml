@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[Кластеры высокой доступности]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[Первичный недоступен]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[Кластер недоступен]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[Кластер находится в процессе распознавания]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[Кэшированный первичный не кластеризован]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[Нет первичного в кластере]]></NoPrimaryInCluster>
+</lang>

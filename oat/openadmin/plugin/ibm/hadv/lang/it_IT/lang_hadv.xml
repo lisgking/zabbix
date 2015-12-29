@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Add]]></add>
+<alarms><![CDATA[Allarmi]]></alarms>
+<alarm_check><![CDATA[Controllo allarme]]></alarm_check>
+<alarm_setup><![CDATA[Configurazione allarme]]></alarm_setup>
+<alarm_mod><![CDATA[Modifica allarmi]]></alarm_mod>
+<alarm_msg><![CDATA[Specificare le condizioni quando viene impostato un allarme.]]></alarm_msg>
+<alarm_name><![CDATA[Nome allarme:]]></alarm_name>
+<Always><![CDATA[Sempre]]></Always>
+<AnyAlarm><![CDATA[Qualsiasi allarme]]></AnyAlarm>
+<Anyalarm><![CDATA[Qualsiasi allarme]]></Anyalarm>
+<all><![CDATA[Tutto]]></all>
+<cancel><![CDATA[Annulla]]></cancel>
+<Config><![CDATA[Configurazione]]></Config>
+<Configuration><![CDATA[Configurazione]]></Configuration>
+<Currentprofile><![CDATA[Profilo corrente]]></Currentprofile>
+<CurrentProfile><![CDATA[Profilo corrente]]></CurrentProfile>
+<del_def_na><![CDATA[Impossibile eliminare il profilo predefinito.]]></del_def_na>
+<deleted_prof><![CDATA[Il profilo è stato eliminato.]]></deleted_prof>
+<delete><![CDATA[Elimina]]></delete>
+<desc><![CDATA[Nome allarme]]></desc>
+<emailprog><![CDATA[Configurazione programma di e-mail]]></emailprog>
+<empty_prof_add><![CDATA[Il nome profilo non può essere vuoto.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Scegliere un profilo dall'elenco.]]></empty_prof_load>
+<enable><![CDATA[Abilita]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Eccezioni]]></exceptions>
+<exc_intro><![CDATA[Questo allarme consente eccezioni.]]></exc_intro>
+<exc_example><![CDATA[Esempio: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Da]]></from>
+<Category><![CDATA[Categoria]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Esegui Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Informazioni]]></info>
+<ldesc><![CDATA[Descrizione]]></ldesc>
+<description><![CDATA[Descrizione:]]></description>
+<load><![CDATA[Carica]]></load>
+<modify><![CDATA[Modifica]]></modify>
+<modifysched><![CDATA[Modifica pianificazione]]></modifysched>
+<modify_threshold><![CDATA[Modifica soglie]]></modify_threshold>
+<name><![CDATA[Nome]]></name>
+<noauth><![CDATA[Non si è autorizzati ad accedere a questa pagina.]]></noauth>
+<noalarms><![CDATA[Non si è verificato alcun allarme.]]></noalarms>
+<notification><![CDATA[Notifica]]></notification>
+<OS><![CDATA[OS]]></OS>
+<Perf><![CDATA[Prestazioni]]></Perf>
+<profile><![CDATA[Profilo]]></profile>
+<profmanagement><![CDATA[Gestione profili]]></profmanagement>
+<profmsg><![CDATA[Aggiungere, caricare o eliminare i profili.]]></profmsg>
+<RedAlarm><![CDATA[Allarme rosso]]></RedAlarm>
+<Redalarm_><![CDATA[Allarme rosso:]]></Redalarm_>
+<Redalarm><![CDATA[Allarme rosso]]></Redalarm>
+<Redalarmthreshold><![CDATA[Soglia allarme rosso]]></Redalarmthreshold>
+<send><![CDATA[Invia notifica e-mail]]></send>
+<save><![CDATA[Salva]]></save>
+<save_failed><![CDATA[Salvataggio non riuscito: ]]></save_failed>
+<saved_alarms><![CDATA[Le modifiche alle opzioni di allarme sono state salvate.]]></saved_alarms>
+<saved_schedule><![CDATA[Le modifiche alle opzioni di notifica sono state salvate.]]></saved_schedule>
+<saved_email><![CDATA[Le modifiche al programma di e-mail sono state salvate.]]></saved_email>
+<schedandnot><![CDATA[Pianificazione e Notifica]]></schedandnot>
+<schedmsg><![CDATA[È possibile pianificare l'esecuzione dei profili a intervalli specificati. I risultati vengono inviati tramite e-mail.]]></schedmsg>
+<schedule><![CDATA[Pianifica]]></schedule>
+<show><![CDATA[Mostra]]></show>
+<Storage><![CDATA[Memorizza]]></Storage>
+<to><![CDATA[A]]></to>
+<thresholds><![CDATA[Soglie]]></thresholds>
+<threshold_msg><![CDATA[Consultare la descrizione dell'allarme per una spiegazione di come vengono utilizzati i valori di soglia.]]></threshold_msg>
+<when><![CDATA[Quando]]></when>
+<Yellowalarmthreshold><![CDATA[Soglia allarme giallo]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Allarme giallo:]]></Yelalarm_>
+<YelAlarm><![CDATA[Allarme giallo]]></YelAlarm>
+</lang>

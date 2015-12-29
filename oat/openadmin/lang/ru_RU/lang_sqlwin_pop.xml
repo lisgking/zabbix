@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[Всплывающее меню Набор инструментов SQL - Сведения Partnum]]></PartTitle>
+<Partition><![CDATA[Раздел]]></Partition>
+<PartInfoFor><![CDATA[Информация раздела для {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Размер страницы]]></Pgsize>
+<NumExtAlloc><![CDATA[Количество выделенных экстентов]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Всего выделено страниц]]></TPgsAlloc>
+<NDataPgs><![CDATA[Число страниц данных]]></NDataPgs>
+<Lockid><![CDATA[ID блокировки]]></Lockid>
+<HasIPgs><![CDATA[В раздел таблицы включены индексные страницы?]]></HasIPgs>
+<Rowsize><![CDATA[Размер строки]]></Rowsize>
+<NRows><![CDATA[Число строк]]></NRows>
+<PagesUsed><![CDATA[Использовано страниц]]></PagesUsed>
+<errNoPartnum><![CDATA[Ошибка: значение partnum не задано.]]></errNoPartnum>
+<errNotHex><![CDATA[Ошибка: значение должно быть в шестнадцатеричном формате, т. е. начинаться с префикса <0x>.]]></errNotHex>
+</lang>

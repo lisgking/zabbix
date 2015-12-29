@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Csonkok]]></Chunks>
+<NoSQLToExecute><![CDATA[Nincs végrehajtható SQL]]></NoSQLToExecute>
+<QueryF><![CDATA[Lekérdezés:]]></QueryF>
+<ErrorF><![CDATA[Hiba:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Az adatbázis lekérdezés meghiúsult:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[A kapcsolat meghiúsult.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[A(z) {0} felhasználó nem rendelkezik csatlakozási engedéllyel a(z) {1} adatbázishoz.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[túl sok hiba fordult elő]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - Nem található kijelzőpult-azonosító]]></ErrorGetPanels>
+</lang>

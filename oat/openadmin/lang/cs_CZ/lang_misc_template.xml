@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+<QueryF><![CDATA[Dotaz:]]></QueryF>
+<PageSize><![CDATA[Velikost stránky]]></PageSize>
+<Descending><![CDATA[Sestupně]]></Descending>
+<Ascending><![CDATA[Vzestupně]]></Ascending>
+<ErrorOccurred><![CDATA[Došlo k chybě]]></ErrorOccurred>
+<Reload><![CDATA[Znovu načíst]]></Reload>
+<ClickToReload><![CDATA[Klepnutím znovu načtete servery]]></ClickToReload>
+<LoadingMsg><![CDATA[..NAČÍTÁNÍ..]]></LoadingMsg>
+<PrevPage><![CDATA[Předchozí stránka]]></PrevPage>
+<NextPage><![CDATA[Další stránka]]></NextPage>
+<Page><![CDATA[Stránka]]></Page>
+<Row><![CDATA[Řádek]]></Row>
+<Login><![CDATA[Přihlásit se]]></Login>
+<OrderAsc><![CDATA[Seřadit vzestupně podle {0}]]></OrderAsc>
+<OrderDesc><![CDATA[Seřadit sestupně podle {0}]]></OrderDesc>
+<Help><![CDATA[Nápověda]]></Help>
+<Admin><![CDATA[Administrátor]]></Admin>
+<Back><![CDATA[Zpět]]></Back>
+<Welcome><![CDATA[Úvodní stránka]]></Welcome>
+<CollapseMenu><![CDATA[Sbalit nabídku]]></CollapseMenu>
+<Info><![CDATA[Informace]]></Info>
+<Yes><![CDATA[Ano]]></Yes>
+<No><![CDATA[Ne]]></No>
+<Cancel><![CDATA[Storno]]></Cancel>
+<Delete><![CDATA[Odstranit]]></Delete>
+<Success><![CDATA[Úspěch]]></Success>
+<ErrorL><![CDATA[Chyba]]></ErrorL>
+<ERROR><![CDATA[CHYBA]]></ERROR>
+<Ignore><![CDATA[Ignorovat]]></Ignore>
+<Under><![CDATA[Pod]]></Under>
+<Save><![CDATA[Uložit]]></Save>
+<Cancel><![CDATA[Storno]]></Cancel>
+<TemplateLoadError><![CDATA[Nelze načíst hlavní šablonu]]></TemplateLoadError>
+<help><![CDATA[Nápověda]]></help>
+<ServerType><![CDATA[Typ serveru]]></ServerType>
+<Version><![CDATA[Verze]]></Version>
+<ServerTime><![CDATA[Čas serveru]]></ServerTime>
+<BootTime><![CDATA[Čas zavedení]]></BootTime>
+<UpTime><![CDATA[Doba provozu]]></UpTime>
+<Sessions><![CDATA[Relace]]></Sessions>
+<MaxUsers><![CDATA[Maximální počet relací]]></MaxUsers>
+<TotalMem><![CDATA[Celková paměť]]></TotalMem>
+<FreeMem><![CDATA[Volná paměť]]></FreeMem>
+<NumCPU><![CDATA[Počet CPU]]></NumCPU>
+<OperatingSys><![CDATA[Operační systém]]></OperatingSys>
+<Standard><![CDATA[Standardní]]></Standard>
+<Primary><![CDATA[Primární]]></Primary>
+<Secondary><![CDATA[Sekundární]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[Server]]></Server>
+<Database><![CDATA[Databáze]]></Database>
+<ConnectionFailed><![CDATA[Připojení se nezdařilo: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[CHYBA:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[Neexistuje žádný příkaz SQL, který by bylo možné provést]]></NoSQLToExecute>
+<GroupServers><![CDATA[Skupinové servery]]></GroupServers>
+<MapNotAvail><![CDATA[Mapa není k dispozici kvůli neplatnému klíči.]]></MapNotAvail>
+<ServerInfo><![CDATA[Informace o serveru]]></ServerInfo>
+<Info><![CDATA[Informace]]></Info>
+<ALL><![CDATA[VŠE]]></ALL>
+<Enabled><![CDATA[Povoleno]]></Enabled>
+<Disabled><![CDATA[Zakázáno]]></Disabled>
+<MB_Locale><![CDATA[Jazyk databáze]]></MB_Locale>
+<MB_Encoding><![CDATA[Národní prostředí]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[Výběrem jazyka databáze zobrazíte národní prostředí daného jazyka. Potom vyberte národní prostředí databáze.]]></MB_Locale_Encoding_tooltip>
+</lang>

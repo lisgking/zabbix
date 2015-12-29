@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[동적 로그 할당]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[논리 로그 파일 스토리지]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU 최소 더티]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[물리 로그 스토리지]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[ATS 파일]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDR블록]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER 노드 다운]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[RIS 파일]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[OS 사용 가능한 메모리]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[OS 온라인 프로세서]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[OS 가상 프로세서]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[OS 열린 파일 한계]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[OS 세마포어 ID]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[OS 세마포어]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[OS 공유 메모리 ID]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[CKPT LLOG에서 트리거됨]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[CKPT PLOG에서 트리거됨]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[크리티컬 섹션]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[디스크 플러시]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[가장 긴 대기]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[테이블 당 버퍼 읽기]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[테이블 당 버퍼 쓰기]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[테이블 당 순차 스캔]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[캐시된 버퍼 읽기]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[캐시된 버퍼 쓰기]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[디스크 정렬]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[롤백]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[포그라운드 쓰기]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[LLOG 입출력 당 페이지 수]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[로크 대기 수]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[PLOG 입출력당 페이지 수]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[순차 스캔]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[오프라인 청크]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[청크 입출력 조작]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[청크 입출력 읽기]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[청크 입출력 쓰기]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[DBSPACE 여유 공간]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[행 크기]]></dsc_Rowsize>
+
+</lang>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[必要な PHP の最小バージョンは 5.2.4 です。見つかった PHP バージョン:]]></MinPHPVersion>
+<GenTime><![CDATA[生成時刻]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[OAT には Informix バージョン 11.10 以降が必要です。]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[{0} プラグインは Informix バージョン {1} を必要とします。]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[モジュール {0} には実行関数がありません。]]></NoModuleRunFunction>
+<SorryModule><![CDATA[この URL は有効な OAT ページ アドレスではありません。OAT モジュール ディレクトリ内でモジュール {0} が見つかりません。モジュール名が URL の「act」キーワードと一致することを確認してください。]]></SorryModule>
+<InvalidURL_do_param><![CDATA[この URL は有効な OAT ページ アドレスではありません。OAT メニューの項目、または OAT ページ上のリンクをクリックして、OAT ページを表示してください。]]></InvalidURL_do_param>
+</lang>

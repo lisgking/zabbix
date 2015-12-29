@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Megjelenítés]]></Show>
+<CommandHistory><![CDATA[Parancs előzmények]]></CommandHistory>
+<OnlineLog><![CDATA[Online napló]]></OnlineLog>
+
+<LogDelete><![CDATA[Napló törlése]]></LogDelete>
+<LogTruncate><![CDATA[Napló csonkolása]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Online üzenetnapló]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Online üzenetnapló forgása]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[ON-Bar tevékenységnapló]]></BarActLog>
+<BarActLogRotate><![CDATA[ON-Bar tevékenységnapló forgása]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Csonkok]]></chunks>
+<commands><![CDATA[Parancsok]]></commands>
+<Databases><![CDATA[Adatbázisok]]></Databases>
+<Alerts><![CDATA[Riasztások]]></Alerts>
+<Message><![CDATA[Üzenet]]></Message>
+<Messages><![CDATA[Üzenetek]]></Messages>
+<OnBarActLog><![CDATA[ON-Bar tevékenységnapló]]></OnBarActLog>
+<onconfigfile><![CDATA[Onconfig fájl]]></onconfigfile>
+<Name><![CDATA[Név]]></Name>
+<CurrentValue><![CDATA[Aktuális érték]]></CurrentValue>
+<ChunkInfo><![CDATA[Csonk információk]]></ChunkInfo>
+<ChunkNumber><![CDATA[Csonk száma]]></ChunkNumber>
+<ChunkPath><![CDATA[Elérési út neve]]></ChunkPath>
+<Size><![CDATA[Méret]]></Size>
+<Offset><![CDATA[Eltolás]]></Offset>
+<Free><![CDATA[Szabad]]></Free>
+<CmdHistory><![CDATA[Admin parancs előzmények]]></CmdHistory>
+<User><![CDATA[Felhasználó]]></User>
+<Time><![CDATA[Idő]]></Time>
+<CommandExecuted><![CDATA[Parancs végrehajtva]]></CommandExecuted>
+<ReturnMsg><![CDATA[Üzenet visszaadása]]></ReturnMsg>
+<CreateDate><![CDATA[Létrehozás dátuma]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Ez a művelet az üzenetnapló-fájlban található üzeneteket törli. Az üzenetnapló-fájl megmarad. Kívánja folytatni?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Ez a művelet az üzenetnapló-fájlt törli. Kívánja folytatni?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[Az online_log_rotate feladat feladatazonosítója nem található. A naplófájl forgáshoz Informix 11.70.xC3 változat szükséges. Ellenőrizze az adatbázis-kiszolgáló verziószámát.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[A bar_act_log_rotate feladat feladatazonosítója nem található. A naplófájl forgáshoz Informix 11.70.xC3 változat szükséges. Ellenőrizze az adatbázis-kiszolgáló verziószámát.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Siker]]></Success>
+<Error><![CDATA[Hiba]]></Error>
+<Warning><![CDATA[Figyelmeztetés]]></Warning>
+</lang>

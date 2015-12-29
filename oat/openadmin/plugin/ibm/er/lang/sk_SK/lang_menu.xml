@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<er><![CDATA[Enterprise Replication]]></er>
+<gridRepl><![CDATA[Mriežka]]></gridRepl>
+<domain><![CDATA[Doména ER]]></domain>
+<node><![CDATA[Podrobné informácie o uzle]]></node>
+<replicates><![CDATA[Repliky]]></replicates>
+<howto_er><![CDATA[Pomoc k replikácii]]></howto_er>
+<ucm><![CDATA[Správca pripojení]]></ucm>
+</lang>

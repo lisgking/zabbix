@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Roter Alarm: Prüft, ob der Konfigurationsparameter DBSPACETEMP festgelegt ist. Gelber Alarm: Prüft, ob der Wert für den Konfigurationsparameter DBSPACETEMP Leerzeichen enthält.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Konfigurationsparameter DUMPDIR auf das Verzeichnis gesetzt ist, das im Schwellenwert für gelben Alarm aufgelistet ist.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob die Zuordnung dynamischer Protokolle (DYNAMIC_LOGS) aktiviert ist.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Roter Alarm: Prüft, ob die Dateien für logisches Protokoll im Rootdatenbankbereich (ROOTDBS) gespeichert sind. Gelber Alarm: Prüft, ob Tabellen in dem Datenbankbereich gespeichert sind, in dem die Dateien für logisches Protokoll gespeichert sind.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Roter Alarm: Prüft, ob die obere Grenze für umfangreiche Transaktionen (LTXHWM) den Schwellenwert für roten Alarm unterschreitet, wenn die Zuordnung dynamischer Protokolle (DYNAMIC_LOGS) inaktiviert ist. Gelber Alarm: Prüft, ob die obere Grenze für umfangreiche Transaktionen (LTXHWM) den Schwellenwert für gelben Alarm unterschreitet, wenn die Zuordnung dynamischer Protokolle inaktiviert ist.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Wert für das LRU-Minimum für genutzte Seiten (lru_min_dirty) den Schwellenwert für gelben Alarm überschreitet.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Konfigurationsparameter LTAPEDEV auf das Verzeichnis gesetzt ist, das im Schwellenwert für gelben Alarm aufgelistet ist.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob die Option 'noage' des Konfigurationsparameters VPCLASS festgelegt ist.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Datenbankserver auf Fortsetzung gesetzt ist, wenn ein Datenbankbereich inaktiv ist (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Roter Alarm: Prüft, ob das physische Protokoll im Rootdatenbankbereich (ROOTDBS) gespeichert ist. Gelber Alarm: Prüft, ob Tabellen in dem Datenbankbereich gespeichert sind, in dem das physische Protokoll gespeichert ist.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Konfigurationsparameter MULTIPROCESSOR bei festgelegtem Konfigurationsparameter SINGLE_CPU_VP inaktiviert ist.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob der Konfigurationsparameter TAPEDEV auf das Verzeichnis gesetzt ist, das im Schwellenwert für gelben Alarm aufgelistet ist.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Roter Alarm: Prüft, ob die Anzahl der heute erstellten ATS-Dateien unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl der heute erstellten ATS-Dateien unter dem Schwellenwert für gelben Alarm liegt.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz von verbleibenden Protokollseiten vor der Transaktionsblockierung (DDRBLOCK) über dem Prozentsatz liegt, der im Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob der Prozentsatz von verbleibenden Protokollseiten vor der Transaktionsblockierung (DDRBLOCK) über dem Prozentsatz liegt, der im Schwellenwert für gelben angegeben ist.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Roter Alarm: Prüft, ob die Knoten im ER-Cluster aktiv sind und Daten replizieren. Gelber Alarm: Keine Aktion.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Roter Alarm: Prüft, ob die Anzahl der heute erstellten RIS-Dateien unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl der heute erstellten RIS-Dateien unter dem Schwellenwert für gelben Alarm liegt.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz des für das Betriebssystem verfügbaren freien Speichers über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz des für das Betriebssystem verfügbaren freien Speichers über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob die Anzahl der Online-Prozessoren im Betriebssystem mit der Anzahl der Prozessoren im Betriebssystem übereinstimmt.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Roter Alarm: Keine Aktion. Gelber Alarm: Prüft, ob die Anzahl virtueller CPU-Prozessoren über dem Prozentsatz der CPUs im Betriebssystem liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Roter Alarm: Prüft, ob die Anzahl offener Dateideskriptoren pro Prozess für das Betriebssystem über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl offener Dateideskriptoren pro Prozess für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Roter Alarm: Prüft, ob die Anzahl Semaphorsets für das Betriebssystem über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl Semaphorsets für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Roter Alarm: Prüft, ob die Anzahl Semaphore für das Betriebssystem über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl Semaphore für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Roter Alarm: Prüft, ob die Anzahl gemeinsam genutzter Speicher-IDs (shmid) für das Betriebssystem über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl gemeinsam genutzter Speicher-IDs (shmid) für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Roter Alarm: Prüft, ob die maximale Größe eines gemeinsam genutzten Speichersegments (SHMMAX) für das Betriebssystem über dem Schwellenwert für  roten Alarm liegt. Gelber Alarm: Prüft, ob die maximale Größe eines gemeinsam genutzten Speichersegments (SHMMAX) für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Roter Alarm: Prüft, ob die Gesamtzahl gemeinsam genutzter Speichersegmente (shmNumSegs) für das Betriebssystem über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Gesamtzahl gemeinsam genutzter Speichersegmente (shmNumSegs) für das Betriebssystem über dem Schwellenwert für gelben Alarm liegt.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Roter Alarm: Prüft, dass ein Ressourcenengpass bei logischen Protokollen (LLOG) keine Blockierung während der Prüfpunktverarbeitung verursacht. Gelber Alarm: Prüft, dass ein Ressourcenengpass bei logischen Protokollen (LLOG) keine Prüfpunkte auslöst. ]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Roter Alarm: Prüft, dass ein Ressourcenengpass bei physischen Protokollen (PLOG) keine Blockierung während der Prüfpunktverarbeitung verursacht. Gelber Alarm: Prüft, dass ein Ressourcenengpass bei physischen Protokollen (PLOG) keine Prüfpunkte auslöst.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Roter Alarm: Prüft, ob die während der Prüfpunktverarbeitung in kritischen Abschnitten verbrachte Zeit unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die während der Prüfpunktverarbeitung in kritischen Abschnitten verbrachte Zeit unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Roter Alarm: Prüft, ob die Anzahl der Schreibvorgänge auf Platte während der Prüfpunktverarbeitung über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob die Anzahl der Schreibvorgänge auf Platte während der Prüfpunktverarbeitung über dem Schwellenwert für gelben Alarm liegt.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Roter Alarm: Prüft, dass die längste Zeit, die eine Transaktion während der Prüfpunktverarbeitung wartet, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, dass die längste Zeit, die eine Transaktion während der Prüfpunktverarbeitung wartet, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Roter Alarm: Prüft, ob die Anzahl Pufferlesevorgänge für eine Tabelle unter dem Prozentsatz aller Pufferlesevorgänge liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl Pufferlesevorgänge für eine Tabelle unter dem Prozentsatz aller Pufferlesevorgänge liegt, der im Schwellenwert für gelben Alarm angegeben ist.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Roter Alarm: Prüft, ob die Anzahl Pufferschreibvorgänge für eine Tabelle unter dem Prozentsatz aller Pufferschreibvorgänge liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl Pufferschreibvorgänge für eine Tabelle unter dem Prozentsatz aller Pufferschreibvorgänge liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Roter Alarm: Prüft, ob die Anzahl sequenzieller Suchen für eine Tabelle unter dem Prozentsatz aller   sequenziellen Suchen liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl sequenzieller Suchen für eine Tabelle unter dem Prozentsatz aller  sequenziellen Suchen liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der in Puffern zwischengespeicherten (%cached) Lesevorgänge über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der in Puffern zwischengespeicherten (%cached) Lesevorgänge über dem Schwellenwert für gelben Alarm liegt.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der in Puffern zwischengespeicherten (%cached) Schreibvorgänge über dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der in Puffern zwischengespeicherten (%cached) Schreibvorgänge über dem Schwellenwert für gelben Alarm liegt.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der gesamten Sortiervorgänge, bei denen es sich um Plattensortierungen handelt, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der gesamten Sortiervorgänge, bei denen es sich um Plattensortierungen handelt, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der gesamten Transaktionen, bei denen es sich um rückgängig gemachte Transaktionen handelt, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der gesamten Transaktionen, bei denen es sich um rückgängig gemachte Transaktionen handelt, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der gesamten Schreibvorgänge, bei denen es sich um Schreibvorgänge  im Vordergrund handelt, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der gesamten Schreibvorgänge, bei denen es sich um Schreibvorgänge  im Vordergrund handelt, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Roter Alarm: Prüft, ob das Verhältnis logischer Protokollseiten zur Ein-/Ausgabe unter dem Prozentsatz des Puffers für logisches Protokoll (LOGBUFF) liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob das Verhältnis logischer Protokollseiten zur Ein-/Ausgabe über dem Prozentsatz des Puffers für logisches Protokoll (LOGBUFF) liegt, der als Schwellenwert für roten Alarm angegeben ist.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der gesamten Sperrenanforderungen, bei denen es sich um Wartestatus für Sperren handelt, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der gesamten Sperrenanforderungen, bei denen es sich um Wartestatus für Sperren handelt, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Roter Alarm: Prüft, ob das Verhältnis physischer Protokollseiten zur Ein-/Ausgabe unter dem Prozentsatz des Puffers für physisches Protokoll (PHYSBUFF) liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob das Verhältnis physischer Protokollseiten zur Ein-/Ausgabe über dem Prozentsatz des Puffers für physisches Protokoll (PHYSBUFF) liegt, der als Schwellenwert für roten Alarm angegeben ist.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Roter Alarm: Prüft, ob der Prozentsatz der gesamten SQL-Anweisungen, bei denen es sich um sequenzielle Suchen handelt, unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft, ob der Prozentsatz der gesamten SQL-Anweisungen, bei denen es sich um sequenzielle Suchen handelt, unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Roter Alarm: Prüft, ob alle Chunks online sind. Gelber Alarm: Keine Aktion.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Roter Alarm: Prüft, ob die Anzahl E/A-Operationen für jeden Chunk unter dem Prozentsatz aller E/A-Operationen liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl E/A-Operationen für jeden Chunk unter dem Prozentsatz aller E/A-Operationen liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Roter Alarm: Prüft, ob die Anzahl Leseoperationen für jeden Chunk unter dem Prozentsatz aller Leseoperationen liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl Leseoperationen für jeden Chunk unter dem Prozentsatz aller Leseoperationen liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Roter Alarm: Prüft, ob die Anzahl Schreiboperationen für jeden Chunk unter dem Prozentsatz aller Schreiboperationen liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob die Anzahl Schreiboperationen für jeden Chunk unter dem Prozentsatz aller Schreiboperationen liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Roter Alarm: Prüft, ob der freie Speicherbereich in jedem Datenbankbereich über  dem Prozentsatz des Gesamtspeicherbereichs im Datenbankbereich liegt, der als Schwellenwert für roten Alarm angegeben ist. Gelber Alarm: Prüft, ob der freie Speicherbereich in jedem Datenbankbereich über  dem Prozentsatz des Gesamtspeicherbereichs im Datenbankbereich liegt, der als Schwellenwert für gelben Alarm angegeben ist.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Roter Alarm: Prüft auf Tabellen, bei denen der Prozentsatz des maximalen freien Speichers pro Seite unter dem Schwellenwert für roten Alarm liegt. Gelber Alarm: Prüft auf Tabellen, bei denen der Prozentsatz des maximalen freien Speichers pro Seite unter dem Schwellenwert für gelben Alarm liegt.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

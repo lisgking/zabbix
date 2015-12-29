@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Recovery-Protokolle]]></mainTitle>
+<lognum><![CDATA[Anzahl]]></lognum>
+<uniqid><![CDATA[Eindeutige ID]]></uniqid>
+<size><![CDATA[Größe]]></size>
+<SwitchComment><![CDATA[Zum nächsten logischen Protokoll wechseln]]></SwitchComment>
+<attributes><![CDATA[Attribute]]></attributes>
+<used><![CDATA[Belegt]]></used>
+<location><![CDATA[Position]]></location>
+<notes><![CDATA[Hinweise]]></notes>
+<lastfilled><![CDATA[Zuletzt ausgefüllt]]></lastfilled>
+<ltitle><![CDATA[Status des logischen Protokolls]]></ltitle>
+<notFull><![CDATA[Nicht voll]]></notFull>
+<UsedBackedUp><![CDATA[Verwendet und mit Backup gesichert]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Verwendet und aktuell]]></UsedCurrent>
+<Used><![CDATA[Belegt]]></Used>
+<Free><![CDATA[Frei]]></Free>
+<BackedUp><![CDATA[Mit Backup gesichert]]></BackedUp>
+<Pages><![CDATA[Seiten]]></Pages>
+<pages><![CDATA[Seiten]]></pages>
+<Usage><![CDATA[Belegung]]></Usage>
+<PagesPerSec><![CDATA[Füllrate]]></PagesPerSec>
+<PLogUsage><![CDATA[Nutzung des physischen Protokolls]]></PLogUsage>
+<PLogInfo><![CDATA[Info zum physischen Protokoll]]></PLogInfo>
+<PLogSize><![CDATA[Größe des physischen Protokolls]]></PLogSize>
+<PLogUsed><![CDATA[Verwendet]]></PLogUsed>
+<PlogLocation><![CDATA[Position]]></PlogLocation>
+<PlogStartPos><![CDATA[Anfangsoffset]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Puffergröße]]></PlogBuffSize>
+<LLogUsage><![CDATA[Nutzung des logischen Protokolls]]></LLogUsage>
+<mLogicalLogs><![CDATA[Logische Protokolle ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Physisches Protokoll]]></mPhysicalLog>
+<mAdmin><![CDATA[Verwaltung]]></mAdmin>
+<mCheckpoints><![CDATA[Prüfpunkte]]></mCheckpoints>
+<NewAdd><![CDATA[Neu hinzugefügt]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Löschen des logischen Protokoll nicht bestätigt. Bitte bestätigen und Vorgang erneut versuchen.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Verschieben des physischen Protokolls nicht bestätigt. Bitte bestätigen und Vorgang erneut versuchen.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Physisches Protokoll verschieben]]></MPhysicalLog>
+<Confirm><![CDATA[Bestätigen]]></Confirm>
+<Move><![CDATA[Verschieben]]></Move>
+<mRPolicy><![CDATA[Recovery-Richtlinien]]></mRPolicy>
+<syncckpt><![CDATA[Synchronisationsprüfpunkt]]></syncckpt>
+<normckpt><![CDATA[Normaler Prüfpunkt]]></normckpt>
+<dockpt><![CDATA[Prüfpunkt setzen]]></dockpt>
+<Checkpoint><![CDATA[Prüfpunkt]]></Checkpoint>
+<NoMove><![CDATA[Physisches Protokoll nicht verschieben]]></NoMove>
+<DropLLog><![CDATA[Logisches Protokoll löschen]]></DropLLog>
+<NoDropLLog><![CDATA[Logisches Protokoll nicht löschen]]></NoDropLLog>
+<ON><![CDATA[EIN]]></ON>
+<OFF><![CDATA[AUS]]></OFF>
+<InvalidValue><![CDATA[Ungültiger Wert eingegeben]]></InvalidValue>
+<save><![CDATA[Speichern]]></save>
+<cancel><![CDATA[Abbrechen]]></cancel>
+<rto_title><![CDATA[Zielsetzung für Wiederherstellungszeit (RTO - Recovery Time Objective)]]></rto_title>
+<rto><![CDATA[Zielsetzung für Wiederherstellungszeit]]></rto>
+<rto_error><![CDATA[Fehler beim Ändern des RTO-Serverneustarts.]]></rto_error>
+<minute><![CDATA[Minute]]></minute>
+<minutes><![CDATA[Minuten]]></minutes>
+<autoChkpts><![CDATA[Automatische Prüfpunkte]]></autoChkpts>
+<autoChkpts_error><![CDATA[Fehler beim Ändern automatischer Prüfpunkte.]]></autoChkpts_error>
+<autoLRU><![CDATA[Automatische LRU-Optimierung]]></autoLRU>
+<autoLRU_error><![CDATA[Fehler beim Ändern der automatischen LRU-Optimierung.]]></autoLRU_error>
+<NoPermission><![CDATA[Benutzer mit Lesezugriff haben hierfür keine Berechtigung. Sie sind als Benutzer mit Lesezugriff angemeldet.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Logische Protokolle hinzugefügt]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[Nach aktuellem Protokoll]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[Am Ende der Protokolle]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Name des Datenbankbereichs]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Beim Modifizieren des physischen Protokolls ist ein Fehler aufgetreten.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Beim Wechseln zum nächsten logischen Protokoll ist ein Fehler aufgetreten.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[Sekunden]]></seconds>
+<AddLogicalLog><![CDATA[Logisches Protokoll hinzufügen]]></AddLogicalLog>
+<Add><![CDATA[Hinzufügen]]></Add>
+<Drop><![CDATA[Löschen]]></Drop>
+<LogicalLogNum><![CDATA[Nummer des logischen Protokolls]]></LogicalLogNum>
+<Confirm><![CDATA[Bestätigen]]></Confirm>
+<SwitchLog><![CDATA[Logisches Protokoll wechseln]]></SwitchLog>
+<Switch><![CDATA[Wechseln]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

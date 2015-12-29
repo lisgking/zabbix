@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Aby wykluczyć węzły z kontroli, wprowadź nazwy węzłów rozdzielone przecinkami.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Aby wykluczyć tabele z kontroli, wprowadź numery partycji rozdzielone przecinkami.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Aby wykluczyć tabele z kontroli, wprowadź numery partycji rozdzielone przecinkami.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Aby wykluczyć tabele z kontroli, wprowadź numery partycji rozdzielone przecinkami.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Aby wykluczyć porcje z kontroli, wprowadź numery porcji rozdzielone przecinkami.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Aby wykluczyć porcje z kontroli, wprowadź numery porcji rozdzielone przecinkami.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Aby wykluczyć porcje z kontroli, wprowadź numery porcji rozdzielone przecinkami.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Aby wykluczyć obszary dbspace z kontroli, wprowadź numery obszarów rozdzielone przecinkami.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Aby wykluczyć tabele z kontroli, wprowadź numery partycji rozdzielone przecinkami.]]></exc_Rowsize>
+</lang>

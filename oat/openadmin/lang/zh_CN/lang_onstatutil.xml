@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[onstat 实用程序]]></mainTitle>
+<ErrorOnInteractive><![CDATA[无法通过 OpenAdmin Tool 访问 onstat 交互方式。]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[只输入选项。命令 <b>onstat</b> 由 OpenAdmin Tool 提供。]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[OpenAdmin Tool 的 onstat 命令中不允许 -r 选项。]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[OpenAdmin Tool 的 onstat 命令中不允许 -o 选项。]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[onstat 命令包含无效字符。]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[OpenAdmin Tool 的 onstat 命令中只允许字母数字字符、短划线、逗号和句号。]]></ReportValidChars>
+<ErrorPrepend><![CDATA[错误：]]></ErrorPrepend>
+<SubmitAction><![CDATA[运行]]></SubmitAction>
+<OnstatOptions><![CDATA[显示 onstat 选项]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[onstat 实用程序功能部件仅在以下服务器版本（或更高版本）中可用：{0}]]></OnstatFeatureNotAvail>
+</lang>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Červený poplach: Skontroluje, či je nastavený konfiguračný parameter DBSPACETEMP.  Žltý poplach:  Skontroluje, či sa v hodnote pre konfiguračný parameter DBSPACETEMP nenachádzajú žiadne medzery.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či nie je v konfiguračnom parametri DUMPDIR nastavený adresár, ktorý je uvedený v prahu žltého poplachu.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či je povolené  vyhradenie dynamických protokolov (DYNAMIC_LOGS).]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Červený poplach: Skontroluje, či nie sú logické protokolové súbory uložené v  koreňovom databázovom priestore (ROOTDBS). Žltý poplach: Skontroluje, či v databázovom priestore, v ktorom sú uložené logické protokolové súbory, nie sú uložené žiadne tabuľky.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Červený poplach: Skontroluje či je označenie maximálnej úrovne dlhých transakcií (LTXHWM) pod prahom červeného poplachu, ak je vyhradenie dynamických protokolov (DYNAMIC_LOGS) vypnuté.  Žltý poplach: Skontroluje či je označenie maximálnej úrovne dlhých transakcií (LTXHWM) pod prahom žltého poplachu, ak je vyhradenie dynamických protokolov vypnuté.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či je hodnota pre naposledy použité neaktualizované minimum (lru_min_dirty)  nad prahom žltého poplachu.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či nie je v konfiguračnom parametri LTAPEDEV nastavený adresár, ktorý je uvedený v prahu žltého poplachu.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či je nastavená voľba noage konfiguračného parametra VPCLASS.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či nie je databázový server nastavený tak, aby pokračoval v prípade, že je databázový priestor vypnutý (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Červený poplach: Skontroluje, či fyzický protokol nie je uložený v koreňovom databázovom priestore (ROOTDBS). Žltý poplach: Skontroluje, či v databázovom priestore, v ktorom je  uložený fyzický protokol, nie sú uložené žiadne tabuľky.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či je pri nastavení konfiguračného parametra SINGLE_CPU_VP, vypnutý konfiguračný parameter MULTIPROCESSOR.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či nie je v konfiguračnom parametri TAPEDEV nastavený adresár, ktorý je uvedený v prahu žltého poplachu.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Červený poplach: Skontroluje, či je počet dnes vytvorených súborov ATS menší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet dnes vytvorených súborov ATS menší ako hodnota prahu pre žltý poplach.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Červený poplach: Skontroluje, či je percento zostávajúcich protokolových stránok pred začiatkom blokovania transakcií (DDRBLOCK) väčšie ako percento uvedené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento zostávajúcich protokolových stránok pred začiatkom blokovania transakcií väčšie ako percento uvedené ako hodnota prahu pre žltý poplach.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Červený poplach: Skontroluje, či sú uzly v klastri ER aktívne a či replikujú údaje. Žltý poplach: Žiadny.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Červený poplach: Skontroluje, či počet dnes vytvorených súborov RIS je menší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či počet dnes vytvorených súborov RIS je menší ako hodnota prahu pre žltý poplach.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Červený poplach: Skontroluje, či je percento voľnej pamäte, ktorá je k dispozícii pre operačný systém, väčšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento voľnej pamäte, ktorá je k dispozícii pre operačný systém, väčšie ako hodnota prahu pre žltý poplach.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či je počet online procesorov v operačnom systéme rovný celkovému počtu procesorov v operačnom systéme.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Červený poplach: Žiadny. Žltý poplach: Skontroluje, či počet virtuálnych procesorov presahuje percento procesorov v operačnom systéme, ktoré je uvedené ako hodnota prahu pre žltý poplach.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Červený poplach: Skontroluje, či je počet deskriptorov otvorených súborov na jeden proces operačného systému väčší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet deskriptorov otvorených súborov na jeden proces operačného systému väčší ako hodnota prahu pre žltý poplach.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Červený poplach: Skontroluje, či je počet sád semaforov operačného systému väčší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet sád semaforov operačného systému väčší ako hodnota prahu pre žltý poplach.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Červený poplach: Skontroluje, či je celkový počet semaforov operačného systému väčší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je celkový počet semaforov operačného systému väčší ako hodnota prahu pre žltý poplach.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Červený poplach: Skontroluje, či je počet ID zdieľaných pamätí (shmid) operačného systému väčší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet ID zdieľaných pamätí (shmid) operačného systému väčší ako hodnota prahu pre žltý poplach.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Červený poplach: Skontroluje, či je maximálna veľkosť segmentu zdieľanej pamäte (SHMMAX) operačného systému väčšia ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je maximálna veľkosť segmentu zdieľanej pamäte (SHMMAX) operačného systému väčšia ako hodnota prahu pre žltý poplach.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Červený poplach: Skontroluje, či je celkový počet segmentov zdieľanej pamäte (shmNumSegs) operačného systému väčší ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je celkový počet segmentov zdieľanej pamäte (shmNumSegs) operačného systému väčší ako hodnota prahu pre žltý poplach.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Červený poplach: Skontroluje, či nedostatok prostriedkov logických protokolov (LLOG) nespôsobuje blokovanie počas spracovania kontrolných bodov.  Žltý poplach:  Skontroluje, či nedostatok prostriedkov logických protokolov (LLOG) nespúšťa kontrolné body.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Červený poplach: Skontroluje, či nedostatok prostriedkov fyzického protokolu (PLOG) nespôsobuje blokovanie počas spracovania kontrolných bodov.  Žltý poplach: Skontroluje, či nedostatok prostriedkov fyzického protokolu (PLOG) nespôsobuje spustenie kontrolných bodov.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Červený poplach: Skontroluje, či je čas strávený v kritických sekciách počas spracovania kontrolných bodov kratší ako hodnota prahu pre červený poplach.  Žltý poplach: Skontroluje, či je čas strávený v kritických sekciách počas spracovania kontrolných bodov kratší ako hodnota prahu pre žltý poplach.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Červený poplach: Skontroluje, či je počet presunov na disk za sekundu počas spracovania kontrolného bodu väčší ako hodnota prahu pre červený poplach.  Žltý poplach: Skontroluje, či je počet presunov na disk za sekundu počas spracovania kontrolného bodu väčší ako hodnota prahu pre žltý poplach.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Červený poplach: Skontroluje, či je najdlhší čas čakania transakcie počas spracovania kontrolného bodu kratší ako hodnota prahu pre červený poplach.  Žltý poplach: Skontroluje, či je najdlhší čas čakania transakcie počas spracovania kontrolného bodu kratší ako hodnota prahu pre žltý poplach.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Červený poplach: Skontroluje, či je počet čítaní z vyrovnávacej pamäte pre tabuľku menší ako percento všetkých čítaní z vyrovnávacej pamäte určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet čítaní z vyrovnávacej pamäte pre tabuľku menší ako percento všetkých čítaní z vyrovnávacej pamäte určené ako hodnota prahu pre žltý poplach.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Červený poplach: Skontroluje, či je počet zápisov do vyrovnávacej pamäte pre tabuľku menší ako percento všetkých zápisov do vyrovnávacej pamäte určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet zápisov do vyrovnávacej pamäte pre tabuľku menší ako percento všetkých zápisov do vyrovnávacej pamäte určené ako hodnota prahu pre žltý poplach.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Červený poplach: Skontroluje, či je počet sekvenčných prehľadávaní pre tabuľku menší ako percento všetkých sekvenčných prehľadávaní určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet sekvenčných prehľadávaní pre tabuľku menší ako percento všetkých sekvenčných prehľadávaní určené ako hodnota prahu pre žltý poplach.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Červený poplach: Skontroluje, či je percento čítaní, ktoré sa ukladajú do vyrovnávacích pamätí (%cached), väčšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento čítaní, ktoré sa ukladajú do vyrovnávacích pamätí (%cached), väčšie ako hodnota prahu pre žltý poplach.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Červený poplach: Skontroluje, či je percento zápisov, ktoré sa ukladajú do vyrovnávacích pamätí (%cached), väčšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento zápisov, ktoré sa ukladajú do vyrovnávacích pamätí (%cached), väčšie ako hodnota prahu pre žltý poplach.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Červený poplach: Skontroluje, či je percento všetkých triedení na disku menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento všetkých triedení na disku menšie ako hodnota prahu pre žltý poplach.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Červený poplach: Skontroluje, či je percento celkového počtu transakcií, ktoré boli vrátené späť, menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento celkového počtu transakcií, ktoré boli vrátené späť, menšie ako hodnota prahu pre žltý poplach.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Červený poplach: Skontroluje, či je percento celkového počtu zápisov na popredí menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento celkového počtu zápisov na popredí menšie ako hodnota prahu pre žltý poplach.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Červený poplach: Skontroluje, či je pomer stránok logického protokolu k I/O menší ako percento vyrovnávacej pamäte logického protokolu (LOGBUFF) určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je pomer stránok logického protokolu k I/O väčší ako percento vyrovnávacej pamäte logického protokolu (LOGBUFF) určené ako hodnota prahu pre žltý poplach.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Červený poplach: Skontroluje, či je percento celkového počtu požiadaviek na uzamknutie, ktoré čakajú na zámok, menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je percento celkového počtu požiadaviek na uzamknutie, ktoré čakajú na zámok, menšie ako hodnota prahu pre žltý poplach.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Červený poplach: Skontroluje, či je pomer stránok fyzického protokolu k I/O menší ako percento vyrovnávacej pamäte fyzického protokolu (PHYSBUFF) určené ako hodnota prahu pre červený poplach.  Žltý poplach: Skontroluje, či je pomer stránok fyzického protokolu k I/O väčší ako percento vyrovnávacej pamäte fyzického protokolu (PHYSBUFF) určené ako hodnota prahu pre žltý poplach.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Červený poplach: Skontroluje, č je percento celkového počtu príkazov SQL, ktoré predstavujú sekvenčné prehľadávanie, menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, č je percento celkového počtu príkazov SQL, ktoré predstavujú sekvenčné prehľadávanie, menšie ako hodnota prahu pre žltý poplach.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Červený poplach: Skontroluje, či sú všetky chunky v režime online. Žltý poplach: Žiadny.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Červený poplach: Skontroluje, či je počet I/O operácií pre jednotlivé chunky menší ako percento všetkých I/O operácií určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet I/O operácií pre jednotlivé chunky menší ako percento všetkých I/O operácií určené ako hodnota prahu pre žltý poplach.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Červený poplach: Skontroluje, či je počet operácií čítania pre jednotlivé chunky menší ako percento všetkých operácií čítania určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet operácií čítania pre jednotlivé chunky menší ako percento všetkých operácií čítania určené ako hodnota prahu pre žltý poplach.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Červený poplach: Skontroluje, či je počet operácií zápisu pre jednotlivé chunky menší ako percento všetkých operácií zápisu určené ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či je počet operácií zápisu pre jednotlivé chunky menší ako percento všetkých operácií zápisu určené ako hodnota prahu pre žltý poplach.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Červený poplach: Skontroluje, či je voľný priestor v jednotlivých databázových priestoroch väčší ako percento celkového priestoru v databázovom priestore určené ako hodnota prahu pre červený poplach.  Žltý poplach: Skontroluje, či je voľný priestor v jednotlivých databázových priestoroch väčší ako percento celkového priestoru v databázovom priestore určené ako hodnota prahu pre žltý poplach.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Červený poplach: Skontroluje, či existujú tabuľky, ktorých percento maximálneho voľného priestoru na stránku je menšie ako hodnota prahu pre červený poplach. Žltý poplach: Skontroluje, či existujú tabuľky, ktorých percento maximálneho voľného priestoru na stránku je menšie ako hodnota prahu pre žltý poplach.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

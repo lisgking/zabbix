@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[Менеджер схем]]></schemamgr>
+<FragmentedTable><![CDATA[Фрагментированная таблица]]></FragmentedTable>
+<PseudoTable><![CDATA[Псевдотаблица]]></PseudoTable>
+<NotApplicable><![CDATA[Неприменимо]]></NotApplicable>
+<check_admin_log><![CDATA[Посмотрите дополнительную информацию в хронологии команд или в оперативном журнале.]]></check_admin_log>
+<running><![CDATA[{0} работает]]></running>
+<interval_frag_strategy><![CDATA[Столбец ключа фрагментации: {0}. Интервал: {1}. Хранить в {2}.]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[Опции окна прокрутки:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[Ограничить таблицу {0} фрагментами]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[Ограничить размер таблицы до {0}]]></rolling_window_limit_by_size>
+<detach><![CDATA[Отсоединить]]></detach>
+<discard><![CDATA[Отклонить]]></discard>
+<x_years><![CDATA[{0} гд.]]></x_years>
+<x_months><![CDATA[{0} мес.]]></x_months>
+<x_days><![CDATA[{0} дн.]]></x_days>
+</lang>

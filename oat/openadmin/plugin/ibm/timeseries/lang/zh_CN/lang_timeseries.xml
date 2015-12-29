@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[分段表]]></FragmentedTable>
+<PseudoTable><![CDATA[伪表]]></PseudoTable>
+<NotApplicable><![CDATA[不适用]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[在此页面上，OpenAdmin Tool 无法显示具有多个非英语数据库语言环境的数据库服务器的信息。该数据库服务器包含多个非英语数据库语言环境。]]></ErrorMultipleLocales>
+</lang>

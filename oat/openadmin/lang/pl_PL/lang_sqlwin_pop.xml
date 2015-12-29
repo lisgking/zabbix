@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[Okno wywoływane narzędzi SQL - informacje o nr. partycji]]></PartTitle>
+<Partition><![CDATA[Partycja]]></Partition>
+<PartInfoFor><![CDATA[Informacje o partycji {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Wielkość strony]]></Pgsize>
+<NumExtAlloc><![CDATA[Liczba przydzielonych przydziałów]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Łącznie przydzielonych stron]]></TPgsAlloc>
+<NDataPgs><![CDATA[Liczba stron danych]]></NDataPgs>
+<Lockid><![CDATA[ID blokady]]></Lockid>
+<HasIPgs><![CDATA[Partycja tabeli zawiera strony indeksów?]]></HasIPgs>
+<Rowsize><![CDATA[Rozmiar wiersza]]></Rowsize>
+<NRows><![CDATA[Liczba wierszy]]></NRows>
+<PagesUsed><![CDATA[Używane strony]]></PagesUsed>
+<errNoPartnum><![CDATA[Błąd: numer partycji nie jest określony.]]></errNoPartnum>
+<errNotHex><![CDATA[Błąd: wymagana jest wartość w formacie szesnastkowym - rozpocznij od przedrostka <0x>.]]></errNotHex>
+</lang>

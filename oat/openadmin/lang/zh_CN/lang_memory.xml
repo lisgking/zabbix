@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_memory">
+<MemoryMgr><![CDATA[内存管理器]]></MemoryMgr>
+<MemoryFeatureUnavailable><![CDATA[内存管理器需要 Informix 11.50.xC1 或更高版本。]]></MemoryFeatureUnavailable>
+</lang>

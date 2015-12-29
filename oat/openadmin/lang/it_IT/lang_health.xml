@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[Health Monitor]]></health>
+<alerts><![CDATA[Avvisi]]></alerts>
+<aus><![CDATA[Statistiche aggiornamento automatico]]></aus>
+<scheduler><![CDATA[Scheduler attività]]></scheduler>
+<taskdetails><![CDATA[Dettagli attività]]></taskdetails>
+<taskruntimes><![CDATA[Runtime attività]]></taskruntimes>
+<task_run_list><![CDATA[Elenco esecuzione attività]]></task_run_list>
+<num_executions><![CDATA[Numero di esecuzioni]]></num_executions>
+<avg_time><![CDATA[Tempo medio (s)]]></avg_time>
+<total_time><![CDATA[Tempo totale (s)]]></total_time>
+<last_run_time><![CDATA[Ora dell'ultima esecuzione]]></last_run_time>
+<last_execution_status><![CDATA[Stato dell'ultima esecuzione]]></last_execution_status>
+<edittaskparam><![CDATA[Modifica parametro attività]]></edittaskparam>
+<AddNewTask><![CDATA[Aggiungi nuova attività]]></AddNewTask>
+<Save><![CDATA[Salva]]></Save>
+<Cancel><![CDATA[Annulla]]></Cancel>
+<CronTaskList><![CDATA[Elenco cronologico attività]]></CronTaskList>
+<EditParam><![CDATA[Modifica parametro]]></EditParam>
+<addtask><![CDATA[Aggiungi attività]]></addtask>
+<deletetask><![CDATA[Elimina attività]]></deletetask>
+<name_field_empty><![CDATA[Il nome del campo è vuoto. Specificare un nome.]]></name_field_empty>
+<name_field_duplicate><![CDATA[Un'altra attività nel database utilizza lo stesso nome. Specificare un altro nome.]]></name_field_duplicate>
+<invalid_table_name><![CDATA[Il nome deve iniziare con una lettera o "_" e deve contenere lettere, cifre o "_".]]></invalid_table_name>
+<table_name_duplicate><![CDATA[Il nome tabella è già in uso. Specificare un altro nome tabella.]]></table_name_duplicate>
+<save_failed><![CDATA[Salvataggio non riuscito: ]]></save_failed>
+<what_task_type><![CDATA[Che tipo di attività si desidera aggiungere?]]></what_task_type>
+<task><![CDATA[Attività]]></task>
+<sensor><![CDATA[Sensore]]></sensor>
+<next><![CDATA[Avanti]]></next>
+<back><![CDATA[Indietro]]></back>
+<cancel><![CDATA[Annulla]]></cancel>
+<finish><![CDATA[Termina]]></finish>
+<new_sensor_setup><![CDATA[Configurazione nuovo sensore]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[Salvataggio parametro attività non riuscito.]]></savetaskparamfailed>
+<new_task_setup><![CDATA[Configurazione nuova attività]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[Specifica il nome e il gruppo del sensore]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[Specifica il nome e il gruppo dell'attività]]></what_task_name_and_group>
+<sensor_name><![CDATA[Nome sensore]]></sensor_name>
+<task_name><![CDATA[Nome attività]]></task_name>
+<sensor_group><![CDATA[Gruppo sensore]]></sensor_group>
+<task_group><![CDATA[Gruppo attività]]></task_group>
+<type_error><![CDATA[Si sono verificati alcuni problemi nel processo di configurazione della nuova attività. Annulla e riavvia il processo di configurazione della nuova attività]]></type_error>
+<ph_group_error><![CDATA[Impossibile richiamare le selezioni per il gruppo dalla tabella PH_GROUP. Assicurarsi che i database PH_GROUP e SYSADMIN stiano funzionando correttamente.]]></ph_group_error>
+<task_desc><![CDATA[Fornire descrizione della nuova attività.]]></task_desc>
+<sensor_desc><![CDATA[Fornire descrizione del nuovo sensore.]]></sensor_desc>
+<what_sensor_schedule><![CDATA[Specificare la pianificazione per il nuovo sensore.]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[Specificare la pianificazione per la nuova attività.]]></what_task_schedule>
+<start_time><![CDATA[Ora di avvio (formato 24 ore)]]></start_time>
+<stop_time><![CDATA[Ora di arresto (formato 24 ore)]]></stop_time>
+<frequency><![CDATA[Frequenza]]></frequency>
+<delete_time><![CDATA[Eliminazione dati]]></delete_time>
+<what_result_table><![CDATA[Specificare il nome di una nuova tabella risultati in cui memorizzare i risultati dei dati del sensore.]]></what_result_table>
+<result_table_name><![CDATA[Nome tabella risultati]]></result_table_name>
+<what_tk_create><![CDATA[Completare l'istruzione SQL per creare la tabella risultati immettendo i nomi colonne della tabella risultati.]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[Specificare il comando che deve essere eseguito dal nuovo sensore.]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[Specificare il comando che deve essere eseguito dalla nuova attività.]]></what_task_tk_execute>
+<custom_sql><![CDATA[Immettere un comando SQL a istruzione singola o una funzione definita dall'utente.]]></custom_sql>
+<stored_routine><![CDATA[Seleziona una routine memorizzata]]></stored_routine>
+<stored_routine_error><![CDATA[Impossibile richiamare le routine memorizzate. Se si desidera utilizzare routine memorizzate, correggere la tabella SYSPROCEDURES.]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[Verificare le seguenti specifiche per il sensore che si desidera creare.  Fare clic su Fine per confermare e creare il sensore.]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[Verificare le seguenti specifiche per l'attività che si desidera creare.  Fare clic su Fine per confermare e creare l'attività.]]></verify_specs_task>
+<name><![CDATA[Nome]]></name>
+<group><![CDATA[Gruppo]]></group>
+<type><![CDATA[Tipo]]></type>
+<desc><![CDATA[Descrizione]]></desc>
+<deltask><![CDATA[Elimina attività]]></deltask>
+<result_table_create><![CDATA[Istruzione Create di tabella risultati]]></result_table_create>
+<execute_command><![CDATA[Comando di esecuzione]]></execute_command>
+<task_name_check_error><![CDATA[Impossibile convalidare se il nome dell'attività è attualmente in uso. Controllare la tabella ph_task nel database sysadmin.]]></task_name_check_error>
+<table_name_check_error><![CDATA[Impossibile convalidare se il nome della tabella è attualmente in uso. Controllare la tabella systables nel database sysadmin.]]></table_name_check_error>
+<sensor_check_ok><![CDATA[Il nuovo sensore è stato pianificato correttamente.]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[La configurazione del nuovo sensore non è stata eseguita correttamente. Eseguire nuovamente la configurazione]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[Il sensore verrà eseguito sulla base della pianificazione, ma si sono verificati alcuni problemi con il comando.]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[Controllare il seguente codice di errore. Fare clic sul link per eseguire il debugging del comando.]]></debug_exec_stmt>
+<debug_command><![CDATA[Esegui il debugging del comando]]></debug_command>
+<task_check_ok><![CDATA[La nuova attività è stata pianificata correttamente.]]></task_check_ok>
+<task_check_failed><![CDATA[La configurazione della nuova attività non è stata eseguita correttamente. Eseguire nuovamente la configurazione]]></task_check_failed>
+<task_check_bad_exec><![CDATA[L'attività verrà eseguita sulla base della pianificazione, ma si sono verificati alcuni problemi con il comando.]]></task_check_bad_exec>
+<setup_fail><![CDATA[Configurazione non riuscita]]></setup_fail>
+<setup_success><![CDATA[Configurazione eseguita correttamente]]></setup_success>
+<setup_success_with_problems><![CDATA[Configurazione completata, ma si sono verificati dei problemi]]></setup_success_with_problems>
+<return_code><![CDATA[Codice di restituzione:]]></return_code>
+<time_error><![CDATA[L'ora di arresto non può precedere l'ora di avvio.]]></time_error>
+<freq_error><![CDATA[La frequenza non può essere 0 giorni, 0 ore, 0 minuti, 0 secondi]]></freq_error>
+<execute_stmt_empty><![CDATA[L'istruzione di esecuzione non può essere lasciata vuota.]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[L'istruzione di creazione non può essere lasciata vuota.]]></create_stmt_empty>
+<startup_only><![CDATA[Esegui solo all'avvio del server]]></startup_only>
+<NoPermission><![CDATA[Gli utenti in sola lettura non dispongono dell'autorizzazione per eseguire questa operazione. È stato effettuato l'accesso come utente in sola lettura.]]></NoPermission>
+<NoExecutionStmt><![CDATA[L'istruzione di esecuzione di un'attività non può essere lasciata vuota.]]></NoExecutionStmt>
+<NEVER><![CDATA[MAI]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[Eliminazione attività non riuscita]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[Impossibile eliminare la tabella risultati]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[L'attività è stata eliminata correttamente]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[L'eliminazione non è ammessa per le attività di sistema]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[Elimina tabella risultati associata]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[Questa caratteristica non è disponibile per la versione corrente del server.]]></FeatureUnavailable>
+<AlertList><![CDATA[Elenco di avvisi]]></AlertList>
+<severity><![CDATA[Gravità]]></severity>
+<alerttype><![CDATA[Tipo di avviso]]></alerttype>
+<state><![CDATA[Stato]]></state>
+<alertstate><![CDATA[Stato avviso]]></alertstate>
+<message><![CDATA[Messaggio]]></message>
+<grouptoview><![CDATA[Gruppo da visualizzare]]></grouptoview>
+<taskdetails><![CDATA[Dettagli attività]]></taskdetails>
+<taskname><![CDATA[Nome attività]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[Istruzione di esecuzione]]></executionstmt>
+<resulttable><![CDATA[Tabella risultati]]></resulttable>
+<starttime><![CDATA[Ora di avvio]]></starttime>
+<stopttime><![CDATA[Ora di arresto]]></stopttime>
+<time><![CDATA[Ora]]></time>
+<frequency><![CDATA[Frequenza]]></frequency>
+<datadelete><![CDATA[Eliminazione dati]]></datadelete>
+<WeekDay1><![CDATA[Lunedì]]></WeekDay1>
+<WeekDay2><![CDATA[Martedì]]></WeekDay2>
+<WeekDay3><![CDATA[Mercoledì]]></WeekDay3>
+<WeekDay4><![CDATA[Giovedì]]></WeekDay4>
+<WeekDay5><![CDATA[Venerdì]]></WeekDay5>
+<WeekDay6><![CDATA[Sabato]]></WeekDay6>
+<WeekDay7><![CDATA[Domenica]]></WeekDay7>
+<enabletask><![CDATA[Abilita attività]]></enabletask>
+<taskparams><![CDATA[Parametri attività]]></taskparams>
+<paramname><![CDATA[Nome parametro]]></paramname>
+<description><![CDATA[Descrizione]]></description>
+<value><![CDATA[Valore]]></value>
+<valuetype><![CDATA[Tipo valore]]></valuetype>
+<edittaskparam><![CDATA[Modifica parametro attività]]></edittaskparam>
+<view><![CDATA[Visualizza]]></view>
+<NEW><![CDATA[NUOVO]]></NEW>
+<ADDRESSED><![CDATA[INDIRIZZATO]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[CONFERMATO]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[IGNORATO]]></IGNORED>
+<INFO><![CDATA[INFORMAZIONI]]></INFO>
+<WARNING><![CDATA[AVVERTENZA]]></WARNING>
+<ERROR><![CDATA[ERRORE]]></ERROR>
+<COLORGREEN><![CDATA[VERDE]]></COLORGREEN>
+<COLORRED><![CDATA[ROSSO]]></COLORRED>
+<COLORYELLOW><![CDATA[GIALLO]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[Pianificazione attività]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[L]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[G]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[M]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[G]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[V]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[D]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[D]]></WeekDay7Letter>
+<Enabled><![CDATA[Abilitato]]></Enabled>
+<Disabled><![CDATA[Disabilitato]]></Disabled>
+<runfrequency><![CDATA[Frequenza di esecuzione]]></runfrequency>
+<execution><![CDATA[Esecuzione]]></execution>
+<taskdetailssaved><![CDATA[Dettagli attività salvati correttamente.]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[Parametro attività salvato correttamente.]]></TaskParamSaved>
+<recheck><![CDATA[Controlla nuovamente]]></recheck>
+<ignore><![CDATA[Ignora]]></ignore>
+<correct><![CDATA[Correggi]]></correct>
+<Days><![CDATA[Giorni]]></Days>
+<Hours><![CDATA[Ore]]></Hours>
+<Minutes><![CDATA[Minuti]]></Minutes>
+<Seconds><![CDATA[Secondi]]></Seconds>
+<ALARM><![CDATA[ALLARME N.{0}]]></ALARM>
+<Warning><![CDATA[Avvertenza]]></Warning>
+<Error><![CDATA[Errore]]></Error>
+<Info><![CDATA[Informazioni]]></Info>
+<green><![CDATA[Verde]]></green>
+<yellow><![CDATA[Giallo]]></yellow>
+<red><![CDATA[Rosso]]></red>
+<TaskNotFound><![CDATA[L'attività non è stata trovata.]]></TaskNotFound>
+</lang>

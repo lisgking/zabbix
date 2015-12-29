@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Ak chcete z kontroly vylúčiť uzly, zadajte názvy uzlov oddelené čiarkami.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Ak chcete z kontroly vylúčiť tabuľky, zadajte čísla oddielov oddelené čiarkami.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Ak chcete z kontroly vylúčiť tabuľky, zadajte čísla oddielov oddelené čiarkami.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Ak chcete z kontroly vylúčiť tabuľky, zadajte čísla oddielov oddelené čiarkami.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Ak chcete z kontroly vylúčiť chunky, zadajte čísla chunkov oddelené čiarkami.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Ak chcete z kontroly vylúčiť chunky, zadajte čísla chunkov oddelené čiarkami.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Ak chcete z kontroly vylúčiť chunky, zadajte čísla chunkov oddelené čiarkami.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Ak chcete z kontroly vylúčiť databázové priestory, zadajte názvy databázových priestorov oddelené čiarkami.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Ak chcete z kontroly vylúčiť tabuľky, zadajte čísla oddielov oddelené čiarkami.]]></exc_Rowsize>
+</lang>

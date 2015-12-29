@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[検査からノードを除外するには、ノード名をカンマで区切って入力します。]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[検査から表を除外するには、パーティション番号をカンマで区切って入力します。]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[検査から表を除外するには、パーティション番号をカンマで区切って入力します。]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[検査から表を除外するには、パーティション番号をカンマで区切って入力します。]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[検査からチャンクを除外するには、チャンク番号をカンマで区切って入力します。]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[検査からチャンクを除外するには、チャンク番号をカンマで区切って入力します。]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[検査からチャンクを除外するには、チャンク番号をカンマで区切って入力します。]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[検査から DB 領域を除外するには、DB 領域名をカンマで区切って入力します。]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[検査から表を除外するには、パーティション番号をカンマで区切って入力します。]]></exc_Rowsize>
+</lang>

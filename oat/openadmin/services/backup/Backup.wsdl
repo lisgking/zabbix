@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions name="Backup" targetNamespace="urn:Backup"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:typens="urn:Backup"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" >
+
+    <types>
+
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        	xmlns:tns="urn:Backup" targetNamespace="urn:Backup">
+        	<xsd:complexType name="anyType"></xsd:complexType>
+        </xsd:schema>
+    </types>
+
+    <!-- Messages are the 'function' signatures -->
+
+
+    <wsdl:message name="getConfigParamsRequest">
+    	<wsdl:part name="type" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getConfigParamsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertParamsRequest">
+    	<wsdl:part name="stmts" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="deploy_procedure" type="xsd:boolean"></wsdl:part>
+    	<wsdl:part name="trigger_error" type="xsd:boolean"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertParamsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getStatusSpacesRequest">
+    	<wsdl:part name="rows_per_page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getStatusSpacesResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBackupCommandHistoryRequest">
+    	<wsdl:part name="rows_per_page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="page" type="xsd:int"></wsdl:part>
+    	<wsdl:part name="sort_col" type="xsd:string"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBackupCommandHistoryResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getOnBarActLogRequest">
+    </wsdl:message>
+    <wsdl:message name="getOnBarActLogResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateOnbarParamsRequest">
+    	<wsdl:part name="stmts" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="barMaxBackup" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="barXportCount" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="barXferBufSize" type="xsd:string"></wsdl:part>
+    	<wsdl:part name="deploy_procedure" type="xsd:boolean"></wsdl:part>
+    	<wsdl:part name="trigger_error" type="xsd:boolean"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateOnbarParamsResponse">
+    	<wsdl:part name="return" type="xsd:anyType"></wsdl:part>
+    </wsdl:message>    
+    <portType name="BackupPort">
+			
+
+        <wsdl:operation name="getConfigParams">
+        	<wsdl:input message="typens:getConfigParamsRequest"></wsdl:input>
+        	<wsdl:output message="typens:getConfigParamsResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertParams">
+        	<wsdl:input message="typens:insertParamsRequest"></wsdl:input>
+        	<wsdl:output message="typens:insertParamsResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getStatusSpaces">
+        	<wsdl:input message="typens:getStatusSpacesRequest"></wsdl:input>
+        	<wsdl:output message="typens:getStatusSpacesResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBackupCommandHistory">
+        	<wsdl:input message="typens:getBackupCommandHistoryRequest"></wsdl:input>
+        	<wsdl:output message="typens:getBackupCommandHistoryResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOnBarActLog">
+        	<wsdl:input message="typens:getOnBarActLogRequest"></wsdl:input>
+        	<wsdl:output message="typens:getOnBarActLogResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateOnbarParams">
+        	<wsdl:input message="typens:updateOnbarParamsRequest"></wsdl:input>
+        	<wsdl:output message="typens:updateOnbarParamsResponse"></wsdl:output>
+        </wsdl:operation>
+    </portType>
+
+
+    <!-- define protocol details for each Ports -->
+    <binding name="BackupBinding" type="typens:BackupPort">
+
+    	<soap:binding style="rpc"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+
+    	<wsdl:operation name="getConfigParams">
+    		<soap:operation soapAction="urn:Backup/getConfigParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="insertParams">
+    		<soap:operation soapAction="urn:Backup/insertParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getStatusSpaces">
+    		<soap:operation soapAction="urn:Backup/getConfigParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getBackupCommandHistory">
+    		<soap:operation soapAction="urn:Backup/getConfigParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="getOnBarActLog">
+    		<soap:operation soapAction="urn:Backup/getConfigParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    	<wsdl:operation name="updateOnbarParams">
+    		<soap:operation soapAction="urn:Backup/updateOnbarParams" />
+    		<wsdl:input>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:input>
+    		<wsdl:output>
+    			<soap:body use="encoded" namespace="urn:Backup"
+    				encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+    		</wsdl:output>
+    	</wsdl:operation>
+    </binding>
+
+
+    <wsdl:service name="BackupService">
+    	<wsdl:port name="BackupPort" binding="typens:BackupBinding">
+    		<soap:address location="BackupService.php" />
+    	</wsdl:port>
+    </wsdl:service>
+</definitions>

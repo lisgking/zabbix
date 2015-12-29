@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL 도구 상자]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL 도구 상자 - 데이터베이스]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL 도구 상자 - 테이블]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL 도구 상자 - 테이블 선택]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL 도구 상자 - 스토어드 프로시저]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL 도구 상자 - 테이블 정보]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL 도구 상자 - 테이블 분할]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL 도구 상자 - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[연결하려는 데이터베이스 이름을 클릭하십시오.]]></ClickDbConn>
+<Databases><![CDATA[데이터베이스]]></Databases>
+<TotalRows><![CDATA[총 행 수:]]></TotalRows>
+<Tables><![CDATA[테이블]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[결과]]></SQLResult>
+<SQLTree><![CDATA[쿼리 트리]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[오류: 쿼리 없음]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[오류: 쿼리 트리 없음]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[오류: 현재 SQL 세션/연결 없음]]></SQLErr_NoConn>
+<Column_Info><![CDATA[컬럼 정보]]></Column_Info>
+<Table_Browse><![CDATA[테이블 찾아보기]]></Table_Browse>
+<Fragments><![CDATA[분할]]></Fragments>
+<Name><![CDATA[이름]]></Name>
+<Collation><![CDATA[데이터 정렬]]></Collation>
+<CreateDate><![CDATA[작성 날짜]]></CreateDate>
+<Logging><![CDATA[로깅]]></Logging>
+<IncCatalog><![CDATA[데이터베이스 카탈로그 테이블 포함 여부]]></IncCatalog>
+<Submit><![CDATA[실행 요청]]></Submit>
+<ChkRtTypes><![CDATA[선택할 루틴 유형(langid) 확인:]]></ChkRtTypes>
+<Owner><![CDATA[소유자]]></Owner>
+<Procid><![CDATA[프로시저 ID]]></Procid>
+<Type><![CDATA[유형]]></Type>
+<Numargs><![CDATA[인수 수]]></Numargs>
+<ParamTypes><![CDATA[매개변수 유형]]></ParamTypes>
+<Mode><![CDATA[모드]]></Mode>
+<Langid><![CDATA[언어 ID]]></Langid>
+<FragDispTitle><![CDATA[분할 정보]]></FragDispTitle>
+<Partnum><![CDATA[파티션 번호]]></Partnum>
+<FragmentType><![CDATA[분할 유형]]></FragmentType>
+<Expression><![CDATA[표현식]]></Expression>
+<Dbspace><![CDATA[DBSPACE]]></Dbspace>
+<Partition><![CDATA[파티션]]></Partition>
+<ColDispTitle><![CDATA[테이블 정보]]></ColDispTitle>
+<Colno><![CDATA[Colno]]></Colno>
+<Colname><![CDATA[Colname]]></Colname>
+<Coltype><![CDATA[Coltype]]></Coltype>
+<Collength><![CDATA[Collength]]></Collength>
+<ExtendedType><![CDATA[확장 유형]]></ExtendedType>
+<Browse><![CDATA[찾아보기]]></Browse>
+<Tabid><![CDATA[테이블 ID]]></Tabid>
+<Rowsize><![CDATA[행 크기]]></Rowsize>
+<NRows><![CDATA[행 수]]></NRows>
+<NIndexes><![CDATA[인덱스 수]]></NIndexes>
+<Locklevel><![CDATA[로킹 레벨]]></Locklevel>
+<Fextsize><![CDATA[첫 익스텐트 크기]]></Fextsize>
+<Nextsize><![CDATA[다음 익스텐트 크기]]></Nextsize>
+<PagesUsed><![CDATA[사용 페이지]]></PagesUsed>
+<View><![CDATA[보기]]></View>
+<chooseDB><![CDATA[데이터베이스를 선택하십시오.]]></chooseDB>
+<butRunQuery><![CDATA[쿼리 실행]]></butRunQuery>
+<butSaveToFile><![CDATA[쿼리를 파일로 저장]]></butSaveToFile>
+<butClear><![CDATA[지우기]]></butClear>
+<spanRunQuery><![CDATA[데이터베이스를 상대로 쿼리를 실행하려면 클릭하십시오.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[쿼리 텍스트를 파일에 저장하려면 클릭하십시오.]]></spanSaveToFile>
+<spanClear><![CDATA[쿼리 편집기 창을 지우려면 클릭하십시오.]]></spanClear>
+<ColOpt><![CDATA[컬럼 옵션]]></ColOpt>
+<ShowAll><![CDATA[모두 표시]]></ShowAll>
+<Show255><![CDATA[255자 표시]]></Show255>
+<ShowInFile><![CDATA[파일에 표시]]></ShowInFile>
+<ShowSize><![CDATA[크기만 표시]]></ShowSize>
+<IgnoreCol><![CDATA[컬럼 무시]]></IgnoreCol>
+<ShowImage><![CDATA[이미지로 표시]]></ShowImage>
+<Import><![CDATA[가져오기]]></Import>
+<spanImport><![CDATA[파일에서 쿼리를 가져오려면 클릭]]></spanImport>
+<ImportQFrom><![CDATA[쿼리 가져오기:]]></ImportQFrom>
+<Change><![CDATA[변경]]></Change>
+<Reset><![CDATA[재설정]]></Reset>
+<QOutput><![CDATA[쿼리 출력]]></QOutput>
+<Error><![CDATA[오류]]></Error>
+<filename><![CDATA[파일 이름]]></filename>
+<error_num><![CDATA[오류 수]]></error_num>
+<size_too_big><![CDATA[파일 크기가 너무 큼]]></size_too_big>
+<size_is_0><![CDATA[파일 크기가 0임]]></size_is_0>
+<not_text_type><![CDATA[텍스트 파일이 아님]]></not_text_type>
+<cannot_read_file><![CDATA[파일을 읽을 수 없음]]></cannot_read_file>
+<Return><![CDATA[리턴]]></Return>
+<Syntax><![CDATA[구문 오류 발생]]></Syntax>
+<QUERY><![CDATA[쿼리]]></QUERY>
+<NumFet><![CDATA[페치 수]]></NumFet>
+<AllRowsFet><![CDATA[모든 행이 페치됨]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[이 쿼리의 경우 제한된 수의 행만 페치됩니다.]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[일부 쿼리 유형에서 페치되는 현재 최대 행 수]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[한 번에 하나의 SQL문만 실행됩니다. 사용자 입력 중 첫 번째 세미콜론 이후의 모든 문자는 제거되었습니다. ]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[저장에 실패했습니다. 파일에 저장할 쿼리가 없습니다.]]></Save_NoQuery>
+<NoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></NoPermission>
+<NeedToLogin><![CDATA[로그인해야 합니다.]]></NeedToLogin>
+<SelectDB><![CDATA[연결하려는 데이터베이스를 선택하십시오.]]></SelectDB>
+<ConnectingDB><![CDATA[데이터베이스에 연결 중]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[SQL 쿼리 편집기]]></SQLQueryEditor>
+<OneStmt><![CDATA[한 번에 하나의 명령문]]></OneStmt>
+<RowFetchLimit><![CDATA[순서별, 그룹별, 서브쿼리, 구분, 결합 및 총계를 가진 쿼리의 경우 페치되는 행 수는 다음으로 제한됩니다.]]></RowFetchLimit> 
+<ShowAllText><![CDATA[모든 텍스트 표시]]></ShowAllText>
+<ShowSomeText><![CDATA[일부 텍스트 표시]]></ShowSomeText>
+<ShowInFile><![CDATA[파일에 표시]]></ShowInFile>
+<IgnoreText><![CDATA[텍스트 무시]]></IgnoreText>
+<IgnoreByte><![CDATA[바이트 무시]]></IgnoreByte>
+<SaveInFile><![CDATA[파일로 저장]]></SaveInFile>
+<file><![CDATA[파일]]></file>
+<filesize><![CDATA[크기={0}]]></filesize>
+<filetype><![CDATA[{0} 파일]]></filetype>
+<ErrorUnableToChg><![CDATA[오류: 옵션을 변경할 수 없음]]></ErrorUnableToChg>
+<SQLResults><![CDATA[SQL 결과]]></SQLResults>
+<SizeSixDBs><![CDATA[6개의 최대 데이터베이스 크기]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[로그아웃: SQL 도구 상자]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[로그인]]></LoggedInAs>
+<ClickToSelect><![CDATA[테이블에서 *를 선택하려면 클릭하십시오. ]]></ClickToSelect>
+<PartitionInfo><![CDATA[파티션 정보]]></PartitionInfo>
+<CloseWindow><![CDATA[창 닫기]]></CloseWindow>
+<DisplayOptions><![CDATA[표시 옵션]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[프로시저/기능({0})]]></ProceduresFunctions>
+<Function><![CDATA[기능]]></Function>
+<Procedure><![CDATA[프로시저]]></Procedure>
+<All><![CDATA[모두]]></All>
+<Buffered><![CDATA[버퍼 지정]]></Buffered>
+<Unbuffered><![CDATA[버퍼 미지정]]></Unbuffered>
+<NotLogged><![CDATA[로그되지 않음]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[마지막 통계]]></LastStats>
+<Pages><![CDATA[페이지]]></Pages>
+<pages><![CDATA[페이지]]></pages>
+<byte_blob><![CDATA[바이트/Blob]]></byte_blob>
+<text_clob><![CDATA[텍스트/Clob]]></text_clob>
+</lang>

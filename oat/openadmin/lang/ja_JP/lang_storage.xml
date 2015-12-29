@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[格納領域]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[領域の最適化]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[圧縮機能は、次のサーバ バージョン (以上) のみで使用可能です。]]></CompressOnlyAvail>
+<ErrorF><![CDATA[エラー:]]></ErrorF>
+<NoOwner><![CDATA[所有者が指定されていません]]></NoOwner>
+<NoTable><![CDATA[表が指定されていません]]></NoTable>
+<InvalidDB><![CDATA[無効なデータベース]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[表の行が十分ではありません]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[フラグメントの行が十分ではありません]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[パーティション番号]]></PartNum>
+<required><![CDATA[必須]]></required>
+<actual><![CDATA[実際]]></actual>
+<Failed><![CDATA[失敗]]></Failed>
+<ErrorMultipleLocales><![CDATA[OpenAdmin Tool は、このページに英語以外の複数のデータベース ロケールでデータベース サーバの情報を表示することができません。データベース サーバに、英語以外のデータベース ロケールが複数含まれています。]]></ErrorMultipleLocales>
+</lang>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL 탐색기]]></SQLExplorer>
+<ShowSQL><![CDATA[표시 - SQL]]></ShowSQL>
+<StmtType><![CDATA[명령문 유형]]></StmtType>
+<TXTime><![CDATA[트랜잭션 시간]]></TXTime>
+<Freq><![CDATA[빈도]]></Freq>
+<SQLAdmin><![CDATA[SQL 추적 관리]]></SQLAdmin>
+<SQLType><![CDATA[SQL 유형]]></SQLType>
+<SQLProfile><![CDATA[SQL 프로파일]]></SQLProfile>
+<SQLList><![CDATA[SQL 목록]]></SQLList>
+<TXGroup><![CDATA[트랜잭션]]></TXGroup>
+<Count><![CDATA[계수]]></Count>
+<AvgRT><![CDATA[평균 응답 시간]]></AvgRT>
+<MaxRT><![CDATA[최대 응답 시간]]></MaxRT>
+<AvgMem><![CDATA[평균 메모리]]></AvgMem>
+<RowProc><![CDATA[처리된 행]]></RowProc>
+<NoData><![CDATA[사용 가능한 데이터 없음]]></NoData>
+<SQLStmtSum><![CDATA[SQL문 요약]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL문]]></SQLStmt>
+<SID><![CDATA[세션 ID]]></SID>
+<NRecentTX><![CDATA[100개의 최신 트랜잭션]]></NRecentTX>
+<SQLFreq><![CDATA[SQL 빈도 요약]]></SQLFreq>
+<LockWait><![CDATA[로크 대기 시간]]></LockWait>
+<SQLDrill><![CDATA[SQL 드릴 다운]]></SQLDrill>
+<DrillDown><![CDATA[드릴 다운]]></DrillDown>
+<WaitIOTime><![CDATA[입출력 대기 시간]]></WaitIOTime>
+<UID><![CDATA[사용자 ID]]></UID>
+<CompTime><![CDATA[명령문 완료 시간]]></CompTime>
+<RespTime><![CDATA[응답 시간]]></RespTime>
+<Database><![CDATA[데이터베이스]]></Database>
+<Statement><![CDATA[명령문]]></Statement>
+<StmtStats><![CDATA[명령문 통계]]></StmtStats>
+<pgReads><![CDATA[페이지 읽기]]></pgReads>
+<BufReads><![CDATA[버퍼 읽기]]></BufReads>
+<ReadCache><![CDATA[읽기 캐시]]></ReadCache>
+<DataBufReads><![CDATA[데이터 버퍼 읽기]]></DataBufReads>
+<IndexBuffReads><![CDATA[인덱스 버퍼 읽기]]></IndexBuffReads>
+<PgWrites><![CDATA[페이지 쓰기]]></PgWrites>
+<BufWrites><![CDATA[버퍼 쓰기]]></BufWrites>
+<WriteCache><![CDATA[쓰기 캐시]]></WriteCache>
+<NumLockWait><![CDATA[로크 대기 수]]></NumLockWait>
+<LockRequests><![CDATA[로크 요청]]></LockRequests>
+<LockWaitTime><![CDATA[로크 대기 시간(초)]]></LockWaitTime>
+<LogSpace><![CDATA[로그 영역]]></LogSpace>
+<DiskSorts><![CDATA[디스크 정렬]]></DiskSorts>
+<MemSorts><![CDATA[메모리 정렬]]></MemSorts>
+<NumTables><![CDATA[테이블 수]]></NumTables>
+<NumIter><![CDATA[반복자 수]]></NumIter>
+<TExecs><![CDATA[총 실행 수]]></TExecs>
+<TExecTime><![CDATA[총 실행 시간(초)]]></TExecTime>
+<AvgExecTime><![CDATA[평균 실행 시간(초)]]></AvgExecTime>
+<MaxExecTime><![CDATA[최대 실행 시간(초)]]></MaxExecTime>
+<TNumIOWait><![CDATA[입출력 대기 수]]></TNumIOWait>
+<IOWaitTime><![CDATA[입출력 대기 시간(초)]]></IOWaitTime>
+<AvgIOWait><![CDATA[평균 입출력 대기(초)]]></AvgIOWait>
+<RowsPerSec><![CDATA[초당 평균 행 수]]></RowsPerSec>
+<EstCost><![CDATA[추정 비용]]></EstCost>
+<EstRows><![CDATA[추정 행 수]]></EstRows>
+<ActRows><![CDATA[실제 행 수]]></ActRows>
+<SQLErr><![CDATA[SQL 오류]]></SQLErr>
+<ISAMErr><![CDATA[ISAM 오류]]></ISAMErr>
+<IsoLevel><![CDATA[격리 레벨]]></IsoLevel>
+<SQLMem><![CDATA[SQL 메모리]]></SQLMem>
+<SQLTbadParam><![CDATA[SQL 추적을 수정할 때 매개변수가 올바르지 않습니다.]]></SQLTbadParam>
+<Modify><![CDATA[수정]]></Modify>
+<High><![CDATA[높음]]></High>
+<Medium><![CDATA[중간]]></Medium>
+<Low><![CDATA[낮음]]></Low>
+<MaxSQLTrace><![CDATA[추적할 SQL 텍스트의 최대량입니다.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[추적 레벨]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[추적할 SQL문의 수입니다.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[SQL 추적을 켜고 끕니다.]]></TraceOnOff>
+<On><![CDATA[켜짐]]></On>
+<Off><![CDATA[꺼짐]]></Off>
+<SQLTraceOpt><![CDATA[SQL 추적 옵션 설정]]></SQLTraceOpt>
+<Mode><![CDATA[모드]]></Mode>
+<NumTrace><![CDATA[추적 수]]></NumTrace>
+<TraceSize><![CDATA[추적 크기]]></TraceSize>
+<SQLTraceInfo><![CDATA[SQL 추적 정보]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[추적한 SQL문 수]]></NumSQLTraced>
+<TraceBufSize><![CDATA[추적 버퍼 크기]]></TraceBufSize>
+<OldTracedStmt><![CDATA[가장 이전에 추적한 명령문]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[추적 버퍼 지속 기간]]></TraceBufDuration>
+<SQLSeen><![CDATA[표시된 SQL문]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL 추적 시작]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[초당 SQL문]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[사용된 SQL 추적 메모리]]></TraceMemUsed>
+<RowPerSec><![CDATA[초당 행 수]]></RowPerSec>
+<ListSQL><![CDATA[SQL 목록]]></ListSQL>
+<TxStatsSummary><![CDATA[트랜잭션 통계 요약]]></TxStatsSummary>
+<NumSQL><![CDATA[Stmt 계수]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[명령문 호스트 변수]]></StmtHVars>
+<Pos><![CDATA[위치]]></Pos>
+<Type><![CDATA[유형]]></Type>
+<Value><![CDATA[값]]></Value>
+<Error_GD_NotEnabled><![CDATA[PHP에서 GD를 사용할 수 없습니다. 쿼리 트리를 표시할 수 없습니다.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix 버전:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[SQL 추적 저장]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[현재 syssqltrace 정보를 테이블에 저장]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[SQL문 요약]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[SQL 빈도 요약]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL 드릴 다운]]></SQLDrillDown>
+<Count><![CDATA[계수]]></Count>
+<AvgRunTime><![CDATA[평균 런타임]]></AvgRunTime>
+<LockWaitTime><![CDATA[로크 대기 시간]]></LockWaitTime>
+<WaitIOTime><![CDATA[입출력 대기 시간]]></WaitIOTime>
+<CompleteTime><![CDATA[완료 시간]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[지시문 지원을 사용하려면 EXT_DIRECTIVES를 1 또는 2로 설정해야 합니다.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[이 쿼리의 저장된 지시문이 있음]]></SavedDir>
+<DirectivesSaved><![CDATA[저장된 지시문]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[아직 이 쿼리에는 저장된 지시문이 없음]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[지시문이 삭제되었습니다. 새로 갱신할 내용이 없습니다.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[테이블 추적 정보가 존재하지 않습니다.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[인덱스를 찾지 못함]]></NoIndexesFound>
+<NoRowsFound><![CDATA[행을 찾지 못했습니다.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL 추적 사용 안함]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[SQL 추적이 사용되지 않음]]></SQLTracingOff>
+<NoSQLID><![CDATA[잘못된 services/sqltrace.php 인수]]></NoSQLID>
+<InvalidArgument><![CDATA[잘못된 services/sqltrace.php 인수]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[이 SQL문의 세부사항을 보려면 클릭]]></ClickForSQLDetails>
+<DrillDown><![CDATA[드릴 다운]]></DrillDown>
+<ORDERED_Description><![CDATA[SELECT문에 나열된 순서로 테이블을 조인하려면 옵티마이저를 강제 실행하십시오.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[가능한 빨리 첫 번째 행을 리턴하십시오.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[가능한 빨리 전체 쿼리를 완료하십시오.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[지정한 테이블에 액세스 시 멀티 인덱스 스캔을 사용하지 않습니다.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[별형 조인 실행 계획을 사용하지 않습니다.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[가능한 경우 별형 조인 실행 계획을 사용합니다.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[별형 조인 실행 계획에서 사실 테이블로 사용할 테이블을 선택합니다. ]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[별형 조인 실행 계획에서 사실 테이블로 사용하지 않을 테이블을 선택합니다. ]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[인덱스 셀프 조인 경로에서 테이블에 액세스할 때 사용하지 않을 인덱스를 지정합니다. ]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[인덱스 셀프 조인 경로에서 테이블에 액세스할 때 사용할 인덱스를 지정합니다. ]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[테이블에 액세스할 때 사용할 멀티 인덱스를 지정합니다.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[테이블에 액세스할 때 사용하지 않을 인덱스를 지정합니다.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[테이블에 액세스할 때 사용할 인덱스를 지정합니다.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[테이블에 액세스할 때 전체 테이블 스캔을 사용하지 않습니다.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[테이블에 액세스할 때 전체 테이블 스캔을 사용합니다.]]></FULL_Description>
+<USE_NL_Description><![CDATA[지정한 테이블을 중첩 루프 조인의 내부 테이블로 사용합니다.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[지정한 테이블을 중첩 루프 조인의 내부 테이블로 사용하지 않습니다.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[지정한 테이블에 액세스 시 동적 해시 조인을 사용합니다.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[지정한 테이블에 액세스 시 동적 해시 조인을 사용하지 않습니다.]]></AVOID_HASH_Description>
+<Index><![CDATA[인덱스]]></Index>
+<Table><![CDATA[테이블]]></Table>
+<Cost><![CDATA[비용]]></Cost>
+<RowsEstimated><![CDATA[추정 행 수]]></RowsEstimated>
+<RowsProcessed><![CDATA[처리된 행]]></RowsProcessed>
+<ElapsedTime><![CDATA[경과 시간]]></ElapsedTime>
+<NotYetImpl><![CDATA[이 페이지에서 OpenAdmin Tool은 영어가 아닌 둘 이상의 데이터베이스 로케일을 가진 데이터베이스 서버에 대한 정보를 표시할 수 없습니다. 데이터베이스 서버에는 영어가 아닌 둘 이상의 데이터베이스 로케일이 포함됩니다.]]></NotYetImpl>
+<QueryTree><![CDATA[쿼리 트리]]></QueryTree>
+<QueryTreeNA><![CDATA[쿼리 트리는 이 명령문에 사용할 수 없습니다.
+]]></QueryTreeNA>
+</lang>
+
+

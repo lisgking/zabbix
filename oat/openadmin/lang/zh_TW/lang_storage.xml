@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[儲存體]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[空間最佳化]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[下列伺服器版本 (或更高版本) 無法使用「壓縮功能」：]]></CompressOnlyAvail>
+<ErrorF><![CDATA[錯誤：]]></ErrorF>
+<NoOwner><![CDATA[沒有指定擁有者]]></NoOwner>
+<NoTable><![CDATA[沒有指定表格]]></NoTable>
+<InvalidDB><![CDATA[無效的資料庫]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[表格中的列數不足]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[片段中的列數不足]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[分割區號碼]]></PartNum>
+<required><![CDATA[必要項目]]></required>
+<actual><![CDATA[實際]]></actual>
+<Failed><![CDATA[失敗]]></Failed>
+<ErrorMultipleLocales><![CDATA[OpenAdmin Tool 無法在此頁面上顯示含有多個非英文資料庫語言環境的資料庫伺服器相關資訊。資料庫伺服器包含多個非英文資料庫語言環境。]]></ErrorMultipleLocales>
+</lang>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="help">
+<OATHelp><![CDATA[OAT - Súgó]]></OATHelp>
+<Help><![CDATA[Súgó]]></Help>
+<CloseWindow><![CDATA[Ablak bezárása]]></CloseWindow>
+<ErrorOpeningDB><![CDATA[Hiba történt a súgó adatbázis megnyitásakor]]></ErrorOpeningDB>
+<SorryNoHelpFound><![CDATA[Ehhez az oldalhoz nem található súgótémakör. <br/><br/>Sok OAT feladathoz talál további segítséget az IBM&reg; Informix&reg; információs központban.]]></SorryNoHelpFound>
+</lang>

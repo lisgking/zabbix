@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Gestor de plug-ins]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[El Gestor de plug-ins no puede grabar en el directorio temporal de OAT: tmp. Para instalar un plug-in, debe tener permiso para grabar en el directorio temporal de OAT. Obtenga permiso para grabar en este directorio e instale el plug-in de nuevo.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[El Gestor de plug-ins no se puede abrir porque el Gestor de plug-ins requiere que PHP se configure con el módulo zip instalado. El PHP que OAT utiliza no tiene el módulo zip instalado. Configure el PHP en el servidor web con el módulo zipo instalado. Como alternativa, puede volver a instalar OAT utilizando el instalador de OAT, que configura el PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[El plug-in no se ha instalado.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Plug-ins instalados]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Los plug-ins aún no están instalados]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[No se ha seleccionado ningún plug-in para instalar.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[No hay ninguna actualización disponible.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[El Gestor de plug-ins no puede grabar en el directorio de plug-ins. Obtenga permiso para grabar en este directorio e instale el plug-in de nuevo.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Versión actual instalada]]></CurrVerInstalled>
+<Unknown><![CDATA[Desconocida]]></Unknown>
+<ClickToEnable><![CDATA[Pulse para habilitar]]></ClickToEnable>
+<ClickToDisable><![CDATA[Pulse para inhabilitar]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Este archivo no se ha podido suprimir: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[El plug-in se ha actualizado satisfactoriamente.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[El plug-in se ha instalado satisfactoriamente.]]></PluginInstalled>
+<Name><![CDATA[Nombre]]></Name>
+<Author><![CDATA[Autor]]></Author>
+<Description><![CDATA[Descripción]]></Description>
+<Version><![CDATA[Versión]]></Version>
+<ServerVersion><![CDATA[Versión del servidor]]></ServerVersion>
+<MinOATVersion><![CDATA[Versión mínima de OAT]]></MinOATVersion>
+<Install><![CDATA[Instalar]]></Install>
+<Uninstall><![CDATA[Desinstalar]]></Uninstall>
+<Upgrade><![CDATA[Actualizar]]></Upgrade>
+<Enabled><![CDATA[Habilitado]]></Enabled>
+<updating><![CDATA[Actualizando]]></updating>
+<LatestInstalled><![CDATA[Último instalado]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Esta acción desinstala el plug-in {0}. El archivo comprimido del plug-in se suprime cuando el plug-in se ha instalado. Después de que se desinstale el plug-in, no se puede volver a instalar hasta que se restaura el archivo comprimido del plug-in en el directorio de plug-ins.  \n\n¿Desea continuar?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[El plug-in se ha desinstalado satisfactoriamente.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[El plug-in no se ha desinstalado.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT ha intentado desinstalar el plug-in, pero no se ha encontrado el ID de plug-in. En el menú de Administrador, pulse Gestor de plug-ins y revise la lista de plug-ins instalados. Si es necesario, desinstale de nuevo el plug-in.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[El plug-in se ha desinstalado, pero los archivos siguientes no se han podido eliminar:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Puede suprimir estos archivos del sistema.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[El elemento de menú del plug-in no se ha suprimido. Puede suprimir el elemento de menú en la página Gestor de menús.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[No se puede instalar el plug-in seleccionado. La versión mínima de OAT necesaria para el plug-in es {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Aceptar]]></Agree>
+<Disagree><![CDATA[Rechazar]]></Disagree>
+</lang>

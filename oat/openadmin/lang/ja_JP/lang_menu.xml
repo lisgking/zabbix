@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[ホーム]]></home>
+<expand><![CDATA[拡張]]></expand>
+<collapse><![CDATA[縮小]]></collapse>
+<logs><![CDATA[ログ]]></logs>
+<alertsummary><![CDATA[アラート サマリ]]></alertsummary>
+<alerts><![CDATA[アラート]]></alerts>
+<admincommands><![CDATA[管理コマンド]]></admincommands>
+<onlinelog><![CDATA[オンライン メッセージ]]></onlinelog>
+<baractlog><![CDATA[ON-Bar 動作]]></baractlog>
+<healthcenter><![CDATA[ヘルス センタ]]></healthcenter>
+<details><![CDATA[詳細]]></details>
+<taskdetails><![CDATA[タスク詳細]]></taskdetails>
+<runtimes><![CDATA[タスクのランタイム]]></runtimes>
+<scheduler><![CDATA[スケジューラ]]></scheduler>
+<space><![CDATA[スペース管理]]></space>
+<VP><![CDATA[仮想プロセッサ]]></VP>
+<dbspaces><![CDATA[DB 領域]]></dbspaces>
+<RecoveryLogs><![CDATA[リカバリ ログ]]></RecoveryLogs>
+<storage><![CDATA[格納領域]]></storage>
+<chunks><![CDATA[チャンク]]></chunks>
+<reservedspace><![CDATA[予約済みスペース]]></reservedspace>
+<performance><![CDATA[パフォーマンス分析]]></performance>
+<sql><![CDATA[SQL エディタ]]></sql>
+<sqlexplorer><![CDATA[SQL Explorer]]></sqlexplorer>
+<io><![CDATA[入出力]]></io>
+<Reports><![CDATA[システム レポート]]></Reports>
+<sessionexplorer><![CDATA[Session Explorer]]></sessionexplorer>
+<uReports><![CDATA[ユーザ レポート]]></uReports>
+<sqltoolbox><![CDATA[SQL Toolbox]]></sqltoolbox>
+<databases><![CDATA[データベース]]></databases>
+<schemabrowser><![CDATA[Schema Browser]]></schemabrowser>
+<tables><![CDATA[表]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[役立ちリンク]]></UsefulLinks>
+<about><![CDATA[OAT について]]></about>
+<train><![CDATA[トレーニング]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[管理]]></admin>
+<mach11><![CDATA[クラスタ]]></mach11>
+<dashboard><![CDATA[ダッシュボード]]></dashboard>
+<help><![CDATA[ヘルプ]]></help>
+<logout><![CDATA[ログアウト]]></logout>
+<taskscheduler><![CDATA[タスク スケジューラ]]></taskscheduler>
+<serveradmin><![CDATA[サーバ管理]]></serveradmin>
+<configuration><![CDATA[構成]]></configuration>
+<HowDoI><![CDATA[OAT タスク ヘルプ]]></HowDoI>
+<readme><![CDATA[ReadMe]]></readme>
+<releasenotes><![CDATA[Release Notes]]></releasenotes>
+<onconfigparam><![CDATA[構成]]></onconfigparam>
+<privileges><![CDATA[ユーザ特権]]></privileges>
+<highavail><![CDATA[高可用性]]></highavail>
+<PerformanceHist><![CDATA[パフォーマンス履歴]]></PerformanceHist>
+<SystemValidation><![CDATA[システムの検証]]></SystemValidation>
+<OATconfig><![CDATA[OAT 構成]]></OATconfig>
+<connadmin><![CDATA[接続管理]]></connadmin>
+<connmgt><![CDATA[接続の管理]]></connmgt>
+<addgroup><![CDATA[グループの追加]]></addgroup>
+<addconn><![CDATA[接続の追加]]></addconn>
+<helpadmin><![CDATA[ヘルプ管理]]></helpadmin>
+<helpmgt><![CDATA[ヘルプの管理]]></helpmgt>
+<helpdb><![CDATA[ヘルプ データベース]]></helpdb>
+<addhelp><![CDATA[ヘルプの追加]]></addhelp>
+<OATlogin><![CDATA[OAT ログイン]]></OATlogin>
+<aus><![CDATA[自動統計更新]]></aus>
+<qbe><![CDATA[例示問合せ]]></qbe>
+<onstat><![CDATA[onstat ユーティリティ]]></onstat>
+<replication><![CDATA[レプリケーション]]></replication>
+<trustedcontext><![CDATA[トラステッド コンテキスト]]></trustedcontext>
+<security><![CDATA[セキュリティ]]></security>
+<backup><![CDATA[バックアップ]]></backup>
+<MemoryMgr><![CDATA[メモリ マネージャ]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

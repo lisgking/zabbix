@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[Динамическое выделение журналов]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[Система хранения для файла логического журнала]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[Минимальное число грязных LRU]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[Система хранения физического журнала]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[Файлы ATS]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[Узел ER не работает]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[Файлы RIS]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[Объем свободной памяти ОС]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[Подключенные процессоры ОС]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[Виртуальные процессоры ОС]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[Предельное число открытых файлов OS]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[ID семафоров ОС]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[Семафоры ОС]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[ID совместной памяти ОС]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[Макс. объем совместной памяти ОС]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[shmNumSegs ОС]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[CKPT, запускаемые LLOG]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[CKPT, запускаемые PLOG]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[Критический раздел]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[Очистка диска]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[Самое долгое ожидание]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[Чтений буфера на таблицу]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[Записей буфера на таблицу]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[Последовательных просмотров на таблицу]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[Кэшированных чтений буфера]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[Кэшированных записей буфера]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[Сортировки на диске]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[Откаты]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[Операций записи в режиме переднего плана]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[Страниц LLOG на операцию ввода-вывода]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[Ожидания блокировок]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[Страниц PLOG на операцию ввода-вывода]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[Число последовательных просмотров]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[Отключенных чанков]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[Операций ввода/вывода чанков]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[Операций чтения чанков]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[Операций записи чанков]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[Свободное место пространства баз данных]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[Размер строки]]></dsc_Rowsize>
+
+</lang>

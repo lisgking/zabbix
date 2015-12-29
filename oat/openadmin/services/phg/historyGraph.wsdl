@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="HistoryGraph" targetNamespace="urn:HistoryGraph"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:HistoryGraph"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getGraphData">
+		<wsdl:part name="servers" type="xsd:string"></wsdl:part>
+		<wsdl:part name="field_names" type="xsd:string"></wsdl:part>
+	</message>
+
+	<message name="getGraphDataResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getAvailableServers">
+	</message>
+
+	<message name="getAvailableServersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="HistoryGraphPort">
+		
+		<operation name="getGraphData">
+			<input  message="typens:getGraphData" />
+			<output message="typens:getGraphDataResponse" />
+		</operation>
+		
+		<operation name="getAvailableServers">
+			<input  message="typens:getAvailableServers" />
+			<output message="typens:getAvailableServersResponse" />
+		</operation>
+		
+	</portType>
+		
+	<!-- define protocol details for each Ports -->
+	<binding name="HistoryGraphBinding" type="typens:HistoryGraphPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		
+		<operation name="getGraphData">
+			<soap:operation soapAction="urn:HistoryGraphAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:HistoryGraph"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:HistoryGraph"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getAvailableServers">
+			<soap:operation soapAction="urn:HistoryGraphAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:HistoryGraph"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:HistoryGraph"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+	</binding>
+
+	<service name="HistoryGraphService">
+		<port name="HistoryGraphPort" binding="typens:HistoryGraphBinding">
+			<soap:address location="services/phg/historyGraphService.php" />
+		</port>
+	</service>
+</definitions>

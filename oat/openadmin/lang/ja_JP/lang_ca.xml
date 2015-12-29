@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[高可用性クラスタ]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[主サーバに到達できません]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[クラスタに到達できません]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[クラスタを認識できません]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[キャッシュ主サーバがクラスタ化されていません]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[クラスタに主サーバがありません]]></NoPrimaryInCluster>
+</lang>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[Uloženie zlyhalo:]]></SaveFailed>
+<ValueReqd><![CDATA[vyžaduje sa hodnota pre položku]]></ValueReqd>
+<MustBe><![CDATA[musí byť 0 (vypnuté) alebo v rozsahu od 60 do 1 800.]]></MustBe>
+<MustBeRange><![CDATA[musí byť v rozsahu]]></MustBeRange>
+<MustBeInSet><![CDATA[musí byť v množine]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[musí byť menšie alebo rovné]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[musí byť väčšie alebo rovné]]></MustBeGreaterOrEqual>
+</lang>

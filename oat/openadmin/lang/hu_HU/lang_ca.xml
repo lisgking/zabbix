@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[Magas szintű rendelkezésre állású fürtök]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[Az elsődleges nem érhető el]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[A fürt nem érhető el]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[A fürt nem ismerhető fel]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[A gyorsítótárban szereplő elsődleges nem fürtözött]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[Nincs elsődleges a fürtben]]></NoPrimaryInCluster>
+</lang>

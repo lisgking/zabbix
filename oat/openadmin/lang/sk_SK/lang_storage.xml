@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[Úložný priestor]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[Optimalizácia priestoru]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[Funkcia kompresie je k dispozícii iba v nasledujúcej verzii servera (alebo jeho novšej verzii):]]></CompressOnlyAvail>
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+<NoOwner><![CDATA[Nie je zadaný žiadny vlastník]]></NoOwner>
+<NoTable><![CDATA[Nie je zadaná žiadna tabuľka]]></NoTable>
+<InvalidDB><![CDATA[Neplatná databáza]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[Nedostatok riadkov v tabuľke]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[Nedostatok riadkov vo fragmente]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[Číslo oddielu]]></PartNum>
+<required><![CDATA[Vyžadované]]></required>
+<actual><![CDATA[Skutočné]]></actual>
+<Failed><![CDATA[NEÚSPEŠNÉ]]></Failed>
+<ErrorMultipleLocales><![CDATA[Nástroj OpenAdmin Tool nemôže na tejto stránke zobraziť informácie o databázovom serveri, ktorý používa viacero neanglických miestnych nastavení databázy. Databázový server obsahuje viacero neanglických miestnych nastavení databázy.]]></ErrorMultipleLocales>
+</lang>

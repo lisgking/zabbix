@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Admin]]></admin>
+<connect><![CDATA[Connect]]></connect>
+<connection><![CDATA[Connection]]></connection>
+<connections><![CDATA[Connections]]></connections>
+<getservers><![CDATA[Get Servers]]></getservers>
+<server><![CDATA[Server]]></server>
+<hostname><![CDATA[Host name]]></hostname>
+<informixserver><![CDATA[Informix server]]></informixserver>
+<idsprotocol><![CDATA[Informix protocol]]></idsprotocol>
+<login><![CDATA[Login]]></login>
+<log_in><![CDATA[Log In]]></log_in>
+<logging_in><![CDATA[Logging in...]]></logging_in>
+<loggingout><![CDATA[Logging Out]]></loggingout>
+<no_user><![CDATA[A user name is required.]]></no_user>
+<missingpassword><![CDATA[A password is required.]]></missingpassword>
+<missinginformixserver><![CDATA[An Informix Server is required.]]></missinginformixserver>
+<missinghost><![CDATA[A host name is required.]]></missinghost>
+<missingport><![CDATA[A port number is required.]]></missingport>
+<group><![CDATA[OAT group]]></group>
+<groups><![CDATA[Groups]]></groups>
+<password><![CDATA[Password]]></password>
+<port><![CDATA[Port]]></port>
+<help><![CDATA[Help]]></help>
+<quicklogin><![CDATA[Log in to an OAT Group]]></quicklogin>
+<selectaconnection><![CDATA[Select a server]]></selectaconnection>
+<serverdetails><![CDATA[Connect to a Server]]></serverdetails>
+<username><![CDATA[User name]]></username>
+<aboutOAT><![CDATA[About OAT]]></aboutOAT>
+<readme><![CDATA[Readme]]></readme>
+<HowDoI><![CDATA[OAT Task Help]]></HowDoI>
+<cookies_required><![CDATA[Cookies are required to login to the OpenAdmin Tool.  It appears that your web browser does not support cookies, so OAT will not be able to log you in.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Logging you in.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Error: No connection number specified.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Error: No Group.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Invalid login details.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[Invalid group password - try again]]></InvalidGroupPwd>
+<Default><![CDATA[Default]]></Default>
+<login_instructions><![CDATA[Log in to an OAT group to connect to a server in the group, or connect to a server directly. An OAT group contains connection information for one or more database servers. OAT groups are defined on the OAT Admin pages.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Select the OAT group, enter the group password, and click Get Servers.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Enter or confirm the connection information for the server.]]></serverdetails_instructions>
+<test_connection><![CDATA[Test Connection]]></test_connection>
+<testing_connection><![CDATA[Testing connection...]]></testing_connection>
+<ConnectionFailed><![CDATA[Connection Failed:]]></ConnectionFailed>
+</lang>

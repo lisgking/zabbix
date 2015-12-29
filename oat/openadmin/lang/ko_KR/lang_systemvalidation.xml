@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[시스템 유효성 검증]]></mainTitle>
+<checkDataFormat><![CDATA[데이터 포맷 검사]]></checkDataFormat>
+<databaseName><![CDATA[데이터베이스 이름]]></databaseName>
+<tableName><![CDATA[테이블 이름]]></tableName>
+<chkTable><![CDATA[테이블 검사]]></chkTable>
+<chkExtFormat><![CDATA[익스텐트 포맷 검사]]></chkExtFormat>
+<extName><![CDATA[DBSPACE 이름]]></extName>
+<chkExtent><![CDATA[익스텐트 검사]]></chkExtent>
+<valResTo><![CDATA[유효성 검증 결과...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - 시스템 유효성 검증]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 유효성 검증이 완료되었습니다.]]></oncheckComplete>
+<ValidationResults><![CDATA[유효성 검증 결과...]]></ValidationResults>
+<SysValNotValid><![CDATA[2차 시스템의 유효성 검증이 유효하지 않습니다.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[주의: 페이지 수에 따라 검사 실행에 많은 양의 처리 리소스가 소모될 수 있습니다. 이 동작은 지정된 테이블의 모든 페이지(BLOBPAGE 및 SBPAGE 제외)를 읽고 각 페이지의 일관성을 검사합니다. 계속하시겠습니까?]]></confirmCheckData>
+<NotYetImpl><![CDATA[이 페이지에서 OpenAdmin Tool은 영어가 아닌 둘 이상의 데이터베이스 로케일을 가진 데이터베이스 서버에 대한 정보를 표시할 수 없습니다. 데이터베이스 서버에는 영어가 아닌 둘 이상의 데이터베이스 로케일이 포함됩니다.]]></NotYetImpl>
+</lang>

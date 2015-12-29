@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Přidat]]></add>
+<alarms><![CDATA[Alarmy]]></alarms>
+<alarm_check><![CDATA[Kontrola alarmu]]></alarm_check>
+<alarm_setup><![CDATA[Nastavení alarmu]]></alarm_setup>
+<alarm_mod><![CDATA[Upravit alarmy]]></alarm_mod>
+<alarm_msg><![CDATA[Určete podmínky, kdy je nastaven alarm.]]></alarm_msg>
+<alarm_name><![CDATA[Název alarmu:]]></alarm_name>
+<Always><![CDATA[Vždy]]></Always>
+<AnyAlarm><![CDATA[Libovolný alarm]]></AnyAlarm>
+<Anyalarm><![CDATA[Libovolný alarm]]></Anyalarm>
+<all><![CDATA[Vše]]></all>
+<cancel><![CDATA[Storno]]></cancel>
+<Config><![CDATA[Konfigurace]]></Config>
+<Configuration><![CDATA[Konfigurace]]></Configuration>
+<Currentprofile><![CDATA[Aktuální profil]]></Currentprofile>
+<CurrentProfile><![CDATA[Aktuální profil]]></CurrentProfile>
+<del_def_na><![CDATA[Výchozí profil nemůže být odstraněn.]]></del_def_na>
+<deleted_prof><![CDATA[Profil byl odstraněn.]]></deleted_prof>
+<delete><![CDATA[Odstranit]]></delete>
+<desc><![CDATA[Název alarmu]]></desc>
+<emailprog><![CDATA[Konfigurace e-mailového programu]]></emailprog>
+<empty_prof_add><![CDATA[Název profilu nemůže být prázdný.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Vyberte profil ze seznamu.]]></empty_prof_load>
+<enable><![CDATA[Povolit]]></enable>
+<ER><![CDATA[Replikace ER]]></ER>
+<exceptions><![CDATA[Výjimky]]></exceptions>
+<exc_intro><![CDATA[Tento alarm umožňuje výjimky.]]></exc_intro>
+<exc_example><![CDATA[Příklad: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Od]]></from>
+<Category><![CDATA[Kategorie]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Spustit poradce Health Advisor]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Informace]]></info>
+<ldesc><![CDATA[Popis]]></ldesc>
+<description><![CDATA[Popis:]]></description>
+<load><![CDATA[Zavést]]></load>
+<modify><![CDATA[Upravit]]></modify>
+<modifysched><![CDATA[Upravit plán]]></modifysched>
+<modify_threshold><![CDATA[Upravit prahové hodnoty]]></modify_threshold>
+<name><![CDATA[Název]]></name>
+<noauth><![CDATA[Nemáte autorizaci k přístupu na tuto stránku.]]></noauth>
+<noalarms><![CDATA[Nedošlo k žádným alarmům.]]></noalarms>
+<notification><![CDATA[Oznámení]]></notification>
+<OS><![CDATA[OS]]></OS>
+<Perf><![CDATA[Výkon]]></Perf>
+<profile><![CDATA[Profil]]></profile>
+<profmanagement><![CDATA[Správa profilu]]></profmanagement>
+<profmsg><![CDATA[Přidejte, načtěte nebo odstraňte profily.]]></profmsg>
+<RedAlarm><![CDATA[Červený alarm]]></RedAlarm>
+<Redalarm_><![CDATA[Červený alarm:]]></Redalarm_>
+<Redalarm><![CDATA[Červený alarm]]></Redalarm>
+<Redalarmthreshold><![CDATA[Prahová hodnota červeného alarmu]]></Redalarmthreshold>
+<send><![CDATA[Odeslat e-mailové oznámení]]></send>
+<save><![CDATA[Uložit]]></save>
+<save_failed><![CDATA[Uložení se nezdařilo: ]]></save_failed>
+<saved_alarms><![CDATA[Změny voleb alarmu byly uloženy.]]></saved_alarms>
+<saved_schedule><![CDATA[Změna na volby oznámení byly uloženy.]]></saved_schedule>
+<saved_email><![CDATA[Změny na e-mailový program byly uloženy.]]></saved_email>
+<schedandnot><![CDATA[Plán a oznámení]]></schedandnot>
+<schedmsg><![CDATA[Profily lze naplánovat ke spuštění v zadaných intervalech. Výsledky byly odeslány e-mailem.]]></schedmsg>
+<schedule><![CDATA[Plán]]></schedule>
+<show><![CDATA[Zobrazit]]></show>
+<Storage><![CDATA[Úložiště]]></Storage>
+<to><![CDATA[Do]]></to>
+<thresholds><![CDATA[Prahové hodnoty]]></thresholds>
+<threshold_msg><![CDATA[Viz popis alarmu, kde je uvedeno vysvětlení, jaké prahové hodnoty jsou použity.]]></threshold_msg>
+<when><![CDATA[Kdy]]></when>
+<Yellowalarmthreshold><![CDATA[Prahová hodnota žlutého alarmu]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Žlutý alarm:]]></Yelalarm_>
+<YelAlarm><![CDATA[Žlutý alarm]]></YelAlarm>
+</lang>

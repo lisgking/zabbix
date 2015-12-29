@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[Minimálna požadovaná verzia PHP je 5.2.4.  Nájdená verzia PHP:]]></MinPHPVersion>
+<GenTime><![CDATA[Čas generovania]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[OAT vyžaduje Informix, verzia 11.10 alebo vyššiu.]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[Modul plug-in {0} vyžaduje Informix, verzia {1}.]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[V module {0} chýba funkcia spustenia.]]></NoModuleRunFunction>
+<SorryModule><![CDATA[Adresa URL nie je platnou adresou stránky OAT. Modul {0} sa nepodarilo nájsť v adresári modulov OAT. Skontrolujte, či sa názov modulu zhoduje s kľúčovým slovom "act" v adrese URL.]]></SorryModule>
+<InvalidURL_do_param><![CDATA[Adresa URL nie je platnou adresou stránky OAT. Ak chcete zobraziť stránky OAT, kliknite na položku v ponuke OAT alebo na prepojenie na stránke OAT.]]></InvalidURL_do_param>
+</lang>

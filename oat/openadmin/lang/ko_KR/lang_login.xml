@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[관리]]></admin>
+<connect><![CDATA[연결]]></connect>
+<connection><![CDATA[연결]]></connection>
+<connections><![CDATA[연결]]></connections>
+<getservers><![CDATA[서버 가져오기]]></getservers>
+<server><![CDATA[서버]]></server>
+<hostname><![CDATA[호스트 이름
+]]></hostname>
+<informixserver><![CDATA[Informix Server]]></informixserver>
+<idsprotocol><![CDATA[Informix 프로토콜]]></idsprotocol>
+<login><![CDATA[로그인]]></login>
+<log_in><![CDATA[로그인]]></log_in>
+<logging_in><![CDATA[로그인 중...]]></logging_in>
+<loggingout><![CDATA[로그아웃]]></loggingout>
+<no_user><![CDATA[사용자 이름은 필수입니다.]]></no_user>
+<missingpassword><![CDATA[암호는 필수입니다.]]></missingpassword>
+<missinginformixserver><![CDATA[Informix Server는 필수입니다.]]></missinginformixserver>
+<missinghost><![CDATA[호스트 이름은 필수입니다.]]></missinghost>
+<missingport><![CDATA[포트 번호는 필수입니다.]]></missingport>
+<group><![CDATA[OAT 그룹
+]]></group>
+<groups><![CDATA[그룹]]></groups>
+<password><![CDATA[암호]]></password>
+<port><![CDATA[포트]]></port>
+<help><![CDATA[도움말]]></help>
+<quicklogin><![CDATA[OAT 그룹에 로그인]]></quicklogin>
+<selectaconnection><![CDATA[서버 선택]]></selectaconnection>
+<serverdetails><![CDATA[서버에 연결]]></serverdetails>
+<username><![CDATA[사용자 이름
+]]></username>
+<aboutOAT><![CDATA[OAT 정보]]></aboutOAT>
+<readme><![CDATA[Readme]]></readme>
+<HowDoI><![CDATA[OAT 작업 도움말]]></HowDoI>
+<cookies_required><![CDATA[OpenAdmin Tool에 로그인하려면 쿠키가 필요합니다. 사용 중인 웹 브라우저는 쿠키를 지원하지 않으므로 OAT에서 로그인할 수 없습니다. ]]></cookies_required>
+<LoginRedirectDesc><![CDATA[로그인]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[오류: 연결 번호가 지정되지 않았습니다.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[오류: 그룹 없음]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[잘못된 로그인 세부사항]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[잘못된 그룹 암호 - 다시 시도]]></InvalidGroupPwd>
+<Default><![CDATA[기본값]]></Default>
+<login_instructions><![CDATA[그룹에서 서버에 연결할 OAT 그룹에 로그인하거나 직접 서버에 연결하십시오. OAT 그룹에 하나 이상의 데이터베이스 서버에 대한 연결 정보가 포함되어 있습니다. OAT 그룹은 OAT 관리 페이지에 정의됩니다 ]]></login_instructions>
+<quicklogin_instructions><![CDATA[OAT 그룹을 선택하고 그룹 암호를 입력한 후 서버 가져오기를 클릭하십시오.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[서버에 대한 연결 정보를 입력하거나 확인하십시오.
+]]></serverdetails_instructions>
+<test_connection><![CDATA[연결 테스트]]></test_connection>
+<testing_connection><![CDATA[연결 테스트 중...]]></testing_connection>
+<ConnectionFailed><![CDATA[연결에 실패함:]]></ConnectionFailed>
+</lang>

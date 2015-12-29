@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Procesadores virtuales]]></virtualprocessors>
+<vps><![CDATA[VP]]></vps>
+<vpclasses><![CDATA[Clases VP]]></vpclasses>
+<vpid><![CDATA[ID de VP]]></vpid>
+<class><![CDATA[Clase]]></class>
+<cnt><![CDATA[VP]]></cnt>
+<total><![CDATA[Total]]></total>
+<usercpu><![CDATA[Tiempo de CPU de usuario]]></usercpu>
+<syscpu><![CDATA[Tiempo de CPU del sistema]]></syscpu>
+<totalcpu><![CDATA[Tiempo total de CPU]]></totalcpu>
+<classdetails><![CDATA[Detalles de la clase]]></classdetails>
+<nodrop><![CDATA[No se puede descartar el último VP de una clase]]></nodrop>
+<tomuchdrop><![CDATA[El descarte ha fallado. No se pueden descartar más vps que los que existen.]]></tomuchdrop>
+<success><![CDATA[La acción ha sido satisfactoria.]]></success>
+<VPValNotSet><![CDATA[La acción no es posible. El siguiente valor de VP no se ha definido correctamente:]]></VPValNotSet>
+<VPType><![CDATA[Tipo de VP]]></VPType>
+<Count><![CDATA[Recuento]]></Count>
+<AddDropVP><![CDATA[Añadir o descartar un VP]]></AddDropVP>
+<add><![CDATA[Añadir]]></add>
+<drop><![CDATA[Descartar]]></drop>
+<addVP><![CDATA[Añadir VP]]></addVP>
+<dropVP><![CDATA[Descartar VP]]></dropVP>
+<modifyingClass><![CDATA[Clase de modificación]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Procesadores virtuales - Información global]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[VP de clase: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Lo siento, esta opción no está disponible]]></OptionNotAvail>
+<seconds><![CDATA[segundos]]></seconds>
+</lang>

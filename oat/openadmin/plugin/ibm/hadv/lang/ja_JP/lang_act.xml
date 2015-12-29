@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_act">
+
+<act_r_DBSPACETEMP><![CDATA[ DBSPACETEMP 構成パラメータが設定されていません。一時表とソート ファイルの最高のパフォーマンスを得るために、DBSPACETEMP 構成パラメータを使用して個別のディスク上に複数の DB 領域を指定してください。]]></act_r_DBSPACETEMP>
+<act_r_DUMPDIR><![CDATA[NA]]></act_r_DUMPDIR>
+<act_r_DYNAMIC_LOGS><![CDATA[NA]]></act_r_DYNAMIC_LOGS>
+<act_r_Logdbs><![CDATA[論理ログ ファイルがルート DB 領域 (rootdbs) に格納されています。論理ログ ファイルをルート DB 領域から、実効表や物理ログによって共有されていないディスク上の DB 領域に移動してください。]]></act_r_Logdbs>
+<act_r_LTXHWM><![CDATA[動的ログ割当て (DYNAMIC_LOGS) がオフで、ロング トランザクションの高水位マーク (LTXHWM) が %lparam1% より大きくなっています。LTXHWM 構成パラメータを小さく設定して、ロング トランザクションのロールバックによるシステムの停止を回避してください。]]></act_r_LTXHWM>
+<act_r_LRU_MIN><![CDATA[NA]]></act_r_LRU_MIN>
+<act_r_LTAPEDEV><![CDATA[NA]]></act_r_LTAPEDEV>
+<act_r_NOAGE><![CDATA[NA]]></act_r_NOAGE>
+<act_r_ONDBSPACEDOWN><![CDATA[NA]]></act_r_ONDBSPACEDOWN>
+<act_r_Physdbs><![CDATA[物理ログがルート DB 領域 (rootdbs) に格納されています。物理ログをルート DB 領域から、実効表や論理ログ ファイルによって共有されていないディスク上の DB 領域に移動してください。]]></act_r_Physdbs>
+<act_r_SINGLE_CPU_VP><![CDATA[NA]]></act_r_SINGLE_CPU_VP>
+<act_r_TAPEDEV><![CDATA[NA]]></act_r_TAPEDEV>
+<act_r_ATS_Files><![CDATA[%param3% より多い数の ATS ファイルがエンタープライズ レプリケーションで生成されています。これらのファイルを確認し、適切な処置を行ってください。]]></act_r_ATS_Files>
+<act_r_ER_DDRBlock><![CDATA[トランザクション ブロッキング (DDRBLOCK) の開始前に残っているログ ページの割合が、%param3%% より小さくなっています。ログの折り返しを防ぐために、適切な処置を行ってください (例えばログの動的割当ての使用)。]]></act_r_ER_DDRBlock>
+<act_r_ER_Down_Node><![CDATA[エンタープライズ レプリケーションで、ノードがダウン状態にあることが検出されました。ノードがダウンしている理由を調べて、適切な処置を行ってください。]]></act_r_ER_Down_Node>
+<act_r_RIS_Files><![CDATA[%param3% より多い数の RIS ファイルがエンタープライズ レプリケーションで生成されています。これらのファイルを確認し、適切な処置を行ってください。]]></act_r_RIS_Files>
+<act_r_OS_Free_Memory><![CDATA[オペレーティング システムで使用できる空きメモリが、使用可能なメモリ合計の %param3%% より小さくなっています。オペレーティング システム メモリ不足の結果としてパフォーマンスが低下する可能性があります。オペレーティング システム メモリを増やすために、適切な処置を行ってください。]]></act_r_OS_Free_Memory>
+<act_r_OS_Online_Procs><![CDATA[NA]]></act_r_OS_Online_Procs>
+<act_r_OS_Procs><![CDATA[NA]]></act_r_OS_Procs>
+<act_r_OS_Open_File_Limit><![CDATA[オペレーティング システムでのプロセスあたりのオープン ファイル記述子の数が %param3% より小さくなっています。現在の値は %param1% です。プロセスあたりのオープン ファイルの数が不十分である場合、予期しないデータベース サーバ動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_r_OS_Open_File_Limit>
+<act_r_OS_semid><![CDATA[オペレーティング システムでのセマフォ セット数が %param3% より小さくなっています。現在の値は %param1% です。セマフォ セットの数が不十分である場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_r_OS_semid>
+<act_r_OS_semnum><![CDATA[オペレーティング システムでのセマフォの合計数が %param3% より小さくなっています。現在の値は %param1% です。セマフォの数が不十分である場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_r_OS_semnum>
+<act_r_OS_shmids><![CDATA[オペレーティング システムでの共有メモリ ID の数が %param3% より小さくなっています。現在の値は %param1% です。共有メモリ ID の数が不十分な場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_r_OS_shmids>
+<act_r_OS_shmmax><![CDATA[オペレーティング システムでの共有メモリ セグメントの最大サイズが %param3% より小さくなっています。現在の値は %param1% です。共有メモリ セグメントの最大サイズの設定が低すぎる場合、結果として予期しない動作が発生することがあります。適切な処置を行ってください。]]></act_r_OS_shmmax>
+<act_r_OS_shmnumsegs><![CDATA[オペレーティング システムでの共有メモリ セグメントの合計数が %param3% より小さくなっています。現在の値は %param1% です。共有メモリ セグメントの数が不十分な場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_r_OS_shmnumsegs>
+<act_r_CKPT_Caused_By_LLOG><![CDATA[論理ログ リソースの不足のために、チェックポイント処理中にブロッキングが発生しました。この状態を防ぐには、論理ログを追加してください。]]></act_r_CKPT_Caused_By_LLOG>
+<act_r_CKPT_Caused_By_PLOG><![CDATA[物理ログ リソースの不足のために、チェックポイント処理中にブロッキングが発生しました。この状態を防ぐには、物理ログのサイズを増やしてください。]]></act_r_CKPT_Caused_By_PLOG>
+<act_r_Critical_Section><![CDATA[いくつかのチェックポイントでのクリティカル セクション時間が %lparam1% 秒より大きくなっています。これが原因でブロッキングが発生する可能性があるため、チェックポイント処理中にクリティカル セクションで費やされた時間を調べてください。]]></act_r_Critical_Section>
+<act_r_Diskflush><![CDATA[チェックポイント中の 1 秒あたりのディスク フラッシュ数が %lparam1% より小さくなっています。入出力の問題が原因でディスクの動作が遅くなっているかどうか調べてください。]]></act_r_Diskflush>
+<act_r_Longest_Waiter><![CDATA[いくつかのチェックポイントでの待機時間が %lparam1% 秒より長くなっています。チェックポイントのパフォーマンスを改善させるために、原因を調べてください。]]></act_r_Longest_Waiter>
+<act_r_Buffreads_Per_Table><![CDATA[いくつかの表でのバッファ読込み回数が、すべてのバッファ読込みの %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_r_Buffreads_Per_Table>
+<act_r_Buffwrites_Per_Table><![CDATA[いくつかの表でのバッファ書込み回数が、すべてのバッファ書込みの %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_r_Buffwrites_Per_Table>
+<act_r_Seq_Scans_Per_Table><![CDATA[いくつかの表での順次スキャンの数が、すべての順次スキャン数の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_r_Seq_Scans_Per_Table>
+<act_r_Buffreads_Cache><![CDATA[バッファにキャッシュされた読込みの割合 (%cached) が %param3%% より小さくなっています。現在、キャッシュされた割合は %param1%% です。バッファの数を増やすと、キャッシュされる割合が改善する可能性があります。]]></act_r_Buffreads_Cache>
+<act_r_Buffwrites_Cache><![CDATA[バッファにキャッシュされた書込みの割合 (%cached) が %param3%% より小さくなっています。現在、キャッシュされた割合は %param1%% です。バッファの数を増やすと、キャッシュされる割合が改善する可能性があります。]]></act_r_Buffwrites_Cache>
+<act_r_Disksorts><![CDATA[ディスク ソートの数が、ソート合計の %param3%% より大きくなっています。現在のディスク ソート数は %param1%% です。ソート用の共有メモリを追加するためのオプションを調べてください。]]></act_r_Disksorts>
+<act_r_isrollbacks><![CDATA[ロールバックされたトランザクションの数が、トランザクション合計の %param3%% より大きくなっています。アプリケーション設計、または論理ログ リソースの不足が原因で過剰な数のロールバックが発生しているのかどうか調べてください。]]></act_r_isrollbacks>
+<act_r_Foreground_Writes><![CDATA[フォアグラウンド書込みの数が、書込み合計の %param3%% より大きくなっています。バッファの数を増やすと、フォアグラウンド書込みとなる書込みの割合が減る可能性があります。]]></act_r_Foreground_Writes>
+<act_r_LLOG_Pages_Per_IO><![CDATA[入出力に対する論理ログ ページの比率 (ページ/入出力) が %param3%% より大きくなっています。現在、入出力に対する論理ログ ページの比率は %param1%% です。論理ログ バッファ (LOGBUFF) のサイズを調べてください。]]></act_r_LLOG_Pages_Per_IO>
+<act_r_Lock_Waits><![CDATA[ロック待機の数が、ロック要求合計の %param3%% より大きくなっています。現在、ロック待機はロック要求合計の %param1%% です。ページ レベル ロックを持つ表について、およびアプリケーションでの並行性について調べてください。]]></act_r_Lock_Waits>
+<act_r_PLOG_Pages_Per_IO><![CDATA[入出力に対する物理ログ ページの比率 (ページ/入出力) が %param3%% より大きくなっています。現在、入出力に対する物理ログ ページの比率は %param1%% です。物理ログ バッファのサイズを調べてください。]]></act_r_PLOG_Pages_Per_IO>
+<act_r_Seq_Scans><![CDATA[順次スキャンの数が、SQL 文の合計の %param3%% より大きくなっています。順次スキャンのパフォーマンスを改善する方法を調べてください。]]></act_r_Seq_Scans>
+<act_r_Offline_Chunks><![CDATA[検査により、%param1% のチャンクがオフラインであることが検出されました。チャンクがオフラインになっている理由を調べて、適切な処置を行ってください。]]></act_r_Offline_Chunks>
+<act_r_Chunk_IO_OPS><![CDATA[いくつかのチャンクでの入出力操作の数が、すべての入出力操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で入出力操作をより均等に分散させる方法を調べてください。]]></act_r_Chunk_IO_OPS>
+<act_r_Chunk_IO_Reads><![CDATA[いくつかのチャンクでの読込み操作の数が、すべての読込み操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で読込み操作をより均等に分散させる方法を調べてください。]]></act_r_Chunk_IO_Reads>
+<act_r_Chunk_IO_Writes><![CDATA[いくつかのチャンクでの書込み操作の数が、すべての書込み操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で書込み操作をより均等に分散させる方法を調べてください。]]></act_r_Chunk_IO_Writes>
+<act_r_Dbspace_Free_Space><![CDATA[いくつかの DB 領域のフリー スペースが、DB 領域の合計の %lparam1%% より小さくなっています。これらの DB 領域にチャンクを追加することを検討してください。]]></act_r_Dbspace_Free_Space>
+<act_r_Rowsize><![CDATA[いくつかの表では、DB 領域のページ サイズおよび表の行サイズが原因で、ページの %lparam1%% が使用不能です。ページあたりのフリー スペースを増やす操作について調べてください。例えば、異なるページ サイズを持つ DB 領域に表を移動したり、表を再設計したりします。]]></act_r_Rowsize>
+
+
+
+
+
+<act_y_DBSPACETEMP><![CDATA[ DBSPACETEMP 構成パラメータにスペース文字が含まれています。DB 領域の間の空白を削除してください。]]></act_y_DBSPACETEMP>
+<act_y_DUMPDIR><![CDATA[DUMPDIR 構成パラメータが %lparam1% ディレクトリに設定されています。この構成パラメータは、診断情報が作成されるディレクトリを指定します。DUMPDIR 構成パラメータを別のディレクトリに変更してください。]]></act_y_DUMPDIR>
+<act_y_DYNAMIC_LOGS><![CDATA[動的ログ割当て (DYNAMIC_LOGS) がオフです。動的ログ割当てをオンにして、ロング トランザクションのロールバックによるシステムの停止を回避してください。]]></act_y_DYNAMIC_LOGS>
+<act_y_Logdbs><![CDATA[論理ログ ファイルが、実効表が含まれる DB 領域に格納されています。論理ログ ファイルを、実効表や物理ログによって共有されていないディスク上の DB 領域に移動してください。]]></act_y_Logdbs>
+<act_y_LTXHWM><![CDATA[動的ログ割当て (DYNAMIC_LOGS) がオフで、ロング トランザクションの高水位マーク (LTXHWM) が %lparam1% より大きくなっています。LTXHWM 構成パラメータを小さく設定して、ロング トランザクションのロールバックによるシステムの停止を回避してください。]]></act_y_LTXHWM>
+<act_y_LRU_MIN><![CDATA[LRU (最低使用頻度) 最小使用済みフィールド (lru_min_dirty) の値 %param1%% が、%param3%% 以下になっています。間隔チェックポイントを導入し、このフィールドの値を大きくすることにより、バッファー プールの使用効率とパフォーマンスが向上する場合があります。]]></act_y_LRU_MIN>
+<act_y_LTAPEDEV><![CDATA[LTAPEDEV 構成パラメータが、%lparam1% ディレクトリに設定されています。この構成パラメータは、論理ログ ファイルがアーカイブされる場所を指定します。別のディレクトリに LTAPEDEV 構成パラメータを設定してください。]]></act_y_LTAPEDEV>
+<act_y_NOAGE><![CDATA[VPCLASS 構成パラメータの noage オプションが設定されていません。オペレーティング システムが長期実行プロセスの優先度を下げるときに、優先度エージングが発生する可能性があります。noage オプションを設定して、優先度エージングを無効にしてください。]]></act_y_NOAGE>
+<act_y_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN 構成パラメータが continue (0) に設定されています。停止している非クリティカル領域を検出すると、データベース サーバは、その DB 領域をオフラインであるとマークして続行します。その DB 領域は復元する必要があります。ONDBSPACEDOWN 構成パラメータを abort (1) または wait (2) に設定し、領域が停止しているとマークされたときに適切なアクションを実行できるようにして、その DB 領域の復元が不要になるようにしてください。]]></act_y_ONDBSPACEDOWN> 
+<act_y_Physdbs><![CDATA[物理ログが、実効表が含まれる DB 領域に格納されています。物理ログを、実効表や論理ログ ファイルによって共有されていないディスク上の DB 領域に移動してください。]]></act_y_Physdbs>
+<act_y_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP 構成パラメータが設定され、MULTIPROCESSOR 構成パラメータが 1 に設定されています。不要なロックを回避するために、MULTIPROCESSOR 構成パラメータを 0 に設定してください。]]></act_y_SINGLE_CPU_VP>
+<act_y_TAPEDEV><![CDATA[TAPEDEV 構成パラメータが、%lparam1% ディレクトリに設定されています。この構成パラメータは、アーカイブが格納される場所を指定します。別のディレクトリに TAPEDEV 構成パラメータを設定してください。]]></act_y_TAPEDEV>
+<act_y_ATS_Files><![CDATA[%param3% より多い数の ATS ファイルがエンタープライズ レプリケーションで生成されています。これらのファイルを確認し、適切な処置を行ってください。]]></act_y_ATS_Files>
+<act_y_ER_DDRBlock><![CDATA[トランザクション ブロッキング (DDRBLOCK) の開始前に残っているログ ページの割合が、%param3%% より小さくなっています。ログの折り返しを防ぐために、適切な処置を行ってください (例えばログの動的割当ての使用)。]]></act_y_ER_DDRBlock>
+<act_y_ER_Down_Node><![CDATA[NA]]></act_y_ER_Down_Node>
+<act_y_RIS_Files><![CDATA[%param3% より多い数の RIS ファイルがエンタープライズ レプリケーションで生成されています。これらのファイルを確認し、適切な処置を行ってください。]]></act_y_RIS_Files>
+<act_y_OS_Free_Memory><![CDATA[オペレーティング システムで使用できる空きメモリが、使用可能なメモリ合計の %param3%% より小さくなっています。オペレーティング システム メモリ不足の結果としてパフォーマンスが低下する可能性があります。オペレーティング システム メモリを増やすために、適切な処置を行ってください。]]></act_y_OS_Free_Memory>
+<act_y_OS_Online_Procs><![CDATA[オペレーティング システムでのオンライン プロセッサ数 (%param3%) が、オペレーティング システムのプロセッサの合計数 (%param1%) より小さくなっています。一部のプロセッサがオンラインになっていない理由を調べて、適切な処置を行ってください。]]></act_y_OS_Online_Procs> 
+<act_y_OS_Procs><![CDATA[CPU 仮想プロセッサの数が、オペレーティング システムでの CPU 数の %param3%% より小さくなっています。CPU 仮想プロセッサの数を増やすとパフォーマンスが改善される可能性があります。CPU 仮想プロセッサの数を増やすために、適切な処置を行ってください。]]></act_y_OS_Procs>
+<act_y_OS_Open_File_Limit><![CDATA[オペレーティング システムでのプロセスあたりのオープン ファイル記述子の数が %param3% より小さくなっています。現在の値は %param1% です。プロセスあたりのオープン ファイル記述子の数が不十分である場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_y_OS_Open_File_Limit>
+<act_y_OS_semid><![CDATA[オペレーティング システムでのセマフォ セット数が %param3% より小さくなっています。現在の値は %param1% です。セマフォ セットの数が不十分である場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_y_OS_semid>
+<act_y_OS_semnum><![CDATA[オペレーティング システムでのセマフォの合計数が %param3% より小さくなっています。現在の値は %param1% です。セマフォの数が不十分である場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_y_OS_semnum>
+<act_y_OS_shmids><![CDATA[オペレーティング システムでの共有メモリ ID の数が %param3% より小さくなっています。現在の値は %param1% です。共有メモリ ID の数が不十分な場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_y_OS_shmids>
+<act_y_OS_shmmax><![CDATA[オペレーティング システムでの共有メモリ セグメントの最大サイズが %param3% より小さくなっています。現在の値は %param1% です。共有メモリ セグメントの最大サイズの設定が低すぎる場合、結果として予期しない動作が発生することがあります。適切な処置を行ってください。]]></act_y_OS_shmmax>
+<act_y_OS_shmnumsegs><![CDATA[オペレーティング システムでの共有メモリ セグメントの合計数が %param3% より小さくなっています。現在の値は %param1% です。共有メモリ セグメントの数が不十分な場合、予期しない動作が発生する可能性があります。この値を増やすために適切な処置を行ってください。]]></act_y_OS_shmnumsegs>
+<act_y_CKPT_Caused_By_LLOG><![CDATA[論理ログ リソースの不足によってチェックポイントがトリガされました。論理ログ リソースが不足している場合、チェックポイント処理中にブロッキングが発生する可能性があります。この状態を防ぐには、論理ログを追加してください。]]></act_y_CKPT_Caused_By_LLOG>
+<act_y_CKPT_Caused_By_PLOG><![CDATA[物理ログ リソースの不足によってチェックポイントがトリガされました。物理ログ リソースが不足している場合、チェックポイント処理中にブロッキングが発生する可能性があります。この状態を防ぐには、物理ログのサイズを増やしてください。]]></act_y_CKPT_Caused_By_PLOG>
+<act_y_Critical_Section><![CDATA[いくつかのチェックポイントでのクリティカル セクション時間が %lparam1% 秒より大きくなっています。これが原因でブロッキングが発生する可能性があるため、チェックポイント処理中にクリティカル セクションで費やされた時間を調べてください。]]></act_y_Critical_Section>
+<act_y_Diskflush><![CDATA[チェックポイント処理中の 1 秒あたりのディスク フラッシュ数が %lparam1% より小さくなっています。入出力の問題が原因でディスクの動作が遅くなっているかどうか調べてください。]]></act_y_Diskflush>
+<act_y_Longest_Waiter><![CDATA[いくつかのチェックポイントでの待機時間が %lparam1% 秒より長くなっています。チェックポイントのパフォーマンスを改善させるために、原因を調べてください。]]></act_y_Longest_Waiter>
+<act_y_Buffreads_Per_Table><![CDATA[いくつかの表でのバッファ読込み回数が、すべてのバッファ読込みの %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_y_Buffreads_Per_Table>
+<act_y_Buffwrites_Per_Table><![CDATA[いくつかの表でのバッファ書込み回数が、すべてのバッファ書込みの %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_y_Buffwrites_Per_Table>
+<act_y_Seq_Scans_Per_Table><![CDATA[いくつかの表での順次スキャンの数が、すべての順次スキャン数の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、原因を調べてください。]]></act_y_Seq_Scans_Per_Table>
+<act_y_Buffreads_Cache><![CDATA[バッファにキャッシュされた読込みの割合 (%cached) が %param3% % より小さくなっています。現在、キャッシュされた割合は %param1% % です。バッファの数を増やすと、キャッシュされる割合が改善する可能性があります。]]></act_y_Buffreads_Cache>
+<act_y_Buffwrites_Cache><![CDATA[バッファにキャッシュされた書込みの割合 (%cached) が %param3% % より小さくなっています。現在、キャッシュされた割合は %param1% % です。バッファの数を増やすと、キャッシュされる割合が改善する可能性があります。]]></act_y_Buffwrites_Cache>
+<act_y_Disksorts><![CDATA[ディスク ソートの数が、ソート合計の %param3%% より大きくなっています。現在のディスク ソート数は %param1%% です。ソート用の共有メモリを追加するためのオプションを調べてください。]]></act_y_Disksorts>
+<act_y_isrollbacks><![CDATA[ロールバックされたトランザクションの数が、トランザクション合計の %param3%% より大きくなっています。アプリケーション設計、または論理ログ リソースの不足が原因で過剰な数のロールバックが発生しているのかどうか調べてください。]]></act_y_isrollbacks>
+<act_y_Foreground_Writes><![CDATA[フォアグラウンド書込みの数が、書込み合計の %param3%% より大きくなっています。バッファの数を増やすと、フォアグラウンド書込みとなる書込みの割合が減る可能性があります。]]></act_y_Foreground_Writes>
+<act_y_LLOG_Pages_Per_IO><![CDATA[入出力に対する論理ログ ページの比率 (ページ/入出力) が %param3% % より小さくなっています。現在、入出力に対する論理ログ ページの比率は %param1% % です。論理ログ バッファ (LOGBUFF) のサイズを調べて、バッファされないデータベースのトランザクション スループットを確認してください。]]></act_y_LLOG_Pages_Per_IO>
+<act_y_Lock_Waits><![CDATA[ロック待機の数が、ロック要求合計の %param3%% より大きくなっています。現在、ロック待機はロック要求合計の %param1%% です。ページ レベル ロックを持つ表について、およびアプリケーションでの並行性について調べてください。]]></act_y_Lock_Waits>
+<act_y_PLOG_Pages_Per_IO><![CDATA[入出力に対する物理ログ ページの比率が %param3% % より小さくなっています。現在、入出力に対する物理ログ ページの比率は %param1% % です。物理ログ バッファのサイズを調べてください。]]></act_y_PLOG_Pages_Per_IO>
+<act_y_Seq_Scans><![CDATA[順次スキャンの数が、SQL 文の合計の %param3%% より大きくなっています。順次スキャンのパフォーマンスを改善する方法を調べてください。]]></act_y_Seq_Scans>
+<act_y_Offline_Chunks><![CDATA[NA]]></act_y_Offline_Chunks>
+<act_y_Chunk_IO_OPS><![CDATA[いくつかのチャンクでの入出力操作の数が、すべての入出力操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で入出力操作をより均等に分散させる方法を調べてください。]]></act_y_Chunk_IO_OPS>
+<act_y_Chunk_IO_Reads><![CDATA[いくつかのチャンクでの読込み操作の数が、すべての読込み操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で読込み操作をより均等に分散させる方法を調べてください。]]></act_y_Chunk_IO_Reads>
+<act_y_Chunk_IO_Writes><![CDATA[いくつかのチャンクでの書込み操作の数が、すべての書込み操作の %lparam1%% より大きくなっています。パフォーマンスを改善させるために、チャンク間で書込み操作をより均等に分散させる方法を調べてください。]]></act_y_Chunk_IO_Writes>
+<act_y_Dbspace_Free_Space><![CDATA[いくつかの DB 領域のフリー スペースが、DB 領域の合計の %lparam1%% より小さくなっています。これらの DB 領域にチャンクを追加することを検討してください。]]></act_y_Dbspace_Free_Space>
+<act_y_Rowsize><![CDATA[いくつかの表では、DB 領域のページ サイズおよび表の行サイズが原因で、ページの %lparam1%% が使用不能です。ページあたりのフリー スペースを増やす操作について調べてください。例えば、異なるページ サイズを持つ DB 領域に表を移動したり、表を再設計したりします。]]></act_y_Rowsize>
+
+</lang>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[外掛程式管理程式]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[「外掛程式管理程式」無法寫入 OAT 暫存目錄：tmp。若要安裝外掛程式，您必須有寫入 OAT 暫存目錄的權限。請取得寫入此目錄的權限，然後重新安裝外掛程式。]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[「外掛程式管理程式」無法開啟，因為「外掛程式管理程式」需要使用安裝的 zip 模組來配置 PHP。OAT 所使用的 PHP 並未安裝 zip 模組。請使用已安裝的 zip 模組，在您的 Web 伺服器上配置 PHP。或者，您也可以使用配置 PHP 的 OAT 安裝程式來重新安裝 OAT。]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[未安裝外掛程式。]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[已安裝外掛程式]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[尚未安裝外掛程式]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[未選取要安裝的外掛程式。]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[沒有可用的升級。]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[「外掛程式管理程式」無法寫入外掛程式目錄。請取得寫入此目錄的權限，然後重新安裝外掛程式。]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[已安裝現行版本]]></CurrVerInstalled>
+<Unknown><![CDATA[不明]]></Unknown>
+<ClickToEnable><![CDATA[按一下則會啟用]]></ClickToEnable>
+<ClickToDisable><![CDATA[按一下以停用]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[無法刪除此檔案：{0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[已順利升級外掛程式。]]></PluginUpgraded>
+<PluginInstalled><![CDATA[已順利安裝外掛程式。]]></PluginInstalled>
+<Name><![CDATA[名稱]]></Name>
+<Author><![CDATA[作者]]></Author>
+<Description><![CDATA[說明]]></Description>
+<Version><![CDATA[版本]]></Version>
+<ServerVersion><![CDATA[伺服器版本]]></ServerVersion>
+<MinOATVersion><![CDATA[最小的 OAT 版本]]></MinOATVersion>
+<Install><![CDATA[安裝]]></Install>
+<Uninstall><![CDATA[解除安裝]]></Uninstall>
+<Upgrade><![CDATA[升級]]></Upgrade>
+<Enabled><![CDATA[已啟用]]></Enabled>
+<updating><![CDATA[更新]]></updating>
+<LatestInstalled><![CDATA[已安裝最新]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[此動作會解除安裝外掛程式 {0}。在安裝外掛程式後，即會刪除外掛程式壓縮檔。在解除安裝外掛程式之後，將外掛程式壓縮檔還原至外掛程式目錄中，才能重新安裝外掛程式。\n\n要繼續嗎？]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[已順利解除安裝外掛程式。]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[未解除安裝外掛程式。]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT 嘗試解除安裝外掛程式，但找不到外掛程式 ID。在「管理」功能表上，按一下「外掛程式管理程式」，然後檢閱已安裝外掛程式清單。必要的話，請重新解除安裝外掛程式。]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[外掛程式已解除安裝，但無法移除下列檔案：]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[您可以刪除電腦中的這些檔案。]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[未刪除外掛程式的功能表項目。您可以在「功能表管理程式」頁面上刪除功能表項目。]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[無法安裝選取的外掛程式。外掛程式所需的 OAT 最小版本為 {0}。]]></MinOATVersionError>
+<Agree><![CDATA[同意]]></Agree>
+<Disagree><![CDATA[不同意]]></Disagree>
+</lang>

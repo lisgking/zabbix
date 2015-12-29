@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Porcje]]></Chunks>
+<NoSQLToExecute><![CDATA[Brak kodu SQL do wykonania]]></NoSQLToExecute>
+<QueryF><![CDATA[Zapytanie:]]></QueryF>
+<ErrorF><![CDATA[Błąd:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Zapytanie do bazy danych nie powiodło się:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Połączenie nie powiodło się.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[Użytkownik {0} nie ma uprawnień do połączenia z bazą danych {1}.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[napotkano zbyt wiele błędów]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - Nie znaleziono id. panelu kontrolnego]]></ErrorGetPanels>
+</lang>

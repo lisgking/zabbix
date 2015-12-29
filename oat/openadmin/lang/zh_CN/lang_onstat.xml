@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[onstat 信息]]></mainTitle>
+<SystemReports><![CDATA[系统报告]]></SystemReports>
+<Daterange><![CDATA[选择日期范围：]]></Daterange>
+<from><![CDATA[开始日期：]]></from>
+<to><![CDATA[结束日期：]]></to>
+<Month1><![CDATA[一月]]></Month1>
+<Month2><![CDATA[二月]]></Month2>
+<Month3><![CDATA[三月]]></Month3>
+<Month4><![CDATA[四月]]></Month4>
+<Month5><![CDATA[五月]]></Month5>
+<Month6><![CDATA[六月]]></Month6>
+<Month7><![CDATA[七月]]></Month7>
+<Month8><![CDATA[八月]]></Month8>
+<Month9><![CDATA[九月]]></Month9>
+<Month10><![CDATA[十月]]></Month10>
+<Month11><![CDATA[十一月]]></Month11>
+<Month12><![CDATA[十二月]]></Month12>
+<mCurrent><![CDATA[当前报告]]></mCurrent>
+<mHistorical><![CDATA[历史报告]]></mHistorical>
+<HeatMaps><![CDATA[图形]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[要显示图形，OAT 需要 Informix 11.70.xC4。]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[只读用户没有执行此操作的许可权。您是以只读用户身份登录的。]]></nopermission>
+<NetworkUsage><![CDATA[网络使用率报告]]></NetworkUsage>
+<MemoryPools><![CDATA[内存池报告]]></MemoryPools>
+<MemoryUsage><![CDATA[服务器内存使用率报告]]></MemoryUsage>
+<SQLCache><![CDATA[SQL 高速缓存报告]]></SQLCache>
+<Sessions><![CDATA[会话报告]]></Sessions>
+<VPReport><![CDATA[虚拟处理器报告]]></VPReport>
+<SysBackups><![CDATA[系统备份报告]]></SysBackups>
+<TableProf><![CDATA[表概要文件报告]]></TableProf>
+<ResourceUsage><![CDATA[计算机资源信息]]></ResourceUsage>
+<CompInfo><![CDATA[计算机操作系统信息]]></CompInfo>
+<PPID><![CDATA[PID]]></PPID>
+<Class><![CDATA[类]]></Class>
+<ReadyQ><![CDATA[就绪队列长度]]></ReadyQ>
+<VP><![CDATA[虚拟处理器总 CPU 使用率]]></VP>
+<NetUserRep><![CDATA[网络使用率报告]]></NetUserRep>
+<NetID><![CDATA[网络标识]]></NetID>
+<SID><![CDATA[用户会话标识]]></SID>
+<ClientName><![CDATA[客户机名称]]></ClientName>
+<ReadCount><![CDATA[接收操作计数]]></ReadCount>
+<WriteCount><![CDATA[发送操作计数]]></WriteCount>
+<ReadBytes><![CDATA[已接收总数]]></ReadBytes>
+<WriteBytes><![CDATA[已发送总数]]></WriteBytes>
+<ConTime><![CDATA[会话开始时间]]></ConTime>
+<Protocol><![CDATA[协议]]></Protocol>
+<SysNetIO><![CDATA[按 I/O 操作]]></SysNetIO>
+<SysNetTXF><![CDATA[按数据传输]]></SysNetTXF>
+<MemSegUsage><![CDATA[内存段使用率]]></MemSegUsage>
+<MemOSUsage><![CDATA[计算机内存使用率]]></MemOSUsage>
+<Usage><![CDATA[使用率]]></Usage>
+<Resident><![CDATA[常驻]]></Resident>
+<Virutal><![CDATA[虚拟]]></Virutal>
+<Message><![CDATA[消息]]></Message>
+<Other><![CDATA[其他]]></Other>
+<Allocated><![CDATA[已分配]]></Allocated>
+<Free><![CDATA[可用]]></Free>
+<SelectReportType><![CDATA[按类型选择报告]]></SelectReportType>
+<ClearAll><![CDATA[全部清除]]></ClearAll>
+<AllRept><![CDATA[全部选中]]></AllRept>
+<Disk><![CDATA[磁盘]]></Disk>
+<Performance><![CDATA[性能]]></Performance>
+<InvalidDateRangeError><![CDATA[结束日期早于开始日期。请选择晚于开始日期的结束日期。]]></InvalidDateRangeError>
+<Net><![CDATA[网络]]></Net>
+<Network><![CDATA[网络]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[表]]></Tables>
+<Users><![CDATA[用户]]></Users>
+<CreateReport><![CDATA[创建报告]]></CreateReport>
+<ReportRun><![CDATA[运行的报告]]></ReportRun>
+<StartDate><![CDATA[开始日期]]></StartDate>
+<EndDate><![CDATA[结束日期]]></EndDate>
+<ServerUptime><![CDATA[服务器正常运行时间]]></ServerUptime>
+<Top><![CDATA[顶级]]></Top>
+<Basic><![CDATA[基本]]></Basic>
+<ServerConfig><![CDATA[服务器配置]]></ServerConfig>
+<ParamName><![CDATA[参数名称]]></ParamName>
+<ParamID><![CDATA[参数标识]]></ParamID>
+<OnconfigParamDetails><![CDATA[Onconfig 参数详细信息]]></OnconfigParamDetails>
+<Value><![CDATA[值]]></Value>
+<ParamType><![CDATA[参数类型]]></ParamType>
+<Description><![CDATA[描述]]></Description>
+<MinValue><![CDATA[最小值]]></MinValue>
+<MaxValue><![CDATA[最大值]]></MaxValue>
+<PossibleValues><![CDATA[可能的值]]></PossibleValues>
+<Recommendation><![CDATA[建议]]></Recommendation>
+<RecommendationMessage><![CDATA[单击参数名称以显示更多信息或更改动态参数。带建议的参数均以黄色突出显示。]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[此 onconfig 参数的值遵循 OpenAdmin Tool 的建议。]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[此 onconfig 参数的值不遵循 OpenAdmin Tool 的建议。]]></Recommendation_NO>
+<Warning><![CDATA[警告]]></Warning>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<Back><![CDATA[上一步]]></Back>
+<Dynamic><![CDATA[动态]]></Dynamic>
+<NotDynamic><![CDATA[非动态]]></NotDynamic>
+<ParamNotDynamic><![CDATA[参数不能动态配置。]]></ParamNotDynamic>
+<Configurable><![CDATA[可配置]]></Configurable>
+<OnconfigOption><![CDATA[显示]]></OnconfigOption>
+<ShowAll><![CDATA[全部]]></ShowAll>
+<ShowBasic><![CDATA[基本]]></ShowBasic>
+<ShowDynamic><![CDATA[动态]]></ShowDynamic>
+<ShowRecommend><![CDATA[建议]]></ShowRecommend>
+<SaveOption><![CDATA[保存选项]]></SaveOption>
+<SaveMem><![CDATA[保存在内存中]]></SaveMem>
+<SaveMemFile><![CDATA[保存在内存和文件中]]></SaveMemFile>
+<Server><![CDATA[服务器]]></Server>
+<WaitSesRpt><![CDATA[等待会话报告]]></WaitSesRpt>
+<WaitSes><![CDATA[等待会话]]></WaitSes>
+<ResourceOwner><![CDATA[资源所有者]]></ResourceOwner>
+<ResourceType><![CDATA[资源类型]]></ResourceType>
+<WaitObject><![CDATA[等待对象]]></WaitObject>
+<WaitItem><![CDATA[等待项]]></WaitItem>
+<WaitInfo><![CDATA[等待信息]]></WaitInfo>
+<ResourceUsageReport><![CDATA[资源使用率报告]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[资源摘要报告]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[用于周结束]]></ForWeekEnding>
+<MaxConns><![CDATA[最大连接数]]></MaxConns>
+<MaxCPUVPS><![CDATA[最大 CPU VP 数]]></MaxCPUVPS>
+<MAXVPS><![CDATA[最大 VP 数]]></MAXVPS>
+<DiskSize><![CDATA[磁盘大小]]></DiskSize>
+<DiskUsed><![CDATA[已使用磁盘]]></DiskUsed>
+<Memory><![CDATA[内存]]></Memory>
+<MemoryUsed><![CDATA[已使用内存]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[信号量信息]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[共享内存信息]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[每个进程的最大打开文件数]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[操作系统页面大小]]></OSPageSize>
+<TotalCPUs><![CDATA[处理器总数]]></TotalCPUs>
+<OnlineCPUs><![CDATA[联机处理器数]]></OnlineCPUs>
+<CPUs><![CDATA[处理器数]]></CPUs>
+<HostName><![CDATA[主机名]]></HostName>
+<OSName><![CDATA[操作系统名称]]></OSName>
+<OSRel><![CDATA[操作系统发行版]]></OSRel>
+<OSVer><![CDATA[操作系统版本]]></OSVer>
+<CPUType><![CDATA[计算机类型]]></CPUType>
+<TotalMem><![CDATA[计算机合计内存]]></TotalMem>
+<TotalFreeMem><![CDATA[计算机可用内存]]></TotalFreeMem>
+<BackupReport><![CDATA[备份报告]]></BackupReport>
+<Number><![CDATA[数目]]></Number>
+<Name><![CDATA[名称]]></Name>
+<Position><![CDATA[位置]]></Position>
+<Level0><![CDATA[级别 0]]></Level0>
+<Level1><![CDATA[级别 1]]></Level1>
+<Level2><![CDATA[级别 2]]></Level2>
+<BackupReport><![CDATA[备份报告]]></BackupReport>
+<TableProfileInfo><![CDATA[表概要文件信息]]></TableProfileInfo>
+<TableName><![CDATA[表名]]></TableName>
+<Locks><![CDATA[锁定数]]></Locks>
+<LockRequests><![CDATA[锁定请求数]]></LockRequests>
+<DeadLocks><![CDATA[死锁数]]></DeadLocks>
+<LockWaits><![CDATA[锁定等待数]]></LockWaits>
+<LockTimeouts><![CDATA[锁定超时数]]></LockTimeouts>
+<LogRecords><![CDATA[日志记录数]]></LogRecords>
+<LogSpace><![CDATA[日志空间]]></LogSpace>
+<MaxLogSpace><![CDATA[最大日志空间]]></MaxLogSpace>
+<ReadCache><![CDATA[读取高速缓存]]></ReadCache>
+<WriteCache><![CDATA[写入高速缓存]]></WriteCache>
+<DiskReads><![CDATA[磁盘读取数]]></DiskReads>
+<DiskWrites><![CDATA[磁盘写入数]]></DiskWrites>
+<RowsProcessed><![CDATA[处理的行数]]></RowsProcessed>
+<RowsInserted><![CDATA[插入的行数]]></RowsInserted>
+<RowsUpdated><![CDATA[更新的行数]]></RowsUpdated>
+<RowsDeleted><![CDATA[删除的行数]]></RowsDeleted>
+<SequentialScans><![CDATA[连续扫描数]]></SequentialScans>
+<UserID><![CDATA[用户标识]]></UserID>
+<GroupID><![CDATA[组标识]]></GroupID>
+<SessionID><![CDATA[会话标识]]></SessionID>
+<PID><![CDATA[PID]]></PID>
+<Connected><![CDATA[已连接]]></Connected>
+<OpenTables><![CDATA[打开表]]></OpenTables>
+<TotalMemory><![CDATA[合计内存]]></TotalMemory>
+<UsedMemory><![CDATA[已用内存]]></UsedMemory>
+<FreeMemory><![CDATA[可用内存]]></FreeMemory>
+<Sorts><![CDATA[排序数]]></Sorts>
+<LargestSorts><![CDATA[最大排序数]]></LargestSorts>
+<DiskSorts><![CDATA[磁盘排序数]]></DiskSorts>
+<MemorySorts><![CDATA[内存排序数]]></MemorySorts>
+<BufferWrites><![CDATA[缓冲区写入数]]></BufferWrites>
+<BufferReads><![CDATA[缓冲区读取数]]></BufferReads>
+<FGWrites><![CDATA[FG 写入数]]></FGWrites>
+<FGReads><![CDATA[FG 读取数]]></FGReads>
+<Commits><![CDATA[落实数]]></Commits>
+<Rollbacks><![CDATA[回滚数]]></Rollbacks>
+<LongTXs><![CDATA[长事务数]]></LongTXs>
+<ConnectTime><![CDATA[连接时间]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[用户]]></User>
+<SessionList><![CDATA[会话列表]]></SessionList>
+<NoData><![CDATA[无数据]]></NoData>
+<SQLCachesList><![CDATA[SQL 高速缓存列表]]></SQLCachesList>
+<CacheName><![CDATA[高速缓存名称]]></CacheName>
+<Ratio><![CDATA[比率]]></Ratio>
+<Hits><![CDATA[命中数]]></Hits>
+<Misses><![CDATA[未命中数]]></Misses>
+<Removed><![CDATA[已除去]]></Removed>
+<InUse><![CDATA[使用中]]></InUse>
+<CacheEntries><![CDATA[高速缓存条目数]]></CacheEntries>
+<SharedMemorySegList><![CDATA[共享内存段列表]]></SharedMemorySegList>
+<SegmentType><![CDATA[段类型]]></SegmentType>
+<Size><![CDATA[大小]]></Size>
+<Used><![CDATA[已使用]]></Used>
+<Total><![CDATA[合计]]></Total>
+<Address><![CDATA[地址]]></Address>
+<Key><![CDATA[密钥]]></Key>
+<FLAGS><![CDATA[标志]]></FLAGS>
+<Class><![CDATA[类]]></Class>
+<ID><![CDATA[标识]]></ID>
+<MemPoolList><![CDATA[内存池列表]]></MemPoolList>
+<ON><![CDATA[启用]]></ON>
+<OFF><![CDATA[禁用]]></OFF>
+<OnconfigParamError><![CDATA[找不到具有以下标识的 onconfig 参数]]></OnconfigParamError>
+<OnconfigFile><![CDATA[Onconfig 文件]]></OnconfigFile>
+<SystemReports><![CDATA[系统报告]]></SystemReports>
+<ComputerInfo><![CDATA[计算机信息]]></ComputerInfo>
+<diskspace><![CDATA[磁盘空间使用率]]></diskspace>
+<diskspace_tooltip><![CDATA[显示磁盘空间使用量和可用量的报告]]></diskspace_tooltip>
+<diskio><![CDATA[磁盘 I/O 级别]]></diskio>
+<diskio_tooltip><![CDATA[显示磁盘 I/O 发生量的报告]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[联机日志]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[查看 onlne.log 的末尾]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[服务器管理命令]]></showCommands>
+<showCommands_tooltip><![CDATA[查看已执行的服务器管理命令]]></showCommands_tooltip>
+<showllogs><![CDATA[逻辑日志]]></showllogs>
+<showllogs_tooltip><![CDATA[查看逻辑日志（即恢复日志）的状态]]></showllogs_tooltip>
+<showplogs><![CDATA[物理日志]]></showplogs>
+<showplogs_tooltip><![CDATA[查看物理日志的状态]]></showplogs_tooltip>
+<checkpoints><![CDATA[查看检查点]]></checkpoints>
+<checkpoints_tooltip><![CDATA[查看有关最近检查点的信息]]></checkpoints_tooltip>
+<backup><![CDATA[系统备份]]></backup>
+<backup_tooltip><![CDATA[按数据库空间显示系统备份状态]]></backup_tooltip>
+<mem><![CDATA[内存池]]></mem>
+<mem_tooltip><![CDATA[显示所有用户和系统内存池]]></mem_tooltip>
+<seg><![CDATA[服务器内存使用率]]></seg>
+<seg_tooltip><![CDATA[按段概述服务器的内存]]></seg_tooltip>
+<net><![CDATA[网络概述]]></net>
+<net_tooltip><![CDATA[显示网络流量的概述]]></net_tooltip>
+<ppf><![CDATA[表操作]]></ppf>
+<ppf_tooltip><![CDATA[按表显示的性能信息]]></ppf_tooltip>
+<config><![CDATA[服务器配置]]></config>
+<config_tooltip><![CDATA[显示服务器的配置文件]]></config_tooltip>
+<ses><![CDATA[会话列表]]></ses>
+<ses_tooltip><![CDATA[所有用户会话的列表]]></ses_tooltip>
+<sqlcache><![CDATA[查看 SQL 高速缓存]]></sqlcache>
+<sqlcache_tooltip><![CDATA[查看各种 SQL 高速缓存统计信息]]></sqlcache_tooltip>
+<showByType><![CDATA[SQL 语句摘要]]></showByType>
+<showByType_tooltip><![CDATA[已执行的 SQL 语句摘要]]></showByType_tooltip>
+<showslowSQL><![CDATA[最慢的 SQL 语句]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[显示最慢的 SQL 语句]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[具有最多 I/O 时间的 SQL]]></showmostIO>
+<showmostIO_tooltip><![CDATA[显示消耗 I/O 时间最多的 SQL 语句]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[具有最多缓冲区活动的 SQL]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[显示具有最多缓冲池活动的 SQL 语句]]></showmostBuff_tooltip>
+<glo><![CDATA[虚拟处理器]]></glo>
+<glo_tooltip><![CDATA[查看各种虚拟处理器的利用率]]></glo_tooltip>
+<showdbtab><![CDATA[显示数据库]]></showdbtab>
+<showdbtab_tooltip><![CDATA[显示不同数据库及其基本属性]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[计算机操作系统信息]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[显示计算机操作系统信息]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[计算机资源信息]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[显示计算机资源信息]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[等待会话报告]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[显示正在等待资源的会话]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[字节]]></bytes>
+<Bytes><![CDATA[字节]]></Bytes>
+<blocks><![CDATA[块]]></blocks>
+<Blocks><![CDATA[块]]></Blocks>
+<Type><![CDATA[类型]]></Type>
+<Count><![CDATA[计数]]></Count>
+<locklist><![CDATA[锁定列表]]></locklist>
+<locklistfortab><![CDATA[锁定 {0} 的列表]]></locklistfortab>
+<locklistforses><![CDATA[锁定会话 {0} 的列表]]></locklistforses>
+<locklist_tooltip><![CDATA[显示数据库服务器上的活动锁定。]]></locklist_tooltip>
+<locksWaiters><![CDATA[具有等待的线程的锁定数]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[显示具有等待的线程的锁定。]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[每个表具有的锁定数]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[显示有关表锁定的信息。]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[每个会话具有的锁定数]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[显示有关会话锁定的信息。]]></locksPerSes_tooltip>
+<Owner><![CDATA[所有者]]></Owner>
+<OwnerSID><![CDATA[所有者会话标识]]></OwnerSID>
+<Waiter><![CDATA[等待的线程]]></Waiter>
+<WaitSID><![CDATA[等待的线程会话标识]]></WaitSID>
+<LkType><![CDATA[锁定类型]]></LkType>
+<LkObject><![CDATA[锁定的对象]]></LkObject>
+<RowID><![CDATA[行标识]]></RowID>
+<Partnum><![CDATA[分区号]]></Partnum>
+<LockEstablished><![CDATA[锁定开始时间]]></LockEstablished>
+<SID><![CDATA[会话标识]]></SID>
+<Database><![CDATA[数据库]]></Database>
+<IsolationLevel><![CDATA[隔离级别]]></IsolationLevel>
+<ActiveLocks><![CDATA[活动的锁定数]]></ActiveLocks>
+<lockid><![CDATA[锁定标识]]></lockid>
+<LockDuration><![CDATA[锁定持续时间]]></LockDuration>
+<WaitTime><![CDATA[等待时间]]></WaitTime>
+<ReportMaxRows><![CDATA[最多显示 {0} 行。]]></ReportMaxRows>
+</lang>

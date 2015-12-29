@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="timeseries" targetNamespace="urn:timeseries"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:timeseries"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+	
+	<message name="getDatabases">
+	</message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTabViewInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="tabtype" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+	
+	<message name="getTabViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDBViewInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+
+	<message name="getDBViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTableNamesForDatabase">
+		<part name="dbname" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTableNamesForDatabaseResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getCalendars">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+	
+	<message name="getDBSpaces">
+		<part name="page_size" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+	
+	<message name="getDBSpacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getCalendarsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getContainers">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getContainersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getRowTypes">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getRowTypesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTSTabInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+	</message>
+
+	<message name="getTSTabInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBInfo">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getDBInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getVirtualTables">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getVirtualTablesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getBaseTable">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+	</message>
+
+	<message name="getBaseTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTabColumns">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="colname_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabColumnsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfoMinimized">
+		<part name="dbsnum" type="xsd:string" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfoMinimizedResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+		
+	<message name="getDatabasesAndTablesWithSearch">
+		<part name="tabname_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDatabasesAndTablesWithSearchResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="doTimeseriesAction">
+		<part name="dbname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+		<part name="action" type="xsd:string" />
+	</message>
+
+	<message name="doTimeseriesActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTimeSeriesColumnsForTable">
+		<part name="tabid" type="xsd:string" />
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getTimeSeriesColumnsForTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	
+	
+	<portType name="timeseriesPort">
+	
+		<operation name="getDatabases">
+			<input message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		
+		<operation name="getTabViewInfo">
+			<input message="typens:getTabViewInfo" />
+			<output message="typens:getTabViewInfoResponse" />
+		</operation>
+		
+		<operation name="getDBViewInfo">
+			<input message="typens:getDBViewInfo" />
+			<output message="typens:getDBViewInfoResponse" />
+		</operation>
+		
+		<operation name="getTableNamesForDatabase">
+			<input message="typens:getTableNamesForDatabase" />
+			<output message="typens:getTableNamesForDatabaseResponse" />
+		</operation>
+		
+		<operation name="getCalendars">
+			<input message="typens:getCalendars" />
+			<output message="typens:getCalendarsResponse" />
+		</operation>
+		
+		<operation name="getRowTypes">
+			<input message="typens:getRowTypes" />
+			<output message="typens:getRowTypesResponse" />
+		</operation>
+		
+		<operation name="getTSTabInfo">
+			<input message="typens:getTSTabInfo" />
+			<output message="typens:getTSTabInfoResponse" />
+		</operation>
+
+		<operation name="getDBInfo">
+			<input message="typens:getDBInfo" />
+			<output message="typens:getDBInfoResponse" />
+		</operation>
+		
+		<operation name="getContainers">
+			<input message="typens:getContainers" />
+			<output message="typens:getContainersResponse" />
+		</operation>
+		
+		<operation name="getVirtualTables">
+			<input message="typens:getVirtualTables" />
+			<output message="typens:getVirtualTablesResponse" />
+		</operation>
+		
+		<operation name="getBaseTable">
+			<input message="typens:getBaseTable" />
+			<output message="typens:getBaseTableResponse" />
+		</operation>
+		
+		<operation name="getTabColumns">
+			<input message="typens:getTabColumns" />
+			<output message="typens:getTabColumnsResponse" />
+		</operation>
+		
+		<operation name="getTablesAndIndexesInfoMinimized">
+			<input  message="typens:getTablesAndIndexesInfoMinimized" />
+			<output message="typens:getTablesAndIndexesInfoMinimizedResponse" />
+		</operation>
+		
+		<operation name="getDatabasesAndTablesWithSearch">
+			<input  message="typens:getDatabasesAndTablesWithSearch" />
+			<output message="typens:getDatabasesAndTablesWithSearchResponse" />
+		</operation>
+		
+		<operation name="doTimeseriesAction">
+			<input  message="typens:doTimeseriesAction" />
+			<output message="typens:doTimeseriesActionResponse" />
+		</operation>
+		
+		<operation name="getDBSpaces">
+			<input  message="typens:getDBSpaces" />
+			<output message="typens:getDBSpacesResponse" />
+		</operation>
+		
+		<operation name="getTimeSeriesColumnsForTable">
+			<input  message="typens:getTimeSeriesColumnsForTable" />
+			<output message="typens:getTimeSeriesColumnsForTableResponse" />
+		</operation>
+
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="timeseriesBinding" type="typens:timeseriesPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+	
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTabViewInfo">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBViewInfo">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTableNamesForDatabase">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getCalendars">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+	
+		<operation name="getRowTypes">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTSTabInfo">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDBInfo">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getContainers">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getVirtualTables">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getBaseTable">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTabColumns">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTablesAndIndexesInfoMinimized">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDatabasesAndTablesWithSearch">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="doTimeseriesAction">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDBSpaces">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTimeSeriesColumnsForTable">
+			<soap:operation soapAction="urn:timeseriesAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:timeseries"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+	</binding>
+
+	<service name="timeseriesService">
+		<port name="timeseriesPort" binding="typens:timeseriesBinding">
+			<soap:address location="plugin/ibm/timeseries/services/timeseriesService.php" />
+		</port>
+	</service>
+</definitions>

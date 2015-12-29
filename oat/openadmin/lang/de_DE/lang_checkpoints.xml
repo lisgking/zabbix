@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[Prüfpunktinformationen]]></checkpointInfo>
+<Checkpoints><![CDATA[Prüfpunkte]]></Checkpoints>
+<Interval><![CDATA[Intervall]]></Interval>
+<Type><![CDATA[Typ]]></Type>
+<Caller><![CDATA[Trigger]]></Caller>
+<Time><![CDATA[Zeit]]></Time>
+<CritTime><![CDATA[Kritische Zeit]]></CritTime>
+<FlushTime><![CDATA[Flushzeit]]></FlushTime>
+<CPTime><![CDATA[Prüfpunktdauer]]></CPTime>
+<NDirtyBuffers><![CDATA[Anz. genutzter Puffer]]></NDirtyBuffers>
+<LSN><![CDATA[Protokollfolgenummer]]></LSN>
+<NCritWaits><![CDATA[Anz. Wartestatus]]></NCritWaits>
+<BlockTime><![CDATA[Blockierungszeit]]></BlockTime>
+</lang>

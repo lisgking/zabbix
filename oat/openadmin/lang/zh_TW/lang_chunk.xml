@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[片段]]></Chunks>
+<Chunk><![CDATA[片段]]></Chunk>
+<MirrorChunk><![CDATA[鏡映片段]]></MirrorChunk>
+<ChunkIO><![CDATA[片段 I/O]]></ChunkIO>
+<ChunkTable><![CDATA[片段表格清單]]></ChunkTable>
+<MirrorTable><![CDATA[鏡映片段表格清單]]></MirrorTable>
+<ChunkNum><![CDATA[片段號碼]]></ChunkNum>
+<SpaceName><![CDATA[空間名稱]]></SpaceName>
+<PageSize><![CDATA[頁面大小]]></PageSize>
+<Offset><![CDATA[偏移]]></Offset>
+<Size><![CDATA[大小]]></Size>
+<Free><![CDATA[可用]]></Free>
+<Used><![CDATA[使用百分比]]></Used>
+<Status><![CDATA[狀態]]></Status>
+<Path><![CDATA[路徑]]></Path>
+<ChunkPath><![CDATA[片段路徑]]></ChunkPath>
+<Reads><![CDATA[讀取數]]></Reads>
+<Writes><![CDATA[寫入數]]></Writes>
+<TotalIO><![CDATA[讀取及寫入總數]]></TotalIO>
+<IOTableTitle><![CDATA[依片段排列 I/O]]></IOTableTitle>
+<IOGraphTitle><![CDATA[前 20 個片段的 I/O]]></IOGraphTitle>
+<ONLINE><![CDATA[線上]]></ONLINE>
+<OFFLINE><![CDATA[離線]]></OFFLINE>
+<RECOVERING><![CDATA[回復中]]></RECOVERING>
+</lang>

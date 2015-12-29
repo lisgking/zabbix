@@ -1,0 +1,4 @@
+AuthUserFile "d:\Program Files\IBM Informix Client SDK\OAT\Apache_2.2.22\conf\\.htpasswd"
+AuthType Basic
+AuthName "Protected Folder"
+Require valid-user

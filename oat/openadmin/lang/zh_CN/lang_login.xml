@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[管理]]></admin>
+<connect><![CDATA[连接]]></connect>
+<connection><![CDATA[连接]]></connection>
+<connections><![CDATA[连接]]></connections>
+<getservers><![CDATA[获取服务器]]></getservers>
+<server><![CDATA[服务器]]></server>
+<hostname><![CDATA[主机名]]></hostname>
+<informixserver><![CDATA[Informix 服务器]]></informixserver>
+<idsprotocol><![CDATA[Informix 协议]]></idsprotocol>
+<login><![CDATA[登录]]></login>
+<log_in><![CDATA[登录]]></log_in>
+<logging_in><![CDATA[正在登录...]]></logging_in>
+<loggingout><![CDATA[注销]]></loggingout>
+<no_user><![CDATA[用户名是必需的。]]></no_user>
+<missingpassword><![CDATA[密码是必需的。]]></missingpassword>
+<missinginformixserver><![CDATA[Informix 服务器是必需的。]]></missinginformixserver>
+<missinghost><![CDATA[主机名是必需的。]]></missinghost>
+<missingport><![CDATA[端口号是必需的。]]></missingport>
+<group><![CDATA[OAT 组]]></group>
+<groups><![CDATA[组]]></groups>
+<password><![CDATA[密码]]></password>
+<port><![CDATA[端口]]></port>
+<help><![CDATA[帮助]]></help>
+<quicklogin><![CDATA[登录到 OAT 组]]></quicklogin>
+<selectaconnection><![CDATA[选择服务器]]></selectaconnection>
+<serverdetails><![CDATA[连接到服务器]]></serverdetails>
+<username><![CDATA[用户名]]></username>
+<aboutOAT><![CDATA[关于 OAT]]></aboutOAT>
+<readme><![CDATA[自述文件]]></readme>
+<HowDoI><![CDATA[OAT 任务帮助]]></HowDoI>
+<cookies_required><![CDATA[需要 cookie 才能登录 OpenAdmin Tool。您的 Web 浏览器似乎不支持 cookie，因此 OAT 无法让您登录。]]></cookies_required>
+<LoginRedirectDesc><![CDATA[让您登录。]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[错误：没有指定连接号。]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[错误：没有组。]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[无效登录详细信息。]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[无效组密码，请重试]]></InvalidGroupPwd>
+<Default><![CDATA[缺省值]]></Default>
+<login_instructions><![CDATA[登录到 OAT 组以连接到组中的服务器，或直接连接到服务器。OAT 组包含一个或多个数据库服务器的连接信息。OAT 组在“OAT 管理”页面上定义。]]></login_instructions>
+<quicklogin_instructions><![CDATA[选择 OAT 组，输入组密码，并单击“获取服务器”。]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[输入或确认服务器的连接信息。]]></serverdetails_instructions>
+<test_connection><![CDATA[测试连接]]></test_connection>
+<testing_connection><![CDATA[正在测试连接...]]></testing_connection>
+<ConnectionFailed><![CDATA[连接失败：]]></ConnectionFailed>
+</lang>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Mriežka]]></GridRepl>
+<noGridSupport><![CDATA[Pre mriežku produkt Informix Replication Plug-in for OAT vyžaduje Informix 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Modul plug-in Replikácia nie je správne nainštalovaný. Ak chcete modul plug-in Replikácia nainštalovať, v ponuke Admin kliknite na Správca modulov plug-in.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Informix Replication Plug-in for OAT vyžaduje, aby ste sa do nástroja OAT prihlásili ako užívateľ informix alebo ako DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Aktuálny stav procesu zaznamenávania ER]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Počet stránok logického protokolu, kým nastane DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Počet spoolovaných transakcií]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Percento diskového priestoru použité pre údaje v riadkoch]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Aktuálny stav siete ER]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Počet odpojených uzlov]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Počet čakajúcich transakcií]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Aktuálny stav procesu uplatnenia ER]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Priemerné oneskorenie pri prijímaní transakcií (v sekundách)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Miera zlyhania uplatnenia transakcií]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[V súbore SQLHOSTS pre uzol {0} sú nasledujúce ID skupín server duplicitné: {1}.  V súbore SQLHOSTS priraďte každej skupine serverov jedinečné ID zadaním jedinečnej hodnoty pre voľbu identifikátora (i=číslo).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[Súbor SQLHOSTS pre uzol {0} neobsahuje nasledujúce skupiny serverov: {1}.  Ak uzol predstavuje koreňový alebo nekoreňový uzol, súbor SQLHOSTS musí obsahovať úplné informácie pre všetky skupiny serverov v doméne.  Ak uzol predstavuje listový uzol, súbor SQLHOSTS musí obsahovať aspoň informácie o rodičovskej skupine uzlov.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[Súbor SQLHOSTS pre uzol {0} neobsahuje aktuálne hodnoty v poli typu pripojenia. Jeden člen každej skupiny v súbore SQLHOSTS musí obsahovať podporované sieťové protokoly a typy databázových serverov.  Enterprise Replication (ER) podporuje sieťové protokoly soctcp, tlitcp, socssl, tlispx, socimc, tliimc a sqlmux a typy databázových serverov on a ol. ER nemôže použiť pripojenie nakonfigurované prostredníctvom voľby modulu CSM (Communications Support Module) v súbore SQLHOSTS.  ER je možné šifrovať len nastavením konfiguračných parametrov pre šifrovanie.  Ak chcete spojiť šifrovanie siete klient/server so šifrovaním ER, nakonfigurujte dve sieťové pripojenia pre každý databázový server. Bližšie informácie o šifrovaní siete a súbore SQLHOSTS nájdete v Informačnom centre Informix.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[V súbore SQLHOSTS pre uzol {0} skupina {1} obsahuje viac než jeden samostatný server alebo jeho aliasy.  Skupina {1} obsahuje server {2}.  OAT nemôže definovať tento server pre Enterprise Replication (ER), pretože tento server je súčasťou klastra s vysokou dostupnosťou.  Ak chcete definovať tento server pre ER, zadajte príkaz cdr define server z príkazového riadka.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Server {0} je v klastri s vysokou dostupnosťou sekundárnym serverom.  Nástroj OAT nedokáže definovať tento server pre Enterprise Replication (ER).  Na primárnom serveri klastra s vysokou dostupnosťou spustite akciu Definovať server.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Nepodarilo sa pripojiť k serveru {0}: {1}.  Nedá sa vytvoriť dôveryhodné pripojenie medzi novým uzlom a serverom {0}, čiže serverom, ktorý ste vybrali na synchronizáciu konfigurácie ER. Skontrolujte pripojenie k sieti.  Bližšie informácie o príprave vášho sieťového rozhrania pre Enterprise Replication nájdete v Informačnom centre Informix.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[ID skupiny pre server {0} nie je rovnaké v súboroch SQLHOSTS pre uzol {1} a uzol {2}.  Skontrolujte hodnoty pre voľbu identifikátora (i=číslo) pre server {0} v súboroch SQLHOSTS pre uzly {1} a {2}.  Tieto hodnoty sa musia zhodovať.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Server {0} nie je server Enterprise Replication (ER), pretože neobsahuje databázu syscdr, ktorá obsahuje globálny katalóg.  Na synchronizáciu konfigurácie domény ER vyberte server, ktorý sa zúčastňuje ER.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Server {0} predstavuje listový uzol.  Listový uzol nemôže byť server, ktorý synchronizuje konfiguráciu domény ER. Vyperte koreňový alebo nekoreňový uzol.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Tento server sa už zúčastňuje aktivity Enteprise Replication (ER).  Vyberte iný server.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[Nástroj OAT nemôže definovať tento server pre Enterprise Replication (ER), pretože je súčasťou klastra s vysokou dostupnosťou.  Ak chcete definovať tento server pre ER, použite príkaz cdr define server v príkazovom riadku.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[Názov skupiny {0} pre server {1} nie je platný.  Skôr než budete pokračovať upravte názov skupiny v súbore SQLHOSTS servera.]]></Invalid_Group_Name>
+<Error><![CDATA[Chyba]]></Error>
+<ConnectionFailed><![CDATA[Pripojenie zlyhalo]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[Nie sú žiadne podrobnosti o pripojení pre tento server.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[Dĺžka príkazu presahuje obmedzenia administračného rozhrania API.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Administračná úloha async sa úspešne odoslala.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Voľný priestor (MB)]]></Free_MB>
+<Used_MB><![CDATA[Použitý priestor (MB)]]></Used_MB>
+</lang>

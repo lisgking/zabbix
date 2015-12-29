@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="ca">
+<HighAvailClusters><![CDATA[高可用性集群]]></HighAvailClusters>
+<PrimaryNotReachable><![CDATA[主服务器不可访问]]></PrimaryNotReachable>
+<ClusterNotReachable><![CDATA[集群不可访问]]></ClusterNotReachable>
+<ClusterBeyondRecognition><![CDATA[集群无法识别]]></ClusterBeyondRecognition>
+<CachedPrimaryNotClustered><![CDATA[高速缓存的主服务器未集群]]></CachedPrimaryNotClustered>
+<NoPrimaryInCluster><![CDATA[集群中没有主服务器]]></NoPrimaryInCluster>
+</lang>

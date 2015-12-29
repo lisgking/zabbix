@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[自動更新統計資料]]></mainTitle>
+<generalTab><![CDATA[一般]]></generalTab>
+<infoTab><![CDATA[資訊]]></infoTab>
+<configTab><![CDATA[配置]]></configTab>
+<listTab><![CDATA[指令]]></listTab>
+<ListConfig><![CDATA[自動更新統計資料配置]]></ListConfig>
+<ConfParam><![CDATA[參數]]></ConfParam>
+<ConfValue><![CDATA[值]]></ConfValue>
+<ConfDesc><![CDATA[說明]]></ConfDesc>
+<ListDBSsummary><![CDATA[依資料庫自動更新統計資料]]></ListDBSsummary>
+<ListDBSTime><![CDATA[前次檢查時間]]></ListDBSTime>
+<ListDBSName><![CDATA[資料庫]]></ListDBSName>
+<ListDBSMissed><![CDATA[表格遺漏統計資料]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[需要重新整理統計資料的小型表格]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[需要重新整理統計資料的大型表格]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[已重新整理統計資料的表格]]></ListDBSDone>
+<CleanupOK><![CDATA[已順利完成清除。]]></CleanupOK>
+<CleanupBAD><![CDATA[清除失敗。]]></CleanupBAD>
+<fix><![CDATA[按一下「清除」以修正問題。]]></fix>
+<Save><![CDATA[儲存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[自動更新統計資料配置]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[重新整理統計資料間隔：]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[表格變更時重新整理統計資料：]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[使用準則來重新整理統計資料：]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[針對列數小於此值的所有表格重新整理統計資料：]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[執行更新統計資料陳述式，PDQ 優先順序為：]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[執行自動更新統計資料作業，使用的執行緒數目為：]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[執行緒]]></AUS_THREADS>
+<Threads><![CDATA[執行緒]]></Threads>
+<days><![CDATA[日]]></days>
+<on><![CDATA[開啟]]></on>
+<off><![CDATA[關閉]]></off>
+<Evaluating><![CDATA[正在評估...]]></Evaluating>
+<saveTaskOK><![CDATA[已順利儲存作業詳細資料。]]></saveTaskOK>
+<saveTaskBAD><![CDATA[未儲存作業詳細資料。]]></saveTaskBAD>
+<Missed><![CDATA[表格遺漏統計資料]]></Missed>
+<Needed_Large><![CDATA[大型表格需要重新整理統計資料]]></Needed_Large>
+<Needed_Small><![CDATA[小型表格需要重新整理統計資料]]></Needed_Small>
+<Done><![CDATA[已重新整理統計資料的表格]]></Done>
+<ChartSummary><![CDATA[自動更新統計資料評估]]></ChartSummary>
+<ListCommands><![CDATA[更新統計資料指令]]></ListCommands>
+<ListPriority><![CDATA[優先順序]]></ListPriority>
+<ListExec><![CDATA[指令]]></ListExec>
+<RefreshEvaluation><![CDATA[立即評估]]></RefreshEvaluation>
+<Cleanup><![CDATA[清除]]></Cleanup>
+<Cleanup_tooltip><![CDATA[如果 AUS 作業產生錯誤，請執行清除作業。清除作業會刪除內部 AUS 工作表，並重新執行「自動更新統計資料評估」作業。]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[匯出指令]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS 警示]]></AUSAlerts>
+<alerts><![CDATA[警示]]></alerts>
+<ListTime><![CDATA[完成時間]]></ListTime>
+<lastEval><![CDATA[前次評估完成於 ]]></lastEval>
+<runIn><![CDATA[將在 {0} 內執行「自動更新統計資料重新整理」。]]></runIn>
+<ausDisabled><![CDATA[已停用「自動更新統計資料」]]></ausDisabled>
+<configSaveErr><![CDATA[儲存 AUS 配置參數時發生錯誤]]></configSaveErr>
+<noValue><![CDATA[沒有指定任何值]]></noValue>
+<notPositiveInt><![CDATA[必須是正整數]]></notPositiveInt>
+<notInt_1_10><![CDATA[值必須是 1 到 10 範圍內的整數]]></notInt_1_10>
+<notInt_0_100><![CDATA[值必須是 0 到 100 範圍內的整數]]></notInt_0_100>
+<notInt_-1_100><![CDATA[值必須是 -1 到 100 範圍內的整數]]></notInt_-1_100>
+<notInt_0_1><![CDATA[值必須是 0 或 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[此功能不適用於您的現行伺服器版本。]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[執行評估時發生問題：]]></ProblemWithEval>
+<ReturnCode><![CDATA[回覆碼是 {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[已完成評估。]]></ReEvalComplete>
+<RequestEval><![CDATA[立即執行「自動更新統計資料評估」作業，以根據 AUS 配置來判定需要重新整理哪些統計資料。]]></RequestEval>
+<PendingCmds><![CDATA[擱置指令]]></PendingCmds>
+<CompletedCmds><![CDATA[已完成指令]]></CompletedCmds>
+<save><![CDATA[[儲存]]></save>
+<cancel><![CDATA[取消]]></cancel>
+<add><![CDATA[新增]]></add>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<Time><![CDATA[時間]]></Time>
+<Type><![CDATA[類型]]></Type>
+<Color><![CDATA[顏色]]></Color>
+<Message><![CDATA[訊息]]></Message>
+<runfrequency><![CDATA[執行頻率]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[自動更新統計資料排程]]></AutoUpdStatsSched>
+<Name><![CDATA[名稱]]></Name>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[開始時間]]></starttime>
+<stopttime><![CDATA[停止時間]]></stopttime>
+<Priority><![CDATA[優先順序]]></Priority>
+<Rows><![CDATA[列數]]></Rows>
+<Parameter><![CDATA[參數]]></Parameter>
+<Value><![CDATA[值]]></Value>
+<Actions><![CDATA[動作]]></Actions>
+<Tables><![CDATA[表格]]></Tables>
+<hours><![CDATA[小時]]></hours>
+<minutes><![CDATA[分鐘]]></minutes>
+<saveConfigSuccessful><![CDATA[已順利儲存「自動更新統計資料」配置。]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[使用此執行緒數目來執行更新統計資料作業。僅限 OAT 才能使用此選項。]]></specifiedNumbOfThread>
+</lang>

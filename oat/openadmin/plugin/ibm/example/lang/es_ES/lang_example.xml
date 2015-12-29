@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[Plug-in de ejemplo de IBM]]></ibm_example_plugin>
+<example><![CDATA[Ejemplo:]]></example>
+<table><![CDATA[Tabla]]></table>
+<piechart><![CDATA[Gráfico circular]]></piechart>
+<linechart><![CDATA[Gráfico de líneas]]></linechart>
+<barchart><![CDATA[Gráfico de barras]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[Usuarios y exploraciones secuenciales]]></users_and_seqscans>
+<username><![CDATA[Nombre de usuario]]></username>
+<numseqscans><![CDATA[Núm. de exploraciones secuenciales]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[E/S de los 20 bloques principales]]></Pie_Chart_Title>
+<Chunk><![CDATA[Bloque de datos]]></Chunk>
+<TotalIO><![CDATA[E/S total]]></TotalIO>
+<Chunk_num><![CDATA[Bloque {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[Gráfico de puntos de comprobación]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[Núm. de almacenamientos intermedios incoherentes]]></dirty_buffers>
+<waits><![CDATA[Núm. de esperas]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[Gráfico de espacio]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[Núm. de almacenamientos intermedios incoherentes]]></dirty_buffers>
+<waits><![CDATA[Núm. de esperas]]></waits>
+
+</lang>

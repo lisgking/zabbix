@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[Показать]]></Show>
+<CommandHistory><![CDATA[Хронология команд]]></CommandHistory>
+<OnlineLog><![CDATA[Оперативный журнал]]></OnlineLog>
+
+<LogDelete><![CDATA[Удалить журнал]]></LogDelete>
+<LogTruncate><![CDATA[Сократить журнал]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[Оперативный журнал сообщений]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[Ротация оперативного журнала сообщений]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[Журнал действий ON-Bar]]></BarActLog>
+<BarActLogRotate><![CDATA[Ротация журнала действий ON-Bar]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[Чанки]]></chunks>
+<commands><![CDATA[Команды]]></commands>
+<Databases><![CDATA[Базы данных]]></Databases>
+<Alerts><![CDATA[Оповещения]]></Alerts>
+<Message><![CDATA[Сообщение]]></Message>
+<Messages><![CDATA[Сообщения]]></Messages>
+<OnBarActLog><![CDATA[Журнал действий ON-Bar]]></OnBarActLog>
+<onconfigfile><![CDATA[Файл Onconfig]]></onconfigfile>
+<Name><![CDATA[Имя]]></Name>
+<CurrentValue><![CDATA[Текущее значение]]></CurrentValue>
+<ChunkInfo><![CDATA[Информация чанка]]></ChunkInfo>
+<ChunkNumber><![CDATA[Номер чанка]]></ChunkNumber>
+<ChunkPath><![CDATA[Имя пути]]></ChunkPath>
+<Size><![CDATA[Размер]]></Size>
+<Offset><![CDATA[Смещение]]></Offset>
+<Free><![CDATA[Свободно]]></Free>
+<CmdHistory><![CDATA[Хронология команд администрирования]]></CmdHistory>
+<User><![CDATA[Пользователь]]></User>
+<Time><![CDATA[Время]]></Time>
+<CommandExecuted><![CDATA[Выполненная команда]]></CommandExecuted>
+<ReturnMsg><![CDATA[Возвращаемое сообщение]]></ReturnMsg>
+<CreateDate><![CDATA[Дата создания]]></CreateDate>
+<AreYouSureTruncate><![CDATA[Это действие удаляет сообщения в файле журнала сообщений. Этот файл журнала сообщений сохраняется. Продолжить?]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[Это действие удаляет файл журнала сообщений. Продолжить?]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[ID задачи для задачи online_log_rotate не найден. Для ротации файлов журнала требуется Informix 11.70.xC3. Проверьте версию сервера баз данных.]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[ID задачи для задачи bar_act_log_rotate не найден. Для ротации файлов журнала требуется Informix 11.70.xC3. Проверьте версию сервера баз данных.]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[Успешно]]></Success>
+<Error><![CDATA[Ошибка]]></Error>
+<Warning><![CDATA[Предупреждение]]></Warning>
+</lang>

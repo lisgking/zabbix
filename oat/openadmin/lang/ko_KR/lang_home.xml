@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[홈]]></home>
+
+<dashboard><![CDATA[대시보드]]></dashboard>
+<dashboard_name_perf><![CDATA[서버 성능]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[이 대시보드는 테이블, 쿼리 및 cpu에 대한 정보를 표시합니다.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[리소스 사용]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[이 대시보드는 메모리, 영역 및 로크에 대한 정보를 표시합니다.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[데이터베이스 서버 메모리]]></panel_title_memory>
+<panel_desc_memory><![CDATA[이 패널은 데이터베이스 서버의 공유 메모리 사용을 표시합니다.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[세션]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[이 패널은 데이터베이스 서버의 연결 세션 수를 표시합니다.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[네트워크 읽기 및 쓰기]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[이 패널은 네트워크 읽기 및 쓰기에 대한 입출력 호출 수를 표시합니다.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[디스크 입출력]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[이 패널은 디스크 입출력 대기 시간을 표시합니다. 패널에는 Informix 12.10이 필요합니다.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[OS 메모리]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[이 패널은 운영 체제(OS)의 메모리 사용을 표시합니다. 패널에는 Informix 11.50이 필요합니다.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[트랜잭션]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[이 패널은 데이터베이스 서버의 트랜잭션 수를 표시합니다.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[영역 사용
+]]></panel_title_space>
+<panel_desc_space><![CDATA[이 패널은 각 DBSPACE의 여유 공간 및 사용한 공간을 표시합니다.]]></panel_desc_space>
+<panel_title_locks><![CDATA[로크]]></panel_title_locks>
+<panel_desc_locks><![CDATA[이 패널은 데이터베이스 서버의 로크 수를 표시합니다.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[톱 테이블 - 읽기]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[이 패널은 가장 많이 읽은 테이블을 표시합니다.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU 시간
+]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[이 패널은 사용자 및 시스템 CPU 시간을 표시합니다.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[톱 테이블 - 수정됨]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[이 패널은 가장 많이 삽입, 갱신 및 삭제한 테이블을 표시합니다.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[총 SQL 조작 수]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[이 패널은 처리, 삽입, 갱신 및 삭제된 총 행 수를 표시합니다. ]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[초당 SQL 조작 수]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[이 패널은 초당 처리, 삽입, 갱신 및 삭제된 행 수를 표시합니다.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[시작]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[이 페이지에서 OpenAdmin Tool은 영어가 아닌 둘 이상의 데이터베이스 로케일을 가진 데이터베이스 서버에 대한 정보를 표시할 수 없습니다. 데이터베이스 서버에는 영어가 아닌 둘 이상의 데이터베이스 로케일이 포함됩니다.]]></NotYetImpl>
+<sessionexplorer><![CDATA[세션 탐색기]]></sessionexplorer>
+<ChartTest><![CDATA[차트 - 테스트]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[데이터 영역]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[데이터베이스 서버에 대한 연결 정보를 검색할 수 없습니다.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[연결에 실패함: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[오류: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[데이터베이스 서버가 차단되었습니다. OAT가 다른 상태 정보를 검색할 수 없습니다.]]></ServerBlocked>
+</lang>

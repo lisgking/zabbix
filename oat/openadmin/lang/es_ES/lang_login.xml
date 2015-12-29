@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Admin]]></admin>
+<connect><![CDATA[Conectar]]></connect>
+<connection><![CDATA[Conexión]]></connection>
+<connections><![CDATA[Conexiones]]></connections>
+<getservers><![CDATA[Obtener Servidores]]></getservers>
+<server><![CDATA[Servidor]]></server>
+<hostname><![CDATA[Nombre de host]]></hostname>
+<informixserver><![CDATA[Servidor Informix]]></informixserver>
+<idsprotocol><![CDATA[Protocolo Informix]]></idsprotocol>
+<login><![CDATA[Inicio de sesión]]></login>
+<log_in><![CDATA[Iniciar sesión]]></log_in>
+<logging_in><![CDATA[Iniciando la sesión...]]></logging_in>
+<loggingout><![CDATA[Se está cerrando la sesión]]></loggingout>
+<no_user><![CDATA[Se necesita un nombre de usuario.]]></no_user>
+<missingpassword><![CDATA[Se necesita una contraseña.]]></missingpassword>
+<missinginformixserver><![CDATA[Se necesita un servidor Informix.]]></missinginformixserver>
+<missinghost><![CDATA[Se necesita un nombre de host.]]></missinghost>
+<missingport><![CDATA[Se necesita un número de puerto.]]></missingport>
+<group><![CDATA[Grupo de OAT]]></group>
+<groups><![CDATA[Grupos]]></groups>
+<password><![CDATA[Contraseña]]></password>
+<port><![CDATA[Puerto]]></port>
+<help><![CDATA[Ayuda]]></help>
+<quicklogin><![CDATA[Inicia sesión en un grupo OAT]]></quicklogin>
+<selectaconnection><![CDATA[Seleccione un servidor]]></selectaconnection>
+<serverdetails><![CDATA[Conéctese a un servidor]]></serverdetails>
+<username><![CDATA[Nombre de usuario]]></username>
+<aboutOAT><![CDATA[Acerca de OAT]]></aboutOAT>
+<readme><![CDATA[Léame]]></readme>
+<HowDoI><![CDATA[Ayuda de tarea OAT]]></HowDoI>
+<cookies_required><![CDATA[Las cookies son necesarias para iniciar sesión en la herramienta OpenAdmin.  Por lo que parece, su navegador web no admite cookies, por lo que OAT no podrá iniciar su sesión.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Se está iniciando la sesión.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Error: No se ha especificado ningún número de conexión.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Error: No hay grupos.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Los detalles del inicio de sesión no son válidos.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[La contraseña de grupo no es válida. Vuelva a intentarlo.]]></InvalidGroupPwd>
+<Default><![CDATA[Predeterminado]]></Default>
+<login_instructions><![CDATA[Inicie sesión en un grupo OAT para conectarse a un servidor del grupo o conéctese a un servidor directamente. Un grupo OAT contiene información de conexión para uno o varios servidores de bases de datos. Los grupos OAT están definidos en las páginas de administración de OAT.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Seleccione el grupo OAT, especifique la contraseña del grupo y pulse Obtener servidores.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Especifique o confirme la información de conexión para el servidor.]]></serverdetails_instructions>
+<test_connection><![CDATA[Probar conexión]]></test_connection>
+<testing_connection><![CDATA[Probando conexión...]]></testing_connection>
+<ConnectionFailed><![CDATA[La conexión ha fallado:]]></ConnectionFailed>
+</lang>

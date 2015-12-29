@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[可信上下文]]></mainTitle>
+<FeatureUnavailable><![CDATA[对于您当前的服务器版本，此功能部件不可用。]]></FeatureUnavailable>
+</lang>

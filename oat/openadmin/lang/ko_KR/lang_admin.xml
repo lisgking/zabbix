@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[관리]]></admin>
+<login><![CDATA[로그인]]></login>
+<AdminHome><![CDATA[관리자 홈]]></AdminHome>
+<AdminWelcome><![CDATA[관리 시작]]></AdminWelcome>
+<ConnAdmin><![CDATA[연결 관리]]></ConnAdmin>
+<ConnList><![CDATA[연결 목록]]></ConnList>
+<OATconfig><![CDATA[OAT 구성]]></OATconfig>
+<defaultlang><![CDATA[기본 언어]]></defaultlang>
+<baseurl><![CDATA[기본 URL]]></baseurl>
+<installdir><![CDATA[설치 디렉토리]]></installdir>
+<conndb_loc><![CDATA[연결 데이터베이스 디렉토리]]></conndb_loc>
+<rowsperpage><![CDATA[페이지당 행]]></rowsperpage>
+<pingerinterval><![CDATA[새로 고침 간격]]></pingerinterval>
+<IDSProtocol><![CDATA[Informix 프로토콜]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[사용할 프로토콜]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[대시보드 관리자]]></DashboardMgr>
+<ShowConnections><![CDATA[연결 표시]]></ShowConnections>
+<AddConn><![CDATA[연결 추가
+]]></AddConn>
+<DeleteConn><![CDATA[연결 삭제]]></DeleteConn>
+<EditConn><![CDATA[연결 편집]]></EditConn>
+<EditConn_><![CDATA[연결 편집: {0}]]></EditConn_>
+<AddGroup><![CDATA[그룹 추가]]></AddGroup>
+<EditGroup><![CDATA[그룹 편집]]></EditGroup>
+<EditGroup_><![CDATA[{0} 그룹 편집]]></EditGroup_>
+<DeleteGroup><![CDATA[그룹 삭제]]></DeleteGroup>
+<HelpAdmin><![CDATA[도움말 관리]]></HelpAdmin>
+<AddHelp><![CDATA[도움말 항목 추가]]></AddHelp>
+<DeleteHelp><![CDATA[도움말 항목 삭제]]></DeleteHelp>
+<EditHelp><![CDATA[도움말 항목 편집]]></EditHelp>
+<group><![CDATA[OAT 그룹
+]]></group>
+<groupname><![CDATA[그룹 이름]]></groupname>
+<groupname_sc><![CDATA[그룹 이름
+]]></groupname_sc>
+<username><![CDATA[사용자 이름]]></username>
+<password><![CDATA[암호]]></password>
+<hostname><![CDATA[호스트 이름]]></hostname>
+<informixserver><![CDATA[Informix Server]]></informixserver>
+<port><![CDATA[포트]]></port>
+<longitude><![CDATA[경도]]></longitude>
+<latitude><![CDATA[위도]]></latitude>
+<idsdport><![CDATA[idsd 포트
+]]></idsdport>
+<envvars><![CDATA[환경 변수]]></envvars>
+<varname><![CDATA[변수 이름]]></varname>
+<param><![CDATA[매개변수]]></param>
+<value><![CDATA[값]]></value>
+<readonly><![CDATA[읽기 전용]]></readonly>
+<readonly_sc><![CDATA[읽기 전용]]></readonly_sc>
+<collapse><![CDATA[접기]]></collapse>
+<viewmodify><![CDATA[보기&#47수정]]></viewmodify>
+<currgroups><![CDATA[현재 그룹]]></currgroups>
+<numconn><![CDATA[연결]]></numconn>
+<deleteselected><![CDATA[선택사항 삭제]]></deleteselected>
+<act><![CDATA[작동]]></act>
+<do><![CDATA[수행]]></do>
+<title><![CDATA[제목]]></title>
+<description><![CDATA[설명]]></description>
+<add><![CDATA[추가]]></add>
+<delete><![CDATA[삭제]]></delete>
+<save><![CDATA[저장]]></save>
+<cancel><![CDATA[취소]]></cancel>
+<testconnection><![CDATA[연결 테스트]]></testconnection>
+<insecureCONNDBDIR><![CDATA[지정한 연결 데이터베이스 위치가 웹 서버의 문서 루트 아래에 있습니다. 이 경우 OAT가 보안 위험에 노출될 수 있습니다. 그래도 계속하려면 확인을 클릭하십시오. ]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[플러그인 관리자]]></pluginmgr>
+<installplugin><![CDATA[플러그인 설치]]></installplugin>
+<menumgr><![CDATA[메뉴 관리자]]></menumgr>
+<secureSQL><![CDATA[SQL 도구 상자 보안]]></secureSQL>
+<informixcontime><![CDATA[Informix 연결 시간]]></informixcontime>
+<informixconretry><![CDATA[Informix 연결 재시도]]></informixconretry>
+<helpDB><![CDATA[도움말 데이터베이스]]></helpDB>
+<selectHelpDB><![CDATA[도움말 데이터베이스 선택]]></selectHelpDB>
+<import><![CDATA[XML 파일에서 연결 정보 가져오기]]></import>
+<export><![CDATA[XML 파일로 연결 정보 내보내기]]></export>
+<importbutton><![CDATA[XML에서 가져오기]]></importbutton>
+<exportbutton><![CDATA[XML로 내보내기]]></exportbutton>
+<importcheckbox><![CDATA[XML 파일을 가져오기 전에 기존의 모든 연결 정보 제거]]></importcheckbox>
+<exportcheckbox><![CDATA[내보낸 XML 파일에 중요 암호 정보 포함]]></exportcheckbox>
+<nofile><![CDATA[파일을 선택하지 않았습니다. ]]></nofile>
+<overwriteConfirm><![CDATA[현재 기존의 모든 연결 정보가 삭제됩니다. 삭제하시겠습니까? ]]></overwriteConfirm>
+<securityWarning><![CDATA[내보낸 XML 파일에 중요한 암호 정보(Informix 암호 등)가 포함되어 있습니다. 이 파일이 안전한 위치에 저장되어 있는지 확인하십시오.]]></securityWarning>
+<LANG><![CDATA[OAT 페이지의 기본 언어입니다.]]></LANG>
+<CONNDBDIR><![CDATA[OAT 연결 데이터베이스의 디렉토리입니다. 웹 서버의 문서 디렉토리 아래에 없는 보안 디렉토리를 지정하십시오.]]></CONNDBDIR>
+<BASEURL><![CDATA[OAT가 이 형식으로 설치된 URL: http://servername:port/location]]></BASEURL>
+<HOMEDIR><![CDATA[OAT 설치의 디렉토리입니다.]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[테이블 형식으로 데이터를 보여줄 때 표시할 페이지당 기본 행 수입니다.]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[서버 상태 갱신 사이의 시간 길이(초)입니다. 서버 상태는 Health Center > 대시보드 > 그룹 요약 페이지에 표시됩니다.]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[OAT 홈 페이지로 사용할 페이지입니다.]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[사용할 프로토콜(예: onsoctcp)]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[SQL 도구 상자에 대한 로그인 신임 정보가 필요합니다.]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[암호는 스키마 브라우저, SQL 편집기 및 예제별 쿼리 페이지를 보호합니다. 사용자는 이 페이지에서 테이블 데이터를 보거나 변경할 수 있습니다.]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[OAT가 오류를 리턴하기 전에 데이터베이스 서버에 연결을 시도하는 시간 길이(초)입니다(INFORMIXCONTIME).]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[Informix Connect 시간 동안 OAT가 데이터베이스 서버에 연결을 시도하는 횟수입니다(INFORMIXCONRETRY).]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[홈 페이지]]></HomePage>
+<home_page_option_welcome><![CDATA[시작]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Health Center > 대시보드 > 그룹 요약]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Health Center > 대시보드 > 서버 성능]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[사용자 정의]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[파일에 쓸 수 없어서 구성 저장에 실패:]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[구성 저장]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[온라인: 현재]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Informix Server는 필수임]]></RequiresInformixServer>
+<RequiresHost><![CDATA[호스트는 필수임]]></RequiresHost>
+<RequiresPort><![CDATA[포트는 필수임]]></RequiresPort>
+<RequiresUser><![CDATA[사용자 이름은 필수임]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[다음 오류 코드로 인해 새 연결 추가에 실패함:]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[다음 오류 코드로 인해 idsd에 새 연결을 추가하는 데 실패함:]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[다음 오류 코드로 인해 conn_envvars에 삽입하는 데 실패함:]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[다음 오류 코드로 인해 연결 갱신에 실패함:]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[다음 오류 코드로 인해 idsd 교체에 실패함:]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[다음 오류 코드로 인해 conn_envvars에서 삭제하는 데 실패함:]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[갱신: 다음 오류 코드로 인해 conn_envvars에 삽입하는 데 실패함:]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[연결 편집]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[오류 발생 - 그룹 번호는 필수임]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[그룹 이름은 필수임]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[다음 오류 코드로 인해 그룹 편집에 실패함:]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[그룹 편집]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[다음 오류 코드로 인해 새 그룹 추가에 실패함:]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[그룹 추가]]></AddingGroup>
+<AddingConn><![CDATA[연결 추가]]></AddingConn>
+<ErrorDeletingConn><![CDATA[오류: 잘못된 인수를 사용하여 dodelconn 함수를 호출함]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[다음 오류 코드로 인해 연결 삭제에 실패함:]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[연결 삭제 완료]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[다음 오류 코드로 인해 그룹 삭제에 실패함:]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[그룹 삭제 완료]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA['동작'은 필수임]]></RequiresAct>
+<RequiresDescription><![CDATA[설명은 필수임]]></RequiresDescription>
+<AddingHelpFor><![CDATA[도움말 추가: ]]></AddingHelpFor>
+<DeletingHelp><![CDATA[도움말 삭제]]></DeletingHelp>
+<EditingHelpFor><![CDATA[도움말 편집: ]]></EditingHelpFor>
+<NoHelpDB><![CDATA[helpdb_id =의 도움말 데이터베이스 없음]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[idsadminHelp db -의 문제점]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[도움말 데이터베이스를 여는 중에 오류 발생]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[그룹 가져오기에 실패함]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[그룹 가져오기에 실패함]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[플러그인 설치 시작 중...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[연결 실패...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[connections.db 로딩 중 오류]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[연결을 삭제하시겠습니까?]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[삭제하시겠습니까? 그룹을 삭제하면 해당 그룹에 정의된 모든 연결도 삭제됩니다.]]></SureToDeleteGroup>
+<AskDelete><![CDATA[삭제하시겠습니까? ]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[테스트 중입니다...기다려주십시오.]]></TestingConnection>
+<InvalidEnvVar><![CDATA[오류: 환경 변수 이름과 값을 모두 지정해야 합니다.]]></InvalidEnvVar>
+<x_Plugin><![CDATA[{0} 플러그인]]></x_Plugin>
+</lang>

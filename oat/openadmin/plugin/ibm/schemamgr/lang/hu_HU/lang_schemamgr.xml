@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[Sémakezelő]]></schemamgr>
+<FragmentedTable><![CDATA[Tördelt tábla]]></FragmentedTable>
+<PseudoTable><![CDATA[Áltábla]]></PseudoTable>
+<NotApplicable><![CDATA[Nem alkalmazható]]></NotApplicable>
+<check_admin_log><![CDATA[További információkat a parancs előzmények között vagy az online naplóban talál.]]></check_admin_log>
+<running><![CDATA[{0} futó]]></running>
+<interval_frag_strategy><![CDATA[Töredékkulcs oszlop: {0}. Időköz: {1}. Tárolási hely: {2}.]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[Görgethető ablak beállításai:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[Tábla korlátozása {0} töredékre]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[Tábla méretének korlátozása ennyire: {0}]]></rolling_window_limit_by_size>
+<detach><![CDATA[Leválasztás]]></detach>
+<discard><![CDATA[Eldobás]]></discard>
+<x_years><![CDATA[{0} év]]></x_years>
+<x_months><![CDATA[{0} hónap]]></x_months>
+<x_days><![CDATA[{0} nap]]></x_days>
+</lang>

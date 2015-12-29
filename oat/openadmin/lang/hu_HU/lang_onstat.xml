@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[onstat információk]]></mainTitle>
+<SystemReports><![CDATA[Rendszer jelentések]]></SystemReports>
+<Daterange><![CDATA[Válassza ki a dátumtartományt:]]></Daterange>
+<from><![CDATA[Kezdő dátum:]]></from>
+<to><![CDATA[Befejező dátum:]]></to>
+<Month1><![CDATA[Jan]]></Month1>
+<Month2><![CDATA[Feb]]></Month2>
+<Month3><![CDATA[Már]]></Month3>
+<Month4><![CDATA[Ápr]]></Month4>
+<Month5><![CDATA[Máj]]></Month5>
+<Month6><![CDATA[Jún]]></Month6>
+<Month7><![CDATA[Júl]]></Month7>
+<Month8><![CDATA[Aug]]></Month8>
+<Month9><![CDATA[Szep]]></Month9>
+<Month10><![CDATA[Okt]]></Month10>
+<Month11><![CDATA[Nov]]></Month11>
+<Month12><![CDATA[Dec]]></Month12>
+<mCurrent><![CDATA[Aktuális jelentések]]></mCurrent>
+<mHistorical><![CDATA[Előzmény jelentések]]></mHistorical>
+<HeatMaps><![CDATA[Grafikonok]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[A diagramok megjelenítéséhez az OAT Informix 11.70.xC4 változatot igényel.]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[A csak olvasható felhasználóknak erre nincs engedélyük. Csak olvasható felhasználóként van bejelentkezve.]]></nopermission>
+<NetworkUsage><![CDATA[Hálózat használati jelentés]]></NetworkUsage>
+<MemoryPools><![CDATA[Memóriatár jelentés]]></MemoryPools>
+<MemoryUsage><![CDATA[Kiszolgáló memória használati jelentés]]></MemoryUsage>
+<SQLCache><![CDATA[SQL gyorsítótár jelentés]]></SQLCache>
+<Sessions><![CDATA[Munkamenet jelentés]]></Sessions>
+<VPReport><![CDATA[Virtuális processzor jelentés]]></VPReport>
+<SysBackups><![CDATA[Rendszermentés jelentés]]></SysBackups>
+<TableProf><![CDATA[Táblaprofil jelentés]]></TableProf>
+<ResourceUsage><![CDATA[Számítógép erőforrás információi]]></ResourceUsage>
+<CompInfo><![CDATA[Számítógép operációs rendszer információi]]></CompInfo>
+<PPID><![CDATA[PID]]></PPID>
+<Class><![CDATA[Osztály]]></Class>
+<ReadyQ><![CDATA[Üzemkész sorhossz]]></ReadyQ>
+<VP><![CDATA[Virtuális processzorok teljes CPU felhasználása]]></VP>
+<NetUserRep><![CDATA[Hálózat használati jelentés]]></NetUserRep>
+<NetID><![CDATA[Hálózatazonosító]]></NetID>
+<SID><![CDATA[Felhasználói munkamenet-azonosító]]></SID>
+<ClientName><![CDATA[Ügyfélnév]]></ClientName>
+<ReadCount><![CDATA[Fogadott számláló]]></ReadCount>
+<WriteCount><![CDATA[Küldött számláló]]></WriteCount>
+<ReadBytes><![CDATA[Összes fogadott]]></ReadBytes>
+<WriteBytes><![CDATA[Összes küldött]]></WriteBytes>
+<ConTime><![CDATA[Munkamenet kezdő időpontja]]></ConTime>
+<Protocol><![CDATA[Protokoll]]></Protocol>
+<SysNetIO><![CDATA[I/O műveletek szerint]]></SysNetIO>
+<SysNetTXF><![CDATA[Adatátvitel szerint]]></SysNetTXF>
+<MemSegUsage><![CDATA[Memóriaszegmens használat]]></MemSegUsage>
+<MemOSUsage><![CDATA[Számítógép memória használat]]></MemOSUsage>
+<Usage><![CDATA[Használat]]></Usage>
+<Resident><![CDATA[Rezidens]]></Resident>
+<Virutal><![CDATA[Virtuális]]></Virutal>
+<Message><![CDATA[Üzenet]]></Message>
+<Other><![CDATA[Egyéb]]></Other>
+<Allocated><![CDATA[Lefoglalt]]></Allocated>
+<Free><![CDATA[Szabad]]></Free>
+<SelectReportType><![CDATA[Jelentések kiválasztása típus szerint]]></SelectReportType>
+<ClearAll><![CDATA[Összes kiürítése]]></ClearAll>
+<AllRept><![CDATA[Összes kijelölése]]></AllRept>
+<Disk><![CDATA[Lemez]]></Disk>
+<Performance><![CDATA[Teljesítmény]]></Performance>
+<InvalidDateRangeError><![CDATA[A befejező dátum korábbi, mint a kezdő dátum. Jelöljön ki a kezdő dátumnál későbbi befejező dátumot.]]></InvalidDateRangeError>
+<Net><![CDATA[Hálózat]]></Net>
+<Network><![CDATA[Hálózat]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[Táblázatok]]></Tables>
+<Users><![CDATA[Felhasználók]]></Users>
+<CreateReport><![CDATA[Jelentés létrehozása]]></CreateReport>
+<ReportRun><![CDATA[Jelentés futtatása]]></ReportRun>
+<StartDate><![CDATA[Kezdő dátum]]></StartDate>
+<EndDate><![CDATA[Befejező dátum]]></EndDate>
+<ServerUptime><![CDATA[Kiszolgáló működési idő]]></ServerUptime>
+<Top><![CDATA[Legfelső]]></Top>
+<Basic><![CDATA[Alapszintű]]></Basic>
+<ServerConfig><![CDATA[Kiszolgáló konfiguráció]]></ServerConfig>
+<ParamName><![CDATA[Paraméter neve]]></ParamName>
+<ParamID><![CDATA[Paraméterazonosító]]></ParamID>
+<OnconfigParamDetails><![CDATA[Onconfig paraméter részletek]]></OnconfigParamDetails>
+<Value><![CDATA[Érték]]></Value>
+<ParamType><![CDATA[Paramétertípus]]></ParamType>
+<Description><![CDATA[Leírás]]></Description>
+<MinValue><![CDATA[Minimális érték]]></MinValue>
+<MaxValue><![CDATA[Maximális érték]]></MaxValue>
+<PossibleValues><![CDATA[Lehetséges értékek]]></PossibleValues>
+<Recommendation><![CDATA[Javaslat]]></Recommendation>
+<RecommendationMessage><![CDATA[További információk megjelenítéséhez és dinamikus paraméter módosításához kattintson a paraméter nevére. Az ajánlást tartalmazó paraméterek sárga színnel vannak kiemelve.]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[Ennek az onconfig paraméternek az értéke az OpenAdmin Tool ajánlását követi.]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[Ennek az onconfig paraméternek az értéke nem követi az OpenAdmin Tool ajánlását.]]></Recommendation_NO>
+<Warning><![CDATA[FIGYELMEZTETÉS]]></Warning>
+<Save><![CDATA[Mentés]]></Save>
+<Cancel><![CDATA[Mégse]]></Cancel>
+<Back><![CDATA[Vissza]]></Back>
+<Dynamic><![CDATA[Dinamikus]]></Dynamic>
+<NotDynamic><![CDATA[Nem dinamikus]]></NotDynamic>
+<ParamNotDynamic><![CDATA[A paraméter nem konfigurálható dinamikusan.]]></ParamNotDynamic>
+<Configurable><![CDATA[Konfigurálható]]></Configurable>
+<OnconfigOption><![CDATA[Megjelenítés]]></OnconfigOption>
+<ShowAll><![CDATA[Mind]]></ShowAll>
+<ShowBasic><![CDATA[Alapszintű]]></ShowBasic>
+<ShowDynamic><![CDATA[Dinamikus]]></ShowDynamic>
+<ShowRecommend><![CDATA[Ajánlások]]></ShowRecommend>
+<SaveOption><![CDATA[Mentési lehetőség]]></SaveOption>
+<SaveMem><![CDATA[Mentés a memóriába]]></SaveMem>
+<SaveMemFile><![CDATA[Mentés a memóriába és fájlba]]></SaveMemFile>
+<Server><![CDATA[Kiszolgáló]]></Server>
+<WaitSesRpt><![CDATA[Várakozó munkamenet jelentés]]></WaitSesRpt>
+<WaitSes><![CDATA[Várakozó munkamenet]]></WaitSes>
+<ResourceOwner><![CDATA[Erőforrás tulajdonosa]]></ResourceOwner>
+<ResourceType><![CDATA[Erőforrástípus]]></ResourceType>
+<WaitObject><![CDATA[Várakozás objektum]]></WaitObject>
+<WaitItem><![CDATA[Várakozás elem]]></WaitItem>
+<WaitInfo><![CDATA[Várakozási információk]]></WaitInfo>
+<ResourceUsageReport><![CDATA[Erőforrás felhasználási jelentés]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[Erőforrás összegzési jelentés]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[A véget érő hétre]]></ForWeekEnding>
+<MaxConns><![CDATA[Kapcsolatok maximális száma]]></MaxConns>
+<MaxCPUVPS><![CDATA[CPU VP-k maximális száma]]></MaxCPUVPS>
+<MAXVPS><![CDATA[VP-k maximális száma]]></MAXVPS>
+<DiskSize><![CDATA[Lemez mérete]]></DiskSize>
+<DiskUsed><![CDATA[Használt lemez]]></DiskUsed>
+<Memory><![CDATA[Memória]]></Memory>
+<MemoryUsed><![CDATA[Használt memória]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[Szemafor információk]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[Osztott memória információk]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[Nyitott fájlok maximális száma folyamatonként]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[Operációs rendszer lapmérete]]></OSPageSize>
+<TotalCPUs><![CDATA[Összes processzor]]></TotalCPUs>
+<OnlineCPUs><![CDATA[Online processzorok]]></OnlineCPUs>
+<CPUs><![CDATA[Processzorok]]></CPUs>
+<HostName><![CDATA[Hosztnév]]></HostName>
+<OSName><![CDATA[Operációs rendszer neve]]></OSName>
+<OSRel><![CDATA[Operációs rendszer kiadása]]></OSRel>
+<OSVer><![CDATA[Operációs rendszer verziószáma]]></OSVer>
+<CPUType><![CDATA[Számítógép típusa]]></CPUType>
+<TotalMem><![CDATA[Számítógép összes memóriája]]></TotalMem>
+<TotalFreeMem><![CDATA[Számítógép szabad memóriája]]></TotalFreeMem>
+<BackupReport><![CDATA[Mentési jelentés]]></BackupReport>
+<Number><![CDATA[Száma]]></Number>
+<Name><![CDATA[Név]]></Name>
+<Position><![CDATA[Pozíció]]></Position>
+<Level0><![CDATA[Szint-0]]></Level0>
+<Level1><![CDATA[Szint-1]]></Level1>
+<Level2><![CDATA[Szint-2]]></Level2>
+<BackupReport><![CDATA[Mentési jelentés]]></BackupReport>
+<TableProfileInfo><![CDATA[Táblaprofil információk]]></TableProfileInfo>
+<TableName><![CDATA[Táblanév]]></TableName>
+<Locks><![CDATA[Zárolások]]></Locks>
+<LockRequests><![CDATA[Zárolási kérések]]></LockRequests>
+<DeadLocks><![CDATA[Holtpontok]]></DeadLocks>
+<LockWaits><![CDATA[Zárolásra várakozások]]></LockWaits>
+<LockTimeouts><![CDATA[Zárolási időtúllépések]]></LockTimeouts>
+<LogRecords><![CDATA[Naplóbejegyzések]]></LogRecords>
+<LogSpace><![CDATA[Naplóterület]]></LogSpace>
+<MaxLogSpace><![CDATA[Maximális naplóterület]]></MaxLogSpace>
+<ReadCache><![CDATA[Olvasási gyorsítótár]]></ReadCache>
+<WriteCache><![CDATA[Írási gyorsítótár]]></WriteCache>
+<DiskReads><![CDATA[Lemezolvasások]]></DiskReads>
+<DiskWrites><![CDATA[Lemezírások]]></DiskWrites>
+<RowsProcessed><![CDATA[Feldolgozott sorok]]></RowsProcessed>
+<RowsInserted><![CDATA[Beszúrt sorok]]></RowsInserted>
+<RowsUpdated><![CDATA[Frissített sorok]]></RowsUpdated>
+<RowsDeleted><![CDATA[Törölt sorok]]></RowsDeleted>
+<SequentialScans><![CDATA[Szekvenciális keresések]]></SequentialScans>
+<UserID><![CDATA[Felhasználói azonosító]]></UserID>
+<GroupID><![CDATA[Csoportazonosító]]></GroupID>
+<SessionID><![CDATA[Munkamenet-azonosító]]></SessionID>
+<PID><![CDATA[PID]]></PID>
+<Connected><![CDATA[Csatlakoztatva]]></Connected>
+<OpenTables><![CDATA[Nyitott táblák]]></OpenTables>
+<TotalMemory><![CDATA[Összes memória]]></TotalMemory>
+<UsedMemory><![CDATA[Használt memória]]></UsedMemory>
+<FreeMemory><![CDATA[Szabad memória]]></FreeMemory>
+<Sorts><![CDATA[Rendezések]]></Sorts>
+<LargestSorts><![CDATA[Legnagyobb rendezések]]></LargestSorts>
+<DiskSorts><![CDATA[Lemez rendezések]]></DiskSorts>
+<MemorySorts><![CDATA[Memória rendezések]]></MemorySorts>
+<BufferWrites><![CDATA[Pufferírások]]></BufferWrites>
+<BufferReads><![CDATA[Pufferolvasások]]></BufferReads>
+<FGWrites><![CDATA[FG írások]]></FGWrites>
+<FGReads><![CDATA[FG olvasások]]></FGReads>
+<Commits><![CDATA[Véglegesítések]]></Commits>
+<Rollbacks><![CDATA[Visszagörgetések]]></Rollbacks>
+<LongTXs><![CDATA[Hosszú tranzakciók]]></LongTXs>
+<ConnectTime><![CDATA[Csatlakozási idő]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[Felhasználó]]></User>
+<SessionList><![CDATA[Munkamenetlista]]></SessionList>
+<NoData><![CDATA[Nincsenek adatok]]></NoData>
+<SQLCachesList><![CDATA[SQL gyorsítótár lista]]></SQLCachesList>
+<CacheName><![CDATA[Gyorsítótár neve]]></CacheName>
+<Ratio><![CDATA[Arány]]></Ratio>
+<Hits><![CDATA[Találatok]]></Hits>
+<Misses><![CDATA[Tévesztések]]></Misses>
+<Removed><![CDATA[Eltávolítva]]></Removed>
+<InUse><![CDATA[Használatban van]]></InUse>
+<CacheEntries><![CDATA[Gyorsítótár bejegyzések]]></CacheEntries>
+<SharedMemorySegList><![CDATA[Osztott memória szegmens lista]]></SharedMemorySegList>
+<SegmentType><![CDATA[Szegmens típusa]]></SegmentType>
+<Size><![CDATA[Méret]]></Size>
+<Used><![CDATA[Használt]]></Used>
+<Total><![CDATA[Összesen]]></Total>
+<Address><![CDATA[Cím]]></Address>
+<Key><![CDATA[Kulcs]]></Key>
+<FLAGS><![CDATA[Jelzők]]></FLAGS>
+<Class><![CDATA[Osztály]]></Class>
+<ID><![CDATA[Azonosító]]></ID>
+<MemPoolList><![CDATA[Memóriatár-lista]]></MemPoolList>
+<ON><![CDATA[ON]]></ON>
+<OFF><![CDATA[OFF]]></OFF>
+<OnconfigParamError><![CDATA[A következő azonosítójú onconfig paraméter nem található:]]></OnconfigParamError>
+<OnconfigFile><![CDATA[Onconfig fájl]]></OnconfigFile>
+<SystemReports><![CDATA[Rendszer jelentések]]></SystemReports>
+<ComputerInfo><![CDATA[Számítógép információk]]></ComputerInfo>
+<diskspace><![CDATA[Lemezterület-felhasználás]]></diskspace>
+<diskspace_tooltip><![CDATA[A felhasznált és szabad lemezterületet megjelenítő jelentés]]></diskspace_tooltip>
+<diskio><![CDATA[Lemez I/O szintek]]></diskio>
+<diskio_tooltip><![CDATA[A lemez I/O adatforgalmát megjelenítő jelentés]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[Online napló]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[Az onlne.log végének megjelenítése]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[Kiszolgáló-adminisztrátori parancsok]]></showCommands>
+<showCommands_tooltip><![CDATA[A végrehajtott kiszolgáló-felügyeleti parancsok megjelenítése]]></showCommands_tooltip>
+<showllogs><![CDATA[Logikai naplók]]></showllogs>
+<showllogs_tooltip><![CDATA[A logikai naplók (pl. helyreállítási naplók) állapotának megjelenítése]]></showllogs_tooltip>
+<showplogs><![CDATA[Fizikai naplók]]></showplogs>
+<showplogs_tooltip><![CDATA[A fizikai napló állapotának megjelenítése]]></showplogs_tooltip>
+<checkpoints><![CDATA[Ellenőrzési pontok megjelenítése]]></checkpoints>
+<checkpoints_tooltip><![CDATA[A legutóbbi ellenőrzési pontok adatainak megjelenítése]]></checkpoints_tooltip>
+<backup><![CDATA[Rendszermentések]]></backup>
+<backup_tooltip><![CDATA[Az adatbázis-terület rendszermentések állapotának megjelenítése]]></backup_tooltip>
+<mem><![CDATA[Memóriatárak]]></mem>
+<mem_tooltip><![CDATA[A felhasználói és rendszer memóriatárak megjelenítése]]></mem_tooltip>
+<seg><![CDATA[Kiszolgáló memóriahasználata]]></seg>
+<seg_tooltip><![CDATA[A kiszolgáló memóriájának áttekintése szegmensenként]]></seg_tooltip>
+<net><![CDATA[Hálózati áttekintés]]></net>
+<net_tooltip><![CDATA[A hálózati forgalom áttekintésének megjelenítése]]></net_tooltip>
+<ppf><![CDATA[Táblaműveletek]]></ppf>
+<ppf_tooltip><![CDATA[Táblánkénti teljesítményadatok]]></ppf_tooltip>
+<config><![CDATA[Kiszolgáló konfiguráció]]></config>
+<config_tooltip><![CDATA[Kiszolgáló konfigurációs fájljának megjelenítése]]></config_tooltip>
+<ses><![CDATA[Munkamenetlista]]></ses>
+<ses_tooltip><![CDATA[Felhasználói munkamenetek listája]]></ses_tooltip>
+<sqlcache><![CDATA[SQL gyorsítótárak megjelenítése]]></sqlcache>
+<sqlcache_tooltip><![CDATA[A különféle SQL gyorsítótárak statisztikáinak megjelenítése]]></sqlcache_tooltip>
+<showByType><![CDATA[SQL utasítások összegzése]]></showByType>
+<showByType_tooltip><![CDATA[Végrehajtott SQL utasítások összegzése]]></showByType_tooltip>
+<showslowSQL><![CDATA[Leglassabb SQL utasítások]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[A leglassabb SQL utasítások megjelenítése]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[A legtöbb I/O időt használó SQL utasítások]]></showmostIO>
+<showmostIO_tooltip><![CDATA[A legtöbb I/O időt felhasználó SQL utasítások megjelenítése]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[A legtöbb puffertevékenységgel járó SQL utasítások]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[A legtöbb puffertár-tevékenységgel járó SQL utasítások megjelenítése]]></showmostBuff_tooltip>
+<glo><![CDATA[Virtuális processzorok]]></glo>
+<glo_tooltip><![CDATA[A különböző virtuális processzorok kihasználtságának megjelenítése]]></glo_tooltip>
+<showdbtab><![CDATA[Adatbázisok megjelenítése]]></showdbtab>
+<showdbtab_tooltip><![CDATA[A különböző adatbázisok és alapvető attribútumaik megjelenítése]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[Számítógép operációs rendszer információi]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[Számítógép operációsrendszer-adatainak megjelenítése]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[Számítógép erőforrás információi]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[A számítógép erőforrásadatainak megjelenítése]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[Várakozó munkamenet jelentés]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[Erőforrásokra váró munkamenetek megjelenítése]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[byte]]></bytes>
+<Bytes><![CDATA[Byte]]></Bytes>
+<blocks><![CDATA[blokk]]></blocks>
+<Blocks><![CDATA[Blokk]]></Blocks>
+<Type><![CDATA[Típus]]></Type>
+<Count><![CDATA[Számláló]]></Count>
+<locklist><![CDATA[Zárolási lista]]></locklist>
+<locklistfortab><![CDATA[{0} zárolási listája]]></locklistfortab>
+<locklistforses><![CDATA[{0} munkamenet zárolási listája]]></locklistforses>
+<locklist_tooltip><![CDATA[Az adatbázis-kiszolgáló aktív zárolásainak megjelenítése.]]></locklist_tooltip>
+<locksWaiters><![CDATA[Várakozókkal rendelkező zárolások]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[Várakozókkal rendelkező zárolások megjelenítése.]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[Táblánkénti zárolások]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[Zárolásokra vonatkozó információk megjelenítése táblánként.]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[Munkamenetkénti zárolások]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[Zárolásokra vonatkozó információk megjelenítése munkamenetenként.]]></locksPerSes_tooltip>
+<Owner><![CDATA[Tulajdonos]]></Owner>
+<OwnerSID><![CDATA[Tulajdonos munkamenet-azonosítója]]></OwnerSID>
+<Waiter><![CDATA[Várakozó]]></Waiter>
+<WaitSID><![CDATA[Várakozó munkamenet-azonosítója]]></WaitSID>
+<LkType><![CDATA[Zárolástípus]]></LkType>
+<LkObject><![CDATA[Zárolt objektum]]></LkObject>
+<RowID><![CDATA[Sorazonosító]]></RowID>
+<Partnum><![CDATA[Partíciószám]]></Partnum>
+<LockEstablished><![CDATA[Zárolás kezdő időpontja]]></LockEstablished>
+<SID><![CDATA[Munkamenet-azonosító]]></SID>
+<Database><![CDATA[Adatbázis]]></Database>
+<IsolationLevel><![CDATA[Elkülönítési szint]]></IsolationLevel>
+<ActiveLocks><![CDATA[Aktív zárolások]]></ActiveLocks>
+<lockid><![CDATA[Zárolásazonosító]]></lockid>
+<LockDuration><![CDATA[Zárolás időtartama]]></LockDuration>
+<WaitTime><![CDATA[Várakozási idő]]></WaitTime>
+<ReportMaxRows><![CDATA[Legfeljebb {0} sor kerül megjelenítésre.]]></ReportMaxRows>
+</lang>

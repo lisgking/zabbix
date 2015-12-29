@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[SQL Explorer]]></SQLExplorer>
+<ShowSQL><![CDATA[Show - SQL]]></ShowSQL>
+<StmtType><![CDATA[Statement Type]]></StmtType>
+<TXTime><![CDATA[Transaction Time]]></TXTime>
+<Freq><![CDATA[Frequency]]></Freq>
+<SQLAdmin><![CDATA[SQL Tracing Admin]]></SQLAdmin>
+<SQLType><![CDATA[SQL Type]]></SQLType>
+<SQLProfile><![CDATA[SQL Profile]]></SQLProfile>
+<SQLList><![CDATA[SQL List]]></SQLList>
+<TXGroup><![CDATA[Transactions]]></TXGroup>
+<Count><![CDATA[Count]]></Count>
+<AvgRT><![CDATA[Avg Response Time]]></AvgRT>
+<MaxRT><![CDATA[Max Response Time]]></MaxRT>
+<AvgMem><![CDATA[Avg Memory]]></AvgMem>
+<RowProc><![CDATA[Rows Processed]]></RowProc>
+<NoData><![CDATA[No Data available]]></NoData>
+<SQLStmtSum><![CDATA[SQL Statement Summary]]></SQLStmtSum>
+<SQLStmt><![CDATA[SQL Statement]]></SQLStmt>
+<SID><![CDATA[Session ID]]></SID>
+<NRecentTX><![CDATA[100 Most Recent Transactions]]></NRecentTX>
+<SQLFreq><![CDATA[SQL Frequency Summary]]></SQLFreq>
+<LockWait><![CDATA[Lock Wait Time]]></LockWait>
+<SQLDrill><![CDATA[SQL Drill Down]]></SQLDrill>
+<DrillDown><![CDATA[Drill Down]]></DrillDown>
+<WaitIOTime><![CDATA[Wait IO Time]]></WaitIOTime>
+<UID><![CDATA[User ID]]></UID>
+<CompTime><![CDATA[Statement Completion Time]]></CompTime>
+<RespTime><![CDATA[Response Time]]></RespTime>
+<Database><![CDATA[Database]]></Database>
+<Statement><![CDATA[Statement]]></Statement>
+<StmtStats><![CDATA[Statement Statistics]]></StmtStats>
+<pgReads><![CDATA[Page Reads]]></pgReads>
+<BufReads><![CDATA[Buffer Reads]]></BufReads>
+<ReadCache><![CDATA[Reads Cache]]></ReadCache>
+<DataBufReads><![CDATA[Data Buffer Reads]]></DataBufReads>
+<IndexBuffReads><![CDATA[Index Buffer Reads]]></IndexBuffReads>
+<PgWrites><![CDATA[Page Writes]]></PgWrites>
+<BufWrites><![CDATA[Buffer Writes]]></BufWrites>
+<WriteCache><![CDATA[Writes Cache]]></WriteCache>
+<NumLockWait><![CDATA[# Lock Waits]]></NumLockWait>
+<LockRequests><![CDATA[Lock Requests]]></LockRequests>
+<LockWaitTime><![CDATA[Lock Wait Time (S)]]></LockWaitTime>
+<LogSpace><![CDATA[Log Space]]></LogSpace>
+<DiskSorts><![CDATA[Disk Sorts]]></DiskSorts>
+<MemSorts><![CDATA[Memory Sorts]]></MemSorts>
+<NumTables><![CDATA[Number of Tables]]></NumTables>
+<NumIter><![CDATA[Number of Iterators]]></NumIter>
+<TExecs><![CDATA[Total Executions]]></TExecs>
+<TExecTime><![CDATA[Total Executions Time (S)]]></TExecTime>
+<AvgExecTime><![CDATA[Average Execution Time (S)]]></AvgExecTime>
+<MaxExecTime><![CDATA[Maximum Execution Time (S)]]></MaxExecTime>
+<TNumIOWait><![CDATA[Number of IO Wait]]></TNumIOWait>
+<IOWaitTime><![CDATA[IO Wait Time (S)]]></IOWaitTime>
+<AvgIOWait><![CDATA[Average IO Wait (S)]]></AvgIOWait>
+<RowsPerSec><![CDATA[Average Rows/Second]]></RowsPerSec>
+<EstCost><![CDATA[Estimated Cost]]></EstCost>
+<EstRows><![CDATA[Estimated Rows]]></EstRows>
+<ActRows><![CDATA[Actual Rows]]></ActRows>
+<SQLErr><![CDATA[SQL Error]]></SQLErr>
+<ISAMErr><![CDATA[ISAM Error]]></ISAMErr>
+<IsoLevel><![CDATA[Isolation Level]]></IsoLevel>
+<SQLMem><![CDATA[SQL Memory]]></SQLMem>
+<SQLTbadParam><![CDATA[Incorrect parameter when trying to modify the SQL Tracing.]]></SQLTbadParam>
+<Modify><![CDATA[Modify]]></Modify>
+<High><![CDATA[High]]></High>
+<Medium><![CDATA[Medium]]></Medium>
+<Low><![CDATA[Low]]></Low>
+<MaxSQLTrace><![CDATA[Maximum amount of SQL text to trace.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[Trace Level]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[Number of SQL statements to trace.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[Turns on and off sql tracing.]]></TraceOnOff>
+<On><![CDATA[On]]></On>
+<Off><![CDATA[Off]]></Off>
+<SQLTraceOpt><![CDATA[Set SQL Tracing Options]]></SQLTraceOpt>
+<Mode><![CDATA[Mode]]></Mode>
+<NumTrace><![CDATA[Number of Traces]]></NumTrace>
+<TraceSize><![CDATA[Trace Size]]></TraceSize>
+<SQLTraceInfo><![CDATA[SQL Trace Info]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[Number of SQL Statements Traced]]></NumSQLTraced>
+<TraceBufSize><![CDATA[Traces Buffer Size]]></TraceBufSize>
+<OldTracedStmt><![CDATA[Oldest Traced Statement]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[Trace Buffer Duration]]></TraceBufDuration>
+<SQLSeen><![CDATA[SQL Statements Seen]]></SQLSeen>
+<SQLTraceStart><![CDATA[SQL Tracing Started]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[SQL Statements Per Second]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[SQL Tracing Memory Used]]></TraceMemUsed>
+<RowPerSec><![CDATA[Rows/Second]]></RowPerSec>
+<ListSQL><![CDATA[List SQL]]></ListSQL>
+<TxStatsSummary><![CDATA[Transaction Statistics Summary]]></TxStatsSummary>
+<NumSQL><![CDATA[Stmt Count]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[Statement Host Variables]]></StmtHVars>
+<Pos><![CDATA[Position]]></Pos>
+<Type><![CDATA[Type]]></Type>
+<Value><![CDATA[Value]]></Value>
+<Error_GD_NotEnabled><![CDATA[GD is not enabled in PHP.  Query Tree cannot be displayed.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Informix Version:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[Save SQL Trace]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[Saves the current syssqltrace info to table]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[SQL Statement Summary]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[SQL Frequency Summary]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[SQL Drill Down]]></SQLDrillDown>
+<Count><![CDATA[Count]]></Count>
+<AvgRunTime><![CDATA[Average Run Time]]></AvgRunTime>
+<LockWaitTime><![CDATA[Lock Wait Time]]></LockWaitTime>
+<WaitIOTime><![CDATA[Wait IO Time]]></WaitIOTime>
+<CompleteTime><![CDATA[Completion Time]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[EXT_DIRECTIVES has to be set to 1 or 2 to enable directives support.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[Saved directives exist for this query]]></SavedDir>
+<DirectivesSaved><![CDATA[Directives Saved]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[No saved directives for this query yet]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[Directives deleted. No new ones to update.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[Table tracing information doesn't exist.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[No Indexes are found]]></NoIndexesFound>
+<NoRowsFound><![CDATA[No rows found.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[SQL TRACING DISABLED]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[SQL Tracing is disabled]]></SQLTracingOff>
+<NoSQLID><![CDATA[Invalid argument to services/sqltrace.php]]></NoSQLID>
+<InvalidArgument><![CDATA[Invalid argument to services/sqltrace.php]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[Click for more details about this SQL statement]]></ClickForSQLDetails>
+<DrillDown><![CDATA[Drill Down]]></DrillDown>
+<ORDERED_Description><![CDATA[Force optimizer to join tables in the order listed in the SELECT statement.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[Return the first row as quickly as possible.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[Complete the total query as quickly as possible.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[Do not use Multi-index scan to access the specified table.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[Do not use the star-join execution plan.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[Use a star-join execution plan if possible.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[Select the table to use as a fact table in the star-join execution plan.]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[Select the tables NOT to use as fact tables in the star-join execution plan.]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[Specify indexes NOT to use when accessing a table in an index self-join path.]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[Specify an index that will be used when accessing a table in an index self-join path.]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[Specify multiple indexes to use when accessing a table.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[Specify indexes NOT to use when accessing a table.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[Specify indexes to use when accessing a table.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[Avoid using full table scan to access table.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[Use full table scan to access table.]]></FULL_Description>
+<USE_NL_Description><![CDATA[Use specified tables as the inner table in a nested-loop join.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[Avoid specified table as the inner table in a nested-loop join.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[Use dynamic hash join to access the specified table.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[Do not use dynamic hash join to access the specified table.]]></AVOID_HASH_Description>
+<Index><![CDATA[Index]]></Index>
+<Table><![CDATA[Table]]></Table>
+<Cost><![CDATA[Cost]]></Cost>
+<RowsEstimated><![CDATA[Rows estimated]]></RowsEstimated>
+<RowsProcessed><![CDATA[Rows processed]]></RowsProcessed>
+<ElapsedTime><![CDATA[Elapsed time]]></ElapsedTime>
+<NotYetImpl><![CDATA[On this page, the OpenAdmin Tool cannot display information for a database server with more than one non-English database locale. The database server contains more than one non-English database locale.]]></NotYetImpl>
+<QueryTree><![CDATA[Query Tree]]></QueryTree>
+<QueryTreeNA><![CDATA[The query tree is not available for this statement.]]></QueryTreeNA>
+</lang>
+

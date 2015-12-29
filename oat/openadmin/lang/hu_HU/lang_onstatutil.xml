@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[onstat segédprogram]]></mainTitle>
+<ErrorOnInteractive><![CDATA[Az onstat interaktív mód az OpenAdmin eszközön keresztül nem érhető el.]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[Csak a paramétereket adja meg. Az <b>onstat</b> parancsot az OpenAdmin eszköz biztosítja.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[OpenAdmin eszköz alkalmazása esetén az onstat parancsban a -r paraméter nem megengedett.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[OpenAdmin eszköz alkalmazása esetén az onstat parancsban a -o paraméter nem megengedett.]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[Az onstat parancs érvénytelen karaktert tartalmaz.]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[OpenAdmin eszköz alkalmazása esetén az onstat parancsban csak alfanumerikus karakterek, kötőjelek, vesszők és pontok megengedettek.]]></ReportValidChars>
+<ErrorPrepend><![CDATA[HIBA:]]></ErrorPrepend>
+<SubmitAction><![CDATA[Futtatás]]></SubmitAction>
+<OnstatOptions><![CDATA[Onstat paraméterek megjelenítése]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[Az onstat segédprogram összetevő csak a következő verziószámú (vagy újabb) kiszolgálókon áll rendelkezésre: {0}]]></OnstatFeatureNotAvail>
+</lang>

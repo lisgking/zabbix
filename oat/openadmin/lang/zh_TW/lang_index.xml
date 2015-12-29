@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[最低 PHP 版本要求為 5.2.4 版。找到的 PHP 版本：]]></MinPHPVersion>
+<GenTime><![CDATA[產生時間]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[OAT 需要 Informix 11.10 版或更新版本。]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[{0} 外掛程式需要 Informix {1} 版。]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[模組 {0} 中遺漏執行函數。]]></NoModuleRunFunction>
+<SorryModule><![CDATA[此 URL 不是有效的 OAT 頁址。在 OAT 模組目錄中找不到模組 {0}。請驗證模組名稱符合 URL 中的 "act" 關鍵字。]]></SorryModule>
+<InvalidURL_do_param><![CDATA[此 URL 不是有效的 OAT 頁址。請按一下 OAT 功能表上的項目，或是 OAT 頁面上的鏈結，以顯示 OAT 頁面。]]></InvalidURL_do_param>
+</lang>

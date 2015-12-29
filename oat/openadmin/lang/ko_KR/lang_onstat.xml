@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstat">
+<mainTitle><![CDATA[Onstat 정보]]></mainTitle>
+<SystemReports><![CDATA[시스템 보고서]]></SystemReports>
+<Daterange><![CDATA[날짜 범위 선택:]]></Daterange>
+<from><![CDATA[시작 날짜:]]></from>
+<to><![CDATA[종료 날짜:]]></to>
+<Month1><![CDATA[1월]]></Month1>
+<Month2><![CDATA[2월]]></Month2>
+<Month3><![CDATA[3월]]></Month3>
+<Month4><![CDATA[4월]]></Month4>
+<Month5><![CDATA[5월]]></Month5>
+<Month6><![CDATA[6월]]></Month6>
+<Month7><![CDATA[7월]]></Month7>
+<Month8><![CDATA[8월]]></Month8>
+<Month9><![CDATA[9월]]></Month9>
+<Month10><![CDATA[10월]]></Month10>
+<Month11><![CDATA[11월]]></Month11>
+<Month12><![CDATA[12월]]></Month12>
+<mCurrent><![CDATA[현재 보고서]]></mCurrent>
+<mHistorical><![CDATA[히스토리 보고서]]></mHistorical>
+<HeatMaps><![CDATA[그래프]]></HeatMaps>
+<HeatMaps_min_server_version><![CDATA[그래프를 표시하려면 OAT에 Informix 11.70.xC4가 필요합니다.]]></HeatMaps_min_server_version>
+<nopermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></nopermission>
+<NetworkUsage><![CDATA[네트워크 사용 보고서]]></NetworkUsage>
+<MemoryPools><![CDATA[메모리 풀 보고서]]></MemoryPools>
+<MemoryUsage><![CDATA[서버 메모리 사용 보고서]]></MemoryUsage>
+<SQLCache><![CDATA[SQL 캐시 보고서]]></SQLCache>
+<Sessions><![CDATA[세션 보고서]]></Sessions>
+<VPReport><![CDATA[가상 프로세서 보고서]]></VPReport>
+<SysBackups><![CDATA[시스템 백업 보고서]]></SysBackups>
+<TableProf><![CDATA[테이블 프로파일 보고서]]></TableProf>
+<ResourceUsage><![CDATA[컴퓨터 리소스 정보]]></ResourceUsage>
+<CompInfo><![CDATA[컴퓨터 OS 정보]]></CompInfo>
+<PPID><![CDATA[pID]]></PPID>
+<Class><![CDATA[클래스]]></Class>
+<ReadyQ><![CDATA[준비 큐 길이]]></ReadyQ>
+<VP><![CDATA[가상 프로세서 총 CPU 사용량]]></VP>
+<NetUserRep><![CDATA[네트워크 사용 보고서]]></NetUserRep>
+<NetID><![CDATA[네트워크 ID]]></NetID>
+<SID><![CDATA[사용자 세션 ID]]></SID>
+<ClientName><![CDATA[클라이언트 이름]]></ClientName>
+<ReadCount><![CDATA[수신 계수]]></ReadCount>
+<WriteCount><![CDATA[송신 계수]]></WriteCount>
+<ReadBytes><![CDATA[수신 총계]]></ReadBytes>
+<WriteBytes><![CDATA[송신 총계]]></WriteBytes>
+<ConTime><![CDATA[세션 시작 시간]]></ConTime>
+<Protocol><![CDATA[프로토콜]]></Protocol>
+<SysNetIO><![CDATA[입출력 조작으로]]></SysNetIO>
+<SysNetTXF><![CDATA[데이터 전송으로]]></SysNetTXF>
+<MemSegUsage><![CDATA[메모리 세그먼트 사용]]></MemSegUsage>
+<MemOSUsage><![CDATA[컴퓨터 메모리 사용]]></MemOSUsage>
+<Usage><![CDATA[사용]]></Usage>
+<Resident><![CDATA[상주]]></Resident>
+<Virutal><![CDATA[가상]]></Virutal>
+<Message><![CDATA[메시지]]></Message>
+<Other><![CDATA[기타]]></Other>
+<Allocated><![CDATA[할당됨]]></Allocated>
+<Free><![CDATA[사용 가능]]></Free>
+<SelectReportType><![CDATA[유형별 보고서 선택]]></SelectReportType>
+<ClearAll><![CDATA[모두 지우기]]></ClearAll>
+<AllRept><![CDATA[모두 선택]]></AllRept>
+<Disk><![CDATA[디스크]]></Disk>
+<Performance><![CDATA[성능]]></Performance>
+<InvalidDateRangeError><![CDATA[종료 날짜가 시작 날짜 이전입니다. 시작 날짜보다 늦은 종료 날짜를 선택하십시오.]]></InvalidDateRangeError>
+<Net><![CDATA[네트워크]]></Net>
+<Network><![CDATA[네트워크]]></Network>
+<SQL><![CDATA[SQL]]></SQL>
+<Tables><![CDATA[테이블]]></Tables>
+<Users><![CDATA[사용자]]></Users>
+<CreateReport><![CDATA[보고서 작성]]></CreateReport>
+<ReportRun><![CDATA[보고서 실행 날짜]]></ReportRun>
+<StartDate><![CDATA[시작 날짜]]></StartDate>
+<EndDate><![CDATA[종료 날짜]]></EndDate>
+<ServerUptime><![CDATA[서버 동작 가능 시간]]></ServerUptime>
+<Top><![CDATA[맨 위]]></Top>
+<Basic><![CDATA[기본]]></Basic>
+<ServerConfig><![CDATA[서버 구성]]></ServerConfig>
+<ParamName><![CDATA[매개변수 이름]]></ParamName>
+<ParamID><![CDATA[매개변수 ID]]></ParamID>
+<OnconfigParamDetails><![CDATA[Onconfig 매개변수 세부사항]]></OnconfigParamDetails>
+<Value><![CDATA[값]]></Value>
+<ParamType><![CDATA[매개변수 유형]]></ParamType>
+<Description><![CDATA[설명]]></Description>
+<MinValue><![CDATA[최소값]]></MinValue>
+<MaxValue><![CDATA[최대값]]></MaxValue>
+<PossibleValues><![CDATA[가능한 값]]></PossibleValues>
+<Recommendation><![CDATA[권장사항]]></Recommendation>
+<RecommendationMessage><![CDATA[자세한 정보를 표시하거나 동적 매개변수를 변경하려면 매개변수 이름을 클릭하십시오. 권장사항이 있는 매개변수는 노란색으로 강조 표시됩니다.]]></RecommendationMessage>
+<Recommendation_OK><![CDATA[이 onconfig 매개변수의 값은 OpenAdmin Tool의 권장사항을 따릅니다.]]></Recommendation_OK>
+<Recommendation_NO><![CDATA[이 onconfig 매개변수의 값은 OpenAdmin Tool의 권장사항을 따르지 않습니다.]]></Recommendation_NO>
+<Warning><![CDATA[경고]]></Warning>
+<Save><![CDATA[저장]]></Save>
+<Cancel><![CDATA[취소]]></Cancel>
+<Back><![CDATA[뒤로]]></Back>
+<Dynamic><![CDATA[동적]]></Dynamic>
+<NotDynamic><![CDATA[동적 아님]]></NotDynamic>
+<ParamNotDynamic><![CDATA[매개변수를 동적으로 구성할 수 없습니다.]]></ParamNotDynamic>
+<Configurable><![CDATA[구성 가능]]></Configurable>
+<OnconfigOption><![CDATA[표시]]></OnconfigOption>
+<ShowAll><![CDATA[모두]]></ShowAll>
+<ShowBasic><![CDATA[기본]]></ShowBasic>
+<ShowDynamic><![CDATA[동적]]></ShowDynamic>
+<ShowRecommend><![CDATA[권장사항]]></ShowRecommend>
+<SaveOption><![CDATA[저장 옵션]]></SaveOption>
+<SaveMem><![CDATA[메모리에 저장]]></SaveMem>
+<SaveMemFile><![CDATA[메모리 및 파일에 저장]]></SaveMemFile>
+<Server><![CDATA[서버]]></Server>
+<WaitSesRpt><![CDATA[대기 세션 보고서]]></WaitSesRpt>
+<WaitSes><![CDATA[세션 대기]]></WaitSes>
+<ResourceOwner><![CDATA[리소스 소유자]]></ResourceOwner>
+<ResourceType><![CDATA[리소스 유형]]></ResourceType>
+<WaitObject><![CDATA[대기 객체]]></WaitObject>
+<WaitItem><![CDATA[대기 항목]]></WaitItem>
+<WaitInfo><![CDATA[대기 정보]]></WaitInfo>
+<ResourceUsageReport><![CDATA[리소스 사용 보고서]]></ResourceUsageReport>
+<ResourceSummaryReport><![CDATA[리소스 요약 보고서]]></ResourceSummaryReport>
+<ForWeekEnding><![CDATA[주말 동안]]></ForWeekEnding>
+<MaxConns><![CDATA[최대 연결 수]]></MaxConns>
+<MaxCPUVPS><![CDATA[최대 CPU VP 수]]></MaxCPUVPS>
+<MAXVPS><![CDATA[최대 VP 수]]></MAXVPS>
+<DiskSize><![CDATA[디스크 크기]]></DiskSize>
+<DiskUsed><![CDATA[사용된 디스크]]></DiskUsed>
+<Memory><![CDATA[메모리]]></Memory>
+<MemoryUsed><![CDATA[사용된 메모리]]></MemoryUsed>
+<SemaphoreInfo><![CDATA[세마포어 정보]]></SemaphoreInfo>
+<SharedMemInfo><![CDATA[공유 메모리 정보]]></SharedMemInfo>
+<MaxFilesPerProc><![CDATA[프로세스당 최대 파일 열기]]></MaxFilesPerProc>
+<OSPageSize><![CDATA[OS 페이지 크기]]></OSPageSize>
+<TotalCPUs><![CDATA[총 프로세서 수]]></TotalCPUs>
+<OnlineCPUs><![CDATA[온라인 프로세서]]></OnlineCPUs>
+<CPUs><![CDATA[프로세서]]></CPUs>
+<HostName><![CDATA[호스트 이름]]></HostName>
+<OSName><![CDATA[OS 이름]]></OSName>
+<OSRel><![CDATA[OS 릴리스]]></OSRel>
+<OSVer><![CDATA[OS 버전]]></OSVer>
+<CPUType><![CDATA[컴퓨터 유형]]></CPUType>
+<TotalMem><![CDATA[컴퓨터의 총 메모리]]></TotalMem>
+<TotalFreeMem><![CDATA[컴퓨터의 사용 가능한 메모리]]></TotalFreeMem>
+<BackupReport><![CDATA[백업 보고서]]></BackupReport>
+<Number><![CDATA[번호]]></Number>
+<Name><![CDATA[이름]]></Name>
+<Position><![CDATA[위치]]></Position>
+<Level0><![CDATA[레벨-0]]></Level0>
+<Level1><![CDATA[레벨-1]]></Level1>
+<Level2><![CDATA[레벨-2]]></Level2>
+<BackupReport><![CDATA[백업 보고서]]></BackupReport>
+<TableProfileInfo><![CDATA[테이블 프로파일 정보]]></TableProfileInfo>
+<TableName><![CDATA[테이블 이름]]></TableName>
+<Locks><![CDATA[로크]]></Locks>
+<LockRequests><![CDATA[로크 요청]]></LockRequests>
+<DeadLocks><![CDATA[교착 상태]]></DeadLocks>
+<LockWaits><![CDATA[로크 대기 수]]></LockWaits>
+<LockTimeouts><![CDATA[로크 시간종료]]></LockTimeouts>
+<LogRecords><![CDATA[로그 레코드]]></LogRecords>
+<LogSpace><![CDATA[로그 영역]]></LogSpace>
+<MaxLogSpace><![CDATA[최대 로그 영역]]></MaxLogSpace>
+<ReadCache><![CDATA[읽기 캐시]]></ReadCache>
+<WriteCache><![CDATA[쓰기 캐시]]></WriteCache>
+<DiskReads><![CDATA[디스크 읽기]]></DiskReads>
+<DiskWrites><![CDATA[디스크 쓰기]]></DiskWrites>
+<RowsProcessed><![CDATA[처리된 행]]></RowsProcessed>
+<RowsInserted><![CDATA[삽입된 행]]></RowsInserted>
+<RowsUpdated><![CDATA[갱신된 행]]></RowsUpdated>
+<RowsDeleted><![CDATA[삭제된 행]]></RowsDeleted>
+<SequentialScans><![CDATA[순차 스캔]]></SequentialScans>
+<UserID><![CDATA[사용자 ID]]></UserID>
+<GroupID><![CDATA[그룹 ID]]></GroupID>
+<SessionID><![CDATA[세션 ID]]></SessionID>
+<PID><![CDATA[pID]]></PID>
+<Connected><![CDATA[연결됨]]></Connected>
+<OpenTables><![CDATA[테이블 열기]]></OpenTables>
+<TotalMemory><![CDATA[총 메모리]]></TotalMemory>
+<UsedMemory><![CDATA[사용된 메모리]]></UsedMemory>
+<FreeMemory><![CDATA[사용 가능한 메모리]]></FreeMemory>
+<Sorts><![CDATA[정렬]]></Sorts>
+<LargestSorts><![CDATA[가장 큰 정렬]]></LargestSorts>
+<DiskSorts><![CDATA[디스크 정렬]]></DiskSorts>
+<MemorySorts><![CDATA[메모리 정렬]]></MemorySorts>
+<BufferWrites><![CDATA[버퍼 쓰기]]></BufferWrites>
+<BufferReads><![CDATA[버퍼 읽기]]></BufferReads>
+<FGWrites><![CDATA[FG 쓰기]]></FGWrites>
+<FGReads><![CDATA[FG 읽기]]></FGReads>
+<Commits><![CDATA[커미트]]></Commits>
+<Rollbacks><![CDATA[롤백]]></Rollbacks>
+<LongTXs><![CDATA[긴 TX]]></LongTXs>
+<ConnectTime><![CDATA[연결 시간]]></ConnectTime>
+<SIDShort><![CDATA[SID]]></SIDShort>
+<User><![CDATA[사용자]]></User>
+<SessionList><![CDATA[세션 목록]]></SessionList>
+<NoData><![CDATA[데이터 없음]]></NoData>
+<SQLCachesList><![CDATA[SQL 캐시 목록]]></SQLCachesList>
+<CacheName><![CDATA[캐시 이름]]></CacheName>
+<Ratio><![CDATA[비율]]></Ratio>
+<Hits><![CDATA[히트]]></Hits>
+<Misses><![CDATA[누락]]></Misses>
+<Removed><![CDATA[제거됨]]></Removed>
+<InUse><![CDATA[사용 중]]></InUse>
+<CacheEntries><![CDATA[캐시 엔트리]]></CacheEntries>
+<SharedMemorySegList><![CDATA[공유 메모리 세그먼트 목록]]></SharedMemorySegList>
+<SegmentType><![CDATA[세그먼트 유형]]></SegmentType>
+<Size><![CDATA[크기]]></Size>
+<Used><![CDATA[사용됨]]></Used>
+<Total><![CDATA[총계]]></Total>
+<Address><![CDATA[주소]]></Address>
+<Key><![CDATA[키]]></Key>
+<FLAGS><![CDATA[플래그]]></FLAGS>
+<Class><![CDATA[클래스]]></Class>
+<ID><![CDATA[ID]]></ID>
+<MemPoolList><![CDATA[메모리 풀 목록]]></MemPoolList>
+<ON><![CDATA[켜짐]]></ON>
+<OFF><![CDATA[꺼짐]]></OFF>
+<OnconfigParamError><![CDATA[ID로 onconfig 매개변수를 찾을 수 없음]]></OnconfigParamError>
+<OnconfigFile><![CDATA[Onconfig 파일]]></OnconfigFile>
+<SystemReports><![CDATA[시스템 보고서]]></SystemReports>
+<ComputerInfo><![CDATA[컴퓨터 정보]]></ComputerInfo>
+<diskspace><![CDATA[디스크 영역 사용]]></diskspace>
+<diskspace_tooltip><![CDATA[보고서에 디스크 영역의 사용 정도 및 여유 공간 표시]]></diskspace_tooltip>
+<diskio><![CDATA[디스크 입출력 레벨]]></diskio>
+<diskio_tooltip><![CDATA[보고서에 디스크 입출력의 발생 정도 표시]]></diskio_tooltip>
+<showOnlineLogTail><![CDATA[온라인 로그]]></showOnlineLogTail>
+<showOnlineLogTail_tooltip><![CDATA[onlne.log의 끝 보기]]></showOnlineLogTail_tooltip>
+<showCommands><![CDATA[서버 관리 명령]]></showCommands>
+<showCommands_tooltip><![CDATA[실행된 서버 관리 명령 보기]]></showCommands_tooltip>
+<showllogs><![CDATA[논리 로그]]></showllogs>
+<showllogs_tooltip><![CDATA[논리 로그(즉, 복구 로그)의 상태 보기]]></showllogs_tooltip>
+<showplogs><![CDATA[물리 로그]]></showplogs>
+<showplogs_tooltip><![CDATA[물리 로그의 상태 보기]]></showplogs_tooltip>
+<checkpoints><![CDATA[체크포인트 보기]]></checkpoints>
+<checkpoints_tooltip><![CDATA[최신 체크포인트에 대한 정보 보기]]></checkpoints_tooltip>
+<backup><![CDATA[시스템 백업]]></backup>
+<backup_tooltip><![CDATA[DBSPACE별 시스템 백업의 상태 표시]]></backup_tooltip>
+<mem><![CDATA[메모리 풀]]></mem>
+<mem_tooltip><![CDATA[모든 사용자 및 시스템 메모리 풀 표시]]></mem_tooltip>
+<seg><![CDATA[서버 메모리 사용]]></seg>
+<seg_tooltip><![CDATA[세그먼트별 서버의 메모리 개요]]></seg_tooltip>
+<net><![CDATA[네트워크 개요]]></net>
+<net_tooltip><![CDATA[네트워크 트래픽의 개요 표시]]></net_tooltip>
+<ppf><![CDATA[테이블 동작]]></ppf>
+<ppf_tooltip><![CDATA[테이블별 성능 정보]]></ppf_tooltip>
+<config><![CDATA[서버 구성]]></config>
+<config_tooltip><![CDATA[서버의 구성 파일 표시]]></config_tooltip>
+<ses><![CDATA[세션 목록]]></ses>
+<ses_tooltip><![CDATA[모든 사용자 세션 목록]]></ses_tooltip>
+<sqlcache><![CDATA[SQL 캐시 보기]]></sqlcache>
+<sqlcache_tooltip><![CDATA[다양한 SQL 캐시 통계 보기]]></sqlcache_tooltip>
+<showByType><![CDATA[SQL문 요약]]></showByType>
+<showByType_tooltip><![CDATA[실행된 SQL문의 요약]]></showByType_tooltip>
+<showslowSQL><![CDATA[가장 느린 SQL문]]></showslowSQL>
+<showslowSQL_tooltip><![CDATA[가장 느린 SQL문 표시]]></showslowSQL_tooltip>
+<showmostIO><![CDATA[최대 입출력 시간이 있는 SQL]]></showmostIO>
+<showmostIO_tooltip><![CDATA[최대 입출력 시간을 소비하는 SQL문 표시]]></showmostIO_tooltip>
+<showmostBuff><![CDATA[최대 버퍼 활동이 있는 SQL]]></showmostBuff>
+<showmostBuff_tooltip><![CDATA[최대 버퍼 풀 활동이 있는 SQL문 표시]]></showmostBuff_tooltip>
+<glo><![CDATA[가상 프로세서]]></glo>
+<glo_tooltip><![CDATA[다양한 가상 프로세서의 활용 보기]]></glo_tooltip>
+<showdbtab><![CDATA[데이터베이스 표시]]></showdbtab>
+<showdbtab_tooltip><![CDATA[다른 데이터베이스 및 기본 속성 표시]]></showdbtab_tooltip>
+<showComputerInfo><![CDATA[컴퓨터 OS 정보]]></showComputerInfo>
+<showComputerInfo_tooltip><![CDATA[컴퓨터 운영 체제 정보 표시]]></showComputerInfo_tooltip>
+<showComputerResource><![CDATA[컴퓨터 리소스 정보]]></showComputerResource>
+<showComputerResource_tooltip><![CDATA[컴퓨터 리소스 정보 표시]]></showComputerResource_tooltip>
+<showWaitingSessions><![CDATA[대기 세션 보고서]]></showWaitingSessions>
+<showWaitingSessions_tooltip><![CDATA[리소스를 대기 중인 세션 표시]]></showWaitingSessions_tooltip>
+<bytes><![CDATA[바이트]]></bytes>
+<Bytes><![CDATA[바이트]]></Bytes>
+<blocks><![CDATA[블록]]></blocks>
+<Blocks><![CDATA[블록]]></Blocks>
+<Type><![CDATA[유형]]></Type>
+<Count><![CDATA[계수]]></Count>
+<locklist><![CDATA[로크 목록]]></locklist>
+<locklistfortab><![CDATA[{0}의 로크 목록]]></locklistfortab>
+<locklistforses><![CDATA[세션 {0}의 로크 목록]]></locklistforses>
+<locklist_tooltip><![CDATA[데이터베이스 서버에서 활성 로크를 표시합니다.]]></locklist_tooltip>
+<locksWaiters><![CDATA[대기자가 있는 로크]]></locksWaiters>
+<locksWaiters_tooltip><![CDATA[대기자가 있는 로크를 표시합니다.]]></locksWaiters_tooltip>
+<locksPerTab><![CDATA[테이블별 로크]]></locksPerTab>
+<locksPerTab_tooltip><![CDATA[로크에 대한 정보를 테이블별로 표시합니다.]]></locksPerTab_tooltip>
+<locksPerSes><![CDATA[세션별 로크]]></locksPerSes>
+<locksPerSes_tooltip><![CDATA[로크에 대한 정보를 세션별로 표시합니다.]]></locksPerSes_tooltip>
+<Owner><![CDATA[소유자]]></Owner>
+<OwnerSID><![CDATA[소유자 세션 ID]]></OwnerSID>
+<Waiter><![CDATA[대기자]]></Waiter>
+<WaitSID><![CDATA[대기자 세션 ID]]></WaitSID>
+<LkType><![CDATA[로크 유형]]></LkType>
+<LkObject><![CDATA[로크한 객체]]></LkObject>
+<RowID><![CDATA[행 ID]]></RowID>
+<Partnum><![CDATA[파티션 번호]]></Partnum>
+<LockEstablished><![CDATA[로크 시작 시간]]></LockEstablished>
+<SID><![CDATA[세션 ID]]></SID>
+<Database><![CDATA[데이터베이스]]></Database>
+<IsolationLevel><![CDATA[격리 레벨]]></IsolationLevel>
+<ActiveLocks><![CDATA[활성 로크]]></ActiveLocks>
+<lockid><![CDATA[로크 ID]]></lockid>
+<LockDuration><![CDATA[로크 지속 시간]]></LockDuration>
+<WaitTime><![CDATA[대기 시간]]></WaitTime>
+<ReportMaxRows><![CDATA[최대 {0}행 표시]]></ReportMaxRows>
+</lang>

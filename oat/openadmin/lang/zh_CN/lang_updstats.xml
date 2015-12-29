@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Auto Update Statistics]]></mainTitle>
+<generalTab><![CDATA[通用]]></generalTab>
+<infoTab><![CDATA[信息]]></infoTab>
+<configTab><![CDATA[配置]]></configTab>
+<listTab><![CDATA[命令]]></listTab>
+<ListConfig><![CDATA[Auto Update Statistics 配置]]></ListConfig>
+<ConfParam><![CDATA[参数]]></ConfParam>
+<ConfValue><![CDATA[值]]></ConfValue>
+<ConfDesc><![CDATA[描述]]></ConfDesc>
+<ListDBSsummary><![CDATA[按数据库列出的自动更新统计信息]]></ListDBSsummary>
+<ListDBSTime><![CDATA[上次检查时间]]></ListDBSTime>
+<ListDBSName><![CDATA[数据库]]></ListDBSName>
+<ListDBSMissed><![CDATA[缺失统计信息的表数]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[需要刷新统计信息的小表数]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[需要刷新统计信息的大表数]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[已刷新统计信息的表数]]></ListDBSDone>
+<CleanupOK><![CDATA[清除成功。]]></CleanupOK>
+<CleanupBAD><![CDATA[清除失败。]]></CleanupBAD>
+<fix><![CDATA[单击“清除”以修复问题。]]></fix>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Auto Update Statistics 配置]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[刷新统计信息的频率：]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[表更改时刷新统计信息：]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[使用准则刷新统计信息：]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[对所包含行数小于此行数的所有表刷新统计信息：]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[使用以下 PDQ 优先级运行 UPDATE STATISTICS 语句：]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[使用此数量的线程运行“自动更新统计信息”任务：]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[个线程]]></AUS_THREADS>
+<Threads><![CDATA[线程数]]></Threads>
+<days><![CDATA[日]]></days>
+<on><![CDATA[启用]]></on>
+<off><![CDATA[禁用]]></off>
+<Evaluating><![CDATA[正在估计...]]></Evaluating>
+<saveTaskOK><![CDATA[任务详细信息已成功保存。]]></saveTaskOK>
+<saveTaskBAD><![CDATA[任务详细信息未保存。]]></saveTaskBAD>
+<Missed><![CDATA[缺少统计信息的表数]]></Missed>
+<Needed_Large><![CDATA[需要刷新统计信息的大表数]]></Needed_Large>
+<Needed_Small><![CDATA[需要刷新统计信息的小表数]]></Needed_Small>
+<Done><![CDATA[已刷新统计信息的表数]]></Done>
+<ChartSummary><![CDATA[自动更新统计信息评估]]></ChartSummary>
+<ListCommands><![CDATA[更新统计信息命令]]></ListCommands>
+<ListPriority><![CDATA[优先级]]></ListPriority>
+<ListExec><![CDATA[命令]]></ListExec>
+<RefreshEvaluation><![CDATA[立即评估]]></RefreshEvaluation>
+<Cleanup><![CDATA[清除]]></Cleanup>
+<Cleanup_tooltip><![CDATA[如果 AUS 任务产生错误，请运行清除任务。清除任务会删除内部 AUS 工作表，并重新运行“自动更新统计信息求值”任务。]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[导出命令]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS 警报]]></AUSAlerts>
+<alerts><![CDATA[警报]]></alerts>
+<ListTime><![CDATA[完成时间]]></ListTime>
+<lastEval><![CDATA[上次求值完成于]]></lastEval>
+<runIn><![CDATA[“自动更新统计信息刷新”将在 {0} 后运行。]]></runIn>
+<ausDisabled><![CDATA[“自动更新统计信息”已禁用]]></ausDisabled>
+<configSaveErr><![CDATA[保存 AUS 配置参数时出错]]></configSaveErr>
+<noValue><![CDATA[未指定值]]></noValue>
+<notPositiveInt><![CDATA[必须为正整数]]></notPositiveInt>
+<notInt_1_10><![CDATA[值必须是 1 到 10 范围之内的整数]]></notInt_1_10>
+<notInt_0_100><![CDATA[值必须是 0 到 100 范围之内的整数]]></notInt_0_100>
+<notInt_-1_100><![CDATA[值必须是 -1 到 100 范围之内的整数]]></notInt_-1_100>
+<notInt_0_1><![CDATA[值必须是 0 或 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[对于您当前的服务器版本，此功能部件不可用。]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[运行评估时发生问题：]]></ProblemWithEval>
+<ReturnCode><![CDATA[返回码为 {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[已完成评估。]]></ReEvalComplete>
+<RequestEval><![CDATA[立即运行“自动更新统计信息评估”任务，以根据 AUS 配置确定需要刷新的统计信息。]]></RequestEval>
+<PendingCmds><![CDATA[暂挂命令]]></PendingCmds>
+<CompletedCmds><![CDATA[已完成命令]]></CompletedCmds>
+<save><![CDATA[[保存]]></save>
+<cancel><![CDATA[取消]]></cancel>
+<add><![CDATA[添加]]></add>
+<NoPermission><![CDATA[只读用户没有执行此操作的许可权。您是以只读用户身份登录的。]]></NoPermission>
+<Time><![CDATA[时间]]></Time>
+<Type><![CDATA[类型]]></Type>
+<Color><![CDATA[颜色]]></Color>
+<Message><![CDATA[消息]]></Message>
+<runfrequency><![CDATA[运行频率]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Auto Update Statistics 调度]]></AutoUpdStatsSched>
+<Name><![CDATA[名称]]></Name>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[T]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[T]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[开始时间]]></starttime>
+<stopttime><![CDATA[停止时间]]></stopttime>
+<Priority><![CDATA[优先级]]></Priority>
+<Rows><![CDATA[行]]></Rows>
+<Parameter><![CDATA[参数]]></Parameter>
+<Value><![CDATA[值]]></Value>
+<Actions><![CDATA[操作]]></Actions>
+<Tables><![CDATA[表]]></Tables>
+<hours><![CDATA[小时]]></hours>
+<minutes><![CDATA[分钟]]></minutes>
+<saveConfigSuccessful><![CDATA[“自动更新统计信息”配置已成功保存。]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[“更新统计信息”任务使用此数量的线程运行。此选项仅在 OAT 中可用。]]></specifiedNumbOfThread>
+</lang>

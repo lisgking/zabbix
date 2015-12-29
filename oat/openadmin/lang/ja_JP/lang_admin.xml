@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[管理]]></admin>
+<login><![CDATA[ログイン]]></login>
+<AdminHome><![CDATA[管理 - ホーム]]></AdminHome>
+<AdminWelcome><![CDATA[管理 - ようこそ]]></AdminWelcome>
+<ConnAdmin><![CDATA[接続管理]]></ConnAdmin>
+<ConnList><![CDATA[接続リスト]]></ConnList>
+<OATconfig><![CDATA[OAT 構成]]></OATconfig>
+<defaultlang><![CDATA[デフォルトの言語]]></defaultlang>
+<baseurl><![CDATA[ベース URL]]></baseurl>
+<installdir><![CDATA[インストール ディレクトリ]]></installdir>
+<conndb_loc><![CDATA[接続データベース ディレクトリ]]></conndb_loc>
+<rowsperpage><![CDATA[ページあたりの行]]></rowsperpage>
+<pingerinterval><![CDATA[リフレッシュ間隔]]></pingerinterval>
+<IDSProtocol><![CDATA[Informix プロトコル]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[使用するプロトコルです]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[ダッシュボード マネージャ]]></DashboardMgr>
+<ShowConnections><![CDATA[接続の表示]]></ShowConnections>
+<AddConn><![CDATA[接続の追加
+]]></AddConn>
+<DeleteConn><![CDATA[接続の削除]]></DeleteConn>
+<EditConn><![CDATA[接続の編集]]></EditConn>
+<EditConn_><![CDATA[接続の編集: {0}]]></EditConn_>
+<AddGroup><![CDATA[グループの追加]]></AddGroup>
+<EditGroup><![CDATA[グループの編集]]></EditGroup>
+<EditGroup_><![CDATA[グループの編集: {0}]]></EditGroup_>
+<DeleteGroup><![CDATA[グループの削除]]></DeleteGroup>
+<HelpAdmin><![CDATA[ヘルプ管理]]></HelpAdmin>
+<AddHelp><![CDATA[ヘルプ項目の追加]]></AddHelp>
+<DeleteHelp><![CDATA[ヘルプ項目の削除]]></DeleteHelp>
+<EditHelp><![CDATA[ヘルプ項目の編集]]></EditHelp>
+<group><![CDATA[OAT グループ
+]]></group>
+<groupname><![CDATA[グループ名]]></groupname>
+<groupname_sc><![CDATA[グループ名
+]]></groupname_sc>
+<username><![CDATA[ユーザ名]]></username>
+<password><![CDATA[パスワード]]></password>
+<hostname><![CDATA[ホスト名]]></hostname>
+<informixserver><![CDATA[Informix サーバ]]></informixserver>
+<port><![CDATA[ポート]]></port>
+<longitude><![CDATA[経度]]></longitude>
+<latitude><![CDATA[緯度]]></latitude>
+<idsdport><![CDATA[idsd ポート
+]]></idsdport>
+<envvars><![CDATA[環境変数]]></envvars>
+<varname><![CDATA[変数名]]></varname>
+<param><![CDATA[パラメータ]]></param>
+<value><![CDATA[値]]></value>
+<readonly><![CDATA[読取り専用]]></readonly>
+<readonly_sc><![CDATA[読取り専用]]></readonly_sc>
+<collapse><![CDATA[縮小]]></collapse>
+<viewmodify><![CDATA[表示&#47変更]]></viewmodify>
+<currgroups><![CDATA[現行グループ]]></currgroups>
+<numconn><![CDATA[接続]]></numconn>
+<deleteselected><![CDATA[選択の削除]]></deleteselected>
+<act><![CDATA[Act]]></act>
+<do><![CDATA[Do]]></do>
+<title><![CDATA[タイトル]]></title>
+<description><![CDATA[説明]]></description>
+<add><![CDATA[追加]]></add>
+<delete><![CDATA[削除]]></delete>
+<save><![CDATA[保存]]></save>
+<cancel><![CDATA[キャンセル]]></cancel>
+<testconnection><![CDATA[接続のテスト]]></testconnection>
+<insecureCONNDBDIR><![CDATA[指定された接続データベースの場所は、Web サーバのドキュメント ルートの下です。これにより OAT がセキュリティ リスクにさらされる恐れがあります。それでも続行する場合は、「OK」をクリックしください。]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[プラグイン マネージャ]]></pluginmgr>
+<installplugin><![CDATA[プラグインのインストール]]></installplugin>
+<menumgr><![CDATA[メニュー マネージャ]]></menumgr>
+<secureSQL><![CDATA[SQL ToolBox セキュリティ]]></secureSQL>
+<informixcontime><![CDATA[Informix 接続時間]]></informixcontime>
+<informixconretry><![CDATA[Informix 接続再試行]]></informixconretry>
+<helpDB><![CDATA[ヘルプ データベース]]></helpDB>
+<selectHelpDB><![CDATA[ヘルプ データベースの選択]]></selectHelpDB>
+<import><![CDATA[XML ファイルから接続情報をインポートします]]></import>
+<export><![CDATA[XML ファイルへ接続情報をエクスポートします]]></export>
+<importbutton><![CDATA[XML からインポート]]></importbutton>
+<exportbutton><![CDATA[XML へエクスポート]]></exportbutton>
+<importcheckbox><![CDATA[XML ファイルをインポートする前に、既存の接続情報をすべて削除します。]]></importcheckbox>
+<exportcheckbox><![CDATA[機密のパスワード情報をエクスポートされる XML ファイルに含めます。]]></exportcheckbox>
+<nofile><![CDATA[ファイルが選択されていません。]]></nofile>
+<overwriteConfirm><![CDATA[現行の既存の接続情報はすべて削除されます。実行しますか?]]></overwriteConfirm>
+<securityWarning><![CDATA[エクスポートされた XML ファイルは、informix パスワードなどの機密情報を含みます。このファイルは、セキュアな場所に保存されるようにしてください。]]></securityWarning>
+<LANG><![CDATA[OAT ページのデフォルト言語。]]></LANG>
+<CONNDBDIR><![CDATA[OAT 接続データベースのディレクトリ。Web サーバのドキュメント ディレクトリ下にはない、保護されたディレクトリを指定してください。]]></CONNDBDIR>
+<BASEURL><![CDATA[OAT のインストール場所の URL (形式は http://servername:port/location)。]]></BASEURL>
+<HOMEDIR><![CDATA[OAT のインストール ディレクトリ。]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[データが表形式で表示される場合の、ページあたりのデフォルトの行数]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[サーバの状態を更新する時間間隔 (秒単位)。サーバの状態は、「ヘルス センタ」>「ダッシュボード」>「グループ サマリ」ページに表示されます。]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[OAT ホーム ページとして使用するページ。]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[使用するプロトコル (例: onsoctcp)]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[SQL ToolBox のログイン クリデンシャルを要求します。]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[「Schema Browser」、「SQL エディタ」、「例示問合せ」の各ページをパスワードで保護します。これらのページで、ユーザは表データを表示または変更することができます。]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[エラーを戻す前に、OAT がデータベース サーバへの接続を試みる秒単位の時間の長さ (INFORMIXCONTIME)。]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[Informix 接続時間の間に、OAT がデータベース サーバへの接続を試みる回数 (INFORMIXCONRETRY)。]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[ホーム ページ]]></HomePage>
+<home_page_option_welcome><![CDATA[ようこそ]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[「ヘルス センタ」>「ダッシュボード」>「グループ サマリ」]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[「ヘルス センタ」>「ダッシュボード」>「サーバ パフォーマンス」]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[カスタム]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[ファイルが書込み可能でないため構成の保存に失敗しました。]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[構成は保存されました]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[オンライン: 現行]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Informix サーバが必要です]]></RequiresInformixServer>
+<RequiresHost><![CDATA[ホストが必要です]]></RequiresHost>
+<RequiresPort><![CDATA[ポートが必要です]]></RequiresPort>
+<RequiresUser><![CDATA[ユーザ名が必要です]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[新規接続の追加が失敗しました。エラー コード:]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[idsd への新規接続の追加が失敗しました。エラー コード:]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[conn_envvars への挿入が失敗しました。エラー コード:]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[接続の更新が失敗しました。エラー コード:]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[idsd の置換が失敗しました。エラー コード:]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[conn_envvars からの削除が失敗しました。エラー コード:]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[更新: conn_envvars への挿入が失敗しました。エラー コード:]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[接続の編集中]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[エラーが発生しました。グループ番号が必要です]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[グループ名が必要です]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[グループの編集が失敗しました。エラー コード:]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[グループの編集中]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[新規グループの追加が失敗しました。エラー コード:]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[グループの追加中]]></AddingGroup>
+<AddingConn><![CDATA[接続の追加中]]></AddingConn>
+<ErrorDeletingConn><![CDATA[エラー: 関数 dodelconn が誤った引数で呼び出されました]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[接続の削除が失敗しました。エラー コード:]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[接続の削除が完了しました]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[グループの削除が失敗しました。エラー コード:]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[グループの削除が完了しました]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA[「アクション」が必要です]]></RequiresAct>
+<RequiresDescription><![CDATA[説明が必要です]]></RequiresDescription>
+<AddingHelpFor><![CDATA[ヘルプの追加中]]></AddingHelpFor>
+<DeletingHelp><![CDATA[ヘルプの削除中]]></DeletingHelp>
+<EditingHelpFor><![CDATA[ヘルプの編集中]]></EditingHelpFor>
+<NoHelpDB><![CDATA[次の helpdb_id に対するヘルプ データベースが存在しません。]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[idsadminHelp db の問題:]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[ヘルプ データベースのオープンでエラーが発生しました]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[グループのインポートに失敗]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[グループのインポートに失敗]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[プラグインのインストールの開始中...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[接続失敗...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[connections.db のロード エラー]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[これらの接続を削除しますか?]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[削除しますか?グループを削除すると、そのグループに定義されている接続もすべて削除されます。]]></SureToDeleteGroup>
+<AskDelete><![CDATA[削除しますか?]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[テスト中 ... お待ちください]]></TestingConnection>
+<InvalidEnvVar><![CDATA[エラー: 環境変数の名前と値の両方を指定する必要があります。]]></InvalidEnvVar>
+<x_Plugin><![CDATA[{0} プラグイン]]></x_Plugin>
+</lang>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Home]]></home>
+
+<dashboard><![CDATA[Dashboard]]></dashboard>
+<dashboard_name_perf><![CDATA[Server Performance]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[This dashboard shows information about tables, queries, and cpu.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Resource Usage]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[This dashboard shows information about memory, space, and locks.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Database Server Memory]]></panel_title_memory>
+<panel_desc_memory><![CDATA[This panel shows shared memory usage for the database server.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Sessions]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[This panel shows the number of connected sessions for the database server.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Network Reads and Writes]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[This panel shows the number of I/O calls for network reads and writes.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[Disk I/O]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[This panel shows disk I/O wait time. The panel requires Informix 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[OS Memory]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[This panel shows memory usage for the operating system (OS). The panel requires Informix 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Transactions]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[This panel shows the number of transactions for the database server.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Space Usage]]></panel_title_space>
+<panel_desc_space><![CDATA[his panel shows the free space and used space for each dbspace.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Locks]]></panel_title_locks>
+<panel_desc_locks><![CDATA[This panel shows the number of locks for the database server.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Top Tables - Reads]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[This panel shows the tables with the most reads.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[CPU Time]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[This panel shows the user and system CPU time.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Top Tables - Modified]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[This panel shows the tables with the most inserts, updates, and deletes.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Total SQL Operations]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[This panel shows the total number of rows processed, inserted, updated, and deleted.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[SQL Operations per Second]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[This panel shows the number of rows processed, inserted, updated, and deleted per second.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Welcome]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[On this page, the OpenAdmin Tool cannot display information for a database server with more than one non-English database locale. The database server contains more than one non-English database locale.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Session Explorer]]></sessionexplorer>
+<ChartTest><![CDATA[Chart - Test]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[DATA Space]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Could not retreive connection information for the database server.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Connection failed: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Error: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[The database server is blocked.  OAT cannot retrieve any other status information.]]></ServerBlocked>
+</lang>

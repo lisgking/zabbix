@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Estatísticas de Atualização Automática]]></mainTitle>
+<generalTab><![CDATA[Geral]]></generalTab>
+<infoTab><![CDATA[Informações]]></infoTab>
+<configTab><![CDATA[Configuração]]></configTab>
+<listTab><![CDATA[Comandos]]></listTab>
+<ListConfig><![CDATA[Configuração de Estatísticas de Atualização Automática]]></ListConfig>
+<ConfParam><![CDATA[Parâmetro]]></ConfParam>
+<ConfValue><![CDATA[Valor]]></ConfValue>
+<ConfDesc><![CDATA[Descrição]]></ConfDesc>
+<ListDBSsummary><![CDATA[Estatísticas de Atualização Automática pelo Banco de Dados]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Verificado pela Última Vez]]></ListDBSTime>
+<ListDBSName><![CDATA[Banco de dados]]></ListDBSName>
+<ListDBSMissed><![CDATA[Tabelas Ausentes das Estatísticas]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Tabelas Pequenas Precisando de Estatísticas Atualizadas]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Tabelas Grandes Precisando de Estatísticas Atualizadas]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Tabelas com Estatísticas Atualizadas]]></ListDBSDone>
+<CleanupOK><![CDATA[A limpeza foi bem-sucedida.]]></CleanupOK>
+<CleanupBAD><![CDATA[A limpeza falhou.]]></CleanupBAD>
+<fix><![CDATA[Clique em Limpar para corrigir o problema.]]></fix>
+<Save><![CDATA[Salvar]]></Save>
+<Cancel><![CDATA[Cancelar]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Configuração de Estatísticas de Atualização Automática]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Atualizar as Estatísticas a Cada:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Atualizar as estatísticas quando uma tabela se altera:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Usar as diretrizes para atualizar as estatísticas:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Atualizar as estatísticas para todas as tabelas com menos que o número de linhas:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[Executar as estatísticas de atualização com prioridade de PDQ de:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Executar as Estatísticas de Atualização Automática com este número de encadeamentos:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[encadeamentos]]></AUS_THREADS>
+<Threads><![CDATA[Encadeamentos]]></Threads>
+<days><![CDATA[dias]]></days>
+<on><![CDATA[ativado]]></on>
+<off><![CDATA[desativado]]></off>
+<Evaluating><![CDATA[Avaliando ...]]></Evaluating>
+<saveTaskOK><![CDATA[Os detalhes da tarefa foram salvas com êxito.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[Os detalhes da tarefa não foram salvas.]]></saveTaskBAD>
+<Missed><![CDATA[Estatísticas Ausentes das Tabelas]]></Missed>
+<Needed_Large><![CDATA[Tabelas grandes necessitando de estatísticas atualizadas]]></Needed_Large>
+<Needed_Small><![CDATA[Tabelas pequenas necessitando de estatísticas atualizadas]]></Needed_Small>
+<Done><![CDATA[Tabelas com Estatísticas Atualizadas]]></Done>
+<ChartSummary><![CDATA[Avaliação de Estatísticas de Atualização Automática]]></ChartSummary>
+<ListCommands><![CDATA[Comandos de Estatísticas de Atualização]]></ListCommands>
+<ListPriority><![CDATA[Prioridade]]></ListPriority>
+<ListExec><![CDATA[Comando]]></ListExec>
+<RefreshEvaluation><![CDATA[Avaliar Agora]]></RefreshEvaluation>
+<Cleanup><![CDATA[Limpar]]></Cleanup>
+<Cleanup_tooltip><![CDATA[Execute a tarefa de limpeza se as tarefas do AUS estão gerando erros. A tarefa de limpeza exclui as tabelas de trabalho internas do AUS e executa novamente a tarefa Avaliação de Estatísticas de Atualização Automática.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Comandos de Exportação]]></ExportCmds>
+<AUSAlerts><![CDATA[Alertas de AUS]]></AUSAlerts>
+<alerts><![CDATA[Alertas]]></alerts>
+<ListTime><![CDATA[Horário de Conclusão]]></ListTime>
+<lastEval><![CDATA[Última avaliação concluída em ]]></lastEval>
+<runIn><![CDATA[A Atualização das Estatísticas de Atualização Automáticas executará em {0}.]]></runIn>
+<ausDisabled><![CDATA[As Estatísticas de Atualização Automática estão desativadas]]></ausDisabled>
+<configSaveErr><![CDATA[Erro ao salvar parâmetros de configuração de AUS]]></configSaveErr>
+<noValue><![CDATA[Nenhum valor especificado]]></noValue>
+<notPositiveInt><![CDATA[Deve ser um número inteiro positivo]]></notPositiveInt>
+<notInt_1_10><![CDATA[O valor deve ser um número inteiro no intervalo de 1 a 10]]></notInt_1_10>
+<notInt_0_100><![CDATA[O valor deve ser um número inteiro no intervalo de 0 a 100]]></notInt_0_100>
+<notInt_-1_100><![CDATA[O valor deve ser um número inteiro no intervalo de -1 a 100]]></notInt_-1_100>
+<notInt_0_1><![CDATA[O valor deve ser 0 ou 1]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[Este recurso não está disponível para a versão do servidor atual.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Problema ao executar a avaliação:]]></ProblemWithEval>
+<ReturnCode><![CDATA[O código de retorno é {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[Avaliação Concluída.]]></ReEvalComplete>
+<RequestEval><![CDATA[Execute a Avaliação de Estatísticas de Atualização Automática agora para determinar que estatísticas precisam ser atualizadas com base na configuração do AUS. ]]></RequestEval>
+<PendingCmds><![CDATA[Comandos Pendentes]]></PendingCmds>
+<CompletedCmds><![CDATA[Comandos Concluídos]]></CompletedCmds>
+<save><![CDATA[[Salvar]]></save>
+<cancel><![CDATA[Cancelar]]></cancel>
+<add><![CDATA[Incluir]]></add>
+<NoPermission><![CDATA[Usuários de somente leitura não têm permissão para fazer isso. Você efetuou login como um usuário de somente leitura.]]></NoPermission>
+<Time><![CDATA[Horário]]></Time>
+<Type><![CDATA[Tipo]]></Type>
+<Color><![CDATA[Cor]]></Color>
+<Message><![CDATA[Mensagem]]></Message>
+<runfrequency><![CDATA[Frequência de Execução]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Planejamento de Estatísticas de Atualização Automática]]></AutoUpdStatsSched>
+<Name><![CDATA[Nome]]></Name>
+<WeekDay1Letter><![CDATA[S]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[Q]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[W]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[Q]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[S]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[Hora de Início]]></starttime>
+<stopttime><![CDATA[Hora de Término]]></stopttime>
+<Priority><![CDATA[prioridade]]></Priority>
+<Rows><![CDATA[linhas]]></Rows>
+<Parameter><![CDATA[Parâmetro]]></Parameter>
+<Value><![CDATA[Valor]]></Value>
+<Actions><![CDATA[Ações]]></Actions>
+<Tables><![CDATA[Tabelas]]></Tables>
+<hours><![CDATA[horas]]></hours>
+<minutes><![CDATA[minutos]]></minutes>
+<saveConfigSuccessful><![CDATA[A configuração das Estatísticas de Atualização Automática foi salva com êxito.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[A tarefa de estatística de atualização é executa com este número de encadeamentos. Esta opção está disponível somente no OAT.]]></specifiedNumbOfThread>
+</lang>

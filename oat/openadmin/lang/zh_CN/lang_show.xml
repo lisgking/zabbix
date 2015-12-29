@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_show">
+<Show><![CDATA[显示]]></Show>
+<CommandHistory><![CDATA[命令历史记录]]></CommandHistory>
+<OnlineLog><![CDATA[联机日志]]></OnlineLog>
+
+<LogDelete><![CDATA[删除日志]]></LogDelete>
+<LogTruncate><![CDATA[截断日志]]></LogTruncate>
+
+<OnlineMsgLog><![CDATA[联机消息日志]]></OnlineMsgLog>
+<OnlineMsgLogRotate><![CDATA[联机消息日志循环交替]]></OnlineMsgLogRotate>
+
+<BarActLog><![CDATA[ON-Bar 活动日志]]></BarActLog>
+<BarActLogRotate><![CDATA[ON-Bar 活动日志循环交替]]></BarActLogRotate>
+
+<onconfig><![CDATA[Onconfig]]></onconfig>
+<chunks><![CDATA[块]]></chunks>
+<commands><![CDATA[命令]]></commands>
+<Databases><![CDATA[数据库]]></Databases>
+<Alerts><![CDATA[警报]]></Alerts>
+<Message><![CDATA[消息]]></Message>
+<Messages><![CDATA[消息]]></Messages>
+<OnBarActLog><![CDATA[ON-Bar 活动日志]]></OnBarActLog>
+<onconfigfile><![CDATA[Onconfig 文件]]></onconfigfile>
+<Name><![CDATA[名称]]></Name>
+<CurrentValue><![CDATA[当前值]]></CurrentValue>
+<ChunkInfo><![CDATA[块信息]]></ChunkInfo>
+<ChunkNumber><![CDATA[块数]]></ChunkNumber>
+<ChunkPath><![CDATA[路径名]]></ChunkPath>
+<Size><![CDATA[大小]]></Size>
+<Offset><![CDATA[偏移量]]></Offset>
+<Free><![CDATA[可用]]></Free>
+<CmdHistory><![CDATA[管理命令历史记录]]></CmdHistory>
+<User><![CDATA[用户]]></User>
+<Time><![CDATA[时间]]></Time>
+<CommandExecuted><![CDATA[执行的命令]]></CommandExecuted>
+<ReturnMsg><![CDATA[返回消息]]></ReturnMsg>
+<CreateDate><![CDATA[创建日期]]></CreateDate>
+<AreYouSureTruncate><![CDATA[此操作会删除消息日志文件中的消息。消息日志文件会保留。是否要继续？]]></AreYouSureTruncate>
+<AreYouSureDelete><![CDATA[此操作会删除消息日志文件。是否要继续？]]></AreYouSureDelete>
+<TaskIdNotFoundOnlineRotate><![CDATA[找不到任务 online_log_rotate 的任务标识。日志文件循环交替需要 Informix 11.70.xC3。请验证数据库服务器的版本。]]></TaskIdNotFoundOnlineRotate>
+<TaskIdNotFoundBarActLogRotate><![CDATA[找不到任务 bar_act_log_rotate 的任务标识。日志文件循环交替需要 Informix 11.70.xC3。请验证数据库服务器的版本。]]></TaskIdNotFoundBarActLogRotate>
+<Success><![CDATA[成功]]></Success>
+<Error><![CDATA[错误]]></Error>
+<Warning><![CDATA[警告]]></Warning>
+</lang>

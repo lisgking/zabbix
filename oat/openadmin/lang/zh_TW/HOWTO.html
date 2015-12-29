@@ -1,0 +1,3062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-tw">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-TW" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2007, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="概念, 作業, 作業, 作業, 作業, 參照, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 參照, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 參照, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 參照, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 參照, 參照, 作業, 參照, 參照, 作業, 作業, 作業, 作業, 作業, 作業, 作業, 參照, 參照, 參照, 參照, 參照, 參照, 參照, 參照, 參照, 參照, 作業, 參照" />
+<meta name="keywords" content="監視, 系統性能狀態, 資料庫伺服器, 自訂, 儀表板, 警示, 事件警示, 管理指令" />
+<meta name="keywords" content="線上訊息日誌, 刪除, 截斷, 旋轉, ON-Bar 活動日誌, 儲存體空間, 監視器, 建立, 空間, 修改, 修改, 捨棄, 捨棄" />
+<meta name="keywords" content="新增, 片段, 設為可延伸, 自動, 儲存區項目, 新增, 擴充, 擴充, 延伸, 延伸, 表格, 壓縮, 表格片段" />
+<meta name="keywords" content="壓縮, 解壓縮, 最佳化, 估計, 估計壓縮, 片段, 估計壓縮, 收縮, 索引, 重組" />
+<meta name="keywords" content="範圍, 邏輯日誌, 實體日誌, 檢查點, 檢視, 效能歷程, 廣域安全套件, GSKCmd, gsk7cmd, gsk8cmd, 金鑰資料庫" />
+<meta name="keywords" content="憑證管理, 自簽憑證, idsd 常駐程式, xinetd 常駐程式, inetd 常駐程式, 高可用性叢集, 使用者專用權" />
+<meta name="keywords" content="自動更新統計資料 (AUS), (AUS) 自動更新統計資料, 資料, 備份, ontape, 依範例查詢, 插入, 更新, 刪除, 查詢, 擷取, OAT 群組" />
+<meta name="keywords" content="唯讀群組, HTTPS, 安裝, 安裝, 啟用, 啟用, 升級, 升級, 停用, 停用, 解除安裝, 解除安裝, isreadonly" />
+<meta name="keywords" content="唯讀函數, idsadmin 函數, get_database 函數, 取得資料庫函數, get_database, load_lang 函數, 載入語言函數" />
+<meta name="keywords" content="load_lang, lang 函數, 語言函數, lang, error 函數, error, status 函數, status, format_units 函數, format_units" />
+<meta name="keywords" content="setCurrMenuItem 函數, setCurrMenuItem, set_pagetitle 函數, set_pagetitle, output 函數, add_to_output 函數, add_to_output, 功能表" />
+<meta name="keywords" content="功能表順序, 還原" />
+<title>IBM OpenAdmin Tool (OAT) for Informix</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>IBM OpenAdmin Tool (OAT) for Informix</h1>
+<br />
+<div id="wq1">
+<h1>目錄</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oat.dita" class="toclink">IBM OpenAdmin Tool (OAT) for Informix</a></div>
+<div class="head1"><a id="ToC_2" href="#dqx1ids_oat_019" class="toclink">如何連接至資料庫伺服器？</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oat_007" class="toclink">登入資料庫伺服器</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oat_009" class="toclink">登入 OAT 群組中的資料庫伺服器</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oat_010" class="toclink">切換至 OAT 群組中的其他伺服器</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_oat_061" class="toclink">如何監視資料庫伺服器活動？</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_oat_166" class="toclink">監視資料庫伺服器狀態</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_oat_175" class="toclink">自訂儀表板</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_oat_176" class="toclink">修改儀表板的狀態臨界值</a></div>
+<div class="head2"><a id="ToC_10" href="#dqx1ids_oat_167" class="toclink">監視警示及事件警示</a></div>
+<div class="head2"><a id="ToC_11" href="#dqx1ids_oat_057" class="toclink">檢閱管理指令歷程</a></div>
+<div class="head2"><a id="ToC_12" href="#dqx1ids_oat_160" class="toclink">監視線上訊息日誌</a></div>
+<div class="head2"><a id="ToC_13" href="#dqx1ids_oat_161" class="toclink">刪除線上訊息日誌</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_oat_162" class="toclink">循環線上訊息日誌</a></div>
+<div class="head2"><a id="ToC_15" href="#dqx1ids_oat_163" class="toclink">監視 ON-Bar 活動日誌</a></div>
+<div class="head2"><a id="ToC_16" href="#dqx1ids_oat_164" class="toclink">刪除 ON-Bar 活動日誌</a></div>
+<div class="head2"><a id="ToC_17" href="#dqx1ids_oat_165" class="toclink">循環 ON-Bar 活動日誌</a></div>
+<div class="head1"><a id="ToC_18" href="#dqx1ids_oat_079" class="toclink">如何管理系統空間？</a></div>
+<div class="head2"><a id="ToC_19" href="#dqx1ids_oat_143" class="toclink">監視空間用量</a></div>
+<div class="head2"><a id="ToC_20" href="#dqx1ids_oat_127" class="toclink">管理空間用量</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oat_017" class="toclink">建立空間</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_oat_134" class="toclink">修改空間</a></div>
+<div class="head3"><a id="ToC_23" href="#dqx1ids_oat_126" class="toclink">捨棄空間</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oat_135" class="toclink">新增片段</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oat_136" class="toclink">修改片段</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oat_138" class="toclink">捨棄片段</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oat_142" class="toclink">自動新增儲存體空間</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oat_144" class="toclink">配置資料庫伺服器來自動新增儲存體空間</a></div>
+<div class="head3"><a id="ToC_29" href="#dqx1ids_oat_139" class="toclink">新增儲存區項目</a></div>
+<div class="head3"><a id="ToC_30" href="#dqx1ids_oat_140" class="toclink">修改儲存區項目</a></div>
+<div class="head3"><a id="ToC_31" href="#dqx1ids_oat_141" class="toclink">刪除儲存區項目</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oat_055" class="toclink">擴充空間</a></div>
+<div class="head3"><a id="ToC_33" href="#dqx1ids_oat_137" class="toclink">延伸片段</a></div>
+<div class="head2"><a id="ToC_34" href="#dqx1ids_oat_128.dita" class="toclink">最佳化儲存體空間</a></div>
+<div class="head3"><a id="ToC_35" href="#dqx1ids_oat_146" class="toclink">自動最佳化儲存體空間</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oat_129" class="toclink">估計壓縮</a></div>
+<div class="head3"><a id="ToC_37" href="#dqx1ids_oat_130" class="toclink">壓縮資料</a></div>
+<div class="head3"><a id="ToC_38" href="#dqx1ids_oat_131" class="toclink">解壓縮表格及表格片段</a></div>
+<div class="head3"><a id="ToC_39" href="#dqx1ids_oat_132" class="toclink">合併可用空間</a></div>
+<div class="head3"><a id="ToC_40" href="#dqx1ids_oat_133" class="toclink">將可用空間歸還給 dbspace</a></div>
+<div class="head3"><a id="ToC_41" href="#dqx1ids_oat_119" class="toclink">重組範圍</a></div>
+<div class="head2"><a id="ToC_42" href="#dqx1ids_oat_084" class="toclink">管理回復日誌</a></div>
+<div class="head3"><a id="ToC_43" href="#dqx1ids_oat_088" class="toclink">檢視檢查點歷程</a></div>
+<div class="head3"><a id="ToC_44" href="#dqx1ids_oat_087" class="toclink">強制檢查點</a></div>
+<div class="head3"><a id="ToC_45" href="#dqx1ids_oat_089" class="toclink">檢視邏輯日誌統計資料</a></div>
+<div class="head3"><a id="ToC_46" href="#dqx1ids_oat_080" class="toclink">新增邏輯日誌</a></div>
+<div class="head3"><a id="ToC_47" href="#dqx1ids_oat_148" class="toclink">切換至下一個邏輯日誌</a></div>
+<div class="head3"><a id="ToC_48" href="#dqx1ids_oat_083" class="toclink">捨棄邏輯日誌</a></div>
+<div class="head3"><a id="ToC_49" href="#dqx1ids_oat_090" class="toclink">檢視實體日誌統計資料</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oat_086" class="toclink">移動實體日誌</a></div>
+<div class="head1"><a id="ToC_51" href="#dqx1ids_oat_001" class="toclink">如何管理資料庫伺服器？</a></div>
+<div class="head2"><a id="ToC_52" href="#dqx1ids_oat_170" class="toclink">管理伺服器記憶體</a></div>
+<div class="head2"><a id="ToC_53" href="#dqx1ids_oat_004" class="toclink">管理高可用性叢集</a></div>
+<div class="head3"><a id="ToC_54" href="#dqx1ids_oat_059" class="toclink">配置高可用性叢集的連線功能</a></div>
+<div class="head3"><a id="ToC_55" href="#dqx1ids_oat_058" class="toclink">尋找高可用性叢集</a></div>
+<div class="head3"><a id="ToC_56" href="#dqx1ids_oat_020" class="toclink">檢視叢集的拓蹼</a></div>
+<div class="head3"><a id="ToC_57" href="#dqx1ids_oat_021" class="toclink">檢視叢集中的伺服器狀態</a></div>
+<div class="head3"><a id="ToC_58" href="#dqx1ids_oat_022" class="toclink">新增 SDS 伺服器</a></div>
+<div class="head3"><a id="ToC_59" href="#dqx1ids_oat_023" class="toclink">啟動或停止叢集中的伺服器</a></div>
+<div class="head2"><a id="ToC_60" href="#dqx1ids_oat_168" class="toclink">管理時間序列</a></div>
+<div class="head2"><a id="ToC_61" href="#dqx1ids_oat_027" class="toclink">管理資料庫伺服器的配置參數</a></div>
+<div class="head2"><a id="ToC_62" href="#dqx1ids_oat_077" class="toclink">執行系統驗證檢查</a></div>
+<div class="head3"><a id="ToC_63" href="#dqx1ids_oat_030" class="toclink">在現行伺服器上驗證一個以上資料庫或表格</a></div>
+<div class="head3"><a id="ToC_64" href="#dqx1ids_oat_031" class="toclink">在現行伺服器上，驗證一個以上 dbspace 的範圍</a></div>
+<div class="head2"><a id="ToC_65" href="#dqx1ids_oat_078" class="toclink">管理虛擬處理器</a></div>
+<div class="head2"><a id="ToC_66" href="#dqx1ids_oat_096" class="toclink">授與和限制使用者專用權</a></div>
+<div class="head3"><a id="ToC_67" href="#dqx1ids_oat_032" class="toclink">將資料庫層次專用權授與使用者</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oat_033" class="toclink">修改使用者的資料庫層次專用權</a></div>
+<div class="head3"><a id="ToC_69" href="#dqx1ids_oat_034" class="toclink">撤銷使用者的資料庫層次專用權</a></div>
+<div class="head3"><a id="ToC_70" href="#dqx1ids_oat_093" class="toclink">將表格層次專用權授與使用者</a></div>
+<div class="head3"><a id="ToC_71" href="#dqx1ids_oat_035" class="toclink">修改使用者的表格層次專用權</a></div>
+<div class="head3"><a id="ToC_72" href="#dqx1ids_oat_036" class="toclink">撤銷使用者的表格層次專用權</a></div>
+<div class="head2"><a id="ToC_73" href="#dqx1ids_oat_120" class="toclink">管理內部使用者（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_74" href="#dqx1ids_oat_124" class="toclink">在伺服器上設定內部使用者的專用權（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_75" href="#dqx1ids_oat_121" class="toclink">新增內部使用者（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_76" href="#dqx1ids_oat_122" class="toclink">編輯內部使用者（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_77" href="#dqx1ids_oat_123" class="toclink">刪除內部使用者（UNIX、Linux）</a></div>
+<div class="head2"><a id="ToC_78" href="#dqx1ids_oat_145" class="toclink">建立授信環境定義</a></div>
+<div class="head3"><a id="ToC_79" href="#dqx1ids_oat_147" class="toclink">管理授信環境定義</a></div>
+<div class="head2"><a id="ToC_80" href="#dqx1ids_oat_037" class="toclink">管理自動更新統計資料</a></div>
+<div class="head3"><a id="ToC_81" href="#dqx1ids_oat_038" class="toclink">配置及啟用自動更新統計資料</a></div>
+<div class="head3"><a id="ToC_82" href="#dqx1ids_oat_039" class="toclink">在伺服器上檢視重新整理作業及評估作業</a></div>
+<div class="head3"><a id="ToC_83" href="#dqx1ids_oat_040" class="toclink">要求立即評估統計資料</a></div>
+<div class="head3"><a id="ToC_84" href="#dqx1ids_oat_041" class="toclink">判斷下次更新統計資料的時間</a></div>
+<div class="head3"><a id="ToC_85" href="#dqx1ids_oat_042" class="toclink">檢視現行的自動更新統計資料設定</a></div>
+<div class="head3"><a id="ToC_86" href="#dqx1ids_oat_043" class="toclink">監視自動更新統計資料設定</a></div>
+<div class="head3"><a id="ToC_87" href="#dqx1ids_oat_044" class="toclink">檢視自動更新統計資料所產生的警示</a></div>
+<div class="head3"><a id="ToC_88" href="#dqx1ids_oat_045" class="toclink">清除自動更新統計資料的異常執行結果</a></div>
+<div class="head2"><a id="ToC_89" href="#dqx1ids_oat_156" class="toclink">備份資料庫伺服器資料</a></div>
+<div class="head3"><a id="ToC_90" href="#dqx1ids_oat_157" class="toclink">使用 ontape 備份資料</a></div>
+<div class="head3"><a id="ToC_91" href="#dqx1ids_oat_158" class="toclink">變更備份配置及排程</a></div>
+<div class="head3"><a id="ToC_92" href="#dqx1ids_oat_159" class="toclink">執行隨需備份</a></div>
+<div class="head1"><a id="ToC_93" href="#dqx1ids_oat_073" class="toclink">如何管理「排程器」作業？</a></div>
+<div class="head2"><a id="ToC_94" href="#dqx1ids_oat_074" class="toclink">新增排程器作業</a></div>
+<div class="head3"><a id="ToC_95" href="#dqx1ids_oat_046" class="toclink">新增作業</a></div>
+<div class="head3"><a id="ToC_96" href="#dqx1ids_oat_047" class="toclink">新增感應器</a></div>
+<div class="head2"><a id="ToC_97" href="#dqx1ids_oat_075" class="toclink">啟用排程器作業</a></div>
+<div class="head2"><a id="ToC_98" href="#dqx1ids_oat_076" class="toclink">變更排程器作業的容許時間間隔</a></div>
+<div class="head2"><a id="ToC_99" href="#dqx1ids_oat_015" class="toclink">刪除排程器作業</a></div>
+<div class="head1"><a id="ToC_100" href="#dqx1ids_oat_062" class="toclink">如何探索效能資訊？</a></div>
+<div class="head2"><a id="ToC_101" href="#dqx1ids_oat_064" class="toclink">使用 SQL 瀏覽器來分析查詢效能</a></div>
+<div class="head3"><a id="ToC_102" href="#dqx1ids_oat_091" class="toclink">開啟 SQL 追蹤</a></div>
+<div class="head3"><a id="ToC_103" href="#dqx1ids_oat_092" class="toclink">關閉 SQL 追蹤</a></div>
+<div class="head3"><a id="ToC_104" href="#dqx1ids_oat_048" class="toclink">指定 SQL 追蹤的選項</a></div>
+<div class="head3"><a id="ToC_106" href="#dqx1ids_oat_049" class="toclink">暫停 SQL 追蹤</a></div>
+<div class="head3"><a id="ToC_107" href="#dqx1ids_oat_050" class="toclink">從暫停狀態回復 SQL 追蹤</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oat_105.dita" class="toclink">在現用與已儲存的資料之間切換</a></div>
+<div class="head3"><a id="ToC_109" href="#dqx1ids_oat_065" class="toclink">從活動摘要往下探查</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oat_067" class="toclink">依交易向下探查</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oat_066" class="toclink">依 SQL 陳述式類型往下探查</a></div>
+<div class="head2"><a id="ToC_112" href="#dqx1ida_oat_104" class="toclink">最佳化 SQL 陳述式</a></div>
+<div class="head2"><a id="ToC_113" href="#dqx1ids_oat_068" class="toclink">探索使用者階段作業</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oat_056" class="toclink">停止使用者階段作業</a></div>
+<div class="head2"><a id="ToC_115" href="#dqx1ids_oat_169" class="toclink">檢視效能歷程</a></div>
+<div class="head2"><a id="ToC_116" href="#dqx1ids_oat_063" class="toclink">執行系統效能報告</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1ids_oat_173" class="toclink">監視範圍</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oat_174" class="toclink">監視緩衝池</a></div>
+<div class="head2"><a id="ToC_119" href="#dqx1ida_oat_117" class="toclink">使用 <strong><samp>onstat</samp></strong> 公用程式監視伺服器</a></div>
+<div class="head1"><a id="ToC_120" href="#dqx1ids_oat_012" class="toclink">如何管理資料庫及表格？</a></div>
+<div class="head2"><a id="ToC_121" href="#dqx1ids_oat_013" class="toclink">檢閱伺服器上的資料庫</a></div>
+<div class="head2"><a id="ToC_122" href="#dqx1ids_oat_014" class="toclink">連接至資料庫</a></div>
+<div class="head2"><a id="ToC_123" href="#dqx1ids_oat_094" class="toclink">檢視綱目</a></div>
+<div class="head2"><a id="ToC_124" href="#dqx1ids_oat_069" class="toclink">檢閱資料庫的程序及常式</a></div>
+<div class="head2"><a id="ToC_125" href="#dqx1ids_oat_106" class="toclink">執行標準 SQL 作業：查詢、插入、更新、刪除</a></div>
+<div class="head3"><a id="ToC_126" href="#dqx1ids_oat_109" class="toclink">執行查詢</a></div>
+<div class="head3"><a id="ToC_127" href="#dqx1ids_oat_110" class="toclink">更新表格橫列</a></div>
+<div class="head3"><a id="ToC_128" href="#dqx1ids_oat_111" class="toclink">刪除表格橫列</a></div>
+<div class="head3"><a id="ToC_129" href="#dqx1ids_oat_112" class="toclink">插入表格橫列</a></div>
+<div class="head1"><a id="ToC_130" href="#dqx1ids_oat_005" class="toclink">如何設定伺服器的存取權？</a></div>
+<div class="head2"><a id="ToC_131" href="#dqx1ids_oat_003" class="toclink">新增 OAT 群組</a></div>
+<div class="head2"><a id="ToC_132" href="#dqx1ids_oat_002" class="toclink">建立伺服器連線</a></div>
+<div class="head2"><a id="ToC_133" href="#dqx1ids_oat_114" class="toclink">匯出連線資訊</a></div>
+<div class="head2"><a id="ToC_134" href="#dqx1ids_oat_113" class="toclink">匯入連線資訊</a></div>
+<div class="head2"><a id="ToC_135" href="#dqx1ids_oat_171" class="toclink">使用非預設語言環境存取資料庫</a></div>
+<div class="head1"><a id="ToC_136" href="#dqx1ids_oat_098" class="toclink">如何配置 OAT 的安全？</a></div>
+<div class="head2"><a id="ToC_137" href="#dqx1ids_oat_072" class="toclink">建立具有唯讀專用權的 OAT 群組</a></div>
+<div class="head3"><a id="ToC_138" href="#dqx1ids_oat_051" class="toclink">唯讀群組限制</a></div>
+<div class="head2"><a id="ToC_139" href="#dqx1ids_oat_070" class="toclink">限制對於管理配置頁面的存取權</a></div>
+<div class="head2"><a id="ToC_140" href="#dqx1ids_oat_071" class="toclink">提供「管理」配置頁面的密碼保護：Apache 範例</a></div>
+<div class="head2"><a id="ToC_141" href="#dqx1ids_oat_052" class="toclink">配置 OAT 的 HTTPS (Linux)</a></div>
+<div class="head2"><a id="ToC_146" href="#dqx1dt2mg202" class="toclink">配置 OAT 的 HTTPS (Windows)</a></div>
+<div class="head2"><a id="ToC_152" href="#dqx1ids_oat_053" class="toclink">停用或啟用 SQL 工具箱的密碼保護</a></div>
+<div class="head1"><a id="ToC_153" href="#dqx1ids_oat_054" class="toclink">如何管理 OAT 的外掛程式？</a></div>
+<div class="head2"><a id="ToC_154" href="#dqx1ids_oat_000" class="toclink">安裝 OAT 的外掛程式</a></div>
+<div class="head2"><a id="ToC_155" href="#dqx1ids_oat_150" class="toclink">啟用 OAT 的外掛程式</a></div>
+<div class="head2"><a id="ToC_156" href="#dqx1ids_oat_115" class="toclink">升級 OAT 的外掛程式</a></div>
+<div class="head2"><a id="ToC_157" href="#dqx1ids_oat_116" class="toclink">停用 OAT 的外掛程式</a></div>
+<div class="head2"><a id="ToC_158" href="#dqx1ids_oat_149" class="toclink">解除安裝 OAT 的外掛程式</a></div>
+<div class="head2"><a id="ToC_159" href="#dqx1ids_oat_151" class="toclink">idsadmin 類別函數</a></div>
+<div class="head3"><a id="ToC_160" href="#dqx1ids_oat_152" class="toclink">isreadonly 函數</a></div>
+<div class="head3"><a id="ToC_165" href="#dqx1ids_oat_153" class="toclink">get_database 函數</a></div>
+<div class="head3"><a id="ToC_169" href="#dqx1ids_oat_154" class="toclink">load_lang 函數</a></div>
+<div class="head3"><a id="ToC_173" href="#dqx1ids_oat_155" class="toclink">lang 函數</a></div>
+<div class="head3"><a id="ToC_177" href="#dqx1ids_oat_177" class="toclink">error 函數</a></div>
+<div class="head3"><a id="ToC_181" href="#dqx1ids_oat_178" class="toclink">status 函數</a></div>
+<div class="head3"><a id="ToC_184" href="#dqx1ids_oat_179" class="toclink">format_units 函數</a></div>
+<div class="head3"><a id="ToC_188" href="#dqx1ids_oat_180" class="toclink">setCurrMenuItem 函數</a></div>
+<div class="head2"><a id="ToC_192" href="#dqx1ids_oat_181" class="toclink">output 類別</a></div>
+<div class="head3"><a id="ToC_193" href="#dqx1ids_oat_182" class="toclink">set_pagetitle 函數</a></div>
+<div class="head3"><a id="ToC_196" href="#dqx1ids_oat_183" class="toclink">add_to_output 函數</a></div>
+<div class="head1"><a id="ToC_199" href="#dqx1ids_oat_060" class="toclink">如何自訂 OAT 的主功能表？</a></div>
+<div class="head1"><a id="ToC_200" href="#dqx1ids_cm_not" class="toclink">注意事項</a></div>
+<div class="head2"><a id="ToC_201" href="#dqx1trademarks" class="toclink">商標</a></div>
+<div class="head2"><a id="ToC_202" href="#dqx1ids_oat_016" class="toclink">著作權</a></div>
+</div>
+<h1 id="dqx1ids_oat.dita"><a href="#ToC_1">IBM OpenAdmin Tool (OAT) for Informix</a></h1>
+<div>
+<p>IBM&reg; OpenAdmin Tool (OAT) for Informix&reg; 是一種 Web 應用程式，用來管理及分析 IBM Informix 資料庫伺服器的效能。您可以在 Web 伺服器上的單一 OAT 安裝中管理多個資料庫伺服器實例。您可以透過任何瀏覽器存取 Web 伺服器，以管理所有資料庫伺服器。
+</p></div>
+<p>
+<p>您可以使用 OAT，來監視及分析資料庫伺服器的效能：
+</p>
+<ul>
+<li>監視具有詳細狀態報告、警示資訊及訊息日誌的資料庫伺服器狀態。</li>
+<li>使用 IBM Informix Health Advisor Plug-in for OpenAdmin Tool (OAT)，來分析資料庫伺服器的狀態，並透過電子郵件寄送結果及建議。</li>
+<li>隨時間經過監視具有效能歷程詳細圖表的效能統計資料。</li>
+<li>監視由「排程器」收集的資料，其使用 SQL 陳述式執行管理作業與收集資訊。</li>
+<li>在資料庫及資料庫伺服器上的表格執行系統驗證檢查。</li>
+<li>執行系統報告及 <strong><strong><samp>onstat</samp></strong></strong> 指令。</li>
+<li>在 SQL 陳述式往下探查，以檢閱效能明細及最佳化 SQL 陳述式。
+</li></ul>
+<p>您可以使用 OAT，來執行下列管理作業：</p>
+<ul>
+<li>管理資料庫伺服器，包括配置、使用者專用權及虛擬處理器。
+</li>
+<li>建立及監視「排程器」作業。</li>
+<li>管理「自動更新統計資料 (AUS)」維護系統，可自動化更新統計資料以最佳化查詢效能。</li>
+<li>使用 IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT) 來管理資料庫及表格物件。</li>
+<li>管理儲存體空間及管理資料庫伺服器的回復日誌。</li>
+<li>透過壓縮及重組表格以最佳化空間。</li>
+<li>備份資料庫伺服器的儲存體空間。</li>
+<li>執行 SQL 陳述式及執行表格上的標準 SQL 作業。</li>
+<li>監視及管理高可用性叢集。</li>
+<li>使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 來監視及管理 Enterprise Replication。</li>
+<li>使用 IBM Informix TimeSeries Plug-in for OpenAdmin Tool (OAT) 來監視及管理與時間序列相關的資料庫物件，包括表格、索引和虛擬表格，以及 <strong>TimeSeries</strong> 子類型、儲存器和行事曆。</li></ul>
+<p>當安裝 IBM Informix Client Software Development Kit (Client SDK) 時，或當安裝 IBM Informix 軟體組並選取 Client SDK 或 IBM Informix Connect 時，您可以安裝 IBM OpenAdmin Tool (OAT) for Informix。
+此安裝程式包括 OAT、Health Advisor 外掛程式、「抄寫」外掛程式、「綱目管理程式」外掛程式及 TimeSeries 外掛程式，以及所有執行 OAT 所需的軟體，包括預先配置的 Apache、PHP 及 PDO_informix。</p>
+<p>或者，您可以從「IBM Informix 免費產品下載」頁面取得 OpenAdmin Tool Community Edition：<a href="https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd" target="_blank">https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd（在新視窗中開啟）</a>。OpenAdmin Tool Community Edition 包括 OAT 及選用的外掛程式，但不包括支援軟體。
+此版本必須手動安裝。</p></p>
+<h1 id="dqx1ids_oat_019"><a href="#ToC_2">如何連接至資料庫伺服器？</a></h1>
+<h2 id="dqx1ids_oat_007"><a href="#ToC_3">登入資料庫伺服器</a></h2>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 來登入資料庫伺服器。</p></div>
+<p>
+<p>若要登入資料庫伺服器，請執行下列動作：</p></p>
+<ol type="1">
+<li>跳至 OAT 根 URL：http://<em>server name</em>/openadmin。</li>
+<li>在 OAT 的<strong>登入</strong>頁面中，完成<strong>伺服器詳細資料</strong>欄位。</li>
+<li>按一下<strong>登入</strong>。</li></ol>
+<p>
+<p>這時會透過 OAT 將您連接至資料庫伺服器。</p></p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq7">
+<span class="notetitle">提示：</span><span class="notebody">或者，如果資料庫伺服器是 OAT 群組的成員，則您可以登入 OAT 群組來連接至資料庫伺服器。OAT 群組包含資料庫伺服器的連線資訊。登入 OAT 群組時，您可以切換到群組中的其他資料庫伺服器，而不需再次登入。</span></div></div>
+<h2 id="dqx1ids_oat_009"><a href="#ToC_4">登入 OAT 群組中的資料庫伺服器</a></h2>
+<div>
+<p>登入 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組，來連接至資料庫伺服器。</p></div>
+<p>
+<p>OAT 群組包含資料庫伺服器的連線資訊。登入 OAT 群組時，您可以切換到群組中的其他資料庫伺服器，而不需再次登入。</p></p>
+<p>
+<p>若要登入 OAT 群組中的資料庫伺服器，請執行下列動作：</p></p>
+<ol type="1">
+<li>跳至 OAT 根 URL：http://<em>server name</em>/openadmin。</li>
+<li>在 OAT <strong>登入</strong>頁面的 <strong>OAT 群組</strong>清單中，選取包含您要連接之伺服器的 OAT 群組。</li>
+<li>輸入 OAT 群組的密碼。</li>
+<li>按一下<strong>取得伺服器</strong>。</li>
+<li>從伺服器清單中選取伺服器。<strong>伺服器詳細資料</strong>欄位中會填入伺服器資訊。</li>
+<li>如果某人已提供或輸入有效的密碼，請在<strong>伺服器詳細資料</strong>區域的<strong>密碼</strong>欄位中，接受密碼，然後按一下<strong>登入</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="#dqx1ids_oat_003">新增 OAT 群組</a>
+<br />定義 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組。</li></ul>
+<h2 id="dqx1ids_oat_010"><a href="#ToC_5">切換至 OAT 群組中的其他伺服器</a></h2>
+<div>
+<p>連接至 IBM OpenAdmin Tool (OAT) for Informix 中資料庫伺服器連線群組內的其他資料庫伺服器。</p></div>
+<p>
+<p>OAT 群組包含資料庫伺服器的連線資訊。登入 OAT 群組時，您可以切換到群組中的其他資料庫伺服器，而不需再次登入。</p></p>
+<p>
+<p>若要切換至 OAT 群組中的其他資料庫伺服器，請選取 OAT 頁面頂端的<strong>伺服器</strong>清單中的資料庫伺服器。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="#dqx1ids_oat_003">新增 OAT 群組</a>
+<br />定義 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組。</li></ul>
+<h1 id="dqx1ids_oat_061"><a href="#ToC_6">如何監視資料庫伺服器活動？</a></h1>
+<h2 id="dqx1ids_oat_166"><a href="#ToC_7">監視資料庫伺服器狀態</a></h2>
+<div>
+<p>即時監視特定資料庫伺服器的狀態，或同時檢視 OAT 群組中所有伺服器的狀態。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>您可以使用儀表板來監視特定資料庫伺服器的狀態。此儀表板會顯示記憶體及空間用量、鎖定、交易及查詢的數目，以及具有最多讀取數及寫入數的表格。</p>
+<p>您可以在多台伺服器的儀表板上檢視 OAT 群組中所有資料庫伺服器的狀態。從這個儀表板中，您可以跳至 IBM OpenAdmin Tool (OAT) for Informix 中的其他頁面，以取得相關資訊。</p></p>
+<p>
+<p>若要監視資料庫伺服器狀態，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>儀表板</strong>。</li>
+<li>若要重新整理儀表板，請按一下重新整理圖示或變更更新頻率。</li></ol>
+<h2 id="dqx1ids_oat_175"><a href="#ToC_8">自訂儀表板</a></h2>
+<div>
+<p>變更儀表板針對特定資料庫伺服器顯示的狀態資訊。</p></div><a id="idx3"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq17">
+<span class="notetitle">必要條件：</span><span class="notebody">如果 IBM OpenAdmin Tool (OAT) for Informix 中的<strong>管理</strong>功能表受到密碼保護，則您需要密碼才能執行此作業。</span></div></div>
+<p>
+<p>OAT 儀表板會顯示資料庫伺服器的相關資訊；例如，記憶體用量及交易數。您可以自訂儀表板，來指定要顯示的資料庫伺服器相關資訊。</p></p>
+<p>
+<p>若要自訂儀表板，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 中的<strong>管理</strong>功能表上，按一下<strong>儀表板管理程式</strong>。</li>
+<li>若要開啟儀表板的佈置編輯器，請按兩下儀表板。</li></ol>
+<h2 id="dqx1ids_oat_176"><a href="#ToC_9">修改儀表板的狀態臨界值</a></h2>
+<div>
+<p>修改多台伺服器儀表板上所顯示之狀態指示器的臨界值。</p></div><a id="idx4"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq22">
+<span class="notetitle">必要條件：</span><span class="notebody">必須安裝 IBM Informix Health Advisor Plug-in for OpenAdmin Tool (OAT)。</span></div></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 中的多台伺服器儀表板會顯示 OAT 群組中資料庫伺服器的狀態指示器。
+比方說，如果資料庫伺服器上 dbspace 的可用空間低於指定的臨界值，則會針對資料庫伺服器顯示警告指示器。</p>
+<p>您可以修改記憶體、空間及 I/O 總計的片段百分比的狀態臨界值。這些臨界值是來自 Health Advisor 外掛程式的預設值。</p></p>
+<p>
+<p>若要修改儀表板的狀態臨界值，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>在<strong>設定檔</strong>頁面上，驗證現行設定檔是否為預設設定檔。</li>
+<li>按一下<strong>警示</strong>標籤。</li>
+<li>修改下列任一個警示的臨界值：
+
+<table id="wq26" width="90%" summary="此表格中的每一列說明可供選擇的選項。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq27" align="left"><strong>Health Advisor 外掛程式警示臨界值</strong></th>
+<th id="wq28" align="left">儀表板狀態臨界值</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>OS 可用記憶體</strong></td>
+<td headers="wq28"><strong>記憶體</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>Dbspace 可用空間</strong></td>
+<td headers="wq28"><strong>空間</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>片段 I/O 作業數</strong></td>
+<td headers="wq28"><strong>I/O</strong>：<strong>I/O 總計的片段百分比</strong></td>
+</tr>
+</tbody>
+</table></li></ol>
+<h2 id="dqx1ids_oat_167"><a href="#ToC_10">監視警示及事件警示</a></h2>
+<div>
+<p>監視由資料庫伺服器所產生的事件警示，以及由「作業排程器」所產生或由內建作業和感應器所產生的警示。</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>若要監視警示及事件警示，請執行下列動作：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>性能檢測中心</strong> &gt; <strong>警示</strong>。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0674.htm#ids_adr_0674" target="_blank">事件警示參數（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0676.htm#ids_adr_0676" target="_blank">事件警示 ID（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0275.htm#ids_adr_0275" target="_blank">ph_alert 表格（管理參照手冊）</a></li></ul>
+<h2 id="dqx1ids_oat_057"><a href="#ToC_11">檢閱管理指令歷程</a></h2>
+<div>
+<p>檢閱在資料庫伺服器上執行的 SQL 管理 API 功能，包括執行指令的使用者、指令執行的時間、指令本身及資料庫伺服器所傳回訊息等相關資訊。
+</p></div><a id="idx7"></a><a id="idx8"></a>
+<p>
+<p>若要檢閱管理指令，請執行下列動作：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>日誌</strong> &gt; <strong>管理指令</strong>。</p></p>
+<h2 id="dqx1ids_oat_160"><a href="#ToC_12">監視線上訊息日誌</a></h2>
+<div>
+<p>檢閱資料庫伺服器的線上訊息日誌中最近的部分。</p></div><a id="idx9"></a><a id="idx10"></a>
+<p>
+<p>若要監視線上訊息日誌，請執行下列動作：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>日誌</strong> &gt; <strong>線上日誌</strong>。錯誤會以紅色強調顯示，警告則以黃色來強調顯示。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">錯誤訊息（管理參照手冊）</a></li></ul>
+<h2 id="dqx1ids_oat_161"><a href="#ToC_13">刪除線上訊息日誌</a></h2>
+<div>
+<p>刪除或截斷資料庫伺服器的線上訊息日誌檔。</p></div><a id="idx11"></a><a id="idx12"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq33">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_161__d8639e117">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 版。</span></span></div></div>
+<p>
+<p>若要刪除線上訊息日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>日誌</strong> &gt; <strong>線上日誌</strong>。</li>
+<li>請執行下列一項動作：<ul>
+<li>若要刪除日誌檔，請按一下<strong>刪除</strong>。</li>
+<li>若要刪除日誌檔中的訊息，但是保留日誌檔，請按一下<strong>截斷</strong>。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_162"><a href="#ToC_14">循環線上訊息日誌</a></h2>
+<div>
+<p>啟用、停用或修改資料庫伺服器的線上訊息日誌檔的自動循環。</p></div><a id="idx13"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq37">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_162__d8714e117">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 版。</span></span></div></div>
+<p>
+<p>您可以藉由配置自動日誌循環，來控制線上訊息日誌檔的大小。
+當線上訊息日誌循環時，資料庫伺服器會切換至新的線上訊息日誌檔，並且將前一個日誌檔的 ID 號碼加一。達到日誌檔數目上限時，會刪除具有最高 ID 的日誌檔。</p></p>
+<p>
+<p>若要循環線上訊息日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>日誌</strong> &gt; <strong>線上日誌</strong>。</li>
+<li>按一下<strong>線上訊息日誌循環</strong>標籤。您可以啟用或停用作業、修改排程，或編輯決定日誌檔數目上限的參數。</li></ol>
+<h2 id="dqx1ids_oat_163"><a href="#ToC_15">監視 ON-Bar 活動日誌</a></h2>
+<div>
+<p>檢閱資料庫伺服器的 ON-Bar 活動日誌。</p></div><a id="idx14"></a><a id="idx15"></a>
+<p>
+<p>若要監視 ON-Bar 活動日誌，請執行下列動作：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>日誌</strong> &gt; <strong>ON-Bar 活動</strong>。錯誤會以紅色強調顯示，警告則以黃色來強調顯示。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">錯誤訊息（管理參照手冊）</a></li></ul>
+<h2 id="dqx1ids_oat_164"><a href="#ToC_16">刪除 ON-Bar 活動日誌</a></h2>
+<div>
+<p>刪除或截斷資料庫伺服器的 ON-Bar 活動日誌檔。</p></div><a id="idx16"></a><a id="idx17"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq43">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_164__d8824e117">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 版。</span></span></div></div>
+<p>
+<p>若要刪除 ON-Bar 活動日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>日誌</strong> &gt; <strong>ON-Bar 活動</strong>。</li>
+<li>請執行下列一項動作：<ul>
+<li>若要刪除日誌檔，請按一下<strong>刪除</strong>。</li>
+<li>若要刪除日誌檔中的訊息，但是保留日誌檔，請按一下<strong>截斷</strong>。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_165"><a href="#ToC_17">循環 ON-Bar 活動日誌</a></h2>
+<div>
+<p>啟用、停用或修改資料庫伺服器的 ON-Bar 活動日誌檔的自動循環。</p></div><a id="idx18"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq47">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_165__d8899e117">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 版。</span></span></div></div>
+<p>
+<p>您可以藉由配置自動日誌循環，來控制日誌檔的大小。
+當日誌循環時，資料庫伺服器會切換至新的日誌檔，並且將前一個日誌檔的 ID 號碼加一。達到日誌檔數目上限時，會刪除具有最高 ID 的日誌檔。</p></p>
+<p>
+<p>若要循環 ON-Bar 活動日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>日誌</strong> &gt; <strong>ON-Bar 活動</strong>。</li>
+<li>按一下 <strong>ON-Bar 活動日誌循環</strong>標籤。您可以啟用或停用作業、修改排程，或編輯決定日誌檔數目上限的參數。</li></ol>
+<h1 id="dqx1ids_oat_079"><a href="#ToC_18">如何管理系統空間？</a></h1>
+<h2 id="dqx1ids_oat_143"><a href="#ToC_19">監視空間用量</a></h2>
+<div>
+<p>檢閱資料庫伺服器的空間用量及儲存體空間的相關資訊。若為特定儲存體空間，請檢閱空間用量和最佳化，及空間中的片段、表格及索引的相關資訊。</p></div><a id="idx19"></a><a id="idx20"></a>
+<p>
+<p>若要監視空間用量，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。頁面會顯示關於資料庫伺服器的空間用量資訊畫面。</li>
+<li>若要顯示相關資訊，請按一下畫面中的展開按鈕，以展開畫面。</li>
+<li>若要顯示特定儲存體空間的相關資訊，請在清單中選取空間。頁面即會顯示該空間的空間用量資訊畫面。</li>
+<li>若要顯示更多選取空間的相關資訊，請展開畫面。</li></ol>
+<h2 id="dqx1ids_oat_127"><a href="#ToC_20">管理空間用量</a></h2>
+<div>
+<p>管理資料庫伺服器的儲存體空間。</p></div>
+<h3 id="dqx1ids_oat_017"><a href="#ToC_21">建立空間</a></h3>
+<div>
+<p>建立資料庫伺服器的 dbspace、暫時 dbspace、blobspace 或 sbspace。</p></div><a id="idx21"></a><a id="idx22"></a>
+<p>
+<p>當您使用 IBM OpenAdmin Tool (OAT) for Informix 來建立空間時，也可以將空間設為可擴充。必要時，資料庫伺服器會新增或延伸片段，自動擴充儲存體空間的大小。
+自動儲存體供應需要 IBM Informix 11.70 版。</p></p>
+<p>
+<p>若要建立空間，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>建立空間</strong>。</li>
+<li>完成<strong>建立空間</strong>頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_021.htm#ids_sapi_021" target="_blank">create dbspace 引數：建立 dbspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_022.htm#ids_sapi_022" target="_blank">create sbspace 引數：建立 sbspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_019.htm#ids_sapi_019" target="_blank">create blobspace 引數：建立 blobspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_023.htm#ids_sapi_023" target="_blank">create tempdbspace 引數：建立 tempdbspace（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_134"><a href="#ToC_22">修改空間</a></h3>
+<div>
+<p>指定資料庫伺服器是否可在需要時，新增或延伸片段來擴充儲存體空間的大小。
+設定伺服器可用來擴充空間的大小下限。</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq57">
+<span class="notetitle">必要條件：</span><span class="notebody">此動作需要 IBM Informix 11.70 版。</span></div></div>
+<p>
+<p>若要修改空間，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>空間</strong>畫面。</li>
+<li>在<strong>空間</strong>頁面中，選取空間。</li>
+<li>按一下<strong>修改</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_106.htm#ids_sapi_106" target="_blank">modify space sp_sizes 引數：修改儲存體空間的建立或延伸大小（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_126"><a href="#ToC_23">捨棄空間</a></h3>
+<div>
+<p>捨棄 dbspace、tempdbspace、blobspace 或 sbspace。</p></div><a id="idx25"></a><a id="idx26"></a>
+<p>
+<p>捨棄空間時，您可選取某個選項，將釋放出的空間歸還給儲存區。對於儲存區，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</p></p>
+<p>
+<p>若要捨棄空間，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>空間</strong>畫面。</li>
+<li>在<strong>空間</strong>頁面中，選取空間。</li>
+<li>按一下<strong>捨棄</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_084.htm#ids_sapi_084" target="_blank">drop dbspace 引數：捨棄 dbspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_027.htm#ids_sapi_027" target="_blank">drop sbspace 引數：捨棄 sbspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_024.htm#ids_sapi_024" target="_blank">drop blobspace 引數：捨棄 blobspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_028.htm#ids_sapi_028" target="_blank">drop tempdbspace 引數：捨棄 tempdbspace（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_116.htm#ids_sapi_116" target="_blank">drop dbspace to storagepool 引數：將空的 dbspace 歸還給儲存區（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_119.htm#ids_sapi_119" target="_blank">drop sbspace to storagepool 引數：將空的 dbspace 中的空間歸還給儲存區（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_117.htm#ids_sapi_117" target="_blank">drop tempdbspace to storagepool 引數：將空的 tempdbspace 歸還給儲存區（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_135"><a href="#ToC_24">新增片段</a></h3>
+<div>
+<p>將片段新增到儲存體空間。</p></div><a id="idx27"></a><a id="idx28"></a>
+<p>
+<p>新增片段時，可指定路徑或從儲存區建立片段。對於儲存區，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</p></p>
+<p>
+<p>若要新增片段，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>片段</strong>畫面。</li>
+<li>按一下<strong>新增</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p>
+<p>若要使片段成為可延伸片段，請選取片段，然後按一下<strong>修改</strong>。此動作需要 IBM Informix 11.70 版。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk 引數：新增片段（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_115.htm#ids_sapi_115" target="_blank">create chunk from storagepool 引數：從儲存區建立片段（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_136"><a href="#ToC_25">修改片段</a></h3>
+<div>
+<p>指定資料庫伺服器是否可在需要時自動延伸片段。</p></div><a id="idx29"></a><a id="idx30"></a><a id="idx31"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq68">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_136__d6760e103">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>
+<p>若要修改片段：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>片段</strong>畫面。</li>
+<li>在<strong>片段</strong>頁面中，選取片段。</li>
+<li>按一下<strong>修改</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_104.htm#ids_sapi_104" target="_blank">modify chunk extendable 引數：將片段標示為可延伸（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_105.htm#ids_sapi_105" target="_blank">modify chunk extendable off 引數：將片段標示為不可延伸（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_138"><a href="#ToC_26">捨棄片段</a></h3>
+<div>
+<p>捨棄來自 dbspace、blobspace 或 sbspace 的片段。</p></div><a id="idx32"></a><a id="idx33"></a>
+<p>
+<p>捨棄片段時，您可選取某個選項，將釋放出的空間歸還給儲存區。對於儲存區，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</p></p>
+<p>
+<p>若要捨棄片段：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>片段</strong>畫面。</li>
+<li>在<strong>片段</strong>頁面中，選取片段。</li>
+<li>按一下<strong>捨棄</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_025.htm#ids_sapi_025" target="_blank">drop chunk 引數：捨棄片段（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_121.htm#ids_sapi_121" target="_blank">drop chunk to storagepool 引數：將空的片段空間歸還給儲存區（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h2 id="dqx1ids_oat_142"><a href="#ToC_27">自動新增儲存體空間</a></h2>
+<div>
+<p>配置資料庫伺服器，以在需要更多空間時自動新增儲存體空間。將項目新增至伺服器可用來擴充空間的儲存區中，並設定擴充空間的臨界值。</p></div>
+<div>
+<div class="note-noindent" id="wq74">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_142__d7301e98">自動儲存體供應需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>配置伺服器來自動新增儲存體空間，就可更有效地使用空間，並確保依需要來配置空間。</p>
+<p>在需要更多空間時，伺服器會將片段新增到儲存體空間，以擴充儲存體空間（dbspace、sbspace、blobspace、tempdbspace 或暫時 sbspace）。如果儲存體空間是非鏡映的 dbspace 或 tempdbspace，伺服器還可以延伸儲存體空間中的片段。您也可以立即延伸空間或延伸片段，而不等候資料庫伺服器採取行動。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動擴充空間或延伸可延伸片段（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_144"><a href="#ToC_28">配置資料庫伺服器來自動新增儲存體空間</a></h3>
+<div>
+<p>配置資料庫伺服器，以在需要空間時自動擴充儲存體空間，並設定擴充空間的臨界值。</p></div><a id="idx34"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq76">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_144__d7378e98">自動儲存體供應需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>
+<p>若要配置資料庫伺服器來新增儲存體空間，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>儲存區</strong>畫面。</li>
+<li>選取<strong>自動空間擴充</strong>。</li>
+<li>指定可用空間臨界值及等待時間。</li>
+<li>按一下<strong>儲存</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1097.htm#ids_adr_1097" target="_blank">SP_AUTOEXPAND 配置參數（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1038.htm#ids_adr_1038" target="_blank">SP_THRESHOLD 配置參數（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1039.htm#ids_adr_1039" target="_blank">SP_WAITTIME 配置參數（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_139"><a href="#ToC_29">新增儲存區項目</a></h3>
+<div>
+<p>定義資料庫伺服器可使用的目錄、檔案及裝置，以在需要更多空間時，自動新增儲存體空間。</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq80">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_139__d7043e98">自動儲存體供應需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>
+<p>若要新增儲存區項目，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>儲存區</strong>畫面。</li>
+<li>按一下<strong>新增</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_100.htm#ids_sapi_100" target="_blank">storagepool add 引數：新增儲存區項目（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_140"><a href="#ToC_30">修改儲存區項目</a></h3>
+<div>
+<p>修改資料庫伺服器可使用的目錄、檔案及裝置，以在需要更多空間時，自動新增儲存體空間。</p></div><a id="idx37"></a><a id="idx38"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq84">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_140__d7123e98">自動儲存體供應需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>
+<p>若要修改儲存區項目，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>儲存區</strong>畫面。</li>
+<li>在<strong>儲存區</strong>頁面上，選取儲存區項目。</li>
+<li>按一下<strong>修改</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_102.htm#ids_sapi_102" target="_blank">storagepool modify 引數：修改儲存區項目（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_141"><a href="#ToC_31">刪除儲存區項目</a></h3>
+<div>
+<p>刪除儲存區中的所有項目，或刪除發生錯誤的項目、完整項目或特定項目。</p></div><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq88">
+<span class="notetitle">必要條件：</span><span class="notebody"><span id="dqx1ids_oat_141__d7212e98">自動儲存體供應需要 IBM Informix 11.70 版。</span></span></div></div>
+<p>
+<p>若要刪除儲存區項目，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</li>
+<li>展開<strong>儲存區</strong>畫面。</li>
+<li>在<strong>儲存區</strong>頁面上，選取儲存區項目。
+
+<p>若要刪除所有發生錯誤的項目或完整項目，按一下<strong>顯示</strong> &gt; <strong>錯誤項目</strong>或<strong>完整項目</strong>，然後選取所有項目。</p></li>
+<li>按一下<strong>刪除</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_101.htm#ids_sapi_101" target="_blank">storagepool delete 引數：刪除一個儲存區項目（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_109.htm#ids_sapi_109" target="_blank">storagepool purge 引數：刪除儲存區項目（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_055"><a href="#ToC_32">擴充空間</a></h3>
+<div>
+<p>立即擴充空間，而不等候資料庫伺服器自動擴充空間。</p></div><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq92">
+<span class="notetitle">必要條件：</span><span class="notebody">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。空間必須是可擴充的，而且儲存區必須包含資料庫伺服器可用來擴充空間的項目。若要使空間成為可擴充空間，請按一下<strong>修改</strong>。若要新增儲存區項目，請展開<strong>儲存區</strong>畫面，然後按一下<strong>新增</strong>。</span></div></div>
+<p>
+<p>若要擴充空間，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_055__d2578e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>展開<strong>空間</strong>畫面。</li>
+<li>在<strong>空間</strong>頁面中，選取空間。</li>
+<li>按一下<strong>擴充</strong>。</li>
+<li>選用項目：若要指定擴充的空間量或新增至空間的片斷量，請在<strong>擴充空間</strong>頁面上，按一下<strong>顯示進階選項</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="#dqx1ids_oat_134">修改空間</a>
+<br />指定資料庫伺服器是否可在需要時，新增或延伸片段來擴充儲存體空間的大小。
+設定伺服器可用來擴充空間的大小下限。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動擴充空間或延伸可延伸片段（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_108.htm#ids_sapi_108" target="_blank">modify space expand 引數：擴充空間的大小（SQL 管理 API）（管理參照手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk 引數：新增片段（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_137"><a href="#ToC_33">延伸片段</a></h3>
+<div>
+<p>立即延伸片段，而不等候資料庫伺服器自動延伸片段。</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq96">
+<span class="notetitle">必要條件：</span><span class="notebody">對於此動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。片段必須是可延伸的，而且儲存區必須包含資料庫伺服器可用來延伸片段的項目。若要使片段成為可延伸片段，請按一下<strong>修改</strong>。若要新增儲存區項目，請展開<strong>儲存區</strong>畫面，然後按一下<strong>新增</strong>。</span></div></div>
+<p>
+<p>若要延伸片段，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_137__d6856e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>展開<strong>片段</strong>畫面。</li>
+<li>在<strong>片段</strong>頁面中，選取片段。</li>
+<li>按一下<strong>延伸</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自動空間管理（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="#dqx1ids_oat_136">修改片段</a>
+<br />指定資料庫伺服器是否可在需要時自動延伸片段。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手動擴充空間或延伸可延伸片段（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_103.htm#ids_sapi_103" target="_blank">modify chunk extend 引數：延伸片段的大小（SQL 管理 API）（管理參照手冊）</a></li></ul>
+<h2 id="dqx1ids_oat_128.dita"><a href="#ToC_34">最佳化儲存體空間</a></h2>
+<div>
+<p>壓縮表格、索引及片段、合併可用空間（重新壓縮）、將可用空間歸還給 dbspace（收縮），以及合併範圍（重組）。解壓縮表格及表格片段。</p></div><a id="idx45"></a><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<div>
+<div class="note-noindent" id="wq99">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。對於重組動作，OAT 需要 Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<h3 id="dqx1ids_oat_146"><a href="#ToC_35">自動最佳化儲存體空間</a></h3>
+<div>
+<p>配置資料庫伺服器來自動壓縮、重新壓縮、收縮及重組表格及片段，以最佳化資料儲存體。</p></div><a id="idx53"></a><a id="idx54"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq101">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化原則，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>您可以啟用或停用實作最佳化原則的「排程器」作業。這些原則會設定臨界值，以決定何時壓縮、收縮、重新壓縮及重組表格與片段。您可更新這些作業中的每一個作業之臨界值，或停用任一作業。
+您也可以指定「排程器」作業執行的時間。</p>
+<p>壓縮表格及表格片段時，會包括簡式大型物件（TEXT 及 BYTE 資料類型）。</p></p>
+<p>
+<p>若要配置資料庫伺服器以自動最佳化儲存體空間，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_146__d7537e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>按一下<strong>伺服器最佳化原則</strong>標籤。</li>
+<li>完成頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1380.htm#ids_admin_1380" target="_blank">儲存體最佳化（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_129"><a href="#ToC_36">估計壓縮</a></h3>
+<div>
+<p>更新您在表格、索引及片段中壓縮資料時，可以節省的空間估計量。</p></div><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq106">
+<span class="notetitle">必要條件：</span><span class="notebody">若要估計表格及表格片段的壓縮節省空間，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。若要針對索引以及包含簡式大型物件（TEXT 及 BYTE 資料類型）的表格估計壓縮，OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>您可以使用壓縮估計值，來決定是否要壓縮表格、索引或片段中的資料。表格及表格片段的壓縮估計值包括簡式大型物件（TEXT 及 BYTE 資料類型）。如果壓縮估計值可用，則它會顯示在<strong>空間管理</strong> &gt; <strong>儲存體</strong> &gt; <strong>表格及索引</strong>頁面上的<strong>空間用量</strong>直欄中。浮動說明中會指出最新估計值的時間。</p></p>
+<p>
+<p>若要更新壓縮估計值，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_129__d5856e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格、索引及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>更新資料</strong>。</li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h3 id="dqx1ids_oat_130"><a href="#ToC_37">壓縮資料</a></h3>
+<div>
+<p>壓縮表格、索引及片段中的資料，以減少所需的磁碟空間量。</p></div><a id="idx58"></a><a id="idx59"></a><a id="idx60"></a><a id="idx61"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq112">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。對於重組動作，OAT 需要 Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<div>
+<div class="note-noindent" id="wq113">
+<span class="notetitle">重要事項：</span><span class="notebody">表格或表格片段必須至少包含 2000 列。若為索引或索引片段，索引或索引片段所根據的表格必須至少包含 2000 列。
+分離的 B-Tree 索引（包括唯一、重複及樹系的樹狀結構索引）可以進行壓縮。</span></div></div>
+<p>
+<p>當您壓縮表格、索引或片段時，壓縮作業會建立壓縮定義檔，而且只會壓縮列中的資料而不會移動列。壓縮表格時，您可以包括相同 dbspace 的分割區中所儲存的簡式大型物件（TEXT 及 BYTE 資料類型）。
+執行壓縮作業時，您可以合併可用空間（重新壓縮），並將可用空間歸還給 dbspace（收縮）。您也可以減少範圍數（重組）。</p></p>
+<p>
+<p>若要壓縮表格、索引及片段，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_130__d5990e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格、索引及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>最佳化空間</strong>。</li>
+<li>選取<strong>壓縮</strong>。</li>
+<li>選用項目：選取其他動作：
+
+<ul>
+<li>若要合併可用空間，請選取<strong>重新壓縮</strong>。</li>
+<li>若要將任何可用空間歸還給 dbspace，請選取<strong>收縮</strong>。</li>
+<li>若要減少範圍數，請選取<strong>重組範圍</strong>。</li></ul></li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h3 id="dqx1ids_oat_131"><a href="#ToC_38">解壓縮表格及表格片段</a></h3>
+<div>
+<p>解壓縮之前壓縮的表格及表格片段。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq119">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。</span></div></div>
+<p>
+<p>解壓縮也會停止插入及更新作業的壓縮、停用壓縮定義檔，以及配置新的頁面給無法容納於原始頁面的列。</p></p>
+<p>
+<p>若要解壓縮表格及表格片段，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_131__d6154e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>最佳化空間</strong>。</li>
+<li>選取<strong>解壓縮</strong>。</li>
+<li>選用項目：若要在表格及片段上設定獨佔鎖定，以防止在解壓縮作業期間存取資料，請選取<strong>離線</strong>。</li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h3 id="dqx1ids_oat_132"><a href="#ToC_39">合併可用空間</a></h3>
+<div>
+<p>當您壓縮表格、索引及片段中的可用空間時，合併（重新壓縮）這些可用空間，或者分開合併這些空間但不進行壓縮。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq125">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。對於重組動作，OAT 需要 Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要合併可用空間，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_132__d6257e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格、索引及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>最佳化空間</strong>。</li>
+<li>選取<strong>重新壓縮</strong>。</li>
+<li>選用項目：選取其他動作：
+
+<ul>
+<li>若要壓縮表格、索引及片段，請選取<strong>壓縮</strong>。</li>
+<li>若要將任何可用空間歸還給 dbspace，請選取<strong>收縮</strong>。</li>
+<li>若要減少範圍數，請選取<strong>重組範圍</strong>。</li></ul></li>
+<li>選用項目：若要在表格、索引及片段上設定獨佔鎖定，以防止在重新壓縮作業期間存取資料，請選取<strong>離線</strong>。
+當您壓縮表格、索引及片段或收縮空間時，會停用此選項。</li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h3 id="dqx1ids_oat_133"><a href="#ToC_40">將可用空間歸還給 dbspace</a></h3>
+<div>
+<p>將可用空間歸還給 dbspace（收縮空間），以減少表格、索引及片段的大小。</p></div><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq131">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。對於重組動作，OAT 需要 Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>若要將可用空間歸還給 dbspace，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_133__d6414e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格、索引及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>最佳化空間</strong>。</li>
+<li>選取<strong>收縮</strong>。</li>
+<li>選用項目：選取其他動作：
+
+<ul>
+<li>若要壓縮表格、索引及片段，請選取<strong>壓縮</strong>。</li>
+<li>若要合併可用空間，請選取<strong>重新壓縮</strong>。</li>
+<li>若要減少範圍數，請選取<strong>重組範圍</strong>。</li></ul></li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h3 id="dqx1ids_oat_119"><a href="#ToC_41">重組範圍</a></h3>
+<div>
+<p>合併表格、索引及片段中的範圍，以減少範圍數並增進查詢效能。</p></div><a id="idx67"></a><a id="idx68"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq136">
+<span class="notetitle">必要條件：</span><span class="notebody">對於空間最佳化動作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 版或更新版本。對於重組動作，OAT 需要 Informix 11.70 版或更新版本。若要壓縮索引及簡式大型物件（TEXT 及 BYTE 資料類型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要重組範圍，請執行下列動作：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_119__d5145e313">在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>儲存體</strong>。</span></li>
+<li>選取資料庫伺服器，並展開<strong>表格及索引</strong>畫面。</li>
+<li>選取表格、索引及片段。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>最佳化空間</strong>。</li>
+<li>選取<strong>重組範圍</strong>。</li>
+<li>選用項目：選取其他動作：
+
+<ul>
+<li>若要壓縮表格、索引及片段，請選取<strong>壓縮</strong>。</li>
+<li>若要合併可用空間，請選取<strong>重新壓縮</strong>。</li>
+<li>若要將任何可用空間歸還給 dbspace，請選取<strong>收縮</strong>。</li></ul></li></ol>
+<p>
+<p>若要監視作業的進度，請按一下<strong>作業狀態</strong>標籤。</p></p>
+<h2 id="dqx1ids_oat_084"><a href="#ToC_42">管理回復日誌</a></h2>
+<div>
+<p>檢視及管理資料庫伺服器的檢查點、邏輯日誌及實體日誌。</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<h3 id="dqx1ids_oat_088"><a href="#ToC_43">檢視檢查點歷程</a></h3>
+<div>
+<p>檢視檢查點歷程，以判定基本檢查點資訊，包括執行緒等待檢查點完成的次數。</p></div>
+<p>
+<p>您可以使用檢查點歷程來判定檢查點間隔是否適當。</p></p>
+<p>
+<p>若要檢視檢查點歷程，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>檢查點</strong>標籤。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">檢查點（管理手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1153.htm#ids_adr_1153" target="_blank">sysckptinfo（管理參照手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_087"><a href="#ToC_44">強制檢查點</a></h3>
+<div>
+<p>強制封鎖或未封鎖的檢查點，該檢查點會將緩衝區清除到磁碟。</p></div>
+<p>
+<p>若要強制檢查點，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在<strong>檢查點</strong>區段中，選取檢查點的類型：<ul>
+<li><strong>一般檢查點</strong>：選取這個選項可以強制未封鎖的檢查點。</li>
+<li><strong>同步檢查點</strong>：選取這個選項可以強制封鎖的檢查點。</li></ul></li>
+<li>按一下<strong>執行檢查點</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">檢查點（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_089"><a href="#ToC_45">檢視邏輯日誌統計資料</a></h3>
+<div>
+<p>檢視邏輯日誌統計資料，包括大小、使用百分比、狀態及填寫率。</p></div>
+<p>
+<p>若要檢視邏輯日誌統計資料，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>邏輯日誌</strong>標籤。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理邏輯日誌檔（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_080"><a href="#ToC_46">新增邏輯日誌</a></h3>
+<div>
+<p>新增邏輯日誌至 dbspace。</p></div>
+<p>
+<p>若要新增邏輯日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在<strong>新增邏輯日誌</strong>區段中，完成下列欄位：<ul>
+<li><strong>Dbspace 名稱</strong>：選取要新增日誌的目標 dbspace。</li>
+<li><strong>大小</strong>：輸入日誌的大小，以 KB 為單位。</li>
+<li><strong>數目</strong>：輸入要新增的日誌數目。</li>
+<li><strong>屬性</strong>：指定要將日誌新增至現行日誌之後，或是新增至現有日誌的結尾。</li></ul></li>
+<li>按一下<strong>新增</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0740.htm#ids_admin_0740" target="_blank">手動新增邏輯日誌檔（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_148"><a href="#ToC_47">切換至下一個邏輯日誌</a></h3>
+<div>
+<p>立即切換至下一個邏輯日誌。</p></div>
+<p>
+<p>您可以在現行日誌檔變滿之前，先切換至下一個邏輯日誌。</p></p>
+<p>
+<p>若要切換至下一個邏輯日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在<strong>切換邏輯日誌</strong>區段中，按一下<strong>切換</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理邏輯日誌檔（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_083"><a href="#ToC_48">捨棄邏輯日誌</a></h3>
+<div>
+<p>捨棄邏輯日誌並增加 dbspace 內可用的磁碟空間量。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq154">
+<span class="notetitle">重要事項：</span><span class="notebody">您無法捨棄目前使用中的日誌檔，或是包含前次檢查點記錄的日誌檔。</span></div></div>
+<p>
+<p>日誌檔的狀態決定資料庫伺服器釋放磁碟空間的時間：</p></p>
+<ul>
+<li>若您捨棄從未寫入的日誌檔，資料庫伺服器會刪除日誌，並立即釋放空間。</li>
+<li>若您捨棄已使用的日誌檔，資料庫伺服器會將它標示為已刪除。在您進行包含日誌檔及根 dbspace 的 dbspace 的完整備份之後，資料庫伺服器會刪除日誌檔並釋放空間。</li></ul>
+<p>
+<p>若要捨棄邏輯日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在<strong>捨棄邏輯日誌</strong>區段中，從邏輯日誌數目的清單中選取日誌。</li>
+<li>按一下<strong>捨棄</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理邏輯日誌檔（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_090"><a href="#ToC_49">檢視實體日誌統計資料</a></h3>
+<div>
+<p>檢視實體日誌統計資料，包括日誌大小、使用量及緩衝區大小。</p></div>
+<p>
+<p>若要檢視實體日誌統計資料，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>實體日誌</strong>標籤。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">管理實體日誌（管理手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_086"><a href="#ToC_50">移動實體日誌</a></h3>
+<div>
+<p>將實體日誌移動至不同的 dbspace，並變更日誌的大小。</p></div>
+<p>
+<p>若要移動實體日誌，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>回復日誌</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在<strong>移動實體日誌</strong>區段中，完成下列欄位：<ul>
+<li><strong>Dbspace 名稱</strong>：選取要移入日誌的目標 dbspace。</li>
+<li><strong>大小</strong>：輸入日誌的大小，以 KB 為單位。</li>
+<li><strong>確認</strong>：選取<strong>移動實體日誌</strong>，以確認移動。</li></ul></li>
+<li>按一下<strong>移動</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">管理實體日誌（管理手冊）</a></li></ul>
+<h1 id="dqx1ids_oat_001"><a href="#ToC_51">如何管理資料庫伺服器？</a></h1>
+<h2 id="dqx1ids_oat_170"><a href="#ToC_52">管理伺服器記憶體</a></h2>
+<div>
+<p>檢視伺服器記憶體用量的相關資訊，以及啟用低記憶體自動管理。
+配置在記憶體極低時資料庫伺服器所要採取的動作，以繼續進行處理。
+</p></div><a id="idx72"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq163">
+<span class="notetitle">必要條件：</span><span class="notebody">對於自動記憶體不足管理，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 版或更新版本，或 Informix 11.50.xC9。</span></div></div>
+<p>
+<p>若要管理伺服器記憶體，請執行下列動作：</p>
+<p>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>記憶體管理程式</strong>。</p></p>
+<h2 id="dqx1ids_oat_004"><a href="#ToC_53">管理高可用性叢集</a></h2>
+<h3 id="dqx1ids_oat_059"><a href="#ToC_54">配置高可用性叢集的連線功能</a></h3>
+<div>
+<p>在 IBM Informix 伺服器上設定 <strong>idsd</strong> 常駐程式，以便能夠啟動高可用性叢集中的伺服器，或新增共用磁碟次要 (SDS) 伺服器。</p></div><a id="idx73"></a><a id="idx74"></a><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq166">
+<span class="notetitle">必要條件：</span><span class="notebody">您在 Informix 伺服器上需要具有 root 專用權，才能執行此程序。</span></div></div>
+<p>
+<p>若要使用 IBM OpenAdmin Tool (OAT) for Informix 來執行遠端管理作業，包括啟動高可用性叢集中的伺服器或新增次要伺服器，請在 Informix 伺服器上安裝並配置下列常駐程式：</p></p>
+<ul>
+<li>網際網路服務常駐程式，例如 UNIX 及 Linux 的 <strong>xinetd</strong> 或 <strong>inetd</strong> 網際網路常駐程式。</li>
+<li><strong>idsd</strong>，這是一個可讓 OAT 啟動遠端 Informix 伺服器的常駐程序。
+此常駐程式位於 Informix 伺服器所在的同一部主機，而且必須位於使用者 <strong>informix</strong> 可存取的目錄中。
+<strong>idsd</strong> 常駐程式是透過 <strong>xinetd</strong> 或 <strong>inetd</strong> 常駐程式來呼叫。</li></ul>
+<div>
+<div class="note-noindent" id="dqx1ids_oat_059__dup0002">
+<span class="notetitle">重要事項：</span><span class="notebody">在 Windows 或 MAC OS 上，您無法使用遠端管理功能。</span></div></div>
+<p>
+<p>若要配置網際網路常駐程式及 <strong>idsd</strong> 常駐程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>確保 <strong>idsd</strong> 常駐程式已隨著 Informix 一起安裝，而且安裝在 <samp><em>$INFORMIXDIR</em>/bin</samp> 目錄中。確保擁有者及群組是 <strong>informix</strong>，且許可權是 <samp class="xph">0754</samp>：
+<p>例如：
+</p>
+<pre class="xmp"><code>[informix@myhost]/usr/informix/bin% ls -la idsd 
+    -rwxr-xr--  1 informix informix 23717 Oct 15 16:34 idsd</code></pre></li>
+<li>在伺服器上，設定連線的加密。若為 Informix 11.70，請使用 IBM JRE 1.6 或更新版本中所提供的 GSKCmd 工具。若為舊版的 Informix，請使用 IBM Global Security Kit 中包含的 GSKCmd 工具。
+
+<ol type="a">
+<li>根據您的平台，使用下列 GSKCmd 指令行參數來建立金鑰資料庫：<pre class="xmp"><code><em>command</em> -keydb -create -db <span class="synph"><span class="var">keydb_name</span></span>.kdb -pw <span class="synph"><span class="var">password</span></span> -type cms -stash</code></pre>例如：
+<pre class="xmp"><code>gsk8cmd -keydb -create -db mydb.kdb -pw mypassw0rd -type cms -stash</code></pre></li>
+<li>使用下列 GSKCmd 指令行參數來建立自簽憑證：<pre class="xmp"><code><em>command</em> -cert -create -db <em>keydb_name</em>.kdb -pw <em>password</em> -label <em>label_text</em>
+    -dn <em>distinguished name</em> 
+    -size &lt;1024 | 512 | 2048&gt; -default_cert yes </code></pre>其中：<em>distinguished
+name</em> 是 X.500 識別名稱。<em>distinguished
+name</em> 是以引號括住的字串，格式如下：CN=<em>common
+name</em>（必要）, O=<em>organization</em>, OU=<em>organization
+unit</em>, L=<em>location</em>, ST=<em>state or
+province</em>, C=<em>country</em>。
+
+
+<p>例如：
+</p>
+<pre class="xmp"><code>gsk8cmd -cert -create -db mydb.kdb -pw mypassw0rd -label mycertificatelabel
+    -dn "CN=lenexa.ibm.com,O=ibm,OU=IBM HTTP Server,ST=KS,C=US" 
+    -size 1024 -default_cert yes</code></pre></li></ol></li>
+<li>開啟 <strong>xinetd</strong> 或 <strong>inetd</strong> 配置檔來編輯，並新增 <strong>idsd</strong> 常駐程式的服務項目。<div>
+<div class="note-noindent" id="wq171">
+<span class="notetitle">重要事項：</span><span class="notebody">如果 GSKIT_VERSION 配置參數設為非預設的 GSKit 版本，請在 <strong>xinetd</strong> 或 <strong>inetd</strong> 服務項目中新增 <samp class="xph">-g <em>NUMBER</em></samp> 伺服器程式引數，以指定 GSKit 版本。</span></div></div>
+
+<ul>
+<li>若為 <strong>xinetd</strong> 伺服器常駐程式：<samp class="xph">/etc/xinetd.conf</samp>。<pre class="xmp"><code>service idsd
+             {
+             disable = no
+             socket_type = stream 
+             protocol = tcp
+             user = root
+             wait = no 	    
+             server = /usr/informix/bin/idsd
+             server_args = -l /usr/informix/idsd.log 
+                 -k /usr/informix/idsd -n idsd_label
+             }</code></pre></li>
+<li>若為 UNIX 上的 <strong>inetd</strong> 伺服器常駐程式：<samp class="xph">/etc/inetd.conf</samp>：
+<pre class="xmp"><code>idsd stream tcp nowait root /usr/informix/bin/idsd idsd -l /usr/informix/idsd.log  -k /usr/informix/idsd -n idsd_label</code></pre></li></ul></li>
+<li>開啟檔案 <samp class="xph">/etc/services</samp> 來編輯，並新增名為 <samp class="xph">idsd</samp> 的服務。例如：
+<pre class="xmp"><code>idsd 10000/tcp</code></pre>此範例中使用埠號 10000，但您可以使用未在使用中且大於 1024 的其他任何埠。
+不過，名稱必須是 <samp class="xph">idsd</samp>，且通訊協定必須是 <samp class="xph">tcp</samp>。</li>
+<li>重新啟動 <strong>xinetd</strong> 或 <strong>inetd</strong> 服務常駐程式。在大部分實作中，您可以將 SIGHUP 信號傳送至執行中的 <strong>inetd</strong> 或 <strong>xinetd</strong> 處理程序，以重新啟動。然而，在部分 Linux 平台上，您可以用 root 身分執行下列指令：
+<pre class="xmp"><code>service xinetd restart</code></pre></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_ssl_006.htm#ids_ssl_006" target="_blank">IBM Global Security Kit（安全手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_058"><a href="#ToC_55">尋找高可用性叢集</a></h3>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix，來識別高可用性叢集，以便監視及管理它們。</p></div><a id="idx83"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq173">
+<span class="notetitle">必要條件：</span><span class="notebody">將高可用性叢集中的伺服器新增至 OAT 群組。
+只有 OAT 群組中的伺服器所屬的叢集，才會顯示在<strong>高可用性叢集</strong>頁面上。
+若要將伺服器新增至 OAT 群組，請在 OAT <strong>管理</strong>功能表上，按一下<strong>管理連線</strong> &gt; <strong>新增連線</strong>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要尋找高可用性叢集，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>抄寫</strong> &gt; <strong>叢集</strong>。</li>
+<li>按一下<strong>尋找叢集</strong>。
+
+<p>找到叢集時，<strong>找到的叢集</strong>頁面隨即出現，其中列出叢集中的伺服器：主要、高可用性資料抄寫 (HDR)、共用磁碟次要 (SDS) 及遠端獨立式次要 (RSS)。</p></li>
+<li>接受叢集的預設名稱，或輸入新的、唯一的名稱。對找到的每一個叢集，重複此步驟。</li></ol>
+<h3 id="dqx1ids_oat_020"><a href="#ToC_56">檢視叢集的拓蹼</a></h3>
+<div>
+<p>檢視高可用性叢集的拓蹼。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq178">
+<span class="notetitle">必要條件：</span><span class="notebody">在 IBM OpenAdmin Tool (OAT) for Informix 中尋找並命名叢集。
+請參閱<a href="#dqx1ids_oat_058">尋找高可用性叢集</a>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要檢視叢集的拓蹼，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>抄寫</strong> &gt; <strong>叢集</strong>。</li>
+<li>在<strong>叢集</strong>下，選取叢集。<strong>叢集拓蹼</strong>及伺服器清單隨即出現。
+
+
+<p>選定叢集的拓蹼會顯示主要伺服器與次要伺服器之間的關係，
+次要伺服器包括高可用性資料抄寫 (HDR)、共用磁碟次要 (SDS) 及遠端獨立式次要 (RSS) 伺服器。</p></li></ol>
+<h3 id="dqx1ids_oat_021"><a href="#ToC_57">檢視叢集中的伺服器狀態</a></h3>
+<div>
+<p>檢視高可用性叢集中的伺服器狀態。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq183">
+<span class="notetitle">必要條件：</span><span class="notebody">在 IBM OpenAdmin Tool (OAT) for Informix 中尋找並命名叢集。
+請參閱<a href="#dqx1ids_oat_058">尋找高可用性叢集</a>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要檢視叢集中的伺服器狀態，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>抄寫</strong> &gt; <strong>叢集</strong>。</li>
+<li>在<strong>叢集</strong>下，選取叢集。<strong>叢集拓蹼</strong>及伺服器清單隨即出現。
+<p>清單會顯示主要伺服器及次要伺服器的狀態，
+次要伺服器包括高可用性資料抄寫 (HDR)、共用磁碟次要 (SDS) 及遠端獨立式次要 (RSS) 伺服器。</p></li></ol>
+<h3 id="dqx1ids_oat_022"><a href="#ToC_58">新增 SDS 伺服器</a></h3>
+<div>
+<p>將共用磁碟次要 (SDS) 伺服器連線新增至高可用性叢集。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq188">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 中尋找並命名叢集。
+請參閱<a href="#dqx1ids_oat_058">尋找高可用性叢集</a>。</li>
+<li>在 Informix 資料庫伺服器上安裝及配置 <strong>idsd</strong> 常駐程式。請參閱<a href="#dqx1ids_oat_059">配置高可用性叢集的連線功能</a>。</li></ul></span></div></div>
+<p>
+<p>
+<br />若要新增 SDS 伺服器連線，請執行下列動作：<br /></p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>抄寫</strong> &gt; <strong>叢集</strong>。</li>
+<li>在<strong>叢集</strong>下，選取叢集。叢集拓蹼及伺服器清單隨即顯示。
+</li>
+<li>按一下<strong>新增 SDS</strong>。完成<strong>新增 SDS 伺服器</strong>精靈。</li></ol>
+<h3 id="dqx1ids_oat_023"><a href="#ToC_59">啟動或停止叢集中的伺服器</a></h3>
+<div>
+<p>將高可用性叢集中的伺服器變更為線上或離線模式。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq192">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 中尋找並命名叢集。
+請參閱<a href="#dqx1ids_oat_058">尋找高可用性叢集</a>。</li>
+<li>在 Informix 資料庫伺服器上安裝及配置 <strong>idsd</strong> 常駐程式。請參閱<a href="#dqx1ids_oat_059">配置高可用性叢集的連線功能</a>。</li></ul></span></div></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq194">
+<span class="notetitle">重要事項：</span><span class="notebody">當您停止共用磁碟次要 (SDS) 伺服器時，該伺服器不會再顯示於 OAT 的叢集中。若要將 SDS 伺服器還原到 OAT 顯示畫面，請手動重新啟動伺服器，然後按一下<strong>尋找叢集</strong>。
+找到叢集後，SDS 伺服器會顯示在叢集的伺服器清單中。</span></div></div>
+<p>
+<p>若要啟動或停止次要伺服器，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>抄寫</strong> &gt; <strong>叢集</strong>。</li>
+<li>在<strong>叢集</strong>下，選取叢集。叢集拓蹼及伺服器清單隨即顯示。
+</li>
+<li>在伺服器清單中，對於您要停止或啟動的伺服器，按一下<strong>修改</strong>。<strong>修改伺服器</strong>頁面會顯示伺服器的狀態，並指出您是否可以啟動或停止伺服器。</li>
+<li>按一下<strong>啟動</strong>或<strong>停止</strong>。</li></ol>
+<h2 id="dqx1ids_oat_168"><a href="#ToC_60">管理時間序列</a></h2>
+<div>
+<p>檢閱及管理與時間序列相關的資料庫物件，包括表格、索引和虛擬表格，以及 TimeSeries 子類型、儲存器和行事曆。</p></div>
+<p>
+<p>時間序列是一組資料，這些資料會在隨時間而改變時被記錄下來。
+每一個項目都有時間戳記，並儲存在資料庫中。Informix TimeSeries 延伸提供了 <strong>TimeSeries</strong> 資料類型、儲存器及行事曆來管理時間序列資料。</p></p>
+<p>
+<p>若要管理時間序列，請執行下列動作：</p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。即會顯示資料庫伺服器中包含時間序列資料的資料庫及表格清單。</p>
+<ul>
+<li>若要檢視資料庫或表格的相關資訊，請在清單中按一下資料庫或表格。</li>
+<li>若要檢視關於特定資料庫或表格物件的其他資訊，請按一下物件畫面上的展開圖示。</li></ul></p>
+<h2 id="dqx1ids_oat_027"><a href="#ToC_61">管理資料庫伺服器的配置參數</a></h2>
+<div>
+<p>針對現行資料庫伺服器，檢視及變更 <strong>onconfig</strong> 檔案中的參數值。</p></div>
+<p>
+<p>您可以使用 IBM OpenAdmin Tool (OAT) for Informix，來變更現行 IBM Informix 資料庫伺服器的許多配置參數值。</p></p>
+<p>
+<p>若要管理資料庫伺服器的配置參數，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>配置</strong>。</li>
+<li>若要過濾參數的清單，請從<strong>顯示</strong>清單中選取視圖：<ul>
+<li><strong>基本</strong>：顯示可套用至所有環境的基本配置參數。</li>
+<li><strong>動態</strong>：顯示您可以變更的參數。</li>
+<li><strong>建議</strong>：顯示其設定未遵循 OAT 建議的參數。
+所有設定未遵循建議的參數，都會以黃色來強調顯示。
+</li></ul></li>
+<li>若要檢視或變更參數，請按一下參數名稱。</li></ol>
+<h2 id="dqx1ids_oat_077"><a href="#ToC_62">執行系統驗證檢查</a></h2>
+<h3 id="dqx1ids_oat_030"><a href="#ToC_63">在現行伺服器上驗證一個以上資料庫或表格</a></h3>
+<p>
+<p>展開<strong>伺服器管理</strong> &gt; <strong>系統驗證</strong>。</p>
+<p>若要在現行伺服器上驗證一個以上資料庫或表格，請使用下列其中一個選項：</p></p>
+<p></p>
+<ul>
+<li>若要驗證所有資料庫的所有表格，請在<strong>資料庫名稱</strong>欄位中選取<strong>全部</strong>，並在<strong>表格名稱</strong>欄位中選取<strong>全部</strong>。</li>
+<li>若要驗證其中一個資料庫的所有表格，請在<strong>資料庫名稱</strong>欄位中選取資料庫的名稱，並在<strong>表格名稱</strong>欄位中選取<strong>全部</strong>。</li>
+<li>若要驗證一個特定的表格，請在<strong>資料庫名稱</strong>欄位中選取資料庫的名稱，並在<strong>表格名稱</strong>欄位中選取表格的名稱。
+如果您不知道表格所在的資料庫，請保留<strong>資料庫名稱</strong>欄位中的預設值<strong>全部</strong>。
+然後在<strong>表格名稱</strong>清單中搜尋表格的名稱。</li></ul>
+<h3 id="dqx1ids_oat_031"><a href="#ToC_64">在現行伺服器上，驗證一個以上 dbspace 的範圍</a></h3>
+<p></p>
+<ol type="1">
+<li>展開<strong>伺服器管理</strong> &gt; <strong>系統驗證</strong>。</li>
+<li>選取 dbspace 的名稱，或選取「全部」以選取所有 dbspace。</li>
+<li>按一下<strong>檢查範圍</strong>。已檢查的每一個範圍會顯示狀態訊息，以確認是否順利完成檢查。</li></ol>
+<h2 id="dqx1ids_oat_078"><a href="#ToC_65">管理虛擬處理器</a></h2>
+<p>
+<p>展開<strong>伺服器管理</strong> &gt; <strong>虛擬處理器</strong>。處理器的廣域視圖隨即出現。</p>
+<p>您可以從這個頁面中新增或捨棄虛擬處理器，或從 <strong>VP 類別</strong>表格中選取要檢視的虛擬處理器類別。您也可以從<strong>類別的 VP</strong> 頁面中新增或捨棄類別。</p></p>
+<h2 id="dqx1ids_oat_096"><a href="#ToC_66">授與和限制使用者專用權</a></h2>
+<h3 id="dqx1ids_oat_032"><a href="#ToC_67">將資料庫層次專用權授與使用者</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>選取資料庫。</li>
+<li>在<strong>授與新專用權</strong>下，輸入使用者名稱，如 <samp>myUserName</samp>。
+
+<p>在 Windows 中，使用者名稱不能超過 20 個字元。</p></li>
+<li>為使用者選取資料庫層次專用權。</li>
+<li>按一下<strong>授權</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">資料庫層次專用權（資料庫設計手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_033"><a href="#ToC_68">修改使用者的資料庫層次專用權</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>選取資料庫。</li>
+<li>在包含使用者名稱的列中，按一下<strong>修改</strong>。</li>
+<li>為使用者選取資料庫層次專用權。若要取消使用者的專用權，請選取<strong>撤消</strong>。</li>
+<li>按一下<strong>儲存</strong>以修改專用權。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">資料庫層次專用權（資料庫設計手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_034"><a href="#ToC_69">撤銷使用者的資料庫層次專用權</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>選取資料庫。</li>
+<li>在包含使用者名稱的列中，按一下<strong>修改</strong>。</li>
+<li>從清單中選取<strong>撤消</strong>。</li>
+<li>按一下<strong>儲存</strong>。</li></ol>
+<h3 id="dqx1ids_oat_093"><a href="#ToC_70">將表格層次專用權授與使用者</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>表格層次專用權</strong>標籤。</li>
+<li>選取資料庫。</li>
+<li>在<strong>授與新專用權</strong>下，輸入使用者名稱，如 <samp>myUserName</samp>。</li>
+<li>選取表格。</li>
+<li>為使用者選取一個以上表格層次的專用權。</li>
+<li>按一下<strong>授權</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">表格層次專用權（資料庫設計手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_035"><a href="#ToC_71">修改使用者的表格層次專用權</a></h3><a id="idx84"></a>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>表格層次專用權</strong>標籤。</li>
+<li>選取資料庫。</li>
+<li>在包含使用者名稱的列中，按一下<strong>修改</strong>。</li>
+<li>選取或清除使用者的專用權勾選框。
+</li>
+<li>按一下<strong>儲存</strong>以修改專用權。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">表格層次專用權（資料庫設計手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_036"><a href="#ToC_72">撤銷使用者的表格層次專用權</a></h3><a id="idx85"></a>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>表格層次專用權</strong>標籤。</li>
+<li>選取資料庫。</li>
+<li>在包含使用者名稱的列中，按一下<strong>修改</strong>。</li>
+<li>清除使用者的所有專用權勾選框。</li>
+<li>按一下<strong>儲存</strong>以修改專用權。</li></ol>
+<h2 id="dqx1ids_oat_120"><a href="#ToC_73">管理內部使用者（UNIX、Linux）</a></h2>
+<div>
+<p>新增及修改內部已鑑別使用者，以及在主機作業系統上沒有帳戶的使用者。</p></div>
+<div>
+<div class="note-noindent" id="wq219">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>若為內部使用者，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>若要使用資料庫鑑別建立使用者，需要 Informix 11.70.xC2 或更新版本。</li>
+<li>若為 Informix 11.70.xC3 或更新版本，必須先設定對映使用者代理檔案，才能建立內部使用者。</li></ul></span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">內部使用者（UNIX、Linux）（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">連線安全（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">對映使用者在 allowed.surrogates 檔中代理（UNIX、Linux）（安全手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_124"><a href="#ToC_74">在伺服器上設定內部使用者的專用權（UNIX、Linux）</a></h3>
+<div>
+<p>在資料庫伺服器上，選取要套用至所有內部使用者的專用權層次。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq221">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>若為內部使用者，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>若要使用資料庫鑑別建立使用者，需要 Informix 11.70.xC2 或更新版本。</li>
+<li>若為 Informix 11.70.xC3 或更新版本，必須先設定對映使用者代理檔案，才能建立內部使用者。</li></ul></span></div></div>
+<p>
+<p>若要在伺服器上設定內部使用者的專用權，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>內部使用者</strong>標籤。</li>
+<li>選取內部使用者的專用權層次：<strong>基本</strong>或<strong>管理</strong>。
+選取<strong>無專用權</strong>，停用該伺服器的使用者對映。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">內部使用者（UNIX、Linux）（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">連線安全（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">對映使用者在 allowed.surrogates 檔中代理（UNIX、Linux）（安全手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_121"><a href="#ToC_75">新增內部使用者（UNIX、Linux）</a></h3>
+<div>
+<p>新增內部已鑑別使用者，以及在主機作業系統上沒有帳戶的使用者。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq225">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>若為內部使用者，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>若要使用資料庫鑑別建立使用者，需要 Informix 11.70.xC2 或更新版本。</li>
+<li>若為 Informix 11.70.xC3 或更新版本，必須先設定對映使用者代理檔案，才能建立內部使用者。</li></ul></span></div></div>
+<p><span id="dqx1ids_oat_121__d5348e715">新增使用者，資料庫伺服器藉由檢查他們的認證與資料庫伺服器所儲存之雜湊式密碼，來進行鑑別。
+不論使用者是否在資料庫伺服器主機電腦上具有作業系統帳戶，都請藉由將每個使用者對映到適當的使用者和群組專用權，將資料庫存取權授與給使用者。</span>
+可將使用者對映到作業系統使用者名稱或作業系統使用者 ID 及一個以上的群組 ID。在 <samp class="xph">/etc/informix/allowed.surrogates</samp>
+中指定的作業系統使用者名稱、使用者 ID、群組名稱及群組 ID，控制了哪些作業系統使用者和群組可以充當被對映使用者的代理。</p>
+<p>
+<p>若要新增內部使用者，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>內部使用者</strong>標籤。</li>
+<li>按一下<strong>新增</strong>，並完成<strong>新增內部使用者</strong>頁面上的欄位。</li></ol>
+<p></p>
+<div>
+<div class="note-noindent" id="wq229">
+<span class="notetitle">謹記：</span><span class="notebody">在此伺服器上，設定要套用至所有內部使用者的專用權層次。套用至所有內部使用者的專用權，其優先順序高於用於個別內部使用者的專用權。</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">內部使用者（UNIX、Linux）（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">連線安全（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">對映使用者在 allowed.surrogates 檔中代理（UNIX、Linux）（安全手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1821.htm#ids_sqs_1821" target="_blank">CREATE USER 陳述式（UNIX、Linux）（SQL 語法）</a></li></ul>
+<h3 id="dqx1ids_oat_122"><a href="#ToC_76">編輯內部使用者（UNIX、Linux）</a></h3>
+<div>
+<p>編輯內部使用者的使用者內容。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq231">
+<span class="notetitle">必要條件：</span><span class="notebody">若為內部使用者，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</span></div></div>
+<p>
+<p>若要編輯內部使用者，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>內部使用者</strong>標籤。</li>
+<li>在清單中選取內部使用者，然後按一下<strong>編輯</strong>。</li>
+<li>編輯<strong>編輯內部使用者</strong>頁面上的欄位。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">內部使用者（UNIX、Linux）（安全手冊）</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">連線安全（安全手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1824.htm#ids_sqs_1824" target="_blank">ALTER USER 陳述式（UNIX、Linux）（SQL 語法）</a></li></ul>
+<h3 id="dqx1ids_oat_123"><a href="#ToC_77">刪除內部使用者（UNIX、Linux）</a></h3>
+<div>
+<p>刪除內部使用者的帳戶。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq235">
+<span class="notetitle">必要條件：</span><span class="notebody">若為內部使用者，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 版。</span></div></div>
+<p>
+<p>若要刪除內部使用者，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>使用者專用權</strong>。</li>
+<li>按一下<strong>內部使用者</strong>標籤。</li>
+<li>在清單中選取內部使用者，然後按一下<strong>刪除</strong>。</li></ol>
+<h2 id="dqx1ids_oat_145"><a href="#ToC_78">建立授信環境定義</a></h2>
+<div>
+<p>建立資料庫的授信環境定義。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq239">
+<span class="notetitle">必要條件：</span><span class="notebody">只有資料庫安全管理者 (DBSECADM) 角色，才能建立、修改或刪除授信環境定義。若為授信環境定義，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</span></div></div>
+<p>
+<p>授信環境定義是一個資料庫物件，它定義授信資料庫連線的內容。在授信連線中，用戶端與伺服器之間的層級可以主張用戶端使用者的身分。
+授信環境定義會針對在中介軟體伺服器或其他應用程式環境中執行的應用程式所存取的資料庫，提供良好的審核監督及安全機制，尤其是當使用者連線包括對資料庫資源的存取，而其專用權有限制或是屬於機密時。
+</p></p>
+<p>
+<p>若要建立授信環境定義，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>授信環境定義</strong>。</li>
+<li>按一下資料庫。</li>
+<li>按一下<strong>動作</strong> &gt; <strong>建立</strong>。</li>
+<li>完成頁面上的欄位。</li></ol>
+<h3 id="dqx1ids_oat_147"><a href="#ToC_79">管理授信環境定義</a></h3>
+<div>
+<p>修改、啟用、停用或刪除資料庫的授信環境定義。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq244">
+<span class="notetitle">必要條件：</span><span class="notebody">只有資料庫安全管理者 (DBSECADM) 角色，才能建立、修改或刪除授信環境定義。若為授信環境定義，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>若要管理授信環境定義，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>授信環境定義</strong>。</li>
+<li>按一下包含授信環境定義的資料庫。</li>
+<li>選取授信環境定義的勾選框。</li>
+<li>按一下<strong>動作</strong>，然後按一下適當的動作。</li></ol>
+<h2 id="dqx1ids_oat_037"><a href="#ToC_80">管理自動更新統計資料</a></h2>
+<div>
+<p>檢閱及調整表格統計資料的「自動更新統計資料 (AUS)」維護系統。</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>AUS 維護系統可識別需要新最佳化統計資料的表格及索引，並執行適當的 UPDATE STATISTICS 陳述式來最佳化查詢效能。根據系統的不同，您可能需要調整 AUS 的到期原則或排程。</p>
+<p>您可以在<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>配置</strong>頁面上，控制及監視 AUS 原則。</p>
+<p>您可以在 <strong>SQL 工具箱</strong> &gt; <strong>綱目管理程式</strong> &gt; <strong>統計資料</strong>頁面上使用 IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT)，來檢閱表格統計資料。</p>
+<h3 id="dqx1ids_oat_038"><a href="#ToC_81">配置及啟用自動更新統計資料</a></h3>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>配置</strong>。</li>
+<li>根據您的系統效能及需求，判斷預設值是否適用於您的系統。
+
+<ol type="a">
+<li>若要指定統計資料重建之間的時間上限，請在 AUS_AGE 參數中輸入天數，例如 30、60 或 90。</li>
+<li>若要指定表格的變更必須達到多少百分比，才能開始重建統計資料，請在 AUS_CHANGE 參數中輸入百分比數字，例如 20 或 50。</li>
+<li>若要指定 AUS 是否使用建議的準則規則，請從 AUS_AUTO_RULES 參數的清單中選取<strong>開啟</strong>或<strong>關閉</strong>。預設值是<strong>開啟</strong>。</li>
+<li>若要指定低於多少列時一律重建統計資料，請在 AUS_SMALL_TABLES 參數中輸入數字。預設值為 100。</li>
+<li>若要指定 PDQ 優先順序，請在 AUS_PDQ 參數中輸入 -1 至 100 的數字。預設值是 10。判斷資料庫伺服器如何使用資源來進行平行處理時，「平行資料庫查詢 (PDQ)」優先順序是其中一個因數。</li>
+<li>若要指定用來執行更新統計資料作業的執行緒數目，請輸入執行緒的數目。OAT 會將這個數目的 AUS 作業提交給「作業排程器」。此選項需要 IBM Informix 11.70 版。</li></ol></li>
+<li>按一下<strong>儲存</strong>以保存您所做的變更。</li>
+<li>若要判斷 AUS 作業是否已啟用，請按一下<strong>資訊</strong>標籤，然後按一下這些作業：<ul>
+<li>自動更新統計資料評估</li>
+<li>自動更新統計資料重新整理<div>
+<div class="note-noindent" id="wq251">
+<span class="notetitle">附註：</span><span class="notebody">如果「自動更新統計資料重新整理」作業沒有可處理的工作，則作業會自行停用。
+下一次執行「自動更新統計資料評估」作業及建立重新整理作業的工作時，評估作業會自動啟用重新整理作業。</span></div></div></li></ul><strong>作業詳細資料</strong>頁面隨即出現。</li>
+<li>向下捲動至<strong>啟用作業</strong>欄位，並確定已選取它。</li>
+<li>在欄位中設定執行時段，以指定作業的執行頻率。由於 AUS 是資源密集的作業，您可以定義特定的執行時段。
+執行時段定義包括開始時間及結束時間，以及一星期中要在那幾天執行。
+依預設，執行時間範圍是每日上午 1:00 &ndash; 上午 5:00。</li>
+<li>按一下<strong>儲存</strong>以儲存任何變更。
+</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_756.htm#ids_prf_756" target="_blank">AUS 到期原則（效能手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_039"><a href="#ToC_82">在伺服器上檢視重新整理作業及評估作業</a></h3>
+<p>
+<p></p></p>
+<p>
+<p>您可以展開<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>清單</strong>，來檢視擱置及已完成的 UPDATE STATISTICS 指令。從清單中選取<strong>擱置指令</strong>或<strong>已完成指令</strong>。<br />如果重新整理作業沒有可處理的工作，重新整理作業會在「排程器」中自行停用。
+下一次執行評估作業及建立重新整理作業的工作時，評估作業會自動啟用重新整理作業。<br /></p></p>
+<h3 id="dqx1ids_oat_040"><a href="#ToC_83">要求立即評估統計資料</a></h3>
+<p>
+<p>展開<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>一般</strong>，然後按一下<strong>重新整理評估</strong>。
+「自動更新統計資料 (AUS)」會分析並納入之前更新項目中的引擎建議與意見，但不會更新統計資料。</p></p>
+<h3 id="dqx1ids_oat_041"><a href="#ToC_84">判斷下次更新統計資料的時間</a></h3>
+<p>
+<p>若要判斷下次更新統計資料的時間，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>一般</strong>。</li>
+<li>在圖形下方，檢閱 <strong>Auto Stats
+將在 ... 執行</strong>欄位，其中指定在下一次更新統計資料之前，還剩下幾小時又幾分鐘。</li></ol>
+<h3 id="dqx1ids_oat_042"><a href="#ToC_85">檢視現行的自動更新統計資料設定</a></h3>
+<p>
+<p>您可以檢視「自動更新統計資料 (AUS)」的下列相關資訊：</p>
+<ul>
+<li>若要判斷資料庫的更新時間，請查看<strong>前次檢查時間</strong>直欄。此值是前次評估哪些表格需要更新統計資料的時間戳記。</li>
+<li>若要判斷現行群組中已啟用 AUS 的資料庫，請查看<strong>資料庫</strong>直欄。</li>
+<li>若要判斷特定資料庫有多少表格遺漏統計資料，請查看<strong>遺漏統計資料的表格</strong>直欄。
+這些表格不符合針對更新統計資料而建議的基本準則。
+<p>統計資料及分佈的最小組合包含在所有索引上執行 LOW（如果沒有索引，則在表格上）、在索引的所有前導索引鍵上執行 HIGH，以及在所有非前導索引鍵上執行 MEDIUM。</p></li>
+<li>若要判斷特定資料庫中有多少表格需要重新整理統計資料，
+請查看<strong>需要重新整理統計資料的小型表格</strong>及<strong>需要重新整理統計資料的大型表格</strong>直欄。</li>
+<li>若要了解資料庫已重新整理多少表格，請查看<strong>已重新整理的表格數</strong>直欄。</li></ul></p>
+<h3 id="dqx1ids_oat_043"><a href="#ToC_86">監視自動更新統計資料設定</a></h3>
+<p></p>
+<ol type="1">
+<li>展開<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>一般</strong>。</li>
+<li>檢閱<strong>資料庫的自動更新統計資料</strong>表格。此表格顯示現行資料庫的統計資料更新狀態。</li></ol>
+<h3 id="dqx1ids_oat_044"><a href="#ToC_87">檢視自動更新統計資料所產生的警示</a></h3>
+<p>
+<p>展開<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>警示</strong>。此頁面顯示在資料庫中執行統計資料時，「自動更新統計資料 (AUS)」已產生的警示。每一個警示依重要程度的彩色圖示（紅、黃、綠）及警示類型（錯誤、警告或參考資訊）分類。</p></p>
+<h3 id="dqx1ids_oat_045"><a href="#ToC_88">清除自動更新統計資料的異常執行結果</a></h3>
+<p>
+<p>展開<strong>伺服器管理</strong> &gt; <strong>自動更新統計資料</strong> &gt; <strong>一般</strong>，然後按一下<strong>清除</strong>。</p></p>
+<h2 id="dqx1ids_oat_156"><a href="#ToC_89">備份資料庫伺服器資料</a></h2>
+<div>
+<p>配置及排定資料庫伺服器的儲存體空間備份。</p></div>
+<div>
+<div class="note-noindent" id="wq262">
+<span class="notetitle">必要條件：</span> <span class="notebody">對於此動作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>在配置及排定備份之前，請先規劃您的回復目標。
+若要針對您資料規劃適當備份保護，請分析資料庫伺服器配置及活動，以及在您的安裝環境可用的備份媒體類型。
+此外，也請考量您對於儲存媒體、磁碟、電腦及控制器等的預算，以及網路的大小。
+</p>
+<p>當您在 OAT 中配置備份時，儲存體空間會根據您設定的排程自動進行備份。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_009.htm#ids_bar_009" target="_blank">備份及還原計劃（備份及還原手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_157"><a href="#ToC_90">使用 ontape 備份資料</a></h3>
+<div>
+<p>使用 <strong><samp>ontape</samp></strong> 公用程式，配置資料庫伺服器的儲存體空間備份。</p></div><a id="idx88"></a><a id="idx89"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq264">
+<span class="notetitle">必要條件：</span> <span class="notebody">對於此動作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>資料庫伺服器提供兩個公用程式，以備份及還原資料：<strong><strong><samp>ontape</samp></strong></strong> 和 ON-Bar。您可以使用 OAT，搭配 <strong><strong><samp>ontape</samp></strong></strong> 來備份儲存體空間。當您在 OAT 中配置備份時，儲存體空間會根據您設定的排程自動進行備份。</p></p>
+<p>
+<p>若要使用 <strong><samp>ontape</samp></strong> 備份資料，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>備份</strong>。</li>
+<li>使用「備份」精靈，以遵循配置備份的指示。
+
+<p>如果已經在 OAT 中配置備份，則不會顯示「備份」精靈。您可以按一下<strong>配置</strong>標籤，以檢閱或變更配置。
+</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_183.htm#ids_bar_183" target="_blank">備份系統（備份及還原手冊）</a></li></ul>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_177.htm#ids_bar_177" target="_blank">ON-Bar 與 ontape 公用程式的比較（備份及還原手冊）</a></li></ul>
+<h3 id="dqx1ids_oat_158"><a href="#ToC_91">變更備份配置及排程</a></h3>
+<div>
+<p>變更資料庫伺服器的儲存體空間備份的配置及排程。</p></div><a id="idx90"></a><a id="idx91"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq269">
+<span class="notetitle">必要條件：</span> <span class="notebody">對於此動作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>當您在 OAT 中配置備份時，儲存體空間會根據您設定的排程自動進行備份。您可以變更備份配置及排程。</p></p>
+<p>
+<p>若要變更備份配置，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>備份</strong>。</li>
+<li>按一下<strong>配置</strong>標籤。</li></ol>
+<h3 id="dqx1ids_oat_159"><a href="#ToC_92">執行隨需備份</a></h3>
+<div>
+<p>提交作業，以立即備份資料庫伺服器的儲存體空間。</p></div><a id="idx92"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq274">
+<span class="notetitle">必要條件：</span> <span class="notebody">對於此動作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>當您在 OAT 中配置備份時，儲存體空間會根據您設定的排程自動進行備份。您也可以依需要執行備份，以使用 OAT 中的備份配置。</p></p>
+<p>
+<p>若要執行隨需備份，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>空間管理</strong> &gt; <strong>備份</strong>。</li>
+<li>按一下<strong>管理</strong>標籤。</li>
+<li>在您要執行備份的橫列中，按一下<strong>備份</strong>。</li></ol>
+<h1 id="dqx1ids_oat_073"><a href="#ToC_93">如何管理「排程器」作業？</a></h1>
+<h2 id="dqx1ids_oat_074"><a href="#ToC_94">新增排程器作業</a></h2>
+<p>
+<p>您可以建立「排程器」作業，以便依指定的時間及頻率來執行作業或感應器。</p>
+<ul>
+<li>作業可讓您依特定的時間或間隔來執行特定的工作。</li>
+<li>感應器可收集並儲存資訊。</li></ul></p>
+<h3 id="dqx1ids_oat_046"><a href="#ToC_95">新增作業</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq280">
+<span class="notetitle">重要事項：</span><span class="notebody">您建立作業當時的時間會影響第一次執行作業的時間。
+
+<ul>
+<li>如果現行時間在指定的啟動和停止時間內，則會立即執行作業。
+後續就依頻率值所指定的間隔來執行。
+因此，舉例來說，假設現行時間在啟動和停止時間內，且頻率設為 15 分鐘，
+則排定作業之後會立即開始第一次執行作業，下一次執行則在 15 分鐘之後。</li>
+<li>不過，如果現行時間不是在啟動和停止時間內，則作業會等到下一次啟動時間才執行，可能在當日或次日。
+例如，假設現行時間是 1:00 a.m.，而下一次啟動時間是 7:00 p.m. (19:00)，則作業會在同一天的 19:00 啟動。</li></ul></span></div></div>
+<p>若要新增作業，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>從「作業排程」頁面中按一下<strong>新增作業</strong>。</li>
+<li>在<strong>您想要新增何種類型的作業？</strong>下按一下<strong>作業</strong>，然後按<strong>下一步</strong>。</li>
+<li>在<strong>作業名稱</strong>欄位中輸入名稱。例如：<samp>MyTask</samp>。</li>
+<li>從<strong>作業群組</strong>清單中選取種類。</li>
+<li>在文字欄位中加入新作業的說明，然後按<strong>下一步</strong>。</li>
+<li>指定容許執行作業的時間範圍，例如，每天從早上 10 點 (10:00) 到晚上 6 點 (18:00)，每小時執行一次。<ol type="a">
+<li>使用 24 小時制來指定時間間隔的開始時間：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">10:00:00</samp>。</li>
+<li>使用 24 小時制來指定時間間隔的停止時間：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">18:00:00</samp>。
+您也可以指定 <samp class="xph">NEVER</samp>。</li>
+<li>以日數、時數及分鐘數，指定在容許的時間間隔內可執行作業的頻率：<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 小時 <samp class="xph">m</samp> 分鐘。例如：0 日 1 小時 00 分鐘。</li></ol></li>
+<li>按<strong>下一步</strong>。</li>
+<li>指定作業要執行的指令陳述式。例如，假設您想要刪除細項作業，您可以輸入下列陳述式：
+<pre class="xmp"><code>delete from ph_task where tk_group='MISC'</code></pre></li>
+<li>按<strong>下一步</strong>。確認頁面隨即出現。</li>
+<li>驗證每一個選擇的輸入項目：<ul>
+<li>如果輸入項目正確，請按一下<strong>完成</strong>，以確認並建立作業。</li>
+<li>按<strong>上一步</strong>，以回到前一頁來更正不正確的值。</li></ul></li></ol>
+<h3 id="dqx1ids_oat_047"><a href="#ToC_96">新增感應器</a></h3>
+<p></p>
+<ol type="1">
+<li>從「作業排程」頁面中，按一下<strong>新增作業</strong>。</li>
+<li>在<strong>您想要新增何種類型的作業？</strong>下按一下<strong>感應器</strong>，然後按<strong>下一步</strong>。</li>
+<li>在<strong>感應器名稱</strong>欄位中輸入名稱。例如：<samp>MySensor</samp>。</li>
+<li>從<strong>感應器群組</strong>清單中選取種類。</li>
+<li>在文字欄位中加入新作業的說明，然後按<strong>下一步</strong>。</li>
+<li>指定容許執行感應器的時間範圍，例如，每天從 10:00 a.m. 到 6:00 p.m.，每小時執行一次。
+
+<ol type="a">
+<li>使用 24 小時制來指定時間範圍的開始時間：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">10:00:00</samp></li>
+<li>使用 24 小時制來指定時間範圍的停止時間：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">18:00:00</samp></li>
+<li>以日數、時數及分鐘數，指定在容許的時間範圍內可執行作業的頻率：<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 小時 <samp class="xph">m</samp> 分鐘。例如：0 日 1 小時 00 分鐘。</li>
+<li>以日數、時數及分鐘數，指定資料刪除時間：
+<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 小時 <samp class="xph">m</samp> 分鐘。例如：1 日 0 小時 0 分鐘。</li></ol></li>
+<li>按<strong>下一步</strong>。</li>
+<li>在<strong>結果表格名稱</strong>欄位中，指定用來保留感應器資料的結果表格名稱。例如：<samp class="xph">MyResults</samp></li>
+<li>按<strong>下一步</strong>。</li>
+<li>在 <strong>SQL 陳述式</strong>欄位中輸入直欄名稱及定義，以完成結果表格的 SQL 陳述式。例如，假設您想要在表格 TaskA_ReturnCode 中收集 taskA（task_id 為 10）的回覆碼，您可以輸入下列 SQL 陳述式：
+<pre class="xmp"><code>create table TaskA_ReturnCode(task_name varchar(20), errorcode integer)</code></pre></li>
+<li>指定感應器要執行的指令陳述式。例如：
+<pre class="xmp"><code>insert into TaskA_ReturnCode values('TaskA', (select run_retcode from ph_run where run_task_id=10))</code></pre></li>
+<li>驗證每一個選擇的輸入項目。
+
+<ul>
+<li>如果輸入項目正確，請按一下<strong>完成</strong>，以確認並建立感應器。</li>
+<li>按<strong>上一步</strong>，以回到前一頁來更新任何不正確的值。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_075"><a href="#ToC_97">啟用排程器作業</a></h2>
+<div>
+<p>啟用已停用的「排程器」作業。</p></div>
+<p>
+<p>若要啟用「排程器」作業，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>展開<strong>作業排程器</strong> &gt; <strong>排程器</strong>。</li>
+<li>按一下作業。作業的<strong>作業詳細資料</strong>頁面隨即出現。</li>
+<li>選取<strong>啟用作業</strong>。</li>
+<li>按一下<strong>儲存</strong>。</li></ol>
+<h2 id="dqx1ids_oat_076"><a href="#ToC_98">變更排程器作業的容許時間間隔</a></h2>
+<p>
+<p>容許的時間間隔是指可以執行作業的時間範圍，例如從 10:00 a.m. 到 6:00 p.m.。</p></p>
+<p></p>
+<ol type="1">
+<li>展開<strong>作業排程器</strong> &gt; <strong>排程器</strong>。「作業詳細資料」頁面中會顯示作業及其排程詳細資訊的清單。</li>
+<li>按一下作業名稱，以變更排程執行時期的頻率或特性。您可以更新作業執行的日數或次數。</li>
+<li>使用 24 小時制來指定時間範圍的開始時間：<samp class="xph">hh:mm:ss</samp>。例如，指定 <samp class="xph">10:00:00</samp> 代表早上 10 點。</li>
+<li>使用 24 小時制來指定時間範圍的停止時間：<samp class="xph">hh:mm:ss</samp>。例如，指定 <samp>18:00:00</samp> 代表晚上 6 點。</li>
+<li>以日數、時數及分鐘數，指定在容許的時間間隔內可執行作業的頻率：<samp class="xph">d</samp> 日 <samp class="xph">h</samp> 小時 <samp class="xph">m</samp> 分鐘；例如：<samp class="xph">0</samp> 日 <samp class="xph">1</samp> 小時 <samp class="xph">00</samp> 分鐘。</li>
+<li>對於您<em>不要</em>執行作業的任何日期，請選取<strong>停用</strong>。</li>
+<li>按一下<strong>儲存</strong>以儲存您所做的變更。</li></ol>
+<h2 id="dqx1ids_oat_015"><a href="#ToC_99">刪除排程器作業</a></h2>
+<p></p>
+<div>
+<div class="note-noindent" id="wq294">
+<span class="notetitle">限制：</span><span class="notebody">無法刪除系統作業。</span></div></div>
+<p>若要刪除使用者定義的作業，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>展開<strong>作業排程器</strong> &gt; <strong>排程器</strong>。</li>
+<li>按一下<strong>刪除作業</strong>。<strong>刪除作業</strong>直欄會新增至「Cron 作業清單」表格。每一個作業都有<strong>刪除</strong>按鈕，但系統作業的「刪除」按鈕會停用。</li>
+<li>找出作業名稱，然後按一下<strong>刪除</strong>。如果作業是關於感應器，則會提示您刪除與感應器相關聯的結果表格。</li>
+<li>決定如何處理表格。
+
+<ul>
+<li>按一下<strong>是</strong>，以刪除結果表格及作業。</li>
+<li>按一下<strong>否</strong>，在刪除作業時保留表格。</li>
+<li>按一下<strong>取消</strong>，以取消刪除作業及表格。</li></ul></li></ol>
+<h1 id="dqx1ids_oat_062"><a href="#ToC_100">如何探索效能資訊？</a></h1>
+<h2 id="dqx1ids_oat_064"><a href="#ToC_101">使用 SQL 瀏覽器來分析查詢效能</a></h2>
+<p>
+<p>您必須開啟 SQL 追蹤，才能使用「SQL 瀏覽器」。</p>
+<p>使用「SQL 瀏覽器」來執行查詢往下探查。「SQL 瀏覽器」會使用 SQL 追蹤，以收集系統上執行的每一個 SQL 陳述式的相關統計資訊，並顯示陳述式歷程。下列章節會說明如何開啟 SQL 追蹤，以及如何使用「SQL 瀏覽器」：</p></p>
+<h3 id="dqx1ids_oat_091"><a href="#ToC_102">開啟 SQL 追蹤</a></h3>
+<p></p>
+<ol type="1">
+<li>導覽至<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。如果 SQL 追蹤不在執行中，則會顯示下列訊息：<samp>SQL
+TRACING 目前關閉。請使用「管理」選項來切回開啟</samp>。</li>
+<li>按一下<strong>管理</strong>，以導覽至「SQL 追蹤設定檔」頁面</li>
+<li>從<strong>追蹤狀態</strong>清單中，選取<strong>開啟</strong>。</li>
+<li>按一下<strong>儲存</strong>以開啟 SQL 追蹤。</li></ol>
+<h3 id="dqx1ids_oat_092"><a href="#ToC_103">關閉 SQL 追蹤</a></h3>
+<p></p>
+<ol type="1">
+<li>導覽至<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。如果 SQL 追蹤已開啟，則您可以選取「SQL 瀏覽器」的標籤。如果 SQL 追蹤已關閉，則會顯示下列訊息：<samp>SQL
+TRACING 目前關閉。請使用「管理」選項來切回開啟</samp>。</li>
+<li>按一下<strong>追蹤管理</strong>標籤，以導覽至「SQL 追蹤設定檔」頁面</li>
+<li>從<strong>追蹤狀態</strong>清單中，選取<strong>關閉</strong>。</li>
+<li>按一下<strong>儲存</strong>以關閉 SQL 追蹤。</li></ol>
+<h3 id="dqx1ids_oat_048"><a href="#ToC_104">指定 SQL 追蹤的選項</a></h3>
+<p>
+<p>「SQL 瀏覽器」顯示現行伺服器上執行的 SQL 陳述式的詳細資訊。
+您可以從<strong>追蹤管理</strong>頁面中，指定「SQL 瀏覽器」中要追蹤及可用的資訊。</p></p>
+<p>
+<p>若要設定「SQL 瀏覽器」詳細資料，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong> &gt; <strong>追蹤管理</strong>。</li>
+<li>指定下列 SQL 追蹤選項：<ul>
+<li>選取廣域或使用者追蹤模式。此選項是針對 IBM Informix 11.50.xC3 以及更新版本而顯示。如需相關資訊，請參閱<a href="#dqx1ids_oat_095">追蹤模式</a>。</li>
+<li>選取<strong>表格名稱</strong>勾選框，以在追蹤資訊中併入表格的名稱。</li>
+<li>選取<strong>程序堆疊</strong>勾選框，以在追蹤資訊中併入程序堆疊。</li>
+<li>選取<strong>主變數</strong>勾選框，以在追蹤資訊中併入主變數的相關資訊。</li>
+<li>選取<strong>清除追蹤緩衝區</strong>勾選框，以在變更及儲存追蹤選項時，清空追蹤緩衝區。</li>
+<li>輸入要追蹤的陳述式數目 (500 - 2147483647)。</li>
+<li>輸入每個 SQL 陳述式的追蹤大小上限（512 - 102400，以位元組為單位）。</li></ul></li>
+<li>按一下<strong>儲存</strong>。</li></ol>
+<h4 id="dqx1ids_oat_095">追蹤模式</h4>
+<p>
+<p><strong>追蹤模式</strong>選項是針對 IBM Informix 11.50.xC3 以及更新版本而顯示。</p></p>
+<p></p>
+<ul>
+<li>選取<strong>廣域</strong>，以追蹤整個伺服器的 SQL 陳述式。
+「SQL 瀏覽器」可以顯示所有資料庫及使用者階段作業的資訊，但不包括在<strong>資料庫追蹤</strong>及<strong>使用者追蹤</strong>清單中指定的階段作業。</li>
+<li>選取<strong>使用者</strong>，以追蹤一連串資料庫或使用者階段作業的 SQL 陳述式。
+「SQL 瀏覽器」只能顯示<strong>資料庫追蹤</strong>及<strong>使用者追蹤</strong>清單中指定的資料庫及使用者階段作業的資訊，除非這些清單空白。
+
+<ul>
+<li>若要顯示<strong>資料庫追蹤</strong>或<strong>使用者追蹤</strong>清單，請按一下<strong>顯示</strong>。若要隱藏清單，請按一下<strong>隱藏</strong>。</li>
+<li>若要修改<strong>資料庫追蹤</strong>清單，請執行下列動作：<ul>
+<li>新增資料庫：從<strong>未追蹤的資料庫</strong>清單中，選取資料庫名稱，然後按一下 <strong>+</strong>。資料庫名稱會顯示於<strong>已追蹤的資料庫</strong>清單中。</li>
+<li>刪除資料庫：從<strong>已追蹤的資料庫</strong>清單中，選取資料庫名稱，然後按一下 <strong>-</strong>。資料庫名稱會顯示於<strong>未追蹤的資料庫</strong>清單中。</li></ul></li>
+<li>若要修改<strong>使用者追蹤</strong>清單，請執行下列動作：<ul>
+<li>新增使用者：從<strong>未追蹤</strong>清單中，選取資料庫名稱，然後按一下 <strong>+</strong>。資料庫名稱會顯示於<strong>已追蹤的資料庫</strong>清單中。</li>
+<li>刪除使用者：從<strong>已追蹤的資料庫</strong>清單中，選取資料庫名稱，然後按一下 <strong>-</strong>。資料庫名稱會顯示於<strong>未追蹤的資料庫</strong>清單中。</li></ul></li></ul></li></ul>
+<h3 id="dqx1ids_oat_049"><a href="#ToC_106">暫停 SQL 追蹤</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq308">
+<span class="notetitle">必要條件：</span><span class="notebody">暫停 SQL 追蹤（而不釋放資源）的選項需要 IBM Informix 11.50.xC3 以及更新版本。</span></div></div>
+<p>
+<p>若要暫停 SQL 追蹤：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong> &gt; <strong>追蹤管理</strong>。</li>
+<li>在<strong>追蹤狀態</strong>清單中，按一下<strong>暫停</strong>。</li>
+<li>按一下<strong>儲存</strong>。已暫停追蹤。</li></ol>
+<h3 id="dqx1ids_oat_050"><a href="#ToC_107">從暫停狀態回復 SQL 追蹤</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq312">
+<span class="notetitle">必要條件：</span><span class="notebody">從暫停狀態回復 SQL 追蹤的選項需要 IBM Informix 11.50.xC3 以及更新版本。</span></div></div>
+<p>
+<p>若要回復 SQL 追蹤：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong> &gt; <strong>追蹤管理</strong>。</li>
+<li>在<strong>追蹤狀態</strong>清單中，按一下<strong>回復</strong>。</li>
+<li>按一下<strong>儲存</strong>。已回復追蹤。</li></ol>
+<h3 id="dqx1ids_oat_105.dita"><a href="#ToC_108">在現用與已儲存的資料之間切換</a></h3>
+<div>
+<p>在現用 SQL 追蹤資料與指定時期內已儲存的 SQL 追蹤資料之間切換。</p></div>
+<p>
+<p>若要檢視 SQL 追蹤資料，您必須開啟 SQL 追蹤。在<strong>追蹤管理</strong>頁面中，請將<strong>追蹤狀態</strong>設為<strong>開啟</strong>。
+請參閱<a href="#dqx1ids_oat_091">開啟 SQL 追蹤</a>。</p>
+<p>若要切換至已儲存的資料，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，展開<strong>效能分析</strong>，然後按一下 <strong>SQL 瀏覽器</strong>。</li>
+<li>若要顯示過去的 SQL 追蹤資料，請按一下<strong>切換至已儲存的資料</strong>。</li>
+<li>若要設定歷程資料的時段，請在<strong>開始</strong>及<strong>結束</strong>欄位中指定日期和時間。</li>
+<li>若要回到現行資料，請按一下<strong>切換至現用資料</strong>。</li></ol>
+<h3 id="dqx1ids_oat_065"><a href="#ToC_109">從活動摘要往下探查</a></h3>
+<div>
+<p>使用查詢往下探查，檢閱關於 SQL 陳述式的統計資訊。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq319">
+<span class="notetitle">必要條件：</span><span class="notebody">對於查詢往下探查，「SQL 追蹤」必須設為<strong>開啟</strong>。
+請參閱<a href="#dqx1ids_oat_091">開啟 SQL 追蹤</a>。</span></div></div>
+<p>
+<p>若要往下探查 SQL 陳述式，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。「SQL 瀏覽器」頁面隨即出現。</li>
+<li>按一下 SQL 陳述式類型的往下探查圖示，或按一下<strong>交易</strong>標籤，然後按一下交易的往下探查圖示。您可以按一下往下探查圖示，繼續顯示更詳細的資訊。</li></ol>
+<h3 id="dqx1ids_oat_067"><a href="#ToC_110">依交易向下探查</a></h3>
+<div>
+<p>使用查詢往下探查，檢閱關於交易的 SQL 陳述式的統計資訊。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq323">
+<span class="notetitle">必要條件：</span><span class="notebody">對於查詢往下探查，「SQL 追蹤」必須設為<strong>開啟</strong>。
+請參閱<a href="#dqx1ids_oat_091">開啟 SQL 追蹤</a>。</span></div></div>
+<p>
+<p>若要依交易往下探查，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。「SQL 瀏覽器」頁面隨即出現。</li>
+<li>若要顯示最近 100 個交易的交易時間清單，請按一下<strong>交易</strong>標籤。</li>
+<li>按一下交易的往下探查圖示。即會顯示交易已執行的 SQL 陳述式清單。按一下往下探查圖示，即可顯示陳述式的統計資料。</li></ol>
+<h3 id="dqx1ids_oat_066"><a href="#ToC_111">依 SQL 陳述式類型往下探查</a></h3>
+<div>
+<p>使用依陳述式類型的查詢往下探查，檢閱關於 SQL 陳述式的統計資訊。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq327">
+<span class="notetitle">必要條件：</span><span class="notebody">對於查詢往下探查，「SQL 追蹤」必須設為<strong>開啟</strong>。
+請參閱<a href="#dqx1ids_oat_091">開啟 SQL 追蹤</a>。</span></div></div>
+<p>
+<p>若要依 SQL 類型往下探查，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。「SQL 瀏覽器」頁面隨即出現。系統上已執行的陳述式會依類型分組，而且每一個 SQL 陳述式群組會顯示摘要統計資料。
+</li>
+<li>按一下陳述式類型的往下探查圖示。即會顯示已執行的 SQL 陳述式清單。您可以按一下陳述式的往下探查圖示，然後按一下陳述式執行的往下探查圖示，繼續往下探查。
+陳述式的統計資料隨即出現。</li></ol>
+<h2 id="dqx1ida_oat_104"><a href="#ToC_112">最佳化 SQL 陳述式</a></h2>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 來建立外部指引，以將 SQL 陳述式最佳化。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq331">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>在資料庫伺服器 <samp>onconfig</samp> 檔案中，將 EXT_DIRECTIVES 配置參數設為 1 或 2，以便能夠儲存外部指引。
+變更 EXT_DIRECTIVES 配置參數後，請重新啟動資料庫伺服器，變更才會生效。</li>
+<li>確保 SQL 追蹤已開啟，且<strong>追蹤管理</strong>頁面上已選取<strong>表格名稱</strong>選項。
+請參閱<a href="#dqx1ids_oat_091">開啟 SQL 追蹤</a>及<a href="#dqx1ids_oat_048">指定 SQL 追蹤的選項</a>。</li></ul></span></div></div>
+<p>
+<p>您可以建立外部指引，以套用至 SQL 陳述式。
+指引是一種註解，可告知查詢最佳化工具執行查詢的方式。
+外部指引可提供方法，讓您變更 SQL 陳述式的查詢執行計劃。
+當您將外部指引套用至 SQL 陳述式之後，每次重新執行此 SQL 陳述式時，將會依此變更 SQL 陳述式的查詢執行計劃。
+</p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq333">
+<span class="notetitle">重要事項：</span><span class="notebody">當您重新執行 SQL 陳述式時，此 SQL 陳述式必須完全符合您已套用指引的 SQL 陳述式。例如，必須有相同的字母大小寫及相同的間距。</span></div></div>
+<p>若要建立外部指引，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，按一下<strong>效能分析</strong> &gt; <strong>SQL 瀏覽器</strong>。</li>
+<li>往下探查至 SQL 陳述式。<ol type="a">
+<li>按一下 <strong>SQL</strong> 標籤。</li>
+<li>按一下清單中的 SQL 陳述式。</li>
+<li>按一下 SQL 陳述式執行清單中的任一列。</li></ol></li>
+<li>按一下<strong>最佳化</strong>標籤。</li>
+<li>按一下<strong>新增</strong>。</li>
+<li>在<strong>新增指引</strong>頁面上，選取指引。視需要選取表格及索引。若要新增其他 SQL 陳述式指引，請按一下<strong>新增另一個</strong>，或按一下<strong>新增</strong>來關閉頁面。</li>
+<li>指定套用指引的方法，然後按一下<strong>套用</strong>。預設值為<strong>非作用中</strong>：不要將指引套用至 SQL 陳述式。</li></ol>
+<h2 id="dqx1ids_oat_068"><a href="#ToC_113">探索使用者階段作業</a></h2>
+<p>
+<p>您可以使用「階段作業瀏覽器」來檢視及停止使用者階段作業。
+</p>
+<p>若要查看伺服器上目前正在執行的階段作業，請展開<strong>效能分析</strong> &gt; <strong>階段作業瀏覽器</strong>。</p></p>
+<p>
+<p>若要查看伺服器上執行的任何階段作業，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>階段作業瀏覽器</strong>。</li>
+<li>按一下階段作業 ID 號碼 (SID)。<strong>階段作業資訊</strong>頁面隨即開啟。
+此頁面包含階段作業的統計資料，包括使用者名稱、使用者連接至伺服器的時間、已使用的記憶體，以及已開啟的表格。</li>
+<li>按一下標籤，以顯示階段作業的其他效能資訊：<table id="wq340" width="90%" summary="此表格中的每一列說明可供選擇的選項。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq341" align="left"><strong>標籤名稱</strong></th>
+<th id="wq342" align="left">說明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq341"><strong>SQL</strong></td>
+<td headers="wq342">階段作業執行的 SQL 指令數。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>鎖定數</strong></td>
+<td headers="wq342">階段作業保留的鎖定數。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>執行緒數</strong></td>
+<td headers="wq342">階段作業執行的執行緒數。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>記憶體</strong></td>
+<td headers="wq342">階段作業使用的記憶體</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>網路</strong></td>
+<td headers="wq342">階段作業的 I/O 資料。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>環境</strong></td>
+<td headers="wq342">階段作業的環境變數值。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>設定檔</strong></td>
+<td headers="wq342">階段作業的摘要效能資訊。</td>
+</tr>
+</tbody>
+</table></li></ol>
+<h3 id="dqx1ids_oat_056"><a href="#ToC_114">停止使用者階段作業</a></h3>
+<p>
+<p>若要停止使用者階段作業，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>階段作業瀏覽器</strong>。</li>
+<li>在階段作業列的最後一個直欄，按一下停止圖示。</li></ol>
+<h2 id="dqx1ids_oat_169"><a href="#ToC_115">檢視效能歷程</a></h2>
+<div>
+<p>檢視側寫欄位的歷程資料，包括自動檢查點、磁碟及緩衝區活動、記憶體、虛擬處理器以及 B-Tree 掃描器。</p></div><a id="idx93"></a>
+<p>
+<p>您可以檢視特定欄位在一段時間內的資料，以及比較多部伺服器的效能。
+例如，您可以比較伺服器上的磁碟讀取總計與磁碟寫入總計，或是比較兩部伺服器上的磁碟寫入總計。</p></p>
+<p>
+<p>若要檢視效能歷程，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>效能歷程</strong>。</li>
+<li>選取要顯示的欄位。</li>
+<li>選用項目：選取最多三台其他伺服器。</li></ol>
+<h2 id="dqx1ids_oat_063"><a href="#ToC_116">執行系統效能報告</a></h2>
+<div>
+<p>根據現行資料及歷程資料來建立系統效能報告。</p></div>
+<p>
+<p>若要執行系統效能報告，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>系統報告</strong>。</li>
+<li>按一下報告的資料類型標籤：<strong>現行報告</strong>或<strong>歷程報告</strong>。</li>
+<li>指定報告：<ul>
+<li>若要檢視特定的報告，請按一下報告名稱，例如，<strong>磁碟空間用量</strong>。</li>
+<li>若要在結合的報告中依類型檢視報告，請選取報告類型，然後按一下<strong>建立報告</strong>。例如，選取<strong>磁碟</strong>，以檢視關於磁碟用量的報告。報告會顯示在新的視窗中。</li>
+<li>若要在結合的報告中檢視多份報告，請選取報告的勾選框，然後按一下<strong>建立報告</strong>。報告會顯示在新的視窗中。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_173"><a href="#ToC_117">監視範圍</a></h2>
+<div>
+<p>檢視現行資料庫伺服器上資料庫中的範圍數圖形。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq351">
+<span class="notetitle">必要條件：</span><span class="notebody">若要顯示圖形，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC4 或更新版本。</span></div></div>
+<p>
+<p>若要監視範圍，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>系統報告</strong>。</li>
+<li>按一下<strong>圖形</strong>標籤。</li>
+<li>在<strong>物件類型</strong>清單中，選取<strong>範圍</strong>。</li></ol>
+<p>
+<p>此類型的圖形也稱為熱圖或樹狀圖。
+圖形是使用 IBM ILOG Elixir&reg; 樹狀圖控制項建立的。</p></p>
+<h2 id="dqx1ids_oat_174"><a href="#ToC_118">監視緩衝池</a></h2>
+<div>
+<p>檢視現行資料庫伺服器上資料庫緩衝池中的快取頁面百分比圖形。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq356">
+<span class="notetitle">必要條件：</span><span class="notebody">若要顯示圖形，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC4 或更新版本。</span></div></div>
+<p>
+<p>若要監視緩衝池，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，按一下<strong>效能分析</strong> &gt; <strong>系統報告</strong>。</li>
+<li>按一下<strong>圖形</strong>標籤。</li>
+<li>在<strong>物件類型</strong>清單中，選取<strong>緩衝池</strong>。</li></ol>
+<p>
+<p>此類型的圖形也稱為熱圖或樹狀圖。
+圖形是使用 IBM ILOG Elixir 樹狀圖控制項建立的。</p></p>
+<h2 id="dqx1ida_oat_117"><a href="#ToC_119">使用 <strong><samp>onstat</samp></strong> 公用程式監視伺服器</a></h2>
+<div>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 中使用 <strong><strong><samp>onstat</samp></strong></strong> 公用程式，來顯示資料庫伺服器的效能及狀態資訊。</p></div>
+<p>
+<p>您可使用 <strong><strong><samp>onstat</samp></strong></strong> 公用程式來檢查資料庫伺服器的狀態，以及監視它的活動。</p>
+<p>若要使用 <strong><samp>onstat</samp></strong> 公用程式，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，展開<strong>效能分析</strong>，然後按一下 <strong>onstat 公用程式</strong>。</li>
+<li>輸入 <strong><strong><samp>onstat</samp></strong></strong> 選項。您不需要鍵入 <samp class="xph">onstat</samp>。</li>
+<li>按一下<strong>執行</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關參照</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1063.htm#ids_adr_1063" target="_blank">onstat 入口網站：依函數種類排序的 onstat 公用程式指令（管理參照手冊）</a></li></ul>
+<h1 id="dqx1ids_oat_012"><a href="#ToC_120">如何管理資料庫及表格？</a></h1>
+<h2 id="dqx1ids_oat_013"><a href="#ToC_121">檢閱伺服器上的資料庫</a></h2>
+<p>
+<p>展開 <strong>SQL 工具箱</strong>，然後按一下<strong>資料庫</strong>。
+頁面會顯示現行伺服器上的資料庫清單，以及前六大資料庫所使用的空間圖表。</p></p>
+<h2 id="dqx1ids_oat_014"><a href="#ToC_122">連接至資料庫</a></h2>
+<p>
+<p>當您連接至資料庫時，您可以檢閱資料庫表格、綱目、程序及常式。</p>
+<p>若要連接至資料庫，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>展開 <strong>SQL 工具箱</strong>，然後按一下<strong>資料庫</strong>。
+頁面會顯示現行伺服器上的資料庫清單，以及前六大資料庫所使用的空間圖表。</li>
+<li>在<strong>資料庫</strong>的清單中，按一下資料庫的名稱。<strong>表格</strong>頁面上會顯示資料庫中的表格清單。頁面右上方的<strong>資料庫</strong>欄位中會顯示選定資料庫的名稱。</li>
+<li>選用項目：若要併入型錄表格名稱，請選取<strong>併入資料庫型錄表格？</strong>，然後按一下<strong>提交</strong>。型錄表格與使用者表格的結合清單隨即會出現。
+
+<ul>
+<li>若要瀏覽表格，請按一下<strong>瀏覽</strong>直欄中的圖示。</li>
+<li>若要檢視表格直欄的資訊，請按一下<strong>名稱</strong>直欄中的表格。</li>
+<li>若要檢視表格的資料分割資訊，請按一下<strong>資料分割編號</strong>直欄中的值。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_094"><a href="#ToC_123">檢視綱目</a></h2>
+<p>
+<p>您必須連接至資料庫。請參閱<a href="#dqx1ids_oat_014">連接至資料庫</a>。</p>
+<p>若要檢視綱目，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>展開 <strong>SQL 工具箱</strong>，然後按一下<strong>綱目瀏覽器</strong>。
+
+<p>表格及其綱目的清單隨即出現。頁面右上方的<strong>資料庫</strong>欄位中會顯示您連接的資料庫名稱。</p></li>
+<li>針對您要檢視的表格，選取瀏覽圖示。
+
+<p>從表格的 SELECT * 陳述式所產生的結果集隨即出現。</p></li></ol>
+<h2 id="dqx1ids_oat_069"><a href="#ToC_124">檢閱資料庫的程序及常式</a></h2>
+<p>
+<p>您必須連接至資料庫。請參閱<a href="#dqx1ids_oat_014">連接至資料庫</a>。</p>
+<p>若要檢閱資料庫的程序及常式，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>展開 <strong>SQL 工具箱</strong>，然後按一下<strong>綱目瀏覽器</strong>。
+
+<p>表格及其綱目的清單隨即出現。頁面右上方的<strong>資料庫</strong>欄位中會顯示您連接的資料庫名稱。</p></li>
+<li>選取 <strong>SPL/UDR</strong> 標籤。
+
+<p><strong>程序/函數</strong>清單隨即出現。</p></li></ol>
+<h2 id="dqx1ids_oat_106"><a href="#ToC_125">執行標準 SQL 作業：查詢、插入、更新、刪除</a></h2>
+<div>
+<p>建立簡單的查詢來顯示表格中的特定橫列，然後更新或刪除橫列，或使用「範例式查詢」，在表格中插入新橫列。</p></div><a id="idx94"></a><a id="idx95"></a><a id="idx96"></a><a id="idx97"></a>
+<h3 id="dqx1ids_oat_109"><a href="#ToC_126">執行查詢</a></h3>
+<div>
+<p>使用「範例式查詢」來建立簡單的查詢，以顯示表格中的特定橫列。</p></div><a id="idx98"></a><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>您可以在表格上執行查詢，然後檢閱、更新或刪除結果中顯示的橫列。</p>
+<p>若要執行查詢，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的功能表上，展開 <strong>SQL 工具箱</strong>，然後按一下<strong>依範例查詢</strong>。</li>
+<li>若要尋找表格，請在<strong>尋找</strong>欄位中鍵入表格名稱的任何部分，然後按一下<strong>搜尋</strong>。
+您也可以展開資料庫來顯示表格。
+<div>
+<div class="note-noindent" id="wq376">
+<span class="notetitle">附註：</span><span class="notebody">清單中只會顯示可在「依範例查詢 (QBE)」中使用的表格。不會顯示您在 QBE 中無法使用的表格，包括是系統表格的表格，或系統資料庫（而非 <strong>sysadmin</strong> 資料庫）中的表格，以及包含 QBE 不支援之資料類型的表格：BLOB、BYTE、CLOB、DISTINCT TYPES、LIST、MULTISET、NCHAR、NVARCHAR、ROW、SET、TEXT 及 UDT。</span></div></div>
+
+<p><strong>查詢</strong>頁面中會顯示已選取的表格中的直欄。</p></li>
+<li>若要輸入查詢準則，請按一下直欄旁邊的按鈕，以開啟<strong>輸入查詢準則</strong>頁面。</li>
+<li>從運算子清單中選取運算子，輸入值，然後按一下<strong>新增</strong>。
+
+<p>表格中會顯示查詢準則。當您新增另一個準則時，請先選取 <strong>AND</strong> 或 <strong>OR</strong>。</p></li>
+<li>按一下<strong>確定</strong>。
+
+<p>頁面會關閉，然後顯示直欄的查詢準則。</p></li>
+<li>若要執行查詢，請按一下<strong>提交</strong>。
+
+<p>頁面會一次一列地顯示查詢產生的結果。如果您執行查詢時未輸入任何查詢準則，則會顯示表格中的所有橫列。</p>
+
+<p>若要從頭至尾捲動橫列，請使用方向鈕。</p></li></ol>
+<h3 id="dqx1ids_oat_110"><a href="#ToC_127">更新表格橫列</a></h3>
+<div>
+<p>使用「範例式查詢」來更新資料庫伺服器上的表格橫列。</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq378">
+<span class="notetitle">附註：</span><span class="notebody">在 IBM OpenAdmin Tool (OAT) for Informix 中使用「依範例查詢」，只能更新具有唯一 ID 的列。
+唯一 ID 包括主要索引鍵、唯一限制、唯一索引，以及列 ID（如果表格未片段化的話）。</span></div></div>
+<p>若要更新資料庫伺服器上的表格橫列，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>使用「範例式查詢」來執行查詢。請參閱<a href="#dqx1ids_oat_109">執行查詢</a>。</li>
+<li>必要的話，使用方向鈕來捲動至橫列。</li>
+<li>在欄位中輸入橫列的變更。</li>
+<li>按一下<strong>更新橫列</strong>。
+
+<p>資料庫伺服器上隨即更新橫列。</p></li></ol>
+<h3 id="dqx1ids_oat_111"><a href="#ToC_128">刪除表格橫列</a></h3>
+<div>
+<p>使用「範例式查詢」來刪除資料庫伺服器上的表格橫列。</p></div><a id="idx103"></a><a id="idx104"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq382">
+<span class="notetitle">附註：</span><span class="notebody">在 IBM OpenAdmin Tool (OAT) for Informix 中使用「依範例查詢」，只能刪除具有唯一 ID 的列。
+唯一 ID 包括主要索引鍵、唯一限制、唯一索引，以及列 ID（如果表格未片段化的話）。</span></div></div>
+<p>若要刪除資料庫伺服器上的表格橫列，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>使用「範例式查詢」來執行查詢。請參閱<a href="#dqx1ids_oat_109">執行查詢</a>。</li>
+<li>必要的話，使用方向鈕來捲動至橫列。<div>
+<div class="note-noindent" id="wq385">
+<span class="notetitle">重要事項：</span><span class="notebody">當您刪除列時，資料庫伺服器上會永久刪除此列。您無法復原刪除。</span></div></div></li>
+<li>按一下<strong>刪除橫列</strong>。
+
+<p>資料庫伺服器上隨即刪除橫列。</p></li></ol>
+<h3 id="dqx1ids_oat_112"><a href="#ToC_129">插入表格橫列</a></h3>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 中的「依範例查詢」，在資料庫伺服器上的表格中插入列。</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>若要在資料庫伺服器上的表格中插入橫列，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 功能表上，展開 <strong>SQL 工具箱</strong>，然後按一下<strong>依範例查詢</strong>。</li>
+<li>若要尋找表格，請在<strong>尋找</strong>欄位中鍵入表格名稱的任何部分，然後按一下<strong>搜尋</strong>。
+您也可以展開資料庫來顯示表格。
+<div>
+<div class="note-noindent" id="wq389">
+<span class="notetitle">附註：</span><span class="notebody">清單中只會顯示可在「依範例查詢」(QBE) 中使用的表格。不會顯示您在 QBE 中無法使用的表格，包括是系統表格的表格，或系統資料庫（而非 <strong>sysadmin</strong> 資料庫）中的表格，以及包含 QBE 不支援之資料類型的表格：BYTE、TEXT、BLOB、CLOB、NCHAR、NVARCHAR、SET、MULTISET、LIST、ROW、DISTINCT TYPES 及 UDT。</span></div></div>
+
+<p><strong>查詢</strong>頁面中會顯示已選取的表格中的直欄。</p></li>
+<li>按一下<strong>插入</strong>標籤。</li>
+<li>在欄位中鍵入值。<div>
+<div class="note-noindent" id="wq390">
+<span class="notetitle">提示：</span><span class="notebody">每個欄位的浮動說明可識別必要的資料類型，例如 CHAR、DECIMAL 或 DATETIME。</span></div></div></li>
+<li>按一下<strong>新增橫列</strong>。
+
+<p>資料庫伺服器上的表格中隨即插入橫列。</p></li></ol>
+<h1 id="dqx1ids_oat_005"><a href="#ToC_130">如何設定伺服器的存取權？</a></h1>
+<h2 id="dqx1ids_oat_003"><a href="#ToC_131">新增 OAT 群組</a></h2>
+<div>
+<p>定義 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組。</p></div><a id="idx107"></a>
+<p>
+<p>OAT 群組可讓您管理資料庫伺服器的群組，並可讓您登入群組，而無須逐一登入個別伺服器。</p>
+<p>若要新增 OAT 群組，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>功能表上，展開<strong>管理連線</strong>，然後按一下<strong>新增群組</strong>。</li>
+<li>在<strong>群組名稱</strong>欄位中，輸入群組的英數名稱。</li>
+<li>在<strong>密碼</strong>欄位中，輸入英數密碼。</li>
+<li>選用項目：若要指定群組具有唯讀專用權，請選取<strong>唯讀</strong>。
+<div>
+<div class="note-noindent" id="wq394">
+<span class="notetitle">重要事項：</span><span class="notebody">唯讀群組會防止使用者修改伺服器；但無法防止使用者存取伺服器內含的可能機密資料。請限制唯讀群組的成員資格，僅限於已授權在伺服器上檢視詳細資料的使用者。</span></div></div>
+
+<p>如需唯讀群組限制的相關資訊，請參閱<a href="#dqx1ids_oat_051">唯讀群組限制</a>。</p></li>
+<li>按一下<strong>新增</strong>，以儲存群組資訊並新增群組。</li></ol>
+<p>
+<p>接下來，將伺服器連線新增至群組。請參閱<a href="#dqx1ids_oat_002">建立伺服器連線</a></p></p>
+<h2 id="dqx1ids_oat_002"><a href="#ToC_132">建立伺服器連線</a></h2>
+<div>
+<p>將伺服器連線新增至 IBM OpenAdmin Tool (OAT) for Informix 中定義的資料庫伺服器連線群組。</p></div>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>功能表上，展開<strong>管理連線</strong>，然後按一下<strong>新增連線</strong>。</li>
+<li>從<strong>群組名稱</strong>清單中，選取要在其中新增伺服器連線的 OAT 群組。</li>
+<li>輸入連線資訊。<div>
+<div class="note-noindent" id="wq398">
+<span class="notetitle">重要事項：</span><span class="notebody">如果針對每一個新增的連線，您是使用 3.0 版以前的 Informix Connect 或 IBM Informix Client Software Development Kit (Client SDK) 版本，請確保該連線在 Web 伺服器電腦上有相對應的 SQLHOSTS 項目。</span></div></div></li>
+<li>按一下<strong>儲存</strong>以新增連線。</li></ol>
+<h2 id="dqx1ids_oat_114"><a href="#ToC_133">匯出連線資訊</a></h2>
+<div>
+<p>將 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組的連線資訊匯出至 XML 檔案。</p></div>
+<p>
+<p>若要匯出連線資訊，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面上，按一下<strong>管理</strong>。即會顯示 OAT 管理功能表及頁面。</li>
+<li>按一下<strong>管理連線</strong> &gt; <strong>連線管理</strong>。</li>
+<li>若要在 XML 檔案中併入使用者名稱及密碼，請選取<strong>在匯出的 XML 檔案中併入機密密碼資訊</strong>。依預設，匯出的資訊<em>不會</em> 包含 OAT 群組使用者名稱與密碼。</li>
+<li>按一下<strong>匯出至 XML</strong>。</li></ol>
+<h2 id="dqx1ids_oat_113"><a href="#ToC_134">匯入連線資訊</a></h2>
+<div>
+<p>從 XML 檔案匯入 IBM OpenAdmin Tool (OAT) for Informix 中的資料庫伺服器連線群組的連線資訊。</p></div>
+<p>
+<p>您匯入的連線檔案與 OAT 匯出的連線檔案必須具有相同的格式。請在<strong>連線管理</strong>頁面上按一下說明按鈕，以取得檔案的說明。
+</p>
+<p>若要匯入連線資訊，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面上，按一下<strong>管理</strong>。即會顯示 OAT 管理功能表及頁面。</li>
+<li>按一下<strong>管理連線</strong> &gt; <strong>連線管理</strong>。</li>
+<li>在<strong>從 XML 檔案匯入連線資訊</strong>下，瀏覽到包含連線資訊的 XML 檔案。</li>
+<li>若要取代現有的連線資料，請選取<strong>移除所有現存的連線資訊</strong>。或者，保持選項空白，以將資訊附加至現有的連線資料。</li>
+<li>按一下<strong>從 XML 匯入</strong>。</li></ol>
+<h2 id="dqx1ids_oat_171"><a href="#ToC_135">使用非預設語言環境存取資料庫</a></h2>
+<div>
+<p>使用非預設英文 (en_us) 的語言環境來管理資料庫，包括多位元組資料庫語言環境。</p></div><a id="idx108"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq406">
+<span class="notetitle">必要條件：</span><span class="notebody">
+<ul>
+<li>對於您透過 OAT 存取的所有資料庫，IBM OpenAdmin Tool (OAT) for Informix 需要 UTF-8 語言環境。若要存取語言環境未包括在 IBM Informix Client Software Development Kit (Client SDK) 的資料庫，請使用 IBM Informix International Language Supplement (ILS) 來安裝語言環境。
+在安裝 OAT 之後，請在安裝 OAT 的機器上，將 ILS 安裝於 Informix Connect 或 Client SDK 目錄中。
+使用 ILS，將其他語言環境（包括 UTF-8 版本）安裝於 OAT 正在使用的 Informix Connect 或 Client SDK 目錄中。</li>
+<li>IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 需要 Informix 11.70.xC4。</li>
+<li>資料庫名稱必須是英文字元。</li></ul></span></div></div>
+<p>
+<p>您可以使用 OAT 來檢視及修改 Informix 所支援之任何資料庫語言環境中的資料。
+例如，您可以存取具有義大利文或日文語言環境的資料庫。</p>
+<p>當您在「抄寫」外掛程式中檢視非預設語言環境的資料庫時，請使用<strong>語言</strong>清單和<strong>語言環境</strong>清單來選取適當的資料庫語言環境。</p></p>
+<h1 id="dqx1ids_oat_098"><a href="#ToC_136">如何配置 OAT 的安全？</a></h1>
+<h2 id="dqx1ids_oat_072"><a href="#ToC_137">建立具有唯讀專用權的 OAT 群組</a></h2>
+<div>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 中建立資料庫伺服器連線群組，其成員可以檢視伺服器上的資訊，但無法進行修改。</p></div><a id="idx109"></a><a id="idx110"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq409">
+<span class="notetitle">重要事項：</span><span class="notebody">唯讀群組會防止使用者修改伺服器；但無法防止使用者存取伺服器內含的可能機密資料。請限制唯讀群組的成員資格，僅限於已授權在伺服器上檢視詳細資料的使用者。</span></div></div>
+<p>如需唯讀群組限制的相關資訊，請參閱<a href="#dqx1ids_oat_051">唯讀群組限制</a>。</p>
+<p>若要建立具有唯讀專用權的群組，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>功能表上，按一下<strong>管理連線</strong> &gt; <strong>新增群組</strong>。</li>
+<li>在<strong>群組名稱</strong>欄位中，輸入群組的英數名稱。</li>
+<li>在<strong>密碼</strong>欄位中，輸入英數密碼。</li>
+<li>若要指定群組具有唯讀專用權，請選取<strong>唯讀</strong>。</li>
+<li>按一下<strong>新增</strong>，以儲存群組資訊並新增群組。</li></ol>
+<p>
+<p>接下來，將伺服器連線新增至群組。請參閱<a href="#dqx1ids_oat_002">建立伺服器連線</a></p></p>
+<h3 id="dqx1ids_oat_051"><a href="#ToC_138">唯讀群組限制</a></h3><a id="idx111"></a>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 中的唯讀群組具有下列限制：
+</p>
+<ul>
+<li><strong>性能檢測中心</strong>：
+
+<ul>
+<li>可以檢視警示，但無法修改要顯示哪些警示。</li>
+<li>可以使用 Informix Health Advisor Plug-in for OAT，依現行設定檔的需求執行 <strong>Health Advisor</strong>。
+可以載入設定檔，但無法新增或刪除設定檔。可以檢閱設定檔的警示，但無法啟用、停用或修改警示。無法存取<strong>排程</strong>頁面或<strong>通知</strong>頁面。<strong>Health Advisor</strong> 外掛程式需要 Informix 11.50.C7 或更新版本。</li></ul></li>
+<li><strong>日誌</strong>：無限制。</li>
+<li><strong>作業排程器</strong>：可以新增、修改或刪除「排程器」作業。</li>
+<li><strong>空間管理</strong>
+
+<ul>
+<li>可以檢視儲存體空間及儲存體用量資訊，但無法新增、修改、捨棄空間或片段。
+</li>
+<li>無法新增、修改或捨棄儲存區項目。對於儲存區，OAT 需要 IBM Informix 11.70 版。</li>
+<li>無法從<strong>回復日誌</strong>頁面中存取<strong>管理</strong>頁面或<strong>回復原則</strong>頁面。</li>
+<li>可以檢視空間最佳化資訊，但無法壓縮、重新壓縮或收縮表格、索引或片段，或是解壓縮表格或片段。無法更新壓縮估計值。若要壓縮索引，OAT 需要 Informix 12.10。</li>
+<li>無法重組表格、片段或索引。<span id="dqx1ids_oat_051__preq-defrag-ce">對於重組動作，OAT 需要 Informix 11.70 版或更新版本。</span></li></ul></li>
+<li><strong>伺服器管理</strong><ul>
+<li>可以從<strong>配置</strong>頁面中檢視 <strong>onconfig</strong> 檔案的配置參數，但無法更新。</li>
+<li>可以檢視使用者的伺服器專用權，但無法修改。</li>
+<li>可以檢視內部使用者，但無法進行修改。對於內部使用者，OAT 需要 Informix 11.70 版。</li>
+<li>無法執行系統驗證。</li>
+<li>可以檢視虛擬處理器 (VP)，但無法新增或刪除。</li>
+<li>可以檢視<strong>自動更新統計資料</strong> (AUS) 頁面，但無法修改相關的<strong>排程器</strong>作業、重新整理評估或清除先前的執行結果。無法配置 AUS。</li>
+<li>可以檢視授信環境定義，但無法建立、修改、刪除、啟用或停用它們。
+對於授信環境定義，OAT 需要 Informix 11.70。</li></ul></li>
+<li><strong>效能分析</strong>
+
+<ul>
+<li>可以檢視效能報告及追蹤資訊，但無法開啟或關閉 SQL TRACE，或無法最佳化 SQL 陳述式。</li>
+<li>可以檢視使用者階段作業，但無法停止。</li></ul></li>
+<li><strong>SQL 工具箱</strong>
+
+<ul>
+<li>無法存取 <strong>SQL 編輯器</strong>（僅限主要 DBA 帳戶）。</li>
+<li>無法使用<strong>綱目瀏覽器</strong>來瀏覽表格。</li>
+<li>無法存取<strong>範例式查詢</strong>。</li></ul></li>
+<li><strong>抄寫</strong><ul>
+<li>在<strong>叢集</strong>頁面中，可以檢視叢集，但無法針對高可用性叢集，尋找新叢集、停止或啟動遠端伺服器，或是新增 SDS 伺服器。</li>
+<li>可以使用 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT) 來檢視網格，但無法建立或修改網格。對於網格，OAT 需要 Informix 11.70。</li>
+<li>可以使用「抄寫」外掛程式，來檢視網域、節點及抄寫詳細資料，但無法執行管理指令。</li>
+<li>可以使用「抄寫」外掛程式，來檢視<strong>連線管理程式</strong>中的連線單位、服務等級協定 (SLA) 以及失效接手配置，但無法執行管理動作。
+對於「連線管理程式」，IBM OpenAdmin Tool (OAT) for Informix 需要 Informix 11.70.xC3，以及 Informix 11.70.xC3 或 IBM Informix Client Software Development Kit (Client SDK) 3.70.xC3 隨附的「連線管理程式」</li></ul></li>
+<li><strong>綱目管理程式</strong>：可以使用 Informix Schema Manager Plug-in for OAT 來檢視資料庫、表格及相關的物件，但無法建立、修改或刪除這些物件。無法載入或卸載資料。</li></ul></p>
+<h2 id="dqx1ids_oat_070"><a href="#ToC_139">限制對於管理配置頁面的存取權</a></h2>
+<p>
+<p>因為可以存取「OAT 登入」頁面的任何人，都可以存取 IBM OpenAdmin Tool (OAT) for Informix 的「管理」頁面，所以請務必限制對「管理」頁面的存取。這些頁面是用來配置 OAT，包括指定對伺服器群組的存取權。</p>
+<p>若要防止未獲授權而存取這些頁面，請使用下列其中一種方法，或兩種方法都使用：</p></p>
+<ul>
+<li><strong>必要</strong>：對於配置 OAT 的「管理」頁面，提供密碼保護。請參閱<a href="#dqx1ids_oat_071">提供「管理」配置頁面的密碼保護：Apache 範例</a>。</li>
+<li><strong>建議</strong>：限制對於伺服器群組的存取權，包括唯讀群組中的伺服器群組。請參閱<a href="#dqx1ids_oat_072">建立具有唯讀專用權的 OAT 群組</a>。</li></ul>
+<h2 id="dqx1ids_oat_071"><a href="#ToC_140">提供「管理」配置頁面的密碼保護：Apache 範例</a></h2>
+<p>
+<p>基於安全考量，限制對 IBM OpenAdmin Tool (OAT) for Informix 的「管理」頁面的存取。使用密碼來保護這些頁面很重要，因為從<strong>登入</strong>頁面就可以存取<strong>管理</strong>頁面，因此每個人都可以存取。
+</p>
+<p>一種作法是使用 Web 伺服器提供的內建鑑別機制。
+例如，您可以保護安裝目錄 <strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong>。</p>
+<p><strong>範例</strong>：若要從 Apache 內保護 OAT 目錄，請執行下列動作：</p></p>
+<p></p>
+<ol type="1">
+<li>使用 Apache 隨附的 <strong>htpasswd</strong> 公用程式，在從 Web 無法存取的目錄中建立密碼檔。</li>
+<li>將鑑別指引新增至下列其中一個檔案：<ul>
+<li><strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong> 檔案</li>
+<li><strong>httpd.conf</strong> 檔案</li></ul></li>
+<li>將指引放入 <samp class="xph">&lt;Directory&gt;</samp> 區段內。例如：
+<pre class="xmp"><code>&lt;Directory <em>OATINSTALL</em>/admin&gt;
+AuthType Basic
+AuthName "OAT Admin"
+AuthUserFile <em>PASSWORDFILE</em>
+Require ValidUser
+&lt;/Directory&gt;</code></pre>其中，<em>PASSWORDFILE</em> 是您使用 <strong>htpasswd</strong> 公用程式來建立密碼檔的目錄。</li></ol>
+<p>
+<p>如需相關資訊及範例，請閱讀 Apache Software Foundation 網站上關於 Apache HTTP 伺服器 2.0 版鑑別、授權及存取控制的文章：<a href="http://www.apache.org" target="_blank">www.apache.org（在新視窗中開啟）</a>。</p></p>
+<h2 id="dqx1ids_oat_052"><a href="#ToC_141">配置 OAT 的 HTTPS (Linux)</a></h2>
+<div>
+<p>啟用 HTTPS 以保護 IBM OpenAdmin Tool (OAT) for Informix 的 Web 伺服器，避免遭受竊聽、竄改、訊息偽造，以及與網路相互干擾。</p></div><a id="idx112"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq420">
+<span class="notetitle">必要條件：</span><span class="notebody">在安裝 OAT 的 Apache 伺服器的電腦上，必須安裝 OpenSSL。您可以從「OpenSSL 專案」網站下載並安裝 OpenSSL：www.openssl.org。</span></div></div>
+<p>當 HTTPS 啟用時，來自 OAT 用戶端的訊息會先加密，然後再傳送至 OAT Web 伺服器。加密可以防止未獲授權的使用者在線路上監聽及竊取機密資訊。當 HTTPS 啟用時，OAT 用戶端也可以向 OAT 主機鑑別，讓未獲授權的使用者無法利用假的 Web 伺服器欺騙 OAT 用戶端。</p>
+<div>
+<div class="note-noindent" id="wq421">
+<span class="notetitle">重要事項：</span><span class="notebody">HTTPS 只會加密 OAT Web 伺服器與用戶端之間的通訊。不會加密 IBM Informix 資料庫伺服器與 Web 伺服器之間通訊。IBM Informix 9.4 版以及更新版本可以使用加密通訊支援模組，來啟用 Informix 伺服器與 OAT Web 伺服器之間的資料加密功能。
+如需加密及 Informix 伺服器的相關資訊，請閱讀 developerWorks&reg; 網站上的 "Encryption over the wire with IDS 9.40"。</span></div></div>
+<p>當您安裝 OAT 與 IBM Informix Client Software Development Kit (Client SDK) 時，安裝程式會提供必要軟體來執行 OAT，包括預先配置的 Apache、PHP 及 PDO_informix。
+在 Linux 上，會針對 <strong>mod_ssl</strong> 加密法模組啟用隨著 OAT 一起安裝的 Apache Web 伺服器。若要啟用 HTTPS，則需要此模組。</p>
+<p>若要在 Linux 上啟用 OAT 中的 HTTPS，請完成下列步驟：
+</p>
+<ol type="1">
+<li>為 Web 伺服器建立加密金鑰及憑證，讓 OAT 用戶端可以根據您的憑證來鑑別 Web 伺服器。</li>
+<li>將 Apache 配置為啟用 HTTPS。</li></ol><p class="indatacontent">如需啟用 HTTPS 的相關資訊，請閱讀 developerWorks 網站上的 "Securing the OpenAdmin Tool for Informix web server with HTTPS"。</p>
+<p>
+<h3 id="wq423">建立加密金鑰</h3>
+<p>金鑰是用於加密與解密。它們通常是成對提供的，即公開金鑰與私密金鑰。公開金鑰是用來加密訊息，而私密金鑰則用來解密訊息。
+憑證是鑑別 Web 伺服器的文件。已啟用 HTTPS 的 Web 伺服器具有一個已由信任的憑證管理中心所簽署的憑證，用來驗證 Web 伺服器。
+在針對 Web 伺服器啟用 HTTPS 之後，用戶端會選擇要與 Web 伺服器建立一般連線還是安全連線。若要建立一般連線，用戶端會在其 Web 瀏覽器中鍵入 <samp>http://<em>web
+server_url</em></samp>。若要建立安全連線，用戶端會鍵入 <samp>https://<em>web server_url</em></samp>。</p>
+<p>若要產生私密金鑰與公開金鑰的配對及憑證，您可以使用 OpenSSL 安裝的 bin 目錄中的 <samp>openssl</samp> 執行檔。</p>
+<p>當執行指令來產生私密金鑰時，系統會提示您輸入通行詞組，以保護私密金鑰。每次執行需要使用私密金鑰的指令時，您必須重新輸入這個通行詞組。
+例如，在啟動 Apache Web 伺服器或使用私密金鑰來產生憑證時，您必須輸入通行詞組。在 Linux 上，基於安全考量，請使用通行詞組來保護並加密您的私密金鑰。</p>
+<p>若要產生私密金鑰，請在安裝 OpenSSL 的電腦上，執行下列指令：</p></p>
+<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre>
+<p>私密金鑰會建立在 <strong>privkey.pem</strong> 檔案中。
+因為這個檔案包含 Web 伺服器的解密金鑰，所以請將它儲存在安全的位置。當您產生憑證時，這個檔案會用來產生相關聯的公開金鑰，而該金鑰將併入憑證中。</p>
+<p>
+<h3 id="wq424">建立憑證</h3>
+<p>在建立私密金鑰之後，請建立憑證來鑑別 Web 伺服器的身分。若要產生憑證，您可以建立憑證簽署要求，並將憑證簽署要求傳送至信任的憑證管理中心。此管理中心會發出憑證。</p>
+<p>若要產生憑證簽署要求，請執行下列指令：</p>
+<pre class="xmp"><code>openssl req -new -key privkey.pem -out cert.csr</code></pre>
+<p>如需憑證簽署要求的相關資訊，請聯絡您的憑證管理中心。</p>
+<p>或者，您可以建立自簽憑證，而不需要透過憑證管理中心處理，但不建議使用自簽憑證。</p>
+<p>若要產生自簽憑證，請執行下列指令：</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL 會提示您輸入資訊。憑證會儲存在 <samp>cacert.pem</samp> 檔案中。
+此檔案會顯示給 Web 用戶端，以驗證您的身分。它也會包括 Web 用戶端的公開金鑰，以便它們可以加密通訊。</p>
+<p>如需加密金鑰的相關資訊，請參閱 OpenSSL 文件。</p></p>
+<p>
+<h3 id="wq425">將 Apache 配置為啟用 HTTPS</h3>
+<p>若要啟用 HTTPS，請更新 Apache 配置檔及 Apache SSL 配置檔：</p></p>
+<ol type="1">
+<li>找出 Apache 配置檔。路徑包括 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/httpd.conf</code></pre></li>
+<li>在 Apache 配置檔中，從下行中移除註解：<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp>。
+
+<p>依預設，會註銷此行。當移除註解時，Apache SSL 配置檔即會併入 <samp>httpd.conf</samp> 檔案中。</p></li>
+<li>找出 Apache SSL 配置檔。路徑包括 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>在 Apache SSL 配置檔中，驗證 SSL 埠號是否設為可用埠。
+
+<p>HTTPS 需要個別的 SSL 埠。依預設，SSL 埠號會設為 443。如果此埠無法使用，請變更<strong>接聽</strong>指引及「虛擬主機」區段中的 SSL 埠。</p></li>
+<li>在 Apache SSL 配置檔中，驗證 <strong>SSLCertificateKeyFile</strong> 指引是否指出您所建立之私密金鑰檔的正確位置：<samp>privkey.pem</samp>。</li>
+<li>驗證 <strong>SSLCertificateFile</strong> 指引是否指出您所建立之憑證檔的正確位置：<samp>cacert.pem</samp>。</li>
+<li>選用項目：若要控制 Web 伺服器接受哪些密碼，請編輯 <strong>SSLCipherSuite</strong> 指引。如需 <strong>SSLCipherSuite</strong> 指引的相關資訊，請參閱 Apache <strong>mod_ssl</strong> 文件。</li></ol>
+<p>如需 HTTPS 配置的相關資訊，請參閱 Apache 網站：www.apache.org。</p>
+<p>
+<h3 id="wq427">測試配置</h3>
+<p>您必須重新啟動 Web 伺服器，HTTPS 變更才會生效。請重新啟動 Web 伺服器，方法為先執行 OAT 安裝目錄中的 <strong>StopApache</strong> Script，然後再執行 <strong>StartApache</strong> Script。
+在可以啟動 Web 伺服器之前，系統會提示您輸入通行詞組。</p>
+<p>在重新啟動 Web 伺服器之後，請在 Web 瀏覽器中使用下列 URL 來開啟 OAT：<samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp>。
+在顯示 OAT 登入頁面之前，系統會提示您檢視並接受 OAT Web 伺服器的憑證。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關資訊</strong>：</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1dt2mg202"><a href="#ToC_146">配置 OAT 的 HTTPS (Windows)</a></h2>
+<div>
+<p>啟用 HTTPS 以保護 IBM OpenAdmin Tool (OAT) for Informix 的 Web 伺服器，避免遭受竊聽、竄改、訊息偽造，以及與網路相互干擾。</p></div><a id="idx113"></a>
+<p>
+<p>當 HTTPS 啟用時，來自 OAT 用戶端的訊息會先加密，然後再傳送至 OAT Web 伺服器。加密可以防止未獲授權的使用者在線路上監聽及竊取機密資訊。當 HTTPS 啟用時，OAT 用戶端也可以向 OAT 主機鑑別，讓未獲授權的使用者無法利用假的 Web 伺服器欺騙 OAT 用戶端。</p></p>
+<div>
+<div class="note-noindent" id="wq429">
+<span class="notetitle">重要事項：</span><span class="notebody">HTTPS 只會加密 OAT Web 伺服器與用戶端之間的通訊。不會加密 IBM Informix 資料庫伺服器與 Web 伺服器之間通訊。IBM Informix 9.4 版以及更新版本可以使用加密通訊支援模組，來啟用 Informix 伺服器與 OAT Web 伺服器之間的資料加密功能。
+如需加密及 Informix 伺服器的相關資訊，請閱讀 developerWorks 網站上的 "Encryption over the wire with IDS 9.40"。</span></div></div>
+<p>當您安裝 OAT 與 IBM Informix Client Software Development Kit (Client SDK) 時，安裝程式會提供必要軟體來執行 OAT，包括預先配置的 Apache、PHP 及 PDO_informix。
+在 Windows 上，您必須以針對 <strong>mod_ssl</strong> 模組啟用的 Apache Web 伺服器，取代隨著 OAT 一起安裝的 Apache Web 伺服器。
+若要啟用 HTTPS，則需要此模組。</p>
+<p>若要在 Windows 上啟用 OAT 中的 HTTPS，請完成下列步驟：
+</p>
+<ol type="1">
+<li>以針對 <strong>mod_ssl</strong> 加密法模組啟用的 Apache Web 伺服器，取代隨著 OAT 一起安裝的 Apache Web 伺服器。</li>
+<li>為 Web 伺服器建立加密金鑰及憑證，讓 OAT 用戶端可以根據您的憑證來鑑別 Web 伺服器。</li>
+<li>將 Apache 配置為啟用 HTTPS。</li></ol><p class="indatacontent">如需啟用 HTTPS 的相關資訊，請閱讀 developerWorks 網站上的 "Securing the OpenAdmin Tool for Informix web server with HTTPS"。</p>
+<p>
+<h3 id="wq431">取代 OAT Apache Web 伺服器</h3>
+<p>若要取代 OAT Apache Web 伺服器，請執行下列動作：</p></p>
+<ol type="1">
+<li>從 Apache 網站下載「Apache HTTP 伺服器」：httpd.apache.org。
+選取最新可用的 Apache 2.2.x 版「Win32 二進位檔」，包括 OpenSSL 0.9.8t（MSI 安裝程式）。</li>
+<li>停止 OAT Apache Web 伺服器。<strong>開始</strong>功能表包括 OAT 功能表項目：<strong>IBM OpenAdmin Tool for Informix</strong>。您可以按一下<strong>停止 Apache Service for OpenAdmin Tool</strong>，來停止 OAT Apache Web 伺服器。同時，也請確定「Apache 監視器」未在系統匣中執行。</li>
+<li>將 OAT <samp>Apache_2.2.22</samp> 目錄重新命名為 <samp>Apache_2.2.22_noSSL</samp>，以建立 Apache 二進位檔的備份副本。後面步驟會使用某些來自這個 Apache 目錄的配置檔。</li>
+<li>執行 Apache MSI 安裝程式。執行一般安裝，並將安裝目錄設為 <em>/oat/installation/directory/</em><samp>Apache_2.2.22</samp>。
+<div>
+<div class="note-noindent" id="wq433">
+<span class="notetitle">重要事項：</span><span class="notebody">將目錄名稱設為 <samp>Apache_2.2.22</samp>，即使您是安裝更新版本的 Apache，亦然。OAT 安裝及其服務會配置為使用目錄名稱 <samp>Apache_2.2.22</samp>。
+如果新的 Apache 安裝具有不同的目錄名稱，則它們將無法運作。</span></div></div></li>
+<li>編輯 Apache 配置檔：<em>/oat/installation/directory/</em><samp class="xph">Apache_2.2.22/conf/httpd.conf</samp>。
+在這個 <samp>httpd.conf</samp> 檔案中，新增或解除註解下列幾行：
+<pre class="xmp"><code>LoadModule php5_module
+"<em>c:\oat\installation\dir</em>\PHP_5.2.4\php5apache2_2.dll"
+LoadModule ssl_module modules/mod_ssl.so
+AddType application/x-httpd-php .php
+PhpIniDir '<em>c:\oat\installation\dir</em>\PHP_5.2.4'</code></pre></li>
+<li>在 <samp>httpd.conf</samp> 檔案中，更新下行：<samp class="xph">Listen 80</samp>（或 <samp class="xph">Listen 8080</samp>）。
+此行指出 OAT Web 伺服器的埠號。以與原始 OAT Apache Web 伺服器（其隨著 OAT 一起安裝）相同的埠號取代 80 或 8080。</li>
+<li>在 <samp>httpd.conf</samp> 檔案中，更新下行：<samp class="xph">ServerName www.example.com:80</samp>。此行指出伺服器用來識別本身的名稱及埠。以原始 OAT Apache 配置檔 <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf 中的 <samp class="xph">ServerName</samp> 整行取代此行。</li>
+<li>在 <samp>httpd.conf</samp> 檔案中，更新下行：<samp class="xph">DirectoryIndex index.html</samp>。此行設定要求目錄時 Apache 提供的檔案。將此行變更為：<samp class="xph">DirectoryIndex index.html index.php</samp>。</li>
+<li>在原始 OAT Apache 配置檔 <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf 中，找出下行：<samp class="xph">setenv INFORMIXDIR</samp>。
+此行會在 OAT 的 Apache 環境中設定 INFORMIXDIR 變數。若要設定新 Apache Web 伺服器的變數，請將此行複製到新 Apache Web 伺服器的 <samp>httpd.conf</samp> 檔案。您可以將此行放置在檔案結尾處。</li>
+<li>將整個目錄 <em>c:\oat\installation\dir\</em><samp>Apache_2.2.22_noSSL\htdocs\openadmin\</samp> 複製到 <em>c:\oat\installation\dir\</em><samp>Apache_2.2.22\htdocs\openadmin\</samp>。
+所有 OAT 原始碼都位於此目錄中。</li>
+<li>在命令提示字元中執行下列指令，以確定已適當地載入 PHP Apache 處理程式及 <strong>mod_ssl</strong> 模組：
+<pre class="xmp"><code>cd <em>c:\oat\installation\dir\</em>Apache_2.2.22\bin\
+httpd.exe &ndash;M</code></pre>此指令會顯示 Apache 模組的清單。
+確認 <strong>php5_module</strong> 及 <strong>ssl_module</strong> 位於清單上。
+現在應該已對 OAT 適當地設定新的 Web 伺服器。</li>
+<li>在<strong>開始</strong>功能表上，按一下 <strong>IBM OpenAdmin Tool for Informix</strong>，然後按一下<strong>啟動 Apache Service for OpenAdmin Tool</strong>。
+您可以使用 Web 瀏覽器來存取 OAT。Web 伺服器已啟用 <strong>mod_ssl</strong>，但 HTTPS 尚未開啟。</li></ol>
+<p>
+<h3 id="wq434">建立加密金鑰</h3>
+<p>金鑰是用於加密與解密。它們通常是成對提供的，即公開金鑰與私密金鑰。公開金鑰是用來加密訊息，而私密金鑰則用來解密訊息。
+憑證是鑑別 Web 伺服器的文件。已啟用 HTTPS 的 Web 伺服器具有一個已由信任的憑證管理中心所簽署的憑證，用來驗證 Web 伺服器。
+在針對 Web 伺服器啟用 HTTPS 之後，用戶端會選擇要與 Web 伺服器建立一般連線還是安全連線。若要建立一般連線，用戶端會在其 Web 瀏覽器中鍵入 <samp>http://<em>web
+server_url</em></samp>。若要建立安全連線，用戶端會鍵入 <samp>https://<em>web server_url</em></samp>。</p>
+<p>若要產生私密金鑰與公開金鑰的配對及憑證，您可以使用新 Apache Web 伺服器安裝的 <samp>bin</samp> 目錄中的 <samp>openssl</samp> 執行檔。</p>
+<p>當執行指令來產生私密金鑰時，系統會提示您輸入通行詞組，以保護私密金鑰。在 Windows 上，Apache 不支援私密金鑰的通行詞組，因此您必須如後續步驟所述來移除通行詞組。</p>
+<p>若要建立私密金鑰，請執行下列動作：</p></p>
+<ol type="1">
+<li>若要產生私密金鑰，請在安裝新 Apache Web 伺服器的電腦上，執行下列指令：<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre></li>
+<li>若要移除通行詞組，請執行下列指令：
+<pre class="xmp"><code>openssl rsa -in privkey.pem -out privkey_nopassphrase.pem</code></pre></li></ol>
+<p>未加密的私密金鑰版本會建立在 <samp>privkey_nopassphrase.pem</samp> 檔案中。
+因為這個檔案包含未加密格式的私密金鑰，所以請將它儲存在安全的位置。當您產生憑證時，這個檔案會用來產生相關聯的公開金鑰，而該金鑰將併入憑證中。</p>
+<p>
+<h3 id="wq436">建立憑證</h3>
+<p>在建立私密金鑰之後，請建立憑證來鑑別 Web 伺服器的身分。若要建立憑證，您可以產生憑證簽署要求，並將憑證簽署要求傳送至信任的憑證管理中心。此管理中心會發出憑證。</p>
+<p>若要產生憑證簽署要求，請執行下列指令：</p>
+<pre class="xmp"><code>openssl req -new -key privkey_nopassphrase.pem -out cert.csr</code></pre>
+<p>如需憑證簽署要求的相關資訊，請聯絡您的憑證管理中心。</p>
+<p>或者，您可以建立自簽憑證，而不需要透過憑證管理中心處理，但不建議使用自簽憑證。</p>
+<p>若要產生自簽憑證，請執行下列指令：</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey_nopassphrase.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL 會提示您輸入資訊。憑證會儲存在 <samp>cacert.pem</samp> 檔案中。
+此檔案會顯示給 Web 用戶端，以驗證您的身分。它也會包括 Web 用戶端的公開金鑰，以便它們可以加密通訊。</p>
+<p>如需加密金鑰的相關資訊，請參閱 OpenSSL 文件。</p></p>
+<p>
+<h3 id="wq437">將 Apache 配置為啟用 HTTPS</h3>
+<p>若要啟用 HTTPS，請更新 Apache 配置檔及 Apache SSL 配置檔：</p></p>
+<ol type="1">
+<li>找出 Apache 配置檔。路徑包括 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/httpd.conf</code></pre></li>
+<li>在 Apache 配置檔中，從下行中移除註解：<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp>。
+
+<p>依預設，會註銷此行。當移除註解時，Apache SSL 配置檔即會併入 <samp>httpd.conf</samp> 檔案中。</p></li>
+<li>找出 Apache SSL 配置檔。路徑包括 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>在 Apache SSL 配置檔中，驗證 SSL 埠號是否設為可用埠。
+
+<p>HTTPS 需要個別的 SSL 埠。依預設，SSL 埠號會設為 443。如果此埠無法使用，請變更<strong>接聽</strong>指引及「虛擬主機」區段中的 SSL 埠。</p></li>
+<li>在 Apache SSL 配置檔中，驗證 <strong>SSLCertificateKeyFile</strong> 指引是否指出您所建立之私密金鑰檔的正確位置：<samp>privkey_nopassphrase.pem</samp>。</li>
+<li>驗證 <strong>SSLCertificateFile</strong> 指引是否指出您所建立之憑證檔的正確位置：<samp>cacert.pem</samp>。</li>
+<li>選用項目：若要控制 Web 伺服器接受哪些密碼，請編輯 <strong>SSLCipherSuite</strong> 指引。如需 <strong>SSLCipherSuite</strong> 指引的相關資訊，請參閱 Apache <strong>mod_ssl</strong> 文件。</li></ol>
+<p>如需 HTTPS 配置的相關資訊，請參閱 Apache 網站：www.apache.org。</p>
+<p>
+<h3 id="wq439">測試配置</h3>
+<p>您必須重新啟動 Web 伺服器，HTTPS 變更才會生效。請使用 <samp>apachemonitor.exe</samp> 或<strong>開始</strong>功能表捷徑來重新啟動 Web 伺服器。</p>
+<p>在重新啟動 Web 伺服器之後，請在 Web 瀏覽器中使用下列 URL 來開啟 OAT：<samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp>。
+在顯示 OAT 登入頁面之前，系統會提示您檢視並接受 OAT Web 伺服器的憑證。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相關資訊</strong>：</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1ids_oat_053"><a href="#ToC_152">停用或啟用 SQL 工具箱的密碼保護</a></h2>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 2.22 以及更新版本對「SQL 工具箱」提供自動密碼保護。當您連接至「SQL 工具箱」時，您必須提供有效的使用者 ID 及密碼。
+</p></p>
+<div>
+<div class="note-noindent" id="wq441">
+<span class="notetitle">必要條件：</span><span class="notebody">若要停用或啟用「SQL 工具箱」的密碼保護，您必須具有 OAT「管理」配置頁面的存取權，這些頁面也可能受密碼保護。</span></div></div>
+<div>
+<div class="note-noindent" id="wq442">
+<span class="notetitle">重要事項：</span><span class="notebody">基於安全考量，請為「管理」配置頁面提供密碼保護。如需相關資訊，請參閱<a href="#dqx1ids_oat_071">提供「管理」配置頁面的密碼保護：Apache 範例</a>。</span></div></div>
+<p>若要停用密碼保護，請執行下列動作：</p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>功能表上，按一下 <strong>OAT 配置</strong>。</li>
+<li>清除<strong>使用 SQL 工具箱時需要登入認證</strong>。</li>
+<li>按一下<strong>儲存</strong>以儲存您所做的變更。</li>
+<li>若要重新啟用密碼保護，請選取<strong>使用 SQL 工具箱時需要登入認證</strong>，然後按一下<strong>儲存</strong>。</li></ol>
+<h1 id="dqx1ids_oat_054"><a href="#ToC_153">如何管理 OAT 的外掛程式？</a></h1>
+<h2 id="dqx1ids_oat_000"><a href="#ToC_154">安裝 OAT 的外掛程式</a></h2>
+<div>
+<p>安裝 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式。</p></div><a id="idx114"></a><a id="idx115"></a>
+<p>
+<p>OAT 的安裝套件包括 IBM Informix Replication Plug-in for OpenAdmin Tool (OAT)、IBM Informix Schema Manager Plug-in for OpenAdmin Tool (OAT) 及 IBM Informix TimeSeries Plug-in for OpenAdmin Tool (OAT)。
+這些外掛程式會自動隨著 OAT 一起安裝，而且可在安裝期間啟用。</p></p>
+<div>
+<div class="note-noindent" id="wq446">
+<span class="notetitle">重要事項：</span><span class="notebody">在安裝外掛程式後，就會刪除外掛程式壓縮檔。在解除安裝外掛程式之後，必須將外掛程式壓縮檔還原至外掛程式目錄中，才能重新安裝外掛程式。</span></div></div>
+<p>
+<p>若要安裝 OAT 的外掛程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>將壓縮的外掛程式檔案複製到 <samp><em>OATDirectory</em>/plugin_install</samp>。例如：<samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp>。</li>
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>外掛程式管理程式</strong>。</li>
+<li>在<strong>尚未安裝的外掛程式</strong>清單中，於包含外掛程式的橫列中，按一下<strong>安裝</strong>。
+
+<p>外掛程式會顯示在<strong>已安裝的外掛程式</strong>清單中，且依預設為已啟用。外掛程式功能表項目會顯示在 OAT 功能表上。
+若要變更外掛程式功能表項目在 OAT 功能表上的位置，請跳至<strong>功能表管理程式</strong>頁面。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相關作業</strong>：</li>
+<li><a href="#dqx1ids_oat_060">如何自訂 OAT 的主功能表？</a>
+<br />刪除、還原或變更 IBM OpenAdmin Tool (OAT) for Informix 的功能表項目順序。</li></ul>
+<h2 id="dqx1ids_oat_150"><a href="#ToC_155">啟用 OAT 的外掛程式</a></h2>
+<div>
+<p>啟用 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式。</p></div><a id="idx116"></a><a id="idx117"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq450">
+<span class="notetitle">必要條件：</span><span class="notebody">必須先安裝外掛程式，才能夠啟用它。請參閱<a href="#dqx1ids_oat_000">安裝 OAT 的外掛程式</a>。</span></div></div>
+<p>
+<p>若要啟用 OAT 的外掛程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>外掛程式管理程式</strong>。</li>
+<li>在<strong>已安裝的外掛程式</strong>清單中，於包含外掛程式的橫列中，選取<strong>已啟用</strong>勾選框。</li></ol>
+<h2 id="dqx1ids_oat_115"><a href="#ToC_156">升級 OAT 的外掛程式</a></h2>
+<div>
+<p>升級 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式。</p></div><a id="idx118"></a><a id="idx119"></a>
+<p>
+<p>若要升級 OAT 的外掛程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>將壓縮的外掛程式檔案複製到 <samp><em>OATDirectory</em>/plugin_install</samp>。例如：<samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp>。</li>
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>外掛程式管理程式</strong>。</li>
+<li>在<strong>尚未安裝的外掛程式</strong>清單中，於包含外掛程式的橫列中，按一下<strong>升級</strong>。舊版的外掛程式會改寫為新版本。
+更新版本的外掛程式會顯示在<strong>已安裝的外掛程式</strong>清單中，且依預設為已啟用。</li></ol>
+<h2 id="dqx1ids_oat_116"><a href="#ToC_157">停用 OAT 的外掛程式</a></h2>
+<div>
+<p>停用 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式。</p></div><a id="idx120"></a><a id="idx121"></a>
+<p>
+<p>若要停用 OAT 的外掛程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>外掛程式管理程式</strong>。</li>
+<li>在<strong>已安裝的外掛程式</strong>清單中，於包含外掛程式的橫列中，清除<strong>已啟用</strong>勾選框。</li></ol>
+<p>
+<p>外掛程式會維持為已安裝。您可以重新啟用它。</p></p>
+<h2 id="dqx1ids_oat_149"><a href="#ToC_158">解除安裝 OAT 的外掛程式</a></h2>
+<div>
+<p>解除安裝 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式。</p></div><a id="idx122"></a><a id="idx123"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq459">
+<span class="notetitle">重要事項：</span><span class="notebody">在安裝外掛程式後，就會刪除外掛程式壓縮檔。在解除安裝外掛程式之後，必須將外掛程式壓縮檔還原至外掛程式目錄中，才能重新安裝外掛程式。</span></div></div>
+<p>
+<p>若要解除安裝 OAT 的外掛程式，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>外掛程式管理程式</strong>。</li>
+<li>在<strong>已安裝的外掛程式</strong>清單中，於包含外掛程式的橫列中，按一下<strong>解除安裝</strong>。</li></ol>
+<h2 id="dqx1ids_oat_151"><a href="#ToC_159">idsadmin 類別函數</a></h2>
+<div>
+<p><strong><samp>idsadmin</samp></strong> 類別針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫，包括建立資料庫連線、載入語言檔案，以及以 HTML 呈現輸出。</p></div>
+<p><strong><samp>idsadmin</samp></strong> 物件會當作模組建構子的參數，傳遞至每一個模組。
+</p>
+<h3 id="dqx1ids_oat_152"><a href="#ToC_160">isreadonly 函數</a></h3>
+<div>
+<p><strong><samp>isreadonly </samp></strong> 函數指出使用者是否使用唯讀群組登入。
+此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx124"></a><a id="idx125"></a><a id="idx126"></a>
+<p>
+<h4 id="wq462">語法</h4></p>
+<pre class="xmp"><code>isreadonly ()</code></pre>
+<p>
+<h4 id="wq463">使用情況</h4>
+<p>使用 <strong><samp>isreadonly</samp></strong> 函數來判斷使用者是否使用具有唯讀專用權的群組登入 OAT。您可以使用此資訊來判斷使用者可在 OAT 中存取的項目，以及要提供哪些項目給使用者使用。
+</p></p>
+<p>
+<h4 id="wq464">回覆值</h4>
+<p>true 的回覆值指出使用者是使用具有唯讀專用權的群組登入。
+</p>
+<p>false 的回覆值指出使用者是使用未限制只有唯讀專用權的群組登入。
+</p></p>
+<p>
+<h4 id="wq465">範例</h4>
+<p>如果使用者唯讀，這個範例會傳回錯誤並顯示訊息。在這個範例中，<samp class="xph">PermissionRequired</samp> 是語言關鍵字，而不是訊息本身。
+</p></p>
+<pre class="xmp"><code>if ( $this-&gt;idsadmin-&gt;isreadonly() )
+{
+    $this-&gt;idsadmin-&gt;fatal_error($this-&gt;idsadmin-&gt;lang("PermissionRequired"));
+    return;         
+}</code></pre>
+<h3 id="dqx1ids_oat_153"><a href="#ToC_165">get_database 函數</a></h3>
+<div>
+<p><strong><samp>get_database</samp></strong> 函數會建立對資料庫伺服器上之資料庫的連線。
+此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx127"></a><a id="idx128"></a><a id="idx129"></a>
+<p>
+<h4 id="wq466">語法</h4></p>
+<pre class="xmp"><code>get_database($dbname="sysmaster",$use_user=false)</code></pre>
+<table id="wq467" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq468" width="20%" align="left">變數</th>
+<th id="wq469" width="39%" align="left">用途</th>
+<th id="wq470" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq468"><em>dbname</em></td>
+<td headers="wq469">資料庫名稱。</td>
+<td headers="wq470">選用。預設值是 <samp class="xph">sysmaster</samp>。</td>
+</tr>
+<tr>
+<td headers="wq468"><em>use_user</em></td>
+<td headers="wq469">是否使用「SQL 工具箱」使用者來連接至資料庫的指示器。當您在「SQL 工具箱」中時，請將值設為 true。</td>
+<td headers="wq470">選用。預設值是 <samp class="xph">false</samp>。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq471">回覆值</h4>
+<p>回覆值是 PDO 資料庫連線。</p></p>
+<p>
+<h4 id="wq472">範例</h4>
+<p>這個範例會建立與 <strong><samp>sysmaster</samp></strong> 資料庫的連線。</p></p>
+<pre class="xmp"><code> $db = $this-&gt;idsadmin-&gt;get_database("sysmaster");</code></pre>
+<h3 id="dqx1ids_oat_154"><a href="#ToC_169">load_lang 函數</a></h3>
+<div>
+<p><strong><samp>load_lang</samp></strong> 函數會將模組的語言檔案載入到
+<strong><samp>idsadmin</samp></strong> 語言陣列。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p>
+<h4 id="wq473">語法</h4></p>
+<pre class="xmp"><code>load_lang($keyword)</code></pre>
+<table id="wq474" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq475" width="20%" align="left">變數</th>
+<th id="wq476" width="39%" align="left">用途</th>
+<th id="wq477" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq475"><em>keyword</em></td>
+<td headers="wq476">指定要針對模組載入哪個語言檔案的關鍵字。
+依照慣例，這個關鍵字與模組的 act 關鍵字相同。語言檔案包含了模組的字串。
+</td>
+<td headers="wq477"></td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq478">使用情況</h4>
+<p><strong><samp>load_lang</samp></strong> 函數會載入
+<samp>lang_<em>keyword</em>.xml</samp>；例如，<samp>lang_admin.xml</samp> 或 <samp>lang_health.xml</samp>。<strong><samp>load_lang</samp></strong>
+函數通常是在模組的類別建構子中一起呼叫。
+</p></p>
+<p>
+<h4 id="wq479">範例</h4>
+<p>這個類別建構子範例會載入性能模組的語言檔案。
+</p></p>
+<pre class="xmp"><code>function __construct(&amp;$idsadmin)
+{
+        $this-&gt;idsadmin = &amp;$idsadmin;
+
+        $this-&gt;idsadmin-&gt;load_lang("health");
+}</code></pre>
+<h3 id="dqx1ids_oat_155"><a href="#ToC_173">lang 函數</a></h3>
+<div>
+<p><strong><samp>lang</samp></strong> 函數會以現行語言傳回特定的訊息。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p>
+<h4 id="wq480">語法</h4></p>
+<pre class="xmp"><code>lang($item, $parameters=array())</code></pre>
+<table id="wq481" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq482" width="20%" align="left">變數</th>
+<th id="wq483" width="39%" align="left">用途</th>
+<th id="wq484" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq482"><em>item</em></td>
+<td headers="wq483">要以現行語言傳回的字串名稱。</td>
+<td headers="wq484"></td>
+</tr>
+<tr>
+<td headers="wq482"><em>parameters</em></td>
+<td headers="wq483">陣列中的參數。參數會以 "{0}"、"{1}"、"{2}" 取代，依此類推。</td>
+<td headers="wq484">選用。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq485">使用情況</h4>
+<p><strong><samp>lang</samp></strong> 函數會在載入的語言檔案中尋找指定的訊息。
+若現行語言不是英文，也找不到指定的訊息，則會以英文傳回訊息。
+如果無法使用英文，則會傳回錯誤。
+</p></p>
+<p>
+<h4 id="wq486">範例</h4>
+<p>此範例會擷取現行語言的 <samp class="xph">taskdetailssaved</samp> 項目文字，並將它列印為狀態訊息。
+</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("taskdetailssaved"));</code></pre>
+<p>項目是包含在模組的語言檔案中，如本範例中所顯示，且為英文。
+</p>
+<pre class="xmp"><code>&lt;taskdetailssaved&gt;&lt;![CDATA[Task details saved successfully.]]&gt;&lt;/taskdetailssaved&gt;</code></pre>
+<p>此範例會設定 OAT 中<strong>性能檢測中心</strong> &gt; <strong>警示</strong>頁面的瀏覽器頁面標題。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("alerts") );</code></pre>
+<p>以下是來自英文及西班牙文之語言檔案，模組語言檔案中的項目。
+</p>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alerts]]&gt;&lt;/alerts&gt;</code></pre>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alertas]]&gt;&lt;/alerts&gt;</code></pre>
+<h3 id="dqx1ids_oat_177"><a href="#ToC_177">error 函數</a></h3>
+<div>
+<p><strong><samp>error</samp></strong> 函數會顯示含有錯誤圖示的訊息。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx136"></a><a id="idx137"></a>
+<p>
+<h4 id="wq487">語法</h4></p>
+<pre class="xmp"><code>error($msg="")</code></pre>
+<table id="wq488" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq489" width="34%" align="left">變數</th>
+<th id="wq490" width="65%" align="left">用途</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq489"><em>msg</em></td>
+<td headers="wq490">錯誤訊息。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq491">使用情況</h4>
+<p><strong><samp>idsadmin</samp></strong> 類別包括顯示訊息的函數。因為訊息會與錯誤圖示一起顯示，所以 <strong><samp>error</samp></strong> 函數適用於錯誤訊息。</p></p>
+<p>
+<h4 id="wq492">範例</h4>
+<p>此範例顯示儲存動作失敗的訊息。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error("Save failed: ");</code></pre>
+<p>此範例使用語言函數，以便訊息可以本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error($this-&gt;idsadmin-&gt;lang("save_failed"));</code></pre>
+<p>以下是模組（來自英文語言檔案）的語言檔案中的項目。</p>
+<pre class="xmp"><code>&lt;save_failed&gt;&lt;![CDATA[Save failed: ]]&gt;&lt;/save_failed&gt;</code></pre>
+<h3 id="dqx1ids_oat_178"><a href="#ToC_181">status 函數</a></h3>
+<div>
+<p><strong><samp>status</samp></strong> 函數會顯示訊息。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx138"></a><a id="idx139"></a>
+<p>
+<h4 id="wq493">語法</h4></p>
+<pre class="xmp"><code>status($msg="")</code></pre>
+<table id="wq494" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq495" width="34%" align="left">變數</th>
+<th id="wq496" width="65%" align="left">用途</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq495"><em>msg</em></td>
+<td headers="wq496">訊息。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq497">範例</h4>
+<p>此範例顯示儲存動作成功的訊息。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("The changes to the email program were saved."));</code></pre>
+<p>此範例使用語言函數，以便訊息可以本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("saved_email"));</code></pre>
+<p>以下是模組（來自英文語言檔案）的語言檔案中的項目。</p>
+<pre class="xmp"><code>&lt;saved_email&gt;&lt;![CDATA[The changes to the email program were saved.]]&gt;&lt;/saved_email&gt;</code></pre>
+<h3 id="dqx1ids_oat_179"><a href="#ToC_184">format_units 函數</a></h3>
+<div>
+<p><strong><samp>format_units</samp></strong> 函數會以最適合人類讀取的形式格式化整數位元組值，例如 KB、MB 或 GB。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx140"></a><a id="idx141"></a>
+<p>
+<h4 id="wq498">語法</h4></p>
+<pre class="xmp"><code>format_units($value,$prec=2 )</code></pre>
+<table id="wq499" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq500" width="20%" align="left">變數</th>
+<th id="wq501" width="39%" align="left">用途</th>
+<th id="wq502" width="39%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq500"><em>value</em></td>
+<td headers="wq501">整數值（以位元組為單位）。</td>
+<td headers="wq502">必須為整數。</td>
+</tr>
+<tr>
+<td headers="wq500"><em>prec</em></td>
+<td headers="wq501">已格式化數字的精準度。</td>
+<td headers="wq502">選用。必須為整數。預設值為 2，其指定 2 個小數位數。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq503">回覆值</h4>
+<p>回覆值是已格式化的數字，其字尾指出單位：B、KB、MB、GB、TB、PB 或 EB。</p></p>
+<p>
+<h4 id="wq504">範例</h4>
+<p>此範例產生 $formatted_page_size 變數，其中保留已格式化的值 2 K。</p></p>
+<pre class="xmp"><code>$page_size = 2048;
+$formatted_page_size = $this-&gt;idsadmin-&gt;format_units($page_size);</code></pre>
+<h3 id="dqx1ids_oat_180"><a href="#ToC_188">setCurrMenuItem 函數</a></h3>
+<div>
+<p><strong><samp>setCurrMenuItem</samp></strong> 會強調顯示功能表中的現行項目。此函數是 <strong><samp>idsadmin</samp></strong> 類別的一部分，而此類別會針對 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式提供基本函數庫。</p></div><a id="idx142"></a><a id="idx143"></a>
+<p>
+<h4 id="wq505">語法</h4></p>
+<pre class="xmp"><code>setCurrMenuItem($item="")</code></pre>
+<table id="wq506" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq507" width="20%" align="left">變數</th>
+<th id="wq508" width="39%" align="left">用途</th>
+<th id="wq509" width="39%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq507"><em>item</em></td>
+<td headers="wq508">功能表項目的索引鍵名稱。</td>
+<td headers="wq509">索引鍵名稱必須存在。傳遞不存在的功能表項目變數，不會引起錯誤，但不會強調顯示功能表中的任何項目。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq510">使用情況</h4>
+<p><strong><samp>setCurrMenuItem</samp></strong> 函數會在網頁呈現於瀏覽器時，藉由強調顯示現行功能表項目來設定它。此函數不會建立功能表項目。</p></p>
+<p>
+<h4 id="wq511">範例</h4>
+<p>此範例將現行功能表項目設為 Storage。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;setCurrMenuItem("storage");</code></pre>
+<h2 id="dqx1ids_oat_181"><a href="#ToC_192">output 類別</a></h2>
+<div>
+<p><strong><samp>output</samp></strong> 類別會處理如何顯示 IBM OpenAdmin Tool (OAT) for Informix 的 HTML 頁面，包括 OAT 外掛程式的頁面。</p></div>
+<h3 id="dqx1ids_oat_182"><a href="#ToC_193">set_pagetitle 函數</a></h3>
+<div>
+<p><strong><samp>set_pagetitle</samp></strong> 函數會設定 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式中頁面的瀏覽器頁面標題。此函數是 <strong><samp>output</samp></strong> 類別的一部分，而此類別會處理如何顯示 OAT 及 OAT 外掛程式的 HTML 頁面。</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<h4 id="wq512">語法</h4></p>
+<pre class="xmp"><code>set_pagetitle($title="")</code></pre>
+<table id="wq513" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq514" width="34%" align="left">變數</th>
+<th id="wq515" width="65%" align="left">用途</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq514"><em>title</em></td>
+<td headers="wq515">Web 瀏覽器的頁面名稱。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq516">範例</h4>
+<p>此範例將瀏覽器頁面標題設為 Health Advisor。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle("Health Advisor");</code></pre>
+<p>此範例使用語言函數，以便訊息可以本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("prod_name"));</code></pre>
+<p>以下是模組（來自英文語言檔案）的語言檔案中的項目。</p>
+<pre class="xmp"><code>&lt;prod_name&gt;&lt;![CDATA[Health Advisor]]&gt;&lt;/prod_name&gt;</code></pre>
+<h3 id="dqx1ids_oat_183"><a href="#ToC_196">add_to_output 函數</a></h3>
+<div>
+<p><strong><samp>add_to_output</samp></strong> 函數會將 HTML 附加至 IBM OpenAdmin Tool (OAT) for Informix 的外掛程式中的頁面。此函數是 <strong><samp>output</samp></strong> 類別的一部分，而此類別會處理如何顯示 OAT 及 OAT 外掛程式的 HTML 頁面。</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<h4 id="wq517">語法</h4></p>
+<pre class="xmp"><code>add_to_output($html="")</code></pre>
+<table id="wq518" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq519" width="34%" align="left">變數</th>
+<th id="wq520" width="65%" align="left">用途</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq519"><em>html</em></td>
+<td headers="wq520">要新增至頁面的 HTML。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq521">範例</h4>
+<p>此範例將 HTML 標記設為顯示標籤為 Run Health Advisor 的按鈕。然後，<strong><samp>add_to_output</samp></strong> 函數會將標記附加至用來呈現網頁的 HTML。</p></p>
+<pre class="xmp"><code>$html = "&lt;input type='submit' class='button' name='runReports' value='Run Health Advisor'/&gt;";
+$this-&gt;idsadmin-&gt;html-&gt;add_to_output($html);</code></pre>
+<h1 id="dqx1ids_oat_060"><a href="#ToC_199">如何自訂 OAT 的主功能表？</a></h1>
+<div>
+<p>刪除、還原或變更 IBM OpenAdmin Tool (OAT) for Informix 的功能表項目順序。</p></div><a id="idx148"></a><a id="idx149"></a><a id="idx150"></a><a id="idx151"></a>
+<p>
+<p>若要自訂 OAT 功能表，請執行下列動作：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登入</strong>頁面或 OAT 功能表上，按一下<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>功能表中，按一下<strong>功能表管理程式</strong>。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_200">注意事項</a></h1>
+<p>本資訊係針對美國提供的產品與服務而開發的。</p>
+<p>在其他國家/地區中，IBM 不見得有提供本文件中所提的各項產品、服務或功能。如需您所在地區是否可得到這些產品及服務的相關資訊，請洽詢當地的 IBM 服務代表。本文件在提及 IBM 的產品、程式或服務時，不表示或暗示只能使用 IBM 的產品、程式或服務。
+只要未侵犯 IBM 的智慧財產權，任何功能相當之產品、程式或服務皆可取代 IBM 的產品、程式或服務。不過，其他非 IBM 產品、程式、或服務在運作上的評價與驗證，其責任屬於使用者。</p>
+<p>本文件所說明之主題內容，IBM 可能擁有其專利或專利申請案。本書使用者並不享有前述專利之任何授權。您可以用書面方式來查詢授權，來函請寄到：
+</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation 
+<br />
+North Castle Drive 
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A.
+<br />
+</div>
+<p>如果是有關雙位元組 (DBCS) 資訊的授權查詢，請洽詢所在國家的 IBM 智慧財產部門，或書面提出授權查詢，來函請寄到：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>下列段落若與該國之法律條款抵觸，即視為不適用：IBM 僅以「現狀」提供本書，而不提供任何明示或默示之保證（包括但不限於可售性或符合特定效用的保證）。若有些地區在某些交易上並不允許排除上述保證，
+則該排除無效。</p>
+<p>本書中可能會有技術上或排版印刷上的訛誤。因此，IBM 會定期修訂；
+並將修訂後的內容納入新版中。
+IBM 得隨時改進及（或）變更本出版品所提及的產品及（或）程式，恕不另行通知。</p>
+<p>本資訊中任何對非 IBM 網站的敘述僅供參考，IBM 對該網站並不提供保證。那些網站上的內容並非本 IBM 產品內容的一部份，用戶使用那些網站時應自行承擔風險。</p>
+<p>IBM 得以各種 IBM 認為適當的方式使用或散布  貴客戶提供的任何資訊，而無需對  貴客戶負責。</p>
+<p>本程式之獲授權者若希望取得相關資料，
+以便使用下列資訊者，可洽詢 IBM。其下列資訊指的是：
+
+ (1) 獨立建立的程式與其他程式（包括此程式）之間更換資訊的方式
+ (2) 相互使用已交換之資訊方法。
+
+若有任何問題請聯絡：
+</p>
+<div class="lines">IBM Corporation 
+<br />
+J46A/G4 
+<br />
+555 Bailey Avenue 
+<br />
+San Jose, CA 95141-1003 
+<br />
+U.S.A.
+<br />
+</div>
+<p>上述資料之取得有其特殊要件，在某些情況下必須付費方得使用。</p>
+<p>IBM 基於雙方之「IBM 客戶合約」、「IBM 國際程式授權合約」或任何同等合約之條款，提供本文件所提及的授權程式與其所有適用的授權資料。</p>
+<p>任何此處涵蓋的執行效能資料都是在一個受控制的環境下決定出來的。因此，若在其他作業環境下，所得的結果可能會大大不同。有些測定已在開發階段系統上做過，
+不過這並不保證在一般系統上會出現相同結果。再者，有些測定可能已透過推測方式評估過。但實際結果可能並非如此。本書的使用者應依自己的特定環境，查證適用的資料。</p>
+<p>本書所提及之非 IBM 產品資訊，係一由產品的供應商，或其出版的聲明或其他
+公開管道取得。IBM 並未測試過這些產品，也無法確認這些非 IBM 產品的執行效能、相容性或任何對產品的其他主張是否完全無誤。如果您對非 IBM 產品的性能有任何的疑問，
+請逕向該產品的供應商查詢。</p>
+<p>有關 IBM 未來動向的任何陳述，
+僅代表 IBM 的目標而已，並可能於未事先聲明的情況下有所變動或撤回。</p>
+<p>顯示的所有 IBM 價格皆為 IBM 的現行建議零售價，隨時可能變更，恕不另行通知。經銷商價格可能不同。</p>
+<p>本資訊僅作規劃用途。在所述之產品上市之前，此處的資訊可能隨時更動。</p>
+<p>本資訊包含每日企業營運中使用的資料及報告的範例。為盡可能詳盡說明，
+這些範例都包括個人、公司、品牌及產品的名稱。
+此等名稱皆屬虛構，凡有類似實際企業所用之名稱及地址者，皆屬巧合。
+</p>
+<p>著作權授權：</p>
+<p>本資訊包含原始語言的範例應用程式，用以說明各種作業平台上的程式設計
+技術。  貴客戶可以為了研發、使用、銷售或散布符合範例應用程式所適用的作業平台之應用程式設計介面的應用程式，以任何形式複製、修改及散布這些範例程式，不必向 IBM 付費。這些範例程式未經完整測試。
+因此，IBM 不保證或暗示這些程式的可靠性、有用性或功能。僅以「現狀」提供程式範例，而不提供任何保證。IBM 不負擔任何因程式範例之使用而產生的任何損害。</p>
+<p>這些範例程式或任何衍生作品的每一個複本或任何部份都必須附上如下的版權聲明：
+</p>
+<p>&copy;（貴公司名稱）（年份）. 本程式之若干部分係衍生自 IBM 公司的範例程式。</p>
+<p>&copy; Copyright IBM Corp. _輸入年份_. All rights reserved. </p>
+<p>如果您瀏覽的是本資訊的軟體檔，則相片及彩色圖例可能不會顯示。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_201">商標</a></h2>
+<p>IBM、IBM 標誌及 ibm.com 是 International Business Machines Corp. 的商標或註冊商標，已在全球許多國家或司法管轄區註冊。其他產品及服務名稱可能是 IBM 或其他公司的商標。IBM 商標最新清單可於下列網站的 "Copyright and trademark information" 網頁上取得：<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>。</p>
+<p>Adobe、Adobe 標誌及 PostScript 是 Adobe Systems Incorporated 在美國及（或）其他國家/地區的註冊商標或商標。</p>
+<p>Intel、Itanium 及 Pentium 是 Intel Corporation 或其子公司在美國及其他國家/地區的商標或註冊商標。</p>
+<p>Java&trade; 及所有以 Java 為基礎的商標及標誌是 Oracle 及（或）其關係企業的商標或註冊商標。</p>
+<p>Linux 是 Linus Torvalds 在美國及（或）其他國家/地區的註冊商標。</p>
+<p>Microsoft、Windows 及 Windows NT 是 Microsoft Corporation 在美國及（或）其他國家/地區的商標。</p>
+<p>UNIX 是 The Open Group 在美國及其他國家/地區的註冊商標。</p>
+<p>其他公司、產品或服務名稱可能是其他公司的商標或服務標記。
+</p>
+<h2 id="dqx1ids_oat_016"><a href="#ToC_202">著作權</a></h2>
+<p>
+<p>本文件包含 IBM 的專利資訊。本文件在授權合約下提供，
+並受著作權法保護。本出版品內不包括任何產品保固的相關資訊，而且本手冊中所提供的任何陳述也應視為如此。</p>
+<p>當  貴客戶傳送資訊給 IBM 時，即表示  貴客戶授與 IBM 非專屬權利，IBM 得以其認為適當的方式使用或散佈該資訊，而不必對  貴客戶負任何責任。</p>
+<p><strong>&copy; Copyright
+International Business Machines Corporation 2007, 2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication
+or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The
+PHP Group 1997-2010. 如需相關資訊，請參閱 <samp>license/notices.txt</samp> 檔案。</p></p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

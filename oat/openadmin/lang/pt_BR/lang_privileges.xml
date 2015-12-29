@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Gerenciar Privilégios]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Privilégios do Usuário]]></UserPrivileges>
+<Database><![CDATA[Banco de dados]]></Database>
+<DBPrivileges><![CDATA[Privilégios do Nível de Banco de Dados]]></DBPrivileges>
+<TablePrivileges><![CDATA[Privilégios do Nível de Tabela]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Privilégios da API de Administração de SQL]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Usuários Internos]]></NonOsUsers>
+<Name><![CDATA[Nome]]></Name>
+<Type><![CDATA[Tipo]]></Type>
+<DefRole><![CDATA[Função Padrão]]></DefRole>
+<Tabname><![CDATA[Nome da Tabela]]></Tabname>
+<User><![CDATA[Usuário]]></User>
+<Grantor><![CDATA[Concessor]]></Grantor>
+<Privilege><![CDATA[Privilégio]]></Privilege>
+<Privileges><![CDATA[Privilégios]]></Privileges>
+<Username><![CDATA[Nome do Usuário]]></Username>
+<Grant><![CDATA[Conceder]]></Grant>
+<GrantNewPriv><![CDATA[Conceder novo privilégio]]></GrantNewPriv>
+<Roles><![CDATA[Funções]]></Roles>
+<CreateNewRole><![CDATA[Criar nova função]]></CreateNewRole>
+<Create><![CDATA[Criar]]></Create>
+<RoleName><![CDATA[Nome da Função]]></RoleName>
+<NoUserError><![CDATA[Falha de Concessão: nenhum nome de usuário fornecido.]]></NoUserError>
+<NoPrivError><![CDATA[Falha de Concessão: nenhum nível de privilégio fornecido.]]></NoPrivError>
+<NoTabError><![CDATA[Falha de Concessão: nenhum nome de tabela fornecido.]]></NoTabError>
+<NoRoleError><![CDATA[Falha na criação: nenhum nome da função fornecido.]]></NoRoleError>
+<NoPermission><![CDATA[Usuários de somente leitura não têm permissão para fazer isso. Você efetuou login como um usuário de somente leitura.]]></NoPermission>
+<NoDatabasesError><![CDATA[Nenhum banco de dados não-sistema disponível neste servidor de banco de dados.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Concessão bem-sucedida para o usuário]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Privilégio revogado para o usuário]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Privilégio salvo para o usuário]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Concessão bem-sucedida na tabela]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[para usuário]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Privilégio revogado para o usuário]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[na tabela]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Privilégio salvo para o usuário]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Criação bem-sucedida para a função]]></CreateSuccessForRole>
+<Connect><![CDATA[Conectar]]></Connect>
+<Resource><![CDATA[Recurso]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[Selecionar]]></Select>
+<Update><![CDATA[Atualizar]]></Update>
+<Insert><![CDATA[Inserir]]></Insert>
+<Delete><![CDATA[Excluir]]></Delete>
+<Index><![CDATA[Índice]]></Index>
+<Alter><![CDATA[Alterar]]></Alter>
+<References><![CDATA[Referências]]></References>
+<Under><![CDATA[Em]]></Under>
+<Modify><![CDATA[Modificar]]></Modify>
+<Revoke><![CDATA[Revogar]]></Revoke>
+<ErrorF><![CDATA[Erro:]]></ErrorF>
+<GrantFailed><![CDATA[Falha de Concessão]]></GrantFailed>
+<CreateFailed><![CDATA[Falha de Criação]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[Para usuários internos, o OAT necessita do Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[Para privilégios de comando da API de administração de SQL, o OAT necessita do Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

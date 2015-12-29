@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[Rozevírací nabídka panelu nástrojů SQL - Informace o hodnotě partnum]]></PartTitle>
+<Partition><![CDATA[Logická oblast]]></Partition>
+<PartInfoFor><![CDATA[Informace o logické oblasti pro {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Velikost stránky]]></Pgsize>
+<NumExtAlloc><![CDATA[Počet přidělených fyzických oblastí]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Celkový počet přidělených stránek]]></TPgsAlloc>
+<NDataPgs><![CDATA[Počet datových stránek]]></NDataPgs>
+<Lockid><![CDATA[Lockid]]></Lockid>
+<HasIPgs><![CDATA[Logická oblast tabulky obsahuje indexové stránky?]]></HasIPgs>
+<Rowsize><![CDATA[Velikost řádku]]></Rowsize>
+<NRows><![CDATA[Počet řádků]]></NRows>
+<PagesUsed><![CDATA[Použité stránky]]></PagesUsed>
+<errNoPartnum><![CDATA[Chyba: hodnota partnum není nastavená.]]></errNoPartnum>
+<errNotHex><![CDATA[Chyba: hodnota musí být v hexadecimálním formátu - začínat předponou <0x>.]]></errNotHex>
+</lang>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Datenbankbereiche]]></mainTitle>
+<dbspace><![CDATA[Datenbankbereich]]></dbspace>
+<dbspaceName><![CDATA[Name des Datenbankbereichs]]></dbspaceName>
+<owner><![CDATA[Eigner]]></owner>
+<pagesize><![CDATA[Seitengröße]]></pagesize>
+<createTime><![CDATA[Erstellungszeit]]></createTime>
+<dbspaceInfo><![CDATA[Datenbankbereichsinformationen]]></dbspaceInfo>
+<utilization><![CDATA[{0} Auslastung]]></utilization>
+<indexPages><![CDATA[Indexseiten]]></indexPages>
+<dataPages><![CDATA[Datenseiten]]></dataPages>
+<otherPages><![CDATA[Sonstige Seiten]]></otherPages>
+<freePages><![CDATA[Freie Seiten]]></freePages>
+<TableName><![CDATA[Tabellenname]]></TableName>
+<StartAddr><![CDATA[Startadresse]]></StartAddr>
+<EndAddr><![CDATA[Endadresse]]></EndAddr>
+<size><![CDATA[Größe]]></size>
+<Status><![CDATA[Status]]></Status>
+<ExtentList><![CDATA[Extentliste]]></ExtentList>
+<TableList><![CDATA[Tabellenliste]]></TableList>
+<Database><![CDATA[Datenbank]]></Database>
+<Table><![CDATA[Tabelle]]></Table>
+<Collate><![CDATA[Sortieren]]></Collate>
+<Rows><![CDATA[Zeilen]]></Rows>
+<SystemIntegrity><![CDATA[Integrität von]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Tabellenformat des Datenbankbereichs überprüfen]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Extents des Datenbankbereichs überprüfen]]></butCheckDbsExt>
+<RowSize><![CDATA[Zeilengröße]]></RowSize>
+<Created><![CDATA[Erstellt]]></Created>
+<AllocPages><![CDATA[Zugeordnete Seiten]]></AllocPages>
+<UsedPages><![CDATA[Belegte Seiten]]></UsedPages>
+<NumExtents><![CDATA[Anzahl Extents]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Nummer]]></Number>
+<Name><![CDATA[Name]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<default><![CDATA[Standard]]></default>
+<CreateSpace><![CDATA[Speicherbereich erstellen]]></CreateSpace>
+<Create><![CDATA[Erstellen]]></Create>
+<numChunks><![CDATA[# Chunks]]></numChunks>
+<UsedPer><![CDATA[Belegt %]]></UsedPer>
+<Data><![CDATA[Daten]]></Data>
+<Index><![CDATA[Index]]></Index>
+<Other><![CDATA[Sonstige]]></Other>
+<Free><![CDATA[Frei]]></Free>
+<noDropDBSpace><![CDATA[Rootdatenbankbereich kann nicht gelöscht werden.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Speicherbereich hinzufügen zu]]></AddSpaceto>
+<Path><![CDATA[Pfad]]></Path>
+<Offset><![CDATA[Relative Position]]></Offset>
+<FileCreation><![CDATA[Dateierstellung]]></FileCreation>
+<MayCreateFile><![CDATA[Datei erstellen, wenn keine vorhanden ist]]></MayCreateFile>
+<FileMustExist><![CDATA[Datei muss vorhanden sein]]></FileMustExist>
+<DropSpace><![CDATA[Speicherplatz {0} löschen]]></DropSpace>
+<AddChunk><![CDATA[Chunk hinzufügen]]></AddChunk>
+<Used><![CDATA[Belegt]]></Used>
+<AddMirror><![CDATA[Spiegel hinzufügen]]></AddMirror>
+<AddChunkMirror><![CDATA[Chunk mit Spiegel hinzufügen]]></AddChunkMirror>
+<StartMirror><![CDATA[Spiegel starten]]></StartMirror>
+<StopMirror><![CDATA[Spiegel stoppen]]></StopMirror>
+<AddMirrorto><![CDATA[Spiegel hinzufügen zu]]></AddMirrorto>
+<MirrorPath><![CDATA[Spiegelpfad]]></MirrorPath>
+<MirrorOffset><![CDATA[Spiegeloffset]]></MirrorOffset>
+<MirroringStarted><![CDATA[Spiegelung ist gestartet]]></MirroringStarted>
+<MirroringStopped><![CDATA[Spiegelung ist gestoppt]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - Systemüberprüfung]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Überprüfung durch oncheck ist abgeschlossen.]]></oncheckComplete>
+<NoPermission><![CDATA[Benutzer mit Lesezugriff haben hierfür keine Berechtigung. Sie sind als Benutzer mit Lesezugriff angemeldet.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Diese Aktion ist auf sekundären Servern nicht zulässig.]]></NotValidOnSecondary>
+<Error><![CDATA[Fehler:]]></Error>
+<DropDBSpaceFailed><![CDATA[Löschen des Datenbankbereichs ist fehlgeschlagen. Der folgende Datenbankbereichswert wurde nicht korrekt gesetzt:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Datenbankbereichserstellung ist fehlgeschlagen. Datenbankbereichsaktion]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[ist ungültig.]]></IsNotValid>
+<DATASpace><![CDATA[Datenspeicherbereich]]></DATASpace>
+<DataSpaceL><![CDATA[Datenspeicherbereich]]></DataSpaceL>
+<TEMPSpace><![CDATA[Temporärer Speicherplatz]]></TEMPSpace>
+<TempSpaceL><![CDATA[Temporärer Speicherplatz]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB-Bereich]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Datenbankbereichserstellung erfolgreich.]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Datenbankbereichserstellung ist fehlgeschlagen. Der folgende Datenbankbereichswert ist nicht korrekt gesetzt:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Datenbankbereichserstellung ist fehlgeschlagen. Datenbankbereichsaktion ist nicht zulässig]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Löschen des Datenbankbereichs wurde nicht bestätigt]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Überprüfungsergebnisse an...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Überprüfungsergebnisse...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Hinzufügen eines Chunks zum Datenbankbereich ist fehlgeschlagen:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Chunk erfolgreich hinzugefügt]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Chunk wird zum Datenbankbereich hinzugefügt:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Gespiegelter Chunk erfolgreich hinzugefügt]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Spiegel konnte nicht zum Datenbankbereich hinzugefügt werden:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[Der folgende Spiegelwert ist nicht korrekt gesetzt:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Spiegel erfolgreich hinzugefügt]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Spiegelung im Datenbankbereich konnte nicht gestartet werden:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[Starten der Spiegelung wurde im Datenbankbereich nicht bestätigt:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Spiegelung im Datenbankbereich konnte nicht gestoppt werden:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Stoppen der Spiegelung wurde im Datenbankbereich nicht bestätigt:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Datenbankbereiche]]></Dbspace>
+<TempDbspace><![CDATA[Temporärer Datenbankbereich]]></TempDbspace>
+<MirroredDbspace><![CDATA[Gespiegelter Datenbankbereich]]></MirroredDbspace>
+<Blobspace><![CDATA[BLOB-Bereich]]></Blobspace>
+<MirroredBlobspace><![CDATA[Gespiegelter BLOB-Bereich]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Bereich für intelligente BLOBs]]></SmartBlobspace>
+<TempSbspace><![CDATA[Temporärer Bereich für intelligente BLOBs]]></TempSbspace>
+<MirroredSbspace><![CDATA[Gespiegelter Bereich für intelligente BLOBs]]></MirroredSbspace>
+<DataPages><![CDATA[Datenseiten]]></DataPages>
+<IndexPages><![CDATA[Indexseiten]]></IndexPages>
+<OtherPages><![CDATA[Sonstige Seiten]]></OtherPages>
+<FreePages><![CDATA[Freie Seiten]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Datenbankbereichswert ist nicht korrekt gesetzt:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Zusammenfassung]]></summary>
+<admin><![CDATA[Verwaltung]]></admin>
+<tables><![CDATA[Tabellen]]></tables>
+<extents><![CDATA[Extents]]></extents>
+<validation><![CDATA[Validierung]]></validation>
+<Disabled><![CDATA[Inaktiviert]]></Disabled>
+<Recovering><![CDATA[Zurüchschreibung]]></Recovering>
+<Operational><![CDATA[Aktiv]]></Operational>
+</lang>

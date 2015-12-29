@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_updstats">
+<mainTitle><![CDATA[Statistikdaten automatisch aktualisieren]]></mainTitle>
+<generalTab><![CDATA[Allgemein]]></generalTab>
+<infoTab><![CDATA[Informationen]]></infoTab>
+<configTab><![CDATA[Konfiguration]]></configTab>
+<listTab><![CDATA[Befehle]]></listTab>
+<ListConfig><![CDATA[Konfiguration der automatischen Aktualisierung von Statistikdaten]]></ListConfig>
+<ConfParam><![CDATA[Parameter]]></ConfParam>
+<ConfValue><![CDATA[Wert]]></ConfValue>
+<ConfDesc><![CDATA[Beschreibung]]></ConfDesc>
+<ListDBSsummary><![CDATA[Statistikdaten automatisch nach Datenbank aktualisieren]]></ListDBSsummary>
+<ListDBSTime><![CDATA[Letzte Prüfzeit]]></ListDBSTime>
+<ListDBSName><![CDATA[Datenbank]]></ListDBSName>
+<ListDBSMissed><![CDATA[Tabellen ohne Statistikdaten]]></ListDBSMissed>
+<ListDBSSmallTables><![CDATA[Kleine Tabellen, deren Statistik aktualisiert werden muss]]></ListDBSSmallTables>
+<ListDBSLargeTables><![CDATA[Große Tabellen, deren Statistik aktualisiert werden muss]]></ListDBSLargeTables>
+<ListDBSDone><![CDATA[Tabellen mit aktualisierter Statistik]]></ListDBSDone>
+<CleanupOK><![CDATA[Die Bereinigung war erfolgreich.]]></CleanupOK>
+<CleanupBAD><![CDATA[Die Bereinigung ist fehlgeschlagen.]]></CleanupBAD>
+<fix><![CDATA[Klicken Sie auf 'Bereinigung', um das Problem zu beheben.]]></fix>
+<Save><![CDATA[Speichern]]></Save>
+<Cancel><![CDATA[Abbrechen]]></Cancel>
+<ConfigAutoUpdStatParams><![CDATA[Konfiguration der automatischen Aktualisierung von Statistikdaten]]></ConfigAutoUpdStatParams>
+<AUS_AGE_Description><![CDATA[Statistik aktualisieren alle:]]></AUS_AGE_Description>
+<AUS_CHANGE_Description><![CDATA[Statistik bei einer Tabellenänderung aktualisieren:]]></AUS_CHANGE_Description>
+<AUS_AUTO_RULES_Description><![CDATA[Richtlinien zum Aktualisieren der Statistik verwenden:]]></AUS_AUTO_RULES_Description>
+<AUS_SMALL_TABLES_Description><![CDATA[Statistik für alle Tabellen mit weniger als der folgenden Anzahl Zeilen aktualisieren:]]></AUS_SMALL_TABLES_Description>
+<AUS_PDQ_Description><![CDATA[UPDATE STATISTICS-Anweisungen mit PDQ-Priorität ausführen:]]></AUS_PDQ_Description>
+<AUS_THREADS_Description><![CDATA[Tasks 'Statistikdaten automatisch aktualisieren' mit der folgenden Anzahl Threads ausführen:]]></AUS_THREADS_Description>
+<AUS_THREADS><![CDATA[Threads]]></AUS_THREADS>
+<Threads><![CDATA[Threads]]></Threads>
+<days><![CDATA[Tage]]></days>
+<on><![CDATA[ein]]></on>
+<off><![CDATA[aus]]></off>
+<Evaluating><![CDATA[Auswertung ...]]></Evaluating>
+<saveTaskOK><![CDATA[Die Taskdetails wurden erfolgreich gespeichert.]]></saveTaskOK>
+<saveTaskBAD><![CDATA[Die Taskdetails wurden nicht gespeichert.]]></saveTaskBAD>
+<Missed><![CDATA[Tabellen ohne Statistikdaten]]></Missed>
+<Needed_Large><![CDATA[Große Tabellen, deren Statistikdaten aktualisiert werden müssen]]></Needed_Large>
+<Needed_Small><![CDATA[Kleine Tabellen, deren Statistikdaten aktualisiert werden müssen]]></Needed_Small>
+<Done><![CDATA[Tabellen mit aktualisierten Statistikdaten]]></Done>
+<ChartSummary><![CDATA[Auswertung automatischer Statistikaktualisierungen]]></ChartSummary>
+<ListCommands><![CDATA[Befehle zur Statistikaktualisierung]]></ListCommands>
+<ListPriority><![CDATA[Priorität]]></ListPriority>
+<ListExec><![CDATA[Befehl
+]]></ListExec>
+<RefreshEvaluation><![CDATA[Jetzt auswerten]]></RefreshEvaluation>
+<Cleanup><![CDATA[Bereinigung]]></Cleanup>
+<Cleanup_tooltip><![CDATA[Führen Sie die Bereinigungstask aus, wenn die AUS-Tasks Fehler verursachen. Die Bereinigungstask löscht die internen AUS-Arbeitstabellen und führt die Task 'Auswertung automatischer Statistikaktualisierungen' erneut aus.]]></Cleanup_tooltip>
+<ExportCmds><![CDATA[Exportbefehle]]></ExportCmds>
+<AUSAlerts><![CDATA[AUS-Alerts]]></AUSAlerts>
+<alerts><![CDATA[Alerts]]></alerts>
+<ListTime><![CDATA[Zeit beendet]]></ListTime>
+<lastEval><![CDATA[Letzte Auswertung abgeschlossen: ]]></lastEval>
+<runIn><![CDATA[Die automatische Aktualisierung der Statistik wird in {0} ausgeführt.]]></runIn>
+<ausDisabled><![CDATA['Statistikdaten automatisch aktualisieren' ist inaktiviert]]></ausDisabled>
+<configSaveErr><![CDATA[Fehler beim Speichern der AUS-Konfigurationsparameter]]></configSaveErr>
+<noValue><![CDATA[Kein Wert angegeben]]></noValue>
+<notPositiveInt><![CDATA[Muss eine positive ganze Zahl sein]]></notPositiveInt>
+<notInt_1_10><![CDATA[Wert muss eine ganze Zahl im Bereich von 1 bis 10 sein]]></notInt_1_10>
+<notInt_0_100><![CDATA[Wert muss eine ganze Zahl im Bereich von 0 bis 100 sein]]></notInt_0_100>
+<notInt_-1_100><![CDATA[Wert muss eine ganze Zahl im Bereich von -1 bis 100 sein]]></notInt_-1_100>
+<notInt_0_1><![CDATA[Wert muss 0 oder 1 sein]]></notInt_0_1>
+<FeatureUnavailable><![CDATA[Dieses Feature ist für die aktuelle Serverversion nicht verfügbar.]]></FeatureUnavailable>
+<ProblemWithEval><![CDATA[Problem beim Ausführen der Auswertung:]]></ProblemWithEval>
+<ReturnCode><![CDATA[Rückkehrcode: {0}]]></ReturnCode>
+<ReEvalComplete><![CDATA[Auswertung abgeschlossen.]]></ReEvalComplete>
+<RequestEval><![CDATA[Führen Sie die Task 'Auswertung automatischer Statistikaktualisierungen' jetzt aus, um zu ermitteln, welche Statistikdaten basierend auf der AUS-Konfiguration aktualisiert werden müssen.]]></RequestEval>
+<PendingCmds><![CDATA[Anstehende Befehle]]></PendingCmds>
+<CompletedCmds><![CDATA[Abgeschlossene Befehle]]></CompletedCmds>
+<save><![CDATA[[Speichern]]></save>
+<cancel><![CDATA[Abbrechen]]></cancel>
+<add><![CDATA[Hinzufügen]]></add>
+<NoPermission><![CDATA[Benutzer mit Lesezugriff haben hierfür keine Berechtigung. Sie sind als Benutzer mit Lesezugriff angemeldet.]]></NoPermission>
+<Time><![CDATA[Zeit]]></Time>
+<Type><![CDATA[Typ]]></Type>
+<Color><![CDATA[Farbe]]></Color>
+<Message><![CDATA[Nachricht]]></Message>
+<runfrequency><![CDATA[Ausführungsfrequenz]]></runfrequency>
+<AutoUpdStatsSched><![CDATA[Zeitplan für die automatische Aktualisierung von Statistikdaten]]></AutoUpdStatsSched>
+<Name><![CDATA[Name]]></Name>
+<WeekDay1Letter><![CDATA[M]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[D]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[M]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[D]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[F]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[S]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[S]]></WeekDay7Letter>
+<starttime><![CDATA[Startzeit]]></starttime>
+<stopttime><![CDATA[Stoppzeit]]></stopttime>
+<Priority><![CDATA[Priorität]]></Priority>
+<Rows><![CDATA[Zeilen]]></Rows>
+<Parameter><![CDATA[Parameter]]></Parameter>
+<Value><![CDATA[Wert]]></Value>
+<Actions><![CDATA[Aktionen]]></Actions>
+<Tables><![CDATA[Tabellen]]></Tables>
+<hours><![CDATA[Stunden]]></hours>
+<minutes><![CDATA[Minuten]]></minutes>
+<saveConfigSuccessful><![CDATA[Die Konfiguration 'Statistikdaten automatisch aktualisieren' wurde erfolgreich gespeichert.]]></saveConfigSuccessful>
+<specifiedNumbOfThread><![CDATA[Die Statistikaktualisierungstask wird mit dieser Anzahl Threads ausgeführt. Diese Option ist nur in OpenAdmin Tool verfügbar.]]></specifiedNumbOfThread>
+</lang>

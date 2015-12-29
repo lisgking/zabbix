@@ -1,0 +1,10 @@
+LICENCIJOS INFORMACIJA
+
+Toliau nurodytos Programos licencijuojamos pagal ðias ir IBM Programø kurioms neteikiama garantija tarptautinë licencinë sutartis sàlygas (IBM formos numeris Z125-5589-05).
+
+Programos pavadinimas: IBM Informix Schema Manager Plug-in for OpenAdmin Tool V3.11
+Programos numeris: Tool
+
+L/N:  L-DDAY-94MSL3
+D/N:  L-DDAY-94MSL3
+P/N:  L-DDAY-94MSL3 

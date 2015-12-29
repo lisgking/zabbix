@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[Tabela Fragmentada]]></FragmentedTable>
+<PseudoTable><![CDATA[Pseudotabela]]></PseudoTable>
+<NotApplicable><![CDATA[Não Aplicável]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[Nessa página, a OpenAdmin Tool não pode exibir informações para um servidor de banco de dados com mais de um código do idioma do banco de dados que não está em inglês. O servidor de banco de dados contém mais de um código do idioma do banco de dados que não está em inglês.]]></ErrorMultipleLocales>
+</lang>

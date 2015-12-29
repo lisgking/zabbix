@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[階段作業已不存在。]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[階段作業 ID 無效。]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[使用者 {0} 沒有查看階段作業的現行陳述式之許可權。]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[使用者 {0} 沒有查看階段作業的 SQL 之許可權。]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[錯誤：]]></ErrorF>
+</lang>

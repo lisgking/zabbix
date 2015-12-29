@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Добавить]]></add>
+<alarms><![CDATA[Оповещения]]></alarms>
+<alarm_check><![CDATA[Проверка оповещения]]></alarm_check>
+<alarm_setup><![CDATA[Задание оповещения]]></alarm_setup>
+<alarm_mod><![CDATA[Изменить оповещения]]></alarm_mod>
+<alarm_msg><![CDATA[Задайте условия, при которых генерируется оповещение]]></alarm_msg>
+<alarm_name><![CDATA[Имя оповещения:]]></alarm_name>
+<Always><![CDATA[Всегда]]></Always>
+<AnyAlarm><![CDATA[Любое оповещение]]></AnyAlarm>
+<Anyalarm><![CDATA[Любое оповещение]]></Anyalarm>
+<all><![CDATA[Все]]></all>
+<cancel><![CDATA[Отмена]]></cancel>
+<Config><![CDATA[Конфиг.]]></Config>
+<Configuration><![CDATA[Конфигурация]]></Configuration>
+<Currentprofile><![CDATA[Текущий профиль]]></Currentprofile>
+<CurrentProfile><![CDATA[Текущий профиль]]></CurrentProfile>
+<del_def_na><![CDATA[Используемый по умолчанию профиль не может быть удален.]]></del_def_na>
+<deleted_prof><![CDATA[Профиль был удален.]]></deleted_prof>
+<delete><![CDATA[Удалить]]></delete>
+<desc><![CDATA[Имя оповещения]]></desc>
+<emailprog><![CDATA[Конфигурация почтовой программы]]></emailprog>
+<empty_prof_add><![CDATA[Имя профиля не может быть пустым.]]></empty_prof_add>
+<empty_prof_load><![CDATA[Выберите профиль из списка.]]></empty_prof_load>
+<enable><![CDATA[Включить]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Исключения]]></exceptions>
+<exc_intro><![CDATA[Это оповещение допускает исключения.]]></exc_intro>
+<exc_example><![CDATA[Пример: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Из]]></from>
+<Category><![CDATA[Категория]]></Category>
+<prod_name><![CDATA[Советчик по работоспособности]]></prod_name>
+<prod_name_run><![CDATA[Запустить советчик по работоспособности]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Информация]]></info>
+<ldesc><![CDATA[Описание]]></ldesc>
+<description><![CDATA[Описание:]]></description>
+<load><![CDATA[Загрузить]]></load>
+<modify><![CDATA[Изменить]]></modify>
+<modifysched><![CDATA[Изменить расписание]]></modifysched>
+<modify_threshold><![CDATA[Изменить пороги]]></modify_threshold>
+<name><![CDATA[Имя]]></name>
+<noauth><![CDATA[У вас нет полномочий доступа к этой странице.]]></noauth>
+<noalarms><![CDATA[Оповещений не было.]]></noalarms>
+<notification><![CDATA[Уведомление]]></notification>
+<OS><![CDATA[ОС]]></OS>
+<Perf><![CDATA[Производительность]]></Perf>
+<profile><![CDATA[Профиль]]></profile>
+<profmanagement><![CDATA[Управление профилями]]></profmanagement>
+<profmsg><![CDATA[Добавить, загрузить или удалить профили.]]></profmsg>
+<RedAlarm><![CDATA[Красное оповещение]]></RedAlarm>
+<Redalarm_><![CDATA[Красное оповещение:]]></Redalarm_>
+<Redalarm><![CDATA[Красное оповещение]]></Redalarm>
+<Redalarmthreshold><![CDATA[Порог красного оповещения]]></Redalarmthreshold>
+<send><![CDATA[Отправить уведомление по электронной почте]]></send>
+<save><![CDATA[Сохранить]]></save>
+<save_failed><![CDATA[Сохранение невозможно: ]]></save_failed>
+<saved_alarms><![CDATA[Изменения опций оповещения сохранены.]]></saved_alarms>
+<saved_schedule><![CDATA[Изменения опций уведомления сохранены.]]></saved_schedule>
+<saved_email><![CDATA[Изменения почтовой программы сохранены.]]></saved_email>
+<schedandnot><![CDATA[Планирование и уведомления]]></schedandnot>
+<schedmsg><![CDATA[Можно запланировать запуск профилей с заданными интервалами. Результаты отправляются электронной почтой.]]></schedmsg>
+<schedule><![CDATA[Расписание]]></schedule>
+<show><![CDATA[Показать]]></show>
+<Storage><![CDATA[Хранение]]></Storage>
+<to><![CDATA[в]]></to>
+<thresholds><![CDATA[Пороги]]></thresholds>
+<threshold_msg><![CDATA[Смотрите в описании оповещения объяснение, как используются значения порогов.]]></threshold_msg>
+<when><![CDATA[Когда]]></when>
+<Yellowalarmthreshold><![CDATA[Порог желтого оповещения]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Желтое оповещение:]]></Yelalarm_>
+<YelAlarm><![CDATA[Желтое оповещение]]></YelAlarm>
+</lang>

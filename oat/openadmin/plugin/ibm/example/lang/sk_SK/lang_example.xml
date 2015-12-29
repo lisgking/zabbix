@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM Example Plug-in]]></ibm_example_plugin>
+<example><![CDATA[Napríklad:]]></example>
+<table><![CDATA[Tabuľka]]></table>
+<piechart><![CDATA[Koláčový graf]]></piechart>
+<linechart><![CDATA[Čiarový graf]]></linechart>
+<barchart><![CDATA[Pruhový graf]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[Užívatelia a sekvenčné snímania]]></users_and_seqscans>
+<username><![CDATA[Meno užívateľa]]></username>
+<numseqscans><![CDATA[Počet sekvenčných skenovaní]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[I/O operácie najvyšších 20 chunkov]]></Pie_Chart_Title>
+<Chunk><![CDATA[Chunk]]></Chunk>
+<TotalIO><![CDATA[Celkový počet I/O]]></TotalIO>
+<Chunk_num><![CDATA[Časť {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[Graf kontrolných bodov]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[Počet preplnených vyrovnávacích pamätí]]></dirty_buffers>
+<waits><![CDATA[Počet čakaní]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[Priestorový graf]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[Počet preplnených vyrovnávacích pamätí]]></dirty_buffers>
+<waits><![CDATA[Počet čakaní]]></waits>
+
+</lang>

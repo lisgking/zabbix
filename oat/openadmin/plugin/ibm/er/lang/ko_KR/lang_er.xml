@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[그리드]]></GridRepl>
+<noGridSupport><![CDATA[그리드에서 OAT용 Informix 복제 플러그인을 사용하려면 Informix 11.70이 필요합니다.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[복제 플러그인이 올바르게 설치되지 않았습니다. 복제 플러그인을 설치하려면 관리 메뉴에서 플러그인 관리자를 클릭하십시오.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[OAT용 Informix 복제 플러그인을 사용하려면 사용자 informix 또는 DBSA로 OAT에 로그인해야 합니다. ]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[ER 캡처 프로세스의 현재 상태]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[DDRBLOCK 이전의 논리 로그 페이지 수]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[스풀된 트랜잭션 수]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[행 데이터에 사용된 디스크 영역의 백분율]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[ER 네트워크의 현재 상태]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[연결 해제된 노드 수]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[보류 트랜잭션 수]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[ER 적용 프로세스의 현재 상태]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[평균 트랜잭션 수신 대기 시간(초)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[트랜잭션 적용 실패율]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[{0} 노드의 SQLHOSTS 파일에서 {1} 서버 그룹 ID가 중복되어 있습니다. SQLHOSTS 파일에서 식별자 옵션(i=number)에 고유 값을 지정하여 각 서버 그룹에 고유 ID를 제공하십시오. ]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[{0} 노드의 SQLHOSTS 파일에 {1} 서버 그룹이 포함되어 있지 않습니다. 루트 노드 또는 루트가 아닌 노드일 경우 도메인의 전체 서버 그룹에 대한 모든 SQLHOSTS 정보가 노드에 있어야 합니다. 노드가 단말 노드일 경우 최소한 상위 서버 그룹에 대한 SQLHOSTS 정보를 가지고 있어야 합니다. ]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[{0} 노드의 SQLHOSTS 파일에 연결 유형 필드에 대한 정확한 값이 없습니다. SQLHOSTS 파일에 있는 각 그룹의 멤버 중 하나는 지원되는 네트워크 프로토콜과 데이터베이스 서버 유형을 가지고 있어야 합니다. Enterprise Replication(ER)은 네트워크 프로트콜로 soctcp, tlitcp, socssl, tlispx, socimc, tliimc 및 sqlmux를 지원합니다. ER은 데이터베이스 서버 유형으로 on 및 ol을 지원합니다. ER에서는 SQLHOSTS 파일의 CSM(Cmmunications Support Module) 옵션을 사용하여 구성된 연결을 사용할 수 없습니다. ER은 암호화 구성 매개변수 설정을 통해서만 암호화할 수 있습니다. 클라이언트/서버 네트워크 암호화를 ER 암호화와 조합하려면 각 데이터베이스 서버에 대해 두 개의 네트워크 연결을 구성하십시오. 네트워크 암호화 및 SQLHOSTS에 대한 자세한 정보는 Informix Information Center를 참조하십시오.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[{0} 노드의 SQLHOSTS 파일에서 {1} 그룹에 단독 서버와 이의 별명이 둘 이상 포함되어 있습니다. {1} 그룹에는 {2} 서버가 포함되어 있습니다. 서버가 고가용성 클러스터에 속하므로 OAT는 이 서버를 Enterprise Replication(ER)용으로 정의할 수 없습니다. 이 서버를 ER용으로 정의하려면 명령행에서 cdr define server 명령을 사용하십시오. ]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[{0} 서버는 고가용성 클러스터의 보조 서버입니다. OAT는 이 서버를 ER(Enterprise Replication)용으로 정의할 수 없습니다. 고가용성 클러스터의 기본 서버에서 서버 정의 조치를 실행하십시오. ]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[{0} 서버에 연결할 수 없습니다: {1}. ER 구성을 동기화하기 위해 선택한 {0} 서버와 새 노드 사이에 신뢰 연결을 설정할 수 없습니다. 네트워크 연결을 확인하십시오. Enterprise Replication의 네트워크 환경 준비에 대한 자세한 정보는 Informix Information Center를 참조하십시오.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[{0} 서버의 그룹 ID가 노드 {1} 및 노드 {2}의 SQLHOSTS 파일에서 동일하지 않습니다. 노드 {1} 및 노드 {2}의 SQLHOSTS 파일에서 {0} 서버에 대한 식별자 옵션(i=number) 값을 확인하십시오. 값이 동일해야 합니다. ]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[{0} 서버에는 전역 카탈로그를 포함하는 syscdr 데이터베이스가 없으므로 Enterprise Replication(ER) 서버가 아닙니다. ER에 참여하여 ER 도메인 구성을 동기화하는 서버를 선택하십시오. ]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[{0} 서버가 단말 노드입니다. 단말 노드는 ER 도메인 구성을 동기화하는 서버가 될 수 없습니다. 루트 또는 루트가 아닌 노드를 선택하십시오. ]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[이 서버는 이미 Enteprise Replication(ER) 활동에 참여하고 있습니다. 다른 서버를 선택하십시오. ]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[서버가 고가용성 클러스터에 속하므로 OAT는 이 서버를 Enterprise Replication(ER)용으로 정의할 수 없습니다. 이 서버를 ER용으로 정의하려면 명령행에서 'cdr define server' 명령을 사용하십시오.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[{1} 서버의 {0} 그룹 이름이 유효하지 않습니다. 계속하기 전에 서버의 SQLHOSTS 파일에서 그룹 이름을 갱신하십시오. ]]></Invalid_Group_Name>
+<Error><![CDATA[오류]]></Error>
+<ConnectionFailed><![CDATA[연결에 실패함]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[이 서버의 연결 세부사항이 없습니다 ]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[명령의 길이가 관리 API의 한도를 초과합니다.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[관리 비동기 작업이 실행 요청되었습니다.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[여유 공간(MB)]]></Free_MB>
+<Used_MB><![CDATA[사용 공간(MB)]]></Used_MB>
+</lang>

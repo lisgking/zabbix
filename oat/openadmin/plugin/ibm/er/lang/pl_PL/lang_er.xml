@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_er">
+<er><![CDATA[Enterprise Replication]]></er>
+<GridRepl><![CDATA[Struktura grid]]></GridRepl>
+<noGridSupport><![CDATA[Do pracy w strukturze grid wtyczka Informix Replication Plug-in for OAT wymaga produktu Informix w wersji 11.70.]]></noGridSupport>
+<ERPluginNotInstalled><![CDATA[Wtyczka replikacji nie została poprawnie zainstalowana. Aby zainstalować wtyczkę replikacji, kliknij w menu Administrator opcję Menedżer wtyczek.]]></ERPluginNotInstalled>
+<informixUserRequired><![CDATA[Wtyczka Informix Replication Plug-in for OAT wymaga zalogowania do programu OAT jako użytkownik informix lub użytkownik o roli DBSA.]]></informixUserRequired>
+<OAT_ER_DDR_STATE><![CDATA[Bieżący stan procesu przechwytywania programu ER]]></OAT_ER_DDR_STATE>
+<OAT_ER_PROXIMITY_TO_DDRBLOCK><![CDATA[Liczba stron dziennika logicznego do momentu blokady DDRBLOCK]]></OAT_ER_PROXIMITY_TO_DDRBLOCK>
+<OAT_ER_SPOOLED_TXNS><![CDATA[Liczba buforowanych transakcji]]></OAT_ER_SPOOLED_TXNS>
+<OAT_ER_ROWDATA_SBSPACE_USED><![CDATA[Odsetek miejsca na dysku wykorzystany na dane wierszy]]></OAT_ER_ROWDATA_SBSPACE_USED>
+<OAT_ER_NETWORK_STATE><![CDATA[Bieżący stan sieci ER]]></OAT_ER_NETWORK_STATE>
+<OAT_ER_DISCONNECTED_NODES><![CDATA[Liczba odłączonych węzłów]]></OAT_ER_DISCONNECTED_NODES>
+<OAT_ER_PENDING_TXNS><![CDATA[Liczba oczekujących transakcji]]></OAT_ER_PENDING_TXNS>
+<OAT_ER_APPLY_STATE><![CDATA[Bieżący stan procesu wprowadzającego zmiany ER]]></OAT_ER_APPLY_STATE>
+<OAT_ER_APPLY_AVG_LATENCY><![CDATA[Średnie opóźnienie w odbiorze transakcji (w sekundach)]]></OAT_ER_APPLY_AVG_LATENCY>
+<OAT_ER_APPLY_FAIL_RATE><![CDATA[Stopień niepowodzeń w stosowaniu transakcji]]></OAT_ER_APPLY_FAIL_RATE>
+<ER_Groups_Not_Unique><![CDATA[W pliku SQLHOSTS dla węzła {0} zduplikowane są następujące identyfikatory grup serwerów: {1}.  Każdej grupie serwerów w pliku SQLHOSTS należy nadać unikalny identyfikator, podając unikalną wartość opcji identyfikatora (i=liczba).]]></ER_Groups_Not_Unique>
+<ER_Group_Does_Not_Exist><![CDATA[Plik SQLHOSTS dla węzła {0} nie zawiera następujących grup serwerów: {1}.  Jeśli węzeł jest węzłem głównym lub innym niż główny, musi on dla wszystkich grup serwerów w domenie mieć kompletne informacje w pliku SQLHOST.  Jeśli węzeł jest liściem, musi mieć w pliku SQLHOSTS co najmniej informacje o swojej nadrzędnej grupie serwerów.]]></ER_Group_Does_Not_Exist>
+<Invalid_NETTYPE><![CDATA[Plik SQLHOSTS dla węzła {0} nie zawiera poprawnych wartości pola typu połączenia. Dla jednego elementu każdej grupy w pliku SQLHOSTS muszą być określone obsługiwane protokoły sieciowe i typy serwerów bazy danych.  Program Enterprise Replication (ER) obsługuje następujące protokoły sieciowe: soctcp, tlitcp, socssl, tlispx, socimc, tliimc i sqlmux. Program ER obsługuje następujące typy serwerów bazy danych: on i ol. Program ER nie może korzystać z połączenia skonfigurowanego w pliku SQLHOSTS za pomocą opcji modułu CSM (Communications Support Module).  Szyfrowanie danych ER można włączyć tylko poprzez ustawienie parametrów konfiguracji szyfrowania.  Aby jednocześnie zastosować szyfrowanie sieci klient-serwer i szyfrowanie programu ER, należy skonfigurować po dwa połączenia sieciowe dla każdego serwera bazy danych. Więcej informacji o szyfrowaniu sieci i pliku SQLHOSTS zawiera centrum informacyjne produktu Informix.]]></Invalid_NETTYPE>
+<Server_Not_StandAlone><![CDATA[W pliku SQLHOSTS dla węzła {0} grupa {1} zawiera więcej niż jeden serwer autonomiczny lub jego aliasy.  Grupa {1} zawiera serwer {2}.  Program OAT nie może zdefiniować tego serwera dla programu Enterprise Replication (ER), ponieważ serwer ten należy do klastra o wysokiej dostępności.  Aby zdefiniować ten serwer dla programu ER, użyj komendy cdr define server w wierszu komend.]]></Server_Not_StandAlone>
+<Server_Not_Primary><![CDATA[Serwer {0} jest serwerem pomocniczym w klastrze o wysokiej dostępności.  Program OAT nie może zdefiniować tego serwera dla funkcji Enterprise Replication (ER).  Uruchom działanie definiowania serwera na serwerze głównym w klastrze o wysokiej dostępności.]]></Server_Not_Primary>
+<No_Trusted_Connection><![CDATA[Nie można nawiązać połączenia z serwerem {0}: {1}.  Nie powiodło się nawiązanie zaufanego połączenia między nowym węzłem a serwerem {0} wybranym do zsynchronizowania konfiguracji ER. Sprawdź połączenia sieciowe.  Więcej informacji na temat przygotowywania środowiska sieciowego dla programu Enterprise Replication zawiera centrum informacyjne produktu Informix.]]></No_Trusted_Connection>
+<No_Group_ID_Match><![CDATA[Identyfikator grupy dla serwera {0} różni się między węzłami {1} i {2} w plikach SQLHOSTS.  W plikach SQLHOSTS sprawdź wartość opcji identyfikatora (i=liczba) serwera {0} dla węzła {1} i węzła {2}.  Wartości muszą być takie same.]]></No_Group_ID_Match>
+<ER_Not_Active><![CDATA[Serwer {0} nie jest serwerem Enterprise Replication (ER), ponieważ nie ma bazy danych syscdr zawierającej katalog globalny.  Do synchronizacji konfiguracji domeny replikacji ER wybierz serwer uczestniczący w replikacji ER.]]></ER_Not_Active>
+<Server_is_Leaf><![CDATA[Serwer {0} jest węzłem-liściem.  Węzeł-liść nie może być serwerem synchronizującym konfigurację domeny ER. Wybierz węzeł główny lub niebędący węzłem głównym.]]></Server_is_Leaf>
+<ER_Already_Active><![CDATA[Ten serwer już uczestniczy w działaniach Enterprise Replication (ER).  Wybierz inny serwer.]]></ER_Already_Active>
+<Server_in_Cluster><![CDATA[Program OAT nie może zdefiniować tego serwera dla programu Enterprise Replication (ER), ponieważ serwer ten należy do klastra o wysokiej dostępności.  Aby zdefiniować ten serwer dla funkcji ER, użyj komendy 'cdr define server' w wierszu komend.]]></Server_in_Cluster>
+<Invalid_Group_Name><![CDATA[Nazwa grupy {0} dla serwera {1} nie jest poprawna.  Przed kontynuacją zmień nazwę grupy w pliku SQLHOSTS serwera.]]></Invalid_Group_Name>
+<Error><![CDATA[Błąd]]></Error>
+<ConnectionFailed><![CDATA[Połączenie nie powiodło się]]></ConnectionFailed>
+<NoConnectionInfo><![CDATA[Brak szczegółów połączenia dla tego serwera.]]></NoConnectionInfo>
+<ExceededAdminAPI><![CDATA[Długość komendy przekracza limit obowiązujący w administracyjnym interfejsie API.]]></ExceededAdminAPI>
+<AdminAsyncTaskSumbitted><![CDATA[Asynchroniczne zadanie administracyjne zostało pomyślnie wprowadzone.]]></AdminAsyncTaskSumbitted>
+<Free_MB><![CDATA[Wolne (MB)]]></Free_MB>
+<Used_MB><![CDATA[Wykorzystane (MB)]]></Used_MB>
+</lang>

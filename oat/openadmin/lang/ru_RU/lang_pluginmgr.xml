@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Менеджер подключаемых модулей]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Менеджер подключаемых модулей не может выполнить запись во временный каталог OAT: tmp. Для установки подключаемого модуля необходимо разрешение на запись во временный каталог OAT. Получите разрешение на запись в этот каталог и установите подключаемый модуль заново.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Не удалось открыть менеджер подключаемых модулей, так как для него требуется сконфигурированный PHP с установленным модулем zip. Для PHP, используемого OAT, модуль zip не установлен. Сконфигурируйте PHP на Web-сервере с установленным модулем zip. Другой вариант - установить OAT заново с помощью установщика OAT, который сконфигурирует PHP.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Подключаемый модуль не установлен.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Установленные подключаемые модули]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Еще не установленные подключаемые модули]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Нет выбранных для установки подключаемых модулей.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Нет доступных обновлений.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Менеджер подключаемых модулей не смог выполнить запись в каталог подключаемых модулей. Получите разрешение на запись в этот каталог и установите подключаемый модуль заново.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Текущая установленная версия]]></CurrVerInstalled>
+<Unknown><![CDATA[Неизвестно]]></Unknown>
+<ClickToEnable><![CDATA[Щелкните для включения]]></ClickToEnable>
+<ClickToDisable><![CDATA[Щелкните для отключения]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Не удалось удалить файл: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Подключаемый модуль успешно обновлен.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Подключаемый модуль успешно установлен.]]></PluginInstalled>
+<Name><![CDATA[Имя]]></Name>
+<Author><![CDATA[Автор]]></Author>
+<Description><![CDATA[Описание]]></Description>
+<Version><![CDATA[Версия]]></Version>
+<ServerVersion><![CDATA[Версия сервера]]></ServerVersion>
+<MinOATVersion><![CDATA[Минимальная версия OAT]]></MinOATVersion>
+<Install><![CDATA[Установить]]></Install>
+<Uninstall><![CDATA[Деинсталляция]]></Uninstall>
+<Upgrade><![CDATA[Обновление]]></Upgrade>
+<Enabled><![CDATA[Включено]]></Enabled>
+<updating><![CDATA[Изменение]]></updating>
+<LatestInstalled><![CDATA[Последняя установленная версия]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Это действие деинсталлирует подключаемый модуль {0}. Сжатый файл подключаемого модуля удаляется после установки. После деинсталляции подключаемого модуля его нельзя переустановить, пока этот сжатый файл не будет восстановлен в каталог подключаемого модуля.  \n\nПродолжить?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Подключаемый модуль успешно деинсталлирован.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Подключаемый модуль не деинсталлирован.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[Система OAT попыталась деинсталлировать подключаемый модуль, но ID подключаемого модуля не найден. В меню Администрирование щелкните по менеджеру подключаемых модулей и просмотрите список установленных подключаемых модулей. При необходимости снова деинсталлируйте подключаемый модуль.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Подключаемый модуль деинсталлирован, но следующие файлы удалить не удалось:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Можете удалить эти файлы со своего компьютера.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[Элемент меню подключаемого модуля не был удален. Его можно удалить на странице Менеджер меню.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Выбранный подключаемый модуль не может быть установлен. Для него требуется версия OAT {0} или новее.]]></MinOATVersionError>
+<Agree><![CDATA[Принять]]></Agree>
+<Disagree><![CDATA[Отвергнуть]]></Disagree>
+</lang>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL 도구 상자 팝업 - Partnum 정보]]></PartTitle>
+<Partition><![CDATA[파티션]]></Partition>
+<PartInfoFor><![CDATA[{0}의 파티션 정보]]></PartInfoFor>
+<Pgsize><![CDATA[페이지 크기]]></Pgsize>
+<NumExtAlloc><![CDATA[할당된 익스텐트 수]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[할당된 총 페이지 수]]></TPgsAlloc>
+<NDataPgs><![CDATA[데이터 페이지 수]]></NDataPgs>
+<Lockid><![CDATA[로크 ID]]></Lockid>
+<HasIPgs><![CDATA[테이블 파티션에 인덱스 페이지 포함 여부]]></HasIPgs>
+<Rowsize><![CDATA[행 크기]]></Rowsize>
+<NRows><![CDATA[행 수]]></NRows>
+<PagesUsed><![CDATA[사용 페이지]]></PagesUsed>
+<errNoPartnum><![CDATA[오류: partnum이 설정되지 않았습니다.]]></errNoPartnum>
+<errNotHex><![CDATA[오류: 값이 16진 포맷이어야 합니다. 즉, 접두부를 <0x>로 시작해야 합니다.]]></errNotHex>
+</lang>

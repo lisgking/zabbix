@@ -1,0 +1,2914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2012" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="conceito, tarefa, referência, referência, tarefa, tarefa, referência, referência, referência, referência, referência, referência, referência, referência, tarefa, referência, referência, referência, referência, referência, referência, referência, referência, referência, tarefa, tarefa, referência, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa, tarefa" />
+<meta name="keywords" content="conjuntos de réplicas, Definindo, definindo, Conjuntos de réplicas, réplicas, Réplicas, modelos, realizar, modelo, instanciar" />
+<meta name="keywords" content="realizar modelo, excluindo, grade, grades, criando, tarefas, comandos, servidores de origem, servidores de membros, servidor, modificando, servidor ER" />
+<meta name="keywords" content="servidor Enterprise Replication, Aborted Transaction Spooling (ATS), Row Information Spooling (RIS), Suspendendo, suspender, replicação, continuando" />
+<meta name="keywords" content="parando, iniciando, reinicialização, desativando, ativando, desconectando, descartando, conectando, gerenciando, visualizando propriedades, atributos do conjunto de réplicas, Visualizando" />
+<meta name="keywords" content="Iniciando, Parando, Continuando, retornado para ativo, conjunto de réplicas, incluindo, participantes, regras, resolução de conflito, escopo, frequência de replicação" />
+<meta name="keywords" content="replicar linha integral, visualizando participantes, atributos de réplica, consistência, verificação, linhas inconsistentes, reparando, sincronizando" />
+<meta name="keywords" content="tarefas de verificação ou sincronização de réplica, excluindo tarefas de verificação ou sincronização, tarefas de verificação ou sincronização do conjunto de réplicas, Status de tarefa, status de tarefa, Gerenciador de Conexões" />
+<meta name="keywords" content="unidade de conexão, cluster de alta disponibilidade, conjuntos de servidores, configuração de failover, acordo de nível de serviço, SLA" />
+<title>Informix Replication Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix Replication Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Conteúdo</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oer.dita" class="toclink">Informix Replication Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_oer_002" class="toclink">Configurando o Plug-in Replication</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oer_003" class="toclink">Monitorando o Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_4" href="#dqx1ids_oer_004" class="toclink">Visualizando a Topologia de um Domínio do ER</a></div>
+<div class="head3"><a id="ToC_5" href="#dqx1ids_oer_005" class="toclink">Configurando Limites de Alerta</a></div>
+<div class="head3"><a id="ToC_6" href="#dqx1ids_oer_006" class="toclink">Verificando Alertas em um Domínio Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_7" href="#dqx1ids_oer_007" class="toclink">Visualizando o Status de um Nó do Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_11" href="#dqx1ids_oer_011" class="toclink">Monitorando Informações de Captura de Log para um Nó</a></div>
+<div class="head3"><a id="ToC_16" href="#dqx1ids_oer_016" class="toclink">Monitorando a Fila de Envio para um Nó</a></div>
+<div class="head3"><a id="ToC_18" href="#dqx1ids_oer_018" class="toclink">Monitorando a E/S de Rede para um Nó do Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_19" href="#dqx1ids_oer_019" class="toclink">Monitorando o Uso do Espaço em Disco de um Nó</a></div>
+<div class="head3"><a id="ToC_20" href="#dqx1ids_oer_020" class="toclink">Monitorando a Fila de Recebimento para um Nó</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oer_021" class="toclink">Monitorando Como os Dados Replicados São Aplicados ao Nó de Destino</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oer_024" class="toclink">Revisando Arquivos ATS e RIS para Transações com Falha</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oer_026" class="toclink">Revisando Erros do Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oer_028" class="toclink">Visualizando os Parâmetros de Configuração do ER</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oer_029" class="toclink">Administrando o Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oer_070" class="toclink">Configurando o Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oer_060" class="toclink">Usando Modelos para Configurar o Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oer_098" class="toclink">Gerenciando o Enterprise Replication com uma Grade</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oer_071.dita" class="toclink">Gerenciando Servidores Enterprise Replication</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oer_037.dita" class="toclink">Gerenciando Conjuntos de Réplicas</a></div>
+<div class="head3"><a id="ToC_78" href="#dqx1ids_oer_036.dita" class="toclink">Gerenciando Réplicas</a></div>
+<div class="head3"><a id="ToC_94" href="#dqx1ids_oer_050.dita" class="toclink">Sincronizando Novamente Dados Entre Servidores de Replicação</a></div>
+<div class="head3"><a id="ToC_105" href="#dqx1ids_oer_054" class="toclink">Monitorando o Status da Tarefa</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oer_030" class="toclink">Alterando Parâmetros de Configuração do ER</a></div>
+<div class="head2"><a id="ToC_109" href="#dqx1ids_oer_115.dita" class="toclink">Gerenciando Conexões do Cliente</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oer_116" class="toclink">Visualizando Unidades de Conexão</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oer_117" class="toclink">Incluindo uma Unidade de Conexão</a></div>
+<div class="head3"><a id="ToC_112" href="#dqx1ids_oer_118" class="toclink">Modificando uma Configuração de Failover</a></div>
+<div class="head3"><a id="ToC_113" href="#dqx1ids_oer_119" class="toclink">Criando um Acordo de Nível de Serviço</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oer_120" class="toclink">Modificando um Acordo de Nível de Serviço</a></div>
+<div class="head3"><a id="ToC_115" href="#dqx1ids_oer_121" class="toclink">Criando um Gerenciador de Conexões</a></div>
+<div class="head1"><a id="ToC_116" href="#dqx1ids_cm_not" class="toclink">Avisos</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1trademarks" class="toclink">Marcas Registradas</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oer_000" class="toclink">Copyright</a></div>
+</div>
+<h1 id="dqx1ids_oer.dita"><a href="#ToC_1">Informix Replication
+Plug-in for OAT</a></h1>
+<div>
+<p>O IBM&reg; Informix&reg; Replication Plug-in
+for OpenAdmin Tool (OAT) fornece
+uma interface gráfica para configurar, monitorar e administrar o Enterprise Replication (ER). É possível também administrar grades de servidores de replicação
+interconectados.</p></div>
+<div>
+<div class="notetitle" id="wq2">Pré-requisitos:</div>
+<div class="notebody">O IBM Informix 11.50.xC4
+ou mais recente é necessário para o plug-in Replication. <span id="dqx1ids_oer.dita__preq-ph-cmxc3">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3
+e o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3
+ou com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3</span></div></div>
+<p>
+<p>Com o plug-in Replication, é
+possível monitorar servidores e domínios do ER:</p></p>
+<ul>
+<li>Visualizar uma topologia do domínio ER e todos os nós conhecidos.</li>
+<li>Visualizar informações resumidas e detalhadas sobre os nós no domínio.</li>
+<li>Visualizar informações detalhadas sobre as réplicas e conjuntos de réplicas
+no domínio.</li>
+<li>Configurar limites de alerta para o domínio.</li></ul>
+<p>É possível concluir tarefas administrativas do ER:</p>
+<ul>
+<li>Definir e modificar servidores ER, réplicas e conjuntos de réplicas.</li>
+<li>Usar modelos para configurar o ER.</li>
+<li>Gerenciar o estado dos servidores, conjuntos de réplicas e réplicas.</li>
+<li>Ressincronizar dados entre os servidores de replicação.</li>
+<li>Alterar os parâmetros de configuração do ER para um servidor.</li></ul>
+<p>É possível criar e administrar grades de servidores de
+replicação interconectados em um domínio:
+</p>
+<ul>
+<li>Visualizar informações sobre as grades em um domínio.</li>
+<li>Criar uma grade e ativar servidores de origem e usuários para executarem comandos de
+grade.</li>
+<li>Modificar uma grade para incluir servidores, ativar ou desativar servidores de origem
+ou autorizar usuários adicionais.</li>
+<li>Revisar o status de comandos de grade e executar novamente os comandos de grade que
+falharem.</li>
+<li>Rotear conexões do cliente para servidores na grade com base na qualidade
+de dados replicados, configurando Acordos de Nível de Serviço (SLAs)
+para um Gerenciador de Conexões.</li></ul>
+<p>É possível definir um Gerenciador de Conexões para
+gerenciar solicitações de conexão do cliente para uma combinação de clusters, grades,
+conjuntos de replicações e conjuntos de servidores. É possível incluir unidades de conexões em
+um Gerenciador de Conexões, iniciar e parar um Gerenciador de Conexões e criar
+Acordos de Nível de Serviço (SLAs).</p>
+<h2 id="dqx1ids_oer_002"><a href="#ToC_2">Configurando o Plug-in Replication</a></h2>
+<div>
+<p>Configure o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) para
+monitorar e administrar o Enterprise Replication (ER).</p></div>
+<p>
+<p>Para configurar o plug-in Replication:</p></p>
+<p></p>
+<ol type="1">
+<li>Instale o plug-in Replication. </li>
+<li>Crie grupos do OAT.</li>
+<li>Efetue logon no OAT com
+um dos servidores em um domínio existente do ER ou qualquer servidor que você
+desejar definir para o Enterprise Replication. 
+
+<p>Para obter informações adicionais sobre como instalar o plug-in Replication
+e criar grupos do OAT,
+consulte a ajuda do OAT.
+Para acessar a ajuda, no menu do OAT,
+clique em <strong>Ajuda</strong> &gt; <strong>Ajuda da
+Tarefa OAT</strong>.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Informações relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_470.htm#ids_erp_470" target="_blank">Configurando e Gerenciando o Enterprise Replication (Guia do Enterprise Replication)</a></li></ul>
+<h2 id="dqx1ids_oer_003"><a href="#ToC_3">Monitorando o Enterprise Replication</a></h2>
+<div>
+<p>Use o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) para
+monitorar servidores e domínios do
+Enterprise Replication.</p></div>
+<p>
+<p></p></p>
+<h3 id="dqx1ids_oer_004"><a href="#ToC_4">Visualizando a Topologia de um Domínio do ER</a></h3>
+<div>
+<p>Visualize a topologia, ou mapa de roteamento, de um domínio do
+Enterprise Replication (ER).</p></div>
+<p>
+<p>Para visualizar a topologia do domínio atual, no menu
+para o IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Domínio
+do ER</strong>.</p>
+<p>A página <strong>Domínio</strong> exibe todos os nós do domínio ER que são conhecidos pelo nó atual; por exemplo,
+um nó folha conhece seu pai e a si próprio. Nós são denotados pelo nome de grupo definido no arquivo SQLHOSTS.</p></p>
+<div>
+<div class="notetitle" id="wq9">Importante:</div>
+<div class="notebody">Se você estiver conectado a um nó não-raiz ou a um nó folha, as informações que poderá visualizar e as ações que poderá tomar serão limitadas. Para acesso total, vá para um nó-raiz no domínio.</div></div>
+<p>Na página <strong>Domínio</strong>, você pode: 
+</p>
+<ul>
+<li>Determinar se algum nó precisa de atenção revisando os alertas visuais.</li>
+<li>Ver o nome do nó e qualquer membro dele passando o mouse sobre o ícone de nó.</li>
+<li>Exibir ou ocultar a subárvore de algum nó não-folha clicando no ícone de expansão.</li>
+<li>Customizar sua visualização: 
+
+<ul>
+<li>Para aumentar ou diminuir o zoom no domínio, use a régua de controle Zoom.</li>
+<li>Para visualizar a taxa de atualização, clique no ícone de relógio.</li>
+<li>Para alterar a taxa de atualização, clique no ícone de relógio e use a régua de controle para especificar uma taxa de atualização de 0 a 300 segundos.</li>
+<li>Para exibir as linhas de conexão entre os nós, clique no ícone Visualização Normal.</li>
+<li>Para ocultar as linhas de conexão, clique no ícone Nenhuma Visualização de Conexão.</li></ul></li></ul>
+<p>Para visualizar os servidores do domínio em uma lista, clique na guia <strong>Lista de Servidores</strong>. Para cada servidor, a lista exibe o status,
+os servidores de membros, o tipo, o pai (se aplicável), a versão do IBM Informix
+e a data e hora em que o servidor foi monitorado pela última vez. </p>
+<h3 id="dqx1ids_oer_005"><a href="#ToC_5">Configurando Limites de Alerta</a></h3>
+<div>
+<p>Configure os limites para os alertas de um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>Quando um limite de alerta é atingido, uma notificação é enviada para o administrador e um ícone de alerta aparece na página <strong>Domínio</strong>.
+Limites de alerta aplicam-se a todos os nós em um domínio ER.</p>
+<p>Para configurar limites:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu para o IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Domínio
+do ER</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Editar Limites</strong>.</li>
+<li>Para ativar um limite, selecione a caixa de opção <strong>Ativar</strong> para o limite. Para desativar o limite, desmarque a caixa de opção.</li>
+<li>Insira ou altere valores de limite no campo.</li>
+<li>Clique em <strong>Atualizar Limites</strong> para manter suas alterações.</li></ol>
+<h3 id="dqx1ids_oer_006"><a href="#ToC_6">Verificando Alertas em um Domínio Enterprise Replication</a></h3>
+<div>
+<p>Verifique alertas nos nós em um domínio de Enterprise Replication (ER).</p></div>
+<p>
+<p> Um alerta surge quando um nó atinge ou excede um limite de alerta.</p>
+<p>Para verificar alertas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu para o IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Domínio
+do ER</strong>.
+
+<p>Todos os nós com alertas são destacados.</p></li>
+<li>Clique no nó e, então, no menu <strong>Ações</strong>, clique em <strong>Status do Nó</strong>. 
+
+<p>Uma página exibe
+os dados do perfil e todos os alertas do nó.</p></li>
+<li>Para revisar a atividade de replicação do nó selecionado, no menu
+<strong>Ações</strong>, clique em <strong>Detalhes do Nó</strong>. 
+
+<p>A página <strong>Resumo</strong> exibe estatísticas de alto nível para o nó selecionado. Clique nas guias para obter informações detalhadas sobre o nó:</p>
+
+<ul>
+<li><strong>Captura</strong>: A atividade de captura de dados no nó selecionado.</li>
+<li><strong>Fila de Envio</strong>: A fila de envio do nó selecionado e
+seus nós de destino e replicações.</li>
+<li><strong>Rede</strong>: A atividade de rede entre o nó selecionado e seus nós ER de parceiros.</li>
+<li><strong>Uso do Disco</strong>: Os espaços usados pelo nó selecionado quando as filas de envio e recebimento são preenchidas e as transações são colocadas em spool no disco.</li>
+<li><strong>Aplicar</strong>: As transações replicadas são aplicadas no nó atual.</li>
+<li><strong>ATS</strong>: Os arquivos Aborted Transaction Spooling (ATS)
+do nó selecionado. Você pode reparar transações com falha usando os arquivos ATS desta página.</li>
+<li><strong>RIS</strong>: Os arquivos Row Information Spooling (RIS)
+para o nó selecionado. Você pode reparar transações com falha usando os arquivos
+RIS desta página.</li>
+<li><strong>Erros</strong>: Os erros relacionados ao nó ou ao domínio selecionado.</li>
+<li><strong>Configuração</strong>: Os parâmetros de configuração de ER do nó selecionado. Você pode editar os parâmetros desta página.</li></ul></li></ol>
+<h3 id="dqx1ids_oer_007"><a href="#ToC_7">Visualizando o Status de um Nó do Enterprise Replication</a></h3>
+<div>
+<p>Visualiza o status de um nó em um domínio Enterprise Replication (ER).</p></div>
+<p>
+<p>Você pode visualizar o status de um nó em um domínio ER das seguintes maneiras: 
+</p>
+<ul>
+<li>Para visualizar o nó ao qual o IBM OpenAdmin
+Tool (OAT) for Informix está
+conectado, no menu do OAT, clique em <strong>Replicação</strong> &gt; <strong> Domínio do ER</strong>. As páginas detalhadas do nó serão exibidas.</li>
+<li>Para visualizar um no diferente no domínio, clique no nó. Em seguida, no menu <strong>Ações</strong>, clique em <strong>Status do Nó</strong>.
+O OAT se conecta ao nó selecionado
+no domínio e as páginas detalhadas do nó são exibidas.</li></ul></p>
+<h4 id="dqx1ids_oer_008">Visualizando um Resumo da Atividade de Replicação no Nó Atual</h4>
+<div>
+<p>Visualize um resumo da atividade de replicação no nó ao qual
+o IBM OpenAdmin
+Tool (OAT) for Informix está
+conetado em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong>.</p>
+<p>A página <strong>Resumo</strong> exibe um resumo de alto nível de atividade da replicação para o nó ao qual o OAT está conectado. Para visualizar as informações detalhadas, clique na guia que corresponde à seção.
+</p>
+<table id="wq18" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>Tabela 1. Resumo do Nó</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq19" align="left">Seção</th>
+<th id="wq20" align="left">Descrição</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq19"><strong>Uso do Disco</strong></td>
+<td headers="wq20">O campo <strong>Sbspace de Dados da Linha</strong> indica a quantidade (e porcentagem) de espaço usada para o spool de dados da linha. Se este valor for alto, você poderá precisar incluir espaço adicional.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Erros
+</strong></td>
+<td headers="wq20">O campo <strong>Erros Não Revisados</strong> exibe o número de erros que você precisa ler.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Réplicas</strong></td>
+<td headers="wq20">O campo <strong>Réplicas Ativas</strong> indica quantas das réplicas conhecidas que estão ligadas a este nó estão ativas. Uma réplica define os participantes da replicação e vários atributos sobre como replicar dados, como a frequência e como lidar com conflitos durante a replicação.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Captura</strong></td>
+<td headers="wq20">Esta seção exibe estatísticas sobre a captura de
+transações a partir do log lógico, das posições de log e da proximidade
+com o bloqueio da transação do usuário (DDRBLOCK).</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Aplicar</strong></td>
+<td headers="wq20">Esta seção exibe estatísticas sobre como aplicar a atividade no nó selecionado.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Fila de Envio</strong></td>
+<td headers="wq20">Esta seção exibe estatísticas sobre como ordenar as transações na fila de envio no nó de origem.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Fila de Recebimento</strong></td>
+<td headers="wq20">Esta seção exibe estatísticas sobre as transações na fila
+de recebimento no nó selecionado.</td>
+</tr>
+<tr>
+<td headers="wq19"><strong>Rede</strong></td>
+<td headers="wq20">Esta seção exibe estatísticas sobre a atividade da rede entre o nó selecionado e seus nós ER de parceiro.</td>
+</tr>
+</tbody>
+</table></p>
+<h4 id="dqx1ids_oer_009">Visualizando o Nó como uma Origem de Replicação</h4>
+<div>
+<p>Visualize um nó em um domínio do Enterprise Replication (ER)
+como o servidor de origem.</p></div>
+<p>
+<p>O ER monitora o log lógico para transações a serem replicadas para nós de destino e as copia para a fila de envio no servidor de origem.</p>
+<p>É
+possível visualizar informações detalhadas sobre as transações e a fila
+de envio nestas páginas do IBM OpenAdmin
+Tool (OAT) for Informix: <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>, <strong>Capturar</strong>
+e <strong>Fila de Envio</strong>.</p></p>
+<h4 id="dqx1ids_oer_010">Visualizando o Nó como um Destino de Replicação</h4>
+<div>
+<p>Visualize um nó em um domínio do Enterprise Replication (ER)
+como o servidor de destino.</p></div>
+<p>
+<p>A fila de recebimento é a área de espera das transações a serem
+aplicadas ao nó de banco de dados atual. O ER aplica transações para os
+bancos de dados corretos e notifica o nó de origem quando a transação é
+replicada com êxito.</p>
+<p>É possível visualizar informações detalhadas
+sobre as transações e a fila de envio nestas páginas do IBM OpenAdmin
+Tool (OAT) for Informix: <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>, <strong>Fila de Envio</strong>, <strong>Aplicar</strong>, <strong>ATS</strong>
+e <strong>RIS</strong>.</p></p>
+<h3 id="dqx1ids_oer_011"><a href="#ToC_11">Monitorando Informações de Captura de Log para um Nó</a></h3>
+<div>
+<p>Visualize informações detalhadas sobre a atividade de captura de log
+no nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Capturar</strong>. A página <strong>Capturar</strong> exibe as
+informações a seguir:</p></p>
+<ul>
+<li>O estado da captura de log do ER no nó atual: Em Execução, Inativo ou
+Não Inicializado.</li>
+<li>A posição do log atual e a posição do log no qual as transações estão
+sendo capturadas para replicação. Compare as posições do log para determinar
+se o ER está mantendo-se ativo nas transações em andamento do banco de dados.</li>
+<li>A posição de reprodução do log, que é o ponto a partir do qual o ER inicia a
+releitura das informações de log nos buffers de atualização de log após uma
+falha. Todas as transações geradas antes dessa posição em todos os servidores
+de destino foram aplicadas pelo ER ou armazenadas de modo estável no espaço na fila. 
+<div>
+<div class="notetitle" id="wq24">Importante:</div>
+<div class="notebody">Para evitar perda de dados, assegure-se de que a posição de reprodução do log nunca seja sobrescrita. Se a posição de reprodução não estiver avançando, a fila poderá estar cheia ou um nó remoto poderá estar inativo.</div></div></li>
+<li>O número total de páginas de log e o número de páginas até que o ER
+entre em um estado de bloqueio de transação, conhecido como modo DDRBLOCK.</li>
+<li>O número de páginas até que o log lógico quebre e substitua as transações
+ainda não processadas pelo ER.</li>
+<li>O número de páginas de log que foram lidas durante a captura do log,
+a partir do cache de captura de log e das entradas de log em spool no disco, e se
+houver estouro do cache de log.</li>
+<li>Se a criação de log dinâmica estiver ativada para evitar o modo DDRBLOCK e
+informações relacionadas, incluindo o número de logs lógicos dinâmicos que podem ser solicitados e o número de pedidos feitos para criar logs lógicos dinâmicos.</li></ul>
+<h4 id="dqx1ids_oer_012">Determinando Se Transações Estão Sendo Capturadas para Replicação</h4>
+<div>
+<p>Revise a atividade de captura de log no nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Capturar</strong>. Revise os campos de estado de captura e posição do log.
+O progresso desses campos pode ajudá-lo a determinar se as transações estão sendo ativamente capturadas.</p></p>
+<table id="wq26" width="100%" summary="" border="1" frame="border" rules="all">
+<caption>Tabela 2. Detalhes da Captura</caption>
+<thead valign="bottom">
+<tr valign="bottom">
+<th id="wq27" align="left">Campos</th>
+<th id="wq28" align="left">Descrição</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>Estado de Captura
+</strong></td>
+<td headers="wq28">O estado de captura do log no nó atual:
+Em Execução, Inativo ou Não Inicializado.</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>Posição do Log Atual</strong></td>
+<td headers="wq28">A posição do log lógico da transação atual.</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>Posição do Log de Captura</strong></td>
+<td headers="wq28">A posição do log lógico no qual as transações estão sendo capturadas
+para replicação. Compare a posição do log de captura com a posição do log atual para determinar
+se o ER está mantendo-se ativo nas transações.</td>
+</tr>
+<tr>
+<td headers="wq27"><strong>Posição do Log de Reprodução</strong></td>
+<td headers="wq28">O ponto a partir do qual o ER inicia a releitura das informações de
+log nos buffers de atualização de log após uma falha. Todas as transações geradas antes dessa posição em todos os servidores
+de destino foram aplicadas pelo ER ou armazenadas de modo estável no espaço na fila.
+<div>
+<div class="notetitle" id="wq29">Importante:</div>
+<div class="notebody">Para evitar perda de dados, assegure-se de que a posição de reprodução do log nunca seja sobrescrita. Se a posição de reprodução não estiver avançando, a fila poderá estar cheia ou um nó remoto poderá estar inativo.</div></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dqx1ids_oer_013">Monitorando o Progresso de Captura do Log para um Nó</h4>
+<div>
+<p>Revise o progresso de captura de log no nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Capturar</strong>. Verifique os campos <strong>Posição do Log Atual</strong> e <strong>Posição do Log de Captura</strong> periodicamente para determinar se o ER está mantendo-se ativo nas transações em andamento do banco de dados.</p></p>
+<h4 id="dqx1ids_oer_014">Evitando DDRBLOCK e uma Quebra de Log</h4>
+<div>
+<p>Evite que o Enterprise Replication (ER)
+entre em um estado de bloqueio da transação, conhecido como modo DDRBLOCK.</p></div>
+<p>
+<p>Quando um log lógico quebra, ele substitui as transações ainda não
+processadas pelo ER. As transações são perdidas antes que sejam armazenadas na
+fila de envio. Se um servidor de banco de dados estiver abordando a quebra do log,
+o ER entra no modo DDRBLOCK. O ER pode ser configurado para incluir um arquivo de log
+lógico dinamicamente em vez de entrar no modo DDRBLOCK.</p></p>
+<ul>
+<li>Para monitorar a proximidade para DDRBLOCK, no menu do IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Capturar</strong>. Revise o campo <strong>Proximidade com DDRBLOCK</strong>,que exibe o número de páginas no espaço do log lógico até que o ER entre em DDRBLOCK.</li>
+<li>Para evitar o DDRBLOCK, configure o ER para incluir arquivos de log lógico dinamicamente.
+No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>Configurar</strong>
+e configure os parâmetros DYNAMIC_LOGS e CDR_MAX_DYNAMIC_LOGS.</li>
+<li>Para monitorar a proximidade para agrupamento de log, no menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Capturar</strong>. Revise o campo  <strong>Proximidade com Quebra do Log</strong>, que exibe o número de páginas no espaço do log lógico até a quebra do log lógico.</li></ul>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">Manipular o Agrupamento de Log em Potencial (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_015">Ativando a Alocação do Arquivo de Log Dinâmico</h4>
+<div>
+<p>Ajuda a evitar que o Enterprise Replication (ER)
+entre em um estado de bloqueio da transação, conhecido como modo DDRBLOCK,
+configurando o ER para incluir arquivos de log lógicos dinamicamente.</p></div>
+<p>
+<p>Quando um log lógico quebra, ele substitui as transações ainda não
+processadas pelo ER. As transações são perdidas antes que sejam armazenadas na
+fila de envio. Se um servidor de banco de dados estiver abordando a quebra do log,
+o ER entra no modo DDRBLOCK. O ER pode ser configurado para incluir um arquivo de log
+lógico dinamicamente em vez de entrar no modo DDRBLOCK.</p>
+<p>Para ativar a alocação do arquivo
+de log dinâmico:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Configurar</strong>.</li>
+<li>Clique em <strong>Editar Configuração</strong>.</li>
+<li>Para <strong>DYNAMIC_LOGS</strong>, insira <samp class="xph">2</samp> para ativar a alocação do arquivo de log dinâmico.</li>
+<li>Para <strong>CDR_MAX_DYNAMIC_LOGS</strong>, insira o número de
+pedidos de arquivo de log dinâmico que o ER pode fazer em uma sessão.
+Ou insira <samp class="xph">-1</samp> para incluir logs indefinidamente. </li></ol>
+<p>
+<p></p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_553.htm#ids_erp_553" target="_blank">Manipular o Agrupamento de Log em Potencial (Guia do Enterprise Replication)</a></li></ul>
+<h3 id="dqx1ids_oer_016"><a href="#ToC_16">Monitorando a Fila de Envio para um Nó</a></h3>
+<div>
+<p>Monitore estatísticas sobre a fila de envio no nó
+atual em um domínio do Enterprise Replication (ER)
+e sobre os nós de destino e as réplicas para as quais o nó
+atual é uma origem de transações replicadas.</p></div>
+<p>
+<p>O ER coleta informações dos logs
+lógicos e coloca os dados a serem transferidos na fila de envio. Para monitorar a fila de
+envio, no menu do IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Fila de Envio</strong>.</p>
+<p></p>
+<p>A página <strong>Fila de Envio</strong> exibe estatísticas sobre as transações da fila de envio. Ela fornece informações sobre o espaço de armazenamento, as transações enviadas ao nó de destino e a memória necessária para as transações na fila de envio.
+Fornece também informações sobre os nós de destino e as replicações das quais o nó atual é a origem de transações replicadas.</p></p>
+<ul>
+<li>Para determinar quantas transações estão na fila e se elas estão sendo armazenadas, revise os campos <strong>Transações na Fila</strong>, <strong>Transações na Memória</strong> e <strong>Transações em Spool</strong>.</li>
+<li>Para determinar se as transações estão sendo aplicadas ao nó de destino, revise o
+campo <strong>Posição do Log de Captura</strong>. Compare-o com o campo <strong>Dados Confirmados Recentes</strong>, que indica a posição do log lógico da última transação aplicada ao nó de destino.</li>
+<li>Para determinar se algum nó de destino não está aplicando transações, revise o campo
+<strong>Nós Suspensos</strong>.
+Clique também na guia <strong>Nó de Destino</strong> para revisar o estado da conexão de cada nó
+de destino relacionado.</li>
+<li>Para visualizar o estado dos nós de destino nos quais o nó atual replica os dados, clique na guia <strong>Nós de Destino</strong>.</li>
+<li>Para visualizar as replicações do nó atual, clique na guia <strong>Replicacações</strong>.</li></ul>
+<h4 id="dqx1ids_oer_017">Visualizando Nós de Destino e Réplicas Relacionadas ao Nó Atual</h4>
+<div>
+<p>Visualize os nós de destino e as réplicas para as quais o
+nó atual em um domínio do Enterprise Replication (ER)
+é uma origem de transações replicadas.</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Fila de Envio</strong> e, em seguida, clique na guia <strong>Nós de Destino</strong>
+ou na guia <strong>Réplicas</strong>.</p></p>
+<h3 id="dqx1ids_oer_018"><a href="#ToC_18">Monitorando a E/S de Rede para um Nó do Enterprise Replication</a></h3>
+<div>
+<p>Monitore um resumo da E/S da rede para o nó atual em
+um domínio do Enterprise Replication
+(ER). Revise informações detalhadas sobre o nó atual e seus nós relacionados.</p></div>
+<p>
+<p>Para verificar a atividade de rede para o nó atual, no
+menu do IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>. Na página  <strong>Resumo</strong>, a seção <strong>Rede</strong> exibe as seguintes informações:</p></p>
+<ul>
+<li>O número de nós conectados</li>
+<li>O número de mensagens enviadas pelo nó atual</li>
+<li>O número de mensagens recebidas pelo nó atual</li>
+<li>A taxa de rendimento no nó atual</li>
+<li>O número de mensagens que não foram enviadas devido a problemas de conexão ou outros problemas</li></ul>
+<p>Para verificar o status da rede do nó atual e dos nós
+relacionados, no menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>Rede</strong>. A página <strong>Rede</strong> exibe informações sobre a atividade da rede com nós peer que possuem mensagens enviadas para o nó atual ou recebidas dele.
+Nomes de nós peer são listados como nomes de grupos, como definido no arquivo <strong>sqlhosts</strong>.</p>
+<ul>
+<li>Para determinar a atividade da rede recente no nó atual,
+revise o gráfico <strong>Detalhes da Rede</strong>, que mostra o número de mensagens por período. Clique no ícone de relógio para visualizar ou alterar a taxa de atualização, que varia de 0 a 60 segundos.</li>
+<li>Para determinar o estado da conexão de um nó peer, revise a coluna <strong>Estado</strong>.</li>
+<li>Para determinar o estado da interface de rede (NIF) de um nó peer,
+revise a coluna <strong>Conexão</strong>.</li></ul>
+<h3 id="dqx1ids_oer_019"><a href="#ToC_19">Monitorando o Uso do Espaço em Disco de um Nó</a></h3>
+<div>
+<p>Monitore como o espaço em disco está sendo usado no nó atual
+em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Uso de Disco</strong>. A página <strong>Uso do Disco</strong> exibe informações sobre as três áreas de espaço usadas pelo ER: 
+</p>
+<ul>
+<li><strong>Sbspace de Dados da Linha</strong>: Os sbspaces que armazenam os dados a serem replicados. Eles são definidos no parâmetro CDR_QDATA_SBSPACE.</li>
+<li><strong>Dbspace do Registro de Transação</strong>: Os dbspaces que armazenam os registros de transação. Eles são definidos no parâmetro CDR_QHDR_DBSPACE, se estiverem definidos. Caso contrário, por padrão, os registros de transação são armazenados no dbspace raiz.</li>
+<li><strong>Sbspace de Paginação do Agrupador</strong>: Os sbspaces usados para manipulação de grandes transações. Eles são definidos primeiro pelo parâmetro SBSPACETEMP, se estiverem definidos; em seguida, o parâmetro SBSPACENAME, se estiver definido; caso contrário, pelo parâmetro
+CDR_QDATA_SBSPACE.</li></ul></p>
+<div>
+<div class="notetitle" id="wq40">Importante:</div>
+<div class="notebody">Se esses espaços forem preenchidos, o ER é interrompido até que o problema que esteja causando o spool seja resolvido ou até que espaço adicional em disco seja alocado.</div></div>
+<p>Para alterar os valores desses parâmetros,
+no menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>Configuração</strong>
+e clique em <strong>Editar Configuração</strong>.</p>
+<h3 id="dqx1ids_oer_020"><a href="#ToC_20">Monitorando a Fila de Recebimento para um Nó</a></h3>
+<div>
+<p>Monitore as transações enfileiradas e pendentes da fila de
+recebimento no nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>. Revise a seção <strong>Fila de Recebimento</strong>, que lista o número de transações enfileiradas e pendentes.</p></p>
+<ul>
+<li>As transações enfileiradas foram recebidas no nó atual de um nó peer e armazenadas na fila de recebimento.</li>
+<li>Transações pendentes estão esperando para serem aplicadas no nó de destino.</li></ul>
+<h3 id="dqx1ids_oer_021"><a href="#ToC_21">Monitorando Como os Dados Replicados São Aplicados ao Nó de Destino</a></h3>
+<div>
+<p>Monitore como os dados replicados são aplicados ao nó atual
+em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>Depois que um nó de destino recebe transações de outro nó e as armazena
+na fila de recebimento, o ER aplica as transações às tabelas no nó de destino.</p>
+<p>Para visualizar um resumo de alto nível de
+como os dados replicados são aplicados ao nó atual, no menu do
+IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>. Revise a seção <strong>Aplicar</strong>.</p>
+<p>Para
+visualizar informações detalhadas sobre como os dados replicados são aplicados, no
+menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>Aplicar</strong>. Esta página contém três tipos de informações:</p></p>
+<ul>
+<li>Estatísticas sobre como os dados replicados são aplicados ao nó atual</li>
+<li>Dados gráficos que mostram as taxas de transação de aplicação e as taxas de latência</li>
+<li>Estatísticas sobre cada nó de origem e sobre como os dados replicados de cada nó são
+aplicados ao nó atual</li></ul>
+<h4 id="dqx1ids_oer_022">Monitorando Falhas da Transação</h4>
+<div>
+<p>Monitore o número de falhas da transação no nó
+atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>Você pode monitorar falhas da transação usando os seguintes métodos: 
+</p>
+<ul>
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Resumo</strong>. Na seção <strong>Aplicar</strong>, revise os seguintes campos: 
+
+<ul>
+<li><strong>Taxa de Falhas da Transação</strong>: O número médio de falhas na transação por segundo.</li>
+<li><strong>Total de Falhas</strong>: O número total de transações com falha.</li>
+<li><strong>Contagem de Arquivos ATS</strong>: O número total de arquivos Aborted
+Transaction Spooling (ATS) no nó. Um número maior que 0 indica possíveis falhas no nível de tabela.</li>
+<li><strong>Contagem de Arquivos RIS</strong>: O número total de arquivos Row
+Information Spooling (RIS) no nó. Um número maior que 0 indica possíveis falhas no nível de linha.</li></ul></li>
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>Aplicar</strong>. Revise os campos <strong>Taxa de Falha</strong> e <strong>Total de Falhas</strong> do nó atual, e a tabela <strong>Aplicar Estatísticas por Nó</strong>, que lista os nós de origem que possuem transações enviadas. A coluna <strong>Total de Transações com Falha</strong> lista quantas transações falharam no nó atual, pelo nó que enviou as transações.</li>
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>ATS</strong> e <strong>RIS</strong>.
+Essas páginas listam os arquivos ATS e RIS usados para ressincronizar transações depois que houver falhas.</li></ul></p>
+<h4 id="dqx1ids_oer_023">Determinando a Taxa de Latência da Aplicação</h4>
+<div>
+<p>Revise as taxas de latência para transações aplicadas ao
+nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Aplicar</strong>.</p></p>
+<ul>
+<li>Na seção <strong>Aplicar Estatísticas</strong>, revise os campos <strong>Latência Média</strong> e <strong>Latência Máxima</strong>.</li>
+<li>Revise o gráfico <strong>Latência</strong>.</li>
+<li>Para obter as taxas de latência por nó de origem, revise a seção <strong>Aplicar Estatísticas por Nó</strong>.</li></ul>
+<p></p>
+<h3 id="dqx1ids_oer_024"><a href="#ToC_24">Revisando Arquivos ATS e RIS para Transações com Falha</a></h3>
+<div>
+<p>Revise os arquivos Aborted Transaction Spooling (ATS) e
+os arquivos Row Information Spooling (RIS) para transações com falha no
+nó atual em um domínio do Enterprise Replication
+(ER).</p></div>
+<p>
+<p>No menu para o IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>ATS</strong> ou <strong>Replication</strong> &gt; <strong>Detalhes
+do Nó</strong> &gt; <strong>RIS</strong> e clique
+nos nomes dos arquivos.</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_257.htm#ids_erp_257" target="_blank">Arquivos de Transação com Falha (ATS e RIS) (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="#dqx1ids_oer_063">Reparando Transações com Falha com Arquivos ATS</a>
+<br />Repare transações com falha usando arquivos Aborted Transaction Spooling (ATS). A tarefa de reparação do ATS reconcilia linhas que falharam quando aplicadas ao servidor de destino.</li>
+<li><a href="#dqx1ids_oer_064">Reparando Transações com Falha com Arquivos RIS</a>
+<br />Repare transações com falha usando arquivos Row Information Spooling
+(RIS). A tarefa de reparação do RIS reconcilia linhas que falharam quando aplicadas ao servidor de destino.</li></ul>
+<h3 id="dqx1ids_oer_026"><a href="#ToC_25">Revisando Erros do Enterprise Replication</a></h3>
+<div>
+<p>Revise os erros para o nó atual em um domínio do Enterprise Replication
+(ER) ou para o domínio inteiro.</p></div>
+<p>
+<p>Para revisar erros do ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix,
+clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong> &gt; <strong>Erros</strong> .</li>
+<li>Na lista <strong>Erros</strong>, selecione os erros que você deseja revisar: 
+
+<ul>
+<li>Erros de todos os nó do domínio</li>
+<li>Erros gerados em outro nó como resultado de um comando enviado pelo
+nó atual</li>
+<li>Erros gerados no nó atual como resultado de um comando de outro nó</li></ul></li>
+<li>Na lista <strong>Revisar Status</strong>, selecione o status dos erros que você
+deseja revisar: todos, revisados ou não revisados.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_287.htm#ids_erp_287" target="_blank">A Referência do Utilitário de Linha de Comandos cdr (Guia do Enterprise Replication)</a></li></ul>
+<h3 id="dqx1ids_oer_028"><a href="#ToC_26">Visualizando os Parâmetros de Configuração do ER</a></h3>
+<div>
+<p>Visualize os valores dos parâmetros de configuração do Enterprise Replication
+(ER) para o nó atual.</p></div>
+<p>
+<p>Para visualizar os parâmetros de configuração do ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Detalhes do Nó</strong>.</li>
+<li>Clique na guia <strong>Configurações</strong>. Os parâmetros e seus valores atuais são exibidos.</li>
+<li>Para alterar os valores dos parâmetros de configuração, clique em <strong>Editar Configuração</strong>.</li></ol>
+<h2 id="dqx1ids_oer_029"><a href="#ToC_27">Administrando o Enterprise Replication</a></h2>
+<div>
+<p>Use o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) para
+definir e gerenciar os servidores ER, conjuntos de réplicas, réplicas e participantes.
+Verifique e repare inconsistências em dados. Altere os parâmetros de configuração do ER.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq54">Importante:</div>
+<div class="notebody">O IBM Informix Versão
+11.50.xC4 ou mais recente é necessário para o plug-in Replication. </div></div>
+<h3 id="dqx1ids_oer_070"><a href="#ToC_28">Configurando o Enterprise Replication</a></h3>
+<div>
+<p>Estes tópicos descrevem como configurar o Enterprise Replication (ER)
+usando o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT).</p></div>
+<h4 id="dqx1ids_oer_.49">Definindo um Servidor para o Enterprise Replication</h4>
+<div>
+<p>Torne um servidor um novo nó em um domínio existente do Enterprise Replication
+(ER) ou o primeiro nó em um novo domínio do ER.</p></div>
+<p>
+<p>Para definir um servidor para o Enterprise Replication</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Definir Novo Servidor</strong>.</li>
+<li>Siga as orientações no Assistente para Definir Servidor.</li></ol>
+<h4 id="dqx1ids_oer_048.dita">Definindo um Conjunto de Réplicas</h4>
+<div>
+<p>Crie um novo conjunto de réplicas.</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>Um conjunto de réplicas combina várias réplicas para formar um conjunto que pode ser administrado como uma unidade. Você pode usar um único comando para iniciar, parar, suspender ou retomar todas as réplicas no conjunto.</p>
+<p>Para definir um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Definir Conjunto de Réplicas</strong>.</li>
+<li>Digite um nome para o conjunto de réplicas. O nome deve ser exclusivo e não pode ser igual ao nome de uma réplica.</li>
+<li>Selecione as réplicas para o conjunto.
+
+<ul>
+<li>Para incluir réplicas, selecione-as na lista <strong>Réplicas Disponíveis</strong> e clique em <strong>Incluir</strong> ou em <strong>Incluir Todas</strong>.</li>
+<li>Para remover réplicas, selecione-as na lista <strong>Este Conjunto de Réplicas</strong> e clique em <strong>Remover</strong> ou em <strong>Remover Todas</strong>.</li></ul></li>
+<li>Opcional: Para tornar este conjunto um conjunto de réplicas
+exclusivo, selecione <strong>Réplicas são exclusivas para este conjunto</strong>.</li>
+<li>Para configurar a opção de frequência para o conjunto de réplicas, clique em <strong>Avançar</strong>, ou para criar o conjunto de réplicas com o valor padrão, clique em <strong>Concluir</strong>.</li>
+<li>Opcional: Especifique a <strong>Frequência</strong> de
+replicação. O padrão é imediatamente quando os dados chegam.</li>
+<li>Para criar o conjunto de réplicas, clique em <strong>Concluir</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_181.htm#ids_erp_181" target="_blank">Conjuntos de Réplicas Exclusivos (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_046.dita">Definindo uma Réplica</h4>
+<div>
+<p>Defina os participantes da réplica e seus atributos, incluindo a frequência de replicação de dados e como lidar com conflitos.</p></div><a id="idx3"></a><a id="idx4"></a>
+<p>
+<p>Com a ação Definir Réplica, você define uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos. Todos os servidores de banco de dados que contêm réplicas principais devem ser capaz de estabelecer uma conexão direta com o servidor de banco de dados da réplica principal.</p></p>
+<div>
+<div class="notetitle" id="wq62">Pré-requisito:</div>
+<div class="notebody">Um tabela deve ter uma chave primária para ser participante da replicação.
+Além disso, ela deve ser uma tabela real. Ela não pode ser um sinônimo, uma visualização ou uma sequência. Além disso, não pode ser uma tabela externa. Somente as tabelas que podem ser participantes da replicação aparecem na lista de tabelas selecionáveis.</div></div>
+<p>Para definir uma réplica e os participantes da réplica:</p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Definir Réplica</strong>.</li>
+<li>Digite um nome exclusivo para a réplica.</li>
+<li>Selecione o grupo de servidores a ser usado como a base da replicação
+principal a partir da lista <strong>Servidor de Replicação Principal</strong>.</li>
+<li>Para criar tabelas automaticamente no servidor de destino existentes no servidor de réplicas principais, mas não no servidor de destino, selecione <strong>Criar Tabelas Ausentes nos Servidores de Destino</strong>.</li>
+<li>Usando os filtros, selecione as tabelas e os servidores de replicação que você deseja definir como participantes da réplica.
+
+<ol type="a">
+<li>No <strong>Filtro de Banco de Dados</strong>, digite todo ou parte do nome do banco de dados.</li>
+<li>No <strong>Filtro de Tabela</strong>, digite todo ou parte do nome da tabela. Continue filtrando a lista até que uma único participante seja exibido para cada servidor.</li>
+<li>Para selecionar todos os participantes especificados pelos filtros, clique em <strong>Selecionar</strong>. 
+
+<p>Você também pode selecionar ou limpar uma tabela clicando nela na lista.</p></li></ol> 
+<div>
+<div class="notetitle" id="wq66">Nota:</div>
+<div class="notebody">O servidor de réplicas principais deve ser um participante da nova réplica. Quando você seleciona as tabelas para participarem da réplica, deve selecionar uma tabela no servidor de réplicas principais.</div></div></li>
+<li>Especifique o tipo de participante: primário ou receber apenas. O padrão é primário: o participante envia e recebe dados. Para alterar a opção, clique no ícone.</li>
+<li>Especifique quais privilégios serão usados para aplicar os dados replicados. O padrão é proprietário da tabela. Para alterar a opção, clique no ícone.</li>
+<li>Para configurar as opções avançadas para a réplica, clique em <strong>Avançar</strong>, ou para criar a réplica com os valores padrão para as opções avançadas, clique em <strong>Concluir</strong>. 
+
+<p>O ER verifica se as tabelas em diferentes servidores possuem tipos de dados de colunas consistentes e nomes de colunas idênticos. Se <strong>Avançar</strong> e <strong>Concluir</strong> não estiverem disponíveis, as tabelas não estarão consistentes.</p></li>
+<li>Opcional: Especifique as opções avançadas:
+
+<ul>
+<li><strong>Escopo da Resolução de Conflitos</strong>. O padrão é transação.</li>
+<li><strong>Regra de Resolução de Conflitos</strong>. O padrão é registro de data e hora.</li>
+<li><strong>Formato de Ponto Flutuante</strong>. O padrão é IEEE.</li>
+<li><strong>Ativar Aborted Transaction Spooling (ATS)</strong>.
+Por padrão, o ATS não está ativado.</li>
+<li><strong>Ativar Row Information Spooling (RIS)</strong>.
+Por padrão, o RIS não está ativado.</li>
+<li><strong>Replicar Linha Completa</strong>. Por padrão, linhas completas são replicadas. Esta opção está ativada.</li>
+<li><strong>Disparar Acionadores no Destino</strong>. Por padrão, acionadores não são disparados na tabela de destino.</li>
+<li><strong>Reter Linhas Excluídas</strong>. Por padrão, as linhas excluídas não são retidas.</li>
+<li><strong>Frequência</strong> de replicação. O padrão é imediatamente quando os dados chegam.</li></ul></li>
+<li>Para criar a réplica, clique em <strong>Concluir</strong>.</li></ol>
+<h3 id="dqx1ids_oer_060"><a href="#ToC_32">Usando Modelos para Configurar o Enterprise Replication</a></h3>
+<div>
+<p>Use modelos para configurar e implementar o Enterprise Replication.</p></div>
+<p>Um modelo usa informações de esquemas sobre um banco de dados, um grupo de tabelas, colunas e chaves primárias para definir um grupo de réplicas principais e um conjunto de réplicas. Primeiro, defina uma modelo e depois o instancie nos servidores onde você deseja replicar dados.</p>
+<h4 id="dqx1ids_oer_061">Definindo um Modelo</h4>
+<div>
+<p>Crie um modelo. Especifique as tabelas que serão usadas para o modelo, o banco de dados e o servidor Enterprise Replication (ER) no qual as tabelas estão localizadas e as opções de modelo.</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>Um modelo define um grupo de réplicas principais e um conjunto de réplicas. Um modelo consiste de informações de esquemas sobre um banco de dados, um grupo de tabelas, atributos de colunas e chaves primárias que identificam linhas.</p>
+<p>Para definir um modelo:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Modelos</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Definir Novo Modelo</strong>.</li>
+<li>Digite um nome para o modelo. O nome deve ser exclusivo e não pode ser igual ao nome da réplica ou do conjunto de réplicas.</li>
+<li>Na lista <strong>Servidores</strong>, expanda os nomes de servidor e bancos de dados para exibir as tabelas. 
+<div>
+<div class="notetitle" id="wq70">Dica:</div>
+<div class="notebody">Para filtrar a lista, comece digitando o nome de servidor na caixa de texto <strong>Filtro de Servidor</strong> e o nome de banco de dados na caixa de texto <strong>Filtro de Banco de Dados</strong>.</div></div></li>
+<li>Selecione as tabelas para o modelo.
+
+<ul>
+<li>Para incluir todas as tabelas de um banco de dados na lista, selecione o banco de dados na lista <strong>Tabelas</strong> e clique em <strong>Incluir</strong>.</li>
+<li>Para incluir uma tabela específica, selecione a tabela e clique em <strong>Incluir</strong>.</li>
+<li>Para remover uma tabela do modelo, selecione-a e clique em <strong>Remover</strong> ou em <strong>Remover Tudo</strong>.</li></ul></li>
+<li>Para criar o modelo com as opções padrão, clique em <strong>Concluir</strong> ou em <strong>Avançar</strong>, para especificar uma das opções a seguir, e depois clique em <strong>Concluir</strong>.
+
+<ul>
+<li><strong>Escopo da Resolução de Conflitos</strong>. O padrão é transação.</li>
+<li><strong>Regra de Resolução de Conflitos</strong>. O padrão é ignorar.</li>
+<li><strong>Formato de Ponto Flutuante</strong>. O padrão é IEEE.</li>
+<li><strong>Ativar Aborted Transaction Spooling (ATS)</strong>.
+Por padrão, o ATS não está ativado.</li>
+<li><strong>Ativar Row Information Spooling (RIS)</strong>.
+Por padrão, o RIS não está ativado.</li>
+<li><strong>Disparar Acionadores no Destino</strong>. Por padrão, acionadores não são disparados na tabela de destino.</li>
+<li><strong>Reter Linhas Excluídas</strong>. Por padrão, as linhas excluídas não são retidas.</li></ul></li></ol>
+<p>
+<p>Agora você pode instanciar o modelo nos servidores de banco de dados do domínio ER usando a ação <strong>Concretizar Modelo</strong>.</p></p>
+<div>
+<div class="notetitle" id="wq72">Importante:</div>
+<div class="notebody">Para replicar dados em um domínio ER com base nas réplicas do modelo, você deve instanciar o modelo em pelo menos dois servidores.</div></div>
+<h4 id="dqx1ids_oer_062">Concretizando um Modelo</h4>
+<div>
+<p>Instancie um modelo nos servidores Enterprise Replication (ER).</p></div><a id="idx7"></a><a id="idx8"></a><a id="idx9"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq74">Pré-requisito:</div>
+<div class="notebody">Antes de poder instanciar um modelo, você deve defini-lo. Consulte <a href="#dqx1ids_oer_061">Definindo um Modelo</a></div></div>
+<p>
+<p>Para instanciar um modelo:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Modelos</strong>.</li>
+<li>Na lista de modelos, selecione o modelo que será instanciado.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Concretizar Modelo</strong>.</li>
+<li>Na lista <strong>Servidores Disponíveis</strong>, selecione os servidores nos quais instanciar o modelo. 
+<div>
+<div class="notetitle" id="wq78">Dica:</div>
+<div class="notebody">Comece digitando o nome do servidor na caixa de texto <strong>Filtro de Servidor</strong> para filtrar a lista.</div></div></li>
+<li>Para instanciar o modelo nos servidores com as opções padrão, clique em <strong>Concluir</strong> ou em <strong>Avançar</strong>, para especificar uma das opções a seguir, e depois clique em <strong>Concluir</strong>.
+
+<ul>
+<li><strong>Criar Tabelas Ausentes</strong>. Quando esta opção é selecionada, tabelas existentes no servidor de réplicas principais, mas não no servidor de destino, são criadas automaticamente nos servidores de destino.  Esta opção é selecionada por padrão. O dbspace das tabelas criadas é configurado por padrão para o mesmo dbspace do banco de dados.</li>
+<li><strong>Aplicar Dados Replicados com Privilégios do Proprietário da Tabela</strong>.
+Especifique se o proprietário da tabela de origem é o proprietário das tabelas criadas quando o modelo é concretizado. Por padrão, as tabelas pertencem ao usuário <strong>informix</strong>.</li>
+<li><strong>Configurar o Servidor para Apenas Receber</strong>. Especifique se os servidores de destino serão servidores que apenas receberão. Por padrão, os servidores enviam e recebem dados replicados.</li>
+<li><strong>Sincronizar Dados</strong>. Especifique um servidor para atuar como a origem da sincronização de dados nos servidores nos quais o modelo está instanciado. Especifique como identificar linhas nos servidores de destino que não estão presentes no servidor de origem de dados. Por padrão, linhas extras são excluídas dos servidores de destino.</li></ul></li></ol>
+<h4 id="dqx1ids_oer_092.dita">Excluindo um Modelo</h4>
+<div>
+<p>Exclua um modelo do Enterprise Replication (ER) e qualquer conjunto de réplicas criado quando o modelo foi instanciado.</p></div><a id="idx10"></a><a id="idx11"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq80">Importante:</div>
+<div class="notebody">Excluir um modelo não exclui as réplicas criadas quando o modelo foi instanciado.</div></div>
+<p>Para excluir um modelo:</p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Modelos</strong>.</li>
+<li>Selecione o modelo.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir Modelo</strong>.</li></ol>
+<h3 id="dqx1ids_oer_098"><a href="#ToC_36">Gerenciando o Enterprise Replication com uma Grade</a></h3>
+<div>
+<p>Gerencie um conjunto de servidores de replicação interconectados em um
+domínio Enterprise Replication (ER). Defina uma grade, autorize os servidores
+a partir dos quais irá executar comandos de grade, autorize os usuários para executarem os comandos,
+monitore o status das tarefas de grade e execute novamente os comandos de grade. Roteie
+as conexões do cliente para servidores de replicação em uma grade.</p></div><a id="idx12"></a>
+<div>
+<div class="notetitle" id="wq83">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_098__d6820e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">Configuração e Gerenciamento de Grade (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_102">Criando uma Grade</h4>
+<div>
+<p>Defina uma grade de servidores de replicação interconectados em
+um domínio do Enterprise Replication
+(ER). Autorize um servidor do qual irá executar os comandos de grade e os usuários
+para executarem os comandos.</p></div><a id="idx13"></a><a id="idx14"></a><a id="idx15"></a><a id="idx16"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq85">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_102__d7078e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>É possível definir uma grade com base em um domínio ER existente.</p></p>
+<p>
+<p>Para criar uma grade:</p></p>
+<ol type="1">
+<li>Conecte a um servidor de replicação no domínio ER selecionando
+o servidor na página de login do OAT ou na lista <strong>Servidor</strong>
+na parte superior da página do OAT.</li>
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Criar
+Grade</strong>.</li>
+<li>Preencha os campos na página.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">Configuração e Gerenciamento de Grade (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_109">Excluindo uma Grade</h4>
+<div>
+<p>Exclua uma grade de servidores de replicação interconectados em
+um domínio do Enterprise Replication
+(ER). </p></div><a id="idx17"></a><a id="idx18"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq90">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_109__d7757e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Para excluir uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir
+Grade</strong>.</li></ol>
+<h4 id="dqx1ids_oer_103">Incluindo Membros em uma Grade</h4>
+<div>
+<p>Inclua servidores em uma grade de servidores de replicação interconectados
+em um domínio do Enterprise Replication (ER)
+e, opcionalmente, autorize um servidor a partir do qual executará comandos de grade.</p></div><a id="idx19"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq94">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_103__d7168e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>É possível incluir outros servidores do domínio em uma grade.</p></p>
+<p>
+<p>Para incluir servidores em uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>No menu <strong>Ações</strong> na página <strong>Membros
+da Grade</strong>, clique em <strong>Incluir Membros</strong>.</li>
+<li>Preencha os campos na página.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">Configuração e Gerenciamento de Grade (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_108">Alterando os Usuários de uma Grade</h4>
+<div>
+<p>Autorize os usuários a executarem comandos de grade para uma grade de servidores de
+replicação interconectados em um domínio do Enterprise Replication (ER)
+ou remova a autorização para executar comandos de grade dos usuários.</p></div><a id="idx20"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq99">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_108__d7667e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Um usuário autorizado pode executar comandos de grade de qualquer servidor
+de origem na grade.</p></p>
+<p>
+<p>Para alterar os usuários de uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>No menu <strong>Ações</strong> na página <strong>Membros
+da Grade</strong>, clique em <strong>Alterar Usuários</strong>.</li>
+<li>Preencha os campos na página.</li></ol>
+<h4 id="dqx1ids_oer_104">Ativando ou Desativando um Servidor de Origem para uma Grade</h4>
+<div>
+<p>Ative um servidor para executar comandos em uma grade de servidores
+de replicação interconectados em um domínio do Enterprise Replication (ER)
+ou remova essa autorização de um servidor.</p></div><a id="idx21"></a><a id="idx22"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq104">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_104__d7258e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Os comandos de grade que são executados em um servidor de origem são propagados
+para todos os outros servidores na grade. Somente um servidor de origem pode executar comandos
+de grade. Os servidores de membros não são autorizados a executar comandos de grade.</p></p>
+<p>
+<p>Para ativar ou desativar um servidor de origem para uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>Clique no servidor na página <strong>Membros
+da Grade</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique na ação
+apropriada: <strong>Ativar Servidor de Origem</strong> ou <strong>Desativar
+Servidor de Origem</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_560.htm#ids_erp_560" target="_blank">Configuração e Gerenciamento de Grade (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_105">Monitorando o Status de Tarefas de Grade</h4>
+<div>
+<p>Monitore o status de tarefas que são executadas por meio de uma grade
+de servidores de replicação interconectados em um domínio do Enterprise
+Replication (ER).</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq109">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_105__d7354e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Os comandos de grade que são executados em um servidor de
+origem são propagados para todos os outros servidores na grade.</p></p>
+<p>
+<p>Para monitorar o status de tarefas de grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>Clique na guia <strong>Status</strong>. 
+
+<p>Para visualizar os resultados de um comando nos
+servidores específicos, expanda a linha que contém o comando. Para
+visualizar detalhes adicionais, clique no ícone de detalhes para um membro de grade.</p></li></ol>
+<h4 id="dqx1ids_oer_106">Executando Novamente um Comando de Grade</h4>
+<div>
+<p>Execute novamente um comando que tenha falhado em um ou mais servidores em uma
+grade de servidores de replicação interconectados em um domínio do Enterprise Replication
+(ER).</p></div><a id="idx25"></a><a id="idx26"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq114">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_106__d7450e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Os comandos de grade que são executados em um servidor de
+origem são propagados para todos os outros servidores na grade. É
+possível executar novamente um comando nos servidores nos quais ele tenha falhado.</p>
+<p>Quando você inclui um servidor na grade, quaisquer comandos
+que foram executados anteriormente por meio da grade possuem um status de pendente
+para esse servidor. Se desejar executar um comando de grande anterior em um novo servidor
+de grade, execute novamente o comando. Se você não desejar executar um comando de grade
+anterior em um novo servidor, remova o comando.</p></p>
+<p>
+<p>Para executar novamente um comando de grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>Clique na guia <strong>Status</strong>. 
+
+<p>Para visualizar os resultados de um comando nos
+servidores específicos, expanda a linha que contém o comando. Para
+visualizar detalhes adicionais, clique no ícone de detalhes para um membro de grade.</p></li>
+<li>Clique no comando.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Executar Novamente
+o Comando</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_566.htm#ids_erp_566" target="_blank">Executando Novamente as Rotinas de Grade com Falha (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_550.htm#ids_erp_550" target="_blank">Procedimento ifx_grid_redo() (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_107">Removendo um Comando de Grade</h4>
+<div>
+<p>Remova os metadados e o status de tarefa de um comando
+executado nos servidores em uma grade de servidores de replicação interconectados
+em um domínio do Enterprise Replication
+(ER).</p></div><a id="idx27"></a><a id="idx28"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq119">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_107__d7562e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Os comandos de grade que são executados em um servidor de
+origem são propagados para todos os outros servidores na grade. É
+possível remover um comando de grade que foi concluído com êxito ou que você
+não planeja executar novamente. Ocasionalmente, remova os comandos de grade concluídos
+para evitar que o banco de dados no qual eles são armazenados fique muito
+grande.</p>
+<p>Quando você inclui um servidor na grade, quaisquer comandos
+que foram executados anteriormente por meio da grade possuem um status de pendente
+para esse servidor. Se desejar executar um comando de grande anterior em um novo servidor
+de grade, execute novamente o comando. Se você não desejar executar um comando de grade
+anterior em um novo servidor, remova o comando.</p></p>
+<p>
+<p>Para remover um comando de grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Grade</strong>.</li>
+<li>Clique na grade na lista <strong>Grades</strong>.</li>
+<li>Clique na guia <strong>Status</strong>.</li>
+<li>Clique no comando.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Remover</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_562.htm#ids_erp_562" target="_blank">Mantendo a Grade (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_557.htm#ids_erp_557" target="_blank">Procedimento ifx_grid_purge() (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_111">Roteando Conexões do Cliente em uma Grade</h4>
+<div>
+<p>Roteie conexões do cliente para servidores de replicação em uma grade
+com base na qualidade dos dados replicados e na latência de transação,
+configurando os Acordos de Nível de Serviço (SLAs) para um Gerenciador de Conexões.</p></div><a id="idx29"></a>
+<div>
+<div class="notetitle" id="wq123">Pré-requisitos:</div>
+<div class="notebody">Para a grade, o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) requer o IBM Informix 11.70. Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>O Gerenciador de Conexões usa SLAs para determinar
+qual servidor será conectado a um aplicativo cliente. É possível criar um SLA para rotear conexões do cliente
+para servidores de replicação em uma grade baseada na latência mais baixa, no
+menor número de falhas de aplicação e na carga de trabalho menor. </p>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1387.htm#ids_admin_1387" target="_blank">Componentes que Suportam Alta Disponibilidade e Escalabilidade (Guia do Administrador)</a></li></ul>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">Roteando Conexões do Cliente em uma Grade (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">O Utilitário oncmsm (Referência do Administrador)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1108.htm#ids_adr_1108" target="_blank">Arquivo de Configuração para Conjuntos de Réplicas (Referência do Administrador)</a></li></ul>
+<h5 id="dqx1ids_oer_113">Visualizando os SLAs para uma Grade</h5>
+<div>
+<p>Visualize os Acordos de Nível de Serviço (SLAs) para uma grade cujas
+conexões são monitoradas por um Gerenciador de Conexões.</p></div><a id="idx30"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq125">Pré-requisitos:</div>
+<div class="notebody">Para a grade, o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) requer o IBM Informix 11.70. Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>O Gerenciador de Conexões usa SLAs para determinar
+qual servidor será conectado a um aplicativo cliente.</p></p>
+<p>
+<p>Para visualizar os SLAs para uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na grade na lista.</li>
+<li>Clique na guia SLA para a grade.</li></ol>
+<h5 id="dqx1ids_oer_110">Criando um SLA para uma Grade</h5>
+<div>
+<p>Crie um acordo de nível de serviço (SLA) para uma grade usando
+um Gerenciador de Conexões.</p></div><a id="idx31"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq130">Pré-requisitos:</div>
+<div class="notebody">Para a grade, o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) requer o IBM Informix 11.70. Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3. A grade deve
+ser definida como uma unidade de conexão para um Gerenciador de Conexões.</div></div>
+<p>
+<p>Um Acordo de Nível de Serviço (SLA) é um
+contrato entre aplicativos clientes especificados e seus provedores de serviços,
+neste caso, servidores de banco de dados
+Informix. Com base nos acordos de nível de serviço, o Gerenciador de Conexões conecta os aplicativos clientes aos servidores apropriados. O Gerenciador de Conexões aceita pedidos de conexão do cliente e os redireciona
+para o servidor adequado ou age como um servidor proxy entre
+os aplicativos clientes e os servidores.</p>
+<p>Quando a qualidade de dados é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente para os servidores de replicação com base
+no número de falhas de aplicação, na latência de transação e na
+carga de trabalho. Quando a qualidade de dados não é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente com base apenas na carga de trabalho.
+Para especificar as falhas de aplicação e a latência em um
+SLA, ative o monitoramento da qualidade de dados modificando um servidor que
+seja um membro da grade na página <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</p></p>
+<p>
+<p>Para criar um SLA para uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na grade na lista.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Criar
+um SLA</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">O Utilitário oncmsm (Referência do Administrador)</a></li></ul>
+<h5 id="dqx1ids_oer_112">Modificando um SLA para uma Grade</h5>
+<div>
+<p>Modifique um acordo de nível de serviço (SLA) para uma grade usando
+um Gerenciador de Conexões.</p></div><a id="idx32"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq135">Pré-requisitos:</div>
+<div class="notebody">Para a grade, o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) requer o IBM Informix 11.70. Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Um Acordo de Nível de Serviço (SLA) é um
+contrato entre aplicativos clientes especificados e seus provedores de serviços,
+neste caso, servidores de banco de dados
+Informix. Com base nos acordos de nível de serviço, o Gerenciador de Conexões conecta os aplicativos clientes aos servidores apropriados. O Gerenciador de Conexões aceita pedidos de conexão do cliente e os redireciona
+para o servidor adequado ou age como um servidor proxy entre
+os aplicativos clientes e os servidores.</p>
+<p>Quando a qualidade de dados é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente para os servidores de replicação com base
+no número de falhas de aplicação, na latência de transação e na
+carga de trabalho. Quando a qualidade de dados não é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente com base apenas na carga de trabalho.
+Para especificar as falhas de aplicação e a latência em um
+SLA, ative o monitoramento da qualidade de dados modificando um servidor que
+seja um membro da grade na página <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</p></p>
+<p>
+<p>Para modificar um SLA de uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na grade na lista.</li>
+<li>Clique na guia SLA.</li>
+<li>Clique no SLA na lista.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar
+um SLA</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0617.htm#ids_adr_0617" target="_blank">O Utilitário oncmsm (Referência do Administrador)</a></li></ul>
+<h5 id="dqx1ids_oer_114">Monitorando a Qualidade de Dados em uma Grade</h5>
+<div>
+<p>Monitore a qualidade de dados replicados nos servidores em uma grade
+para que o Gerenciador de Conexões possa rotear os aplicativos cliente
+para os servidores baseados nas falhas da aplicação e na Latência de Transação.</p></div><a id="idx33"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq140">Pré-requisito:</div>
+<div class="notebody">Para a grade, o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT) requer o IBM Informix 11.70. Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p> Quando a qualidade de dados é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente para os servidores de replicação com base
+no número de falhas de aplicação, na latência de transação e na
+carga de trabalho. Quando a qualidade de dados não é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente com base apenas na carga de trabalho.
+O
+Gerenciador de Conexões usa Acordos de Nível de Serviço (SLAs) para determinar
+qual servidor será conectado a um aplicativo cliente. Os SLAs são configurados
+nas páginas <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</p></p>
+<p>
+<p>Para monitorar a qualidade de dados replicados para uma grade:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou
+na página <strong>Lista de Servidores</strong>, selecione um servidor na
+grade para ser o servidor principal para a qualidade de dados.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Selecione a opção para monitorar a qualidade de dados.</li></ol>
+<p>
+<p></p>
+<p>Quando a qualidade de dados é monitorada, o
+número de transações com falha nos servidores de replicação em uma grade
+é contado. Ao sincronizar dados, é possível reconfigurar a contagem de transações com
+falha nos servidores de replicação na grade ou continuar
+incluindo na contagem atual. Para manter as informações exatas sobre a
+qualidade de dados, reconfigure a contagem ao sincronizar os dados.</p>
+<p>A
+contagem de transações com falha é reconfigurada na página <strong>Replicação</strong> &gt; <strong>Réplicas</strong> &gt; <strong>Conjuntos de Réplicas</strong> ou <strong>Réplicas</strong> com a ação <strong>Verificar
+ou Sincronizar Dados</strong>.</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_575.htm#ids_erp_575" target="_blank">Roteando Conexões do Cliente em uma Grade (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_539.htm#ids_erp_539" target="_blank">cdr define qod (Guia do Enterprise Replication)</a></li></ul>
+<h3 id="dqx1ids_oer_071.dita"><a href="#ToC_50">Gerenciando Servidores Enterprise Replication</a></h3>
+<div>
+<p>Modifique os atributos de um servidor Enterprise Replication (ER)
+ou altere o estado do servidor ER.</p></div>
+<h4 id="dqx1ids_oer_078.dita">Modificando um Servidor ER</h4>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER)
+para alterar o diretório ATS ou RIS, o tempo limite inativo
+ou o tipo de alguns dos participantes no servidor.</p></div>
+<h5 id="dqx1ids_oer_067.dita">Alterando o Local e o Formato dos Arquivos ATS e RIS</h5>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER) para alterar o local dos arquivos Aborted Transaction Spooling (ATS) e Row Information Spooling
+(RIS) ou o formato de arquivo.</p></div><a id="idx34"></a><a id="idx35"></a><a id="idx36"></a><a id="idx37"></a><a id="idx38"></a><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq146">Pré-requisito:</div>
+<div class="notebody">Crie o local do diretório antes de alterar o diretório ATS ou RIS.</div></div>
+<p>
+<p>Para alterar o local e o formato dos arquivos ATS e RIS:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Selecione <strong>Gerar os Arquivos ATS neste Diretório</strong>,
+e insira o caminho completo para um diretório existente no qual irá armazenar
+os arquivos ATS.</li>
+<li>Selecione <strong>Gerar os Arquivos RIS neste Diretório</strong>,
+e insira o caminho completo para um diretório existente no qual irá armazenar
+os arquivos RIS.</li>
+<li>Especifique o formato dos arquivos ATS e RIS:
+
+<ul>
+<li>Para gerar arquivos de texto que o ER pode processar para reparar transações com falha, selecione <strong>Texto</strong> (padrão).</li>
+<li>Para gerar arquivos XML que você poderá usar ao criar seus próprios scripts de reparação customizados, selecione <strong>XML</strong>.</li>
+<li>Para gerar arquivos de texto e arquivos XML, selecione <strong>Ambos</strong>.</li></ul></li>
+<li>Clique em <strong>Salvar</strong>. 
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p>
+
+<p>Você pode ativar a geração de arquivos ATS e RIS para uma réplica na página <strong>Réplicas</strong> com a ação <strong>Modificar Réplica</strong>.</p></li></ol>
+<h5 id="dqx1ids_oer_068.dita">Alterando o Tempo Limite de Inatividade de um Servidor ER</h5>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER) para alterar o tempo limite de inatividade.</p></div><a id="idx41"></a><a id="idx42"></a><a id="idx43"></a><a id="idx44"></a><a id="idx45"></a>
+<p>
+<p>O tempo limite de inatividade é a quantidade de tempo que a conexão entre o servidor e outros servidores no domínio ER pode ficar inativa antes que o servidor seja desconectado.</p>
+<p>Para alterar o tempo limite de inatividade de um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Selecione o servidor na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Em <strong>Tempo Limite de Inatividade</strong>, selecione <strong>Ativar</strong> e insira o tempo em minutos. 
+
+<p>Inserir 0 (zero) minutos ou deixar o campo em branco significa selecionar <strong>Desativar</strong>.</p></li>
+<li>Clique em <strong>Salvar</strong>. 
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<h5 id="dqx1ids_oer_069.dita">Alterando o Tipo de Participante em um Servidor ER</h5>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER) para alterar
+o tipo para os participantes cuja regra de resolução de conflito é <em>ignorar</em>.</p></div><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<p>
+<p>O tipo de participante indica se um participante envia e recebe ou apenas recebe dados replicados. O tipo de participante não afeta a resolução de conflitos quando a regra é "ignorar". Assim, todos os participantes em um servidor cuja réplica usa essa regra podem ser alterados com uma ação.</p>
+<p>Para alterar o tipo de participante:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Selecione o servidor na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Selecione o <strong>Tipo de Participante</strong>:
+
+<ul>
+<li><strong>Primário</strong>: Os participantes enviam e recebem dados replicados.</li>
+<li><strong>Receber Apenas</strong>: Os participantes apenas recebem dados dos participantes primários.</li></ul></li>
+<li>Clique em <strong>Salvar</strong>. 
+
+<p>As opções selecionadas e os resultados da ação são exibidos. </p>
+<div>
+<div class="notetitle" id="wq156">Dica:</div>
+<div class="notebody">Você também pode alterar o tipo dessas e de outras réplicas usando a ação <strong>Modificar Réplica</strong> na página <strong>Réplicas</strong>.</div></div></li></ol>
+<h5 id="dqx1ids_oer_066.dita">Desativando a Geração de Arquivos ATS ou RIS em um Servidor ER</h5>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER) para desativar
+Aborted Transaction Spooling (ATS) ou Row Information Spooling (RIS).</p></div><a id="idx53"></a><a id="idx54"></a><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a><a id="idx58"></a><a id="idx59"></a>
+<p>
+<p>Você pode desativar a geração de arquivos ATS ou RIS para todas as réplicas em um servidor ER modificando o servidor. Para desativar ATS
+ou RIS para uma réplica específica, modifique essa réplica.</p>
+<p>Para desativar a geração de arquivos ATS ou RIS em um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Para desativar a geração de arquivos ATS, selecione <strong>Desativar a Geração de Arquivos ATS</strong>.</li>
+<li>Para desativar a geração de arquivos RIS, selecione <strong>Desativar a Geração de Arquivos RIS</strong>. </li>
+<li>Clique em <strong>Salvar</strong>. 
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<h5 id="dqx1ids_oer_074.dita">Ativando a Geração de Arquivos ATS ou RIS em um Servidor ER</h5>
+<div>
+<p>Modifique um servidor Enterprise Replication (ER) para ativar
+Aborted Transaction Spooling (ATS) ou Row Information Spooling (RIS).</p></div><a id="idx60"></a><a id="idx61"></a><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p>
+<p>Se o diretório dos arquivos ATS ou RIS for configurado como nulo para um servidor, esses arquivos não serão gerados. Você pode ativar a geração de arquivos ATS ou RIS modificando o servidor.</p>
+<p>Para ativar a geração de arquivos ATS ou RIS em um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Servidor</strong>.</li>
+<li>Para ativar a geração de arquivos ATS:
+
+<ul>
+<li>Selecione <strong>Gerar os Arquivos ATS neste Diretório</strong>,
+e insira o caminho completo para um diretório existente no qual irá armazenar
+os arquivos ATS.</li>
+<li>Selecione <strong>Gerar os Arquivos ATS no Diretório
+Temporário</strong>. Os arquivos ATS são armazenados no diretório <samp>/tmp</samp>
+em sistemas UNIX e no diretório <samp>%INFORMIXDIR%\tmp</samp>
+em sistemas Windows.</li></ul></li>
+<li>Para ativar a geração de arquivos RIS:
+
+<ul>
+<li>Selecione <strong>Gerar os Arquivos RIS neste Diretório</strong>,
+e insira o caminho completo para um diretório existente no qual irá armazenar
+os arquivos RIS.</li>
+<li>Selecione <strong>Gerar os Arquivos RIS no Diretório
+Temporário</strong>. Os arquivos RIS são armazenados no diretório <samp>/tmp</samp>
+em sistemas UNIX e no diretório <samp>%INFORMIXDIR%\tmp</samp>
+em sistemas Windows.</li></ul></li>
+<li>Especifique o formato dos arquivos ATS e RIS:
+
+<ul>
+<li>Para gerar arquivos de texto que o ER pode processar durante uma operação de reparação, selecione <strong>Texto</strong>.</li>
+<li>Para gerar arquivos XML que você poderá usar ao criar seus próprios scripts de reparação customizados, selecione <strong>XML</strong>.</li>
+<li>Para gerar arquivos de texto e arquivos XML, selecione <strong>Ambos</strong>.</li></ul></li>
+<li>Clique em <strong>Salvar</strong>. 
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p>
+
+<p>Você pode ativar a geração de arquivos ATS e RIS para uma réplica na página <strong>Réplicas</strong> com a ação <strong>Modificar Réplica</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_099.dita">Parando ou Reiniciando Replicação em um Servidor</h4>
+<div>
+<p>Pare ou reinicie temporariamente o Enterprise Replication (ER) no
+servidor de banco de dados.</p></div>
+<p>É possível parar a replicação em um servidor sem parar o servidor
+de diversas maneiras usando o IBM OpenAdmin
+Tool (OAT) for Informix.</p>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">Parando Temporariamente a Replicação em um Servidor (Guia do Enterprise Replication)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">Reiniciando a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_084.dita">Suspendendo a Replicação para um Servidor</h5>
+<div>
+<p>Suspenda a entrega de dados replicados para um servidor Enterprise
+Replication (ER) a partir de servidores especificados no domínio.</p></div><a id="idx67"></a><a id="idx68"></a>
+<p>
+<p>Se você não quiser parar completamente o processamento do ER para um servidor, poderá suspender a replicação de dados do servidor. Quando a replicação do servidor é suspensa, os outros servidores no domínio continuam replicando dados entre eles. Eles enfileiram dados replicados para o servidor suspenso, mas não os enviam. As conexões de rede do servidor suspenso não são afetadas. O servidor suspenso continua recebendo outras mensagens, como mensagens de reconhecimento e controle.</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_084.dita__important">Importante:</div>
+<div class="notebody">Ao suspender a replicação para um servidor, verifique se as filas de envio nos outros servidores ER do domínio não ficam cheias.</div></div>
+<p>Para suspender a replicação para um servidor:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor no qual a replicação será suspensa.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Suspender Replicação</strong>.</li>
+<li>Selecione os servidores dos quais suspender a entrega de dados replicados para o servidor.</li>
+<li>Clique em <strong>Suspender</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_203.htm#ids_erp_203" target="_blank">Suspendendo a Replicação para um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_085.dita">Retomando a Replicação para um Servidor Suspenso</h5>
+<div>
+<p>Retome a entrega de dados replicados para um servidor Enterprise
+Replication (ER) que está suspenso.</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq167">Pré-requisito:</div>
+<div class="notebody">A replicação para
+o servidor ER foi suspensa com a ação <strong>Suspender Replicação</strong> ou
+com o comando <strong>cdr suspend server</strong> do utilitário de linha de comandos <strong>cdr</strong>.</div></div>
+<p>
+<p>Quando a replicação para um servidor é suspensa, os outros servidores no domínio continuam replicando dados entre eles. Eles enfileiram dados replicados para o servidor suspenso, mas não os enviam.
+Quando você retoma a replicação para um servidor, os dados enfileirados são entregues.</p>
+<p>Para retomar um servidor de replicação suspenso:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor suspenso.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Retomar Replicação</strong>.</li>
+<li>Selecione os servidores dos quais retomar a entrega de dados replicados para o servidor.</li>
+<li>Clique em <strong>Retomar</strong>.</li></ol>
+<h5 id="dqx1ids_oer_088.dita">Parando a Replicação em um Servidor</h5>
+<div>
+<p>Pare a replicação em um servidor Enterprise Replication (ER) sem fechar o servidor.</p></div><a id="idx72"></a><a id="idx73"></a><a id="idx74"></a>
+<p></p>
+<div class="attention"><span class="attentiontitle">Atenção:</span> Use esta ação com extremo cuidado
+e só com orientação do Suporte de Software
+IBM.</div>
+<div>
+<div class="notetitle" id="wq172">Importante:</div>
+<div class="notebody">Quando você pára a replicação em um servidor, as transações replicadas não são capturadas ou aplicadas no servidor. Para garantir consistência, verifique se nenhuma atualização de banco de dados ocorre no servidor. Verifique se as filas de envio nos outros servidores ER do domínio não ficam cheias.</div></div>
+<p>
+<p>Para parar a replicação em um servidor:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Parar Servidor</strong>.</li></ol>
+<p>
+<p>Para reiniciar a replicação no servidor, use a ação <strong>Iniciar Replicação</strong>. Parar e reiniciar o servidor não reinicia a replicação no servidor.</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">Parando Temporariamente a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_089.dita">Reiniciando a Replicação em um Servidor</h5>
+<div>
+<p>Reinicie a replicação em um servidor Enterprise Replication (ER).</p></div><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a>
+<p>
+<p>Você pode reiniciar a replicação em um servidor após a interrupção da replicação com a ação <strong>Parar Réplica</strong> ou depois que a replicação é interrompida por outro motivo, como problemas de alocação de memória.</p>
+<p>Quando você reinicia a replicação em um servidor, o ER ativa todas as conexões com outros servidores de replicação conectados. Todas as transações do banco de dados adequadas, ocorridas em outros servidores durante a interrupção da replicação, são replicadas para este servidor.</p></p>
+<p>
+<p>Para reiniciar a replicação em um servidor:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Iniciar Servidor</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">Reiniciando a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_090">Reiniciando a Replicação com Filas Vazias</h5>
+<div>
+<p>Esvazie as filas de replicação de transações pendentes e reinicie a replicação em um servidor Enterprise Replication (ER).</p></div><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq180">Pré-requisito:</div>
+<div class="notebody">Se o servidor ER tiver sido restaurado a partir de um backup, mas a restauração não tiver incluído todos os arquivos de log da posição de reprodução, ou o sistema não tiver sido restaurado para o arquivo de log atual, o ID exclusivo do arquivo de log deverá avançar para depois do ID exclusivo do arquivo de log mais recente. Para avançar a posição do log, vá para o próximo arquivo de log lógico usando o comando <strong><strong><samp>onmode -l</samp></strong></strong> na linha de comandos.</div></div>
+<p>
+<p>Para reiniciar a replicação com filas vazias:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Selecione o servidor na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Limpar Início da Replicação</strong>.</li></ol>
+<p>
+<p>Depois de executar a ação <strong>Limpar Início da Replicação</strong>, sincronize os dados usando a ação <strong>Marcar ou Sincronizar Réplica</strong> ou <strong>Marcar ou Sincronizar Conjunto de Réplicas</strong>.</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">Reiniciando a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Referência relacionada</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0721.htm#ids_admin_0721" target="_blank">Alternar para o Próximo Arquivo de Log Lógico (Guia do Administrador)</a></li></ul>
+<h5 id="dqx1ids_oer_100.dita">Desativando a Replicação para um Servidor</h5>
+<div>
+<p>Pare a replicação para um servidor Enterprise Replication (ER)
+enquanto mantém as informações sobre linhas excluídas no
+servidor desativado.</p></div><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq186">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_100.dita__d6883e8">Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</span></div></div>
+<p>
+<p>Use essa ação para parar temporariamente a replicação em um servidor de replicação,
+se as réplicas usarem o registro de data e hora ou a regra de resolução de conflito
+wins de exclusão, ou se não houver espaço em disco suficiente, para evitar a
+saturação da posição de reprodução.</p>
+<p>Quando a replicação é desativada
+em um servidor, o servidor não coloca em fila suas transações e os outros
+servidores de replicação no domínio ER não colocam em fila as transações replicadas
+para o servidor desativado. No entanto, as informações sobre quaisquer linhas excluídas
+no servidor desativado são salvas nas tabelas de exclusão. Ao reiniciar
+a replicação e sincronizar os dados, é possível obter as vantagens de um
+reparo de registro de data e hora.</p>
+<p>Por exemplo, se o servidor usar a regra de resolução de conflito
+wins de exclusão e uma transação foi excluída no servidor
+antes de você desativar a replicação, quando ativar a replicação
+e sincronizar os dados, a ação de exclusão será replicada para os outros
+servidores no domínio.</p>
+<p>Para desativar a replicação para um servidor:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do OAT,
+clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na
+página <strong>Lista de Servidores</strong>, selecione o servidor
+para o qual a replicação será desativada.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Desativar
+Replicação</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_201.htm#ids_erp_201" target="_blank">Parando Temporariamente a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_101.dita">Ativando a Replicação para um Servidor Desativado</h5>
+<div>
+<p>Reinicie a replicação em um servidor Enterprise Replication (ER)
+para o qual a replicação está desativada.</p></div><a id="idx83"></a><a id="idx84"></a><a id="idx85"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq191">Pré-requisitos:</div>
+<div class="notebody">A replicação no
+servidor foi interrompida com a ação <strong>Desativar Replicação</strong>
+ou o comando <strong><samp>cdr disable server</samp></strong> do utilitário de linha de comandos <strong>cdr</strong>.
+Para esta ação, o IBM OpenAdmin
+Tool (OAT) for Informix requer o IBM Informix versão 11.70.</div></div>
+<p>
+<p>Quando a replicação é desativada em um servidor, o servidor não coloca em fila suas transações e os outros
+servidores de replicação no domínio ER não colocam em fila as transações replicadas
+para o servidor desativado.
+No entanto, as informações sobre quaisquer linhas excluídas
+no servidor desativado são salvas nas tabelas de exclusão. Ao reiniciar a replicação e sincronizar os dados, é possível obter as vantagens de um
+reparo de registro de data e hora.</p>
+<p>Para
+ativar a replicação para um servidor desativado:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do OAT,
+clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou
+na página <strong>Lista de Servidores</strong>, selecione o servidor desativado.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Retomar Replicação</strong>.</li>
+<li>Clique em <strong>Ativar Replicação</strong>.</li></ol>
+<p>
+<p>Depois de ativar a replicação, sincronize o servidor com
+os outros servidores no domínio de replicação, verificando e reparando
+o conjunto de réplicas na página <strong>Réplicas</strong> &gt; <strong>Conjuntos de Réplicas</strong>.</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_202.htm#ids_erp_202" target="_blank">Reiniciando a Replicação em um Servidor (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_086.dita">Desconectando um Servidor ER</h4>
+<div>
+<p>Elimine a conexão de rede entre dois servidores Enterprise Replication
+(ER) no domínio.</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_086.dita__important">Importante:</div>
+<div class="notebody">Ao desconectar um servidor, o ER continua funcionando, enfileirando transações. Verifique se as filas de envio em todos os outros servidores ER no domínio não ficam cheias.</div></div>
+<p>Para desconectar um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor que será desconectado.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Desconectar Servidor</strong>.</li>
+<li>Selecione o servidor do qual se desconectar.</li>
+<li>Clique em <strong>Desconectar</strong>.</li></ol>
+<h4 id="dqx1ids_oer_087.dita">Reconectando um Servidor ER</h4>
+<div>
+<p>Reconecte um servidor Enterprise Replication (ER) a outro servidor ER no domínio.</p></div><a id="idx88"></a><a id="idx89"></a>
+<p>
+<p>Para reconectar um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>, selecione o servidor que será reconectado.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Conectar Servidor</strong>.</li>
+<li>Selecione o servidor ao qual se reconectar.</li>
+<li>Clique em <strong>Conectar</strong>.</li></ol>
+<h4 id="dqx1ids_oer_091.dita">Excluindo um Servidor ER</h4>
+<div>
+<p>Exclua um servidor de um domínio do Enterprise Replication (ER)
+e pare toda a replicação de dados para um servidor e a partir dele.</p></div><a id="idx90"></a><a id="idx91"></a><a id="idx92"></a>
+<p>
+<p>Para excluir um servidor ER:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, clique em <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</li>
+<li>Selecione o servidor na página <strong>Topologia de Roteamento</strong> ou na página <strong>Lista de Servidores</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir Servidor</strong>.</li></ol>
+<p>
+<p>Para excluir um domínio do ER completo, execute a ação <strong>Excluir Servidor</strong> em cada servidor do domínio.</p></p>
+<div>
+<div class="notetitle" id="wq206">Restrição:</div>
+<div class="notebody">Não é possível excluir um servidor que tenha filhos não raiz ou folha. Exclua os filhos de um servidor antes de excluir o servidor pai.</div></div>
+<h3 id="dqx1ids_oer_037.dita"><a href="#ToC_68">Gerenciando Conjuntos de Réplicas</a></h3>
+<div>
+<p>Inclua ou exclua réplicas de um conjunto, altere a frequência de replicação ou inicie, pare, suspensa, retome ou exclua um conjunto de réplicas.</p></div><a id="idx93"></a><a id="idx94"></a>
+<p>Quando você cria um conjunto de réplicas, pode gerenciar as réplicas que pertencem a esse conjunto individualmente ou conjuntamente. Se o conjunto de réplicas for exclusivo, você deverá gerenciar réplicas individuais como parte do conjunto.</p>
+<p>Executar uma operação em um conjunto de réplicas (exceto a exclusão de um conjunto de réplicas) equivale a executar individualmente a operação em cada réplica no conjunto de réplicas.</p>
+<h4 id="dqx1ids_oer_065.dita">Modificando um Conjunto de Réplicas</h4>
+<div>
+<p>Inclua ou exclua réplicas ou altere a frequência de replicação de todas as réplicas em um conjunto.</p></div><a id="idx95"></a><a id="idx96"></a>
+<h5 id="dqx1ids_oer_082.dita">Incluindo e Excluindo Réplicas em um Conjunto de Réplicas</h5>
+<div>
+<p>Modifique um conjunto de réplicas para incluir ou excluir réplicas.</p></div><a id="idx97"></a><a id="idx98"></a>
+<p>
+<p>Para incluir ou excluir réplicas em um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Selecione o conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Conjunto de Réplicas</strong>.</li>
+<li>Para incluir uma réplica no conjunto, selecione-a na lista <strong>Réplicas Disponíveis</strong> e clique em <strong>Incluir</strong>.</li>
+<li>Para remover uma réplica, selecione-a na lista <strong>Este Conjunto de Réplicas</strong> e clique em <strong>Remover</strong>.</li>
+<li>Clique em <strong>Concluir</strong>.</li></ol>
+<h5 id="dqx1ids_oer_083.dita">Alterando a Frequência de Replicação de um Conjunto de Réplicas</h5>
+<div>
+<p>Modifique um conjunto de réplicas para especificar o intervalo entre replicações de todas as réplicas em um conjunto.</p></div><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>Para alterar a frequência de replicação de um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Selecione o conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Conjunto de Réplicas</strong>.</li>
+<li>Para alterar a opção de frequência de todas as réplicas no conjunto, clique em <strong>Avançar</strong>.</li>
+<li>Especifique a <strong>Frequência</strong> de replicação. 
+<div>
+<div class="notetitle" id="wq213">Importante:</div>
+<div class="notebody">Se você alterar a opção de frequência, a alteração será aplicada a todas as réplicas no conjunto.</div></div></li>
+<li>Clique em <strong>Concluir</strong>.</li></ol>
+<h4 id="dqx1ids_oer_035.dita">Visualizando Propriedades do Conjunto de Réplicas</h4>
+<div>
+<p>Visualize as propriedades e o estado dos conjuntos de réplicas.</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Para visualizar uma lista de réplicas no conjunto, expanda o nome do conjunto de réplicas. 
+
+<p>Para ver uma descrição das informações na página <strong>Conjuntos de Réplicas</strong>, clique no ícone Ajuda.</p></li></ol>
+<h4 id="dqx1ids_oer_039.dita">Iniciando um Conjunto de Réplicas</h4>
+<div>
+<p>Altere o estado de todas as réplicas em um conjunto de réplicas para ativo.</p></div><a id="idx103"></a><a id="idx104"></a>
+<p>
+<p>Quando uma réplica está ativa, o Enterprise Replication (ER)
+captura dados do log lógico no servidor de origem e os transmite para os participantes ativos nos servidores de destino.</p>
+<p>Para iniciar um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar uma lista de réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Iniciar Conjunto de Réplicas</strong>.</li>
+<li>Na página <strong>Iniciar Conjunto de Réplicas</strong>, selecione os participantes que irão iniciar.
+
+<ul>
+<li>Para iniciar todos os participantes no conjunto de réplicas, selecione a caixa de opção <strong>Todos os Participantes</strong>.</li>
+<li>Para iniciar participantes específicos, selecione a caixa de opção para cada participante que você deseja iniciar. Os participantes são especificados pelo servidor de banco de dados.</li></ul></li>
+<li>Para executar uma sincronização inicial das réplicas que você está iniciando, execute estas etapas:
+
+<ol type="a">
+<li>Selecione a caixa de opção <strong>Sincronizar Dados</strong>.</li>
+<li>Selecione o servidor de origem de dados para a sincronização a partir da lista de servidores.</li>
+<li>Especifique como identificar linhas no servidor de destino que não estão presentes no servidor de origem de dados. 
+
+<ul>
+<li><strong>Excluir</strong>: Exclua as linhas extras do servidor de destino.</li>
+<li><strong>Manter</strong>: Mantenha as linhas extras no servidor de destino.</li>
+<li><strong>Mesclar</strong>: Mantenha as linhas extras nos servidores de destino e as replique para o servidor de origem.</li></ul></li></ol></li>
+<li>Para iniciar o conjunto de réplicas, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_041.dita">Parando um Conjunto de Réplicas</h4>
+<div>
+<p>Altere o estado de todas as réplicas em um conjunto de réplicas para inativo.</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>Quando você pára uma réplica, o estado dela é alterado para <em>inativo</em> e todos os dados na fila de envio dessa réplica são excluídos. Quando uma réplica está inativa, o Enterprise Replication não transmite ou processa nenhuma alteração do banco de dados. No geral, a replicação deverá ser interrompida apenas quando provável que nenhuma atividade de replicação ocorra naquela tabela.</p>
+<p>Para parar um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar uma lista de réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Parar Conjunto de Réplicas</strong>.</li>
+<li>Na página <strong>Parar Conjunto de Réplicas</strong>, selecione os participantes que irão parar.
+
+<ul>
+<li>Para parar todos os participantes da réplica, selecione a caixa de opção <strong>Todos os Participantes</strong>.</li>
+<li>Para parar participantes específicos, selecione a caixa de opção para cada participante que você deseja parar. Os participantes são especificados pelo servidor de banco de dados.</li></ul></li>
+<li>Para parar o conjunto de réplicas, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_043.dita">Suspendendo um Conjunto de Réplicas</h4>
+<div>
+<p>Suspenda todas as réplicas em um conjunto de réplicas.</p></div><a id="idx107"></a><a id="idx108"></a>
+<p>
+<p>Quando uma réplica está em um estado <em>suspenso</em>, o Enterprise
+Replication captura e acumula alterações no banco de dados de origem, mas não transmite os dados capturados para o banco de dados de destino.</p>
+<p></p>
+<div>
+<div class="notetitle" id="dqx1ids_oer_043.dita__important">Importante:</div>
+<div class="notebody">Quando um conjunto de réplicas é suspenso, o Enterprise Replication mantém os dados replicados na fila de envio até que o conjunto seja retomado. Se uma grande quantidade de dados for gerada para as réplicas no conjunto enquanto ele estiver suspenso, o espaço da fila de envio poderá ser preenchido, causando perda de dados. O Enterprise Replication não sincronizará transações se uma réplica em um conjunto de réplicas estiver suspensa.
+Por exemplo, uma transação que atualiza as tabelas X e Y será dividida se a replicação da tabela X for suspensa.</div></div>
+<p>Para suspender um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar uma lista de réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Suspender Conjunto de Réplicas</strong>. Na página <strong>Suspender Conjunto de Réplicas</strong>, a lista exibe os participantes no conjunto de réplicas, especificados pelo servidor de banco de dados. Todos os participantes são selecionados, pois a suspensão de uma réplica faz com que todos os participantes entrem no estado suspenso.</li>
+<li>Para suspender o conjunto de réplicas, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_045.dita">Retomando um Conjunto de Réplicas</h4>
+<div>
+<p>Retorne as réplicas suspensas no conjunto de réplicas para o estado ativo.</p></div><a id="idx109"></a><a id="idx110"></a><a id="idx111"></a>
+<p>
+<p>A retomada de um conjunto de réplicas faz com que todas as réplicas contidas no conjunto de réplicas entrem no estado ativo para todos os participantes.</p>
+<p>Para retomar um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar uma lista de réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Retomar Conjunto de Réplicas</strong>. Na página <strong>Retomar Conjunto de Réplicas</strong>, a lista exibe os participantes no conjunto de réplicas, especificados pelo servidor de banco de dados. Todos os participantes são selecionados, pois a retomada de uma réplica faz com que todos os participantes entrem no estado ativo.</li>
+<li>Para retornar o conjunto de réplicas ao estado ativo, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_093.dita">Excluindo um Conjunto de Réplicas</h4>
+<div>
+<p>Exclua um conjunto de réplicas a partir de um domínio Enterprise Replication (ER).</p></div><a id="idx112"></a><a id="idx113"></a>
+<p>
+<p>A exclusão de um conjunto de réplicas não exclui as réplicas que pertencem ao conjunto de réplicas. As réplicas e os dados associados não são alterados.</p></p>
+<div class="attention"><span class="attentiontitle">Atenção: </span>Não exclua conjuntos de réplicas exclusivos
+baseados em tempo. Isso pode resultar em dados inconsistentes.</div>
+<p>Para excluir um conjunto de réplicas:</p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Selecione o conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir Conjunto de Réplicas</strong>.</li></ol>
+<h3 id="dqx1ids_oer_036.dita"><a href="#ToC_78">Gerenciando Réplicas</a></h3>
+<div>
+<p>Inclua ou remova participantes, altere atributos de réplicas, inicie, pare, suspenda ou retome uma replicação.</p></div><a id="idx114"></a><a id="idx115"></a>
+<h4 id="dqx1ids_oer_075.dita">Modificando uma Réplica</h4>
+<div>
+<p>Modifique uma réplica do Enterprise Replication (ER) para incluir ou excluir participantes, alterar o servidor de réplicas principais ou alterar os atributos das réplicas.</p></div>
+<h5 id="dqx1ids_oer_072.dita">Incluindo e Excluindo Participantes</h5>
+<div>
+<p>Modifique uma réplica para incluir ou excluir participantes.</p></div><a id="idx116"></a><a id="idx117"></a><a id="idx118"></a><a id="idx119"></a><a id="idx120"></a><a id="idx121"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq233">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>Para incluir ou remover participantes:</p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Opcional: Para criar automaticamente tabelas no
+servidor de destino que existem no servidor de replicação principal, mas não
+no servidor de destino, selecione <strong>Criar tabelas ausentes nos servidores de
+destino</strong>.
+
+<p>As tabelas criadas serão exibidas em <em>itálico</em> na lista.</p></li>
+<li>Para incluir um participante: 
+
+<ol type="a">
+<li>Na lista, expanda o grupo de servidores e o banco de dados para exibir o nome da tabela.</li>
+<li>Clique no nome da tabela para selecioná-la como participante. Quando uma tabela é selecionada, ela fica em <strong>negrito</strong>.</li>
+<li>Especifique o tipo de participante: primário ou receber apenas. O padrão é primário: o participante envia e recebe dados. Para alterar a opção, clique no ícone.</li>
+<li>Especifique quais privilégios serão usados para aplicar os dados replicados. O padrão é proprietário da tabela. Para alterar a opção, clique no ícone.</li></ol></li>
+<li>Para excluir um participante: 
+
+<ol type="a">
+<li>Na lista, expanda o grupo de servidores e o banco de dados para exibir o nome da tabela.</li>
+<li>Clique no nome da tabela para limpar a seleção. 
+
+<p>Quando você exclui um participante, pára de replicar dados para a tabela naquele grupo de servidores.</p></li></ol></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_095.dita">Alterando o Servidor de Réplicas Principais</h5>
+<div>
+<p>Modifique uma réplica para alterar o grupo de servidores que é a base da réplica principal.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq239">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>O servidor de réplicas principais deve ser um participante da réplica.</p>
+<p>
+<p>Para alterar o servidor de réplicas principais:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique no ícone próximo à lista <strong>Servidor de Réplicas Principais</strong>.</li>
+<li>Na lista <strong>Servidor de Réplicas Principais</strong>, selecione o grupo de servidores.</li>
+<li>Opcional: Para criar automaticamente tabelas no
+servidor de destino que existem no servidor de replicação principal, mas não
+no servidor de destino, selecione <strong>Criar tabelas ausentes nos servidores de
+destino</strong>.
+
+<p>As tabelas criadas serão exibidas em <em>itálico</em> na lista.</p></li>
+<li>Opcional: Para incluir um participante:
+
+<ol type="a">
+<li>Na lista, expanda o grupo de servidores e o banco de dados para exibir o nome da tabela.</li>
+<li>Clique no nome da tabela para selecioná-la como participante. Quando uma tabela é selecionada, ela fica em <strong>negrito</strong>.</li>
+<li>Especifique o tipo de participante: primário ou receber apenas. O padrão é primário: o participante envia e recebe dados. Para alterar a opção, clique no ícone.</li>
+<li>Especifique quais privilégios serão usados para aplicar os dados replicados. O padrão é proprietário da tabela. Para alterar a opção, clique no ícone.</li></ol></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_073.dita">Alterando o Escopo e a Regra de Resolução de Conflitos</h5>
+<div>
+<p>Modifique uma réplica para alterar o escopo ou a regra de resolução de conflitos.</p></div><a id="idx122"></a><a id="idx123"></a><a id="idx124"></a><a id="idx125"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq244">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>A regra de resolução de conflitos determina como conflitos entre transações replicadas serão resolvidos. Cada regra de resolução de conflitos se comporta diferentemente, dependendo do escopo.</p>
+<p>Para alterar o escopo ou a regra de resolução de conflitos:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Especifique o <strong>Escopo da Resolução de Conflitos</strong>. 
+
+<p>Se você alterar a regra de resolução de conflitos, também deverá especificar o escopo, mesmo que não o esteja alterando.</p></li>
+<li>Especifique a <strong>Regra de Resolução de Conflitos</strong>. 
+
+<p>Você não pode alterar a regra de resolução de conflitos de "ignorar" para outra regra ou para "ignorar" de outra regra.</p></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_076.dita">Alterando a Frequência de Replicação de uma Réplica</h5>
+<div>
+<p>Modifique uma réplica para especificar o intervalo entre replicações ou quando a replicação ocorre.</p></div><a id="idx126"></a><a id="idx127"></a><a id="idx128"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq249">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>Para alterar a frequência de replicação de uma réplica:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Especifique a <strong>Frequência de Replicação</strong>.</li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_077.dita">Ativando a Geração de Arquivos ATS e RIS</h5>
+<div>
+<p>Modifique uma réplica para ativar ou desativar a geração de arquivos Aborted Transaction
+Spooling (ATS) e Row Information Spooling (RIS).</p></div><a id="idx129"></a><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq254">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>Para ativar a geração de arquivos ATS e RIS:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Para ativar a geração de arquivos ATS, selecione <strong>Aborted
+Transaction Spooling (ATS)</strong>.</li>
+<li>Para ativar a geração de arquivos RIS, selecione <strong>Row
+Information Spooling (RIS)</strong>.</li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p>
+
+<p>O local padrão para os arquivos ATS e os arquivos RIS é o diretório temporário. É possível especificar diretórios para os
+arquivos ATS e os arquivos RIS na página <strong>Detalhes do Nó</strong> &gt; <strong>Configuração</strong>.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_079.dita">Replicando Linhas Completas ou Colunas Alteradas</h5>
+<div>
+<p>Modifique uma réplica para especificar se deseja replicar linhas completas ou apenas colunas alteradas.</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq259">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>Por padrão, o Enterprise Replication (ER) replica a linha inteira e permite atualizações e inserções, mesmo se apenas uma coluna for alterada. No entanto, as colunas que contêm dados BLOB ou CLOB são atualizadas apenas quando seus conteúdos são alterados, independentemente do fato de outras colunas terem sido ou não alteradas.</p>
+<p>Para especificar se linhas completas ou colunas alteradas serão replicadas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Especifique se linhas completas serão replicadas:
+
+<ul>
+<li>Para replicar as linhas completas e ativar upserts, selecione <strong>Replicar Linha Completa</strong>. Se você também especificar a exclusão de wins como a regra de resolução de conflitos, upserts serão desativados.</li>
+<li>Para replicar apenas colunas alteradas e desativar upserts, desmarque esta opção.</li></ul></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_080.dita">Ativando e Desativando Acionadores</h5>
+<div>
+<p>Modifique uma réplica para especificar se acionadores serão disparados quando dados replicados forem aplicados.</p></div><a id="idx136"></a><a id="idx137"></a><a id="idx138"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq264">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>Por padrão, quando uma réplica faz uma inserção, atualização ou exclusão em uma tabela de destino, acionadores associados à tabela não são disparados. Quando você modifica uma réplica, pode especificar se acionadores serão disparados quando dados replicados forem aplicados.</p>
+<p>Para ativar ou desativar acionadores:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Especifique se os acionadores serão ativados ou desativados:
+
+<ul>
+<li>Para ativar acionadores, selecione <strong>Disparar Acionadores no Destino</strong>.</li>
+<li>Para desativar acionadores, desmarque esta opção.</li></ul></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Conceitos relacionados</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_051.htm#ids_erp_051" target="_blank">Acionadores (Guia do Enterprise Replication)</a></li></ul>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h5 id="dqx1ids_oer_081.dita">Retendo ou Removendo Linhas Excluídas</h5>
+<div>
+<p>Modifique uma réplica para reter ou remover linhas excluídas nos servidores de destino.</p></div><a id="idx139"></a><a id="idx140"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq269">Pré-requisito:</div>
+<div class="notebody">Com a ação Modificar Réplica, você pode modificar uma réplica principal estrita e seus participantes. Uma réplica principal verifica se tabelas replicadas em servidores diferentes possuem tipos de dados de colunas consistentes. Uma réplica principal estrita também verifica se as tabelas replicadas possuem nomes de colunas idênticos.</div></div>
+<p>
+<p>Por padrão, linhas excluídas são removidas de todos os nós no domínio Enterprise Replication (ER). Você pode especificar se linhas excluídas serão retidas nos servidores de destino se forem excluídas de outros nós no domínio ER.</p>
+<p>Para especificar se as linhas excluídas serão retidas ou removidas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar Réplica</strong>. 
+
+<p>A lista exibe os grupos de servidores no domínio com os participantes em <strong>negrito</strong>.</p></li>
+<li>Clique em <strong>
+Avançar</strong>.</li>
+<li>Especifique se reter as linhas excluídas:
+
+<ul>
+<li>Para reter linhas excluídas nos servidores de destino se elas forem excluídas de outros nós no domínio ER, selecione <strong>Reter Linhas Excluídas</strong>. Você não poderá usar essa opção se especificar a exclusão de wins como a regra de resolução de conflitos.</li>
+<li>Para remover linhas excluídas de todos os nós no domínio, desmarque esta opção.</li></ul></li>
+<li>Para modificar a réplica, clique em <strong>Concluir</strong>.
+
+<p>As opções selecionadas e os resultados da ação são exibidos.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_171.htm#ids_erp_171" target="_blank">Criando Replicações Principais Estritas (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_034.dita">Visualizando as Propriedades da Réplica</h4>
+<div>
+<p>Visualize as propriedades e o estado das réplicas e dos participantes das réplicas.</p></div><a id="idx141"></a><a id="idx142"></a><a id="idx143"></a>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Para visualizar as propriedades dos participantes da réplica, expanda o nome da réplica. 
+
+<p>Para ver uma descrição das informações na página <strong>Réplicas</strong>, clique no ícone Ajuda.</p></li></ol>
+<h4 id="dqx1ids_oer_038.dita">Iniciando uma Réplica</h4>
+<div>
+<p>Inicie uma réplica que está inativa.</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<p>Se uma réplica pertencer a um conjunto de réplicas exclusivo, você deverá iniciar o conjunto de réplicas ao qual a réplica pertence.</p>
+<p>Para iniciar uma réplica:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Iniciar Réplica</strong>.</li>
+<li>Na página <strong>Iniciar Réplica</strong>, selecione os participantes que irão iniciar.
+
+<ul>
+<li>Para iniciar todos os participantes da réplica, selecione a caixa de opção <strong>Todos os Participantes</strong>.</li>
+<li>Para iniciar participantes específicos, selecione a caixa de opção para cada participante que você deseja iniciar.</li></ul></li>
+<li>Para executar uma sincronização inicial das réplicas que você está iniciando, execute estas etapas:
+
+<ol type="a">
+<li>Selecione a caixa de opção <strong>Sincronizar Dados</strong>.</li>
+<li>Selecione o servidor de origem de dados para a sincronização a partir da lista de servidores.</li>
+<li>Especifique como identificar linhas no servidor de destino que não estão presentes no servidor de origem de dados. 
+
+<ul>
+<li><strong>Excluir</strong>: Exclua as linhas extras do servidor de destino.</li>
+<li><strong>Manter</strong>: Mantenha as linhas extras no servidor de destino.</li>
+<li><strong>Mesclar</strong>: Mantenha as linhas extras nos servidores de destino e as replique para o servidor de origem.</li></ul></li></ol></li>
+<li>Para iniciar a réplica, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_040.dita">Parando uma Réplica</h4>
+<div>
+<p>Pare uma réplica que está ativa.</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<p>Quando você pára uma réplica, o estado dela é alterado para <em>inativo</em> e todos os dados na fila de envio dessa réplica são excluídos. Quando uma réplica está inativa, o Enterprise Replication não transmite ou processa nenhuma alteração do banco de dados. No geral, a replicação deverá ser interrompida apenas quando provável que nenhuma atividade de replicação ocorra naquela tabela.</p>
+<p>Se uma réplica pertencer a um conjunto de réplicas exclusivo, você deverá parar o conjunto de réplicas para interromper a réplica.</p>
+<p>Para parar uma réplica:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Parar Réplica</strong>.</li>
+<li>Na página <strong>Parar Réplica</strong>, selecione os participantes que irão parar.
+
+<ul>
+<li>Para parar todos os participantes da réplica, selecione a caixa de opção <strong>Todos os Participantes</strong>.</li>
+<li>Para parar participantes específicos, selecione a caixa de opção para cada participante que você deseja parar.</li></ul></li>
+<li>Para parar a réplica, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_042.dita">Suspendendo uma Réplica</h4>
+<div>
+<p>Suspensa uma réplica que está ativa.</p></div><a id="idx148"></a><a id="idx149"></a>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Suspender Réplica</strong>. Na página <strong>Suspender Réplica</strong>, a lista exibe os participantes da réplica. Todos os participantes são selecionados, pois a suspensão de uma réplica faz com que todos os participantes entrem no estado suspenso.</li>
+<li>Para suspender a réplica, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_044.dita">Retomando uma Réplica</h4>
+<div>
+<p>Retorne o estado de uma réplica suspensa para ativo.</p></div><a id="idx150"></a><a id="idx151"></a><a id="idx152"></a>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Retomar Réplica</strong>. Na página <strong>Retomar Réplica</strong>, a lista exibe os participantes da réplica. Todos os participantes são selecionados, pois a retomada de uma réplica faz com que todos os participantes entrem no estado ativo.</li>
+<li>Para retornar a réplica ao estado ativo, clique em <strong>OK</strong>.</li></ol>
+<h4 id="dqx1ids_oer_094.dita">Excluindo uma Réplica</h4>
+<div>
+<p>Exclua uma réplica de um domínio Enterprise Replication (ER)
+e limpe todos os dados da fila de envio nos servidores de banco de dados de todos os participantes.</p></div><a id="idx153"></a><a id="idx154"></a>
+<p>
+<p>Para excluir uma réplica:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Selecione a réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir Réplica</strong>.</li></ol>
+<h3 id="dqx1ids_oer_050.dita"><a href="#ToC_94">Sincronizando Novamente Dados Entre Servidores de Replicação</a></h3>
+<div>
+<p>Corrija inconsistências de dados entre tabelas replicadas.
+Verifique inconsistências de dados, repare inconsistências durante uma verificação, sincronize dados ou repare transações com falha com arquivos Aborted Transaction
+Spooling (ATS) e Row Information Spooling (RIS).</p></div><a id="idx155"></a><a id="idx156"></a><a id="idx157"></a><a id="idx158"></a><a id="idx159"></a><a id="idx160"></a><a id="idx161"></a><a id="idx162"></a><a id="idx163"></a><a id="idx164"></a><a id="idx165"></a><a id="idx166"></a><a id="idx167"></a><a id="idx168"></a>
+<p>Com o IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT),
+é possível reparar inconsistências de dados entre tabelas replicadas das
+formas a seguir:</p>
+<ul>
+<li>Verificar a consistência e reparar linhas inconsistentes: Uma verificação de consistência compara os dados entre um servidor de referência e um ou mais servidores de destino e gera um relatório que descreve todas as inconsistências.
+Você pode optar por reparar linhas inconsistentes durante uma verificação de consistência.
+Você pode executar uma verificação de consistência e uma sincronização otimizada em uma única réplica ou em um conjunto de réplicas.</li>
+<li>Sincronizar dados: A sincronização replica cada linha na réplica especificada ou conjunto de réplicas a partir do servidor de referência para todos os servidores de destino especificados. Você pode usar a sincronização direta para preencher um novo servidor de destino ou um servidor de destino existente que tenha se tornado muito inconsistente.</li>
+<li>Reparar transações usando arquivos ATS ou RIS: Uma reparação usando um arquivo ATS ou RIS repara as linhas associadas à única transação gravada no arquivo ATS ou RIS especificado.</li></ul>
+<div>
+<div class="notetitle" id="wq289">Importante:</div>
+<div class="notebody">Executar uma verificação de consistência ou sincronização pode consumir uma grande quantidade de espaço em seus arquivos de log. Verifique se você possui espaço suficiente antes de executar este comando.</div></div>
+<p></p>
+<ul class="simple">
+<li><strong>Tarefas relacionadas</strong>:</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.erep.doc/ids_erp_236.htm#ids_erp_236" target="_blank">Verificando a Consistência e Reparando Linhas Inconsistentes (Guia do Enterprise Replication)</a></li></ul>
+<h4 id="dqx1ids_oer_051.dita">Verificando uma Réplica</h4>
+<div>
+<p>Execute uma verificação de consistência para comparar os dados entre um servidor de referência e um ou mais servidores de destino em uma réplica e para gerar um relatório que descreva todas as inconsistências.</p></div><a id="idx169"></a><a id="idx170"></a><a id="idx171"></a>
+<p>
+<p>Para verificar uma réplica:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Réplica</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificar</strong>.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione as opções para limitar o número
+de linhas para verificar por período de tempo ou com uma cláusula WHERE.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados. </li>
+<li>Especifique os servidores de destino para verificar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_052.dita">Verificando e Reparando uma Réplica</h4>
+<div>
+<p>Execute uma verificação de consistência para comparar os dados entre um servidor de referência e um ou mais servidores de destino em uma réplica, gerar um relatório que descreva todas as inconsistências e reparar as linhas inconsistentes para que elas correspondam às linhas no servidor de referência.</p></div><a id="idx172"></a><a id="idx173"></a><a id="idx174"></a><a id="idx175"></a><a id="idx176"></a><a id="idx177"></a>
+<p>
+<p>Para verificar e reparar uma réplica:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Réplica</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificar e Reparar</strong>.</li>
+<li>Opcional: Para uma réplica que
+usa o registro de data e hora ou a regra de resolução de conflito wins de exclusão, selecione
+a opção para reparar inconsistências com base no registro de data e hora mais recente.
+Esta opção requer o IBM Informix versão 11.70.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione as opções para limitar o número
+de linhas para verificar por período de tempo ou com uma cláusula WHERE.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados. A lista exibe os servidores que são participantes da réplica.</li>
+<li>Especifique como identificar linhas nos servidores de destino que não estão no servidor de referência. O padrão é <strong>Excluir</strong>: Remova as linhas extras dos servidores de destino.</li>
+<li>Especifique como identificar acionadores nos servidores de destino ao reparar os dados. O padrão é <strong>Desativado</strong>: Não dispare acionadores nos servidores de destino durante a sincronização.</li>
+<li>Especifique os servidores de destino para verificar e reparar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_053.dita">Sincronizando uma Réplica</h4>
+<div>
+<p>Sincronize dados entre servidores de réplicas para reparar dados inconsistentes dentro de uma réplica.</p></div><a id="idx178"></a><a id="idx179"></a><a id="idx180"></a><a id="idx181"></a><a id="idx182"></a><a id="idx183"></a>
+<p>
+<p>Para sincronizar uma réplica:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Réplicas</strong>.</li>
+<li>Clique na réplica na tabela. Para visualizar os participantes, expanda o nome da réplica.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Réplica</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Sincronizar</strong>.</li>
+<li>Opcional: Para aumentar a quantia de memória
+que a fila de envio pode usar durante a sincronização, selecione <strong>Configurar
+o tamanho da fila de envio</strong> e especifique o tamanho.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione as opções para limitar o número
+de linhas para verificar por período de tempo ou com uma cláusula WHERE.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados.</li>
+<li>Especifique como identificar linhas nos servidores de destino que não estão no servidor de referência. O padrão é <strong>Excluir</strong>: Remova as linhas extras dos servidores de destino.</li>
+<li>Especifique como identificar acionadores nos servidores de destino ao sincronizar os dados. O padrão é <strong>Desativado</strong>: Não dispare acionadores nos servidores de destino durante a sincronização.</li>
+<li>Especifique os servidores de destino para sincronizar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_096.dita">Excluindo uma Tarefa de Verificação ou Sincronização para uma Réplica</h4>
+<div>
+<p>Exclua o relatório de uma tarefa de verificação, verificação e reparo ou sincronização
+para uma réplica.</p></div><a id="idx184"></a><a id="idx185"></a>
+<p>
+<p>Para excluir uma tarefa de réplica:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Status da Tarefa</strong>.</li>
+<li>Para <strong>Mostrar</strong>, selecione <strong>Status de Verificação ou Sincronização de
+Réplica</strong>.</li>
+<li>Selecione as caixas de opção para as tarefas a serem excluídas. 
+<div class="attention">><span class="attentiontitle">Atenção: </span>As tarefas selecionadas são excluídas sem confirmação
+quando você clica em <strong>Excluir Tarefas de Réplica</strong>.</div></li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir
+Tarefas de Réplica</strong>.</li></ol>
+<h4 id="dqx1ids_oer_057">Verificando um Conjunto de Réplicas</h4>
+<div>
+<p>Execute uma verificação de consistência para comparar os dados entre um servidor de referência e um ou mais servidores de destino em um conjunto de réplicas e para gerar um relatório que descreva todas as inconsistências.</p></div><a id="idx186"></a><a id="idx187"></a><a id="idx188"></a>
+<p>
+<p>Para verificar um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar as réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Conjunto de Réplicas</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificar</strong>.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione a opção para limitar o número
+de linhas para verificar por período de tempo.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados.</li>
+<li>Especifique o número de processos para usar. Para melhor desempenho, escolha o número máximo de processos. Esse número é o número de processadores virtuais disponíveis ou o número de réplicas no conjunto de réplicas, o que for menor.</li>
+<li>Especifique os servidores de destino para verificar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_058">Verificando e Reparando um Conjunto de Réplicas</h4>
+<div>
+<p>Execute uma verificação de consistência para comparar os dados entre um servidor de referência e um ou mais servidores de destino em um conjunto de réplicas, gerar um relatório que descreva todas as inconsistências e reparar as linhas inconsistentes para que elas correspondam às linhas no servidor de referência.</p></div><a id="idx189"></a><a id="idx190"></a><a id="idx191"></a><a id="idx192"></a><a id="idx193"></a><a id="idx194"></a>
+<p>
+<p>Para verificar e reparar um conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar as réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Conjunto de Réplicas</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificar e Reparar</strong>.</li>
+<li>Opcional: Para um conjunto de réplicas
+no qual todas as réplicas usam o registro de data e hora ou a regra de resolução de conflito wins de
+exclusão, selecione a opção para reparar inconsistências com base
+no registro de data e hora mais recente. Esta opção requer o IBM Informix versão 11.70.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione a opção para limitar o número
+de linhas para verificar por período de tempo.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados.</li>
+<li>Especifique como identificar linhas nos servidores de destino que não estão no servidor de referência. O padrão é <strong>Excluir</strong>: Remova as linhas extras dos servidores de destino.</li>
+<li>Especifique como identificar acionadores nos servidores de destino ao reparar os dados. O padrão é <strong>Desativado</strong>: Não dispare acionadores nos servidores de destino durante a sincronização.</li>
+<li>Especifique como tratar servidores de replicação desativados ao reparar os dados. O padrão é <strong>Não Ativar
+Replicação</strong>.</li>
+<li>Especifique o número de processos para usar. Para melhor desempenho, escolha o número máximo de processos. Esse número é o número de processadores virtuais disponíveis ou o número de réplicas no conjunto de réplicas, o que for menor.</li>
+<li>Especifique os servidores de destino para verificar e reparar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_059">Sincronizando um Conjunto de Réplicas</h4>
+<div>
+<p>Sincronize dados entre servidores de réplicas para reparar dados inconsistentes dentro de um conjunto de réplicas.</p></div><a id="idx195"></a><a id="idx196"></a><a id="idx197"></a><a id="idx198"></a><a id="idx199"></a><a id="idx200"></a>
+<p>
+<p>Para sincronizar um conjunto de réplicas:</p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Conjuntos de Réplicas</strong>.</li>
+<li>Clique no conjunto de réplicas na tabela. Para visualizar as réplicas no conjunto, expanda o nome do conjunto de réplicas.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Verificar ou Sincronizar Conjunto de Réplicas</strong>.</li>
+<li>Insira um nome para identificar a tarefa, para que você possa monitorá-la na página <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Sincronizar</strong>.</li>
+<li>Opcional: Para aumentar a quantia de memória
+que a fila de envio pode usar durante a sincronização, selecione <strong>Configurar
+o tamanho da fila de envio</strong> e especifique o tamanho.</li>
+<li>Para <strong>Frequência</strong>, especifique quando executar a ação. O padrão é <strong>Imediatamente</strong>,
+quando você clica em <strong>Concluir</strong>.</li>
+<li>Opcional: Selecione as opções para limitar o número
+de linhas para verificar por período de tempo.</li>
+<li>Selecione um <strong>Servidor de Referência</strong> para usar como a cópia de referência dos dados.</li>
+<li>Especifique como identificar linhas nos servidores de destino que não estão no servidor de referência. O padrão é <strong>Excluir</strong>: Remova as linhas extras dos servidores de destino.</li>
+<li>Especifique como identificar acionadores nos servidores de destino ao sincronizar os dados. O padrão é <strong>Desativado</strong>: Não dispare acionadores nos servidores de destino durante a sincronização.</li>
+<li>Especifique como tratar servidores de replicação desativados ao reparar os dados. O padrão é <strong>Não Ativar
+Replicação</strong>.</li>
+<li>Especifique o número de processos para usar. Para melhor desempenho, escolha o número máximo de processos. Esse número é o número de processadores virtuais disponíveis ou o número de réplicas no conjunto de réplicas, o que for menor.</li>
+<li>Especifique os servidores de destino para sincronizar. 
+
+<p>Para monitorar o progresso da tarefa e ver o relatório de consistência, clique na guia <strong>Status da Tarefa</strong>.</p></li></ol>
+<h4 id="dqx1ids_oer_097.dita">Excluindo uma Tarefa de Verificação ou Sincronização para um Conjunto de Réplicas</h4>
+<div>
+<p>Exclua o relatório de uma tarefa de verificação, verificação e reparo ou sincronização
+para um conjunto de réplicas.</p></div><a id="idx201"></a><a id="idx202"></a>
+<p>
+<p>Para excluir uma tarefa do conjunto de réplicas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Status da Tarefa</strong>.</li>
+<li>Para <strong>Mostrar</strong>, selecione <strong>Status de Verificação ou Sincronização do Conjunto de
+Réplicas</strong>.</li>
+<li>Selecione as caixas de opção para as tarefas a serem excluídas. 
+<div class="attention">><span class="attentiontitle">Atenção: </span>As tarefas selecionadas são excluídas sem confirmação
+quando você clica em <strong>Excluir Tarefas do Conjunto de Réplicas</strong>.</div></li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Excluir Tarefas do Conjunto de Réplicas</strong>.</li></ol>
+<h4 id="dqx1ids_oer_063">Reparando Transações com Falha com Arquivos ATS</h4>
+<div>
+<p>Repare transações com falha usando arquivos Aborted Transaction Spooling (ATS). A tarefa de reparação do ATS reconcilia linhas que falharam quando aplicadas ao servidor de destino.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq311">Pré-requisito:</div>
+<div class="notebody">Crie um diretório para armazenar os arquivos ATS, ative a geração de arquivos ATS no servidor Enterprise Replication (ER) e ative a geração de arquivos ATS para a réplica.</div></div>
+<p>
+<p>Um arquivo ATS é gerado quando uma transação replicada falha quando aplicada ao banco de dados de destino devido a um conflito e toda a transação falha. Quando você repara a transação usando o arquivo ATS, repara as linhas associadas à transação que foram registradas no arquivo ATS.</p>
+<p>Para reparar transações usando arquivos ATS:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>ATS</strong>.</li>
+<li>Na tabela <strong>Arquivos Aborted Transaction Spooling (ATS)</strong>,
+marque as caixas de seleção para os arquivos ATS. 
+
+<p>Se você não reparar todos os arquivos ATS disponíveis ao mesmo tempo, algumas tarefas de reparação poderão falhar devido a problemas ao manter os relacionamentos entre as tabelas (limitadores de integridade referencial).</p></li>
+<li>Clique em <strong>Reparar</strong>.</li>
+<li>Reveja os arquivos ATS selecionados para reparação. 
+
+<p>Para ver os detalhes de um arquivo ATS, clique no nome dele.</p></li>
+<li>Clique em <strong>Reparar</strong>.</li>
+<li>Monitore o progresso da tarefa e reveja os resultados na lista <strong>Status da Tarefa de Reparação do ATS</strong>. 
+
+<p>Para exibir os detalhes de uma tarefa, clique no nome de arquivo na lista.</p></li></ol>
+<h4 id="dqx1ids_oer_064">Reparando Transações com Falha com Arquivos RIS</h4>
+<div>
+<p>Repare transações com falha usando arquivos Row Information Spooling
+(RIS). A tarefa de reparação do RIS reconcilia linhas que falharam quando aplicadas ao servidor de destino.</p></div>
+<p></p>
+<div>
+<div class="notetitle" id="wq316">Pré-requisito:</div>
+<div class="notebody">Crie um diretório para armazenar os arquivos RIS, ative a geração de arquivos RIS no servidor Enterprise Replication (ER) e ative a geração de arquivos RIS para a réplica.</div></div>
+<p>
+<p>Um arquivo RIS é gerado quando uma transação replicada que possui escopo de linha definido falha quando aplicada ao banco de dados de destino devido a um conflito e toda a transação falha. Quando você repara a transação usando o arquivo RIS, repara a linha que foi registrada no arquivo RIS.</p>
+<p>Para reparar transações usando arquivos RIS:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>RIS</strong>.</li>
+<li>Na tabela <strong>Row Information Spooling (RIS)</strong>,
+marque as caixas de seleção para os arquivos RIS. 
+
+<p>Se você não reparar todos os arquivos RIS disponíveis ao mesmo tempo, algumas tarefas de reparação poderão falhar devido a problemas ao manter os relacionamentos entre as tabelas (limitadores de integridade referencial).</p></li>
+<li>Clique em <strong>Reparar</strong>.</li>
+<li>Reveja os arquivos RIS selecionados para reparação. 
+
+<p>Para ver os detalhes de um arquivo RIS, clique no nome dele.</p></li>
+<li>Clique em <strong>Reparar</strong>.</li>
+<li>Monitore o progresso da tarefa e reveja os resultados na lista <strong>Status da Tarefa de Reparação do RIS</strong>. 
+
+<p>Para exibir os detalhes de uma tarefa, clique no nome de arquivo na lista.</p></li></ol>
+<h3 id="dqx1ids_oer_054"><a href="#ToC_105">Monitorando o Status da Tarefa</a></h3>
+<div>
+<p>Monitore o progresso e os resultados da verificação, verifique e repare e sincronize tarefas para réplicas e conjuntos de réplicas.</p></div>
+<h4 id="dqx1ids_oer_055">Monitorando Tarefas de Réplicas</h4>
+<div>
+<p>Monitore o progresso e os resultados da verificação, verifique e repare e sincronize tarefas para réplicas.</p></div><a id="idx203"></a><a id="idx204"></a>
+<p>
+<p>Depois de executar uma verificação de consistência, uma verificação e uma reparação ou uma tarefa de sincronização em uma réplica, o status da tarefa e os resultados são exibidos e atualizados na página <strong>Status da Tarefa</strong>.</p>
+<p>Para monitorar as tarefas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificação de Réplica ou Status de Sincronização</strong>. A lista exibe o status das tarefas. Você pode clicar em um título da coluna para classificar a lista.</li>
+<li>Para exibir mais detalhes sobre uma tarefa, clique no nome dela. 
+
+<p>Na página <strong>Detalhes da Tarefa de Réplica</strong>,
+clique no botão Atualizar para atualizar os detalhes de uma tarefa que está
+em execução.</p></li></ol>
+<h4 id="dqx1ids_oer_056">Monitorando Tarefas do Conjunto de Réplicas</h4>
+<div>
+<p>Monitore o progresso e os resultados da verificação, verifique e repare e sincronize tarefas para conjuntos de réplicas.</p></div><a id="idx205"></a><a id="idx206"></a>
+<p>
+<p>Depois de executar uma verificação de consistência, uma verificação e uma reparação ou uma tarefa de sincronização em um conjunto de réplicas, o status da tarefa e os resultados são exibidos e atualizados na página <strong>Status da Tarefa</strong>.</p>
+<p>Para monitorar as tarefas:</p></p>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Réplicas</strong>.</li>
+<li>Clique na guia <strong>Status da Tarefa</strong>.</li>
+<li>Selecione <strong>Verificação de Conjunto de Réplicas ou Status de Sincronização</strong>. A lista exibe o status das tarefas. Você pode clicar em um título da coluna para classificar a lista.</li>
+<li>Para exibir mais detalhes sobre uma tarefa, clique no nome dela.</li>
+<li>Na página <strong>Detalhes da Tarefa do Conjunto de Réplicas</strong>, clique no nome de uma réplica para exibir detalhes sobre ela.  
+
+<p>Clique no botão Atualizar para atualizar os detalhes de uma tarefa em execução.</p></li></ol>
+<h3 id="dqx1ids_oer_030"><a href="#ToC_108">Alterando Parâmetros de Configuração do ER</a></h3>
+<div>
+<p>Altere os parâmetros de configuração para um nó em um domínio do Enterprise Replication
+(ER).</p></div>
+<p></p>
+<ol type="1">
+<li>No menu do IBM OpenAdmin
+Tool (OAT) for Informix, expanda <strong>Replicação</strong> e, em seguida,
+clique em <strong>Detalhes do Nó</strong>.</li>
+<li>Clique na guia <strong>Configurações</strong>. Os parâmetros e seus valores atuais são exibidos.</li>
+<li>Clique em <strong>Editar Configuração</strong>.</li>
+<li>Digite as alterações nos campos.</li>
+<li>Clique em <strong>Salvar Alterações</strong>.</li></ol>
+<h2 id="dqx1ids_oer_115.dita"><a href="#ToC_109">Gerenciando Conexões do Cliente</a></h2>
+<div>
+<p>Monitore e mantenha as conexões do cliente e direcione as solicitações de
+conexão do cliente para o servidor apropriado em uma grade, um cluster de alta disponibilidade,
+um conjunto de réplicas ou um conjunto de servidores usando o Gerenciador de
+Conexões.</p></div>
+<div>
+<div class="notetitle" id="dqx1ids_oer_115.dita__preq-cmxc3">Pré-requisito:</div>
+<div class="notebody"><span id="dqx1ids_oer_115.dita__preq-ph-cmxc3">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3
+e o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3
+ou com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3</span>.</div></div>
+<p>Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações
+de conexão do cliente ao servidor apropriado em uma unidade de conexão
+baseada nos Acordos de Nível de Serviço (SLA). Uma unidade de conexão é uma coleção
+de servidores de banco de dados em uma grade, um cluster de alta disponibilidade, um conjunto de
+réplicas ou um conjunto de servidores. Um Gerenciador de Conexões pode gerenciar diversas
+unidades de conexão.</p>
+<div>
+<div class="notetitle" id="wq328">Importante:</div>
+<div class="notebody">O Gerenciador de Conexões requer que o
+nome do Gerenciador de Conexões, os nomes de SLA, os nomes de cluster e os nomes de
+conjunto de servidores estejam todos em caracteres ASCII, mesmo para códigos de idioma não em inglês.</div></div>
+<h3 id="dqx1ids_oer_116"><a href="#ToC_110">Visualizando Unidades de Conexão</a></h3>
+<div>
+<p>Visualize as grades, clusters de alta disponibilidade, conjuntos de réplicas
+e conjuntos de servidores cujas conexões são monitoradas por um Gerenciador de Conexões.</p></div><a id="idx207"></a><a id="idx208"></a><a id="idx209"></a><a id="idx210"></a><a id="idx211"></a><a id="idx212"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq330">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações
+de conexão do cliente ao servidor apropriado em uma unidade de conexão
+baseada nos Acordos de Nível de Serviço (SLA). Uma unidade de conexão é uma coleção
+de servidores de banco de dados em uma grade, um cluster de alta disponibilidade, um conjunto de
+réplicas ou um conjunto de servidores. Um Gerenciador de Conexões pode gerenciar diversas
+unidades de conexão.</p></p>
+<p>
+<p>Para visualizar as unidades de conexão para um Gerenciador de Conexões:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na unidade de conexão na
+lista.</li></ol>
+<h3 id="dqx1ids_oer_117"><a href="#ToC_111">Incluindo uma Unidade de Conexão</a></h3>
+<div>
+<p>Atribua uma grade, um cluster, um conjunto de réplicas ou um conjunto de
+servidores a um Gerenciador de Conexões, crie um acordo de nível de serviço para a
+unidade de conexão. Para um cluster, também configure failover.</p></div><a id="idx213"></a><a id="idx214"></a><a id="idx215"></a><a id="idx216"></a><a id="idx217"></a><a id="idx218"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq335">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Uma unidade de conexão é uma coleção
+de servidores de banco de dados em uma grade, um cluster de alta disponibilidade, um conjunto de
+réplicas ou um conjunto de servidores. Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações de conexão do cliente ao servidor apropriado em uma unidade de conexão baseada nos Acordos de Nível de Serviço (SLA). </p></p>
+<p>
+<p>Para incluir uma unidade de conexão:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Incluir
+Unidade de Conexão</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<h3 id="dqx1ids_oer_118"><a href="#ToC_112">Modificando uma Configuração de Failover</a></h3>
+<div>
+<p>Modifique a configuração de failover para um cluster de alta disponibilidade
+usando o Gerenciador de Conexões.</p></div><a id="idx219"></a><a id="idx220"></a><a id="idx221"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq340">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Uma
+configuração de failover especifica o servidor secundário que assume
+a função do servidor principal, se o servidor principal falhar.</p></p>
+<p>
+<p>Para modificar a configuração de failover:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique no cluster.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar
+Unidade de Conexão</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<h3 id="dqx1ids_oer_119"><a href="#ToC_113">Criando um Acordo de Nível de Serviço</a></h3>
+<div>
+<p>Crie um acordo de nível de serviço para uma grade, um cluster
+ou um conjunto de réplicas usando um Gerenciador de Conexões.</p></div><a id="idx222"></a><a id="idx223"></a><a id="idx224"></a><a id="idx225"></a><a id="idx226"></a><a id="idx227"></a><a id="idx228"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq345">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3. A grade,
+o cluster ou o conjunto de réplicas deve ser definido como uma unidade de conexão para
+um Gerenciador de Conexões.</div></div>
+<p>
+<p>Um Acordo de Nível de Serviço (SLA) é um
+contrato entre aplicativos clientes especificados e seus provedores de serviços,
+neste caso, servidores de banco de dados
+Informix. Com base nos acordos de nível de serviço, o Gerenciador de Conexões conecta os aplicativos clientes aos servidores apropriados. O Gerenciador de Conexões aceita pedidos de conexão do cliente e os redireciona
+para o servidor adequado ou age como um servidor proxy entre
+os aplicativos clientes e os servidores.</p>
+<p>Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações
+de conexão do cliente ao servidor apropriado em uma unidade de conexão
+baseada nos Acordos de Nível de Serviço (SLA). Quando a qualidade de dados é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente para os servidores de replicação com base
+no número de falhas de aplicação, na latência de transação e na
+carga de trabalho. Quando a qualidade de dados não é monitorada, o Gerenciador de Conexões pode rotear conexões do cliente com base apenas na carga de trabalho. Para especificar as falhas de aplicação e a latência em um
+SLA, ative o monitoramento da qualidade de dados modificando um servidor que
+seja um membro da grade na página <strong>Replicação</strong> &gt; <strong>Domínio do ER</strong>.</p></p>
+<p>
+<p>Para criar um acordo de nível de serviço:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na unidade de conexão na
+lista.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Criar
+um SLA</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<h3 id="dqx1ids_oer_120"><a href="#ToC_114">Modificando um Acordo de Nível de Serviço</a></h3>
+<div>
+<p>Modifique um acordo de nível de serviço para uma grade, um cluster,
+um conjunto de réplicas ou um conjunto de servidores usando um Gerenciador de Conexões.</p></div><a id="idx229"></a><a id="idx230"></a><a id="idx231"></a><a id="idx232"></a><a id="idx233"></a><a id="idx234"></a><a id="idx235"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq350">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Um Acordo de Nível de Serviço (SLA) é um
+contrato entre aplicativos clientes especificados e seus provedores de serviços,
+neste caso, servidores de banco de dados
+Informix. Com base nos acordos de nível de serviço, o Gerenciador de Conexões conecta os aplicativos clientes aos servidores apropriados. O Gerenciador de Conexões aceita pedidos de conexão do cliente e os redireciona
+para o servidor adequado ou age como um servidor proxy entre
+os aplicativos clientes e os servidores.</p>
+<p>Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações
+de conexão do cliente ao servidor apropriado em uma unidade de conexão
+baseada nos Acordos de Nível de Serviço (SLA). Uma unidade de conexão é uma coleção de servidores de banco de dados em uma grade, um cluster de alta disponibilidade, um conjunto de réplicas ou um conjunto de
+servidores.</p></p>
+<p>
+<p>Para modificar um acordo de nível de serviço:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>Clique no Gerenciador de Conexões.</li>
+<li>Clique na grade, no cluster, no conjunto de réplicas ou no conjunto de servidores.</li>
+<li>Clique na guia SLA.</li>
+<li>Clique no SLA na lista.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Modificar
+um SLA</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<h3 id="dqx1ids_oer_121"><a href="#ToC_115">Criando um Gerenciador de Conexões</a></h3>
+<div>
+<p>Crie um Gerenciador de Conexões e defina uma grade, um cluster,
+um conjunto de réplicas ou um conjunto de servidores como uma unidade de conexão e crie
+um acordo de nível de serviço para a unidade de conexão.</p></div><a id="idx236"></a><a id="idx237"></a><a id="idx238"></a><a id="idx239"></a><a id="idx240"></a><a id="idx241"></a>
+<p></p>
+<div>
+<div class="notetitle" id="wq355">Pré-requisitos:</div>
+<div class="notebody">Para o Gerenciador de Conexões, o IBM OpenAdmin
+Tool (OAT) for Informix requer o Informix 11.70.xC3 e
+o Gerenciador de Conexões que está empacotado com o Informix 11.70.xC3 ou
+com o IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3.</div></div>
+<p>
+<p>Um Gerenciador de Conexões fornece balanceamento de carga e direciona as solicitações
+de conexão do cliente ao servidor apropriado em uma unidade de conexão
+baseada nos Acordos de Nível de Serviço (SLA). Uma unidade de conexão é uma coleção
+de servidores de banco de dados em uma grade, um cluster de alta disponibilidade, um conjunto de
+réplicas ou um conjunto de servidores. Um Gerenciador de Conexões pode gerenciar diversas
+unidades de conexão.</p>
+<p>É possível
+criar um Gerenciador de Conexões para o servidor de banco de dados ao qual o OAT está
+conectado usando o OAT. </p></p>
+<p>
+<p>Para criar um Gerenciador de Conexões:</p></p>
+<ol type="1">
+<li>No menu do OAT, clique em <strong>Replicação</strong> &gt; <strong>Gerenciador de Conexões</strong>.</li>
+<li>No menu <strong>Ações</strong>, clique em <strong>Criar</strong>.</li>
+<li>Conclua o assistente.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_116">Avisos</a></h1>
+<p>Essas informações foram desenvolvidas para produtos e serviços oferecidos nos Estados Unidos.</p>
+<p>É possível que a IBM
+não ofereça os produtos, serviços ou recursos discutidos neste documento
+em outros países. Consulte um representante local para obter informações sobre os produtos
+e serviços atualmente disponíveis em sua área. Qualquer referência a produtos, programas ou
+serviços IBM não significa que apenas produtos, programas ou serviços IBM possam
+ser usados. Qualquer produto, programa ou serviço funcionalmente equivalente,
+que não infrinja nenhum direito de propriedade intelectual da IBM poderá ser usado em substituição a este produto, programa ou serviço.
+Entretanto, é responsabilidade do usuário avaliar e verificar a operação de qualquer produto,
+programa ou serviço não IBM.</p>
+<p>A IBM pode
+ter patentes ou aplicativos de patentes pendentes relativos a assuntos
+descritos neste documento. O fornecimento desse documento não concede ao Cliente nenhuma licença para essas patentes. É possível enviar as consultas sobre licença, por escrito, para:  </p>
+<div class="lines">Gerência de Relações Comerciais e Industriais da IBM Brasil<br />
+Av. Pasteur, 138-146<br />
+Botafogo<br />
+Rio de Janeiro, RJ<br />
+CEP: 22290-240<br />
+</div>
+<p>Para consultas sobre licença relacionadas a informações de byte duplo (DBCS),
+entre em contato com o Departamento de Propriedade
+Intelectual da IBM em seu país ou envie consultas, por escrito,
+para: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>O parágrafo a seguir não se aplica ao Reino Unido
+ou qualquer outro país em que tais disposições estejam inconsistentes com a lei
+local: A INTERNATIONAL BUSINESS MACHINES CORPORATION FORNECE ESTA
+PUBLICAÇÃO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE NENHUM TIPO, SEJA EXPRESSA OU
+IMPLÍCITA, INCLUINDO, MAS A ELAS NÃO SE LIMITANDO, AS GARANTIAS IMPLÍCITAS DE
+NÃO INFRAÇÃO, COMERCIALIZAÇÃO OU ADEQUAÇÃO A UM DETERMINADO PROPÓSITO.
+Algumas declarações não permitem a renúncia de responsabilidade de garantias expressas ou implícitas em
+determinadas transações, portanto, essa declaração pode não se aplicar ao Cliente.</p>
+<p>Essas informações podem incluir imprecisões técnicas ou erros tipográficos. Mudanças são feitas periodicamente nas informações contidas nesse documento; essas mudanças
+serão incorporadas em novas edições da publicação. A IBM pode fazer melhorias
+e/ou mudanças nos produtos e/ou programas descritos nesta publicação a qualquer
+momento sem aviso prévio.</p>
+<p>Quaisquer referências nestas informações a Web sites que não sejam da IBM são fornecidas
+apenas por conveniência e não representam de forma alguma
+um endosso a estes Web sites. Os materiais contidos nesses websites não fazem parte dos
+materiais deste produto IBM
+e o uso desses websites é de inteira responsabilidade do Cliente.</p>
+<p>A IBM pode
+usar ou distribuir as informações fornecidas da forma que julgar
+apropriada sem incorrer em qualquer obrigação para com o Cliente.</p>
+<p>Os licenciados desse programa que desejarem obter informações sobre isso
+para fins de permitir: (i) a troca de informações entre programas criados
+de modo independente e entre outros programas (incluindo esse) e
+(ii) o uso mútuo das informações que foram trocadas, devem entrar em contato com: </p>
+<div class="lines">Gerência de Relações Comerciais e Industriais da IBM Brasil<br />
+Av. Pasteur, 138-146<br />
+Botafogo<br />
+Rio de Janeiro, RJ<br />
+CEP: 22290-240<br />
+</div>
+<p>Tais informações podem estar disponíveis, sujeitas aos termos e condições
+apropriados, incluindo, em alguns casos, o pagamento de uma taxa.</p>
+<p>O programa licenciado descrito neste documento e todo o material
+licenciado disponível são fornecidos pela IBM sob os termos do IBM Customer Agreement, do Contrato de Licença
+do Programa Internacional IBM ou de qualquer outro contrato equivalente.</p>
+<p>Quaisquer dados de desempenho contidos nesse documento foram determinados em um
+ambiente controlado. Portanto, os resultados obtidos em outros ambientes operacionais podem
+variar significativamente. Algumas medidas podem ter sido tomadas em sistemas em nível de desenvolvimento e não há garantia de que estas medidas serão as mesmas em sistemas disponíveis em geral. Além disso, algumas medidas podem ter
+sido estimadas por extrapolação. Os resultados reais podem variar. Os usuários desse documento devem verificar os dados aplicáveis para seu
+ambiente específico.</p>
+<p>Informações referentes a produtos não IBM foram obtidas de fornecedores desses produtos,
+de seus anúncios publicados ou de outras fontes disponíveis publicamente. A IBM não
+testou estes produtos e não pode confirmar a precisão do desempenho,
+da compatibilidade ou de qualquer outra solicitação relacionada a produtos não IBM. Questões sobre capacidades de produtos não IBM devem ser encaminhadas aos fornecedores desses produtos.</p>
+<p>Todas as declarações referentes à direção ou intento futuro da IBM estão sujeitas à alteração ou remoção sem aviso prévio e representam apenas metas e objetivos.</p>
+<p>Todos os preços IBM
+mostrados são preços de varejo sugeridos pela IBM, são atuais e estão sujeitos
+a mudanças sem aviso prévio. Os preços para o revendedor podem variar.</p>
+<p>Essas informações destinam-se apenas para fins de planejamento. As informações contidas
+nesse documento estão sujeitas a alteração antes que os produtos descritos se tornem disponíveis.</p>
+<p>Essas informações contêm exemplos de dados e relatórios usados nas operações
+de negócios diárias. Para ilustrá-los o mais completo possível, os exemplos
+incluem os nomes de indivíduos, empresas, marcas e produtos. Todos esses nomes são fictícios e qualquer semelhança aos nomes e
+endereços usados por uma empresa de negócios real é mera coincidência.</p>
+<p>LICENÇA DE COPYRIGHT:</p>
+<p>Essas informações contêm programas de aplicativos de amostra no idioma
+de origem, que ilustram as técnicas de programação em várias plataformas
+operacionais. O Cliente pode copiar, modificar e distribuir estes programas de amostra
+sem a necessidade de pagamento à IBM, com propósitos de desenvolvimento, uso, marketing
+ou distribuição de programas aplicativos em conformidade com a interface de programação
+de aplicativos para a plataforma operacional para a qual os programas de amostra
+são escritos. Esses
+exemplos não foram testados completamente sob todas as condições. Portanto,
+a IBM não pode garantir ou implicar a confiabilidade, capacidade de manutenção
+ou função destes programas. Os programas de amostra são fornecidos "NO ESTADO EM QUE SE ENCONTRAM", sem garantia de nenhum tipo. A IBM não poderá ser responsabilizada por nenhum dano decorrente
+do uso dos programas de amostra.</p>
+<p>Cada cópia ou parte desses programas de amostra ou qualquer
+trabalho derivado deve incluir um aviso de copyright com os dizeres:</p>
+<p>&copy; (nome de sua empresa) (ano). As partes deste código são derivadas
+dos Programas de Amostra
+da IBM Corp.</p>
+<p>&copy; Copyright IBM Corp.
+_insira o ano ou anos_. Todos os direitos reservados.</p>
+<p>Se estiver visualizando essas informações em formato eletrônico, as fotografias e
+ilustrações coloridas podem não aparecer.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_117">Marcas Registradas</a></h2>
+<p>IBM, o logotipo IBM e ibm.com são
+marcas ou marcas registradas da International Business Machines
+Corp., registradas em várias jurisdições no mundo todo. Outros nomes de produtos
+e de serviços podem ser marcas registradas da IBM ou de outras empresas. Uma lista atual das marcas registradas
+da IBM está disponível na web em "Copyright and trademark information", em <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Adobe, o logotipo Adobe e PostScript são marcas ou marcas
+registradas da Adobe Systems
+Incorporated nos Estados Unidos e/ou em outros países.</p>
+<p>Intel, Itanium e Pentium são
+marcas ou marcas registradas da Intel Corporation
+ou de suas subsidiárias nos Estados Unidos e em outros países.</p>
+<p>Java&trade; e todas as marcas registradas e logotipos
+baseados em Java são marcas ou marcas registradas da Oracle e/ou
+de suas afiliadas. </p>
+<p>Linux é uma marca registrada
+da Linus Torvalds nos Estados Unidos e/o em outros países.</p>
+<p>Microsoft, Windows e Windows NT são marcas registradas da Microsoft Corporation nos Estados Unidos
+e/ou em outros países.</p>
+<p>UNIX é uma marca registrada
+do The Open Group nos Estados Unidos e/ou em outros países.</p>
+<p>Nomes de outras empresas, produtos ou serviços podem ser marcas registradas ou marcas
+de serviço de terceiros.</p>
+<h2 id="dqx1ids_oer_000"><a href="#ToC_118">Copyright</a></h2>
+<p>Este documento contém informações protegidas por direitos autorais da IBM. São fornecidas
+sob um contrato de licença e são protegidas pela lei de copyright. As informações
+contidas nesta publicação não incluem nenhuma garantia do produto,
+e nenhuma declaração fornecida neste manual deverá ser interpretada
+como tal.</p>
+<p>Ao enviar informações para a IBM,
+o Cliente concede à IBM um direito
+não exclusivo para uso ou distribuição das informações, da forma que ela achar
+mais apropriada, sem incorrer em qualquer obrigação para com o Cliente.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2008,
+2013.</strong></p>
+<p>Direitos Restritos aos Usuários do Governo dos Estados Unidos -- Uso, duplicação ou divulgação
+restritos pelo GSA ADP Schedule Contract com a IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. Consulte o arquivo <samp class="xph">license/notices.txt</samp> para obter informações adicionais.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

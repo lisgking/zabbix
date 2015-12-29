@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_health">
+<health><![CDATA[ヘルス モニタ]]></health>
+<alerts><![CDATA[アラート]]></alerts>
+<aus><![CDATA[自動統計更新]]></aus>
+<scheduler><![CDATA[タスク スケジューラ]]></scheduler>
+<taskdetails><![CDATA[タスク詳細]]></taskdetails>
+<taskruntimes><![CDATA[タスクのランタイム]]></taskruntimes>
+<task_run_list><![CDATA[タスク実行リスト]]></task_run_list>
+<num_executions><![CDATA[実行数]]></num_executions>
+<avg_time><![CDATA[平均時間 (秒)]]></avg_time>
+<total_time><![CDATA[合計時間 (秒)]]></total_time>
+<last_run_time><![CDATA[最終実行時間]]></last_run_time>
+<last_execution_status><![CDATA[最終実行の状態]]></last_execution_status>
+<edittaskparam><![CDATA[タスク パラメータの編集]]></edittaskparam>
+<AddNewTask><![CDATA[新規タスクの追加]]></AddNewTask>
+<Save><![CDATA[保存]]></Save>
+<Cancel><![CDATA[キャンセル]]></Cancel>
+<CronTaskList><![CDATA[cron タスク リスト]]></CronTaskList>
+<EditParam><![CDATA[パラメータの編集]]></EditParam>
+<addtask><![CDATA[タスクの追加]]></addtask>
+<deletetask><![CDATA[タスクの削除]]></deletetask>
+<name_field_empty><![CDATA[名前フィールドが空です。名前を指定してください。]]></name_field_empty>
+<name_field_duplicate><![CDATA[データベースの別のタスクが同じ名前を使用しています。別の名前を指定してください。]]></name_field_duplicate>
+<invalid_table_name><![CDATA[名前は、アルファベットまたは「_」で開始され、アルファベット、数字、および「_」のみを含む必要があります。]]></invalid_table_name>
+<table_name_duplicate><![CDATA[表名は既に使用されています。別の表名を指定してください。]]></table_name_duplicate>
+<save_failed><![CDATA[保存失敗: ]]></save_failed>
+<what_task_type><![CDATA[追加するタスクのタイプ]]></what_task_type>
+<task><![CDATA[タスク]]></task>
+<sensor><![CDATA[センサー]]></sensor>
+<next><![CDATA[次へ]]></next>
+<back><![CDATA[戻る]]></back>
+<cancel><![CDATA[キャンセル]]></cancel>
+<finish><![CDATA[終了]]></finish>
+<new_sensor_setup><![CDATA[新規センサーのセット アップ]]></new_sensor_setup>
+<savetaskparamfailed><![CDATA[タスク パラメータの保存は失敗しました。]]></savetaskparamfailed>
+<new_task_setup><![CDATA[新規タスク設定]]></new_task_setup>
+<what_sensor_name_and_group><![CDATA[センサー名およびグループを指定します]]></what_sensor_name_and_group>
+<what_task_name_and_group><![CDATA[タスク名およびグループを指定します]]></what_task_name_and_group>
+<sensor_name><![CDATA[センサー名]]></sensor_name>
+<task_name><![CDATA[タスク名]]></task_name>
+<sensor_group><![CDATA[センサー グループ]]></sensor_group>
+<task_group><![CDATA[タスク グループ]]></task_group>
+<type_error><![CDATA[新規タスク設定の処理に複数の問題があります。キャンセルして、新規タスクセット アップ処理を再開してください。]]></type_error>
+<ph_group_error><![CDATA[PH_GROUP 表からグループの選択肢を取得できませんでした。PH_GROUP データベースおよび SYSADMIN データベースが適切に作動していることを確認してください。]]></ph_group_error>
+<task_desc><![CDATA[新規タスクの説明を入力します。]]></task_desc>
+<sensor_desc><![CDATA[新規センサーの説明を入力します。]]></sensor_desc>
+<what_sensor_schedule><![CDATA[新規センサーのスケジュールを指定します。]]></what_sensor_schedule>
+<what_task_schedule><![CDATA[新規タスクのスケジュールを指定します。]]></what_task_schedule>
+<start_time><![CDATA[開始時刻 (24 時間時計)]]></start_time>
+<stop_time><![CDATA[停止時刻 (24 時間時計)]]></stop_time>
+<frequency><![CDATA[頻度]]></frequency>
+<delete_time><![CDATA[データ削除]]></delete_time>
+<what_result_table><![CDATA[センサー データ結果を格納する新規結果表の名前を指定します。]]></what_result_table>
+<result_table_name><![CDATA[結果表名]]></result_table_name>
+<what_tk_create><![CDATA[結果表の列名を入力することにより、結果表を作成する SQL 文を完成します。]]></what_tk_create>
+<what_sensor_tk_execute><![CDATA[新規センサーが実行するコマンドを指定します。]]></what_sensor_tk_execute>
+<what_task_tk_execute><![CDATA[新規タスクが実行するコマンドを指定します。]]></what_task_tk_execute>
+<custom_sql><![CDATA[単一文の SQL コマンドまたはユーザ定義関数を入力します。]]></custom_sql>
+<stored_routine><![CDATA[ストアド ルーチンの選択]]></stored_routine>
+<stored_routine_error><![CDATA[ストアド ルーチンの取得に失敗しました。ストアド ルーチンを使用する場合は、SYSPROCEDURES 表を修正してください。]]></stored_routine_error>
+<verify_specs_sensor><![CDATA[作成するセンサーの次の明細を確認してください。確定し、センサーを作成するには「終了」をクリックします。]]></verify_specs_sensor>
+<verify_specs_task><![CDATA[作成するタスクの次の明細を確認してください。確定し、タスクを作成するには「終了」をクリックします。]]></verify_specs_task>
+<name><![CDATA[名前]]></name>
+<group><![CDATA[グループ]]></group>
+<type><![CDATA[タイプ]]></type>
+<desc><![CDATA[説明]]></desc>
+<deltask><![CDATA[タスクの削除]]></deltask>
+<result_table_create><![CDATA[結果表作成文]]></result_table_create>
+<execute_command><![CDATA[実行コマンド]]></execute_command>
+<task_name_check_error><![CDATA[タスク名が現在使用されているかどうかを検証できませんでした。sysadmin データベースの ph_task 表を確認してください。]]></task_name_check_error>
+<table_name_check_error><![CDATA[表名が現在使用されているかどうかを検証できませんでした。sysadmin データベースの systables 表を確認してください。]]></table_name_check_error>
+<sensor_check_ok><![CDATA[新規センサーは正常にスケジュールされました。]]></sensor_check_ok>
+<sensor_check_failed><![CDATA[新規センサーのセット アップは正常に終了しませんでした。セット アップを再度実行してください。]]></sensor_check_failed>
+<sensor_check_bad_exec><![CDATA[センサーは、スケジュールに従って実行されますが、コマンドに複数の問題があります。]]></sensor_check_bad_exec>
+<debug_exec_stmt><![CDATA[次のエラー コードを確認してください。コマンドをデバッグするにはリンクをクリックしてください。]]></debug_exec_stmt>
+<debug_command><![CDATA[コマンドのデバッグ]]></debug_command>
+<task_check_ok><![CDATA[新規タスクは正常にスケジュールされました。]]></task_check_ok>
+<task_check_failed><![CDATA[新規タスク設定は正常に終了しませんでした。セット アップを再度実行してください。]]></task_check_failed>
+<task_check_bad_exec><![CDATA[タスクは、スケジュールに従って実行されますが、コマンドに複数の問題があります。]]></task_check_bad_exec>
+<setup_fail><![CDATA[セット アップが失敗しました。]]></setup_fail>
+<setup_success><![CDATA[セット アップが正常に完了しました。]]></setup_success>
+<setup_success_with_problems><![CDATA[セット アップは完了しましたが問題が存在します]]></setup_success_with_problems>
+<return_code><![CDATA[戻りコード:]]></return_code>
+<time_error><![CDATA[停止時刻を開始時刻より前にすることはできません。]]></time_error>
+<freq_error><![CDATA[頻度を 0 日、0 時間、0 分、0 秒にすることはできません。]]></freq_error>
+<execute_stmt_empty><![CDATA[実行文を空にすることはできません。]]></execute_stmt_empty>
+<create_stmt_empty><![CDATA[作成文を空にすることはできません。]]></create_stmt_empty>
+<startup_only><![CDATA[サーバ始動時のみ実行]]></startup_only>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<NoExecutionStmt><![CDATA[タスクの実行文を空にすることはできません。]]></NoExecutionStmt>
+<NEVER><![CDATA[停止しない]]></NEVER>
+<NULL><![CDATA[NULL]]></NULL>
+<TaskDeleteFailed><![CDATA[タスクの削除は失敗しました。]]></TaskDeleteFailed>
+<ResultTableDeleteFailed><![CDATA[結果表を削除できませんでした。]]></ResultTableDeleteFailed>
+<TaskDeleteSuccessful><![CDATA[タスクは正常に削除されました]]></TaskDeleteSuccessful>
+<DeleteUnavailable><![CDATA[システム タスクの削除は許可されません]]></DeleteUnavailable>
+<CheckDeleteResultsTab><![CDATA[関連する結果表を削除します]]></CheckDeleteResultsTab>
+<FeatureUnavailable><![CDATA[この機能は、ご使用の現在のサーバ バージョンでは使用不可です。]]></FeatureUnavailable>
+<AlertList><![CDATA[アラート リスト]]></AlertList>
+<severity><![CDATA[重要度]]></severity>
+<alerttype><![CDATA[アラート タイプ]]></alerttype>
+<state><![CDATA[状態]]></state>
+<alertstate><![CDATA[アラート状態]]></alertstate>
+<message><![CDATA[メッセージ]]></message>
+<grouptoview><![CDATA[表示するグループ]]></grouptoview>
+<taskdetails><![CDATA[タスク詳細]]></taskdetails>
+<taskname><![CDATA[タスク名]]></taskname>
+<id><![CDATA[ID]]></id>
+<executionstmt><![CDATA[実行文]]></executionstmt>
+<resulttable><![CDATA[結果表]]></resulttable>
+<starttime><![CDATA[開始時刻]]></starttime>
+<stopttime><![CDATA[停止時刻]]></stopttime>
+<time><![CDATA[時間]]></time>
+<frequency><![CDATA[頻度]]></frequency>
+<datadelete><![CDATA[データ削除]]></datadelete>
+<WeekDay1><![CDATA[月曜日]]></WeekDay1>
+<WeekDay2><![CDATA[火曜日]]></WeekDay2>
+<WeekDay3><![CDATA[水曜日]]></WeekDay3>
+<WeekDay4><![CDATA[木曜日]]></WeekDay4>
+<WeekDay5><![CDATA[金曜日]]></WeekDay5>
+<WeekDay6><![CDATA[土曜日]]></WeekDay6>
+<WeekDay7><![CDATA[日曜日]]></WeekDay7>
+<enabletask><![CDATA[タスクの有効化]]></enabletask>
+<taskparams><![CDATA[タスク パラメータ]]></taskparams>
+<paramname><![CDATA[パラメータ名]]></paramname>
+<description><![CDATA[説明]]></description>
+<value><![CDATA[値]]></value>
+<valuetype><![CDATA[値の型]]></valuetype>
+<edittaskparam><![CDATA[タスク パラメータの編集]]></edittaskparam>
+<view><![CDATA[表示]]></view>
+<NEW><![CDATA[新規]]></NEW>
+<ADDRESSED><![CDATA[対応済み]]></ADDRESSED>
+<ACKNOWLEDGED><![CDATA[確認済み]]></ACKNOWLEDGED>
+<IGNORED><![CDATA[無視]]></IGNORED>
+<INFO><![CDATA[情報]]></INFO>
+<WARNING><![CDATA[警告]]></WARNING>
+<ERROR><![CDATA[エラー]]></ERROR>
+<COLORGREEN><![CDATA[緑]]></COLORGREEN>
+<COLORRED><![CDATA[赤]]></COLORRED>
+<COLORYELLOW><![CDATA[黄]]></COLORYELLOW>
+<TaskSchedTabHdr><![CDATA[タスク スケジュール]]></TaskSchedTabHdr>
+<WeekDay1Letter><![CDATA[月]]></WeekDay1Letter>
+<WeekDay2Letter><![CDATA[火]]></WeekDay2Letter>
+<WeekDay3Letter><![CDATA[水]]></WeekDay3Letter>
+<WeekDay4Letter><![CDATA[木]]></WeekDay4Letter>
+<WeekDay5Letter><![CDATA[金]]></WeekDay5Letter>
+<WeekDay6Letter><![CDATA[土]]></WeekDay6Letter>
+<WeekDay7Letter><![CDATA[日]]></WeekDay7Letter>
+<Enabled><![CDATA[有効]]></Enabled>
+<Disabled><![CDATA[無効]]></Disabled>
+<runfrequency><![CDATA[実行頻度]]></runfrequency>
+<execution><![CDATA[実行]]></execution>
+<taskdetailssaved><![CDATA[タスク詳細は正常に保存されました。]]></taskdetailssaved>
+<TaskParamSaved><![CDATA[タスク パラメータは正常に保存されました。]]></TaskParamSaved>
+<recheck><![CDATA[再検査]]></recheck>
+<ignore><![CDATA[無視]]></ignore>
+<correct><![CDATA[訂正]]></correct>
+<Days><![CDATA[日]]></Days>
+<Hours><![CDATA[時間]]></Hours>
+<Minutes><![CDATA[分]]></Minutes>
+<Seconds><![CDATA[秒]]></Seconds>
+<ALARM><![CDATA[アラーム #{0}]]></ALARM>
+<Warning><![CDATA[警告]]></Warning>
+<Error><![CDATA[エラー]]></Error>
+<Info><![CDATA[情報]]></Info>
+<green><![CDATA[緑]]></green>
+<yellow><![CDATA[黄]]></yellow>
+<red><![CDATA[赤]]></red>
+<TaskNotFound><![CDATA[タスクが見つかりませんでした。]]></TaskNotFound>
+</lang>

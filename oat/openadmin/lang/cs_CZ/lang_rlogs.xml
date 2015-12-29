@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[Protokoly pro zotavení]]></mainTitle>
+<lognum><![CDATA[Počet]]></lognum>
+<uniqid><![CDATA[Jedinečné ID]]></uniqid>
+<size><![CDATA[Velikost]]></size>
+<SwitchComment><![CDATA[Přepnout na další logický transakční protokol]]></SwitchComment>
+<attributes><![CDATA[Atributy]]></attributes>
+<used><![CDATA[Použito]]></used>
+<location><![CDATA[Umístění]]></location>
+<notes><![CDATA[Poznámky]]></notes>
+<lastfilled><![CDATA[Poslední vyplněná]]></lastfilled>
+<ltitle><![CDATA[Stav logického transakčního protokolu]]></ltitle>
+<notFull><![CDATA[Není plný]]></notFull>
+<UsedBackedUp><![CDATA[Použit a zálohován]]></UsedBackedUp>
+<UsedCurrent><![CDATA[Použit a aktuální]]></UsedCurrent>
+<Used><![CDATA[Použito]]></Used>
+<Free><![CDATA[Volné]]></Free>
+<BackedUp><![CDATA[Zálohován]]></BackedUp>
+<Pages><![CDATA[Stránky]]></Pages>
+<pages><![CDATA[stránky]]></pages>
+<Usage><![CDATA[Použití]]></Usage>
+<PagesPerSec><![CDATA[Míra zaplnění]]></PagesPerSec>
+<PLogUsage><![CDATA[Využití fyzického protokolu]]></PLogUsage>
+<PLogInfo><![CDATA[Informace fyzického protokolu]]></PLogInfo>
+<PLogSize><![CDATA[Velikost fyzického protokolu]]></PLogSize>
+<PLogUsed><![CDATA[Použité množství]]></PLogUsed>
+<PlogLocation><![CDATA[Umístění]]></PlogLocation>
+<PlogStartPos><![CDATA[Posunutí začátku]]></PlogStartPos>
+<PlogBuffSize><![CDATA[Velikost vyrovnávací paměti]]></PlogBuffSize>
+<LLogUsage><![CDATA[Využití logického transakčního protokolu]]></LLogUsage>
+<mLogicalLogs><![CDATA[Logické transakční protokoly ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[Fyzický protokol]]></mPhysicalLog>
+<mAdmin><![CDATA[Administrátor]]></mAdmin>
+<mCheckpoints><![CDATA[Kontrolní body]]></mCheckpoints>
+<NewAdd><![CDATA[Nově přidáno]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[Zrušení logického transakčního protokolu nebylo potvrzeno. Potvrďte a zopakujte operaci.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[Přesunutí fyzického protokolu nebylo potvrzeno. Potvrďte a zopakujte operaci.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[Přesunout fyzický protokol]]></MPhysicalLog>
+<Confirm><![CDATA[Potvrdit]]></Confirm>
+<Move><![CDATA[Přesunout]]></Move>
+<mRPolicy><![CDATA[Zásady zotavení]]></mRPolicy>
+<syncckpt><![CDATA[Blokující kontrolní bod]]></syncckpt>
+<normckpt><![CDATA[Normální kontrolní bod]]></normckpt>
+<dockpt><![CDATA[Provést kontrolní bod]]></dockpt>
+<Checkpoint><![CDATA[Kontrolní bod]]></Checkpoint>
+<NoMove><![CDATA[Nepřesouvat fyzický protokol]]></NoMove>
+<DropLLog><![CDATA[Zrušit logický transakční protokol]]></DropLLog>
+<NoDropLLog><![CDATA[Nevypouštět logický transakční protokol]]></NoDropLLog>
+<ON><![CDATA[ON]]></ON>
+<OFF><![CDATA[OFF]]></OFF>
+<InvalidValue><![CDATA[Byla zadaná neplatná hodnota]]></InvalidValue>
+<save><![CDATA[Uložit]]></save>
+<cancel><![CDATA[Storno]]></cancel>
+<rto_title><![CDATA[RTO - Recovery Time Objective]]></rto_title>
+<rto><![CDATA[RTO (Recovery Time Objective)]]></rto>
+<rto_error><![CDATA[Chyba při úpravě RTO restartu serveru.]]></rto_error>
+<minute><![CDATA[minuta]]></minute>
+<minutes><![CDATA[minuty]]></minutes>
+<autoChkpts><![CDATA[Automatické kontrolní body]]></autoChkpts>
+<autoChkpts_error><![CDATA[Chyba při úpravě automatických kontrolních bodů.]]></autoChkpts_error>
+<autoLRU><![CDATA[Automatické vyladění LRU]]></autoLRU>
+<autoLRU_error><![CDATA[Chyba při úpravě automatického vyladění LRU.]]></autoLRU_error>
+<NoPermission><![CDATA[Uživatelé s oprávněním jen pro čtení k tomu nemají přístup. Jste přihlášeni jako uživatel s oprávněním jen pro čtení.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[Byly přidány logické transakční protokoly]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[Za aktuální protokol]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[Na konec protokolů]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[Název prostoru DBSpace]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[Chyba při úpravě fyzického protokolu.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[Došlo k chybě při přepínání na další logický transakční protokol.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[sekundy]]></seconds>
+<AddLogicalLog><![CDATA[Přidat logický transakční protokol]]></AddLogicalLog>
+<Add><![CDATA[Přidat]]></Add>
+<Drop><![CDATA[Zrušit]]></Drop>
+<LogicalLogNum><![CDATA[Číslo logického transakčního protokolu]]></LogicalLogNum>
+<Confirm><![CDATA[Potvrdit]]></Confirm>
+<SwitchLog><![CDATA[Přepnout logický transakční protokol]]></SwitchLog>
+<Switch><![CDATA[Přepnout]]></Switch>
+<KB><![CDATA[kB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

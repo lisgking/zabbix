@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[SQL eszközkészlet bejelentkezés]]></switchuser>
+<loginprompt><![CDATA[Az SQL eszközkészlet használatához adja meg a felhasználónevet és jelszót]]></loginprompt>
+<empty><![CDATA[A felhasználónév és jelszó nem lehet üres]]></empty>
+<error><![CDATA[Hiba történt]]></error>
+<username><![CDATA[Felhasználónév]]></username>
+<password><![CDATA[Jelszó]]></password>
+<login><![CDATA[Bejelentkezés]]></login>
+<SwitchingUser><![CDATA[Felhasználóváltás]]></SwitchingUser>
+</lang>

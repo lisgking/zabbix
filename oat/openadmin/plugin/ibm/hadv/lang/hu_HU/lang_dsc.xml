@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_dsc">
+
+<dsc_DBSPACETEMP><![CDATA[DBSPACETEMP]]></dsc_DBSPACETEMP>
+<dsc_DUMPDIR><![CDATA[DUMPDIR]]></dsc_DUMPDIR>
+<dsc_DYNAMIC_LOGS><![CDATA[Dinamikus naplófoglalás]]></dsc_DYNAMIC_LOGS>
+<dsc_Logdbs><![CDATA[Logikai naplófájl tároló]]></dsc_Logdbs>
+<dsc_LTXHWM><![CDATA[LTXHWM]]></dsc_LTXHWM>
+<dsc_LRU_MIN><![CDATA[LRU minimális piszkos]]></dsc_LRU_MIN>
+<dsc_LTAPEDEV><![CDATA[LTAPEDEV]]></dsc_LTAPEDEV>
+<dsc_NOAGE><![CDATA[noage]]></dsc_NOAGE>
+<dsc_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN]]></dsc_ONDBSPACEDOWN>
+<dsc_Physdbs><![CDATA[Fizikai napló tároló]]></dsc_Physdbs>
+<dsc_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP]]></dsc_SINGLE_CPU_VP>
+<dsc_TAPEDEV><![CDATA[TAPEDEV]]></dsc_TAPEDEV>
+<dsc_ATS_Files><![CDATA[ATS fájlok]]></dsc_ATS_Files>
+<dsc_ER_DDRBlock><![CDATA[ER DDRBLOCK]]></dsc_ER_DDRBlock>
+<dsc_ER_Down_Node><![CDATA[ER csomópont leállítva]]></dsc_ER_Down_Node>
+<dsc_RIS_Files><![CDATA[RIS fájlok]]></dsc_RIS_Files>
+<dsc_OS_Free_Memory><![CDATA[Operációs rendszer szabad memóriája]]></dsc_OS_Free_Memory>
+<dsc_OS_Online_Procs><![CDATA[Operációs rendszer online processzorai]]></dsc_OS_Online_Procs>
+<dsc_OS_Procs><![CDATA[Operációs rendszer virtuális processzorai]]></dsc_OS_Procs>
+<dsc_OS_Open_File_Limit><![CDATA[Operációs rendszer megnyitható fájl korlátja]]></dsc_OS_Open_File_Limit>
+<dsc_OS_semid><![CDATA[Operációs rendszer szemafor azonosítók]]></dsc_OS_semid>
+<dsc_OS_semnum><![CDATA[Operációs rendszer szemaforok]]></dsc_OS_semnum>
+<dsc_OS_shmids><![CDATA[Operációs rendszer osztott memória azonosítók]]></dsc_OS_shmids>
+<dsc_OS_shmmax><![CDATA[OS SHMMAX]]></dsc_OS_shmmax>
+<dsc_OS_shmnumsegs><![CDATA[OS OS shmNumSegs]]></dsc_OS_shmnumsegs>
+<dsc_CKPT_Caused_By_LLOG><![CDATA[LLOG által aktivált CKPT]]></dsc_CKPT_Caused_By_LLOG>
+<dsc_CKPT_Caused_By_PLOG><![CDATA[PLOG által aktivált CKPT]]></dsc_CKPT_Caused_By_PLOG>
+<dsc_Critical_Section><![CDATA[Kritikus szakasz]]></dsc_Critical_Section>
+<dsc_Diskflush><![CDATA[Lemezürítés]]></dsc_Diskflush>
+<dsc_Longest_Waiter><![CDATA[Leghosszabb várakozás]]></dsc_Longest_Waiter>
+<dsc_Buffreads_Per_Table><![CDATA[Táblánkénti pufferolvasások]]></dsc_Buffreads_Per_Table>
+<dsc_Buffwrites_Per_Table><![CDATA[Táblánkénti pufferírások]]></dsc_Buffwrites_Per_Table>
+<dsc_Seq_Scans_Per_Table><![CDATA[Táblánkénti szekvenciális keresések]]></dsc_Seq_Scans_Per_Table>
+<dsc_Buffreads_Cache><![CDATA[Gyorsítótárban tárolt pufferolvasások]]></dsc_Buffreads_Cache>
+<dsc_Buffwrites_Cache><![CDATA[Gyorsítótárban tárolt pufferírások]]></dsc_Buffwrites_Cache>
+<dsc_Disksorts><![CDATA[Lemez rendezések]]></dsc_Disksorts>
+<dsc_isrollbacks><![CDATA[Visszagörgetések]]></dsc_isrollbacks>
+<dsc_Foreground_Writes><![CDATA[Előtérírások]]></dsc_Foreground_Writes>
+<dsc_LLOG_Pages_Per_IO><![CDATA[LLOG lapok I/O műveletenként]]></dsc_LLOG_Pages_Per_IO>
+<dsc_Lock_Waits><![CDATA[Zárolásra várakozások]]></dsc_Lock_Waits>
+<dsc_PLOG_Pages_Per_IO><![CDATA[PLOG lapok I/O műveletenként]]></dsc_PLOG_Pages_Per_IO>
+<dsc_Seq_Scans><![CDATA[Szekvenciális keresések]]></dsc_Seq_Scans>
+<dsc_Offline_Chunks><![CDATA[Offline csonkok]]></dsc_Offline_Chunks>
+<dsc_Chunk_IO_OPS><![CDATA[Csonk I/O műveletek]]></dsc_Chunk_IO_OPS>
+<dsc_Chunk_IO_Reads><![CDATA[Csonk I/O olvasások]]></dsc_Chunk_IO_Reads>
+<dsc_Chunk_IO_Writes><![CDATA[Csonk I/O írások]]></dsc_Chunk_IO_Writes>
+<dsc_Dbspace_Free_Space><![CDATA[Adatbázis-terület szabad területe]]></dsc_Dbspace_Free_Space>
+<dsc_Rowsize><![CDATA[Sorméret]]></dsc_Rowsize>
+
+</lang>

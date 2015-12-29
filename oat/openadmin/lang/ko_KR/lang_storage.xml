@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[스토리지]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[공간 최적화]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[압축 기능은 다음 서버 버전(또는 그 이상)에서만 사용할 수 있습니다. ]]></CompressOnlyAvail>
+<ErrorF><![CDATA[오류:]]></ErrorF>
+<NoOwner><![CDATA[소유자를 지정하지 않음]]></NoOwner>
+<NoTable><![CDATA[테이블을 지정하지 않음]]></NoTable>
+<InvalidDB><![CDATA[잘못된 데이터베이스]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[테이블에 행이 충분하지 않음]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[분할에 행이 충분하지 않음]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[파티션 번호]]></PartNum>
+<required><![CDATA[필수]]></required>
+<actual><![CDATA[실제]]></actual>
+<Failed><![CDATA[고장]]></Failed>
+<ErrorMultipleLocales><![CDATA[이 페이지에서 OpenAdmin Tool은 영어가 아닌 둘 이상의 데이터베이스 로케일을 가진 데이터베이스 서버에 대한 정보를 표시할 수 없습니다. 데이터베이스 서버에는 영어가 아닌 둘 이상의 데이터베이스 로케일이 포함됩니다.]]></ErrorMultipleLocales>
+</lang>

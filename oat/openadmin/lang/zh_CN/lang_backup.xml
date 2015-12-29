@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[备份]]></Backup>
+<noBackupSupport><![CDATA[仅标准服务器、主服务器或远程独立辅助 (RSS) 服务器这些 Informix 服务器类型支持备份。]]></noBackupSupport>
+<sdsServer>![CDATA[您已连接到共享磁盘辅助 (SDS) 服务器。]]</sdsServer>
+<hdrSecondary>![CDATA[您已连接到 HDR 辅助服务器。]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[OAT 中的备份需要 Informix V11.70.xC2。]]></noBackupSupportServerVersion>
+<notAvail>不可用</notAvail>
+<onbarBackProcMissing>服务器中缺少 ON-Bar 备份需要的存储过程。请检查服务器启动期间是否执行了 sch_oat.sql 脚本。</onbarBackProcMissing>
+<Unknown>未知</Unknown>
+</lang>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Adminisztrátor]]></admin>
+<connect><![CDATA[Csatlakozás]]></connect>
+<connection><![CDATA[Csatlakozás]]></connection>
+<connections><![CDATA[Kapcsolatok]]></connections>
+<getservers><![CDATA[Kiszolgálók lekérdezése]]></getservers>
+<server><![CDATA[Kiszolgáló]]></server>
+<hostname><![CDATA[Hosztnév]]></hostname>
+<informixserver><![CDATA[Informix kiszolgáló]]></informixserver>
+<idsprotocol><![CDATA[Informix protokoll]]></idsprotocol>
+<login><![CDATA[Bejelentkezés]]></login>
+<log_in><![CDATA[Bejelentkezés]]></log_in>
+<logging_in><![CDATA[Bejelentkezés...]]></logging_in>
+<loggingout><![CDATA[Kijelentkezés]]></loggingout>
+<no_user><![CDATA[Meg kell adni egy felhasználónevet.]]></no_user>
+<missingpassword><![CDATA[A jelszó megadása kötelező.]]></missingpassword>
+<missinginformixserver><![CDATA[Informix kiszolgáló megadása kötelező.]]></missinginformixserver>
+<missinghost><![CDATA[Meg kell adni gazdanevet.]]></missinghost>
+<missingport><![CDATA[A portszám megadása kötelező.]]></missingport>
+<group><![CDATA[OAT csoport]]></group>
+<groups><![CDATA[Csoportok]]></groups>
+<password><![CDATA[Jelszó]]></password>
+<port><![CDATA[Port]]></port>
+<help><![CDATA[Súgó]]></help>
+<quicklogin><![CDATA[Bejelentkezés OAT csoportba]]></quicklogin>
+<selectaconnection><![CDATA[Kiszolgáló kiválasztása]]></selectaconnection>
+<serverdetails><![CDATA[Csatlakozás kiszolgálóhoz]]></serverdetails>
+<username><![CDATA[Felhasználónév]]></username>
+<aboutOAT><![CDATA[Az OAT névjegye]]></aboutOAT>
+<readme><![CDATA[Olvassel]]></readme>
+<HowDoI><![CDATA[OAT feladat súgó]]></HowDoI>
+<cookies_required><![CDATA[Az OpenAdmin Tool alkalmazásba végzett bejelentkezéshez cookie-k szükségesek.  Úgy tűnik, hogy webböngészője a cookie-kat nem támogatja, ezért az OAT nem fogja tudni bejelentkeztetni.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Felhasználó bejelentkeztetése.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Hiba: nincs megadva kapcsolatszám.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Hiba: nincs csoport.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Érvénytelen bejelentkezési részletek.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[Érvénytelen csoport jelszó - próbálkozzon újra]]></InvalidGroupPwd>
+<Default><![CDATA[Alapértelmezett]]></Default>
+<login_instructions><![CDATA[Ha be kíván jelentkezni a csoport egyik kiszolgálójára vagy közvetlenül kíván kiszolgálóhoz csatlakozni, akkor jelentkezzen be egy OAT csoportba. Az OAT csoport legalább egy adatbázis-kiszolgáló csatlakozási információit tartalmazza. Az OAT csoportok  meghatározása az OAT Admin oldalakon történik.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Válassza ki az OAT csoportot, adja meg a csoport jelszavát, majd kattintson a Kiszolgálók lekérdezése lehetőségre.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Adja meg vagy erősítse meg a kiszolgáló csatlakozási információit.]]></serverdetails_instructions>
+<test_connection><![CDATA[Kapcsolat tesztelése]]></test_connection>
+<testing_connection><![CDATA[Kapcsolat tesztelése...]]></testing_connection>
+<ConnectionFailed><![CDATA[A csatlakozás nem sikerült:]]></ConnectionFailed>
+</lang>

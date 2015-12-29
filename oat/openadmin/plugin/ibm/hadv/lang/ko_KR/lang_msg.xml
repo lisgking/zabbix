@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[빨간색 경보: DBSPACETEMP 구성 매개변수가 설정되었는지 검사합니다. 노란색 경보: DBSPACETEMP 구성 매개변수의 값에 공백이 없는지 검사합니다.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[빨간색 경보: 없음. 노란색 경보: 노란색 경보 스레시홀드에 나열된 디렉토리에 DUMPDIR 구성 매개변수가 설정되지 않았는지 검사합니다.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[빨간색 경보: 없음. 노란색 경보: 동적 로그 할당(DYNAMIC_LOGS)이 사용 가능한지 검사합니다.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[빨간색 경보: 논리 로그 파일이 루트 DBSPACE(ROOTDBS)에 저장되지 않았는지 검사합니다. 노란색 경보: 논리 로그 파일이 저장된 DBSPACE에 저장된 테이블이 없는지 검사합니다.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[빨간색 경보: 동적 로그 할당(DYNAMIC_LOGS)이 꺼져 있는 경우, LTXHWM(Long-Transaction High Water Mark)이 빨간색 경보 스레시홀드 아래에 있는지 검사합니다. 노란색 경보: 동적 로그 할당이 꺼져 있는 경우, LTXHWM(Long-transaction high water mark)가 노란색 경보 스레시홀드 아래에 있는지 검사합니다.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[빨간색 경보: 없음. 노란색 경보: lru_min_dirty(Least-Recently Used Minimum Dirty)의 값이 노란색 경보 스레시홀드보다 높은지 확인합니다.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[빨간색 경보: 없음. 노란색 경보: 노란색 경보 스레시홀드에 나열된 디렉토리에 LTAPEDEV 구성 매개변수가 설정되지 않았는지 검사합니다.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[빨간색 경보: 없음. 노란색 경보: VPCLASS 구성 매개변수의 noage 옵션이 설정되었는지 검사합니다.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[빨간색 경보: 없음. 노란색 경보: DBSPACE가 중단된 경우(ONDBSPACEDOWN) 데이터베이스 서버가 계속되도록 설정되지 않았는지 검사합니다.]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[빨간색 경보: 물리 로그가 루트 DBSPACE(ROOTDBS)에 저장되지 않았는지 검사합니다. 노란색 경보: 물리 로그가 저장된 DBSPACE에 저장된 테이블이 없는지 검사합니다.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[빨간색 경보: 없음. 노란색 경보: SINGLE_CPU_VP 구성 매개변수가 설정되고 MULTIPROCESSOR 구성 매개변수가 꺼져 있습니다.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[빨간색 경보: 없음. 노란색 경보: 노란색 경보 스레시홀드에 나열된 디렉토리에 TAPEDEV 구성 매개변수가 설정되지 않았는지 검사합니다.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[빨간색 경보: 오늘 작성된 ATS 파일 수가 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 오늘 작성된 ATS 파일 수가 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[빨간색 경보: 트랜잭션 장애(DDRBLOCK)가 시작되기 전에 남아있는 로그 페이지 백분율이 빨간색 경보 스레시홀드에 나열된 백분율보다 높은지 검사합니다. 노란색 경보: 트랜잭션 장애가 시작되기 전에 남아있는 로그 페이지 백분율이 노란색 경보 스레시홀드에 나열된 백분율보다 높은지 검사합니다.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[빨간색 경보: ER 클러스터의 노드가 활성화되어 있고 데이터를 복제 중인지 검사합니다. 노란색 경보: 없음.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[빨간색 경보: 오늘 작성된 RIS 파일 수가 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 오늘 작성된 RIS 파일 수가 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[빨간색 경보: 운영 체제에 사용 가능한 메모리 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 운영 체제에 사용 가능한 메모리 백분율이 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[빨간색 경보: 없음. 노란색 경보: 운영 체제의 온라인 프로세서 수가 운영 체제의 프로세서 수와 같은지 검사합니다.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[빨간색 경보: 없음. 노란색 경보: CPU 가상 프로세서 수가 노란색 경보 스레시홀드로 나열된 운영 체제의 CPU 백분율보다 높은지 검사합니다.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[빨간색 경보: 운영 체제의 프로세스마다 열려 있는 파일 설명자 수가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 프로세스마다 열려 있는 파일 설명자 수가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[빨간색 경보: 운영 체제의 세마포어 세트 수가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 세마포어 세트 수가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[빨간색 경보: 운영 체제의 총 세마포어 수가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 총 세마포어 수가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[빨간색 경보: 운영 체제의 공유 메모리 ID(shmid) 수가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 공유 메모리 ID(shmid) 수가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[빨간색 경보: 운영 체제의 공유 메모리 세그먼트 최대 크기(SHMMAX)가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 공유 메모리 세그먼트 최대 크기(SHMMAX)가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[빨간색 경보: 운영 체제의 공유 메모리 세그먼트 총 수(shmNumSegs)가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 운영 체제의 공유 메모리 세그먼트 총 수(shmNumSegs)가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[빨간색 경보: 논리 로그 리소스(LLOG)가 부족하여 체크포인트 처리 중에 장애가 발생하지 않는지 검사합니다. 노란색 경보: 논리 로그 리소스(LLOG)가 부족하여 체크포인트가 트리거되지 않는지 검사합니다. ]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[빨간색 경보: 물리 로그 리소스(LLOG)가 부족하여 체크포인트 처리 중에 장애가 발생하지 않는지 검사합니다. 노란색 경보: 물리 로그 리소스(LLOG)가 부족하여 체크포인트가 트리거되지 않는지 검사합니다.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[빨간색 경보: 체크포인트 처리 중에 크리티컬 세션에서 소비한 시간이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 체크포인트 처리 중에 크리티컬 세션에서 소비한 시간이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[빨간색 경보: 체크포인트 처리 중에 초당 디스크 플러시 횟수가 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 체크포인트 처리 중에 초당 디스크 플러시 횟수가 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[빨간색 경보: 체크포인트 처리 중에 트랜잭션이 대기한 가장 긴 시간이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 체크포인트 처리 중에 트랜잭션이 대기한 가장 긴 시간이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[빨간색 경보: 테이블의 버퍼 읽기 수가 빨간색 경보 스레시홀드로 나열된 모든 버퍼 읽기의 백분율보다 작은지 검사합니다. 노란색 경보: 테이블의 버퍼 읽기 수가 노란색 경보 스레시홀드로 나열된 모든 버퍼 읽기의 백분율보다 작은지 검사합니다.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[빨간색 경보: 테이블의 버퍼 쓰기 수가 빨간색 경보 스레시홀드로 나열된 모든 버퍼 쓰기의 백분율보다 작은지 검사합니다. 노란색 경보: 테이블의 버퍼 쓰기 수가 노란색 경보 스레시홀드로 나열된 모든 버퍼 쓰기의 백분율보다 작은지 검사합니다.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[빨간색 경보: 테이블의 순차 스캔 수가 빨간색 경보 스레시홀드에 나열된 모든 순차 스캔의 백분율보다 작은지 검사합니다. 노란색 경보: 테이블의 순차 스캔 수가 노란색 경보 스레시홀드에 나열된 모든 순차 스캔의 백분율보다 작은지 검사합니다.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[빨간색 경보: 버퍼에 캐시된 읽기의 백분율(%cached)이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 버퍼에 캐시된 읽기의 백분율(%cached)이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[빨간색 경보: 버퍼에 캐시된 쓰기의 백분율(%cached)이 빨간색 경보 스레시홀드보다 높은지 검사합니다. 노란색 경보: 버퍼에 캐시된 쓰기의 백분율(%cached)이 노란색 경보 스레시홀드보다 높은지 검사합니다.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[빨간색 경보: 디스크 정렬인 총 정렬의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 디스크 정렬인 총 정렬의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[빨간색 경보: 롤백 트랜잭션인 총 트랜잭션의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 롤백 트랜잭션인 총 트랜잭션의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[빨간색 경보: 포그라운드 쓰기인 총 쓰기의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 포그라운드 쓰기인 총 쓰기의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[빨간색 경보: 논리 로그 페이지와 입출력의 비율이 빨간색 경보 스레시홀드로 나열된 논리 로그 버퍼(LOGBUFF)의 백분율보다 낮은지 검사합니다. 노란색 경보: 논리 로그 페이지와 입출력의 비율이 노란색 경보 스레시홀드로 나열된 논리 로그 버퍼(LOGBUFF)의 백분율보다 높은지 검사합니다.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[빨간색 경보: 로크 대기인 총 로크 요청의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 로크 대기인 총 로크 요청의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[빨간색 경보: 물리 로그 페이지와 입출력의 비율이 빨간색 경보 스레시홀드로 나열된 물리 로그 버퍼(PHYBUFF)의 백분율보다 낮은지 검사합니다. 노란색 경보: 물리 로그 페이지와 입출력의 비율이 노란색 경보 스레시홀드로 나열된 물리 로그 버퍼(PHYBUFF)의 백분율보다 높은지 검사합니다.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[빨간색 경보: 순차 스캔인 총 SQL문의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 순차 스캔인 총 SQL문의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[빨간색 경보: 모든 청크가 온라인인지 검사합니다. 노란색 경보: 없음.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[빨간색 경보: 각 청크의 입출력 조작 수가 빨간색 경보 스레시홀드로 나열된 모든 입출력 조작의 백분율보다 낮은지 검사합니다. 노란색 경보: 각 청크의 입출력 조작 수가 노란색 경보 스레시홀드로 나열된 모든 입출력 조작의 백분율보다 낮은지 검사합니다.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[빨간색 경보: 각 청크의 읽기 조작 수가 빨간색 경보 스레시홀드로 나열된 모든 읽기 조작의 백분율보다 낮은지 검사합니다. 노란색 경보: 각 청크의 읽기 조작 수가 노란색 경보 스레시홀드로 나열된 모든 읽기 조작의 백분율보다 낮은지 검사합니다.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[빨간색 경보: 각 청크의 쓰기 조작 수가 빨간색 경보 스레시홀드로 나열된 모든 쓰기 조작의 백분율보다 낮은지 검사합니다. 노란색 경보: 각 청크의 쓰기 조작 수가 노란색 경보 스레시홀드로 나열된 모든 쓰기 조작의 백분율보다 낮은지 검사합니다.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[빨간색 경보: 각 DBSPACE의 여유 공간이 빨간색 경보 스레시홀드로 나열된 DBSPACE의 총 공간 백분율보다 높은지 검사합니다. 노란색 경보: 각 DBSPACE의 여유 공간이 노란색 경보 스레시홀드로 나열된 DBSPACE의 총 공간 백분율보다 높은지 검사합니다.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[빨간색 경보: 테이블의 페이지당 최대 여유 공간의 백분율이 빨간색 경보 스레시홀드보다 낮은지 검사합니다. 노란색 경보: 테이블의 페이지당 최대 여유 공간의 백분율이 노란색 경보 스레시홀드보다 낮은지 검사합니다.]]></msg_Rowsize>
+
+</lang>
+
+
+
+

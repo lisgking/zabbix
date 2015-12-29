@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[DB 領域]]></mainTitle>
+<dbspace><![CDATA[DB 領域]]></dbspace>
+<dbspaceName><![CDATA[DB 領域名]]></dbspaceName>
+<owner><![CDATA[所有者]]></owner>
+<pagesize><![CDATA[ページ サイズ]]></pagesize>
+<createTime><![CDATA[作成時刻]]></createTime>
+<dbspaceInfo><![CDATA[DB 領域情報]]></dbspaceInfo>
+<utilization><![CDATA[{0} 使用率]]></utilization>
+<indexPages><![CDATA[インデックス ページ]]></indexPages>
+<dataPages><![CDATA[データ ページ]]></dataPages>
+<otherPages><![CDATA[その他のページ]]></otherPages>
+<freePages><![CDATA[未使用ページ]]></freePages>
+<TableName><![CDATA[表名]]></TableName>
+<StartAddr><![CDATA[開始アドレス]]></StartAddr>
+<EndAddr><![CDATA[終了アドレス]]></EndAddr>
+<size><![CDATA[サイズ]]></size>
+<Status><![CDATA[状態]]></Status>
+<ExtentList><![CDATA[エクステント リスト]]></ExtentList>
+<TableList><![CDATA[表リスト]]></TableList>
+<Database><![CDATA[データベース]]></Database>
+<Table><![CDATA[表]]></Table>
+<Collate><![CDATA[照合]]></Collate>
+<Rows><![CDATA[行]]></Rows>
+<SystemIntegrity><![CDATA[整合性]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[DB 領域表の形式の検査]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[DB 領域エクステントの検査]]></butCheckDbsExt>
+<RowSize><![CDATA[行サイズ]]></RowSize>
+<Created><![CDATA[作成日時]]></Created>
+<AllocPages><![CDATA[割当てページ]]></AllocPages>
+<UsedPages><![CDATA[使用済みページ]]></UsedPages>
+<NumExtents><![CDATA[エクステントの数]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[番号]]></Number>
+<Name><![CDATA[名前]]></Name>
+<Type><![CDATA[タイプ]]></Type>
+<default><![CDATA[デフォルト]]></default>
+<CreateSpace><![CDATA[スペースの作成]]></CreateSpace>
+<Create><![CDATA[作成]]></Create>
+<numChunks><![CDATA[チャンクの数]]></numChunks>
+<UsedPer><![CDATA[使用済み %]]></UsedPer>
+<Data><![CDATA[データ]]></Data>
+<Index><![CDATA[インデックス]]></Index>
+<Other><![CDATA[その他]]></Other>
+<Free><![CDATA[フリー]]></Free>
+<noDropDBSpace><![CDATA[rootdbs は削除できません。]]></noDropDBSpace>
+<AddSpaceto><![CDATA[スペースの追加先]]></AddSpaceto>
+<Path><![CDATA[パス]]></Path>
+<Offset><![CDATA[オフセット]]></Offset>
+<FileCreation><![CDATA[ファイル作成]]></FileCreation>
+<MayCreateFile><![CDATA[存在しない場合にファイルを作成]]></MayCreateFile>
+<FileMustExist><![CDATA[ファイルは存在する必要あり]]></FileMustExist>
+<DropSpace><![CDATA[スペースの削除 {0}]]></DropSpace>
+<AddChunk><![CDATA[チャンクの追加]]></AddChunk>
+<Used><![CDATA[使用済み]]></Used>
+<AddMirror><![CDATA[ミラーの追加]]></AddMirror>
+<AddChunkMirror><![CDATA[ミラーを含むチャンクの追加]]></AddChunkMirror>
+<StartMirror><![CDATA[ミラーの開始]]></StartMirror>
+<StopMirror><![CDATA[ミラーの停止]]></StopMirror>
+<AddMirrorto><![CDATA[ミラーの追加先]]></AddMirrorto>
+<MirrorPath><![CDATA[ミラー パス]]></MirrorPath>
+<MirrorOffset><![CDATA[ミラー オフセット]]></MirrorOffset>
+<MirroringStarted><![CDATA[ミラーリングは開始されました]]></MirroringStarted>
+<MirroringStopped><![CDATA[ミラーリングは停止されました]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - システムの検証]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 検証が完了しました。]]></oncheckComplete>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<NotValidOnSecondary><![CDATA[この操作は、副サーバでは無効です。]]></NotValidOnSecondary>
+<Error><![CDATA[エラー:]]></Error>
+<DropDBSpaceFailed><![CDATA[DB 領域の削除は失敗しました。次の DB 領域値は正しく設定されていませんでした。]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[DB 領域の作成は失敗しました。DB 領域操作]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[は無効です。]]></IsNotValid>
+<DATASpace><![CDATA[データ スペース]]></DATASpace>
+<DataSpaceL><![CDATA[データ スペース]]></DataSpaceL>
+<TEMPSpace><![CDATA[一時スペース]]></TEMPSpace>
+<TempSpaceL><![CDATA[一時スペース]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB スペース]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[DB 領域の作成は正常終了しました]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[DB 領域の作成は失敗しました。次の DB 領域値は正しく設定されていません。]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[DB 領域の作成は失敗しました。DB 領域操作が無効です]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[DB 領域の削除が確定されませんでした]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[検証結果...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[検証結果...]]></ValidationResults>
+<AddChunkFailed><![CDATA[チャンクを DB 領域に追加できませんでした。]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[チャンクは正常に追加されました]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[DB 領域へのチャンクの追加中:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[ミラーリングされたチャンクは正常に追加されました]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[ミラーリングされたチャンクを DB 領域に追加できませんでした。]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[次のミラー値は正しく設定されていません。]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[ミラーは正常に追加されました]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[ミラーリングを DB 領域で開始できませんでした。]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[DB 領域でのミラーリングの開始が確定されませんでした。]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[DB 領域のミラーリングを停止できませんでした。]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[DB 領域でのミラーリングの停止が確定されませんでした。]]></NoConfStopMirror>
+<Dbspace><![CDATA[DB 領域]]></Dbspace>
+<TempDbspace><![CDATA[一時 DB 領域]]></TempDbspace>
+<MirroredDbspace><![CDATA[ミラーリングされた DB 領域]]></MirroredDbspace>
+<Blobspace><![CDATA[BLOB 領域]]></Blobspace>
+<MirroredBlobspace><![CDATA[ミラーリングされた BLOB 領域]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[スマート BLOB 領域]]></SmartBlobspace>
+<TempSbspace><![CDATA[一時スマート BLOB 領域]]></TempSbspace>
+<MirroredSbspace><![CDATA[ミラーリングされたスマート BLOB 領域]]></MirroredSbspace>
+<DataPages><![CDATA[データ ページ]]></DataPages>
+<IndexPages><![CDATA[インデックス ページ]]></IndexPages>
+<OtherPages><![CDATA[その他のページ]]></OtherPages>
+<FreePages><![CDATA[未使用ページ]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[DB 領域値が正しく設定されていません。]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[サマリ]]></summary>
+<admin><![CDATA[管理]]></admin>
+<tables><![CDATA[表]]></tables>
+<extents><![CDATA[エクステント]]></extents>
+<validation><![CDATA[検証]]></validation>
+<Disabled><![CDATA[無効]]></Disabled>
+<Recovering><![CDATA[回復中]]></Recovering>
+<Operational><![CDATA[操作可能]]></Operational>
+</lang>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Systemowe sprawdzenie poprawności]]></mainTitle>
+<checkDataFormat><![CDATA[Sprawdź format danych]]></checkDataFormat>
+<databaseName><![CDATA[Nazwa bazy danych]]></databaseName>
+<tableName><![CDATA[Nazwa tabeli]]></tableName>
+<chkTable><![CDATA[Sprawdź tabelę]]></chkTable>
+<chkExtFormat><![CDATA[Sprawdź format przydziału]]></chkExtFormat>
+<extName><![CDATA[Nazwa obszaru Dbspace]]></extName>
+<chkExtent><![CDATA[Sprawdź przydział]]></chkExtent>
+<valResTo><![CDATA[Wyniki sprawdzania poprawności do ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - systemowe sprawdzanie poprawności]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Sprawdzanie poprawności oncheck zakończone.]]></oncheckComplete>
+<ValidationResults><![CDATA[Wyniki sprawdzania poprawności ...]]></ValidationResults>
+<SysValNotValid><![CDATA[Sprawdzanie poprawności nie jest możliwe na serwerach dodatkowych.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Użytkownicy z uprawnieniami tylko do odczytu nie mają uprawnień do wykonania tej czynności. Użytkownik jest zalogowany jako użytkownik z uprawnieniami tylko do odczytu.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Uwaga: Uruchomienie sprawdzenia może spowodować wykorzystanie znacznej ilości zasobów przetwarzania - w zależności od liczby zaangażowanych stron. Ta akcja spowoduje odczyt wszystkich stron dla określonych tabel, z wykluczeniem stron blobpage i sbpage, a następnie sprawdzi każdą stronę pod względem spójności. Czy chcesz kontynuować?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Na tej stronie program OpenAdmin Tool nie może wyświetlać informacji dla serwera bazy danych za pomocą więcej niż jednego ustawienia narodowego innego niż angielskie. Serwer bazy danych zawiera więcej niż jedno ustawienia narodowe inne niż angielskie.]]></NotYetImpl>
+</lang>

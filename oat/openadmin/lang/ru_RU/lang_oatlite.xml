@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_oatlite">
+<BadConnectionInfo><![CDATA[Не удалось соединиться с сервером баз данных]]></BadConnectionInfo>
+<ServerIsOffline><![CDATA[Сервер отключен.]]></ServerIsOffline>
+<ServerVersionLessThan11><![CDATA[Для OAT требуется Informix версии 11.10 или новее.]]></ServerVersionLessThan11>
+<Standard><![CDATA[Стандартный]]></Standard>
+<Primary><![CDATA[Первичный]]></Primary>
+<Secondary><![CDATA[Вторичный]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<yes><![CDATA[да]]></yes>
+<no><![CDATA[нет]]></no>
+<partial><![CDATA[частично]]></partial>
+</lang>

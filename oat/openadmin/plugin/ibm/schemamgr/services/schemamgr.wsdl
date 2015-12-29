@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="schemamgr" targetNamespace="urn:schemamgr"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:schemamgr"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:schemamgr">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+
+			<xsd:complexType name="databaseInfo">
+				<xsd:all>
+					<xsd:element name="name" type="xsd:string" />
+					<xsd:element name="owner" type="xsd:string" />
+					<xsd:element name="dbspace" type="xsd:string" />
+					<xsd:element name="locale" type="xsd:string" />
+					<xsd:element name="logging" type="xsd:string" />
+					<xsd:element name="space_used" type="xsd:string"/>
+					<xsd:element name="creation_date" type="xsd:string"/>
+					<xsd:element name="case_insensitive" type="xsd:string" />
+					<xsd:element name="numloadjobs" type="xsd:string" />
+					<xsd:element name="numunloadjobs" type="xsd:string" />
+					<xsd:element name="grid" type="xsd:string" />
+				</xsd:all>
+			</xsd:complexType>
+			<xsd:complexType name="tableInfo">
+				<xsd:all>
+					<xsd:element name="tabname" type="xsd:string" />
+					<xsd:element name="owner" type="xsd:string" />
+					<xsd:element name="type" type="xsd:string" />
+					<xsd:element name="tabid" type="xsd:string" />
+					<xsd:element name="dbspace" type="xsd:string" />
+					<xsd:element name="numloadjobs" type="xsd:string" />
+					<xsd:element name="numunloadjobs" type="xsd:string" />
+					<xsd:element name="numcols" type="xsd:string" />
+					<xsd:element name="nrows" type="xsd:string" />
+					<xsd:element name="rowsize" type="xsd:string" />
+					<xsd:element name="locklevel" type="xsd:string" />
+					<xsd:element name="datapages" type="xsd:string" />
+					<xsd:element name="firstextent" type="xsd:string" />
+					<xsd:element name="nextextent" type="xsd:string" />
+					<xsd:element name="compressed" type="xsd:string" />
+					<xsd:element name="autoCompressed" type="xsd:string" />
+					<xsd:element name="uncompressed" type="xsd:string" />
+					<xsd:element name="audited" type="xsd:string" />
+					<xsd:element name="maxerrors" type="xsd:string" />
+					<xsd:element name="fmttype" type="xsd:string" />
+					<xsd:element name="recdelim" type="xsd:string" />
+					<xsd:element name="dbdate" type="xsd:string" />
+					<xsd:element name="dbmoney" type="xsd:string" />
+					<xsd:element name="flddelim" type="xsd:string" />
+					<xsd:element name="rejectfile" type="xsd:string" />
+					<xsd:element name="ndfiles" type="xsd:string" />					
+					<xsd:element name="mode" type="xsd:string" />					
+					<xsd:element name="escape" type="xsd:string" />					
+					<xsd:element name="extFiles" type="xsd:anyType" />
+					<xsd:element name="viewDefinition" type="xsd:string" />
+					<xsd:element name="autoFragStrategy" type="xsd:string" />
+					<xsd:element name="gridTable" type="xsd:string" />							
+				</xsd:all>
+			</xsd:complexType>
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+	<message name="getDatabases">
+	</message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTableNamesForDatabase">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabname_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTableNamesForDatabaseResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDatabasesAndTablesWithSearch">
+		<part name="tabname_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDatabasesAndTablesWithSearchResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDatabaseIndexes">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getDatabaseIndexesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTemplatesForExternalTable">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getTemplatesForExternalTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBViewInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+
+	<message name="getDBViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBInfo">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getDBInfoResponse">
+		<part name="return" type="typens:databaseInfo" />
+	</message>
+
+	<message name="getDBProcedures">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="procname_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBProceduresResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDBProceduresDetail">
+		<part name="dbname" type="xsd:string" />
+		<part name="procid" type="xsd:string" />
+	</message>
+
+	<message name="getDBProceduresDetailResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBSequences">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBSequencesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBUDTs">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBUDTsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBPrivileges">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="username_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBPrivilegesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBDatablades">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getDBDatabladesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBAggregates">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBAggregatesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBCasts">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="datatype_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBCastsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getDBOpclasses">
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDBOpclassesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDBSpaces">
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />	
+	</message>
+
+	<message name="getDBSpacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getSBSpaces">		
+	</message>
+	
+	<message name="getSBSpacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="tabtype" type="xsd:string" />
+	</message>
+
+	<message name="getTabInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabStats">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+	</message>
+
+	<message name="getTabStatsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabColumns">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="colname_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabColumnsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabIndexes">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabIndexesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabReferences">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabReferencesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabPrivileges">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="username_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabPrivilegesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabStatistics">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+		<part name="filter" type="xsd:string" />
+	</message>
+
+	<message name="getTabStatisticsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getFragmentStatistics">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+		<part name="filter" type="xsd:string" />
+	</message>
+
+	<message name="getFragmentStatisticsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabConstraints">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabConstraintsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabFragments">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="partition_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabFragmentsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabTriggers">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getTabTriggersResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getTabViewInfo">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="tabtype" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+
+	<message name="getTabViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getNamedRowTypes">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="getNamedRowTypesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="createTableWizard_getAvailableKeysToReference">
+		<part name="dbname" type="xsd:string" />
+	</message>
+
+	<message name="createTableWizard_getAvailableKeysToReferenceResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="createTableWizard_getReferenceKeyColumns">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="constrid" type="xsd:string" />
+	</message>
+
+	<message name="createTableWizard_getReferenceKeyColumnsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getJobs">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="type" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="jobname_search_pattern" type="xsd:string" />
+	</message>
+	<message name="getJobsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getJobsResults">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabid"  type="xsd:string" />
+		<part name="jobname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="jobname_search_pattern" type="xsd:string" />
+	</message>
+	<message name="getJobsResultsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	
+	<message name="createTableWizard_getBlobspaces">
+	</message>
+
+	<message name="createTableWizard_getBlobspacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="createTableWizard_getSBspaces">
+	</message>
+
+	<message name="createTableWizard_getSBspacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="createTable">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+	</message>
+
+	<message name="createTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="createIndex">
+		<part name="dbname" type="xsd:string" />
+		<part name="indexname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="index_pod_rows_per_page" type="xsd:integer" />
+		<part name="index_pod_page" type="xsd:integer" />
+		<part name="index_pod_sort_col" type="xsd:string" />
+		<part name="index_pod_name_search_pattern" type="xsd:string" />
+		<part name="constraints_pod_rows_per_page" type="xsd:integer" />
+		<part name="constraints_pod_page" type="xsd:integer" />
+		<part name="constraints_pod_sort_col" type="xsd:string" />
+		<part name="constraints_pod_name_search_pattern" type="xsd:string" />
+	</message>
+	
+	<message name="createIndexResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="alterIndexes">
+		<part name="dbname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+		<part name="tabid" type="xsd:string" />
+		<part name="action_type" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="name_search_pattern" type="xsd:string" />
+	</message>
+	
+	<message name="alterIndexesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="createJob">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+		<part name="jobtype" type="xsd:string" />
+		<part name="jobname" type="xsd:string" />
+		<part name="run_now" type="xsd:string" />
+	</message>
+
+	<message name="createJobResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="dropTable">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="tabtype" type="xsd:string" />
+	</message>
+
+	<message name="dropTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="truncateTable">
+		<part name="dbname" type="xsd:string" />
+		<part name="tabname" type="xsd:string" />
+		<part name="reuseStorage" type="xsd:boolean" />
+	</message>
+
+	<message name="truncateTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="createDatabase">
+		<part name="dbname" type="xsd:string" />
+		<part name="sql" type="xsd:string" />
+	</message>
+	
+	<message name="createDatabaseResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDBLocales">
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="search_pattern" type="xsd:string" />
+		<part name="refresh" type="xsd:boolean" />
+	</message>
+	
+	<message name="getDBLocalesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="runSQLAction">
+		<part name="sql" type="xsd:string" />
+		<part name="database" type="xsd:string" />
+	</message>
+	
+	<message name="runSQLActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="executeSQLAdminTask">
+		<part name="sql" type="xsd:string"/>
+	</message>
+	
+	<message name="executeSQLAdminTaskResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+    <message name="getMartDef">
+        <part name="accelName" type="xsd:string"/>
+        <part name="martName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+    </message>
+    	
+	<message name="getMartDefResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="doMartActions">
+        <part name="action" type="xsd:string"/>
+        <part name="accelName" type="xsd:string"/>
+        <part name="martName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+        <part name="params" type="xsd:string"/>
+    </message>
+        
+    <message name="doMartActionsResponse">
+        <part name="return" type="xsd:anyType" />
+    </message> 
+    
+    <message name="createMartStartCapture">
+        <part name="dbName" type="xsd:string"/>
+        <part name="workLoadName" type="xsd:string"/>
+        <part name="userName" type="xsd:string"/>
+        <part name="traceNum" type="xsd:string"/>
+        <part name="traceSize" type="xsd:string"/>        
+    </message>
+        
+    <message name="createMartStartCaptureResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="createMartStopCapture">
+        <part name="dbName" type="xsd:string"/>
+        <part name="workLoadName" type="xsd:string"/>
+        <part name="sqid1" type="xsd:integer"/>
+        <part name="sqft1" type="xsd:integer"/>
+        <part name="trInfo" type="xsd:string"/>              
+    </message>
+        
+    <message name="createMartStopCaptureResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="createMartGetWorkloadAcceleratableStmtCount">
+        <part name="workLoadName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+    </message>
+
+    <message name="createMartGetWorkloadAcceleratableStmtCountResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+
+    <message name="createMartGetWorkloadStmts">
+        <part name="workLoadName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+        <part name="rows_per_page" type="xsd:int"/>
+        <part name="page" type="xsd:int"/>
+        <part name="sort_col" type="xsd:string"/>
+        <part name="search_pattern" type="xsd:string"/>
+    </message>
+        
+    <message name="createMartGetWorkloadStmtsResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="getUpdatedSQLcount">
+        <part name="dbName" type="xsd:string"/>
+        <part name="sqid1" type="xsd:integer"/>
+        <part name="sqft1" type="xsd:integer"/>              
+    </message>
+        
+    <message name="getUpdatedSQLcountResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>    
+    	
+    <message name="createMartCreate">
+        <part name="accel" type="xsd:string"/>
+        <part name="workloadName" type="xsd:string"/>
+        <part name="dmName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+        <part name="dbSpace" type="xsd:string"/>
+        <part name="dbLocale" type="xsd:string"/>
+        <part name="loadOption" type="xsd:string"/>
+        <part name="martDefDBcreate" type="xsd:boolean"/>
+        <part name="deleteWorkloadTable" type="xsd:boolean"/>
+    </message>    
+        
+    <message name="createMartCreateResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="loadMart">
+        <part name="accel" type="xsd:string"/>
+        <part name="dmName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+        <part name="loadOption" type="xsd:string"/>
+    </message>    
+
+    <message name="loadMartResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+
+    <message name="loadMartSched">
+        <part name="dbName" type="xsd:string"/>
+        <part name="bgJobName" type="xsd:string"/>
+        <part name="setMartOff" type="xsd:string"/>
+        <part name="loadCmd" type="xsd:string"/>
+        <part name="loadTask" type="xsd:string"/>
+        <part name="loadTaskExecCmd" type="xsd:string"/>
+        <part name="deleteTask" type="xsd:string"/>
+        <part name="deleteJob" type="xsd:string"/>
+        <part name="loadNow" type="xsd:integer" />
+        <part name="trickleFeed" type="xsd:string"/>
+    </message>
+
+    <message name="loadMartSchedResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="getLoadMartSchedule">
+        <part name="martReference" type="xsd:string"/>
+    </message>    
+
+    <message name="getLoadMartScheduleResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="savePopUpState">
+        <part name="insStmt" type="xsd:string"/>
+    </message>    
+
+    <message name="savePopUpStateResponse">
+        <part name="return" type="xsd:anyType" />
+    </message>
+    
+    <message name="isAccelAccessible">
+        <part name="accelName" type="xsd:string"/>
+        <part name="dbName" type="xsd:string"/>
+    </message>    
+
+    <message name="isAccelAccessibleResponse">
+        <part name="return" type="xsd:string" />
+    </message>        
+                    
+	<portType name="schemamgrPort">
+		<operation name="getDatabases">
+			<input message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		
+		<operation name="getTableNamesForDatabase">
+			<input message="typens:getTableNamesForDatabase" />
+			<output message="typens:getTableNamesForDatabaseResponse" />
+		</operation>
+		
+		<operation name="getDatabasesAndTablesWithSearch">
+			<input message="typens:getDatabasesAndTablesWithSearch" />
+			<output message="typens:getDatabasesAndTablesWithSearchResponse" />
+		</operation>
+		
+		<operation name="getDatabaseIndexes">
+			<input message="typens:getDatabaseIndexes" />
+			<output message="typens:getDatabaseIndexesResponse" />
+		</operation>
+		
+		<operation name="getTemplatesForExternalTable">
+			<input message="typens:getTemplatesForExternalTable" />
+			<output message="typens:getTemplatesForExternalTableResponse" />
+		</operation>
+
+		<operation name="getDBInfo">
+			<input message="typens:getDBInfo" />
+			<output message="typens:getDBInfoResponse" />
+		</operation>
+		
+
+		<operation name="getDBViewInfo">
+			<input message="typens:getDBViewInfo" />
+			<output message="typens:getDBViewInfoResponse" />
+		</operation>
+
+		<operation name="getDBProcedures">
+			<input message="typens:getDBProcedures" />
+			<output message="typens:getDBProceduresResponse" />
+		</operation>
+		
+		<operation name="getDBProceduresDetail">
+			<input message="typens:getDBProceduresDetail" />
+			<output message="typens:getDBProceduresDetailResponse" />
+		</operation>
+
+		<operation name="getDBSequences">
+			<input message="typens:getDBSequences" />
+			<output message="typens:getDBSequencesResponse" />
+		</operation>
+
+		<operation name="getDBUDTs">
+			<input message="typens:getDBUDTs" />
+			<output message="typens:getDBUDTsResponse" />
+		</operation>
+
+		<operation name="getDBPrivileges">
+			<input message="typens:getDBPrivileges" />
+			<output message="typens:getDBPrivilegesResponse" />
+		</operation>
+
+		<operation name="getDBDatablades">
+			<input message="typens:getDBDatablades" />
+			<output message="typens:getDBDatabladesResponse" />
+		</operation>
+
+		<operation name="getDBAggregates">
+			<input message="typens:getDBAggregates" />
+			<output message="typens:getDBAggregatesResponse" />
+		</operation>
+
+		<operation name="getDBCasts">
+			<input message="typens:getDBCasts" />
+			<output message="typens:getDBCastsResponse" />
+		</operation>
+
+		<operation name="getDBOpclasses">
+			<input message="typens:getDBOpclasses" />
+			<output message="typens:getDBOpclassesResponse" />
+		</operation>
+
+		<operation name="getDBSpaces">
+			<input message="typens:getDBSpaces" />
+			<output message="typens:getDBSpacesResponse" />
+		</operation>
+		
+		<operation name="getSBSpaces">
+			<input message="typens:getSBSpaces" />
+			<output message="typens:getSBSpacesResponse" />
+		</operation>
+
+		<operation name="getTabInfo">
+			<input message="typens:getTabInfo" />
+			<output message="typens:getTabInfoResponse" />
+		</operation>
+
+		<operation name="getTabStats">
+			<input message="typens:getTabStats" />
+			<output message="typens:getTabStatsResponse" />
+		</operation>
+
+		<operation name="getTabColumns">
+			<input message="typens:getTabColumns" />
+			<output message="typens:getTabColumnsResponse" />
+		</operation>
+
+		<operation name="getTabIndexes">
+			<input message="typens:getTabIndexes" />
+			<output message="typens:getTabIndexesResponse" />
+		</operation>
+
+		<operation name="getTabReferences">
+			<input message="typens:getTabReferences" />
+			<output message="typens:getTabReferencesResponse" />
+		</operation>
+
+		<operation name="getTabPrivileges">
+			<input message="typens:getTabPrivileges" />
+			<output message="typens:getTabPrivilegesResponse" />
+		</operation>
+
+		<operation name="getTabStatistics">
+			<input message="typens:getTabStatistics" />
+			<output message="typens:getTabStatisticsResponse" />
+		</operation>
+		
+		<operation name="getFragmentStatistics">
+			<input message="typens:getFragmentStatistics" />
+			<output message="typens:getFragmentStatisticsResponse" />
+		</operation>
+
+		<operation name="getTabConstraints">
+			<input message="typens:getTabConstraints" />
+			<output message="typens:getTabConstraintsResponse" />
+		</operation>
+
+		<operation name="getTabFragments">
+			<input message="typens:getTabFragments" />
+			<output message="typens:getTabFragmentsResponse" />
+		</operation>
+
+		<operation name="getTabTriggers">
+			<input message="typens:getTabTriggers" />
+			<output message="typens:getTabTriggersResponse" />
+		</operation>
+		
+		<operation name="getTabViewInfo">
+			<input message="typens:getTabViewInfo" />
+			<output message="typens:getTabViewInfoResponse" />
+		</operation>
+		
+		<operation name="getNamedRowTypes">
+			<input message="typens:getNamedRowTypes" />
+			<output message="typens:getNamedRowTypesResponse" />
+		</operation>
+		
+		<operation name="createTableWizard_getAvailableKeysToReference">
+			<input message="typens:createTableWizard_getAvailableKeysToReference" />
+			<output message="typens:createTableWizard_getAvailableKeysToReferenceResponse" />
+		</operation>
+		
+		<operation name="createTableWizard_getReferenceKeyColumns">
+			<input message="typens:createTableWizard_getReferenceKeyColumns" />
+			<output message="typens:createTableWizard_getReferenceKeyColumnsResponse" />
+		</operation>
+
+		<operation name="getJobs">
+			<input message="typens:getJobs" />
+			<output message="typens:getJobsResponse" />
+		</operation>
+
+		<operation name="getJobsResults">
+			<input message="typens:getJobsResults" />
+			<output message="typens:getJobsResultsResponse" />
+		</operation>
+		
+		<operation name="createTableWizard_getBlobspaces">
+			<input message="typens:createTableWizard_getBlobspaces" />
+			<output message="typens:createTableWizard_getBlobspacesResponse" />
+		</operation>
+		
+		<operation name="createTableWizard_getSBspaces">
+			<input message="typens:createTableWizard_getSBspaces" />
+			<output message="typens:createTableWizard_getSBspacesResponse" />
+		</operation>
+		
+		<operation name="createTable">
+			<input message="typens:createTable" />
+			<output message="typens:createTableResponse" />
+		</operation>	
+		
+		<operation name="createIndex">
+			<input message="typens:createIndex" />
+			<output message="typens:createIndexResponse" />
+		</operation>	
+		
+		<operation name="alterIndexes">
+			<input message="typens:alterIndexes" />
+			<output message="typens:alterIndexesResponse" />
+		</operation>
+
+		<operation name="createJob">
+			<input message="typens:createJob" />
+			<output message="typens:createJobResponse" />
+		</operation>	
+		
+		<operation name="dropTable">
+			<input message="typens:dropTable" />
+			<output message="typens:dropTableResponse" />
+		</operation>
+		
+		<operation name="truncateTable">
+			<input message="typens:truncateTable" />
+			<output message="typens:truncateTableResponse" />
+		</operation>
+		
+		<operation name="createDatabase">
+			<input message="typens:createDatabase" />
+			<output message="typens:createDatabaseResponse" />
+		</operation>
+		
+		<operation name="getDBLocales">
+			<input message="typens:getDBLocales" />
+			<output message="typens:getDBLocalesResponse" />
+		</operation>
+		
+		<operation name="runSQLAction">
+			<input message="typens:runSQLAction" />
+			<output message="typens:runSQLActionResponse" />
+		</operation>
+		
+		<operation name="executeSQLAdminTask">
+			<input message="typens:executeSQLAdminTask" />
+			<output message="typens:executeSQLAdminTaskResponse" />
+		</operation>
+		
+        <operation name="getMartDef">
+            <input message="typens:getMartDef" />
+            <output message="typens:getMartDefResponse" />
+        </operation>
+        
+        <operation name="doMartActions">
+            <input message="typens:doMartActions" />
+            <output message="typens:doMartActionsResponse" />
+        </operation>        				
+        
+        <operation name="createMartStartCapture">
+            <input message="typens:createMartStartCapture" />
+            <output message="typens:createMartStartCaptureResponse" />
+        </operation>        
+
+        <operation name="createMartStopCapture">
+            <input message="typens:createMartStopCapture" />
+            <output message="typens:createMartStopCaptureResponse" />
+        </operation>
+        
+        <operation name="createMartGetWorkloadAcceleratableStmtCount">
+            <input message="typens:createMartGetWorkloadAcceleratableStmtCount" />
+            <output message="typens:createMartGetWorkloadAcceleratableStmtCountResponse" />
+        </operation> 
+        
+        <operation name="createMartGetWorkloadStmts">
+            <input message="typens:createMartGetWorkloadStmts" />
+            <output message="typens:createMartGetWorkloadStmtsResponse" />
+        </operation> 
+        
+        <operation name="getUpdatedSQLcount">
+            <input message="typens:getUpdatedSQLcount" />
+            <output message="typens:getUpdatedSQLcountResponse" />
+        </operation>     
+        
+        <operation name="createMartCreate">
+            <input message="typens:createMartCreate" />
+            <output message="typens:createMartCreateResponse" />
+        </operation>
+        
+        <operation name="loadMart">
+            <input message="typens:loadMart" />
+            <output message="typens:loadMartResponse" />
+        </operation> 
+        
+        <operation name="loadMartSched">
+            <input message="typens:loadMartSched" />
+            <output message="typens:loadMartSchedResponse" />
+        </operation>
+
+        <operation name="getLoadMartSchedule">
+            <input message="typens:getLoadMartSchedule" />
+            <output message="typens:getLoadMartScheduleResponse" />
+        </operation> 
+        
+        <operation name="savePopUpState">
+            <input message="typens:savePopUpState" />
+            <output message="typens:savePopUpStateResponse" />
+        </operation>
+        
+        <operation name="isAccelAccessible">
+            <input message="typens:isAccelAccessible" />
+            <output message="typens:isAccelAccessibleResponse" />
+        </operation>                                         
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="schemamgrBinding" type="typens:schemamgrPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTableNamesForDatabase">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDatabasesAndTablesWithSearch">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDatabaseIndexes">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTemplatesForExternalTable">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBInfo">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBViewInfo">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBProcedures">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBProceduresDetail">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBSequences">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBUDTs">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBPrivileges">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBDatablades">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBAggregates">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBCasts">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBOpclasses">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getDBSpaces">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getSBSpaces">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabInfo">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabStats">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabColumns">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabIndexes">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabReferences">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabPrivileges">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabStatistics">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getFragmentStatistics">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabConstraints">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabFragments">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabTriggers">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getNamedRowTypes">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createTableWizard_getAvailableKeysToReference">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createTableWizard_getReferenceKeyColumns">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getJobs">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getJobsResults">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createTableWizard_getBlobspaces">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createTableWizard_getSBspaces">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="createTable">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createIndex">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="alterIndexes">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createJob">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="dropTable">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="truncateTable">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="createDatabase">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDBLocales">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="runSQLAction">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="executeSQLAdminTask">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getTabViewInfo">
+			<soap:operation soapAction="urn:schemamgrAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:schemamgr"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+        <operation name="getMartDef">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        
+        <operation name="doMartActions">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>        
+        
+        <operation name="createMartStartCapture">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>    
+        
+        <operation name="createMartStopCapture">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        
+        <operation name="createMartGetWorkloadAcceleratableStmtCount">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>    	
+        
+        <operation name="createMartGetWorkloadStmts">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>    	
+        
+        <operation name="getUpdatedSQLcount">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>        
+        
+        <operation name="createMartCreate">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>        	
+        
+        <operation name="loadMart">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        
+        <operation name="loadMartSched">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>  
+        
+        <operation name="getLoadMartSchedule">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        <operation name="savePopUpState">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation> 
+                <operation name="isAccelAccessible">
+            <soap:operation soapAction="urn:schemamgrAction" />
+            <input>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:schemamgr"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>            
+	</binding>
+
+	<service name="schemamgrService">
+		<port name="schemamgrPort" binding="typens:schemamgrBinding">
+			<soap:address location="plugin/ibm/schemamgr/services/schemamgrService.php" />
+		</port>
+	</service>
+</definitions>

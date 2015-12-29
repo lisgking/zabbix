@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="gentab">
+<NumRowsAffected><![CDATA[影响的行数：]]></NumRowsAffected>
+<CompletedSuccess><![CDATA[已成功完成。]]></CompletedSuccess>
+<FunctionReturnValue><![CDATA[函数返回值：]]></FunctionReturnValue>
+<Return><![CDATA[返回：]]></Return>
+<SyntaxError><![CDATA[发生语法错误。]]></SyntaxError>
+</lang>

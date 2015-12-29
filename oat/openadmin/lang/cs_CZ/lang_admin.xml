@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_admin">
+<admin><![CDATA[Administrátor]]></admin>
+<login><![CDATA[Přihlásit se]]></login>
+<AdminHome><![CDATA[Domovská stránka administrace]]></AdminHome>
+<AdminWelcome><![CDATA[Uvítání administrace]]></AdminWelcome>
+<ConnAdmin><![CDATA[Administrátor připojení]]></ConnAdmin>
+<ConnList><![CDATA[Seznam připojení]]></ConnList>
+<OATconfig><![CDATA[Konfigurace nástroje OAT]]></OATconfig>
+<defaultlang><![CDATA[Výchozí jazyk]]></defaultlang>
+<baseurl><![CDATA[Základní adresa URL]]></baseurl>
+<installdir><![CDATA[instalační adresář]]></installdir>
+<conndb_loc><![CDATA[Adresář databáze připojení]]></conndb_loc>
+<rowsperpage><![CDATA[Řádek na stránku]]></rowsperpage>
+<pingerinterval><![CDATA[Obnovovací interval]]></pingerinterval>
+<IDSProtocol><![CDATA[Protokol Informix]]></IDSProtocol>
+<IDSProtocol_explain><![CDATA[Protokol, který se má použít]]></IDSProtocol_explain>
+<DashboardMgr><![CDATA[Správce panelů Dashboard Manager]]></DashboardMgr>
+<ShowConnections><![CDATA[Zobrazit připojení]]></ShowConnections>
+<AddConn><![CDATA[Přidat připojení]]></AddConn>
+<DeleteConn><![CDATA[Odstranit připojení]]></DeleteConn>
+<EditConn><![CDATA[Upravit připojení]]></EditConn>
+<EditConn_><![CDATA[Upravit připojení: {0}]]></EditConn_>
+<AddGroup><![CDATA[Přidat skupinu]]></AddGroup>
+<EditGroup><![CDATA[Upravit skupinu]]></EditGroup>
+<EditGroup_><![CDATA[Upravit skupinu {0}]]></EditGroup_>
+<DeleteGroup><![CDATA[Odstranit skupinu]]></DeleteGroup>
+<HelpAdmin><![CDATA[Administrátor nápovědy]]></HelpAdmin>
+<AddHelp><![CDATA[Přidat položku nápovědy]]></AddHelp>
+<DeleteHelp><![CDATA[Odstranit položku nápovědy]]></DeleteHelp>
+<EditHelp><![CDATA[Upravit položku nápovědy]]></EditHelp>
+<group><![CDATA[Skupina OAT]]></group>
+<groupname><![CDATA[Název skupiny]]></groupname>
+<groupname_sc><![CDATA[Název skupiny]]></groupname_sc>
+<username><![CDATA[Jméno uživatele]]></username>
+<password><![CDATA[Heslo]]></password>
+<hostname><![CDATA[Název hostitele]]></hostname>
+<informixserver><![CDATA[Server Informix]]></informixserver>
+<port><![CDATA[Port]]></port>
+<longitude><![CDATA[Délka]]></longitude>
+<latitude><![CDATA[Šířka]]></latitude>
+<idsdport><![CDATA[Port idsd]]></idsdport>
+<envvars><![CDATA[Proměnné prostředí]]></envvars>
+<varname><![CDATA[Název proměnné]]></varname>
+<param><![CDATA[Parametr]]></param>
+<value><![CDATA[Hodnota]]></value>
+<readonly><![CDATA[Jen pro čtení]]></readonly>
+<readonly_sc><![CDATA[Jen pro čtení]]></readonly_sc>
+<collapse><![CDATA[Sbalit]]></collapse>
+<viewmodify><![CDATA[Zobrazit&#47Upravit]]></viewmodify>
+<currgroups><![CDATA[Aktuální skupiny]]></currgroups>
+<numconn><![CDATA[Připojení]]></numconn>
+<deleteselected><![CDATA[Odstranit vybrané]]></deleteselected>
+<act><![CDATA[Jednat]]></act>
+<do><![CDATA[Provést]]></do>
+<title><![CDATA[Název]]></title>
+<description><![CDATA[Popis]]></description>
+<add><![CDATA[Přidat]]></add>
+<delete><![CDATA[Odstranit]]></delete>
+<save><![CDATA[Uložit]]></save>
+<cancel><![CDATA[Storno]]></cancel>
+<testconnection><![CDATA[Test připojení]]></testconnection>
+<insecureCONNDBDIR><![CDATA[Zadané umístění databáze připojení je v kořenovém adresáři dokumentů webového serveru. Aplikaci OAT to může vystavit bezpečnostním rizikům. Chcete-li přesto pokračovat, klepněte na tlačítko OK.]]></insecureCONNDBDIR>
+<pluginmgr><![CDATA[Správce modulů plug-in]]></pluginmgr>
+<installplugin><![CDATA[Instalovat modul plug-in]]></installplugin>
+<menumgr><![CDATA[Správce nabídek]]></menumgr>
+<secureSQL><![CDATA[Zabezpečení panelu nástrojů SQL]]></secureSQL>
+<informixcontime><![CDATA[Doba připojení k Informix]]></informixcontime>
+<informixconretry><![CDATA[Opakování pokusu o připojení k Informix]]></informixconretry>
+<helpDB><![CDATA[Databáze nápovědy]]></helpDB>
+<selectHelpDB><![CDATA[Vybrat databázi nápovědy]]></selectHelpDB>
+<import><![CDATA[Importovat informace o připojení ze souboru XML]]></import>
+<export><![CDATA[Exportovat informace o připojení do souboru XML]]></export>
+<importbutton><![CDATA[Importovat z XML]]></importbutton>
+<exportbutton><![CDATA[Exportovat do XML]]></exportbutton>
+<importcheckbox><![CDATA[Odebrat všechny stávající informace o připojení před importem ze souboru XML.]]></importcheckbox>
+<exportcheckbox><![CDATA[Zahrnout citlivé informace hesla do exportovaného souboru XML.]]></exportcheckbox>
+<nofile><![CDATA[Nebyl vybrán žádný soubor.]]></nofile>
+<overwriteConfirm><![CDATA[Všechny stávající informace o připojení budou odstraněny. Opravdu chcete tuto operaci provést?]]></overwriteConfirm>
+<securityWarning><![CDATA[Exportovaný soubor XML obsahuje citlivé informace hesla, například heslo serveru Informix. Dbejte na uložení tohoto souboru v zabezpečeném umístění.]]></securityWarning>
+<LANG><![CDATA[Výchozí jazyk pro stránky nástroje OAT.]]></LANG>
+<CONNDBDIR><![CDATA[Adresář pro databázi připojení nástroje OAT. Určete zabezpečený adresář, který není v adresáři dokumentů webového serveru.]]></CONNDBDIR>
+<BASEURL><![CDATA[Adresa URL, na níž je nástroj OAT instalován. Použijte tento formát: http://název_serveru:port/umístění.]]></BASEURL>
+<HOMEDIR><![CDATA[Adresář pro instalaci nástroje OAT.]]></HOMEDIR>
+<ROWSPERPAGE><![CDATA[Výchozí počet zobrazovaných řádků na jednu stránku při zobrazování dat ve formátu tabulky.]]></ROWSPERPAGE>
+<PINGINTERVAL><![CDATA[Doba (v sekundách) mezi aktualizacemi stavu serveru. Stav serveru se zobrazuje na stránce Centrum narušení > Panel dashboard > Souhrn skupiny.]]></PINGINTERVAL>
+<HOMEPAGE><![CDATA[Stránka, která má být použita jako domovská stránka OAT.]]></HOMEPAGE>
+<IDSPROTOCOL><![CDATA[Který protokol se má použít (např. onsoctcp)]]></IDSPROTOCOL>
+<SECURESQL><![CDATA[Požadovat přihlašovací pověření pro panel nástrojů SQL.]]></SECURESQL>
+<SECURESQL_tooltip><![CDATA[Chránit heslem stránky Prohlížeč schématu, Editor SQL a Dotaz podle příkladu. Uživatelé mohou zobrazit nebo měnit data tabulky na těchto stránkách.]]></SECURESQL_tooltip>
+<INFORMIXCONTIME><![CDATA[Doba (v sekundách), po kterou se nástroj OAT pokouší o připojení k databázovému serveru před vrácením chyby (INFORMIXCONTIME).]]></INFORMIXCONTIME>
+<INFORMIXCONRETRY><![CDATA[Počet pokusů o připojení k databázovému serveru, jež nástroj OAT provádí během doby připojení k Informix (INFORMIXCONRETRY).]]></INFORMIXCONRETRY>
+<HomePage><![CDATA[Domovská stránka]]></HomePage>
+<home_page_option_welcome><![CDATA[Úvodní stránka]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Centrum narušení > Panel dashboard > Souhrn skupiny]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Centrum narušení > Panel dashboard > Výkon serveru]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Vlastní]]></home_page_option_custom>
+<SaveCfgFailure><![CDATA[Uložení konfigurace se nezdařilo, protože soubor není schopný zápisu:]]></SaveCfgFailure>
+<SaveCfgSuccess><![CDATA[Konfigurace byla uložena]]></SaveCfgSuccess>
+<OnlineStatusCurrent><![CDATA[Online: AKTUÁLNÍ]]></OnlineStatusCurrent>
+<RequiresInformixServer><![CDATA[Server Informix je povinný]]></RequiresInformixServer>
+<RequiresHost><![CDATA[Hostitel je povinný]]></RequiresHost>
+<RequiresPort><![CDATA[Port je povinný]]></RequiresPort>
+<RequiresUser><![CDATA[Jméno uživatele je povinné]]></RequiresUser>
+<AddNewConnFailWithError><![CDATA[Přidání nového připojení se nezdařilo. Kód chyby:]]></AddNewConnFailWithError>
+<AddNewConnIDSDFailWithError><![CDATA[Přidání nového připojení k idsd se nezdařilo. Kód chyby:]]></AddNewConnIDSDFailWithError>
+<InsertCEnvVarsFailedWithError><![CDATA[Vložení do conn_envvars se nezdařilo. Kód chyby:]]></InsertCEnvVarsFailedWithError>
+<UpdConnFailedWithError><![CDATA[Aktualizace připojení se nezdařila. Kód chyby:]]></UpdConnFailedWithError>
+<ReplaceIDSDFailedWithError><![CDATA[Nahrazení idsd se nezdařilo. Kód chyby:]]></ReplaceIDSDFailedWithError>
+<DeleteCEnvVarsFailedWithError><![CDATA[Odstranění z conn_envvars se nezdařilo. Kód chyby:]]></DeleteCEnvVarsFailedWithError>
+<UpdCEnvVarsFailedWithError><![CDATA[Aktualizace: vložení do conn_envvars se nezdařilo. Kód chyby:]]></UpdCEnvVarsFailedWithError>
+<EditingConnection><![CDATA[Úprava připojení]]></EditingConnection>
+<ErrorOccurredGroupNumRequired><![CDATA[Došlo k chybě - je nezbytné číslo skupiny]]></ErrorOccurredGroupNumRequired>
+<RequiresGroupName><![CDATA[Je nezbytný název skupiny]]></RequiresGroupName>
+<EditGroupFailedWithError><![CDATA[Úprava skupiny se nezdařila. Kód chyby:]]></EditGroupFailedWithError>
+<EditingGroup><![CDATA[Úprava skupiny]]></EditingGroup>
+<AddGroupFailedWithError><![CDATA[Přidání nové skupiny se nezdařilo. Kód chyby:]]></AddGroupFailedWithError>
+<AddingGroup><![CDATA[Přidání skupiny]]></AddingGroup>
+<AddingConn><![CDATA[Přidání připojení]]></AddingConn>
+<ErrorDeletingConn><![CDATA[Chyba: funkce dodelconn byla volána s nesprávnými argumenty]]></ErrorDeletingConn>
+<DeleteConnFailedWithError><![CDATA[Odstranění připojení se nezdařilo. Kód chyby:]]></DeleteConnFailedWithError>
+<DeleteConnComplete><![CDATA[Odstranění připojení bylo dokončeno]]></DeleteConnComplete>
+<DeleteGroupsFailedWithError><![CDATA[Odstranění skupin(y) se nezdařilo. Kód chyby:]]></DeleteGroupsFailedWithError>
+<DeleteGroupsComplete><![CDATA[Odstranění skupin(y) bylo dokončeno]]></DeleteGroupsComplete>
+<RequiresAct><![CDATA[Je nezbytná 'akce']]></RequiresAct>
+<RequiresDescription><![CDATA[Popis je povinný]]></RequiresDescription>
+<AddingHelpFor><![CDATA[Přidání nápovědy pro]]></AddingHelpFor>
+<DeletingHelp><![CDATA[Odstranění nápovědy]]></DeletingHelp>
+<EditingHelpFor><![CDATA[Úprava nápovědy pro]]></EditingHelpFor>
+<NoHelpDB><![CDATA[Neexistuje žádná databáze nápovědy pro helpdb_id =]]></NoHelpDB>
+<IDSAdminHelpProblem><![CDATA[Problém s databází idsadminHelp -]]></IDSAdminHelpProblem>
+<ErrorOpeningHelpDB><![CDATA[Při otevírání databáze nápovědy došlo k chybě]]></ErrorOpeningHelpDB>
+<FailedToImportGroup><![CDATA[Import skupiny se nezdařil]]></FailedToImportGroup>
+<FailedToImportGroup><![CDATA[Import skupiny se nezdařil]]></FailedToImportGroup>
+<PluginInstallStarted><![CDATA[Spuštění instalace modulu plug-in...]]></PluginInstallStarted>
+<ConnectionFailed><![CDATA[Připojení se nezdařilo...]]></ConnectionFailed>
+<ErrorLoadingConnDB><![CDATA[Chyba při načítání souboru connections.db]]></ErrorLoadingConnDB>
+<SureToDeleteConn><![CDATA[Opravdu chcete tato připojení odstranit?]]></SureToDeleteConn>
+<SureToDeleteGroup><![CDATA[Opravdu chcete odstranit? Při odstranění skupiny budou odstraněna také všechna připojení definovaná pro tuto skupinu!]]></SureToDeleteGroup>
+<AskDelete><![CDATA[Opravdu chcete odstranit?]]></AskDelete>
+<OATForIDSText><![CDATA[OpenAdmin Tool]]></OATForIDSText>
+<TestingConnection><![CDATA[Testuje se... Čekejte, prosím]]></TestingConnection>
+<InvalidEnvVar><![CDATA[Chyba: Musíte specifikovat jak proměnnou prostředí, tak hodnotu.]]></InvalidEnvVar>
+<x_Plugin><![CDATA[Modul plug-in {0}]]></x_Plugin>
+</lang>

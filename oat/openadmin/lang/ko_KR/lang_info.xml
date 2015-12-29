@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_info">
+<linksTitle><![CDATA[유용한 링크]]></linksTitle>
+<aboutTitle><![CDATA[OAT 정보]]></aboutTitle>
+<productInfo><![CDATA[제품 정보]]></productInfo>
+<productName><![CDATA[제품 이름]]></productName>
+<version><![CDATA[버전]]></version>
+<buildtimestamp><![CDATA[빌드 타임스탬프]]></buildtimestamp>
+<copyright><![CDATA[&copy; Copyright IBM Corporation. 2007, 2013.<br/>&copy; Copyright The PHP Group 1999-2010.<br/>추가적인 정보는 notices.txt 파일을 참조하십시오.]]></copyright>
+<IBMInfo><![CDATA[IBM]]></IBMInfo>
+<IIUGInfo><![CDATA[IIUG]]></IIUGInfo>
+<IBMInformixHomepage><![CDATA[IBM Informix 제품군]]></IBMInformixHomepage>
+<IBMInformixProducts><![CDATA[IBM Informix 제품 정보]]></IBMInformixProducts>
+<OATHomePage><![CDATA[OpenAdmin Tool]]></OATHomePage>
+<OATHomePageDesc><![CDATA[OpenAdmin Tool(OAT) 정보]]></OATHomePageDesc>
+<OATForum><![CDATA[OpenAdmin Tool 포럼]]></OATForum>
+<OATForumDesc><![CDATA[IIUG(International Informix Users Group)에서 호스트하는 OAT의 지원 포럼]]></OATForumDesc>
+<InfoCenter_v11.50><![CDATA[IBM Informix v11.50 Information Center]]></InfoCenter_v11.50>
+<InfoCenter_v11.50_Desc><![CDATA[IBM Informix v11.50 문서]]></InfoCenter_v11.50_Desc>
+<InfoCenter_v11.70><![CDATA[IBM Informix v11.70 Information Center]]></InfoCenter_v11.70>
+<InfoCenter_v11.70_Desc><![CDATA[IBM Informix v11.70 문서]]></InfoCenter_v11.70_Desc>
+<InfoCenter_v12.10><![CDATA[IBM Informix v12.10 Information Center]]></InfoCenter_v12.10>
+<InfoCenter_v12.10_Desc><![CDATA[IBM Informix v12.10 문서]]></InfoCenter_v12.10_Desc>
+<IDSProdSupport><![CDATA[IBM 지원 포털: Informix Server]]></IDSProdSupport>
+<IDSProdSupportPage><![CDATA[IBM Informix Server 지원]]></IDSProdSupportPage>
+<InformixProdSupp><![CDATA[IBM 지원 포털: Informix 제품군]]></InformixProdSupp>
+<InformixProdSuppPage><![CDATA[IBM Informix 제품 지원]]></InformixProdSuppPage>
+<InformixDevZone><![CDATA[IBM developerWorks: IBM Informix]]></InformixDevZone>
+<InformixDevZoneDesc><![CDATA[개발자 및 IT 전문가를 위한 IBM 자원의 Informix에 대한 기술 정보]]></InformixDevZoneDesc>
+<IIUGHome><![CDATA[국제 Informix 사용자 그룹]]></IIUGHome>
+<IIUGHomePage><![CDATA[IIUG(International Informix Users Group) 홈 페이지]]></IIUGHomePage>
+<IIUGSuppForumOAT><![CDATA[IIUG에서 호스트하는 OpenAdmin Tool(OAT)의 지원 포럼]]></IIUGSuppForumOAT>
+<IIUGForums><![CDATA[Informix 포럼]]></IIUGForums>
+<IIUGForumsDesc><![CDATA[IIUG에서 호스트하는 IBM Informix 제품의 지원 포럼]]></IIUGForumsDesc>
+<InformixEvents><![CDATA[IIUG 이벤트 달력]]></InformixEvents>
+<InformixUserEventSchedule><![CDATA[Informix 사용자를 위한 이벤트 스케줄]]></InformixUserEventSchedule>
+<IIUGSponsorProgram><![CDATA[IIUG 스폰서 프로그램]]></IIUGSponsorProgram>
+<IIUGSponsorProgramDesc><![CDATA[IIUG 커뮤니티를 지원하고 회사를 광고하기 위한 프로그램]]></IIUGSponsorProgramDesc>
+<OATForIDSText><![CDATA[OpenAdmin Tool Community Edition]]></OATForIDSText>
+<PHPConfiguration><![CDATA[PHP 구성]]></PHPConfiguration>
+<ExternalLinksNotice><![CDATA[비IBM 웹 사이트에 관한 링크]]></ExternalLinksNotice>
+</lang>

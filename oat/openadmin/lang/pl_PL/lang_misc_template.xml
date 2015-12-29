@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[Błąd:]]></ErrorF>
+<QueryF><![CDATA[Zapytanie:]]></QueryF>
+<PageSize><![CDATA[Wielkość strony]]></PageSize>
+<Descending><![CDATA[Malejąco]]></Descending>
+<Ascending><![CDATA[Rosnąco]]></Ascending>
+<ErrorOccurred><![CDATA[Wystąpił błąd]]></ErrorOccurred>
+<Reload><![CDATA[Załaduj ponownie]]></Reload>
+<ClickToReload><![CDATA[Kliknij, aby ponownie załadować serwery]]></ClickToReload>
+<LoadingMsg><![CDATA[..ŁADOWANIE..]]></LoadingMsg>
+<PrevPage><![CDATA[Poprzednia strona]]></PrevPage>
+<NextPage><![CDATA[Następna strona]]></NextPage>
+<Page><![CDATA[Strona]]></Page>
+<Row><![CDATA[Wiersz]]></Row>
+<Login><![CDATA[Logowanie]]></Login>
+<OrderAsc><![CDATA[Porządkuj rosnąco wg {0}]]></OrderAsc>
+<OrderDesc><![CDATA[Porządkuj malejąco wg {0}]]></OrderDesc>
+<Help><![CDATA[Pomoc]]></Help>
+<Admin><![CDATA[Administrator]]></Admin>
+<Back><![CDATA[Wstecz]]></Back>
+<Welcome><![CDATA[Witamy]]></Welcome>
+<CollapseMenu><![CDATA[Zwiń menu]]></CollapseMenu>
+<Info><![CDATA[Informacje]]></Info>
+<Yes><![CDATA[Tak]]></Yes>
+<No><![CDATA[Nie]]></No>
+<Cancel><![CDATA[Anuluj]]></Cancel>
+<Delete><![CDATA[Usuń]]></Delete>
+<Success><![CDATA[Powodzenie]]></Success>
+<ErrorL><![CDATA[Błąd]]></ErrorL>
+<ERROR><![CDATA[BŁĄD]]></ERROR>
+<Ignore><![CDATA[Ignoruj]]></Ignore>
+<Under><![CDATA[Pod]]></Under>
+<Save><![CDATA[Zapisz]]></Save>
+<Cancel><![CDATA[Anuluj]]></Cancel>
+<TemplateLoadError><![CDATA[Nie można załadować szablonu głównego]]></TemplateLoadError>
+<help><![CDATA[Pomoc]]></help>
+<ServerType><![CDATA[Typ serwera]]></ServerType>
+<Version><![CDATA[Wersja]]></Version>
+<ServerTime><![CDATA[Czas serwera]]></ServerTime>
+<BootTime><![CDATA[Czas startu]]></BootTime>
+<UpTime><![CDATA[Czas działania]]></UpTime>
+<Sessions><![CDATA[Sesje]]></Sessions>
+<MaxUsers><![CDATA[Maksymalna liczba sesji]]></MaxUsers>
+<TotalMem><![CDATA[Łącznie pamięci]]></TotalMem>
+<FreeMem><![CDATA[Wolnej pamięci]]></FreeMem>
+<NumCPU><![CDATA[Liczba procesorów]]></NumCPU>
+<OperatingSys><![CDATA[System operacyjny]]></OperatingSys>
+<Standard><![CDATA[Standardowy]]></Standard>
+<Primary><![CDATA[Podstawowy]]></Primary>
+<Secondary><![CDATA[Dodatkowy]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[Serwer]]></Server>
+<Database><![CDATA[Baza danych]]></Database>
+<ConnectionFailed><![CDATA[Połączenie nie powiodło się: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[BŁĄD:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[Brak kodu SQL do wykonania]]></NoSQLToExecute>
+<GroupServers><![CDATA[Grupuj serwery]]></GroupServers>
+<MapNotAvail><![CDATA[Odwzorowanie jest niedostępne z powodu niepoprawnego klucza.]]></MapNotAvail>
+<ServerInfo><![CDATA[Informacje o serwerze]]></ServerInfo>
+<Info><![CDATA[Informacje]]></Info>
+<ALL><![CDATA[WSZYSTKIE]]></ALL>
+<Enabled><![CDATA[Włączone]]></Enabled>
+<Disabled><![CDATA[Wyłączone]]></Disabled>
+<MB_Locale><![CDATA[Język bazy danych]]></MB_Locale>
+<MB_Encoding><![CDATA[Ustawienia narodowe]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[Wybierz język bazy danych, aby wyświetlić dostępne ustawienia narodowe bazy danych dla tego języka. Następnie wybierz ustawienia narodowe bazy danych.]]></MB_Locale_Encoding_tooltip>
+</lang>

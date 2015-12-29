@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_global">
+<help><![CDATA[Guida]]></help>
+<language><![CDATA[Lingua]]></language>
+<switchServer><![CDATA[Passa al server:]]></switchServer>
+<switchDatabase><![CDATA[Passa al database:]]></switchDatabase>
+<confirmContinue><![CDATA[Si desidera continuare?]]></confirmContinue>
+<confirmSqltoolboxLogout><![CDATA[Disconnessione da SQL ToolBox. Si desidera continuare?]]></confirmSqltoolboxLogout>
+<ok><![CDATA[OK]]></ok>
+<featureNotSupported><![CDATA[Questa funzione richiede Informix versione {0}.]]></featureNotSupported>
+<couldNotLoadSwitchLocale><![CDATA[OAT non è in grado di accedere alle informazioni sulle impostazioni internazionali di database sul server di database.]]></couldNotLoadSwitchLocale>
+</lang>

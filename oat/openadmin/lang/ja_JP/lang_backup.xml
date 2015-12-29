@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[バックアップ]]></Backup>
+<noBackupSupport><![CDATA[バックアップは、Informix サーバ タイプが標準サーバ、主サーバ、またはリモート スタンドアロン副 (RSS) サーバの場合のみサポートされます。]]></noBackupSupport>
+<sdsServer>![CDATA[共用ディスク副 (SDS) サーバに接続されています。]]</sdsServer>
+<hdrSecondary>![CDATA[HDR 副サーバに接続されています。]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[OAT でバックアップを行うには、Informix バージョン 11.70.xC2 が必要です。]]></noBackupSupportServerVersion>
+<notAvail>使用不可
+</notAvail>
+<onbarBackProcMissing>ON-Bar バックアップに必要なストアド プロシジャが、サーバにありません。サーバの起動時に sch_oat.sql スクリプトが実行されたかどうか確認してください。</onbarBackProcMissing>
+<Unknown>不明</Unknown>
+</lang>

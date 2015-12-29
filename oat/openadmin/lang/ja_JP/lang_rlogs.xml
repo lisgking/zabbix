@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[リカバリ ログ]]></mainTitle>
+<lognum><![CDATA[番号]]></lognum>
+<uniqid><![CDATA[一意 ID 番号]]></uniqid>
+<size><![CDATA[サイズ]]></size>
+<SwitchComment><![CDATA[次の論理ログに切り替える]]></SwitchComment>
+<attributes><![CDATA[属性]]></attributes>
+<used><![CDATA[使用済み]]></used>
+<location><![CDATA[場所]]></location>
+<notes><![CDATA[注]]></notes>
+<lastfilled><![CDATA[最終充てん]]></lastfilled>
+<ltitle><![CDATA[論理ログ状態]]></ltitle>
+<notFull><![CDATA[空きあり]]></notFull>
+<UsedBackedUp><![CDATA[使用済みおよびバックアップ済み]]></UsedBackedUp>
+<UsedCurrent><![CDATA[使用済みおよび現行]]></UsedCurrent>
+<Used><![CDATA[使用済み]]></Used>
+<Free><![CDATA[フリー]]></Free>
+<BackedUp><![CDATA[バックアップ済み]]></BackedUp>
+<Pages><![CDATA[ページ]]></Pages>
+<pages><![CDATA[ページ]]></pages>
+<Usage><![CDATA[使用量]]></Usage>
+<PagesPerSec><![CDATA[充てん率]]></PagesPerSec>
+<PLogUsage><![CDATA[物理ログ使用量]]></PLogUsage>
+<PLogInfo><![CDATA[物理ログ情報]]></PLogInfo>
+<PLogSize><![CDATA[物理ログ サイズ]]></PLogSize>
+<PLogUsed><![CDATA[使用量]]></PLogUsed>
+<PlogLocation><![CDATA[場所]]></PlogLocation>
+<PlogStartPos><![CDATA[開始オフセット]]></PlogStartPos>
+<PlogBuffSize><![CDATA[バッファ サイズ]]></PlogBuffSize>
+<LLogUsage><![CDATA[論理ログ使用量]]></LLogUsage>
+<mLogicalLogs><![CDATA[論理ログ]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[物理ログ]]></mPhysicalLog>
+<mAdmin><![CDATA[管理]]></mAdmin>
+<mCheckpoints><![CDATA[チェックポイント]]></mCheckpoints>
+<NewAdd><![CDATA[新規追加]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[論理ログの削除が確定されていません。確定し、操作を再試行してください。]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[物理ログの移動が確定されていません。確定し、操作を再試行してください。]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[物理ログの移動]]></MPhysicalLog>
+<Confirm><![CDATA[確定]]></Confirm>
+<Move><![CDATA[移動]]></Move>
+<mRPolicy><![CDATA[リカバリ ポリシー]]></mRPolicy>
+<syncckpt><![CDATA[同期チェックポイント]]></syncckpt>
+<normckpt><![CDATA[標準チェックポイント]]></normckpt>
+<dockpt><![CDATA[チェックポイントの実行]]></dockpt>
+<Checkpoint><![CDATA[チェックポイント]]></Checkpoint>
+<NoMove><![CDATA[物理ログを移動しない]]></NoMove>
+<DropLLog><![CDATA[論理ログの削除]]></DropLLog>
+<NoDropLLog><![CDATA[論理ログを削除しない]]></NoDropLLog>
+<ON><![CDATA[オン]]></ON>
+<OFF><![CDATA[オフ]]></OFF>
+<InvalidValue><![CDATA[無効な値が入力されました]]></InvalidValue>
+<save><![CDATA[保存]]></save>
+<cancel><![CDATA[キャンセル]]></cancel>
+<rto_title><![CDATA[RTO - 目標復旧時間]]></rto_title>
+<rto><![CDATA[目標復旧時間]]></rto>
+<rto_error><![CDATA[RTO サーバ再始動の変更中にエラーが発生しました。]]></rto_error>
+<minute><![CDATA[分]]></minute>
+<minutes><![CDATA[分]]></minutes>
+<autoChkpts><![CDATA[自動チェックポイント]]></autoChkpts>
+<autoChkpts_error><![CDATA[自動チェックポイントの変更中にエラーが発生しました。]]></autoChkpts_error>
+<autoLRU><![CDATA[自動 LRU 調整]]></autoLRU>
+<autoLRU_error><![CDATA[自動 LRU 調整の変更中にエラーが発生しました。]]></autoLRU_error>
+<NoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></NoPermission>
+<LogicalLogsAdded><![CDATA[論理ログが追加されました]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[現行ログの後]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[ログの末尾]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[DB 領域名]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[物理ログの変更中にエラーが発生しました。]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[次の論理ログに切り替える際にエラーが発生しました。]]></ErrorWithSwitchLog>
+<seconds><![CDATA[秒]]></seconds>
+<AddLogicalLog><![CDATA[論理ログの追加]]></AddLogicalLog>
+<Add><![CDATA[追加]]></Add>
+<Drop><![CDATA[削除]]></Drop>
+<LogicalLogNum><![CDATA[論理ログ番号]]></LogicalLogNum>
+<Confirm><![CDATA[確定]]></Confirm>
+<SwitchLog><![CDATA[論理ログの切替え]]></SwitchLog>
+<Switch><![CDATA[切替え]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

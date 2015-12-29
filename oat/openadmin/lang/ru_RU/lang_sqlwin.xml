@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[Набор инструментов SQL]]></mainTitle>
+<DatabasesTitle><![CDATA[Набор инструментов SQL - Базы данных]]></DatabasesTitle>
+<TablesTitle><![CDATA[Набор инструментов SQL - Таблицы]]></TablesTitle>
+<TabSelTitle><![CDATA[Набор инструментов SQL - Выборка по таблицам]]></TabSelTitle>
+<SPLTitle><![CDATA[Набор инструментов SQL - Хранимые процедуры]]></SPLTitle>
+<TabInfoTitle><![CDATA[Набор инструментов SQL - Данные о таблицах]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[Набор инструментов SQL - Фрагменты таблиц]]></FragInfoTitle>
+<SQLTitle><![CDATA[Набор инструментов SQL - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[Щелкните имя базы данных для соединения.]]></ClickDbConn>
+<Databases><![CDATA[Базы данных]]></Databases>
+<TotalRows><![CDATA[Всего строк: ]]></TotalRows>
+<Tables><![CDATA[Таблицы]]></Tables>
+<SPL_UDR><![CDATA[Пользовательская подпрограмма/подпрограмма SPL]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[Результат]]></SQLResult>
+<SQLTree><![CDATA[Дерево запросов]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[ОШИБКА: запрос отсутствует]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[ОШИБКА: дерево запросов отсутствует]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[ОШИБКА: отсутствует текущий сеанс SQL или соединение]]></SQLErr_NoConn>
+<Column_Info><![CDATA[Данные о столбце]]></Column_Info>
+<Table_Browse><![CDATA[Просмотр таблицы]]></Table_Browse>
+<Fragments><![CDATA[Фрагменты]]></Fragments>
+<Name><![CDATA[Имя]]></Name>
+<Collation><![CDATA[Упорядочение]]></Collation>
+<CreateDate><![CDATA[Дата создания]]></CreateDate>
+<Logging><![CDATA[Ведение журнала]]></Logging>
+<IncCatalog><![CDATA[Включать таблицы каталогов базы данных?]]></IncCatalog>
+<Submit><![CDATA[Передать]]></Submit>
+<ChkRtTypes><![CDATA[Проверьте типы подпрограмм (ID языка) для выбора:]]></ChkRtTypes>
+<Owner><![CDATA[Владелец]]></Owner>
+<Procid><![CDATA[ID обраб.]]></Procid>
+<Type><![CDATA[Тип]]></Type>
+<Numargs><![CDATA[Число аргументов]]></Numargs>
+<ParamTypes><![CDATA[Типы параметров]]></ParamTypes>
+<Mode><![CDATA[Режим]]></Mode>
+<Langid><![CDATA[ID языка]]></Langid>
+<FragDispTitle><![CDATA[Информация о фрагментации для]]></FragDispTitle>
+<Partnum><![CDATA[Номер раздела]]></Partnum>
+<FragmentType><![CDATA[Тип фрагмента]]></FragmentType>
+<Expression><![CDATA[Выражение]]></Expression>
+<Dbspace><![CDATA[Пространство базы данных]]></Dbspace>
+<Partition><![CDATA[Раздел]]></Partition>
+<ColDispTitle><![CDATA[Информация таблицы для]]></ColDispTitle>
+<Colno><![CDATA[Номер столбца]]></Colno>
+<Colname><![CDATA[Имя столбца]]></Colname>
+<Coltype><![CDATA[Тип столбца]]></Coltype>
+<Collength><![CDATA[Длина столбца]]></Collength>
+<ExtendedType><![CDATA[Расширенный тип]]></ExtendedType>
+<Browse><![CDATA[Просмотр]]></Browse>
+<Tabid><![CDATA[ID таблицы]]></Tabid>
+<Rowsize><![CDATA[Размер строки]]></Rowsize>
+<NRows><![CDATA[Число строк]]></NRows>
+<NIndexes><![CDATA[Число индексов]]></NIndexes>
+<Locklevel><![CDATA[Уровень блокировки]]></Locklevel>
+<Fextsize><![CDATA[Размер первого экстента]]></Fextsize>
+<Nextsize><![CDATA[Размер следующего экстента]]></Nextsize>
+<PagesUsed><![CDATA[Использовано страниц]]></PagesUsed>
+<View><![CDATA[Просмотреть]]></View>
+<chooseDB><![CDATA[Выберите базу данных.]]></chooseDB>
+<butRunQuery><![CDATA[Выполнить запрос]]></butRunQuery>
+<butSaveToFile><![CDATA[Сохранить запрос в файл]]></butSaveToFile>
+<butClear><![CDATA[Очистить]]></butClear>
+<spanRunQuery><![CDATA[Щелкните для выполнения запроса к базе данных.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[Щелкните для сохранения текста запроса в файле.]]></spanSaveToFile>
+<spanClear><![CDATA[Щелкните для очистки окна редактора.]]></spanClear>
+<ColOpt><![CDATA[Опции столбцов]]></ColOpt>
+<ShowAll><![CDATA[Показать все]]></ShowAll>
+<Show255><![CDATA[Показывать 255 символов]]></Show255>
+<ShowInFile><![CDATA[Показать в файл]]></ShowInFile>
+<ShowSize><![CDATA[Показать только размер]]></ShowSize>
+<IgnoreCol><![CDATA[Игнорировать столбец]]></IgnoreCol>
+<ShowImage><![CDATA[Показать как изображение]]></ShowImage>
+<Import><![CDATA[Импортировать]]></Import>
+<spanImport><![CDATA[Щелкните, чтобы импортировать запрос из файла]]></spanImport>
+<ImportQFrom><![CDATA[Импортировать запрос из:]]></ImportQFrom>
+<Change><![CDATA[Изменить]]></Change>
+<Reset><![CDATA[Сброс]]></Reset>
+<QOutput><![CDATA[Вывод запроса]]></QOutput>
+<Error><![CDATA[Ошибка]]></Error>
+<filename><![CDATA[Имя файла]]></filename>
+<error_num><![CDATA[Номер ошибки]]></error_num>
+<size_too_big><![CDATA[Слишком большой размер файла]]></size_too_big>
+<size_is_0><![CDATA[Размер файла равен 0]]></size_is_0>
+<not_text_type><![CDATA[Файл не является текстовым файлом]]></not_text_type>
+<cannot_read_file><![CDATA[Не удается прочитать файл]]></cannot_read_file>
+<Return><![CDATA[Возврат]]></Return>
+<Syntax><![CDATA[Произошла синтаксическая ошибка]]></Syntax>
+<QUERY><![CDATA[ЗАПРОС]]></QUERY>
+<NumFet><![CDATA[Число полученных]]></NumFet>
+<AllRowsFet><![CDATA[Все полученные строки]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[Этот запрос получит ограниченное число строк.]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[Текущее максимальное число строк, которое получат некоторые типы запросов]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[Одновременно может выполняться только один оператор SQL.  Все введенные символы после первой точки с запятой удалены.]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[Операция сохранения завершилась ошибкой. Запрос, который нужно сохранить в файл, отсутствует.]]></Save_NoQuery>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<NeedToLogin><![CDATA[Необходимо войти в систему.]]></NeedToLogin>
+<SelectDB><![CDATA[Выберите базу данных для соединения.]]></SelectDB>
+<ConnectingDB><![CDATA[Устанавливается соединение с базой данных]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[Редактор запросов SQL]]></SQLQueryEditor>
+<OneStmt><![CDATA[один оператор за раз]]></OneStmt>
+<RowFetchLimit><![CDATA[Для запросов с операторами order by, group by, subqueries, distinct, unions и aggregates число извлекаемых строк ограничено до:]]></RowFetchLimit> 
+<ShowAllText><![CDATA[Показать весь текст]]></ShowAllText>
+<ShowSomeText><![CDATA[Показывать часть текста]]></ShowSomeText>
+<ShowInFile><![CDATA[Показать в файле]]></ShowInFile>
+<IgnoreText><![CDATA[Игнорировать текст]]></IgnoreText>
+<IgnoreByte><![CDATA[Игнорировать байт]]></IgnoreByte>
+<SaveInFile><![CDATA[Сохранить в файл]]></SaveInFile>
+<file><![CDATA[файл]]></file>
+<filesize><![CDATA[размер={0}]]></filesize>
+<filetype><![CDATA[файл {0}]]></filetype>
+<ErrorUnableToChg><![CDATA[Ошибка: не удается изменить опцию]]></ErrorUnableToChg>
+<SQLResults><![CDATA[Результаты SQL]]></SQLResults>
+<SizeSixDBs><![CDATA[Размер 6 крупнейших баз данных]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[Выход из системы: Набор инструментов SQL]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[Вход в систему был выполнен с именем пользователя]]></LoggedInAs>
+<ClickToSelect><![CDATA[Щелкните, чтобы выполнить операцию select * в таблице.]]></ClickToSelect>
+<PartitionInfo><![CDATA[Данные о разделах]]></PartitionInfo>
+<CloseWindow><![CDATA[Закрыть окно]]></CloseWindow>
+<DisplayOptions><![CDATA[Показать опции]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[Процедуры/функции ({0})]]></ProceduresFunctions>
+<Function><![CDATA[Функция]]></Function>
+<Procedure><![CDATA[Процедура]]></Procedure>
+<All><![CDATA[Все]]></All>
+<Buffered><![CDATA[Буферизовано]]></Buffered>
+<Unbuffered><![CDATA[Не записано в буфер]]></Unbuffered>
+<NotLogged><![CDATA[Не записано в журнал]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[Последние статистические данные]]></LastStats>
+<Pages><![CDATA[Страницы]]></Pages>
+<pages><![CDATA[страниц]]></pages>
+<byte_blob><![CDATA[Байт/двоичный большой объект]]></byte_blob>
+<text_clob><![CDATA[Текст/символьный большой объект]]></text_clob>
+</lang>

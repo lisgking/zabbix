@@ -1,0 +1,10 @@
+PODATKI O LICENCIRANJU
+
+Licence za programe, navedene spodaj, se izdajajo v skladu z naslednjimi doloèbami in pogoji, in veljajo poleg tistih iz IBM Mednarodna licenèna pogodba za programe brez garancije (IBM-ova številka obrazca Z125-5589-05.
+
+Ime programa: IBM Informix Health Advisor Plug-in for OpenAdmin Tool V3.11
+Številka programa: Tool
+
+L/N:  L-DDAY-94MTMX
+D/N:  L-DDAY-94MTMX
+P/N:  L-DDAY-94MTMX 

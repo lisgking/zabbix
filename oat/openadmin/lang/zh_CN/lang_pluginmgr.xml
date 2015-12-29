@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[插件管理器]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[插件管理器无法写入 OAT 临时目录：tmp。要安装插件，必须具有写入 OAT 临时目录的权限。获取写入此目录的权限，并再次安装插件。]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[由于插件管理器要求 PHP 的配置中已安装 zip 模块，因此无法打开。OAT 正在使用的 PHP 没有安装 zip 模块。配置 Web 服务器上的 PHP，为其安装 zip 模块。或者，可使用 OAT 安装程序重新安装 OAT，该安装程序可以配置 PHP。]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[插件未安装。]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[已安装的插件]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[尚未安装的插件]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[没有选择要安装的插件。]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[没有可用的升级。]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[插件管理器无法写入插件目录。获取写入此目录的权限，并再次安装插件。]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[当前已安装的版本]]></CurrVerInstalled>
+<Unknown><![CDATA[未知]]></Unknown>
+<ClickToEnable><![CDATA[单击以启用]]></ClickToEnable>
+<ClickToDisable><![CDATA[单击以禁用]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[无法删除此文件：{0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[插件已成功升级。]]></PluginUpgraded>
+<PluginInstalled><![CDATA[插件已成功安装。]]></PluginInstalled>
+<Name><![CDATA[名称]]></Name>
+<Author><![CDATA[作者]]></Author>
+<Description><![CDATA[描述]]></Description>
+<Version><![CDATA[版本]]></Version>
+<ServerVersion><![CDATA[服务器版本]]></ServerVersion>
+<MinOATVersion><![CDATA[最低 OAT 版本]]></MinOATVersion>
+<Install><![CDATA[安装]]></Install>
+<Uninstall><![CDATA[卸载]]></Uninstall>
+<Upgrade><![CDATA[升级]]></Upgrade>
+<Enabled><![CDATA[已启用]]></Enabled>
+<updating><![CDATA[正在更新]]></updating>
+<LatestInstalled><![CDATA[最新安装]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[此操作会卸载插件 {0}。安装插件后会删除插件压缩文件。卸载插件后，将插件压缩文件复原到插件目录后才能重新安装该插件。\n\n是否要继续？]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[插件已成功卸载。]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[插件未卸载。]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OAT 尝试卸载该插件，但找不到插件标识。在“管理”菜单上，单击插件管理器，并查看已安装插件的列表。如有必要，请再次卸载该插件。]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[插件已卸载，但无法除去以下文件：]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[可以从计算机删除这些文件。]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[插件的菜单项无法删除。可在“菜单管理器”页面上删除菜单项。]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[无法安装选定的插件。该插件所需的 OAT 最低版本为 {0}。]]></MinOATVersionError>
+<Agree><![CDATA[同意]]></Agree>
+<Disagree><![CDATA[不同意]]></Disagree>
+</lang>

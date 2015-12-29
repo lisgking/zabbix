@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[검사에서 노드를 제외시키려면, 콤마로 구분한 노드 이름을 입력하십시오.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[검사에서 테이블을 제외시키려면, 콤마로 구분한 파티션 번호를 입력하십시오.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[검사에서 테이블을 제외시키려면, 콤마로 구분한 파티션 번호를 입력하십시오.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[검사에서 테이블을 제외시키려면, 콤마로 구분한 파티션 번호를 입력하십시오.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[검사에서 청크를 제외시키려면, 콤마로 구분한 청크 번호를 입력하십시오.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[검사에서 청크를 제외시키려면, 콤마로 구분한 청크 번호를 입력하십시오.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[검사에서 청크를 제외시키려면, 콤마로 구분한 청크 번호를 입력하십시오.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[검사에서 DBSPACE를 제외시키려면, 콤마로 구분한 DBSPACE 이름을 입력하십시오.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[검사에서 테이블을 제외시키려면, 콤마로 구분한 파티션 번호를 입력하십시오.]]></exc_Rowsize>
+</lang>

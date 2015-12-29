@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_example">
+<ibm_example_plugin><![CDATA[IBM Example Plug-in]]></ibm_example_plugin>
+<example><![CDATA[Example:]]></example>
+<table><![CDATA[Table]]></table>
+<piechart><![CDATA[Pie Chart]]></piechart>
+<linechart><![CDATA[Line Chart]]></linechart>
+<barchart><![CDATA[Bar Chart]]></barchart>
+
+<!--  Table example -->
+<users_and_seqscans><![CDATA[Users And Sequential Scans]]></users_and_seqscans>
+<username><![CDATA[User Name]]></username>
+<numseqscans><![CDATA[# of Sequential Scans]]></numseqscans>
+
+<!-- Pie Chart example -->
+<Pie_Chart_Title><![CDATA[I/O of the Top 20 Chunks]]></Pie_Chart_Title>
+<Chunk><![CDATA[Chunk]]></Chunk>
+<TotalIO><![CDATA[Total I/O]]></TotalIO>
+<Chunk_num><![CDATA[Chunk {0}]]></Chunk_num>
+
+<!-- Line Chart example -->
+<Line_Chart_Title><![CDATA[Checkpoints Graph]]></Line_Chart_Title>
+<dirty_buffers><![CDATA[# Dirty Buffers]]></dirty_buffers>
+<waits><![CDATA[# Waits]]></waits>
+
+<!-- Bar Chart example -->
+<Bar_Chart_Title><![CDATA[Space Graph]]></Bar_Chart_Title>
+<dirty_buffers><![CDATA[# Dirty Buffers]]></dirty_buffers>
+<waits><![CDATA[# Waits]]></waits>
+
+</lang>

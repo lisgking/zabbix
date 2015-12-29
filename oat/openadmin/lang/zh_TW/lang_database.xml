@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[片段]]></Chunks>
+<NoSQLToExecute><![CDATA[沒有要執行的 SQL]]></NoSQLToExecute>
+<QueryF><![CDATA[查詢：]]></QueryF>
+<ErrorF><![CDATA[錯誤：]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[資料庫查詢失敗：]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[連線失敗。]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[使用者 {0} 沒有資料庫 {1} 的連接許可權。]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[發現太多錯誤]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - 找不到儀表板 ID]]></ErrorGetPanels>
+</lang>

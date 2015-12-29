@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_language">
+
+<!-- Languages for the OAT user interface -->
+<en_US><![CDATA[angielski]]></en_US>
+<cs_CZ><![CDATA[czeski]]></cs_CZ>
+<fr_FR><![CDATA[francuski]]></fr_FR>
+<de_DE><![CDATA[niemiecki]]></de_DE>
+<hu_HU><![CDATA[węgierski]]></hu_HU>
+<it_IT><![CDATA[włoski]]></it_IT>
+<ja_JP><![CDATA[japoński]]></ja_JP>
+<ko_KR><![CDATA[koreański]]></ko_KR>
+<pl_PL><![CDATA[polski]]></pl_PL>
+<pt_BR><![CDATA[portugalski]]></pt_BR>
+<ru_RU><![CDATA[rosyjski]]></ru_RU>
+<zh_CN><![CDATA[chiński uproszczony]]></zh_CN>
+<sk_SK><![CDATA[słowacki]]></sk_SK>
+<es_ES><![CDATA[hiszpański]]></es_ES>
+<zh_TW><![CDATA[chiński tradycyjny]]></zh_TW>
+
+<!-- Languages for the server DB_LOCALE -->
+<Arabic><![CDATA[arabski]]></Arabic>
+<Azerbaijani><![CDATA[azerski]]></Azerbaijani>
+<Bulgarian><![CDATA[bułgarski]]></Bulgarian>
+<Chinese><![CDATA[chiński]]></Chinese>
+<Croatian><![CDATA[chorwacki]]></Croatian>
+<Czech><![CDATA[czeski]]></Czech>
+<Danish><![CDATA[duński]]></Danish>
+<Dutch><![CDATA[holenderski]]></Dutch>
+<English><![CDATA[angielski]]></English>
+<Estonian><![CDATA[estoński]]></Estonian>
+<Finnish><![CDATA[fiński]]></Finnish>
+<French><![CDATA[francuski]]></French>
+<German><![CDATA[niemiecki]]></German>
+<Greek><![CDATA[grecki]]></Greek>
+<Hebrew><![CDATA[hebrajski]]></Hebrew>
+<Hindi><![CDATA[hindi]]></Hindi>
+<Hungarian><![CDATA[węgierski]]></Hungarian>
+<Icelandic><![CDATA[islandzki]]></Icelandic>
+<Italian><![CDATA[włoski]]></Italian>
+<Japanese><![CDATA[japoński]]></Japanese>
+<Korean><![CDATA[koreański]]></Korean>
+<Latvian><![CDATA[łotewski]]></Latvian>
+<Lithuanian><![CDATA[litewski]]></Lithuanian>
+<Macedonian><![CDATA[macedoński]]></Macedonian>
+<Norwegian><![CDATA[norweski]]></Norwegian>
+<Polish><![CDATA[polski]]></Polish>
+<Portuguese><![CDATA[portugalski]]></Portuguese>
+<Romanian><![CDATA[rumuński]]></Romanian>
+<Russian><![CDATA[rosyjski]]></Russian>
+<Simplified_Chinese><![CDATA[chiński uproszczony]]></Simplified_Chinese>
+<Slovak><![CDATA[słowacki]]></Slovak>
+<Spanish><![CDATA[hiszpański]]></Spanish>
+<Swedish><![CDATA[szwedzki]]></Swedish>
+<Thai><![CDATA[tajski]]></Thai>
+<Turkish><![CDATA[turecki]]></Turkish>
+<Ukrainian><![CDATA[ukraiński]]></Ukrainian>
+<Vietnamese><![CDATA[wietnamski]]></Vietnamese>
+</lang>

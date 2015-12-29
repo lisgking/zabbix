@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[チャンク]]></Chunks>
+<NoSQLToExecute><![CDATA[実行する SQL がありません]]></NoSQLToExecute>
+<QueryF><![CDATA[問合せ:]]></QueryF>
+<ErrorF><![CDATA[エラー:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[データベース問合せが失敗しました:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[接続に失敗しました。]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[ユーザ {0} にはデータベース {1} に対する接続アクセス権がありません。]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[発生したエラーが多すぎます]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - ダッシュボード ID が見つかりません]]></ErrorGetPanels>
+</lang>

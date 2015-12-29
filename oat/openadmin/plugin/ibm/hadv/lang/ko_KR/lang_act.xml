@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_act">
+
+<act_r_DBSPACETEMP><![CDATA[ DBSPACETEMP 구성 매개변수가 설정되지 않았습니다. 임시 테이블 및 정렬 파일의 최상의 성능을 위해서, DBSPACETEMP 구성 매개변수를 사용하여 개별 디스크에 두 개 이상의 DBSPACE를 지정하십시오.]]></act_r_DBSPACETEMP>
+<act_r_DUMPDIR><![CDATA[해당사항 없음]]></act_r_DUMPDIR>
+<act_r_DYNAMIC_LOGS><![CDATA[해당사항 없음]]></act_r_DYNAMIC_LOGS>
+<act_r_Logdbs><![CDATA[논리 로그 파일이 루트 DBSPACE(rootdbs)에 저장되어 있습니다. 논리 로그를 루트 DBSPACE로부터 활성 테이블 또는 물리 로그가 공유하지 않는 디스크의 DBSPACE로 이동하십시오.]]></act_r_Logdbs>
+<act_r_LTXHWM><![CDATA[동적 로그 할당(DYNAMIC_LOGS)이 꺼져 있고 LTXHWM(long-transaction high water mark)이 %lparam1%보다 큽니다. 긴 트랜잭션 롤백으로 인해 시스템이 정지되지 않도록 LTXHWM 구성 매개변수를 더 낮게 설정하십시오.]]></act_r_LTXHWM>
+<act_r_LRU_MIN><![CDATA[해당사항 없음]]></act_r_LRU_MIN>
+<act_r_LTAPEDEV><![CDATA[해당사항 없음]]></act_r_LTAPEDEV>
+<act_r_NOAGE><![CDATA[해당사항 없음]]></act_r_NOAGE>
+<act_r_ONDBSPACEDOWN><![CDATA[해당사항 없음]]></act_r_ONDBSPACEDOWN>
+<act_r_Physdbs><![CDATA[물리 로그가 루트 DBSPACE(rootdbs)에 저장되어 있습니다. 물리 로그를 루트 DBSPACE로부터 활성 테이블 또는 논리 로그 파일이 공유하지 않는 디스크의 DBSPACE로 이동하십시오.]]></act_r_Physdbs>
+<act_r_SINGLE_CPU_VP><![CDATA[해당사항 없음]]></act_r_SINGLE_CPU_VP>
+<act_r_TAPEDEV><![CDATA[해당사항 없음]]></act_r_TAPEDEV>
+<act_r_ATS_Files><![CDATA[Enterprise Replication이 생성 중인 ATS 파일 수가 %param3%보다 큽니다. 이 파일을 검토하고 적절한 조치를 수행하십시오. ]]></act_r_ATS_Files>
+<act_r_ER_DDRBlock><![CDATA[트랜잭션 장애(DDRBLOCK)가 시작되기 전에 남아 있는 로그 페이지 백분율이 %param3%%보다 작습니다. 동적 로그 할당 사용이 포함될 수 있는 로그 래핑을 방지하려면 적절한 조치를 수행하십시오. ]]></act_r_ER_DDRBlock>
+<act_r_ER_Down_Node><![CDATA[Enterprise Replication에서 노드가 다운되었음을 발견했습니다. 노드가 다운된 이유를 조사하고 적절한 조치를 수행하십시오. ]]></act_r_ER_Down_Node>
+<act_r_RIS_Files><![CDATA[Enterprise Replication이 생성 중인 RIS 파일 수가 %param3%보다 큽니다. 이 파일을 검토하고 적절한 조치를 수행하십시오. ]]></act_r_RIS_Files>
+<act_r_OS_Free_Memory><![CDATA[운영 체제에 사용할 수 있는 여유 메모리가 사용 가능한 총 메모리의 %param3%%보다 작습니다. 운영 체제 메모리가 부족하여 성능이 저하될 수 있습니다. 적절한 조치를 수행하여 운영 체제 메모리를 늘리십시오. ]]></act_r_OS_Free_Memory>
+<act_r_OS_Online_Procs><![CDATA[해당사항 없음]]></act_r_OS_Online_Procs>
+<act_r_OS_Procs><![CDATA[해당사항 없음]]></act_r_OS_Procs>
+<act_r_OS_Open_File_Limit><![CDATA[운영 체제의 프로세스마다 열려 있는 파일 설명자 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 프로세스마다 열려 있는 파일 설명자 수가 충분하지 않을 경우 데이터베이스 서버에 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_r_OS_Open_File_Limit>
+<act_r_OS_semid><![CDATA[운영 체제의 세마포어 세트 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 세마포어 세트 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_r_OS_semid>
+<act_r_OS_semnum><![CDATA[운영 체제의 총 세마포어 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 세마포어 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_r_OS_semnum>
+<act_r_OS_shmids><![CDATA[운영 체제의 공유 메모리 ID 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 ID 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_r_OS_shmids>
+<act_r_OS_shmmax><![CDATA[운영 체제에 대한 공유 메모리 세그먼트의 최대 크기가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 세그먼트의 최대 크기가 너무 낮게 설정된 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하십시오. ]]></act_r_OS_shmmax>
+<act_r_OS_shmnumsegs><![CDATA[운영 체제의 공유 메모리 세그먼트 총 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 세그먼수 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_r_OS_shmnumsegs>
+<act_r_CKPT_Caused_By_LLOG><![CDATA[논리 로그 리소스가 부족하여 체크포인트 처리 중에 장애가 발생했습니다. 이런 상황을 방지하려면 논리 로그를 추가하십시오. ]]></act_r_CKPT_Caused_By_LLOG>
+<act_r_CKPT_Caused_By_PLOG><![CDATA[물리 로그 리소스가 부족하여 체크포인트 처리 중에 장애가 발생했습니다. 이런 상황을 방지하려면 물리 로그의 크기를 늘리시시오. ]]></act_r_CKPT_Caused_By_PLOG>
+<act_r_Critical_Section><![CDATA[일부 체크포인트에 %lparam1%초보다 큰 크리티컬 섹션(critical section) 시간이 있습니다. 체크포인트 처리 중에 크리티컬 섹션에서 소비한 시간을 조사하십시오. 이 시간으로 인해 장애가 발생할 수 있기 때문입니다. ]]></act_r_Critical_Section>
+<act_r_Diskflush><![CDATA[체크포인트 중에 초당 디스크 플러시 횟수가 %lparam1%보다 작습니다. 입출력 문제로 인해 디스크 작업이 느려지는지 조사하십시오. ]]></act_r_Diskflush>
+<act_r_Longest_Waiter><![CDATA[일부 체크포인트에 %lparam1%초보다 긴 대기 시간이 있습니다. 원인을 조사하여 체크포인트 성능을 개선하십시오. ]]></act_r_Longest_Waiter>
+<act_r_Buffreads_Per_Table><![CDATA[일부 테이블의 버퍼 읽기 수가 모든 버퍼 읽기의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_r_Buffreads_Per_Table>
+<act_r_Buffwrites_Per_Table><![CDATA[일부 테이블의 버퍼 쓰기 수가 모든 버퍼 쓰기의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_r_Buffwrites_Per_Table>
+<act_r_Seq_Scans_Per_Table><![CDATA[일부 테이블의 순차 스캔 수가 모든 순차 스캔의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_r_Seq_Scans_Per_Table>
+<act_r_Buffreads_Cache><![CDATA[버퍼에 캐시된 읽기의 백분율(%cached)이 %param3%%보다 작습니다. 캐시된 현재 백분율은 %param1%%입니다. 버퍼 수를 늘리면 캐시된 백분율이 개선될 수 있습니다. ]]></act_r_Buffreads_Cache>
+<act_r_Buffwrites_Cache><![CDATA[버퍼에 캐시된 쓰기의 백분율(%cached)이 %param3%%보다 작습니다. 캐시된 현재 백분율은 %param1%%입니다. 버퍼 수를 늘리면 캐시된 백분율이 개선될 수 있습니다. ]]></act_r_Buffwrites_Cache>
+<act_r_Disksorts><![CDATA[디스크 정렬 수가 총 정렬의 %param3%%보다 큽니다. 현재 디스크 정렬 수는 %param1%%입니다. 정렬을 위한 공유 메모리 추가 옵션을 조사하십시오. ]]></act_r_Disksorts>
+<act_r_isrollbacks><![CDATA[롤백된 트랜잭션 수가 총 트랜잭션의 %param3%%보다 큽니다. 과도한 롤백이 응용프로그램 디자인 또는 충분하지 않은 논리 로그 리소스 때문인지 조사하십시오. ]]></act_r_isrollbacks>
+<act_r_Foreground_Writes><![CDATA[포그라운드 쓰기 수가 총 쓰기의 %param3%%보다 큽니다. 버퍼 수를 늘리면 포그라운드 쓰기인 쓰기의 백분율이 줄어들 수 있습니다. ]]></act_r_Foreground_Writes>
+<act_r_LLOG_Pages_Per_IO><![CDATA[논리 로그 페이지 대 입출력(페이지/입출력)의 비율이 %param3%%보다 큽니다. 논리 로그 페이지 대 입출력의 현재 비율은 %param1%%입니다. 논리-로그 버퍼(LOGBUFF)의 크기를 조사하십시오. ]]></act_r_LLOG_Pages_Per_IO>
+<act_r_Lock_Waits><![CDATA[로크 대기 수가 총 로크 요청의 %param3%%보다 큽니다. 현재 로크 대기는 총 로크 요청의 %param1%%입니다. 페이지 레벨 로킹이 포함된 테이블과 응용프로그램의 동시성을 조사하십시오. ]]></act_r_Lock_Waits>
+<act_r_PLOG_Pages_Per_IO><![CDATA[물리 로그 페이지 대 입출력(페이지/입출력)의 비율이 %param3%%보다 큽니다. 물리 로그 페이지 대 입출력의 현재 비율은 %param1%%입니다. 물리 로그 버퍼의 크기를 조사하십시오. ]]></act_r_PLOG_Pages_Per_IO>
+<act_r_Seq_Scans><![CDATA[순차 스캔 수가 총 SQL문의 %param3%%보다 큽니다. 순차 스캔의 성능을 개선하기 위한 방식을 조사하십시오. ]]></act_r_Seq_Scans>
+<act_r_Offline_Chunks><![CDATA[검사를 통해 %param1% 청크가 오프라인임이 발견되었습니다. 청크가 오프라인인 이유를 조사하고 적절한 조치를 수행하십시오. ]]></act_r_Offline_Chunks>
+<act_r_Chunk_IO_OPS><![CDATA[일부 청크의 입출력 조작 수가 모든 입출력 조작의 %lparam1%%보다 큽니다. 입출력 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_r_Chunk_IO_OPS>
+<act_r_Chunk_IO_Reads><![CDATA[일부 청크의 읽기 조작 수가 모든 읽기 조작의 %lparam1%%보다 큽니다. 읽기 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_r_Chunk_IO_Reads>
+<act_r_Chunk_IO_Writes><![CDATA[일부 청크의 쓰기 조작 수가 모든 쓰기 조작의 %lparam1%%보다 큽니다. 쓰기 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_r_Chunk_IO_Writes>
+<act_r_Dbspace_Free_Space><![CDATA[일부 DBSPACE의 여유 공간이 DBSPACE의 총 영역의 %lparam1%%보다 작습니다. 이 DBSPACE에 청크를 추가해보십시오. ]]></act_r_Dbspace_Free_Space>
+<act_r_Rowsize><![CDATA[일부 테이블의 경우 DBSPACE의 페이지 크기와 테이블의 행 크기 때문에 페이지의 %lparam1%%을(를) 사용할 수 없습니다. 페이지 당 여유 공간을 늘리기 위한 조치를 조사하십시오. 예를 들어, 다른 페이지 크기를 가진 DBSPACE로 테이블을 이동하거나 테이블을 다시 설계합니다. ]]></act_r_Rowsize>
+
+
+
+
+
+<act_y_DBSPACETEMP><![CDATA[ DBSPACETEMP 구성 매개변수에 공백 문자가 있습니다. DBSPACE 사이의 공백을 제거하십시오.]]></act_y_DBSPACETEMP>
+<act_y_DUMPDIR><![CDATA[DUMPDIR 구성 매개변수가 %lparam1% 디렉토리로 설정되어 있습니다. 이 구성 매개변수는 진단 정보가 작성되는 디렉토리를 지정합니다. DUMPDIR 구성 매개변수를 다른 디렉토리로 변경하십시오.]]></act_y_DUMPDIR>
+<act_y_DYNAMIC_LOGS><![CDATA[동적 로그 할당(DYNAMIC_LOGS)이 꺼져 있습니다. 긴 트랜잭션 롤백으로 인해 시스템이 정지되지 않도록 동적 로그 할당을 켜십시오.]]></act_y_DYNAMIC_LOGS>
+<act_y_Logdbs><![CDATA[논리 로그가 활성 테이블이 있는 DBSPACE에 저장되어 있습니다. 논리 로그 파일을 활성 테이블 또는 물리 로그가 공유하지 않는 디스크의 DBSPACE로 이동하십시오.]]></act_y_Logdbs>
+<act_y_LTXHWM><![CDATA[동적 로그 할당(DYNAMIC_LOGS)이 꺼져 있고 LTXHWM(long-transaction high water mark)이 %lparam1%보다 큽니다. 긴 트랜잭션 롤백으로 인해 시스템이 정지되지 않도록 LTXHWM 구성 매개변수를 더 낮게 설정하십시오.]]></act_y_LTXHWM>
+<act_y_LRU_MIN><![CDATA[최근 사용도가 제일 낮은 최소 더티 필드(lru_min_dirty)의 값인 %param1%%이 %param3%%보다 작거나 같습니다. 간격 체크포인트의 도입으로, 필드 값을 높이면 버퍼 풀 및 성능 활용률을 향상시킬 수 있습니다.]]></act_y_LRU_MIN>
+<act_y_LTAPEDEV><![CDATA[LTAPEDEV 구성 매개변수가 %lparam1% 디렉토리로 설정되어 있습니다. 이 구성 매개변수는 논리 로그 파일이 아카이브되는 위치를 지정합니다. LTAPEDEV 구성 매개변수를 다른 디렉토리로 설정하십시오.]]></act_y_LTAPEDEV>
+<act_y_NOAGE><![CDATA[VPCLASS 구성 매개변수의 noage 옵션이 설정되지 않았습니다. 운영 체제에서 긴 실행 프로세스의 우선 순위를 낮출 때 우선 순위 에이징이 발생할 수 있습니다. 우선 순위 에이징을 사용할 수 없도록 noage 옵션을 설정하십시오.]]></act_y_NOAGE>
+<act_y_ONDBSPACEDOWN><![CDATA[ONDBSPACEDOWN 구성 매개변수가 계속(0)으로 설정되었습니다. 데이터베이스 서버에 발생한 중요하지 않은 DBSPACE가 중단되어 있을 때, 데이터베이스 서버가 DBSPACE를 오프라인으로 표시하고 계속합니다. DBSPACE를 복원해야 합니다. DBSPACE가 중단된 것으로 표시되고 복원할 필요가 없을 경우에 적절한 조치를 취할 수 있도록 ONDBSPACEDOWN 구성 매개변수를 중단(1) 또는 대기(2)로 설정하십시오.]]></act_y_ONDBSPACEDOWN> 
+<act_y_Physdbs><![CDATA[물리 로그가 활성 테이블이 포함된 DBSPACE에 저장되어 있습니다. 물리 로그를 활성 테이블 또는 논리 로그 파일이 공유하지 않는 디스크의 DBSPACE로 이동하십시오.]]></act_y_Physdbs>
+<act_y_SINGLE_CPU_VP><![CDATA[SINGLE_CPU_VP 구성 매개변수가 설정되고 MULTIPROCESSOR 구성 매개변수가 1로 설정되어 있습니다. 불필요한 로킹을 방지하려면, MULTIPROCESSOR 구성 매개변수를 0으로 설정하십시오.]]></act_y_SINGLE_CPU_VP>
+<act_y_TAPEDEV><![CDATA[TAPEDEV 구성 매개변수가 %lparam1% 디렉토리로 설정되어 있습니다. 이 구성 매개변수는 아카이브의 저장 위치를 지정합니다. TAPEDEV 구성 매개변수를 다른 디렉토리로 설정하십시오.]]></act_y_TAPEDEV>
+<act_y_ATS_Files><![CDATA[Enterprise Replication이 생성 중인 ATS 파일 수가 %param3%보다 큽니다. 이 파일을 검토하고 적절한 조치를 수행하십시오. ]]></act_y_ATS_Files>
+<act_y_ER_DDRBlock><![CDATA[트랜잭션 장애(DDRBLOCK)가 시작되기 전에 남아 있는 로그 페이지 백분율이 %param3%%보다 작습니다. 동적 로그 할당 사용이 포함될 수 있는 로그 래핑을 방지하려면 적절한 조치를 수행하십시오. ]]></act_y_ER_DDRBlock>
+<act_y_ER_Down_Node><![CDATA[해당사항 없음]]></act_y_ER_Down_Node>
+<act_y_RIS_Files><![CDATA[Enterprise Replication이 생성 중인 RIS 파일 수가 %param3%보다 큽니다. 이 파일을 검토하고 적절한 조치를 수행하십시오. ]]></act_y_RIS_Files>
+<act_y_OS_Free_Memory><![CDATA[운영 체제에 사용할 수 있는 여유 메모리가 사용 가능한 총 메모리의 %param3%%보다 작습니다. 운영 체제 메모리가 부족하여 성능이 저하될 수 있습니다. 적절한 조치를 수행하여 운영 체제 메모리를 늘리십시오. ]]></act_y_OS_Free_Memory>
+<act_y_OS_Online_Procs><![CDATA[운영 체제의 온라인 프로세서 수(%param3%)가 운영 체제의 총 프로세서 수(%param1%)보다 작습니다. 일부 프로세서가 온라인 상태가 아닌 이유를 확인하고 적절한 조치를 수행하십시오. ]]></act_y_OS_Online_Procs> 
+<act_y_OS_Procs><![CDATA[CPU 가상 프로세서 수가 운영 체제의 CPU의 %param3%%보다 작습니다. CPU 가상 프로세서 수를 늘리면 성능이 개선될 수 있습니다. 적절한 조치를 수행하여 CPU 가상 프로세서 수를 늘리십시오. ]]></act_y_OS_Procs>
+<act_y_OS_Open_File_Limit><![CDATA[운영 체제의 프로세스마다 열려 있는 파일 설명자 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 프로세스마다 열려 있는 파일 설명자 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_y_OS_Open_File_Limit>
+<act_y_OS_semid><![CDATA[운영 체제의 세마포어 세트 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 세마포어 세트 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_y_OS_semid>
+<act_y_OS_semnum><![CDATA[운영 체제의 총 세마포어 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 세마포어 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_y_OS_semnum>
+<act_y_OS_shmids><![CDATA[운영 체제의 공유 메모리 ID 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 ID 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_y_OS_shmids>
+<act_y_OS_shmmax><![CDATA[운영 체제에 대한 공유 메모리 세그먼트의 최대 크기가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 세그먼트의 최대 크기가 너무 낮게 설정된 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하십시오. ]]></act_y_OS_shmmax>
+<act_y_OS_shmnumsegs><![CDATA[운영 체제의 공유 메모리 세그먼트 총 수가 %param3%보다 작습니다. 현재 값은 %param1%입니다. 공유 메모리 세그먼수 수가 충분하지 않을 경우 예기치 않은 동작이 발생할 수 있습니다. 적절한 조치를 수행하여 이 값을 늘리십시오. ]]></act_y_OS_shmnumsegs>
+<act_y_CKPT_Caused_By_LLOG><![CDATA[논리 로그 리소스가 부족하여 체크포인트가 트리거되었습니다. 논리 로그 리소스가 부족할 경우 체크포인트 처리 중에 장애가 발생할 수 있습니다. 이런 상황을 방지하려면 논리 로그를 추가하십시오. ]]></act_y_CKPT_Caused_By_LLOG>
+<act_y_CKPT_Caused_By_PLOG><![CDATA[물리 로그 리소스가 부족하여 체크포인트가 트리거되었습니다. 물리 로그 리소스가 부족할 경우 체크포인트 처리 중에 장애가 발생할 수 있습니다. 이런 상황을 방지하려면 물리 로그의 크기를 늘리시시오. ]]></act_y_CKPT_Caused_By_PLOG>
+<act_y_Critical_Section><![CDATA[일부 체크포인트에 %lparam1%초보다 큰 크리티컬 섹션(critical section) 시간이 있습니다. 체크포인트 처리 중에 크리티컬 섹션에서 소비한 시간을 조사하십시오. 이 시간으로 인해 장애가 발생할 수 있기 때문입니다. ]]></act_y_Critical_Section>
+<act_y_Diskflush><![CDATA[체크포인트 처리 중에 초당 디스크 플러시 횟수가 %lparam1%보다 작습니다. 입출력 문제로 인해 디스크 작업이 느려지는지 조사하십시오. ]]></act_y_Diskflush>
+<act_y_Longest_Waiter><![CDATA[일부 체크포인트에 %lparam1%초보다 긴 대기 시간이 있습니다. 원인을 조사하여 체크포인트 성능을 개선하십시오. ]]></act_y_Longest_Waiter>
+<act_y_Buffreads_Per_Table><![CDATA[일부 테이블의 버퍼 읽기 수가 모든 버퍼 읽기의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_y_Buffreads_Per_Table>
+<act_y_Buffwrites_Per_Table><![CDATA[일부 테이블의 버퍼 쓰기 수가 모든 버퍼 쓰기의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_y_Buffwrites_Per_Table>
+<act_y_Seq_Scans_Per_Table><![CDATA[일부 테이블의 순차 스캔 수가 모든 순차 스캔의 %lparam1%%보다 큽니다. 원인을 조사하여 성능을 개선하십시오. ]]></act_y_Seq_Scans_Per_Table>
+<act_y_Buffreads_Cache><![CDATA[버퍼에 캐시된(%cached) 읽기의 백분율이 %param3%% 미만입니다. 캐시된 현재 백분율은 %param1%%입니다. 버퍼 수를 늘리면 캐시된 백분율이 개선될 수 있습니다. ]]></act_y_Buffreads_Cache>
+<act_y_Buffwrites_Cache><![CDATA[버퍼에 캐시된(%cached) 쓰기의 백분율이 %param3%% 미만입니다. 캐시된 현재 백분율은 %param1%%입니다. 버퍼 수를 늘리면 캐시된 백분율이 개선될 수 있습니다. ]]></act_y_Buffwrites_Cache>
+<act_y_Disksorts><![CDATA[디스크 정렬 수가 총 정렬의 %param3%%보다 큽니다. 현재 디스크 정렬 수는 %param1%%입니다. 정렬을 위한 공유 메모리 추가 옵션을 조사하십시오. ]]></act_y_Disksorts>
+<act_y_isrollbacks><![CDATA[롤백된 트랜잭션 수가 총 트랜잭션의 %param3%%보다 큽니다. 과도한 롤백이 응용프로그램 디자인 또는 충분하지 않은 논리 로그 리소스 때문인지 조사하십시오. ]]></act_y_isrollbacks>
+<act_y_Foreground_Writes><![CDATA[포그라운드 쓰기 수가 총 쓰기의 %param3%%보다 큽니다. 버퍼 수를 늘리면 포그라운드 쓰기인 쓰기의 백분율이 줄어들 수 있습니다. ]]></act_y_Foreground_Writes>
+<act_y_LLOG_Pages_Per_IO><![CDATA[논리 로그 페이지 대 입출력(페이지/입출력)의 비율이 %param3%%보다 작습니다. 논리 로그 페이지 대 입출력의 현재 비율은 %param1%%입니다. 논리-로그 버퍼(LOGBUFF)의 크기를 조사하고 버퍼 미지정 데이터베이스의 트랜잭션 처리량을 검토하십시오. ]]></act_y_LLOG_Pages_Per_IO>
+<act_y_Lock_Waits><![CDATA[로크 대기 수가 총 로크 요청의 %param3%%보다 큽니다. 현재 로크 대기는 총 로크 요청의 %param1%%입니다. 페이지 레벨 로킹이 포함된 테이블과 응용프로그램의 동시성을 조사하십시오. ]]></act_y_Lock_Waits>
+<act_y_PLOG_Pages_Per_IO><![CDATA[물리 로그 페이지 대 입출력(페이지/입출력)의 비율이 %param3%%보다 작습니다. 물리 로그 페이지 대 입출력의 현재 비율이 %param1%%입니다.  물리 로그 버퍼의 크기를 조사하십시오. ]]></act_y_PLOG_Pages_Per_IO>
+<act_y_Seq_Scans><![CDATA[순차 스캔 수가 총 SQL문의 %param3%%보다 큽니다. 순차 스캔의 성능을 개선하기 위한 방식을 조사하십시오. ]]></act_y_Seq_Scans>
+<act_y_Offline_Chunks><![CDATA[해당사항 없음]]></act_y_Offline_Chunks>
+<act_y_Chunk_IO_OPS><![CDATA[일부 청크의 입출력 조작 수가 모든 입출력 조작의 %lparam1%%보다 큽니다. 입출력 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_y_Chunk_IO_OPS>
+<act_y_Chunk_IO_Reads><![CDATA[일부 청크의 읽기 조작 수가 모든 읽기 조작의 %lparam1%%보다 큽니다. 읽기 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_y_Chunk_IO_Reads>
+<act_y_Chunk_IO_Writes><![CDATA[일부 청크의 쓰기 조작 수가 모든 쓰기 조작의 %lparam1%%보다 큽니다. 쓰기 조작이 청크에서 더 균등하게 전개되어 있는지 조사하여 성능을 개선하십시오. ]]></act_y_Chunk_IO_Writes>
+<act_y_Dbspace_Free_Space><![CDATA[일부 DBSPACE의 여유 공간이 DBSPACE의 총 공간의 %lparam1%%보다 작습니다. 이 DBSPACE에 청크를 추가해보십시오. ]]></act_y_Dbspace_Free_Space>
+<act_y_Rowsize><![CDATA[일부 테이블의 경우 DBSPACE의 페이지 크기와 테이블의 행 크기 때문에 페이지의 %lparam1%%을(를) 사용할 수 없습니다. 페이지 당 여유 공간을 늘리기 위한 조치를 조사하십시오. 예를 들어, 다른 페이지 크기를 가진 DBSPACE로 테이블을 이동하거나 테이블을 다시 설계합니다. ]]></act_y_Rowsize>
+
+</lang>

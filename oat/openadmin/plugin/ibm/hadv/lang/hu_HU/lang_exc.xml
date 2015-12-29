@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_exc">
+
+<exc_ER_Down_Node><![CDATA[Ha bizonyos csomópontokat ki szeretne zárni az ellenőrzésből, akkor adja meg a csomópontok neveit vesszőkkel elválasztva.]]></exc_ER_Down_Node>
+<exc_Buffreads_Per_Table><![CDATA[Ha bizonyos táblákat ki szeretne zárni az ellenőrzésből, akkor adja meg a partíciószámokat vesszőkkel elválasztva.]]></exc_Buffreads_Per_Table>
+<exc_Buffwrites_Per_Table><![CDATA[Ha bizonyos táblákat ki szeretne zárni az ellenőrzésből, akkor adja meg a partíciószámokat vesszőkkel elválasztva.]]></exc_Buffwrites_Per_Table>
+<exc_Seq_Scans_Per_Table><![CDATA[Ha bizonyos táblákat ki szeretne zárni az ellenőrzésből, akkor adja meg a partíciószámokat vesszőkkel elválasztva.]]></exc_Seq_Scans_Per_Table>
+<exc_Chunk_IO_Reads><![CDATA[Ha bizonyos csonkokat ki szeretne zárni az ellenőrzésből, akkor adja meg a csonkszámokat vesszőkkel elválasztva.]]></exc_Chunk_IO_Reads>
+<exc_Chunk_IO_Writes><![CDATA[Ha bizonyos csonkokat ki szeretne zárni az ellenőrzésből, akkor adja meg a csonkszámokat vesszőkkel elválasztva.]]></exc_Chunk_IO_Writes>
+<exc_Chunk_IO_OPS><![CDATA[Ha bizonyos csonkokat ki szeretne zárni az ellenőrzésből, akkor adja meg a csonkszámokat vesszőkkel elválasztva.]]></exc_Chunk_IO_OPS>
+<exc_Dbspace_Free_Space><![CDATA[Ha bizonyos adatbázis-területeket ki szeretne zárni az ellenőrzésből, akkor adja meg az adatbázis-területek neveit vesszőkkel elválasztva.]]></exc_Dbspace_Free_Space>
+<exc_Rowsize><![CDATA[Ha bizonyos táblákat ki szeretne zárni az ellenőrzésből, akkor adja meg a partíciószámokat vesszőkkel elválasztva.]]></exc_Rowsize>
+</lang>

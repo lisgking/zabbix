@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_schemamgr">
+<schemamgr><![CDATA[스키마 관리자]]></schemamgr>
+<FragmentedTable><![CDATA[분할된 테이블]]></FragmentedTable>
+<PseudoTable><![CDATA[의사 테이블]]></PseudoTable>
+<NotApplicable><![CDATA[적용할 수 없음]]></NotApplicable>
+<check_admin_log><![CDATA[추가 정보에 대한 명령 히스토리 또는 온라인 로그를 검사합니다.]]></check_admin_log>
+<running><![CDATA[{0} 실행 중]]></running>
+<interval_frag_strategy><![CDATA[분할 키 컬럼: {0}. 간격: {1}. 저장 위치: {2}]]></interval_frag_strategy>
+<rolling_window_frag_strategy><![CDATA[롤링 창 옵션:]]></rolling_window_frag_strategy>
+<rolling_window_limit_by_frag><![CDATA[테이블을 {0}개의 분할로 제한]]></rolling_window_limit_by_frag>
+<rolling_window_limit_by_size><![CDATA[테이블 크기를 {0}(으)로 제한]]></rolling_window_limit_by_size>
+<detach><![CDATA[분리]]></detach>
+<discard><![CDATA[삭제]]></discard>
+<x_years><![CDATA[{0}년]]></x_years>
+<x_months><![CDATA[{0}개월]]></x_months>
+<x_days><![CDATA[{0}일]]></x_days>
+</lang>

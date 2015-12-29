@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Overenie systému]]></mainTitle>
+<checkDataFormat><![CDATA[Skontrolovať formát údajov]]></checkDataFormat>
+<databaseName><![CDATA[Názov databázy]]></databaseName>
+<tableName><![CDATA[Názov tabuľky]]></tableName>
+<chkTable><![CDATA[Skontrolovať tabuľku]]></chkTable>
+<chkExtFormat><![CDATA[Skontrolovať formát rozšírenia]]></chkExtFormat>
+<extName><![CDATA[Názov databázového priestoru]]></extName>
+<chkExtent><![CDATA[Skontrolovať rozsah]]></chkExtent>
+<valResTo><![CDATA[Výsledky overenia do ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - Overenie systému]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Overenie oncheck dokončené.]]></oncheckComplete>
+<ValidationResults><![CDATA[Výsledky overenia ...]]></ValidationResults>
+<SysValNotValid><![CDATA[Overenie systému nie je platné pre sekundárne systémy.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Užívatelia s oprávnením len na čítanie nemôžu vykonať túto operáciu. Ste prihlásený ako užívateľ s oprávnením len na čítanie.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Upozornenie: Spustenie kontrolu môže zaťažiť veľké množstvo výpočtových prostriedkov v závislosti od počtu stránok. Táto akcia prečíta všetky stránky pre zadané tabuľky, okrem stránok BLOB a SB, a skontroluje konzistentnosť všetkých týchto stránok. Chcete pokračovať?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Nástroj OpenAdmin Tool nemôže na tejto stránke zobraziť informácie o databázovom serveri, ktorý používa viacero neanglických miestnych nastavení databázy. Databázový server obsahuje viacero neanglických miestnych nastavení databázy.]]></NotYetImpl>
+</lang>

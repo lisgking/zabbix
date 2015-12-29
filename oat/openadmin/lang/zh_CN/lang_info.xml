@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_info">
+<linksTitle><![CDATA[有用链接]]></linksTitle>
+<aboutTitle><![CDATA[关于 OAT]]></aboutTitle>
+<productInfo><![CDATA[产品信息]]></productInfo>
+<productName><![CDATA[产品名称]]></productName>
+<version><![CDATA[版本]]></version>
+<buildtimestamp><![CDATA[构建时间戳记]]></buildtimestamp>
+<copyright><![CDATA[&copy; Copyright IBM Corporation. 2007, 2013.<br/>&copy; Copyright The PHP Group 1999-2010.<br/>请参阅 notices.txt 文件以获取其他信息。]]></copyright>
+<IBMInfo><![CDATA[IBM]]></IBMInfo>
+<IIUGInfo><![CDATA[IIUG]]></IIUGInfo>
+<IBMInformixHomepage><![CDATA[IBM Informix 产品系列]]></IBMInformixHomepage>
+<IBMInformixProducts><![CDATA[有关 IBM Informix 产品的信息]]></IBMInformixProducts>
+<OATHomePage><![CDATA[OpenAdmin Tool]]></OATHomePage>
+<OATHomePageDesc><![CDATA[有关 OpenAdmin Tool (OAT) 的信息]]></OATHomePageDesc>
+<OATForum><![CDATA[OpenAdmin Tool 论坛]]></OATForum>
+<OATForumDesc><![CDATA[Informix 国际用户组 (IIUG) 主管的 OAT 的支持论坛]]></OATForumDesc>
+<InfoCenter_v11.50><![CDATA[IBM Informix V11.50 信息中心]]></InfoCenter_v11.50>
+<InfoCenter_v11.50_Desc><![CDATA[IBM Informix V11.50 文档]]></InfoCenter_v11.50_Desc>
+<InfoCenter_v11.70><![CDATA[IBM Informix V11.70 信息中心]]></InfoCenter_v11.70>
+<InfoCenter_v11.70_Desc><![CDATA[IBM Informix V11.70 文档]]></InfoCenter_v11.70_Desc>
+<InfoCenter_v12.10><![CDATA[IBM Informix V12.10 信息中心]]></InfoCenter_v12.10>
+<InfoCenter_v12.10_Desc><![CDATA[IBM Informix V12.10 的文档]]></InfoCenter_v12.10_Desc>
+<IDSProdSupport><![CDATA[IBM Support Portal：Informix 服务器]]></IDSProdSupport>
+<IDSProdSupportPage><![CDATA[IBM Informix 服务器支持]]></IDSProdSupportPage>
+<InformixProdSupp><![CDATA[IBM Support Portal：Informix 产品系列]]></InformixProdSupp>
+<InformixProdSuppPage><![CDATA[IBM Informix 产品支持]]></InformixProdSuppPage>
+<InformixDevZone><![CDATA[IBM developerWorks：IBM Informix]]></InformixDevZone>
+<InformixDevZoneDesc><![CDATA[IBM 资源中针对开发者和 IT 专家的有关 Informix 的技术信息]]></InformixDevZoneDesc>
+<IIUGHome><![CDATA[Informix 国际用户组]]></IIUGHome>
+<IIUGHomePage><![CDATA[Informix 国际用户组 (IIUG) 主页]]></IIUGHomePage>
+<IIUGSuppForumOAT><![CDATA[IIUG 主管的 OpenAdmin Tool (OAT) 的支持论坛]]></IIUGSuppForumOAT>
+<IIUGForums><![CDATA[Informix 论坛]]></IIUGForums>
+<IIUGForumsDesc><![CDATA[IIUG 主管的 IBM Informix 产品的支持论坛]]></IIUGForumsDesc>
+<InformixEvents><![CDATA[IIUG 事件日历]]></InformixEvents>
+<InformixUserEventSchedule><![CDATA[针对 Informix 用户的事件调度]]></InformixUserEventSchedule>
+<IIUGSponsorProgram><![CDATA[IIUG 发起人程序]]></IIUGSponsorProgram>
+<IIUGSponsorProgramDesc><![CDATA[用于支持 IIUG 社区和获取公司广告的程序]]></IIUGSponsorProgramDesc>
+<OATForIDSText><![CDATA[OpenAdmin Tool 社区版]]></OATForIDSText>
+<PHPConfiguration><![CDATA[PHP 配置]]></PHPConfiguration>
+<ExternalLinksNotice><![CDATA[关于非 IBM Web 站点的链接]]></ExternalLinksNotice>
+</lang>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[红色警报：检查是否已设置 DBSPACETEMP 配置参数。黄色警报：检查是否 DBSPACETEMP 配置参数的值中没有空格。]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[红色警报：无。黄色警报：检查是否 DUMPDIR 配置参数未设置为黄色警报阈值中列出的目录。]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[红色警报：无。黄色警报：检查是否已启用动态日志分配 (DYNAMIC_LOGS)。]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[红色警报：检查是否逻辑日志文件未存储在根数据库空间 (ROOTDBS) 中。黄色警报：检查在存储逻辑日志文件的数据库空间中是否未存储任何表。]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[红色警报：检查是否长事务高水位标记 (LTXHWM) 低于红色警报阈值（如果动态日志分配 (DYNAMIC_LOGS) 已关闭）。黄色警报：检查是否长事务高水位标记 (LTXHWM) 低于黄色警报阈值（如果动态日志分配已关闭）。]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[红色警报：无。黄色警报：检查是否最近最少使用的最小脏页数 (lru_min_dirty) 的值高于黄色警报阈值。]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[红色警报：无。黄色警报：检查是否 LTAPEDEV 配置参数未设置为黄色警报阈值中列出的目录。]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[红色警报：无。黄色警报：检查是否已设置 VPCLASS 配置参数的 noage 选项。]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[红色警报：无。黄色警报：检查是否数据库服务器未设置为在数据库空间关闭 (ONDBSPACEDOWN) 时继续。]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[红色警报：检查是否物理日志未存储在根数据库空间 (ROOTDBS) 中。黄色警报：检查在存储物理日志的数据库空间中是否未存储任何表。]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[红色警报：无。黄色警报：检查是否已设置 SINGLE_CPU_VP 配置参数，以及 MULTIPROCESSOR 配置参数是否为 off。]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[红色警报：无。黄色警报：检查是否 TAPEDEV 配置参数未设置为黄色警报阈值中列出的目录。]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[红色警报：检查今天创建的 ATS 文件数是否低于红色警报阈值。黄色警报：检查今天创建的 ATS 文件数是否低于黄色警报阈值。]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[红色警报：检查事务阻塞 (DDRBLOCK) 开始之前剩余的日志页面百分比是否高于红色警报阈值中列出的百分比。黄色警报：检查事务阻塞开始之前剩余的日志页面百分比是否高于黄色警报阈值中列出的百分比。]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[红色警报：检查 ER 集群中的节点是否处于活动状态以及是否正在复制数据。黄色警报：无。]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[红色警报：检查今天创建的 RIS 文件数是否低于红色警报阈值。黄色警报：检查今天创建的 RIS 文件数是否低于黄色警报阈值。]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[红色警报：检查操作系统可用内存的百分比是否高于红色警报阈值。黄色警报：检查操作系统可用内存的百分比是否高于黄色警报阈值。]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[红色警报：无。黄色警报：检查操作系统中的联机处理器数是否等于操作系统的处理器数。]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[红色警报：无。黄色警报：检查 CPU 虚拟处理器数是否高于黄色警报阈值中列出的操作系统 CPU 百分比。]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[红色警报：检查为操作系统的每个进程打开的文件描述符数是否高于红色警报阈值。黄色警报：检查为操作系统的每个进程打开的文件描述符数是否高于黄色警报阈值。]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[红色警报：检查操作系统的信号量集的数量是否高于红色警报阈值。黄色警报：检查操作系统的信号量集的数量是否高于黄色警报阈值。]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[红色警报：检查操作系统的信号量总数是否高于红色警报阈值。黄色警报：检查操作系统的信号量总数是否高于黄色警报阈值。]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[红色警报：检查操作系统的共享内存标识数 (shmid) 是否高于红色警报阈值。黄色警报：检查操作系统的共享内存标识数 (shmid) 是否高于黄色警报阈值。]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[红色警报：检查操作系统的共享内存段的最大大小 (SHMMAX) 是否高于红色警报阈值。黄色警报：检查操作系统的共享内存段的最大大小 (SHMMAX) 是否高于黄色警报阈值。]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[红色警报：检查操作系统的共享内存段总数 (shmNumSegs) 是否高于红色警报阈值。黄色警报：检查操作系统的共享内存段总数 (shmNumSegs) 是否高于黄色警报阈值。]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[红色警报：检查逻辑日志资源 (LLOG) 不足是否不会导致检查点处理期间出现阻塞。黄色警报：检查逻辑日志资源 (LLOG) 不足是否不会触发检查点。]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[红色警报：检查物理日志资源 (PLOG) 不足是否不会导致检查点处理期间出现阻塞。黄色警报：检查物理日志资源 (PLOG) 不足是否不会触发检查点。]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[红色警报：检查检查点处理期间在临界区所花费的时间是否低于红色警报阈值。黄色警报：检查检查点处理期间在临界区所花费的时间是否低于黄色警报阈值。]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[红色警报：检查检查点处理期间每秒的磁盘清空数是否高于红色警报阈值。黄色警报：检查检查点处理期间每秒的磁盘清空数是否高于黄色警报阈值。]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[红色警报：检查检查点处理期间事务等待的最长时间是否低于红色警报阈值。黄色警报：检查检查点处理期间事务等待的最长时间是否低于黄色警报阈值。]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[红色警报：检查表的缓冲区读取数是否小于红色警报阈值中列出的所有缓冲区读取数的百分比。黄色警报：检查表的缓冲区读取数是否小于黄色警报阈值中列出的所有缓冲区读取数的百分比。]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[红色警报：检查表的缓冲区写入数是否小于红色警报阈值中列出的所有缓冲区写入数的百分比。黄色警报：检查表的缓冲区写入数是否小于黄色警报阈值中列出的所有缓冲区写入数的百分比。]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[红色警报：检查表的连续扫描数是否小于红色警报阈值中列出的所有连续扫描数的百分比。黄色警报：检查表的连续扫描数是否小于黄色警报阈值中列出的所有连续扫描数的百分比。]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[红色警报：检查已高速缓存到缓冲区的读取数百分比（高速缓存百分比）是否高于红色警报阈值。黄色警报：检查已高速缓存到缓冲区的读取数百分比（高速缓存百分比）是否高于黄色警报阈值。]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[红色警报：检查已高速缓存到缓冲区的写入数百分比（高速缓存百分比）是否高于红色警报阈值。黄色警报：检查已高速缓存到缓冲区的写入数百分比（高速缓存百分比）是否高于黄色警报阈值。]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[红色警报：检查磁盘排序数占排序总数的百分比是否低于红色警报阈值。黄色警报：检查磁盘排序数占排序总数的百分比是否低于黄色警报阈值。]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[红色警报：检查回滚事务数占事务总数的百分比是否低于红色警报阈值。黄色警报：检查回滚事务数占事务总数的百分比是否低于黄色警报阈值。]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[红色警报：检查前台写入数占写入总数的百分比是否低于红色警报阈值。黄色警报：检查前台写入数占写入总数的百分比是否低于黄色警报阈值。]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[红色警报：检查逻辑日志页面数与 I/O 的比率是否低于红色警报阈值中列出的逻辑日志缓冲区的百分比 (LOGBUFF)。黄色警报：检查逻辑日志页面数与 I/O 的比率是否高于黄色警报阈值中列出的逻辑日志缓冲区的百分比 (LOGBUFF)。]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[红色警报：检查锁定等待数占锁定请求总数的百分比是否低于红色警报阈值。黄色警报：检查锁定等待数占锁定请求总数的百分比是否低于黄色警报阈值。]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[红色警报：检查物理日志页面数与 I/O 的比率是否低于红色警报阈值中列出的物理日志缓冲区的百分比 (PHYSBUFF)。黄色警报：检查物理日志页面数与 I/O 的比率是否高于黄色警报阈值中列出的物理日志缓冲区的百分比 (PHYSBUFF)。]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[红色警报：检查连续扫描数占 SQL 语句总数的百分比是否低于红色警报阈值。黄色警报：检查连续扫描数占 SQL 语句总数的百分比是否低于黄色警报阈值。]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[红色警报：检查是否所有块都处于联机状态。黄色警报：无。]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[红色警报：检查每个块的 I/O 操作数是否低于红色警报阈值中列出的所有 I/O 操作数的百分比。黄色警报：检查每个块的 I/O 操作数是否低于黄色警报阈值中列出的所有 I/O 操作数的百分比。]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[红色警报：检查每个块的读操作数是否低于红色警报阈值中列出的所有读操作数的百分比。黄色警报：检查每个块的读操作数是否低于黄色警报阈值中列出的所有读操作数的百分比。]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[红色警报：检查每个块的写操作数是否低于红色警报阈值中列出的所有写操作数的百分比。黄色警报：检查每个块的写操作数是否低于黄色警报阈值中列出的所有写操作数的百分比。]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[红色警报：检查每个数据库空间中的可用空间是否高于红色警报阈值中列出的数据库空间的空间总数百分比。黄色警报：检查每个数据库空间中的可用空间是否高于黄色警报阈值中列出的数据库空间的空间总数百分比。]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[红色警报：检查出其每个页面的最大可用空间百分比低于红色警报阈值的表。黄色警报：检查出其每个页面的最大可用空间百分比低于黄色警报阈值的表。]]></msg_Rowsize>
+
+</lang>
+
+
+
+

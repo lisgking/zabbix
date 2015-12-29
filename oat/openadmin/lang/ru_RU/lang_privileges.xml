@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Управление правами]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Привилегии пользователя]]></UserPrivileges>
+<Database><![CDATA[База данных]]></Database>
+<DBPrivileges><![CDATA[Привилегии на уровне базы данных]]></DBPrivileges>
+<TablePrivileges><![CDATA[Привилегии на уровне таблицы]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Привилегии API администрирования SQL]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Внутренние пользователи]]></NonOsUsers>
+<Name><![CDATA[Имя]]></Name>
+<Type><![CDATA[Тип]]></Type>
+<DefRole><![CDATA[Роль по умолчанию]]></DefRole>
+<Tabname><![CDATA[Имя таблицы]]></Tabname>
+<User><![CDATA[Пользователь]]></User>
+<Grantor><![CDATA[Грантор (предоставляющий привилегии)]]></Grantor>
+<Privilege><![CDATA[Привилегии]]></Privilege>
+<Privileges><![CDATA[Привилегии]]></Privileges>
+<Username><![CDATA[Имя пользователя]]></Username>
+<Grant><![CDATA[Предоставить]]></Grant>
+<GrantNewPriv><![CDATA[Предоставить новую привилегию]]></GrantNewPriv>
+<Roles><![CDATA[Роли]]></Roles>
+<CreateNewRole><![CDATA[Создать новую роль]]></CreateNewRole>
+<Create><![CDATA[Создать]]></Create>
+<RoleName><![CDATA[Имя роли]]></RoleName>
+<NoUserError><![CDATA[Не удалось предоставить привилегию: не задано имя пользователя.]]></NoUserError>
+<NoPrivError><![CDATA[Не удалось предоставить привилегию: не задан уровень привилегии.]]></NoPrivError>
+<NoTabError><![CDATA[Не удалось предоставить привилегию: не задано имя таблицы.]]></NoTabError>
+<NoRoleError><![CDATA[Не удалось предоставить привилегию: не задано имя роли.]]></NoRoleError>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<NoDatabasesError><![CDATA[На этом сервере баз данных отсутствуют несистемные базы данных.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Успешное предоставление привилегии пользователю]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Привилегия пользователю аннулирована]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Привилегия пользователю сохранена]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Успешное предоставление привилегии на таблицу]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[пользователю]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Привилегия пользователю аннулирована]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[на таблицу]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Привилегия пользователю сохранена]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Успешное создание роли]]></CreateSuccessForRole>
+<Connect><![CDATA[Подключиться]]></Connect>
+<Resource><![CDATA[Ресурс]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[Select]]></Select>
+<Update><![CDATA[Update]]></Update>
+<Insert><![CDATA[Insert]]></Insert>
+<Delete><![CDATA[Delete]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Alter]]></Alter>
+<References><![CDATA[References]]></References>
+<Under><![CDATA[Under]]></Under>
+<Modify><![CDATA[Изменить]]></Modify>
+<Revoke><![CDATA[Revoke]]></Revoke>
+<ErrorF><![CDATA[Ошибка:]]></ErrorF>
+<GrantFailed><![CDATA[Не удалось предоставить привилегию]]></GrantFailed>
+<CreateFailed><![CDATA[Не удалось создать]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[Для внутренних пользователей OAT требуется Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[Для привилегий команд API администрирования SQL OAT требуется Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

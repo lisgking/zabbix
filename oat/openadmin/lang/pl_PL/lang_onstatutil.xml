@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[Program narzędziowy onstat]]></mainTitle>
+<ErrorOnInteractive><![CDATA[Tryb interaktywny programu onstat nie jest dostępny za pośrednictwem narzędzia OpenAdmin Tool.]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[Wprowadź tylko opcje. Komenda <b>onstat</b> jest wprowadzana automatycznie przez narzędzie OpenAdmin Tool.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[Opcja -r nie jest dozwolona w komendach onstat wydawanych w narzędziu OpenAdmin Tool.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[Opcja -o nie jest dozwolona w komendach onstat wydawanych w narzędziu OpenAdmin Tool.]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[Komenda onstat zawierała niepoprawny znak.]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[W komendach onstat wydawanych w narzędziu OpenAdmin Tool dozwolone są tylko znaki alfanumeryczne, łączniki, przecinki i kropki.]]></ReportValidChars>
+<ErrorPrepend><![CDATA[BŁĄD:]]></ErrorPrepend>
+<SubmitAction><![CDATA[Uruchom]]></SubmitAction>
+<OnstatOptions><![CDATA[Wyświetl opcje programu onstat]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[Program narzędziowy onstat jest dostępny tylko w następującej wersji serwera (i wersjach wyższych): {0}]]></OnstatFeatureNotAvail>
+</lang>

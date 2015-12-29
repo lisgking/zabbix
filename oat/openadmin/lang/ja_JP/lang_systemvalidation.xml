@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[システムの検証]]></mainTitle>
+<checkDataFormat><![CDATA[データ形式の検査]]></checkDataFormat>
+<databaseName><![CDATA[データベース名]]></databaseName>
+<tableName><![CDATA[表名]]></tableName>
+<chkTable><![CDATA[表の検査]]></chkTable>
+<chkExtFormat><![CDATA[エクステント形式の検査]]></chkExtFormat>
+<extName><![CDATA[DB 領域名]]></extName>
+<chkExtent><![CDATA[エクステントの検査]]></chkExtent>
+<valResTo><![CDATA[検証結果...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - システムの検証]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 検証が完了しました。]]></oncheckComplete>
+<ValidationResults><![CDATA[検証結果...]]></ValidationResults>
+<SysValNotValid><![CDATA[システムの検証は、副サーバでは無効です。]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[読取り専用ユーザには、これを実行するアクセス権がありません。読取り専用ユーザとしてログインしています。]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[アテンション: 検査の実行では、検査されるページの数に応じて大量の処理リソースが消費されることがあります。この操作により、指定された表の BLOB ページおよび SB ページを除くすべてのページが読み込まれ、各ページの整合性が検査されます。続行しますか?]]></confirmCheckData>
+<NotYetImpl><![CDATA[OpenAdmin Tool は、このページに英語以外の複数のデータベース ロケールでデータベース サーバの情報を表示することができません。データベース サーバに、英語以外のデータベース ロケールが複数含まれています。]]></NotYetImpl>
+</lang>

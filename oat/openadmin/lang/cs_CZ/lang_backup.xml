@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="backup">
+<Backup><![CDATA[Záloha]]></Backup>
+<noBackupSupport><![CDATA[Zálohování je podporováno pouze na serverech Informix typů Standardní, Primární nebo RSS (Remote Standalone Secondary, Vzdálený samostatný sekundární).]]></noBackupSupport>
+<sdsServer>![CDATA[Jste připojeni k serveru SDS (Shared Disk Secondary).]]</sdsServer>
+<hdrSecondary>![CDATA[Jste připojeni k Sekundárnímu serveru HDR.]]</hdrSecondary>
+<noBackupSupportServerVersion><![CDATA[Zálohování v OAT vyžaduje Informix verze 11.70.xC2.]]></noBackupSupportServerVersion>
+<notAvail>Není dostupný</notAvail>
+<onbarBackProcMissing>Uložená procedura, která je potřebná pro zálohy ON-Bar, v serveru chybí. Zkontrolujte, zda byl skript sch_oat.sql proveden během spuštění serveru.</onbarBackProcMissing>
+<Unknown>Neznámý</Unknown>
+</lang>

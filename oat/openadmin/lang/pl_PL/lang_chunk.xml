@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[Porcje]]></Chunks>
+<Chunk><![CDATA[Porcja]]></Chunk>
+<MirrorChunk><![CDATA[Porcja lustrzana]]></MirrorChunk>
+<ChunkIO><![CDATA[We/wy porcji]]></ChunkIO>
+<ChunkTable><![CDATA[Lista tabel porcji]]></ChunkTable>
+<MirrorTable><![CDATA[Lista tabel porcji lustrzanej]]></MirrorTable>
+<ChunkNum><![CDATA[Numer porcji]]></ChunkNum>
+<SpaceName><![CDATA[Nazwa obszaru]]></SpaceName>
+<PageSize><![CDATA[Wielkość strony]]></PageSize>
+<Offset><![CDATA[Przesunięcie]]></Offset>
+<Size><![CDATA[Wielkość]]></Size>
+<Free><![CDATA[Wolne]]></Free>
+<Used><![CDATA[Wykorzystane %]]></Used>
+<Status><![CDATA[Status]]></Status>
+<Path><![CDATA[Ścieżka]]></Path>
+<ChunkPath><![CDATA[Ścieżka porcji]]></ChunkPath>
+<Reads><![CDATA[Odczyty]]></Reads>
+<Writes><![CDATA[Zapisy]]></Writes>
+<TotalIO><![CDATA[Łącznie odczytów i zapisów]]></TotalIO>
+<IOTableTitle><![CDATA[We/wy wg porcji]]></IOTableTitle>
+<IOGraphTitle><![CDATA[We/wy 20 najwyżej notowanych porcji]]></IOGraphTitle>
+<ONLINE><![CDATA[Z POŁĄCZENIEM]]></ONLINE>
+<OFFLINE><![CDATA[BEZ POŁĄCZENIA]]></OFFLINE>
+<RECOVERING><![CDATA[ODZYSKIWANIE]]></RECOVERING>
+</lang>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[Hiba:]]></ErrorF>
+<QueryF><![CDATA[Lekérdezés:]]></QueryF>
+<PageSize><![CDATA[Lapméret]]></PageSize>
+<Descending><![CDATA[Csökkenő]]></Descending>
+<Ascending><![CDATA[Növekvő]]></Ascending>
+<ErrorOccurred><![CDATA[Hiba történt]]></ErrorOccurred>
+<Reload><![CDATA[Újrabetöltés]]></Reload>
+<ClickToReload><![CDATA[Kattintson ide a kiszolgálók újrabetöltéséhez]]></ClickToReload>
+<LoadingMsg><![CDATA[..BETÖLTÉS..]]></LoadingMsg>
+<PrevPage><![CDATA[Előző oldal]]></PrevPage>
+<NextPage><![CDATA[Következő oldal]]></NextPage>
+<Page><![CDATA[Lap]]></Page>
+<Row><![CDATA[Sor]]></Row>
+<Login><![CDATA[Bejelentkezés]]></Login>
+<OrderAsc><![CDATA[Rendezés növekvő sorrendbe a következő szerint: {0}]]></OrderAsc>
+<OrderDesc><![CDATA[Rendezés csökkenő sorrendbe a következő szerint: {0}]]></OrderDesc>
+<Help><![CDATA[Súgó]]></Help>
+<Admin><![CDATA[Adminisztrátor]]></Admin>
+<Back><![CDATA[Vissza]]></Back>
+<Welcome><![CDATA[Üdvözlet]]></Welcome>
+<CollapseMenu><![CDATA[Menü összehúzása]]></CollapseMenu>
+<Info><![CDATA[Info]]></Info>
+<Yes><![CDATA[Igen]]></Yes>
+<No><![CDATA[Nem]]></No>
+<Cancel><![CDATA[Mégse]]></Cancel>
+<Delete><![CDATA[Törlés]]></Delete>
+<Success><![CDATA[Siker]]></Success>
+<ErrorL><![CDATA[Hiba]]></ErrorL>
+<ERROR><![CDATA[HIBA]]></ERROR>
+<Ignore><![CDATA[Mellőzés]]></Ignore>
+<Under><![CDATA[Aláhúzás]]></Under>
+<Save><![CDATA[Mentés]]></Save>
+<Cancel><![CDATA[Mégse]]></Cancel>
+<TemplateLoadError><![CDATA[A fő sablon nem tölthető be]]></TemplateLoadError>
+<help><![CDATA[Súgó]]></help>
+<ServerType><![CDATA[Kiszolgáló típusa]]></ServerType>
+<Version><![CDATA[Változat]]></Version>
+<ServerTime><![CDATA[Kiszolgáló idő]]></ServerTime>
+<BootTime><![CDATA[Rendszerbetöltési idő]]></BootTime>
+<UpTime><![CDATA[Működési idő]]></UpTime>
+<Sessions><![CDATA[Munkamenetek]]></Sessions>
+<MaxUsers><![CDATA[Munkamenetek maximális száma]]></MaxUsers>
+<TotalMem><![CDATA[Teljes memória]]></TotalMem>
+<FreeMem><![CDATA[Szabad memória]]></FreeMem>
+<NumCPU><![CDATA[CPU-k száma]]></NumCPU>
+<OperatingSys><![CDATA[Operációs rendszer]]></OperatingSys>
+<Standard><![CDATA[Szabványos]]></Standard>
+<Primary><![CDATA[Elsődleges]]></Primary>
+<Secondary><![CDATA[Másodlagos]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[Kiszolgáló]]></Server>
+<Database><![CDATA[Adatbázis]]></Database>
+<ConnectionFailed><![CDATA[A csatlakozás nem sikerült: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[HIBA:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[Nincs végrehajtható SQL]]></NoSQLToExecute>
+<GroupServers><![CDATA[Csoport kiszolgálók]]></GroupServers>
+<MapNotAvail><![CDATA[A térkép érvénytelen kulcs miatt nem érhető el.]]></MapNotAvail>
+<ServerInfo><![CDATA[Kiszolgáló info]]></ServerInfo>
+<Info><![CDATA[Info]]></Info>
+<ALL><![CDATA[Összes]]></ALL>
+<Enabled><![CDATA[Engedélyezett]]></Enabled>
+<Disabled><![CDATA[Letiltva]]></Disabled>
+<MB_Locale><![CDATA[Adatbázis nyelve]]></MB_Locale>
+<MB_Encoding><![CDATA[Helyszín]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[Válasszon ki egy adatbázisnyelvet az adott nyelvhez tartozó területi beállítások megjelenítéséhez. Ezután válassza ki az adatbázis területi beállítását.]]></MB_Locale_Encoding_tooltip>
+</lang>

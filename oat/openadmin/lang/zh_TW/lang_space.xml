@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[DBSpace]]></mainTitle>
+<dbspace><![CDATA[DBSpace]]></dbspace>
+<dbspaceName><![CDATA[DBSpace 名稱]]></dbspaceName>
+<owner><![CDATA[擁有者]]></owner>
+<pagesize><![CDATA[頁面大小]]></pagesize>
+<createTime><![CDATA[建立時間]]></createTime>
+<dbspaceInfo><![CDATA[DBSpace 資訊]]></dbspaceInfo>
+<utilization><![CDATA[{0} 使用率]]></utilization>
+<indexPages><![CDATA[索引頁]]></indexPages>
+<dataPages><![CDATA[資料頁]]></dataPages>
+<otherPages><![CDATA[其他頁面]]></otherPages>
+<freePages><![CDATA[可用的頁面]]></freePages>
+<TableName><![CDATA[表格名稱]]></TableName>
+<StartAddr><![CDATA[起始位址]]></StartAddr>
+<EndAddr><![CDATA[結束位址]]></EndAddr>
+<size><![CDATA[大小]]></size>
+<Status><![CDATA[狀態]]></Status>
+<ExtentList><![CDATA[延伸範圍清單]]></ExtentList>
+<TableList><![CDATA[表格清單]]></TableList>
+<Database><![CDATA[資料庫]]></Database>
+<Table><![CDATA[表格]]></Table>
+<Collate><![CDATA[分頁]]></Collate>
+<Rows><![CDATA[列數]]></Rows>
+<SystemIntegrity><![CDATA[下列項目的完整性：]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[檢查資料庫空間表格格式]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[檢查資料庫空間延伸範圍]]></butCheckDbsExt>
+<RowSize><![CDATA[列大小]]></RowSize>
+<Created><![CDATA[已建立]]></Created>
+<AllocPages><![CDATA[已配置的頁數]]></AllocPages>
+<UsedPages><![CDATA[使用頁數]]></UsedPages>
+<NumExtents><![CDATA[延伸範圍數]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[號碼]]></Number>
+<Name><![CDATA[名稱]]></Name>
+<Type><![CDATA[類型]]></Type>
+<default><![CDATA[預設]]></default>
+<CreateSpace><![CDATA[建立空間]]></CreateSpace>
+<Create><![CDATA[建立]]></Create>
+<numChunks><![CDATA[片段數]]></numChunks>
+<UsedPer><![CDATA[使用百分比]]></UsedPer>
+<Data><![CDATA[資料]]></Data>
+<Index><![CDATA[索引]]></Index>
+<Other><![CDATA[其他]]></Other>
+<Free><![CDATA[可用]]></Free>
+<noDropDBSpace><![CDATA[無法捨棄 rootdbs。]]></noDropDBSpace>
+<AddSpaceto><![CDATA[新增空間至]]></AddSpaceto>
+<Path><![CDATA[路徑]]></Path>
+<Offset><![CDATA[偏移]]></Offset>
+<FileCreation><![CDATA[檔案建立]]></FileCreation>
+<MayCreateFile><![CDATA[如果檔案不存在，則建立]]></MayCreateFile>
+<FileMustExist><![CDATA[檔案必須存在]]></FileMustExist>
+<DropSpace><![CDATA[捨棄空間 {0}]]></DropSpace>
+<AddChunk><![CDATA[新增片段]]></AddChunk>
+<Used><![CDATA[已使用]]></Used>
+<AddMirror><![CDATA[新增鏡映]]></AddMirror>
+<AddChunkMirror><![CDATA[新增具有鏡映的片段]]></AddChunkMirror>
+<StartMirror><![CDATA[啟動鏡映]]></StartMirror>
+<StopMirror><![CDATA[停止鏡映]]></StopMirror>
+<AddMirrorto><![CDATA[新增鏡映至]]></AddMirrorto>
+<MirrorPath><![CDATA[鏡映路徑]]></MirrorPath>
+<MirrorOffset><![CDATA[鏡映偏移]]></MirrorOffset>
+<MirroringStarted><![CDATA[已啟動鏡映]]></MirroringStarted>
+<MirroringStopped><![CDATA[已停止鏡映]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - 系統驗證]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 驗證完成。]]></oncheckComplete>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<NotValidOnSecondary><![CDATA[此動作在次要伺服器上無效。]]></NotValidOnSecondary>
+<Error><![CDATA[錯誤：]]></Error>
+<DropDBSpaceFailed><![CDATA[捨棄 DBSpace 失敗。  下列 DBSpace 值未正確設定：]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[DBSpace 建立失敗。  DBSpace 動作]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[無效。]]></IsNotValid>
+<DATASpace><![CDATA[資料空間]]></DATASpace>
+<DataSpaceL><![CDATA[資料空間]]></DataSpaceL>
+<TEMPSpace><![CDATA[暫存空間]]></TEMPSpace>
+<TempSpaceL><![CDATA[暫存空間]]></TempSpaceL>
+<BLOBSpace><![CDATA[BLOB 空間]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[順利建立 DBSpace]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[DBSpace 建立失敗。  下列 DBSpace 值未正確設定：]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[DBSpace 建立失敗。  DBSpace 動作無效]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[未確認 DBSpace 捨棄]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[驗證結果至...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[驗證結果...]]></ValidationResults>
+<AddChunkFailed><![CDATA[無法新增片段至資料庫空間：]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[已順利新增片段]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[新增片段至資料庫空間：]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[已順利新增鏡映片段]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[無法在資料庫空間中新增鏡映：]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[下列鏡映值未正確設定：]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[已順利新增鏡映]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[無法在資料庫空間上啟動鏡映：]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[未在資料庫空間上確認啟動鏡映：]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[無法停止 dbsapce 的鏡映：]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[未在資料庫空間上確認停止鏡映：]]></NoConfStopMirror>
+<Dbspace><![CDATA[資料庫空間]]></Dbspace>
+<TempDbspace><![CDATA[暫存資料庫空間]]></TempDbspace>
+<MirroredDbspace><![CDATA[鏡映資料庫空間]]></MirroredDbspace>
+<Blobspace><![CDATA[Blobspace]]></Blobspace>
+<MirroredBlobspace><![CDATA[鏡映 Blobspace]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[智慧型 Blobspace]]></SmartBlobspace>
+<TempSbspace><![CDATA[暫時智慧型 Blobspace]]></TempSbspace>
+<MirroredSbspace><![CDATA[鏡映智慧型 Blobspace]]></MirroredSbspace>
+<DataPages><![CDATA[資料頁]]></DataPages>
+<IndexPages><![CDATA[索引頁]]></IndexPages>
+<OtherPages><![CDATA[其他頁面]]></OtherPages>
+<FreePages><![CDATA[可用的頁面]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[DBSpace 值未正確設定：]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[摘要]]></summary>
+<admin><![CDATA[管理]]></admin>
+<tables><![CDATA[表格]]></tables>
+<extents><![CDATA[延伸範圍數]]></extents>
+<validation><![CDATA[驗證]]></validation>
+<Disabled><![CDATA[已停用]]></Disabled>
+<Recovering><![CDATA[回復中]]></Recovering>
+<Operational><![CDATA[作業]]></Operational>
+</lang>

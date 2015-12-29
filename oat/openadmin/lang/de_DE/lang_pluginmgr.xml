@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="menupluginmgr">
+<pluginmgr><![CDATA[Plug-in-Manager]]></pluginmgr>
+<CantWriteToOATDir><![CDATA[Der Plug-in-Manager kann nicht in das temporäre OpenAdmin Tool-Verzeichnis 'tmp' schreiben. Für die Installation eines Plug-ins müssen Sie über Schreibberechtigung für das temporäre OpenAdmin Tool-Verzeichnis verfügen. Fordern Sie Schreibberechtigung für dieses Verzeichnis an und installieren Sie das Plug-in erneut.]]></CantWriteToOATDir>
+<PHPZipExtReqd><![CDATA[Der Plug-in-Manager kann nicht geöffnet werden, da für den Plug-in-Manager erforderlich ist, dass PHP mit ZIP-Modul konfiguriert ist. Die von Open AdminTool verwendete PHP-Version wurde ohne das ZIP-Modul installiert. Konfigurieren Sie die PHP-Version auf Ihrem Web-Server mit ZIP-Modul. Alternativ können Sie OpenAdmin Tool mit dem Installationsprogramm von OpenAdmin Tool erneut installieren, wodurch die PHP-Version konfiguriert wird.]]></PHPZipExtReqd>
+<PluginNotInstalled><![CDATA[Das Plug-in wurde nicht installiert.]]></PluginNotInstalled>
+<InstalledPlugins><![CDATA[Installierte Plug-ins]]></InstalledPlugins>
+<PluginsNotYetInstalled><![CDATA[Noch nicht installierte Plug-ins]]></PluginsNotYetInstalled>
+<NoPluginToInstall><![CDATA[Es wurde kein zu installierendes Plug-in ausgewählt.]]></NoPluginToInstall>
+<NoUpgAvail><![CDATA[Es ist kein Upgrade verfügbar.]]></NoUpgAvail>
+<PluginDirNotWritable><![CDATA[Der Plug-in-Manager kann nicht in das Plug-in-Verzeichnis schreiben. Fordern Sie Schreibberechtigung für dieses Verzeichnis an und installieren Sie das Plug-in erneut.]]></PluginDirNotWritable>
+<CurrVerInstalled><![CDATA[Aktuelle Version installiert]]></CurrVerInstalled>
+<Unknown><![CDATA[Unbekannt]]></Unknown>
+<ClickToEnable><![CDATA[Zum Aktivieren klicken]]></ClickToEnable>
+<ClickToDisable><![CDATA[Zum Inaktivieren klicken]]></ClickToDisable>
+<CouldntBeDeleted><![CDATA[Die folgende Datei konnte nicht gelöscht werden: {0}]]></CouldntBeDeleted>
+<PluginUpgraded><![CDATA[Das Upgrade des Plug-ins war erfolgreich.]]></PluginUpgraded>
+<PluginInstalled><![CDATA[Das Plug-in wurde erfolgreich installiert.]]></PluginInstalled>
+<Name><![CDATA[Name]]></Name>
+<Author><![CDATA[Autor]]></Author>
+<Description><![CDATA[Beschreibung]]></Description>
+<Version><![CDATA[Version]]></Version>
+<ServerVersion><![CDATA[Serverversion]]></ServerVersion>
+<MinOATVersion><![CDATA[OAT-Mindestversion]]></MinOATVersion>
+<Install><![CDATA[Installieren]]></Install>
+<Uninstall><![CDATA[Deinstallieren]]></Uninstall>
+<Upgrade><![CDATA[Upgrade]]></Upgrade>
+<Enabled><![CDATA[Aktiviert]]></Enabled>
+<updating><![CDATA[Aktualisierung wird ausgeführt]]></updating>
+<LatestInstalled><![CDATA[Neueste installiert]]></LatestInstalled>
+<ConfirmUninstallPlugin><![CDATA[Durch diese Aktion wird das Plug-in {0} deinstalliert. Die komprimierte Datei des Plug-ins wird gelöscht, wenn das Plug-in installiert wird. Nach der Deinstallation des Plug-ins kann das Plug-in erst wieder erneut installiert werden, wenn die komprimierte Datei des Plug-ins im Plug-in-Verzeichnis wiederhergestellt wurde. \n\nWollen Sie fortfahren?]]></ConfirmUninstallPlugin>
+<UninstallPluginSuccessful><![CDATA[Das Plug-in wurde erfolgreich deinstalliert.]]></UninstallPluginSuccessful>
+<ErrorOnUninstall><![CDATA[Das Plug-in wurde nicht deinstalliert.]]></ErrorOnUninstall>
+<ErrorOnUninstallInvalidPluginId><![CDATA[OpenAdmin Tool hat versucht, das Plug-in zu deinstallieren, die Plug-in-ID konnte jedoch nicht gefunden werden. Klicken Sie im Menü 'Verwaltung' auf 'Plug-in-Manager' und überprüfen Sie die Liste der installierten Plug-ins. Falls erforderlich, deinstallieren Sie das Plug-in erneut.]]></ErrorOnUninstallInvalidPluginId>
+<UninstallPluginDoneButUnremovedFiles><![CDATA[Das Plug-in wurde deinstalliert, die folgenden Dateien konnten jedoch nicht entfernt werden:]]></UninstallPluginDoneButUnremovedFiles>
+<YouCanRemoveFilesManually><![CDATA[Sie können diese Dateien von Ihrem Computer löschen.]]></YouCanRemoveFilesManually>
+<ErrorOnUninstallMenu><![CDATA[Der Menüpunkt für das Plug-in wurde nicht gelöscht. Sie können den Menüpunkt auf der Seite 'Menümanager' löschen.]]></ErrorOnUninstallMenu>
+<MinOATVersionError><![CDATA[Das ausgewählte Plug-in kann nicht installiert werden. Die für das Plug-in erforderliche Mindestversion von OpenAdmin Tool lautet {0}.]]></MinOATVersionError>
+<Agree><![CDATA[Einverstanden]]></Agree>
+<Disagree><![CDATA[Nicht einverstanden]]></Disagree>
+</lang>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Systemüberprüfung]]></mainTitle>
+<checkDataFormat><![CDATA[Datenformat überprüfen]]></checkDataFormat>
+<databaseName><![CDATA[Datenbankname]]></databaseName>
+<tableName><![CDATA[Tabellenname]]></tableName>
+<chkTable><![CDATA[Tabelle überprüfen]]></chkTable>
+<chkExtFormat><![CDATA[Extentformat überprüfen]]></chkExtFormat>
+<extName><![CDATA[Name des Datenbankbereichs]]></extName>
+<chkExtent><![CDATA[Extent überprüfen]]></chkExtent>
+<valResTo><![CDATA[Überprüfungsergebnisse an...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - Systemüberprüfung]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Überprüfung durch oncheck ist abgeschlossen.]]></oncheckComplete>
+<ValidationResults><![CDATA[Überprüfungsergebnisse...]]></ValidationResults>
+<SysValNotValid><![CDATA[Systemvalidierung ist bei sekundären Servern nicht zulässig.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Benutzer mit Lesezugriff haben hierfür keine Berechtigung. Sie sind als Benutzer mit Lesezugriff angemeldet.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Achtung: Das Ausführen einer Prüfung kann je nach Anzahl der Seiten viele Verarbeitungsressourcen verbrauchen. Die Aktion liest alle Seiten für die angegebenen Tabellen außer BLOB-Seiten und SBLOB-Seiten und überprüft jede Seite auf Konsistenz. Wollen Sie fortfahren?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Auf dieser Seite kann OpenAdmin Tool keine Informationen für einen Datenbankserver mit mehreren nicht englischen Datenbankländereinstellungen anzeigen. Der Datenbankserver enthält mehrere nicht englische Datenbankländereinstellungen.]]></NotYetImpl>
+</lang>

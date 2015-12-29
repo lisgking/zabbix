@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_storage">
+<mainTitle><![CDATA[Tároló]]></mainTitle>
+<StorageOptimizationPageTitle><![CDATA[Területoptimalizálás]]></StorageOptimizationPageTitle>
+<CompressOnlyAvail><![CDATA[A tömörítési szolgáltatás csak a következő verziószámú kiszolgálókon (vagy újabbakon) áll rendelkezésre:]]></CompressOnlyAvail>
+<ErrorF><![CDATA[Hiba:]]></ErrorF>
+<NoOwner><![CDATA[Nincs megadva tulajdonos]]></NoOwner>
+<NoTable><![CDATA[Nincs megadva tábla]]></NoTable>
+<InvalidDB><![CDATA[Érvénytelen adatbázis]]></InvalidDB>
+<NotEnoughRowsInTable><![CDATA[Nincs elég sor a táblában]]></NotEnoughRowsInTable>
+<NotEnoughRowsInFragment><![CDATA[Nincs elég sor a töredékben]]></NotEnoughRowsInFragment>
+<PartNum><![CDATA[Partíciószám]]></PartNum>
+<required><![CDATA[Szükséges]]></required>
+<actual><![CDATA[Tényleges]]></actual>
+<Failed><![CDATA[HIBÁS]]></Failed>
+<ErrorMultipleLocales><![CDATA[Ezen az oldalon az OpenAdmin eszköz nem tud információkat megjeleníteni olyan adatbázis-kiszolgálóról, amely több nem-angol adatbázis területi beállítással rendelkezik. Az adatbázis-kiszolgáló több nem-angol adatbázis területi beállítást tartalmaz.]]></ErrorMultipleLocales>
+</lang>

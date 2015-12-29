@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_login">
+<admin><![CDATA[Администрирование]]></admin>
+<connect><![CDATA[Подключиться]]></connect>
+<connection><![CDATA[Соединение]]></connection>
+<connections><![CDATA[Соединения]]></connections>
+<getservers><![CDATA[Получить серверы]]></getservers>
+<server><![CDATA[Сервер]]></server>
+<hostname><![CDATA[Имя хоста]]></hostname>
+<informixserver><![CDATA[Сервер Informix]]></informixserver>
+<idsprotocol><![CDATA[Протокол Informix]]></idsprotocol>
+<login><![CDATA[Вход в систему]]></login>
+<log_in><![CDATA[Вход в систему]]></log_in>
+<logging_in><![CDATA[Выполняется вход...]]></logging_in>
+<loggingout><![CDATA[Выход из системы]]></loggingout>
+<no_user><![CDATA[Надо задать имя пользователя.]]></no_user>
+<missingpassword><![CDATA[Надо задать пароль.]]></missingpassword>
+<missinginformixserver><![CDATA[Надо задать сервер Informix.]]></missinginformixserver>
+<missinghost><![CDATA[Надо задать имя хоста.]]></missinghost>
+<missingport><![CDATA[Надо задать номер порта.]]></missingport>
+<group><![CDATA[Группа OAT]]></group>
+<groups><![CDATA[Группы]]></groups>
+<password><![CDATA[Пароль]]></password>
+<port><![CDATA[Порт]]></port>
+<help><![CDATA[Справка]]></help>
+<quicklogin><![CDATA[Зарегистрироваться в группе OAT]]></quicklogin>
+<selectaconnection><![CDATA[Выбрать сервер]]></selectaconnection>
+<serverdetails><![CDATA[Соединиться с сервером]]></serverdetails>
+<username><![CDATA[Имя пользователя]]></username>
+<aboutOAT><![CDATA[Информация об OAT]]></aboutOAT>
+<readme><![CDATA[Файл Readme]]></readme>
+<HowDoI><![CDATA[Справка по задачам OAT]]></HowDoI>
+<cookies_required><![CDATA[Для регистрации в OpenAdmin Tool требуется включение опознавательных файлов (cookie).  Скорее всего, ваш браузер не поддерживает опознавательные файлы, поэтому система OAT не сможет вас зарегистрировать.]]></cookies_required>
+<LoginRedirectDesc><![CDATA[Происходит регистрация в системе.]]></LoginRedirectDesc>
+<ErrorNoConnSpecified><![CDATA[Ошибка: Не задан номер соединения.]]></ErrorNoConnSpecified>
+<ErrorNoGroup><![CDATA[Ошибка: Нет группы.]]></ErrorNoGroup>
+<InvalidLoginInfo><![CDATA[Ошибочные учетные данные.]]></InvalidLoginInfo>
+<InvalidGroupPwd><![CDATA[Ошибочный групповой пароль - повторите попытку]]></InvalidGroupPwd>
+<Default><![CDATA[по умолчанию]]></Default>
+<login_instructions><![CDATA[Зарегистрируйтесь в группе OAT для соединения с сервером в этой группе или соединитесь с сервером напрямую. Группа OAT содержит информацию о соединениях для одного или нескольких серверов баз данных. Группы OAT определены на страницах Администрирование OAT.]]></login_instructions>
+<quicklogin_instructions><![CDATA[Выберите группу OAT, введите пароль группы и нажмите кнопку Получить серверы.]]></quicklogin_instructions>
+<serverdetails_instructions><![CDATA[Введите или подтвердите информацию о соединении для сервера.]]></serverdetails_instructions>
+<test_connection><![CDATA[Проверить соединение]]></test_connection>
+<testing_connection><![CDATA[Соединение проверяется...]]></testing_connection>
+<ConnectionFailed><![CDATA[Сбой соединения:]]></ConnectionFailed>
+</lang>

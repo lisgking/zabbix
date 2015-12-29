@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[청크]]></Chunks>
+<NoSQLToExecute><![CDATA[실행할 SQL 없음]]></NoSQLToExecute>
+<QueryF><![CDATA[쿼리:]]></QueryF>
+<ErrorF><![CDATA[오류:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[데이터베이스 쿼리에 실패함:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[연결에 실패했습니다.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[사용자 {0}에 데이터베이스 {1}에 대한 연결 권한이 없습니다.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[오류가 너무 많음]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - 대시보드 ID를 찾지 못함]]></ErrorGetPanels>
+</lang>

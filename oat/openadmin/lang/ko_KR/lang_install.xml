@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[OpenAdmin Tool 설치]]></install_page_title>
+<next><![CDATA[다음]]></next>
+<save><![CDATA[저장]]></save>
+<finish><![CDATA[완료]]></finish>
+<warning><![CDATA[경고]]></warning>
+<language><![CDATA[언어]]></language>
+<error_occurred><![CDATA[오류 발생]]></error_occurred>
+<error_message><![CDATA[오류 메시지:]]></error_message>
+
+<welcome><![CDATA[시작]]></welcome>
+<welcome_message><![CDATA[이 설치 프로그램은 OpenAdmin Tool Community Edition {0}을(를) 설치합니다.]]></welcome_message>
+<prerequisite_message><![CDATA[OpenAdmin Tool의 전제조건에 대한 정보는 {0} 파일을 참조하십시오.]]></prerequisite_message>
+<readme><![CDATA[readme]]></readme>
+<license_message><![CDATA[OpenAdmin Tool Community Edition을 설치하고 사용하려면 다음 라이센스 계약에 동의해야 합니다. ]]></license_message>
+<license_agreement><![CDATA[라이센스 계약]]></license_agreement>
+<i_accept><![CDATA[라이센스 계약의 조항에 동의합니다. ]]></i_accept>
+<error_accept_license_first><![CDATA[설치를 계속하려면 라이센스 계약에 동의해야 합니다.
+]]></error_accept_license_first>
+<install_lock_exists><![CDATA[설치 디렉토리의 install.lock 파일이 설치를 중지했습니다. 설치를 계속하려면 파일을 제거하십시오.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[필수 PHP 모듈]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[다음 PHP 모듈은 OAT(OpenAdmin Tool)를 실행하는 데 필요합니다.]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[X 아이콘은 모듈을 찾을 수 없음을 표시합니다. PHP 설치를 검사하여 없는 모듈을 설치하십시오.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[권장되는 PHP 모듈]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[OAT에 대해 다음 PHP 모듈을 권장합니다. ]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[중요: 이러한 모듈은 OAT를 설치 및 사용하는 데 필요하지 않지만 해당 모듈이 없으면 OAT의 몇 가지 기능이 제한됩니다. ]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[필수 PHP 모듈 중 일부가 설치되지 않았습니다.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[없는 모듈:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[권장되는 PHP 모듈 중 일부가 설치되지 않았습니다. 이러한 모듈은 OAT를 설치 및 사용하는 데 필요하지 않지만 해당 모듈이 없으면 OAT의 몇 가지 기능이 제한됩니다. ]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[없는 권장 모듈:]]></silent_recommended_modules>
+<OK><![CDATA[확인]]></OK>
+
+<oat_config><![CDATA[OAT 구성]]></oat_config>
+<parameter><![CDATA[매개변수]]></parameter>
+<description><![CDATA[설명]]></description>
+<value><![CDATA[값]]></value>
+<LANG><![CDATA[기본 언어]]></LANG>
+<LANG_desc><![CDATA[OAT 페이지의 기본 언어입니다.]]></LANG_desc>
+<BASEURL><![CDATA[기본 URL]]></BASEURL>
+<BASEURL_desc><![CDATA[OAT가 이 형식으로 설치된 URL: http://servername:port/location]]></BASEURL_desc>
+<HOMEDIR><![CDATA[설치 디렉토리]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[OAT 설치의 디렉토리입니다.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[연결 데이터베이스 디렉토리]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[OAT 연결 데이터베이스의 디렉토리입니다. 웹 서버의 문서 디렉토리 아래에 없는 보안 디렉토리를 지정하십시오.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[연결 데이터베이스 위치({0})는 웹 서버의 문서 디렉토리 아래에 있습니다. 이 위치의 경우 OAT가 보안 위험에 노출될 수 있습니다. 보안 유지를 위해 연결 데이터베이스의 위치를 변경하십시오. 이 경고를 무시하려면 저장을 다시 클릭하십시오.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[홈 페이지]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[OAT의 홈 페이지입니다.]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[시작]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Health Center > 대시보드 > 그룹 요약]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Health Center > 대시보드 > 서버 성능]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[사용자 정의]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[새로 고침 간격]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[서버 상태 갱신 사이의 시간 길이(초)입니다. 서버 상태는 Health Center > 대시보드 > 그룹 요약 페이지에 표시됩니다.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[페이지당 행]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[테이블 형식으로 데이터를 보여줄 때 표시할 페이지당 기본 행 수입니다.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL 도구 상자 보안]]></SECURESQL>
+<SECURESQL_desc><![CDATA[SQL 도구 상자에 대한 로그인 신임 정보가 필요합니다.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix 연결 시간]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[OAT가 오류를 리턴하기 전에 데이터베이스 서버에 연결을 시도하는 시간 길이(초)입니다(INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix 연결 재시도]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Informix Connect 시간 동안 OAT가 데이터베이스 서버에 연결을 시도하는 횟수입니다(INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[이 필드는 필수임: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[설치 디렉토리({0})에 대해 지정된 디렉토리가 없습니다. 유효한 설치 디렉토리를 지정하십시오.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[연결 데이터베이스({0})에 대해 지정된 디렉토리가 유효하지 않습니다. 디렉토리가 존재하고 쓰기 가능한지 확인하십시오.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[{0} 디렉토리에 액세스할 수 없습니다. 디렉토리가 존재하고 쓰기 가능한지 확인하십시오.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[{0} 파일에 액세스할 수 없습니다. 파일이 존재하고 쓰기 가능한지 확인하십시오.]]></file_not_accessible>
+
+<conndb><![CDATA[연결 데이터베이스]]></conndb>
+<conndb_desc><![CDATA[연결 데이터베이스에는 OAT가 연결할 수 있는 서버에 제공하는 연결 정보가 포함되어 있습니다.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[연결 데이터베이스를 작성하려면 다음을 클릭하십시오.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[연결 데이터베이스를 업그레이드하려면 다음을 클릭하십시오.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[연결 데이터베이스 처리가 완료되었습니다.]]></conndb_complete>
+<conndb_not_set><![CDATA[연결 데이터베이스 디렉토리(CONNDBDIR)의 매개변수가 conf/config.php 파일에서 설정되지 않았습니다. 해당 파일을 검사한 후 설치를 다시 시작하십시오.]]></conndb_not_set>
+<conndb_processing><![CDATA[{0} 파일 처리 중 - {1}]]></conndb_processing>
+<conndb_error><![CDATA[연결 데이터베이스가 설정되지 않았습니다. {0} 테이블을 작성할 수 없습니다. 연결 데이터베이스를 제거하고 설치를 다시 시작하십시오.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[연결 데이터베이스가 업그레이드되지 않았습니다. {0} 파일, {1} 섹션에서 오류가 발생했습니다. 연결 데이터베이스를 제거하고 설치를 다시 시작하십시오. 유지되는 모든 연결 정보가 유실됩니다.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[연결 데이터베이스의 버전 정보가 업그레이드되지 않았습니다. 연결 데이터베이스를 제거하고 설치를 다시 시작하십시오.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[연결 데이터베이스의 IBM 예제 플러그인에 대한 버전 정보가 업그레이드되지 않았습니다. 연결 데이터베이스를 제거하고 설치를 다시 시작하십시오.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[설치할 플러그인]]></choose_plugins>
+<zip_extension_required><![CDATA[PHP zip 모듈은 플러그인을 설치하는 데 필요합니다.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[플러그인이 설치되지 않았습니다. 설치 프로그램이 OAT 임시 디렉토리(tmp)에 쓸 수 없습니다. 디렉토리에 대한 권한을 확인하십시오. 그런 다음 OAT의 플러그인 관리자를 사용하여 플러그인을 설치하십시오.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[설치할 플러그인이 없습니다.]]></no_plugins_to_install>
+<plugin_name><![CDATA[플러그인]]></plugin_name>
+<plugin_author><![CDATA[작성자]]></plugin_author>
+<plugin_version><![CDATA[버전]]></plugin_version>
+<plugin_server_version><![CDATA[Informix 버전]]></plugin_server_version>
+<plugin_license><![CDATA[라이센스]]></plugin_license>
+<plugin_install_checkbox><![CDATA[설치?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[플러그인에 대한 라이센스 계약 조항에 동의하시겠습니까?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[플러그인 설치 결과]]></plugin_install>
+<no_plugins_selected><![CDATA[설치할 플러그인이 선택되지 않았습니다.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[{0}이(가) 설치되었습니다.]]></plugin_install_complete>
+
+<install_complete><![CDATA[OpenAdmin Tool 설치 완료]]></install_complete>
+<install_complete_details><![CDATA[OpenAdmin Tool이 설치되었습니다. 이 페이지를 닫고 OAT 로그인 페이지로 이동하려면 완료를 클릭하십시오.]]></install_complete_details>
+
+</lang>

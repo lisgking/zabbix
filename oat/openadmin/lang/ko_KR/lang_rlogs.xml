@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_rlogs">
+<mainTitle><![CDATA[복구 로그]]></mainTitle>
+<lognum><![CDATA[번호]]></lognum>
+<uniqid><![CDATA[고유 ID]]></uniqid>
+<size><![CDATA[크기]]></size>
+<SwitchComment><![CDATA[다음 논리 로그로 전환]]></SwitchComment>
+<attributes><![CDATA[속성]]></attributes>
+<used><![CDATA[사용됨]]></used>
+<location><![CDATA[위치]]></location>
+<notes><![CDATA[참고]]></notes>
+<lastfilled><![CDATA[마지막 채운 날짜]]></lastfilled>
+<ltitle><![CDATA[논리 로그 상태]]></ltitle>
+<notFull><![CDATA[가득 차지 않음]]></notFull>
+<UsedBackedUp><![CDATA[사용 및 백업됨]]></UsedBackedUp>
+<UsedCurrent><![CDATA[사용 및 현재]]></UsedCurrent>
+<Used><![CDATA[사용됨]]></Used>
+<Free><![CDATA[사용 가능]]></Free>
+<BackedUp><![CDATA[백업됨]]></BackedUp>
+<Pages><![CDATA[페이지]]></Pages>
+<pages><![CDATA[페이지]]></pages>
+<Usage><![CDATA[사용]]></Usage>
+<PagesPerSec><![CDATA[채움 비율]]></PagesPerSec>
+<PLogUsage><![CDATA[물리 로그 사용]]></PLogUsage>
+<PLogInfo><![CDATA[물리 로그 정보]]></PLogInfo>
+<PLogSize><![CDATA[몰리 로그 크기]]></PLogSize>
+<PLogUsed><![CDATA[사용된 양]]></PLogUsed>
+<PlogLocation><![CDATA[위치]]></PlogLocation>
+<PlogStartPos><![CDATA[오프셋 시작]]></PlogStartPos>
+<PlogBuffSize><![CDATA[버퍼 크기]]></PlogBuffSize>
+<LLogUsage><![CDATA[논리 로그 사용]]></LLogUsage>
+<mLogicalLogs><![CDATA[논리 로그]]></mLogicalLogs>
+<mPhysicalLog><![CDATA[물리 로그]]></mPhysicalLog>
+<mAdmin><![CDATA[관리]]></mAdmin>
+<mCheckpoints><![CDATA[체크포인트]]></mCheckpoints>
+<NewAdd><![CDATA[새로 추가됨]]></NewAdd>
+<LogDropNotConfirmed><![CDATA[논리 로그 제거가 확인되지 않았습니다. 확인 후 조작을 재시도하십시오.]]></LogDropNotConfirmed>
+<LogMoveNotConfirmed><![CDATA[물리 로그 이동이 확인되지 않았습니다. 확인 후 조작을 재시도하십시오.]]></LogMoveNotConfirmed>
+<MPhysicalLog><![CDATA[물리 로그 이동]]></MPhysicalLog>
+<Confirm><![CDATA[확인]]></Confirm>
+<Move><![CDATA[이동]]></Move>
+<mRPolicy><![CDATA[복구 정책]]></mRPolicy>
+<syncckpt><![CDATA[동기화 체크포인트]]></syncckpt>
+<normckpt><![CDATA[정상 체크포인트]]></normckpt>
+<dockpt><![CDATA[체크포인트 수행]]></dockpt>
+<Checkpoint><![CDATA[체크포인트]]></Checkpoint>
+<NoMove><![CDATA[물리 로그 이동 안함]]></NoMove>
+<DropLLog><![CDATA[논리 로그 제거]]></DropLLog>
+<NoDropLLog><![CDATA[논리 로그 제거 안함]]></NoDropLLog>
+<ON><![CDATA[켜짐]]></ON>
+<OFF><![CDATA[꺼짐]]></OFF>
+<InvalidValue><![CDATA[잘못된 값이 입력됨]]></InvalidValue>
+<save><![CDATA[저장]]></save>
+<cancel><![CDATA[취소]]></cancel>
+<rto_title><![CDATA[RTO - 목표 복구 시간(Recovery Time Objective)]]></rto_title>
+<rto><![CDATA[목표 복구 시간(Recovery Time Objective)]]></rto>
+<rto_error><![CDATA[RTO 서버 재시작을 수정하는 중에 오류가 발생했습니다.]]></rto_error>
+<minute><![CDATA[분]]></minute>
+<minutes><![CDATA[분]]></minutes>
+<autoChkpts><![CDATA[자동 체크포인트]]></autoChkpts>
+<autoChkpts_error><![CDATA[자동 체크포인트를 수정하는 중에 오류가 발생했습니다.]]></autoChkpts_error>
+<autoLRU><![CDATA[자동 LRU 조정]]></autoLRU>
+<autoLRU_error><![CDATA[자동 LRU 조정을 수정하는 중에 오류가 발생했습니다.]]></autoLRU_error>
+<NoPermission><![CDATA[읽기 전용 사용자는 이 작업을 수행할 권한이 없습니다. 읽기 전용 사용자로 로그인합니다.]]></NoPermission>
+<LogicalLogsAdded><![CDATA[논리 로그가 추가됨]]></LogicalLogsAdded>
+<AfterCurrentLog><![CDATA[현재 로그 이후]]></AfterCurrentLog>
+<AtEndOfLogs><![CDATA[로그의 끝]]></AtEndOfLogs>
+<DBSpaceName><![CDATA[DBSPACE 이름]]></DBSpaceName>
+<ErrorWithPhysLog><![CDATA[물리 로그를 수정하는 중에 오류가 발생했습니다.]]></ErrorWithPhysLog>
+<ErrorWithSwitchLog><![CDATA[다음 논리 로그로 전환하는 중에 오류가 발생했습니다.]]></ErrorWithSwitchLog>
+<seconds><![CDATA[초]]></seconds>
+<AddLogicalLog><![CDATA[논리 로그 추가]]></AddLogicalLog>
+<Add><![CDATA[추가]]></Add>
+<Drop><![CDATA[제거]]></Drop>
+<LogicalLogNum><![CDATA[논리 로그 수]]></LogicalLogNum>
+<Confirm><![CDATA[확인]]></Confirm>
+<SwitchLog><![CDATA[논리 로그 전환]]></SwitchLog>
+<Switch><![CDATA[전환]]></Switch>
+<KB><![CDATA[KB]]></KB>
+<MB><![CDATA[MB]]></MB>
+<GB><![CDATA[GB]]></GB>
+</lang>

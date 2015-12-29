@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_hm">
+
+<add><![CDATA[Hinzufügen]]></add>
+<alarms><![CDATA[Alarme]]></alarms>
+<alarm_check><![CDATA[Alarmprüfung]]></alarm_check>
+<alarm_setup><![CDATA[Alarmkonfiguration]]></alarm_setup>
+<alarm_mod><![CDATA[Alarme modifizieren]]></alarm_mod>
+<alarm_msg><![CDATA[Geben Sie die Bedingungen für das Aktivieren eines Alarms an.]]></alarm_msg>
+<alarm_name><![CDATA[Alarmname:]]></alarm_name>
+<Always><![CDATA[Immer]]></Always>
+<AnyAlarm><![CDATA[Beliebiger Alarm]]></AnyAlarm>
+<Anyalarm><![CDATA[Beliebiger Alarm]]></Anyalarm>
+<all><![CDATA[Alle]]></all>
+<cancel><![CDATA[Abbrechen]]></cancel>
+<Config><![CDATA[Konfiguration]]></Config>
+<Configuration><![CDATA[Konfiguration]]></Configuration>
+<Currentprofile><![CDATA[Aktuelles Profil]]></Currentprofile>
+<CurrentProfile><![CDATA[Aktuelles Profil]]></CurrentProfile>
+<del_def_na><![CDATA[Das Standardprofil kann nicht gelöscht werden.]]></del_def_na>
+<deleted_prof><![CDATA[Das Profil wurde gelöscht.]]></deleted_prof>
+<delete><![CDATA[Löschen]]></delete>
+<desc><![CDATA[Alarmname]]></desc>
+<emailprog><![CDATA[Konfiguration des E-Mail-Programms]]></emailprog>
+<empty_prof_add><![CDATA[Der Profilname darf nicht leer sein. ]]></empty_prof_add>
+<empty_prof_load><![CDATA[Wählen Sie ein Profil aus der Liste aus.]]></empty_prof_load>
+<enable><![CDATA[Aktivieren]]></enable>
+<ER><![CDATA[ER]]></ER>
+<exceptions><![CDATA[Ausnahmebedingungen]]></exceptions>
+<exc_intro><![CDATA[Dieser Alarm lässt Ausnahmebedingungen zu.]]></exc_intro>
+<exc_example><![CDATA[Beispiel: rootdbs, physdbs, logdbs]]></exc_example>
+<from><![CDATA[Von]]></from>
+<Category><![CDATA[Kategorie]]></Category>
+<prod_name><![CDATA[Health Advisor]]></prod_name>
+<prod_name_run><![CDATA[Health Advisor ausführen]]></prod_name_run>
+<id><![CDATA[ID]]></id>
+<info><![CDATA[Informationen]]></info>
+<ldesc><![CDATA[Beschreibung]]></ldesc>
+<description><![CDATA[Beschreibung:]]></description>
+<load><![CDATA[Laden]]></load>
+<modify><![CDATA[Modifizieren]]></modify>
+<modifysched><![CDATA[Zeitplan modifizieren]]></modifysched>
+<modify_threshold><![CDATA[Schwellenwerte modifizieren]]></modify_threshold>
+<name><![CDATA[Name]]></name>
+<noauth><![CDATA[Sie sind nicht dazu berechtigt, auf diese Seite zuzugreifen.]]></noauth>
+<noalarms><![CDATA[Keine Alarme aufgetreten.]]></noalarms>
+<notification><![CDATA[Benachrichtigung]]></notification>
+<OS><![CDATA[Betriebssystem]]></OS>
+<Perf><![CDATA[Leistung]]></Perf>
+<profile><![CDATA[Profil]]></profile>
+<profmanagement><![CDATA[Profilverwaltung]]></profmanagement>
+<profmsg><![CDATA[Profile hinzufügen, laden oder löschen.]]></profmsg>
+<RedAlarm><![CDATA[Roter Alarm]]></RedAlarm>
+<Redalarm_><![CDATA[Roter Alarm:]]></Redalarm_>
+<Redalarm><![CDATA[Roter Alarm]]></Redalarm>
+<Redalarmthreshold><![CDATA[Schwellenwert für roten Alarm]]></Redalarmthreshold>
+<send><![CDATA[E-Mail-Benachrichtigung senden]]></send>
+<save><![CDATA[Speichern]]></save>
+<save_failed><![CDATA[Speichern ist fehlgeschlagen:]]></save_failed>
+<saved_alarms><![CDATA[Die Änderungen an den Alarmoptionen wurden gespeichert.]]></saved_alarms>
+<saved_schedule><![CDATA[Die Änderungen an den Benachrichtigungsoptionen wurden gespeichert.]]></saved_schedule>
+<saved_email><![CDATA[Die Änderungen am E-Mail-Programm wurden gespeichert.]]></saved_email>
+<schedandnot><![CDATA[Zeitplan und Benachrichtigung]]></schedandnot>
+<schedmsg><![CDATA[Profile können für die Ausführung zu angegebenen Intervallen terminiert werden. Die Ergebnisse werden per E-Mail gesendet.]]></schedmsg>
+<schedule><![CDATA[Zeitplan]]></schedule>
+<show><![CDATA[Anzeigen]]></show>
+<Storage><![CDATA[Speicher]]></Storage>
+<to><![CDATA[An]]></to>
+<thresholds><![CDATA[Schwellenwerte]]></thresholds>
+<threshold_msg><![CDATA[Eine Erläuterung der Verwendung der Schwellenwerte finden Sie in der Alarmbeschreibung.]]></threshold_msg>
+<when><![CDATA[Wann]]></when>
+<Yellowalarmthreshold><![CDATA[Schwellenwert für gelben Alarm]]></Yellowalarmthreshold>
+<Yelalarm_><![CDATA[Gelber Alarm:]]></Yelalarm_>
+<YelAlarm><![CDATA[Gelber Alarm]]></YelAlarm>
+</lang>

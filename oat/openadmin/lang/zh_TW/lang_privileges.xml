@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[管理專用權]]></ManagePrivileges>
+<UserPrivileges><![CDATA[使用者專用權]]></UserPrivileges>
+<Database><![CDATA[資料庫]]></Database>
+<DBPrivileges><![CDATA[資料庫層次專用權]]></DBPrivileges>
+<TablePrivileges><![CDATA[表格層次專用權]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL 管理 API 專用權]]></AdminPrivileges>
+<NonOsUsers><![CDATA[內部使用者]]></NonOsUsers>
+<Name><![CDATA[名稱]]></Name>
+<Type><![CDATA[類型]]></Type>
+<DefRole><![CDATA[預設角色]]></DefRole>
+<Tabname><![CDATA[表格名稱]]></Tabname>
+<User><![CDATA[使用者]]></User>
+<Grantor><![CDATA[授與者]]></Grantor>
+<Privilege><![CDATA[專用權]]></Privilege>
+<Privileges><![CDATA[專用權]]></Privileges>
+<Username><![CDATA[使用者名稱]]></Username>
+<Grant><![CDATA[授權]]></Grant>
+<GrantNewPriv><![CDATA[授與新專用權]]></GrantNewPriv>
+<Roles><![CDATA[角色]]></Roles>
+<CreateNewRole><![CDATA[建立新角色]]></CreateNewRole>
+<Create><![CDATA[建立]]></Create>
+<RoleName><![CDATA[角色名稱]]></RoleName>
+<NoUserError><![CDATA[授權失敗：未提供使用者名稱。]]></NoUserError>
+<NoPrivError><![CDATA[授權失敗：未提供專用權層次。]]></NoPrivError>
+<NoTabError><![CDATA[授權失敗：未提供表格名稱。]]></NoTabError>
+<NoRoleError><![CDATA[建立失敗：未提供角色名稱。]]></NoRoleError>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<NoDatabasesError><![CDATA[此資料庫伺服器沒有可用的非系統資料庫。]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[順利完成使用者授權]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[已取消使用者專用權]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[已儲存使用者專用權]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[順利完成表格的授權]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[使用者]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[已取消使用者專用權]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[於表格]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[已儲存使用者專用權]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[順利完成角色的建立]]></CreateSuccessForRole>
+<Connect><![CDATA[連接]]></Connect>
+<Resource><![CDATA[資源]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[連接]]></CONNECT>
+<RESOURCE><![CDATA[資源]]></RESOURCE>
+<Select><![CDATA[選取]]></Select>
+<Update><![CDATA[更新]]></Update>
+<Insert><![CDATA[插入]]></Insert>
+<Delete><![CDATA[刪除]]></Delete>
+<Index><![CDATA[索引]]></Index>
+<Alter><![CDATA[變更]]></Alter>
+<References><![CDATA[參照]]></References>
+<Under><![CDATA[歸屬]]></Under>
+<Modify><![CDATA[修改]]></Modify>
+<Revoke><![CDATA[撤消]]></Revoke>
+<ErrorF><![CDATA[錯誤：]]></ErrorF>
+<GrantFailed><![CDATA[授權失敗]]></GrantFailed>
+<CreateFailed><![CDATA[建立失敗]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[若為內部使用者，OAT 需要 Informix 11.70。]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[若為 SQL 管理 API 指令專用權，OAT 需要 Informix 12.10。]]></AdminPrivileges_min_server_version>
+</lang>

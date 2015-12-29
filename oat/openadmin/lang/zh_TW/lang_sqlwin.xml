@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL 工具箱]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL 工具箱 - 資料庫]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL 工具箱 - 表格]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL 工具箱 - 表格選取]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL 工具箱 - 儲存程序]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL 工具箱 - 表格資訊]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL 工具箱 - 表格片段]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL 工具箱 - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[按一下資料庫名稱以連接。]]></ClickDbConn>
+<Databases><![CDATA[資料庫]]></Databases>
+<TotalRows><![CDATA[總列數：]]></TotalRows>
+<Tables><![CDATA[表格]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[結果]]></SQLResult>
+<SQLTree><![CDATA[查詢樹狀結構]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[錯誤：無查詢]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[錯誤：無查詢樹狀結構]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[錯誤：無現行 SQL 階段作業/連線]]></SQLErr_NoConn>
+<Column_Info><![CDATA[直欄資訊]]></Column_Info>
+<Table_Browse><![CDATA[表格瀏覽]]></Table_Browse>
+<Fragments><![CDATA[片段]]></Fragments>
+<Name><![CDATA[名稱]]></Name>
+<Collation><![CDATA[對照]]></Collation>
+<CreateDate><![CDATA[建立日期]]></CreateDate>
+<Logging><![CDATA[記載]]></Logging>
+<IncCatalog><![CDATA[併入資料庫型錄表格嗎？]]></IncCatalog>
+<Submit><![CDATA[提交]]></Submit>
+<ChkRtTypes><![CDATA[勾選常式類型 (langid) 以選取：]]></ChkRtTypes>
+<Owner><![CDATA[擁有者]]></Owner>
+<Procid><![CDATA[程序 ID]]></Procid>
+<Type><![CDATA[類型]]></Type>
+<Numargs><![CDATA[引數編號]]></Numargs>
+<ParamTypes><![CDATA[參數類型]]></ParamTypes>
+<Mode><![CDATA[模式]]></Mode>
+<Langid><![CDATA[語言 ID]]></Langid>
+<FragDispTitle><![CDATA[下列項目的片段化資訊：]]></FragDispTitle>
+<Partnum><![CDATA[分割區數目]]></Partnum>
+<FragmentType><![CDATA[片段類型]]></FragmentType>
+<Expression><![CDATA[表示式]]></Expression>
+<Dbspace><![CDATA[資料庫空間]]></Dbspace>
+<Partition><![CDATA[分割區]]></Partition>
+<ColDispTitle><![CDATA[下列項目的表格資訊：]]></ColDispTitle>
+<Colno><![CDATA[Colno]]></Colno>
+<Colname><![CDATA[Colname]]></Colname>
+<Coltype><![CDATA[Coltype]]></Coltype>
+<Collength><![CDATA[Collength]]></Collength>
+<ExtendedType><![CDATA[延伸類型]]></ExtendedType>
+<Browse><![CDATA[瀏覽]]></Browse>
+<Tabid><![CDATA[表格 ID]]></Tabid>
+<Rowsize><![CDATA[列大小]]></Rowsize>
+<NRows><![CDATA[列數]]></NRows>
+<NIndexes><![CDATA[索引數]]></NIndexes>
+<Locklevel><![CDATA[鎖定層次]]></Locklevel>
+<Fextsize><![CDATA[第一個延伸範圍大小]]></Fextsize>
+<Nextsize><![CDATA[下一個延伸範圍大小]]></Nextsize>
+<PagesUsed><![CDATA[使用頁數]]></PagesUsed>
+<View><![CDATA[檢視]]></View>
+<chooseDB><![CDATA[請選擇資料庫。]]></chooseDB>
+<butRunQuery><![CDATA[執行查詢]]></butRunQuery>
+<butSaveToFile><![CDATA[將查詢儲存到檔案]]></butSaveToFile>
+<butClear><![CDATA[清除]]></butClear>
+<spanRunQuery><![CDATA[按一下以對資料庫執行查詢。]]></spanRunQuery>
+<spanSaveToFile><![CDATA[按一下可以將查詢文字儲存到檔案。]]></spanSaveToFile>
+<spanClear><![CDATA[按一下以清除查詢編輯器視窗。]]></spanClear>
+<ColOpt><![CDATA[直欄選項]]></ColOpt>
+<ShowAll><![CDATA[顯示全部]]></ShowAll>
+<Show255><![CDATA[顯示 255 個字元]]></Show255>
+<ShowInFile><![CDATA[顯示於檔案]]></ShowInFile>
+<ShowSize><![CDATA[僅顯示大小]]></ShowSize>
+<IgnoreCol><![CDATA[忽略直欄]]></IgnoreCol>
+<ShowImage><![CDATA[顯示為影像]]></ShowImage>
+<Import><![CDATA[匯入]]></Import>
+<spanImport><![CDATA[按一下以從檔案匯入查詢]]></spanImport>
+<ImportQFrom><![CDATA[查詢匯入來源：]]></ImportQFrom>
+<Change><![CDATA[變更]]></Change>
+<Reset><![CDATA[重設]]></Reset>
+<QOutput><![CDATA[查詢輸出]]></QOutput>
+<Error><![CDATA[錯誤]]></Error>
+<filename><![CDATA[檔名]]></filename>
+<error_num><![CDATA[錯誤碼]]></error_num>
+<size_too_big><![CDATA[檔案大小太大]]></size_too_big>
+<size_is_0><![CDATA[檔案大小是 0]]></size_is_0>
+<not_text_type><![CDATA[檔案不是文字檔]]></not_text_type>
+<cannot_read_file><![CDATA[無法讀取檔案]]></cannot_read_file>
+<Return><![CDATA[傳回]]></Return>
+<Syntax><![CDATA[發生語法錯誤]]></Syntax>
+<QUERY><![CDATA[查詢]]></QUERY>
+<NumFet><![CDATA[提取的號碼]]></NumFet>
+<AllRowsFet><![CDATA[所有提取的列]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[在此查詢中，將只提取限制的列數。]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[針對部分類型查詢將提取的現行列數上限]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[一次只能執行一個 SQL 陳述式。已移除輸入中第一個分號之後的所有字元。]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[儲存失敗：沒有要儲存至檔案的查詢。]]></Save_NoQuery>
+<NoPermission><![CDATA[唯讀使用者沒有執行此動作的許可權。您是以唯讀使用者身分登入。]]></NoPermission>
+<NeedToLogin><![CDATA[需要登入。]]></NeedToLogin>
+<SelectDB><![CDATA[選取要連接的資料庫。]]></SelectDB>
+<ConnectingDB><![CDATA[連接至資料庫]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[SQL 查詢編輯器]]></SQLQueryEditor>
+<OneStmt><![CDATA[一次一個陳述式]]></OneStmt>
+<RowFetchLimit><![CDATA[若為具有排序方式、分組方式、子查詢、特定、聯集及聚集的查詢，要提取的列數會限制為：]]></RowFetchLimit> 
+<ShowAllText><![CDATA[顯示所有文字]]></ShowAllText>
+<ShowSomeText><![CDATA[顯示部分文字]]></ShowSomeText>
+<ShowInFile><![CDATA[顯示於檔案]]></ShowInFile>
+<IgnoreText><![CDATA[忽略文字]]></IgnoreText>
+<IgnoreByte><![CDATA[忽略位元組]]></IgnoreByte>
+<SaveInFile><![CDATA[儲存於檔案]]></SaveInFile>
+<file><![CDATA[檔案]]></file>
+<filesize><![CDATA[大小={0}]]></filesize>
+<filetype><![CDATA[{0} 檔案]]></filetype>
+<ErrorUnableToChg><![CDATA[錯誤：無法變更選項]]></ErrorUnableToChg>
+<SQLResults><![CDATA[SQL 結果]]></SQLResults>
+<SizeSixDBs><![CDATA[6 個最大資料庫的大小]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[登出：SQL 工具箱]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[登入身分]]></LoggedInAs>
+<ClickToSelect><![CDATA[按一下以在表格執行選取 *。]]></ClickToSelect>
+<PartitionInfo><![CDATA[分割區資訊]]></PartitionInfo>
+<CloseWindow><![CDATA[關閉視窗]]></CloseWindow>
+<DisplayOptions><![CDATA[顯示選項]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[程序/函數 ({0})]]></ProceduresFunctions>
+<Function><![CDATA[函數]]></Function>
+<Procedure><![CDATA[程序]]></Procedure>
+<All><![CDATA[全部]]></All>
+<Buffered><![CDATA[已進入緩衝區]]></Buffered>
+<Unbuffered><![CDATA[未進入緩衝區]]></Unbuffered>
+<NotLogged><![CDATA[未記載]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[最新統計資料]]></LastStats>
+<Pages><![CDATA[頁面]]></Pages>
+<pages><![CDATA[頁面]]></pages>
+<byte_blob><![CDATA[位元組/Blob]]></byte_blob>
+<text_clob><![CDATA[文字/Clob]]></text_clob>
+</lang>

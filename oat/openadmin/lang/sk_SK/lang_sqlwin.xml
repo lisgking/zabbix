@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin">
+<mainTitle><![CDATA[SQL Toolbox]]></mainTitle>
+<DatabasesTitle><![CDATA[SQL Toolbox - Databázy]]></DatabasesTitle>
+<TablesTitle><![CDATA[SQL Toolbox - Tabuľky]]></TablesTitle>
+<TabSelTitle><![CDATA[SQL Toolbox - Výber tabuliek]]></TabSelTitle>
+<SPLTitle><![CDATA[SQL Toolbox - Uložené procedúry]]></SPLTitle>
+<TabInfoTitle><![CDATA[SQL Toolbox - Informácie o tabuľke]]></TabInfoTitle>
+<FragInfoTitle><![CDATA[SQL Toolbox - Fragmenty tabuľky]]></FragInfoTitle>
+<SQLTitle><![CDATA[SQL Toolbox - SQL]]></SQLTitle>
+<ClickDbConn><![CDATA[Ak sa chcete pripojiť, kliknite na názov databázy.]]></ClickDbConn>
+<Databases><![CDATA[Databázy]]></Databases>
+<TotalRows><![CDATA[Celkový počet riadkov: ]]></TotalRows>
+<Tables><![CDATA[Tabuľky]]></Tables>
+<SPL_UDR><![CDATA[SPL/UDR]]></SPL_UDR>
+<SQL><![CDATA[SQL]]></SQL>
+<SQLResult><![CDATA[Výsledok]]></SQLResult>
+<SQLTree><![CDATA[Strom dotazov]]></SQLTree>
+<SQLErr_NoQuery><![CDATA[CHYBA: žiadny dotaz]]></SQLErr_NoQuery>
+<SQLErr_NoTree><![CDATA[CHYBA: žiadny strom dotazov]]></SQLErr_NoTree>
+<SQLErr_NoConn><![CDATA[CHYBA: žiadna aktuálna relácia SQL/pripojenie]]></SQLErr_NoConn>
+<Column_Info><![CDATA[Informácie o stĺpci]]></Column_Info>
+<Table_Browse><![CDATA[Prehľadávanie tabuliek]]></Table_Browse>
+<Fragments><![CDATA[Fragmenty]]></Fragments>
+<Name><![CDATA[Názov]]></Name>
+<Collation><![CDATA[Zoraďovanie]]></Collation>
+<CreateDate><![CDATA[Dátum vytvorenia]]></CreateDate>
+<Logging><![CDATA[Protokolovanie]]></Logging>
+<IncCatalog><![CDATA[Zahrnúť tabuľky databázového katalógu?]]></IncCatalog>
+<Submit><![CDATA[Odovzdať]]></Submit>
+<ChkRtTypes><![CDATA[Skontrolujte typy rutín (ID jazyka) na výber:]]></ChkRtTypes>
+<Owner><![CDATA[Vlastník]]></Owner>
+<Procid><![CDATA[Procid]]></Procid>
+<Type><![CDATA[Typ]]></Type>
+<Numargs><![CDATA[Numargs]]></Numargs>
+<ParamTypes><![CDATA[Typy parametrov]]></ParamTypes>
+<Mode><![CDATA[Režim]]></Mode>
+<Langid><![CDATA[ID jazyka]]></Langid>
+<FragDispTitle><![CDATA[Informácie o fragmentácii pre]]></FragDispTitle>
+<Partnum><![CDATA[Číslo oddielu]]></Partnum>
+<FragmentType><![CDATA[Typ fragmentu]]></FragmentType>
+<Expression><![CDATA[Výraz]]></Expression>
+<Dbspace><![CDATA[Databázový priestor]]></Dbspace>
+<Partition><![CDATA[Oddiel]]></Partition>
+<ColDispTitle><![CDATA[Informácie o tabuľke pre]]></ColDispTitle>
+<Colno><![CDATA[Colno]]></Colno>
+<Colname><![CDATA[Colname]]></Colname>
+<Coltype><![CDATA[Coltype]]></Coltype>
+<Collength><![CDATA[Collength]]></Collength>
+<ExtendedType><![CDATA[Rozšírený typ]]></ExtendedType>
+<Browse><![CDATA[Prehľadávať]]></Browse>
+<Tabid><![CDATA[ID tabuľky]]></Tabid>
+<Rowsize><![CDATA[Veľkosť riadka]]></Rowsize>
+<NRows><![CDATA[Počet riadkov]]></NRows>
+<NIndexes><![CDATA[Počet indexov]]></NIndexes>
+<Locklevel><![CDATA[Úroveň zámku]]></Locklevel>
+<Fextsize><![CDATA[Veľkosť prvej oblasti]]></Fextsize>
+<Nextsize><![CDATA[Veľkosť nasledujúcej oblasti]]></Nextsize>
+<PagesUsed><![CDATA[Použité stránky]]></PagesUsed>
+<View><![CDATA[Zobraziť]]></View>
+<chooseDB><![CDATA[Vyberte databázu.]]></chooseDB>
+<butRunQuery><![CDATA[Spustiť dotaz]]></butRunQuery>
+<butSaveToFile><![CDATA[Uložiť dotaz do súboru]]></butSaveToFile>
+<butClear><![CDATA[Vymazať]]></butClear>
+<spanRunQuery><![CDATA[Kliknite, ak chcete spustiť dotaz na databázu.]]></spanRunQuery>
+<spanSaveToFile><![CDATA[Kliknite, ak chcete uložiť text dotazu do súboru.]]></spanSaveToFile>
+<spanClear><![CDATA[Kliknite, ak chcete vymazať okno editora dotazov.]]></spanClear>
+<ColOpt><![CDATA[Voľba stĺpca]]></ColOpt>
+<ShowAll><![CDATA[Ukázať všetky]]></ShowAll>
+<Show255><![CDATA[Zobraziť 255 znakov]]></Show255>
+<ShowInFile><![CDATA[Zobraziť v súbore]]></ShowInFile>
+<ShowSize><![CDATA[Zobraziť iba veľkosť]]></ShowSize>
+<IgnoreCol><![CDATA[Ignorovať stĺpec]]></IgnoreCol>
+<ShowImage><![CDATA[Zobraziť ako obrázok]]></ShowImage>
+<Import><![CDATA[Importovať]]></Import>
+<spanImport><![CDATA[Kliknite, ak chcete importovať dotaz zo súboru]]></spanImport>
+<ImportQFrom><![CDATA[Importovať dotaz zo súboru:]]></ImportQFrom>
+<Change><![CDATA[Zmeniť]]></Change>
+<Reset><![CDATA[Resetovať]]></Reset>
+<QOutput><![CDATA[Výstup dotazu]]></QOutput>
+<Error><![CDATA[Chyba]]></Error>
+<filename><![CDATA[Názov súboru]]></filename>
+<error_num><![CDATA[Číslo chyby]]></error_num>
+<size_too_big><![CDATA[Veľkosť súboru je príliš vysoká]]></size_too_big>
+<size_is_0><![CDATA[Veľkosť súboru je 0]]></size_is_0>
+<not_text_type><![CDATA[Súbor nie je textový súbor]]></not_text_type>
+<cannot_read_file><![CDATA[Nedá sa čítať súbor]]></cannot_read_file>
+<Return><![CDATA[Návrat]]></Return>
+<Syntax><![CDATA[Nastala syntaktická chyba]]></Syntax>
+<QUERY><![CDATA[QUERY]]></QUERY>
+<NumFet><![CDATA[Vyvolané číslo]]></NumFet>
+<AllRowsFet><![CDATA[Všetky vyvolané riadky]]></AllRowsFet>
+<MaxRowsFetched><![CDATA[Pre tento dotaz sa vyvolá iba obmedzený počet riadkov.]]></MaxRowsFetched>
+<MaxFetNum><![CDATA[Aktuálny maximálny počet riadkov, ktoré sa vyvolajú pre niektoré typy dotazov]]></MaxFetNum>
+<SQLEditorWarn><![CDATA[V určitom čase môže byť spustený iba jeden príkaz SQL.  Všetky znaky za prvou bodkočiarkou vstupu boli odstránené.]]></SQLEditorWarn>
+<Save_NoQuery><![CDATA[Ukladanie zlyhalo: neexistuje žiadny dotaz na uloženie do súboru.]]></Save_NoQuery>
+<NoPermission><![CDATA[Užívatelia s oprávnením len na čítanie nemôžu vykonať túto operáciu. Ste prihlásený ako užívateľ s oprávnením len na čítanie.]]></NoPermission>
+<NeedToLogin><![CDATA[Je potrebné prihlásiť sa.]]></NeedToLogin>
+<SelectDB><![CDATA[Vyberte databázu na pripojenie.]]></SelectDB>
+<ConnectingDB><![CDATA[Pripája sa k databáze]]></ConnectingDB>
+<SQLQueryEditor><![CDATA[Editor dotazov SQL]]></SQLQueryEditor>
+<OneStmt><![CDATA[naraz len jeden príkaz]]></OneStmt>
+<RowFetchLimit><![CDATA[Pre dotazy s triedeniami, zoskupeniami, poddotazmi, odlišnosťami, zjendoteniami a súhrnmi je počet riadkov na získanie obmedzený na:]]></RowFetchLimit> 
+<ShowAllText><![CDATA[Zobraziť celý text]]></ShowAllText>
+<ShowSomeText><![CDATA[Zobraziť určitý text]]></ShowSomeText>
+<ShowInFile><![CDATA[Zobraziť v súbore]]></ShowInFile>
+<IgnoreText><![CDATA[Ignorovať text]]></IgnoreText>
+<IgnoreByte><![CDATA[Ignorovať bajt]]></IgnoreByte>
+<SaveInFile><![CDATA[Uložiť v súbore]]></SaveInFile>
+<file><![CDATA[súbor]]></file>
+<filesize><![CDATA[veľkosť={0}]]></filesize>
+<filetype><![CDATA[Súbor {0}]]></filetype>
+<ErrorUnableToChg><![CDATA[Chyba: Nie je možné zmeniť voľbu]]></ErrorUnableToChg>
+<SQLResults><![CDATA[Výsledky SQL]]></SQLResults>
+<SizeSixDBs><![CDATA[Veľkosť 6 najväčších databáz]]></SizeSixDBs>
+<LogoutSQLToolbox><![CDATA[Odhlásenie: SQL ToolBox]]></LogoutSQLToolbox>
+<LoggedInAs><![CDATA[Užívateľ prihlásený ako]]></LoggedInAs>
+<ClickToSelect><![CDATA[Kliknite, ak chcete vykonať výber * v tabuľke.]]></ClickToSelect>
+<PartitionInfo><![CDATA[Informácie o oddiele]]></PartitionInfo>
+<CloseWindow><![CDATA[Zatvoriť okno]]></CloseWindow>
+<DisplayOptions><![CDATA[Voľby zobrazenia]]></DisplayOptions>
+<ProceduresFunctions><![CDATA[Procedúry/Funkcie ({0})]]></ProceduresFunctions>
+<Function><![CDATA[Funkcia]]></Function>
+<Procedure><![CDATA[Procedúra]]></Procedure>
+<All><![CDATA[Všetky]]></All>
+<Buffered><![CDATA[S vyrovnávacou pamäťou]]></Buffered>
+<Unbuffered><![CDATA[Bez vyrovnávacej pamäte]]></Unbuffered>
+<NotLogged><![CDATA[Neprotokolované]]></NotLogged>
+<ANSI><![CDATA[ANSI]]></ANSI>
+<LastStats><![CDATA[Posledné štatistiky]]></LastStats>
+<Pages><![CDATA[Stránky]]></Pages>
+<pages><![CDATA[stránky]]></pages>
+<byte_blob><![CDATA[Byte/Blob]]></byte_blob>
+<text_clob><![CDATA[Text/Clob]]></text_clob>
+</lang>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[Logowanie do Narzędzi SQL]]></switchuser>
+<loginprompt><![CDATA[Wprowadź nazwę użytkownika i hasło, aby używać Narzędzi SQL]]></loginprompt>
+<empty><![CDATA[Nazwa użytkownika ani hasło nie może być puste]]></empty>
+<error><![CDATA[Wystąpił błąd]]></error>
+<username><![CDATA[Nazwa użytkownika]]></username>
+<password><![CDATA[Hasło]]></password>
+<login><![CDATA[Logowanie]]></login>
+<SwitchingUser><![CDATA[Przełączanie użytkownika]]></SwitchingUser>
+</lang>

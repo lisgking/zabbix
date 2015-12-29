@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[A munkamenet már nem létezik.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[Érvénytelen munkamenet-azonosító.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[A(z) {0} felhasználónak nincs engedélye a munkamenet aktuális utasításának megtekintésére.]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[A(z) {0} felhasználónak nincs engedélye a munkamenet SQL utasításának megtekintésére.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[Hiba:]]></ErrorF>
+</lang>

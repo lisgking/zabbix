@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<home><![CDATA[主页]]></home>
+<expand><![CDATA[扩展]]></expand>
+<collapse><![CDATA[折叠]]></collapse>
+<logs><![CDATA[日志]]></logs>
+<alertsummary><![CDATA[警报摘要]]></alertsummary>
+<alerts><![CDATA[警报]]></alerts>
+<admincommands><![CDATA[管理命令]]></admincommands>
+<onlinelog><![CDATA[联机消息]]></onlinelog>
+<baractlog><![CDATA[ON-Bar 活动]]></baractlog>
+<healthcenter><![CDATA[运行状况中心]]></healthcenter>
+<details><![CDATA[详细信息]]></details>
+<taskdetails><![CDATA[任务详细信息]]></taskdetails>
+<runtimes><![CDATA[任务运行时间]]></runtimes>
+<scheduler><![CDATA[调度程序]]></scheduler>
+<space><![CDATA[空间管理]]></space>
+<VP><![CDATA[虚拟处理器]]></VP>
+<dbspaces><![CDATA[数据库空间]]></dbspaces>
+<RecoveryLogs><![CDATA[恢复日志]]></RecoveryLogs>
+<storage><![CDATA[存储]]></storage>
+<chunks><![CDATA[块]]></chunks>
+<reservedspace><![CDATA[保留的空间]]></reservedspace>
+<performance><![CDATA[性能分析]]></performance>
+<sql><![CDATA[SQL 编辑器]]></sql>
+<sqlexplorer><![CDATA[SQL 资源管理器]]></sqlexplorer>
+<io><![CDATA[IO]]></io>
+<Reports><![CDATA[系统报告]]></Reports>
+<sessionexplorer><![CDATA[会话资源管理器]]></sessionexplorer>
+<uReports><![CDATA[用户报告]]></uReports>
+<sqltoolbox><![CDATA[SQL 工具箱]]></sqltoolbox>
+<databases><![CDATA[数据库]]></databases>
+<schemabrowser><![CDATA[模式浏览器]]></schemabrowser>
+<tables><![CDATA[表]]></tables>
+<spl><![CDATA[SPL]]></spl>
+<UsefulLinks><![CDATA[有用链接]]></UsefulLinks>
+<about><![CDATA[关于 OAT]]></about>
+<train><![CDATA[培训]]></train>
+<rss><![CDATA[RSS]]></rss>
+<admin><![CDATA[管理]]></admin>
+<mach11><![CDATA[集群]]></mach11>
+<dashboard><![CDATA[仪表板]]></dashboard>
+<help><![CDATA[帮助]]></help>
+<logout><![CDATA[注销]]></logout>
+<taskscheduler><![CDATA[任务调度程序]]></taskscheduler>
+<serveradmin><![CDATA[服务器管理]]></serveradmin>
+<configuration><![CDATA[配置]]></configuration>
+<HowDoI><![CDATA[OAT 任务帮助]]></HowDoI>
+<readme><![CDATA[自述文件]]></readme>
+<releasenotes><![CDATA[发行说明]]></releasenotes>
+<onconfigparam><![CDATA[配置]]></onconfigparam>
+<privileges><![CDATA[用户特权]]></privileges>
+<highavail><![CDATA[高可用性]]></highavail>
+<PerformanceHist><![CDATA[性能历史记录]]></PerformanceHist>
+<SystemValidation><![CDATA[系统验证]]></SystemValidation>
+<OATconfig><![CDATA[OAT 配置]]></OATconfig>
+<connadmin><![CDATA[连接管理]]></connadmin>
+<connmgt><![CDATA[管理连接]]></connmgt>
+<addgroup><![CDATA[添加组]]></addgroup>
+<addconn><![CDATA[添加连接]]></addconn>
+<helpadmin><![CDATA[帮助管理]]></helpadmin>
+<helpmgt><![CDATA[管理帮助]]></helpmgt>
+<helpdb><![CDATA[帮助数据库]]></helpdb>
+<addhelp><![CDATA[添加帮助]]></addhelp>
+<OATlogin><![CDATA[OAT 登录]]></OATlogin>
+<aus><![CDATA[Auto Update Statistics]]></aus>
+<qbe><![CDATA[按示例查询]]></qbe>
+<onstat><![CDATA[onstat 实用程序]]></onstat>
+<replication><![CDATA[复制]]></replication>
+<trustedcontext><![CDATA[可信上下文]]></trustedcontext>
+<security><![CDATA[安全性]]></security>
+<backup><![CDATA[备份]]></backup>
+<MemoryMgr><![CDATA[内存管理器]]></MemoryMgr>
+<iwa><![CDATA[Warehouse Accelerator]]></iwa>
+</lang>

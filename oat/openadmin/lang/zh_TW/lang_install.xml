@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[安裝 OpenAdmin Tool]]></install_page_title>
+<next><![CDATA[下一步]]></next>
+<save><![CDATA[儲存]]></save>
+<finish><![CDATA[完成]]></finish>
+<warning><![CDATA[警告]]></warning>
+<language><![CDATA[語言：]]></language>
+<error_occurred><![CDATA[發生錯誤]]></error_occurred>
+<error_message><![CDATA[錯誤訊息：]]></error_message>
+
+<welcome><![CDATA[歡迎使用]]></welcome>
+<welcome_message><![CDATA[此安裝程式會安裝 OpenAdmin Tool Community Edition {0}。]]></welcome_message>
+<prerequisite_message><![CDATA[如需安裝 OpenAdmin Tool 的必要條件相關資訊，請參閱 {0} 檔案。]]></prerequisite_message>
+<readme><![CDATA[ReadMe]]></readme>
+<license_message><![CDATA[若要安裝及使用 OpenAdmin Tool Community Edition，您必須接受下列授權合約。]]></license_message>
+<license_agreement><![CDATA[授權合約]]></license_agreement>
+<i_accept><![CDATA[我接受授權合約中的條款。]]></i_accept>
+<error_accept_license_first><![CDATA[您必須接受授權合約，才能繼續安裝。]]></error_accept_license_first>
+<install_lock_exists><![CDATA[安裝目錄中的 install.lock 檔案已停止安裝。請移除檔案，以繼續安裝。]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[必要的 PHP 模組]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[下面是執行 OpenAdmin Tool (OAT) 所需的 PHP 模組。]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[X 圖示表示找不到模組。請檢查 PHP 安裝，並安裝遺漏的模組。]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[建議的 PHP 模組]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[下面是 OAT 建議使用的 PHP 模組。]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[重要事項：雖然安裝及使用 OAT 不需要這些模組，但是如果沒有這些模組，OAT 的部分功能會受到限制。]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[未安裝部分必要的 PHP 模組。]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[遺漏模組：]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[未安裝部分建議的 PHP 模組。雖然安裝及使用 OAT 不需要這些模組，但是如果沒有這些模組，OAT 的部分功能會受到限制。]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[遺漏建議的模組：]]></silent_recommended_modules>
+<OK><![CDATA[確定]]></OK>
+
+<oat_config><![CDATA[OAT 配置]]></oat_config>
+<parameter><![CDATA[參數]]></parameter>
+<description><![CDATA[說明]]></description>
+<value><![CDATA[值]]></value>
+<LANG><![CDATA[預設語言]]></LANG>
+<LANG_desc><![CDATA[OAT 頁面的預設語言。]]></LANG_desc>
+<BASEURL><![CDATA[基本 URL]]></BASEURL>
+<BASEURL_desc><![CDATA[安裝 OAT 的 URL，格式如下：http://servername:port/location。]]></BASEURL_desc>
+<HOMEDIR><![CDATA[安裝目錄]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[OAT 的安裝目錄。]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[連線資料庫目錄]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[OAT 連線資料庫的目錄。指定不在 Web 伺服器文件目錄下的安全目錄。]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[連線資料庫位置 ({0}) 是在 Web 伺服器的文件目錄下。此位置可能會讓 OAT 面臨安全風險。基於安全理由，請變更連線資料庫的位置。若要忽略此警告，請再按一下「儲存」。]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[首頁]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[OAT 的首頁]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[歡迎使用]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[性能檢測中心 > 儀表板 > 群組摘要]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[性能檢測中心 > 儀表板 > 伺服器效能]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[自訂]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[更新間隔]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[伺服器狀態更新之間的時間長度（以秒為單位）。伺服器狀態會顯示在「性能檢測中心」>「儀表板」>「群組摘要」頁面上。]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[每個頁面的列數]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[顯示使用表格格式的資料時，預設的每個頁面列數。]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL 工具箱安全]]></SECURESQL>
+<SECURESQL_desc><![CDATA[需要「SQL 工具箱」的登入認證。]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix 連線時間]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[OAT 在傳回錯誤之前，嘗試連接至資料庫伺服器的時間長度（以秒為單位）(INFORMIXCONTIME)。]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix 連線重試]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[在 Informix 連接時間內，OAT 嘗試連接至資料庫伺服器的次數 (INFORMIXCONRETRY)。]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[這是必要欄位：{0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[指定作為安裝目錄的目錄 ({0}) 不存在。請指定有效的安裝目錄。]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[連線資料庫的指定目錄 ({0}) 無效。請檢查該目錄是否存在，以及是否可寫入。]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[無法存取目錄 {0}。請檢查該目錄是否存在，以及是否可寫入。]]></directory_not_accessible>
+<file_not_accessible><![CDATA[無法存取檔案 {0}。請檢查該檔案是否存在，以及是否可寫入。]]></file_not_accessible>
+
+<conndb><![CDATA[連線資料庫]]></conndb>
+<conndb_desc><![CDATA[連線資料庫含有您為 OAT 可連接的伺服器提供的連線資訊。]]></conndb_desc>
+<create_conndb_instructions><![CDATA[若要建立連線資料庫，請按「下一步」。]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[若要升級連線資料庫，請按「下一步」。]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[已順利完成連線資料庫處理。]]></conndb_complete>
+<conndb_not_set><![CDATA[未在 conf/config.php 檔案中設定連線資料庫目錄的參數 (CONNDBDIR)。請檢查該檔案，然後重新啟動安裝。]]></conndb_not_set>
+<conndb_processing><![CDATA[正在處理檔案 {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[未順利設定連線資料庫。無法建立 {0} 表格。請移除連線資料庫，然後重新啟動安裝。]]></conndb_error>
+<conndb_error_upgrade><![CDATA[未順利升級連線資料庫。檔案 {0} 區段 {1} 中發生錯誤。請移除連線資料庫，然後重新啟動安裝。將遺失所有已保留的連線資訊。]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[未順利升級連線資料庫中的版本資訊。請移除連線資料庫，然後重新啟動安裝。]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[未順利升級連線資料庫中「IBM 範例」外掛程式的版本資訊。請移除連線資料庫，然後重新啟動安裝。]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[要安裝的外掛程式]]></choose_plugins>
+<zip_extension_required><![CDATA[需要 PHP 壓縮模組，才能安裝外掛程式。]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[未安裝外掛程式。安裝程式無法寫入 OAT 暫存目錄 (tmp)。請檢查該目錄的許可權。然後，使用 OAT 中的「外掛程式管理程式」來安裝外掛程式。]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[沒有要安裝的外掛程式。]]></no_plugins_to_install>
+<plugin_name><![CDATA[外掛程式]]></plugin_name>
+<plugin_author><![CDATA[作者]]></plugin_author>
+<plugin_version><![CDATA[版本]]></plugin_version>
+<plugin_server_version><![CDATA[Informix 版本]]></plugin_server_version>
+<plugin_license><![CDATA[授權]]></plugin_license>
+<plugin_install_checkbox><![CDATA[安裝？]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[您接受外掛程式授權合約中的條款嗎？]]></plugin_license_confirmation>
+<plugin_install><![CDATA[外掛程式安裝結果]]></plugin_install>
+<no_plugins_selected><![CDATA[未選取要安裝的外掛程式。]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[已順利安裝 {0}。]]></plugin_install_complete>
+
+<install_complete><![CDATA[OpenAdmin Tool 安裝完成]]></install_complete>
+<install_complete_details><![CDATA[已順利安裝 OpenAdmin Tool。若要關閉此頁面，並跳至 OAT 登入頁面，請按一下「完成」。]]></install_complete_details>
+
+</lang>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Start]]></home>
+
+<dashboard><![CDATA[Panel kontrolny]]></dashboard>
+<dashboard_name_perf><![CDATA[Wydajność serwera]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[Ten panel kontrolny przedstawia informacje na temat tabel, zapytań i procesora.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Wykorzystanie zasobów]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[Ten panel kontrolny przedstawia informacje na temat pamięci, miejsca na dysku i blokad.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Pamięć serwera bazy danych]]></panel_title_memory>
+<panel_desc_memory><![CDATA[Ten panel przedstawia wykorzystanie pamięci współużytkowanej na serwerze bazy danych.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Sesje]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[Ten panel przedstawia liczbę połączonych sesji na serwerze bazy danych.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Odczyty i zapisy w sieci]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[Ten panel przedstawia liczbę wywołań we/wy dla odczytów i zapisów w sieci.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[Dyskowe we/wy]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[Ten panel przedstawia czas oczekiwania na dyskowe we/wy. Panel wymaga produktu Informix w wersji 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Pamięć systemu operacyjnego]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[Ten panel przedstawia wykorzystanie pamięci przez system operacyjny. Panel wymaga produktu Informix w wersji 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Transakcje]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[Ten panel przedstawia liczbę transakcji na serwerze bazy danych.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Wykorzystanie miejsca]]></panel_title_space>
+<panel_desc_space><![CDATA[Ten panel przedstawia ilość wolnego i zajętego miejsca dla każdego obszaru dbspace.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Blokady]]></panel_title_locks>
+<panel_desc_locks><![CDATA[Ten panel przedstawia liczbę blokad na serwerze bazy danych.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Ranking tabel - odczyt]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[Ten panel przedstawia tabele z największą liczbą odczytów.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[Czas procesora]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[Ten panel przedstawia czas procesora przeznaczony na operacje użytkownika i systemu.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Ranking tabel - modyfikacje]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[Ten panel przedstawia tabele z największą liczbą operacji wstawiania, aktualizowania i usuwania.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Łączna liczba operacji SQL]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[Ten panel przedstawia łączną liczbę wierszy przetworzonych, wstawionych, zaktualizowanych i usuniętych.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[Operacje SQL na sekundę]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[Ten panel przedstawia liczbę wierszy przetworzonych, wstawionych, zaktualizowanych i usuniętych na sekundę.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Witamy]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[Na tej stronie program OpenAdmin Tool nie może wyświetlać informacji dla serwera bazy danych za pomocą więcej niż jednego ustawienia narodowego innego niż angielskie. Serwer bazy danych zawiera więcej niż jedno ustawienia narodowe inne niż angielskie.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Eksplorator sesji]]></sessionexplorer>
+<ChartTest><![CDATA[Wykres - test]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[Obszar DATA]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Nie można pobrać informacji o połączeniu z serwerem bazy danych.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Połączenie nie powiodło się: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Błąd: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[Serwer bazy danych jest zablokowany.  Program OAT nie może pobrać żadnych innych informacji o statusie.]]></ServerBlocked>
+</lang>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[Ověření systému]]></mainTitle>
+<checkDataFormat><![CDATA[Zkontrolovat datový formát]]></checkDataFormat>
+<databaseName><![CDATA[Název databáze]]></databaseName>
+<tableName><![CDATA[Název tabulky]]></tableName>
+<chkTable><![CDATA[Zkontrolovat tabulku]]></chkTable>
+<chkExtFormat><![CDATA[Zkontrolovat formát fyzické oblasti]]></chkExtFormat>
+<extName><![CDATA[Název prostoru dbspace]]></extName>
+<chkExtent><![CDATA[Zkontrolovat fyzickou oblast]]></chkExtent>
+<valResTo><![CDATA[Výsledkem ověření platnosti je ...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - ověření systému]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[ověření obslužným programem oncheck bylo dokončeno.]]></oncheckComplete>
+<ValidationResults><![CDATA[Výsledky ověření platnosti ...]]></ValidationResults>
+<SysValNotValid><![CDATA[Ověření systému je na sekundárních serverech neplatné.]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[Uživatelé s oprávněním jen pro čtení k tomu nemají přístup. Jste přihlášeni jako uživatel s oprávněním jen pro čtení.]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[Upozornění: Spuštění kontroly může spotřebovat mnoho prostředků procesu s ohledem na počet kontrolovaných stránek. Tato akce přečte všechny stránky pro určené tabulky, kromě stránek blobpage a sbpage, a zkontroluje konzistenci každé stránky. Chcete pokračovat?]]></confirmCheckData>
+<NotYetImpl><![CDATA[Na této stránce nemůže nástroj OpenAdmin Tool zobrazit informace pro databázový server s více než jednou databází v neanglickém národním prostředí. Databázový server obsahuje více než jednu databázi v neanglickém národním prostředí.]]></NotYetImpl>
+</lang>

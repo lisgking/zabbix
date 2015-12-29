@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Espacios de BD]]></mainTitle>
+<dbspace><![CDATA[Espacio de BD]]></dbspace>
+<dbspaceName><![CDATA[Nombre del espacio de BD]]></dbspaceName>
+<owner><![CDATA[Propietario]]></owner>
+<pagesize><![CDATA[Tamaño de página]]></pagesize>
+<createTime><![CDATA[Hora de creación]]></createTime>
+<dbspaceInfo><![CDATA[Información del espacio de BD]]></dbspaceInfo>
+<utilization><![CDATA[{0} Utilización]]></utilization>
+<indexPages><![CDATA[Páginas de índice]]></indexPages>
+<dataPages><![CDATA[Páginas de datos]]></dataPages>
+<otherPages><![CDATA[Otras páginas]]></otherPages>
+<freePages><![CDATA[Páginas libres]]></freePages>
+<TableName><![CDATA[Nombre de tabla]]></TableName>
+<StartAddr><![CDATA[Dirección de inicio]]></StartAddr>
+<EndAddr><![CDATA[Dirección de fin]]></EndAddr>
+<size><![CDATA[Tamaño]]></size>
+<Status><![CDATA[Estado]]></Status>
+<ExtentList><![CDATA[Listado de extensiones]]></ExtentList>
+<TableList><![CDATA[Listado de tablas]]></TableList>
+<Database><![CDATA[Base de datos]]></Database>
+<Table><![CDATA[Tabla]]></Table>
+<Collate><![CDATA[Clasificar]]></Collate>
+<Rows><![CDATA[Filas]]></Rows>
+<SystemIntegrity><![CDATA[Integridad de]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Comprobar el formato de tabla del espacio de BD]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Comprobar las extensiones del espacio de BD]]></butCheckDbsExt>
+<RowSize><![CDATA[Tamaño de las filas]]></RowSize>
+<Created><![CDATA[Creado]]></Created>
+<AllocPages><![CDATA[Páginas asignadas]]></AllocPages>
+<UsedPages><![CDATA[Páginas utilizadas]]></UsedPages>
+<NumExtents><![CDATA[Núm. de extensiones]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Número]]></Number>
+<Name><![CDATA[Nombre]]></Name>
+<Type><![CDATA[Tipo]]></Type>
+<default><![CDATA[Predeterminado]]></default>
+<CreateSpace><![CDATA[Crear un espacio]]></CreateSpace>
+<Create><![CDATA[Crear]]></Create>
+<numChunks><![CDATA[Núm. de bloques de datos]]></numChunks>
+<UsedPer><![CDATA[% usado]]></UsedPer>
+<Data><![CDATA[Datos]]></Data>
+<Index><![CDATA[Índice]]></Index>
+<Other><![CDATA[Otros]]></Other>
+<Free><![CDATA[Libre]]></Free>
+<noDropDBSpace><![CDATA[No se pueden descartar espacios de base de datos raíz.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Añadir espacio a]]></AddSpaceto>
+<Path><![CDATA[Vía de acceso]]></Path>
+<Offset><![CDATA[Desplazamiento]]></Offset>
+<FileCreation><![CDATA[Creación de archivo]]></FileCreation>
+<MayCreateFile><![CDATA[Crear archivo si no existe ninguno]]></MayCreateFile>
+<FileMustExist><![CDATA[El archivo debe existir]]></FileMustExist>
+<DropSpace><![CDATA[Descartar espacio {0}]]></DropSpace>
+<AddChunk><![CDATA[Añadir bloque de datos]]></AddChunk>
+<Used><![CDATA[Utilizado]]></Used>
+<AddMirror><![CDATA[Añadir duplicado]]></AddMirror>
+<AddChunkMirror><![CDATA[Añadir bloque de datos con duplicado]]></AddChunkMirror>
+<StartMirror><![CDATA[Iniciar duplicado]]></StartMirror>
+<StopMirror><![CDATA[Detener duplicado]]></StopMirror>
+<AddMirrorto><![CDATA[Añadir duplicado a]]></AddMirrorto>
+<MirrorPath><![CDATA[Vía de acceso del duplicado]]></MirrorPath>
+<MirrorOffset><![CDATA[Desplazamiento del duplicado]]></MirrorOffset>
+<MirroringStarted><![CDATA[La réplica se ha iniciado]]></MirroringStarted>
+<MirroringStopped><![CDATA[La réplica se ha detenido]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - Validación del sistema]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Validación de oncheck completa.]]></oncheckComplete>
+<NoPermission><![CDATA[Los usuarios de sólo lectura no tienen permiso para hacer esto. Ha iniciado sesión como un usuario de sólo lectura.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Esta acción no es válida en servidores secundarios.]]></NotValidOnSecondary>
+<Error><![CDATA[Error:]]></Error>
+<DropDBSpaceFailed><![CDATA[El descarte del espacio de BD ha fallado.  El siguiente valor de espacio de BD no se ha definido correctamente:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[La creación del espacio de BD ha fallado.  La acción del espacio de BD]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[no es válida.]]></IsNotValid>
+<DATASpace><![CDATA[Espacio de DATOS]]></DATASpace>
+<DataSpaceL><![CDATA[Espacio de datos]]></DataSpaceL>
+<TEMPSpace><![CDATA[Espacio TEMPORAL]]></TEMPSpace>
+<TempSpaceL><![CDATA[Espacio temporal]]></TempSpaceL>
+<BLOBSpace><![CDATA[Espacio BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[La creación del espacio de BD ha sido satisfactoria]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[La creación del espacio de BD ha fallado.  El siguiente valor del espacio de BD no se ha definido correctamente:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[La creación del espacio de BD ha fallado.  La acción del espacio de BD no es válida]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[El descarte del espacio de BD no se ha confirmado]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Resultados de la validación a ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Resultados de la validación ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Se ha producido un fallo al añadir el bloque de datos al espacio de BD:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[El bloque de datos se ha añadido satisfactoriamente]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Añadiendo el bloque de datos al espacio de BD:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[El bloque de datos duplicado se ha añadido satisfactoriamente]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Se ha producido un fallo al añadir el duplicado al espacio de BD:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[El siguiente valor de duplicado no se ha definido correctamente:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[El duplicado se ha añadido satisfactoriamente]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Se ha producido un fallo al iniciar el duplicado en el espacio de BD:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[El inicio del duplicado no se ha confirmado en el espacio de BD:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Se ha producido un fallo al detener el duplicado para el espacio de BD:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[La detención del duplicado no se ha confirmado en el espacio de BD:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Espacio de BD]]></Dbspace>
+<TempDbspace><![CDATA[Espacio de BD temporal]]></TempDbspace>
+<MirroredDbspace><![CDATA[Espacio de BD duplicado]]></MirroredDbspace>
+<Blobspace><![CDATA[Espacio de Blob]]></Blobspace>
+<MirroredBlobspace><![CDATA[Espacio de Blob duplicado]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Espacio de Blob inteligente]]></SmartBlobspace>
+<TempSbspace><![CDATA[Espacio de Blob inteligente temporal]]></TempSbspace>
+<MirroredSbspace><![CDATA[Espacio de Blob inteligente duplicado]]></MirroredSbspace>
+<DataPages><![CDATA[Páginas de datos]]></DataPages>
+<IndexPages><![CDATA[Páginas de índice]]></IndexPages>
+<OtherPages><![CDATA[Otras páginas]]></OtherPages>
+<FreePages><![CDATA[Páginas libres]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[El valor del espacio de BD no se ha definido correctamente:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Resumen]]></summary>
+<admin><![CDATA[Admin]]></admin>
+<tables><![CDATA[Tablas]]></tables>
+<extents><![CDATA[Extensiones]]></extents>
+<validation><![CDATA[Validación]]></validation>
+<Disabled><![CDATA[Inhabilitado]]></Disabled>
+<Recovering><![CDATA[Recuperando]]></Recovering>
+<Operational><![CDATA[Operacional]]></Operational>
+</lang>

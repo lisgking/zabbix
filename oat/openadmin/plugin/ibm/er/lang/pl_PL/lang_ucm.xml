@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[Menedżer połączeń]]></ucm>
+<noCMSupportServerVersion><![CDATA[Menedżer połączeń w programie OAT wymaga produktu Informix w wersji 11.70.xC3.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[Działanie Menedżera połączeń nie powiodło się. Więcej szczegółów zawiera plik dziennika Menedżera połączeń.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[Nie znaleziono jednostek połączeń menedżera połączeń {0}.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[Nie znaleziono jednostki połączenia {0}.]]></ConnUnitNotFound>
+</lang>

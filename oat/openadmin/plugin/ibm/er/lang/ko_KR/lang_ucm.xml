@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[연결 관리자]]></ucm>
+<noCMSupportServerVersion><![CDATA[OAT에서 연결 관리자를 사용하려면 Informix 버전 11.70.xC3이 필요합니다.]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[연결 관리자 조작이 실패했습니다. 세부사항은 연결 관리자 로그 파일을 확인하십시오.]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[연결 관리자 {0}의 연결 단위을 찾을 수 없습니다.]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[연결 단위 {0}을(를) 찾을 수 없습니다.]]></ConnUnitNotFound>
+</lang>

@@ -1,0 +1,10 @@
+INFORMACJE LICENCYJNE
+
+Wymienione poni¿ej Programy s¹ licencjonowane na poni¿szych warunkach, które uzupe³niaj¹ warunki dokumentu IBM Miêdzynarodowa Umowa Licencyjna na Programy nieobjête Gwarancj¹ (numer formularza IBM Z125-5589-05).
+
+Nazwa Programu: IBM OpenAdmin Tool - Enterprise Replication Plugin V3.11
+Numer Programu: Tool
+
+L/N:  L-DDAY-94MTA8
+D/N:  L-DDAY-94MTA8
+P/N:  L-DDAY-94MTA8 

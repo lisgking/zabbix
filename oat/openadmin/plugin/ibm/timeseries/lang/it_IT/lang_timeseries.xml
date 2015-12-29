@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_timeseries">
+<timeseries><![CDATA[TimeSeries]]></timeseries>
+<FragmentedTable><![CDATA[Tabella frammentata]]></FragmentedTable>
+<PseudoTable><![CDATA[Pseudo-tabella]]></PseudoTable>
+<NotApplicable><![CDATA[Non applicabile]]></NotApplicable>
+<ErrorMultipleLocales><![CDATA[In questa pagina, OpenAdmin Tool non è in grado di visualizzare le informazioni per un server di database con più impostazioni internazionali non in lingua inglese. Il server di database contiene più impostazioni internazionali non in lingua inglese.]]></ErrorMultipleLocales>
+</lang>

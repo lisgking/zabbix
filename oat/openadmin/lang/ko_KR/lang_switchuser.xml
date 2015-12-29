@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[SQL 도구 상자 로그인]]></switchuser>
+<loginprompt><![CDATA[SQL 도구 상자를 사용하기 위한 사용자 이름과 암호를 입력하십시오.]]></loginprompt>
+<empty><![CDATA[사용자 이름과 암호가 비어 있으면 안됨]]></empty>
+<error><![CDATA[오류 발생]]></error>
+<username><![CDATA[사용자 이름]]></username>
+<password><![CDATA[암호]]></password>
+<login><![CDATA[로그인]]></login>
+<SwitchingUser><![CDATA[사용자 전환]]></SwitchingUser>
+</lang>

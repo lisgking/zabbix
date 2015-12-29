@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="onconfigparam">
+<SaveFailed><![CDATA[Se ha producido un fallo al guardar:]]></SaveFailed>
+<ValueReqd><![CDATA[el valor necesario para]]></ValueReqd>
+<MustBe><![CDATA[debe ser 0 (inhabilitado) o entre 60 y 1800.]]></MustBe>
+<MustBeRange><![CDATA[debe estar dentro del rango de]]></MustBeRange>
+<MustBeInSet><![CDATA[debe estar en el conjunto]]></MustBeInSet>
+<MustBeLessOrEqual><![CDATA[debe ser menor que o igual a]]></MustBeLessOrEqual>
+<MustBeGreaterOrEqual><![CDATA[debe ser mayor que o igual a]]></MustBeGreaterOrEqual>
+</lang>

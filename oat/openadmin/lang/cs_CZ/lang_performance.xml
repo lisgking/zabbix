@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[Historie výkonu]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[Nedostatečné množství dat pro profilování.]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[Nelze se připojit k databázovému serveru {0}.]]></DatabaseConnectionFailed>
+</lang>

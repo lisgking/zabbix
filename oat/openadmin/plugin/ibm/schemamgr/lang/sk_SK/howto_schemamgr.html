@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sk-SK" xml:lang="sk-sk">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="dc.language" scheme="rfc1766" content="sk-sk" />
+<meta name="dc.date" scheme="iso8601" content="2010-08-09" />
+<meta name="copyright" content="&copy; Copyright IBM Corp. 2009" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' />
+<meta name="type" content="concept, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task, task" />
+<meta name="keywords" content="Schema Manager, datab&aacute;zov&eacute; objekty, objekty tabuliek, prezeranie, štatistiky, tabuľka, fragment" />
+<meta name="keywords" content="vytv&aacute;ranie, tabuľky, zrušiť tabuľku, vymazať tabuľku, zrušenie, vymazanie, orezať tabuľku, orezanie, indexy, povolenie, zak&aacute;zanie" />
+<meta name="keywords" content="extern&eacute; tabuľky" />
+<title>Modul plug-in Schema Manager pre nástroj IBM OpenAdmin Tool for Informix</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body>
+<a id="Top_Of_Page" name="Top_Of_Page"></a>
+<h1>Modul plug-in Schema Manager pre nástroj IBM OpenAdmin Tool for Informix</h1>
+<br />
+<a name="wq1"></a>
+<div id="wq1">
+<h1>Obsah</h1>
+<div class="head1"><a id="ToC_1" name="ToC_1" href="#dqx1ids_osm" class="toclink">Modul plug-in Schema Manager pre n&aacute;stroj IBM OpenAdmin Tool for Informix</a></div>
+<div class="head1"><a id="ToC_2" name="ToC_2" href="#dqx1ids_osm_005" class="toclink">Zobrazovanie datab&aacute;zov&yacute;ch objektov</a></div>
+<div class="head1"><a id="ToC_5" name="ToC_5" href="#dqx1ids_osm_006" class="toclink">Zobrazovanie objektov tabuliek</a></div>
+<div class="head1"><a id="ToC_8" name="ToC_8" href="#dqx1ids_osm_019" class="toclink">Prezeranie štatist&iacute;k tabuliek a fragmentov</a></div>
+<div class="head1"><a id="ToC_11" name="ToC_11" href="#dqx1ids_osm_020" class="toclink">Spr&aacute;va tabuliek a indexov</a></div>
+<div class="head2"><a id="ToC_12" name="ToC_12" href="#dqx1ids_osm_003" class="toclink">Vytv&aacute;ranie tabuliek</a></div>
+<div class="head2"><a id="ToC_15" name="ToC_15" href="#dqx1ids_osm_001" class="toclink">Zrušenie tabuľky</a></div>
+<div class="head2"><a id="ToC_18" name="ToC_18" href="#dqx1ids_osm_002" class="toclink">Orezanie tabuľky</a></div>
+<div class="head2"><a id="ToC_21" name="ToC_21" href="#dqx1ids_osm_016" class="toclink">Vytvorenie indexu</a></div>
+<div class="head2"><a id="ToC_24" name="ToC_24" href="#dqx1ids_osm_018" class="toclink">Povolenie alebo zak&aacute;zanie indexu</a></div>
+<div class="head2"><a id="ToC_27" name="ToC_27" href="#dqx1ids_osm_017" class="toclink">Zrušenie indexu</a></div>
+<div class="head1"><a id="ToC_30" name="ToC_30" href="#dqx1ids_osm_011" class="toclink">Zav&aacute;dzanie a uvoľňovanie &uacute;dajov pomocou extern&yacute;ch tabuliek</a></div>
+<div class="head2"><a id="ToC_31" name="ToC_31" href="#dqx1ids_osm_008" class="toclink">Zavedenie &uacute;dajov pomocou externej tabuľky</a></div>
+<div class="head2"><a id="ToC_34" name="ToC_34" href="#dqx1ids_osm_009" class="toclink">Uvoľnenie &uacute;dajov do externej tabuľky</a></div>
+<div class="head2"><a id="ToC_37" name="ToC_37" href="#dqx1ids_osm_007" class="toclink">Vytvorenie externej tabuľky</a></div>
+<div class="head2"><a id="ToC_40" name="ToC_40" href="#dqx1ids_osm_010" class="toclink">Zobrazenie inform&aacute;cii o externej tabuľke</a></div>
+<div class="head2"><a id="ToC_43" name="ToC_43" href="#dqx1ids_osm_013" class="toclink">Zobrazenie stavu &uacute;loh zavedenia a uvoľnenia</a></div>
+<div class="head2"><a id="ToC_46" name="ToC_46" href="#dqx1ids_osm_012" class="toclink">Spustenie uložen&yacute;ch &uacute;loh zavedenia a uvoľnenia</a></div>
+<div class="head2"><a id="ToC_49" name="ToC_49" href="#dqx1ids_osm_014" class="toclink">Vymazanie &uacute;loh zav&aacute;dzania a uvoľnenia</a></div>
+<div class="head2"><a id="ToC_52" name="ToC_52" href="#dqx1ids_osm_015" class="toclink">Vytvorenie skupiny uložen&yacute;ch &uacute;loh zavedenia alebo uvoľnenia</a></div>
+<div class="head1"><a id="ToC_56" name="ToC_56" href="#dqx1ids_cm_not" class="toclink">Vyhl&aacute;senia</a></div>
+<div class="head2"><a id="ToC_57" name="ToC_57" href="#dqx1trademarks" class="toclink">Ochrann&eacute; zn&aacute;mky</a></div>
+<div class="head2"><a id="ToC_58" name="ToC_58" href="#dqx1ids_osm_000" class="toclink">Autorsk&eacute; pr&aacute;va</a></div>
+</div>
+<a name="dqx1ids_osm"></a>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Modul plug-in Schema Manager pre n&aacute;stroj IBM OpenAdmin Tool for Informix</a></h1>
+<div>
+<p>Modul plug-in Schema Manager pre n&aacute;stroj IBM&reg; OpenAdmin
+Tool (OAT) for Informix poskytuje
+grafick&eacute; rozhranie na zobrazovanie a spr&aacute;vu datab&aacute;z a tabuliek.</p></div>
+<p>Pomocou modulu plug-in Schema Manager m&ocirc;žete vykon&aacute;vať tieto &uacute;lohy:
+</p>
+<ul>
+<li>Vytvoriť tabuľky a indexy.</li>
+<li>Zaviesť a uvoľniť &uacute;daje, ktor&eacute; sa spravuj&uacute; a ukladaj&uacute; mimo
+datab&aacute;zov&yacute; server pomocou extern&yacute;ch tabuliek.</li>
+<li>Zobraziť inform&aacute;cie o datab&aacute;zov&yacute;ch objektoch, vr&aacute;tane uložen&yacute;ch proced&uacute;r
+a funkci&iacute;, postupnost&iacute;, už&iacute;vateľom definovan&yacute;ch typov &uacute;dajov (UDT), privil&eacute;gi&iacute;, modulov DataBlade, zoskupen&iacute;,
+prevodov a tried oper&aacute;torov.</li>
+<li>Zobraziť inform&aacute;cie o objektoch tabuľky, vr&aacute;tane stĺpcov, indexov,
+referenci&iacute;, privil&eacute;gi&iacute;, UDT, obmedzen&iacute;, fragmentov a sp&uacute;šťačov.</li></ul>
+<a name="dqx1ids_osm_005"></a>
+<h1 id="dqx1ids_osm_005"><a href="#ToC_2">Zobrazovanie datab&aacute;zov&yacute;ch objektov</a></h1>
+<div>
+<p>Zobrazte inform&aacute;cie o uložen&yacute;ch proced&uacute;rach a funkci&aacute;ch, postupnostiach,
+už&iacute;vateľom definovan&yacute;ch typoch &uacute;dajov (UDT), privil&eacute;gi&aacute;ch, moduloch DataBlade, zoskupeniach, volaniach
+a triedach oper&aacute;torov.</p></div><a id="idx1" name="idx1"></a><a id="idx2" name="idx2"></a>
+<p>
+<a name="wq2"></a>
+<h2 id="wq2">Inform&aacute;cie o &uacute;lohe</h2>
+<p>Ak chcete zobraziť datab&aacute;zov&eacute; objekty:</p></p>
+<p>
+<a name="wq3"></a>
+<h2 id="wq3">Proced&uacute;ra</h2></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Vyberte datab&aacute;zu v zozname. 
+
+<p>Na str&aacute;nke sa zobraz&iacute; panel s inform&aacute;ciami pre jednotliv&eacute; datab&aacute;zov&eacute; objekty.</p></li>
+<li>Ak chcete zobraziť viac inform&aacute;ci&iacute; o datab&aacute;zovom objekte, kliknite na tlačidlo rozvinutia
+v paneli objektov.</li></ol>
+<a name="dqx1ids_osm_006"></a>
+<h1 id="dqx1ids_osm_006"><a href="#ToC_5">Zobrazovanie objektov tabuliek</a></h1>
+<div>
+<p>Zobrazte inform&aacute;cie o stĺpcoch, indexoch, referenci&aacute;ch, privil&eacute;gi&aacute;ch,
+už&iacute;vateľom definovan&yacute;ch typoch (UDT), obmedzeniach, fragmentoch a sp&uacute;šťačoch.</p></div><a id="idx3" name="idx3"></a><a id="idx4" name="idx4"></a>
+<p>
+<a name="wq5"></a>
+<h2 id="wq5">Inform&aacute;cie o &uacute;lohe</h2>
+<p>Ak chcete zobraziť objekty tabuľky:</p></p>
+<p>
+<a name="wq6"></a>
+<h2 id="wq6">Proced&uacute;ra</h2></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Na vyhľadanie tabuľky, s ktorou chcete
+pracovať, začnite zad&aacute;vať ktor&uacute;koľvek časť jej n&aacute;zvu do poľa <strong>Find</strong>, č&iacute;m zobraz&iacute;te tabuľky, ktor&yacute;ch n&aacute;zov sa zhoduje so zadan&yacute;m reťazcom. M&ocirc;žete taktiež rozvin&uacute;ť datab&aacute;zu a zobraziť tabuľky.</li>
+<li>Voliteľn&yacute;: Vyberte filtre, ak chcete, aby zoznam zahŕňal viac tabuliek:
+
+<ul>
+<li>Ak chcete zahrn&uacute;ť aj syst&eacute;mov&eacute; katal&oacute;gy, vyberte voľbu <strong>Include Catalogs</strong>.</li>
+<li>Ak chcete zahrn&uacute;ť zobrazenia, vyberte voľbu <strong>Include Views</strong>. Zobrazenie predstavuje virtu&aacute;lnu tabuľku vytvoren&uacute; na z&aacute;klade zadan&eacute;ho pr&iacute;kazu SELECT.</li>
+<li>Ak chcete zahrn&uacute;ť synonym&aacute;, vyberte voľbu <strong>Include Synonyms</strong>. Synonym&aacute; predstavuj&uacute; alternat&iacute;vne n&aacute;zvy pre tabuľky, zobrazenia alebo sekvenčn&eacute;
+objekty. Synonym&aacute; sa zvyčajne vzťahuj&uacute; na tabuľky, ktor&eacute; nie s&uacute; v aktu&aacute;lnej datab&aacute;ze.</li></ul></li>
+<li>Vyberte tabuľku v zozname. 
+
+<p>Na str&aacute;nke sa zobraz&iacute; panel s inform&aacute;ciami pre jednotliv&eacute; objekty tabuľky.</p></li>
+<li>Ak chcete zobraziť viac inform&aacute;ci&iacute; o objekte tabuľky, kliknite na tlačidlo rozvinutia
+v paneli objektov.</li></ol>
+<a name="dqx1ids_osm_019"></a>
+<h1 id="dqx1ids_osm_019"><a href="#ToC_8">Prezeranie štatist&iacute;k tabuliek a fragmentov</a></h1>
+<div>
+<p>Prezrite si inform&aacute;cie o tabuľk&aacute;ch a fragmentoch, vr&aacute;tane
+percenta zmenen&yacute;ch riadkov počtu oper&aacute;ci&iacute; UPDATE, DELETE a INSERT
+v riadkoch. Prezrite si kedy boli štatistiky naposledy zaznamenan&eacute; a čas
+potrebn&yacute; na v&yacute;počet štatist&iacute;k.</p></div><a id="idx5" name="idx5"></a><a id="idx6" name="idx6"></a><a id="idx7" name="idx7"></a>
+<p>
+<a name="wq8"></a>
+<h2 id="wq8">Sk&ocirc;r ako začnete</h2></p>
+<a name="wq9"></a>
+<div class="notetitle" id="wq9">Požiadavka:</div>
+<div class="notebody">Na zobrazenie niektor&yacute;ch inform&aacute;ci&iacute;, vr&aacute;tane percenta zmenen&yacute;ch riadkov, počtu oper&aacute;ci&iacute; a času potrebn&eacute;ho na v&yacute;počet štatist&iacute;k, n&aacute;stroj IBM OpenAdmin
+Tool (OAT) for Informix vyžaduje IBM Informix, verzia 11.70.</div>
+<p>
+<a name="wq10"></a>
+<h2 id="wq10">Proced&uacute;ra</h2>
+<p>Ak si chcete prezrieť štatistiky tabuliek a fragmentov:</p></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Rozviňte datab&aacute;zu v zozname.</li>
+<li>Vyberte tabuľku v zozname.</li>
+<li><a name="dqx1ids_osm_019__d1131e70"></a><span id="dqx1ids_osm_019__d1131e70">Rozviňte panel <strong>Statistics</strong>.</span></li>
+<li>Ak chcete zobraziť štatistiky na &uacute;rovni fragmentov, kliknite na <strong>Fragment Statistics</strong>. Tieto inform&aacute;cie sa zobrazuj&uacute; pre IBM Informix, verzia 11.70.</li></ol>
+<a name="dqx1ids_osm_020"></a>
+<h1 id="dqx1ids_osm_020"><a href="#ToC_11">Spr&aacute;va tabuliek a indexov</a></h1>
+<div>
+<p>Vytvorte, zrušte a orežte tabuľky. Vytvorte, zak&aacute;žte a zrušte
+indexy.</p></div>
+<a name="dqx1ids_osm_003"></a>
+<h2 id="dqx1ids_osm_003"><a href="#ToC_12">Vytv&aacute;ranie tabuliek</a></h2>
+<div>
+<p>Vytvorte tabuľku a definujte všetky atrib&uacute;ty, ktor&eacute; s&uacute; potrebn&eacute; pre jej pln&uacute; funkčnosť.</p></div><a id="idx8" name="idx8"></a><a id="idx9" name="idx9"></a>
+<p>
+<a name="wq12"></a>
+<h3 id="wq12">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Ak chcete vytvoriť tabuľku:</p></p>
+<p>
+<a name="wq13"></a>
+<h3 id="wq13">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Vyberte datab&aacute;zu, v ktorej chcete vytvoriť tabuľku.</li>
+<li>V ponuke <strong>Actions</strong> kliknite na voľbu <strong>Create Table</strong>.</li>
+<li>Postupujte podľa pokynov sprievodcu Create Table.</li></ol>
+<a name="dqx1ids_osm_001"></a>
+<h2 id="dqx1ids_osm_001"><a href="#ToC_15">Zrušenie tabuľky</a></h2>
+<div>
+<p>Odstr&aacute;niť tabuľku spolu s pr&iacute;slušn&yacute;mi indexmi a &uacute;dajmi.</p></div><a id="idx10" name="idx10"></a><a id="idx11" name="idx11"></a><a id="idx12" name="idx12"></a><a id="idx13" name="idx13"></a>
+<p>
+<a name="wq15"></a>
+<h3 id="wq15">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Keď odstr&aacute;nite tabuľku, vymaž&uacute; sa všetky &uacute;daje uložen&eacute; v danej tabuľke
+spolu s jej indexmi, obmedzeniami, sp&uacute;šťačmi, pr&iacute;stupov&yacute;mi privil&eacute;giami
+a lok&aacute;lnymi synonymami. Odstr&aacute;nia sa tiež všetky zobrazenia založen&eacute; na danej tabuľke
+a všetky tabuľky narušen&iacute; a diagnostiky, ktor&eacute; s&uacute; k nej priraden&eacute;.</p>
+<p>Ak chcete
+zrušiť tabuľku, postupujte nasledovne:</p></p>
+<p>
+<a name="wq16"></a>
+<h3 id="wq16">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>V zozname rozviňte datab&aacute;zu, ktor&aacute; obsahuje tabuľku.</li>
+<li>Vyberte tabuľku.</li>
+<li>V ponuke <strong>Actions</strong> kliknite na položku <strong>Drop
+Table</strong>.</li></ol>
+<a name="dqx1ids_osm_002"></a>
+<h2 id="dqx1ids_osm_002"><a href="#ToC_18">Orezanie tabuľky</a></h2>
+<div>
+<p>Vymazať z tabuľky všetky riadky a uvoľniť pr&iacute;slušn&yacute; &uacute;ložn&yacute; priestor
+alebo ho vyhradiť na op&auml;tovn&eacute; využitie tabuľkou a jej indexmi.</p></div><a id="idx14" name="idx14"></a><a id="idx15" name="idx15"></a>
+<p>
+<a name="wq18"></a>
+<h3 id="wq18">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Op&auml;tovn&eacute; využitie &uacute;ložn&eacute;ho priestoru m&ocirc;že zefekt&iacute;vniť spr&aacute;vu &uacute;ložn&eacute;ho
+priestoru v aplik&aacute;ci&aacute;ch, v ktor&yacute;ch sa tabuľka pravidelne vypr&aacute;zdňuje
+a op&auml;tovne napĺňa nov&yacute;mi riadkami.</p>
+<p>Ak chcete orezať tabuľku, postupujte nasledovne:</p></p>
+<p>
+<a name="wq19"></a>
+<h3 id="wq19">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>V zozname rozviňte datab&aacute;zu, ktor&aacute; obsahuje tabuľku.</li>
+<li>Vyberte tabuľku.</li>
+<li>V ponuke <strong>Actions</strong> kliknite na položku <strong>Truncate
+Table</strong>.</li>
+<li>Voliteľn&yacute;: Ak chcete zachovať vyhradenie &uacute;ložn&eacute;ho priestoru pre tabuľku, začiarknite pol&iacute;čko <strong>Reserve the storage
+space</strong>.</li></ol>
+<a name="dqx1ids_osm_016"></a>
+<h2 id="dqx1ids_osm_016"><a href="#ToC_21">Vytvorenie indexu</a></h2>
+<div>
+<p>Vytvorte index pre jeden alebo pre viacer&eacute; stĺpce v tabuľke.</p></div><a id="idx16" name="idx16"></a><a id="idx17" name="idx17"></a>
+<p>
+<a name="wq21"></a>
+<h3 id="wq21">Inform&aacute;cie o &uacute;lohe</h3>
+<p></p></p>
+<p>
+<a name="wq22"></a>
+<h3 id="wq22">Proced&uacute;ra</h3>
+<p>Ak chcete vytvoriť index:</p></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>V zozname rozviňte datab&aacute;zu a vyberte tabuľku.</li>
+<li>V ponuke <strong>Actions</strong> kliknite na <strong>Create Index</strong>.</li>
+<li>Postupujte podľa pokynov v sprievodcovi Create Index.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>S&uacute;visiace koncepty</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.perf.doc/ids_prf_359.htm" target="_blank">Indexy a hľadisk&aacute; v&yacute;konnosti indexov</a></li></ul>
+<ul class="simple">
+<li><strong>S&uacute;visiaci odkaz</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.sqls.doc/ids_sqs_0401.htm" target="_blank">pr&iacute;kaz CREATE INDEX</a></li></ul>
+<ul class="simple">
+<li><strong>S&uacute;visiace inform&aacute;cie</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.perf.doc/ids_prf_359.htm" target="_blank">Indexy a hľadisk&aacute; v&yacute;konnosti indexov</a></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0401.htm" target="_blank">Pr&iacute;kaz CREATE INDEX</a></li></ul>
+<a name="dqx1ids_osm_018"></a>
+<h2 id="dqx1ids_osm_018"><a href="#ToC_24">Povolenie alebo zak&aacute;zanie indexu</a></h2>
+<div>
+<p>Zak&aacute;žte index alebo povoľte index, ktor&yacute; bol zak&aacute;zan&yacute;.</p></div><a id="idx18" name="idx18"></a><a id="idx19" name="idx19"></a><a id="idx20" name="idx20"></a><a id="idx21" name="idx21"></a>
+<p>
+<a name="wq24"></a>
+<h3 id="wq24">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Index je štandardne povolen&yacute;. Datab&aacute;zov&yacute; server rozpozn&aacute;va
+index a aktualizuje ho počas oper&aacute;ci&iacute; vkladania, vymazania a aktualiz&aacute;cie.
+Keď je index zak&aacute;zan&yacute;, už sa viac nebude aktualizovať počas t&yacute;chto oper&aacute;ci&iacute;.</p></p>
+<p>
+<a name="wq25"></a>
+<h3 id="wq25">Proced&uacute;ra</h3>
+<p>Ak chcete index povoliť alebo zak&aacute;zať:</p></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>V zozname rozviňte datab&aacute;zu, ktor&aacute; obsahuje tabuľku, na ktor&uacute;
+sa index vzťahuje a vyberte tabuľku.</li>
+<li>Rozviňte panel <strong>Indexes</strong>.</li>
+<li>Vyberte index.</li>
+<li>V ponuke <strong>Actions</strong> pre panel kliknite na položku <strong>Enable Index</strong> alebo na <strong>Disable Index</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>S&uacute;visiace koncepty</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.sqls.doc/ids_sqs_0435.htm" target="_blank">Ako datab&aacute;zov&yacute; server zaobch&aacute;dza so zak&aacute;zan&yacute;mi indexmi</a></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.sqls.doc/ids_sqs_0166.htm" target="_blank">Defin&iacute;cie režimov datab&aacute;zov&yacute;ch objektov</a></li></ul>
+<ul class="simple">
+<li><strong>S&uacute;visiace inform&aacute;cie</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0435.htm" target="_blank">Ako datab&aacute;zov&yacute; server zaobch&aacute;dza so zak&aacute;zan&yacute;mi indexmi</a></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0166.htm" target="_blank">Defin&iacute;cie režimov datab&aacute;zov&yacute;ch objektov</a></li></ul>
+<a name="dqx1ids_osm_017"></a>
+<h2 id="dqx1ids_osm_017"><a href="#ToC_27">Zrušenie indexu</a></h2>
+<div>
+<p>Zrušte index; ak chcete napr&iacute;klad odstr&aacute;niť index, ktor&yacute;
+už viac nie je efekt&iacute;vny.</p></div><a id="idx22" name="idx22"></a><a id="idx23" name="idx23"></a>
+<p>
+<a name="wq27"></a>
+<h3 id="wq27">Inform&aacute;cie o &uacute;lohe</h3>
+<p></p></p>
+<p>
+<a name="wq28"></a>
+<h3 id="wq28">Proced&uacute;ra</h3>
+<p>Ak chcete zrušiť index:</p></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>V zozname rozviňte datab&aacute;zu, ktor&aacute; obsahuje tabuľku, na ktor&uacute;
+sa index vzťahuje a vyberte tabuľku.</li>
+<li>Rozviňte panel <strong>Indexes</strong>.</li>
+<li>Vyberte index.</li>
+<li>V ponuke <strong>Actions</strong> pre panel kliknite na položku <strong>Drop Index</strong>.</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>S&uacute;visiace &uacute;lohy</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.perf.doc/ids_prf_332.htm" target="_blank">Rušenie indexov kv&ocirc;li efektivite aktualiz&aacute;cie tabuliek</a></li></ul>
+<ul class="simple">
+<li><strong>S&uacute;visiaci odkaz</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.sqls.doc/ids_sqs_0718.htm" target="_blank">pr&iacute;kaz DROP INDEX</a></li></ul>
+<ul class="simple">
+<li><strong>S&uacute;visiace inform&aacute;cie</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.perf.doc/ids_prf_332.htm" target="_blank">Rušenie indexov kv&ocirc;li efektivite aktualiz&aacute;cie tabuliek</a></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.sqls.doc/ids_sqs_0718.htm" target="_blank">Pr&iacute;kaz DROP INDEX</a></li></ul>
+<a name="dqx1ids_osm_011"></a>
+<h1 id="dqx1ids_osm_011"><a href="#ToC_30">Zav&aacute;dzanie a uvoľňovanie &uacute;dajov pomocou extern&yacute;ch tabuliek</a></h1>
+<div>
+<p>Zaveďte a uvoľnite &uacute;daje, ktor&eacute; sa spravuj&uacute; a ukladaj&uacute; mimo
+datab&aacute;zov&yacute; server pomocou extern&yacute;ch tabuliek.</p></div>
+<a name="dqx1ids_osm_008"></a>
+<h2 id="dqx1ids_osm_008"><a href="#ToC_31">Zavedenie &uacute;dajov pomocou externej tabuľky</a></h2>
+<div>
+<p>Pomocou externej tabuľky zavedie &uacute;daje do datab&aacute;zovej tabuľky zo zdroja,
+ktor&yacute; je pre datab&aacute;zov&yacute; server extern&yacute;.</p></div>
+<p>
+<a name="wq30"></a>
+<h3 id="wq30">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Ak chcete zaviesť &uacute;daje pomocou
+externej tabuľky, postupujte nasledovne:</p></p>
+<p>
+<a name="wq31"></a>
+<h3 id="wq31">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Vyberte datab&aacute;zov&uacute; tabuľku, do ktorej chcete zaviesť &uacute;daje. 
+
+<p>Na vyhľadanie tabuľky, s ktorou chcete
+pracovať, začnite zad&aacute;vať ktor&uacute;koľvek časť jej n&aacute;zvu do poľa <strong>Find</strong>, č&iacute;m zobraz&iacute;te tabuľky, ktor&yacute;ch n&aacute;zov sa zhoduje so zadan&yacute;m reťazcom. M&ocirc;žete taktiež rozvin&uacute;ť datab&aacute;zu a zobraziť tabuľky.</p></li>
+<li>V ponuke <strong>Actions</strong> kliknite na položku <strong>Load
+Table</strong>.</li>
+<li>Postupujte podľa pokynov sprievodcu Load Table.</li></ol>
+<a name="dqx1ids_osm_009"></a>
+<h2 id="dqx1ids_osm_009"><a href="#ToC_34">Uvoľnenie &uacute;dajov do externej tabuľky</a></h2>
+<div>
+<p>Uvoľn&iacute; &uacute;daje z datab&aacute;zovej tabuľky do externej tabuľky.</p></div>
+<p>
+<a name="wq33"></a>
+<h3 id="wq33">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Ak chcete uvoľniť &uacute;daje do
+externej tabuľky, postupujte nasledovne:</p></p>
+<p>
+<a name="wq34"></a>
+<h3 id="wq34">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Vyberte datab&aacute;zov&uacute; tabuľku, z ktorej chcete uvoľniť &uacute;daje. 
+
+<p>Na vyhľadanie tabuľky, s ktorou chcete
+pracovať, začnite zad&aacute;vať ktor&uacute;koľvek časť jej n&aacute;zvu do poľa <strong>Find</strong>, č&iacute;m zobraz&iacute;te tabuľky, ktor&yacute;ch n&aacute;zov sa zhoduje so zadan&yacute;m reťazcom. M&ocirc;žete taktiež rozvin&uacute;ť datab&aacute;zu a zobraziť tabuľky.</p></li>
+<li>V ponuke <strong>Actions</strong> kliknite na položku <strong>Unload
+Table</strong>.</li>
+<li>Postupujte podľa pokynov sprievodcu Unload Table.</li></ol>
+<a name="dqx1ids_osm_007"></a>
+<h2 id="dqx1ids_osm_007"><a href="#ToC_37">Vytvorenie externej tabuľky</a></h2>
+<div>
+<p>Vytvorte tabuľku pre zavedenie a uvoľnenie &uacute;dajov, ktor&eacute; sa spravuj&uacute;
+a ukladaj&uacute; mimo datab&aacute;zov&eacute;ho servera.</p></div><a id="idx24" name="idx24"></a><a id="idx25" name="idx25"></a>
+<p>
+<a name="wq36"></a>
+<h3 id="wq36">Inform&aacute;cie o &uacute;lohe</h3></p>
+<a name="wq37"></a>
+<div class="notetitle" id="wq37">Požiadavka:</div>
+<div class="notebody">Na vytv&aacute;ranie extern&yacute;ch tabuliek
+sa vyžaduje IBM Informix, verzia 11.50.xC6.</div>
+<p>Ak chcete vytvoriť extern&uacute; tabuľku, postupujte nasledovne:</p>
+<p>
+<a name="wq38"></a>
+<h3 id="wq38">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Vyberte datab&aacute;zu, pre ktor&uacute; sa m&aacute; vytvoriť tabuľka.</li>
+<li>V ponuke <strong>Actions</strong> kliknite na voľbu <strong>Create Table</strong>.</li>
+<li>Postupujte podľa pokynov sprievodcu Create Table. 
+
+<p>Pre <strong>Table type</strong> vyberte typ externej tabuľky: 
+</p>
+<ul>
+<li><strong>External Fixed</strong>: Tabuľka v textovom form&aacute;te
+s pevne stanovenou š&iacute;rkou a jej &uacute;daje sa spravuj&uacute; a ukladaj&uacute; mimo datab&aacute;zov&eacute;ho  servera Informix.</li>
+<li><strong>External Delimited</strong>: Tabuľka v delimitovanom
+textovom form&aacute;te a jej &uacute;daje sa spravuj&uacute; a ukladaj&uacute; mimo datab&aacute;zov&eacute;ho servera  Informix.</li>
+<li><strong>External Informix</strong>: Tabuľka v internom form&aacute;te  Informix a jej &uacute;daje sa spravuj&uacute; a ukladaj&uacute; mimo datab&aacute;zov&eacute;ho  servera Informix. 
+
+<p>Extern&eacute; tabuľky sa použ&iacute;vaj&uacute; na zavedenie a uvoľnenie &uacute;dajov pre vašu datab&aacute;zu.</p></li></ul></li></ol>
+<a name="dqx1ids_osm_010"></a>
+<h2 id="dqx1ids_osm_010"><a href="#ToC_40">Zobrazenie inform&aacute;cii o externej tabuľke</a></h2>
+<div>
+<p>Zobrazte inform&aacute;cie o externej tabuľke.</p></div>
+<p>
+<a name="wq40"></a>
+<h3 id="wq40">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Ak chcete zobraziť inform&aacute;cie o externej tabuľke:</p></p>
+<p>
+<a name="wq41"></a>
+<h3 id="wq41">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Na vyhľadanie tabuľky, s ktorou chcete
+pracovať, začnite zad&aacute;vať ktor&uacute;koľvek časť jej n&aacute;zvu do poľa <strong>Find</strong>, č&iacute;m zobraz&iacute;te tabuľky, ktor&yacute;ch n&aacute;zov sa zhoduje so zadan&yacute;m reťazcom. M&ocirc;žete taktiež rozvin&uacute;ť datab&aacute;zu a zobraziť tabuľky.</li>
+<li>Vyberte tabuľku v zozname. 
+
+<p>Na str&aacute;nke sa zobraz&iacute; panel s inform&aacute;ciami pre jednotliv&eacute; objekty tabuľky.</p></li>
+<li>Ak chcete zobraziť viac inform&aacute;ci&iacute; o objekte tabuľky, kliknite na tlačidlo rozvinutia
+v paneli objektov. 
+
+<p>V paneli <strong>Table
+Information</strong> a v paneli <strong>Columns</strong> sa zobrazuj&uacute; špecifick&eacute; inform&aacute;cie o extern&yacute;ch tabuľk&aacute;ch.</p></li></ol>
+<a name="dqx1ids_osm_013"></a>
+<h2 id="dqx1ids_osm_013"><a href="#ToC_43">Zobrazenie stavu &uacute;loh zavedenia a uvoľnenia</a></h2>
+<div>
+<p>Zobrazte stav &uacute;loh, ktor&eacute; zav&aacute;dzaj&uacute; a uvoľňuj&uacute; &uacute;daje
+pomocou extern&yacute;ch tabuliek.</p></div>
+<p>
+<a name="wq43"></a>
+<h3 id="wq43">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Ak chcete zobraziť stav &uacute;lohy zavedenia a uvoľnenia:</p></p>
+<p>
+<a name="wq44"></a>
+<h3 id="wq44">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Kliknite na datab&aacute;zu alebo na tabuľku, v ktorej je &uacute;loha spusten&aacute;.</li>
+<li>Rozviňte panel <strong>Information</strong>.</li>
+<li>Kliknite na z&aacute;ložku <strong>Task Status</strong>.</li>
+<li>V zozname <strong>Show</strong> vyberte typ stavu, ktor&yacute; sa m&aacute; zobraziť: stav všetk&yacute;ch &uacute;loh, &uacute;loh zavedenia alebo &uacute;loh uvoľnenia. 
+
+<p>Ak chcete zobraziť viac inform&aacute;ci&iacute; o &uacute;lohe, vr&aacute;tane chybov&yacute;ch k&oacute;dov a n&aacute;vratov&yacute;ch spr&aacute;v, kliknite na tlačidlo podrobnost&iacute; pre &uacute;lohu.</p>
+
+
+<p>Bližšie inform&aacute;cie o konkr&eacute;tnych chybov&yacute;ch k&oacute;doch n&aacute;jdete v časti
+Chybov&eacute; k&oacute;dy v t&eacute;me <a href="http://publib.boulder.ibm.com/infocenter/idshelp/v115/topic/com.ibm.support.core.doc/troubleshoot_main.htm" target="_blank">Riešenie probl&eacute;mov a podpora</a>.</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>S&uacute;visiace inform&aacute;cie</strong></li>
+<li>
+<img src="sout.gif" alt="" /><a href="http://publib.boulder.ibm.com/infocenter/idshelp/v117/topic/com.ibm.em.doc/errors_ids117.html" target="_blank">Chybov&eacute; spr&aacute;vy</a></li></ul>
+<a name="dqx1ids_osm_012"></a>
+<h2 id="dqx1ids_osm_012"><a href="#ToC_46">Spustenie uložen&yacute;ch &uacute;loh zavedenia a uvoľnenia</a></h2>
+<div>
+<p>Spustite &uacute;lohy, ktor&eacute; zav&aacute;dzaj&uacute; a uvoľňuj&uacute; &uacute;daje s použit&iacute;m extern&yacute;ch tabuliek.</p></div>
+<p>
+<a name="wq46"></a>
+<h3 id="wq46">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Keď zavediete alebo uvoľn&iacute;te &uacute;daje s použit&iacute;m
+extern&yacute;ch tabuliek, &uacute;loha sa ulož&iacute;. &Uacute;lohu m&ocirc;žete znovu spustiť alebo ju m&ocirc;žete
+vymazať.</p>
+<p>Ak chcete spustiť uložen&uacute; &uacute;lohu zavedenia alebo uvoľnenia:</p></p>
+<p>
+<a name="wq47"></a>
+<h3 id="wq47">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Kliknite na datab&aacute;zu alebo na tabuľku, v ktorej je &uacute;loha spusten&aacute;.</li>
+<li>Rozviňte panel <strong>Information</strong>.</li>
+<li>Kliknite na z&aacute;ložku <strong>Task Status</strong>.</li>
+<li>V zozname <strong>Show</strong> vyberte typ &uacute;loh, ktor&eacute; sa maj&uacute; zobraziť: <strong>All tasks</strong>, <strong>Load tasks</strong> alebo  <strong>Unload tasks</strong>.</li>
+<li>Vyberte &uacute;lohy, ktor&eacute; sa maj&uacute; spustiť.</li>
+<li>V ponuke <strong>Actions</strong> pre panel kliknite na položku <strong>Submit</strong>.</li></ol>
+<a name="dqx1ids_osm_014"></a>
+<h2 id="dqx1ids_osm_014"><a href="#ToC_49">Vymazanie &uacute;loh zav&aacute;dzania a uvoľnenia</a></h2>
+<div>
+<p>Vymažte &uacute;lohu zavedenia alebo uvoľnenia alebo stav &uacute;lohy zavedenia alebo
+uvoľnenia.</p></div>
+<p>
+<a name="wq49"></a>
+<h3 id="wq49">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Keď zavediete alebo uvoľn&iacute;te &uacute;daje s použit&iacute;m
+extern&yacute;ch tabuliek, &uacute;loha sa ulož&iacute;. &Uacute;lohu m&ocirc;žete znovu odovzdať alebo ju m&ocirc;žete vymazať.</p>
+<p>Keď vymažete &uacute;lohu zavedenia alebo uvoľnenia, vymaž&uacute; sa ja všetky popisy stavu &uacute;lohy. Keď však vymažete stav, &uacute;loha sa nevymaže.</p>
+<p>Ak chcete vymazať &uacute;lohy zavedenia a uvoľnenia:</p></p>
+<p>
+<a name="wq50"></a>
+<h3 id="wq50">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja IBM OpenAdmin
+Tool (OAT) for Informix kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Kliknite na datab&aacute;zu alebo na tabuľku, v ktorej je &uacute;loha spusten&aacute;.</li>
+<li>Rozviňte panel <strong>Information</strong>.</li>
+<li>Kliknite na z&aacute;ložku <strong>Task Status</strong>.</li>
+<li>V zozname <strong>Show</strong> vyberte typ &uacute;lohy, ktor&aacute;
+sa m&aacute; vymazať. 
+
+<ul>
+<li>Ak chcete vymazať len stav, vyberte <strong>Status of all tasks</strong>, <strong>Status of load tasks</strong> alebo <strong>Status
+of unload tasks</strong>.</li>
+<li>Ak chcete vymazať &uacute;lohu  a stav, vyberte <strong>All tasks</strong>, <strong>Load tasks</strong> alebo <strong>Unload tasks</strong>.</li></ul></li>
+<li>Vyberte &uacute;lohy, ktor&eacute; sa maj&uacute; vymazať.</li>
+<li>V ponuke <strong>Actions</strong> pre panel kliknite na položku <strong>Delete</strong>.</li></ol>
+<a name="dqx1ids_osm_015"></a>
+<h2 id="dqx1ids_osm_015"><a href="#ToC_52">Vytvorenie skupiny uložen&yacute;ch &uacute;loh zavedenia alebo uvoľnenia</a></h2>
+<div>
+<p>Zoskupte uložen&eacute; &uacute;lohy tak, aby sa mohli odovzdať spoločne.</p></div>
+<p>
+<a name="wq52"></a>
+<h3 id="wq52">Inform&aacute;cie o &uacute;lohe</h3>
+<p>Keď zavediete alebo uvoľn&iacute;te &uacute;daje s použit&iacute;m
+extern&yacute;ch tabuliek, &uacute;loha sa ulož&iacute;. Keď &uacute;lohu znovu spust&iacute;te, vymažte ju
+alebo ju zoskupte s in&yacute;mi uložen&yacute;mi &uacute;lohami.</p>
+<p>Ak chcete vytvoriť skupinu
+uložen&yacute;ch &uacute;loh zavedenia alebo uvoľnenia:</p></p>
+<p>
+<a name="wq53"></a>
+<h3 id="wq53">Proced&uacute;ra</h3></p>
+<ol type="1">
+<li>V ponuke n&aacute;stroja OAT kliknite na <strong>SQL Toolbox</strong> &rarr; <strong>Schema Manager</strong>.</li>
+<li>Kliknite na datab&aacute;zu alebo na tabuľku, v ktorej je &uacute;loha spusten&aacute;.</li>
+<li>Rozviňte panel <strong>Information</strong>.</li>
+<li>Kliknite na z&aacute;ložku <strong>Task Status</strong>.</li>
+<li>V zozname <strong>Show</strong> vyberte typ &uacute;loh, ktor&eacute; sa maj&uacute; zobraziť: <strong>All tasks</strong>, <strong>Load tasks</strong> alebo  <strong>Unload tasks</strong>.</li>
+<li>Vyberte &uacute;lohy, ktor&eacute; sa maj&uacute; zahrn&uacute;ť do skupiny. &Uacute;lohy zavedenia a uvoľnenia
+m&ocirc;žete zahrn&uacute;ť do rovnakej skupiny.</li>
+<li>V ponuke <strong>Actions</strong> pre panel kliknite na položku <strong>Create Group</strong> a zadajte n&aacute;zov pre skupinu.</li></ol>
+<p>
+<a name="wq55"></a>
+<h3 id="wq55">V&yacute;sledky</h3>
+<p>Skupiny uložen&yacute;ch &uacute;loh zavedenia a uvoľnenia pre server sa zobrazuj&uacute; na str&aacute;nke <strong>Task Status</strong> pre datab&aacute;zu <strong>sysadmin</strong>. Ak chcete zobraziť skupiny, v zozname datab&aacute;z vyberte datab&aacute;zu <strong>sysadmin</strong>, rozviňte panel  <strong>Information</strong> a kliknite na z&aacute;ložku <strong>Task Status</strong>.</p>
+<p></p></p>
+<a name="dqx1ids_cm_not"></a>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_56">Vyhl&aacute;senia</a></h1>
+<p>Tieto inform&aacute;cie boli vytvoren&eacute; pre produkty a služby pon&uacute;kan&eacute; v USA.</p>
+<p>IBM nemus&iacute; produkty, služby alebo komponenty, o ktor&yacute;ch sa hovor&iacute; v tomto
+dokumente, pon&uacute;kať vo všetk&yacute;ch krajin&aacute;ch.
+Inform&aacute;cie o produktoch a služb&aacute;ch, aktu&aacute;lne dostupn&yacute;ch vo vašej
+krajine, m&ocirc;žete z&iacute;skať od z&aacute;stupcu spoločnosti IBM. Žiadne odkazy na produkt,
+program alebo službu spoločnosti IBM
+neznamenaj&uacute;, ani z nich nevypl&yacute;va, že mus&iacute; byť použit&yacute; len tento produkt,
+program alebo služba spoločnosti IBM. M&ocirc;žete použiť
+ľubovoľn&yacute; funkčne ekvivalentn&yacute; produkt, program alebo službu, ktor&eacute; neporušuj&uacute;
+pr&aacute;va duševn&eacute;ho vlastn&iacute;ctva IBM. Za pos&uacute;denie a overenie funkčnosti ak&eacute;hokoľvek produktu, programu alebo služby, ktor&yacute; alebo ktor&uacute; nedod&aacute;va spoločnosť IBM, je však zodpovedn&yacute; s&aacute;m použ&iacute;vateľ.</p>
+<p>Spoločnosť IBM m&ocirc;že vlastniť patenty alebo patenty v schvaľovacom konan&iacute; pokr&yacute;vaj&uacute;ce predmetn&eacute;
+z&aacute;ležitosti op&iacute;san&eacute; v tomto dokumente.
+Text tohto dokumentu v&aacute;m ned&aacute;va
+žiadne licencie na tieto patenty. Požiadavky na licencie m&ocirc;žete poslať p&iacute;somne na adresu:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>Požiadavky na licencie ohľadne dvojbajtov&yacute;ch (DBCS) inform&aacute;ci&iacute; z&iacute;skate od IBM Intellectual Property Department vo vašej krajine alebo ich zašlite p&iacute;somne na adresu: </p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan Ltd.<br />
+1623-14, Shimotsuruma, Yamato-shi<br />
+Kanagawa 242-8502 Japan<br />
+</div>
+<p>Nasleduj&uacute;ci odsek sa net&yacute;ka Veľkej Brit&aacute;nie ani žiadnej
+inej krajiny, kde s&uacute; tak&eacute;to vyhl&aacute;senia nezlučiteľn&eacute; s miestnym z&aacute;konom:
+ SPOLOČNOSŤ INTERNATIONAL BUSINESS MACHINES POSKYTUJE T&Uacute;TO PUBLIK&Aacute;CIU TAK
+AKO JE, BEZ AK&Yacute;CHKOĽVEK V&Yacute;SLOVN&Yacute;CH ALEBO MLČKY PREDPOKLADAN&Yacute;CH Z&Aacute;RUK, VR&Aacute;TANE, ALE BEZ
+OBMEDZENIA NA Z&Aacute;RUKY NEPORUŠENIA PR&Aacute;V, PREDAJNOSTI ALEBO VHODNOSTI NA
+KONKR&Eacute;TNY &Uacute;ČEL.
+Niektor&eacute; št&aacute;ty nepovoľuj&uacute; zrieknutie sa
+v&yacute;slovn&yacute;ch ani mlčky predpokladan&yacute;ch z&aacute;ruk v určit&yacute;ch oper&aacute;ci&aacute;ch, preto sa na v&aacute;s toto
+vyhl&aacute;senie nemus&iacute; vzťahovať.</p>
+<p>Tieto inform&aacute;cie m&ocirc;žu obsahovať technick&eacute; nepresnosti alebo typografick&eacute; chyby. Inform&aacute;cie
+uveden&eacute; v tomto dokumente podliehaj&uacute; priebežn&yacute;m zmen&aacute;m; tieto zmeny
+bud&uacute; zapracovan&eacute; do nov&yacute;ch vydan&iacute;. IBM m&ocirc;že kedykoľvek
+bez ohl&aacute;senia urobiť vylepšenia alebo zmeny v produktoch alebo programoch
+op&iacute;san&yacute;ch v tejto publik&aacute;cii.</p>
+<p>Ak&eacute;koľvek odkazy v tejto publik&aacute;cii na in&eacute; webov&eacute; str&aacute;nky, než str&aacute;nky firmy
+IBM, s&uacute; poskytovan&eacute; len pre vaše pohodlie a v žiadnom pr&iacute;pade nesl&uacute;žia ako
+s&uacute;hlas s t&yacute;mito webov&yacute;mi str&aacute;nkami. Materi&aacute;ly na t&yacute;chto webov&yacute;ch str&aacute;nkach nie s&uacute;
+s&uacute;časťou materi&aacute;lov k tomuto produktu firmy IBM a ich použitie je na vaše vlastn&eacute; riziko.</p>
+<p>Spoločnosť IBM m&ocirc;že ktor&uacute;koľvek z vami poskytnut&yacute;ch inform&aacute;ci&iacute; použiť alebo distribuovať
+sp&ocirc;sobom, ktor&yacute; považuje za spr&aacute;vny, bez toho, aby jej z toho vyplynul ak&yacute;koľvek
+z&aacute;v&auml;zok voči v&aacute;m.</p>
+<p>Držitelia licenci&iacute; tohto programu, ktor&iacute; si želaj&uacute; mať inform&aacute;cie
+o tomto programe kv&ocirc;li povoleniu: (i) v&yacute;meny inform&aacute;ci&iacute; medzi nez&aacute;visle
+vytvoren&yacute;mi programami a in&yacute;mi programami (vr&aacute;tane tohto programu) a
+(ii) spoločn&eacute;ho použ&iacute;vania vymenen&yacute;ch inform&aacute;ci&iacute; by mali kontaktovať: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Tak&eacute;to inform&aacute;cie m&ocirc;žu byť v niektor&yacute;ch pr&iacute;padoch dostupn&eacute; až po zaplaten&iacute; pr&iacute;slušn&eacute;ho
+poplatku.</p>
+<p>Licenčn&yacute; program spom&iacute;nan&yacute; v tomto dokumente a všetky pre tento program dostupn&eacute;
+licenčn&eacute; materi&aacute;ly poskytuje spoločnosť IBM podľa podmienok zmluvy IBM Customer Agreement, IBM International Program License Agreement alebo ľubovoľnej
+ekvivalentnej zmluvy medzi nami.</p>
+<p>Všetky &uacute;daje o v&yacute;kone, ktor&eacute; s&uacute; tu uveden&eacute;, boli stanoven&eacute; v riadenom
+prostred&iacute;. V&yacute;sledky z&iacute;skan&eacute; v in&yacute;ch prev&aacute;dzkov&yacute;ch prostrediach sa m&ocirc;žu podstatne odlišovať. Niektor&eacute; merania boli vykonan&eacute; na syst&eacute;moch v &uacute;rovni
+v&yacute;voja a nie je zaručen&eacute;, že tieto merania bud&uacute; rovnak&eacute; na
+všeobecne dostupn&yacute;ch syst&eacute;moch. Navyše, niektor&eacute;
+merania mohli byť vykonan&eacute; extrapol&aacute;ciou. Skutočn&eacute; v&yacute;sledky sa m&ocirc;žu
+l&iacute;šiť. Už&iacute;vatelia t&yacute;chto dokumentov by si mali overiť pr&iacute;slušn&eacute; &uacute;daje pre
+svoje konkr&eacute;tne prostredie.</p>
+<p>Inform&aacute;cie t&yacute;kaj&uacute;ce sa produktov in&yacute;ch spoločnost&iacute; ako IBM boli z&iacute;skan&eacute; od dod&aacute;vateľov
+t&yacute;chto produktov, z ich publikovan&yacute;ch ozn&aacute;men&iacute; alebo in&yacute;ch verejne pr&iacute;stupn&yacute;ch
+zdrojov. Spoločnosť IBM tieto produkty netestovala a nem&ocirc;že potvrdiť presnosť ich v&yacute;konu, kompatibilitu ani
+in&eacute; parametre t&yacute;kaj&uacute;ce sa produktov nepoch&aacute;dzaj&uacute;cich od IBM. Ot&aacute;zky o schopnostiach produktov nepoch&aacute;dzaj&uacute;cich od IBM adresujte dod&aacute;vateľom
+t&yacute;chto produktov.</p>
+<p>Všetky vyhl&aacute;senia t&yacute;kaj&uacute;ce sa bud&uacute;ceho smerovania alebo z&aacute;merov spoločnosti IBM
+m&ocirc;žu byť zmenen&eacute; alebo zrušen&eacute; bez ozn&aacute;menia a reprezentuj&uacute; len ciele a z&aacute;mery
+spoločnosti.</p>
+<p>Všetky ceny IBM s&uacute; navrhovan&eacute; predajn&eacute; ceny stanoven&eacute; spoločnosťou IBM, s&uacute;
+aktu&aacute;lne a s&uacute; predmetom zmeny bez ohl&aacute;senia. Ceny d&iacute;lerov m&ocirc;žu byť odlišn&eacute;.</p>
+<p>Tieto inform&aacute;cie sl&uacute;žia len na pl&aacute;novacie &uacute;čely. Tu uveden&eacute; inform&aacute;cie
+m&ocirc;žu byť pred spr&iacute;stupnen&iacute;m opisovan&yacute;ch produktov zmenen&eacute;.</p>
+<p>Tieto inform&aacute;cie obsahuj&uacute; pr&iacute;klady &uacute;dajov a hl&aacute;sen&iacute; použ&iacute;van&yacute;ch v každodenn&yacute;ch
+obchodn&yacute;ch oper&aacute;ci&aacute;ch. Za &uacute;čelom čo najv&auml;čšej zrozumiteľnosti tieto pr&iacute;klady
+obsahuj&uacute; men&aacute; os&ocirc;b, n&aacute;zvy spoločnost&iacute;, pobočiek a produktov. Všetky tieto n&aacute;zvy s&uacute; fikt&iacute;vne a ak&aacute;koľvek ich podobnosť s n&aacute;zvami a adresami použ&iacute;van&yacute;mi skutočn&yacute;m obchodn&yacute;m podnikom je &uacute;plne n&aacute;hodn&aacute;.</p>
+<p>LICENCIA NA AUTORSK&Eacute; PR&Aacute;VA:</p>
+<p>Tieto inform&aacute;cie obsahuj&uacute; vzorov&eacute; aplikačn&eacute; programy v zdrojovom jazyku,
+ktor&eacute; ilustruj&uacute; programovacie techniky na rozličn&yacute;ch operačn&yacute;ch platform&aacute;ch. Tieto vzorov&eacute; programy m&ocirc;žete kop&iacute;rovať, upravovať a distribuovať v ľubovoľnej forme bez poplatkov spoločnosti IBM, ak tieto programy využijete na v&yacute;voj, použ&iacute;vanie, marketing alebo distrib&uacute;ciu aplikačn&yacute;ch programov vyhovuj&uacute;cich rozhraniu aplikačn&eacute;ho programovania pre platformu operačn&eacute;ho syst&eacute;mu, pre ktor&uacute; boli tieto vzorov&eacute; programy nap&iacute;san&eacute;. Tieto programy neboli detailne testovan&eacute; vo všetk&yacute;ch prev&aacute;dzkov&yacute;ch podmienkach. IBM preto nem&ocirc;že zaručiť spoľahlivosť, servisovateľnosť ani fungovanie t&yacute;chto programov.
+Vzorov&eacute; programy sa poskytuj&uacute; "AKO S&Uacute;", bez z&aacute;ruk ak&eacute;hokoľvek druhu. Spoločnosť IBM nebude zodpovedn&aacute;
+za žiadne škody vypl&yacute;vaj&uacute;ce z použ&iacute;vania t&yacute;chto vzorov&yacute;ch programov.</p>
+<p>Každ&aacute; k&oacute;pia alebo ak&aacute;koľvek časť t&yacute;chto vzorov&yacute;ch programov alebo ak&eacute;hokoľvek z nich odvoden&eacute;ho
+diela mus&iacute; obsahovať nasledovn&uacute; deklar&aacute;ciu autorsk&yacute;ch pr&aacute;v:</p>
+<p>&copy; (n&aacute;zov vašej firmy) (rok). Časti tohto k&oacute;du s&uacute; odvoden&eacute; od vzorov&yacute;ch programov IBM Corp.</p>
+<p>&copy; Copyright IBM Corp. _zadajte rok alebo roky_. Všetky pr&aacute;va vyhraden&eacute;.</p>
+<p>Ak si prezer&aacute;te elektronick&uacute; k&oacute;piu t&yacute;chto inform&aacute;ci&iacute;, nemusia byť zobrazen&eacute;
+fotografie ani farebn&eacute; ilustr&aacute;cie.</p>
+<a name="dqx1trademarks"></a>
+<h2 id="dqx1trademarks"><a href="#ToC_57">Ochrann&eacute; zn&aacute;mky</a></h2>
+<p>IBM, logo IBM a ibm.com s&uacute; ochrann&eacute; zn&aacute;mky alebo registrovan&eacute; ochrann&eacute; zn&aacute;mky spoločnosti
+International Business Machines Corp., zaregistrovan&eacute; v r&ocirc;znych jurisdikci&aacute;ch na celom svete. Ďalšie n&aacute;zvy produktov a
+služieb m&ocirc;žu byť ochrann&eacute; zn&aacute;mky IBM alebo in&yacute;ch spoločnost&iacute;. Aktu&aacute;lny zoznam ochrann&yacute;ch zn&aacute;mok IBM je k dispoz&iacute;cii
+na webovej str&aacute;nke <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> v časti &ldquo;Copyright and trademark information&rdquo;.</p>
+<p>Adobe, logo Adobe a PostScript s&uacute; registrovan&eacute; ochrann&eacute; zn&aacute;mky alebo ochrann&eacute; zn&aacute;mky spoločnosti Adobe Systems
+Incorporated v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>Intel, Itanium a Pentium s&uacute; ochrann&eacute; zn&aacute;mky alebo registrovan&eacute; ochrann&eacute; zn&aacute;mky spoločnosti Intel Corporation
+alebo jej dc&eacute;rskych spoločnost&iacute; v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>Java a všetky s ňou s&uacute;visiace ochrann&eacute; zn&aacute;mky s&uacute; ochrann&eacute; zn&aacute;mky spoločnosti Sun Microsystems,
+Inc. v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>Linux je registrovan&aacute; ochrann&aacute; zn&aacute;mka Linusa Torvaldsa v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>Microsoft, Windows a Windows NT s&uacute; ochrann&eacute; zn&aacute;mky spoločnosti Microsoft Corporation v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>UNIX je registrovan&aacute; ochrann&aacute; zn&aacute;mka spoločnosti Open Group v USA alebo in&yacute;ch krajin&aacute;ch.</p>
+<p>Ďalšie n&aacute;zvy spoločnost&iacute;, produktov alebo služieb m&ocirc;žu byť ochrann&eacute; alebo servisn&eacute; zn&aacute;mky in&yacute;ch subjektov.</p>
+<p>Podpora: <a href="http://www.ibm.com/software/data/informix/ids/support/">http://www.ibm.com/software/data/informix/ids/support/</a></p>
+<p>&copy; Copyright IBM Corp.
+1996, 2010</p>
+<a name="dqx1ids_osm_000"></a>
+<h2 id="dqx1ids_osm_000"><a href="#ToC_58">Autorsk&eacute; pr&aacute;va</a></h2>
+<p>Tento dokument obsahuje inform&aacute;cie o vlastn&iacute;ckych pr&aacute;vach IBM. Je s&uacute;časťou licenčnej zmluvy
+a je chr&aacute;nen&yacute; z&aacute;konom o autorsk&yacute;ch pr&aacute;vach. Inform&aacute;cie v tejto publik&aacute;cii neobsahuj&uacute;
+žiadne z&aacute;ruky na produkt a žiadne vyhl&aacute;senia v tomto dokumente by tak nemali byť ch&aacute;pan&eacute;.</p>
+<p>Ak posielate inform&aacute;cie spoločnosti IBM, udeľujete tak spoločnosti IBM nev&yacute;hradn&eacute; pr&aacute;vo použiť alebo distribuovať
+vami poskytnut&eacute; inform&aacute;cie ľubovoľn&yacute;m sp&ocirc;sobom, ktor&yacute; považuje za spr&aacute;vny, bez toho, aby jej z toho vyplynul ak&yacute;koľvek
+z&aacute;v&auml;zok voči v&aacute;m.</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2009,
+2010.</strong></p>
+<p>Obmedzenie pr&aacute;v už&iacute;vateľov zo št&aacute;tnej spr&aacute;vy USA - Použ&iacute;vanie, kop&iacute;rovanie
+a zverejňovanie s&uacute; obmedzen&eacute; zmluvou GSA ADP Schedule Contract so spoločnosťou IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2007. Ďalšie inform&aacute;cie n&aacute;jdete v s&uacute;bore <samp class="xph">license/notices.txt</samp>.</p>
+<a id="Bot_Of_Page" name="Bot_Of_Page"></a>
+</body>
+</html>

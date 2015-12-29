@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[錯誤：]]></ErrorF>
+<QueryF><![CDATA[查詢：]]></QueryF>
+<PageSize><![CDATA[頁面大小]]></PageSize>
+<Descending><![CDATA[降冪]]></Descending>
+<Ascending><![CDATA[升冪]]></Ascending>
+<ErrorOccurred><![CDATA[發生錯誤]]></ErrorOccurred>
+<Reload><![CDATA[重新載入]]></Reload>
+<ClickToReload><![CDATA[按一下以重新載入伺服器]]></ClickToReload>
+<LoadingMsg><![CDATA[..載入..]]></LoadingMsg>
+<PrevPage><![CDATA[上一頁]]></PrevPage>
+<NextPage><![CDATA[下一頁]]></NextPage>
+<Page><![CDATA[頁面]]></Page>
+<Row><![CDATA[列]]></Row>
+<Login><![CDATA[登入]]></Login>
+<OrderAsc><![CDATA[按 {0} 遞增順序]]></OrderAsc>
+<OrderDesc><![CDATA[按 {0} 遞減順序]]></OrderDesc>
+<Help><![CDATA[說明]]></Help>
+<Admin><![CDATA[管理]]></Admin>
+<Back><![CDATA[上一步]]></Back>
+<Welcome><![CDATA[歡迎使用]]></Welcome>
+<CollapseMenu><![CDATA[收合功能表]]></CollapseMenu>
+<Info><![CDATA[資訊]]></Info>
+<Yes><![CDATA[是]]></Yes>
+<No><![CDATA[否]]></No>
+<Cancel><![CDATA[取消]]></Cancel>
+<Delete><![CDATA[刪除]]></Delete>
+<Success><![CDATA[成功]]></Success>
+<ErrorL><![CDATA[錯誤]]></ErrorL>
+<ERROR><![CDATA[錯誤]]></ERROR>
+<Ignore><![CDATA[忽略]]></Ignore>
+<Under><![CDATA[歸屬]]></Under>
+<Save><![CDATA[儲存]]></Save>
+<Cancel><![CDATA[取消]]></Cancel>
+<TemplateLoadError><![CDATA[無法載入主要範本]]></TemplateLoadError>
+<help><![CDATA[說明]]></help>
+<ServerType><![CDATA[伺服器類型]]></ServerType>
+<Version><![CDATA[版本]]></Version>
+<ServerTime><![CDATA[伺服器時間]]></ServerTime>
+<BootTime><![CDATA[開機時間]]></BootTime>
+<UpTime><![CDATA[啟動時間]]></UpTime>
+<Sessions><![CDATA[階段作業數]]></Sessions>
+<MaxUsers><![CDATA[階段作業數上限]]></MaxUsers>
+<TotalMem><![CDATA[記憶體總計]]></TotalMem>
+<FreeMem><![CDATA[可用記憶體]]></FreeMem>
+<NumCPU><![CDATA[CPU 的數量]]></NumCPU>
+<OperatingSys><![CDATA[作業系統]]></OperatingSys>
+<Standard><![CDATA[標準]]></Standard>
+<Primary><![CDATA[主要]]></Primary>
+<Secondary><![CDATA[次要]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[伺服器]]></Server>
+<Database><![CDATA[資料庫]]></Database>
+<ConnectionFailed><![CDATA[連線失敗：{0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[錯誤：]]></ErrorUF>
+<NoSQLToExecute><![CDATA[沒有要執行的 SQL]]></NoSQLToExecute>
+<GroupServers><![CDATA[群組伺服器]]></GroupServers>
+<MapNotAvail><![CDATA[因為金鑰無效，無法使用地圖。]]></MapNotAvail>
+<ServerInfo><![CDATA[伺服器資訊]]></ServerInfo>
+<Info><![CDATA[資訊]]></Info>
+<ALL><![CDATA[全部]]></ALL>
+<Enabled><![CDATA[已啟用]]></Enabled>
+<Disabled><![CDATA[已停用]]></Disabled>
+<MB_Locale><![CDATA[資料庫語言]]></MB_Locale>
+<MB_Encoding><![CDATA[語言環境]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[選取資料庫語言以顯示該語言的資料庫語言環境。然後選取資料庫語言環境。]]></MB_Locale_Encoding_tooltip>
+</lang>

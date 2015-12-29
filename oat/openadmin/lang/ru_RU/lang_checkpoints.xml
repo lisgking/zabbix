@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[Информация о контрольных точках]]></checkpointInfo>
+<Checkpoints><![CDATA[Контрольные точки]]></Checkpoints>
+<Interval><![CDATA[Интервал]]></Interval>
+<Type><![CDATA[Тип]]></Type>
+<Caller><![CDATA[Триггер]]></Caller>
+<Time><![CDATA[Время]]></Time>
+<CritTime><![CDATA[Критическое время]]></CritTime>
+<FlushTime><![CDATA[Время сброса]]></FlushTime>
+<CPTime><![CDATA[Длительность контрольной точки]]></CPTime>
+<NDirtyBuffers><![CDATA[Число грязных буферов]]></NDirtyBuffers>
+<LSN><![CDATA[номер LSN]]></LSN>
+<NCritWaits><![CDATA[Число ожид.]]></NCritWaits>
+<BlockTime><![CDATA[Время блока]]></BlockTime>
+</lang>

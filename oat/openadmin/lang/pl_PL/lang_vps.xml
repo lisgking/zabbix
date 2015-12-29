@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_vps">
+<virtualprocessors><![CDATA[Procesory wirtualne]]></virtualprocessors>
+<vps><![CDATA[PW]]></vps>
+<vpclasses><![CDATA[Klasy PW]]></vpclasses>
+<vpid><![CDATA[ID PW]]></vpid>
+<class><![CDATA[Klasa]]></class>
+<cnt><![CDATA[PW]]></cnt>
+<total><![CDATA[Łącznie]]></total>
+<usercpu><![CDATA[Czas pracy CPU na użytkownika]]></usercpu>
+<syscpu><![CDATA[Czas pracy CPU na system]]></syscpu>
+<totalcpu><![CDATA[Łączny czas pracy CPU]]></totalcpu>
+<classdetails><![CDATA[Szczegóły klasy]]></classdetails>
+<nodrop><![CDATA[Nie można usunąć ostatniego PW klasy]]></nodrop>
+<tomuchdrop><![CDATA[Usuwanie nie powiodło się. Liczba usuwanych PW nie może być większa od liczby istniejących PW.]]></tomuchdrop>
+<success><![CDATA[Czynność powiodła się.]]></success>
+<VPValNotSet><![CDATA[Wykonanie akcji nie jest możliwe. Następująca wartość PW nie jest prawidłowo ustawiona:]]></VPValNotSet>
+<VPType><![CDATA[Typ PW]]></VPType>
+<Count><![CDATA[Liczba]]></Count>
+<AddDropVP><![CDATA[Dodaj lub usuń PW]]></AddDropVP>
+<add><![CDATA[Dodaj]]></add>
+<drop><![CDATA[Usuń]]></drop>
+<addVP><![CDATA[Dodaj PW]]></addVP>
+<dropVP><![CDATA[Usuń PW]]></dropVP>
+<modifyingClass><![CDATA[Modyfikowanie klasy]]></modifyingClass>
+<VPSGlobalInfo><![CDATA[Procesory wirtualne - informacja globalna]]></VPSGlobalInfo>
+<VPClassTitle><![CDATA[Procesory wirtualne klasy: {0}]]></VPClassTitle>
+<OptionNotAvail><![CDATA[Niestety, opcja niedostępna]]></OptionNotAvail>
+<seconds><![CDATA[s]]></seconds>
+</lang>

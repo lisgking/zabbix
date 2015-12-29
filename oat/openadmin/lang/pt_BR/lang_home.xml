@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_home">
+<home><![CDATA[Início]]></home>
+
+<dashboard><![CDATA[Painel]]></dashboard>
+<dashboard_name_perf><![CDATA[Desempenho do Servidor]]></dashboard_name_perf>
+<dashboard_desc_perf><![CDATA[Este painel mostra informações sobre tabelas, consultas e cpu.]]></dashboard_desc_perf>
+<dashboard_name_resources><![CDATA[Uso do Recurso]]></dashboard_name_resources>
+<dashboard_desc_resources><![CDATA[Este painel mostra informações sobre memória, espaço e bloqueios.]]></dashboard_desc_resources>
+<panel_title_memory><![CDATA[Memória do Servidor de Banco de Dados]]></panel_title_memory>
+<panel_desc_memory><![CDATA[Este painel mostra o uso da memória compartilhada para o servidor de banco de dados.]]></panel_desc_memory>
+<panel_title_num_sessions><![CDATA[Sessões]]></panel_title_num_sessions>
+<panel_desc_num_sessions><![CDATA[Este painel mostra o número das sessões conectadas do servidor de banco de dados.]]></panel_desc_num_sessions>
+<panel_title_network_reads_writes><![CDATA[Leituras e Gravações da Rede]]></panel_title_network_reads_writes>
+<panel_desc_network_reads_writes><![CDATA[Este painel mostra o número de chamadas de E/S para leituras e gravações de rede.]]></panel_desc_network_reads_writes>
+<panel_title_disk_io><![CDATA[E/S de Disco]]></panel_title_disk_io>
+<panel_desc_disk_io><![CDATA[Este painel mostra o tempo de espera de E/S do disco. O painel necessita do Informix 12.10.]]></panel_desc_disk_io>
+<panel_title_os_memory><![CDATA[Memória do SO]]></panel_title_os_memory>
+<panel_desc_os_memory><![CDATA[Este painel mostra o uso de memória do sistema operacional (SO). O painel necessita do Informix 11.50.]]></panel_desc_os_memory>
+<panel_title_transactions><![CDATA[Transações]]></panel_title_transactions>
+<panel_desc_transactions><![CDATA[Este painel mostra o número de transações do servidor de banco de dados.]]></panel_desc_transactions>
+<panel_title_space><![CDATA[Uso de Espaço]]></panel_title_space>
+<panel_desc_space><![CDATA[Este painel mostra o espaço livre e o espaço usado para cada dbspace.]]></panel_desc_space>
+<panel_title_locks><![CDATA[Bloqueios]]></panel_title_locks>
+<panel_desc_locks><![CDATA[Este painel mostra o número de bloqueios para o servidor de banco de dados.]]></panel_desc_locks>
+<panel_title_toptables><![CDATA[Tabelas Superiores - Leituras]]></panel_title_toptables>
+<panel_desc_toptables><![CDATA[Este painel mostra as tabelas com a maioria das leituras.]]></panel_desc_toptables>
+<panel_title_cpu><![CDATA[Tempo de CPU]]></panel_title_cpu>
+<panel_desc_cpu><![CDATA[Este painel mostra o usuário e o tempo de CPU do sistema.]]></panel_desc_cpu>
+<panel_title_toptables_modify><![CDATA[Tabelas Superiores - Modificadas]]></panel_title_toptables_modify>
+<panel_desc_toptables_modify><![CDATA[Este painel mostra as tabelas com a maioria das inserções, atualizações e exclusões.]]></panel_desc_toptables_modify>
+<panel_title_sql_actions_total><![CDATA[Operações SQL Totais]]></panel_title_sql_actions_total>
+<panel_desc_sql_actions_total><![CDATA[Este painel mostra o número total de linhas processadas, inseridas, atualizadas e excluídas.]]></panel_desc_sql_actions_total>
+<panel_title_sql_actions><![CDATA[Operações SQL por Segundo]]></panel_title_sql_actions>
+<panel_desc_sql_actions><![CDATA[Este painel mostra o número de linhas processadas, inseridas, atualizadas e excluídas por segundo.]]></panel_desc_sql_actions>
+
+<welcome_page_title><![CDATA[Bem-vindo]]></welcome_page_title>
+
+<NotYetImpl><![CDATA[Nessa página, a OpenAdmin Tool não pode exibir informações para um servidor de banco de dados com mais de um código do idioma do banco de dados que não está em inglês. O servidor de banco de dados contém mais de um código do idioma do banco de dados que não está em inglês.]]></NotYetImpl>
+<sessionexplorer><![CDATA[Explorador de Sessão]]></sessionexplorer>
+<ChartTest><![CDATA[Gráfico - Teste]]></ChartTest>
+<FlexChartDataSpaceTitle><![CDATA[Espaço de DADOS]]></FlexChartDataSpaceTitle>
+<CouldNotRetrieveConnectionInfo><![CDATA[Não é possível recuperar as informações de conexão do servidor de banco de dados.]]></CouldNotRetrieveConnectionInfo>
+<ConnectionFailed><![CDATA[Conexão com Falha: {0}]]></ConnectionFailed>
+<SQLError><![CDATA[Erro: {0} - {1}]]></SQLError>
+<ServerBlocked><![CDATA[O servidor de banco de dados está bloqueado.  O OAT não pode recuperar nenhuma informação de status.]]></ServerBlocked>
+</lang>

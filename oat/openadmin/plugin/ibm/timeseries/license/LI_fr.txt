@@ -1,0 +1,10 @@
+INFORMATIONS SUR LA LICENCE
+
+Les dispositions suivantes s'ajoutent à celles contenues dans le document IBM Conditions Internationales d'Utilisation des Logiciels non garantis (référence IBM : Z125-5589-05), pour l'utilisation des Logiciels indiqués ci-dessous.
+
+Nom du Logiciel : IBM OpenAdmin Tool - TimeSeries Plugin V3.11
+Référence du Logiciel : Tool
+
+L/N:  L-DDAY-94MTK8
+D/N:  L-DDAY-94MTK8
+P/N:  L-DDAY-94MTK8 

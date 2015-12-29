@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl-PL" xml:lang="pl-pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="pl-pl" />
+<meta name="IBM.Country" content="PL" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task" />
+<title>Wtyczka Informix TimeSeries Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Wtyczka Informix TimeSeries Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>Treść</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Wtyczka Informix TimeSeries Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_ots_001" class="toclink">Przeglądanie serii czasowej</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_ots_002" class="toclink">Tworzenie kontenera</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_ots_003" class="toclink">Tworzenie kalendarza</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_ots_004" class="toclink">Tworzenie tabeli wirtualnej</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_cm_not" class="toclink">Uwagi</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1trademarks" class="toclink">Znaki towarowe</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_ots_000" class="toclink">Prawa autorskie</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Wtyczka Informix TimeSeries Plug-in for OAT</a></h1>
+<div>
+<p>Wtyczka IBM&reg; Informix&reg; TimeSeries for OpenAdmin Tool (OAT) udostępnia
+interfejs graficzny do administrowania obiektami bazy danych związanymi z seriami czasowymi,
+w tym podtypami <strong>TimeSeries</strong>, kontenerami i kalendarzami.</p></div>
+<div>
+<div class="notetitle" id="wq2">Wymaganie wstępne:</div>
+<div class="notebody">W przypadku produktu Informix w wersji 11.50 i wersjach wcześniejszych w bazie danych musi być zainstalowany i zarejestrowany moduł IBM Informix TimeSeries DataBlade&reg; Module.</div></div>
+<p>Seria czasowa jest zestawem danych, których zmiany w czasie są rejestrowane. Każdy wpis jest opatrzony znacznikiem czasu i zapisany w bazie danych. Rozszerzenie Informix TimeSeries udostępnia typ danych <strong>TimeSeries</strong> oraz kontenery i kalendarze na potrzeby zarządzania danymi serii czasowej.</p>
+<p>Wtyczka TimeSeries umożliwia monitorowanie obiektów bazy danych związanych z serią czasową:</p>
+<ul>
+<li>Wyświetlanie podtypów <strong>TimeSeries</strong>, kontenerów i kalendarzy używanych dla danych serii czasowej w bazie danych.</li>
+<li>Wyświetlanie tabel i indeksów zawierających podtypy <strong>TimeSeries</strong>.</li>
+<li>Wyświetlanie tabel wirtualnych utworzonych na podstawie tabel zawierających podtypy <strong>TimeSeries</strong>.</li>
+<li>Monitorowanie procentowej ilości miejsca używanego w kontenerach i w obszarach dbspace dla kontenerów.</li></ul>
+<p>Możliwe jest również tworzenie i usuwanie kontenerów, kalendarzy i tabel wirtualnych.</p>
+<h2 id="dqx1ids_ots_001"><a href="#ToC_2">Przeglądanie serii czasowej</a></h2>
+<div>
+<p>Można przeglądać obiekty bazy danych związane z serią czasową, w tym tabele, indeksy, tabele wirtualne, podtypy <strong>TimeSeries</strong>, kontenery i kalendarze.</p></div>
+<p>
+<p>W celu przeglądania serii czasowej wykonaj następujące kroki:</p>
+<p>W menu programu IBM OpenAdmin Tool (OAT) for Informix kliknij opcję <strong>Narzędzia SQL</strong> &gt; <strong>TimeSeries</strong>. Zostanie wyświetlona lista baz danych i tabel na serwerze bazy danych zawierającym dane serii czasowej.
+</p>
+<ul>
+<li>Kliknij wybraną bazę danych lub tabelę z listy, aby zobaczyć informacje na jej temat.</li>
+<li>Aby uzyskać więcej informacji na temat konkretnego obiektu bazy danych lub tabeli, kliknij ikonę rozwijania w panelu obiektów.</li></ul></p>
+<h2 id="dqx1ids_ots_002"><a href="#ToC_3">Tworzenie kontenera</a></h2>
+<div>
+<p>Utwórz kontener dla serii czasowej. Można utworzyć wiele kontenerów, określając więcej niż jeden kontener na obszar dbspace lub wybierając więcej niż jeden obszar dbspace dla kontenerów.</p></div>
+<p>
+<p>W celu utworzenia kontenera wykonaj następujące kroki:</p></p>
+<ol type="1">
+<li>W menu programu IBM OpenAdmin Tool (OAT) for Informix kliknij opcję <strong>Narzędzia SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>Kliknij bazę danych zawierającą serię czasową.</li>
+<li>W menu <strong>Działania</strong> kliknij opcję <strong>Utwórz kontener</strong>.</li>
+<li>Wypełnij pola na stronie.</li></ol>
+<h2 id="dqx1ids_ots_003"><a href="#ToC_4">Tworzenie kalendarza</a></h2>
+<div>
+<p>Utwórz kalendarz powiązany z serią czasową.</p></div>
+<p>
+<p>Każda seria czasowa jest powiązana z kalendarzem. Kalendarz definiuje zbiór poprawnych punktów w czasie, w których seria czasowa zapisuje dane; określa, kiedy i jak często są akceptowane wpisy. Kalendarz składa się z daty początkowej, wzorca i okresu. Rozważmy następujący przykład: data początkowa wzorca to niedziela; wzorzec to 1 wyłączone, 5 włączone, 1 wyłączone; okres to dzień. Ten wzorzec określa, że informacje nie są zbierane pierwszego dnia, tj. w niedzielę. Informacje są zbierane każdego dnia w ciągu kolejnych pięciu dni, tj. od poniedziałku do piątku. Informacje nie są zbierane ostatniego dnia, tj. w sobotę.</p></p>
+<p>
+<p>W celu utworzenia kalendarza wykonaj następujące kroki:</p></p>
+<ol type="1">
+<li>W menu programu IBM OpenAdmin Tool (OAT) for Informix kliknij opcję <strong>Narzędzia SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>Kliknij bazę danych zawierającą serię czasową.</li>
+<li>W menu <strong>Działania</strong> kliknij polecenie <strong>Utwórz kalendarz</strong>.</li>
+<li>Wypełnij pola na stronie.</li></ol>
+<h2 id="dqx1ids_ots_004"><a href="#ToC_5">Tworzenie tabeli wirtualnej</a></h2>
+<div>
+<p>Utwórz tabelę wirtualną na podstawie tabeli zawierającej podtyp <strong>TimeSeries</strong>.</p></div>
+<p>
+<p>Tabela wirtualna jest tabelą relacyjną o tym samym schemacie co tabela podstawowa, z wyjątkiem kolumny <strong>TimeSeries</strong>. Kolumna <strong>TimeSeries</strong> jest zastępowana kolumnami podtypu <strong>TimeSeries</strong>. Elementy w kolumnie <strong>TimeSeries</strong> to poszczególne kolumny w tabeli wirtualnej. Tabela wirtualna zawiera wszystkie dane z tabeli podstawowej, w tym dane hermetyzowane w podtypie <strong>TimeSeries</strong>.</p></p>
+<p>
+<p>W celu utworzenia tabeli wirtualnej wykonaj następujące kroki:</p></p>
+<ol type="1">
+<li>W menu programu IBM OpenAdmin Tool (OAT) for Informix kliknij opcję <strong>Narzędzia SQL</strong> &gt; <strong>TimeSeries</strong>.</li>
+<li>Rozwiń na liście bazę danych zawierającą tabelę podstawową i kliknij tę tabelę.</li>
+<li>W menu <strong>Działania</strong> kliknij polecenie <strong>Utwórz tabelę wirtualną</strong>.</li>
+<li>Wypełnij pola na stronie.</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_6">Uwagi</a></h1>
+<p>Niniejsza publikacja została przygotowana z myślą o produktach i usługach
+oferowanych w Stanach Zjednoczonych.</p>
+<p>IBM może nie oferować w innych krajach produktów, usług lub opcji opisywanych w tym dokumencie. Informacje o produktach i usługach dostępnych w
+danym kraju można uzyskać od lokalnego przedstawiciela IBM. Odwołanie do
+produktu, programu lub usługi IBM nie oznacza, że można użyć wyłącznie tego
+produktu, programu lub usługi. Zamiast nich można zastosować ich odpowiednik
+funkcjonalny pod warunkiem, że nie narusza to praw własności intelektualnej
+IBM. Jednakże cała odpowiedzialność za
+ocenę przydatności i sprawdzenie działania produktu, programu lub usługi
+pochodzących od producenta innego niż IBM spoczywa na użytkowniku.</p>
+<p>IBM może posiadać patenty lub złożone wnioski patentowe na towary i usługi,
+o których mowa w niniejszej publikacji. Używanie tego dokumentu nie
+daje żadnych praw do tych patentów. Wnioski o przyznanie licencji można zgłaszać
+na piśmie pod adresem:  </p>
+<div class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. <br />
+</div>
+<p>Zapytania w sprawie licencji na informacje dotyczące zestawów znaków
+dwubajtowych (DBCS) należy kierować do lokalnych działów własności
+intelektualnej IBM (IBM Intellectual Property Department) lub zgłaszać na
+piśmie pod adresem:</p>
+<div class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japonia<br />
+</div>
+<p>Poniższy akapit nie obowiązuje w Wielkiej Brytanii, a także w innych krajach, w których jego treść pozostaje w sprzeczności z przepisami
+prawa miejscowego: INTERNATIONAL BUSINESS MACHINES CORPORATION DOSTARCZA TĘ PUBLIKACJĘ W STANIE, W JAKIM SIĘ ZNAJDUJE "AS IS" BEZ UDZIELANIA
+JAKICHKOLWIEK GWARANCJI (W TYM TAKŻE RĘKOJMI), WYRAŹNYCH LUB DOMNIEMANYCH, A W SZCZEGÓLNOŚCI DOMNIEMANYCH GWARANCJI PRZYDATNOŚCI HANDLOWEJ,
+PRZYDATNOŚCI DO OKREŚLONEGO CELU ORAZ GWARANCJI, ŻE PUBLIKACJA NIE NARUSZA PRAW STRON TRZECICH. Ustawodawstwa
+niektórych krajów nie dopuszczają zastrzeżeń dotyczących gwarancji wyraźnych
+lub domniemanych w odniesieniu do pewnych transakcji, w takiej sytuacji
+powyższe zdanie nie ma zastosowania.</p>
+<p>Informacje zawarte w niniejszej publikacji mogą zawierać
+nieścisłości techniczne lub błędy drukarskie. Informacje te są okresowo aktualizowane, a zmiany te
+zostaną ujęte w kolejnych wydaniach tej publikacji. IBM zastrzega sobie prawo do wprowadzania ulepszeń i/lub zmian w produktach
+i/lub programach opisanych w tej publikacji w dowolnym czasie, bez
+wcześniejszego powiadomienia.</p>
+<p>Jakiekolwiek wzmianki na temat stron internetowych nienależących do firmy
+IBM zostały podane jedynie dla wygody użytkownika i nie oznaczają, że IBM
+w jakikolwiek sposób firmuje te strony. Materiały dostępne na tych
+stronach nie są częścią materiałów opracowanych dla tego produktu IBM, a
+użytkownik korzysta z nich na własną odpowiedzialność.</p>
+<p>IBM ma prawo do korzystania i rozpowszechniania informacji przysłanych przez
+użytkownika w dowolny sposób, jaki uzna za właściwy, bez żadnych zobowiązań
+wobec ich autora.</p>
+<p>Licencjobiorcy tego programu, którzy chcieliby uzyskać informacje na temat
+programu w celu: (i) wdrożenia wymiany informacji między niezależnie
+utworzonymi programami i innymi programami (łącznie z tym opisywanym) oraz (ii)
+wykorzystywania wymienianych informacji, powinni skontaktować się z: </p>
+<div class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.<br />
+</div>
+<p>Informacje takie mogą być udostępnione, o ile spełnione zostaną
+odpowiednie warunki, w tym, w niektórych przypadkach, uiszczenie
+odpowiedniej opłaty.</p>
+<p>Licencjonowany program opisany w tym dokumencie oraz wszystkie
+inne licencjonowane materiały dostępne dla tego programu są dostarczane przez
+IBM na warunkach określonych w Umowie IBM z Klientem, Międzynarodowej Umowie
+Licencyjnej IBM na Program lub w innych podobnych umowach zawartych między IBM
+i użytkownikami.</p>
+<p>Wszelkie dane dotyczące wydajności zostały zebrane w kontrolowanym
+środowisku. W związku z tym rezultaty uzyskane w innych środowiskach
+operacyjnych mogą się znacząco różnić. Niektóre pomiary mogły być dokonywane na systemach będących w fazie rozwoju i
+nie ma gwarancji, że pomiary te wykonane na ogólnie dostępnych systemach dadzą
+takie same wyniki. Niektóre z pomiarów mogły
+być estymowane przez ekstrapolację. Rzeczywiste wyniki mogą być inne. Użytkownicy powinni we
+własnym zakresie sprawdzić odpowiednie dane dla ich
+środowiska.</p>
+<p>Informacje dotyczące produktów innych firm zostały uzyskane od dostawców
+tych produktów z opublikowanych przez nich zapowiedzi lub innych powszechnie
+dostępnych źródeł. IBM nie testował tych produktów i nie może potwierdzić
+dokładności pomiarów wydajności, kompatybilności ani żadnych innych danych
+związanych z tymi produktami. Pytania dotyczące możliwości produktów innych firm należy kierować do
+dostawców tych produktów.</p>
+<p>Jakiekolwiek wzmianki na temat kierunków rozwoju firmy IBM mogą ulec zmianie
+lub anulowaniu bez uprzedzenia i dotyczą jedynie ogólnych celów i założeń.</p>
+<p>Wszelkie ceny podawane przez IBM są propozycjami cen detalicznych; ceny te
+są aktualne i podlegają zmianom bez wcześniejszego powiadomienia. Ceny podawane przez
+dealerów mogą być inne.</p>
+<p>Informacje te podano tylko w celu planowania. Wszelkie podane tu informacje
+mogą zostać zmienione zanim opisywane produkty staną się dostępne.</p>
+<p>Dokument ten może zawierać przykładowe dane i raporty używane w codziennych
+operacjach działalności gospodarczej. W celu kompleksowego
+zilustrowania tej działalności podane przykłady zawierają nazwy
+osób, firm i ich produktów. Wszystkie te nazwiska/nazwy są fikcyjne i jakakolwiek ich zbieżność
+z prawdziwymi nazwiskami/nazwami jest całkowicie przypadkowa.</p>
+<p>LICENCJA NA PRAWA AUTORSKIE:</p>
+<p>Niniejsza publikacja zawiera przykładowe aplikacje w kodzie źródłowym,
+ilustrujące techniki programowania w różnych systemach operacyjnych. Użytkownik
+może kopiować, modyfikować i dystrybuować te programy przykładowe w dowolnej
+formie bez uiszczania opłat na rzecz IBM, w celu projektowania, używania,
+sprzedaży lub dystrybucji aplikacji zgodnych z aplikacyjnym interfejsem
+programowym dla tego systemu operacyjnego, dla którego napisane zostały
+programy przykładowe. Programy przykładowe nie
+zostały gruntownie przetestowane. IBM nie może zatem gwarantować ani sugerować
+niezawodności, użyteczności i funkcjonalności tych programów. Programy przykładowe są dostarczane w stanie, w jakim się znajdują ("AS IS"),
+bez jakichkolwiek gwarancji, w tym także rękojmi. IBM nie ponosi odpowiedzialności za
+jakiekolwiek szkody wynikające z używania programów przykładowych.</p>
+<p>Każda kopia lub dowolna część programów przykładowych, albo też dowolna
+praca pochodna, musi zawierać poniższą informację o prawach autorskich:</p>
+<p>&copy; (nazwa_firmy_użytkownika) (rok). Części niniejszego kodu pochodzą z
+programów przykładowych IBM Corp.</p>
+<p>&copy; Copyright IBM Corp. _rok_lub_lata_. Wszelkie prawa zastrzeżone.</p>
+<p>Jeśli niniejsza publikacja przeglądana jest w postaci elektronicznej,
+zdjęcia i kolorowe ilustracje mogą nie być wyświetlane.</p>
+<h2 id="dqx1trademarks"><a href="#ToC_7">Znaki towarowe</a></h2>
+<p>IBM, logo IBM i ibm.com są znakami towarowymi lub
+zastrzeżonymi znakami towarowymi International Business Machines Corp.
+zarejestrowanymi w wielu systemach prawnych na całym świecie. Pozostałe
+nazwy produktów i usług mogą być znakami towarowymi IBM lub innych
+przedsiębiorstw. Bieżąca lista znaków towarowych IBM jest dostępna w sieci WWW,
+w sekcji "Copyright and trademark information" na stronie
+<a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p>Adobe, logo Adobe i PostScript są znakami towarowymi lub
+zastrzeżonymi znakami towarowymi Adobe Systems Incorporated w Stanach
+Zjednoczonych i/lub w innych krajach.</p>
+<p>Intel, Itanium i Pentium są znakami towarowymi lub zastrzeżonymi
+znakami towarowymi Intel Corporation lub przedsiębiorstw podporządkowanych w
+Stanach Zjednoczonych i w innych krajach.</p>
+<p>Java&trade; oraz wszystkie znaki towarowe i logo dotyczące języka Java są
+znakami towarowymi lub zastrzeżonymi znakami towarowymi Oracle i/lub
+przedsiębiorstw afiliowanych.</p>
+<p>Linux jest zastrzeżonym znakiem towarowym Linusa Torvaldsa w
+Stanach Zjednoczonych i/lub w innych krajach.</p>
+<p>Microsoft, Windows i Windows NT są znakami towarowymi Microsoft
+Corporation w Stanach Zjednoczonych i/lub w innych krajach.</p>
+<p>UNIX jest zastrzeżonym znakiem towarowym The Open Group w Stanach
+Zjednoczonych i w innych krajach.</p>
+<p>Inne nazwy firm, produktów i usług mogą być znakami towarowymi lub znakami
+usług innych podmiotów.</p>
+<h2 id="dqx1ids_ots_000"><a href="#ToC_8">Prawa autorskie</a></h2>
+<p>Niniejszy dokument zawiera informacje zastrzeżone firmy
+IBM. Są one dostarczane w ramach umowy licencyjnej
+i są chronione prawem autorskim. Informacje znajdujące się w tej publikacji nie
+zawierają gwarancji na produkt i żadne oświadczenia zawarte w tym podręczniku nie mogą
+być w taki sposób interpretowane.</p>
+<p>Wysyłając informacje do IBM, użytkownik udziela IBM niewyłącznego prawa do ich używania i rozpowszechniania w dowolny sposób, jaki uzna za właściwy, bez żadnych zobowiązań wobec ich autora. </p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011,
+2013.</strong></p>
+<p>Użytkowników z instytucji rządowych USA obowiązują warunki umowy GSA ADP
+Schedule Contract z IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. Informacje dodatkowe zawiera plik <samp class="xph">license/notices.txt</samp>.</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

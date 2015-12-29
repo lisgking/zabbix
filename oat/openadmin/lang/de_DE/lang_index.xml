@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_index">
+<MinPHPVersion><![CDATA[Es ist mindestens PHP Version 5.2.4 erforderlich. Gefundene PHP-Version:]]></MinPHPVersion>
+<GenTime><![CDATA[Generierungszeit]]></GenTime>
+<ACT><![CDATA[ACT]]></ACT>
+<DO><![CDATA[DO]]></DO>
+<OATRequiredVersionError><![CDATA[OpenAdmin Tool erfordert Informix Version 11.10 oder höher. ]]></OATRequiredVersionError>
+<PluginRequiredVersionError><![CDATA[Das Plug-in '{0}' erfordert Informix Version {1}.]]></PluginRequiredVersionError>
+<NoModuleRunFunction><![CDATA[Die Ausführungsfunktion fehlt in Modul {0}.]]></NoModuleRunFunction>
+<SorryModule><![CDATA[Die URL ist keine gültige Adresse einer OpenAdmin Tool-Seite. Modul {0} wurde im OpenAdmin Tool-Modulverzeichnis nicht gefunden. Vergewissern Sie sich, dass der Modulname mit dem Schlüsselwort 'act' in der URL übereinstimmt.]]></SorryModule>
+<InvalidURL_do_param><![CDATA[Die URL ist keine gültige Adresse einer OpenAdmin Tool-Seite. Klicken Sie auf ein Element im OpenAdmin Tool-Menü oder auf einen Link auf einer OpenAdmin Tool-Seite, um die OpenAdmin Tool-Seiten anzuzeigen.]]></InvalidURL_do_param>
+</lang>

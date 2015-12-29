@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_ucm">
+<ucm><![CDATA[接続マネージャ]]></ucm>
+<noCMSupportServerVersion><![CDATA[OAT の接続マネージャには Informix バージョン 11.70.xC3 が必要です。]]></noCMSupportServerVersion>
+<CMActionFailed><![CDATA[接続マネージャの操作が失敗しました。詳細については、接続マネージャのログ ファイルを確認してください。]]></CMActionFailed>
+<NoConnUnitsFound><![CDATA[接続マネージャ {0} 用の接続単位が見つかりません。]]></NoConnUnitsFound>
+<ConnUnitNotFound><![CDATA[接続単位 {0} が見つかりませんでした。]]></ConnUnitNotFound>
+</lang>

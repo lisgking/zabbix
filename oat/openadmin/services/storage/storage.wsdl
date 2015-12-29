@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="STORAGE" targetNamespace="urn:STORAGE"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:STORAGE"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:STORAGE">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+
+	<message name="getDatabases">
+	</message>
+
+	<message name="getDatabasesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getSpaces">
+	</message>
+
+	<message name="getSpacesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getSpacesViewInfo">
+		<part name="dbsnum" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+	
+	<message name="getSpacesViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="refreshSpacesViewInfo">
+		<part name="dbsnum" type="xsd:string" />
+		<part name="chunks_rows_per_page" type="xsd:integer" />
+		<part name="chunks_page" type="xsd:integer" />
+		<part name="chunks_sort_col" type="xsd:string" />
+		<part name="chunks_dbsname_pattern" type="xsd:string" />
+	</message>
+	
+	<message name="refreshSpacesViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getServerViewInfo">
+		<part name="rows_per_page" type="xsd:integer" />
+	</message>
+
+	<message name="getServerViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="refreshServerViewInfo">
+		<part name="spaces_rows_per_page" type="xsd:integer" />
+		<part name="spaces_page" type="xsd:integer" />
+		<part name="spaces_sort_col" type="xsd:string" />
+		<part name="spaces_dbsname_pattern" type="xsd:string" />
+		<part name="chunks_rows_per_page" type="xsd:integer" />
+		<part name="chunks_page" type="xsd:integer" />
+		<part name="chunks_sort_col" type="xsd:string" />
+		<part name="chunks_dbsname_pattern" type="xsd:string" />
+		<part name="storage_pool_rows_per_page" type="xsd:integer" />
+		<part name="storage_pool_page" type="xsd:integer" />
+		<part name="storage_pool_sort_col" type="xsd:string" />
+		<part name="storage_pool_status_filter" type="xsd:string" />
+	</message>
+
+	<message name="refreshServerViewInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getDbspacesInfo">
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="dbsname_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getDbspacesInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getChunkInfo">
+		<part name="dbsnum" type="xsd:integer" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="dbsname_pattern" type="xsd:string" />
+	</message>
+
+	<message name="getChunkInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getStoragePoolInfo">
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="status_filter" type="xsd:string" />
+	</message>
+
+	<message name="getStoragePoolInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="getExpandSpaceInfo">
+		<part name="dbsnum" type="xsd:integer" />
+	</message>
+	
+	<message name="getExpandSpaceInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="executeChunksAction">
+		<part name="sql" type="xsd:string" />
+	</message>
+	
+	<message name="executeChunksActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="executeDbspaceAction">
+ 		<part name="sql" type="xsd:string" />
+		<part name="spacename" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="dbsname_pattern" type="xsd:string" />
+ 	</message>
+	
+	<message name="executeDbspaceActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<message name="executeStoragePoolAction">
+		<part name="sql" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="status_filter" type="xsd:string" />
+	</message>
+	
+	<message name="executeStoragePoolActionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfoMinimized">
+		<part name="dbsnum" type="xsd:string" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfoMinimizedResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfo">
+		<part name="dbsnum" type="xsd:string" />
+		<part name="dbname" type="xsd:string" />
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+		<part name="tabname_pattern" type="xsd:string" />
+		<part name="filter" type="xsd:string" />
+		<part name="include_catalogs" type="xsd:boolean" />
+		<part name="is_timeseries" type="xsd:boolean" />
+	</message>
+	
+	<message name="getTablesAndIndexesInfoResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getChunkFragmentation">
+		<part name="chunknum" type="xsd:string" />
+		<part name="chunksize" type="xsd:string" />
+		<part name="dbsnum" type="xsd:string" />
+	</message>
+	
+	<message name="getChunkFragmentationResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="estimateCompression">
+		<part name="tables" type="xsd:anyType"/>
+		<part name="dbname" type="xsd:string"/>	
+	</message>
+	
+	<message name="estimateCompressionResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getTablesWithWorstExtentUtilization">
+		<part name="dbsnum" type="xsd:string" />
+		<part name="dbname" type="xsd:string" />
+		<part name="num_tables" type="xsd:integer" />
+	</message>
+	
+	<message name="getTablesWithWorstExtentUtilizationResponse">
+		<part name="return" type="xsd:anyType"/>
+	</message>
+	
+	<message name="optimizeTable">
+		<part name="dbname" type="xsd:string"/>
+		<part name="tables" type="xsd:anyType"/>
+		<part name="compress_option" type="xsd:boolean"/>
+		<part name="uncompress_option" type="xsd:boolean"/>
+		<part name="repack_option" type="xsd:boolean"/>
+		<part name="truncate_option" type="xsd:boolean"/>
+		<part name="defragment_option" type="xsd:boolean"/>
+		<part name="offline_repack" type="xsd:boolean"/>	
+		<part name="offline_uncompress" type="xsd:boolean"/>	
+		<part name="compress_blob_data" type="xsd:boolean"/>
+		<part name="can_compress_indexes" type="xsd:boolean"/>
+	</message>
+	
+	<message name="optimizeTableResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="setOptimizePolicies">
+		<part name="qry" type="xsd:string" />
+	</message>
+	
+	<message name="setOptimizePoliciesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getOptimizePolicies">
+	</message>
+	
+	<message name="getOptimizePoliciesResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getJobList">
+		<part name="rows_per_page" type="xsd:integer" />
+		<part name="page" type="xsd:integer" />
+		<part name="sort_col" type="xsd:string" />
+	</message>
+	
+	<message name="getJobListResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+	
+	<message name="getMinRowsCompression">
+	</message>
+	
+	<message name="getMinRowsCompressionResponse">
+		<part name="return" type="xsd:integer" />
+	</message>
+	
+	<message name="getTablesWithTextOrByteColumns">
+		<part name="tables" type="xsd:string" />
+	</message>
+	
+	<message name="getTablesWithTextOrByteColumnsResponse">
+		<part name="return" type="xsd:anyType" />
+	</message>
+
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="STORAGEPort">
+		<operation name="getDatabases">
+			<input  message="typens:getDatabases" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>
+		<operation name="getSpaces">
+			<input  message="typens:getSpaces" />
+			<output message="typens:getSpacesResponse" />
+		</operation>
+		<operation name="getServerViewInfo">
+			<input  message="typens:getServerViewInfo" />
+			<output message="typens:getServerViewInfoResponse" />
+		</operation>
+		<operation name="refreshServerViewInfo">
+			<input  message="typens:refreshServerViewInfo" />
+			<output message="typens:refreshServerViewInfoResponse" />
+		</operation>
+		<operation name="getDbspacesInfo">
+			<input  message="typens:getDbspacesInfo" />
+			<output message="typens:getDbspacesInfoResponse" />
+		</operation>
+		<operation name="getChunkInfo">
+			<input  message="typens:getChunkInfo" />
+			<output message="typens:getChunkInfoResponse" />
+		</operation>
+		<operation name="getStoragePoolInfo">
+			<input  message="typens:getStoragePoolInfo" />
+			<output message="typens:getStoragePoolInfoResponse" />
+		</operation>
+		<operation name="getSpacesViewInfo">
+			<input  message="typens:getSpacesViewInfo" />
+			<output message="typens:getSpacesViewInfoResponse" />
+		</operation>
+		<operation name="refreshSpacesViewInfo">
+			<input  message="typens:refreshSpacesViewInfo" />
+			<output message="typens:refreshSpacesViewInfoResponse" />
+		</operation>
+		<operation name="getExpandSpaceInfo">
+			<input  message="typens:getExpandSpaceInfo" />
+			<output message="typens:getExpandSpaceInfoResponse" />
+		</operation>
+		<operation name="executeChunksAction">
+			<input  message="typens:executeChunksAction" />
+			<output message="typens:executeChunksActionResponse" />
+		</operation>
+		<operation name="executeDbspaceAction">
+			<input  message="typens:executeDbspaceAction" />
+			<output message="typens:executeDbspaceActionResponse" />
+		</operation>
+		<operation name="executeStoragePoolAction">
+			<input  message="typens:executeStoragePoolAction" />
+			<output message="typens:executeStoragePoolActionResponse" />
+		</operation>
+		<operation name="getTablesAndIndexesInfoMinimized">
+			<input  message="typens:getTablesAndIndexesInfoMinimized" />
+			<output message="typens:getTablesAndIndexesInfoMinimizedResponse" />
+		</operation>
+		<operation name="getTablesAndIndexesInfo">
+			<input  message="typens:getTablesAndIndexesInfo" />
+			<output message="typens:getTablesAndIndexesInfoResponse" />
+		</operation>
+		
+		<operation name="getChunkFragmentation">
+			<input  message="typens:getChunkFragmentation" />
+			<output message="typens:getChunkFragmentationResponse" />
+		</operation>
+		
+		<operation name="estimateCompression">
+			<input message="typens:estimateCompression" />
+			<output message="typens:estimateCompressionResponse" />
+		</operation>
+		
+		<operation name="getTablesWithWorstExtentUtilization">
+			<input message="typens:getTablesWithWorstExtentUtilization" />
+			<output message="typens:getTablesWithWorstExtentUtilizationResponse" />
+		</operation>
+		
+		<operation name="optimizeTable">
+			<input message="typens:optimizeTable" />
+			<output message="typens:optimizeTableResponse" />
+		</operation>
+		
+		<operation name="getOptimizePolicies">
+			<input  message="typens:getOptimizePolicies" />
+			<output message="typens:getOptimizePoliciesResponse" />
+		</operation>
+		
+		<operation name="setOptimizePolicies">
+			<input  message="typens:setOptimizePolicies" />
+			<output message="typens:setOptimizePoliciesResponse" />
+		</operation>
+		
+		<operation name="getJobList">
+			<input  message="typens:getJobList" />
+			<output message="typens:getJobListResponse" />
+		</operation>
+		
+		<operation name="getMinRowsCompression">
+			<input  message="typens:getMinRowsCompression" />
+			<output message="typens:getMinRowsCompressionResponse" />
+		</operation>
+			
+		<operation name="getTablesWithTextOrByteColumns">
+			<input  message="typens:getTablesWithTextOrByteColumns" />
+			<output message="typens:getTablesWithTextOrByteColumnsResponse" />
+		</operation>
+		
+		
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="STORAGEBinding" type="typens:STORAGEPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getSpaces">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getServerViewInfo">
+			<soap:operation soapAction="urn:STORAGEAction"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="refreshServerViewInfo">
+			<soap:operation soapAction="urn:STORAGEAction"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDbspacesInfo">
+			<soap:operation soapAction="urn:STORAGEAction"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getStoragePoolInfo">
+			<soap:operation soapAction="urn:STORAGEAction"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getChunkInfo">
+			<soap:operation soapAction="urn:STORAGEAction"/>
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getSpacesViewInfo">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="refreshSpacesViewInfo">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getExpandSpaceInfo">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="executeChunksAction">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="executeDbspaceAction">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="executeStoragePoolAction">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTablesAndIndexesInfoMinimized">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTablesAndIndexesInfo">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getChunkFragmentation">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="estimateCompression">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTablesWithWorstExtentUtilization">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="optimizeTable">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getOptimizePolicies">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="setOptimizePolicies">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getJobList">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getMinRowsCompression">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTablesWithTextOrByteColumns">
+			<soap:operation soapAction="urn:STORAGEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:STORAGE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+	</binding>
+
+	<service name="STORAGEService">
+		<port name="STORAGEPort" binding="typens:STORAGEBinding">
+			<soap:address location="services/storage/storageService.php" />
+		</port>
+	</service>
+</definitions>

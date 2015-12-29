@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_database">
+<Chunks><![CDATA[Bloques de datos]]></Chunks>
+<NoSQLToExecute><![CDATA[No hay SQL para ejecutar]]></NoSQLToExecute>
+<QueryF><![CDATA[Consulta:]]></QueryF>
+<ErrorF><![CDATA[Error:]]></ErrorF>
+<DatabaseQueryFailed><![CDATA[Ha fallado la consulta de base de datos:]]></DatabaseQueryFailed>
+<ConnFailed><![CDATA[Ha fallado la conexión.]]></ConnFailed>
+<NoConnPermissionOnDB><![CDATA[El usuario {0} no tiene permiso de conexión en la base de datos {1}.]]></NoConnPermissionOnDB>
+<TooManyErrors><![CDATA[se han encontrado demasiados errores]]></TooManyErrors>
+<ErrorGetPanels><![CDATA[getPanelsForDashBoard - No se ha encontrado ningún ID de panel de instrumentos]]></ErrorGetPanels>
+</lang>

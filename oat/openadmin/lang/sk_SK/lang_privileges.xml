@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[Riadiť privilégiá]]></ManagePrivileges>
+<UserPrivileges><![CDATA[Privilégiá užívateľa]]></UserPrivileges>
+<Database><![CDATA[Databáza]]></Database>
+<DBPrivileges><![CDATA[Privilégiá na úrovni databázy]]></DBPrivileges>
+<TablePrivileges><![CDATA[Privilégiá na úrovni tabuľky]]></TablePrivileges>
+<AdminPrivileges><![CDATA[Privilégiá administračného rozhrania API SQL]]></AdminPrivileges>
+<NonOsUsers><![CDATA[Interní užívatelia]]></NonOsUsers>
+<Name><![CDATA[Názov]]></Name>
+<Type><![CDATA[Typ]]></Type>
+<DefRole><![CDATA[Predvolená rola]]></DefRole>
+<Tabname><![CDATA[Názov tabuľky]]></Tabname>
+<User><![CDATA[Užívateľ]]></User>
+<Grantor><![CDATA[Poskytovateľ oprávnenia]]></Grantor>
+<Privilege><![CDATA[Privilégium]]></Privilege>
+<Privileges><![CDATA[Privilégiá]]></Privileges>
+<Username><![CDATA[Meno užívateľa]]></Username>
+<Grant><![CDATA[Udeliť]]></Grant>
+<GrantNewPriv><![CDATA[Udeliť nové privilégium]]></GrantNewPriv>
+<Roles><![CDATA[Roly]]></Roles>
+<CreateNewRole><![CDATA[Vytvoriť novú rolu]]></CreateNewRole>
+<Create><![CDATA[Vytvoriť]]></Create>
+<RoleName><![CDATA[Názov roly]]></RoleName>
+<NoUserError><![CDATA[Udeľovanie zlyhalo: nie je zadané žiadne meno užívateľa.]]></NoUserError>
+<NoPrivError><![CDATA[Udeľovanie zlyhalo: nie je zadaná žiadna úroveň privilégií.]]></NoPrivError>
+<NoTabError><![CDATA[Udeľovanie zlyhalo: nie je zadaný žiadny názov tabuľky.]]></NoTabError>
+<NoRoleError><![CDATA[Vytváranie zlyhalo: nie je zadaný žiadny názov roly.]]></NoRoleError>
+<NoPermission><![CDATA[Užívatelia s oprávnením len na čítanie nemôžu vykonať túto operáciu. Ste prihlásený ako užívateľ s oprávnením len na čítanie.]]></NoPermission>
+<NoDatabasesError><![CDATA[Na tomto databázovom serveri nie je k dispozícii žiadna nesystémová databáza.]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[Udelenie pre užívateľa bolo úspešné]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[Privilégium pre užívateľa bolo zrušené]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[Privilégium uložené pre užívateľa]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[Udelenie pre tabuľku bolo úspešné]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[pre užívateľa]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[Privilégium pre užívateľa bolo zrušené]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[pre tabuľku]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[Privilégium uložené pre užívateľa]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[Vytváranie bolo úspešné pre rolu]]></CreateSuccessForRole>
+<Connect><![CDATA[Pripojiť]]></Connect>
+<Resource><![CDATA[Prostriedok]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[Vybrať]]></Select>
+<Update><![CDATA[Aktualizovať]]></Update>
+<Insert><![CDATA[Vložiť]]></Insert>
+<Delete><![CDATA[Vymazať]]></Delete>
+<Index><![CDATA[Index]]></Index>
+<Alter><![CDATA[Pozmeniť]]></Alter>
+<References><![CDATA[Odkazy]]></References>
+<Under><![CDATA[Pod]]></Under>
+<Modify><![CDATA[Upraviť]]></Modify>
+<Revoke><![CDATA[Zrušiť]]></Revoke>
+<ErrorF><![CDATA[Chyba:]]></ErrorF>
+<GrantFailed><![CDATA[Udeľovanie zlyhalo]]></GrantFailed>
+<CreateFailed><![CDATA[Vytváranie zlyhalo]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[Pre interných užívateľov nástroj OAT vyžaduje Informix 11.70.]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[Pre privilégiá príkazov administračného rozhrania API SQL nástroj OAT vyžaduje Informix 12.10.]]></AdminPrivileges_min_server_version>
+</lang>

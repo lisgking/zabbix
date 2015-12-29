@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[Informace o kontrolních bodech]]></checkpointInfo>
+<Checkpoints><![CDATA[Kontrolní body]]></Checkpoints>
+<Interval><![CDATA[Interval]]></Interval>
+<Type><![CDATA[Typ]]></Type>
+<Caller><![CDATA[Spouštěč]]></Caller>
+<Time><![CDATA[Čas]]></Time>
+<CritTime><![CDATA[Kritický čas]]></CritTime>
+<FlushTime><![CDATA[Doba vyprázdnění]]></FlushTime>
+<CPTime><![CDATA[Trvání kontrolního bodu]]></CPTime>
+<NDirtyBuffers><![CDATA[# Modifikované vyrovnávací paměti]]></NDirtyBuffers>
+<LSN><![CDATA[LSN]]></LSN>
+<NCritWaits><![CDATA[# Čekání]]></NCritWaits>
+<BlockTime><![CDATA[Doba ve stavu Blokovaný]]></BlockTime>
+</lang>

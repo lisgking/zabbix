@@ -1,0 +1,10 @@
+LÝSANS BÝLGÝLERÝ
+
+Aþaðýda listelenen programlar, IBM Garanti Verilmeyen Programlar Ýçin Uluslararasý Lisans Sözleþmesi (IBM form numarasý Z125-5589-05) koþullarýna ek olarak aþaðýdaki koþullar kapsamýnda lisanslanýr.
+
+Program Adý: IBM Informix Health Advisor Plug-in for OpenAdmin Tool V3.11
+Program Numarasý: Tool
+
+L/N:  L-DDAY-94MTMX
+D/N:  L-DDAY-94MTMX
+P/N:  L-DDAY-94MTMX 

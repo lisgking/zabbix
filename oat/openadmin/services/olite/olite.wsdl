@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="OLITE" targetNamespace="urn:OLITE"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:typens="urn:OLITE"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+	<!-- Types are what will be sent / received via the services -->
+	<types>
+
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="urn:OLITE">
+
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			
+		</xsd:schema>
+	</types>
+
+	<!-- Messages are the 'function' signatures -->
+	
+	<!-- urlIsValid() -->
+	<message name="urlIsValidRequest">
+		<part name="mobile_oat_version" type="xsd:string" />
+		<part name="lang" type="xsd:string" />
+	</message>
+	 
+	<message name="urlIsValidResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+
+
+	<!-- getGroups() -->
+	<message name="getGroupsRequest"/>
+	 
+	<message name="getGroupsResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+
+	<!-- passIsCorrect() -->
+	<message name="passIsCorrectRequest">
+		<part name="groupNum" type="xsd:string" />
+		<part name="potentialMatch" type="xsd:string" />
+	</message>
+	 
+	<message name="passIsCorrectResponse">
+		<part name="response" type="xsd:boolean" />
+	</message>
+	
+	
+	<!-- setTimeout() -->
+	<message name="setTimeoutRequest">
+		<part name="timeout" type="xsd:string" />
+	</message>
+	 
+	<message name="setTimeoutResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>		
+	
+	
+	<!-- canConnectToIDS() -->
+	<message name="canConnectToIDSRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="user" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="lang" type="xsd:string" />
+	</message> 
+	 
+	<message name="canConnectToIDSResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	
+	<!-- getConnections() -->
+	<message name="getConnectionsRequest">
+		<part name="groupNum" type="xsd:string" />
+		<part name="timeout" type="xsd:int" />
+		<part name="lang" type="xsd:string" />
+ 	</message>
+	
+	<message name="getConnectionsResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+
+	<!-- getAlerts() -->
+	<message name="getAlertsRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="user" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="greenIsChecked" type="xsd:boolean" />
+		<part name="yellowIsChecked" type="xsd:boolean" />
+		<part name="redIsChecked" type="xsd:boolean" />
+		<part name="infoIsChecked" type="xsd:boolean" />
+		<part name="warningIsChecked" type="xsd:boolean" />
+		<part name="errorIsChecked" type="xsd:boolean" />
+		<part name="all" type="xsd:boolean" />
+		<part name="numAlertsToShow" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getAlertsResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!-- getCPUPercentage() -->
+	<message name="getCPUPercentageRequest">
+		<part name="connections" type="xsd:string" />
+		<part name="timeout" type="xsd:int" />
+	</message>
+	
+	<message name="getCPUPercentageResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!-- getServerInfo() -->
+	<message name="getServerInfoRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="lang" type="xsd:string" />
+	</message>
+	
+	<message name="getServerInfoResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!--  getOnlineLog() -->
+	<message name="getOnlineLogRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="onlyShowErrors" type="xsd:boolean" />
+		<part name="numLinesToShow" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getOnlineLogResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	
+	<!--  getFreeSpace() -->
+	<message name="getFreeSpaceRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="showAllSpaces" type="xsd:boolean" />
+		<part name="numSpacesToShow" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getFreeSpaceResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!-- getIOActivity() -->
+	<message name="getIOActivityRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+	</message>
+	
+	<message name="getIOActivityResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!-- getCPUInfo() -->
+	<message name="getCPUInfoRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+	</message>
+	
+	<message name="getCPUInfoResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!-- getUsersInfo() -->
+	<message name="getUsersInfoRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+	</message>
+	
+	<message name="getUsersInfoResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>	
+	
+	<!-- getTableInfo() -->
+	<message name="getTableInfoRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		<part name="orderBy" type="xsd:string" />
+		<part name="database" type="xsd:string" />
+		<part name="timeout" type="xsd:integer" />
+		<part name="lang" type="xsd:string" />
+	</message>
+	
+	<message name="getTableInfoResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>	
+	
+	<!--  getMemory() -->
+	<message name="getMemoryRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getMemoryResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!--  getCPU() -->
+	<message name="getCPURequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getCPUResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>	
+	
+	
+	<!--  getUsers() -->
+	<message name="getUsersRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+		
+	</message>
+	
+	<message name="getUsersResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+	
+	<!--  getDatabases() -->
+	<message name="getDatabasesRequest">
+		<part name="server" type="xsd:string" />
+		<part name="host" type="xsd:string" />
+		<part name="port" type="xsd:string" />
+		<part name="protocol" type="xsd:string" />
+		<part name="username" type="xsd:string" />
+		<part name="password" type="xsd:string" />
+	</message>
+	
+	<message name="getDatabasesResponse">
+		<part name="response" type="xsd:anyType" />
+	</message>
+		
+	<!--
+		portType expose the services and defines their input / output routines
+	-->
+	<portType name="OLITEPort">
+		
+		<operation name="urlIsValid">
+			<input  message="typens:urlIsValidRequest" />
+			<output message="typens:urlIsValidResponse" />
+		</operation>
+		
+		<operation name="getGroups">
+			<input  message="typens:getGroupsRequest" />
+			<output message="typens:getGroupsResponse" />
+		</operation>
+		
+		<operation name="passIsCorrect">
+			<input  message="typens:passIsCorrectRequest" />
+			<output message="typens:passIsCorrectResponse" />
+		</operation>
+		
+		<operation name="canConnectToIDS">
+			<input  message="typens:canConnectToIDSRequest" />
+			<output message="typens:canConnectToIDSResponse" />
+		</operation>
+
+		<operation name="setTimeout">
+			<input  message="typens:setTimeoutRequest" />
+			<output message="typens:setTimeoutResponse" />
+		</operation>					
+		
+		<operation name="getConnections">
+			<input  message="typens:getConnectionsRequest" />
+			<output message="typens:getConnectionsResponse" />
+		</operation>
+		
+		<operation name="getIOActivity">
+			<input  message="typens:getIOActivityRequest" />
+			<output message="typens:getIOActivityResponse" />
+		</operation>
+		
+		<operation name="getUsersInfo">
+			<input  message="typens:getUsersInfoRequest" />
+			<output message="typens:getUsersInfoResponse" />
+		</operation>
+		
+		<operation name="getCPUInfo">
+			<input  message="typens:getCPUInfoRequest" />
+			<output message="typens:getCPUInfoResponse" />
+		</operation>
+		
+		<operation name="getTableInfo">
+			<input  message="typens:getTableInfoRequest" />
+			<output message="typens:getTableInfoResponse" />
+		</operation>						
+		
+		<operation name="getAlerts">
+			<input  message="typens:getAlertsRequest" />
+			<output message="typens:getAlertsResponse" />
+		</operation>
+		
+		<operation name="getCPUPercentage">
+			<input  message="typens:getCPUPercentageRequest" />
+			<output message="typens:getCPUPercentageResponse" />
+		</operation>
+		
+		<operation name="getServerInfo">
+			<input  message="typens:getServerInfoRequest" />
+			<output message="typens:getServerInfoResponse" />
+		</operation>
+		
+		<operation name="getOnlineLog">
+			<input  message="typens:getOnlineLogRequest" />
+			<output message="typens:getOnlineLogResponse" />
+		</operation>
+		
+		<operation name="getFreeSpace">
+			<input  message="typens:getFreeSpaceRequest" />
+			<output message="typens:getFreeSpaceResponse" />
+		</operation>
+		
+		<operation name="getMemory">
+			<input  message="typens:getMemoryRequest" />
+			<output message="typens:getMemoryResponse" />
+		</operation>
+		
+		<operation name="getCPU">
+			<input  message="typens:getCPURequest" />
+			<output message="typens:getCPUResponse" />
+		</operation>
+		
+		<operation name="getUsers">
+			<input  message="typens:getUsersRequest" />
+			<output message="typens:getUsersResponse" />
+		</operation>						
+		
+		<operation name="getDatabases">
+			<input  message="typens:getDatabasesRequest" />
+			<output message="typens:getDatabasesResponse" />
+		</operation>	
+		
+	</portType>
+
+	<!-- define protocol details for each Ports -->
+	<binding name="OLITEBinding" type="typens:OLITEPort">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+
+		<operation name="urlIsValid">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+
+		<operation name="getGroups">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		
+		<operation name="setTimeout">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+				
+		<operation name="canConnectToIDS">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>			
+		
+		<operation name="getUsersInfo">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getTableInfo">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getDatabases">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getCPUInfo">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getIOActivity">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>								
+		
+		<operation name="passIsCorrect">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>		
+		
+		<operation name="getConnections">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+				<operation name="getAlerts">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getCPUPercentage">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getServerInfo">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getOnlineLog">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getFreeSpace">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		
+		<operation name="getMemory">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>	
+		
+		<operation name="getCPU">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>	
+		
+		<operation name="getUsers">
+			<soap:operation soapAction="urn:OLITEAction" />
+			<input>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="urn:OLITE"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>				
+
+	</binding>
+
+	<service name="OLITEService">
+		<port name="OLITEPort" binding="typens:OLITEBinding">
+			<soap:address location="oliteService.php" />
+		</port>
+	</service>
+</definitions>

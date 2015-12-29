@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_checkpoints">
+<checkpointInfo><![CDATA[檢查點資訊]]></checkpointInfo>
+<Checkpoints><![CDATA[檢查點]]></Checkpoints>
+<Interval><![CDATA[間隔]]></Interval>
+<Type><![CDATA[類型]]></Type>
+<Caller><![CDATA[觸發程式]]></Caller>
+<Time><![CDATA[時間]]></Time>
+<CritTime><![CDATA[重要時間]]></CritTime>
+<FlushTime><![CDATA[清除時間]]></FlushTime>
+<CPTime><![CDATA[檢查點持續時間]]></CPTime>
+<NDirtyBuffers><![CDATA[dirty 緩衝區數]]></NDirtyBuffers>
+<LSN><![CDATA[LSN]]></LSN>
+<NCritWaits><![CDATA[等待數]]></NCritWaits>
+<BlockTime><![CDATA[封鎖時間]]></BlockTime>
+</lang>

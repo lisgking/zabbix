@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-cn" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="concept, task, task, task, task" />
+<title>Informix TimeSeries Plug-in for OAT</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>Informix TimeSeries Plug-in for OAT</h1>
+<br />
+<div id="wq1">
+<h1>目录</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_osm" class="toclink">Informix TimeSeries Plug-in for OAT</a></div>
+<div class="head2"><a id="ToC_2" href="#dqx1ids_ots_001" class="toclink">复审时间系列</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_ots_002" class="toclink">创建容器</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_ots_003" class="toclink">创建日历</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_ots_004" class="toclink">创建虚拟表</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_cm_not" class="toclink">声明</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1trademarks" class="toclink">商标</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_ots_000" class="toclink">版权</a></div>
+</div>
+<h1 id="dqx1ids_osm"><a href="#ToC_1">Informix TimeSeries Plug-in for OAT</a></h1>
+<div>
+<p>IBM&reg; Informix&reg; TimeSeries Plug-in for OpenAdmin Tool (OAT) 提供图形界面，用于管理与时间系列相关的数据库对象，包括 <strong>TimeSeries</strong> 子类型、容器和日历。</p></div>
+<div>
+<div class="notetitle" id="wq2">先决条件：</div>
+<div class="notebody">对于 Informix 11.50 和更早版本，必须在数据库中安装并注册 IBM Informix TimeSeries DataBlade&reg; 模块。</div></div>
+<p>时间系列是因随时间发生变化而被记录的一组数据。每个条目都具有时间戳记，并存储在数据库中。Informix TimeSeries 扩展提供了 <strong>TimeSeries</strong> 数据类型、容器和日历，用于管理时间系列数据。</p>
+<p>使用 TimeSeries 插件，您可以监视与时间系列相关的数据库对象：</p>
+<ul>
+<li>查看用于数据库中时间系列数据的 <strong>TimeSeries</strong> 子类型、容器和日历。</li>
+<li>查看包含 <strong>TimeSeries</strong> 子类型的表和索引。</li>
+<li>查看基于包含 <strong>TimeSeries</strong> 子类型的表的虚拟表。</li>
+<li>监视在容器和容器的数据库空间中使用的空间百分比。</li></ul>
+<p>您还可以创建和删除容器、日历和虚拟表。</p>
+<h2 id="dqx1ids_ots_001"><a href="#ToC_2">复审时间系列</a></h2>
+<div>
+<p>复审与时间系列相关的数据库对象，包括表、索引、虚拟表、<strong>TimeSeries</strong> 子类型、容器和日历。</p></div>
+<p>
+<p>要复审时间系列：</p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。将显示数据库服务器中包含时间系列数据的数据库和表的列表。</p>
+<ul>
+<li>要查看有关数据库或表的信息，请在列表中单击该项。</li>
+<li>要查看有关特定数据库对象或表对象的更多信息，请单击对象面板上的展开图标。</li></ul></p>
+<h2 id="dqx1ids_ots_002"><a href="#ToC_3">创建容器</a></h2>
+<div>
+<p>为时间系列创建容器。通过为每个数据库空间指定多个容器或通过为容器选择多个数据库空间，创建多个容器。</p></div>
+<p>
+<p>要创建容器：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。</li>
+<li>单击包含时间系列的数据库。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建容器</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<h2 id="dqx1ids_ots_003"><a href="#ToC_4">创建日历</a></h2>
+<div>
+<p>创建日历以与时间系列关联。</p></div>
+<p>
+<p>每个时间系列都与日历关联。日历定义了一组有效的时间，时间系列可在这些时间记录数据；日历将确定接受条目的时间和频率。日历由开始日期、模式和时间间隔组成。看一下这个示例：模式开始日期为星期日；模式为 1 禁用，5 启用，1 禁用；时间间隔为一天。对于此模式，未收集第一天（即星期日）的信息。对接下来五天（周一到周五）每一天的信息都进行了收集。最后一天（即星期六）的信息未收集。</p></p>
+<p>
+<p>要创建日历：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。</li>
+<li>单击包含时间系列的数据库。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建日历</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<h2 id="dqx1ids_ots_004"><a href="#ToC_5">创建虚拟表</a></h2>
+<div>
+<p>创建以包含 <strong>TimeSeries</strong> 子类型的表为基础的虚拟表。</p></div>
+<p>
+<p>虚拟表是与基本表具有相同模式（除了 <strong>TimeSeries</strong> 列）的关系表。<strong>TimeSeries</strong> 列替换为 <strong>TimeSeries</strong> 子类型的列。<strong>TimeSeries</strong> 列中的元素是虚拟表中的单个列。虚拟表包含基本表中的所有数据，包括 <strong>TimeSeries</strong> 子类型中封装的数据。</p></p>
+<p>
+<p>要创建虚拟表：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。</li>
+<li>在列表中，展开包含基本表的数据库并单击该表。</li>
+<li>在<strong>操作</strong>菜单上，单击<strong>创建虚拟表</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_6">声明</a></h1>
+<p>本信息是为在美国国内供应的产品和服务而编写的。</p>
+<p>IBM 可能在其他国家或地区不提供本文档中讨论的产品、服务或功能特性。有关您所在区域当前可获得的产品和服务的信息，请向您当地的 IBM 代表咨询。任何对 IBM 产品、程序或服务的引用并非意在明示或暗示只能使用 IBM 的产品、程序或服务。只要不侵犯 IBM 的知识产权，任何同等功能的产品、程序或服务，都可以代替 IBM 产品、程序或服务。但是，评估和验证任何非 IBM 产品、程序或服务的操作，由用户自行负责。</p>
+<p>IBM 公司可能已拥有或正在申请与本文档内容有关的各项专利。提供本文档并未授予用户使用这些专利的任何许可。
+您可以用书面方式将许可查询寄往：</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation 
+<br />
+North Castle Drive 
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A. <br />
+</div>
+<p>有关双字节 (DBCS) 信息的许可查询，请与您所在国家或地区的 IBM 知识产权部门联系，或用书面方式将查询寄往：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>以下段落对于英国和与当地法律有不同规定的其他国家或地区均不适用：INTERNATIONAL BUSINESS MACHINES CORPORATION“按现状”提供本出版物，不附有任何种类的（无论是明示的还是暗含的）保证，包括但不限于暗含的有关非侵权、适销和适用于某特定用途的保证。某些国家或地区在某些交易中不允许免除明示或暗含的保证。因此本条款可能不适用于您。</p>
+<p>本信息中可能包含技术方面不够准确的地方或印刷错误。
+此处的信息将定期更改；这些更改将编入本出版物的新版本中。IBM 可以随时对本出版物中描述的产品和/或程序进行改进和/或更改，而不另行通知。</p>
+<p>本资料中对非 IBM Web 站点的任何引用都是为了方便起见才提供的,不以任何方式充当对那些 Web 站点的保证。那些 Web 站点中的资料不是 IBM 产品资料的一部分，使用那些 Web 站点带来的风险将由您自行承担。</p>
+<p>IBM 可以按它认为适当的任何方式使用或分发您所提供的任何信息而无须对您承担任何责任。</p>
+<p>本程序的被许可方如果要了解有关程序的信息以达到如下目的：(i) 允许在独立创建的程序和其他程序（包括本程序）之间进行信息交换，以及 (ii) 允许对已经交换的信息进行相互使用，请与下列地址联系：
+</p>
+<div class="lines">IBM Corporation 
+<br />
+J46A/G4 
+<br />
+555 Bailey Avenue 
+<br />
+San Jose, CA 95141-1003 
+<br />
+U.S.A.
+<br />
+</div>
+<p>只要遵守适当的条件和条款，包括某些情形下的一定数量的付费，都可获得这方面的信息。</p>
+<p>本文档中描述的许可程序及其所有可用的许可资料均由 IBM 依据 IBM 客户协议、IBM 国际程序许可协议或任何同等协议中的条款提供。</p>
+<p>此处包含的任何性能数据都是在受控环境中测得的。
+因此，在其他操作环境中获得的数据可能会有明显的不同。有些测量可能是在开发级的系统上进行的，因此不保证与一般可用系统上进行的测量结果相同。
+此外，有些测量是通过推算而估计的，实际结果可能会有差异。本文档的用户应当验证其特定环境的适用数据。</p>
+<p>涉及非 IBM 产品的信息可从这些产品的供应商、其出版说明或其他可公开获得的资料中获取。IBM 没有对这些产品进行测试，也无法确认其性能的精确性、兼容性或任何其他关于非 IBM 产品的声明。有关非 IBM 产品性能的问题应当向这些产品的供应商提出。</p>
+<p>所有关于 IBM 未来方向或意向的声明都可随时更改或收回，而不另行通知，它们仅仅表示了目标和意愿而已。</p>
+<p>所有 IBM 的价格均是 IBM 当前的建议零售价，可随时更改而不另行通知。经销商的价格可与此不同。</p>
+<p>本信息仅用于规划的目的。
+在所描述的产品上市之前，此处的信息会有更改。</p>
+<p>本信息包含在日常业务操作中使用的数据和报告的示例。为尽可能表述完整，这些示例将包括个人、公司、品牌和产品的名称。所有这些名字都是虚构的，若现实生活中实际业务企业使用的名字和地址与此相似，纯属巧合。</p>
+<p>版权许可：</p>
+<p>本资料包括源语言形式的样本应用程序，这些样本说明不同操作平台上的编程方法。如果是为按照在编写样本程序的操作平台上的应用程序编程接口 (API) 进行应用程序的开发、使用、经销或分发为目的，您可以任何形式对这些样本程序进行复制、修改、分发，而无须向 IBM 付费。这些示例并未在所有条件下作全面测试。因此，IBM 不能担保或暗示这些程序的可靠性、可维护性或功能。样本程序“按现状”提供，不附有任何种类的保证。对于因使用样本程序所引起的任何损害，IBM 概不负责。</p>
+<p>凡这些样本程序的每份拷贝或其任何部分或任何衍生产品，都必须包含如下版权声明：</p>
+<p>&copy; （贵公司的名称）（年）。此部分代码是根据 IBM 公司的样本程序衍生出来的。</p>
+<p>&copy; Copyright IBM Corp. （输入年份）. All rights reserved.</p>
+<p>如果您正在查看本信息的软拷贝，图片和彩色图例可能无法显示。</p>
+<h2 id="dqx1trademarks"><a href="#ToC_7">商标</a></h2>
+<p>IBM、IBM 徽标和 ibm.com 是 International Business Machines Corp. 在全球许多管辖区域注册的商标或注册商标。其他产品和服务名称可能是 IBM 或其他公司的商标。当前的 IBM 商标列表，可从 Web 站点 <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> 上“版权和商标信息”部分获取。</p>
+<p>Adobe、Adobe 徽标和 PostScript 是 Adobe Systems Incorporated 在美国和/或其他国家或地区的注册商标或商标。</p>
+<p>Intel、Itanium 和 Pentium 是 Intel Corporation 或其子公司在美国和其他国家或地区的商标或注册商标。</p>
+<p>Java&trade; 和所有基于 Java 的商标和徽标是 Oracle 和/或其子公司的商标或注册商标。</p>
+<p>Linux 是 Linus Torvalds 在美国和/或其他国家或地区的注册商标。</p>
+<p>Microsoft、Windows 和 Windows NT 是 Microsoft Corporation 在美国和/或其他国家或地区的商标。</p>
+<p>UNIX 是 The Open Group 在美国和其他国家或地区的注册商标。</p>
+<p>其他公司、产品或服务名称可能是其他公司的商标或服务标记。</p>
+<h2 id="dqx1ids_ots_000"><a href="#ToC_8">版权</a></h2>
+<p>本文档包含 IBM 的专利信息。它是根据许可协议提供的，并受版权法保护。本出版物包含的信息不包括任何产品保证，且本手册提供的任何声明不应作如此解释。</p>
+<p>当您发送信息给 IBM 后，即授予 IBM 非专有权，IBM 对于您所提供的任何信息，有权利以任何它认为适当的方式使用或分发，而不必对您负任何责任。</p>
+<p><strong>&copy; Copyright International Business Machines Corporation 2011, 2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The PHP Group 1997-2010. 请参阅 <samp class="xph">license/notices.txt</samp> 文件，获取其他信息。</p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

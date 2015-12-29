@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[OpenAdmin Tool のインストール]]></install_page_title>
+<next><![CDATA[次へ]]></next>
+<save><![CDATA[保存]]></save>
+<finish><![CDATA[終了]]></finish>
+<warning><![CDATA[警告]]></warning>
+<language><![CDATA[言語:]]></language>
+<error_occurred><![CDATA[エラーが発生しました]]></error_occurred>
+<error_message><![CDATA[エラー メッセージ:]]></error_message>
+
+<welcome><![CDATA[ようこそ]]></welcome>
+<welcome_message><![CDATA[このインストール プログラムは OpenAdmin Tool Community Edition {0} をインストールします。]]></welcome_message>
+<prerequisite_message><![CDATA[OpenAdmin Tool をインストールするための前提条件については、{0} ファイルの情報を参照してください。]]></prerequisite_message>
+<readme><![CDATA[ReadMe]]></readme>
+<license_message><![CDATA[OpenAdmin Tool Community Edition をインストールして使用するには、以下のご使用条件に同意する必要があります。]]></license_message>
+<license_agreement><![CDATA[ご使用条件]]></license_agreement>
+<i_accept><![CDATA[使用条件の条項に同意します。]]></i_accept>
+<error_accept_license_first><![CDATA[インストールを続行するには、使用条件に同意する必要があります。]]></error_accept_license_first>
+<install_lock_exists><![CDATA[インストール ディレクトリにある install.lock ファイルにより、インストールが停止しました。インストールを続けるには、このファイルを削除してください。]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[必要な PHP モジュール]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[OpenAdmin Tool (OAT) を実行するには、以下の PHP モジュールが必要です。]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[X アイコンは、モジュールが見つからなかったことを示します。PHP のインストール済み環境を調べて、欠落しているモジュールをインストールしてください。]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[推奨される PHP モジュール]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[OAT では、以下の PHP モジュールが推奨されています。]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[重要: これらのモジュールは OAT をインストールして使用するうえで必須ではありませんが、これらのモジュールがない場合、いくつかの OAT 機能が制限されます。]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[必要な PHP モジュールのうち、まだインストールされていないものがあります。]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[欠落しているモジュール:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[推奨される PHP モジュールのうち、まだインストールされていないものがあります。これらのモジュールは OAT をインストールして使用するうえで必須ではありませんが、これらのモジュールがない場合、いくつかの OAT 機能が制限されます。]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[欠落している推奨モジュール:]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[OAT 構成]]></oat_config>
+<parameter><![CDATA[パラメータ]]></parameter>
+<description><![CDATA[説明]]></description>
+<value><![CDATA[値]]></value>
+<LANG><![CDATA[デフォルトの言語]]></LANG>
+<LANG_desc><![CDATA[OAT ページのデフォルト言語。]]></LANG_desc>
+<BASEURL><![CDATA[ベース URL]]></BASEURL>
+<BASEURL_desc><![CDATA[OAT のインストール場所の URL (形式は http://servername:port/location)。]]></BASEURL_desc>
+<HOMEDIR><![CDATA[インストール ディレクトリ]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[OAT のインストール ディレクトリ。]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[接続データベース ディレクトリ]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[OAT 接続データベースのディレクトリ。Web サーバのドキュメント ディレクトリ下にはない、保護されたディレクトリを指定してください。]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[接続データベースの場所 ({0}) は、Web サーバのドキュメント ディレクトリの下です。この場所では、OAT がセキュリティ リスクにさらされる恐れがあります。セキュリティ上の理由で、接続データベースの場所を変更してください。この警告を無視する場合には、「保存」を再びクリックしてください。]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[ホーム ページ]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[OAT のホーム ページ]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[ようこそ]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[「ヘルス センタ」>「ダッシュボード」>「グループ サマリ」]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[「ヘルス センタ」>「ダッシュボード」>「サーバ パフォーマンス」]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[カスタム]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[リフレッシュ間隔]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[サーバの状態を更新する時間間隔 (秒単位)。サーバの状態は、「ヘルス センタ」>「ダッシュボード」>「グループ サマリ」ページに表示されます。]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[ページあたりの行]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[データが表形式で表示される場合の、ページあたりのデフォルトの行数]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL ToolBox セキュリティ]]></SECURESQL>
+<SECURESQL_desc><![CDATA[SQL ToolBox のログイン クリデンシャルを要求します。]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix 接続時間]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[エラーを戻す前に、OAT がデータベース サーバへの接続を試みる秒単位の時間の長さ (INFORMIXCONTIME)。]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix 接続再試行]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Informix 接続時間の間に、OAT がデータベース サーバへの接続を試みる回数 (INFORMIXCONRETRY)。]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[このフィールドは必須です: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[インストール ディレクトリとして指定されたディレクトリ ({0}) は存在しません。有効なインストール ディレクトリを指定してください。]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[接続データベースとして指定されたディレクトリ ({0}) は無効です。ディレクトリが存在し、書込み可能であることを確認してください。]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[ディレクトリ {0} はアクセス可能ではありません。ディレクトリが存在し、書込み可能であることを確認してください。]]></directory_not_accessible>
+<file_not_accessible><![CDATA[ファイル {0} はアクセス可能ではありません。ファイルが存在し、書込み可能であることを確認してください。]]></file_not_accessible>
+
+<conndb><![CDATA[接続データベース]]></conndb>
+<conndb_desc><![CDATA[接続データベースには、OAT から接続可能なサーバについて指定した接続情報が含まれます。]]></conndb_desc>
+<create_conndb_instructions><![CDATA[接続データベースを作成するには、「次へ」をクリックしてください。]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[接続データベースをアップグレードするには、「次へ」をクリックしてください。]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[接続データベースの処理が正常に完了しました。]]></conndb_complete>
+<conndb_not_set><![CDATA[接続データベース ディレクトリのパラメータ (CONNDBDIR) が conf/config.php ファイル内で設定されていません。このファイルを確認した後、インストールを再び開始してください。]]></conndb_not_set>
+<conndb_processing><![CDATA[ファイルの処理中 {0} - {1}]]></conndb_processing>
+<conndb_error><![CDATA[接続データベースが正常にセットアップされませんでした。{0} 表を作成できませんでした。接続データベースを削除して、インストールを再び開始してください。]]></conndb_error>
+<conndb_error_upgrade><![CDATA[接続データベースが正常にアップグレードされませんでした。ファイル {0}、セクション {1} でエラーが発生しました。接続データベースを削除して、インストールを再び開始してください。保存されている接続情報はすべて失われます。]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[接続データベース内のバージョン情報が正常にアップグレードされませんでした。接続データベースを削除して、インストールを再び開始してください。]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[接続データベース内の、IBM サンプル プラグインのバージョン情報が正常にアップグレードされませんでした。接続データベースを削除して、インストールを再び開始してください。]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[インストールするプラグイン]]></choose_plugins>
+<zip_extension_required><![CDATA[プラグインをインストールするには、PHP zip モジュールが必要です。]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[プラグインはインストールされませんでした。インストール プログラムは、OAT 一時ディレクトリ (tmp) に書き込むことができません。ディレクトリのアクセス権を確認してください。その後、OAT のプラグイン マネージャを使ってプラグインをインストールしてください。]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[インストールするプラグインがありません。]]></no_plugins_to_install>
+<plugin_name><![CDATA[プラグイン]]></plugin_name>
+<plugin_author><![CDATA[作成者]]></plugin_author>
+<plugin_version><![CDATA[バージョン]]></plugin_version>
+<plugin_server_version><![CDATA[Informix バージョン]]></plugin_server_version>
+<plugin_license><![CDATA[ライセンス]]></plugin_license>
+<plugin_install_checkbox><![CDATA[インストールしますか?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[プラグインのご使用条件の条項に同意しますか?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[プラグインのインストール結果]]></plugin_install>
+<no_plugins_selected><![CDATA[インストールするプラグインが選択されませんでした。]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[{0} が正常にインストールされました。]]></plugin_install_complete>
+
+<install_complete><![CDATA[OpenAdmin Tool インストールの完了]]></install_complete>
+<install_complete_details><![CDATA[OpenAdmin Tool が正常にインストールされました。このページを閉じて OAT ログイン ページに移動するには、「終了」をクリックしてください。]]></install_complete_details>
+
+</lang>

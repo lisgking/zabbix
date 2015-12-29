@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqltrace">
+<SQLExplorer><![CDATA[Проводник SQL]]></SQLExplorer>
+<ShowSQL><![CDATA[Показать SQL]]></ShowSQL>
+<StmtType><![CDATA[Тип оператора]]></StmtType>
+<TXTime><![CDATA[Длительность транзакции]]></TXTime>
+<Freq><![CDATA[Частота]]></Freq>
+<SQLAdmin><![CDATA[Администрирование трассировки SQL]]></SQLAdmin>
+<SQLType><![CDATA[Тип SQL]]></SQLType>
+<SQLProfile><![CDATA[Профиль SQL]]></SQLProfile>
+<SQLList><![CDATA[Список SQL]]></SQLList>
+<TXGroup><![CDATA[Транзакции]]></TXGroup>
+<Count><![CDATA[Счетчик]]></Count>
+<AvgRT><![CDATA[Сред. время ответа]]></AvgRT>
+<MaxRT><![CDATA[Макс. время ответа]]></MaxRT>
+<AvgMem><![CDATA[Сред. память]]></AvgMem>
+<RowProc><![CDATA[Обработано строк]]></RowProc>
+<NoData><![CDATA[Нет доступных данных]]></NoData>
+<SQLStmtSum><![CDATA[Сводка операторов SQL]]></SQLStmtSum>
+<SQLStmt><![CDATA[Оператор SQL]]></SQLStmt>
+<SID><![CDATA[ID сеанса]]></SID>
+<NRecentTX><![CDATA[100 самых последних транзакций]]></NRecentTX>
+<SQLFreq><![CDATA[Сводка по частоте SQL]]></SQLFreq>
+<LockWait><![CDATA[Время ожидания блокировок]]></LockWait>
+<SQLDrill><![CDATA[Детализация SQL]]></SQLDrill>
+<DrillDown><![CDATA[Детализация]]></DrillDown>
+<WaitIOTime><![CDATA[Время ожидания операций ввода-вывода]]></WaitIOTime>
+<UID><![CDATA[ID пользователя]]></UID>
+<CompTime><![CDATA[Время выполнения оператора]]></CompTime>
+<RespTime><![CDATA[Время ответа]]></RespTime>
+<Database><![CDATA[База данных]]></Database>
+<Statement><![CDATA[Оператор]]></Statement>
+<StmtStats><![CDATA[Статистика об операторах]]></StmtStats>
+<pgReads><![CDATA[Число операций чтения страницы]]></pgReads>
+<BufReads><![CDATA[Число чтений буфера]]></BufReads>
+<ReadCache><![CDATA[Число операций чтения кэша]]></ReadCache>
+<DataBufReads><![CDATA[Число операций чтения буфера данных]]></DataBufReads>
+<IndexBuffReads><![CDATA[Число операций чтения буфера индекса]]></IndexBuffReads>
+<PgWrites><![CDATA[Число операций записи страниц]]></PgWrites>
+<BufWrites><![CDATA[Число записей в буфер]]></BufWrites>
+<WriteCache><![CDATA[Число операций записи кэша]]></WriteCache>
+<NumLockWait><![CDATA[Число ожиданий блокировок]]></NumLockWait>
+<LockRequests><![CDATA[Требования блокировок]]></LockRequests>
+<LockWaitTime><![CDATA[Время ожидания блокировок]]></LockWaitTime>
+<LogSpace><![CDATA[Пространство журнала]]></LogSpace>
+<DiskSorts><![CDATA[Сортировки на диске]]></DiskSorts>
+<MemSorts><![CDATA[Сортировки в памяти]]></MemSorts>
+<NumTables><![CDATA[Число таблиц]]></NumTables>
+<NumIter><![CDATA[Число итераторов]]></NumIter>
+<TExecs><![CDATA[Всего выполнений]]></TExecs>
+<TExecTime><![CDATA[Общее время выполнения]]></TExecTime>
+<AvgExecTime><![CDATA[Среднее время выполнения]]></AvgExecTime>
+<MaxExecTime><![CDATA[Максимальное время выполнения]]></MaxExecTime>
+<TNumIOWait><![CDATA[Количество ожиданий операций ввода-вывода]]></TNumIOWait>
+<IOWaitTime><![CDATA[Время ожидания операции ввода-вывода]]></IOWaitTime>
+<AvgIOWait><![CDATA[Среднее время ожидания операции ввода-вывода]]></AvgIOWait>
+<RowsPerSec><![CDATA[Среднее число строк в секунду]]></RowsPerSec>
+<EstCost><![CDATA[Оценка затрат]]></EstCost>
+<EstRows><![CDATA[Оценка числа строк]]></EstRows>
+<ActRows><![CDATA[Фактическое число строк]]></ActRows>
+<SQLErr><![CDATA[Ошибка SQL]]></SQLErr>
+<ISAMErr><![CDATA[Ошибка ISAM]]></ISAMErr>
+<IsoLevel><![CDATA[Уровень изоляции]]></IsoLevel>
+<SQLMem><![CDATA[Память SQL]]></SQLMem>
+<SQLTbadParam><![CDATA[При попытке изменить трассировку SQL обнаружен неверный параметр.]]></SQLTbadParam>
+<Modify><![CDATA[Изменить]]></Modify>
+<High><![CDATA[Высокий]]></High>
+<Medium><![CDATA[Средний]]></Medium>
+<Low><![CDATA[Низкий]]></Low>
+<MaxSQLTrace><![CDATA[Максимальный объем  текста SQL для трассировки.]]></MaxSQLTrace>
+<TraceLevel><![CDATA[Уровень трассировки]]></TraceLevel>
+<NumSqlTraceStmt><![CDATA[Число операторов SQL, для которых надо произвести трассировку.]]></NumSqlTraceStmt>
+<TraceOnOff><![CDATA[Включает и выключает трассировку SQL.]]></TraceOnOff>
+<On><![CDATA[Включено]]></On>
+<Off><![CDATA[Отключено]]></Off>
+<SQLTraceOpt><![CDATA[Задать опции трассировки SQL]]></SQLTraceOpt>
+<Mode><![CDATA[Режим]]></Mode>
+<NumTrace><![CDATA[Число трассировок]]></NumTrace>
+<TraceSize><![CDATA[Размер трассировки]]></TraceSize>
+<SQLTraceInfo><![CDATA[Информация трассировки SQL]]></SQLTraceInfo>
+<NumSQLTraced><![CDATA[Число трассированных операторов SQL]]></NumSQLTraced>
+<TraceBufSize><![CDATA[Размер буфера трассировки]]></TraceBufSize>
+<OldTracedStmt><![CDATA[Наиболее ранний трассированный оператор]]></OldTracedStmt>
+<TraceBufDuration><![CDATA[Длительность трассировки буфера]]></TraceBufDuration>
+<SQLSeen><![CDATA[Видимые операторы SQL]]></SQLSeen>
+<SQLTraceStart><![CDATA[Трассировка SQL начата]]></SQLTraceStart>
+<SQLTracePerSec><![CDATA[Операторов SQL в секунду]]></SQLTracePerSec>
+<TraceMemUsed><![CDATA[Использование памяти для трассировки SQL]]></TraceMemUsed>
+<RowPerSec><![CDATA[Строк в секунду]]></RowPerSec>
+<ListSQL><![CDATA[Вывести список SQL]]></ListSQL>
+<TxStatsSummary><![CDATA[Сводка статистики о транзакциях]]></TxStatsSummary>
+<NumSQL><![CDATA[Счетчик операторов]]></NumSQL>
+<PDQ><![CDATA[PDQ]]></PDQ>
+<StmtHVars><![CDATA[Переменные хоста оператора]]></StmtHVars>
+<Pos><![CDATA[Положение]]></Pos>
+<Type><![CDATA[Тип]]></Type>
+<Value><![CDATA[Значение]]></Value>
+<Error_GD_NotEnabled><![CDATA[Графическое устройство для PHP не включено.  Не удается вывести дерево запросов.]]></Error_GD_NotEnabled>
+<IDSVersion><![CDATA[Версия Informix:]]></IDSVersion>
+<SaveSQLTrace><![CDATA[Сохранить трассировку SQL]]></SaveSQLTrace>
+<SaveCurrentSQLTrace><![CDATA[Сохраняет текущую информацию syssqltrace в таблицу]]></SaveCurrentSQLTrace>
+<SQLStmtSummary><![CDATA[Сводка операторов SQL]]></SQLStmtSummary>
+<SQLFreqSummary><![CDATA[Сводка по частоте SQL]]></SQLFreqSummary>
+<SQLDrillDown><![CDATA[Детализация SQL]]></SQLDrillDown>
+<Count><![CDATA[Счетчик]]></Count>
+<AvgRunTime><![CDATA[Среднее время работы]]></AvgRunTime>
+<LockWaitTime><![CDATA[Время ожидания блокировки]]></LockWaitTime>
+<WaitIOTime><![CDATA[Время ожидания операций ввода-вывода]]></WaitIOTime>
+<CompleteTime><![CDATA[Время завершения]]></CompleteTime>
+<EXTDIRECTIVE><![CDATA[Для включения поддержки директив надо присвоить EXT_DIRECTIVES значение 1 или 2.]]></EXTDIRECTIVE>
+<SavedDir><![CDATA[Этот запрос имеет сохраненные директивы]]></SavedDir>
+<DirectivesSaved><![CDATA[Сохранено директив]]></DirectivesSaved>
+<NoneSavedYet><![CDATA[Этот запрос пока не имеет сохраненных директив]]></NoneSavedYet>
+<DirectivesDeleted><![CDATA[Директивы удалены. Других директив для обновления нет.]]></DirectivesDeleted>
+<NoTraceInfo><![CDATA[Сведения о трассировке таблиц отсутствуют.]]></NoTraceInfo>
+<NoIndexesFound><![CDATA[Индексов не обнаружено]]></NoIndexesFound>
+<NoRowsFound><![CDATA[Строк не обнаружено.]]></NoRowsFound>
+<SQLTRACINGDISABLED><![CDATA[ТРАССИРОВКА SQL ОТКЛЮЧЕНА]]></SQLTRACINGDISABLED>
+<SQLTracingOff><![CDATA[Трассировка SQL отключена]]></SQLTracingOff>
+<NoSQLID><![CDATA[Ошибочный аргумент для services/sqltrace.php]]></NoSQLID>
+<InvalidArgument><![CDATA[Ошибочный аргумент для services/sqltrace.php]]></InvalidArgument>
+<ClickForSQLDetails><![CDATA[Щелкните, чтобы получить дополнительные сведения об этом операторе SQL]]></ClickForSQLDetails>
+<DrillDown><![CDATA[Детализация]]></DrillDown>
+<ORDERED_Description><![CDATA[Произвести принудительное применение оптимизатора для объединение таблиц в порядке, указанном в операторе SELECT.]]></ORDERED_Description>
+<FIRST_ROWS_Description><![CDATA[Вернуть первую строку как можно быстрее.]]></FIRST_ROWS_Description>
+<ALL_ROWS_Description><![CDATA[Выполните весь запрос как можно быстрее.]]></ALL_ROWS_Description>
+<AVOID_MULTI_INDEX_Description><![CDATA[Не использовать просмотр нескольких индексов для обращения к указанной таблице.]]></AVOID_MULTI_INDEX_Description>
+<AVOID_STAR_JOIN_Description><![CDATA[Не использовать план выполнения объединения типа звезда.]]></AVOID_STAR_JOIN_Description>
+<STAR_JOIN_Description><![CDATA[Использовать план выполнения объединения типа звезда, если это возможно.]]></STAR_JOIN_Description>
+<FACT_Description><![CDATA[Выберите таблицу для использования в качестве таблицы фактов в плане выполнения объединения типа звезда.]]></FACT_Description>
+<AVOID_FACT_Description><![CDATA[Выберите таблицы, которые НЕЛЬЗЯ использовать как таблицы фактов в плане выполнения объединения типа звезда.]]></AVOID_FACT_Description>
+<AVOID_INDEX_SJ_Description><![CDATA[Укажите индексы, которые НЕЛЬЗЯ использовать при обращении к таблице в пути самообъединения индекса.]]></AVOID_INDEX_SJ_Description>
+<INDEX_SJ_Description><![CDATA[Укажите индекс, который будет использоваться при обращении к таблице в пути самообъединения индекса.]]></INDEX_SJ_Description>
+<MULTI_INDEX_Description><![CDATA[Укажите несколько индексов для использования при обращении к таблице.]]></MULTI_INDEX_Description>
+<AVOID_INDEX_Description><![CDATA[Укажите индексы, которые НЕЛЬЗЯ использовать при обращении к таблице.]]></AVOID_INDEX_Description>
+<INDEX_Description><![CDATA[Укажите индексы для использования при обращении к таблице.]]></INDEX_Description>
+<AVOID_FULL_Description><![CDATA[Избегать доступ к таблице с помощью полного сканирования.]]></AVOID_FULL_Description>
+<FULL_Description><![CDATA[Использовать доступ к таблице с помощью полного сканирования.]]></FULL_Description>
+<USE_NL_Description><![CDATA[Использовать указанные таблицы в качестве внутренней таблицы при объединении с вложенным циклом.]]></USE_NL_Description>
+<AVOID_NL_Description><![CDATA[Избегать использование указанных таблицы в качестве внутренней таблицы в объединении с вложенным циклом.]]></AVOID_NL_Description>
+<USE_HASH_Description><![CDATA[Использовать динамическое хэш-объединение для доступа к указанной таблице.]]></USE_HASH_Description>
+<AVOID_HASH_Description><![CDATA[Не использовать динамическое хэш-объединение для доступа к указанной таблице.]]></AVOID_HASH_Description>
+<Index><![CDATA[Индекс]]></Index>
+<Table><![CDATA[Таблица]]></Table>
+<Cost><![CDATA[Стоимость]]></Cost>
+<RowsEstimated><![CDATA[Оценено строк]]></RowsEstimated>
+<RowsProcessed><![CDATA[Строк обработано]]></RowsProcessed>
+<ElapsedTime><![CDATA[Истекшее время]]></ElapsedTime>
+<NotYetImpl><![CDATA[На этой странице OpenAdmin Tool не может вывести информацию для сервера баз данных с несколькими неанглийскими локалями базы данных. Сервер баз данных содержит несколько неанглийских локалей базы данных.]]></NotYetImpl>
+<QueryTree><![CDATA[Дерево запросов]]></QueryTree>
+<QueryTreeNA><![CDATA[Дерево запросов для этого оператора недоступно.]]></QueryTreeNA>
+</lang>
+
+

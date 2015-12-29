@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_msg">
+
+<msg_DBSPACETEMP><![CDATA[Red alarm: Checks that the DBSPACETEMP configuration parameter is set.  Yellow alarm:  Checks that there are no spaces in the value for the DBSPACETEMP configuration parameter.]]></msg_DBSPACETEMP>
+
+<msg_DUMPDIR><![CDATA[Red alarm: None. Yellow alarm: Checks that the DUMPDIR configuration parameter is not set to the directory listed in the yellow alarm threshold.]]></msg_DUMPDIR>
+
+<msg_DYNAMIC_LOGS><![CDATA[Red alarm: None. Yellow alarm: Checks that dynamic log allocation (DYNAMIC_LOGS) is enabled.]]></msg_DYNAMIC_LOGS>
+
+<msg_Logdbs><![CDATA[Red alarm: Checks that the logical-log files are not stored in the root dbspace (ROOTDBS). Yellow alarm: Checks that no tables are stored in the dbspace where the logical-log files are stored.]]></msg_Logdbs>
+
+<msg_LTXHWM><![CDATA[Red alarm: Checks that the long-transaction high water mark (LTXHWM) is below the red alarm threshold, if dynamic-log allocation (DYNAMIC_LOGS) is off.  Yellow alarm: Checks that the long-transaction high water mark (LTXHWM) is below the yellow alarm threshold, if dynamic-log allocation is off.]]></msg_LTXHWM>
+
+<msg_LRU_MIN><![CDATA[Red alarm: None. Yellow alarm: Checks that the value for the least-recently used minimum dirty (lru_min_dirty) is above the yellow alarm threshold.]]></msg_LRU_MIN>
+
+<msg_LTAPEDEV><![CDATA[Red alarm: None. Yellow alarm: Checks that the LTAPEDEV configuration parameter is not set to the directory listed in the yellow alarm threshold.]]></msg_LTAPEDEV>
+
+<msg_NOAGE><![CDATA[Red alarm: None. Yellow alarm: Checks that the noage option of the VPCLASS configuration parameter is set.]]></msg_NOAGE>
+
+<msg_ONDBSPACEDOWN><![CDATA[Red alarm: None. Yellow alarm: Checks that the database server is not set to continue when a dbspace is down (ONDBSPACEDOWN).]]></msg_ONDBSPACEDOWN>
+
+<msg_Physdbs><![CDATA[Red alarm: Checks that the physical log is not stored in the root dbspace (ROOTDBS). Yellow alarm: Checks that no tables are stored in the dbspace where the physical log is stored.]]></msg_Physdbs>
+
+<msg_SINGLE_CPU_VP><![CDATA[Red alarm: None. Yellow alarm: Checks that if the SINGLE_CPU_VP configuration parameter is set, the MULTIPROCESSOR configuration parameter is off.]]></msg_SINGLE_CPU_VP>
+
+<msg_TAPEDEV><![CDATA[Red alarm: None. Yellow alarm: Checks that the TAPEDEV configuration parameter is not set to the directory listed in the yellow alarm threshold.]]></msg_TAPEDEV>
+
+<msg_ATS_Files><![CDATA[Red alarm: Checks that the number of ATS files created today is below the red alarm threshold. Yellow alarm: Checks that the number of ATS files created today is below the yellow alarm threshold.]]></msg_ATS_Files>
+
+<msg_ER_DDRBlock><![CDATA[Red alarm: Checks that the percentage of log pages remaining before transaction blocking (DDRBLOCK) starts is above the percentage listed in the red alarm threshold. Yellow alarm: Checks that the percentage of log pages remaining before transaction blocking starts is above the percentage listed in the yellow alarm threshold.]]></msg_ER_DDRBlock>
+
+<msg_ER_Down_Node><![CDATA[Red alarm: Checks that the nodes in the ER cluster are active and replicating data. Yellow alarm: None.]]></msg_ER_Down_Node>
+
+<msg_RIS_Files><![CDATA[Red alarm: Checks that the number of RIS files created today is below the red alarm threshold. Yellow alarm: Checks that the number of RIS files created today is below the yellow alarm threshold.]]></msg_RIS_Files>
+
+<msg_OS_Free_Memory><![CDATA[Red alarm: Checks that the percentage of free memory that is available to the operating system is above the red alarm threshold. Yellow alarm: Checks that the percentage of free memory that is available to the operating system is above the yellow alarm threshold.]]></msg_OS_Free_Memory>
+
+<msg_OS_Online_Procs><![CDATA[Red alarm: None. Yellow alarm: Checks that the number of online processors in the operating system is equivalent to the number of processors in the operating system.]]></msg_OS_Online_Procs>
+
+<msg_OS_Procs><![CDATA[Red alarm: None. Yellow alarm: Checks that the number of CPU virtual processors is above the percentage of CPUs in the operating system that is listed as the yellow alarm threshold.]]></msg_OS_Procs>
+
+<msg_OS_Open_File_Limit><![CDATA[Red alarm: Checks that the number of open file descriptors per process for the operating system is above the red alarm threshold. Yellow alarm: Checks that the number of open file descriptors per process for the operating system is above the yellow alarm threshold.]]></msg_OS_Open_File_Limit>
+
+<msg_OS_semid><![CDATA[Red alarm: Checks that the number of semaphore sets for the operating system is above the red alarm threshold. Yellow alarm: Checks that the number of semaphore sets for the operating system is above the yellow alarm threshold.]]></msg_OS_semid>
+
+<msg_OS_semnum><![CDATA[Red alarm: Checks that the total number of semaphores for the operating system is above the red alarm threshold. Yellow alarm: Checks that the total number of semaphores for the operating system is above the yellow alarm threshold.]]></msg_OS_semnum>
+
+<msg_OS_shmids><![CDATA[Red alarm: Checks that the number of shared-memory IDs (shmid) for the operating system is above the red alarm threshold. Yellow alarm: Checks that the number of shared-memory IDs (shmid) for the operating system is above the yellow alarm threshold.]]></msg_OS_shmids>
+
+<msg_OS_shmmax><![CDATA[Red alarm: Checks that the maximum size of a shared-memory segment (SHMMAX) for the operating system is above the red alarm threshold. Yellow alarm: Checks that the maximum size of a shared-memory segment (SHMMAX) for the operating system is above the yellow alarm threshold.]]></msg_OS_shmmax>
+
+<msg_OS_shmnumsegs><![CDATA[Red alarm: Checks that the total number of shared-memory segments (shmNumSegs) for the operating system is above the red alarm threshold. Yellow alarm: Checks that the total number of shared-memory segments (shmNumSegs) for the operating system is above the yellow alarm threshold.]]></msg_OS_shmnumsegs>
+
+<msg_CKPT_Caused_By_LLOG><![CDATA[Red alarm: Checks that a shortage of logical log resources (LLOG) does not cause blocking during checkpoint processing.  Yellow alarm:  Checks that a shortage of logical log resources (LLOG) does not trigger checkpoints.]]></msg_CKPT_Caused_By_LLOG>
+
+<msg_CKPT_Caused_By_PLOG><![CDATA[Red alarm: Checks that a shortage of physical log resources (PLOG) does not cause blocking during checkpoint processing.  Yellow alarm:  Checks that a shortage of physical log resources (PLOG) does not trigger checkpoints.]]></msg_CKPT_Caused_By_PLOG>
+
+<msg_Critical_Section><![CDATA[Red alarm: Checks that the time spent in critical sections during checkpoint processing is below the red alarm threshold.  Yellow alarm: Checks that the time spent in critical sections during checkpoint processing is below the yellow alarm threshold.]]></msg_Critical_Section>
+
+<msg_Diskflush><![CDATA[Red alarm: Checks that the number of disk flushes per second during checkpoint processing is above the red alarm threshold.  Yellow alarm: Checks that the number of disk flushes per second during checkpoint processing is above the yellow alarm threshold.]]></msg_Diskflush>
+
+<msg_Longest_Waiter><![CDATA[Red alarm: Checks that the longest time that a transaction waits during checkpoint processing is below the red alarm threshold.  Yellow alarm: Checks that the longest time that a transaction waits during checkpoint processing is below the yellow alarm threshold.]]></msg_Longest_Waiter>
+
+<msg_Buffreads_Per_Table><![CDATA[Red alarm: Checks that the number of buffer reads for a table is less than the percentage of all buffer reads that is listed as the red alarm threshold. Yellow alarm: Checks that the number of buffer reads for a table is less than the percentage of all buffer reads that is listed in the yellow alarm threshold.]]></msg_Buffreads_Per_Table>
+
+<msg_Buffwrites_Per_Table><![CDATA[Red alarm: Checks that the number of buffer writes for a table is less than the percentage of all buffer writes that is listed as the red alarm threshold. Yellow alarm: Checks that the number of buffer writes for a table is less than the percentage of all buffer writes that is listed as the yellow alarm threshold.]]></msg_Buffwrites_Per_Table>
+
+<msg_Seq_Scans_Per_Table><![CDATA[Red alarm: Checks that the number of sequential scans for a table is less than the percentage of all sequential scans that is listed in the red alarm threshold. Yellow alarm: Checks that the number of sequential scans for a table is less than the percentage of all sequential scans that is listed in the yellow alarm threshold.]]></msg_Seq_Scans_Per_Table>
+
+<msg_Buffreads_Cache><![CDATA[Red alarm: Checks that the percentage of reads that are cached to buffers (%cached) is above the red alarm threshold. Yellow alarm: Checks that the percentage of reads that are cached to buffers (%cached) is above the yellow alarm threshold.]]></msg_Buffreads_Cache>
+
+<msg_Buffwrites_Cache><![CDATA[Red alarm: Checks that the percentage of writes that are cached to buffers (%cached) is above the red alarm threshold. Yellow alarm: Checks that the percentage of writes that are cached to buffers (%cached) is above the yellow alarm threshold.]]></msg_Buffwrites_Cache>
+
+<msg_Disksorts><![CDATA[Red alarm: Checks that the percentage of the total sorts that are disk sorts is below the red alarm threshold. Yellow alarm: Checks that the percentage of the total sorts that are disk sorts is below the yellow alarm threshold.]]></msg_Disksorts>
+
+<msg_isrollbacks><![CDATA[Red alarm: Checks that the percentage of total transactions that are rolled-back transactions is below the red alarm threshold. Yellow alarm: Checks that the percentage of total transactions that are rolled-back transactions is below the yellow alarm threshold.]]></msg_isrollbacks>
+
+<msg_Foreground_Writes><![CDATA[Red alarm: Checks that the percentage of total writes that are foreground writes is below the red alarm threshold. Yellow alarm: Checks that the percentage of total writes that are foreground writes is below the yellow alarm threshold.]]></msg_Foreground_Writes>
+
+<msg_LLOG_Pages_Per_IO><![CDATA[Red alarm: Checks that the ratio of logical log pages to I/O is below the percentage of the logical-log buffer (LOGBUFF) that is listed as the red alarm threshold. Yellow alarm:  Checks that the ratio of logical log pages to I/O is above the percentage of the logical-log buffer (LOGBUFF) that is listed as the yellow alarm threshold.]]></msg_LLOG_Pages_Per_IO>
+
+<msg_Lock_Waits><![CDATA[Red alarm: Checks that the percentage of total lock requests that are lock waits is below the red alarm threshold. Yellow alarm: Checks that the percentage of total lock requests that are lock waits is below the yellow alarm threshold.]]></msg_Lock_Waits>
+
+<msg_PLOG_Pages_Per_IO><![CDATA[Red alarm: Checks that the ratio of physical log pages to I/O is below the percentage of the physical-log buffer (PHYSBUFF) that is listed as the red alarm threshold.  Yellow alarm:  Checks that the ratio of physical log pages to I/O is above the percentage of the physical-log buffer (PHYSBUFF) that is listed as the yellow alarm threshold.]]></msg_PLOG_Pages_Per_IO>
+
+<msg_Seq_Scans><![CDATA[Red alarm: Checks that the percentage of total SQL statements that are sequential scans is below the red alarm threshold. Yellow alarm: Checks that the percentage of total SQL statements that are sequential scans is below the yellow alarm threshold.]]></msg_Seq_Scans>
+
+<msg_Offline_Chunks><![CDATA[Red alarm: Checks that all chunks are online. Yellow alarm: None.]]></msg_Offline_Chunks>
+
+<msg_Chunk_IO_OPS><![CDATA[Red alarm: Checks that the number of I/O operations for each chunk is below the percentage of all I/O operations that is listed as the red alarm threshold. Yellow alarm: Checks that the number of I/O operations for each chunk is below the percentage of all I/O operations that is listed as the yellow alarm threshold.]]></msg_Chunk_IO_OPS>
+
+<msg_Chunk_IO_Reads><![CDATA[Red alarm: Checks that the number of read operations for each chunk is below the percentage of all read operations that is listed as the red alarm threshold. Yellow alarm: Checks that the number of read operations for each chunk is below the percentage of all read operations that is listed as the yellow alarm threshold.]]></msg_Chunk_IO_Reads>
+
+<msg_Chunk_IO_Writes><![CDATA[Red alarm: Checks that the number of write operations for each chunk is below the percentage of all write operations that is listed as the red alarm threshold. Yellow alarm: Checks that the number of write operations for each chunk is below the percentage of all write operations that is listed as the yellow alarm threshold.]]></msg_Chunk_IO_Writes>
+
+<msg_Dbspace_Free_Space><![CDATA[Red alarm: Checks that the free space in each dbspace is above the percentage of total space in the dbspace that is listed as the red alarm threshold.  Yellow alarm: Checks that the free space in each dbspace is above the percentage of total space in the dbspace that is listed as the yellow alarm threshold.]]></msg_Dbspace_Free_Space>
+
+<msg_Rowsize><![CDATA[Red alarm: Checks for tables whose percentage of maximum free space per page is below the red alarm threshold. Yellow alarm: Checks for tables whose percentage of maximum free space per page is below the yellow alarm threshold.]]></msg_Rowsize>
+
+</lang>
+
+

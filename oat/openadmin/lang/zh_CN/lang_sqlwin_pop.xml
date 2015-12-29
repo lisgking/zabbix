@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL 工具箱弹出框 - Partnum 信息]]></PartTitle>
+<Partition><![CDATA[分区]]></Partition>
+<PartInfoFor><![CDATA[{0} 的分区信息]]></PartInfoFor>
+<Pgsize><![CDATA[页面大小]]></Pgsize>
+<NumExtAlloc><![CDATA[已分配的扩展数据块数]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[已分配的页面总数]]></TPgsAlloc>
+<NDataPgs><![CDATA[数据页面数]]></NDataPgs>
+<Lockid><![CDATA[Lockid]]></Lockid>
+<HasIPgs><![CDATA[表分区是否包含索引页面？]]></HasIPgs>
+<Rowsize><![CDATA[Rowsize]]></Rowsize>
+<NRows><![CDATA[行数]]></NRows>
+<PagesUsed><![CDATA[已使用页面数]]></PagesUsed>
+<errNoPartnum><![CDATA[错误：未设置 partnum。]]></errNoPartnum>
+<errNotHex><![CDATA[错误：值必须为十六进制格式，以前缀 <0x> 开头。]]></errNotHex>
+</lang>

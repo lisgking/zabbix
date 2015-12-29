@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="privileges">
+<ManagePrivileges><![CDATA[管理特权]]></ManagePrivileges>
+<UserPrivileges><![CDATA[用户特权]]></UserPrivileges>
+<Database><![CDATA[数据库]]></Database>
+<DBPrivileges><![CDATA[数据库级别特权]]></DBPrivileges>
+<TablePrivileges><![CDATA[表级别特权]]></TablePrivileges>
+<AdminPrivileges><![CDATA[SQL 管理 API 特权]]></AdminPrivileges>
+<NonOsUsers><![CDATA[内部用户]]></NonOsUsers>
+<Name><![CDATA[名称]]></Name>
+<Type><![CDATA[类型]]></Type>
+<DefRole><![CDATA[缺省角色]]></DefRole>
+<Tabname><![CDATA[表名]]></Tabname>
+<User><![CDATA[用户]]></User>
+<Grantor><![CDATA[授权者]]></Grantor>
+<Privilege><![CDATA[特权]]></Privilege>
+<Privileges><![CDATA[特权]]></Privileges>
+<Username><![CDATA[用户名]]></Username>
+<Grant><![CDATA[授予]]></Grant>
+<GrantNewPriv><![CDATA[授予新特权]]></GrantNewPriv>
+<Roles><![CDATA[角色]]></Roles>
+<CreateNewRole><![CDATA[创建新角色]]></CreateNewRole>
+<Create><![CDATA[创建]]></Create>
+<RoleName><![CDATA[角色名称]]></RoleName>
+<NoUserError><![CDATA[授予失败：没有提供用户名。]]></NoUserError>
+<NoPrivError><![CDATA[授予失败：没有提供特权级别。]]></NoPrivError>
+<NoTabError><![CDATA[授予失败：没有提供表名。]]></NoTabError>
+<NoRoleError><![CDATA[授予失败：没有提供角色名称。]]></NoRoleError>
+<NoPermission><![CDATA[只读用户没有执行此操作的许可权。您是以只读用户身份登录的。]]></NoPermission>
+<NoDatabasesError><![CDATA[此数据库服务器上没有可用的非系统数据库。]]></NoDatabasesError>
+<GrantForUserSuccess><![CDATA[针对以下用户的授予成功]]></GrantForUserSuccess>
+<PrivilegeRevokedForUser><![CDATA[已撤销以下用户的特权]]></PrivilegeRevokedForUser>
+<PrivilegeSavedForUser><![CDATA[已保存以下用户的特权]]></PrivilegeSavedForUser>
+<GrantSuccess1><![CDATA[成功在以下表上授予]]></GrantSuccess1>
+<GrantSuccess2><![CDATA[用于用户]]></GrantSuccess2>
+<PrivilegeRevokedForUser><![CDATA[已撤销以下用户的特权]]></PrivilegeRevokedForUser>
+<OnTable><![CDATA[在以下表上]]></OnTable>
+<PrivilegeSavedForUser><![CDATA[已保存以下用户的特权]]></PrivilegeSavedForUser>
+<CreateSuccessForRole><![CDATA[针对以下角色的创建成功]]></CreateSuccessForRole>
+<Connect><![CDATA[连接]]></Connect>
+<Resource><![CDATA[资源]]></Resource>
+<DBA><![CDATA[DBA]]></DBA>
+<CONNECT><![CDATA[CONNECT]]></CONNECT>
+<RESOURCE><![CDATA[RESOURCE]]></RESOURCE>
+<Select><![CDATA[选择]]></Select>
+<Update><![CDATA[更新]]></Update>
+<Insert><![CDATA[插入]]></Insert>
+<Delete><![CDATA[删除]]></Delete>
+<Index><![CDATA[索引]]></Index>
+<Alter><![CDATA[变更]]></Alter>
+<References><![CDATA[引用]]></References>
+<Under><![CDATA[从属]]></Under>
+<Modify><![CDATA[修改]]></Modify>
+<Revoke><![CDATA[撤销]]></Revoke>
+<ErrorF><![CDATA[错误：]]></ErrorF>
+<GrantFailed><![CDATA[授予失败]]></GrantFailed>
+<CreateFailed><![CDATA[创建失败]]></CreateFailed>
+<InternalUsers_min_server_version><![CDATA[对于内部用户，OAT 需要 Informix 11.70。]]></InternalUsers_min_server_version>
+<AdminPrivileges_min_server_version><![CDATA[对于 SQL 管理 API 命令特权，OAT 需要 Informix 12.10。]]></AdminPrivileges_min_server_version>
+</lang>

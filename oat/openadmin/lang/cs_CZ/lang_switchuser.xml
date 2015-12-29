@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_switchuser">
+<switchuser><![CDATA[Přihlášení k panelu nástrojů SQL]]></switchuser>
+<loginprompt><![CDATA[Zadejte jméno uživatele a heslo pro použití panelu nástrojů SQL]]></loginprompt>
+<empty><![CDATA[Jméno uživatele a heslo nemohou být prázdné]]></empty>
+<error><![CDATA[Došlo k chybě]]></error>
+<username><![CDATA[Jméno uživatele]]></username>
+<password><![CDATA[Heslo]]></password>
+<login><![CDATA[Přihlásit se]]></login>
+<SwitchingUser><![CDATA[Přepnutí uživatele]]></SwitchingUser>
+</lang>

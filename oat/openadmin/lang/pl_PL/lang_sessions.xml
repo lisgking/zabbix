@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sessions">
+<ErrorNoLongerExists><![CDATA[Sesja już nie istnieje.]]></ErrorNoLongerExists>
+<ErrorInvalidSessionID><![CDATA[Niepoprawny ID sesji.]]></ErrorInvalidSessionID>
+<NoSelectPermission_sysconblock><![CDATA[Użytkownik {0} nie ma uprawnienia do wyświetlania bieżącej instrukcji w sesji.]]></NoSelectPermission_sysconblock>
+<NoSelectPermission_syssqltrace><![CDATA[Użytkownik {0} nie ma uprawnienia do wyświetlania kodu SQL sesji.]]></NoSelectPermission_syssqltrace>
+<ErrorF><![CDATA[Błąd:]]></ErrorF>
+</lang>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_chunk">
+<Chunks><![CDATA[チャンク]]></Chunks>
+<Chunk><![CDATA[チャンク]]></Chunk>
+<MirrorChunk><![CDATA[ミラー チャンク]]></MirrorChunk>
+<ChunkIO><![CDATA[チャンク入出力]]></ChunkIO>
+<ChunkTable><![CDATA[チャンク表のリスト]]></ChunkTable>
+<MirrorTable><![CDATA[ミラー チャンク表のリスト]]></MirrorTable>
+<ChunkNum><![CDATA[チャンク番号]]></ChunkNum>
+<SpaceName><![CDATA[スペース名]]></SpaceName>
+<PageSize><![CDATA[ページ サイズ]]></PageSize>
+<Offset><![CDATA[オフセット]]></Offset>
+<Size><![CDATA[サイズ]]></Size>
+<Free><![CDATA[フリー]]></Free>
+<Used><![CDATA[使用済み %]]></Used>
+<Status><![CDATA[状態]]></Status>
+<Path><![CDATA[パス]]></Path>
+<ChunkPath><![CDATA[チャンク パス]]></ChunkPath>
+<Reads><![CDATA[読込み]]></Reads>
+<Writes><![CDATA[書込み]]></Writes>
+<TotalIO><![CDATA[読込みおよび書込み合計]]></TotalIO>
+<IOTableTitle><![CDATA[チャンクによる入出力]]></IOTableTitle>
+<IOGraphTitle><![CDATA[上位 20 チャンクの入出力]]></IOGraphTitle>
+<ONLINE><![CDATA[オンライン]]></ONLINE>
+<OFFLINE><![CDATA[オフライン]]></OFFLINE>
+<RECOVERING><![CDATA[回復中]]></RECOVERING>
+</lang>

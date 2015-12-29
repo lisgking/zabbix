@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_onstatutil">
+<mainTitle><![CDATA[Средство onstat]]></mainTitle>
+<ErrorOnInteractive><![CDATA[Интерактивный режим onstat недоступен через OpenAdmin Tool.]]></ErrorOnInteractive>
+<ErrorOnOnstat><![CDATA[Введите только опции. Команду <b>onstat</b> вводит OpenAdmin Tool.]]></ErrorOnOnstat>
+<ErrorOnRepeat><![CDATA[Опция -r при командах onstat недопустима в OpenAdmin Tool.]]></ErrorOnRepeat>
+<ErrorOnOutput><![CDATA[Опция -o при командах onstat недопустима в OpenAdmin Tool.]]></ErrorOnOutput>
+<ErrorOnInvalidChar><![CDATA[Команда onstat содержит недопустимый символ.]]></ErrorOnInvalidChar>
+<ReportValidChars><![CDATA[В командах onstat в OpenAdmin Tool допускаются только алфавитно-цифровые символы, тире, запятые и точки.]]></ReportValidChars>
+<ErrorPrepend><![CDATA[ОШИБКА:]]></ErrorPrepend>
+<SubmitAction><![CDATA[Запустить]]></SubmitAction>
+<OnstatOptions><![CDATA[Показать опции onstat]]></OnstatOptions>
+<OnstatFeatureNotAvail><![CDATA[Утилита onstat доступна только в указанной и последующих версиях сервера: {0}]]></OnstatFeatureNotAvail>
+</lang>

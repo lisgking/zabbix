@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[Rozbaľovacie okno pre SQL Toolbox - Informácie o čísle súčasti]]></PartTitle>
+<Partition><![CDATA[Oddiel]]></Partition>
+<PartInfoFor><![CDATA[Informácie o oddiele pre {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Veľkosť stránky]]></Pgsize>
+<NumExtAlloc><![CDATA[Počet alokovaných rozsahov]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Celkový počet alokovaných stránok]]></TPgsAlloc>
+<NDataPgs><![CDATA[Počet dátových stránok]]></NDataPgs>
+<Lockid><![CDATA[ID zámku]]></Lockid>
+<HasIPgs><![CDATA[Oddiel tabuľky zahŕňa stránky indexu?]]></HasIPgs>
+<Rowsize><![CDATA[Veľkosť riadka]]></Rowsize>
+<NRows><![CDATA[Počet riadkov]]></NRows>
+<PagesUsed><![CDATA[Použité stránky]]></PagesUsed>
+<errNoPartnum><![CDATA[Chyba: číslo súčasti nie je nastavené.]]></errNoPartnum>
+<errNotHex><![CDATA[Chyba: hodnota musí byť v hexadecimálnom formáte - začnite predponou <0x>.]]></errNotHex>
+</lang>

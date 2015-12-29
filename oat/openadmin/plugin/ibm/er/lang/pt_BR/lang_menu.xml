@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_menu">
+<er><![CDATA[Enterprise Replication]]></er>
+<gridRepl><![CDATA[Grade]]></gridRepl>
+<domain><![CDATA[Domínio do ER]]></domain>
+<node><![CDATA[Detalhes do Nó]]></node>
+<replicates><![CDATA[Réplicas]]></replicates>
+<howto_er><![CDATA[Ajuda de Replicação]]></howto_er>
+<ucm><![CDATA[Gerenciador de Conexões]]></ucm>
+</lang>

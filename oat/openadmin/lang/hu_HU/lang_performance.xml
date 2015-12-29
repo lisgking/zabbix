@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_performance">
+<PerfPageTitle><![CDATA[Teljesítmény előzmények]]></PerfPageTitle>
+<NotEnoughDataToProfile><![CDATA[Nincs elég adat a profilkészítéshez.]]></NotEnoughDataToProfile>
+<DatabaseConnectionFailed><![CDATA[Nem lehet csatlakozni a(z) {0} adatbázis-kiszolgálóhoz.]]></DatabaseConnectionFailed>
+</lang>

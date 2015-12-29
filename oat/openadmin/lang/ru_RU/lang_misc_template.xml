@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_misc_template">
+<ErrorF><![CDATA[Ошибка:]]></ErrorF>
+<QueryF><![CDATA[Запрос:]]></QueryF>
+<PageSize><![CDATA[Размер страницы]]></PageSize>
+<Descending><![CDATA[По убыванию]]></Descending>
+<Ascending><![CDATA[По возрастанию]]></Ascending>
+<ErrorOccurred><![CDATA[Произошла ошибка]]></ErrorOccurred>
+<Reload><![CDATA[Загрузить снова]]></Reload>
+<ClickToReload><![CDATA[Щелкните для перезагрузки серверов]]></ClickToReload>
+<LoadingMsg><![CDATA[..ЗАГРУЗКА..]]></LoadingMsg>
+<PrevPage><![CDATA[Предыдущая страница]]></PrevPage>
+<NextPage><![CDATA[Следующая страница]]></NextPage>
+<Page><![CDATA[Страница]]></Page>
+<Row><![CDATA[Строка]]></Row>
+<Login><![CDATA[Вход в систему]]></Login>
+<OrderAsc><![CDATA[Упорядочить по возрастанию {0}]]></OrderAsc>
+<OrderDesc><![CDATA[Упорядочить по убыванию {0}]]></OrderDesc>
+<Help><![CDATA[Справка]]></Help>
+<Admin><![CDATA[Администрирование]]></Admin>
+<Back><![CDATA[Назад]]></Back>
+<Welcome><![CDATA[Добро пожаловать]]></Welcome>
+<CollapseMenu><![CDATA[Свернуть меню]]></CollapseMenu>
+<Info><![CDATA[Сведения]]></Info>
+<Yes><![CDATA[Да]]></Yes>
+<No><![CDATA[Нет]]></No>
+<Cancel><![CDATA[Отмена]]></Cancel>
+<Delete><![CDATA[Удалить]]></Delete>
+<Success><![CDATA[Успешно]]></Success>
+<ErrorL><![CDATA[Ошибка]]></ErrorL>
+<ERROR><![CDATA[ОШИБКА]]></ERROR>
+<Ignore><![CDATA[Игнорировать]]></Ignore>
+<Under><![CDATA[Под]]></Under>
+<Save><![CDATA[Сохранить]]></Save>
+<Cancel><![CDATA[Отмена]]></Cancel>
+<TemplateLoadError><![CDATA[Не удалось загрузить основной шаблон]]></TemplateLoadError>
+<help><![CDATA[Справка]]></help>
+<ServerType><![CDATA[Тип сервера]]></ServerType>
+<Version><![CDATA[Версия]]></Version>
+<ServerTime><![CDATA[Серверное время]]></ServerTime>
+<BootTime><![CDATA[Время загрузки]]></BootTime>
+<UpTime><![CDATA[Время бесперебойной работы]]></UpTime>
+<Sessions><![CDATA[Сеансы]]></Sessions>
+<MaxUsers><![CDATA[Максимальное число сеансов]]></MaxUsers>
+<TotalMem><![CDATA[Всего памяти]]></TotalMem>
+<FreeMem><![CDATA[Свободная память]]></FreeMem>
+<NumCPU><![CDATA[Число ЦПУ]]></NumCPU>
+<OperatingSys><![CDATA[Операционная система]]></OperatingSys>
+<Standard><![CDATA[Стандартный]]></Standard>
+<Primary><![CDATA[Первичный]]></Primary>
+<Secondary><![CDATA[Вторичный]]></Secondary>
+<SDS><![CDATA[SDS]]></SDS>
+<RSS><![CDATA[RSS]]></RSS>
+<Server><![CDATA[Сервер]]></Server>
+<Database><![CDATA[База данных]]></Database>
+<ConnectionFailed><![CDATA[Не удалось установить соединение: {0}]]></ConnectionFailed>
+<ErrorUF><![CDATA[ОШИБКА:]]></ErrorUF>
+<NoSQLToExecute><![CDATA[Код SQL, который нужно выполнить, отсутствует]]></NoSQLToExecute>
+<GroupServers><![CDATA[Серверы группы]]></GroupServers>
+<MapNotAvail><![CDATA[Карта недоступна из-за недействительного ключа.]]></MapNotAvail>
+<ServerInfo><![CDATA[Информация о сервере]]></ServerInfo>
+<Info><![CDATA[Сведения]]></Info>
+<ALL><![CDATA[ВСЕ]]></ALL>
+<Enabled><![CDATA[Включено]]></Enabled>
+<Disabled><![CDATA[Выключено]]></Disabled>
+<MB_Locale><![CDATA[Язык базы данных]]></MB_Locale>
+<MB_Encoding><![CDATA[Локаль]]></MB_Encoding>
+<MB_Locale_Encoding_tooltip><![CDATA[Выберите язык базы данных, чтобы вывести локали базы данных для этого языка. После этого выберите локаль базы данных.]]></MB_Locale_Encoding_tooltip>
+</lang>

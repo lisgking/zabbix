@@ -1,0 +1,2935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Language" scheme="rfc1766" content="zh-cn" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials Property of IBM                      -->
+<!-- US Government Users Restricted Rights                   -->
+<!-- Use, duplication or disclosure restricted by            -->
+<!-- GSA ADP Schedule Contract with IBM Corp.                -->
+<meta name="DC.Date" scheme="iso8601" content="2012-11-28" />
+<meta name="copyright" content="&copy; Copyright IBM Corporation 2007, 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow"/>
+<meta name="type" content="概念, 任务, 任务, 任务, 任务, 引用, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 引用, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 引用, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 引用, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 引用, 引用, 任务, 引用, 引用, 任务, 任务, 任务, 任务, 任务, 任务, 任务, 引用, 引用, 引用, 引用, 引用, 引用, 引用, 引用, 引用, 引用, 任务, 引用" />
+<meta name="keywords" content="监视, 系统运行状况, 数据库服务器, 定制, 仪表板, 警报, 事件警报, 管理命令" />
+<meta name="keywords" content="联机消息日志, 删除, 截断, 循环交替, ON-Bar 活动日志, 存储空间, 监视器, 创建, 空间, 修改, 删除, 删除" />
+<meta name="keywords" content="添加, 块, 设置为可扩展, 自动, 存储池条目, 添加, 扩展, 扩展, 扩展, 扩展, 表, 压缩, 表分段" />
+<meta name="keywords" content="压缩, 解压缩, 优化, 估算, 估算压缩, 分段, 估算压缩, 收缩, 索引, 取消分段" />
+<meta name="keywords" content="扩展数据块, 逻辑日志, 物理日志, 检查点, 查看, 性能历史记录, Global Security Kit, GSKCmd, gsk7cmd, gsk8cmd, 密钥数据库" />
+<meta name="keywords" content="证书管理, 自签名证书, idsd 守护程序, xinetd 守护程序, inetd 守护程序, 高可用性集群, 用户特权" />
+<meta name="keywords" content="Auto Update Statistics (AUS), (AUS) Auto Update Statistics, 数据, 备份, ontape, 按示例查询, 插入, 更新, 删除, 查询, 检索, OAT 组" />
+<meta name="keywords" content="只读组, HTTPS, 安装, 安装, 启用, 启用, 升级, 升级, 禁用, 禁用, 卸载, 卸载, isreadonly" />
+<meta name="keywords" content="只读函数, idsadmin 函数, get_database 函数, 获取数据库函数, get_database, load_lang 函数, 装入语言函数" />
+<meta name="keywords" content="load_lang, lang 函数, 语言函数, lang, error 函数, error, status 函数, status, format_units 函数, format_units" />
+<meta name="keywords" content="setCurrMenuItem 函数, setCurrMenuItem, set_pagetitle 函数, set_pagetitle, output 函数, add_to_output 函数, add_to_output, 菜单" />
+<meta name="keywords" content="菜单顺序, 复原" />
+<title>IBM OpenAdmin Tool (OAT) for Informix</title>
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+<link rel="stylesheet" type="text/css" href="templates/ibmidwb.css" />
+</head>
+<body role="main">
+<a id="Top_Of_Page"></a>
+<h1>IBM OpenAdmin Tool (OAT) for Informix</h1>
+<br />
+<div id="wq1">
+<h1>目录</h1>
+<div class="head1"><a id="ToC_1" href="#dqx1ids_oat.dita" class="toclink">IBM OpenAdmin Tool (OAT) for Informix</a></div>
+<div class="head1"><a id="ToC_2" href="#dqx1ids_oat_019" class="toclink">如何连接到数据库服务器？</a></div>
+<div class="head2"><a id="ToC_3" href="#dqx1ids_oat_007" class="toclink">登录到数据库服务器</a></div>
+<div class="head2"><a id="ToC_4" href="#dqx1ids_oat_009" class="toclink">登录到 OAT 组中的数据库服务器</a></div>
+<div class="head2"><a id="ToC_5" href="#dqx1ids_oat_010" class="toclink">切换至 OAT 组中的其他服务器</a></div>
+<div class="head1"><a id="ToC_6" href="#dqx1ids_oat_061" class="toclink">如何监视数据库服务器活动？</a></div>
+<div class="head2"><a id="ToC_7" href="#dqx1ids_oat_166" class="toclink">监视数据库服务器状态</a></div>
+<div class="head2"><a id="ToC_8" href="#dqx1ids_oat_175" class="toclink">定制仪表板</a></div>
+<div class="head2"><a id="ToC_9" href="#dqx1ids_oat_176" class="toclink">修改仪表板的状态阈值</a></div>
+<div class="head2"><a id="ToC_10" href="#dqx1ids_oat_167" class="toclink">监视警报和事件警报</a></div>
+<div class="head2"><a id="ToC_11" href="#dqx1ids_oat_057" class="toclink">复审管理命令历史记录</a></div>
+<div class="head2"><a id="ToC_12" href="#dqx1ids_oat_160" class="toclink">监视联机消息日志</a></div>
+<div class="head2"><a id="ToC_13" href="#dqx1ids_oat_161" class="toclink">删除联机消息日志</a></div>
+<div class="head2"><a id="ToC_14" href="#dqx1ids_oat_162" class="toclink">循环交替联机消息日志</a></div>
+<div class="head2"><a id="ToC_15" href="#dqx1ids_oat_163" class="toclink">监视 ON-Bar 活动日志</a></div>
+<div class="head2"><a id="ToC_16" href="#dqx1ids_oat_164" class="toclink">删除 ON-Bar 活动日志</a></div>
+<div class="head2"><a id="ToC_17" href="#dqx1ids_oat_165" class="toclink">循环交替 ON-Bar 活动日志</a></div>
+<div class="head1"><a id="ToC_18" href="#dqx1ids_oat_079" class="toclink">如何管理系统空间？</a></div>
+<div class="head2"><a id="ToC_19" href="#dqx1ids_oat_143" class="toclink">监视空间使用情况</a></div>
+<div class="head2"><a id="ToC_20" href="#dqx1ids_oat_127" class="toclink">管理空间使用情况</a></div>
+<div class="head3"><a id="ToC_21" href="#dqx1ids_oat_017" class="toclink">创建空间</a></div>
+<div class="head3"><a id="ToC_22" href="#dqx1ids_oat_134" class="toclink">修改空间</a></div>
+<div class="head3"><a id="ToC_23" href="#dqx1ids_oat_126" class="toclink">删除空间</a></div>
+<div class="head3"><a id="ToC_24" href="#dqx1ids_oat_135" class="toclink">添加块</a></div>
+<div class="head3"><a id="ToC_25" href="#dqx1ids_oat_136" class="toclink">修改块</a></div>
+<div class="head3"><a id="ToC_26" href="#dqx1ids_oat_138" class="toclink">删除块</a></div>
+<div class="head2"><a id="ToC_27" href="#dqx1ids_oat_142" class="toclink">自动添加存储空间</a></div>
+<div class="head3"><a id="ToC_28" href="#dqx1ids_oat_144" class="toclink">将数据库服务器配置为自动添加存储空间</a></div>
+<div class="head3"><a id="ToC_29" href="#dqx1ids_oat_139" class="toclink">添加存储池条目</a></div>
+<div class="head3"><a id="ToC_30" href="#dqx1ids_oat_140" class="toclink">修改存储池条目</a></div>
+<div class="head3"><a id="ToC_31" href="#dqx1ids_oat_141" class="toclink">删除存储池条目</a></div>
+<div class="head3"><a id="ToC_32" href="#dqx1ids_oat_055" class="toclink">扩充空间</a></div>
+<div class="head3"><a id="ToC_33" href="#dqx1ids_oat_137" class="toclink">扩展块</a></div>
+<div class="head2"><a id="ToC_34" href="#dqx1ids_oat_128.dita" class="toclink">优化存储空间</a></div>
+<div class="head3"><a id="ToC_35" href="#dqx1ids_oat_146" class="toclink">自动优化存储空间</a></div>
+<div class="head3"><a id="ToC_36" href="#dqx1ids_oat_129" class="toclink">估计压缩</a></div>
+<div class="head3"><a id="ToC_37" href="#dqx1ids_oat_130" class="toclink">压缩数据</a></div>
+<div class="head3"><a id="ToC_38" href="#dqx1ids_oat_131" class="toclink">解压缩表和表分段</a></div>
+<div class="head3"><a id="ToC_39" href="#dqx1ids_oat_132" class="toclink">整合可用空间</a></div>
+<div class="head3"><a id="ToC_40" href="#dqx1ids_oat_133" class="toclink">将可用空间返还给数据库空间</a></div>
+<div class="head3"><a id="ToC_41" href="#dqx1ids_oat_119" class="toclink">对扩展数据块取消分段</a></div>
+<div class="head2"><a id="ToC_42" href="#dqx1ids_oat_084" class="toclink">管理恢复日志</a></div>
+<div class="head3"><a id="ToC_43" href="#dqx1ids_oat_088" class="toclink">查看检查点历史记录</a></div>
+<div class="head3"><a id="ToC_44" href="#dqx1ids_oat_087" class="toclink">强制执行检查点</a></div>
+<div class="head3"><a id="ToC_45" href="#dqx1ids_oat_089" class="toclink">查看逻辑日志统计信息</a></div>
+<div class="head3"><a id="ToC_46" href="#dqx1ids_oat_080" class="toclink">添加逻辑日志</a></div>
+<div class="head3"><a id="ToC_47" href="#dqx1ids_oat_148" class="toclink">切换至下一个逻辑日志</a></div>
+<div class="head3"><a id="ToC_48" href="#dqx1ids_oat_083" class="toclink">删除逻辑日志</a></div>
+<div class="head3"><a id="ToC_49" href="#dqx1ids_oat_090" class="toclink">查看物理日志统计信息</a></div>
+<div class="head3"><a id="ToC_50" href="#dqx1ids_oat_086" class="toclink">移动物理日志</a></div>
+<div class="head1"><a id="ToC_51" href="#dqx1ids_oat_001" class="toclink">如何管理数据库服务器？</a></div>
+<div class="head2"><a id="ToC_52" href="#dqx1ids_oat_170" class="toclink">管理服务器内存</a></div>
+<div class="head2"><a id="ToC_53" href="#dqx1ids_oat_004" class="toclink">管理高可用性集群</a></div>
+<div class="head3"><a id="ToC_54" href="#dqx1ids_oat_059" class="toclink">配置高可用性集群的连接</a></div>
+<div class="head3"><a id="ToC_55" href="#dqx1ids_oat_058" class="toclink">查找高可用性集群</a></div>
+<div class="head3"><a id="ToC_56" href="#dqx1ids_oat_020" class="toclink">查看集群的拓扑</a></div>
+<div class="head3"><a id="ToC_57" href="#dqx1ids_oat_021" class="toclink">查看集群中服务器的状态</a></div>
+<div class="head3"><a id="ToC_58" href="#dqx1ids_oat_022" class="toclink">添加 SDS 服务器</a></div>
+<div class="head3"><a id="ToC_59" href="#dqx1ids_oat_023" class="toclink">启动或停止集群中的服务器</a></div>
+<div class="head2"><a id="ToC_60" href="#dqx1ids_oat_168" class="toclink">管理时间系列</a></div>
+<div class="head2"><a id="ToC_61" href="#dqx1ids_oat_027" class="toclink">管理数据库服务器的配置参数</a></div>
+<div class="head2"><a id="ToC_62" href="#dqx1ids_oat_077" class="toclink">运行系统验证检查</a></div>
+<div class="head3"><a id="ToC_63" href="#dqx1ids_oat_030" class="toclink">验证当前服务器上的一个或多个数据库或表</a></div>
+<div class="head3"><a id="ToC_64" href="#dqx1ids_oat_031" class="toclink">验证当前服务器上一个或多个数据库空间的扩展数据块</a></div>
+<div class="head2"><a id="ToC_65" href="#dqx1ids_oat_078" class="toclink">管理虚拟处理器</a></div>
+<div class="head2"><a id="ToC_66" href="#dqx1ids_oat_096" class="toclink">授予和限制用户特权</a></div>
+<div class="head3"><a id="ToC_67" href="#dqx1ids_oat_032" class="toclink">向用户授予数据库级别特权</a></div>
+<div class="head3"><a id="ToC_68" href="#dqx1ids_oat_033" class="toclink">修改用户的数据库级别特权</a></div>
+<div class="head3"><a id="ToC_69" href="#dqx1ids_oat_034" class="toclink">撤销用户的数据库级别特权</a></div>
+<div class="head3"><a id="ToC_70" href="#dqx1ids_oat_093" class="toclink">向用户授予表级别特权</a></div>
+<div class="head3"><a id="ToC_71" href="#dqx1ids_oat_035" class="toclink">修改用户的表级别特权</a></div>
+<div class="head3"><a id="ToC_72" href="#dqx1ids_oat_036" class="toclink">撤销用户的表级别特权</a></div>
+<div class="head2"><a id="ToC_73" href="#dqx1ids_oat_120" class="toclink">管理内部用户（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_74" href="#dqx1ids_oat_124" class="toclink">为服务器上的内部用户设置特权（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_75" href="#dqx1ids_oat_121" class="toclink">添加内部用户（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_76" href="#dqx1ids_oat_122" class="toclink">编辑内部用户（UNIX、Linux）</a></div>
+<div class="head3"><a id="ToC_77" href="#dqx1ids_oat_123" class="toclink">删除内部用户（UNIX、Linux）</a></div>
+<div class="head2"><a id="ToC_78" href="#dqx1ids_oat_145" class="toclink">创建可信上下文</a></div>
+<div class="head3"><a id="ToC_79" href="#dqx1ids_oat_147" class="toclink">管理可信上下文</a></div>
+<div class="head2"><a id="ToC_80" href="#dqx1ids_oat_037" class="toclink">管理 Auto Update Statistics</a></div>
+<div class="head3"><a id="ToC_81" href="#dqx1ids_oat_038" class="toclink">配置并启用 Auto Update Statistics</a></div>
+<div class="head3"><a id="ToC_82" href="#dqx1ids_oat_039" class="toclink">查看服务器的刷新和评估</a></div>
+<div class="head3"><a id="ToC_83" href="#dqx1ids_oat_040" class="toclink">请求立即评估统计信息</a></div>
+<div class="head3"><a id="ToC_84" href="#dqx1ids_oat_041" class="toclink">确定下次更新统计信息的时间</a></div>
+<div class="head3"><a id="ToC_85" href="#dqx1ids_oat_042" class="toclink">查看当前 Auto Update Statistics 设置</a></div>
+<div class="head3"><a id="ToC_86" href="#dqx1ids_oat_043" class="toclink">监视 Auto Update Statistics 设置
+</a></div>
+<div class="head3"><a id="ToC_87" href="#dqx1ids_oat_044" class="toclink">查看 Auto Update Statistics 生成的警报</a></div>
+<div class="head3"><a id="ToC_88" href="#dqx1ids_oat_045" class="toclink">清除 Auto Update Statistics 的异常运行</a></div>
+<div class="head2"><a id="ToC_89" href="#dqx1ids_oat_156" class="toclink">备份数据库服务器数据</a></div>
+<div class="head3"><a id="ToC_90" href="#dqx1ids_oat_157" class="toclink">使用 ontape 备份数据</a></div>
+<div class="head3"><a id="ToC_91" href="#dqx1ids_oat_158" class="toclink">更改备份配置和调度</a></div>
+<div class="head3"><a id="ToC_92" href="#dqx1ids_oat_159" class="toclink">执行随需应变备份</a></div>
+<div class="head1"><a id="ToC_93" href="#dqx1ids_oat_073" class="toclink">如何管理调度程序任务？</a></div>
+<div class="head2"><a id="ToC_94" href="#dqx1ids_oat_074" class="toclink">添加调度程序任务</a></div>
+<div class="head3"><a id="ToC_95" href="#dqx1ids_oat_046" class="toclink">添加新任务</a></div>
+<div class="head3"><a id="ToC_96" href="#dqx1ids_oat_047" class="toclink">添加新传感器</a></div>
+<div class="head2"><a id="ToC_97" href="#dqx1ids_oat_075" class="toclink">启用调度程序任务</a></div>
+<div class="head2"><a id="ToC_98" href="#dqx1ids_oat_076" class="toclink">更改调度程序任务的允许时间间隔</a></div>
+<div class="head2"><a id="ToC_99" href="#dqx1ids_oat_015" class="toclink">删除调度程序任务</a></div>
+<div class="head1"><a id="ToC_100" href="#dqx1ids_oat_062" class="toclink">如何浏览性能信息？</a></div>
+<div class="head2"><a id="ToC_101" href="#dqx1ids_oat_064" class="toclink">使用 SQL 资源管理器分析查询性能</a></div>
+<div class="head3"><a id="ToC_102" href="#dqx1ids_oat_091" class="toclink">启用 SQL 跟踪</a></div>
+<div class="head3"><a id="ToC_103" href="#dqx1ids_oat_092" class="toclink">关闭 SQL 跟踪</a></div>
+<div class="head3"><a id="ToC_104" href="#dqx1ids_oat_048" class="toclink">指定 SQL 跟踪的选项</a></div>
+<div class="head3"><a id="ToC_106" href="#dqx1ids_oat_049" class="toclink">暂挂 SQL 跟踪</a></div>
+<div class="head3"><a id="ToC_107" href="#dqx1ids_oat_050" class="toclink">从暂挂状态恢复 SQL 跟踪</a></div>
+<div class="head3"><a id="ToC_108" href="#dqx1ids_oat_105.dita" class="toclink">在实时数据和保存的数据间切换</a></div>
+<div class="head3"><a id="ToC_109" href="#dqx1ids_oat_065" class="toclink">从活动摘要向下钻取</a></div>
+<div class="head3"><a id="ToC_110" href="#dqx1ids_oat_067" class="toclink">按事务向下钻取</a></div>
+<div class="head3"><a id="ToC_111" href="#dqx1ids_oat_066" class="toclink">按 SQL 语句类型向下钻取</a></div>
+<div class="head2"><a id="ToC_112" href="#dqx1ida_oat_104" class="toclink">优化 SQL 语句</a></div>
+<div class="head2"><a id="ToC_113" href="#dqx1ids_oat_068" class="toclink">浏览用户会话</a></div>
+<div class="head3"><a id="ToC_114" href="#dqx1ids_oat_056" class="toclink">停止用户会话</a></div>
+<div class="head2"><a id="ToC_115" href="#dqx1ids_oat_169" class="toclink">查看性能历史记录</a></div>
+<div class="head2"><a id="ToC_116" href="#dqx1ids_oat_063" class="toclink">运行系统性能报告</a></div>
+<div class="head2"><a id="ToC_117" href="#dqx1ids_oat_173" class="toclink">监视扩展数据块</a></div>
+<div class="head2"><a id="ToC_118" href="#dqx1ids_oat_174" class="toclink">监视缓冲池</a></div>
+<div class="head2"><a id="ToC_119" href="#dqx1ida_oat_117" class="toclink">使用 <strong><samp>onstat</samp></strong> 实用程序监视服务器</a></div>
+<div class="head1"><a id="ToC_120" href="#dqx1ids_oat_012" class="toclink">如何管理数据库和表？</a></div>
+<div class="head2"><a id="ToC_121" href="#dqx1ids_oat_013" class="toclink">复审服务器上的数据库</a></div>
+<div class="head2"><a id="ToC_122" href="#dqx1ids_oat_014" class="toclink">连接到数据库</a></div>
+<div class="head2"><a id="ToC_123" href="#dqx1ids_oat_094" class="toclink">查看模式</a></div>
+<div class="head2"><a id="ToC_124" href="#dqx1ids_oat_069" class="toclink">复审数据库的过程和例程</a></div>
+<div class="head2"><a id="ToC_125" href="#dqx1ids_oat_106" class="toclink">执行标准 SQL 操作：查询、插入、更新、删除</a></div>
+<div class="head3"><a id="ToC_126" href="#dqx1ids_oat_109" class="toclink">执行查询</a></div>
+<div class="head3"><a id="ToC_127" href="#dqx1ids_oat_110" class="toclink">更新表行</a></div>
+<div class="head3"><a id="ToC_128" href="#dqx1ids_oat_111" class="toclink">删除表行</a></div>
+<div class="head3"><a id="ToC_129" href="#dqx1ids_oat_112" class="toclink">插入表行</a></div>
+<div class="head1"><a id="ToC_130" href="#dqx1ids_oat_005" class="toclink">如何设置服务器的访问权？</a></div>
+<div class="head2"><a id="ToC_131" href="#dqx1ids_oat_003" class="toclink">添加 OAT 组</a></div>
+<div class="head2"><a id="ToC_132" href="#dqx1ids_oat_002" class="toclink">创建服务器连接</a></div>
+<div class="head2"><a id="ToC_133" href="#dqx1ids_oat_114" class="toclink">导出连接信息</a></div>
+<div class="head2"><a id="ToC_134" href="#dqx1ids_oat_113" class="toclink">导入连接信息</a></div>
+<div class="head2"><a id="ToC_135" href="#dqx1ids_oat_171" class="toclink">使用非缺省语言环境访问数据库</a></div>
+<div class="head1"><a id="ToC_136" href="#dqx1ids_oat_098" class="toclink">如何配置 OAT 的安全性？</a></div>
+<div class="head2"><a id="ToC_137" href="#dqx1ids_oat_072" class="toclink">创建具有只读特权的 OAT 组</a></div>
+<div class="head3"><a id="ToC_138" href="#dqx1ids_oat_051" class="toclink">只读组限制</a></div>
+<div class="head2"><a id="ToC_139" href="#dqx1ids_oat_070" class="toclink">限制访问管理配置页面</a></div>
+<div class="head2"><a id="ToC_140" href="#dqx1ids_oat_071" class="toclink">为管理配置页面提供密码保护：Apache 示例</a></div>
+<div class="head2"><a id="ToC_141" href="#dqx1ids_oat_052" class="toclink">配置 OAT 的 HTTPS (Linux)</a></div>
+<div class="head2"><a id="ToC_146" href="#dqx1dt2mg202" class="toclink">配置 OAT 的 HTTPS (Windows)</a></div>
+<div class="head2"><a id="ToC_152" href="#dqx1ids_oat_053" class="toclink">禁用或启用 SQL Toolbox 的密码保护</a></div>
+<div class="head1"><a id="ToC_153" href="#dqx1ids_oat_054" class="toclink">如何管理 OAT 的插件？</a></div>
+<div class="head2"><a id="ToC_154" href="#dqx1ids_oat_000" class="toclink">安装 OAT 的插件</a></div>
+<div class="head2"><a id="ToC_155" href="#dqx1ids_oat_150" class="toclink">启用 OAT 的插件</a></div>
+<div class="head2"><a id="ToC_156" href="#dqx1ids_oat_115" class="toclink">升级 OAT 的插件</a></div>
+<div class="head2"><a id="ToC_157" href="#dqx1ids_oat_116" class="toclink">禁用 OAT 的插件</a></div>
+<div class="head2"><a id="ToC_158" href="#dqx1ids_oat_149" class="toclink">卸载 OAT 的插件</a></div>
+<div class="head2"><a id="ToC_159" href="#dqx1ids_oat_151" class="toclink">idsadmin 类函数</a></div>
+<div class="head3"><a id="ToC_160" href="#dqx1ids_oat_152" class="toclink">isreadonly 函数</a></div>
+<div class="head3"><a id="ToC_165" href="#dqx1ids_oat_153" class="toclink">get_database 函数</a></div>
+<div class="head3"><a id="ToC_169" href="#dqx1ids_oat_154" class="toclink">load_lang 函数</a></div>
+<div class="head3"><a id="ToC_173" href="#dqx1ids_oat_155" class="toclink">lang 函数</a></div>
+<div class="head3"><a id="ToC_177" href="#dqx1ids_oat_177" class="toclink">error 函数</a></div>
+<div class="head3"><a id="ToC_181" href="#dqx1ids_oat_178" class="toclink">status 函数</a></div>
+<div class="head3"><a id="ToC_184" href="#dqx1ids_oat_179" class="toclink">format_units 函数</a></div>
+<div class="head3"><a id="ToC_188" href="#dqx1ids_oat_180" class="toclink">setCurrMenuItem 函数</a></div>
+<div class="head2"><a id="ToC_192" href="#dqx1ids_oat_181" class="toclink">output 类</a></div>
+<div class="head3"><a id="ToC_193" href="#dqx1ids_oat_182" class="toclink">set_pagetitle 函数</a></div>
+<div class="head3"><a id="ToC_196" href="#dqx1ids_oat_183" class="toclink">add_to_output 函数</a></div>
+<div class="head1"><a id="ToC_199" href="#dqx1ids_oat_060" class="toclink">如何定制 OAT 的主菜单？</a></div>
+<div class="head1"><a id="ToC_200" href="#dqx1ids_cm_not" class="toclink">声明</a></div>
+<div class="head2"><a id="ToC_201" href="#dqx1trademarks" class="toclink">商标</a></div>
+<div class="head2"><a id="ToC_202" href="#dqx1ids_oat_016" class="toclink">版权</a></div>
+</div>
+<h1 id="dqx1ids_oat.dita"><a href="#ToC_1">IBM OpenAdmin Tool (OAT) for Informix</a></h1>
+<div>
+<p>IBM&reg; OpenAdmin Tool (OAT) for Informix&reg; 是用于管理和分析 IBM Informix 数据库服务器性能的 Web 应用程序。您可以通过 Web 服务器上安装的单个 OAT 管理多个数据库服务器实例。您可以通过任意浏览器访问 Web 服务器来管理所有数据库服务器。</p></div>
+<p>
+<p>您可以使用 OAT 来监视和分析数据库服务器的性能：</p>
+<ul>
+<li>通过详细的状态报告、警报信息和消息日志来监视数据库服务器的状态。</li>
+<li>使用 OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 插件来分析数据库服务器的状态，并通过电子邮件发送结果和建议。</li>
+<li>通过详细的性能历史记录图表来监视一段时间内的性能统计信息。</li>
+<li>监视调度程序收集的数据，该调度程序会使用 SQL 语句来执行管理任务并收集信息。</li>
+<li>对数据库服务器上的数据库和表执行系统验证检查。</li>
+<li>执行系统报告和 <strong><strong><samp>onstat</samp></strong></strong> 命令。</li>
+<li>向下钻取 SQL 语句以查看性能详细信息并优化 SQL 语句。</li></ul>
+<p>您可以使用 OAT 执行以下管理任务：</p>
+<ul>
+<li>管理数据库服务器，包括配置、用户特权和虚拟处理器。</li>
+<li>创建和监视调度程序的任务。</li>
+<li>管理 Auto Update Statistics (AUS) 维护系统，该系统会自动更新统计信息以优化查询性能。</li>
+<li>使用 OpenAdmin Tool (OAT) 的 IBM Informix Schema Manager 插件来管理数据库和表对象。</li>
+<li>管理存储空间并管理数据库服务器的恢复日志。</li>
+<li>通过对表进行压缩并取消分段来优化空间。</li>
+<li>备份数据库服务器的存储空间。</li>
+<li>对表运行 SQL 语句并执行标准 SQL 操作。</li>
+<li>监视并管理高可用性集群。</li>
+<li>使用 OpenAdmin Tool (OAT) 的 IBM Informix Replication 插件来监视和管理 Enterprise Replication。</li>
+<li>使用 OpenAdmin Tool (OAT) 的 IBM Informix TimeSeries 插件来监视和管理与时间系列相关的数据库对象，包括表、索引、虚拟表、<strong>TimeSeries</strong> 子类型、容器和日历。</li></ul>
+<p>当您安装 IBM Informix Client Software Development
+Kit (Client SDK) 或安装 IBM Informix 捆绑软件并选择 Client SDK 或 IBM Informix Connect 时，可以安装 IBM OpenAdmin
+Tool (OAT) for Informix。此安装程序包含 OAT、Health Advisor 插件、Replication 插件、Schema Manager 插件、TimeSeries 插件，以及运行 OAT 必需的所有软件（包括预配置的 Apache、PHP 和 PDO_informix）。</p>
+<p>或者，也可以从以下 IBM Informix Free
+Product Download 页面下载 OpenAdmin Tool Community
+Edition：<a href="https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd" target="_blank">https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd（在新窗口中打开）</a>。OpenAdmin Tool Community Edition 包含 OAT 和可选插件，但它不包含支持软件。
+此修订版必须手动安装。</p></p>
+<h1 id="dqx1ids_oat_019"><a href="#ToC_2">如何连接到数据库服务器？</a></h1>
+<h2 id="dqx1ids_oat_007"><a href="#ToC_3">登录到数据库服务器</a></h2>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 登录到数据库服务器。</p></div>
+<p>
+<p>要登录到数据库服务器：</p></p>
+<ol type="1">
+<li>转至 OAT 根 URL：http://<em>服务器名称</em>/openadmin。</li>
+<li>在 OAT 的<strong>登录</strong>页面上，填写<strong>服务器详细信息</strong>字段。</li>
+<li>单击<strong>登录</strong>。</li></ol>
+<p>
+<p>您已通过 OAT 连接到数据库服务器。</p></p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq7">
+<span class="notetitle">提示：</span><span class="notebody">如果数据库服务器是 OAT 组的成员，那么您也可以通过登录到该 OAT 组来连接到该数据库服务器。OAT 组包含数据库服务器的连接信息。如果您已登录到某个 OAT 组，那么无需再次登录就可以切换到该组中的其他数据库服务器。</span></div></div>
+<h2 id="dqx1ids_oat_009"><a href="#ToC_4">登录到 OAT 组中的数据库服务器</a></h2>
+<div>
+<p>通过登录到 IBM OpenAdmin Tool (OAT) for Informix 中的数据库服务器连接组来连接到数据库服务器。</p></div>
+<p>
+<p>OAT 组包含数据库服务器的连接信息。如果您已登录到某个 OAT 组，那么无需再次登录就可以切换到该组中的其他数据库服务器。</p></p>
+<p>
+<p>要登录到 OAT 组中的数据库服务器：</p></p>
+<ol type="1">
+<li>转至 OAT 根 URL：http://<em>服务器名称</em>/openadmin。</li>
+<li>在 OAT <strong>登录</strong>页面上的 <strong>OAT 组</strong>列表中，选择包含您要连接的服务器的 OAT 组。</li>
+<li>输入该 OAT 组的密码。</li>
+<li>单击<strong>获取服务器</strong>。</li>
+<li>从服务器列表选择服务器。在<strong>服务器详细信息</strong>字段植入服务器信息。</li>
+<li>在<strong>服务器详细信息</strong>区域的<strong>密码</strong>字段中，接受提供的密码（如果有），或输入有效密码，然后单击<strong>登录</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oat_003">添加 OAT 组</a>
+<br />在 IBM OpenAdmin Tool (OAT) for Informix 中定义数据库服务器连接组。</li></ul>
+<h2 id="dqx1ids_oat_010"><a href="#ToC_5">切换至 OAT 组中的其他服务器</a></h2>
+<div>
+<p>连接到 IBM OpenAdmin Tool (OAT) for Informix 内数据库服务器连接组中的其他数据库服务器。</p></div>
+<p>
+<p>OAT 组包含数据库服务器的连接信息。如果您已登录到某个 OAT 组，那么无需再次登录就可以切换到该组中的其他数据库服务器。</p></p>
+<p>
+<p>要切换至 OAT 组中的其他数据库服务器，请在 OAT 页面顶部的<strong>服务器</strong>列表中选择数据库服务器。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oat_003">添加 OAT 组</a>
+<br />在 IBM OpenAdmin Tool (OAT) for Informix 中定义数据库服务器连接组。</li></ul>
+<h1 id="dqx1ids_oat_061"><a href="#ToC_6">如何监视数据库服务器活动？</a></h1>
+<h2 id="dqx1ids_oat_166"><a href="#ToC_7">监视数据库服务器状态</a></h2>
+<div>
+<p>实时监视特定数据库服务器的状态，或同时查看 OAT 组中所有服务器的状态。</p></div><a id="idx1"></a><a id="idx2"></a>
+<p>
+<p>您可以使用仪表板监视特定数据库服务器的状态。此仪表板显示内存和空间使用率、锁定数、事务数、查询数，以及读取数和写入数最多的表。</p>
+<p>您可以在多服务器仪表板上查看 OAT 组中所有数据库服务器的状态。您可以从此仪表板转至 IBM OpenAdmin Tool (OAT) for Informix 中的其他页面，以获取更多信息。</p></p>
+<p>
+<p>要监视数据库服务器状态：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>运行状况中心</strong> &gt; <strong>仪表板</strong>。</li>
+<li>要刷新仪表板，请单击刷新图标或更改刷新率。</li></ol>
+<h2 id="dqx1ids_oat_175"><a href="#ToC_8">定制仪表板</a></h2>
+<div>
+<p>更改仪表板为特定数据库服务器显示的状态信息。</p></div><a id="idx3"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq17">
+<span class="notetitle">先决条件：</span><span class="notebody">如果 IBM OpenAdmin Tool (OAT) for Informix 中的<strong>管理</strong>菜单受密码保护，那么您需要提供密码才能执行此任务。</span></div></div>
+<p>
+<p>OAT 仪表板显示有关数据库服务器的信息；例如，内存使用率和事务数。您可以通过定制仪表板来指定要显示的有关数据库服务器的信息。</p></p>
+<p>
+<p>要定制仪表板：</p></p>
+<ol type="1">
+<li>在 OAT 中的<strong>管理</strong>菜单上，单击<strong>仪表板管理器</strong>。</li>
+<li>要打开仪表板的布局编辑器，请双击该仪表板。</li></ol>
+<h2 id="dqx1ids_oat_176"><a href="#ToC_9">修改仪表板的状态阈值</a></h2>
+<div>
+<p>修改多服务器仪表板上显示的状态指示器的阈值。</p></div><a id="idx4"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq22">
+<span class="notetitle">先决条件：</span><span class="notebody">必须安装 OpenAdmin Tool (OAT) 的 IBM Informix Health Advisor 插件。</span></div></div>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 中的多服务器仪表板显示 OAT 组中数据库服务器的状态指示器。
+例如，如果数据库服务器上数据库空间的可用空间降至指定的阈值以下，将对该数据库服务器显示警告指示器。</p>
+<p>您可以修改内存、空间和块占总计 I/O 的百分比的状态阈值。这些阈值是 Health Advisor 插件中的缺省设置。</p></p>
+<p>
+<p>要修改仪表板的状态阈值：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>运行状况中心</strong> &gt; <strong>Health Advisor</strong>。</li>
+<li>在<strong>概要文件</strong>页面上，验证当前概要文件是否为缺省概要文件。</li>
+<li>单击<strong>警报</strong>选项卡。</li>
+<li>修改其中任何警报的阈值：
+<table id="wq26" width="90%" summary="此表中的每一行都描述了供选择的一个选项。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq27" align="left"><strong>Health Advisor 插件警报阈值</strong></th>
+<th id="wq28" align="left">仪表板状态阈值</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq27"><strong>操作系统的可用内存</strong></td>
+<td headers="wq28"><strong>内存</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>数据库空间的可用空间</strong></td>
+<td headers="wq28"><strong>空间</strong></td>
+</tr>
+<tr>
+<td headers="wq27"><strong>块 I/O 操作数</strong></td>
+<td headers="wq28"><strong>I/O</strong>：<strong>块占总计 I/O 的百分比</strong></td>
+</tr>
+</tbody>
+</table></li></ol>
+<h2 id="dqx1ids_oat_167"><a href="#ToC_10">监视警报和事件警报</a></h2>
+<div>
+<p>监视数据库服务器产生的事件警报，以及任务调度程序或嵌入式任务和传感器产生的警报。</p></div><a id="idx5"></a><a id="idx6"></a>
+<p>
+<p>要监视警报和事件警报：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>运行状况中心</strong> &gt; <strong>警报</strong>。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0674.htm#ids_adr_0674" target="_blank">Event Alarm Parameters (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0676.htm#ids_adr_0676" target="_blank">Event alarm IDs (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0275.htm#ids_adr_0275" target="_blank">The ph_alert Table (Administrator's Reference)</a></li></ul>
+<h2 id="dqx1ids_oat_057"><a href="#ToC_11">复审管理命令历史记录</a></h2>
+<div>
+<p>复审在数据库服务器上运行的 SQL 管理 API 函数，包括运行命令的用户、运行命令的时间、命令和数据库服务器返回的消息等信息。</p></div><a id="idx7"></a><a id="idx8"></a>
+<p>
+<p>要复审管理命令：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>日志</strong> &gt; <strong>管理命令</strong>。</p></p>
+<h2 id="dqx1ids_oat_160"><a href="#ToC_12">监视联机消息日志</a></h2>
+<div>
+<p>复审数据库服务器的联机消息日志的最近部分。</p></div><a id="idx9"></a><a id="idx10"></a>
+<p>
+<p>要监视联机消息日志：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>日志</strong> &gt; <strong>联机日志</strong>。错误以红色突出显示，警告以黄色突出显示。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">Error Messages (Administrator's Reference)</a></li></ul>
+<h2 id="dqx1ids_oat_161"><a href="#ToC_13">删除联机消息日志</a></h2>
+<div>
+<p>删除或截断数据库服务器的联机消息日志文件。</p></div><a id="idx11"></a><a id="idx12"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq33">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_161__d8639e117">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70.xC3。</span></span></div></div>
+<p>
+<p>要删除联机消息日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>日志</strong> &gt; <strong>联机日志</strong>。</li>
+<li>执行以下某项操作：<ul>
+<li>要删除日志文件，请单击<strong>删除</strong>。</li>
+<li>要删除日志文件中的消息，但保留日志文件，请单击<strong>截断</strong>。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_162"><a href="#ToC_14">循环交替联机消息日志</a></h2>
+<div>
+<p>启用、禁用或修改数据库服务器的联机消息日志文件的自动循环交替。</p></div><a id="idx13"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq37">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_162__d8714e117">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70.xC3。</span></span></div></div>
+<p>
+<p>您可以通过配置自动日志循环交替来控制联机消息日志的大小。联机消息日志循环交替时，数据库服务器会切换至新的联机消息日志文件，并将先前日志文件的标识号加一。达到日志文件数最大值时，会删除具有最高标识的日志文件。</p></p>
+<p>
+<p>要循环交替联机消息日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>日志</strong> &gt; <strong>联机日志</strong>。</li>
+<li>单击<strong>联机消息日志循环交替</strong>选项卡。您可以启用或禁用任务、修改调度或编辑确定日志文件最大数目的参数。</li></ol>
+<h2 id="dqx1ids_oat_163"><a href="#ToC_15">监视 ON-Bar 活动日志</a></h2>
+<div>
+<p>复审数据库服务器的 ON-Bar 活动日志</p></div><a id="idx14"></a><a id="idx15"></a>
+<p>
+<p>要监视 ON-Bar 活动日志：</p>
+<p>在 OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>日志</strong> &gt; <strong>ON-Bar 活动</strong>。错误以红色突出显示，警告以黄色突出显示。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_0695.htm#ids_adr_0695" target="_blank">Error Messages (Administrator's Reference)</a></li></ul>
+<h2 id="dqx1ids_oat_164"><a href="#ToC_16">删除 ON-Bar 活动日志</a></h2>
+<div>
+<p>删除或截断数据库服务器的 ON-Bar 活动日志文件。</p></div><a id="idx16"></a><a id="idx17"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq43">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_164__d8824e117">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70.xC3。</span></span></div></div>
+<p>
+<p>要删除 ON-Bar 活动日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>日志</strong> &gt; <strong>ON-Bar 活动</strong>。</li>
+<li>执行以下某项操作：<ul>
+<li>要删除日志文件，请单击<strong>删除</strong>。</li>
+<li>要删除日志文件中的消息，但保留日志文件，请单击<strong>截断</strong>。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_165"><a href="#ToC_17">循环交替 ON-Bar 活动日志</a></h2>
+<div>
+<p>启用、禁用或修改数据库服务器的 ON-Bar 活动日志文件的自动循环交替。</p></div><a id="idx18"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq47">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_165__d8899e117">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70.xC3。</span></span></div></div>
+<p>
+<p>您可以通过配置自动日志循环交替来控制日志文件的大小。日志循环交替时，数据库服务器会切换至新的日志文件，并将先前日志文件的标识号加一。达到日志文件数最大值时，会删除具有最高标识的日志文件。</p></p>
+<p>
+<p>要循环交替 ON-Bar 活动日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>日志</strong> &gt; <strong>ON-Bar 活动</strong>。</li>
+<li>单击 <strong>ON-Bar 活动日志循环交替</strong>选项卡。您可以启用或禁用任务、修改调度或编辑确定日志文件最大数目的参数。</li></ol>
+<h1 id="dqx1ids_oat_079"><a href="#ToC_18">如何管理系统空间？</a></h1>
+<h2 id="dqx1ids_oat_143"><a href="#ToC_19">监视空间使用情况</a></h2>
+<div>
+<p>复审有关空间使用情况以及数据库服务器的存储空间的信息。对于特定存储空间，复审有关空间使用情况和优化以及空间中块、表和索引的信息。</p></div><a id="idx19"></a><a id="idx20"></a>
+<p>
+<p>要监视空间使用情况：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。此页面显示有关数据库服务器空间使用情况的信息的面板。</li>
+<li>要显示更多信息，请单击该面板中的展开按钮展开面板。</li>
+<li>要显示有关特定存储空间的信息，请在列表中选择该空间。页面将显示有关该空间使用情况的信息的面板。</li>
+<li>要显示有关选定空间的更多信息，请展开面板。</li></ol>
+<h2 id="dqx1ids_oat_127"><a href="#ToC_20">管理空间使用情况</a></h2>
+<div>
+<p>管理数据库服务器的存储空间。</p></div>
+<h3 id="dqx1ids_oat_017"><a href="#ToC_21">创建空间</a></h3>
+<div>
+<p>为数据库服务器创建数据库空间、临时数据库空间、BLOB 空间或智能大对象空间。</p></div><a id="idx21"></a><a id="idx22"></a>
+<p>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 创建空间时，您也可以将空间设置为可扩充。数据库服务器会在必要时通过添加或扩展块来自动扩充存储空间的大小。自动存储供应需要 IBM Informix V11.70。</p></p>
+<p>
+<p>要创建空间：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>单击<strong>操作</strong> &gt; <strong>创建空间</strong>。</li>
+<li>填写<strong>创建空间</strong>页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_021.htm#ids_sapi_021" target="_blank">create dbspace argument: Create a dbspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_022.htm#ids_sapi_022" target="_blank">create sbspace argument: Create an sbspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_019.htm#ids_sapi_019" target="_blank">create blobspace argument: Create a blobspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_023.htm#ids_sapi_023" target="_blank">create tempdbspace argument: Create a temporary dbspace (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_134"><a href="#ToC_22">修改空间</a></h3>
+<div>
+<p>指定数据库服务器是否可在必要时通过添加或扩展块来扩充存储空间的大小。设置服务器可用于扩充空间的最小大小。</p></div><a id="idx23"></a><a id="idx24"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq57">
+<span class="notetitle">先决条件：</span><span class="notebody">此操作需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>要修改空间：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>空间</strong>面板。</li>
+<li>在<strong>空间</strong>页面上，选择空间。</li>
+<li>单击<strong>修改</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_106.htm#ids_sapi_106" target="_blank">modify space sp_sizes argument: Modify the create or extend size of a storage space (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_126"><a href="#ToC_23">删除空间</a></h3>
+<div>
+<p>删除数据库空间、临时数据库空间、BLOB 空间或智能大对象空间。</p></div><a id="idx25"></a><a id="idx26"></a>
+<p>
+<p>删除空间时，可以选择将释放的空间返还给存储池的选项。对于存储池，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</p></p>
+<p>
+<p>要删除空间：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>空间</strong>面板。</li>
+<li>在<strong>空间</strong>页面上，选择空间。</li>
+<li>单击<strong>删除</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_084.htm#ids_sapi_084" target="_blank">drop dbspace argument: Drop a dbspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_027.htm#ids_sapi_027" target="_blank">drop sbspace argument: Drop an sbspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_024.htm#ids_sapi_024" target="_blank">drop blobspace argument: Drop a blobspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_028.htm#ids_sapi_028" target="_blank">drop tempdbspace argument: Drop a temporary dbspace (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_116.htm#ids_sapi_116" target="_blank">drop dbspace to storagepool argument: Return space from an empty dbspace to the storage pool (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_119.htm#ids_sapi_119" target="_blank">drop sbspace to storagepool argument: Return space from an empty sbspace to the storage pool (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_117.htm#ids_sapi_117" target="_blank">drop tempdbspace to storagepool argument: Return space from an empty temporary dbspace to the storage pool (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_135"><a href="#ToC_24">添加块</a></h3>
+<div>
+<p>向存储空间添加块。</p></div><a id="idx27"></a><a id="idx28"></a>
+<p>
+<p>添加块时，可以指定路径或从存储池创建块。对于存储池，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</p></p>
+<p>
+<p>要添加块：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>块</strong>面板。</li>
+<li>单击<strong>添加</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p>
+<p>要将块设为可扩展，请选择该块并单击<strong>修改</strong>。此操作需要 IBM Informix V11.70。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk argument: Add a new chunk (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_115.htm#ids_sapi_115" target="_blank">create chunk from storagepool argument: Create a chunk from the storage pool (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_136"><a href="#ToC_25">修改块</a></h3>
+<div>
+<p>指定数据库服务器是否可在必要时自动扩展块。</p></div><a id="idx29"></a><a id="idx30"></a><a id="idx31"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq68">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_136__d6760e103">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></span></div></div>
+<p>
+<p>要修改块：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>块</strong>面板。</li>
+<li>在<strong>块</strong>页面上，选择块。</li>
+<li>单击<strong>修改</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_104.htm#ids_sapi_104" target="_blank">modify chunk extendable argument: Mark a chunk as extendable (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_105.htm#ids_sapi_105" target="_blank">modify chunk extendable off argument: Mark a chunk as not extendable (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_138"><a href="#ToC_26">删除块</a></h3>
+<div>
+<p>从数据库空间、BLOB 空间或智能大对象空间删除块。</p></div><a id="idx32"></a><a id="idx33"></a>
+<p>
+<p>删除块时，可以选择将释放的空间返还给存储池的选项。对于存储池，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</p></p>
+<p>
+<p>要删除块：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>块</strong>面板。</li>
+<li>在<strong>块</strong>页面上，选择块。</li>
+<li>单击<strong>删除</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_025.htm#ids_sapi_025" target="_blank">drop chunk argument: Drop a chunk (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_121.htm#ids_sapi_121" target="_blank">drop chunk to storagepool argument: Return space from an empty chunk to the storage pool (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h2 id="dqx1ids_oat_142"><a href="#ToC_27">自动添加存储空间</a></h2>
+<div>
+<p>将数据库服务器配置为在需要更多空间时自动添加存储空间。向存储池添加服务器可用于扩充空间的条目，并设置扩充空间的阈值。</p></div>
+<div>
+<div class="note-noindent" id="wq74">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_142__d7301e98">自动存储供应需要 IBM Informix V11.70。</span></span></div></div>
+<p>将服务器配置为自动添加存储空间时，可以更有效地利用空间，并确保按需要分配空间。</p>
+<p>需要更多空间时，服务器将通过向存储空间添加块来扩充存储空间（数据库空间、智能大对象空间、BLOB 空间、临时数据库空间或临时智能大对象空间）。如果存储空间是非镜像的数据库空间或临时数据库空间，服务器还可以扩展该存储空间中的块。您也可以立即扩充空间或扩展块，而非等待数据库服务器执行该操作。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手动扩充空间或扩展可扩展块（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_144"><a href="#ToC_28">将数据库服务器配置为自动添加存储空间</a></h3>
+<div>
+<p>将数据库服务器配置为在需要空间时自动扩充存储空间，并设置扩充空间的阈值。</p></div><a id="idx34"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq76">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_144__d7378e98">自动存储供应需要 IBM Informix V11.70。</span></span></div></div>
+<p>
+<p>要配置数据库服务器以添加存储空间：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>存储池</strong>面板。</li>
+<li>选择<strong>自动空间扩展</strong>。</li>
+<li>指定可用空间阈值和等待时间。</li>
+<li>单击<strong>保存</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1097.htm#ids_adr_1097" target="_blank">SP_AUTOEXPAND configuration parameter (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1038.htm#ids_adr_1038" target="_blank">SP_THRESHOLD configuration parameter (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1039.htm#ids_adr_1039" target="_blank">SP_WAITTIME configuration parameter (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_139"><a href="#ToC_29">添加存储池条目</a></h3>
+<div>
+<p>定义数据库服务器可用于在需要更多空间时自动添加存储空间的目录、文件和设备。</p></div><a id="idx35"></a><a id="idx36"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq80">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_139__d7043e98">自动存储供应需要 IBM Informix V11.70。</span></span></div></div>
+<p>
+<p>要添加存储池条目：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>存储池</strong>面板。</li>
+<li>单击<strong>添加</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_100.htm#ids_sapi_100" target="_blank">storagepool add argument: Add a storage pool entry (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_140"><a href="#ToC_30">修改存储池条目</a></h3>
+<div>
+<p>修改数据库服务器可用于在需要更多空间时自动添加存储空间的目录、文件和设备。</p></div><a id="idx37"></a><a id="idx38"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq84">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_140__d7123e98">自动存储供应需要 IBM Informix V11.70。</span></span></div></div>
+<p>
+<p>要修改存储池条目：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>存储池</strong>面板。</li>
+<li>在<strong>存储池</strong>页面上，选择存储池条目。</li>
+<li>单击<strong>修改</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_102.htm#ids_sapi_102" target="_blank">storagepool modify argument: Modify a storage pool entry (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_141"><a href="#ToC_31">删除存储池条目</a></h3>
+<div>
+<p>删除存储池中的所有条目，或删除包含错误的条目、完整条目或特定条目。</p></div><a id="idx39"></a><a id="idx40"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq88">
+<span class="notetitle">先决条件：</span><span class="notebody"><span id="dqx1ids_oat_141__d7212e98">自动存储供应需要 IBM Informix V11.70。</span></span></div></div>
+<p>
+<p>要删除存储池条目：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</li>
+<li>展开<strong>存储池</strong>面板。</li>
+<li>在<strong>存储池</strong>页面上，选择存储池条目。
+
+<p>要删除所有包含错误的条目或完整条目，请单击<strong>显示</strong> &gt; <strong>错误条目</strong>或<strong>完整条目</strong>，然后选择所有条目。</p></li>
+<li>单击<strong>删除</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_101.htm#ids_sapi_101" target="_blank">storagepool delete argument: Delete one storage pool entry (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_109.htm#ids_sapi_109" target="_blank">storagepool purge argument: Delete storage pool entries (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_055"><a href="#ToC_32">扩充空间</a></h3>
+<div>
+<p>立即扩充空间而非等待数据库服务器自动扩充空间。</p></div><a id="idx41"></a><a id="idx42"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq92">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。空间必须可扩充，并且存储池必须包含数据库服务器可用于扩充空间的条目。要将空间设为可扩充，请单击<strong>修改</strong>。要添加存储池条目，请展开<strong>存储池</strong>面板并单击<strong>添加</strong>。</span></div></div>
+<p>
+<p>要扩充空间：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_055__d2578e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>展开<strong>空间</strong>面板。</li>
+<li>在<strong>空间</strong>页面上，选择空间。</li>
+<li>单击<strong>扩充</strong>。</li>
+<li>可选：要指定扩充空间的量或者要向空间添加块，请在<strong>扩充空间</strong>页面上单击<strong>显示高级选项</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oat_134">修改空间</a>
+<br />指定数据库服务器是否可在必要时通过添加或扩展块来扩充存储空间的大小。设置服务器可用于扩充空间的最小大小。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手动扩充空间或扩展可扩展块（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_108.htm#ids_sapi_108" target="_blank">modify space expand argument: Expand the size of a space (SQL administration API) (Administrator's Reference)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_006.htm#ids_sapi_006" target="_blank">add chunk argument: Add a new chunk (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_137"><a href="#ToC_33">扩展块</a></h3>
+<div>
+<p>立即扩展块而非等待数据库服务器自动扩展块。</p></div><a id="idx43"></a><a id="idx44"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq96">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。块必须可扩展，并且存储池必须包含数据库服务器可用于扩展块的条目。要将块设为可扩展，请单击<strong>修改</strong>。要添加存储池条目，请展开<strong>存储池</strong>面板并单击<strong>添加</strong>。</span></div></div>
+<p>
+<p>要扩展块：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_137__d6856e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>展开<strong>块</strong>面板。</li>
+<li>在<strong>块</strong>页面上，选择块。</li>
+<li>单击<strong>扩展</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1351.htm#ids_admin_1351" target="_blank">自动空间管理（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oat_136">修改块</a>
+<br />指定数据库服务器是否可在必要时自动扩展块。</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1368.htm#ids_admin_1368" target="_blank">手动扩充空间或扩展可扩展块（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_sapi_103.htm#ids_sapi_103" target="_blank">modify chunk extend argument: Extend the size of a chunk (SQL administration API) (Administrator's Reference)</a></li></ul>
+<h2 id="dqx1ids_oat_128.dita"><a href="#ToC_34">优化存储空间</a></h2>
+<div>
+<p>压缩表、索引和分段，整合可用空间（重新打包），将可用空间返还给数据库空间（收缩），然后合并扩展数据块（取消分段）。解压缩表和表分段。</p></div><a id="idx45"></a><a id="idx46"></a><a id="idx47"></a><a id="idx48"></a><a id="idx49"></a><a id="idx50"></a><a id="idx51"></a><a id="idx52"></a>
+<div>
+<div class="note-noindent" id="wq99">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<h3 id="dqx1ids_oat_146"><a href="#ToC_35">自动优化存储空间</a></h3>
+<div>
+<p>将数据库服务器配置为对表和分段进行自动压缩、重新打包、收缩和取消分段，以优化数据存储。</p></div><a id="idx53"></a><a id="idx54"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq101">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化策略，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>可以启用或禁用实施优化策略的调度程序任务。这些策略设置了阈值，用于确定何时压缩、收缩、重新打包以及取消分段表和分段。可以更新各个操作的阈值或禁用其中任何操作。还可以指定调度程序任务运行的时间。</p>
+<p>压缩表和表分段时包含简单大对象（TEXT 和 BYTE 数据类型）。</p></p>
+<p>
+<p>要将数据库服务器配置为自动优化存储空间：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_146__d7537e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>单击<strong>服务器优化策略</strong>选项卡。</li>
+<li>填写页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_1380.htm#ids_admin_1380" target="_blank">存储优化（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_129"><a href="#ToC_36">估计压缩</a></h3>
+<div>
+<p>更新在压缩表、索引和分段中的数据时可节省的估计空间量。</p></div><a id="idx55"></a><a id="idx56"></a><a id="idx57"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq106">
+<span class="notetitle">先决条件：</span><span class="notebody">要估计压缩表和表分段所节省的空间量，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.50.xC6 或更高版本。要估计包含简单大对象（TEXT 和 BYTE 数据类型）的索引和表的压缩，OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>您可以使用压缩估计来确定是否要压缩表、索引或分段中的数据。表和表分段的压缩估计包含简单大对象（TEXT 和 BYTE 数据类型）。如果压缩估计可用，那么它会显示在<strong>空间管理</strong> &gt; <strong>存储</strong> &gt; <strong>表和索引</strong>页面上的<strong>空间使用率</strong>列中。最新估计的时间将在悬浮式帮助中显示。</p></p>
+<p>
+<p>要更新压缩估计：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_129__d5856e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表、索引和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>更新数据</strong>。</li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oat_130"><a href="#ToC_37">压缩数据</a></h3>
+<div>
+<p>压缩表、索引和分段中的数据可减少所需的磁盘空间量。</p></div><a id="idx58"></a><a id="idx59"></a><a id="idx60"></a><a id="idx61"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq112">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<div>
+<div class="note-noindent" id="wq113">
+<span class="notetitle">要点：</span><span class="notebody">表或表分段必须包含至少 2000 行。对于索引或索引分段，该索引或索引分段所基于的表必须包含至少 2000 行。拆离的 B 型树索引（包括唯一索引、重复索引和森林树索引）可以进行压缩。</span></div></div>
+<p>
+<p>当您压缩表、索引或分段时，压缩任务将创建一个压缩字典，并在不移动行内数据的情况下对其进行压缩。当您压缩表时，可以包含存储在相同数据库空间内的分区中的简单大对象（TEXT 和 BYTE 数据类型）。作为压缩任务的一部分，您可以整合可用空间（重新打包），并可以将可用空间返还给数据库空间（收缩）。还可以减少扩展数据块数（取消分段）。</p></p>
+<p>
+<p>要压缩表、索引和分段：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_130__d5990e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表、索引和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>优化空间</strong>。</li>
+<li>选择<strong>压缩</strong>。</li>
+<li>可选：选择其他操作：
+
+<ul>
+<li>要整合可用空间，请选择<strong>重新打包</strong>。</li>
+<li>要将任何可用空间返还给数据库空间，请选择<strong>收缩</strong>。</li>
+<li>要减少扩展数据块数，请选择<strong>对扩展数据块取消分段</strong>。</li></ul></li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oat_131"><a href="#ToC_38">解压缩表和表分段</a></h3>
+<div>
+<p>对先前压缩的表和表分段进行解压缩。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq119">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。</span></div></div>
+<p>
+<p>解压缩还将停止压缩插入和更新操作，取消激活压缩字典，并对不适合其原始页面的行分配新页面。</p></p>
+<p>
+<p>要解压缩表和表分段：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_131__d6154e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>优化空间</strong>。</li>
+<li>选择<strong>解压缩</strong>。</li>
+<li>可选：要在表和分段上放置互斥锁以阻止在解压缩操作期间访问数据，请选择<strong>脱机</strong>。</li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oat_132"><a href="#ToC_39">整合可用空间</a></h3>
+<div>
+<p>在压缩表、索引和分段时整合（重新打包）其中的可用空间，或单独整合其中的可用空间而不进行压缩。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq125">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要整合可用空间：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_132__d6257e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表、索引和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>优化空间</strong>。</li>
+<li>选择<strong>重新打包</strong>。</li>
+<li>可选：选择其他操作：
+
+<ul>
+<li>要压缩表、索引和分段，请选择<strong>压缩</strong>。</li>
+<li>要将任何可用空间返还给数据库空间，请选择<strong>收缩</strong>。</li>
+<li>要减少扩展数据块数，请选择<strong>对扩展数据块取消分段</strong>。</li></ul></li>
+<li>可选：要在表、索引和分段上放置互斥锁以阻止在重新打包操作期间访问数据，请选择<strong>脱机</strong>。当您压缩表、索引和分段或收缩空间时，此选项处于禁用状态。</li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oat_133"><a href="#ToC_40">将可用空间返还给数据库空间</a></h3>
+<div>
+<p>将可用空间返还给数据库空间（收缩空间）可减小表、索引和分段的大小。</p></div><a id="idx62"></a><a id="idx63"></a><a id="idx64"></a><a id="idx65"></a><a id="idx66"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq131">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p>要将可用空间返还给数据库空间：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_133__d6414e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表、索引和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>优化空间</strong>。</li>
+<li>选择<strong>收缩</strong>。</li>
+<li>可选：选择其他操作：
+
+<ul>
+<li>要压缩表、索引和分段，请选择<strong>压缩</strong>。</li>
+<li>要整合可用空间，请选择<strong>重新打包</strong>。</li>
+<li>要减少扩展数据块数，请选择<strong>对扩展数据块取消分段</strong>。</li></ul></li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h3 id="dqx1ids_oat_119"><a href="#ToC_41">对扩展数据块取消分段</a></h3>
+<div>
+<p>合并表、索引和分段中的扩展数据块可减少扩展数据块数并提高查询性能。</p></div><a id="idx67"></a><a id="idx68"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq136">
+<span class="notetitle">先决条件：</span><span class="notebody">对于空间优化操作，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.50.xC6 或更高版本。对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。要压缩索引和简单大对象（TEXT 和 BYTE 数据类型），OAT 需要 Informix 12.10。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要对扩展数据块取消分段：</p></p>
+<ol type="1">
+<li><span id="dqx1ids_oat_119__d5145e313">在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>存储</strong>。</span></li>
+<li>在选定数据库服务器的情况下，展开<strong>表和索引</strong>面板。</li>
+<li>选择表、索引和分段。</li>
+<li>单击<strong>操作</strong> &gt; <strong>优化空间</strong>。</li>
+<li>选择<strong>对扩展数据块取消分段</strong>。</li>
+<li>可选：选择其他操作：
+
+<ul>
+<li>要压缩表、索引和分段，请选择<strong>压缩</strong>。</li>
+<li>要整合可用空间，请选择<strong>重新打包</strong>。</li>
+<li>要将任何可用空间返还给数据库空间，请选择<strong>收缩</strong>。</li></ul></li></ol>
+<p>
+<p>要监视任务的进度，请单击<strong>任务状态</strong>选项卡。</p></p>
+<h2 id="dqx1ids_oat_084"><a href="#ToC_42">管理恢复日志</a></h2>
+<div>
+<p>查看并管理数据库服务器的检查点、逻辑日志和物理日志。</p></div><a id="idx69"></a><a id="idx70"></a><a id="idx71"></a>
+<h3 id="dqx1ids_oat_088"><a href="#ToC_43">查看检查点历史记录</a></h3>
+<div>
+<p>查看检查点历史记录以确定基本检查点信息，包括线程等待检查点完成的次数。</p></div>
+<p>
+<p>您可以使用检查点历史记录来确定检查点时间间隔是否适当。</p></p>
+<p>
+<p>要查看检查点历史记录：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>检查点</strong>选项卡。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">检查点（管理员指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1153.htm#ids_adr_1153" target="_blank">sysckptinfo (Administrator's Reference)</a></li></ul>
+<h3 id="dqx1ids_oat_087"><a href="#ToC_44">强制执行检查点</a></h3>
+<div>
+<p>强制执行清空磁盘缓冲区的阻塞或取消阻塞检查点。</p></div>
+<p>
+<p>要强制执行检查点：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在<strong>检查点</strong>部分中，选择检查点的类型：<ul>
+<li><strong>正常检查点</strong>：选择此选项以强制执行非阻塞检查点。</li>
+<li><strong>同步检查点</strong>：选择此选项以强制执行阻塞检查点。</li></ul></li>
+<li>单击<strong>执行检查点</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0767.htm#ids_admin_0767" target="_blank">检查点（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_089"><a href="#ToC_45">查看逻辑日志统计信息</a></h3>
+<div>
+<p>查看逻辑日志统计信息，包括大小、使用百分比、状态和填充率。</p></div>
+<p>
+<p>要查看逻辑日志统计信息：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>逻辑日志</strong>选项卡。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理逻辑日志文件（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_080"><a href="#ToC_46">添加逻辑日志</a></h3>
+<div>
+<p>将逻辑日志添加到数据库空间。</p></div>
+<p>
+<p>要添加逻辑日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在<strong>添加逻辑日志</strong>部分中，填写以下字段：<ul>
+<li><strong>数据库空间名称</strong>：选择要添加日志的数据库空间。</li>
+<li><strong>大小</strong>：输入日志的大小，以 KB（千字节）计。</li>
+<li><strong>数目</strong>：输入要添加的日志数目。</li>
+<li><strong>属性</strong>：指定是在当前日志之后还是在现有日志的结尾处添加日志。</li></ul></li>
+<li>单击<strong>添加</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0740.htm#ids_admin_0740" target="_blank">手动添加逻辑日志文件（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_148"><a href="#ToC_47">切换至下一个逻辑日志</a></h3>
+<div>
+<p>立即切换至下一个逻辑日志。</p></div>
+<p>
+<p>您可以在当前日志文件变满之前，切换至下一个逻辑日志。</p></p>
+<p>
+<p>要切换至下一个逻辑日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在<strong>逻辑日志</strong>部分中，单击<strong>切换</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理逻辑日志文件（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_083"><a href="#ToC_48">删除逻辑日志</a></h3>
+<div>
+<p>删除逻辑日志并增加数据库空间内可用的磁盘空间量。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq154">
+<span class="notetitle">要点：</span><span class="notebody">无法删除当前正在使用中或包含最后一个检查点记录的日志文件。</span></div></div>
+<p>
+<p>日志文件的状态决定数据库服务器何时释放磁盘空间：</p></p>
+<ul>
+<li>如果删除从未写入的日志文件，数据库服务器会删除日志并立即释放空间。</li>
+<li>如果删除已经使用的日志文件，数据库服务器会将该日志标记为已删除。在您对包含该日志文件的数据库空间以及根数据库空间进行完全备份之后，数据库服务器会删除该日志文件并释放空间。</li></ul>
+<p>
+<p>要删除逻辑日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在<strong>删除逻辑日志</strong>部分中，从逻辑日志号列表中选择日志。</li>
+<li>单击<strong>删除</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0713.htm#ids_admin_0713" target="_blank">管理逻辑日志文件（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_090"><a href="#ToC_49">查看物理日志统计信息</a></h3>
+<div>
+<p>查看物理日志统计信息，包括日志大小、使用量和缓冲区大小。</p></div>
+<p>
+<p>要查看物理日志统计信息：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>物理日志</strong>选项卡。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">管理物理日志（管理员指南）</a></li></ul>
+<h3 id="dqx1ids_oat_086"><a href="#ToC_50">移动物理日志</a></h3>
+<div>
+<p>将物理日志移动到不同的数据库空间，并更改日志的大小。</p></div>
+<p>
+<p>要移动物理日志：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>恢复日志</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在<strong>移动物理日志</strong>部分中，填写以下字段：<ul>
+<li><strong>数据库空间名称</strong>：选择要将日志移动到的数据库空间。</li>
+<li><strong>大小</strong>：输入日志的大小，以 KB（千字节）计。</li>
+<li><strong>确认</strong>：选择<strong>移动物理日志</strong>以确认移动。</li></ul></li>
+<li>单击<strong>移动</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.admin.doc/ids_admin_0781.htm#ids_admin_0781" target="_blank">管理物理日志（管理员指南）</a></li></ul>
+<h1 id="dqx1ids_oat_001"><a href="#ToC_51">如何管理数据库服务器？</a></h1>
+<h2 id="dqx1ids_oat_170"><a href="#ToC_52">管理服务器内存</a></h2>
+<div>
+<p>查看服务器内存利用率信息，并启用自动低内存管理。配置数据库服务器在内存过低时用来继续处理的操作。</p></div><a id="idx72"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq163">
+<span class="notetitle">先决条件：</span><span class="notebody">对于自动低内存管理，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC3 或更高版本，或者 Informix 11.50.xC9。</span></div></div>
+<p>
+<p>要管理服务器内存：</p>
+<p>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>内存管理器</strong>。</p></p>
+<h2 id="dqx1ids_oat_004"><a href="#ToC_53">管理高可用性集群</a></h2>
+<h3 id="dqx1ids_oat_059"><a href="#ToC_54">配置高可用性集群的连接</a></h3>
+<div>
+<p>在 IBM Informix 服务器上设置 <strong>idsd</strong> 守护程序以支持启动高可用性集群中的服务器或添加共享磁盘辅助 (SDS) 服务器。</p></div><a id="idx73"></a><a id="idx74"></a><a id="idx75"></a><a id="idx76"></a><a id="idx77"></a><a id="idx78"></a><a id="idx79"></a><a id="idx80"></a><a id="idx81"></a><a id="idx82"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq166">
+<span class="notetitle">先决条件：</span><span class="notebody">您需要具有 Informix 服务器上的 root 特权，才能执行此过程。</span></div></div>
+<p>
+<p>要使用 IBM OpenAdmin Tool (OAT) for Informix 执行远程管理任务（包括启动高可用性集群中的服务器或添加辅助服务器），请在 Informix 服务器上安装并配置以下守护程序：</p></p>
+<ul>
+<li>因特网服务守护程序，例如，适用于 UNIX 和 Linux 的 <strong>xinetd</strong> 或 <strong>inetd</strong> 因特网守护程序。</li>
+<li><strong>idsd</strong>，允许 OAT 启动远程 Informix 服务器的守护进程。
+该守护程序位于 Informix 服务器所在的相同主机上，并且必须位于用户 <strong>informix</strong> 可访问的目录中。<strong>idsd</strong> 守护程序是通过 <strong>xinetd</strong> 或 <strong>inetd</strong> 守护程序调用的。</li></ul>
+<div>
+<div class="note-noindent" id="dqx1ids_oat_059__dup0002">
+<span class="notetitle">要点：</span><span class="notebody">您不能在 Windows 或 MAC OS 上使用远程管理功能。</span></div></div>
+<p>
+<p>要配置因特网守护程序和 <strong>idsd</strong> 守护程序：</p></p>
+<ol type="1">
+<li>确保 <strong>idsd</strong> 守护程序已与 Informix 一起安装在 <samp><em>$INFORMIXDIR</em>/bin</samp> 目录中。确保所有者和组是 <strong>informix</strong>，且许可权是 <samp class="xph">0754</samp>：
+<p>例如：</p>
+<pre class="xmp"><code>[informix@myhost]/usr/informix/bin% ls -la idsd 
+    -rwxr-xr--  1 informix informix 23717 Oct 15 16:34 idsd</code></pre></li>
+<li>在服务器上，设置连接的加密。对于 Informix 11.70，使用作为 IBM JRE 1.6 或更高版本一部分提供的 GSKCmd 工具。对于较早的 Informix 版本，使用 IBM Global Security Kit 中包含的 GSKCmd 工具。
+
+<ol type="a">
+<li>对您的平台使用以下 GSKCmd 命令行参数来创建密钥数据库：<pre class="xmp"><code><em>command</em> -keydb -create -db <span class="synph"><span class="var">keydb_name</span></span>.kdb -pw <span class="synph"><span class="var">password</span></span> -type cms -stash</code></pre>例如：<pre class="xmp"><code>gsk8cmd -keydb -create -db mydb.kdb -pw mypassw0rd -type cms -stash</code></pre></li>
+<li>使用以下 GSKCmd 命令行参数来创建自签名证书：<pre class="xmp"><code><em>command</em> -cert -create -db <em>keydb_name</em>.kdb -pw <em>password</em> -label <em>label_text</em>
+    -dn <em>distinguished name</em> 
+    -size &lt;1024 | 512 | 2048&gt; -default_cert yes </code></pre>其中：<em>专有名称</em>是 X.500 专有名称。<em>专有名称</em>是加引号的字符串，格式如下：CN=<em>公共名称</em>（必需）, O=<em>组织</em>, OU=<em>组织单元</em>, L=<em>位置</em>, ST=<em>省/自治区/直辖市</em>, C=<em>国家或地区</em>。
+
+
+<p>例如：
+</p>
+<pre class="xmp"><code>gsk8cmd -cert -create -db mydb.kdb -pw mypassw0rd -label mycertificatelabel
+    -dn "CN=lenexa.ibm.com,O=ibm,OU=IBM HTTP Server,ST=KS,C=US" 
+    -size 1024 -default_cert yes</code></pre></li></ol></li>
+<li>打开 <strong>xinetd</strong> 或 <strong>inetd</strong> 配置文件进行编辑，并为 <strong>idsd</strong> 守护程序添加服务条目。<div>
+<div class="note-noindent" id="wq171">
+<span class="notetitle">要点：</span><span class="notebody">如果 GSKIT_VERSION 配置参数设置为 GSKit 的非缺省版本，请将 <samp class="xph">-g <em>NUMBER</em></samp> 服务器程序参数添加到 <strong>xinetd</strong> 或 <strong>inetd</strong> 服务条目以指定 GSKit 版本。</span></div></div>
+
+<ul>
+<li>对于 <strong>xinetd</strong> 服务器守护程序：<samp class="xph">/etc/xinetd.conf</samp>。<pre class="xmp"><code>service idsd
+             {
+             disable = no
+             socket_type = stream 
+             protocol = tcp
+             user = root
+             wait = no 	    
+             server = /usr/informix/bin/idsd
+             server_args = -l /usr/informix/idsd.log 
+                 -k /usr/informix/idsd -n idsd_label
+             }</code></pre></li>
+<li>对于 UNIX 上的 <strong>inetd</strong> 服务器守护程序：<samp class="xph">/etc/inetd.conf</samp>：<pre class="xmp"><code>idsd stream tcp nowait root /usr/informix/bin/idsd idsd -l /usr/informix/idsd.log  -k /usr/informix/idsd -n idsd_label</code></pre></li></ul></li>
+<li>打开文件 <samp class="xph">/etc/services</samp> 进行编辑，并添加名为 <samp class="xph">idsd</samp> 的服务。例如：<pre class="xmp"><code>idsd 10000/tcp</code></pre>在本例中，使用端口号 10000，但您可以使用任何其他还未使用的大于 1024 的端口。但是，名称必须为 <samp class="xph">idsd</samp>，协议必须为 <samp class="xph">tcp</samp>。</li>
+<li>重新启动 <strong>xinetd</strong> 或 <strong>inetd</strong> 服务守护程序。在大多数实施中，您可以向正在运行的 <strong>inetd</strong> 或 <strong>xinetd</strong> 进程发送 SIGHUP 信号来重新启动。但是，在某些 Linux 平台上，您可以使用 root 身份运行以下命令：
+<pre class="xmp"><code>service xinetd restart</code></pre></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_ssl_006.htm#ids_ssl_006" target="_blank">IBM Global Security Kit (Security Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_058"><a href="#ToC_55">查找高可用性集群</a></h3>
+<div>
+<p>识别高可用性集群，以便可使用 IBM OpenAdmin Tool (OAT) for Informix 对其进行监视和管理。</p></div><a id="idx83"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq173">
+<span class="notetitle">先决条件：</span><span class="notebody">将高可用性集群中的服务器添加到 OAT 组。
+只有 OAT 组中服务器上的集群显示在<strong>高可用性集群</strong>页面上。要将服务器添加至 OAT 组，请在 OAT <strong>管理</strong>菜单上单击<strong>管理连接</strong> &gt; <strong>添加连接</strong>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要查找高可用性集群：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>集群</strong>。</li>
+<li>单击<strong>查找集群</strong>。
+
+<p>当找到集群时，将显示<strong>查找集群</strong>页面，并列出集群中的服务器：主要、高可用性数据复制 (HDR)、共享磁盘辅助 (SDS) 和远程独立辅助 (RSS) 服务器。</p></li>
+<li>接受集群的缺省名称，或输入新的唯一名称。对找到的每个集群重复此步骤。</li></ol>
+<h3 id="dqx1ids_oat_020"><a href="#ToC_56">查看集群的拓扑</a></h3>
+<div>
+<p>查看高可用性集群的拓扑。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq178">
+<span class="notetitle">先决条件：</span><span class="notebody">查找和命名 IBM OpenAdmin Tool (OAT) for Informix 中的集群。
+请参阅<a href="#dqx1ids_oat_058">查找高可用性集群</a>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要查看集群的拓扑：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>集群</strong>。</li>
+<li>在<strong>集群</strong>下，选择集群。此时将显示<strong>集群拓扑</strong>和服务器列表。
+
+<p>所选集群的拓扑将显示主服务器和辅助服务器之间的关系，包括高可用性数据复制 (HDR)、共享磁盘辅助 (SDS) 和远程独立辅助 (RSS) 服务器。</p></li></ol>
+<h3 id="dqx1ids_oat_021"><a href="#ToC_57">查看集群中服务器的状态</a></h3>
+<div>
+<p>查看高可用性集群中的服务器的状态。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq183">
+<span class="notetitle">先决条件：</span><span class="notebody">查找和命名 IBM OpenAdmin Tool (OAT) for Informix 中的集群。
+请参阅<a href="#dqx1ids_oat_058">查找高可用性集群</a>。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要查看集群中服务器的状态：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>集群</strong>。</li>
+<li>在<strong>集群</strong>下，选择集群。此时将显示<strong>集群拓扑</strong>和服务器列表。<p>列表将显示主服务器和辅助服务器的状态，包括高可用性数据复制 (HDR)、共享磁盘辅助 (SDS) 和远程独立辅助 (RSS) 服务器。</p></li></ol>
+<h3 id="dqx1ids_oat_022"><a href="#ToC_58">添加 SDS 服务器</a></h3>
+<div>
+<p>将共享磁盘辅助 (SDS) 服务器连接添加至高可用性集群。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq188">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>查找和命名 IBM OpenAdmin Tool (OAT) for Informix 中的集群。
+请参阅<a href="#dqx1ids_oat_058">查找高可用性集群</a>。</li>
+<li>在 Informix 数据库服务器上安装并配置 <strong>idsd</strong> 守护程序。请参阅<a href="#dqx1ids_oat_059">配置高可用性集群的连接</a>。</li></ul></span></div></div>
+<p>
+<p>
+<br />要添加 SDS 服务器连接：<br /></p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>集群</strong>。</li>
+<li>在<strong>集群</strong>下，选择集群。此时将显示集群拓扑和服务器列表。</li>
+<li>单击<strong>添加 SDS</strong>。完成<strong>添加 SDS 服务器</strong>向导。</li></ol>
+<h3 id="dqx1ids_oat_023"><a href="#ToC_59">启动或停止集群中的服务器</a></h3>
+<div>
+<p>将高可用性集群中的服务器更改为联机或脱机方式。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq192">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>查找和命名 IBM OpenAdmin Tool (OAT) for Informix 中的集群。
+请参阅<a href="#dqx1ids_oat_058">查找高可用性集群</a>。</li>
+<li>在 Informix 数据库服务器上安装并配置 <strong>idsd</strong> 守护程序。请参阅<a href="#dqx1ids_oat_059">配置高可用性集群的连接</a>。</li></ul></span></div></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq194">
+<span class="notetitle">要点：</span><span class="notebody">当您停止共享磁盘辅助 (SDS) 服务器时，该服务器将不再显示在 OAT 中的集群中。要将 SDS 服务器复原到 OAT 显示中，请手动重新启动该服务器，然后单击<strong>查找集群</strong>。找到集群后，SDS 服务器将显示在该集群的服务器列表中。</span></div></div>
+<p>
+<p>要启动或停止辅助服务器：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>复制</strong> &gt; <strong>集群</strong>。</li>
+<li>在<strong>集群</strong>下，选择集群。此时将显示集群拓扑和服务器列表。</li>
+<li>在服务器列表中，对于要停止或启动的服务器，单击<strong>修改</strong>。<strong>修改服务器</strong>页面将显示服务器的状态，并指示是否可以启动或停止服务器。</li>
+<li>单击<strong>启动</strong>或<strong>停止</strong>。</li></ol>
+<h2 id="dqx1ids_oat_168"><a href="#ToC_60">管理时间系列</a></h2>
+<div>
+<p>复审并管理与时间系列相关的数据库对象，包括表、索引和虚拟表，以及 TimeSeries 子类别、容器和日历。</p></div>
+<p>
+<p>时间系列是因随时间发生变化而被记录的一组数据。每个条目都具有时间戳记，并存储在数据库中。
+Informix TimeSeries 扩展提供了 <strong>TimeSeries</strong> 数据类型、容器和日历，用于管理时间系列数据。</p></p>
+<p>
+<p>要管理时间系列：</p>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击 <strong>SQL 工具箱</strong> &gt; <strong>TimeSeries</strong>。将显示数据库服务器中包含时间系列数据的数据库和表的列表。</p>
+<ul>
+<li>要查看有关数据库或表的信息，请在列表中单击该项。</li>
+<li>要查看有关特定数据库或表对象的更多信息，请单击对象面板上的展开图标。</li></ul></p>
+<h2 id="dqx1ids_oat_027"><a href="#ToC_61">管理数据库服务器的配置参数</a></h2>
+<div>
+<p>在 <strong>onconfig</strong> 文件中查看和更改当前数据库服务器的参数值。</p></div>
+<p>
+<p>您可以使用 IBM OpenAdmin
+Tool (OAT) for Informix 更改当前 IBM Informix 数据库服务器的许多配置参数的值。</p></p>
+<p>
+<p>管理数据库服务器的配置参数：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>配置</strong>。</li>
+<li>要过滤参数的列表，请从<strong>显示</strong>列表中选择视图：<ul>
+<li><strong>基本</strong>：显示所有环境中都适用的基本配置参数。</li>
+<li><strong>动态</strong>：显示您可以更改的参数。</li>
+<li><strong>建议</strong>：显示具有未遵循 OAT 建议的设置的参数。未遵循建议设置的所有参数都以黄色突出显示。</li></ul></li>
+<li>要查看或更改参数，请单击参数名称。</li></ol>
+<h2 id="dqx1ids_oat_077"><a href="#ToC_62">运行系统验证检查</a></h2>
+<h3 id="dqx1ids_oat_030"><a href="#ToC_63">验证当前服务器上的一个或多个数据库或表</a></h3>
+<p>
+<p>展开<strong>服务器管理</strong> &gt; <strong>系统验证</strong>。</p>
+<p>要验证当前服务器上的一个或多个数据库或表，请使用以下某个选项：</p></p>
+<p></p>
+<ul>
+<li>要验证所有数据库中的所有表，请在<strong>数据库名称</strong>字段中选择<strong>全部</strong>，并在<strong>表名</strong>字段中选择<strong>全部</strong>。</li>
+<li>要验证某个数据库中的所有表，请在<strong>数据库名称</strong>字段中选择该数据库的名称，并在<strong>表名</strong>字段中选择<strong>全部</strong>。</li>
+<li>要验证一个特定的表，请在<strong>数据库名称</strong>字段中选择数据库的名称，并在<strong>表名</strong>字段中选择表的名称。如果您不知道表位于哪个数据库中，在<strong>数据库名称</strong>字段中保留缺省值<strong>全部</strong>。在<strong>表名</strong>列表中搜索表名称。</li></ul>
+<h3 id="dqx1ids_oat_031"><a href="#ToC_64">验证当前服务器上一个或多个数据库空间的扩展数据块</a></h3>
+<p></p>
+<ol type="1">
+<li>展开<strong>服务器管理</strong> &gt; <strong>系统验证</strong>。</li>
+<li>选择数据库空间的名称，或选择“全部”以选中所有数据库空间。</li>
+<li>单击<strong>检查扩展数据块</strong>。对于检查的每个扩展数据块将显示状态消息，以验证检查是否成功完成。</li></ol>
+<h2 id="dqx1ids_oat_078"><a href="#ToC_65">管理虚拟处理器</a></h2>
+<p>
+<p>展开<strong>服务器管理</strong> &gt; <strong>虚拟处理器</strong>。此时将显示处理器的全局视图。</p>
+<p>您可以从此页面添加或删除虚拟处理器，或从 <strong>VP 类</strong>表选择要查看的虚拟处理器的类。您还可以从 <strong>类的 VP</strong>页面添加或删除类。</p></p>
+<h2 id="dqx1ids_oat_096"><a href="#ToC_66">授予和限制用户特权</a></h2>
+<h3 id="dqx1ids_oat_032"><a href="#ToC_67">向用户授予数据库级别特权</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>选择数据库。</li>
+<li>在<strong>授予新特权</strong>下，输入用户名，例如 <samp>myUserName</samp>。
+
+<p>在 Windows 上，用户名不能超过 20 个字符。</p></li>
+<li>为用户选择数据库级别特权。</li>
+<li>单击<strong>授权</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">Database-level privileges (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_033"><a href="#ToC_68">修改用户的数据库级别特权</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>选择数据库。</li>
+<li>在包含用户名的行中，单击<strong>修改</strong>。</li>
+<li>为用户选择数据库级别特权。要取消用户的特权，请选择<strong>撤销</strong>。</li>
+<li>单击<strong>保存</strong>以修改特权。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_259.htm#ids_ddi_259" target="_blank">Database-level privileges (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_034"><a href="#ToC_69">撤销用户的数据库级别特权</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>选择数据库。</li>
+<li>在包含用户名的行中，单击<strong>修改</strong>。</li>
+<li>从列表选择<strong>撤销</strong>。</li>
+<li>单击<strong>保存</strong>。</li></ol>
+<h3 id="dqx1ids_oat_093"><a href="#ToC_70">向用户授予表级别特权</a></h3>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>表级别特权</strong>选项卡。</li>
+<li>选择数据库。</li>
+<li>在<strong>授予新特权</strong>下，输入用户名，例如 <samp>myUserName</samp>。</li>
+<li>选择表。</li>
+<li>为用户选择一个或多个表级别特权。</li>
+<li>单击<strong>授权</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">Table-level privileges (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_035"><a href="#ToC_71">修改用户的表级别特权</a></h3><a id="idx84"></a>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>表级别特权</strong>选项卡。</li>
+<li>选择数据库。</li>
+<li>在包含用户名的行中，单击<strong>修改</strong>。</li>
+<li>选择或清除该用户的特权复选框。</li>
+<li>单击<strong>保存</strong>以修改特权。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.ddi.doc/ids_ddi_095.htm#ids_ddi_095" target="_blank">Table-level privileges (Database Design Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_036"><a href="#ToC_72">撤销用户的表级别特权</a></h3><a id="idx85"></a>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>表级别特权</strong>选项卡。</li>
+<li>选择数据库。</li>
+<li>在包含用户名的行中，单击<strong>修改</strong>。</li>
+<li>清除该用户的所有特权复选框。</li>
+<li>单击<strong>保存</strong>以修改特权。</li></ol>
+<h2 id="dqx1ids_oat_120"><a href="#ToC_73">管理内部用户（UNIX、Linux）</a></h2>
+<div>
+<p>添加并修改内部认证用户和没有主机操作系统上的帐户的用户。</p></div>
+<div>
+<div class="note-noindent" id="wq219">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>对于内部用户，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>要创建通过数据库认证的用户，需要 Informix 11.70.xC2 或更高版本。</li>
+<li>对于 Informix 11.70.xC3 或更高版本，必须先设置映射的用户代理文件，然后才能创建内部用户。</li></ul></span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">Internal users (UNIX, Linux) (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">Connection security (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">Mapped user surrogates in the allowed.surrogates file (UNIX, Linux) (Security Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_124"><a href="#ToC_74">为服务器上的内部用户设置特权（UNIX、Linux）</a></h3>
+<div>
+<p>选择要应用到数据库服务器上所有内部用户的特权级别。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq221">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>对于内部用户，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>要创建通过数据库认证的用户，需要 Informix 11.70.xC2 或更高版本。</li>
+<li>对于 Informix 11.70.xC3 或更高版本，必须先设置映射的用户代理文件，然后才能创建内部用户。</li></ul></span></div></div>
+<p>
+<p>要为服务器上的内部用户设置特权：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>内部用户</strong>选项卡。</li>
+<li>为内部用户选择特权级别：<strong>基本</strong>或<strong>管理</strong>。选择<strong>没有特权</strong>以禁用服务器的用户映射。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">Internal users (UNIX, Linux) (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">Connection security (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">Mapped user surrogates in the allowed.surrogates file (UNIX, Linux) (Security Guide)</a></li></ul>
+<h3 id="dqx1ids_oat_121"><a href="#ToC_75">添加内部用户（UNIX、Linux）</a></h3>
+<div>
+<p>添加内部认证用户和没有主机操作系统上的帐户的用户。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq225">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>对于内部用户，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</li>
+<li>要创建通过数据库认证的用户，需要 Informix 11.70.xC2 或更高版本。</li>
+<li>对于 Informix 11.70.xC3 或更高版本，必须先设置映射的用户代理文件，然后才能创建内部用户。</li></ul></span></div></div>
+<p><span id="dqx1ids_oat_121__d5348e715">添加数据库服务器认证的用户，方法是使用数据库服务器存储的散列密码检查其凭证。将每个用户映射到相应用户和组特权来授予用户的数据库访问权，不论这些用户是否具有数据库服务器主机上的操作系统帐户。</span>可以将用户映射到一个操作系统用户名，或一个操作系统用户标识和一个或多个组标识。在 <samp class="xph">/etc/informix/allowed.surrogates</samp> 中指定的操作系统用户名、用户标识、组名和组标识控制可作为映射用户代理的操作系统用户和组。</p>
+<p>
+<p>要添加内部用户：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>内部用户</strong>选项卡。</li>
+<li>单击<strong>添加</strong>并填写<strong>添加内部用户</strong>页面上的字段。</li></ol>
+<p></p>
+<div>
+<div class="note-noindent" id="wq229">
+<span class="notetitle">提醒：</span><span class="notebody">设置要应用于此服务器上所有内部用户的特权级别。应用于所有内部用户的特权优先于个别内部用户的特权。</span></div></div>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">Internal users (UNIX, Linux) (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">Connection security (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_050.htm#ids_am_050" target="_blank">Mapped user surrogates in the allowed.surrogates file (UNIX, Linux) (Security Guide)</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1821.htm#ids_sqs_1821" target="_blank">CREATE USER statement (UNIX, Linux) (SQL Syntax)</a></li></ul>
+<h3 id="dqx1ids_oat_122"><a href="#ToC_76">编辑内部用户（UNIX、Linux）</a></h3>
+<div>
+<p>编辑内部用户的用户属性。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq231">
+<span class="notetitle">先决条件：</span><span class="notebody">对于内部用户，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>要编辑内部用户：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>内部用户</strong>选项卡。</li>
+<li>在列表中选择内部用户，然后单击<strong>编辑</strong>。</li>
+<li>编辑<strong>编辑内部用户</strong>页面上的字段。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_045.htm#ids_am_045" target="_blank">Internal users (UNIX, Linux) (Security Guide)</a></li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sec.doc/ids_am_025.htm#ids_am_025" target="_blank">Connection security (Security Guide)</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.sqls.doc/ids_sqs_1824.htm#ids_sqs_1824" target="_blank">ALTER USER statement (UNIX, Linux) (SQL Syntax)</a></li></ul>
+<h3 id="dqx1ids_oat_123"><a href="#ToC_77">删除内部用户（UNIX、Linux）</a></h3>
+<div>
+<p>删除内部用户的帐户。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq235">
+<span class="notetitle">先决条件：</span><span class="notebody">对于内部用户，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix V11.70。</span></div></div>
+<p>
+<p>要删除内部用户：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>用户特权</strong>。</li>
+<li>单击<strong>内部用户</strong>选项卡。</li>
+<li>在列表中选择内部用户，然后单击<strong>删除</strong>。</li></ol>
+<h2 id="dqx1ids_oat_145"><a href="#ToC_78">创建可信上下文</a></h2>
+<div>
+<p>创建数据库的可信上下文。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq239">
+<span class="notetitle">先决条件：</span><span class="notebody">只有数据库安全性管理员 (DBSECADM) 角色才能创建、修改或删除可信上下文。对于可信上下文，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</span></div></div>
+<p>
+<p>可信上下文是一个数据库对象，它定义可信数据库连接的属性。在可信连接中，客户机与服务器之间的层可以断言客户机用户的身份。如果访问数据库的应用程序在中间件服务器或其他应用程序环境中运行，特别是，如果用户连接包括使用限定或敏感特权对数据库资源进行访问，那么可信上下文能够提供更好的审计监督和安全性机制。</p></p>
+<p>
+<p>要创建可信上下文：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>可信上下文</strong>。</li>
+<li>单击数据库。</li>
+<li>单击<strong>操作</strong> &gt; <strong>创建</strong>。</li>
+<li>填写页面上的字段。</li></ol>
+<h3 id="dqx1ids_oat_147"><a href="#ToC_79">管理可信上下文</a></h3>
+<div>
+<p>修改、启用、禁用或删除数据库的可信上下文。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq244">
+<span class="notetitle">先决条件：</span><span class="notebody">只有数据库安全性管理员 (DBSECADM) 角色才能创建、修改或删除可信上下文。对于可信上下文，IBM OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70。</span></div></div>
+<p>
+<p></p></p>
+<p>
+<p>要管理可信上下文：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>服务器管理</strong> &gt; <strong>可信上下文</strong>。</li>
+<li>单击包含可信上下文的数据库。</li>
+<li>选中该可信上下文对应的复选框。</li>
+<li>单击<strong>操作</strong>，然后单击适当的操作。</li></ol>
+<h2 id="dqx1ids_oat_037"><a href="#ToC_80">管理 Auto Update Statistics</a></h2>
+<div>
+<p>复审和调整表统计信息的 Auto Update Statistics (AUS) 维护系统。</p></div><a id="idx86"></a><a id="idx87"></a>
+<p>AUS 维护系统识别需要新优化器统计信息的表和索引，并运行相应的 UPDATE STATISTICS 语句以优化查询性能。根据您的系统，您可能需要调整 AUS 到期策略或调度。</p>
+<p>您可以在<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>配置</strong>页面上控制和监视 AUS 策略。</p>
+<p>您可以使用 <strong>SQL ToolBox</strong> &gt; <strong>Schema Manager</strong> &gt; <strong>统计信息</strong>页面上 OpenAdmin Tool (OAT) 的 IBM Informix Schema Manager 插件来复审表的统计信息。</p>
+<h3 id="dqx1ids_oat_038"><a href="#ToC_81">配置并启用 Auto Update Statistics</a></h3>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>配置</strong>。</li>
+<li>根据您的系统性能和需求，确定缺省值对于您的系统是否有效。<ol type="a">
+<li>要指定两次重建统计信息之间的最长时间，请为 AUS_AGE 参数输入天数，例如 30、60 或 90。</li>
+<li>要指定表的更改达到多少百分比后会启动统计信息重建，请为 AUS_CHANGE 参数输入百分比数字（例如 20 或 50）。</li>
+<li>要指定 AUS 是否使用建议的指导规则，请从列表为 AUS_AUTO_RULES 参数选择<strong>启用</strong>或<strong>禁用</strong>。缺省值为<strong>启用</strong>。</li>
+<li>要指定始终重建统计信息的行数上限，请为 AUS_SMALL_TABLES 参数输入数字。缺省值为 100。</li>
+<li>要指定 PDQ 优先级，请为 AUS_PDQ 参数输入从 -1 到 100 的数字。缺省值为 10。并行数据库查询 (PDQ) 优先级是确定数据库服务器如何将资源用于并行处理的因素之一。</li>
+<li>要指定用于运行更新统计信息任务的线程数，请输入线程数。OAT 会将此数量的 AUS 任务提交到任务调度程序。此选项需要 IBM Informix V11.70。</li></ol></li>
+<li>单击<strong>保存</strong>以保存更改。</li>
+<li>要确定是否已启用 AUS 任务，请单击<strong>信息</strong>选项卡，然后单击以下任务：<ul>
+<li>Auto Update Statistics 评估</li>
+<li>Auto Update Statistics 刷新<div>
+<div class="note-noindent" id="wq251">
+<span class="notetitle">注：</span><span class="notebody">如果“Auto Update Statistics 刷新”任务没有可执行的工作，该任务将自行禁用。
+下次“Auto Update Statistics 评估”任务运行并为刷新任务创建工作时，评估任务将自动启用刷新任务。</span></div></div></li></ul>此时将显示<strong>任务详细信息</strong>页面。</li>
+<li>向下滚动至<strong>启用任务</strong>字段，并确保该字段已选中。</li>
+<li>使用设置运行窗口的字段来指定运行任务的频率。由于 AUS 是资源密集型操作，因此可以定义特定运行期间。运行期间定义包含开始时间和结束时间，以及在每周的哪几天运行。缺省情况下，运行时间窗口为每天凌晨 1:00 到 5:00。</li>
+<li>单击<strong>保存</strong>以保存任何更改。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.perf.doc/ids_prf_756.htm#ids_prf_756" target="_blank">AUS 到期策略（性能指南）</a></li></ul>
+<h3 id="dqx1ids_oat_039"><a href="#ToC_82">查看服务器的刷新和评估</a></h3>
+<p>
+<p></p></p>
+<p>
+<p>您可以通过展开<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>列表</strong>来查看暂挂的和已完成的 UPDATE STATISTICS 命令。从列表选择<strong>暂挂的命令</strong>或<strong>已完成的命令</strong>。<br />如果刷新任务无工作可做，该刷新任务将在调度程序中自行禁用。但是，下次运行评估任务，并为刷新任务创建工作时，评估任务将自动启用刷新任务。<br /></p></p>
+<h3 id="dqx1ids_oat_040"><a href="#ToC_83">请求立即评估统计信息</a></h3>
+<p>
+<p>展开<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>常规</strong>，并单击<strong>刷新评估</strong>。Auto Update Statistics (AUS) 将分析并整合来自先前更新的引擎反馈，但不更新统计信息。</p></p>
+<h3 id="dqx1ids_oat_041"><a href="#ToC_84">确定下次更新统计信息的时间</a></h3>
+<p>
+<p>要确定下一次何时更新统计信息：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>常规</strong>。</li>
+<li>在图的下方，复审 <strong>Auto Stats 将在以下时间之后运行</strong>字段，该字段指定了下次更新统计信息之前的小时和分钟数。</li></ol>
+<h3 id="dqx1ids_oat_042"><a href="#ToC_85">查看当前 Auto Update Statistics 设置</a></h3>
+<p>
+<p>您可以查看有关 Auto Update Statistics (AUS) 的以下信息：</p>
+<ul>
+<li>要确定何时更新了数据库，请参阅<strong>上次检查时间</strong>列。此值是上次评估有哪些表格需要更新统计信息时的时间戳记。</li>
+<li>要确定当前组中哪些数据库启用了 AUS，请参阅<strong>数据库</strong>列。</li>
+<li>要确定对于特定数据库有多少表缺少统计信息，请参阅<strong>缺少统计信息的表</strong>列。这些表不遵循为更新统计信息所建议的基本准则。<p>最小的统计信息和分发集包括在所有索引上（如果不存在索引，那么在表上）运行 LOW、在索引的所有前导键上运行 HIGH，以及在所有非前导键上运行 MEDIUM。</p></li>
+<li>要确定特定数据库中有多少表需要统计信息刷新，请参阅<strong>需要刷新统计信息的小型表</strong>和<strong>需要刷新统计信息的大型表</strong>列。</li>
+<li>要查看在数据库中已刷新多少表，请参阅<strong>已刷新的表数</strong>列。</li></ul></p>
+<h3 id="dqx1ids_oat_043"><a href="#ToC_86">监视 Auto Update Statistics 设置
+</a></h3>
+<p></p>
+<ol type="1">
+<li>展开<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>常规</strong>。</li>
+<li>复审<strong>按数据库列出的自动更新统计信息</strong>表。此表显示了当前数据库的统计信息更新状态。</li></ol>
+<h3 id="dqx1ids_oat_044"><a href="#ToC_87">查看 Auto Update Statistics 生成的警报</a></h3>
+<p>
+<p>展开<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>警报</strong>。此页显示了在数据库中运行统计信息时，Auto Update Statistics (AUS) 生成的警报。每个警报都按具有彩色图标的重要性级别（红色、黄色或绿色）和警报类型（错误、警告或参考）分类。</p></p>
+<h3 id="dqx1ids_oat_045"><a href="#ToC_88">清除 Auto Update Statistics 的异常运行</a></h3>
+<p>
+<p>展开<strong>服务器管理</strong> &gt; <strong>Auto Update Statistics</strong> &gt; <strong>常规</strong>，并单击<strong>清除</strong>。</p></p>
+<h2 id="dqx1ids_oat_156"><a href="#ToC_89">备份数据库服务器数据</a></h2>
+<div>
+<p>配置并调度数据库服务器的存储空间备份。</p></div>
+<div>
+<div class="note-noindent" id="wq262">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>在配置并调度备份之前，请先计划您的恢复目标。要计划足够的数据备份保护，请分析数据库服务器配置和活动，以及安装时可用的备份介质类型。还要考虑存储介质、磁盘、计算机和控制器以及网络大小的开支。</p>
+<p>在 OAT 中配置备份时，会根据设置的调度自动备份存储空间。</p>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_009.htm#ids_bar_009" target="_blank">计划备份与复原（备份与复原指南）</a></li></ul>
+<h3 id="dqx1ids_oat_157"><a href="#ToC_90">使用 ontape 备份数据</a></h3>
+<div>
+<p>使用 <strong><samp>ontape</samp></strong> 实用程序配置数据库服务器的存储空间备份。</p></div><a id="idx88"></a><a id="idx89"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq264">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>数据库服务器提供两个用于备份和复原数据的实用程序：<strong><strong><samp>ontape</samp></strong></strong> 和 ON-Bar。您可以使用 OAT 通过 <strong><strong><samp>ontape</samp></strong></strong> 备份存储空间。在 OAT 中配置备份时，会根据设置的调度自动备份存储空间。</p></p>
+<p>
+<p>要使用 <strong><samp>ontape</samp></strong> 备份数据：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>备份</strong>。</li>
+<li>使用“备份”向导遵照相应指示信息来配置备份。
+
+<p>如果已经在 OAT 中配置备份，将不会显示“备份”向导。您可以单击<strong>配置</strong>选项卡来复审或更改配置。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关概念</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_183.htm#ids_bar_183" target="_blank">备份系统（备份与复原指南）</a></li></ul>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.bar.doc/ids_bar_177.htm#ids_bar_177" target="_blank">ON-Bar 和 ontape 实用程序比较（备份与复原指南）</a></li></ul>
+<h3 id="dqx1ids_oat_158"><a href="#ToC_91">更改备份配置和调度</a></h3>
+<div>
+<p>更改数据库服务器存储空间的备份配置和调度。</p></div><a id="idx90"></a><a id="idx91"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq269">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>在 OAT 中配置备份时，会根据设置的调度自动备份存储空间。您可以更改备份配置和调度。</p></p>
+<p>
+<p>要更改备份配置：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>备份</strong>。</li>
+<li>单击<strong>配置</strong>选项卡。</li></ol>
+<h3 id="dqx1ids_oat_159"><a href="#ToC_92">执行随需应变备份</a></h3>
+<div>
+<p>提交任务以立即备份数据库服务器的存储空间。</p></div><a id="idx92"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq274">
+<span class="notetitle">先决条件：</span><span class="notebody">对于此操作，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC2。</span></div></div>
+<p>
+<p>在 OAT 中配置备份时，会根据设置的调度自动备份存储空间。也可以根据需要执行使用 OAT 中备份配置的备份。</p></p>
+<p>
+<p>要执行随需应变备份：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>空间管理</strong> &gt; <strong>备份</strong>。</li>
+<li>单击<strong>管理</strong>选项卡。</li>
+<li>在要执行备份的行中，单击<strong>备份</strong>。</li></ol>
+<h1 id="dqx1ids_oat_073"><a href="#ToC_93">如何管理调度程序任务？</a></h1>
+<h2 id="dqx1ids_oat_074"><a href="#ToC_94">添加调度程序任务</a></h2>
+<p>
+<p>您可以创建“调度程序”任务，以在指定时间并以指定频率运行任务或传感器。</p>
+<ul>
+<li>任务提供在指定时间或以指定时间间隔运行特定作业的方式。</li>
+<li>传感器可收集并保存信息。</li></ul></p>
+<h3 id="dqx1ids_oat_046"><a href="#ToC_95">添加新任务</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq280">
+<span class="notetitle">要点：</span><span class="notebody">创建任务的时间将影响任务的首次执行。
+
+<ul>
+<li>如果当前时间介于指定的启动时间和停止时间之间，那么任务将在当前时间执行。后续执行将以频率值指定的时间间隔进行。因此，例如，当前时间若介于启动时间和停止时间之间，且频率设置为 15 分钟，那么任务的首次执行将在任务调度后立即开始，且下次执行将发生在 15 分钟后。</li>
+<li>但是，如果当前时间不在启动时间和停止时间之间，那么任务将等待下次开始时间再执行，可能是当天，也可能是第二天。例如，如果当前时间为凌晨 1:00，而下次开始时间为晚上 7:00 (19:00)，那么任务将在当天的 19:00 开始。</li></ul></span></div></div>
+<p>要添加新任务：</p>
+<p></p>
+<ol type="1">
+<li>从“任务调度”页面，单击<strong>添加新任务</strong>。</li>
+<li>单击<strong>要添加哪类任务？</strong>下方的<strong>任务</strong>，然后单击<strong>下一步</strong>。</li>
+<li>在<strong>任务名称</strong>字段中输入名称。例如：<samp>MyTask</samp>。</li>
+<li>从<strong>任务组</strong>列表选择类别。</li>
+<li>在文本字段中添加新任务的描述，然后单击<strong>下一步</strong>。</li>
+<li>指定可允许任务运行的时间范围，例如在每天上午 10 点 (10:00) 到下午 6 点 (18:00) 之间的每个小时。<ol type="a">
+<li>指定时间间隔的开始时间，使用 24 小时制格式：<samp class="xph">hh:mm:ss</samp> 例如：<samp class="xph">10:00:00</samp></li>
+<li>指定时间间隔的停止时间，使用 24 小时制格式：<samp class="xph">hh:mm:ss</samp> 例如：<samp class="xph">18:00:00</samp>。
+还可以指定 <samp class="xph">NEVER</samp>。</li>
+<li>指定在允许的时间间隔内任务可运行的频率（以天、小时和分钟表示）：<samp class="xph">d</samp> 天 <samp class="xph">h</samp> 小时 <samp class="xph">m</samp> 分钟 例如：0 天 1 小时 00 分钟。</li></ol></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>指定任务要运行的命令语句。例如，如果您要删除杂项任务，可以输入以下语句：
+<pre class="xmp"><code>delete from ph_task where tk_group='MISC'</code></pre></li>
+<li>单击<strong>下一步</strong>。此时将显示确认页面。</li>
+<li>验证每个选择的条目：<ul>
+<li>如果条目正确，请单击<strong>完成</strong>以确认并创建任务。</li>
+<li>单击<strong>返回</strong>以返回到先前的页面，来更正错误的值。</li></ul></li></ol>
+<h3 id="dqx1ids_oat_047"><a href="#ToC_96">添加新传感器</a></h3>
+<p></p>
+<ol type="1">
+<li>从“任务调度”页面，单击<strong>添加新任务</strong>。</li>
+<li>单击<strong>要添加哪类任务？</strong>下方的<strong>传感器</strong>，然后单击<strong>下一步</strong>。</li>
+<li>在<strong>传感器名称</strong>字段中输入名称。例如：<samp>MySensor</samp>。</li>
+<li>从<strong>传感器组</strong>列表选择类别。</li>
+<li>在文本字段中添加新任务的描述，然后单击<strong>下一步</strong>。</li>
+<li>指定可允许传感器运行的时间范围，例如每天上午 10:00 到下午 6:00 之间的每个小时。
+
+<ol type="a">
+<li>指定时间间隔的开始时间，使用 24 小时时钟格式：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">10:00:00</samp></li>
+<li>指定时间间隔的停止时间，使用 24 小时时钟格式：<samp class="xph">hh:mm:ss</samp>。例如：<samp class="xph">18:00:00</samp></li>
+<li>指定在允许的时间间隔内任务运行的频率（以天、小时和分钟表示）：<samp class="xph">d</samp> 天 <samp class="xph">h</samp> 小时 <samp class="xph">m</samp> 分钟。例如：0 天 1 小时 00 分钟。</li>
+<li>指定数据删除时间（以天、小时和分钟表示）：<samp class="xph">d</samp> 天 <samp class="xph">h</samp> 小时 <samp class="xph">m</samp> 分钟。例如：1 天 0 小时 0 分钟。</li></ol></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>在<strong>结果表名</strong>字段中，指定用于保留传感器数据的结果表名。例如：<samp class="xph">MyResults</samp></li>
+<li>单击<strong>下一步</strong>。</li>
+<li>通过在 <strong>SQL 语句</strong>字段中输入列名和定义，完成结果表的 SQL 语句。例如，如果您要收集表 TaskA_ReturnCode 中 taskA（其 task_id 为 10）的返回码，可以输入以下 SQL 语句：
+<pre class="xmp"><code>create table TaskA_ReturnCode(task_name varchar(20), errorcode integer)</code></pre></li>
+<li>指定传感器要运行的命令语句。例如：<pre class="xmp"><code>insert into TaskA_ReturnCode values('TaskA', (select run_retcode from ph_run where run_task_id=10))</code></pre></li>
+<li>验证每个选择的条目。
+
+<ul>
+<li>如果条目正确，请单击<strong>完成</strong>以确认并创建传感器。</li>
+<li>单击<strong>返回</strong>以返回到先前的页面，来更新任何错误的值。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_075"><a href="#ToC_97">启用调度程序任务</a></h2>
+<div>
+<p>启用已禁用的调度程序任务。</p></div>
+<p>
+<p>要启用调度程序任务：</p></p>
+<p></p>
+<ol type="1">
+<li>展开<strong>任务调度程序</strong> &gt; <strong>调度程序</strong>。</li>
+<li>单击任务。此时将显示任务的<strong>任务详细信息</strong>页面。</li>
+<li>选择<strong>启用任务</strong>。</li>
+<li>单击<strong>保存</strong>。</li></ol>
+<h2 id="dqx1ids_oat_076"><a href="#ToC_98">更改调度程序任务的允许时间间隔</a></h2>
+<p>
+<p>允许时间间隔是任务可运行的时间范围，例如在上午 10:00 到下午 6:00 之间。</p></p>
+<p></p>
+<ol type="1">
+<li>展开<strong>任务调度程序</strong> &gt; <strong>调度程序</strong>。此时将在“任务详细信息”页面上显示具有调度详细信息的任务列表。</li>
+<li>单击任务名称以更改频率，或调度运行时间的细节。您可以更新任务运行的天或时间。</li>
+<li>指定时间间隔的开始时间，使用 24 小时时钟格式：<samp class="xph">hh:mm:ss</samp>。例如，指定 <samp class="xph">10:00:00</samp> 表示在早上 10 点进行。</li>
+<li>指定时间间隔的停止时间，使用 24 小时时钟格式：<samp class="xph">hh:mm:ss</samp>。例如，指定 <samp>18:00:00</samp> 表示在晚上 6 点进行。</li>
+<li>指定在允许的时间间隔内任务可运行的频率（以天、小时和分钟表示）：<samp class="xph">d</samp> 天 <samp class="xph">h</samp> 小时 <samp class="xph">m</samp> 分钟；例如：<samp class="xph">0</samp> 天 <samp class="xph">1</samp> 小时 <samp class="xph">00</samp> 分钟。</li>
+<li>对<em>不</em>希望任务运行的那些每周日期选择<strong>禁用</strong>。</li>
+<li>单击<strong>保存</strong>以保存更改。</li></ol>
+<h2 id="dqx1ids_oat_015"><a href="#ToC_99">删除调度程序任务</a></h2>
+<p></p>
+<div>
+<div class="note-noindent" id="wq294">
+<span class="notetitle">限制：</span><span class="notebody">无法删除系统任务。</span></div></div>
+<p>要删除用户定义的任务：</p>
+<p></p>
+<ol type="1">
+<li>展开<strong>任务调度程序</strong> &gt; <strong>调度程序</strong>。</li>
+<li>单击<strong>删除任务</strong>。<strong>删除任务</strong>列将添加至“Cron 任务列表”表中。每个任务都有一个<strong>删除</strong>按钮；对于系统任务，将停用“删除”按钮。</li>
+<li>找到任务名称并单击<strong>删除</strong>。如果任务是针对传感器的，将提示您删除与传感器关联的结果表。</li>
+<li>确定对表所执行的操作。
+
+<ul>
+<li>单击<strong>是</strong>可删除结果表以及任务。</li>
+<li>单击<strong>否</strong>可在删除任务时保留表。</li>
+<li>单击<strong>取消</strong>可取消删除任务和表。</li></ul></li></ol>
+<h1 id="dqx1ids_oat_062"><a href="#ToC_100">如何浏览性能信息？</a></h1>
+<h2 id="dqx1ids_oat_064"><a href="#ToC_101">使用 SQL 资源管理器分析查询性能</a></h2>
+<p>
+<p>您必须启用 SQL 跟踪才能使用 SQL 资源管理器。</p>
+<p>使用 SQL 资源管理器执行向下钻取查询。SQL 资源管理器使用 SQL 跟踪来收集有关系统上执行的每个 SQL 语句的统计信息，并显示语句历史记录。以下各部分说明如何启用 SQL 跟踪和使用 SQL 资源管理器：</p></p>
+<h3 id="dqx1ids_oat_091"><a href="#ToC_102">启用 SQL 跟踪</a></h3>
+<p></p>
+<ol type="1">
+<li>浏览至<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。如果 SQL 跟踪未运行，那么将显示以下消息：<samp>SQL TRACING 当前已关闭。请使用“管理”选项重新启用</samp>。</li>
+<li>单击<strong>管理</strong>以浏览至“SQL 跟踪概要文件”页面。</li>
+<li>从<strong>跟踪状态</strong>列表，选择<strong>启用</strong>。</li>
+<li>单击<strong>保存</strong>以启用 SQL 跟踪。</li></ol>
+<h3 id="dqx1ids_oat_092"><a href="#ToC_103">关闭 SQL 跟踪</a></h3>
+<p></p>
+<ol type="1">
+<li>浏览至<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。如果 SQL 跟踪已启用，您可以选择 SQL 资源管理器的各选项卡。如果 SQL 跟踪已关闭，那么将显示以下消息：<samp>SQL TRACING 当前已关闭。请使用“管理”选项重新启用</samp>。</li>
+<li>单击<strong>跟踪管理</strong>选项卡以浏览至“SQL 跟踪概要文件”页面。</li>
+<li>从<strong>跟踪状态</strong>列表，选择<strong>关闭</strong>。</li>
+<li>单击<strong>保存</strong>以禁用 SQL 跟踪。</li></ol>
+<h3 id="dqx1ids_oat_048"><a href="#ToC_104">指定 SQL 跟踪的选项</a></h3>
+<p>
+<p>SQL 资源管理器显示了有关在当前服务器上执行的 SQL 语句的详细信息。您可以从<strong>跟踪管理</strong>页面，指定在 SQL 资源管理器中跟踪的信息以及可用的信息。</p></p>
+<p>
+<p>要设置 SQL 资源管理器的详细信息：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong> &gt; <strong>跟踪管理</strong>。</li>
+<li>指定以下 SQL 跟踪选项：
+<ul>
+<li>选择全局或用户跟踪方式。IBM Informix 11.50.xC3 和更高版本会显示此选项。有关更多信息，请参阅<a href="#dqx1ids_oat_095">跟踪方式</a>。</li>
+<li>选择<strong>表名</strong>复选框，以在跟踪信息中包含表的名称。</li>
+<li>选择<strong>过程堆栈</strong>复选框，以在跟踪信息中包含过程堆栈。</li>
+<li>选择<strong>主变量</strong>复选框，以在跟踪信息中包含有关主变量的信息。</li>
+<li>选择<strong>清除跟踪缓冲区</strong>复选框，以在更改并保存跟踪选项时清空跟踪缓冲区。</li>
+<li>输入要跟踪的语句数（介于 500 到 2147483647 之间）。</li>
+<li>输入每个 SQL 语句的最大跟踪大小（以字节为单位，介于 512 到 102400 之间）。</li></ul></li>
+<li>单击<strong>保存</strong>。</li></ol>
+<h4 id="dqx1ids_oat_095">跟踪方式</h4>
+<p>
+<p>IBM Informix 11.50.xC3 和更高版本会显示<strong>跟踪方式</strong>选项。</p></p>
+<p></p>
+<ul>
+<li>选择<strong>全局</strong>可跟踪整个服务器的 SQL 语句。SQL 资源管理器可显示除<strong>数据库跟踪</strong>和<strong>用户跟踪</strong>列表内指定的项目之外的所有数据库和用户会话的信息。</li>
+<li>选择<strong>用户</strong>可跟踪数据库或用户会话列表的 SQL 语句。SQL 资源管理器只能显示在<strong>数据库跟踪</strong>和<strong>用户跟踪</strong>列表中指定的数据库和用户会话的信息，除非这些列表为空。
+
+<ul>
+<li>要显示<strong>数据库跟踪</strong>或<strong>用户跟踪</strong>列表，请单击<strong>显示</strong>。要隐藏这些列表，请单击<strong>隐藏</strong>。</li>
+<li>要修改<strong>数据库跟踪</strong>列表：<ul>
+<li>添加数据库：从<strong>未跟踪的数据库</strong>列表选择数据库名称，并单击 <strong>+</strong>。数据库名称将显示在<strong>跟踪的数据库</strong>列表中。</li>
+<li>删除数据库：从<strong>跟踪的数据库</strong>列表选择数据库名称，并单击 <strong>-</strong>。数据库名称将显示在<strong>未跟踪的数据库</strong>列表中。</li></ul></li>
+<li>要修改<strong>用户跟踪</strong>列表：<ul>
+<li>添加用户：从<strong>未跟踪的数据库</strong>列表，选择数据库名称，并单击 <strong>+</strong>。数据库名称将显示在<strong>跟踪的数据库</strong>列表中。</li>
+<li>删除用户：从<strong>跟踪的数据库</strong>列表，选择数据库名称，并单击 <strong>-</strong>。数据库名称将显示在<strong>未跟踪的数据库</strong>列表中。</li></ul></li></ul></li></ul>
+<h3 id="dqx1ids_oat_049"><a href="#ToC_106">暂挂 SQL 跟踪</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq308">
+<span class="notetitle">先决条件：</span><span class="notebody">暂挂 SQL 跟踪而不释放资源的选项需要 IBM Informix 11.50.xC3 及更高版本。</span></div></div>
+<p>
+<p>要暂挂 SQL 跟踪：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong> &gt; <strong>跟踪管理</strong>。</li>
+<li>在<strong>跟踪状态</strong>列表中，单击<strong>暂挂</strong>。</li>
+<li>单击<strong>保存</strong>。跟踪即被暂挂。</li></ol>
+<h3 id="dqx1ids_oat_050"><a href="#ToC_107">从暂挂状态恢复 SQL 跟踪</a></h3>
+<p></p>
+<div>
+<div class="note-noindent" id="wq312">
+<span class="notetitle">先决条件：</span><span class="notebody">将 SQL 跟踪从暂挂状态恢复的选项需要 IBM Informix 11.50.xC3 及更高版本。</span></div></div>
+<p>
+<p>要恢复 SQL 跟踪：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong> &gt; <strong>跟踪管理</strong>。</li>
+<li>在<strong>跟踪状态</strong>列表中，单击<strong>恢复</strong>。</li>
+<li>单击<strong>保存</strong>。跟踪即被恢复。</li></ol>
+<h3 id="dqx1ids_oat_105.dita"><a href="#ToC_108">在实时数据和保存的数据间切换</a></h3>
+<div>
+<p>在实时 SQL 跟踪数据和在您指定的时间段内保存的 SQL 跟踪数据间切换。</p></div>
+<p>
+<p>要查看 SQL 跟踪数据，必须启用 SQL 跟踪。在<strong>跟踪管理</strong>页面上，将<strong>跟踪状态</strong>设置为<strong>启用</strong>。请参阅<a href="#dqx1ids_oat_091">启用 SQL 跟踪</a>。</p>
+<p>要切换至保存的数据：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开<strong>性能分析</strong>，然后单击 <strong>SQL 资源管理器</strong>。</li>
+<li>要显示历史 SQL 跟踪数据，请单击<strong>切换至保存的数据</strong>。</li>
+<li>要设置历史数据的时间段，请在<strong>开始</strong>和<strong>结束</strong>字段中指定日期和时间。</li>
+<li>要返回至当前数据，请单击<strong>切换至实时数据</strong>。</li></ol>
+<h3 id="dqx1ids_oat_065"><a href="#ToC_109">从活动摘要向下钻取</a></h3>
+<div>
+<p>使用向下钻取查询来复审 SQL 语句的统计信息。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq319">
+<span class="notetitle">先决条件：</span><span class="notebody">对于查询向下钻取，SQL 跟踪必须设置为<strong>启用</strong>。
+请参阅<a href="#dqx1ids_oat_091">启用 SQL 跟踪</a>。</span></div></div>
+<p>
+<p>要向下钻取 SQL 语句：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。此时将显示“SQL 资源管理器”页面。</li>
+<li>单击某个 SQL 语句类型的向下钻取图标，或单击<strong>事务</strong>选项卡，然后单击某个事务的向下钻取图标。您可以单击向下钻取图标，继续显示更多详细信息。</li></ol>
+<h3 id="dqx1ids_oat_067"><a href="#ToC_110">按事务向下钻取</a></h3>
+<div>
+<p>使用向下钻取查询来复审事务的 SQL 语句的统计信息。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq323">
+<span class="notetitle">先决条件：</span><span class="notebody">对于查询向下钻取，SQL 跟踪必须设置为<strong>启用</strong>。
+请参阅<a href="#dqx1ids_oat_091">启用 SQL 跟踪</a>。</span></div></div>
+<p>
+<p>要按事务向下钻取：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。此时将显示“SQL 资源管理器”页面。</li>
+<li>要显示 100 条最新事务的事务时间列表，请单击<strong>事务</strong>选项卡。</li>
+<li>单击事务的向下钻取图标。此时将显示已对事务运行的 SQL 语句的列表。单击向下钻取图标以显示语句的统计信息。</li></ol>
+<h3 id="dqx1ids_oat_066"><a href="#ToC_111">按 SQL 语句类型向下钻取</a></h3>
+<div>
+<p>使用按语句类型的向下钻取查询，复审 SQL 语句的统计信息。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq327">
+<span class="notetitle">先决条件：</span><span class="notebody">对于查询向下钻取，SQL 跟踪必须设置为<strong>启用</strong>。
+请参阅<a href="#dqx1ids_oat_091">启用 SQL 跟踪</a>。</span></div></div>
+<p>
+<p>要按 SQL 类型向下钻取：</p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。此时将显示“SQL 资源管理器”页面。系统上已执行的语句将按类型以及每个 SQL 语句组的摘要统计信息分组。</li>
+<li>单击语句类型的向下钻取图标。此时将显示所运行的 SQL 语句列表。您可以单击语句的向下钻取图标，然后单击执行语句的向下钻取图标，来继续向下钻取。此时将显示语句的统计信息。</li></ol>
+<h2 id="dqx1ida_oat_104"><a href="#ToC_112">优化 SQL 语句</a></h2>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 创建外部伪指令以优化 SQL 语句。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq331">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>在数据库服务器 <samp>onconfig</samp> 文件中，将 EXT_DIRECTIVES 配置参数设置为 1 或 2，这样就可以保存外部伪指令。更改 EXT_DIRECTIVES 配置参数后，请重新启动数据库服务器以使更改生效。</li>
+<li>确保已启用 SQL 跟踪，并已在<strong>跟踪管理</strong>页面上选中<strong>表名</strong>选项。请参阅<a href="#dqx1ids_oat_091">启用 SQL 跟踪</a>和<a href="#dqx1ids_oat_048">指定 SQL 跟踪的选项</a>。</li></ul></span></div></div>
+<p>
+<p>您可以创建外部伪指令以应用于 SQL 语句。伪指令是指示查询优化器如何执行查询的注释。外部伪指令提供了一种用于更改 SQL 语句的查询执行计划的方法。向 SQL 语句应用外部伪指令后，SQL 语句的查询执行计划将在您每次重新运行 SQL 语句时进行相应更改。</p>
+<p></p>
+<div>
+<div class="note-noindent" id="wq333">
+<span class="notetitle">要点：</span><span class="notebody">当您重新运行 SQL 语句时，该语句必须与您将伪指令应用于的 SQL 语句完全匹配。例如，它必须具有相同的字母大写格式和相同的间隔。</span></div></div>
+<p>要创建外部伪指令：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，单击<strong>性能分析</strong> &gt; <strong>SQL 资源管理器</strong>。</li>
+<li>向下钻取至 SQL 语句。<ol type="a">
+<li>单击 <strong>SQL</strong> 选项卡。</li>
+<li>单击列表中的 SQL 语句。</li>
+<li>单击 SQL 语句执行列表中的任意行。</li></ol></li>
+<li>单击<strong>优化</strong>选项卡。</li>
+<li>单击<strong>添加</strong>。</li>
+<li>在<strong>添加伪指令</strong>页面上，选择伪指令。需要时可选择表和索引。要为 SQL 语句添加更多伪指令，请单击<strong>添加其他</strong>，或单击<strong>添加</strong>以关闭页面。</li>
+<li>指定如何应用伪指令，然后单击<strong>应用</strong>。缺省值为<strong>非活动</strong>：不对 SQL 语句应用伪指令。</li></ol>
+<h2 id="dqx1ids_oat_068"><a href="#ToC_113">浏览用户会话</a></h2>
+<p>
+<p>您可以使用“会话资源管理器”查看并停止用户会话。</p>
+<p>要查看服务器上当前正在运行的会话，请展开<strong>性能分析</strong> &gt; <strong>会话资源管理器</strong>。</p></p>
+<p>
+<p>要查看服务器上运行的任何会话：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>会话资源管理器</strong>。</li>
+<li>单击会话标识编号 (SID)。此时将打开<strong>会话信息</strong>页面。该页面包含有关会话的统计信息，包括用户名、用户连接到服务器的时间、使用的内存和打开的表。</li>
+<li>单击选项卡来显示有关会话的其他性能信息：<table id="wq340" width="90%" summary="此表中的每一行都描述了供选择的一个选项。" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq341" align="left"><strong>选项卡名称</strong></th>
+<th id="wq342" align="left">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq341"><strong>SQL</strong></td>
+<td headers="wq342">会话运行的 SQL 命令。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>锁定</strong></td>
+<td headers="wq342">会话持有的锁定。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>线程</strong></td>
+<td headers="wq342">会话运行的线程。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>内存</strong></td>
+<td headers="wq342">会话使用的内存。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>网络</strong></td>
+<td headers="wq342">会话的 I/O 数据。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>环境</strong></td>
+<td headers="wq342">会话的环境变量值。</td>
+</tr>
+<tr>
+<td headers="wq341"><strong>概要文件</strong></td>
+<td headers="wq342">有关会话的摘要性能信息。</td>
+</tr>
+</tbody>
+</table></li></ol>
+<h3 id="dqx1ids_oat_056"><a href="#ToC_114">停止用户会话</a></h3>
+<p>
+<p>要停止用户会话：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>会话资源管理器</strong>。</li>
+<li>在会话行的最后一个列中，单击停止图标。</li></ol>
+<h2 id="dqx1ids_oat_169"><a href="#ToC_115">查看性能历史记录</a></h2>
+<div>
+<p>查看概要信息字段上的历史数据，包括自动检查点、磁盘和缓冲区活动、内存、虚拟处理器和 B 型树扫描程序。</p></div><a id="idx93"></a>
+<p>
+<p>您可以查看一段时间内特定字段的数据，并比较多个服务器上的性能。例如，您可以比较服务器上的磁盘读取总数和磁盘写入总数，或比较两个服务器上的磁盘写入总数。</p></p>
+<p>
+<p>要查看性能历史记录：</p></p>
+<ol type="1">
+<li>在 OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>性能历史记录</strong>。</li>
+<li>选择要显示的字段。</li>
+<li>可选：选择最多三个其他服务器。</li></ol>
+<h2 id="dqx1ids_oat_063"><a href="#ToC_116">运行系统性能报告</a></h2>
+<div>
+<p>根据当前数据和历史数据创建系统性能报告。</p></div>
+<p>
+<p>要运行系统性能报告：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>系统报告</strong>。</li>
+<li>单击报告的数据类型所对应的选项卡：<strong>当前报告</strong>或<strong>历史报告</strong>。</li>
+<li>指定报告：<ul>
+<li>要查看特定报告，请单击报告的名称；例如<strong>磁盘空间利用率</strong>。</li>
+<li>要在组合报告中按类型查看报告，请选择报告类型，然后单击<strong>创建报告</strong>。例如，选择<strong>磁盘</strong>来查看关于磁盘利用率的报告。报告将在新窗口中显示。</li>
+<li>要在组合报告中查看多个报告，请选中这些报告的复选框，然后单击<strong>创建报告</strong>。报告将在新窗口中显示。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_173"><a href="#ToC_117">监视扩展数据块</a></h2>
+<div>
+<p>查看当前数据库服务器上数据库中的扩展数据块数量的图形。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq351">
+<span class="notetitle">先决条件：</span><span class="notebody">要显示图形，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC4 或更高版本。</span></div></div>
+<p>
+<p>要监视扩展数据块：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>系统报告</strong>。</li>
+<li>单击<strong>图形</strong>选项卡。</li>
+<li>在<strong>对象类型</strong>列表中，选择<strong>扩展数据块</strong>。</li></ol>
+<p>
+<p>此类型的图形也称为热图或树形图。
+这些图形使用 IBM ILOG Elixir&reg; 树形图控件进行创建。</p></p>
+<h2 id="dqx1ids_oat_174"><a href="#ToC_118">监视缓冲池</a></h2>
+<div>
+<p>查看当前数据库服务器上数据库缓冲池中的高速缓存页面百分比的图形。</p></div>
+<p></p>
+<div>
+<div class="note-noindent" id="wq356">
+<span class="notetitle">先决条件：</span><span class="notebody">要显示图形，OpenAdmin Tool (OAT) for Informix 需要 IBM Informix 11.70.xC4 或更高版本。</span></div></div>
+<p>
+<p>要监视缓冲池：</p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，单击<strong>性能分析</strong> &gt; <strong>系统报告</strong>。</li>
+<li>单击<strong>图形</strong>选项卡。</li>
+<li>在<strong>对象类型</strong>列表中，选择<strong>缓冲池</strong>。</li></ol>
+<p>
+<p>此类型的图形也称为热图或树形图。
+这些图形使用 IBM ILOG Elixir 树形图控件进行创建。</p></p>
+<h2 id="dqx1ida_oat_117"><a href="#ToC_119">使用 <strong><samp>onstat</samp></strong> 实用程序监视服务器</a></h2>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 中的 <strong><strong><samp>onstat</samp></strong></strong> 实用程序显示数据库服务器的性能和状态信息。</p></div>
+<p>
+<p>可以使用 <strong><strong><samp>onstat</samp></strong></strong> 实用程序检查数据库服务器的状态和监视其活动。</p>
+<p>要使用 <strong><samp>onstat</samp></strong> 实用程序：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，展开<strong>性能分析</strong>，然后单击 <strong>onstat 实用程序</strong>。</li>
+<li>输入 <strong><strong><samp>onstat</samp></strong></strong> 选项。无需输入 <samp class="xph">onstat</samp>。</li>
+<li>单击<strong>运行</strong>。</li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关参考</strong>：</li>
+<li><a href="http://pic.dhe.ibm.com/infocenter/informix/v121/topic/com.ibm.adref.doc/ids_adr_1063.htm#ids_adr_1063" target="_blank">onstat Portal: onstat Utility Commands Sorted by Functional Category (Administrator's Reference)</a></li></ul>
+<h1 id="dqx1ids_oat_012"><a href="#ToC_120">如何管理数据库和表？</a></h1>
+<h2 id="dqx1ids_oat_013"><a href="#ToC_121">复审服务器上的数据库</a></h2>
+<p>
+<p>展开 <strong>SQL Toolbox</strong>，然后单击<strong>数据库</strong>。页面将显示当前服务器上的数据库列表，以及六个最大的数据库所用空间的图表。</p></p>
+<h2 id="dqx1ids_oat_014"><a href="#ToC_122">连接到数据库</a></h2>
+<p>
+<p>当您连接到数据库后，可以复审数据库表、模式、过程和例程。</p>
+<p>要连接到数据库：</p></p>
+<p></p>
+<ol type="1">
+<li>展开 <strong>SQL Toolbox</strong>，然后单击<strong>数据库</strong>。页面将显示当前服务器上的数据库列表，以及六个最大的数据库所用空间的图表。</li>
+<li>在<strong>数据库</strong>列表中，单击数据库的名称。在<strong>表</strong>页面上，将显示数据库中表的列表。所选数据库的名称将显示在页面右上方的<strong>数据库</strong>字段中。</li>
+<li>可选：要包含目录表名，请选择<strong>包含数据库目录表？</strong>，并单击<strong>提交</strong>。此时将显示目录表和用户表的组合列表。
+
+<ul>
+<li>要浏览表，请单击<strong>浏览</strong>列中的图标。</li>
+<li>要查看表列的信息，请单击<strong>名称</strong>列中的表。</li>
+<li>要查看表的分区信息，请单击 <strong>PartNum</strong> 列中的值。</li></ul></li></ol>
+<h2 id="dqx1ids_oat_094"><a href="#ToC_123">查看模式</a></h2>
+<p>
+<p>您必须已连接到数据库。请参阅<a href="#dqx1ids_oat_014">连接到数据库</a>。</p>
+<p>要查看模式：</p></p>
+<p></p>
+<ol type="1">
+<li>展开 <strong>SQL ToolBox</strong>，然后单击<strong>模式浏览器</strong>。
+
+
+<p>此时将显示表以及它们的模式的列表。已连接的数据库的名称将显示在页面右上方的<strong>数据库</strong>字段中。</p></li>
+<li>选择要查看的表的浏览图标。
+
+<p>此时将显示表的 SELECT * 语句的结果集。</p></li></ol>
+<h2 id="dqx1ids_oat_069"><a href="#ToC_124">复审数据库的过程和例程</a></h2>
+<p>
+<p>您必须已连接到数据库。请参阅<a href="#dqx1ids_oat_014">连接到数据库</a>。</p>
+<p>要复审数据库的过程和例程：</p></p>
+<p></p>
+<ol type="1">
+<li>展开 <strong>SQL ToolBox</strong>，然后单击<strong>模式浏览器</strong>。
+
+
+<p>此时将显示表以及它们的模式的列表。已连接的数据库的名称将显示在页面右上方的<strong>数据库</strong>字段中。</p></li>
+<li>选择 <strong>SPL/UDR</strong> 选项卡。
+
+<p>此时将显示<strong>过程/功能</strong>列表。</p></li></ol>
+<h2 id="dqx1ids_oat_106"><a href="#ToC_125">执行标准 SQL 操作：查询、插入、更新、删除</a></h2>
+<div>
+<p>通过使用“按示例查询”创建一个简单查询，来显示表中的特定行，然后更新或删除行，或在表中插入新行。</p></div><a id="idx94"></a><a id="idx95"></a><a id="idx96"></a><a id="idx97"></a>
+<h3 id="dqx1ids_oat_109"><a href="#ToC_126">执行查询</a></h3>
+<div>
+<p>通过使用“按示例查询”创建一个简单查询来显示表中的特定行。</p></div><a id="idx98"></a><a id="idx99"></a><a id="idx100"></a>
+<p>
+<p>您可以对表执行查询，然后复审、更新或删除作为结果显示的行。</p>
+<p>要执行查询：</p></p>
+<p></p>
+<ol type="1">
+<li>在 IBM OpenAdmin Tool (OAT) for Informix 的菜单上，展开 <strong>SQL ToolBox</strong>，然后单击<strong>按示例查询</strong>。</li>
+<li>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。<div>
+<div class="note-noindent" id="wq376">
+<span class="notetitle">注：</span><span class="notebody">该列表仅显示可在“按示例查询”(QBE) 中处理的表。不会显示无法在 QBE 中处理的表，包括系统表或系统数据库（<strong>sysadmin</strong> 数据库除外）中的表，以及包含 QBE 不支持的数据类型（BLOB、BYTE、CLOB、DISTINCT TYPES、LIST、MULTISET、NCHAR、NVARCHAR、ROW、SET、TEXT 和 UDT）的表。</span></div></div>
+
+<p>所选表中的列将显示在<strong>查询</strong>页面上。</p></li>
+<li>要输入查询条件，请单击列旁边的按钮以打开<strong>输入查询条件</strong>页面。</li>
+<li>从运算符列表选择运算符，并输入值，然后单击<strong>添加</strong>。
+
+<p>此时表中将显示查询条件。当您添加其他条件时，请先选择 <strong>AND</strong> 或 <strong>OR</strong>。</p></li>
+<li>单击<strong>确定</strong>。
+
+<p>页面将关闭，并显示该列的查询条件。</p></li>
+<li>要执行查询，请单击<strong>提交</strong>。
+
+<p>页面将显示查询结果行，一次一行。如果您执行查询，但不输入任何查询条件，那么将会显示表中的所有行。</p>
+
+<p>要在各行间滚动，请使用方向按钮。</p></li></ol>
+<h3 id="dqx1ids_oat_110"><a href="#ToC_127">更新表行</a></h3>
+<div>
+<p>使用“按示例查询”更新数据库服务器上的表行。</p></div><a id="idx101"></a><a id="idx102"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq378">
+<span class="notetitle">注：</span><span class="notebody">只有具备唯一标识的行才能使用 IBM OpenAdmin Tool (OAT) for Informix 中的“按示例查询”进行更新。
+如果表未分段，唯一标识包括主键、唯一约束、唯一索引和行标识。</span></div></div>
+<p>要更新数据库服务器上的表行：</p>
+<p></p>
+<ol type="1">
+<li>使用“按示例查询”执行查询。请参阅<a href="#dqx1ids_oat_109">执行查询</a>。</li>
+<li>如有必要，请使用方向按钮滚动至该行。</li>
+<li>在字段中输入行的更改。</li>
+<li>单击<strong>更新行</strong>。
+
+<p>此时将在数据库服务器上更新该行。</p></li></ol>
+<h3 id="dqx1ids_oat_111"><a href="#ToC_128">删除表行</a></h3>
+<div>
+<p>使用“按示例查询”删除数据库服务器上的表行。</p></div><a id="idx103"></a><a id="idx104"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq382">
+<span class="notetitle">注：</span><span class="notebody">只有具备唯一标识的行才能使用 IBM OpenAdmin Tool (OAT) for Informix 中的“按示例查询”进行删除。
+如果表未分段，唯一标识包括主键、唯一约束、唯一索引和行标识。</span></div></div>
+<p>要删除数据库服务器上的表行：</p>
+<p></p>
+<ol type="1">
+<li>使用“按示例查询”执行查询。请参阅<a href="#dqx1ids_oat_109">执行查询</a>。</li>
+<li>如有必要，请使用方向按钮滚动至该行。<div>
+<div class="note-noindent" id="wq385">
+<span class="notetitle">要点：</span><span class="notebody">当您删除某行时，将在数据库服务器上永久删除该行。不能撤销删除。</span></div></div></li>
+<li>单击<strong>删除行</strong>。
+
+<p>此时将在数据库服务器上删除该行。</p></li></ol>
+<h3 id="dqx1ids_oat_112"><a href="#ToC_129">插入表行</a></h3>
+<div>
+<p>使用 IBM OpenAdmin Tool (OAT) for Informix 中的“按示例查询”在数据库服务器上的表中插入行。</p></div><a id="idx105"></a><a id="idx106"></a>
+<p>
+<p>要在数据库服务器上的表中插入行：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT 菜单上，展开 <strong>SQL ToolBox</strong>，然后单击<strong>按示例查询</strong>。</li>
+<li>要查找表，请在<strong>查找</strong>字段中输入表名称的任何部分，然后单击<strong>搜索</strong>。也可以展开数据库来显示各表。<div>
+<div class="note-noindent" id="wq389">
+<span class="notetitle">注：</span><span class="notebody">该列表仅显示可在“按示例查询”(QBE) 中处理的表。不会显示无法在 QBE 中处理的表，包括系统表或系统数据库（<strong>sysadmin</strong> 数据库除外）中的表，以及包含 QBE 不支持的数据类型（BYTE、TEXT、BLOB、CLOB、NCHAR、NVARCHAR、SET、MULTISET、LIST、ROW、DISTINCT TYPES 和 UDT）的表。</span></div></div>
+
+<p>所选表中的列将显示在<strong>查询</strong>页面上。</p></li>
+<li>单击<strong>插入</strong>选项卡。</li>
+<li>在字段中输入值。<div>
+<div class="note-noindent" id="wq390">
+<span class="notetitle">提示：</span><span class="notebody">每个字段的悬浮式帮助标识了所需的数据类型，例如：CHAR、DECIMAL 或 DATETIME。</span></div></div></li>
+<li>单击<strong>添加行</strong>。
+
+<p>此时将在数据库服务器上的表中插入该行。</p></li></ol>
+<h1 id="dqx1ids_oat_005"><a href="#ToC_130">如何设置服务器的访问权？</a></h1>
+<h2 id="dqx1ids_oat_003"><a href="#ToC_131">添加 OAT 组</a></h2>
+<div>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 中定义数据库服务器连接组。</p></div><a id="idx107"></a>
+<p>
+<p>OAT 组提供了管理数据库服务器组以及登录到组（而不是每个单独的服务器）的方式。</p>
+<p>要添加 OAT 组：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>菜单上，展开<strong>管理连接</strong>，然后单击<strong>添加组</strong>。</li>
+<li>在<strong>组名</strong>字段中，输入组的字母数字名称。</li>
+<li>在<strong>密码</strong>字段中，输入字母数字密码。</li>
+<li>可选：要指定该组具有只读特权，请选择<strong>只读</strong>。<div>
+<div class="note-noindent" id="wq394">
+<span class="notetitle">要点：</span><span class="notebody">只读组可阻止用户修改服务器；但不会阻止用户访问服务器中包含的可能敏感的数据。请将只读组的成员资格限制为有权在服务器上查看详细数据的用户。</span></div></div>
+
+<p>有关只读组的限制的更多信息，请参阅<a href="#dqx1ids_oat_051">只读组限制</a>。</p></li>
+<li>单击<strong>添加</strong>以保存组信息并添加组。</li></ol>
+<p>
+<p>接下来，将服务器连接添加至该组。请参阅<a href="#dqx1ids_oat_002">创建服务器连接</a>。</p></p>
+<h2 id="dqx1ids_oat_002"><a href="#ToC_132">创建服务器连接</a></h2>
+<div>
+<p>将服务器连接添加到 IBM OpenAdmin Tool (OAT) for Informix 中定义的数据库服务器连接组中。</p></div>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>菜单上，展开<strong>管理连接</strong>，然后单击<strong>添加连接</strong>。</li>
+<li>在<strong>组名</strong>列表中，选择要将服务器连接添加到的 OAT 组。</li>
+<li>输入连接信息。<div>
+<div class="note-noindent" id="wq398">
+<span class="notetitle">要点：</span><span class="notebody">如果要使用 V3.0 之前的 Informix Connect 或 IBM Informix Client Software Development Kit (Client SDK) 版本，那么对于添加的每个新连接，请确保在 Web 服务器计算机上有该连接的对应 SQLHOSTS 条目。</span></div></div></li>
+<li>单击<strong>保存</strong>以添加连接。</li></ol>
+<h2 id="dqx1ids_oat_114"><a href="#ToC_133">导出连接信息</a></h2>
+<div>
+<p>将 IBM OpenAdmin Tool (OAT) for Informix 中数据库服务器连接组的连接信息导出到 XML 文件。</p></div>
+<p>
+<p>要导出连接信息：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上，单击<strong>管理</strong>。此时将显示 OAT 管理菜单和页面。</li>
+<li>单击<strong>管理连接</strong> &gt; <strong>连接管理</strong>。</li>
+<li>要在 XML 文件中包含用户名和密码，请选择<strong>在导出的 XML 文件中包含敏感的密码信息</strong>。缺省情况下，导出的信息<em>不</em>包含 OAT 组用户名和密码。</li>
+<li>单击<strong>导出至 XML</strong>。</li></ol>
+<h2 id="dqx1ids_oat_113"><a href="#ToC_134">导入连接信息</a></h2>
+<div>
+<p>从 XML 文件导入 IBM OpenAdmin Tool (OAT) for Informix 中数据库服务器连接组的连接信息。</p></div>
+<p>
+<p>导入的连接文件必须具有与 OAT 导出的连接文件相同的格式。单击<strong>连接管理</strong>页面上的帮助按钮，以获取文件的描述。</p>
+<p>要导入连接信息：</p></p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上，单击<strong>管理</strong>。此时将显示 OAT 管理菜单和页面。</li>
+<li>单击<strong>管理连接</strong> &gt; <strong>连接管理</strong>。</li>
+<li>在<strong>从 XML 文件导入连接信息</strong>下，浏览包含连接信息的 XML 文件。</li>
+<li>要替换现有连接数据，请选择<strong>除去所有现有连接信息</strong>。或者，清除该选项，以将信息附加至现有连接数据。</li>
+<li>单击<strong>从 XML 导入</strong>。</li></ol>
+<h2 id="dqx1ids_oat_171"><a href="#ToC_135">使用非缺省语言环境访问数据库</a></h2>
+<div>
+<p>使用缺省值英语 (en_us) 之外的语言环境管理数据库，包括多字节数据库语言环境。</p></div><a id="idx108"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq406">
+<span class="notetitle">先决条件：</span><span class="notebody">
+<ul>
+<li>对于通过 OAT 访问的所有数据库，IBM OpenAdmin Tool (OAT) for Informix 需要 UTF-8 语言环境。要使用未包含在 IBM Informix Client Software Development
+Kit (Client SDK) 中的语言环境访问数据库，请使用 IBM Informix International Language Supplement (ILS) 安装该语言环境。安装 OAT 后，在安装 OAT 的机器上的 Informix Connect 或 Client SDK 目录中安装 ILS。
+在 OAT 使用的 Informix Connect 或 Client SDK 目录中使用 ILS 安装其他语言环境（包括 UTF-8 版本）。</li>
+<li>OpenAdmin Tool (OAT) 的 IBM Informix Replication 插件需要 Informix 11.70.xC4。</li>
+<li>数据库名称必须为英语字符。</li></ul></span></div></div>
+<p>
+<p>您可以使用 OAT 来查看和修改 Informix 支持的任何数据库语言环境中的数据。例如，您可以访问具有意大利语或日语语言环境的数据库。</p>
+<p>当在 Replication 插件中使用非缺省语言环境查看数据库时，请使用<strong>语言</strong>列表和<strong>语言环境</strong>列表选择相应数据库语言环境。</p></p>
+<h1 id="dqx1ids_oat_098"><a href="#ToC_136">如何配置 OAT 的安全性？</a></h1>
+<h2 id="dqx1ids_oat_072"><a href="#ToC_137">创建具有只读特权的 OAT 组</a></h2>
+<div>
+<p>在 IBM OpenAdmin Tool (OAT) for Informix 中创建数据库服务器连接组，该组的成员可以查看但不能修改服务器上的信息。</p></div><a id="idx109"></a><a id="idx110"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq409">
+<span class="notetitle">要点：</span><span class="notebody">只读组可阻止用户修改服务器；但不会阻止用户访问服务器中包含的可能敏感的数据。请将只读组的成员资格限制为有权在服务器上查看详细数据的用户。</span></div></div>
+<p>有关只读组的限制的更多信息，请参阅<a href="#dqx1ids_oat_051">只读组限制</a>。</p>
+<p>要创建具有只读特权的组：</p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>菜单上，单击<strong>管理连接</strong> &gt; <strong>添加组</strong>。</li>
+<li>在<strong>组名</strong>字段中，输入组的字母数字名称。</li>
+<li>在<strong>密码</strong>字段中，输入字母数字密码。</li>
+<li>要指定该组具有只读特权，请选择<strong>只读</strong>。</li>
+<li>单击<strong>添加</strong>以保存组信息并添加组。</li></ol>
+<p>
+<p>接下来，将服务器连接添加至该组。请参阅<a href="#dqx1ids_oat_002">创建服务器连接</a>。</p></p>
+<h3 id="dqx1ids_oat_051"><a href="#ToC_138">只读组限制</a></h3><a id="idx111"></a>
+<p>
+<p>IBM OpenAdmin Tool (OAT) for Informix 中的只读组具有以下限制：</p>
+<ul>
+<li><strong>运行状况中心</strong>：
+
+<ul>
+<li>可以查看警报，但无法修改显示哪些警报。</li>
+<li>可以使用 OAT 的 Informix Health Advisor 插件根据需要对当前概要文件运行 <strong>Health Advisor</strong>。
+可以装入概要文件，但无法添加或删除概要文件。可以复审概要文件的警报，但无法启用、禁用或修改警报。无法访问<strong>调度</strong>页面或<strong>通知</strong>页面。<strong>Health
+Advisor</strong> 插件需要 Informix 11.50.C7 或更高版本。</li></ul></li>
+<li><strong>日志</strong>：无限制。</li>
+<li><strong>任务调度程序</strong>：无法添加、修改或删除调度程序任务。</li>
+<li><strong>空间管理</strong>
+
+<ul>
+<li>可以查看存储空间和存储使用情况信息，但无法添加、修改或删除空间或块。</li>
+<li>无法添加、修改或删除存储池条目。对于存储池，OAT 需要 IBM Informix V11.70。</li>
+<li>无法从<strong>恢复日志</strong>页面访问<strong>管理</strong>页面或<strong>恢复策略</strong>页面。</li>
+<li>可以查看空间优化信息，但无法压缩、重新打包或者收缩表、索引或分段，也无法解压缩表或分段。也无法更新压缩估计值。要压缩索引，OAT 需要 Informix 12.10。</li>
+<li>无法取消分段表、分段或索引。<span id="dqx1ids_oat_051__preq-defrag-ce">对于取消分段操作，OAT 需要 Informix 11.70 或更高版本。</span></li></ul></li>
+<li><strong>服务器管理</strong> <ul>
+<li>可以通过<strong>配置</strong>页面查看 <strong>onconfig</strong> 文件的配置参数，但无法更新这些参数。</li>
+<li>可以查看但无法修改服务器的用户特权。</li>
+<li>可以查看但无法修改内部用户。对于内部用户，OAT 需要 Informix V11.70。</li>
+<li>无法执行系统验证。</li>
+<li>可查看但无法添加或删除虚拟处理器 (VP)。</li>
+<li>可查看 <strong>Auto Update Statistics</strong>(AUS) 页面，但无法修改相关的<strong>调度程序</strong>任务，刷新评估或清除以前的执行。无法配置 AUS。</li>
+<li>可以查看可信上下文，但无法创建、修改、删除、启用或禁用可信上下文。对于可信上下文，OAT 需要 Informix 11.70。</li></ul></li>
+<li><strong>性能分析</strong>
+
+<ul>
+<li>可以查看性能报告和跟踪信息，但无法启用或禁用 SQL 跟踪，也无法优化 SQL 语句。</li>
+<li>可查看但无法停止用户会话。</li></ul></li>
+<li><strong>SQL ToolBox</strong>
+
+<ul>
+<li>无法访问 <strong>SQL 编辑器</strong>（只能通过主 DBA 帐户访问）。</li>
+<li>无法使用<strong>模式浏览器</strong>浏览表。</li>
+<li>无法访问<strong>按示例查询</strong>。</li></ul></li>
+<li><strong>Replication</strong> <ul>
+<li>可以通过<strong>集群</strong>页面查看集群，但无法为高可用性集群查找新集群、停止或启动远程服务器，或者添加 SDS 服务器。</li>
+<li>可以使用 OpenAdmin Tool (OAT) 的 IBM Informix Replication 插件查看网格，但无法创建或修改网格。对于网格，OAT 需要 Informix 11.70。</li>
+<li>可以使用 Replication 插件查看域、节点和复制详细信息，但无法执行管理命令。</li>
+<li>可以使用 Replication 插件在<strong>连接管理器</strong>中查看连接单元、服务级别协议 (SLA) 和故障转移配置，但无法执行管理操作。对于连接管理器，IBM OpenAdmin
+Tool (OAT) for Informix 需要 Informix 11.70.xC3，以及随 Informix 11.70.xC3 或 IBM Informix Client Software Development
+Kit (Client SDK) 3.70.xC3 打包的连接管理器。</li></ul></li>
+<li><strong>Schema Manager</strong>：可以使用 OAT 的 Informix Schema Manager 插件查看数据库、表和相关对象，但无法创建、修改或删除这些对象。无法装入或卸载数据。</li></ul></p>
+<h2 id="dqx1ids_oat_070"><a href="#ToC_139">限制访问管理配置页面</a></h2>
+<p>
+<p>请务必限制对 IBM OpenAdmin Tool (OAT) for Informix 的“管理”页面的访问权，因为这些页面可由可以访问 OAT“登录”页面的任何人访问。这些页面用于配置 OAT，包括指定对服务器组的访问权。</p>
+<p>要阻止对这些页面进行未经授权的访问，请使用以下其中一个或全部方法：</p></p>
+<ul>
+<li><strong>必需</strong>：为用于配置 OAT 的“管理”页面提供密码保护。请参阅<a href="#dqx1ids_oat_071">为“管理”配置页面提供密码保护：Apache 示例</a>。</li>
+<li><strong>建议</strong>：限制对服务器组的访问权，包括只读组中的那些服务器。请参阅<a href="#dqx1ids_oat_072">创建具有只读特权的 OAT 组</a>。</li></ul>
+<h2 id="dqx1ids_oat_071"><a href="#ToC_140">为管理配置页面提供密码保护：Apache 示例</a></h2>
+<p>
+<p>出于安全性原因，限制对 IBM OpenAdmin Tool (OAT) for Informix 的“管理”页面的访问权。使用密码保护这些页面是很重要的，因为<strong>管理</strong>页面可从<strong>登录</strong>页面进行访问，因此对所有人开放。</p>
+<p>一种方法是使用 Web 服务器提供的内置认证。例如，您可以保护安装目录 <strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong>。</p>
+<p><strong>示例</strong>：要从 Apache 中保护 OAT 目录：</p></p>
+<p></p>
+<ol type="1">
+<li>使用 Apache 随附的 <strong>htpasswd</strong> 实用程序，在无法从 Web 访问的目录中创建密码文件。</li>
+<li>将认证伪指令添加至以下某个文件：<ul>
+<li><strong><span class="bold-italic">OATINSTALL</span>/admin/.htaccess</strong> 文件</li>
+<li><strong>httpd.conf</strong> 文件</li></ul></li>
+<li>将伪指令放在 <samp class="xph">&lt;Directory&gt;</samp> 段内。例如：<pre class="xmp"><code>&lt;Directory <em>OATINSTALL</em>/admin&gt;
+AuthType Basic
+AuthName "OAT Admin"
+AuthUserFile <em>PASSWORDFILE</em>
+Require ValidUser
+&lt;/Directory&gt;</code></pre>其中，<em>PASSWORDFILE</em> 是使用 <strong>htpasswd</strong> 实用程序在其中创建密码文件的目录。</li></ol>
+<p>
+<p>有关更多信息和示例，请参阅以下 Apache Software Foundation Web 站点上有关 Apache HTTP Server V2.0 认证、授权和存取控制的文章：<a href="http://www.apache.org" target="_blank">www.apache.org（在新窗口中打开）</a>。</p></p>
+<h2 id="dqx1ids_oat_052"><a href="#ToC_141">配置 OAT 的 HTTPS (Linux)</a></h2>
+<div>
+<p>启用 HTTPS 以保护 IBM OpenAdmin Tool (OAT) for Informix 的 Web 服务器免遭窃听、篡改、消息伪造和网络干扰。</p></div><a id="idx112"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq420">
+<span class="notetitle">先决条件：</span><span class="notebody">必须在安装了 OAT 的 Apache 服务器的计算机上安装 OpenSSL。您可以从以下 OpenSSL Project Web 站点下载并安装 OpenSSL：www.openssl.org。</span></div></div>
+<p>启用 HTTPS 时，来自 OAT 客户机的消息将进行加密，然后再发送至 OAT Web 服务器。加密可防止未经授权的用户侦听该线路并窃取敏感信息。启用 HTTPS 时，OAT 客户机也可以向 OAT 主机认证，这样未经授权的用户就无法使用错误的 Web 服务器欺骗 OAT 客户机。</p>
+<div>
+<div class="note-noindent" id="wq421">
+<span class="notetitle">要点：</span><span class="notebody">HTTPS 只加密 OAT Web 服务器与客户机之间的通信。它不会加密 IBM Informix 数据库服务器与 Web 服务器之间的通信。IBM Informix V9.4 和更高版本允许使用加密通信支持模块来加密 Informix 服务器与 OAT Web 服务器之间的数据。有关加密和 Informix 服务器的更多信息，请阅读 developerWorks&reg; Web 站点上的“Encryption over the wire with IDS 9.40”。</span></div></div>
+<p>当您将 OAT 与 IBM Informix Client Software Development Kit (Client SDK) 一起安装时，安装程序会提供运行 OAT 所需的软件，包括预配置的 Apache、PHP 和 PDO_informix。在 Linux 上，与 OAT 一起安装的 Apache Web 服务器将启用 <strong>mod_ssl</strong> 密码术模块。需要此模块才能启用 HTTPS。</p>
+<p>要在 Linux 上的 OAT 中启用 HTTPS，请完成以下步骤：
+</p>
+<ol type="1">
+<li>为 Web 服务器创建加密密钥和证书，以便 OAT 客户机可以根据您的证书认证 Web 服务器。</li>
+<li>配置 Apache 以启用 HTTPS。</li></ol><p class="indatacontent">有关启用 HTTPS 的更多信息，请阅读 developerWorks Web 站点上的“Securing
+the OpenAdmin Tool for Informix web
+server with HTTPS”。</p>
+<p>
+<h3 id="wq423">创建加密密钥</h3>
+<p>密钥用于加密和解密。它们通常成对（公用密钥和专用密钥）出现。公用密钥用于加密消息，专用密钥用于解密消息。证书是认证 Web 服务器的文档。启用 HTTPS 的 Web 服务器具有由可信认证中心签署的证书，用于验证 Web 服务器。Web 服务器启用 HTTPS 后，客户机选择与 Web 服务器之间是建立普通连接还是安全连接。要建立普通连接，客户机在其 Web 浏览器中输入 <samp>http://<em>web
+server_url</em></samp>。要建立安全连接，客户机输入 <samp>https://<em>web
+server_url</em></samp>。</p>
+<p>要生成专用和公用密钥对以及证书，请使用 OpenSSL 安装的 bin 目录中的 <samp>openssl</samp> 可执行文件。</p>
+<p>当您运行命令以生成专用密钥时，会提示您输入口令来保护专用密钥。每次运行需要使用专用密钥的命令时，您都必须重新输入该口令。例如，启动 Apache Web 服务器或使用专用密钥生成证书时，必须输入口令。在 Linux 上，出于安全性原因，请使用口令保护和加密专用密钥。</p>
+<p>要生成专用密钥，请在安装 OpenSSL 的计算机上运行以下命令：</p></p>
+<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre>
+<p>专用密钥在 <strong>privkey.pem</strong> 文件中创建。
+此文件包含 Web 服务器的解密密钥，请将其存储在安全位置。生成证书时，此文件用于生成关联的公用密钥（包含在证书中）。</p>
+<p>
+<h3 id="wq424">创建证书</h3>
+<p>创建专用密钥后，请创建证书以认证 Web 服务器的身份。要生成证书，请创建证书签署请求，并将该证书签署请求发送给可信认证中心。认证中心会发放证书。</p>
+<p>要生成证书签署请求，请运行以下命令：</p>
+<pre class="xmp"><code>openssl req -new -key privkey.pem -out cert.csr</code></pre>
+<p>有关证书签署请求的更多信息，请联系您的认证中心。</p>
+<p>或者，您也可以不通过认证中心而创建自签名证书（不过，推荐不要使用自签名证书）。</p>
+<p>要生成自签名证书，请运行以下命令：</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL 会提示您输入信息。证书存储在 <samp>cacert.pem</samp> 文件中。
+此文件将向 Web 客户机显示，以验证您的身份。它还包含 Web 客户机的公用密钥，以便可以加密通信。</p>
+<p>有关加密密钥的更多信息，请参阅 OpenSSL 文档。</p></p>
+<p>
+<h3 id="wq425">配置 Apache 以启用 HTTPS</h3>
+<p>要启用 HTTPS，请更新 Apache 配置文件和 Apache SSL 配置文件：</p></p>
+<ol type="1">
+<li>找到 Apache 配置文件。路径包含 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/httpd.conf</code></pre></li>
+<li>在 Apache 配置文件中，除去以下行的注释：<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp>。
+
+<p>缺省情况下，此行已注释掉。除去注释后，Apache SSL 配置文件将包含在 <samp>httpd.conf</samp> 文件中。</p></li>
+<li>找到 Apache SSL 配置文件。路径包含 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.4.2/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>在 Apache SSL 配置文件中，验证 SSL 端口号是否设置为可用的端口。
+
+<p>HTTPS 需要独立的 SSL 端口。缺省情况下，SSL 端口号设置为 443。如果此端口不可用，请在 <strong>Listen</strong> 伪指令和“虚拟主机”一节中更改 SSL 端口。</p></li>
+<li>在 Apache SSL 配置文件中，验证 <strong>SSLCertificateKeyFile</strong> 伪指令是否指示您所创建的专用密钥文件 <samp>privkey.pem</samp> 的正确位置</li>
+<li>验证 <strong>SSLCertificateFile</strong> 伪指令是否指示您所创建的证书文件 <samp>cacert.pem</samp> 的正确位置。</li>
+<li>可选：要控制 Web 服务器接受的密码，请编辑 <strong>SSLCipherSuite</strong> 伪指令。有关 <strong>SSLCipherSuite</strong> 伪指令的信息，请参阅 Apache <strong>mod_ssl</strong> 文档。</li></ol>
+<p>有关 HTTPS 配置的更多信息，请参阅 Apache Web 站点：www.apache.org。</p>
+<p>
+<h3 id="wq427">测试配置</h3>
+<p>您必须重新启动 Web 服务器才能使 HTTPS 更改生效。请通过依次运行 OAT 安装目录中的 <strong>StopApache</strong> 脚本和 <strong>StartApache</strong> 脚本来重新启动 Web 服务器。系统会提示您输入口令，然后才能启动 Web 服务器。</p>
+<p>重新启动 Web 服务器后，请在 Web 浏览器中使用以下 URL 来打开 OAT：<samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp>。
+系统会提示您查看并接受 OAT Web 服务器的证书，然后才会显示 OAT 登录页面。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关信息</strong>：</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1dt2mg202"><a href="#ToC_146">配置 OAT 的 HTTPS (Windows)</a></h2>
+<div>
+<p>启用 HTTPS 以保护 IBM OpenAdmin Tool (OAT) for Informix 的 Web 服务器免遭窃听、篡改、消息伪造和网络干扰。</p></div><a id="idx113"></a>
+<p>
+<p>启用 HTTPS 时，来自 OAT 客户机的消息将进行加密，然后再发送至 OAT Web 服务器。加密可防止未经授权的用户侦听该线路并窃取敏感信息。启用 HTTPS 时，OAT 客户机也可以向 OAT 主机认证，这样未经授权的用户就无法使用错误的 Web 服务器欺骗 OAT 客户机。</p></p>
+<div>
+<div class="note-noindent" id="wq429">
+<span class="notetitle">要点：</span><span class="notebody">HTTPS 只加密 OAT Web 服务器与客户机之间的通信。它不会加密 IBM Informix 数据库服务器与 Web 服务器之间的通信。IBM Informix V9.4 和更高版本允许使用加密通信支持模块来加密 Informix 服务器与 OAT Web 服务器之间的数据。有关加密和 Informix 服务器的更多信息，请阅读 developerWorks Web 站点上的“Encryption over the wire with IDS 9.40”。</span></div></div>
+<p>当您将 OAT 与 IBM Informix Client Software Development Kit (Client SDK) 一起安装时，安装程序会提供运行 OAT 所需的软件，包括预配置的 Apache、PHP 和 PDO_informix。在 Windows 上，必须将与 OAT 一起安装的 Apache Web 服务器替换为启用了 <strong>mod_ssl</strong> 模块的 Apache Web 服务器。需要此模块才能启用 HTTPS。</p>
+<p>要在 Windows 上的 OAT 中启用 HTTPS，请完成以下步骤：
+</p>
+<ol type="1">
+<li>将与 OAT 一起安装的 Apache Web 服务器替换为启用了 <strong>mod_ssl</strong> 密码术模块的 Apache Web 服务器。</li>
+<li>为 Web 服务器创建加密密钥和证书，以便 OAT 客户机可以根据您的证书认证 Web 服务器。</li>
+<li>配置 Apache 以启用 HTTPS。</li></ol><p class="indatacontent">有关启用 HTTPS 的更多信息，请阅读 developerWorks Web 站点上的“Securing
+the OpenAdmin Tool for Informix web
+server with HTTPS”。</p>
+<p>
+<h3 id="wq431">替换 OAT Apache Web 服务器</h3>
+<p>要替换 OAT Apache Web 服务器：</p></p>
+<ol type="1">
+<li>从以下 Apache Web 站点下载 Apache HTTP Server：httpd.apache.org。
+选择 Win32 二进制的最新可用 Apache 2.2.x 版本，包括 OpenSSL 0.9.8t（MSI 安装程序）。</li>
+<li>停止 OAT Apache Web 服务器。<strong>开始</strong>菜单包含一个 OAT 菜单项：<strong>IBM OpenAdmin Tool for Informix</strong>。您可以通过单击<strong>停止 OpenAdmin Tool 的 Apache 服务</strong>从其中停止 OAT Apache Web 服务器。另外，请确保 Apache Monitor 未在系统托盘上运行。</li>
+<li>将 OAT <samp>Apache_2.2.22</samp> 目录重命名为 <samp>Apache_2.2.22_noSSL</samp>，以创建 Apache 二进制文件的备份副本。此 Apache 目录中的某些配置文件将在后续步骤中使用。</li>
+<li>运行 Apache MSI 安装程序。执行典型安装，并将安装目录设置为 <em>/oat/installation/directory/</em><samp>Apache_2.2.22</samp>。
+<div>
+<div class="note-noindent" id="wq433">
+<span class="notetitle">要点：</span><span class="notebody">即使您要安装较新版本的 Apache，也请将目录名设置为 <samp>Apache_2.2.22</samp>。OAT 安装及其服务配置为使用目录名 <samp>Apache_2.2.22</samp>。
+如果新 Apache 安装使用不同的目录名，上述项将无法正常工作。</span></div></div></li>
+<li>编辑 Apache 配置文件：<em>/oat/installation/directory/</em><samp class="xph">Apache_2.2.22/conf/httpd.conf</samp>。
+在此 <samp>httpd.conf</samp> 文件中添加或取消注释以下各行：
+<pre class="xmp"><code>LoadModule php5_module
+"<em>c:\oat\installation\dir</em>\PHP_5.2.4\php5apache2_2.dll"
+LoadModule ssl_module modules/mod_ssl.so
+AddType application/x-httpd-php .php
+PhpIniDir '<em>c:\oat\installation\dir</em>\PHP_5.2.4'</code></pre></li>
+<li>在 <samp>httpd.conf</samp> 文件中，更新以下行：<samp class="xph">Listen 80</samp>（或 <samp class="xph">Listen 8080</samp>）。
+该行指示 OAT Web 服务器的端口号。将 80 或 8080 替换为与 OAT 一起安装的原始 OAT Apache Web 服务器的相同端口号。</li>
+<li>在 <samp>httpd.conf</samp> 文件中，更新以下行：<samp class="xph">ServerName www.example.com:80</samp>。该行指示服务器用于标识自身的名称和端口。将该行替换为原始 OAT Apache 配置文件 <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf 中的整个 <samp class="xph">ServerName</samp> 行。</li>
+<li>在 <samp>httpd.conf</samp> 文件中，更新以下行：<samp class="xph">DirectoryIndex index.html</samp>。该行设置在请求目录时 Apache 提供的文件。请将该行更改为：<samp class="xph">DirectoryIndex index.html index.php</samp>。</li>
+<li>在原始 OAT Apache 配置文件 <em>c:\oat\installation\dir\</em>Apache_2.2.22_noSSL\conf\httpd.conf 中，找到以下行：<samp class="xph">setenv INFORMIXDIR</samp>。该行在 OAT 的 Apache 环境中设置 INFORMIXDIR 变量。要为新 Apache Web 服务器设置该变量，请将该行复制到新 Apache Web 服务器的 <samp>httpd.conf</samp> 文件中。您可以将该行放到文件末尾。</li>
+<li>请将整个目录 <em>c:\oat\installation\dir\</em><samp>Apache_2.2.22_noSSL\htdocs\openadmin\</samp> 复制到 <em>c:\oat\installation\dir\</em><samp>Apache_2.2.22\htdocs\openadmin\</samp>。
+所有 OAT 源代码都在此目录中。</li>
+<li>请在命令提示符处运行以下命令，以确保正确装入 PHP Apache 处理程序和 <strong>mod_ssl</strong> 模块：
+<pre class="xmp"><code>cd <em>c:\oat\installation\dir\</em>Apache_2.2.22\bin\
+httpd.exe &ndash;M</code></pre>此命令显示 Apache 模块的列表。
+请确认 <strong>php5_module</strong> 和 <strong>ssl_module</strong> 都在该列表上。
+现在，应该已针对 OAT 正确设置了您的新 Web 服务器。</li>
+<li>在<strong>开始</strong>菜单上，单击 <strong>IBM OpenAdmin Tool for Informix</strong>，然后单击<strong>启动 OpenAdmin Tool 的 Apache 服务</strong>。您可以使用 Web 浏览器访问 OAT。Web 服务器已启用 <strong>mod_ssl</strong>，但尚未启用 HTTPS。</li></ol>
+<p>
+<h3 id="wq434">创建加密密钥</h3>
+<p>密钥用于加密和解密。它们通常成对（公用密钥和专用密钥）出现。公用密钥用于加密消息，专用密钥用于解密消息。证书是认证 Web 服务器的文档。启用 HTTPS 的 Web 服务器具有由可信认证中心签署的证书，用于验证 Web 服务器。Web 服务器启用 HTTPS 后，客户机选择与 Web 服务器之间是建立普通连接还是安全连接。要建立普通连接，客户机在其 Web 浏览器中输入 <samp>http://<em>web
+server_url</em></samp>。要建立安全连接，客户机输入 <samp>https://<em>web
+server_url</em></samp>。</p>
+<p>要生成专用和公用密钥对以及证书，请使用新 Apache Web 服务器安装的 <samp>bin</samp> 目录中的 <samp>openssl</samp> 可执行文件。</p>
+<p>当您运行命令以生成专用密钥时，会提示您输入口令来保护专用密钥。在 Windows 上，Apache 不支持对专用密钥使用口令，因此您必须除去口令，如下几步中所述。</p>
+<p>要创建专用密钥：</p></p>
+<ol type="1">
+<li>要生成专用密钥，请在安装新 Apache Web 服务器的计算机上运行以下命令：<pre class="xmp"><code>openssl genrsa -des3 -out privkey.pem 2048</code></pre></li>
+<li>要除去口令，请运行以下命令：
+<pre class="xmp"><code>openssl rsa -in privkey.pem -out privkey_nopassphrase.pem</code></pre></li></ol>
+<p>专用密钥的未加密版本在 <samp>privkey_nopassphrase.pem</samp> 文件中创建。
+此文件包含 Web 服务器的解密密钥，请将其存储在安全位置。生成证书时，此文件用于生成关联的公用密钥（包含在证书中）。</p>
+<p>
+<h3 id="wq436">创建证书</h3>
+<p>创建专用密钥后，请创建证书以认证 Web 服务器的身份。要创建证书，请生成证书签署请求，并将该证书签署请求发送给可信认证中心。认证中心会发放证书。</p>
+<p>要生成证书签署请求，请运行以下命令：</p>
+<pre class="xmp"><code>openssl req -new -key privkey_nopassphrase.pem -out cert.csr</code></pre>
+<p>有关证书签署请求的更多信息，请联系您的认证中心。</p>
+<p>或者，您也可以不通过认证中心而创建自签名证书（不过，推荐不要使用自签名证书）。</p>
+<p>要生成自签名证书，请运行以下命令：</p>
+<pre class="xmp"><code>openssl req -new -x509 -key privkey_nopassphrase.pem -out cacert.pem -days 1095</code></pre>
+<p>OpenSSL 会提示您输入信息。证书存储在 <samp>cacert.pem</samp> 文件中。
+此文件将向 Web 客户机显示，以验证您的身份。它还包含 Web 客户机的公用密钥，以便可以加密通信。</p>
+<p>有关加密密钥的更多信息，请参阅 OpenSSL 文档。</p></p>
+<p>
+<h3 id="wq437">配置 Apache 以启用 HTTPS</h3>
+<p>要启用 HTTPS，请更新 Apache 配置文件和 Apache SSL 配置文件：</p></p>
+<ol type="1">
+<li>找到 Apache 配置文件。路径包含 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/httpd.conf</code></pre></li>
+<li>在 Apache 配置文件中，除去以下行的注释：<samp class="xph">#Include conf/extra/httpd-ssl.conf</samp>。
+
+<p>缺省情况下，此行已注释掉。除去注释后，Apache SSL 配置文件将包含在 <samp>httpd.conf</samp> 文件中。</p></li>
+<li>找到 Apache SSL 配置文件。路径包含 Apache 版本，例如：
+<pre class="xmp"><code><em>/oat/installation/directory/</em>Apache_2.2.22/conf/extra/httpd-ssl.conf</code></pre></li>
+<li>在 Apache SSL 配置文件中，验证 SSL 端口号是否设置为可用的端口。
+
+<p>HTTPS 需要独立的 SSL 端口。缺省情况下，SSL 端口号设置为 443。如果此端口不可用，请在 <strong>Listen</strong> 伪指令和“虚拟主机”一节中更改 SSL 端口。</p></li>
+<li>在 Apache SSL 配置文件中，验证 <strong>SSLCertificateKeyFile</strong> 伪指令是否指示您所创建的专用密钥文件 <samp>privkey_nopassphrase.pem</samp> 的正确位置</li>
+<li>验证 <strong>SSLCertificateFile</strong> 伪指令是否指示您所创建的证书文件 <samp>cacert.pem</samp> 的正确位置。</li>
+<li>可选：要控制 Web 服务器接受的密码，请编辑 <strong>SSLCipherSuite</strong> 伪指令。有关 <strong>SSLCipherSuite</strong> 伪指令的信息，请参阅 Apache <strong>mod_ssl</strong> 文档。</li></ol>
+<p>有关 HTTPS 配置的更多信息，请参阅 Apache Web 站点：www.apache.org。</p>
+<p>
+<h3 id="wq439">测试配置</h3>
+<p>您必须重新启动 Web 服务器才能使 HTTPS 更改生效。使用 <samp>apachemonitor.exe</samp> 或<strong>开始</strong>菜单快捷方式重新启动 Web 服务器。</p>
+<p>重新启动 Web 服务器后，请在 Web 浏览器中使用以下 URL 来打开 OAT：<samp>https://<em>hostname:ssl_portnumber</em>/openadmin</samp>。
+系统会提示您查看并接受 OAT Web 服务器的证书，然后才会显示 OAT 登录页面。</p></p>
+<p></p>
+<ul class="simple">
+<li><strong>相关信息</strong>：</li>
+<li><a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/idsteam/entry/securing_the_openadmin_tool_for_informix_web_server_with_https1" target="_blank">Securing the OpenAdmin Tool for Informix web server with HTTPS (developerWorks)</a></li>
+<li><a href="http://www.ibm.com/developerworks/db2/library/techarticle/dm-0401dandekar/index.html" target="_blank">Encryption over the wire with IDS 9.40 (developerWorks)</a></li></ul>
+<h2 id="dqx1ids_oat_053"><a href="#ToC_152">禁用或启用 SQL Toolbox 的密码保护</a></h2>
+<p>
+<p>IBM OpenAdmin
+Tool (OAT) for Informix 2.22 和更高版本为 SQL ToolBox 设置了自动密码保护。当您连接到 SQL Toolbox 时，必须提供有效的用户标识和密码。</p></p>
+<div>
+<div class="note-noindent" id="wq441">
+<span class="notetitle">先决条件：</span><span class="notebody">要为 SQL Toolbox 禁用或启用密码保护，您必须具有对 OAT“管理”配置页面的访问权，这些页面也可能受密码保护。</span></div></div>
+<div>
+<div class="note-noindent" id="wq442">
+<span class="notetitle">要点：</span><span class="notebody">出于安全性目的，请为“管理”配置页面提供密码保护。有关更多信息，请参阅<a href="#dqx1ids_oat_071">为“管理”配置页面提供密码保护：Apache 示例</a>。</span></div></div>
+<p>要禁用密码保护：</p>
+<p></p>
+<ol type="1">
+<li>在 OAT <strong>管理</strong>菜单上，单击 <strong>OAT 配置</strong>。</li>
+<li>清除<strong>使用 SQL Toolbox 时需要登录凭证</strong>。</li>
+<li>单击<strong>保存</strong>以保存更改。</li>
+<li>要重新启用密码保护，请选中<strong>使用 SQL Toolbox 时需要登录凭证</strong>，并单击<strong>保存</strong>。</li></ol>
+<h1 id="dqx1ids_oat_054"><a href="#ToC_153">如何管理 OAT 的插件？</a></h1>
+<h2 id="dqx1ids_oat_000"><a href="#ToC_154">安装 OAT 的插件</a></h2>
+<div>
+<p>安装 IBM OpenAdmin Tool (OAT) for Informix 的插件。</p></div><a id="idx114"></a><a id="idx115"></a>
+<p>
+<p>OAT 的安装包中包含 OpenAdmin Tool (OAT) 的 IBM Informix Replication 插件、OpenAdmin Tool (OAT) 的 IBM Informix Schema Manager 插件和 OpenAdmin Tool (OAT) 的 IBM Informix TimeSeries 插件。
+这些插件会自动与 OAT 一起安装，并可在安装期间启用。</p></p>
+<div>
+<div class="note-noindent" id="wq446">
+<span class="notetitle">要点：</span><span class="notebody">安装插件后，会删除插件压缩文件。卸载插件之后，只有将插件压缩文件复原到插件目录中之后，才能重新安装该插件。</span></div></div>
+<p>
+<p>要安装 OAT 的插件：</p></p>
+<ol type="1">
+<li>将压缩的插件文件复制到 <samp><em>OATDirectory</em>/plugin_install</samp>。例如：<samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp>。</li>
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>插件管理器</strong>。</li>
+<li>在<strong>尚未安装的插件</strong>列表中包含插件的行内，单击<strong>安装</strong>。
+
+<p>插件会显示在<strong>已安装插件</strong>列表中，并在缺省情况下启用。插件菜单项会显示在 OAT 菜单上。要在 OAT 菜单上更改插件菜单项的位置，请转至<strong>菜单管理器</strong>页面。</p></li></ol>
+<p></p>
+<ul class="simple">
+<li><strong>相关任务</strong>：</li>
+<li><a href="#dqx1ids_oat_060">如何定制 OAT 的主菜单？</a>
+<br />删除、复原或更改 IBM OpenAdmin
+Tool (OAT) for Informix 的菜单项的顺序。</li></ul>
+<h2 id="dqx1ids_oat_150"><a href="#ToC_155">启用 OAT 的插件</a></h2>
+<div>
+<p>启用 IBM OpenAdmin Tool (OAT) for Informix 的插件。</p></div><a id="idx116"></a><a id="idx117"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq450">
+<span class="notetitle">先决条件：</span><span class="notebody">必须首先安装插件，然后才能将其启用。请参阅<a href="#dqx1ids_oat_000">安装 OAT 的插件</a>。</span></div></div>
+<p>
+<p>要启用 OAT 的插件：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>插件管理器</strong>。</li>
+<li>在<strong>已安装的插件</strong>列表中包含插件的行内，选择<strong>已启用</strong>复选框。</li></ol>
+<h2 id="dqx1ids_oat_115"><a href="#ToC_156">升级 OAT 的插件</a></h2>
+<div>
+<p>升级 IBM OpenAdmin Tool (OAT) for Informix 的插件。</p></div><a id="idx118"></a><a id="idx119"></a>
+<p>
+<p>要升级 OAT 的插件：</p></p>
+<ol type="1">
+<li>将压缩的插件文件复制到 <samp><em>OATDirectory</em>/plugin_install</samp>。例如：<samp>C:\Program Files\OpenAdmin\Apache_2.2.16\htdocs\openadmin\plugin_install</samp>。</li>
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>插件管理器</strong>。</li>
+<li>在<strong>尚未安装的插件</strong>列表中包含插件的行内，单击<strong>升级</strong>。先前版本的插件将被最新的版本覆盖。
+更新版本的插件会显示在<strong>已安装的插件</strong>列表中，并在缺省情况下启用。</li></ol>
+<h2 id="dqx1ids_oat_116"><a href="#ToC_157">禁用 OAT 的插件</a></h2>
+<div>
+<p>禁用 IBM OpenAdmin Tool (OAT) for Informix 的插件。</p></div><a id="idx120"></a><a id="idx121"></a>
+<p>
+<p>要禁用 OAT 的插件：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>插件管理器</strong>。</li>
+<li>在<strong>已安装的插件</strong>列表中包含插件的行内，清除<strong>已启用</strong>复选框。</li></ol>
+<p>
+<p>插件仍保持已安装状态。您可以再次启用该插件。</p></p>
+<h2 id="dqx1ids_oat_149"><a href="#ToC_158">卸载 OAT 的插件</a></h2>
+<div>
+<p>卸载 IBM OpenAdmin Tool (OAT) for Informix 的插件。</p></div><a id="idx122"></a><a id="idx123"></a>
+<p></p>
+<div>
+<div class="note-noindent" id="wq459">
+<span class="notetitle">要点：</span><span class="notebody">安装插件后，会删除插件压缩文件。卸载插件之后，只有将插件压缩文件复原到插件目录中之后，才能重新安装该插件。</span></div></div>
+<p>
+<p>要卸载 OAT 的插件：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>插件管理器</strong>。</li>
+<li>在<strong>已安装的插件</strong>列表中包含插件的行内，单击<strong>卸载</strong>。</li></ol>
+<h2 id="dqx1ids_oat_151"><a href="#ToC_159">idsadmin 类函数</a></h2>
+<div>
+<p><strong><samp>idsadmin</samp></strong> 类为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供了基本函数库，包括创建数据库连接、装入语言文件以及以 HTML 呈现输出。</p></div>
+<p><strong><samp>idsadmin</samp></strong> 对象会作为模块构造函数的参数传递给每个模块。</p>
+<h3 id="dqx1ids_oat_152"><a href="#ToC_160">isreadonly 函数</a></h3>
+<div>
+<p><strong><samp>isreadonly </samp></strong> 函数指示用户是否使用只读组登录。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx124"></a><a id="idx125"></a><a id="idx126"></a>
+<p>
+<h4 id="wq462">语法</h4></p>
+<pre class="xmp"><code>isreadonly ()</code></pre>
+<p>
+<h4 id="wq463">用途</h4>
+<p>使用 <strong><samp>isreadonly</samp></strong> 函数来确定用户是否使用具有只读特权的组登录到 OAT。您可以使用此信息来确定用户可在 OAT 中访问的项和用户可用的项。</p></p>
+<p>
+<h4 id="wq464">返回值</h4>
+<p>返回值 true 指示用户是使用具有只读特权的组登录的。</p>
+<p>返回值 false 指示用户是使用不限于只读特权的组登录的。</p></p>
+<p>
+<h4 id="wq465">示例</h4>
+<p>如果用户为只读，那么此示例会返回错误并显示消息。在此示例中，<samp class="xph">PermissionRequired</samp> 是语言关键字；而非消息本身。</p></p>
+<pre class="xmp"><code>if ( $this-&gt;idsadmin-&gt;isreadonly() )
+{
+    $this-&gt;idsadmin-&gt;fatal_error($this-&gt;idsadmin-&gt;lang("PermissionRequired"));
+    return;         
+}</code></pre>
+<h3 id="dqx1ids_oat_153"><a href="#ToC_165">get_database 函数</a></h3>
+<div>
+<p><strong><samp>get_database</samp></strong> 函数建立数据库服务器上数据库的连接。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx127"></a><a id="idx128"></a><a id="idx129"></a>
+<p>
+<h4 id="wq466">语法</h4></p>
+<pre class="xmp"><code>get_database($dbname="sysmaster",$use_user=false)</code></pre>
+<table id="wq467" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq468" width="20%" align="left">变量</th>
+<th id="wq469" width="39%" align="left">目的</th>
+<th id="wq470" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq468"><em>dbname</em></td>
+<td headers="wq469">数据库名称。</td>
+<td headers="wq470">可选。缺省值为 <samp class="xph">sysmaster</samp>。</td>
+</tr>
+<tr>
+<td headers="wq468"><em>use_user</em></td>
+<td headers="wq469">指示是否使用 SQL ToolBox 用户来连接到数据库。当您在 SQL ToolBox 中时，将该值设置为 true。</td>
+<td headers="wq470">可选。缺省值为 <samp class="xph">false</samp>。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq471">返回值</h4>
+<p>返回值是 PDO 数据库连接。</p></p>
+<p>
+<h4 id="wq472">示例</h4>
+<p>此示例建立 <strong><samp>sysmaster</samp></strong> 数据库的连接。</p></p>
+<pre class="xmp"><code> $db = $this-&gt;idsadmin-&gt;get_database("sysmaster");</code></pre>
+<h3 id="dqx1ids_oat_154"><a href="#ToC_169">load_lang 函数</a></h3>
+<div>
+<p><strong><samp>load_lang</samp></strong> 函数将模块的语言文件装入到 <strong><samp>idsadmin</samp></strong> 语言数组。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx130"></a><a id="idx131"></a><a id="idx132"></a>
+<p>
+<h4 id="wq473">语法</h4></p>
+<pre class="xmp"><code>load_lang($keyword)</code></pre>
+<table id="wq474" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq475" width="20%" align="left">变量</th>
+<th id="wq476" width="39%" align="left">目的</th>
+<th id="wq477" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq475"><em>keyword</em></td>
+<td headers="wq476">用于指定要为模块装入的语言文件的关键字。依据约定，此关键字与模块的实际关键字相同。语言文件包含模块的文本字符串。</td>
+<td headers="wq477"></td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq478">用途</h4>
+<p><strong><samp>load_lang</samp></strong> 函数会装入 <samp>lang_<em>keyword</em>.xml</samp>；例如，<samp>lang_admin.xml</samp> 或 <samp>lang_health.xml</samp>。通常，作为模块类构造函数的一部分调用 <strong><samp>load_lang</samp></strong> 函数。</p></p>
+<p>
+<h4 id="wq479">示例</h4>
+<p>此类构造函数示例会为运行状况模块装入语言文件。</p></p>
+<pre class="xmp"><code>function __construct(&amp;$idsadmin)
+{
+        $this-&gt;idsadmin = &amp;$idsadmin;
+
+        $this-&gt;idsadmin-&gt;load_lang("health");
+}</code></pre>
+<h3 id="dqx1ids_oat_155"><a href="#ToC_173">lang 函数</a></h3>
+<div>
+<p><strong><samp>lang</samp></strong> 函数会以当前语言返回特定消息。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx133"></a><a id="idx134"></a><a id="idx135"></a>
+<p>
+<h4 id="wq480">语法</h4></p>
+<pre class="xmp"><code>lang($item, $parameters=array())</code></pre>
+<table id="wq481" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq482" width="20%" align="left">变量</th>
+<th id="wq483" width="39%" align="left">目的</th>
+<th id="wq484" width="40%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq482"><em>item</em></td>
+<td headers="wq483">要以当前语言返回的文本字符串的名称。</td>
+<td headers="wq484"></td>
+</tr>
+<tr>
+<td headers="wq482"><em>parameters</em></td>
+<td headers="wq483">数组中的参数。这些参数用于替代“{0}”、“{1}”、“{2}”等。</td>
+<td headers="wq484">可选。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq485">用途</h4>
+<p><strong><samp>lang</samp></strong> 函数查找已装入语言文件中的指定消息。如果当前语言不是英语，且找不到指定消息，那么会以英语返回消息。如果英语消息不可用，将返回错误。</p></p>
+<p>
+<h4 id="wq486">示例</h4>
+<p>此示例检索当前语言的项 <samp class="xph">taskdetailssaved</samp> 文本，并作为状态消息进行打印。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("taskdetailssaved"));</code></pre>
+<p>如使用英文的此示例所示，模块的语言文件中包含该项。</p>
+<pre class="xmp"><code>&lt;taskdetailssaved&gt;&lt;![CDATA[Task details saved successfully.]]&gt;&lt;/taskdetailssaved&gt;</code></pre>
+<p>此示例在 OAT 中设置<strong>运行状况中心</strong> &gt; <strong>警报</strong>页面的浏览器页面标题。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("alerts") );</code></pre>
+<p>此处为英语和西班牙语的语言文件的模块语言文件中的项。</p>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alerts]]&gt;&lt;/alerts&gt;</code></pre>
+<pre class="xmp"><code>&lt;alerts&gt;&lt;![CDATA[Alertas]]&gt;&lt;/alerts&gt;</code></pre>
+<h3 id="dqx1ids_oat_177"><a href="#ToC_177">error 函数</a></h3>
+<div>
+<p><strong><samp>error</samp></strong> 函数显示带有错误图标的消息。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx136"></a><a id="idx137"></a>
+<p>
+<h4 id="wq487">语法</h4></p>
+<pre class="xmp"><code>error($msg="")</code></pre>
+<table id="wq488" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq489" width="34%" align="left">变量</th>
+<th id="wq490" width="65%" align="left">目的</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq489"><em>msg</em></td>
+<td headers="wq490">错误消息。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq491">用途</h4>
+<p><strong><samp>idsadmin</samp></strong> 类包含显示消息的函数。<strong><samp>error</samp></strong> 函数适合错误消息，因为消息在显示时带有错误图标。</p></p>
+<p>
+<h4 id="wq492">示例</h4>
+<p>此示例显示消息以指示保存操作失败。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error("Save failed: ");</code></pre>
+<p>此示例使用语言函数，以便可以将消息本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;error($this-&gt;idsadmin-&gt;lang("save_failed"));</code></pre>
+<p>此处为英语语言文件中模块的语言文件中的项。</p>
+<pre class="xmp"><code>&lt;save_failed&gt;&lt;![CDATA[Save failed: ]]&gt;&lt;/save_failed&gt;</code></pre>
+<h3 id="dqx1ids_oat_178"><a href="#ToC_181">status 函数</a></h3>
+<div>
+<p><strong><samp>status</samp></strong> 函数显示消息。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx138"></a><a id="idx139"></a>
+<p>
+<h4 id="wq493">语法</h4></p>
+<pre class="xmp"><code>status($msg="")</code></pre>
+<table id="wq494" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq495" width="34%" align="left">变量</th>
+<th id="wq496" width="65%" align="left">目的</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq495"><em>msg</em></td>
+<td headers="wq496">消息。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq497">示例</h4>
+<p>此示例显示消息以指示保存操作成功。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("The changes to the email program were saved."));</code></pre>
+<p>此示例使用语言函数，以便可以将消息本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;status($this-&gt;idsadmin-&gt;lang("saved_email"));</code></pre>
+<p>此处为英语语言文件中模块的语言文件中的项。</p>
+<pre class="xmp"><code>&lt;saved_email&gt;&lt;![CDATA[The changes to the email program were saved.]]&gt;&lt;/saved_email&gt;</code></pre>
+<h3 id="dqx1ids_oat_179"><a href="#ToC_184">format_units 函数</a></h3>
+<div>
+<p><strong><samp>format_units</samp></strong> 函数以最合适的人类可读格式对整数字节值进行格式化，例如，KB、MB 或 GB。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx140"></a><a id="idx141"></a>
+<p>
+<h4 id="wq498">语法</h4></p>
+<pre class="xmp"><code>format_units($value,$prec=2 )</code></pre>
+<table id="wq499" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq500" width="20%" align="left">变量</th>
+<th id="wq501" width="39%" align="left">目的</th>
+<th id="wq502" width="39%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq500"><em>value</em></td>
+<td headers="wq501">整数值（以字节为单位）。</td>
+<td headers="wq502">必须是整数。</td>
+</tr>
+<tr>
+<td headers="wq500"><em>prec</em></td>
+<td headers="wq501">格式化数字的精度。</td>
+<td headers="wq502">可选。必须是整数。缺省值为 2，用于指定 2 位小数。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq503">返回值</h4>
+<p>返回值是格式化数字，其中带有后缀以指示单位：B、KB、MB、GB、TB、PB 或 EB。</p></p>
+<p>
+<h4 id="wq504">示例</h4>
+<p>此示例会生成 $formatted_page_size 变量，用于保存格式化值 2 K。</p></p>
+<pre class="xmp"><code>$page_size = 2048;
+$formatted_page_size = $this-&gt;idsadmin-&gt;format_units($page_size);</code></pre>
+<h3 id="dqx1ids_oat_180"><a href="#ToC_188">setCurrMenuItem 函数</a></h3>
+<div>
+<p><strong><samp>setCurrMenuItem</samp></strong> 突出显示菜单中的当前项。此函数是 <strong><samp>idsadmin</samp></strong> 类的一部分，用于为 IBM OpenAdmin Tool (OAT) for Informix 的插件提供基本函数库。</p></div><a id="idx142"></a><a id="idx143"></a>
+<p>
+<h4 id="wq505">语法</h4></p>
+<pre class="xmp"><code>setCurrMenuItem($item="")</code></pre>
+<table id="wq506" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq507" width="20%" align="left">变量</th>
+<th id="wq508" width="39%" align="left">目的</th>
+<th id="wq509" width="39%" align="left">限制</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq507"><em>item</em></td>
+<td headers="wq508">菜单项的键名称。</td>
+<td headers="wq509">键名称必须存在。传递不存在的菜单项变量不会引起错误，但不会在菜单中突出显示任何内容。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq510">用途</h4>
+<p><strong><samp>setCurrMenuItem</samp></strong> 函数用于在浏览器中呈现 Web 页面时，通过突出显示当前菜单项来进行设置。该函数不会创建菜单项。</p></p>
+<p>
+<h4 id="wq511">示例</h4>
+<p>此示例将当前菜单项设置为 Storage。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;setCurrMenuItem("storage");</code></pre>
+<h2 id="dqx1ids_oat_181"><a href="#ToC_192">output 类</a></h2>
+<div>
+<p><strong><samp>output</samp></strong> 类处理 IBM OpenAdmin Tool (OAT) for Informix 的 HTML 页面显示，包括 OAT 插件的页面。</p></div>
+<h3 id="dqx1ids_oat_182"><a href="#ToC_193">set_pagetitle 函数</a></h3>
+<div>
+<p><strong><samp>set_pagetitle</samp></strong> 函数为 IBM OpenAdmin Tool (OAT) for Informix 的插件中的页面设置浏览器页面标题。此函数是 <strong><samp>output</samp></strong> 类的一部分，用于处理 OAT 和 OAT 插件的 HTML 页面显示。</p></div><a id="idx144"></a><a id="idx145"></a>
+<p>
+<h4 id="wq512">语法</h4></p>
+<pre class="xmp"><code>set_pagetitle($title="")</code></pre>
+<table id="wq513" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq514" width="34%" align="left">变量</th>
+<th id="wq515" width="65%" align="left">目的</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq514"><em>title</em></td>
+<td headers="wq515">Web 浏览器的页面名称。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq516">示例</h4>
+<p>此示例将浏览器页面标题设置为 Health Advisor。</p></p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle("Health Advisor");</code></pre>
+<p>此示例使用语言函数，以便可以将消息本地化。</p>
+<pre class="xmp"><code>$this-&gt;idsadmin-&gt;html-&gt;set_pagetitle($this-&gt;idsadmin-&gt;lang("prod_name"));</code></pre>
+<p>此处为英语语言文件中模块的语言文件中的项。</p>
+<pre class="xmp"><code>&lt;prod_name&gt;&lt;![CDATA[Health Advisor]]&gt;&lt;/prod_name&gt;</code></pre>
+<h3 id="dqx1ids_oat_183"><a href="#ToC_196">add_to_output 函数</a></h3>
+<div>
+<p><strong><samp>add_to_output</samp></strong> 函数将 HTML 追加到 IBM OpenAdmin Tool (OAT) for Informix 的插件中的页面。此函数是 <strong><samp>output</samp></strong> 类的一部分，用于处理 OAT 和 OAT 插件的 HTML 页面显示。</p></div><a id="idx146"></a><a id="idx147"></a>
+<p>
+<h4 id="wq517">语法</h4></p>
+<pre class="xmp"><code>add_to_output($html="")</code></pre>
+<table id="wq518" width="100%" summary="" border="1" frame="border" rules="all">
+<thead valign="bottom">
+<tr>
+<th id="wq519" width="34%" align="left">变量</th>
+<th id="wq520" width="65%" align="left">目的</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td headers="wq519"><em>html</em></td>
+<td headers="wq520">要添加到页面的 html。</td>
+</tr>
+</tbody>
+</table>
+<p>
+<h4 id="wq521">示例</h4>
+<p>此示例将 HTML 标记设置为显示标记为 Run Health Advisor 的按钮。然后，<strong><samp>add_to_output</samp></strong> 函数将标记追加到用于呈现 Web 页面的 HTML。</p></p>
+<pre class="xmp"><code>$html = "&lt;input type='submit' class='button' name='runReports' value='Run Health Advisor'/&gt;";
+$this-&gt;idsadmin-&gt;html-&gt;add_to_output($html);</code></pre>
+<h1 id="dqx1ids_oat_060"><a href="#ToC_199">如何定制 OAT 的主菜单？</a></h1>
+<div>
+<p>删除、复原或更改 IBM OpenAdmin
+Tool (OAT) for Informix 的菜单项的顺序。</p></div><a id="idx148"></a><a id="idx149"></a><a id="idx150"></a><a id="idx151"></a>
+<p>
+<p>要定制 OAT 菜单：</p></p>
+<ol type="1">
+<li>在 OAT <strong>登录</strong>页面上或 OAT 菜单上，单击<strong>管理</strong>。</li>
+<li>在<strong>管理</strong>菜单上，单击<strong>菜单管理器</strong>。</li></ol>
+<h1 id="dqx1ids_cm_not"><a href="#ToC_200">声明</a></h1>
+<p>本信息是为在美国国内供应的产品和服务而编写的。</p>
+<p>IBM 可能在其他国家或地区不提供本文档中讨论的产品、服务或功能特性。有关您所在区域当前可获得的产品和服务的信息，请向您当地的 IBM 代表咨询。任何对 IBM 产品、程序或服务的引用并非意在明示或暗示只能使用 IBM 的产品、程序或服务。只要不侵犯 IBM 的知识产权，任何同等功能的产品、程序或服务，都可以代替 IBM 产品、程序或服务。但是，评估和验证任何非 IBM 产品、程序或服务的操作，由用户自行负责。</p>
+<p>IBM 公司可能已拥有或正在申请与本文档内容有关的各项专利。提供本文档并未授予用户使用这些专利的任何许可。
+您可以用书面方式将许可查询寄往：</p>
+<div class="lines">IBM Director of Licensing
+<br />
+IBM Corporation 
+<br />
+North Castle Drive 
+<br />
+Armonk, NY 10504-1785
+<br />
+U.S.A. <br />
+</div>
+<p>有关双字节 (DBCS) 信息的许可查询，请与您所在国家或地区的 IBM 知识产权部门联系，或用书面方式将查询寄往：</p>
+<div class="lines">Intellectual Property Licensing
+<br />
+Legal and Intellectual Property Law
+<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan<br />
+</div>
+<p>以下段落对于英国和与当地法律有不同规定的其他国家或地区均不适用：INTERNATIONAL BUSINESS MACHINES CORPORATION“按现状”提供本出版物，不附有任何种类的（无论是明示的还是暗含的）保证，包括但不限于暗含的有关非侵权、适销和适用于某特定用途的保证。某些国家或地区在某些交易中不允许免除明示或暗含的保证。因此本条款可能不适用于您。
+</p>
+<p>本信息中可能包含技术方面不够准确的地方或印刷错误。
+此处的信息将定期更改；这些更改将编入本出版物的新版本中。IBM 可以随时对本出版物中描述的产品和/或程序进行改进和/或更改，而不另行通知。</p>
+<p>本资料中对非 IBM Web 站点的任何引用都是为了方便起见才提供的,不以任何方式充当对那些 Web 站点的保证。那些 Web 站点中的资料不是 IBM 产品资料的一部分，使用那些 Web 站点带来的风险将由您自行承担。</p>
+<p>IBM 可以按它认为适当的任何方式使用或分发您所提供的任何信息而无须对您承担任何责任。</p>
+<p>本程序的被许可方如果要了解有关程序的信息以达到如下目的：(i) 允许在独立创建的程序和其他程序（包括本程序）之间进行信息交换，以及 (ii) 允许对已经交换的信息进行相互使用，请与下列地址联系：
+</p>
+<div class="lines">IBM Corporation 
+<br />
+J46A/G4 
+<br />
+555 Bailey Avenue 
+<br />
+San Jose, CA 95141-1003 
+<br />
+U.S.A.
+<br />
+</div>
+<p>只要遵守适当的条件和条款，包括某些情形下的一定数量的付费，都可获得这方面的信息。
+</p>
+<p>本文档中描述的许可程序及其所有可用的许可资料均由 IBM 依据 IBM 客户协议、IBM 国际程序许可协议或任何同等协议中的条款提供。</p>
+<p>此处包含的任何性能数据都是在受控环境中测得的。
+因此，在其他操作环境中获得的数据可能会有明显的不同。有些测量可能是在开发级的系统上进行的，因此不保证与一般可用系统上进行的测量结果相同。
+此外，有些测量是通过推算而估计的，实际结果可能会有差异。本文档的用户应当验证其特定环境的适用数据。
+</p>
+<p>涉及非 IBM 产品的信息可从这些产品的供应商、其出版说明或其他可公开获得的资料中获取。IBM 没有对这些产品进行测试，也无法确认其性能的精确性、兼容性或任何其他关于非 IBM 产品的声明。有关非 IBM 产品性能的问题应当向这些产品的供应商提出。
+</p>
+<p>所有关于 IBM 未来方向或意向的声明都可随时更改或收回，而不另行通知，它们仅仅表示了目标和意愿而已。</p>
+<p>所有 IBM 的价格均是 IBM 当前的建议零售价，可随时更改而不另行通知。经销商的价格可与此不同。</p>
+<p>本信息仅用于规划的目的。
+在所描述的产品上市之前，此处的信息会有更改。</p>
+<p>本信息包含在日常业务操作中使用的数据和报告的示例。为尽可能表述完整，这些示例将包括个人、公司、品牌和产品的名称。所有这些名字都是虚构的，若现实生活中实际业务企业使用的名字和地址与此相似，纯属巧合。</p>
+<p>版权许可：</p>
+<p>本资料包括源语言形式的样本应用程序，这些样本说明不同操作平台上的编程方法。如果是为按照在编写样本程序的操作平台上的应用程序编程接口 (API) 进行应用程序的开发、使用、经销或分发为目的，您可以任何形式对这些样本程序进行复制、修改、分发，而无须向 IBM 付费。这些示例并未在所有条件下作全面测试。因此，IBM 不能担保或暗示这些程序的可靠性、可维护性或功能。样本程序“按现状”提供，不附有任何种类的保证。对于因使用样本程序所引起的任何损害，IBM 概不负责。</p>
+<p>凡这些样本程序的每份拷贝或其任何部分或任何衍生产品，都必须包含如下版权声明：</p>
+<p>&copy; （贵公司的名称）（年）。此部分代码是根据 IBM 公司的样本程序衍生出来的。</p>
+<p>&copy; Copyright IBM Corp. （输入年份）. All rights reserved. </p>
+<p>如果您正在查看本信息的软拷贝，图片和彩色图例可能无法显示。
+</p>
+<h2 id="dqx1trademarks"><a href="#ToC_201">商标</a></h2>
+<p>IBM、IBM 徽标和 ibm.com 是 International Business Machines Corp. 在全球许多管辖区域注册的商标或注册商标。其他产品和服务名称可能是 IBM 或其他公司的商标。当前的 IBM 商标列表，可从 Web 站点 <a href="http://www.ibm.com/legal/copytrade.shtml" target="_blank">http://www.ibm.com/legal/copytrade.shtml</a> 上“版权和商标信息”部分获取。</p>
+<p>Adobe、Adobe 徽标和 PostScript 是 Adobe Systems Incorporated 在美国和/或其他国家或地区的注册商标或商标。</p>
+<p>Intel、Itanium 和 Pentium 是 Intel Corporation 或其子公司在美国和其他国家或地区的商标或注册商标。
+</p>
+<p>Java&trade; 和所有基于 Java 的商标和徽标是 Oracle 和/或其子公司的商标或注册商标。</p>
+<p>Linux 是 Linus Torvalds 在美国和/或其他国家或地区的注册商标。</p>
+<p>Microsoft、Windows 和 Windows NT 是 Microsoft Corporation 在美国和/或其他国家或地区的商标。</p>
+<p>UNIX 是 The Open Group 在美国和其他国家或地区的注册商标。</p>
+<p>其他公司、产品或服务名称可能是其他公司的商标或服务标记。</p>
+<h2 id="dqx1ids_oat_016"><a href="#ToC_202">版权</a></h2>
+<p>
+<p>本文档包含 IBM 的专利信息。它是根据许可协议提供的，并受版权法保护。本出版物包含的信息不包括任何产品保证，且本手册提供的任何声明不应作如此解释。</p>
+<p>当您发送信息给 IBM 后，即授予 IBM 非专有权，IBM 对于您所提供的任何信息，有权利以任何它认为适当的方式使用或分发，而不必对您负任何责任。
+</p>
+<p><strong>&copy; Copyright
+International Business Machines Corporation 2007, 2013.</strong></p>
+<p>US Government Users Restricted Rights -- Use, duplication
+or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.</p>
+<p>&copy; Copyright The
+PHP Group 1997-2010. 请参阅 <samp>license/notices.txt</samp> 文件以获取更多信息。</p></p>
+<a id="Bot_Of_Page"></a>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_install">
+<install_page_title><![CDATA[Az OpenAdmin Tool telepítése]]></install_page_title>
+<next><![CDATA[Következő]]></next>
+<save><![CDATA[Mentés]]></save>
+<finish><![CDATA[Befejezés]]></finish>
+<warning><![CDATA[Figyelmeztetés]]></warning>
+<language><![CDATA[Nyelv:]]></language>
+<error_occurred><![CDATA[Hiba történt]]></error_occurred>
+<error_message><![CDATA[Hibaüzenet:]]></error_message>
+
+<welcome><![CDATA[Üdvözlet]]></welcome>
+<welcome_message><![CDATA[Ez a telepítőprogram az OpenAdmin Tool Community Edition {0} terméket telepíti.]]></welcome_message>
+<prerequisite_message><![CDATA[Az OpenAdmin Tool telepítésének előfeltételeivel kapcsolatos információkat a(z) {0} fájl tartalmazza.]]></prerequisite_message>
+<readme><![CDATA[readme]]></readme>
+<license_message><![CDATA[Az OpenAdmin Tool Community Edition telepítéséhez és használatához el kel fogadnia az alábbi licencszerződést.]]></license_message>
+<license_agreement><![CDATA[Licencszerződés]]></license_agreement>
+<i_accept><![CDATA[Elfogadom a licencszerződés részleteit.]]></i_accept>
+<error_accept_license_first><![CDATA[A telepítés folytatásához a licencszerződést el kell fogadnia.]]></error_accept_license_first>
+<install_lock_exists><![CDATA[A telepítési könyvtárban található install.lock fájl leállította a telepítést. A telepítés folytatásához távolítsa el a fájlt.]]></install_lock_exists>
+
+<required_PHP_modules><![CDATA[Szükséges PHP modulok]]></required_PHP_modules>
+<required_modules_for_OAT><![CDATA[Az OpenAdmin Tool (OAT) futtatásához az alábbi PHP modulok szükségesek.]]></required_modules_for_OAT>
+<missing_module_instructions><![CDATA[Az X ikon azt jelzi, hogy a modul nem található. Ellenőrizze a PHP telepítést és telepítse a hiányzó modulokat.]]></missing_module_instructions>
+<recommended_PHP_modules><![CDATA[Ajánlott PHP modulok]]></recommended_PHP_modules>
+<recommended_modules_for_OAT><![CDATA[Az OAT használatához az alábbi PHP modulok ajánlottak.]]></recommended_modules_for_OAT>
+<recommend_module_instructions><![CDATA[Fontos: bár az OAT telepítéséhez és használatához ezek a modulok nem kötelezőek, a modulok nélkül az OAT néhány funkciója korlátozott.]]></recommend_module_instructions>
+<silent_missing_required_modules><![CDATA[A kötelező PHP modulok némelyike nincs telepítve.]]></silent_missing_required_modules>
+<silent_missing_modules><![CDATA[Hiányzó modulok:]]></silent_missing_modules>
+<silent_missing_recommended_modules><![CDATA[Az ajánlott PHP modulok némelyike nincs telepítve. Bár az OAT telepítéséhez és használatához ezek a modulok nem kötelezőek, a modulok nélkül az OAT néhány funkciója korlátozott.]]></silent_missing_recommended_modules>
+<silent_recommended_modules><![CDATA[Hiányzó ajánlott modul(ok):]]></silent_recommended_modules>
+<OK><![CDATA[OK]]></OK>
+
+<oat_config><![CDATA[OAT konfiguráció]]></oat_config>
+<parameter><![CDATA[Paraméter]]></parameter>
+<description><![CDATA[Leírás]]></description>
+<value><![CDATA[Érték]]></value>
+<LANG><![CDATA[Alapértelmezett nyelv]]></LANG>
+<LANG_desc><![CDATA[Az OAT oldalak alapértelmezett nyelve.]]></LANG_desc>
+<BASEURL><![CDATA[Alap URL]]></BASEURL>
+<BASEURL_desc><![CDATA[Az OAT telepítés URL címe a következő formátumban: http://kiszolgálónév:port/hely.]]></BASEURL_desc>
+<HOMEDIR><![CDATA[Telepítési könyvtár]]></HOMEDIR>
+<HOMEDIR_desc><![CDATA[Az OAT telepítés könyvtára.]]></HOMEDIR_desc>
+<CONNDBDIR><![CDATA[Kapcsolatok adatbázis könyvtára]]></CONNDBDIR>
+<CONNDBDIR_desc><![CDATA[Az OAT kapcsolatok címtár könyvtára. Adjon meg olyan biztonságos könyvtárat, amely nem a webkiszolgáló dokumentum könyvtára alatt található.]]></CONNDBDIR_desc>
+<CONNDBDIR_warning><![CDATA[A kapcsolatok adatbázis helye ({0}) a webkiszolgáló dokumentum könyvtára alatt található. Ez a hely az OAT alkalmazást biztonsági kockázatnak teheti ki. Biztonsági okokból módosítsa a kapcsolatok adatbázis helyét. A figyelmeztetés figyelmen kívül hagyásához kattintson ismét a Mentés lehetőségre.]]></CONNDBDIR_warning>
+<HOMEPAGE><![CDATA[Kezdőlap]]></HOMEPAGE>
+<HOMEPAGE_desc><![CDATA[Az OAT kezdőlapja]]></HOMEPAGE_desc>
+<home_page_option_welcome><![CDATA[Üdvözlet]]></home_page_option_welcome>
+<home_page_option_dashboard_group><![CDATA[Egészségközpont > Kijelzőpult > Csoport összegzése]]></home_page_option_dashboard_group>
+<home_page_option_dashboard_server><![CDATA[Egészségközpont > Kijelzőpult > Kiszolgáló teljesítménye]]></home_page_option_dashboard_server>
+<home_page_option_custom><![CDATA[Egyéni]]></home_page_option_custom>
+<PINGINTERVAL><![CDATA[Frissítési időköz]]></PINGINTERVAL>
+<PINGINTERVAL_desc><![CDATA[A kiszolgáló állapotfrissítései között eltelő idő hossza (másodpercben). A kiszolgáló állapot az Egészségközpont > Kijelzőpult > Csoport összegzése oldalon jelenik meg.]]></PINGINTERVAL_desc>
+<ROWSPERPAGE><![CDATA[Sorok száma oldalanként]]></ROWSPERPAGE>
+<ROWSPERPAGE_desc><![CDATA[Az oldalanként megjelenítendő sorok száma, amikor az adatok táblázatos formátumban jelennek meg.]]></ROWSPERPAGE_desc>
+<SECURESQL><![CDATA[SQL eszközkészlet biztonsága]]></SECURESQL>
+<SECURESQL_desc><![CDATA[Bejelentkezési azonosító megkövetelése az SQL eszközkészlet használatakor.]]></SECURESQL_desc>
+<INFORMIXCONTIME><![CDATA[Informix csatlakozási idő]]></INFORMIXCONTIME>
+<INFORMIXCONTIME_desc><![CDATA[Az az idő (másodpercben), ameddig az megkísérel csatlakozni az adatbázis-kiszolgálóhoz, mielőtt hibát adna vissza (INFORMIXCONTIME).]]></INFORMIXCONTIME_desc>
+<INFORMIXCONRETRY><![CDATA[Informix csatlakozási újrapróbálkozás]]></INFORMIXCONRETRY>
+<INFORMIXCONRETRY_desc><![CDATA[Azon alkalmak száma, ahányszor az OAT megkísérel csatlakozni az adatbázis-kiszolgálóhoz az Informix csatlakozási idő alatt (INFORMIXCONRETRY).]]></INFORMIXCONRETRY_desc>
+<config_value_empty><![CDATA[Ez a mező kötelező: {0}]]></config_value_empty>
+<HOMEDIR_not_a_directory><![CDATA[A telepítési könyvtárként megadott könyvtár ({0}) nem létezik. Adjon meg érvényes telepítési könyvtárat.]]></HOMEDIR_not_a_directory>
+<CONNDBDIR_not_valid><![CDATA[A kapcsolatok adatbázis megadott könyvtára ({0}) érvénytelen. Győződjön meg róla, hogy a könyvtár létezik és írható.]]></CONNDBDIR_not_valid>
+<directory_not_accessible><![CDATA[A(z) {0} könyvtár nem érhető el. Győződjön meg róla, hogy a könyvtár létezik és írható.]]></directory_not_accessible>
+<file_not_accessible><![CDATA[A(z) {0} fájl nem érhető el. Győződjön meg róla, hogy a fájl létezik és írható.]]></file_not_accessible>
+
+<conndb><![CDATA[Kapcsolatok adatbázis]]></conndb>
+<conndb_desc><![CDATA[A kapcsolatok adatbázis azoknak a kiszolgálóknak a csatlakozási információit tartalmazza, amelyhez az OAT csatlakozhat.]]></conndb_desc>
+<create_conndb_instructions><![CDATA[A kapcsolatok adatbázis létrehozásához kattintson a Tovább gombra.]]></create_conndb_instructions>
+<upgrade_conndb_instructions><![CDATA[A kapcsolatok adatbázis frissítéséhez kattintson a Tovább gombra.]]></upgrade_conndb_instructions>
+<conndb_complete><![CDATA[A kapcsolatok adatbázis feldolgozása sikeresen befejeződött.]]></conndb_complete>
+<conndb_not_set><![CDATA[A kapcsolatok adatbázis könyvtára paraméter (CONNDBDIR) nincs beállítva a conf/config.php fájlban.  Ellenőrizze a fájlt és indítsa újra a telepítést.]]></conndb_not_set>
+<conndb_processing><![CDATA[{0} fájl feldolgozása - {1}]]></conndb_processing>
+<conndb_error><![CDATA[A kapcsolatok adatbázis beállítása nem sikerült.  A(z) {0} tábla nem hozható létre. Távolítsa el a kapcsolatok adatbázist és indítsa újra a telepítést.]]></conndb_error>
+<conndb_error_upgrade><![CDATA[A kapcsolatok adatbázis frissítése nem sikerült.  Hiba történt a(z) {0} fájl {1} szakaszában. Távolítsa el a kapcsolatok adatbázist és indítsa újra a telepítést. A megőrzött kapcsolat információk elvesznek.]]></conndb_error_upgrade>
+<conndb_error_upgrade_version><![CDATA[A kapcsolatok adatbázis változat információinak frissítése nem sikerült. Távolítsa el a kapcsolatok adatbázist és indítsa újra a telepítést.]]></conndb_error_upgrade_version>
+<conndb_error_upgrade_example_plugin_version><![CDATA[Az IBM Példa bedolgozó változat információinak frissítése a kapcsolatok adatbázisban nem sikerült. Távolítsa el a kapcsolatok adatbázist és indítsa újra a telepítést.]]></conndb_error_upgrade_example_plugin_version>
+
+<choose_plugins><![CDATA[Telepítendő bedolgozók]]></choose_plugins>
+<zip_extension_required><![CDATA[A bedolgozók telepítéséhez a PHP zip modul szükséges.]]></zip_extension_required>
+<tmp_dir_not_writable><![CDATA[A bedolgozók nem kerültek telepítésre. A telepítőprogram nem tud írni a következő OAT ideiglenes könyvtárba (tmp). Ellenőrizze a könyvtár engedélyeit. A bedolgozók telepítéséhez használja az OAT Bedolgozókezelő programját.]]></tmp_dir_not_writable>
+<no_plugins_to_install><![CDATA[Nincsenek telepítendő bedolgozók.]]></no_plugins_to_install>
+<plugin_name><![CDATA[Bedolgozó]]></plugin_name>
+<plugin_author><![CDATA[Szerző]]></plugin_author>
+<plugin_version><![CDATA[Változat]]></plugin_version>
+<plugin_server_version><![CDATA[Informix változat]]></plugin_server_version>
+<plugin_license><![CDATA[Licenc]]></plugin_license>
+<plugin_install_checkbox><![CDATA[Telepíti?]]></plugin_install_checkbox>
+<plugin_license_confirmation><![CDATA[Elfogadja a bedolgozó licencszerződésének feltételeit?]]></plugin_license_confirmation>
+<plugin_install><![CDATA[Bedolgozó telepítés eredményei]]></plugin_install>
+<no_plugins_selected><![CDATA[Nincs kijelölve telepítendő bedolgozó.]]></no_plugins_selected>
+<plugin_install_complete><![CDATA[A(z) {0} sikeresen telepítve lett.]]></plugin_install_complete>
+
+<install_complete><![CDATA[Az OpenAdmin Tool telepítése befejeződött]]></install_complete>
+<install_complete_details><![CDATA[Az OpenAdmin Tool sikeresen telepítésre került.  Az oldal bezárásához és az OAT bejelentkezési oldal megnyitásához kattintson a Befejezés gombra.]]></install_complete_details>
+
+</lang>

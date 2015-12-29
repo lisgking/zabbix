@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_sqlwin_pop">
+<PartTitle><![CDATA[SQL Toolbox Popup - Partnum Info]]></PartTitle>
+<Partition><![CDATA[Partition]]></Partition>
+<PartInfoFor><![CDATA[Partition Info for {0}]]></PartInfoFor>
+<Pgsize><![CDATA[Pagesize]]></Pgsize>
+<NumExtAlloc><![CDATA[Number of Extents Allocated]]></NumExtAlloc>
+<TPgsAlloc><![CDATA[Total Pages Allocated]]></TPgsAlloc>
+<NDataPgs><![CDATA[Number of data pages]]></NDataPgs>
+<Lockid><![CDATA[Lockid]]></Lockid>
+<HasIPgs><![CDATA[Table Partition includes index pages?]]></HasIPgs>
+<Rowsize><![CDATA[Rowsize]]></Rowsize>
+<NRows><![CDATA[Number of rows]]></NRows>
+<PagesUsed><![CDATA[Pages Used]]></PagesUsed>
+<errNoPartnum><![CDATA[Error: partnum is not set.]]></errNoPartnum>
+<errNotHex><![CDATA[Error: value must be in hex format -- start with prefix <0x>.]]></errNotHex>
+</lang>

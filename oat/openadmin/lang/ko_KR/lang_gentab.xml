@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="gentab">
+<NumRowsAffected><![CDATA[영향받은 행 수:]]></NumRowsAffected>
+<CompletedSuccess><![CDATA[성공적으로 완료되었습니다.]]></CompletedSuccess>
+<FunctionReturnValue><![CDATA[함수 리턴 값:]]></FunctionReturnValue>
+<Return><![CDATA[리턴:]]></Return>
+<SyntaxError><![CDATA[구문 오류가 발생했습니다.]]></SyntaxError>
+</lang>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_space">
+<mainTitle><![CDATA[Пространства баз данных]]></mainTitle>
+<dbspace><![CDATA[Пространство базы данных]]></dbspace>
+<dbspaceName><![CDATA[Имя пространства базы данных]]></dbspaceName>
+<owner><![CDATA[Владелец]]></owner>
+<pagesize><![CDATA[Размер страницы]]></pagesize>
+<createTime><![CDATA[Создать время]]></createTime>
+<dbspaceInfo><![CDATA[Информация о пространстве базы данных]]></dbspaceInfo>
+<utilization><![CDATA[Использование {0}]]></utilization>
+<indexPages><![CDATA[Индексные страницы]]></indexPages>
+<dataPages><![CDATA[Страницы данных]]></dataPages>
+<otherPages><![CDATA[Другие страницы]]></otherPages>
+<freePages><![CDATA[Свободные страницы]]></freePages>
+<TableName><![CDATA[Имя таблицы]]></TableName>
+<StartAddr><![CDATA[Начальный адрес]]></StartAddr>
+<EndAddr><![CDATA[Конечный адрес]]></EndAddr>
+<size><![CDATA[Размер]]></size>
+<Status><![CDATA[Состояние]]></Status>
+<ExtentList><![CDATA[Распечатка экстента]]></ExtentList>
+<TableList><![CDATA[Распечатка таблицы]]></TableList>
+<Database><![CDATA[База данных]]></Database>
+<Table><![CDATA[Таблица]]></Table>
+<Collate><![CDATA[Упорядочивать]]></Collate>
+<Rows><![CDATA[Строки]]></Rows>
+<SystemIntegrity><![CDATA[Целостность]]></SystemIntegrity>
+<butCheckDbsTabFormat><![CDATA[Проверить формат таблицы пространства базы данных]]></butCheckDbsTabFormat>
+<butCheckDbsExt><![CDATA[Проверить экстенты пространства базы данных]]></butCheckDbsExt>
+<RowSize><![CDATA[Размер строк]]></RowSize>
+<Created><![CDATA[Создано]]></Created>
+<AllocPages><![CDATA[Выделенные страницы]]></AllocPages>
+<UsedPages><![CDATA[Использованные страницы]]></UsedPages>
+<NumExtents><![CDATA[Количество экстентов]]></NumExtents>
+<Num><![CDATA[#]]></Num>
+<Number><![CDATA[Номер]]></Number>
+<Name><![CDATA[Имя]]></Name>
+<Type><![CDATA[Тип]]></Type>
+<default><![CDATA[по умолчанию]]></default>
+<CreateSpace><![CDATA[Создать пространство]]></CreateSpace>
+<Create><![CDATA[Создать]]></Create>
+<numChunks><![CDATA[Число чанков]]></numChunks>
+<UsedPer><![CDATA[Использовано %]]></UsedPer>
+<Data><![CDATA[Данные]]></Data>
+<Index><![CDATA[Индекс]]></Index>
+<Other><![CDATA[Другие]]></Other>
+<Free><![CDATA[Свободно]]></Free>
+<noDropDBSpace><![CDATA[Не удается удалить rootdbs.]]></noDropDBSpace>
+<AddSpaceto><![CDATA[Добавить пространство к]]></AddSpaceto>
+<Path><![CDATA[Путь]]></Path>
+<Offset><![CDATA[Смещение]]></Offset>
+<FileCreation><![CDATA[Создание файла]]></FileCreation>
+<MayCreateFile><![CDATA[Создать файл, если он не существует]]></MayCreateFile>
+<FileMustExist><![CDATA[Файл должен существовать]]></FileMustExist>
+<DropSpace><![CDATA[Отбросить пространство {0}]]></DropSpace>
+<AddChunk><![CDATA[Добавить чанк]]></AddChunk>
+<Used><![CDATA[Используется]]></Used>
+<AddMirror><![CDATA[Добавить зеркало]]></AddMirror>
+<AddChunkMirror><![CDATA[Добавить чанк с зеркалом]]></AddChunkMirror>
+<StartMirror><![CDATA[Начать зеркальное копирование]]></StartMirror>
+<StopMirror><![CDATA[Остановить зеркальное копирование]]></StopMirror>
+<AddMirrorto><![CDATA[Добавить зеркало к]]></AddMirrorto>
+<MirrorPath><![CDATA[Путь зеркала]]></MirrorPath>
+<MirrorOffset><![CDATA[Смещение зеркала]]></MirrorOffset>
+<MirroringStarted><![CDATA[Зеркальное копирование начато]]></MirroringStarted>
+<MirroringStopped><![CDATA[Зеркальное копирование остановлено]]></MirroringStopped>
+<oncheckSystemValidation><![CDATA[oncheck - проверка системы]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[Проверка с помощью oncheck завершена.]]></oncheckComplete>
+<NoPermission><![CDATA[У пользователей с разрешением только на чтение нет разрешения на эту операцию. Вы вошли в систему как пользователь с разрешением только на чтение.]]></NoPermission>
+<NotValidOnSecondary><![CDATA[Это действие недопустимо на дополнительных серверах.]]></NotValidOnSecondary>
+<Error><![CDATA[Ошибка:]]></Error>
+<DropDBSpaceFailed><![CDATA[Не удалось удалить пространство базы данных.  Это значение пространства базы данных задано неправильно:]]></DropDBSpaceFailed>
+<DBSpaceCreateActFailed><![CDATA[Не удалось создать пространство базы данных.  Действие пространства базы данных]]></DBSpaceCreateActFailed>
+<IsNotValid><![CDATA[недопустимо.]]></IsNotValid>
+<DATASpace><![CDATA[Пространство данных]]></DATASpace>
+<DataSpaceL><![CDATA[Пространство данных]]></DataSpaceL>
+<TEMPSpace><![CDATA[Пространство TEMP]]></TEMPSpace>
+<TempSpaceL><![CDATA[Временное пространство]]></TempSpaceL>
+<BLOBSpace><![CDATA[Пространство BLOB]]></BLOBSpace>
+<DBSpaceCreationSuccess><![CDATA[Успешное создание пространства базы данных]]></DBSpaceCreationSuccess>
+<DBSpaceCreateFailed><![CDATA[Не удалось создать пространство базы данных.  Это значение пространства базы данных задано неправильно:]]></DBSpaceCreateFailed>
+<DBSpaceCreateActError><![CDATA[Не удалось создать пространство базы данных.  Действие с пространством базы данных недопустимо]]></DBSpaceCreateActError>
+<NoConfDBSpaceDrop><![CDATA[Удаление пространства базы данных не подтверждено]]></NoConfDBSpaceDrop>
+<ValidationResultsTo><![CDATA[Поместить результаты проверки в ...]]></ValidationResultsTo>
+<ValidationResults><![CDATA[Результаты проверки ...]]></ValidationResults>
+<AddChunkFailed><![CDATA[Не удалось добавить чанк в пространство базы данных:]]></AddChunkFailed>
+<ChunkAddSuccess><![CDATA[Чанк добавлен успешно]]></ChunkAddSuccess>
+<AddDBSpaceChunk><![CDATA[Добавление чанка в пространство базы данных:]]></AddDBSpaceChunk>
+<MirrorChunkAddSuccess><![CDATA[Зеркалированный чанк добавлен успешно]]></MirrorChunkAddSuccess>
+<AddingMirrorFailed><![CDATA[Не удалось добавить зеркало в пространство базы данных:]]></AddingMirrorFailed>
+<MirrorValueNotSetRight><![CDATA[Это значение зеркала задано неправильно:]]></MirrorValueNotSetRight>
+<MirrorAddSuccess><![CDATA[Зеркало добавлено успешно]]></MirrorAddSuccess>
+<StartMirrorFailed><![CDATA[Не удается запустить зеркальное копирование в пространстве базы данных:]]></StartMirrorFailed>
+<NoConfStartMirror><![CDATA[Запуск зеркального копирования в пространстве базы данных не подтвержден:]]></NoConfStartMirror>
+<StopMirrorFailed><![CDATA[Не удается остановить зеркальное копирование в пространстве базы данных:]]></StopMirrorFailed>
+<NoConfStopMirror><![CDATA[Остановка зеркального копирования в пространстве базы данных не подтверждена:]]></NoConfStopMirror>
+<Dbspace><![CDATA[Пространство базы данных]]></Dbspace>
+<TempDbspace><![CDATA[Временное пространство базы данных]]></TempDbspace>
+<MirroredDbspace><![CDATA[Отображенное пространство базы данных]]></MirroredDbspace>
+<Blobspace><![CDATA[Пространство больших объектов]]></Blobspace>
+<MirroredBlobspace><![CDATA[Отображенное пространство больших объектов]]></MirroredBlobspace>
+<SmartBlobspace><![CDATA[Пространство сложных больших объектов]]></SmartBlobspace>
+<TempSbspace><![CDATA[Временное пространство сложных больших объектов]]></TempSbspace>
+<MirroredSbspace><![CDATA[Отображенное пространство сложных больших объектов]]></MirroredSbspace>
+<DataPages><![CDATA[Страницы данных]]></DataPages>
+<IndexPages><![CDATA[Индексные страницы]]></IndexPages>
+<OtherPages><![CDATA[Другие страницы]]></OtherPages>
+<FreePages><![CDATA[Свободные страницы]]></FreePages>
+<NotSetRightDBSpaceValue><![CDATA[Это значение пространства базы данных задано неправильно:]]></NotSetRightDBSpaceValue>
+<summary><![CDATA[Сводная информация]]></summary>
+<admin><![CDATA[Администрирование]]></admin>
+<tables><![CDATA[Таблицы]]></tables>
+<extents><![CDATA[Экстенты]]></extents>
+<validation><![CDATA[Проверка]]></validation>
+<Disabled><![CDATA[Выключено]]></Disabled>
+<Recovering><![CDATA[Восстановление]]></Recovering>
+<Operational><![CDATA[Рабочее состояние]]></Operational>
+</lang>

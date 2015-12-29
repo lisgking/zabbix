@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang module="lang_systemvalidation">
+<mainTitle><![CDATA[系统验证]]></mainTitle>
+<checkDataFormat><![CDATA[检查数据格式]]></checkDataFormat>
+<databaseName><![CDATA[数据库名称]]></databaseName>
+<tableName><![CDATA[表名]]></tableName>
+<chkTable><![CDATA[检查表]]></chkTable>
+<chkExtFormat><![CDATA[检查扩展数据块格式]]></chkExtFormat>
+<extName><![CDATA[数据库空间名称]]></extName>
+<chkExtent><![CDATA[检查扩展数据块]]></chkExtent>
+<valResTo><![CDATA[验证结果到...]]></valResTo>
+<onCheck><![CDATA[oncheck]]></onCheck>
+<oncheckSystemValidation><![CDATA[oncheck - 系统验证]]></oncheckSystemValidation>
+<oncheckComplete><![CDATA[oncheck 验证完成。]]></oncheckComplete>
+<ValidationResults><![CDATA[验证结果...]]></ValidationResults>
+<SysValNotValid><![CDATA[辅助服务器上的系统验证无效。]]></SysValNotValid>
+<ErrorNoPermission><![CDATA[只读用户没有执行此操作的许可权。您是以只读用户身份登录的。]]></ErrorNoPermission>
+<confirmCheckData><![CDATA[注意：运行检查可能会耗用大量处理资源，具体取决于涉及的页面数量。该操作将读取指定表中除 BLOB 页面和智能大对象页面以外的所有页面，并检查每个页面的一致性。是否要继续？]]></confirmCheckData>
+<NotYetImpl><![CDATA[在此页面上，OpenAdmin Tool 无法显示具有多个非英语数据库语言环境的数据库服务器的信息。该数据库服务器包含多个非英语数据库语言环境。]]></NotYetImpl>
+</lang>
